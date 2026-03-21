@@ -1,0 +1,80 @@
+<html>
+<head>
+<title> hokuto package manager</title>
+</head>
+<body>
+Package manager written in Go with minimal optional external dependecies:<br>
+- b3sum<br>
+- git<br>
+- lzip<br>
+- rsync<br>
+- tar<br>
+- wget<br>
+- zstd<br>
+<br>
+hokuto help for basic usage<br>
+hokuto function for advanced options<br>
+<br>
+configuration files are stored in /etc/hokuto/<br>
+hokuto.conf: global config file<br>
+hokuto.lock: pin a package to specific version (pkgname version)<br>
+hokuto.pkgset: pkgsets for batch updates (hokuto bump -set setname oldver newver)<br>
+hokuto.rebuild: simple DKMS (triggerpackage package1 package2)<br>
+hokuto.update: sets package build priority on updates (package1 package2 package3)<br>
+/etc/hokuto/keys/foo.key: key used to sign packages (use hokuto settings to generate a new key)<br>
+<br>
+package structure<br>
+- build: bash file with build instructions<br>
+available env variables in the script<br>
+$1 build DESTDIR<br>
+$2 package version<br>
+$3 package name<br>
+$HOKUTO_ARCH build arch (aarch64 or x86_64)<br>
+$HOKUTO_CROSS (1 or 0) and $HOKUTO_CARCH (arm64)<br>
+$MULTILIB (1 or 0)<br>
+$HOKUTO_ROOT rootdir, usually / but can be set to another dir<br> 
+$TMPDIR current tmpdir<br>
+$HOKUTO_BUILD_DIR current build dir path<br>
+<br>
+- checksums: b3sums of source files<br>
+<br>
+- depends: dependencies<br>
+pkgname:  runtime/build dependency<br>
+pkgname make: build dependency<br>
+pkgname optional: package will be automatically rebuilt once the dependency is available (solves circular deps)<br>
+pkgname rebuild: forces rebuild of package even if already installed, only enabled with -rebuilds build command flag<br>
+pkgname cross make: cross (arm64) build dependency<br>
+== < > => <= version (eg ffmpeg<=7.2.0) dependecy version constraints, hokuto can build older versions by fetching the package from the repo git history<br>
+package1 | package2: hokuto will prompt which dependency to use<br>
+<br>
+- options: <br>
+asroot: build package as root<br>
+binary: binary package with bundled deps, ignored by automatic dependecy resolver<br>
+clang: sets flto=auto for clang builds<br>
+cross-simple: use the native host compiler instead of the cross-compiler<br>
+host-tool: don't modify the PATH in the build env to include the cross-toolchain binaries<br>
+interactive: shows build output log and allows interactive scripts<br>
+nocrossopt: dont' enable CFLAGS_ARM64 for cross builds<br>
+noram: build in TMPDIR2<br>
+nolto: disable LTO<br>
+nostrip: disable stripping<br>
+<br>
+- files: store local package files<br>
+<br>
+- .sources: source links with substitutions<br>
+${version}: The raw version from the version file.<br>
+${version-clean}: Version with underscores (_) replaced by dots (.) (e.g., 1_2_3-1 → 1.2.3-1).<br>
+${version_}: Version with dots (.) replaced by underscores (_).<br>
+${version-}: Version with dots (.) replaced by dashes (-).<br>
+${version-major} 1.2.3 -> 1<br>
+${version-major-minor} 1.2.3 -> 1.2<br>
+${version-sqlite} custom subsitution for sqlite download links<br>
+${version-glued} 1.2.3 -> 123<br>
+${version-glued-end} 1.2.3 -> 1.23<br>
+${version-last-only} 1.2.3.sdk102 -> sdk102<br>
+${pkgname}: The name of the package.<br>
+<br>
+- sources: source links with substitutions replaced with actual links (for repology parsing)<br>
+<br>
+- version: version revision<br>
+<br>
