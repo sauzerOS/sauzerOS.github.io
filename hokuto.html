@@ -41,6 +41,7 @@ $MULTILIB (1 or 0)<br>
 $HOKUTO_ROOT rootdir, usually / but can be set to another dir<br> 
 $TMPDIR current tmpdir<br>
 $HOKUTO_BUILD_DIR current build dir path<br>
+$HOKUTO_REAL_USER user that executed hokuto (allows installation in user home directory)<br>
 <br>
 - checksums: b3sums of source files<br>
 <br>
@@ -66,6 +67,8 @@ nolto: disable LTO<br>
 nostrip: disable stripping<br>
 <br>
 - files: local package files<br>
+<br>
+- post-install: bash script executed after package install<br>
 <br>
 - .sources: source links with substitutions<br>
 ${version}: The raw version from the version file.<br>
