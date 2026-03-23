@@ -1,29 +1,135 @@
-<html>
-<title>sauzerOS</title>
-<style>
-  body {
-    background-color: lightblue;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - Home</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      color: #586e75;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      display: flex;
+      line-height: 1.5;
+    }
+
+    nav {
+      width: 200px;
+      padding: 40px 20px;
+      border-right: 1px dashed #93a1a1;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 800px;
+    }
+
+    .menu-item {
+      display: block;
+      margin-bottom: 20px;
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      color: #dc322f;
+      text-decoration: underline;
+    }
+
+    .menu-item.active {
+      color: #cb4b16;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    h2,
+    h3 {
+      color: #268bd2;
+    }
+
+    .box {
+      border: 1px solid #93a1a1;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "* ";
+      color: #859900;
+    }
+
+    a {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      display: block;
+      margin-top: 20px;
+      border: 1px solid #93a1a1;
+      padding: 5px;
+      background-color: #eee8d5;
+    }
+  </style>
+</head>
 
 <body>
-  From scratch source distro and <a href="https://github.com/sauzerOS/hokuto/">package manager hokuto</a> <br>
-  Can be bootstrapped from any distro with basic development tools<br>
-  Based on <a href="https://archlinux.org/">Arch Linux</a> and <a
-    href="https://linuxfromscratch.org/">LFS/BLFS/MFLS/GLFS</a><br>
-  <br>
-  Main Features:<br>
-  - Systemd<br>
-  - Kernel with cachyos patches<br>
-  - Xlibre<br>
-  - Kde plasma<br>
-  - Xfce<br>
-  - Multilib support for gaming<br>
-  - Binary repo support (S3 or R2)<br>
-  <br>
-  REPOLOGY STATUS<br>
-  <img src="https://repology.xdd.ovh/badge/repository-big/sauzeros.svg" alt="Repology Badge">
+  <nav>
+    <div style="font-weight: bold; margin-bottom: 30px; color: #b58900;">[ sauzerOS ]</div>
+    <a href="index.html" class="menu-item active">Home</a>
+    <a href="hokuto.html" class="menu-item">Hokuto</a>
+    <a href="https://github.com/sauzerOS" class="menu-item">GitHub</a>
+  </nav>
+  <main>
+    <div class="box">
+      <h1>sauzerOS</h1>
+    </div>
 
+    <p>
+      From scratch source distro and <a href="https://github.com/sauzerOS/hokuto/">package manager hokuto</a>.
+    </p>
+    <p>
+      Can be bootstrapped from any distro with basic development tools.
+    </p>
+    <p>
+      Based on <a href="https://archlinux.org/">Arch Linux</a> and <a
+        href="https://linuxfromscratch.org/">LFS/BLFS/MFLS/GLFS</a>.
+    </p>
+
+    <h3>Main Features:</h3>
+    <ul>
+      <li>Systemd</li>
+      <li>Kernel with cachyos patches</li>
+      <li>Xlibre</li>
+      <li>Kde plasma</li>
+      <li>Xfce</li>
+      <li>Multilib support for gaming</li>
+      <li>Binary repo support (S3 or R2)</li>
+    </ul>
+
+    <h3>REPOLOGY STATUS</h3>
+    <img src="https://repology.xdd.ovh/badge/repository-big/sauzeros.svg" alt="Repology Badge">
+  </main>
 </body>
 
 </html>

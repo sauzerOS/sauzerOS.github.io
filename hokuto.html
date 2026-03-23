@@ -1,97 +1,233 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title> hokuto package manager</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - Hokuto Package Managers</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      color: #586e75;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      display: flex;
+      line-height: 1.5;
+    }
+
+    nav {
+      width: 200px;
+      padding: 40px 20px;
+      border-right: 1px dashed #93a1a1;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 900px;
+    }
+
+    .menu-item {
+      display: block;
+      margin-bottom: 20px;
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      color: #dc322f;
+      text-decoration: underline;
+    }
+
+    .menu-item.active {
+      color: #cb4b16;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    h2,
+    h3 {
+      color: #268bd2;
+    }
+
+    .box {
+      border: 1px solid #93a1a1;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "* ";
+      color: #859900;
+    }
+
+    a {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: #eee8d5;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .env-vars,
+    .options-list {
+      background-color: #eee8d5;
+      padding: 15px;
+      border-left: 4px solid #b58900;
+      margin-top: 10px;
+    }
+  </style>
 </head>
-<style>
-  body {
-    background-color: lightblue;
-  }
-</style>
 
 <body>
-  Package Manager written in Go with minimal optional external dependencies:<br>
-  - b3sum<br>
-  - git<br>
-  - lzip<br>
-  - rsync<br>
-  - tar<br>
-  - wget<br>
-  - zstd<br>
-  The package manager is fully functional without any external dependencies (except for git checkouts) if executed as
-  root<br>
-  <br>
-  hokuto help for basic usage<br>
-  hokuto function for advanced options<br>
-  <br>
-  configuration files are stored in /etc/hokuto/<br>
-  hokuto.conf: global config file<br>
-  hokuto.lock: pin a package to specific version (pkgname version)<br>
-  hokuto.pkgset: pkgsets for batch updates (hokuto bump -set setname oldver newver)<br>
-  hokuto.rebuild: simple DKMS (triggerpackage package1 package2)<br>
-  hokuto.update: sets package build priority on updates (package1 package2 package3)<br>
-  /etc/hokuto/keys/foo.key: key used to sign packages (use hokuto settings to generate a new key)<br>
-  <br>
-  package structure<br>
-  - build: bash file with build instructions<br>
-  available env variables in the script<br>
-  $1 build DESTDIR<br>
-  $2 package version<br>
-  $3 package name<br>
-  $HOKUTO_ARCH build arch (aarch64 or x86_64)<br>
-  $HOKUTO_CROSS (1 or 0) and $HOKUTO_CARCH (arm64)<br>
-  $MULTILIB (1 or 0)<br>
-  $HOKUTO_ROOT rootdir, usually / but can be set to another dir<br>
-  $TMPDIR current tmpdir<br>
-  $HOKUTO_BUILD_DIR current build dir path<br>
-  $HOKUTO_REAL_USER user that executed hokuto (allows installation in user home directory)<br>
-  <br>
-  - checksums: b3sums of source files<br>
-  <br>
-  - depends: dependencies<br>
-  pkgname: runtime/build dependency<br>
-  pkgname make: build dependency<br>
-  pkgname optional: package will be automatically rebuilt once the dependency is available (solves circular deps)<br>
-  pkgname rebuild: forces rebuild of package even if already installed, only enabled with -rebuilds build command
-  flag<br>
-  pkgname cross make: cross (arm64) build dependency<br>
-  == <> => <= version (eg ffmpeg<=7.2.0) dependecy version constraints, hokuto can build older versions by fetching the
-      package from the repo git history<br>
-      package1 | package2: hokuto will prompt which dependency to use<br>
-      <br>
-      - options: <br>
-      asroot: build package as root<br>
-      binary: binary package with bundled deps, ignored by automatic dependecy resolver<br>
-      clang: sets flto=auto for clang builds<br>
-      cross-simple: use the native host compiler instead of the cross-compiler<br>
-      host-tool: don't modify the PATH in the build env to include the cross-toolchain binaries<br>
-      interactive: shows build output log and allows interactive scripts<br>
-      nocrossopt: dont' enable CFLAGS_ARM64 for cross builds<br>
-      noram: build in TMPDIR2<br>
-      nolto: disable LTO<br>
-      nostrip: disable stripping<br>
-      <br>
-      - files: local package files<br>
-      <br>
-      - post-install: bash script executed after package install<br>
-      <br>
-      - .sources: source links with substitutions<br>
-      ${version}: The raw version from the version file.<br>
-      ${version-clean}: Version with underscores (_) replaced by dots (.) (e.g., 1_2_3-1 → 1.2.3-1).<br>
-      ${version_}: Version with dots (.) replaced by underscores (_).<br>
-      ${version-}: Version with dots (.) replaced by dashes (-).<br>
-      ${version-major} 1.2.3 -> 1<br>
-      ${version-major-minor} 1.2.3 -> 1.2<br>
-      ${version-sqlite} custom subsitution for sqlite download links<br>
-      ${version-glued} 1.2.3 -> 123<br>
-      ${version-glued-end} 1.2.3 -> 1.23<br>
-      ${version-last-only} 1.2.3.sdk102 -> sdk102<br>
-      ${pkgname}: The name of the package.<br>
-      <br>
-      - sources: source links with substitutions replaced with actual links (for repology parsing)<br>
-      <br>
-      - version: version revision<br>
-      <br>
+  <nav>
+    <div style="font-weight: bold; margin-bottom: 30px; color: #b58900;">[ sauzerOS ]</div>
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="hokuto.html" class="menu-item active">Hokuto</a>
+    <a href="https://github.com/sauzerOS" class="menu-item">GitHub</a>
+  </nav>
+  <main>
+    <div class="box">
+      <h1>hokuto package manager</h1>
+    </div>
+
+    <div class="section">
+      <p>Package Manager written in Go with minimal optional external dependencies:</p>
+      <ul>
+        <li>b3sum</li>
+        <li>git</li>
+        <li>lzip</li>
+        <li>rsync</li>
+        <li>tar</li>
+        <li>wget</li>
+        <li>zstd</li>
+      </ul>
+      <p>The package manager is fully functional without any external dependencies (except for git checkouts) if
+        executed as root.</p>
+    </div>
+
+    <div class="section">
+      <h3>Usage</h3>
+      <p>
+        <code>hokuto help</code> for basic usage<br>
+        <code>hokuto function</code> for advanced options
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>Configuration Files</h3>
+      <p>Configuration files are stored in <code>/etc/hokuto/</code></p>
+      <ul>
+        <li><code>hokuto.conf</code>: global config file</li>
+        <li><code>hokuto.lock</code>: pin a package to specific version (pkgname version)</li>
+        <li><code>hokuto.pkgset</code>: pkgsets for batch updates (hokuto bump -set setname oldver newver)</li>
+        <li><code>hokuto.rebuild</code>: simple DKMS (triggerpackage package1 package2)</li>
+        <li><code>hokuto.update</code>: sets package build priority on updates (package1 package2 package3)</li>
+        <li><code>/etc/hokuto/keys/foo.key</code>: key used to sign packages (use hokuto settings to generate a new key)
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Package Structure</h3>
+      <ul>
+        <li>
+          <strong>build</strong>: bash file with build instructions
+          <div class="env-vars">
+            <strong>Available env variables in the script:</strong><br>
+            $1: build DESTDIR<br>
+            $2: package version<br>
+            $3: package name<br>
+            $HOKUTO_ARCH: build arch (aarch64 or x86_64)<br>
+            $HOKUTO_CROSS: (1 or 0) and $HOKUTO_CARCH (arm64)<br>
+            $MULTILIB: (1 or 0)<br>
+            $HOKUTO_ROOT: rootdir, usually / but can be set to another dir<br>
+            $TMPDIR: current tmpdir<br>
+            $HOKUTO_BUILD_DIR: current build dir path<br>
+            $HOKUTO_REAL_USER: user that executed hokuto (allows installation in user home directory)
+          </div>
+        </li>
+        <li><strong>checksums</strong>: b3sums of source files</li>
+        <li>
+          <strong>depends</strong>: dependencies
+          <ul>
+            <li><code>pkgname</code>: runtime/build dependency</li>
+            <li><code>pkgname make</code>: build dependency</li>
+            <li><code>pkgname optional</code>: package will be automatically rebuilt once the dependency is available
+              (solves circular deps)</li>
+            <li><code>pkgname rebuild</code>: forces rebuild of package even if already installed, only enabled with
+              -rebuilds build command flag</li>
+            <li><code>pkgname cross make</code>: cross (arm64) build dependency</li>
+            <li><code>== <> => <= version</code> (eg <code>ffmpeg<=7.2.0</code>): dependency version constraints. hokuto
+              can build older versions by fetching the package from the repo git history</li>
+            <li><code>package1 | package2</code>: hokuto will prompt which dependency to use</li>
+          </ul>
+        </li>
+        <li>
+          <strong>options</strong>:
+          <div class="options-list">
+            <code>asroot</code>: build package as root<br>
+            <code>binary</code>: binary package with bundled deps, ignored by automatic dependency resolver<br>
+            <code>clang</code>: sets flto=auto for clang builds<br>
+            <code>cross-simple</code>: use the native host compiler instead of the cross-compiler<br>
+            <code>host-tool</code>: don't modify the PATH in the build env to include the cross-toolchain binaries<br>
+            <code>interactive</code>: shows build output log and allows interactive scripts<br>
+            <code>nocrossopt</code>: don't enable CFLAGS_ARM64 for cross builds<br>
+            <code>noram</code>: build in TMPDIR2<br>
+            <code>nolto</code>: disable LTO<br>
+            <code>nostrip</code>: disable stripping
+          </div>
+        </li>
+        <li><strong>files</strong>: local package files</li>
+        <li><strong>post-install</strong>: bash script executed after package install</li>
+        <li>
+          <strong>.sources</strong>: source links with substitutions
+          <ul>
+            <li><code>${version}</code>: The raw version from the version file.</li>
+            <li><code>${version-clean}</code>: Version with underscores (_) replaced by dots (.) (e.g., 1_2_3-1 →
+              1.2.3-1).</li>
+            <li><code>${version_}</code>: Version with dots (.) replaced by underscores (_).</li>
+            <li><code>${version-}</code>: Version with dots (.) replaced by dashes (-).</li>
+            <li><code>${version-major}</code>: 1.2.3 -> 1</li>
+            <li><code>${version-major-minor}</code>: 1.2.3 -> 1.2</li>
+            <li><code>${version-sqlite}</code>: custom substitution for sqlite download links</li>
+            <li><code>${version-glued}</code>: 1.2.3 -> 123</li>
+            <li><code>${version-glued-end}</code>: 1.2.3 -> 1.23</li>
+            <li><code>${version-last-only}</code>: 1.2.3.sdk102 -> sdk102</li>
+            <li><code>${pkgname}</code>: The name of the package.</li>
+          </ul>
+        </li>
+        <li><strong>sources</strong>: source links with substitutions replaced with actual links (for repology parsing)
+        </li>
+        <li><strong>version</strong>: version revision</li>
+      </ul>
+    </div>
+  </main>
 </body>
 
 </html>
