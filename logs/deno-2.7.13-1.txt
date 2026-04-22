@@ -1,17 +1,946 @@
-Script started on 2026-04-23 01:17:39+07:00 [COMMAND="cd /var/tmp/hokuto/deno-80/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/deno-80/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/deno-80/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=mold -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/deno-80/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/deno-80/build/.cache' /repo/sauzeros/extra/deno/build /var/tmp/hokuto/deno-80/output 2.7.13 deno" <not executed on terminal>]
-[1m[92m    Updating[0m crates.io index
-[1m[33mwarning[0m: spurious network error (3 tries remaining): [28] Timeout was reached (Connection timed out after 30005 milliseconds)
-[1m[33mwarning[0m: spurious network error (2 tries remaining): [28] Timeout was reached (Connection timed out after 30029 milliseconds)
-[1m[33mwarning[0m: spurious network error (1 try remaining): [28] Timeout was reached (Connection timed out after 30016 milliseconds)
-[1m[91merror[0m: failed to get `v8` as a dependency of package `deno_core v0.399.0 (/var/tmp/hokuto/deno-80/build/libs/core)`
+Script started on 2026-04-23 01:38:47+07:00 [COMMAND="cd /var/tmp/hokuto/deno-63/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' CMAKE_BUILD_PARALLEL_LEVEL='20' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/deno-63/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/deno-63/build' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=mold -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j20' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/deno-63/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/deno-63/build/.cache' /repo/sauzeros/extra/deno/build /var/tmp/hokuto/deno-63/output 2.7.13 deno" <not executed on terminal>]
+[1m[92m   Compiling[0m proc-macro2 v1.0.101
+[1m[92m   Compiling[0m quote v1.0.45
+[1m[92m   Compiling[0m unicode-ident v1.0.12
+[1m[92m   Compiling[0m libc v0.2.172
+[1m[92m   Compiling[0m serde_core v1.0.228
+[1m[92m   Compiling[0m serde v1.0.228
+[1m[92m   Compiling[0m autocfg v1.3.0
+[1m[92m   Compiling[0m cfg-if v1.0.3
+[1m[92m   Compiling[0m version_check v0.9.4
+[1m[92m   Compiling[0m portable-atomic v1.10.0
+[1m[92m   Compiling[0m shlex v1.3.0
+[1m[92m   Compiling[0m libm v0.2.8
+[1m[92m   Compiling[0m memchr v2.7.5
+[1m[92m   Compiling[0m parking_lot_core v0.9.9
+[1m[92m   Compiling[0m find-msvc-tools v0.1.9
+[1m[92m   Compiling[0m serde_json v1.0.140
+[1m[92m   Compiling[0m typenum v1.17.0
+[1m[92m   Compiling[0m allocator-api2 v0.2.21
+[1m[92m   Compiling[0m thiserror v2.0.12
+[1m[92m   Compiling[0m log v0.4.28
+[1m[92m   Compiling[0m getrandom v0.4.1
+[1m[92m   Compiling[0m foldhash v0.2.0
+[1m[92m   Compiling[0m equivalent v1.0.1
+[1m[92m   Compiling[0m anyhow v1.0.98
+[1m[92m   Compiling[0m itoa v1.0.15
+[1m[92m   Compiling[0m generic-array v0.14.7
+[1m[92m   Compiling[0m num-traits v0.2.19
+[1m[92m   Compiling[0m lock_api v0.4.11
+[1m[92m   Compiling[0m slab v0.4.9
+[1m[92m   Compiling[0m either v1.10.0
+[1m[92m   Compiling[0m critical-section v1.2.0
+[1m[92m   Compiling[0m pin-project-lite v0.2.14
+[1m[92m   Compiling[0m bytes v1.11.1
+[1m[92m   Compiling[0m stable_deref_trait v1.2.0
+[1m[92m   Compiling[0m rustc-hash v2.1.1
+[1m[92m   Compiling[0m regex-syntax v0.8.8
+[1m[92m   Compiling[0m ppv-lite86 v0.2.17
+[1m[92m   Compiling[0m radium v0.7.0
+[1m[92m   Compiling[0m aho-corasick v1.1.3
+[1m[92m   Compiling[0m itertools v0.13.0
+[1m[92m   Compiling[0m ahash v0.8.11
+[1m[92m   Compiling[0m ryu v1.0.17
+[1m[92m   Compiling[0m minimal-lexical v0.2.1
+[1m[92m   Compiling[0m scopeguard v1.2.0
+[1m[92m   Compiling[0m glob v0.3.1
+[1m[92m   Compiling[0m syn v2.0.117
+[1m[92m   Compiling[0m once_cell v1.21.3
+[1m[92m   Compiling[0m nom v7.1.3
+[1m[92m   Compiling[0m rustversion v1.0.15
+[1m[92m   Compiling[0m libloading v0.8.5
+[1m[92m   Compiling[0m clang-sys v1.8.1
+[1m[92m   Compiling[0m prettyplease v0.2.37
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m percent-encoding v2.3.2
+[1m[92m   Compiling[0m cfg_aliases v0.2.1
+[1m[92m   Compiling[0m subtle v2.6.1
+[1m[92m   Compiling[0m litemap v0.7.3
+[1m[92m   Compiling[0m pkg-config v0.3.30
+[1m[92m   Compiling[0m writeable v0.5.5
+[1m[92m   Compiling[0m jobserver v0.1.32
+[1m[92m   Compiling[0m getrandom v0.2.14
+[1m[92m   Compiling[0m icu_locid_transform_data v1.5.0
+[1m[92m   Compiling[0m signal-hook-registry v1.4.2
+[1m[92m   Compiling[0m rand_core v0.6.4
+[1m[92m   Compiling[0m cc v1.2.56
+[1m[92m   Compiling[0m rand_chacha v0.3.1
+[1m[92m   Compiling[0m socket2 v0.6.0
+[1m[92m   Compiling[0m icu_properties_data v1.5.0
+[1m[92m   Compiling[0m mio v1.0.3
+[1m[92m   Compiling[0m icu_normalizer_data v1.5.0
+[1m[92m   Compiling[0m rand v0.8.5
+[1m[92m   Compiling[0m write16 v1.0.0
+[1m[92m   Compiling[0m utf16_iter v1.0.5
+[1m[92m   Compiling[0m form_urlencoded v1.2.2
+[1m[92m   Compiling[0m futures-core v0.3.31
+[1m[92m   Compiling[0m regex-automata v0.4.13
+[1m[92m   Compiling[0m bindgen v0.72.1
+[1m[92m   Compiling[0m icu_locale_data v2.2.0
+[1m[92m   Compiling[0m crc32fast v1.4.2
+[1m[92m   Compiling[0m adler2 v2.0.0
+[1m[92m   Compiling[0m icu_calendar_data v2.2.0
+[1m[92m   Compiling[0m futures-sink v0.3.31
+[1m[92m   Compiling[0m paste v1.0.15
+[1m[92m   Compiling[0m cexpr v0.6.0
+[1m[92m   Compiling[0m miniz_oxide v0.8.8
+[1m[92m   Compiling[0m cmake v0.1.57
+[1m[92m   Compiling[0m heck v0.5.0
+[1m[92m   Compiling[0m rustix v0.38.34
+[1m[92m   Compiling[0m futures-channel v0.3.31
+[1m[92m   Compiling[0m linux-raw-sys v0.4.13
+[1m[92m   Compiling[0m pin-utils v0.1.0
+[1m[92m   Compiling[0m futures-io v0.3.31
+[1m[92m   Compiling[0m futures-task v0.3.31
+[1m[92m   Compiling[0m rand_core v0.10.0
+[1m[92m   Compiling[0m strck v1.0.0
+[1m[92m   Compiling[0m home v0.5.9
+[1m[92m   Compiling[0m gzip-header v1.0.0
+[1m[92m   Compiling[0m fslock v0.2.1
+[1m[92m   Compiling[0m az v1.2.1
+[1m[92m   Compiling[0m dunce v1.0.5
+[1m[92m   Compiling[0m stringcase v0.4.0
+[1m[92m   Compiling[0m num-integer v0.1.46
+[1m[92m   Compiling[0m byteorder v1.5.0
+[1m[92m   Compiling[0m sha1_smol v1.0.0
+[1m[92m   Compiling[0m thiserror v1.0.69
+[1m[92m   Compiling[0m vcpkg v0.2.15
+[1m[92m   Compiling[0m memoffset v0.9.1
+[1m[92m   Compiling[0m fs_extra v1.3.0
+[1m[92m   Compiling[0m siphasher v0.3.11
+[1m[92m   Compiling[0m const-oid v0.9.6
+[1m[92m   Compiling[0m uuid v1.21.0
+[1m[92m   Compiling[0m data-encoding v2.5.0
+[1m[92m   Compiling[0m tracing-core v0.1.33
+[1m[92m   Compiling[0m tap v1.0.1
+[1m[92m   Compiling[0m phf_shared v0.11.2
+[1m[92m   Compiling[0m wyz v0.5.1
+[1m[92m   Compiling[0m aws-lc-sys v0.38.0
+[1m[92m   Compiling[0m funty v2.0.0
+[1m[92m   Compiling[0m outref v0.5.1
+[1m[92m   Compiling[0m vsimd v0.8.0
+[1m[92m   Compiling[0m phf_generator v0.11.2
+[1m[92m   Compiling[0m unicode-id-start v1.2.0
+[1m[92m   Compiling[0m if_chain v1.0.2
+[1m[92m   Compiling[0m foldhash v0.1.4
+[1m[92m   Compiling[0m aws-lc-rs v1.16.1
+[1m[92m   Compiling[0m crossbeam-utils v0.8.21
+[1m[92m   Compiling[0m cpufeatures v0.2.12
+[1m[92m   Compiling[0m static_assertions v1.1.0
+[1m[92m   Compiling[0m filetime v0.2.23
+[1m[92m   Compiling[0m bitvec v1.0.1
+[1m[92m   Compiling[0m base64-simd v0.8.0
+[1m[92m   Compiling[0m hashbrown v0.15.5
+[1m[92m   Compiling[0m libz-sys v1.1.20
+[1m[92m   Compiling[0m nix v0.30.1
+[1m[92m   Compiling[0m zerocopy v0.7.32
+[1m[92m   Compiling[0m litemap v0.8.0
+[1m[92m   Compiling[0m writeable v0.6.2
+[1m[92m   Compiling[0m regex v1.12.2
+[1m[92m   Compiling[0m sptr v0.3.2
+[1m[92m   Compiling[0m Inflector v0.11.4
+[1m[92m   Compiling[0m ring v0.17.14
+[1m[92m   Compiling[0m httparse v1.10.0
+[1m[92m   Compiling[0m synstructure v0.13.1
+[1m[92m   Compiling[0m swc_macros_common v1.0.1
+[1m[92m   Compiling[0m psm v0.1.21
+[1m[92m   Compiling[0m core_maths v0.1.1
+[1m[92m   Compiling[0m hashbrown v0.14.5
+[1m[92m   Compiling[0m stacker v0.1.15
+[1m[92m   Compiling[0m smartstring v1.0.1
+[1m[92m   Compiling[0m bit-vec v0.8.0
+[1m[92m   Compiling[0m getrandom v0.3.3
+[1m[92m   Compiling[0m ixdtf v0.6.4
+[1m[92m   Compiling[0m diplomat-runtime v0.15.1
+[1m[92m   Compiling[0m seq-macro v0.3.6
+[1m[92m   Compiling[0m bit-set v0.8.0
+[1m[92m   Compiling[0m unicode-width v0.2.2
+[1m[92m   Compiling[0m rustls v0.23.28
+[1m[92m   Compiling[0m cooked-waker v5.0.0
+[1m[92m   Compiling[0m inventory v0.3.21
+[1m[92m   Compiling[0m deno_core_icudata v0.77.0
+[1m[92m   Compiling[0m fnv v1.0.7
+[1m[92m   Compiling[0m base64 v0.22.1
+[1m[92m   Compiling[0m http v1.4.0
+[1m[92m   Compiling[0m syn v1.0.109
+[1m[92m   Compiling[0m new_debug_unreachable v1.0.6
+[1m[92m   Compiling[0m termcolor v1.4.1
+[1m[92m   Compiling[0m signal-hook v0.3.17
+[1m[92m   Compiling[0m deno_terminal v0.2.3
+[1m[92m   Compiling[0m rayon-core v1.13.0
+[1m[92m   Compiling[0m base64ct v1.6.0
+[1m[92m   Compiling[0m derive-io-macros v0.4.1
+[1m[92m   Compiling[0m scoped-tls v1.0.1
+[1m[92m   Compiling[0m semver v1.0.25
+[1m[92m   Compiling[0m swc_visit v2.0.1
+[1m[92m   Compiling[0m better_scoped_tls v1.0.1
+[1m[92m   Compiling[0m moka v0.12.10
+[1m[92m   Compiling[0m winapi v0.3.9
+[1m[92m   Compiling[0m pem-rfc7468 v0.7.0
+[1m[92m   Compiling[0m tower-service v0.3.3
+[1m[92m   Compiling[0m heck v0.4.1
+[1m[92m   Compiling[0m password-hash v0.5.0
+[1m[92m   Compiling[0m quinn-udp v0.5.9
+[1m[92m   Compiling[0m bumpalo v3.19.0
+[1m[92m   Compiling[0m indexmap v1.9.3
+[1m[92m   Compiling[0m http-body v1.0.0
+[1m[92m   Compiling[0m untrusted v0.7.1
+[1m[92m   Compiling[0m quinn v0.11.8
+[1m[92m   Compiling[0m untrusted v0.9.0
+[1m[92m   Compiling[0m serde_derive v1.0.228
+[1m[92m   Compiling[0m zeroize_derive v1.4.2
+[1m[92m   Compiling[0m zerofrom-derive v0.1.7
+[1m[92m   Compiling[0m displaydoc v0.2.4
+[1m[92m   Compiling[0m yoke-derive v0.7.4
+[1m[92m   Compiling[0m zerovec-derive v0.10.3
+[1m[92m   Compiling[0m tokio-macros v2.5.0
+[1m[92m   Compiling[0m icu_provider_macros v1.5.0
+[1m[92m   Compiling[0m thiserror-impl v2.0.12
+[1m[92m   Compiling[0m futures-macro v0.3.31
+[1m[92m   Compiling[0m deno_error_macro v0.7.1
+[1m[92m   Compiling[0m zeroize v1.8.1
+[1m[92m   Compiling[0m tracing-attributes v0.1.28
+[1m[92m   Compiling[0m yoke-derive v0.8.2
+[1m[92m   Compiling[0m zerovec-derive v0.11.3
+[1m[92m   Compiling[0m sys_traits_macros v0.1.0
+[1m[92m   Compiling[0m capacity_builder_macros v0.3.0
+[1m[92m   Compiling[0m boxed_error v0.2.3
+[1m[92m   Compiling[0m pin-project-internal v1.1.5
+[1m[92m   Compiling[0m futures-util v0.3.31
+[1m[92m   Compiling[0m async-trait v0.1.88
+[1m[92m   Compiling[0m zerofrom v0.1.7
+[1m[92m   Compiling[0m yoke v0.7.4
+[1m[92m   Compiling[0m zerovec v0.10.4
+[1m[92m   Compiling[0m strum_macros v0.27.1
+[1m[92m   Compiling[0m syn-match v0.3.1
+[1m[92m   Compiling[0m crypto-common v0.1.6
+[1m[92m   Compiling[0m thiserror-impl v1.0.69
+[1m[92m   Compiling[0m block-buffer v0.10.4
+[1m[92m   Compiling[0m zerocopy-derive v0.7.32
+[1m[92m   Compiling[0m yoke v0.8.2
+[1m[92m   Compiling[0m digest v0.10.7
+[1m[92m   Compiling[0m tinystr v0.7.6
+[1m[92m   Compiling[0m icu_collections v1.5.0
+[1m[92m   Compiling[0m icu_locid v1.5.0
+[1m[92m   Compiling[0m phf_macros v0.11.2
+[1m[92m   Compiling[0m icu_provider v1.5.0
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m from_variant v3.0.0
+[1m[92m   Compiling[0m swc_eq_ignore_macros v1.0.1
+[1m[92m   Compiling[0m icu_locid_transform v1.5.0
+[1m[92m   Compiling[0m ast_node v5.0.0
+[1m[92m   Compiling[0m smallvec v1.15.1
+[1m[92m   Compiling[0m hashbrown v0.16.0
+[1m[92m   Compiling[0m bitflags v2.9.3
+[1m[92m   Compiling[0m icu_properties v1.5.1
+[1m[92m   Compiling[0m parking_lot v0.12.3
+[1m[92m   Compiling[0m indexmap v2.12.0
+[1m[92m   Compiling[0m diplomat_core v0.15.0
+[1m[92m   Compiling[0m tokio v1.47.1
+[1m[92m   Compiling[0m strum v0.27.1
+[1m[92m   Compiling[0m num-bigint v0.4.6
+[1m[92m   Compiling[0m tracing v0.1.41
+[1m[92m   Compiling[0m debugid v0.8.0
+[1m[92m   Compiling[0m futures-executor v0.3.31
+[1m[92m   Compiling[0m potential_utf v0.1.3
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m serde_bytes v0.11.14
+[1m[92m   Compiling[0m sys_traits v0.1.27
+[1m[92m   Compiling[0m futures v0.3.31
+[1m[92m   Compiling[0m deno_ops v0.275.0 (/var/tmp/hokuto/deno-63/build/libs/ops)
+[1m[92m   Compiling[0m ecow v0.2.3
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m hipstr v0.6.0
+[1m[92m   Compiling[0m is-macro v0.3.5
+[1m[92m   Compiling[0m string_enum v1.0.2
+[1m[92m   Compiling[0m der_derive v0.7.3
+[1m[92m   Compiling[0m capacity_builder v0.5.0
+[1m[92m   Compiling[0m icu_normalizer v1.5.0
+[1m[92m   Compiling[0m which v6.0.1
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m idna_adapter v1.2.0
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m idna v1.1.0
+[1m[92m   Compiling[0m pin-project v1.1.5
+[1m[92m   Compiling[0m diplomat v0.15.0
+[1m[92m   Compiling[0m calendrical_calculations v0.2.4
+[1m[92m   Compiling[0m resb v0.1.2
+[1m[92m   Compiling[0m url v2.5.7
+[1m[92m   Compiling[0m icu_locale v2.2.0
+[1m[92m   Compiling[0m bincode v1.3.3
+[1m[92m   Compiling[0m zoneinfo64 v0.3.0
+[1m[92m   Compiling[0m timezone_provider v0.2.3
+[1m[92m   Compiling[0m chrono v0.4.42
+[1m[92m   Compiling[0m block-padding v0.3.3
+[1m[92m   Compiling[0m inout v0.1.3
+[1m[92m   Compiling[0m icu_calendar v2.2.1
+[1m[92m   Compiling[0m sourcemap v9.2.0
+[1m[92m   Compiling[0m cipher v0.4.4
+[1m[92m   Compiling[0m sha2 v0.10.8
+[1m[92m   Compiling[0m deno_features v0.43.0 (/var/tmp/hokuto/deno-63/build/runtime/features)
+[1m[92m   Compiling[0m swc_config_macro v1.0.1
+[1m[92m   Compiling[0m bytes-str v0.2.7
+[1m[92m   Compiling[0m triomphe v0.1.13
+[1m[92m   Compiling[0m phf v0.11.2
+[1m[92m   Compiling[0m hstr v3.0.3
+[1m[92m   Compiling[0m hmac v0.12.1
+[1m[92m   Compiling[0m prost-derive v0.13.3
+[1m[92m   Compiling[0m temporal_rs v0.2.3
+[1m[92m   Compiling[0m async-stream-impl v0.3.5
+[1m[92m   Compiling[0m swc_atoms v9.0.0
+[1m[92m   Compiling[0m swc_sourcemap v9.3.4
+[1m[92m   Compiling[0m deno_error v0.7.1
+[1m[92m   Compiling[0m deno_unsync v0.4.4
+[1m[92m   Compiling[0m tokio-util v0.7.16
+[1m[92m   Compiling[0m aes v0.8.3
+[1m[92m   Compiling[0m deno_path_util v0.6.4
+[1m[92m   Compiling[0m wasm_dep_analyzer v0.4.0
+[1m[92m   Compiling[0m temporal_capi v0.2.3
+[1m[92m   Compiling[0m rustls-pki-types v1.12.0
+[1m[92m   Compiling[0m v8 v147.2.1
+[1m[92m   Compiling[0m swc_ecma_codegen_macros v2.0.2
+[1m[92m   Compiling[0m dashmap v5.5.3
+[1m[92m   Compiling[0m bytemuck_derive v1.10.2
+[1m[92m   Compiling[0m swc_common v17.0.1
+[1m[92m   Compiling[0m libsqlite3-sys v0.35.0
+[1m[92m   Compiling[0m pbkdf2 v0.12.2
+[1m[92m   Compiling[0m salsa20 v0.10.2
+[1m[92m   Compiling[0m der v0.7.9
+[1m[92m   Compiling[0m enum-as-inner v0.6.0
+[1m[92m   Compiling[0m scrypt v0.11.0
+[1m[92m   Compiling[0m cbc v0.1.2
+[1m[92m   Compiling[0m swc_ecma_transforms_macros v1.0.1
+[1m[92m   Compiling[0m flate2 v1.0.35
+[1m[92m   Compiling[0m ipnetwork v0.20.0
+[1m[92m   Compiling[0m zerocopy v0.8.27
+[1m[92m   Compiling[0m fqdn v0.5.2
+[1m[92m   Compiling[0m try-lock v0.2.5
+[1m[92m   Compiling[0m which v8.0.0
+[1m[92m   Compiling[0m spki v0.7.3
+[1m[92m   Compiling[0m want v0.3.1
+[1m[92m   Compiling[0m pkcs5 v0.7.1
+[1m[92m   Compiling[0m rustc_version v0.4.0
+[1m[92m   Compiling[0m swc_ecma_ast v18.0.0
+[1m[92m   Compiling[0m pkcs8 v0.10.2
+[1m[92m   Compiling[0m atomic-waker v1.1.2
+[1m[92m   Compiling[0m num-conv v0.2.0
+[1m[92m   Compiling[0m ref-cast v1.0.22
+[1m[92m   Compiling[0m httpdate v1.0.3
+[1m[92m   Compiling[0m time-core v0.1.8
+[1m[92m   Compiling[0m heapless v0.8.0
+[1m[92m   Compiling[0m cranelift-isle v0.116.1
+[1m[92m   Compiling[0m time-macros v0.2.27
+[1m[92m   Compiling[0m h2 v0.4.7
+[1m[92m   Compiling[0m curve25519-dalek v4.1.3
+[1m[92m   Compiling[0m sha1 v0.10.6
+[1m[92m   Compiling[0m zerocopy-derive v0.8.27
+[1m[92m   Compiling[0m deno_permissions v0.105.0 (/var/tmp/hokuto/deno-63/build/runtime/permissions)
+[1m[92m   Compiling[0m axum v0.7.5
+[1m[92m   Compiling[0m socket2 v0.5.5
+[1m[92m   Compiling[0m encoding_rs v0.8.35
+[1m[92m   Compiling[0m unicode-xid v0.2.6
+[1m[92m   Compiling[0m cranelift-codegen-shared v0.116.1
+[1m[92m   Compiling[0m ash v0.38.0+1.3.281
+[1m[92m   Compiling[0m target-lexicon v0.13.2
+[1m[92m   Compiling[0m icu_properties_data v2.2.0
+[1m[92m   Compiling[0m cranelift-codegen-meta v0.116.1
+[1m[92m   Compiling[0m synstructure v0.12.6
+[1m[92m   Compiling[0m rand_core v0.9.3
+[1m[92m   Compiling[0m ref-cast-impl v1.0.22
+[1m[92m   Compiling[0m http-body-util v0.1.3
+[1m[92m   Compiling[0m ryu-js v1.0.1
+[1m[92m   Compiling[0m num-bigint-dig v0.8.6
+[1m[92m   Compiling[0m asn1-rs-derive v0.4.0
+[1m[92m   Compiling[0m rand_chacha v0.9.0
+[1m[92m   Compiling[0m hyper v1.6.0
+[1m[92m   Compiling[0m cranelift-codegen v0.116.1
+[1m[92m   Compiling[0m asn1-rs-impl v0.1.0
+[1m[92m   Compiling[0m hybrid-array v0.4.7
+[1m[92m   Compiling[0m curve25519-dalek-derive v0.1.1
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.18
+[1m[92m   Compiling[0m num_cpus v1.16.0
+[1m[92m   Compiling[0m naga v28.0.0
+[1m[92m   Compiling[0m par-core v2.0.0
+[1m[92m   Compiling[0m khronos-egl v6.0.0
+[1m[92m   Compiling[0m data-url v0.3.1
+[1m[92m   Compiling[0m tower-layer v0.3.3
+[1m[92m   Compiling[0m deno_maybe_sync v0.33.0 (/var/tmp/hokuto/deno-63/build/libs/maybe_sync)
+[1m[92m   Compiling[0m rand v0.9.2
+[1m[92m   Compiling[0m hyper-util v0.1.17
+[1m[92m   Compiling[0m signature v2.2.0
+[1m[92m   Compiling[0m lazy-regex-proc_macros v3.1.0
+[1m[92m   Compiling[0m zstd-sys v2.0.15+zstd.1.5.7
+[1m[92m   Compiling[0m alloc-no-stdlib v2.0.4
+[1m[92m   Compiling[0m base16ct v0.2.0
+[1m[92m   Compiling[0m serde_v8 v0.308.0 (/var/tmp/hokuto/deno-63/build/libs/serde_v8)
+[1m[92m   Compiling[0m tinyvec_macros v0.1.1
+[1m[92m   Compiling[0m denokv_proto v0.13.0
+[1m[92m   Compiling[0m tinyvec v1.6.0
+[1m[92m   Compiling[0m serdect v0.2.0
+[1m[92m   Compiling[0m alloc-stdlib v0.2.2
+[1m[92m   Compiling[0m crossbeam-channel v0.5.15
+[1m[92m   Compiling[0m aws-lc-sys v0.39.0
+[1m[92m   Compiling[0m deno_core v0.399.0 (/var/tmp/hokuto/deno-63/build/libs/core)
+[1m[92m   Compiling[0m ff v0.13.0
+[1m[92m   Compiling[0m wgpu-hal v28.0.0
+[1m[92m   Compiling[0m nix v0.29.0
+[1m[92m   Compiling[0m monch v0.5.0
+[1m[92m   Compiling[0m oid-registry v0.6.1
+[1m[92m   Compiling[0m typeid v1.0.3
+[1m[92m   Compiling[0m utf8parse v0.2.1
+[1m[92m   Compiling[0m sync_wrapper v1.0.1
+[1m[92m   Compiling[0m group v0.13.0
+[1m[92m   Compiling[0m brotli-decompressor v4.0.1
+[1m[92m   Compiling[0m sec1 v0.7.3
+[1m[92m   Compiling[0m swc_ecma_parser v27.0.7
+[1m[92m   Compiling[0m swc_ecma_visit v18.0.1
+[1m[92m   Compiling[0m hkdf v0.12.4
+[1m[92m   Compiling[0m crypto-bigint v0.5.5
+[1m[92m   Compiling[0m spin v0.9.8
+[1m[92m   Compiling[0m bindgen v0.71.1
+[1m[92m   Compiling[0m const-oid v0.10.2
+[1m[92m   Compiling[0m der v0.8.0
+[1m[92m   Compiling[0m brotli v6.0.0
+[1m[92m   Compiling[0m elliptic-curve v0.13.8
+[1m[92m   Compiling[0m lazy_static v1.5.0
+[1m[92m   Compiling[0m crypto-common v0.2.1
+[1m[92m   Compiling[0m rustls-pemfile v2.1.2
+[1m[92m   Compiling[0m rfc6979 v0.4.0
+[1m[92m   Compiling[0m libffi-sys v4.1.0
+[1m[92m   Compiling[0m lcms2-sys v4.0.5
+[1m[92m   Compiling[0m nom v5.1.3
+[1m[92m   Compiling[0m rustc-hash v1.1.0
+[1m[92m   Compiling[0m openssl-probe v0.1.5
+[1m[92m   Compiling[0m fixedbitset v0.5.7
+[1m[92m   Compiling[0m match_cfg v0.1.0
+[1m[92m   Compiling[0m zstd-safe v7.2.4
+[1m[92m   Compiling[0m hostname v0.3.1
+[1m[92m   Compiling[0m rustls-native-certs v0.7.0
+[1m[92m   Compiling[0m vsock v0.5.1
+[1m[92m   Compiling[0m petgraph v0.7.1
+[1m[92m   Compiling[0m deno_media_type v0.4.0
+[1m[92m   Compiling[0m block-buffer v0.12.0
+[1m[92m   Compiling[0m crossbeam-deque v0.8.5
+[1m[92m   Compiling[0m prost v0.13.3
+[1m[92m   Compiling[0m async-stream v0.3.5
+[1m[92m   Compiling[0m derive-io v0.4.1
+[1m[92m   Compiling[0m tokio-stream v0.1.16
+[1m[92m   Compiling[0m auto_impl v1.2.0
+[1m[92m   Compiling[0m castaway v0.2.3
+[1m[92m   Compiling[0m ipnet v2.9.0
+[1m[92m   Compiling[0m base32 v0.5.1
+[1m[92m   Compiling[0m tagptr v0.2.0
+[1m[92m   Compiling[0m quick-error v1.2.3
+[1m[92m   Compiling[0m cmov v0.5.2
+[1m[92m   Compiling[0m pathdiff v0.2.1
+[1m[92m   Compiling[0m siphasher v1.0.1
+[1m[92m   Compiling[0m hickory-proto v0.25.2
+[1m[92m   Compiling[0m fastbloom v0.14.1
+[1m[92m   Compiling[0m ctutils v0.4.0
+[1m[92m   Compiling[0m resolv-conf v0.7.0
+[1m[92m   Compiling[0m swc_ecma_utils v24.0.0
+[1m[92m   Compiling[0m compact_str v0.7.1
+[1m[92m   Compiling[0m digest v0.11.1
+[1m[92m   Compiling[0m tokio-vsock v0.7.1
+[1m[92m   Compiling[0m deno_native_certs v0.3.0
+[1m[92m   Compiling[0m spki v0.8.0-rc.4
+[1m[92m   Compiling[0m ecdsa v0.16.9
+[1m[92m   Compiling[0m rustls-webpki v0.102.8
+[1m[92m   Compiling[0m bytemuck v1.24.0
+[1m[92m   Compiling[0m webpki-roots v0.26.1
+[1m[92m   Compiling[0m swc_config v3.1.2
+[1m[92m   Compiling[0m swc_allocator v4.0.1
+[1m[92m   Compiling[0m text_lines v0.6.0
+[1m[92m   Compiling[0m foreign-types-macros v0.2.3
+[1m[92m   Compiling[0m os_pipe v1.2.1
+[1m[92m   Compiling[0m wgpu-core v28.0.0
+[1m[92m   Compiling[0m ascii v1.1.0
+[1m[92m   Compiling[0m swc_bundler v35.0.0
+[1m[92m   Compiling[0m powerfmt v0.2.0
+[1m[92m   Compiling[0m lru-slab v0.1.2
+[1m[92m   Compiling[0m crc-catalog v1.1.1
+[1m[92m   Compiling[0m hashbrown v0.12.3
+[1m[92m   Compiling[0m macro_rules_attribute-proc_macro v0.2.2
+[1m[92m   Compiling[0m deranged v0.5.6
+[1m[92m   Compiling[0m crc v2.1.0
+[1m[92m   Compiling[0m swc_ecma_codegen v20.0.2
+[1m[92m   Compiling[0m pkcs8 v0.11.0-rc.11
+[1m[92m   Compiling[0m rayon v1.11.0
+[1m[92m   Compiling[0m deno_signals v0.37.0 (/var/tmp/hokuto/deno-63/build/ext/signals)
+[1m[92m   Compiling[0m swc_graph_analyzer v14.0.1
+[1m[92m   Compiling[0m swc_ecma_transforms_base v30.0.1
+[1m[92m   Compiling[0m swc_ecma_lexer v26.0.0
+[1m[92m   Compiling[0m hickory-resolver v0.25.2
+[1m[92m   Compiling[0m deno_io v0.156.0 (/var/tmp/hokuto/deno-63/build/ext/io)
+[1m[92m   Compiling[0m swc_ecma_loader v17.0.0
+[1m[92m   Compiling[0m swc_ecma_transforms_react v33.0.0
+[1m[92m   Compiling[0m libnghttp2 v1.68.0
+[1m[92m   Compiling[0m swc_ecma_transforms_classes v30.0.0
+[1m[92m   Compiling[0m swc_ecma_transforms_optimization v32.0.0
+[1m[92m   Compiling[0m deno_semver v0.9.1
+[1m[92m   Compiling[0m primeorder v0.13.6
+[1m[92m   Compiling[0m universal-hash v0.5.1
+[1m[92m   Compiling[0m hashlink v0.10.0
+[1m[92m   Compiling[0m rustcrypto-ff v0.14.0-rc.0
+[1m[92m   Compiling[0m simdutf8 v0.1.5
+[1m[92m   Compiling[0m relative-path v1.9.2
+[1m[92m   Compiling[0m radix_fmt v1.0.0
+[1m[92m   Compiling[0m fallible-iterator v0.3.0
+[1m[92m   Compiling[0m cpubits v0.1.0
+[1m[92m   Compiling[0m cranelift-bitset v0.116.1
+[1m[92m   Compiling[0m mime v0.3.17
+[1m[92m   Compiling[0m litrs v0.4.1
+[1m[92m   Compiling[0m base16ct v1.0.0
+[1m[92m   Compiling[0m base64 v0.21.7
+[1m[92m   Compiling[0m fallible-streaming-iterator v0.1.9
+[1m[92m   Compiling[0m opaque-debug v0.3.1
+[1m[92m   Compiling[0m polyval v0.6.2
+[1m[92m   Compiling[0m sec1 v0.8.0-rc.13
+[1m[92m   Compiling[0m document-features v0.2.10
+[1m[92m   Compiling[0m axum-core v0.4.5
+[1m[92m   Compiling[0m cranelift-entity v0.116.1
+[1m[92m   Compiling[0m crypto-bigint v0.7.0-rc.28
+[1m[92m   Compiling[0m dprint-swc-ext v0.26.0
+[1m[92m   Compiling[0m rustcrypto-group v0.14.0-rc.0
+[1m[92m   Compiling[0m swc_ecma_transforms_typescript v33.0.0
+[1m[92m   Compiling[0m swc_ecma_transforms_proposal v30.0.0
+[1m[92m   Compiling[0m deno_fs v0.156.0 (/var/tmp/hokuto/deno-63/build/ext/fs)
+[1m[92m   Compiling[0m time v0.3.47
+[1m[92m   Compiling[0m tower v0.4.13
+[1m[92m   Compiling[0m async-compression v0.4.11
+[1m[92m   Compiling[0m opentelemetry v0.27.0
+[1m[92m   Compiling[0m ctr v0.9.2
+[1m[92m   Compiling[0m aead v0.5.2
+[1m[92m   Compiling[0m dlopen2_derive v0.4.0
+[1m[92m   Compiling[0m num-iter v0.1.44
+[1m[92m   Compiling[0m rusticata-macros v4.1.0
+[1m[92m   Compiling[0m hex v0.4.3
+[1m[92m   Compiling[0m arbitrary v1.4.1
+[1m[92m   Compiling[0m matchit v0.7.3
+[1m[92m   Compiling[0m asn1-rs v0.5.2
+[1m[92m   Compiling[0m cranelift-control v0.116.1
+[1m[92m   Compiling[0m tower-http v0.6.1
+[1m[92m   Compiling[0m deno_ast v0.53.1
+[1m[92m   Compiling[0m half v2.7.1
+[1m[92m   Compiling[0m elliptic-curve v0.14.0-rc.28
+[1m[92m   Compiling[0m cranelift-bforest v0.116.1
+[1m[92m   Compiling[0m ghash v0.5.1
+[1m[92m   Compiling[0m deno_package_json v0.48.0 (/var/tmp/hokuto/deno-63/build/libs/package_json)
+[1m[92m   Compiling[0m hash32 v0.3.1
+[1m[92m   Compiling[0m signature v3.0.0-rc.10
+[1m[92m   Compiling[0m tower v0.5.2
+[1m[92m   Compiling[0m hyper-timeout v0.5.2
+[1m[92m   Compiling[0m regalloc2 v0.11.1
+[1m[92m   Compiling[0m tokio-socks v0.5.1
+[1m[92m   Compiling[0m web-transport-proto v0.2.7
+[1m[92m   Compiling[0m gimli v0.31.1
+[1m[92m   Compiling[0m gpu-descriptor-types v0.2.0
+[1m[92m   Compiling[0m spirv v0.3.0+sdk-1.3.268.0
+[1m[92m   Compiling[0m arrayvec v0.7.4
+[1m[92m   Compiling[0m codespan-reporting v0.12.0
+[1m[92m   Compiling[0m deno_napi v0.177.0 (/var/tmp/hokuto/deno-63/build/ext/napi)
+[1m[92m   Compiling[0m presser v0.3.1
+[1m[92m   Compiling[0m bitflags v1.3.2
+[1m[92m   Compiling[0m dyn-clone v1.0.17
+[1m[92m   Compiling[0m same-file v1.0.6
+[1m[92m   Compiling[0m utf-8 v0.7.6
+[1m[92m   Compiling[0m error_reporter v1.0.0
+[1m[92m   Compiling[0m hexf-parse v0.2.1
+[1m[92m   Compiling[0m simd-adler32 v0.3.7
+[1m[92m   Compiling[0m keccak v0.2.0-rc.2
+[1m[92m   Compiling[0m fastwebsockets v0.8.1
+[1m[92m   Compiling[0m sha3 v0.11.0-rc.8
+[1m[92m   Compiling[0m walkdir v2.5.0
+[1m[92m   Compiling[0m gpu-descriptor v0.3.2
+[1m[92m   Compiling[0m tonic v0.12.3
+[1m[92m   Compiling[0m ed448 v0.5.0-rc.5
+[1m[92m   Compiling[0m hash2curve v0.14.0-rc.10
+[1m[92m   Compiling[0m icu_properties v2.2.0
+[1m[92m   Compiling[0m opentelemetry_sdk v0.27.1
+[1m[92m   Compiling[0m wgpu-types v28.0.0
+[1m[92m   Compiling[0m pkcs1 v0.7.5
+[1m[92m   Compiling[0m napi_sym v0.176.0 (/var/tmp/hokuto/deno-63/build/ext/napi/sym)
+[1m[92m   Compiling[0m color-print-proc-macro v0.3.5
+[1m[92m   Compiling[0m halfbrown v0.2.5
+[1m[92m   Compiling[0m http v0.2.12
+[1m[92m   Compiling[0m ordered-float v4.6.0
+[1m[92m   Compiling[0m float-cmp v0.9.0
+[1m[92m   Compiling[0m bstr v1.9.1
+[1m[92m   Compiling[0m fastrand v2.3.0
+[1m[92m   Compiling[0m keccak v0.1.6
+[1m[92m   Compiling[0m adler v1.0.2
+[1m[92m   Compiling[0m raw-window-handle v0.6.2
+[1m[92m   Compiling[0m yansi v1.0.1
+[1m[92m   Compiling[0m diff v0.1.13
+[1m[92m   Compiling[0m glow v0.16.0
+[1m[92m   Compiling[0m twox-hash v2.1.0
+[1m[92m   Compiling[0m profiling v1.0.15
+[1m[92m   Compiling[0m pretty_assertions v1.4.1
+[1m[92m   Compiling[0m miniz_oxide v0.7.2
+[1m[92m   Compiling[0m opentelemetry-proto v0.27.0
+[1m[92m   Compiling[0m sha3 v0.10.8
+[1m[92m   Compiling[0m globset v0.4.14
+[1m[92m   Compiling[0m value-trait v0.10.0
+[1m[92m   Compiling[0m rsa v0.9.10
+[1m[92m   Compiling[0m urlpattern v0.4.2
+[1m[92m   Compiling[0m faster-hex v0.10.0
+[1m[92m   Compiling[0m ed448-goldilocks v0.14.0-pre.10
+[1m[92m   Compiling[0m fdeflate v0.3.4
+[1m[92m   Compiling[0m x25519-dalek v2.0.1
+[1m[92m   Compiling[0m der-parser v8.2.0
+[1m[92m   Compiling[0m opentelemetry-http v0.27.0
+[1m[92m   Compiling[0m p384 v0.13.0
+[1m[92m   Compiling[0m p521 v0.13.3
+[1m[92m   Compiling[0m p256 v0.13.2
+[1m[92m   Compiling[0m lazy-regex v3.1.0
+[1m[92m   Compiling[0m ed25519 v2.2.3
+[1m[92m   Compiling[0m netif v0.1.6
+[1m[92m   Compiling[0m errno v0.2.8
+[1m[92m   Compiling[0m thread_local v1.1.8
+[1m[92m   Compiling[0m weezl v0.1.8
+[1m[92m   Compiling[0m zune-core v0.4.12
+[1m[92m   Compiling[0m foreign-types-shared v0.3.1
+[1m[92m   Compiling[0m cache_control v0.2.0
+[1m[92m   Compiling[0m path-clean v0.1.0
+[1m[92m   Compiling[0m byteorder-lite v0.1.0
+[1m[92m   Compiling[0m quick-error v2.0.1
+[1m[92m   Compiling[0m wtf8 v0.1.0
+[1m[92m   Compiling[0m color_quant v1.1.0
+[1m[92m   Compiling[0m zune-jpeg v0.4.13
+[1m[92m   Compiling[0m v8_valueserializer v0.1.1
+[1m[92m   Compiling[0m gif v0.13.1
+[1m[92m   Compiling[0m image-webp v0.2.4
+[1m[92m   Compiling[0m node_resolver v0.84.0 (/var/tmp/hokuto/deno-63/build/libs/node_resolver)
+[1m[92m   Compiling[0m foreign-types v0.5.0
+[1m[92m   Compiling[0m gpu-allocator v0.28.0
+[1m[92m   Compiling[0m ignore v0.4.20
+[1m[92m   Compiling[0m exec v0.3.1
+[1m[92m   Compiling[0m deno_os v0.63.0 (/var/tmp/hokuto/deno-63/build/ext/os)
+[1m[92m   Compiling[0m ed25519-dalek v2.1.1
+[1m[92m   Compiling[0m opentelemetry-otlp v0.27.0
+[1m[92m   Compiling[0m x509-parser v0.15.1
+[1m[92m   Compiling[0m png v0.17.13
+[1m[92m   Compiling[0m deno_web v0.277.0 (/var/tmp/hokuto/deno-63/build/ext/web)
+[1m[92m   Compiling[0m ron v0.12.0
+[1m[92m   Compiling[0m simd-json v0.14.0
+[1m[92m   Compiling[0m denort_helper v0.44.0 (/var/tmp/hokuto/deno-63/build/ext/rt_helper)
+[1m[92m   Compiling[0m h2 v0.3.26
+[1m[92m   Compiling[0m http-body v0.4.6
+[1m[92m   Compiling[0m deno_subprocess_windows v0.41.0 (/var/tmp/hokuto/deno-63/build/runtime/subprocess_windows)
+[1m[92m   Compiling[0m tempfile v3.10.1
+[1m[92m   Compiling[0m aead-gcm-stream v0.4.0
+[1m[92m   Compiling[0m dsa v0.6.3
+[1m[92m   Compiling[0m hdrhistogram v7.5.4
+[1m[92m   Compiling[0m deno_lockfile v0.48.0 (/var/tmp/hokuto/deno-63/build/libs/lockfile)
+[1m[92m   Compiling[0m p224 v0.13.2
+[1m[92m   Compiling[0m macro_rules_attribute v0.2.2
+[1m[92m   Compiling[0m k256 v0.13.3
+[1m[92m   Compiling[0m anstyle-parse v0.2.3
+[1m[92m   Compiling[0m import_map v0.25.0
+[1m[92m   Compiling[0m cranelift-frontend v0.116.1
+[1m[92m   Compiling[0m des v0.8.1
+[1m[92m   Compiling[0m ecb v0.1.2
+[1m[92m   Compiling[0m nibble_vec v0.1.0
+[1m[92m   Compiling[0m jsonc-parser v0.32.1
+[1m[92m   Compiling[0m md-5 v0.10.6
+[1m[92m   Compiling[0m md4 v0.10.2
+[1m[92m   Compiling[0m ripemd v0.1.3
+[1m[92m   Compiling[0m sm3 v0.4.2
+[1m[92m   Compiling[0m blake2 v0.10.6
+[1m[92m   Compiling[0m deno_node v0.184.0 (/var/tmp/hokuto/deno-63/build/ext/node)
+[1m[92m   Compiling[0m ordered-float v2.10.1
+[1m[92m   Compiling[0m inotify-sys v0.1.5
+[1m[92m   Compiling[0m is_terminal_polyfill v1.70.1
+[1m[92m   Compiling[0m anstyle v1.0.8
+[1m[92m   Compiling[0m anstyle-query v1.0.2
+[1m[92m   Compiling[0m opentelemetry-semantic-conventions v0.27.0
+[1m[92m   Compiling[0m endian-type v0.1.2
+[1m[92m   Compiling[0m colorchoice v1.0.0
+[1m[92m   Compiling[0m anstream v0.6.15
+[1m[92m   Compiling[0m radix_trie v0.2.1
+[1m[92m   Compiling[0m wgpu-core-deps-windows-linux-android v28.0.0
+[1m[92m   Compiling[0m inotify v0.9.6
+[1m[92m   Compiling[0m serde-value v0.7.0
+[1m[92m   Compiling[0m hyper v0.14.28
+[1m[92m   Compiling[0m deno_config v0.96.0 (/var/tmp/hokuto/deno-63/build/libs/config)
+[1m[92m   Compiling[0m cranelift v0.116.1
+[1m[92m   Compiling[0m libffi v5.1.0
+[1m[92m   Compiling[0m cranelift-native v0.116.1
+[1m[92m   Compiling[0m deno_npm v0.58.0 (/var/tmp/hokuto/deno-63/build/libs/npm)
+[1m[92m   Compiling[0m tokio-eld v0.2.0
+[1m[92m   Compiling[0m deno_process v0.61.0 (/var/tmp/hokuto/deno-63/build/ext/process)
+[1m[92m   Compiling[0m saffron v0.1.0
+[1m[92m   Compiling[0m image v0.25.4
+[1m[92m   Compiling[0m node_shim v0.21.0 (/var/tmp/hokuto/deno-63/build/libs/node_shim)
+[1m[92m   Compiling[0m deno_cache_dir v0.38.0 (/var/tmp/hokuto/deno-63/build/libs/cache_dir)
+[1m[92m   Compiling[0m lcms2 v6.1.0
+[1m[92m   Compiling[0m denokv_remote v0.13.0
+[1m[92m   Compiling[0m deno_inspector_server v0.20.0 (/var/tmp/hokuto/deno-63/build/libs/inspector_server)
+[1m[92m   Compiling[0m aes-gcm v0.10.3
+[1m[92m   Compiling[0m dlopen2 v0.6.1
+[1m[92m   Compiling[0m ocb3 v0.1.0
+[1m[92m   Compiling[0m deno_npmrc v0.7.0 (/var/tmp/hokuto/deno-63/build/libs/npmrc)
+[1m[92m   Compiling[0m webpki-root-certs v0.26.6
+[1m[92m   Compiling[0m deno_dotenv v0.15.0 (/var/tmp/hokuto/deno-63/build/libs/dotenv)
+[1m[92m   Compiling[0m aes-kw v0.2.1
+[1m[92m   Compiling[0m fd-lock v4.0.2
+[1m[92m   Compiling[0m imara-diff v0.2.0
+[1m[92m   Compiling[0m twox-hash v1.6.3
+[1m[92m   Compiling[0m memmap2 v0.9.5
+[1m[92m   Compiling[0m deno_whoami v0.1.0
+[1m[92m   Compiling[0m errno v0.3.10
+[1m[92m   Compiling[0m mio v0.8.11
+[1m[92m   Compiling[0m itertools v0.14.0
+[1m[92m   Compiling[0m libloading v0.7.4
+[1m[92m   Compiling[0m async-once-cell v0.5.4
+[1m[92m   Compiling[0m unicode-segmentation v1.11.0
+[1m[92m   Compiling[0m rustyline v17.0.0
+[1m[92m   Compiling[0m deno_resolver v0.77.0 (/var/tmp/hokuto/deno-63/build/libs/resolver)
+[1m[92m   Compiling[0m rusqlite v0.37.0
+[1m[92m   Compiling[0m notify v6.1.1
+[1m[92m   Compiling[0m deno_ffi v0.233.0 (/var/tmp/hokuto/deno-63/build/ext/ffi)
+[1m[92m   Compiling[0m denokv_sqlite v0.13.0
+[1m[92m   Compiling[0m deno_node_sqlite v0.16.0 (/var/tmp/hokuto/deno-63/build/ext/node_sqlite)
+[1m[92m   Compiling[0m deno_webstorage v0.241.0 (/var/tmp/hokuto/deno-63/build/ext/webstorage)
+[1m[92m   Compiling[0m deno_cache v0.179.0 (/var/tmp/hokuto/deno-63/build/ext/cache)
+[1m[33mwarning[0m[1m: direct cast of function item into an integer[0m
+   [1m[94m--> [0mext/ffi/turbocall.rs:232:60
+    [1m[94m|[0m
+[1m[94m232[0m [1m[94m|[0m       let trace_fn = f.ins().iconst(ISIZE, turbocall_trace as usize as i64);
+    [1m[94m|[0m                                                            [1m[33m^^^^^^^^[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: `#[warn(function_casts_as_integer)]` on by default
+[1m[96mhelp[0m: first cast to a pointer `as *const ()`
+    [1m[94m|[0m
+[1m[94m232[0m [1m[94m| [0m      let trace_fn = f.ins().iconst(ISIZE, turbocall_trace[92m as *const ()[0m as usize as i64);
+    [1m[94m|[0m                                                            [92m++++++++++++[0m
 
-Caused by:
-  download of config.json failed
+[1m[33mwarning[0m[1m: direct cast of function item into an integer[0m
+   [1m[94m--> [0mext/ffi/turbocall.rs:258:57
+    [1m[94m|[0m
+[1m[94m258[0m [1m[94m|[0m             f.ins().iconst(ISIZE, turbocall_ab_contents as usize as i64);
+    [1m[94m|[0m                                                         [1m[33m^^^^^^^^[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: first cast to a pointer `as *const ()`
+    [1m[94m|[0m
+[1m[94m258[0m [1m[94m| [0m            f.ins().iconst(ISIZE, turbocall_ab_contents[92m as *const ()[0m as usize as i64);
+    [1m[94m|[0m                                                         [92m++++++++++++[0m
 
-Caused by:
-  failed to download from `https://index.crates.io/config.json`
+[1m[33mwarning[0m[1m: direct cast of function item into an integer[0m
+   [1m[94m--> [0mext/ffi/turbocall.rs:304:58
+    [1m[94m|[0m
+[1m[94m304[0m [1m[94m|[0m       let callee = f.ins().iconst(ISIZE, turbocall_raise as usize as i64);
+    [1m[94m|[0m                                                          [1m[33m^^^^^^^^[0m
+    [1m[94m|[0m
+[1m[96mhelp[0m: first cast to a pointer `as *const ()`
+    [1m[94m|[0m
+[1m[94m304[0m [1m[94m| [0m      let callee = f.ins().iconst(ISIZE, turbocall_raise[92m as *const ()[0m as usize as i64);
+    [1m[94m|[0m                                                          [92m++++++++++++[0m
 
-Caused by:
-  [28] Timeout was reached (Connection timed out after 30031 milliseconds)
+[1m[92m   Compiling[0m rustls-webpki v0.103.3
+[1m[92m   Compiling[0m deno_crypto v0.260.0 (/var/tmp/hokuto/deno-63/build/ext/crypto)
+[1m[92m   Compiling[0m deno_webgpu v0.213.0 (/var/tmp/hokuto/deno-63/build/ext/webgpu)
+[1m[92m   Compiling[0m deno_graph v0.107.1
+[1m[92m   Compiling[0m zstd v0.13.2
+[1m[92m   Compiling[0m deno_image v0.22.0 (/var/tmp/hokuto/deno-63/build/ext/image)
+[1m[92m   Compiling[0m deno_cron v0.126.0 (/var/tmp/hokuto/deno-63/build/ext/cron)
+[1m[92m   Compiling[0m deno_bundle_runtime v0.33.0 (/var/tmp/hokuto/deno-63/build/ext/bundle)
+[1m[92m   Compiling[0m color-print v0.3.5
+[1m[92m   Compiling[0m deno_webidl v0.246.0 (/var/tmp/hokuto/deno-63/build/ext/webidl)
+[1m[92m   Compiling[0m tokio-metrics v0.3.1
+[1m[92m   Compiling[0m rustls-tokio-stream v0.8.0
+[1m[92m   Compiling[0m quinn-proto v0.11.14
+[1m[92m   Compiling[0m tokio-rustls v0.26.0
+[1m[92m   Compiling[0m hyper-rustls v0.27.2
+[1m[92m   Compiling[0m deno_tls v0.233.0 (/var/tmp/hokuto/deno-63/build/ext/tls)
+[1m[92m   Compiling[0m deno_fetch v0.270.0 (/var/tmp/hokuto/deno-63/build/ext/fetch)
+[1m[92m   Compiling[0m deno_tunnel v0.8.1
+[1m[92m   Compiling[0m deno_kv v0.154.0 (/var/tmp/hokuto/deno-63/build/ext/kv)
+[1m[92m   Compiling[0m deno_net v0.238.0 (/var/tmp/hokuto/deno-63/build/ext/net)
+[1m[92m   Compiling[0m deno_websocket v0.251.0 (/var/tmp/hokuto/deno-63/build/ext/websocket)
+[1m[92m   Compiling[0m deno_telemetry v0.68.0 (/var/tmp/hokuto/deno-63/build/ext/telemetry)
+[1m[33mwarning[0m: `deno_ffi` (lib) generated 3 warnings (run `cargo fix --lib -p deno_ffi` to apply 3 suggestions)
+[1m[92m   Compiling[0m deno_http v0.244.0 (/var/tmp/hokuto/deno-63/build/ext/http)
+[1m[92m   Compiling[0m libdeflate-sys v1.25.2
+[1m[92m   Compiling[0m strsim v0.11.1
+[1m[92m   Compiling[0m unicode-width v0.1.13
+[1m[92m   Compiling[0m ident_case v1.0.1
+[1m[92m   Compiling[0m darling_core v0.20.10
+[1m[92m   Compiling[0m xattr v1.3.1
+[1m[92m   Compiling[0m terminal_size v0.4.1
+[1m[92m   Compiling[0m vte_generate_state_changes v0.1.1
+[1m[92m   Compiling[0m clap_lex v0.7.4
+[1m[92m   Compiling[0m clap_builder v4.5.56
+[1m[92m   Compiling[0m tar v0.4.45
+[1m[92m   Compiling[0m darling_macro v0.20.10
+[1m[92m   Compiling[0m clap_derive v4.5.55
+[1m[92m   Compiling[0m onig_sys v69.9.1
+[1m[92m   Compiling[0m option-ext v0.2.0
+[1m[92m   Compiling[0m ucd-trie v0.1.6
+[1m[92m   Compiling[0m pest v2.7.15
+[1m[92m   Compiling[0m clap v4.5.56
+[1m[92m   Compiling[0m darling v0.20.10
+[1m[92m   Compiling[0m libdeflater v1.25.2
+[1m[92m   Compiling[0m libdbus-sys v0.2.5
+[1m[92m   Compiling[0m debug-ignore v1.0.5
+[1m[92m   Compiling[0m borrow-or-share v0.2.4
+[1m[92m   Compiling[0m fluent-uri v0.4.1
+[1m[92m   Compiling[0m editpe v0.1.0
+[1m[92m   Compiling[0m deno_npm_cache v0.65.0 (/var/tmp/hokuto/deno-63/build/libs/npm_cache)
+[1m[92m   Compiling[0m derive_builder_core v0.20.2
+[1m[92m   Compiling[0m deno_crypto_provider v0.40.0 (/var/tmp/hokuto/deno-63/build/libs/crypto)
+[1m[92m   Compiling[0m deno_node_crypto v0.16.0 (/var/tmp/hokuto/deno-63/build/ext/node_crypto)
+[1m[92m   Compiling[0m pest_meta v2.7.15
+[1m[92m   Compiling[0m env_filter v0.1.3
+[1m[92m   Compiling[0m dprint-core v0.67.4
+[1m[92m   Compiling[0m caseless v0.2.1
+[1m[92m   Compiling[0m phf_codegen v0.11.3
+[1m[92m   Compiling[0m unicase v2.7.0
+[1m[92m   Compiling[0m dtoa v1.0.10
+[1m[92m   Compiling[0m bindgen v0.70.1
+[1m[92m   Compiling[0m deno_lib v0.64.0 (/var/tmp/hokuto/deno-63/build/cli/lib)
+[1m[92m   Compiling[0m humantime v2.1.0
+[1m[92m   Compiling[0m dtoa-short v0.3.5
+[1m[92m   Compiling[0m env_logger v0.11.6
+[1m[92m   Compiling[0m selectors v0.30.0
+[1m[92m   Compiling[0m pest_generator v2.7.15
+[1m[92m   Compiling[0m derive_builder_macro v0.20.2
+[1m[92m   Compiling[0m deno_npm_installer v0.41.0 (/var/tmp/hokuto/deno-63/build/libs/npm_installer)
+[1m[92m   Compiling[0m libsui v0.12.6
+[1m[92m   Compiling[0m dirs-sys v0.4.1
+[1m[92m   Compiling[0m vte v0.13.1
+[1m[92m   Compiling[0m tiny_pretty v0.2.0
+[1m[92m   Compiling[0m signal-hook-mio v0.2.4
+[1m[92m   Compiling[0m unicode-normalization v0.1.23
+[1m[92m   Compiling[0m num-rational v0.4.2
+[1m[92m   Compiling[0m dprint-core-macros v0.1.0
+[1m[92m   Compiling[0m derive_more-impl v2.0.1
+[1m[92m   Compiling[0m cssparser-macros v0.6.1
+[1m[92m   Compiling[0m num-complex v0.4.6
+[1m[92m   Compiling[0m winnow v0.6.26
+[1m[92m   Compiling[0m pulldown-cmark v0.11.2
+[1m[92m   Compiling[0m saa v5.5.0
+[1m[92m   Compiling[0m countme v3.0.1
+[1m[92m   Compiling[0m deunicode v1.4.3
+[1m[92m   Compiling[0m css_dataset v0.4.1
+[1m[92m   Compiling[0m zip v2.4.1
+[1m[92m   Compiling[0m sdd v4.6.3
+[1m[92m   Compiling[0m arc-swap v1.7.1
+[1m[92m   Compiling[0m unicode_categories v0.1.1
+[1m[92m   Compiling[0m text-size v1.1.1
+[1m[92m   Compiling[0m onig v6.5.1
+[1m[92m   Compiling[0m rowan v0.15.15
+[1m[92m   Compiling[0m slug v0.1.5
+[1m[92m   Compiling[0m scc v3.6.5
+[1m[92m   Compiling[0m num v0.4.2
+[1m[92m   Compiling[0m derive_more v2.0.1
+[1m[92m   Compiling[0m syntect v5.3.0
+[1m[92m   Compiling[0m cssparser v0.35.0
+[1m[92m   Compiling[0m console_static_text v0.8.3
+[1m[92m   Compiling[0m crossterm v0.28.1
+[1m[92m   Compiling[0m pest_derive v2.7.15
+[1m[92m   Compiling[0m dirs v5.0.1
+[1m[92m   Compiling[0m derive_builder v0.20.2
+[1m[92m   Compiling[0m dirs-sys v0.5.0
+[1m[92m   Compiling[0m vte v0.11.1
+[1m[92m   Compiling[0m asynchronous-codec v0.7.0
+[1m[92m   Compiling[0m crossbeam-queue v0.3.11
+[1m[92m   Compiling[0m raffia_macro v0.2.0
+[1m[33mwarning[0m: `deno_ffi` (lib) generated 3 warnings (3 duplicates)
+[1m[92m   Compiling[0m fxhash v0.2.1
+[1m[92m   Compiling[0m is-docker v0.2.0
+[1m[92m   Compiling[0m servo_arc v0.4.1
+[1m[92m   Compiling[0m typed-arena v2.0.2
+[1m[92m   Compiling[0m convert_case v0.4.0
+[1m[92m   Compiling[0m utf8-width v0.1.7
+[1m[92m   Compiling[0m shell-words v1.1.0
+[1m[92m   Compiling[0m precomputed-hash v0.1.1
+[1m[92m   Compiling[0m entities v1.0.1
+[1m[92m   Compiling[0m xdg v2.5.2
+[1m[92m   Compiling[0m is_executable v1.0.5
+[1m[92m   Compiling[0m derive_more v0.99.17
+[1m[92m   Compiling[0m clap_complete v4.5.65
+[1m[92m   Compiling[0m comrak v0.29.0
+[1m[92m   Compiling[0m raffia v0.12.2
+[1m[92m   Compiling[0m handlebars v6.1.0
+[1m[92m   Compiling[0m html-escape v0.2.13
+[1m[92m   Compiling[0m is-wsl v0.4.0
+[1m[92m   Compiling[0m strip-ansi-escapes v0.2.0
+[1m[92m   Compiling[0m zeromq v0.5.0
+[1m[92m   Compiling[0m dirs v6.0.0
+[1m[92m   Compiling[0m shellexpand v3.1.0
+[1m[92m   Compiling[0m yaml_parser v0.2.1
+[1m[92m   Compiling[0m ls-types v0.0.3
+[1m[92m   Compiling[0m deno_core_testing v0.0.0 (/var/tmp/hokuto/deno-63/build/libs/core_testing)
+[1m[92m   Compiling[0m jupyter-protocol v1.2.1
+[1m[92m   Compiling[0m dbus v0.9.7
+[1m[92m   Compiling[0m hashlink v0.8.4
+[1m[92m   Compiling[0m deno-tower-lsp-macros v0.12.0
+[1m[92m   Compiling[0m serde_repr v0.1.19
+[1m[92m   Compiling[0m rmp v0.8.14
+[1m[92m   Compiling[0m path-dedot v3.1.1
+[1m[92m   Compiling[0m quick-xml v0.31.0
+[1m[92m   Compiling[0m similar v2.7.0
+[1m[92m   Compiling[0m deno_task_shell v0.29.0
+[1m[92m   Compiling[0m dprint-plugin-markdown v0.20.0
+[1m[92m   Compiling[0m deno_typescript_go_client_rust v0.28.0 (/var/tmp/hokuto/deno-63/build/libs/typescript_go_client)
+[1m[92m   Compiling[0m libuv-sys-lite v1.48.3
+[1m[92m   Compiling[0m runtimelib v1.3.0
+[1m[92m   Compiling[0m deno_doc v0.197.0
+[1m[92m   Compiling[0m dbus-secret-service v4.0.3
+[1m[92m   Compiling[0m quick-junit v0.3.6
+[1m[92m   Compiling[0m eszip v0.124.0 (/var/tmp/hokuto/deno-63/build/libs/eszip)
+[1m[92m   Compiling[0m malva v0.15.2
+[1m[92m   Compiling[0m keyring v3.6.3
+[1m[92m   Compiling[0m deno_lint v0.83.0
+[1m[92m   Compiling[0m pretty_yaml v0.5.0
+[1m[92m   Compiling[0m dcore v0.1.0 (/var/tmp/hokuto/deno-63/build/libs/dcore)
+[1m[92m   Compiling[0m markup_fmt v0.27.0
+[1m[92m   Compiling[0m lol_html v2.6.0
+[1m[92m   Compiling[0m open v5.1.2
+[1m[92m   Compiling[0m clap_complete_fig v4.5.2
+[1m[92m   Compiling[0m sqlformat v0.3.5
+[1m[92m   Compiling[0m dprint-plugin-typescript v0.95.15
+[1m[92m   Compiling[0m dprint-plugin-jupyter v0.2.2
+[1m[92m   Compiling[0m dprint-plugin-json v0.21.3
+[1m[92m   Compiling[0m build-your-own-js-snapshot v0.1.0 (/var/tmp/hokuto/deno-63/build/libs/core/examples/snapshot)
+[1m[92m   Compiling[0m deno_runtime v0.254.0 (/var/tmp/hokuto/deno-63/build/runtime)
+[1m[92m   Compiling[0m file_test_runner v0.12.1
+[1m[92m   Compiling[0m fancy-regex v0.14.0
+[1m[92m   Compiling[0m esbuild_client v0.7.1
+[1m[92m   Compiling[0m serde_urlencoded v0.7.1
+[1m[92m   Compiling[0m rustyline-derive v0.11.1
+[1m[92m   Compiling[0m test_macro v0.2.0 (/var/tmp/hokuto/deno-63/build/tests/util/test_macro)
+[1m[92m   Compiling[0m weak-table v0.3.2
+[1m[92m   Compiling[0m locked-tripwire v0.1.1
+[1m[92m   Compiling[0m shell-escape v0.1.5
+[1m[92m   Compiling[0m test_napi v0.1.0 (/var/tmp/hokuto/deno-63/build/tests/napi)
+[1m[92m   Compiling[0m reqwest v0.12.5
+[1m[92m   Compiling[0m fastwebsockets v0.10.0
+[1m[92m   Compiling[0m test_util v0.1.0 (/var/tmp/hokuto/deno-63/build/tests/util/lib)
+[1m[92m   Compiling[0m bencher v0.1.5
+[1m[33mwarning[0m[1m: unused variable: `metrics_enabled`[0m
+  [1m[94m--> [0mruntime/tokio_util.rs:62:3
+   [1m[94m|[0m
+[1m[94m62[0m [1m[94m|[0m   metrics_enabled: bool,
+   [1m[94m|[0m   [1m[33m^^^^^^^^^^^^^^^[0m [1m[33mhelp: if this is intentional, prefix it with an underscore: `_metrics_enabled`[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
 
-Script done on 2026-04-23 01:19:51+07:00 [COMMAND_EXIT_CODE="101"]
+[1m[92m   Compiling[0m napi_sys v0.1.0 (/var/tmp/hokuto/deno-63/build/libs/napi_sys)
+[1m[92m   Compiling[0m deno_bench_util v0.240.0 (/var/tmp/hokuto/deno-63/build/tests/bench_util)
+[1m[92m   Compiling[0m serde_v8_utilities v0.15.0 (/var/tmp/hokuto/deno-63/build/libs/serde_v8/utilities)
+[1m[92m   Compiling[0m deno_tower_lsp v0.5.0
+[1m[92m   Compiling[0m deno_ops_compile_test_runner v0.2.0 (/var/tmp/hokuto/deno-63/build/libs/ops/compile_test_runner)
+[1m[92m   Compiling[0m deno_url v0.222.0 (/var/tmp/hokuto/deno-63/build/ext/url)
+[1m[92m   Compiling[0m test_ffi v0.1.0 (/var/tmp/hokuto/deno-63/build/tests/ffi)
+[1m[92m   Compiling[0m test_server v0.1.0 (/var/tmp/hokuto/deno-63/build/tests/util/server)
+[1m[33mwarning[0m: `deno_runtime` (lib) generated 1 warning (run `cargo fix --lib -p deno_runtime` to apply 1 suggestion)
+[1m[92m   Compiling[0m deno_snapshots v0.61.0 (/var/tmp/hokuto/deno-63/build/cli/snapshot)
+[1m[92m   Compiling[0m denort v2.7.13 (/var/tmp/hokuto/deno-63/build/cli/rt)
+[1m[92m   Compiling[0m deno v2.7.13 (/var/tmp/hokuto/deno-63/build/cli)
+[1m[33mwarning[0m: `deno_runtime` (lib) generated 1 warning (1 duplicate)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized + debuginfo]]8;;\ target(s) in 16m 23s
+
+Script done on 2026-04-23 01:55:11+07:00 [COMMAND_EXIT_CODE="0"]
