@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - Packages</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      color: #586e75;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      display: flex;
+      line-height: 1.5;
+    }
+
+    nav {
+      width: 200px;
+      padding: 40px 20px;
+      border-right: 1px dashed #93a1a1;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 900px;
+    }
+
+    .menu-item {
+      display: block;
+      margin-bottom: 20px;
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      color: #dc322f;
+      text-decoration: underline;
+    }
+
+    .menu-item.active {
+      color: #cb4b16;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .box {
+      border: 1px solid #93a1a1;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    #pkg-table th {
+      color: #268bd2;
+      text-align: left;
+      padding: 8px;
+      border-bottom: 2px solid #93a1a1;
+    }
+
+    #pkg-table td {
+      padding: 8px;
+      border-bottom: 1px dashed #93a1a1;
+      vertical-align: top;
+    }
+
+    a {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: #eee8d5;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div style="font-weight: bold; margin-bottom: 30px; color: #b58900;">[ sauzerOS ]</div>
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="bootstrap.html" class="menu-item">Bootstrap</a>
+    <a href="hokuto.html" class="menu-item">Hokuto</a>
+    <a href="packages.html" class="menu-item active">Packages</a>
+    <a href="https://github.com/sauzerOS" class="menu-item">GitHub</a>
+  </nav>
+  <main>
+    <div class="box">
+      <h1>Package Repository Index</h1>
+    </div>
+
+    <div class="section">
+      <p>Current status of packages in the sauzerOS repository:</p>
+      <table id="pkg-table" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+        <thead>
+          <tr>
+            <th>Package Name</th>
+            <th>Latest Version</th>
+            <th>Build Status</th>
+          </tr>
+        </thead>
+        <tbody id="pkg-body">
+          <tr>
+            <td colspan="3" style="text-align: center;">Loading package data...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      fetch('packages.json')
+        .then(response => response.json())
+        .then(data => {
+          const body = document.getElementById('pkg-body');
+          body.innerHTML = '';
+          if (data.length === 0) {
+            body.innerHTML = '<tr><td colspan="3" style="text-align: center;">No packages found.</td></tr>';
+            return;
+          }
+          data.sort((a, b) => a.pkgname.localeCompare(b.pkgname));
+          data.forEach(pkg => {
+            const tr = document.createElement('tr');
+            
+            const statusColor = pkg.status === 'success' ? '#859900' : '#dc322f';
+            // Link to log.html with the log file as a parameter
+            const logLink = pkg.log ? `<a href="log.html?file=${pkg.log}" style="color: ${statusColor}; text-decoration: underline;">${pkg.status}</a>` : `<span style="color: ${statusColor}">${pkg.status}</span>`;
+
+            tr.innerHTML = `
+              <td>${pkg.pkgname}</td>
+              <td><code>${pkg.version}</code></td>
+              <td>${logLink}</td>
+            `;
+            body.appendChild(tr);
+          });
+        })
+        .catch(err => {
+          console.error('Error loading packages:', err);
+          document.getElementById('pkg-body').innerHTML = '<tr><td colspan="3" style="text-align: center; color: #dc322f;">Failed to load package data.</td></tr>';
+        });
+    </script>
+  </main>
+</body>
+
+</html>

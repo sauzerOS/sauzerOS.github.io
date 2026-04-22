@@ -118,62 +118,13 @@
     <a href="index.html" class="menu-item">Home</a>
     <a href="bootstrap.html" class="menu-item">Bootstrap</a>
     <a href="hokuto.html" class="menu-item active">Hokuto</a>
+    <a href="packages.html" class="menu-item">Packages</a>
     <a href="https://github.com/sauzerOS" class="menu-item">GitHub</a>
   </nav>
   <main>
     <div class="box">
       <h1>hokuto package manager</h1>
     </div>
-
-    <div class="section">
-      <h3>Package Status</h3>
-      <table id="pkg-table" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-        <thead>
-          <tr style="border-bottom: 2px solid #93a1a1; text-align: left;">
-            <th style="padding: 8px;">Package Name</th>
-            <th style="padding: 8px;">Latest Version</th>
-            <th style="padding: 8px;">Build Status</th>
-          </tr>
-        </thead>
-        <tbody id="pkg-body">
-          <tr>
-            <td colspan="3" style="padding: 8px; text-align: center;">Loading package data...</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <script>
-      fetch('packages.json')
-        .then(response => response.json())
-        .then(data => {
-          const body = document.getElementById('pkg-body');
-          body.innerHTML = '';
-          if (data.length === 0) {
-            body.innerHTML = '<tr><td colspan="3" style="padding: 8px; text-align: center;">No packages found.</td></tr>';
-            return;
-          }
-          data.sort((a, b) => a.pkgname.localeCompare(b.pkgname));
-          data.forEach(pkg => {
-            const tr = document.createElement('tr');
-            tr.style.borderBottom = '1px dashed #93a1a1';
-            
-            const statusColor = pkg.status === 'success' ? '#859900' : '#dc322f';
-            const logLink = pkg.log ? `<a href="${pkg.log}" style="color: ${statusColor}; text-decoration: underline;">${pkg.status}</a>` : `<span style="color: ${statusColor}">${pkg.status}</span>`;
-
-            tr.innerHTML = `
-              <td style="padding: 8px;">${pkg.pkgname}</td>
-              <td style="padding: 8px;"><code>${pkg.version}</code></td>
-              <td style="padding: 8px;">${logLink}</td>
-            `;
-            body.appendChild(tr);
-          });
-        })
-        .catch(err => {
-          console.error('Error loading packages:', err);
-          document.getElementById('pkg-body').innerHTML = '<tr><td colspan="3" style="padding: 8px; text-align: center; color: #dc322f;">Failed to load package data.</td></tr>';
-        });
-    </script>
 
     <div class="section">
       <p>Package Manager written in Go with minimal optional external dependencies:</p>

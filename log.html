@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - Build Log</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ansi_up/5.1.0/ansi_up.min.js"></script>
+  <style>
+    body {
+      background-color: #002b36;
+      color: #839496;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      padding: 20px;
+    }
+
+    #log-container {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      line-height: 1.2;
+    }
+
+    .header {
+      border-bottom: 1px solid #586e75;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back-link {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 id="log-title">Build Log</h1>
+    <a href="packages.html" class="back-link">← Back to Packages</a>
+  </div>
+  <div id="log-container">Loading log...</div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const logFile = urlParams.get('file');
+
+    if (logFile) {
+      document.getElementById('log-title').textContent = `Build Log: ${logFile.split('/').pop()}`;
+      
+      fetch(logFile)
+        .then(response => {
+          if (!response.ok) throw new Error('Log file not found');
+          return response.text();
+        })
+        .then(text => {
+          const ansi_up = new AnsiUp();
+          const html = ansi_up.ansi_to_html(text);
+          document.getElementById('log-container').innerHTML = html;
+        })
+        .catch(err => {
+          document.getElementById('log-container').textContent = 'Error: ' + err.message;
+          document.getElementById('log-container').style.color = '#dc322f';
+        });
+    } else {
+      document.getElementById('log-container').textContent = 'No log file specified.';
+    }
+  </script>
+</body>
+
+</html>
