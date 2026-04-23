@@ -1,0 +1,147 @@
+Script started on 2026-04-23 18:33:32+07:00 [COMMAND="cd /var/tmp/hokuto/python-systemd-16/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' CMAKE_BUILD_PARALLEL_LEVEL='20' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/python-systemd-16/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/python-systemd-16/build' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j20' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/python-systemd-16/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/python-systemd-16/build/.cache' /repo/sauzeros/extra/python-systemd/build /var/tmp/hokuto/python-systemd-16/output 235 python-systemd" <not executed on terminal>]
+[1m* Getting build dependencies for wheel...[0m
+/usr/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+/usr/lib/python3.14/site-packages/coherent/licensed/setuptools.py:13: UserWarning: Avoid installing this plugin for projects that don't depend on it.
+  enabled or warnings.warn(
+running egg_info
+creating systemd_python.egg-info
+writing systemd_python.egg-info/PKG-INFO
+writing dependency_links to systemd_python.egg-info/dependency_links.txt
+writing top-level names to systemd_python.egg-info/top_level.txt
+writing manifest file 'systemd_python.egg-info/SOURCES.txt'
+/usr/lib/python3.14/site-packages/vcs_versioning/overrides.py:609: UserWarning: No GlobalOverrides context is active. Auto-creating one with SETUPTOOLS_SCM prefix for backwards compatibility. Consider using 'with GlobalOverrides.from_env("YOUR_TOOL"):' explicitly.
+  return get_active_overrides().subprocess_timeout
+listing git files failed - pretending there aren't any
+reading manifest file 'systemd_python.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files found matching 'docs/__pycache__/*'
+adding license file 'LICENSE.txt'
+writing manifest file 'systemd_python.egg-info/SOURCES.txt'
+[1m* Building wheel...[0m
+/usr/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+/usr/lib/python3.14/site-packages/coherent/licensed/setuptools.py:13: UserWarning: Avoid installing this plugin for projects that don't depend on it.
+  enabled or warnings.warn(
+running bdist_wheel
+running build
+running build_py
+creating build/lib.linux-x86_64-cpython-314/systemd
+copying systemd/__init__.py -> build/lib.linux-x86_64-cpython-314/systemd
+copying systemd/journal.py -> build/lib.linux-x86_64-cpython-314/systemd
+copying systemd/daemon.py -> build/lib.linux-x86_64-cpython-314/systemd
+creating build/lib.linux-x86_64-cpython-314/systemd/test
+copying systemd/test/test_daemon.py -> build/lib.linux-x86_64-cpython-314/systemd/test
+copying systemd/test/test_journal.py -> build/lib.linux-x86_64-cpython-314/systemd/test
+copying systemd/test/test_login.py -> build/lib.linux-x86_64-cpython-314/systemd/test
+copying systemd/test/test_id128.py -> build/lib.linux-x86_64-cpython-314/systemd/test
+running build_ext
+building 'systemd/_journal' extension
+creating build/temp.linux-x86_64-cpython-314/systemd
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/_journal.c -o build/temp.linux-x86_64-cpython-314/systemd/_journal.o -std=c99 -Werror=implicit-function-declaration
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/pyutil.c -o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o -std=c99 -Werror=implicit-function-declaration
+cc -shared -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -march=native -O2 -pipe -fomit-frame-pointer -flto=20 build/temp.linux-x86_64-cpython-314/systemd/_journal.o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o -L/usr/lib -lsystemd -o build/lib.linux-x86_64-cpython-314/systemd/_journal.cpython-314-x86_64-linux-gnu.so
+building 'systemd/_reader' extension
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/_reader.c -o build/temp.linux-x86_64-cpython-314/systemd/_reader.o -std=c99 -Werror=implicit-function-declaration
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/pyutil.c -o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o -std=c99 -Werror=implicit-function-declaration
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/strv.c -o build/temp.linux-x86_64-cpython-314/systemd/strv.o -std=c99 -Werror=implicit-function-declaration
+cc -shared -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -march=native -O2 -pipe -fomit-frame-pointer -flto=20 build/temp.linux-x86_64-cpython-314/systemd/_reader.o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o build/temp.linux-x86_64-cpython-314/systemd/strv.o -L/usr/lib -lsystemd -o build/lib.linux-x86_64-cpython-314/systemd/_reader.cpython-314-x86_64-linux-gnu.so
+building 'systemd/_daemon' extension
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/_daemon.c -o build/temp.linux-x86_64-cpython-314/systemd/_daemon.o -std=c99 -Werror=implicit-function-declaration
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/pyutil.c -o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o -std=c99 -Werror=implicit-function-declaration
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/util.c -o build/temp.linux-x86_64-cpython-314/systemd/util.o -std=c99 -Werror=implicit-function-declaration
+[01m[Ksystemd/util.c:[m[K In function ‘[01m[Kparse_sockaddr[m[K’:
+[01m[Ksystemd/util.c:122:19:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  122 |                 e [01;35m[K=[m[K strchr(s+1, ']');
+      |                   [01;35m[K^[m[K
+[01m[Ksystemd/util.c:152:19:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  152 |                 e [01;35m[K=[m[K strchr(s, ':');
+      |                   [01;35m[K^[m[K
+cc -shared -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -march=native -O2 -pipe -fomit-frame-pointer -flto=20 build/temp.linux-x86_64-cpython-314/systemd/_daemon.o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o build/temp.linux-x86_64-cpython-314/systemd/util.o -L/usr/lib -lsystemd -o build/lib.linux-x86_64-cpython-314/systemd/_daemon.cpython-314-x86_64-linux-gnu.so
+building 'systemd/id128' extension
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/id128.c -o build/temp.linux-x86_64-cpython-314/systemd/id128.o -std=c99 -Werror=implicit-function-declaration
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/pyutil.c -o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o -std=c99 -Werror=implicit-function-declaration
+cc -shared -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -march=native -O2 -pipe -fomit-frame-pointer -flto=20 build/temp.linux-x86_64-cpython-314/systemd/id128.o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o -L/usr/lib -lsystemd -o build/lib.linux-x86_64-cpython-314/systemd/id128.cpython-314-x86_64-linux-gnu.so
+building 'systemd/login' extension
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/login.c -o build/temp.linux-x86_64-cpython-314/systemd/login.o -std=c99 -Werror=implicit-function-declaration
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/pyutil.c -o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o -std=c99 -Werror=implicit-function-declaration
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -fPIC -DPACKAGE_VERSION=\"235\" -DLIBSYSTEMD_VERSION=260 -I/usr/include/python3.14 -c systemd/strv.c -o build/temp.linux-x86_64-cpython-314/systemd/strv.o -std=c99 -Werror=implicit-function-declaration
+cc -shared -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -march=native -O2 -pipe -fomit-frame-pointer -flto=20 build/temp.linux-x86_64-cpython-314/systemd/login.o build/temp.linux-x86_64-cpython-314/systemd/pyutil.o build/temp.linux-x86_64-cpython-314/systemd/strv.o -L/usr/lib -lsystemd -o build/lib.linux-x86_64-cpython-314/systemd/login.cpython-314-x86_64-linux-gnu.so
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/systemd
+copying build/lib.linux-x86_64-cpython-314/systemd/journal.py -> build/bdist.linux-x86_64/wheel/./systemd
+creating build/bdist.linux-x86_64/wheel/systemd/test
+copying build/lib.linux-x86_64-cpython-314/systemd/test/test_journal.py -> build/bdist.linux-x86_64/wheel/./systemd/test
+copying build/lib.linux-x86_64-cpython-314/systemd/test/test_id128.py -> build/bdist.linux-x86_64/wheel/./systemd/test
+copying build/lib.linux-x86_64-cpython-314/systemd/test/test_daemon.py -> build/bdist.linux-x86_64/wheel/./systemd/test
+copying build/lib.linux-x86_64-cpython-314/systemd/test/test_login.py -> build/bdist.linux-x86_64/wheel/./systemd/test
+copying build/lib.linux-x86_64-cpython-314/systemd/daemon.py -> build/bdist.linux-x86_64/wheel/./systemd
+copying build/lib.linux-x86_64-cpython-314/systemd/id128.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/./systemd
+copying build/lib.linux-x86_64-cpython-314/systemd/_daemon.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/./systemd
+copying build/lib.linux-x86_64-cpython-314/systemd/login.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/./systemd
+copying build/lib.linux-x86_64-cpython-314/systemd/_journal.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/./systemd
+copying build/lib.linux-x86_64-cpython-314/systemd/_reader.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/./systemd
+copying build/lib.linux-x86_64-cpython-314/systemd/__init__.py -> build/bdist.linux-x86_64/wheel/./systemd
+running install_egg_info
+running egg_info
+writing systemd_python.egg-info/PKG-INFO
+writing dependency_links to systemd_python.egg-info/dependency_links.txt
+writing top-level names to systemd_python.egg-info/top_level.txt
+/usr/lib/python3.14/site-packages/vcs_versioning/overrides.py:609: UserWarning: No GlobalOverrides context is active. Auto-creating one with SETUPTOOLS_SCM prefix for backwards compatibility. Consider using 'with GlobalOverrides.from_env("YOUR_TOOL"):' explicitly.
+  return get_active_overrides().subprocess_timeout
+listing git files failed - pretending there aren't any
+reading manifest file 'systemd_python.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files found matching 'docs/__pycache__/*'
+adding license file 'LICENSE.txt'
+writing manifest file 'systemd_python.egg-info/SOURCES.txt'
+Copying systemd_python.egg-info to build/bdist.linux-x86_64/wheel/./systemd_python-235-py3.14.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/systemd_python-235.dist-info/WHEEL
+creating '/var/tmp/hokuto/python-systemd-16/build/dist/.tmp-5rwymmec/systemd_python-235-cp314-cp314-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'systemd/__init__.py'
+adding 'systemd/_daemon.cpython-314-x86_64-linux-gnu.so'
+adding 'systemd/_journal.cpython-314-x86_64-linux-gnu.so'
+adding 'systemd/_reader.cpython-314-x86_64-linux-gnu.so'
+adding 'systemd/daemon.py'
+adding 'systemd/id128.cpython-314-x86_64-linux-gnu.so'
+adding 'systemd/journal.py'
+adding 'systemd/login.cpython-314-x86_64-linux-gnu.so'
+adding 'systemd/test/test_daemon.py'
+adding 'systemd/test/test_id128.py'
+adding 'systemd/test/test_journal.py'
+adding 'systemd/test/test_login.py'
+adding 'systemd_python-235.dist-info/licenses/LICENSE.txt'
+adding 'systemd_python-235.dist-info/METADATA'
+adding 'systemd_python-235.dist-info/WHEEL'
+adding 'systemd_python-235.dist-info/top_level.txt'
+adding 'systemd_python-235.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+[1m[92mSuccessfully built [4msystemd_python-235-cp314-cp314-linux_x86_64.whl[0m[1m[92m[0m
+
+Script done on 2026-04-23 18:33:36+07:00 [COMMAND_EXIT_CODE="0"]
