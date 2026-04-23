@@ -1,0 +1,129 @@
+Script started on 2026-04-24 01:39:54+07:00 [COMMAND="cd /var/tmp/hokuto/perl-xml-parser-15/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/perl-xml-parser-15/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/perl-xml-parser-15/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/perl-xml-parser-15/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/perl-xml-parser-15/build/.cache' /repo/sauzeros/core/perl-xml-parser/build /var/tmp/hokuto/perl-xml-parser-15/output 2.58 perl-xml-parser" <not executed on terminal>]
+Checking if your kit is complete...
+Looks good
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for XML::Parser
+Writing MYMETA.yml and MYMETA.json
+make[1]: Entering directory '/var/tmp/hokuto/perl-xml-parser-15/build/XML-Parser-2.58/Expat'
+Running Mkbootstrap for Expat ()
+"/usr/bin/perl" "/usr/lib/perl5/5.42.2/core_perl/ExtUtils/xsubpp" -noprototypes -typemap '/usr/lib/perl5/5.42.2/core_perl/ExtUtils/typemap' -typemap '/var/tmp/hokuto/perl-xml-parser-15/build/XML-Parser-2.58/Expat/typemap'  Expat.xs > Expat.xsc
+cp Parser/Style/Stream.pm blib/lib/XML/Parser/Style/Stream.pm
+cp Parser/Style/Objects.pm blib/lib/XML/Parser/Style/Objects.pm
+cp Parser/Style/Tree.pm blib/lib/XML/Parser/Style/Tree.pm
+cp Parser/LWPExternEnt.pl blib/lib/XML/Parser/LWPExternEnt.pl
+cp Parser.pm blib/lib/XML/Parser.pm
+cp Parser/Encodings/Japanese_Encodings.msg blib/lib/XML/Parser/Encodings/Japanese_Encodings.msg
+cp Parser/Style/Subs.pm blib/lib/XML/Parser/Style/Subs.pm
+cp Parser/Style/Debug.pm blib/lib/XML/Parser/Style/Debug.pm
+cp Parser/Encodings/README blib/lib/XML/Parser/Encodings/README
+chmod 644 "Expat.bs"
+"/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Expat.bs ../blib/arch/auto/XML/Parser/Expat/Expat.bs 644
+cp Expat.pm ../blib/lib/XML/Parser/Expat.pm
+cp share/x-sjis-jisx0221.enc blib/lib/auto/share/dist/XML-Parser/x-sjis-jisx0221.enc
+cp share/iso-8859-15.enc blib/lib/auto/share/dist/XML-Parser/iso-8859-15.enc
+cp share/windows-1252.enc blib/lib/auto/share/dist/XML-Parser/windows-1252.enc
+cp share/windows-1255.enc blib/lib/auto/share/dist/XML-Parser/windows-1255.enc
+cp share/iso-8859-2.enc blib/lib/auto/share/dist/XML-Parser/iso-8859-2.enc
+cp share/x-sjis-cp932.enc blib/lib/auto/share/dist/XML-Parser/x-sjis-cp932.enc
+cp share/big5.enc blib/lib/auto/share/dist/XML-Parser/big5.enc
+cp share/x-euc-jp-unicode.enc blib/lib/auto/share/dist/XML-Parser/x-euc-jp-unicode.enc
+cp share/x-sjis-jdk117.enc blib/lib/auto/share/dist/XML-Parser/x-sjis-jdk117.enc
+cp share/iso-8859-9.enc blib/lib/auto/share/dist/XML-Parser/iso-8859-9.enc
+cp share/iso-8859-8.enc blib/lib/auto/share/dist/XML-Parser/iso-8859-8.enc
+cp share/x-euc-jp-jisx0221.enc blib/lib/auto/share/dist/XML-Parser/x-euc-jp-jisx0221.enc
+cp share/iso-8859-4.enc blib/lib/auto/share/dist/XML-Parser/iso-8859-4.enc
+cp share/euc-kr.enc blib/lib/auto/share/dist/XML-Parser/euc-kr.enc
+cp share/x-sjis-unicode.enc blib/lib/auto/share/dist/XML-Parser/x-sjis-unicode.enc
+cp share/iso-8859-3.enc blib/lib/auto/share/dist/XML-Parser/iso-8859-3.enc
+cp share/ibm866.enc blib/lib/auto/share/dist/XML-Parser/ibm866.enc
+cp share/iso-8859-7.enc blib/lib/auto/share/dist/XML-Parser/iso-8859-7.enc
+cp share/windows-1250.enc blib/lib/auto/share/dist/XML-Parser/windows-1250.enc
+cp share/windows-1251.enc blib/lib/auto/share/dist/XML-Parser/windows-1251.enc
+cp share/iso-8859-5.enc blib/lib/auto/share/dist/XML-Parser/iso-8859-5.enc
+cp share/koi8-r.enc blib/lib/auto/share/dist/XML-Parser/koi8-r.enc
+mv Expat.xsc Expat.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2 -O2   -DVERSION=\"2.58\" -DXS_VERSION=\"2.58\" -fPIC "-I/usr/lib/perl5/5.42.2/core_perl/CORE"   Expat.c
+[01m[KExpat.xs:[m[K In function ‘[01m[Kgen_ns_name[m[K’:
+[01m[KExpat.xs:414:16:[m[K [01;35m[Kwarning: [m[Kinitialization discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  414 |   char  *pos = [01;35m[Kstrchr[m[K(name, NSDELIM);
+      |                [01;35m[K^~~~~~[m[K
+rm -f ../blib/arch/auto/XML/Parser/Expat/Expat.so
+LD_RUN_PATH="/usr/lib" cc  -shared -O2 -L/usr/local/lib -fstack-protector-strong  Expat.o  -o ../blib/arch/auto/XML/Parser/Expat/Expat.so  \
+   -L/usr/lib -lexpat   \
+  
+chmod 755 ../blib/arch/auto/XML/Parser/Expat/Expat.so
+Manifying 1 pod document
+make[1]: Leaving directory '/var/tmp/hokuto/perl-xml-parser-15/build/XML-Parser-2.58/Expat'
+Manifying 6 pod documents
+make[1]: Entering directory '/var/tmp/hokuto/perl-xml-parser-15/build/XML-Parser-2.58/Expat'
+"/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- Expat.bs ../blib/arch/auto/XML/Parser/Expat/Expat.bs 644
+Skip blib/lib/auto/share/dist/XML-Parser/koi8-r.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/x-sjis-jisx0221.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/x-euc-jp-unicode.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/windows-1255.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/ibm866.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/x-sjis-cp932.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/iso-8859-7.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/iso-8859-3.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/iso-8859-8.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/windows-1251.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/windows-1250.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/big5.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/euc-kr.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/x-sjis-jdk117.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/iso-8859-2.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/x-euc-jp-jisx0221.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/x-sjis-unicode.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/iso-8859-5.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/iso-8859-9.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/iso-8859-4.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/windows-1252.enc (unchanged)
+Skip blib/lib/auto/share/dist/XML-Parser/iso-8859-15.enc (unchanged)
+Manifying 1 pod document
+make[1]: Leaving directory '/var/tmp/hokuto/perl-xml-parser-15/build/XML-Parser-2.58/Expat'
+Manifying 6 pod documents
+Appending installation info to /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/core_perl/perllocal.pod
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/XML/Parser/Expat/Expat.so
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser.pm
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser/Expat.pm
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser/LWPExternEnt.pl
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser/Style/Debug.pm
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser/Style/Subs.pm
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser/Style/Stream.pm
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser/Style/Objects.pm
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser/Style/Tree.pm
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser/Encodings/README
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/XML/Parser/Encodings/Japanese_Encodings.msg
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/iso-8859-3.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/x-sjis-jdk117.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/ibm866.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/iso-8859-9.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/windows-1252.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/koi8-r.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/x-euc-jp-unicode.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/windows-1255.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/x-sjis-cp932.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/iso-8859-15.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/iso-8859-5.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/x-sjis-unicode.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/big5.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/iso-8859-8.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/windows-1250.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/iso-8859-4.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/iso-8859-7.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/x-sjis-jisx0221.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/euc-kr.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/x-euc-jp-jisx0221.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/windows-1251.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/lib/perl5/5.42.2/site_perl/auto/share/dist/XML-Parser/iso-8859-2.enc
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/share/man/man3/XML::Parser::Style::Tree.3
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/share/man/man3/XML::Parser::Style::Subs.3
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/share/man/man3/XML::Parser::Expat.3
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/share/man/man3/XML::Parser::Style::Objects.3
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/share/man/man3/XML::Parser::Style::Stream.3
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/share/man/man3/XML::Parser.3
+Installing /var/tmp/hokuto/perl-xml-parser-15/output/usr/share/man/man3/XML::Parser::Style::Debug.3
+
+Script done on 2026-04-24 01:39:57+07:00 [COMMAND_EXIT_CODE="0"]
