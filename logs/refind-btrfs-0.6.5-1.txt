@@ -1,0 +1,499 @@
+Script started on 2026-04-23 18:33:51+07:00 [COMMAND="cd /var/tmp/hokuto/refind-btrfs-20/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' CMAKE_BUILD_PARALLEL_LEVEL='20' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/refind-btrfs-20/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/refind-btrfs-20/build' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j20' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/refind-btrfs-20/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/refind-btrfs-20/build/.cache' /repo/sauzeros/extra/refind-btrfs/build /var/tmp/hokuto/refind-btrfs-20/output 0.6.5 refind-btrfs" <not executed on terminal>]
+/usr/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+toml section missing PosixPath('pyproject.toml') does not contain any of the tool sections: ['setuptools_scm', 'vcs-versioning']
+/usr/lib/python3.14/site-packages/coherent/licensed/setuptools.py:13: UserWarning: Avoid installing this plugin for projects that don't depend on it.
+  enabled or warnings.warn(
+running build
+running build_py
+creating build/lib/refind_btrfs
+copying src/refind_btrfs/__main__.py -> build/lib/refind_btrfs
+copying src/refind_btrfs/__init__.py -> build/lib/refind_btrfs
+creating build/lib/refind_btrfs/boot
+copying src/refind_btrfs/boot/refind_visitors.py -> build/lib/refind_btrfs/boot
+copying src/refind_btrfs/boot/refind_config.py -> build/lib/refind_btrfs/boot
+copying src/refind_btrfs/boot/sub_menu.py -> build/lib/refind_btrfs/boot
+copying src/refind_btrfs/boot/boot_options.py -> build/lib/refind_btrfs/boot
+copying src/refind_btrfs/boot/file_refind_config_provider.py -> build/lib/refind_btrfs/boot
+copying src/refind_btrfs/boot/boot_stanza.py -> build/lib/refind_btrfs/boot
+copying src/refind_btrfs/boot/refind_listeners.py -> build/lib/refind_btrfs/boot
+copying src/refind_btrfs/boot/__init__.py -> build/lib/refind_btrfs/boot
+creating build/lib/refind_btrfs/service
+copying src/refind_btrfs/service/watchdog_runner.py -> build/lib/refind_btrfs/service
+copying src/refind_btrfs/service/snapshot_observer.py -> build/lib/refind_btrfs/service
+copying src/refind_btrfs/service/snapshot_event_handler.py -> build/lib/refind_btrfs/service
+copying src/refind_btrfs/service/__init__.py -> build/lib/refind_btrfs/service
+creating build/lib/refind_btrfs/system
+copying src/refind_btrfs/system/fstab_command.py -> build/lib/refind_btrfs/system
+copying src/refind_btrfs/system/btrfsutil_command.py -> build/lib/refind_btrfs/system
+copying src/refind_btrfs/system/command_factories.py -> build/lib/refind_btrfs/system
+copying src/refind_btrfs/system/findmnt_command.py -> build/lib/refind_btrfs/system
+copying src/refind_btrfs/system/pillow_command.py -> build/lib/refind_btrfs/system
+copying src/refind_btrfs/system/lsblk_command.py -> build/lib/refind_btrfs/system
+copying src/refind_btrfs/system/__init__.py -> build/lib/refind_btrfs/system
+creating build/lib/refind_btrfs/device
+copying src/refind_btrfs/device/partition.py -> build/lib/refind_btrfs/device
+copying src/refind_btrfs/device/block_device.py -> build/lib/refind_btrfs/device
+copying src/refind_btrfs/device/partition_table.py -> build/lib/refind_btrfs/device
+copying src/refind_btrfs/device/filesystem.py -> build/lib/refind_btrfs/device
+copying src/refind_btrfs/device/subvolume.py -> build/lib/refind_btrfs/device
+copying src/refind_btrfs/device/mount_options.py -> build/lib/refind_btrfs/device
+copying src/refind_btrfs/device/__init__.py -> build/lib/refind_btrfs/device
+creating build/lib/refind_btrfs/common
+copying src/refind_btrfs/common/checkable_observer.py -> build/lib/refind_btrfs/common
+copying src/refind_btrfs/common/package_config.py -> build/lib/refind_btrfs/common
+copying src/refind_btrfs/common/constants.py -> build/lib/refind_btrfs/common
+copying src/refind_btrfs/common/boot_files_check_result.py -> build/lib/refind_btrfs/common
+copying src/refind_btrfs/common/configurable_mixin.py -> build/lib/refind_btrfs/common
+copying src/refind_btrfs/common/enums.py -> build/lib/refind_btrfs/common
+copying src/refind_btrfs/common/__init__.py -> build/lib/refind_btrfs/common
+copying src/refind_btrfs/common/exceptions.py -> build/lib/refind_btrfs/common
+creating build/lib/refind_btrfs/console
+copying src/refind_btrfs/console/cli_runner.py -> build/lib/refind_btrfs/console
+copying src/refind_btrfs/console/__init__.py -> build/lib/refind_btrfs/console
+creating build/lib/refind_btrfs/utility
+copying src/refind_btrfs/utility/shelve_persistence_provider.py -> build/lib/refind_btrfs/utility
+copying src/refind_btrfs/utility/injector_modules.py -> build/lib/refind_btrfs/utility
+copying src/refind_btrfs/utility/level_aware_formatter.py -> build/lib/refind_btrfs/utility
+copying src/refind_btrfs/utility/logger_factories.py -> build/lib/refind_btrfs/utility
+copying src/refind_btrfs/utility/helpers.py -> build/lib/refind_btrfs/utility
+copying src/refind_btrfs/utility/file_package_config_provider.py -> build/lib/refind_btrfs/utility
+copying src/refind_btrfs/utility/__init__.py -> build/lib/refind_btrfs/utility
+creating build/lib/refind_btrfs/state_management
+copying src/refind_btrfs/state_management/model.py -> build/lib/refind_btrfs/state_management
+copying src/refind_btrfs/state_management/refind_btrfs_machine.py -> build/lib/refind_btrfs/state_management
+copying src/refind_btrfs/state_management/conditions.py -> build/lib/refind_btrfs/state_management
+copying src/refind_btrfs/state_management/__init__.py -> build/lib/refind_btrfs/state_management
+creating build/lib/refind_btrfs/boot/antlr4
+copying src/refind_btrfs/boot/antlr4/RefindConfigLexer.py -> build/lib/refind_btrfs/boot/antlr4
+copying src/refind_btrfs/boot/antlr4/RefindConfigParserVisitor.py -> build/lib/refind_btrfs/boot/antlr4
+copying src/refind_btrfs/boot/antlr4/RefindConfigParser.py -> build/lib/refind_btrfs/boot/antlr4
+copying src/refind_btrfs/boot/antlr4/__init__.py -> build/lib/refind_btrfs/boot/antlr4
+creating build/lib/refind_btrfs/boot/migrations
+copying src/refind_btrfs/boot/migrations/state.py -> build/lib/refind_btrfs/boot/migrations
+copying src/refind_btrfs/boot/migrations/icon_migration_strategies.py -> build/lib/refind_btrfs/boot/migrations
+copying src/refind_btrfs/boot/migrations/migration.py -> build/lib/refind_btrfs/boot/migrations
+copying src/refind_btrfs/boot/migrations/__init__.py -> build/lib/refind_btrfs/boot/migrations
+copying src/refind_btrfs/boot/migrations/main_migration_strategies.py -> build/lib/refind_btrfs/boot/migrations
+creating build/lib/refind_btrfs/common/abc
+copying src/refind_btrfs/common/abc/base_config.py -> build/lib/refind_btrfs/common/abc
+copying src/refind_btrfs/common/abc/__init__.py -> build/lib/refind_btrfs/common/abc
+copying src/refind_btrfs/common/abc/base_runner.py -> build/lib/refind_btrfs/common/abc
+creating build/lib/refind_btrfs/common/abc/commands
+copying src/refind_btrfs/common/abc/commands/device_command.py -> build/lib/refind_btrfs/common/abc/commands
+copying src/refind_btrfs/common/abc/commands/subvolume_command.py -> build/lib/refind_btrfs/common/abc/commands
+copying src/refind_btrfs/common/abc/commands/icon_command.py -> build/lib/refind_btrfs/common/abc/commands
+copying src/refind_btrfs/common/abc/commands/__init__.py -> build/lib/refind_btrfs/common/abc/commands
+creating build/lib/refind_btrfs/common/abc/providers
+copying src/refind_btrfs/common/abc/providers/base_package_config_provider.py -> build/lib/refind_btrfs/common/abc/providers
+copying src/refind_btrfs/common/abc/providers/base_persistence_provider.py -> build/lib/refind_btrfs/common/abc/providers
+copying src/refind_btrfs/common/abc/providers/base_refind_config_provider.py -> build/lib/refind_btrfs/common/abc/providers
+copying src/refind_btrfs/common/abc/providers/__init__.py -> build/lib/refind_btrfs/common/abc/providers
+creating build/lib/refind_btrfs/common/abc/factories
+copying src/refind_btrfs/common/abc/factories/base_icon_command_factory.py -> build/lib/refind_btrfs/common/abc/factories
+copying src/refind_btrfs/common/abc/factories/base_logger_factory.py -> build/lib/refind_btrfs/common/abc/factories
+copying src/refind_btrfs/common/abc/factories/base_device_command_factory.py -> build/lib/refind_btrfs/common/abc/factories
+copying src/refind_btrfs/common/abc/factories/base_subvolume_command_factory.py -> build/lib/refind_btrfs/common/abc/factories
+copying src/refind_btrfs/common/abc/factories/__init__.py -> build/lib/refind_btrfs/common/abc/factories
+running egg_info
+creating src/refind_btrfs.egg-info
+writing src/refind_btrfs.egg-info/PKG-INFO
+writing dependency_links to src/refind_btrfs.egg-info/dependency_links.txt
+writing entry points to src/refind_btrfs.egg-info/entry_points.txt
+writing requirements to src/refind_btrfs.egg-info/requires.txt
+writing top-level names to src/refind_btrfs.egg-info/top_level.txt
+writing manifest file 'src/refind_btrfs.egg-info/SOURCES.txt'
+/usr/lib/python3.14/site-packages/vcs_versioning/overrides.py:609: UserWarning: No GlobalOverrides context is active. Auto-creating one with SETUPTOOLS_SCM prefix for backwards compatibility. Consider using 'with GlobalOverrides.from_env("YOUR_TOOL"):' explicitly.
+  return get_active_overrides().subprocess_timeout
+listing git files failed - pretending there aren't any
+reading manifest file 'src/refind_btrfs.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '*.py[cdo]' found anywhere in distribution
+adding license file 'LICENSE.txt'
+writing manifest file 'src/refind_btrfs.egg-info/SOURCES.txt'
+/usr/lib/python3.14/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'refind_btrfs.data' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'refind_btrfs.data' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'refind_btrfs.data' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'refind_btrfs.data' to be distributed and are
+        already explicitly excluding 'refind_btrfs.data' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/usr/lib/python3.14/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'refind_btrfs.data.icons.btrfs_logo' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'refind_btrfs.data.icons.btrfs_logo' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'refind_btrfs.data.icons.btrfs_logo' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'refind_btrfs.data.icons.btrfs_logo' to be distributed and are
+        already explicitly excluding 'refind_btrfs.data.icons.btrfs_logo' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+/usr/lib/python3.14/site-packages/setuptools/command/build_py.py:215: _Warning: Package 'refind_btrfs.data.images' is absent from the `packages` configuration.
+!!
+
+        ********************************************************************************
+        ############################
+        # Package would be ignored #
+        ############################
+        Python recognizes 'refind_btrfs.data.images' as an importable package[^1],
+        but it is absent from setuptools' `packages` configuration.
+
+        This leads to an ambiguous overall configuration. If you want to distribute this
+        package, please make sure that 'refind_btrfs.data.images' is explicitly added
+        to the `packages` configuration field.
+
+        Alternatively, you can also rely on setuptools' discovery methods
+        (for example by using `find_namespace_packages(...)`/`find_namespace:`
+        instead of `find_packages(...)`/`find:`).
+
+        You can read more about "package discovery" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+
+        If you don't want 'refind_btrfs.data.images' to be distributed and are
+        already explicitly excluding 'refind_btrfs.data.images' via
+        `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+        you can try to use `exclude_package_data`, or `include-package-data=False` in
+        combination with a more fine grained `package-data` configuration.
+
+        You can read more about "package data files" on setuptools documentation page:
+
+        - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+
+        [^1]: For Python, any directory (with suitable naming) can be imported,
+              even if it does not contain any `.py` files.
+              On the other hand, currently there is no concept of package data
+              directory, all directories are treated like packages.
+        ********************************************************************************
+
+!!
+  check.warn(importable)
+creating build/lib/refind_btrfs/data
+copying src/refind_btrfs/data/refind-btrfs -> build/lib/refind_btrfs/data
+copying src/refind_btrfs/data/refind-btrfs.conf-sample -> build/lib/refind_btrfs/data
+copying src/refind_btrfs/data/refind-btrfs.service -> build/lib/refind_btrfs/data
+creating build/lib/refind_btrfs/data/icons/btrfs_logo
+copying src/refind_btrfs/data/icons/btrfs_logo/inverted_large.png -> build/lib/refind_btrfs/data/icons/btrfs_logo
+copying src/refind_btrfs/data/icons/btrfs_logo/inverted_medium.png -> build/lib/refind_btrfs/data/icons/btrfs_logo
+copying src/refind_btrfs/data/icons/btrfs_logo/inverted_small.png -> build/lib/refind_btrfs/data/icons/btrfs_logo
+copying src/refind_btrfs/data/icons/btrfs_logo/original_large.png -> build/lib/refind_btrfs/data/icons/btrfs_logo
+copying src/refind_btrfs/data/icons/btrfs_logo/original_medium.png -> build/lib/refind_btrfs/data/icons/btrfs_logo
+copying src/refind_btrfs/data/icons/btrfs_logo/original_small.png -> build/lib/refind_btrfs/data/icons/btrfs_logo
+creating build/lib/refind_btrfs/data/images
+copying src/refind_btrfs/data/images/refind_screenshot_default.png -> build/lib/refind_btrfs/data/images
+copying src/refind_btrfs/data/images/refind_screenshot_nord.png -> build/lib/refind_btrfs/data/images
+/usr/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+toml section missing PosixPath('pyproject.toml') does not contain any of the tool sections: ['setuptools_scm', 'vcs-versioning']
+/usr/lib/python3.14/site-packages/coherent/licensed/setuptools.py:13: UserWarning: Avoid installing this plugin for projects that don't depend on it.
+  enabled or warnings.warn(
+running install
+/usr/lib/python3.14/site-packages/setuptools/_distutils/cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running install_lib
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/antlr4
+copying build/lib/refind_btrfs/boot/antlr4/RefindConfigLexer.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/antlr4
+copying build/lib/refind_btrfs/boot/antlr4/RefindConfigParserVisitor.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/antlr4
+copying build/lib/refind_btrfs/boot/antlr4/RefindConfigParser.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/antlr4
+copying build/lib/refind_btrfs/boot/antlr4/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/antlr4
+copying build/lib/refind_btrfs/boot/refind_visitors.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot
+copying build/lib/refind_btrfs/boot/refind_config.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot
+copying build/lib/refind_btrfs/boot/sub_menu.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot
+copying build/lib/refind_btrfs/boot/boot_options.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot
+copying build/lib/refind_btrfs/boot/file_refind_config_provider.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot
+copying build/lib/refind_btrfs/boot/boot_stanza.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations
+copying build/lib/refind_btrfs/boot/migrations/state.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations
+copying build/lib/refind_btrfs/boot/migrations/icon_migration_strategies.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations
+copying build/lib/refind_btrfs/boot/migrations/migration.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations
+copying build/lib/refind_btrfs/boot/migrations/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations
+copying build/lib/refind_btrfs/boot/migrations/main_migration_strategies.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations
+copying build/lib/refind_btrfs/boot/refind_listeners.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot
+copying build/lib/refind_btrfs/boot/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data
+copying build/lib/refind_btrfs/data/refind-btrfs -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/icons
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/icons/btrfs_logo
+copying build/lib/refind_btrfs/data/icons/btrfs_logo/original_medium.png -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/icons/btrfs_logo
+copying build/lib/refind_btrfs/data/icons/btrfs_logo/original_small.png -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/icons/btrfs_logo
+copying build/lib/refind_btrfs/data/icons/btrfs_logo/inverted_large.png -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/icons/btrfs_logo
+copying build/lib/refind_btrfs/data/icons/btrfs_logo/original_large.png -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/icons/btrfs_logo
+copying build/lib/refind_btrfs/data/icons/btrfs_logo/inverted_medium.png -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/icons/btrfs_logo
+copying build/lib/refind_btrfs/data/icons/btrfs_logo/inverted_small.png -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/icons/btrfs_logo
+copying build/lib/refind_btrfs/data/refind-btrfs.conf-sample -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/images
+copying build/lib/refind_btrfs/data/images/refind_screenshot_nord.png -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/images
+copying build/lib/refind_btrfs/data/images/refind_screenshot_default.png -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data/images
+copying build/lib/refind_btrfs/data/refind-btrfs.service -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/data
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/service
+copying build/lib/refind_btrfs/service/watchdog_runner.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/service
+copying build/lib/refind_btrfs/service/snapshot_observer.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/service
+copying build/lib/refind_btrfs/service/snapshot_event_handler.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/service
+copying build/lib/refind_btrfs/service/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/service
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system
+copying build/lib/refind_btrfs/system/fstab_command.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system
+copying build/lib/refind_btrfs/system/btrfsutil_command.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system
+copying build/lib/refind_btrfs/system/command_factories.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system
+copying build/lib/refind_btrfs/system/findmnt_command.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system
+copying build/lib/refind_btrfs/system/pillow_command.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system
+copying build/lib/refind_btrfs/system/lsblk_command.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system
+copying build/lib/refind_btrfs/system/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device
+copying build/lib/refind_btrfs/device/partition.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device
+copying build/lib/refind_btrfs/device/block_device.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device
+copying build/lib/refind_btrfs/device/partition_table.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device
+copying build/lib/refind_btrfs/device/filesystem.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device
+copying build/lib/refind_btrfs/device/subvolume.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device
+copying build/lib/refind_btrfs/device/mount_options.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device
+copying build/lib/refind_btrfs/device/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common
+copying build/lib/refind_btrfs/common/checkable_observer.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common
+copying build/lib/refind_btrfs/common/package_config.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common
+copying build/lib/refind_btrfs/common/constants.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common
+copying build/lib/refind_btrfs/common/boot_files_check_result.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/commands
+copying build/lib/refind_btrfs/common/abc/commands/device_command.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/commands
+copying build/lib/refind_btrfs/common/abc/commands/subvolume_command.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/commands
+copying build/lib/refind_btrfs/common/abc/commands/icon_command.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/commands
+copying build/lib/refind_btrfs/common/abc/commands/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/commands
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/providers
+copying build/lib/refind_btrfs/common/abc/providers/base_package_config_provider.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/providers
+copying build/lib/refind_btrfs/common/abc/providers/base_persistence_provider.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/providers
+copying build/lib/refind_btrfs/common/abc/providers/base_refind_config_provider.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/providers
+copying build/lib/refind_btrfs/common/abc/providers/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/providers
+copying build/lib/refind_btrfs/common/abc/base_config.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories
+copying build/lib/refind_btrfs/common/abc/factories/base_icon_command_factory.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories
+copying build/lib/refind_btrfs/common/abc/factories/base_logger_factory.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories
+copying build/lib/refind_btrfs/common/abc/factories/base_device_command_factory.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories
+copying build/lib/refind_btrfs/common/abc/factories/base_subvolume_command_factory.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories
+copying build/lib/refind_btrfs/common/abc/factories/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories
+copying build/lib/refind_btrfs/common/abc/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc
+copying build/lib/refind_btrfs/common/abc/base_runner.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc
+copying build/lib/refind_btrfs/common/configurable_mixin.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common
+copying build/lib/refind_btrfs/common/enums.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common
+copying build/lib/refind_btrfs/common/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common
+copying build/lib/refind_btrfs/common/exceptions.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/console
+copying build/lib/refind_btrfs/console/cli_runner.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/console
+copying build/lib/refind_btrfs/console/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/console
+copying build/lib/refind_btrfs/__main__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility
+copying build/lib/refind_btrfs/utility/shelve_persistence_provider.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility
+copying build/lib/refind_btrfs/utility/injector_modules.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility
+copying build/lib/refind_btrfs/utility/level_aware_formatter.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility
+copying build/lib/refind_btrfs/utility/logger_factories.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility
+copying build/lib/refind_btrfs/utility/helpers.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility
+copying build/lib/refind_btrfs/utility/file_package_config_provider.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility
+copying build/lib/refind_btrfs/utility/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility
+creating /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/state_management
+copying build/lib/refind_btrfs/state_management/model.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/state_management
+copying build/lib/refind_btrfs/state_management/refind_btrfs_machine.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/state_management
+copying build/lib/refind_btrfs/state_management/conditions.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/state_management
+copying build/lib/refind_btrfs/state_management/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/state_management
+copying build/lib/refind_btrfs/__init__.py -> /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/antlr4/RefindConfigLexer.py to RefindConfigLexer.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/antlr4/RefindConfigParserVisitor.py to RefindConfigParserVisitor.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/antlr4/RefindConfigParser.py to RefindConfigParser.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/antlr4/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/refind_visitors.py to refind_visitors.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/refind_config.py to refind_config.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/sub_menu.py to sub_menu.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/boot_options.py to boot_options.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/file_refind_config_provider.py to file_refind_config_provider.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/boot_stanza.py to boot_stanza.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations/state.py to state.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations/icon_migration_strategies.py to icon_migration_strategies.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations/migration.py to migration.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/migrations/main_migration_strategies.py to main_migration_strategies.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/refind_listeners.py to refind_listeners.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/boot/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/service/watchdog_runner.py to watchdog_runner.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/service/snapshot_observer.py to snapshot_observer.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/service/snapshot_event_handler.py to snapshot_event_handler.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/service/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system/fstab_command.py to fstab_command.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system/btrfsutil_command.py to btrfsutil_command.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system/command_factories.py to command_factories.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system/findmnt_command.py to findmnt_command.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system/pillow_command.py to pillow_command.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system/lsblk_command.py to lsblk_command.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/system/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device/partition.py to partition.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device/block_device.py to block_device.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device/partition_table.py to partition_table.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device/filesystem.py to filesystem.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device/subvolume.py to subvolume.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device/mount_options.py to mount_options.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/device/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/checkable_observer.py to checkable_observer.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/package_config.py to package_config.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/constants.py to constants.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/boot_files_check_result.py to boot_files_check_result.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/commands/device_command.py to device_command.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/commands/subvolume_command.py to subvolume_command.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/commands/icon_command.py to icon_command.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/commands/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/providers/base_package_config_provider.py to base_package_config_provider.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/providers/base_persistence_provider.py to base_persistence_provider.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/providers/base_refind_config_provider.py to base_refind_config_provider.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/providers/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/base_config.py to base_config.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories/base_icon_command_factory.py to base_icon_command_factory.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories/base_logger_factory.py to base_logger_factory.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories/base_device_command_factory.py to base_device_command_factory.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories/base_subvolume_command_factory.py to base_subvolume_command_factory.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/factories/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/abc/base_runner.py to base_runner.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/configurable_mixin.py to configurable_mixin.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/enums.py to enums.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/common/exceptions.py to exceptions.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/console/cli_runner.py to cli_runner.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/console/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/__main__.py to __main__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility/shelve_persistence_provider.py to shelve_persistence_provider.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility/injector_modules.py to injector_modules.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility/level_aware_formatter.py to level_aware_formatter.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility/logger_factories.py to logger_factories.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility/helpers.py to helpers.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility/file_package_config_provider.py to file_package_config_provider.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/utility/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/state_management/model.py to model.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/state_management/refind_btrfs_machine.py to refind_btrfs_machine.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/state_management/conditions.py to conditions.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/state_management/__init__.py to __init__.cpython-314.pyc
+byte-compiling /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs/__init__.py to __init__.cpython-314.pyc
+writing byte-compilation script '/var/tmp/hokuto/tmpz4vp061c.py'
+/usr/bin/python /var/tmp/hokuto/tmpz4vp061c.py
+removing /var/tmp/hokuto/tmpz4vp061c.py
+running install_egg_info
+running egg_info
+writing src/refind_btrfs.egg-info/PKG-INFO
+writing dependency_links to src/refind_btrfs.egg-info/dependency_links.txt
+writing entry points to src/refind_btrfs.egg-info/entry_points.txt
+writing requirements to src/refind_btrfs.egg-info/requires.txt
+writing top-level names to src/refind_btrfs.egg-info/top_level.txt
+/usr/lib/python3.14/site-packages/vcs_versioning/overrides.py:609: UserWarning: No GlobalOverrides context is active. Auto-creating one with SETUPTOOLS_SCM prefix for backwards compatibility. Consider using 'with GlobalOverrides.from_env("YOUR_TOOL"):' explicitly.
+  return get_active_overrides().subprocess_timeout
+listing git files failed - pretending there aren't any
+reading manifest file 'src/refind_btrfs.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '*.py[cdo]' found anywhere in distribution
+adding license file 'LICENSE.txt'
+writing manifest file 'src/refind_btrfs.egg-info/SOURCES.txt'
+Copying src/refind_btrfs.egg-info to /var/tmp/hokuto/refind-btrfs-20/output/usr/lib/python3.14/site-packages/refind_btrfs-0.6.5-py3.14.egg-info
+running install_scripts
+Installing refind-btrfs script to /var/tmp/hokuto/refind-btrfs-20/output/usr/bin
+/var/tmp/hokuto/refind-btrfs-20/build/build/lib/refind_btrfs/data /var/tmp/hokuto/refind-btrfs-20/build
+/var/tmp/hokuto/refind-btrfs-20/build
+
+Script done on 2026-04-23 18:33:53+07:00 [COMMAND_EXIT_CODE="0"]
