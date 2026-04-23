@@ -1,0 +1,428 @@
+Script started on 2026-04-23 18:33:43+07:00 [COMMAND="cd /var/tmp/hokuto/refind-25/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' CMAKE_BUILD_PARALLEL_LEVEL='20' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/refind-25/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/refind-25/build' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j20' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/refind-25/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/refind-25/build/.cache' /repo/sauzeros/extra/refind/build /var/tmp/hokuto/refind-25/output 0.14.2 refind" <not executed on terminal>]
+patching file EfiLib/gnuefi-helper.c
+patching file filesystems/fsw_efi.h
+Did not find /usr/local/edk2-vUDK2018 or /usr/local/UDK2014/MyWorkSpace; building with GNU-EFI
+make gnuefi
+make[1]: Entering directory '/var/tmp/hokuto/refind-25/build'
+make MAKEWITH=GNUEFI -C libeg
+make[2]: Entering directory '/var/tmp/hokuto/refind-25/build/libeg'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c nanojpeg.c -o nanojpeg.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c nanojpeg_xtra.c -o nanojpeg_xtra.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c screen.c -o screen.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c image.c -o image.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c text.c -o text.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c load_bmp.c -o load_bmp.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c load_icns.c -o load_icns.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c lodepng.c -o lodepng.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c lodepng_xtra.c -o lodepng_xtra.o
+/usr/bin/ar cq libeg.a nanojpeg.o nanojpeg_xtra.o screen.o image.o text.o load_bmp.o load_icns.o lodepng.o lodepng_xtra.o
+make[2]: Leaving directory '/var/tmp/hokuto/refind-25/build/libeg'
+make MAKEWITH=GNUEFI -C mok
+make[2]: Entering directory '/var/tmp/hokuto/refind-25/build/mok'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c guid.c -o guid.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c mok.c -o mok.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c security_policy.c -o security_policy.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c simple_file.c -o simple_file.o
+/usr/bin/ar cq libmok.a guid.o mok.o security_policy.o simple_file.o
+make[2]: Leaving directory '/var/tmp/hokuto/refind-25/build/mok'
+make MAKEWITH=GNUEFI -C gzip
+make[2]: Entering directory '/var/tmp/hokuto/refind-25/build/gzip'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c decompress_inflate.c -o decompress_inflate.o
+/usr/bin/ar cq libgzip.a decompress_inflate.o
+make[2]: Leaving directory '/var/tmp/hokuto/refind-25/build/gzip'
+make MAKEWITH=GNUEFI -C EfiLib
+make[2]: Entering directory '/var/tmp/hokuto/refind-25/build/EfiLib'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c gnuefi-helper.c -o gnuefi-helper.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c legacy.c -o legacy.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c BdsHelper.c -o BdsHelper.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c BdsTianoCore.c -o BdsTianoCore.o
+[01m[KBdsTianoCore.c:[m[K In function ‘[01m[KBdsLibConnectDevicePath[m[K’:
+[01m[KBdsTianoCore.c:54:29:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KPreviousHandle[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   54 |   EFI_HANDLE                [01;35m[KPreviousHandle[m[K;
+      |                             [01;35m[K^~~~~~~~~~~~~~[m[K
+/usr/bin/ar cq libEfiLib.a gnuefi-helper.o legacy.o BdsHelper.o BdsTianoCore.o
+make[2]: Leaving directory '/var/tmp/hokuto/refind-25/build/EfiLib'
+make MAKEWITH=GNUEFI -C refind
+make[2]: Entering directory '/var/tmp/hokuto/refind-25/build/refind'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c apple.c -o apple.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c config.c -o config.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c crc32.c -o crc32.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c driver_support.c -o driver_support.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c gpt.c -o gpt.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c icns.c -o icns.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c install.c -o install.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c launch_efi.c -o launch_efi.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c launch_legacy.c -o launch_legacy.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c lib.c -o lib.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c line_edit.c -o line_edit.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c linux.c -o linux.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c log.c -o log.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c main.c -o main.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c menu.c -o menu.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c mystrings.c -o mystrings.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c pointer.c -o pointer.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c scan.c -o scan.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -I. -I./../include -I./../libeg -I./../mok \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c screen.c -o screen.o
+/usr/bin/ld -L./../libeg/ -L./../mok/ -L./../EfiLib/ -L./../gzip -T /usr/lib/elf_x86_64_efi.lds -shared -Bsymbolic -nostdlib -L/usr/lib -L/usr/lib /usr/lib/crt0-efi-x86_64.o -znocombreloc -zdefs  apple.o config.o crc32.o driver_support.o gpt.o icns.o install.o launch_efi.o launch_legacy.o lib.o line_edit.o linux.o log.o main.o menu.o mystrings.o pointer.o scan.o screen.o \
+      -o refind_x64.so -leg -lmok -lEfiLib -lgzip -lefi -lgnuefi /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.0/libgcc.a
+/usr/bin/objcopy -j .text -j .sdata -j .data -j .dynamic -j .dynsym -j .rodata \
+	   -j .rel -j .rela -j .rel.* -j .rela.* -j .rel* -j .rela* \
+	   -j .reloc --strip-unneeded --output-target=efi-app-x86_64 refind_x64.so refind_x64.efi
+/usr/bin/objcopy --add-section .sbat=./../refind-sbat.csv \
+	       --adjust-section-vma .sbat+10000000 refind_x64.efi
+chmod a-x refind_x64.efi
+make[2]: Leaving directory '/var/tmp/hokuto/refind-25/build/refind'
+make MAKEWITH=GNUEFI -C gptsync gnuefi
+make[2]: Entering directory '/var/tmp/hokuto/refind-25/build/gptsync'
+make -f Make.gnuefi
+make[3]: Entering directory '/var/tmp/hokuto/refind-25/build/gptsync'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c gptsync.c -o gptsync.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c lib.c -o lib.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c os_efi.c -o os_efi.o
+/usr/bin/ld -T /usr/lib/elf_x86_64_efi.lds -shared -Bsymbolic -nostdlib -L/usr/lib -L/usr/lib /usr/lib/crt0-efi-x86_64.o -znocombreloc -zdefs  gptsync.o lib.o os_efi.o -o gptsync_x64.so  -lefi -lgnuefi /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.0/libgcc.a
+/usr/bin/objcopy -j .text -j .sdata -j .data -j .dynamic -j .dynsym \
+           -j .rel -j .rela -j .rel.* -j .rela.* -j .rel* -j .rela* \
+	   -j .reloc --strip-unneeded  --output-target=efi-app-x86_64 gptsync_x64.so gptsync_x64.efi
+/usr/bin/objcopy --add-section .sbat=../refind-sbat.csv \
+	   --adjust-section-vma .sbat+10000000 gptsync_x64.efi
+chmod a-x gptsync_x64.efi
+make[3]: Leaving directory '/var/tmp/hokuto/refind-25/build/gptsync'
+make[2]: Leaving directory '/var/tmp/hokuto/refind-25/build/gptsync'
+make[1]: Leaving directory '/var/tmp/hokuto/refind-25/build'
+make: 'gptsync' is up to date.
+Did not find /usr/local/edk2-vUDK2018 or /usr/local/UDK2014/MyWorkSpace; building with GNU-EFI
+make fs_gnuefi
+make[1]: Entering directory '/var/tmp/hokuto/refind-25/build'
+make MAKEWITH=GNUEFI -C filesystems all_gnuefi
+make[2]: Entering directory '/var/tmp/hokuto/refind-25/build/filesystems'
+rm -f fsw_efi.o
+make DRIVERNAME=ext2 -f Make.gnuefi
+make[3]: Entering directory '/var/tmp/hokuto/refind-25/build/filesystems'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=ext2 -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_core.c -o fsw_core.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=ext2 -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_efi.c -o fsw_efi.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=ext2 -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_efi_lib.c -o fsw_efi_lib.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=ext2 -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_lib.c -o fsw_lib.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=ext2 -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_ext2.c -o fsw_ext2.o
+/usr/bin/ld -T /usr/lib/elf_x86_64_efi.lds -shared -Bsymbolic -nostdlib -L/usr/lib -L/usr/lib /usr/lib/crt0-efi-x86_64.o -znocombreloc -zdefs  fsw_core.o fsw_efi.o fsw_efi_lib.o fsw_lib.o fsw_ext2.o -o ext2_x64.so  -lefi -lgnuefi /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.0/libgcc.a
+/usr/bin/objcopy -j .text -j .sdata -j .data -j .dynamic -j .dynsym -j .rodata \
+           -j .rel -j .rela -j .rel.* -j .rela.* -j .rel* -j .rela* \
+	   -j .reloc --strip-unneeded --output-target=efi-bsdrv-x86_64 ext2_x64.so ext2_x64.efi
+/usr/bin/objcopy --add-section .sbat=./../refind-sbat.csv \
+	   --adjust-section-vma .sbat+10000000 ext2_x64.efi
+chmod a-x ext2_x64.efi
+mkdir -p ../drivers_x64
+cp ext2_x64.efi ../drivers_x64
+make[3]: Leaving directory '/var/tmp/hokuto/refind-25/build/filesystems'
+rm -f fsw_efi.o
+make DRIVERNAME=ext4 -f Make.gnuefi
+make[3]: Entering directory '/var/tmp/hokuto/refind-25/build/filesystems'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=ext4 -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_efi.c -o fsw_efi.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=ext4 -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_ext4.c -o fsw_ext4.o
+/usr/bin/ld -T /usr/lib/elf_x86_64_efi.lds -shared -Bsymbolic -nostdlib -L/usr/lib -L/usr/lib /usr/lib/crt0-efi-x86_64.o -znocombreloc -zdefs  fsw_core.o fsw_efi.o fsw_efi_lib.o fsw_lib.o fsw_ext4.o -o ext4_x64.so  -lefi -lgnuefi /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.0/libgcc.a
+/usr/bin/objcopy -j .text -j .sdata -j .data -j .dynamic -j .dynsym -j .rodata \
+           -j .rel -j .rela -j .rel.* -j .rela.* -j .rel* -j .rela* \
+	   -j .reloc --strip-unneeded --output-target=efi-bsdrv-x86_64 ext4_x64.so ext4_x64.efi
+/usr/bin/objcopy --add-section .sbat=./../refind-sbat.csv \
+	   --adjust-section-vma .sbat+10000000 ext4_x64.efi
+chmod a-x ext4_x64.efi
+mkdir -p ../drivers_x64
+cp ext4_x64.efi ../drivers_x64
+make[3]: Leaving directory '/var/tmp/hokuto/refind-25/build/filesystems'
+rm -f fsw_efi.o
+make DRIVERNAME=reiserfs -f Make.gnuefi
+make[3]: Entering directory '/var/tmp/hokuto/refind-25/build/filesystems'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=reiserfs -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_efi.c -o fsw_efi.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=reiserfs -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_reiserfs.c -o fsw_reiserfs.o
+/usr/bin/ld -T /usr/lib/elf_x86_64_efi.lds -shared -Bsymbolic -nostdlib -L/usr/lib -L/usr/lib /usr/lib/crt0-efi-x86_64.o -znocombreloc -zdefs  fsw_core.o fsw_efi.o fsw_efi_lib.o fsw_lib.o fsw_reiserfs.o -o reiserfs_x64.so  -lefi -lgnuefi /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.0/libgcc.a
+/usr/bin/objcopy -j .text -j .sdata -j .data -j .dynamic -j .dynsym -j .rodata \
+           -j .rel -j .rela -j .rel.* -j .rela.* -j .rel* -j .rela* \
+	   -j .reloc --strip-unneeded --output-target=efi-bsdrv-x86_64 reiserfs_x64.so reiserfs_x64.efi
+/usr/bin/objcopy --add-section .sbat=./../refind-sbat.csv \
+	   --adjust-section-vma .sbat+10000000 reiserfs_x64.efi
+chmod a-x reiserfs_x64.efi
+mkdir -p ../drivers_x64
+cp reiserfs_x64.efi ../drivers_x64
+make[3]: Leaving directory '/var/tmp/hokuto/refind-25/build/filesystems'
+rm -f fsw_efi.o
+make DRIVERNAME=iso9660 -f Make.gnuefi
+make[3]: Entering directory '/var/tmp/hokuto/refind-25/build/filesystems'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=iso9660 -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_efi.c -o fsw_efi.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=iso9660 -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_iso9660.c -o fsw_iso9660.o
+[01m[Kfsw_iso9660.c:[m[K In function ‘[01m[Kfsw_iso9660_read_dirrec[m[K’:
+[01m[Kfsw_iso9660.c:621:17:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kr[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  621 |         fsw_u8 *[01;35m[Kr[m[K;
+      |                 [01;35m[K^[m[K
+/usr/bin/ld -T /usr/lib/elf_x86_64_efi.lds -shared -Bsymbolic -nostdlib -L/usr/lib -L/usr/lib /usr/lib/crt0-efi-x86_64.o -znocombreloc -zdefs  fsw_core.o fsw_efi.o fsw_efi_lib.o fsw_lib.o fsw_iso9660.o -o iso9660_x64.so  -lefi -lgnuefi /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.0/libgcc.a
+/usr/bin/objcopy -j .text -j .sdata -j .data -j .dynamic -j .dynsym -j .rodata \
+           -j .rel -j .rela -j .rel.* -j .rela.* -j .rel* -j .rela* \
+	   -j .reloc --strip-unneeded --output-target=efi-bsdrv-x86_64 iso9660_x64.so iso9660_x64.efi
+/usr/bin/objcopy --add-section .sbat=./../refind-sbat.csv \
+	   --adjust-section-vma .sbat+10000000 iso9660_x64.efi
+chmod a-x iso9660_x64.efi
+mkdir -p ../drivers_x64
+cp iso9660_x64.efi ../drivers_x64
+make[3]: Leaving directory '/var/tmp/hokuto/refind-25/build/filesystems'
+rm -f fsw_efi.o
+make DRIVERNAME=hfs -f Make.gnuefi
+make[3]: Entering directory '/var/tmp/hokuto/refind-25/build/filesystems'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=hfs -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_efi.c -o fsw_efi.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=hfs -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_hfs.c -o fsw_hfs.o
+/usr/bin/ld -T /usr/lib/elf_x86_64_efi.lds -shared -Bsymbolic -nostdlib -L/usr/lib -L/usr/lib /usr/lib/crt0-efi-x86_64.o -znocombreloc -zdefs  fsw_core.o fsw_efi.o fsw_efi_lib.o fsw_lib.o fsw_hfs.o -o hfs_x64.so  -lefi -lgnuefi /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.0/libgcc.a
+/usr/bin/objcopy -j .text -j .sdata -j .data -j .dynamic -j .dynsym -j .rodata \
+           -j .rel -j .rela -j .rel.* -j .rela.* -j .rel* -j .rela* \
+	   -j .reloc --strip-unneeded --output-target=efi-bsdrv-x86_64 hfs_x64.so hfs_x64.efi
+/usr/bin/objcopy --add-section .sbat=./../refind-sbat.csv \
+	   --adjust-section-vma .sbat+10000000 hfs_x64.efi
+chmod a-x hfs_x64.efi
+mkdir -p ../drivers_x64
+cp hfs_x64.efi ../drivers_x64
+make[3]: Leaving directory '/var/tmp/hokuto/refind-25/build/filesystems'
+rm -f fsw_efi.o
+make DRIVERNAME=btrfs -f Make.gnuefi
+make[3]: Entering directory '/var/tmp/hokuto/refind-25/build/filesystems'
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=btrfs -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_efi.c -o fsw_efi.o
+/usr/bin/gcc -Os -fno-strict-aliasing -fno-tree-loop-distribute-patterns -fno-stack-protector -fshort-wchar -Wall -DEFIX64 -DEFI_FUNCTION_WRAPPER -m64 -mno-red-zone  -fpic -I/usr/include/efi -I/usr/include/efi/x86_64 -I/usr/include/efi/protocol -I../include -I../refind -I../libeg -I../mok -I../gzip -DFSTYPE=btrfs -I.  "-DEFIAPI=__attribute__((ms_abi))"  \
+      -D__MAKEWITH_GNUEFI -DGNU_EFI_USE_REALLOCATEPOOL_ABI=0 -DGNU_EFI_USE_COMPAREGUID_ABI=0 -c fsw_btrfs.c -o fsw_btrfs.o
+/usr/bin/ld -T /usr/lib/elf_x86_64_efi.lds -shared -Bsymbolic -nostdlib -L/usr/lib -L/usr/lib /usr/lib/crt0-efi-x86_64.o -znocombreloc -zdefs  fsw_core.o fsw_efi.o fsw_efi_lib.o fsw_lib.o fsw_btrfs.o -o btrfs_x64.so  -lefi -lgnuefi /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.0/libgcc.a
+/usr/bin/objcopy -j .text -j .sdata -j .data -j .dynamic -j .dynsym -j .rodata \
+           -j .rel -j .rela -j .rel.* -j .rela.* -j .rel* -j .rela* \
+	   -j .reloc --strip-unneeded --output-target=efi-bsdrv-x86_64 btrfs_x64.so btrfs_x64.efi
+/usr/bin/objcopy --add-section .sbat=./../refind-sbat.csv \
+	   --adjust-section-vma .sbat+10000000 btrfs_x64.efi
+chmod a-x btrfs_x64.efi
+mkdir -p ../drivers_x64
+cp btrfs_x64.efi ../drivers_x64
+make[3]: Leaving directory '/var/tmp/hokuto/refind-25/build/filesystems'
+make[2]: Leaving directory '/var/tmp/hokuto/refind-25/build/filesystems'
+make[1]: Leaving directory '/var/tmp/hokuto/refind-25/build'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share/refind'
+'refind/refind_x64.efi' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/refind_x64.efi'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share/refind/drivers_'
+'drivers_x64/btrfs_x64.efi' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/drivers_/btrfs_x64.efi'
+'drivers_x64/ext2_x64.efi' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/drivers_/ext2_x64.efi'
+'drivers_x64/ext4_x64.efi' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/drivers_/ext4_x64.efi'
+'drivers_x64/hfs_x64.efi' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/drivers_/hfs_x64.efi'
+'drivers_x64/iso9660_x64.efi' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/drivers_/iso9660_x64.efi'
+'drivers_x64/reiserfs_x64.efi' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/drivers_/reiserfs_x64.efi'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share/refind/tools_'
+'gptsync/gptsync_x64.efi' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/tools_/gptsync_x64.efi'
+'refind.conf-sample' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/refind.conf-sample'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys'
+'keys/altlinux.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/altlinux.cer'
+'keys/canonical-uefi-ca.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/canonical-uefi-ca.cer'
+'keys/centossecureboot201.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/centossecureboot201.cer'
+'keys/centossecurebootca2.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/centossecurebootca2.cer'
+'keys/debian.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/debian.cer'
+'keys/fedora-ca.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/fedora-ca.cer'
+'keys/microsoft-kekca-public.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/microsoft-kekca-public.cer'
+'keys/microsoft-pca-public.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/microsoft-pca-public.cer'
+'keys/microsoft-uefica-public.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/microsoft-uefica-public.cer'
+'keys/openSUSE-UEFI-CA-Certificate-4096.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/openSUSE-UEFI-CA-Certificate-4096.cer'
+'keys/openSUSE-UEFI-CA-Certificate.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/openSUSE-UEFI-CA-Certificate.cer'
+'keys/redhatsecureboot003.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/redhatsecureboot003.cer'
+'keys/redhatsecureboot401.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/redhatsecureboot401.cer'
+'keys/redhatsecurebootca2.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/redhatsecurebootca2.cer'
+'keys/redhatsecurebootca4.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/redhatsecurebootca4.cer'
+'keys/refind.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/refind.cer'
+'keys/SLES-UEFI-CA-Certificate.cer' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/SLES-UEFI-CA-Certificate.cer'
+'keys/canonical-uefi-ca.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/canonical-uefi-ca.crt'
+'keys/centossecureboot201.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/centossecureboot201.crt'
+'keys/centossecurebootca2.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/centossecurebootca2.crt'
+'keys/fedora-ca.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/fedora-ca.crt'
+'keys/microsoft-uefica-public.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/microsoft-uefica-public.crt'
+'keys/openSUSE-UEFI-CA-Certificate-4096.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/openSUSE-UEFI-CA-Certificate-4096.crt'
+'keys/openSUSE-UEFI-CA-Certificate.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/openSUSE-UEFI-CA-Certificate.crt'
+'keys/redhatsecureboot003.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/redhatsecureboot003.crt'
+'keys/redhatsecureboot401.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/redhatsecureboot401.crt'
+'keys/redhatsecurebootca2.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/redhatsecurebootca2.crt'
+'keys/redhatsecurebootca4.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/redhatsecurebootca4.crt'
+'keys/refind.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/refind.crt'
+'keys/SLES-UEFI-CA-Certificate.crt' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/keys/SLES-UEFI-CA-Certificate.crt'
+install: creating directory '/var/tmp/hokuto/refind-25/output/etc'
+install: creating directory '/var/tmp/hokuto/refind-25/output/etc/refind.d'
+install: creating directory '/var/tmp/hokuto/refind-25/output/etc/refind.d/keys'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts'
+'fonts/liberation-mono-regular-12.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/liberation-mono-regular-12.png'
+'fonts/liberation-mono-regular-14.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/liberation-mono-regular-14.png'
+'fonts/liberation-mono-regular-24.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/liberation-mono-regular-24.png'
+'fonts/liberation-mono-regular-28.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/liberation-mono-regular-28.png'
+'fonts/nimbus-mono-12.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/nimbus-mono-12.png'
+'fonts/nimbus-mono-14.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/nimbus-mono-14.png'
+'fonts/nimbus-mono-16.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/nimbus-mono-16.png'
+'fonts/nimbus-mono-24.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/nimbus-mono-24.png'
+'fonts/nimbus-mono-28.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/nimbus-mono-28.png'
+'fonts/ubuntu-mono-12.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/ubuntu-mono-12.png'
+'fonts/ubuntu-mono-14.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/ubuntu-mono-14.png'
+'fonts/ubuntu-mono-16.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/ubuntu-mono-16.png'
+'fonts/ubuntu-mono-24.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/ubuntu-mono-24.png'
+'fonts/ubuntu-mono-28.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/fonts/ubuntu-mono-28.png'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons'
+'icons/arrow_left.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/arrow_left.png'
+'icons/arrow_right.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/arrow_right.png'
+'icons/boot_linux.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/boot_linux.png'
+'icons/boot_win.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/boot_win.png'
+'icons/func_about.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/func_about.png'
+'icons/func_bootorder.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/func_bootorder.png'
+'icons/func_csr_rotate.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/func_csr_rotate.png'
+'icons/func_exit.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/func_exit.png'
+'icons/func_firmware.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/func_firmware.png'
+'icons/func_hidden.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/func_hidden.png'
+'icons/func_install.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/func_install.png'
+'icons/func_reset.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/func_reset.png'
+'icons/func_shutdown.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/func_shutdown.png'
+'icons/mouse.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/mouse.png'
+'icons/os_arch.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_arch.png'
+'icons/os_artful.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_artful.png'
+'icons/os_bionic.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_bionic.png'
+'icons/os_centos.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_centos.png'
+'icons/os_chakra.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_chakra.png'
+'icons/os_chrome.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_chrome.png'
+'icons/os_clover.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_clover.png'
+'icons/os_crunchbang.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_crunchbang.png'
+'icons/os_debian.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_debian.png'
+'icons/os_devuan.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_devuan.png'
+'icons/os_elementary.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_elementary.png'
+'icons/os_endeavouros.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_endeavouros.png'
+'icons/os_fedora.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_fedora.png'
+'icons/os_freebsd.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_freebsd.png'
+'icons/os_frugalware.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_frugalware.png'
+'icons/os_gentoo.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_gentoo.png'
+'icons/os_gummiboot.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_gummiboot.png'
+'icons/os_haiku.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_haiku.png'
+'icons/os_hwtest.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_hwtest.png'
+'icons/os_kubuntu.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_kubuntu.png'
+'icons/os_legacy.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_legacy.png'
+'icons/os_linuxmint.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_linuxmint.png'
+'icons/os_linux.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_linux.png'
+'icons/os_lubuntu.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_lubuntu.png'
+'icons/os_mac.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_mac.png'
+'icons/os_mageia.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_mageia.png'
+'icons/os_mandriva.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_mandriva.png'
+'icons/os_manjaro.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_manjaro.png'
+'icons/os_netbsd.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_netbsd.png'
+'icons/os_network.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_network.png'
+'icons/os_opensuse.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_opensuse.png'
+'icons/os_redhat.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_redhat.png'
+'icons/os_refind.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_refind.png'
+'icons/os_refit.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_refit.png'
+'icons/os_slackware.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_slackware.png'
+'icons/os_suse.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_suse.png'
+'icons/os_systemd.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_systemd.png'
+'icons/os_trusty.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_trusty.png'
+'icons/os_ubuntu.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_ubuntu.png'
+'icons/os_uefi.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_uefi.png'
+'icons/os_unknown.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_unknown.png'
+'icons/os_void.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_void.png'
+'icons/os_win8.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_win8.png'
+'icons/os_win.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_win.png'
+'icons/os_xenial.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_xenial.png'
+'icons/os_xubuntu.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_xubuntu.png'
+'icons/os_zesty.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/os_zesty.png'
+'icons/tool_apple_rescue.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/tool_apple_rescue.png'
+'icons/tool_fwupdate.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/tool_fwupdate.png'
+'icons/tool_memtest.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/tool_memtest.png'
+'icons/tool_mok_tool.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/tool_mok_tool.png'
+'icons/tool_netboot.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/tool_netboot.png'
+'icons/tool_part.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/tool_part.png'
+'icons/tool_rescue.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/tool_rescue.png'
+'icons/tool_shell.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/tool_shell.png'
+'icons/tool_windows_rescue.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/tool_windows_rescue.png'
+'icons/transparent.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/transparent.png'
+'icons/vol_efi.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/vol_efi.png'
+'icons/vol_external.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/vol_external.png'
+'icons/vol_internal.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/vol_internal.png'
+'icons/vol_net.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/vol_net.png'
+'icons/vol_optical.png' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/vol_optical.png'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg'
+'icons/svg/boot_win.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/boot_win.svg'
+'icons/svg/func_csr_rotate.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/func_csr_rotate.svg'
+'icons/svg/mouse.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/mouse.svg'
+'icons/svg/os_clover.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_clover.svg'
+'icons/svg/os_debian.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_debian.svg'
+'icons/svg/os_devuan.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_devuan.svg'
+'icons/svg/os_elementary.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_elementary.svg'
+'icons/svg/os_gummiboot.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_gummiboot.svg'
+'icons/svg/os_haiku.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_haiku.svg'
+'icons/svg/os_legacy.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_legacy.svg'
+'icons/svg/os_mac.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_mac.svg'
+'icons/svg/os_netbsd.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_netbsd.svg'
+'icons/svg/os_redhat.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_redhat.svg'
+'icons/svg/os_refind.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_refind.svg'
+'icons/svg/os_refit.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_refit.svg'
+'icons/svg/os_win.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_win.svg'
+'icons/svg/os_xenial.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/os_xenial.svg'
+'icons/svg/tool_fwupdate.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/tool_fwupdate.svg'
+'icons/svg/tool_memtest.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/tool_memtest.svg'
+'icons/svg/tool_rescue.svg' -> '/var/tmp/hokuto/refind-25/output/usr/share/refind/icons/svg/tool_rescue.svg'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/bin'
+'refind-install' -> '/var/tmp/hokuto/refind-25/output/usr/bin/refind-install'
+'refind-mkdefault' -> '/var/tmp/hokuto/refind-25/output/usr/bin/refind-mkdefault'
+'refind-sb-healthcheck' -> '/var/tmp/hokuto/refind-25/output/usr/bin/refind-sb-healthcheck'
+'mkrlconf' -> '/var/tmp/hokuto/refind-25/output/usr/bin/mkrlconf'
+'mvrefind' -> '/var/tmp/hokuto/refind-25/output/usr/bin/mvrefind'
+'fonts/mkfont.sh' -> '/var/tmp/hokuto/refind-25/output/usr/bin/refind-mkfont'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share/man'
+install: creating directory '/var/tmp/hokuto/refind-25/output/usr/share/man/man8'
+'docs/man/mkrlconf.8' -> '/var/tmp/hokuto/refind-25/output/usr/share/man/man8/mkrlconf.8'
+'docs/man/mvrefind.8' -> '/var/tmp/hokuto/refind-25/output/usr/share/man/man8/mvrefind.8'
+'docs/man/refind-install.8' -> '/var/tmp/hokuto/refind-25/output/usr/share/man/man8/refind-install.8'
+'docs/man/refind-mkdefault.8' -> '/var/tmp/hokuto/refind-25/output/usr/share/man/man8/refind-mkdefault.8'
+'docs/man/refind-sb-healthcheck.8' -> '/var/tmp/hokuto/refind-25/output/usr/share/man/man8/refind-sb-healthcheck.8'
+
+Script done on 2026-04-23 18:33:49+07:00 [COMMAND_EXIT_CODE="0"]
