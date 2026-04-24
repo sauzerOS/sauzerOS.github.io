@@ -1,0 +1,106 @@
+Script started on 2026-04-24 09:44:58+07:00 [COMMAND="cd /var/tmp/hokuto/tzdata-13/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/tzdata-13/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/tzdata-13/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/tzdata-13/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/tzdata-13/build/.cache' /repo/sauzeros/core/tzdata/build /var/tmp/hokuto/tzdata-13/output 2026b tzdata" <not executed on terminal>]
+{ (type git) >/dev/null 2>&1 && \
+	  V=$(git describe --match '[0-9][0-9][0-9][0-9][a-z]*' --abbrev=7 --dirty) || \
+	  if test 'unknown' = unknown && read -r V <version; then \
+	    V=${V%-dirty}-dirty; \
+	  else \
+	    V='unknown'; \
+	  fi; } && \
+	printf '%s\n' "$V" >version.out
+printf '%s\n' >tzdir.h.out \
+	  '#ifndef TZDEFAULT' \
+	  '# define TZDEFAULT "/etc/localtime" /* default zone */' \
+	  '#endif' \
+	  '#ifndef TZDIR' \
+	  '# define TZDIR "/usr/share/zoneinfo" /* TZif directory */' \
+	  '#endif'
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10   -c -o asctime.o asctime.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10   -c -o difftime.o difftime.c
+awk -v EXPIRES_LINE=0 \
+	  -f leapseconds.awk leap-seconds.list >leapseconds.out
+awk \
+	  -v DATAFORM=main \
+	  -v PACKRATDATA='' \
+	  -v PACKRATLIST='' \
+	  -f ziguard.awk \
+	  africa antarctica asia australasia  europe northamerica southamerica etcetera factory backward  >main.zi.out
+awk \
+	  -v DATAFORM=vanguard \
+	  -v PACKRATDATA='' \
+	  -v PACKRATLIST='' \
+	  -f ziguard.awk \
+	  africa antarctica asia australasia  europe northamerica southamerica etcetera factory backward  >vanguard.zi.out
+awk \
+	  -v DATAFORM=rearguard \
+	  -v PACKRATDATA='' \
+	  -v PACKRATLIST='' \
+	  -f ziguard.awk \
+	  africa antarctica asia australasia  europe northamerica southamerica etcetera factory backward  >rearguard.zi.out
+mv tzdir.h.out tzdir.h
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10   -c -o localtime.o localtime.c
+fatal: not a git repository (or any parent up to mount point /var)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10   -c -o strftime.o strftime.c
+/bin/sh: line 3: version: No such file or directory
+mv version.out version
+read -r VERSION <version && sed \
+	  -e "s'#!/bin/bash'#!"'/bin/bash'\' \
+	  -e s\''\(AWK\)=[^}]*'\''\1=\'\''awk\'\'\' \
+	  -e s\''\(PKGVERSION\)=.*'\''\1=\'\''(tzcode) \'\'\' \
+	  -e s\''\(REPORT_BUGS_TO\)=.*'\''\1=\'\''tz@iana.org\'\'\' \
+	  -e s\''\(TZDIR\)=[^}]*'\''\1=\'\''/usr/share/zoneinfo\'\'\' \
+	  -e s\''\(TZVERSION\)=.*'\''\1=\'"'$VERSION\\''" \
+	  <tzselect.ksh >tzselect.out
+read -r VERSION <version && printf '%s\n' \
+	  'static char const PKGVERSION[]="(tzcode) ";' \
+	  "static char const TZVERSION[]=\"$VERSION\";" \
+	  'static char const REPORT_BUGS_TO[]="tz@iana.org";' \
+	  >version.h.out
+mv leapseconds.out leapseconds
+mv version.h.out version.h
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10   -c -o zic.o zic.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10   -c -o zdump.o zdump.c
+chmod +x tzselect.out
+mv tzselect.out tzselect
+mv main.zi.out main.zi
+read -r version <version && \
+	  LC_ALL=C awk \
+	    -v dataform='main' \
+	    -v deps='ziguard.awk africa antarctica asia australasia  europe northamerica southamerica etcetera factory backward   zishrink.awk' \
+	    -v redo='posix_only' \
+	    -v version="$version" \
+	    -f zishrink.awk \
+	    main.zi >tzdata.zi.out
+mv vanguard.zi.out vanguard.zi
+mv rearguard.zi.out rearguard.zi
+mv tzdata.zi.out tzdata.zi
+cc -o zdump -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack zdump.o localtime.o strftime.o 
+rm -f libtz.a
+gcc-ar -rv libtz.a localtime.o asctime.o difftime.o strftime.o
+/usr/bin/ar: creating libtz.a
+a - localtime.o
+a - asctime.o
+a - difftime.o
+a - strftime.o
+: libtz.a
+cc -o zic -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack zic.o 
+./zic  -d '/var/tmp/hokuto/tzdata-13/output/usr/share/zoneinfo' tzdata.zi
+mkdir -p '/var/tmp/hokuto/tzdata-13/output/usr/bin' \
+		'/var/tmp/hokuto/tzdata-13/output/usr/bin' '/var/tmp/hokuto/tzdata-13/output/usr/bin' \
+		'/var/tmp/hokuto/tzdata-13/output/usr/lib' \
+		'/var/tmp/hokuto/tzdata-13/output/usr/share/man/man3' '/var/tmp/hokuto/tzdata-13/output/usr/share/man/man5' \
+		'/var/tmp/hokuto/tzdata-13/output/usr/share/man/man8'
+./zic  -d '/var/tmp/hokuto/tzdata-13/output/usr/share/zoneinfo' -l Factory \
+		-t '/var/tmp/hokuto/tzdata-13/output/etc/localtime'
+cp -f iso3166.tab leapseconds tzdata.zi zone.tab zone1970.tab zonenow.tab '/var/tmp/hokuto/tzdata-13/output/usr/share/zoneinfo/.'
+cp tzselect '/var/tmp/hokuto/tzdata-13/output/usr/bin/.'
+cp zdump '/var/tmp/hokuto/tzdata-13/output/usr/bin/.'
+cp zic '/var/tmp/hokuto/tzdata-13/output/usr/bin/.'
+cp libtz.a '/var/tmp/hokuto/tzdata-13/output/usr/lib/.'
+: '/var/tmp/hokuto/tzdata-13/output/usr/lib/libtz.a'
+cp -f newctime.3 newtzset.3 '/var/tmp/hokuto/tzdata-13/output/usr/share/man/man3/.'
+cp -f tzfile.5 '/var/tmp/hokuto/tzdata-13/output/usr/share/man/man5/.'
+cp -f tzselect.8 zdump.8 zic.8 '/var/tmp/hokuto/tzdata-13/output/usr/share/man/man8/.'
+warning: -p is obsolete and likely ineffective
+
+Script done on 2026-04-24 09:44:59+07:00 [COMMAND_EXIT_CODE="0"]
