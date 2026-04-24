@@ -1,0 +1,59 @@
+Script started on 2026-04-24 14:31:25+07:00 [COMMAND="cd /var/tmp/hokuto/parallel-61/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/parallel-61/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/parallel-61/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/parallel-61/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/parallel-61/build/.cache' /repo/sauzeros/extra/parallel/build /var/tmp/hokuto/parallel-61/output 20260422 parallel" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether ln -s works... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/parallel-61/build'
+Making all in src
+make[2]: Entering directory '/var/tmp/hokuto/parallel-61/build/src'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/parallel-61/build/src'
+make[2]: Entering directory '/var/tmp/hokuto/parallel-61/build'
+make[2]: Leaving directory '/var/tmp/hokuto/parallel-61/build'
+make[1]: Leaving directory '/var/tmp/hokuto/parallel-61/build'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/parallel-61/build/src'
+make[2]: Entering directory '/var/tmp/hokuto/parallel-61/build/src'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parallel-61/output/usr/share/man/man1'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parallel-61/output/usr/bin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parallel-61/output/usr/share/man/man7'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parallel-61/output/usr/share/doc/parallel'
+ /usr/bin/install -c parallel sql niceload parcat parset parsort env_parallel env_parallel.ash env_parallel.bash env_parallel.csh env_parallel.dash env_parallel.fish env_parallel.ksh env_parallel.mksh env_parallel.pdksh env_parallel.sh env_parallel.tcsh env_parallel.zsh '/var/tmp/hokuto/parallel-61/output/usr/bin'
+ /usr/bin/install -c -m 644 parallel.html env_parallel.html sem.html sql.html niceload.html parallel_examples.html parallel_tutorial.html parallel_book.html parallel_design.html parallel_alternatives.html parcat.html parset.html parsort.html parallel.texi env_parallel.texi sem.texi sql.texi niceload.texi parallel_examples.texi parallel_tutorial.texi parallel_book.texi parallel_design.texi parallel_alternatives.texi parcat.texi parset.texi parsort.texi parallel.rst env_parallel.rst sem.rst sql.rst niceload.rst parallel_examples.rst parallel_tutorial.rst parallel_book.rst parallel_design.rst parallel_alternatives.rst parcat.rst parset.rst parsort.rst parallel.pdf '/var/tmp/hokuto/parallel-61/output/usr/share/doc/parallel'
+make  install-exec-hook
+ /usr/bin/install -c -m 644 parallel.1 env_parallel.1 sem.1 sql.1 niceload.1 parcat.1 parset.1 parsort.1 '/var/tmp/hokuto/parallel-61/output/usr/share/man/man1'
+ /usr/bin/install -c -m 644 parallel_examples.7 parallel_tutorial.7 parallel_book.7 parallel_design.7 parallel_alternatives.7 '/var/tmp/hokuto/parallel-61/output/usr/share/man/man7'
+make[3]: Entering directory '/var/tmp/hokuto/parallel-61/build/src'
+rm "/var/tmp/hokuto/parallel-61/output/usr/bin"/sem || true
+ /usr/bin/install -c -m 644 env_parallel.pdf sem.pdf sql.pdf niceload.pdf parallel_examples.pdf parallel_tutorial.pdf parallel_book.pdf parallel_design.pdf parallel_alternatives.pdf parcat.pdf parset.pdf parsort.pdf parallel_cheat_bw.pdf parallel_options_map.pdf '/var/tmp/hokuto/parallel-61/output/usr/share/doc/parallel'
+rm: cannot remove '/var/tmp/hokuto/parallel-61/output/usr/bin/sem': No such file or directory
+ln -s parallel "/var/tmp/hokuto/parallel-61/output/usr/bin"/sem
+make[3]: Leaving directory '/var/tmp/hokuto/parallel-61/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/parallel-61/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/parallel-61/build/src'
+make[1]: Entering directory '/var/tmp/hokuto/parallel-61/build'
+make[2]: Entering directory '/var/tmp/hokuto/parallel-61/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+make  install-data-hook
+make[3]: Entering directory '/var/tmp/hokuto/parallel-61/build'
+mkdir -p /var/tmp/hokuto/parallel-61/output/usr/share/zsh/site-functions /var/tmp/hokuto/parallel-61/output/usr/share/bash-completion/completions
+/var/tmp/hokuto/parallel-61/output/usr/bin/parallel --shell-completion bash > /var/tmp/hokuto/parallel-61/output/usr/share/bash-completion/completions/parallel
+echo '#compdef parallel' > /var/tmp/hokuto/parallel-61/output/usr/share/zsh/site-functions/_parallel
+echo '(( $+functions[_comp_parallel] )) ||' >> /var/tmp/hokuto/parallel-61/output/usr/share/zsh/site-functions/_parallel
+echo '  eval "$(parallel --shell-completion auto)" &&' >> /var/tmp/hokuto/parallel-61/output/usr/share/zsh/site-functions/_parallel
+echo '  _comp_parallel' >> /var/tmp/hokuto/parallel-61/output/usr/share/zsh/site-functions/_parallel
+make[3]: Leaving directory '/var/tmp/hokuto/parallel-61/build'
+make[2]: Leaving directory '/var/tmp/hokuto/parallel-61/build'
+make[1]: Leaving directory '/var/tmp/hokuto/parallel-61/build'
+
+Script done on 2026-04-24 14:31:27+07:00 [COMMAND_EXIT_CODE="0"]
