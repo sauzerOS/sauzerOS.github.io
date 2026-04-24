@@ -1,0 +1,99 @@
+Script started on 2026-04-24 23:00:20+07:00 [COMMAND="cd /var/tmp/hokuto/cpupower-38/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/cpupower-38/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/cpupower-38/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/cpupower-38/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/cpupower-38/build/.cache' /repo/sauzeros/extra/cpupower/build /var/tmp/hokuto/cpupower-38/output 7.0.1 cpupower" <not executed on terminal>]
+/var/tmp/hokuto/cpupower-38/build/tools/power/cpupower /var/tmp/hokuto/cpupower-38/build
+  CC       lib/cpupower.o
+  CC       lib/cpuidle.o
+  CC       lib/acpi_cppc.o
+  CC       lib/powercap.o
+  CC       lib/cpufreq.o
+  CC       utils/helpers/amd.o
+  CC       utils/helpers/msr.o
+  CC       utils/helpers/cpuid.o
+  CC       utils/helpers/misc.o
+  CC       utils/helpers/sysfs.o
+  CC       utils/helpers/pci.o
+  CC       utils/helpers/bitmask.o
+  CC       utils/idle_monitor/nhm_idle.o
+  CC       utils/idle_monitor/snb_idle.o
+  CC       utils/idle_monitor/hsw_ext_idle.o
+  CC       utils/idle_monitor/amd_fam14h_idle.o
+  CC       utils/idle_monitor/cpuidle_sysfs.o
+  CC       utils/idle_monitor/mperf_monitor.o
+  CC       utils/idle_monitor/cpupower-monitor.o
+  CC       utils/idle_monitor/rapl_monitor.o
+  CC       utils/cpupower.o
+  CC       utils/cpufreq-info.o
+  CC       utils/cpufreq-set.o
+  CC       utils/cpupower-set.o
+  CC       utils/cpupower-info.o
+  CC       utils/cpuidle-info.o
+  CC       utils/cpuidle-set.o
+  CC       utils/powercap-info.o
+  MSGFMT   po/de.gmo
+  MSGFMT   po/it.gmo
+  MSGFMT   po/fr.gmo
+  MSGFMT   po/cs.gmo
+  MSGFMT   po/pt.gmo
+  MSGFMT   po/ka.gmo
+/usr/bin/install -c -d /var/tmp/hokuto/cpupower-38/output/usr/lib/systemd/system
+/usr/bin/install -c -m 644 -D man/cpupower.1 /var/tmp/hokuto/cpupower-38/output/usr/share/man/man1/cpupower.1
+sed 's|___CDIR___|/etc/|; s|___LDIR___|/usr/libexec|' cpupower.service.in > '/var/tmp/hokuto/cpupower-38/output/usr/lib/systemd/system/cpupower.service'
+/usr/bin/install -c -m 644 -D man/cpupower-frequency-set.1 /var/tmp/hokuto/cpupower-38/output/usr/share/man/man1/cpupower-frequency-set.1
+/usr/bin/install -c -m 644 -D man/cpupower-frequency-info.1 /var/tmp/hokuto/cpupower-38/output/usr/share/man/man1/cpupower-frequency-info.1
+  MSGFMT   po/zh_CN.gmo
+/usr/bin/install -c -m 644 -D man/cpupower-idle-set.1 /var/tmp/hokuto/cpupower-38/output/usr/share/man/man1/cpupower-idle-set.1
+/usr/bin/install -c -m 644 -D man/cpupower-idle-info.1 /var/tmp/hokuto/cpupower-38/output/usr/share/man/man1/cpupower-idle-info.1
+  LD       libcpupower.so.1.0.1
+/usr/bin/install -c -m 644 -D man/cpupower-set.1 /var/tmp/hokuto/cpupower-38/output/usr/share/man/man1/cpupower-set.1
+/usr/bin/install -c -m 644 -D man/cpupower-info.1 /var/tmp/hokuto/cpupower-38/output/usr/share/man/man1/cpupower-info.1
+/usr/bin/install -c -m 644 -D man/cpupower-monitor.1 /var/tmp/hokuto/cpupower-38/output/usr/share/man/man1/cpupower-monitor.1
+/usr/bin/install -c -m 644 -D man/cpupower-powercap-info.1 /var/tmp/hokuto/cpupower-38/output/usr/share/man/man1/cpupower-powercap-info.1
+/usr/bin/install -c -d /var/tmp/hokuto/cpupower-38/output/usr/share/locale
+make: Nothing to be done for 'install-man'.
+for HLANG in de fr it cs pt ka zh_CN; do \
+	echo '/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/cpupower-38/output/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo'; \
+	/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/cpupower-38/output/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo; \
+done;
+chmod 644 '/var/tmp/hokuto/cpupower-38/output/usr/lib/systemd/system/cpupower.service'
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/cpupower-38/output/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/cpupower-38/output/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/cpupower-38/output/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/cpupower-38/output/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/cpupower-38/output/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/cpupower-38/output/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/cpupower-38/output/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -d /var/tmp/hokuto/cpupower-38/output/usr/lib
+cp -fpR ./libcpupower.so* /var/tmp/hokuto/cpupower-38/output/usr/lib/
+  CC       cpupower
+make[1]: Entering directory '/var/tmp/hokuto/cpupower-38/build/tools/power/cpupower/bench'
+  CC       parse.o
+  CC       system.o
+  CC       benchmark.o
+/usr/bin/install -c -d /var/tmp/hokuto/cpupower-38/output/usr/include
+  CC       main.o
+/usr/bin/install -c -m 644 lib/cpufreq.h /var/tmp/hokuto/cpupower-38/output/usr/include/cpufreq.h
+/usr/bin/install -c -m 644 lib/cpuidle.h /var/tmp/hokuto/cpupower-38/output/usr/include/cpuidle.h
+/usr/bin/install -c -m 644 lib/powercap.h /var/tmp/hokuto/cpupower-38/output/usr/include/powercap.h
+  CC       cpufreq-bench
+make[1]: Leaving directory '/var/tmp/hokuto/cpupower-38/build/tools/power/cpupower/bench'
+make[1]: Entering directory '/var/tmp/hokuto/cpupower-38/build/tools/power/cpupower/bench'
+mkdir -p /var/tmp/hokuto/cpupower-38/output//usr/bin
+mkdir -p /var/tmp/hokuto/cpupower-38/output//usr/bin
+mkdir -p /var/tmp/hokuto/cpupower-38/output//usr/share/doc/cpupower
+mkdir -p /var/tmp/hokuto/cpupower-38/output//etc/
+install -m 755 .//cpufreq-bench /var/tmp/hokuto/cpupower-38/output//usr/bin/cpufreq-bench
+install -m 755 cpufreq-bench_plot.sh /var/tmp/hokuto/cpupower-38/output//usr/bin/cpufreq-bench_plot.sh
+install -m 644 README-BENCH /var/tmp/hokuto/cpupower-38/output//usr/share/doc/cpupower/README-BENCH
+install -m 755 cpufreq-bench_script.sh /var/tmp/hokuto/cpupower-38/output//usr/share/doc/cpupower/cpufreq-bench_script.sh
+install -m 644 example.cfg /var/tmp/hokuto/cpupower-38/output//etc//cpufreq-bench.conf
+make[1]: Leaving directory '/var/tmp/hokuto/cpupower-38/build/tools/power/cpupower/bench'
+/usr/bin/install -c -d /var/tmp/hokuto/cpupower-38/output/usr/bin
+/usr/bin/install -c ./cpupower /var/tmp/hokuto/cpupower-38/output/usr/bin
+/usr/bin/install -c -d /var/tmp/hokuto/cpupower-38/output/usr/share/bash-completion/completions
+/usr/bin/install -c -m 644 cpupower-completion.sh '/var/tmp/hokuto/cpupower-38/output/usr/share/bash-completion/completions/cpupower'
+/usr/bin/install -c -d /var/tmp/hokuto/cpupower-38/output/etc/
+/usr/bin/install -c -m 644 cpupower-service.conf '/var/tmp/hokuto/cpupower-38/output/etc/'
+/usr/bin/install -c -d /var/tmp/hokuto/cpupower-38/output/usr/libexec
+/usr/bin/install -c cpupower.sh '/var/tmp/hokuto/cpupower-38/output/usr/libexec/cpupower'
+/var/tmp/hokuto/cpupower-38/build
+
+Script done on 2026-04-24 23:00:21+07:00 [COMMAND_EXIT_CODE="0"]
