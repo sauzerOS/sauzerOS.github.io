@@ -1,0 +1,366 @@
+Script started on 2026-04-25 13:19:35+07:00 [COMMAND="cd /var/tmp/hokuto/mangohud-64/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/mangohud-64/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/mangohud-64/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/mangohud-64/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/mangohud-64/build/.cache' /repo/sauzeros/extra/mangohud/build /var/tmp/hokuto/mangohud-64/output 0.8.3 mangohud" <not executed on terminal>]
+[1mThe Meson build system[0m
+Version: 1.11.1
+Source dir: [1m/var/tmp/hokuto/mangohud-64/build[0m
+Build dir: [1m/var/tmp/hokuto/mangohud-64/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mMangoHud[0m
+Project version: [1mv0.8.3[0m
+C compiler for the host machine: [1mcc[0m (gcc 15.2.0 "cc (GCC) 15.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46
+C++ compiler for the host machine: [1mc++[0m (gcc 15.2.0 "c++ (GCC) 15.2.0")
+C++ linker for the host machine: [1mc++[0m ld.bfd 2.46
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Program python3 (mako) found: [1;32mYES[0m (/usr/bin/python3) modules: mako
+Checking if "[1mGCC atomic builtins[0m" compiles: [1;32mYES[0m 
+Checking if "[1mSupports timespec_get[0m" compiles: [1;32mYES[0m 
+Checking for function "[1mbswap32[0m" : [1;32mYES[0m 
+Checking for function "[1mbswap64[0m" : [1;32mYES[0m 
+Checking for function "[1mclz[0m" : [1;32mYES[0m 
+Checking for function "[1mclzll[0m" : [1;32mYES[0m 
+Checking for function "[1mctz[0m" : [1;32mYES[0m 
+Checking for function "[1mexpect[0m" : [1;32mYES[0m 
+Checking for function "[1mffs[0m" : [1;32mYES[0m 
+Checking for function "[1mffsll[0m" : [1;32mYES[0m 
+Checking for function "[1mpopcount[0m" : [1;32mYES[0m 
+Checking for function "[1mpopcountll[0m" : [1;32mYES[0m 
+Checking for function "[1munreachable[0m" : [1;32mYES[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Run-time dependency [1mx11[0m found: [1;32mYES[0m [36m1.8.13[0m
+Run-time dependency [1mwayland-client[0m found: [1;32mYES[0m [36m1.25.0[0m
+Run-time dependency [1mdbus-1[0m found: [1;32mYES[0m [36m1.16.2[0m
+Run-time dependency [1mxkbcommon[0m found: [1;32mYES[0m [36m1.13.1[0m
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Compiler for C supports arguments -Werror=implicit-function-declaration: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=missing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=missing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=return-type: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=incompatible-pointer-types: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C supports arguments -Qunused-arguments: [1;31mNO[0m 
+Compiler for C supports arguments -fno-math-errno: [1;32mYES[0m 
+Compiler for C supports arguments -fno-trapping-math: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-missing-field-initializers: [1;32mYES[0m 
+Compiler for C++ supports arguments -Werror=missing-declarations: [1;32mYES[0m 
+Compiler for C++ supports arguments -Werror=return-type: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C++ supports arguments -Qunused-arguments: [1;31mNO[0m 
+Compiler for C++ supports arguments -fno-math-errno: [1;32mYES[0m 
+Compiler for C++ supports arguments -fno-trapping-math: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-non-virtual-dtor: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-missing-field-initializers: [1;32mYES[0m 
+Checking for function "[1mdlopen[0m" : [1;32mYES[0m 
+Checking for function "[1mclock_gettime[0m" : [1;32mYES[0m 
+
+Executing subproject [1mvulkan-headers[0m 
+
+vulkan-headers| Project name: [1mvulkan-headers[0m
+vulkan-headers| Project version: [1m1.4.345[0m
+vulkan-headers| C compiler for the host machine: [1mcc[0m (gcc 15.2.0 "cc (GCC) 15.2.0")
+vulkan-headers| C linker for the host machine: [1mcc[0m ld.bfd 2.46
+vulkan-headers| Build targets in project: [1m1[0m
+vulkan-headers| Subproject [1mvulkan-headers[0m finished.
+
+
+Executing subproject [1mvulkan-utility-libraries[0m 
+
+vulkan-utility-libraries| Project name: [1mvulkan-utility-libraries[0m
+vulkan-utility-libraries| Project version: [1m1.4.346[0m
+vulkan-utility-libraries| C compiler for the host machine: [1mcc[0m (gcc 15.2.0 "cc (GCC) 15.2.0")
+vulkan-utility-libraries| C linker for the host machine: [1mcc[0m ld.bfd 2.46
+vulkan-utility-libraries| Build targets in project: [1m1[0m
+vulkan-utility-libraries| Subproject [1mvulkan-utility-libraries[0m finished.
+
+Checking for size of "[1mvoid*[0m" : [1m8[0m 
+
+Executing subproject [1mimgui[0m 
+
+imgui| Project name: [1mimgui[0m
+imgui| Project version: [1m1.91.6[0m
+imgui| C++ compiler for the host machine: [1mc++[0m (gcc 15.2.0 "c++ (GCC) 15.2.0")
+imgui| C++ linker for the host machine: [1mc++[0m ld.bfd 2.46
+imgui| Library [1md3dcompiler[0m found: [1;31mNO[0m
+imgui| Library [1md3d9[0m skipped: feature [1mdx9[0m disabled
+imgui| Library [1md3d10[0m skipped: feature [1mdx10[0m disabled
+imgui| Library [1md3d11[0m skipped: feature [1mdx11[0m disabled
+imgui| Library [1md3d12[0m skipped: feature [1mdx12[0m disabled
+imgui| Dependency [1mappleframeworks(modules: Foundation, AppKit, GameController, Metal)[0m for [1mhost[0m machine skipped: feature [1mmetal[0m disabled
+imgui| Run-time dependency [1mgl[0m found: [1;32mYES[0m [36m1.2[0m
+imgui| Library [1mdl[0m found: [1;32mYES[0m
+imgui| Dependency [1msdl2[0m for [1mhost[0m machine skipped: feature [1msdl2_renderer[0m disabled
+imgui| Dependency [1msdl3[0m for [1mhost[0m machine skipped: feature [1msdl3_renderer[0m disabled
+imgui| Dependency [1mvulkan[0m for [1mhost[0m machine skipped: feature [1mvulkan[0m disabled
+imgui| Has header "[1mwebgpu/webgpu.h[0m" skipped: feature [1mwebgpu[0m disabled
+imgui| Run-time dependency [1mglfw3[0m found: [1;32mYES[0m [36m3.4.0[0m
+imgui| Dependency [1msdl2[0m for [1mhost[0m machine skipped: feature [1msdl2[0m disabled
+imgui| Dependency [1msdl3[0m for [1mhost[0m machine skipped: feature [1msdl3[0m disabled
+imgui| Dependency [1mappleframeworks(modules: Carbon, Cocoa, GameController)[0m for [1mhost[0m machine skipped: feature [1mosx[0m disabled
+imgui| Library [1mdwmapi[0m skipped: feature [1mwin[0m disabled
+imgui| Dependency [1mallegro-5[0m for [1mhost[0m machine skipped: feature [1mallegro5[0m disabled
+imgui| Dependency [1mallegro_primitives-5[0m for [1mhost[0m machine skipped: feature [1mallegro5[0m disabled
+imgui| Build targets in project: [1m5[0m
+imgui| Subproject [1mimgui[0m finished.
+
+
+Executing subproject [1mimplot[0m 
+
+implot| Project name: [1mImGui Plotting Library[0m
+implot| Project version: [1m0.16[0m
+implot| C++ compiler for the host machine: [1mc++[0m (gcc 15.2.0 "c++ (GCC) 15.2.0")
+implot| C++ linker for the host machine: [1mc++[0m ld.bfd 2.46
+implot| Build targets in project: [1m6[0m
+implot| Subproject [1mimplot[0m finished.
+
+Found CMake: [1m/usr/bin/cmake[0m (4.3.2)
+Run-time dependency [1mspdlog[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+
+Executing subproject [1mspdlog[0m 
+
+spdlog| Project name: [1mspdlog[0m
+spdlog| Project version: [1m1.14.1[0m
+spdlog| C++ compiler for the host machine: [1mc++[0m (gcc 15.2.0 "c++ (GCC) 15.2.0")
+spdlog| C++ linker for the host machine: [1mc++[0m ld.bfd 2.46
+spdlog| Dependency [1mthreads[0m for [1mhost[0m machine found: [1;32mYES[0m [36munknown[0m [1;34m(cached)[0m
+spdlog| Header "[1mformat[0m" has symbol "[1m__cpp_lib_format[0m" skipped: feature [1mstd_format[0m disabled
+spdlog| Dependency [1mfmt[0m for [1mhost[0m machine skipped: feature [1mexternal_fmt[0m disabled
+spdlog| Build targets in project: [1m7[0m
+spdlog| Subproject [1mspdlog[0m finished.
+
+Dependency [1mglfw3[0m for [1mhost[0m machine found: [1;32mYES[0m [36m3.4.0[0m [1;34m(cached)[0m
+Program [1mglslang[0m found: [1;32mYES[0m (/usr/bin/glslang)
+Program [1mgit[0m found: [1;32mYES[0m (/usr/bin/git)
+Has header "[1mNVCtrl/NVCtrl.h[0m" : [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,-z,relro: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,--exclude-libs,ALL: [1;32mYES[0m 
+Compiler for C supports link arguments -lGL: [1;32mYES[0m 
+Compiler for C supports link arguments -static-libstdc++: [1;32mYES[0m 
+[1;33mWARNING:[0m extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in meson 2.0.
+
+Configuring [1mMangoHud.x86_64.json[0m using configuration
+Configuring [1mmangohud[0m using configuration
+Program [1mappstreamcli[0m found: [1;32mYES[0m (/usr/bin/appstreamcli)
+Build targets in project: [1m15[0m
+
+MangoHud [36mv0.8.3[0m
+
+  [1mSubprojects[0m
+    imgui                   : [1;32mYES[0m
+    implot                  : [1;32mYES[0m
+    spdlog                  : [1;32mYES[0m
+    vulkan-headers          : [1;32mYES[0m
+    vulkan-utility-libraries: [1;32mYES[0m
+
+  [1mUser defined options[0m
+    mangoapp                : true
+    mangohudctl             : true
+    prefix                  : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/mangohud-64/build/build
+ninja: Entering directory `/var/tmp/hokuto/mangohud-64/build/build'
+[0/119] Generating version.h with a custom command[K[0/119] Generating vk_enum_to_str with a custom command[K[0/119] Generating vk_dispatch_table with a custom command[K[0/119] Generating vk_extensions with a custom command[K[0/119] Generating src/overlay.frag.spv.h with a custom command[K[0/119] Generating src/overlay.vert.spv.h with a custom command[K[0/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui.cpp.o[K[0/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_demo.cpp.o[K[0/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_draw.cpp.o[K[0/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_tables.cpp.o[K[1/119] Generating version.h with a custom command[K[1/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_widgets.cpp.o[K[2/119] Generating src/overlay.frag.spv.h with a custom command[K
+../src/overlay.frag
+[2/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/misc_cpp_imgui_stdlib.cpp.o[K[3/119] Generating src/overlay.vert.spv.h with a custom command[K
+../src/overlay.vert
+[3/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/backends_imgui_impl_opengl3.cpp.o[K[4/119] Generating vk_dispatch_table with a custom command[K[4/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/backends_imgui_impl_glfw.cpp.o[K[5/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/backends_imgui_impl_opengl3.cpp.o[K[5/119] Compiling C++ object subprojects/implot-0.16/libimplot.a.p/implot.cpp.o[K[6/119] Generating vk_extensions with a custom command[K[6/119] Compiling C++ object subprojects/implot-0.16/libimplot.a.p/implot_items.cpp.o[K[7/119] Generating vk_enum_to_str with a custom command[K[7/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/async.cpp.o[K[8/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/backends_imgui_impl_glfw.cpp.o[K[8/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/cfg.cpp.o[K[9/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/misc_cpp_imgui_stdlib.cpp.o[K[9/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/color_sinks.cpp.o[K[10/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_demo.cpp.o[K[10/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/file_sinks.cpp.o[K[11/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_tables.cpp.o[K[11/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/spdlog.cpp.o[K[12/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/cfg.cpp.o[K[12/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/stdout_sinks.cpp.o[K[13/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_draw.cpp.o[K[13/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/bundled_fmtlib_format.cpp.o[K[14/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/file_sinks.cpp.o[K[14/119] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_enum_to_str.c.o[K[15/119] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_enum_to_str.c.o[K[15/119] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_dispatch_table.c.o[K[16/119] Compiling C++ object subprojects/implot-0.16/libimplot.a.p/implot.cpp.o[K[16/119] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_extensions.c.o[K[17/119] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_extensions.c.o[K[17/119] Compiling C++ object src/libMangoHud.a.p/vulkan.cpp.o[K[18/119] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_dispatch_table.c.o[K[18/119] Compiling C object src/libMangoHud.a.p/mesa_util_os_socket.c.o[K[19/119] Compiling C object src/libMangoHud.a.p/mesa_util_os_socket.c.o[K[19/119] Compiling C object src/libMangoHud.a.p/mesa_util_os_time.c.o[K[20/119] Compiling C object src/libMangoHud.a.p/mesa_util_os_time.c.o[K[20/119] Compiling C++ object src/libMangoHud.a.p/hud_elements.cpp.o[K[21/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui.cpp.o[K[21/119] Compiling C++ object src/libMangoHud.a.p/overlay.cpp.o[K[22/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/stdout_sinks.cpp.o[K[22/119] Compiling C++ object src/libMangoHud.a.p/overlay_params.cpp.o[K[23/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/async.cpp.o[K[23/119] Compiling C++ object src/libMangoHud.a.p/font.cpp.o[K[24/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/color_sinks.cpp.o[K[24/119] Compiling C++ object src/libMangoHud.a.p/keybinds.cpp.o[K[25/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/bundled_fmtlib_format.cpp.o[K[25/119] Compiling C object src/libMangoHud.a.p/font_unispace.c.o[K[26/119] Compiling C object src/libMangoHud.a.p/font_unispace.c.o[K[26/119] Compiling C++ object src/libMangoHud.a.p/logging.cpp.o[K[27/119] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_widgets.cpp.o[K[27/119] Compiling C++ object src/libMangoHud.a.p/config.cpp.o[K[28/119] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/spdlog.cpp.o[K[28/119] Compiling C++ object src/libMangoHud.a.p/gpu.cpp.o[K[29/119] Compiling C++ object src/libMangoHud.a.p/config.cpp.o[K[29/119] Compiling C++ object src/libMangoHud.a.p/blacklist.cpp.o[K[30/119] Compiling C++ object src/libMangoHud.a.p/hud_elements.cpp.o[K[30/119] Compiling C++ object src/libMangoHud.a.p/file_utils.cpp.o[K[31/119] Compiling C++ object src/libMangoHud.a.p/overlay.cpp.o[K[31/119] Compiling C++ object src/libMangoHud.a.p/nvidia.cpp.o[K[32/119] Compiling C++ object src/libMangoHud.a.p/keybinds.cpp.o[K[32/119] Compiling C++ object src/libMangoHud.a.p/gpu_fdinfo.cpp.o[K[33/119] Compiling C++ object src/libMangoHud.a.p/logging.cpp.o[K[33/119] Compiling C++ object src/libMangoHud.a.p/amdgpu.cpp.o[K[34/119] Compiling C++ object src/libMangoHud.a.p/overlay_params.cpp.o[K[34/119] Compiling C++ object src/libMangoHud.a.p/cpu.cpp.o[K[35/119] Compiling C++ object src/libMangoHud.a.p/blacklist.cpp.o[K[35/119] Compiling C++ object src/libMangoHud.a.p/memory.cpp.o[K[36/119] Compiling C++ object src/libMangoHud.a.p/vulkan.cpp.o[K[36/119] Compiling C++ object src/libMangoHud.a.p/iostats.cpp.o[K[37/119] Compiling C++ object src/libMangoHud.a.p/font.cpp.o[K[37/119] Compiling C++ object src/libMangoHud.a.p/notify.cpp.o[K[38/119] Compiling C++ object src/libMangoHud.a.p/gpu.cpp.o[K[38/119] Compiling C object src/libMangoHud.a.p/elfhacks.c.o[K[39/119] Compiling C object src/libMangoHud.a.p/elfhacks.c.o[K[39/119] Compiling C object src/libMangoHud.a.p/real_dlsym.c.o[K[40/119] Compiling C object src/libMangoHud.a.p/real_dlsym.c.o[K[40/119] Compiling C++ object src/libMangoHud.a.p/pci_ids.cpp.o[K[41/119] Compiling C++ object src/libMangoHud.a.p/file_utils.cpp.o[K[41/119] Compiling C++ object src/libMangoHud.a.p/battery.cpp.o[K[42/119] Compiling C++ object src/libMangoHud.a.p/memory.cpp.o[K[42/119] Compiling C++ object src/libMangoHud.a.p/control.cpp.o[K[43/119] Compiling C++ object src/libMangoHud.a.p/pci_ids.cpp.o[K[43/119] Compiling C++ object src/libMangoHud.a.p/device.cpp.o[K[44/119] Compiling C++ object src/libMangoHud.a.p/gpu_fdinfo.cpp.o[K[44/119] Compiling C++ object src/libMangoHud.a.p/net.cpp.o[K[45/119] Compiling C++ object src/libMangoHud.a.p/notify.cpp.o[K[45/119] Compiling C++ object src/libMangoHud.a.p/shell.cpp.o[K[46/119] Compiling C++ object src/libMangoHud.a.p/battery.cpp.o[K[46/119] Compiling C++ object src/libMangoHud.a.p/ftrace.cpp.o[K[47/119] Compiling C++ object src/libMangoHud.a.p/amdgpu.cpp.o[K[47/119] Compiling C++ object src/libMangoHud.a.p/loaders_loader_nvml.cpp.o[K[48/119] Compiling C++ object src/libMangoHud.a.p/nvidia.cpp.o[K[48/119] Compiling C++ object src/libMangoHud.a.p/loaders_loader_nvctrl.cpp.o[K[49/119] Compiling C++ object src/libMangoHud.a.p/iostats.cpp.o[K[49/119] Compiling C++ object src/libMangoHud.a.p/loaders_loader_x11.cpp.o[K[50/119] Compiling C++ object src/libMangoHud.a.p/device.cpp.o[K[50/119] Compiling C++ object src/libMangoHud.a.p/shared_x11.cpp.o[K[51/119] Compiling C++ object src/libMangoHud.a.p/cpu.cpp.o[K[51/119] Compiling C++ object src/libMangoHud.a.p/wayland_keybinds.cpp.o[K[52/119] Compiling C++ object subprojects/implot-0.16/libimplot.a.p/implot_items.cpp.o[K[52/119] Compiling C++ object src/libMangoHud.a.p/dbus.cpp.o[K[53/119] Compiling C++ object src/libMangoHud.a.p/loaders_loader_nvml.cpp.o[K[53/119] Compiling C++ object src/libMangoHud.a.p/loaders_loader_dbus.cpp.o[K[54/119] Compiling C++ object src/libMangoHud.a.p/loaders_loader_nvctrl.cpp.o[K[54/119] Linking static target subprojects/imgui-1.91.6/libimgui.a[K[55/119] Linking static target subprojects/imgui-1.91.6/libimgui.a[K[55/119] Linking static target subprojects/implot-0.16/libimplot.a[K[56/119] Linking static target subprojects/implot-0.16/libimplot.a[K[56/119] Linking static target subprojects/spdlog-1.14.1/src/libspdlog.a[K[57/119] Linking static target subprojects/spdlog-1.14.1/src/libspdlog.a[K[57/119] Compiling C object src/libMangoHud_opengl.so.p/gl_glad.c.o[K[58/119] Compiling C++ object src/libMangoHud.a.p/ftrace.cpp.o[K[58/119] Compiling C++ object src/libMangoHud_opengl.so.p/gl_gl_renderer.cpp.o[K[59/119] Compiling C++ object src/libMangoHud.a.p/loaders_loader_x11.cpp.o[K[59/119] Compiling C++ object src/libMangoHud_opengl.so.p/gl_gl_hud.cpp.o[K[60/119] Compiling C object src/libMangoHud_opengl.so.p/gl_glad.c.o[K[60/119] Compiling C++ object src/libMangoHud_opengl.so.p/gl_inject_egl.cpp.o[K[61/119] Compiling C++ object src/libMangoHud.a.p/control.cpp.o[K[61/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_glx.cpp.o[K[62/119] Compiling C++ object src/libMangoHud.a.p/shell.cpp.o[K[62/119] Compiling C++ object src/libMangoHud_opengl.so.p/gl_inject_glx.cpp.o[K[63/119] Compiling C++ object src/libMangoHud.a.p/wayland_keybinds.cpp.o[K[63/119] Compiling C++ object src/libMangoHud_opengl.so.p/hud_elements.cpp.o[K[64/119] Compiling C++ object src/libMangoHud.a.p/loaders_loader_dbus.cpp.o[K[64/119] Compiling C++ object src/libMangoHud_opengl.so.p/overlay.cpp.o[K[65/119] Compiling C++ object src/libMangoHud.a.p/net.cpp.o[K[65/119] Compiling C++ object src/libMangoHud_opengl.so.p/overlay_params.cpp.o[K[66/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_glx.cpp.o[K[66/119] Compiling C++ object src/libMangoHud_opengl.so.p/font.cpp.o[K[67/119] Compiling C++ object src/libMangoHud.a.p/shared_x11.cpp.o[K[67/119] Compiling C++ object src/libMangoHud_opengl.so.p/keybinds.cpp.o[K[68/119] Compiling C++ object src/libMangoHud.a.p/dbus.cpp.o[K[68/119] Linking static target src/libMangoHud.a[K[69/119] Linking static target src/libMangoHud.a[K[69/119] Compiling C object src/libMangoHud_opengl.so.p/font_unispace.c.o[K[70/119] Compiling C object src/libMangoHud_opengl.so.p/font_unispace.c.o[K[70/119] Compiling C++ object src/libMangoHud_opengl.so.p/logging.cpp.o[K[71/119] Compiling C++ object src/libMangoHud_opengl.so.p/gl_gl_renderer.cpp.o[K[71/119] Compiling C++ object src/libMangoHud_opengl.so.p/config.cpp.o[K[72/119] Compiling C++ object src/libMangoHud_opengl.so.p/gl_gl_hud.cpp.o[K[72/119] Compiling C++ object src/libMangoHud_opengl.so.p/gpu.cpp.o[K[73/119] Compiling C++ object src/libMangoHud_opengl.so.p/keybinds.cpp.o[K[73/119] Compiling C++ object src/libMangoHud_opengl.so.p/blacklist.cpp.o[K[74/119] Compiling C++ object src/libMangoHud_opengl.so.p/font.cpp.o[K[74/119] Compiling C++ object src/libMangoHud_opengl.so.p/file_utils.cpp.o[K[75/119] Compiling C++ object src/libMangoHud_opengl.so.p/hud_elements.cpp.o[K[75/119] Compiling C++ object src/libMangoHud_opengl.so.p/nvidia.cpp.o[K[76/119] Compiling C++ object src/libMangoHud_opengl.so.p/overlay.cpp.o[K[76/119] Compiling C++ object src/libMangoHud_opengl.so.p/gpu_fdinfo.cpp.o[K[77/119] Compiling C++ object src/libMangoHud_opengl.so.p/logging.cpp.o[K[77/119] Compiling C++ object src/libMangoHud_opengl.so.p/amdgpu.cpp.o[K[78/119] Compiling C++ object src/libMangoHud_opengl.so.p/overlay_params.cpp.o[K[78/119] Compiling C++ object src/libMangoHud_opengl.so.p/cpu.cpp.o[K[79/119] Compiling C++ object src/libMangoHud_opengl.so.p/config.cpp.o[K[79/119] Compiling C++ object src/libMangoHud_opengl.so.p/memory.cpp.o[K[80/119] Compiling C++ object src/libMangoHud_opengl.so.p/gl_inject_egl.cpp.o[K[80/119] Compiling C++ object src/libMangoHud_opengl.so.p/iostats.cpp.o[K[81/119] Compiling C++ object src/libMangoHud_opengl.so.p/gl_inject_glx.cpp.o[K[81/119] Compiling C++ object src/libMangoHud_opengl.so.p/notify.cpp.o[K[82/119] Compiling C++ object src/libMangoHud_opengl.so.p/blacklist.cpp.o[K[82/119] Compiling C object src/libMangoHud_opengl.so.p/elfhacks.c.o[K[83/119] Compiling C object src/libMangoHud_opengl.so.p/elfhacks.c.o[K[83/119] Compiling C object src/libMangoHud_opengl.so.p/real_dlsym.c.o[K[84/119] Compiling C object src/libMangoHud_opengl.so.p/real_dlsym.c.o[K[84/119] Compiling C++ object src/libMangoHud_opengl.so.p/pci_ids.cpp.o[K[85/119] Compiling C++ object src/libMangoHud_opengl.so.p/nvidia.cpp.o[K[85/119] Compiling C++ object src/libMangoHud_opengl.so.p/battery.cpp.o[K[86/119] Compiling C++ object src/libMangoHud_opengl.so.p/notify.cpp.o[K[86/119] Compiling C++ object src/libMangoHud_opengl.so.p/control.cpp.o[K[87/119] Compiling C++ object src/libMangoHud_opengl.so.p/gpu.cpp.o[K[87/119] Compiling C++ object src/libMangoHud_opengl.so.p/device.cpp.o[K[88/119] Compiling C++ object src/libMangoHud_opengl.so.p/pci_ids.cpp.o[K[88/119] Compiling C++ object src/libMangoHud_opengl.so.p/net.cpp.o[K[89/119] Compiling C++ object src/libMangoHud_opengl.so.p/iostats.cpp.o[K[89/119] Compiling C++ object src/libMangoHud_opengl.so.p/shell.cpp.o[K[90/119] Compiling C++ object src/libMangoHud_opengl.so.p/gpu_fdinfo.cpp.o[K[90/119] Compiling C++ object src/libMangoHud_opengl.so.p/ftrace.cpp.o[K[91/119] Compiling C++ object src/libMangoHud_opengl.so.p/battery.cpp.o[K[91/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_nvml.cpp.o[K[92/119] Compiling C++ object src/libMangoHud_opengl.so.p/file_utils.cpp.o[K[92/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_nvctrl.cpp.o[K[93/119] Compiling C++ object src/libMangoHud_opengl.so.p/device.cpp.o[K[93/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_x11.cpp.o[K[94/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_nvml.cpp.o[K[94/119] Compiling C++ object src/libMangoHud_opengl.so.p/shared_x11.cpp.o[K[95/119] Compiling C++ object src/libMangoHud_opengl.so.p/memory.cpp.o[K[95/119] Compiling C++ object src/libMangoHud_opengl.so.p/wayland_keybinds.cpp.o[K[96/119] Compiling C++ object src/libMangoHud_opengl.so.p/amdgpu.cpp.o[K[96/119] Compiling C++ object src/libMangoHud_opengl.so.p/dbus.cpp.o[K[97/119] Compiling C++ object src/libMangoHud_opengl.so.p/cpu.cpp.o[K[97/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_dbus.cpp.o[K[98/119] Compiling C++ object src/libMangoHud_opengl.so.p/ftrace.cpp.o[K[98/119] Compiling C object src/libMangoHud_opengl.so.p/mesa_util_os_socket.c.o[K[99/119] Compiling C object src/libMangoHud_opengl.so.p/mesa_util_os_socket.c.o[K[99/119] Compiling C object src/libMangoHud_opengl.so.p/mesa_util_os_time.c.o[K[100/119] Compiling C object src/libMangoHud_opengl.so.p/mesa_util_os_time.c.o[K[100/119] Compiling C++ object src/mangoapp.p/app_main.cpp.o[K[101/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_x11.cpp.o[K[101/119] Compiling C object src/mangohudctl.p/app_control.c.o[K[102/119] Compiling C object src/mangohudctl.p/app_control.c.o[K[102/119] Compiling C object src/libMangoHud_shim.so.p/gl_shim.c.o[K[103/119] Compiling C object src/libMangoHud_shim.so.p/gl_shim.c.o[K[103/119] Compiling C object src/libMangoHud_shim.so.p/real_dlsym.c.o[K[104/119] Compiling C object src/libMangoHud_shim.so.p/real_dlsym.c.o[K[104/119] Compiling C object src/libMangoHud_shim.so.p/elfhacks.c.o[K[105/119] Compiling C++ object src/libMangoHud_opengl.so.p/wayland_keybinds.cpp.o[K[105/119] Linking target src/libMangoHud.so[K[106/119] Compiling C object src/libMangoHud_shim.so.p/elfhacks.c.o[K[106/119] Linking target src/mangohudctl[K[107/119] Compiling C++ object src/libMangoHud_opengl.so.p/shell.cpp.o[K[107/119] Linking target src/libMangoHud_shim.so[K[108/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_nvctrl.cpp.o[K[109/119] Linking target src/mangohudctl[K[110/119] Compiling C++ object src/libMangoHud_opengl.so.p/net.cpp.o[K[111/119] Compiling C++ object src/libMangoHud_opengl.so.p/control.cpp.o[K[112/119] Linking target src/libMangoHud_shim.so[K[113/119] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_dbus.cpp.o[K[114/119] Compiling C++ object src/libMangoHud_opengl.so.p/dbus.cpp.o[K[115/119] Compiling C++ object src/libMangoHud_opengl.so.p/shared_x11.cpp.o[K[115/119] Linking target src/libMangoHud_opengl.so[K[116/119] Compiling C++ object src/mangoapp.p/app_main.cpp.o[K[116/119] Linking target src/mangoapp[K[117/119] Linking target src/libMangoHud.so[K[118/119] Linking target src/libMangoHud_opengl.so[K[119/119] Linking target src/mangoapp[K
+ninja: Entering directory `/var/tmp/hokuto/mangohud-64/build/build'
+[0/13] Generating version.h with a custom command[K[1/13] Generating version.h with a custom command[K
+Installing subprojects/imgui-1.91.6/libimgui.a to /var/tmp/hokuto/mangohud-64/output/usr/lib
+Installing src/libMangoHud.so to /var/tmp/hokuto/mangohud-64/output/usr/lib/mangohud
+Installing src/libMangoHud_opengl.so to /var/tmp/hokuto/mangohud-64/output/usr/lib/mangohud
+Installing src/mangoapp to /var/tmp/hokuto/mangohud-64/output/usr/bin
+Installing src/mangohudctl to /var/tmp/hokuto/mangohud-64/output/usr/bin
+Installing src/libMangoHud_shim.so to /var/tmp/hokuto/mangohud-64/output/usr/lib/mangohud
+Installing /var/tmp/hokuto/mangohud-64/build/data/mangohud.1 to /var/tmp/hokuto/mangohud-64/output/usr/share/man/man1
+Installing /var/tmp/hokuto/mangohud-64/build/data/mangoapp.1 to /var/tmp/hokuto/mangohud-64/output/usr/share/man/man1
+Installing /var/tmp/hokuto/mangohud-64/build/build/src/MangoHud.x86_64.json to /var/tmp/hokuto/mangohud-64/output/usr/share/vulkan/implicit_layer.d
+Installing /var/tmp/hokuto/mangohud-64/build/build/src/mangohud to /var/tmp/hokuto/mangohud-64/output/usr/bin
+Installing /var/tmp/hokuto/mangohud-64/build/data/io.github.flightlessmango.mangohud.metainfo.xml to /var/tmp/hokuto/mangohud-64/output/usr/share/metainfo
+Installing /var/tmp/hokuto/mangohud-64/build/data/io.github.flightlessmango.mangohud.svg to /var/tmp/hokuto/mangohud-64/output/usr/share/icons/hicolor/scalable/apps
+Installing /var/tmp/hokuto/mangohud-64/build/data/MangoHud.conf to /var/tmp/hokuto/mangohud-64/output/usr/share/doc/mangohud
+Installing /var/tmp/hokuto/mangohud-64/build/data/presets.conf to /var/tmp/hokuto/mangohud-64/output/usr/share/doc/mangohud
+Installing /var/tmp/hokuto/mangohud-64/build/bin/mangoplot.py to /var/tmp/hokuto/mangohud-64/output/usr/bin
+[1mThe Meson build system[0m
+Version: 1.11.1
+Source dir: [1m/var/tmp/hokuto/mangohud-64/build[0m
+Build dir: [1m/var/tmp/hokuto/mangohud-64/build/build32[0m
+Build type: [1mnative build[0m
+Project name: [1mMangoHud[0m
+Project version: [1mv0.8.3[0m
+C compiler for the host machine: [1mgcc -m32[0m (gcc 15.2.0 "gcc (GCC) 15.2.0")
+C linker for the host machine: [1mgcc -m32[0m ld.bfd 2.46
+C++ compiler for the host machine: [1mg++ -m32[0m (gcc 15.2.0 "g++ (GCC) 15.2.0")
+C++ linker for the host machine: [1mg++ -m32[0m ld.bfd 2.46
+Host machine cpu family: [1mx86[0m
+Host machine cpu: [1mi686[0m
+Program python3 (mako) found: [1;32mYES[0m (/usr/bin/python3) modules: mako
+Checking if "[1mGCC atomic builtins[0m" compiles: [1;32mYES[0m 
+Checking if "[1mSupports timespec_get[0m" compiles: [1;32mYES[0m 
+Checking for function "[1mbswap32[0m" : [1;32mYES[0m 
+Checking for function "[1mbswap64[0m" : [1;32mYES[0m 
+Checking for function "[1mclz[0m" : [1;32mYES[0m 
+Checking for function "[1mclzll[0m" : [1;32mYES[0m 
+Checking for function "[1mctz[0m" : [1;32mYES[0m 
+Checking for function "[1mexpect[0m" : [1;32mYES[0m 
+Checking for function "[1mffs[0m" : [1;32mYES[0m 
+Checking for function "[1mffsll[0m" : [1;32mYES[0m 
+Checking for function "[1mpopcount[0m" : [1;32mYES[0m 
+Checking for function "[1mpopcountll[0m" : [1;32mYES[0m 
+Checking for function "[1munreachable[0m" : [1;32mYES[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Run-time dependency [1mx11[0m found: [1;32mYES[0m [36m1.8.13[0m
+Run-time dependency [1mwayland-client[0m found: [1;32mYES[0m [36m1.25.0[0m
+Run-time dependency [1mdbus-1[0m found: [1;32mYES[0m [36m1.16.2[0m
+Run-time dependency [1mxkbcommon[0m found: [1;32mYES[0m [36m1.13.1[0m
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Compiler for C supports arguments -Werror=implicit-function-declaration: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=missing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=missing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=return-type: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=incompatible-pointer-types: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C supports arguments -Qunused-arguments: [1;31mNO[0m 
+Compiler for C supports arguments -fno-math-errno: [1;32mYES[0m 
+Compiler for C supports arguments -fno-trapping-math: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-missing-field-initializers: [1;32mYES[0m 
+Compiler for C++ supports arguments -Werror=missing-declarations: [1;32mYES[0m 
+Compiler for C++ supports arguments -Werror=return-type: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C++ supports arguments -Qunused-arguments: [1;31mNO[0m 
+Compiler for C++ supports arguments -fno-math-errno: [1;32mYES[0m 
+Compiler for C++ supports arguments -fno-trapping-math: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-non-virtual-dtor: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-missing-field-initializers: [1;32mYES[0m 
+Checking for function "[1mdlopen[0m" : [1;32mYES[0m 
+Checking for function "[1mclock_gettime[0m" : [1;32mYES[0m 
+
+Executing subproject [1mvulkan-headers[0m 
+
+vulkan-headers| Project name: [1mvulkan-headers[0m
+vulkan-headers| Project version: [1m1.4.345[0m
+vulkan-headers| C compiler for the host machine: [1mgcc -m32[0m (gcc 15.2.0 "gcc (GCC) 15.2.0")
+vulkan-headers| C linker for the host machine: [1mgcc -m32[0m ld.bfd 2.46
+vulkan-headers| Build targets in project: [1m1[0m
+vulkan-headers| Subproject [1mvulkan-headers[0m finished.
+
+
+Executing subproject [1mvulkan-utility-libraries[0m 
+
+vulkan-utility-libraries| Project name: [1mvulkan-utility-libraries[0m
+vulkan-utility-libraries| Project version: [1m1.4.346[0m
+vulkan-utility-libraries| C compiler for the host machine: [1mgcc -m32[0m (gcc 15.2.0 "gcc (GCC) 15.2.0")
+vulkan-utility-libraries| C linker for the host machine: [1mgcc -m32[0m ld.bfd 2.46
+vulkan-utility-libraries| Build targets in project: [1m1[0m
+vulkan-utility-libraries| Subproject [1mvulkan-utility-libraries[0m finished.
+
+Checking for size of "[1mvoid*[0m" : [1m4[0m 
+
+Executing subproject [1mimgui[0m 
+
+imgui| Project name: [1mimgui[0m
+imgui| Project version: [1m1.91.6[0m
+imgui| C++ compiler for the host machine: [1mg++ -m32[0m (gcc 15.2.0 "g++ (GCC) 15.2.0")
+imgui| C++ linker for the host machine: [1mg++ -m32[0m ld.bfd 2.46
+imgui| Library [1md3dcompiler[0m found: [1;31mNO[0m
+imgui| Library [1md3d9[0m skipped: feature [1mdx9[0m disabled
+imgui| Library [1md3d10[0m skipped: feature [1mdx10[0m disabled
+imgui| Library [1md3d11[0m skipped: feature [1mdx11[0m disabled
+imgui| Library [1md3d12[0m skipped: feature [1mdx12[0m disabled
+imgui| Dependency [1mappleframeworks(modules: Foundation, AppKit, GameController, Metal)[0m for [1mhost[0m machine skipped: feature [1mmetal[0m disabled
+imgui| Dependency [1mgl[0m for [1mhost[0m machine skipped: feature [1mopengl[0m disabled
+imgui| Dependency [1msdl2[0m for [1mhost[0m machine skipped: feature [1msdl2_renderer[0m disabled
+imgui| Dependency [1msdl3[0m for [1mhost[0m machine skipped: feature [1msdl3_renderer[0m disabled
+imgui| Dependency [1mvulkan[0m for [1mhost[0m machine skipped: feature [1mvulkan[0m disabled
+imgui| Has header "[1mwebgpu/webgpu.h[0m" skipped: feature [1mwebgpu[0m disabled
+imgui| Dependency [1mglfw3[0m for [1mhost[0m machine skipped: feature [1mglfw[0m disabled
+imgui| Dependency [1msdl2[0m for [1mhost[0m machine skipped: feature [1msdl2[0m disabled
+imgui| Dependency [1msdl3[0m for [1mhost[0m machine skipped: feature [1msdl3[0m disabled
+imgui| Dependency [1mappleframeworks(modules: Carbon, Cocoa, GameController)[0m for [1mhost[0m machine skipped: feature [1mosx[0m disabled
+imgui| Library [1mdwmapi[0m skipped: feature [1mwin[0m disabled
+imgui| Dependency [1mallegro-5[0m for [1mhost[0m machine skipped: feature [1mallegro5[0m disabled
+imgui| Dependency [1mallegro_primitives-5[0m for [1mhost[0m machine skipped: feature [1mallegro5[0m disabled
+imgui| Build targets in project: [1m5[0m
+imgui| Subproject [1mimgui[0m finished.
+
+
+Executing subproject [1mimplot[0m 
+
+implot| Project name: [1mImGui Plotting Library[0m
+implot| Project version: [1m0.16[0m
+implot| C++ compiler for the host machine: [1mg++ -m32[0m (gcc 15.2.0 "g++ (GCC) 15.2.0")
+implot| C++ linker for the host machine: [1mg++ -m32[0m ld.bfd 2.46
+implot| Build targets in project: [1m6[0m
+implot| Subproject [1mimplot[0m finished.
+
+Found CMake: [1m/usr/bin/cmake[0m (4.3.2)
+Run-time dependency [1mspdlog[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+
+Executing subproject [1mspdlog[0m 
+
+spdlog| Project name: [1mspdlog[0m
+spdlog| Project version: [1m1.14.1[0m
+spdlog| C++ compiler for the host machine: [1mg++ -m32[0m (gcc 15.2.0 "g++ (GCC) 15.2.0")
+spdlog| C++ linker for the host machine: [1mg++ -m32[0m ld.bfd 2.46
+spdlog| Dependency [1mthreads[0m for [1mhost[0m machine found: [1;32mYES[0m [36munknown[0m [1;34m(cached)[0m
+spdlog| Header "[1mformat[0m" has symbol "[1m__cpp_lib_format[0m" skipped: feature [1mstd_format[0m disabled
+spdlog| Dependency [1mfmt[0m for [1mhost[0m machine skipped: feature [1mexternal_fmt[0m disabled
+spdlog| Build targets in project: [1m7[0m
+spdlog| Subproject [1mspdlog[0m finished.
+
+Program [1mglslang[0m found: [1;32mYES[0m (/usr/bin/glslang)
+Program [1mgit[0m found: [1;32mYES[0m (/usr/bin/git)
+Has header "[1mNVCtrl/NVCtrl.h[0m" : [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,-z,relro: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,--exclude-libs,ALL: [1;32mYES[0m 
+Compiler for C supports link arguments -lGL: [1;32mYES[0m 
+Compiler for C supports link arguments -static-libstdc++: [1;32mYES[0m 
+[1;33mWARNING:[0m extract_all_objects called without setting recursive
+keyword argument. Meson currently defaults to
+non-recursive to maintain backward compatibility but
+the default will be changed in meson 2.0.
+
+Configuring [1mMangoHud.x86.json[0m using configuration
+Configuring [1mmangohud[0m using configuration
+Build targets in project: [1m13[0m
+
+MangoHud [36mv0.8.3[0m
+
+  [1mSubprojects[0m
+    imgui                   : [1;32mYES[0m
+    implot                  : [1;32mYES[0m
+    spdlog                  : [1;32mYES[0m
+    vulkan-headers          : [1;32mYES[0m
+    vulkan-utility-libraries: [1;32mYES[0m
+
+  [1mUser defined options[0m
+    include_doc             : false
+    libdir                  : lib32
+    prefix                  : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/mangohud-64/build/build32
+ninja: Entering directory `/var/tmp/hokuto/mangohud-64/build/build32'
+[0/113] Generating version.h with a custom command[K[0/113] Generating vk_enum_to_str with a custom command[K[0/113] Generating vk_dispatch_table with a custom command[K[0/113] Generating vk_extensions with a custom command[K[0/113] Generating src/overlay.frag.spv.h with a custom command[K[0/113] Generating src/overlay.vert.spv.h with a custom command[K[0/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui.cpp.o[K[0/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_demo.cpp.o[K[0/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_draw.cpp.o[K[0/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_tables.cpp.o[K[1/113] Generating version.h with a custom command[K[1/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_widgets.cpp.o[K[2/113] Generating src/overlay.frag.spv.h with a custom command[K
+../src/overlay.frag
+[2/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/misc_cpp_imgui_stdlib.cpp.o[K[3/113] Generating src/overlay.vert.spv.h with a custom command[K
+../src/overlay.vert
+[3/113] Compiling C++ object subprojects/implot-0.16/libimplot.a.p/implot.cpp.o[K[4/113] Generating vk_dispatch_table with a custom command[K[4/113] Compiling C++ object subprojects/implot-0.16/libimplot.a.p/implot_items.cpp.o[K[5/113] Generating vk_extensions with a custom command[K[5/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/async.cpp.o[K[6/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/misc_cpp_imgui_stdlib.cpp.o[K[6/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/cfg.cpp.o[K[7/113] Generating vk_enum_to_str with a custom command[K[7/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/color_sinks.cpp.o[K[8/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_demo.cpp.o[K[8/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/file_sinks.cpp.o[K[9/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_tables.cpp.o[K[9/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/spdlog.cpp.o[K[10/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_draw.cpp.o[K[10/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/stdout_sinks.cpp.o[K[11/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/async.cpp.o[K[11/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/bundled_fmtlib_format.cpp.o[K[12/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/color_sinks.cpp.o[K[12/113] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_enum_to_str.c.o[K[13/113] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_enum_to_str.c.o[K[13/113] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_dispatch_table.c.o[K[14/113] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_dispatch_table.c.o[K[14/113] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_extensions.c.o[K[15/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui_widgets.cpp.o[K[15/113] Compiling C++ object src/libMangoHud.a.p/vulkan.cpp.o[K[16/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/cfg.cpp.o[K[16/113] Compiling C object src/libMangoHud.a.p/mesa_util_os_socket.c.o[K[17/113] Compiling C object src/libMangoHud.a.p/meson-generated_.._.._vk_extensions.c.o[K[17/113] Compiling C object src/libMangoHud.a.p/mesa_util_os_time.c.o[K[18/113] Compiling C object src/libMangoHud.a.p/mesa_util_os_socket.c.o[K[18/113] Compiling C++ object src/libMangoHud.a.p/hud_elements.cpp.o[K[19/113] Compiling C object src/libMangoHud.a.p/mesa_util_os_time.c.o[K[19/113] Compiling C++ object src/libMangoHud.a.p/overlay.cpp.o[K[20/113] Compiling C++ object subprojects/imgui-1.91.6/libimgui.a.p/imgui.cpp.o[K[20/113] Compiling C++ object src/libMangoHud.a.p/overlay_params.cpp.o[K[21/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/file_sinks.cpp.o[K[21/113] Compiling C++ object src/libMangoHud.a.p/font.cpp.o[K[22/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/stdout_sinks.cpp.o[K[22/113] Compiling C++ object src/libMangoHud.a.p/keybinds.cpp.o[K[23/113] Compiling C++ object subprojects/implot-0.16/libimplot.a.p/implot.cpp.o[K[23/113] Compiling C object src/libMangoHud.a.p/font_unispace.c.o[K[24/113] Compiling C object src/libMangoHud.a.p/font_unispace.c.o[K[24/113] Compiling C++ object src/libMangoHud.a.p/logging.cpp.o[K[25/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/bundled_fmtlib_format.cpp.o[K[25/113] Compiling C++ object src/libMangoHud.a.p/config.cpp.o[K[26/113] Compiling C++ object subprojects/spdlog-1.14.1/src/libspdlog.a.p/spdlog.cpp.o[K[26/113] Compiling C++ object src/libMangoHud.a.p/gpu.cpp.o[K[27/113] Compiling C++ object src/libMangoHud.a.p/config.cpp.o[K[27/113] Compiling C++ object src/libMangoHud.a.p/blacklist.cpp.o[K[28/113] Compiling C++ object src/libMangoHud.a.p/font.cpp.o[K[28/113] Compiling C++ object src/libMangoHud.a.p/file_utils.cpp.o[K[29/113] Compiling C++ object src/libMangoHud.a.p/keybinds.cpp.o[K[29/113] Compiling C++ object src/libMangoHud.a.p/nvidia.cpp.o[K[30/113] Compiling C++ object src/libMangoHud.a.p/overlay.cpp.o[K[30/113] Compiling C++ object src/libMangoHud.a.p/gpu_fdinfo.cpp.o[K[31/113] Compiling C++ object src/libMangoHud.a.p/hud_elements.cpp.o[K[31/113] Compiling C++ object src/libMangoHud.a.p/amdgpu.cpp.o[K[32/113] Compiling C++ object src/libMangoHud.a.p/blacklist.cpp.o[K[32/113] Compiling C++ object src/libMangoHud.a.p/cpu.cpp.o[K[33/113] Compiling C++ object src/libMangoHud.a.p/nvidia.cpp.o[K[33/113] Compiling C++ object src/libMangoHud.a.p/memory.cpp.o[K[34/113] Compiling C++ object src/libMangoHud.a.p/file_utils.cpp.o[K[34/113] Compiling C++ object src/libMangoHud.a.p/iostats.cpp.o[K[35/113] Compiling C++ object src/libMangoHud.a.p/vulkan.cpp.o[K[35/113] Compiling C++ object src/libMangoHud.a.p/notify.cpp.o[K[36/113] Compiling C++ object src/libMangoHud.a.p/gpu.cpp.o[K[36/113] Compiling C object src/libMangoHud.a.p/elfhacks.c.o[K[37/113] Compiling C object src/libMangoHud.a.p/elfhacks.c.o[K[37/113] Compiling C object src/libMangoHud.a.p/real_dlsym.c.o[K[38/113] Compiling C object src/libMangoHud.a.p/real_dlsym.c.o[K[38/113] Compiling C++ object src/libMangoHud.a.p/pci_ids.cpp.o[K[39/113] Compiling C++ object src/libMangoHud.a.p/logging.cpp.o[K[39/113] Compiling C++ object src/libMangoHud.a.p/battery.cpp.o[K[40/113] Compiling C++ object src/libMangoHud.a.p/gpu_fdinfo.cpp.o[K[40/113] Compiling C++ object src/libMangoHud.a.p/control.cpp.o[K[41/113] Compiling C++ object src/libMangoHud.a.p/notify.cpp.o[K[41/113] Compiling C++ object src/libMangoHud.a.p/device.cpp.o[K[42/113] Compiling C++ object src/libMangoHud.a.p/pci_ids.cpp.o[K[42/113] Compiling C++ object src/libMangoHud.a.p/net.cpp.o[K[43/113] Compiling C++ object src/libMangoHud.a.p/amdgpu.cpp.o[K[43/113] Compiling C++ object src/libMangoHud.a.p/shell.cpp.o[K[44/113] Compiling C++ object src/libMangoHud.a.p/memory.cpp.o[K[44/113] Compiling C++ object src/libMangoHud.a.p/ftrace.cpp.o[K[45/113] Compiling C++ object src/libMangoHud.a.p/iostats.cpp.o[K[45/113] Compiling C++ object src/libMangoHud.a.p/loaders_loader_nvml.cpp.o[K[46/113] Compiling C++ object src/libMangoHud.a.p/cpu.cpp.o[K[46/113] Compiling C++ object src/libMangoHud.a.p/loaders_loader_nvctrl.cpp.o[K[47/113] Compiling C++ object src/libMangoHud.a.p/overlay_params.cpp.o[K[47/113] Compiling C++ object src/libMangoHud.a.p/loaders_loader_x11.cpp.o[K[48/113] Compiling C++ object src/libMangoHud.a.p/battery.cpp.o[K[48/113] Compiling C++ object src/libMangoHud.a.p/shared_x11.cpp.o[K[49/113] Compiling C++ object src/libMangoHud.a.p/loaders_loader_nvml.cpp.o[K[49/113] Compiling C++ object src/libMangoHud.a.p/wayland_keybinds.cpp.o[K[50/113] Compiling C++ object src/libMangoHud.a.p/shell.cpp.o[K[50/113] Compiling C++ object src/libMangoHud.a.p/dbus.cpp.o[K[51/113] Compiling C++ object src/libMangoHud.a.p/loaders_loader_nvctrl.cpp.o[K[51/113] Compiling C++ object src/libMangoHud.a.p/loaders_loader_dbus.cpp.o[K[52/113] Compiling C++ object src/libMangoHud.a.p/loaders_loader_x11.cpp.o[K[52/113] Linking static target subprojects/imgui-1.91.6/libimgui.a[K[53/113] Linking static target subprojects/imgui-1.91.6/libimgui.a[K[53/113] Linking static target subprojects/spdlog-1.14.1/src/libspdlog.a[K[54/113] Linking static target subprojects/spdlog-1.14.1/src/libspdlog.a[K[54/113] Compiling C object src/libMangoHud_opengl.so.p/gl_glad.c.o[K[55/113] Compiling C object src/libMangoHud_opengl.so.p/gl_glad.c.o[K[55/113] Compiling C++ object src/libMangoHud_opengl.so.p/gl_gl_renderer.cpp.o[K[56/113] Compiling C++ object src/libMangoHud.a.p/wayland_keybinds.cpp.o[K[56/113] Compiling C++ object src/libMangoHud_opengl.so.p/gl_gl_hud.cpp.o[K[57/113] Compiling C++ object subprojects/implot-0.16/libimplot.a.p/implot_items.cpp.o[K[57/113] Linking static target subprojects/implot-0.16/libimplot.a[K[58/113] Linking static target subprojects/implot-0.16/libimplot.a[K[58/113] Compiling C++ object src/libMangoHud_opengl.so.p/gl_inject_egl.cpp.o[K[59/113] Compiling C++ object src/libMangoHud.a.p/net.cpp.o[K[59/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_glx.cpp.o[K[60/113] Compiling C++ object src/libMangoHud.a.p/device.cpp.o[K[60/113] Compiling C++ object src/libMangoHud_opengl.so.p/gl_inject_glx.cpp.o[K[61/113] Compiling C++ object src/libMangoHud.a.p/control.cpp.o[K[61/113] Compiling C++ object src/libMangoHud_opengl.so.p/hud_elements.cpp.o[K[62/113] Compiling C++ object src/libMangoHud.a.p/dbus.cpp.o[K[62/113] Compiling C++ object src/libMangoHud_opengl.so.p/overlay.cpp.o[K[63/113] Compiling C++ object src/libMangoHud.a.p/ftrace.cpp.o[K[63/113] Compiling C++ object src/libMangoHud_opengl.so.p/overlay_params.cpp.o[K[64/113] Compiling C++ object src/libMangoHud.a.p/shared_x11.cpp.o[K[64/113] Compiling C++ object src/libMangoHud_opengl.so.p/font.cpp.o[K[65/113] Compiling C++ object src/libMangoHud.a.p/loaders_loader_dbus.cpp.o[K[65/113] Linking static target src/libMangoHud.a[K[66/113] Linking static target src/libMangoHud.a[K[66/113] Compiling C++ object src/libMangoHud_opengl.so.p/keybinds.cpp.o[K[67/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_glx.cpp.o[K[67/113] Compiling C object src/libMangoHud_opengl.so.p/font_unispace.c.o[K[68/113] Compiling C object src/libMangoHud_opengl.so.p/font_unispace.c.o[K[68/113] Compiling C++ object src/libMangoHud_opengl.so.p/logging.cpp.o[K[69/113] Compiling C++ object src/libMangoHud_opengl.so.p/gl_gl_renderer.cpp.o[K[69/113] Compiling C++ object src/libMangoHud_opengl.so.p/config.cpp.o[K[70/113] Compiling C++ object src/libMangoHud_opengl.so.p/gl_gl_hud.cpp.o[K[70/113] Compiling C++ object src/libMangoHud_opengl.so.p/gpu.cpp.o[K[71/113] Compiling C++ object src/libMangoHud_opengl.so.p/gl_inject_egl.cpp.o[K[71/113] Compiling C++ object src/libMangoHud_opengl.so.p/blacklist.cpp.o[K[72/113] Compiling C++ object src/libMangoHud_opengl.so.p/font.cpp.o[K[72/113] Compiling C++ object src/libMangoHud_opengl.so.p/file_utils.cpp.o[K[73/113] Compiling C++ object src/libMangoHud_opengl.so.p/gl_inject_glx.cpp.o[K[73/113] Compiling C++ object src/libMangoHud_opengl.so.p/nvidia.cpp.o[K[74/113] Compiling C++ object src/libMangoHud_opengl.so.p/blacklist.cpp.o[K[74/113] Compiling C++ object src/libMangoHud_opengl.so.p/gpu_fdinfo.cpp.o[K[75/113] Compiling C++ object src/libMangoHud_opengl.so.p/logging.cpp.o[K[75/113] Compiling C++ object src/libMangoHud_opengl.so.p/amdgpu.cpp.o[K[76/113] Compiling C++ object src/libMangoHud_opengl.so.p/hud_elements.cpp.o[K[76/113] Compiling C++ object src/libMangoHud_opengl.so.p/cpu.cpp.o[K[77/113] Compiling C++ object src/libMangoHud_opengl.so.p/config.cpp.o[K[77/113] Compiling C++ object src/libMangoHud_opengl.so.p/memory.cpp.o[K[78/113] Compiling C++ object src/libMangoHud_opengl.so.p/overlay_params.cpp.o[K[78/113] Compiling C++ object src/libMangoHud_opengl.so.p/iostats.cpp.o[K[79/113] Compiling C++ object src/libMangoHud_opengl.so.p/file_utils.cpp.o[K[79/113] Compiling C++ object src/libMangoHud_opengl.so.p/notify.cpp.o[K[80/113] Compiling C++ object src/libMangoHud_opengl.so.p/nvidia.cpp.o[K[80/113] Compiling C object src/libMangoHud_opengl.so.p/elfhacks.c.o[K[81/113] Compiling C object src/libMangoHud_opengl.so.p/elfhacks.c.o[K[81/113] Compiling C object src/libMangoHud_opengl.so.p/real_dlsym.c.o[K[82/113] Compiling C++ object src/libMangoHud_opengl.so.p/keybinds.cpp.o[K[82/113] Compiling C++ object src/libMangoHud_opengl.so.p/pci_ids.cpp.o[K[83/113] Compiling C object src/libMangoHud_opengl.so.p/real_dlsym.c.o[K[83/113] Compiling C++ object src/libMangoHud_opengl.so.p/battery.cpp.o[K[84/113] Compiling C++ object src/libMangoHud_opengl.so.p/gpu.cpp.o[K[84/113] Compiling C++ object src/libMangoHud_opengl.so.p/control.cpp.o[K[85/113] Compiling C++ object src/libMangoHud_opengl.so.p/iostats.cpp.o[K[85/113] Compiling C++ object src/libMangoHud_opengl.so.p/device.cpp.o[K[86/113] Compiling C++ object src/libMangoHud_opengl.so.p/overlay.cpp.o[K[86/113] Compiling C++ object src/libMangoHud_opengl.so.p/net.cpp.o[K[87/113] Compiling C++ object src/libMangoHud_opengl.so.p/memory.cpp.o[K[87/113] Compiling C++ object src/libMangoHud_opengl.so.p/shell.cpp.o[K[88/113] Compiling C++ object src/libMangoHud_opengl.so.p/gpu_fdinfo.cpp.o[K[88/113] Compiling C++ object src/libMangoHud_opengl.so.p/ftrace.cpp.o[K[89/113] Compiling C++ object src/libMangoHud_opengl.so.p/battery.cpp.o[K[89/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_nvml.cpp.o[K[90/113] Compiling C++ object src/libMangoHud_opengl.so.p/cpu.cpp.o[K[90/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_nvctrl.cpp.o[K[91/113] Compiling C++ object src/libMangoHud_opengl.so.p/pci_ids.cpp.o[K[91/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_x11.cpp.o[K[92/113] Compiling C++ object src/libMangoHud_opengl.so.p/notify.cpp.o[K[92/113] Compiling C++ object src/libMangoHud_opengl.so.p/shared_x11.cpp.o[K[93/113] Compiling C++ object src/libMangoHud_opengl.so.p/shell.cpp.o[K[93/113] Compiling C++ object src/libMangoHud_opengl.so.p/wayland_keybinds.cpp.o[K[94/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_nvml.cpp.o[K[94/113] Compiling C++ object src/libMangoHud_opengl.so.p/dbus.cpp.o[K[95/113] Compiling C++ object src/libMangoHud_opengl.so.p/amdgpu.cpp.o[K[95/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_dbus.cpp.o[K[96/113] Compiling C++ object src/libMangoHud_opengl.so.p/device.cpp.o[K[96/113] Compiling C object src/libMangoHud_opengl.so.p/mesa_util_os_socket.c.o[K[97/113] Compiling C++ object src/libMangoHud_opengl.so.p/ftrace.cpp.o[K[97/113] Compiling C object src/libMangoHud_opengl.so.p/mesa_util_os_time.c.o[K[98/113] Compiling C object src/libMangoHud_opengl.so.p/mesa_util_os_socket.c.o[K[98/113] Compiling C object src/libMangoHud_shim.so.p/gl_shim.c.o[K[99/113] Compiling C object src/libMangoHud_opengl.so.p/mesa_util_os_time.c.o[K[99/113] Compiling C object src/libMangoHud_shim.so.p/real_dlsym.c.o[K[100/113] Compiling C object src/libMangoHud_shim.so.p/real_dlsym.c.o[K[100/113] Compiling C object src/libMangoHud_shim.so.p/elfhacks.c.o[K[101/113] Compiling C object src/libMangoHud_shim.so.p/gl_shim.c.o[K[101/113] Linking target src/libMangoHud.so[K[102/113] Compiling C object src/libMangoHud_shim.so.p/elfhacks.c.o[K[102/113] Linking target src/libMangoHud_shim.so[K[103/113] Compiling C++ object src/libMangoHud_opengl.so.p/wayland_keybinds.cpp.o[K[104/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_x11.cpp.o[K[105/113] Linking target src/libMangoHud_shim.so[K[106/113] Compiling C++ object src/libMangoHud_opengl.so.p/control.cpp.o[K[107/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_nvctrl.cpp.o[K[108/113] Compiling C++ object src/libMangoHud_opengl.so.p/loaders_loader_dbus.cpp.o[K[109/113] Compiling C++ object src/libMangoHud_opengl.so.p/dbus.cpp.o[K[110/113] Compiling C++ object src/libMangoHud_opengl.so.p/net.cpp.o[K[111/113] Compiling C++ object src/libMangoHud_opengl.so.p/shared_x11.cpp.o[K[111/113] Linking target src/libMangoHud_opengl.so[K[112/113] Linking target src/libMangoHud.so[K[113/113] Linking target src/libMangoHud_opengl.so[K
+ninja: Entering directory `/var/tmp/hokuto/mangohud-64/build/build32'
+[0/12] Generating version.h with a custom command[K[1/12] Generating version.h with a custom command[K
+Installing subprojects/imgui-1.91.6/libimgui.a to /var/tmp/hokuto/mangohud-64/build/build32/tmp32/usr/lib32
+Installing src/libMangoHud.so to /var/tmp/hokuto/mangohud-64/build/build32/tmp32/usr/lib32/mangohud
+Installing src/libMangoHud_opengl.so to /var/tmp/hokuto/mangohud-64/build/build32/tmp32/usr/lib32/mangohud
+Installing src/libMangoHud_shim.so to /var/tmp/hokuto/mangohud-64/build/build32/tmp32/usr/lib32/mangohud
+Installing /var/tmp/hokuto/mangohud-64/build/build32/src/MangoHud.x86.json to /var/tmp/hokuto/mangohud-64/build/build32/tmp32/usr/share/vulkan/implicit_layer.d
+Installing /var/tmp/hokuto/mangohud-64/build/build32/src/mangohud to /var/tmp/hokuto/mangohud-64/build/build32/tmp32/usr/bin
+Installing /var/tmp/hokuto/mangohud-64/build/bin/mangoplot.py to /var/tmp/hokuto/mangohud-64/build/build32/tmp32/usr/bin
+
+Script done on 2026-04-25 13:20:32+07:00 [COMMAND_EXIT_CODE="0"]
