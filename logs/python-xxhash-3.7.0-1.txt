@@ -1,0 +1,111 @@
+Script started on 2026-04-26 10:03:10+07:00 [COMMAND="cd /var/tmp/hokuto/python-xxhash-26/build && AR='gcc-ar' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/python-xxhash-26/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/python-xxhash-26/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/python-xxhash-26/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/python-xxhash-26/build/.cache' /repo/sauzeros/extra/python-xxhash/build /var/tmp/hokuto/python-xxhash-26/output 3.7.0 python-xxhash" <not executed on terminal>]
+[1m* Getting build dependencies for wheel...[0m
+toml section missing PosixPath('pyproject.toml') does not contain any of the tool sections: ['setuptools_scm', 'vcs-versioning']
+/usr/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: BSD License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+/usr/lib/python3.14/site-packages/coherent/licensed/setuptools.py:13: UserWarning: Avoid installing this plugin for projects that don't depend on it.
+  enabled or warnings.warn(
+running egg_info
+writing xxhash.egg-info/PKG-INFO
+writing dependency_links to xxhash.egg-info/dependency_links.txt
+writing top-level names to xxhash.egg-info/top_level.txt
+/usr/lib/python3.14/site-packages/vcs_versioning/overrides.py:609: UserWarning: No GlobalOverrides context is active. Auto-creating one with SETUPTOOLS_SCM prefix for backwards compatibility. Consider using 'with GlobalOverrides.from_env("YOUR_TOOL"):' explicitly.
+  return get_active_overrides().subprocess_timeout
+listing git files failed - pretending there aren't any
+reading manifest file 'xxhash.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '__pycache__' found anywhere in distribution
+warning: no previously-included files matching '*.py[co]' found anywhere in distribution
+no previously-included directories found matching '.github'
+warning: no previously-included files found matching '.gitignore'
+warning: no previously-included files found matching '.gitmodules'
+adding license file 'LICENSE'
+writing manifest file 'xxhash.egg-info/SOURCES.txt'
+[1m* Building wheel...[0m
+toml section missing PosixPath('pyproject.toml') does not contain any of the tool sections: ['setuptools_scm', 'vcs-versioning']
+/usr/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: BSD License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+/usr/lib/python3.14/site-packages/coherent/licensed/setuptools.py:13: UserWarning: Avoid installing this plugin for projects that don't depend on it.
+  enabled or warnings.warn(
+running bdist_wheel
+running build
+running build_py
+creating build/lib.linux-x86_64-cpython-314/xxhash
+copying xxhash/version.py -> build/lib.linux-x86_64-cpython-314/xxhash
+copying xxhash/__init__.py -> build/lib.linux-x86_64-cpython-314/xxhash
+copying xxhash/__init__.pyi -> build/lib.linux-x86_64-cpython-314/xxhash
+copying xxhash/py.typed -> build/lib.linux-x86_64-cpython-314/xxhash
+running build_ext
+building '_xxhash' extension
+creating build/temp.linux-x86_64-cpython-314/deps/xxhash
+creating build/temp.linux-x86_64-cpython-314/src
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -Ideps/xxhash -I/usr/include/python3.14 -c deps/xxhash/xxhash.c -o build/temp.linux-x86_64-cpython-314/deps/xxhash/xxhash.o
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -Ideps/xxhash -I/usr/include/python3.14 -c src/_xxhash.c -o build/temp.linux-x86_64-cpython-314/src/_xxhash.o
+cc -shared -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -march=native -O2 -pipe -fomit-frame-pointer -flto=10 build/temp.linux-x86_64-cpython-314/deps/xxhash/xxhash.o build/temp.linux-x86_64-cpython-314/src/_xxhash.o -L/usr/lib -o build/lib.linux-x86_64-cpython-314/xxhash/_xxhash.cpython-314-x86_64-linux-gnu.so
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/xxhash
+copying build/lib.linux-x86_64-cpython-314/xxhash/version.py -> build/bdist.linux-x86_64/wheel/./xxhash
+copying build/lib.linux-x86_64-cpython-314/xxhash/_xxhash.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/./xxhash
+copying build/lib.linux-x86_64-cpython-314/xxhash/__init__.pyi -> build/bdist.linux-x86_64/wheel/./xxhash
+copying build/lib.linux-x86_64-cpython-314/xxhash/py.typed -> build/bdist.linux-x86_64/wheel/./xxhash
+copying build/lib.linux-x86_64-cpython-314/xxhash/__init__.py -> build/bdist.linux-x86_64/wheel/./xxhash
+running install_egg_info
+running egg_info
+writing xxhash.egg-info/PKG-INFO
+writing dependency_links to xxhash.egg-info/dependency_links.txt
+writing top-level names to xxhash.egg-info/top_level.txt
+/usr/lib/python3.14/site-packages/vcs_versioning/overrides.py:609: UserWarning: No GlobalOverrides context is active. Auto-creating one with SETUPTOOLS_SCM prefix for backwards compatibility. Consider using 'with GlobalOverrides.from_env("YOUR_TOOL"):' explicitly.
+  return get_active_overrides().subprocess_timeout
+listing git files failed - pretending there aren't any
+reading manifest file 'xxhash.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '__pycache__' found anywhere in distribution
+warning: no previously-included files matching '*.py[co]' found anywhere in distribution
+no previously-included directories found matching '.github'
+warning: no previously-included files found matching '.gitignore'
+warning: no previously-included files found matching '.gitmodules'
+adding license file 'LICENSE'
+writing manifest file 'xxhash.egg-info/SOURCES.txt'
+Copying xxhash.egg-info to build/bdist.linux-x86_64/wheel/./xxhash-3.7.0-py3.14.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/xxhash-3.7.0.dist-info/WHEEL
+creating '/var/tmp/hokuto/python-xxhash-26/build/dist/.tmp-gn3ifg88/xxhash-3.7.0-cp314-cp314-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'xxhash/__init__.py'
+adding 'xxhash/__init__.pyi'
+adding 'xxhash/_xxhash.cpython-314-x86_64-linux-gnu.so'
+adding 'xxhash/py.typed'
+adding 'xxhash/version.py'
+adding 'xxhash-3.7.0.dist-info/licenses/LICENSE'
+adding 'xxhash-3.7.0.dist-info/METADATA'
+adding 'xxhash-3.7.0.dist-info/WHEEL'
+adding 'xxhash-3.7.0.dist-info/top_level.txt'
+adding 'xxhash-3.7.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+[1m[92mSuccessfully built [4mxxhash-3.7.0-cp314-cp314-linux_x86_64.whl[0m[1m[92m[0m
+
+Script done on 2026-04-26 10:03:13+07:00 [COMMAND_EXIT_CODE="0"]
