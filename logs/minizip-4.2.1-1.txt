@@ -1,0 +1,151 @@
+Script started on 2026-04-28 10:14:03+07:00 [COMMAND="cd /var/tmp/hokuto/minizip-08/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/minizip-08/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/minizip-08/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/minizip-08/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/minizip-08/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/minizip-08/build/.cache' /repo/sauzeros/extra/minizip/build /var/tmp/hokuto/minizip-08/output 4.2.1 minizip" <not executed on terminal>]
+-- The C compiler identification is GNU 15.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Using CMake version 4.3.2
+-- Looking for dirent.h
+-- Looking for dirent.h - found
+-- Looking for sys/dirent.h
+-- Looking for sys/dirent.h - not found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of DIR*
+-- Check size of DIR* - done
+-- Check size of off64_t
+-- Check size of off64_t - failed
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for symlink
+-- Looking for symlink - found
+-- Looking for readlink
+-- Looking for readlink - found
+-- Using ZLIB 1.3.1
+-- Using BZIP2 1.0.8
+-- Using LZMA 5.8.3
+-- Using PPMD
+-- Fetching ppmd https://github.com/ip7z/7zip 26.00
+--   Found 7Zip/PPMd 26.00
+-- Using ZSTD 1.5.7
+-- Using OpenSSL 3.6.2
+-- Performing Test Iconv_IS_BUILT_IN
+-- Performing Test Iconv_IS_BUILT_IN - Success
+-- Using Iconv
+-- Checking for sanitizer option
+--  sanitizer not enabled
+-- The following features have been enabled:
+
+ * MZ_COMPAT, Enables compatibility layer
+ * MZ_ZLIB, Enables ZLIB compression
+ * MZ_BZIP2, Enables BZIP2 compression
+ * MZ_LZMA, Enables LZMA & XZ compression
+ * MZ_PPMD, Enables PPMD compression
+ * MZ_ZSTD, Enables ZSTD compression
+ * MZ_PKCRYPT, Enables PKWARE traditional encryption
+ * MZ_WZAES, Enables WinZIP AES encryption
+ * MZ_OPENSSL, Enables OpenSSL for encryption
+ * MZ_LIBBSD, Builds with libbsd crypto random
+ * MZ_ICONV, Enables iconv string encoding conversion library
+ * MZ_BUILD_TESTS, Builds minizip test executable
+
+-- The following features have been disabled:
+
+ * MZ_LIBCOMP, Enables Apple compression
+ * MZ_FETCH_LIBS, Enables fetching third-party libraries if not found
+ * MZ_FORCE_FETCH_LIBS, Enables fetching third-party libraries always
+ * MZ_COMPRESS_ONLY, Only support compression
+ * MZ_DECOMPRESS_ONLY, Only support decompression
+ * MZ_FILE32_API, Builds using posix 32-bit file api
+ * MZ_BUILD_UNIT_TESTS, Builds minizip unit test project
+ * MZ_BUILD_FUZZ_TESTS, Builds minizip fuzzer executables
+ * MZ_CODE_COVERAGE, Builds with code coverage flags
+ * MZ_SANITIZER, Enable sanitizer testing support
+
+-- Configuring done (6.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /var/tmp/hokuto/minizip-08/build/build
+[  6%] [32mBuilding C object CMakeFiles/ppmd.dir/third_party/ppmd/C/Ppmd8Enc.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/ppmd.dir/third_party/ppmd/C/Ppmd8.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/ppmd.dir/third_party/ppmd/C/Ppmd8Dec.c.o[0m
+[ 13%] [1m[32mLinking C static library libppmd.a[0m
+[ 13%] Built target ppmd
+[ 26%] [32mBuilding C object CMakeFiles/minizip.dir/mz_os.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_buf.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_mem.c.o[0m
+[ 33%] [32mBuilding C object CMakeFiles/minizip.dir/mz_zip.c.o[0m
+[ 33%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_split.c.o[0m
+[ 36%] [32mBuilding C object CMakeFiles/minizip.dir/mz_crypt.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_bzip.c.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_zlib.c.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/minizip.dir/mz_zip_rw.c.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_ppmd.c.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_lzma.c.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_zstd.c.o[0m
+[ 60%] [32mBuilding C object CMakeFiles/minizip.dir/mz_crypt_openssl.c.o[0m
+[ 63%] [32mBuilding C object CMakeFiles/minizip.dir/mz_os_posix.c.o[0m
+[ 66%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_os_posix.c.o[0m
+[ 70%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_pkcrypt.c.o[0m
+[ 73%] [32mBuilding C object CMakeFiles/minizip.dir/mz_strm_wzaes.c.o[0m
+[ 83%] [32mBuilding C object CMakeFiles/minizip.dir/compat/zip.c.o[0m
+[ 83%] [32mBuilding C object CMakeFiles/minizip.dir/compat/ioapi.c.o[0m
+[ 83%] [32mBuilding C object CMakeFiles/minizip.dir/compat/unzip.c.o[0m
+[ 86%] [1m[32mLinking C shared library libminizip.so[0m
+[ 86%] Built target minizip
+[ 90%] [32mBuilding C object CMakeFiles/minigzip_cli.dir/minigzip.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/minizip_cli.dir/minizip.c.o[0m
+[ 96%] [1m[32mLinking C executable minigzip[0m
+[100%] [1m[32mLinking C executable minizip[0m
+[100%] Built target minigzip_cli
+[100%] Built target minizip_cli
+[ 13%] Built target ppmd
+[ 86%] Built target minizip
+[ 93%] Built target minizip_cli
+[100%] Built target minigzip_cli
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/lib64/libminizip.so.4.2.1
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/lib64/libminizip.so.1
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/lib64/libminizip.so
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/lib64/libppmd.a
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/lib64/cmake/minizip/minizip-targets.cmake
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/lib64/cmake/minizip/minizip-targets-release.cmake
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/lib64/cmake/minizip/minizip-config-version.cmake
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/lib64/cmake/minizip/minizip-config.cmake
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_os.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_crypt.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_buf.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_mem.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_split.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_os.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_zip.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_zip_rw.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_config.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_zlib.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_bzip.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_lzma.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_ppmd.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_zstd.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_pkcrypt.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/mz_strm_wzaes.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/crypt.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/ioapi.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/unzip.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/include/minizip/zip.h
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/lib64/pkgconfig/minizip.pc
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/bin/minigzip
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/minizip-08/output/usr/bin/minigzip" to ""
+-- Installing: /var/tmp/hokuto/minizip-08/output/usr/bin/minizip
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/minizip-08/output/usr/bin/minizip" to ""
+
+Script done on 2026-04-28 10:14:12+07:00 [COMMAND_EXIT_CODE="0"]
