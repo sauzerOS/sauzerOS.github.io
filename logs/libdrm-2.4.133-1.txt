@@ -1,0 +1,443 @@
+Script started on 2026-04-29 20:28:55+07:00 [COMMAND="cd /var/tmp/hokuto/libdrm-30/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libdrm-30/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libdrm-30/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libdrm-30/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libdrm-30/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libdrm-30/build/.cache' /repo/sauzeros/extra/libdrm/build /var/tmp/hokuto/libdrm-30/output 2.4.133 libdrm" <not executed on terminal>]
+[1mThe Meson build system[0m
+Version: 1.11.1
+Source dir: [1m/var/tmp/hokuto/libdrm-30/build[0m
+Build dir: [1m/var/tmp/hokuto/libdrm-30/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mlibdrm[0m
+Project version: [1m2.4.133[0m
+C compiler for the host machine: [1mcc[0m (gcc 15.2.0 "cc (GCC) 15.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Checking for function "[1msecure_getenv[0m" : [1;32mYES[0m 
+Program [1msymbols-check.py[0m found: [1;32mYES[0m (/usr/bin/python /var/tmp/hokuto/libdrm-30/build/symbols-check.py)
+Program [1mgcc-nm[0m found: [1;32mYES[0m
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Found CMake: [1m/usr/bin/cmake[0m (4.3.2)
+Run-time dependency [1matomic_ops[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Checking if "[1mIntel Atomics[0m" links: [1;32mYES[0m 
+Run-time dependency [1mpciaccess[0m found: [1;32mYES[0m [36m0.19[0m
+Checking for function "[1mdlsym[0m" : [1;32mYES[0m 
+Checking for function "[1mclock_gettime[0m" : [1;32mYES[0m 
+Check usable header "[1msys/select.h[0m" : [1;32mYES[0m 
+Check usable header "[1malloca.h[0m" : [1;32mYES[0m 
+Header "[1msys/sysmacros.h[0m" has symbol "[1mmajor[0m" : [1;32mYES[0m 
+Header "[1msys/sysmacros.h[0m" has symbol "[1mminor[0m" : [1;32mYES[0m 
+Header "[1msys/sysmacros.h[0m" has symbol "[1mmakedev[0m" : [1;32mYES[0m 
+Header "[1msys/mkdev.h[0m" has symbol "[1mmajor[0m" : [1;31mNO[0m 
+Checking for function "[1mopen_memstream[0m" : [1;32mYES[0m 
+Compiler for C supports arguments -Wsign-compare: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=undef: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=implicit-function-declaration: [1;32mYES[0m 
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C supports arguments -Wwrite-strings: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Wnested-externs: [1;32mYES[0m 
+Compiler for C supports arguments -Wpacked: [1;32mYES[0m 
+Compiler for C supports arguments -Wswitch-enum: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-format-attribute: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-aliasing=2: [1;32mYES[0m 
+Compiler for C supports arguments -Winit-self: [1;32mYES[0m 
+Compiler for C supports arguments -Winline: [1;32mYES[0m 
+Compiler for C supports arguments -Wshadow: [1;32mYES[0m 
+Compiler for C supports arguments -Wdeclaration-after-statement: [1;32mYES[0m 
+Compiler for C supports arguments -Wold-style-definition: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-attributes: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-long-long: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-missing-field-initializers: [1;32mYES[0m 
+Run-time dependency [1mcairo[0m found: [1;32mYES[0m [36m1.18.4[0m
+Dependency [1mvalgrind[0m for [1mhost[0m machine skipped: feature [1mvalgrind[0m disabled
+Program [1mrst2man[0m found: [1;32mYES[0m (/usr/bin/rst2man)
+Compiler for C supports function attribute visibility:hidden: [1;32mYES[0m 
+Configuring [1mconfig.h[0m using configuration
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Program [1mtests/gen4-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen4-3d.batch.sh)
+Program [1mtests/gm45-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gm45-3d.batch.sh)
+Program [1mtests/gen5-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen5-3d.batch.sh)
+Program [1mtests/gen6-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen6-3d.batch.sh)
+Program [1mtests/gen7-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen7-3d.batch.sh)
+Program [1mtests/gen7-2d-copy.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen7-2d-copy.batch.sh)
+Build targets in project: [1m13[0m
+
+libdrm [36m2.4.133[0m
+
+    Intel         : true
+    Radeon        : true
+    AMDGPU        : true
+    Nouveau       : true
+    vmwgfx        : true
+    OMAP          : false
+    Freedreno     : false
+    Freedreon-kgsl: false
+    Tegra         : false
+    Etnaviv       : false
+    EXYNOS        : false
+    VC4           : false
+
+  [1mUser defined options[0m
+    prefix        : /usr
+    tests         : false
+    udev          : true
+    valgrind      : disabled
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/libdrm-30/build/build
+ninja: Entering directory `/var/tmp/hokuto/libdrm-30/build/build'
+[0/45] Generating format_mod_static_table with a custom command[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr.c.o[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr_fake.c.o[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr_gem.c.o[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_decode.c.o[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/mm.c.o[K[0/45] Compiling C object intel/test_decode.p/test_decode.c.o[K[0/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/nouveau.c.o[K[0/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/pushbuf.c.o[K[0/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/bufctx.c.o[K[1/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/mm.c.o[K[1/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/abi16.c.o[K[2/45] Compiling C object intel/test_decode.p/test_decode.c.o[K[2/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_bo_gem.c.o[K[3/45] Generating format_mod_static_table with a custom command[K[3/45] Compiling C object libdrm.so.2.133.0.p/xf86drm.c.o[K[4/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/bufctx.c.o[K[4/45] Compiling C object libdrm.so.2.133.0.p/xf86drmHash.c.o[K[5/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr.c.o[K
+In file included from [01m[K../intel/intel_bufmgr.c:34[m[K:
+[01m[K../include/drm/i915_drm.h:2233:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_load_balance[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2233 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2271:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_bond[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2271 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2399:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_parallel_submit[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2399 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2473:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_param_engines[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2473 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[5/45] Compiling C object libdrm.so.2.133.0.p/xf86drmRandom.c.o[K[6/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/pushbuf.c.o[K[6/45] Compiling C object libdrm.so.2.133.0.p/xf86drmSL.c.o[K[7/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/abi16.c.o[K[7/45] Compiling C object libdrm.so.2.133.0.p/xf86drmMode.c.o[K[8/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_bo_gem.c.o[K[8/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs_gem.c.o[K[9/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/nouveau.c.o[K[9/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs_space.c.o[K[10/45] Compiling C object libdrm.so.2.133.0.p/xf86drmRandom.c.o[K[10/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_bo.c.o[K[11/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr_fake.c.o[K
+In file included from [01m[K../intel/intel_bufmgr_fake.c:47[m[K:
+[01m[K../include/drm/i915_drm.h:2233:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_load_balance[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2233 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2271:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_bond[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2271 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2399:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_parallel_submit[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2399 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2473:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_param_engines[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2473 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[11/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs.c.o[K[12/45] Compiling C object libdrm.so.2.133.0.p/xf86drmHash.c.o[K[12/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_surface.c.o[K[13/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs_space.c.o[K[13/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_asic_id.c.o[K[14/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_bo.c.o[K[14/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_bo.c.o[K[15/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs_gem.c.o[K[15/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_cs.c.o[K[16/45] Compiling C object libdrm.so.2.133.0.p/xf86drmSL.c.o[K[16/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_device.c.o[K[17/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs.c.o[K[17/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_gpu_info.c.o[K[18/45] Compiling C object libdrm.so.2.133.0.p/xf86drmMode.c.o[K[18/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_vamgr.c.o[K[19/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_gpu_info.c.o[K[19/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_vm.c.o[K[20/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_device.c.o[K[20/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/handle_table.c.o[K[21/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_bo.c.o[K[21/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_userq.c.o[K[22/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_asic_id.c.o[K[22/45] Generating man/drm.7 with a custom command[K[23/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_cs.c.o[K[23/45] Generating man/drm-kms.7 with a custom command[K[24/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/handle_table.c.o[K[24/45] Generating man/drm-memory.7 with a custom command[K[25/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_vm.c.o[K[25/45] Generating man/drmAvailable.3 with a custom command[K[26/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_userq.c.o[K[26/45] Generating man/drmHandleEvent.3 with a custom command[K[27/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_vamgr.c.o[K[27/45] Generating man/drmModeGetResources.3 with a custom command[K[28/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_surface.c.o[K[29/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr_gem.c.o[K
+In file included from [01m[K../intel/intel_bufmgr_gem.c:62[m[K:
+[01m[K../include/drm/i915_drm.h:2233:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_load_balance[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2233 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2271:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_bond[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2271 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2399:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_parallel_submit[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2399 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2473:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_param_engines[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2473 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[30/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_decode.c.o[K[31/45] Generating man/drmHandleEvent.3 with a custom command[K[32/45] Generating man/drm.7 with a custom command[K[33/45] Generating man/drmModeGetResources.3 with a custom command[K[34/45] Generating man/drm-memory.7 with a custom command[K[35/45] Generating man/drm-kms.7 with a custom command[K[36/45] Compiling C object libdrm.so.2.133.0.p/xf86drm.c.o[K[36/45] Linking target libdrm.so.2.133.0[K[37/45] Generating man/drmAvailable.3 with a custom command[K[38/45] Linking target libdrm.so.2.133.0[K[38/45] Generating symbol file libdrm.so.2.133.0.p/libdrm.so.2.133.0.symbols[K[39/45] Generating symbol file libdrm.so.2.133.0.p/libdrm.so.2.133.0.symbols[K[39/45] Linking target intel/libdrm_intel.so.1.133.0[K[39/45] Linking target nouveau/libdrm_nouveau.so.2.133.0[K[39/45] Linking target radeon/libdrm_radeon.so.1.133.0[K[39/45] Linking target amdgpu/libdrm_amdgpu.so.1.133.0[K[40/45] Linking target amdgpu/libdrm_amdgpu.so.1.133.0[K[41/45] Linking target radeon/libdrm_radeon.so.1.133.0[K[42/45] Linking target nouveau/libdrm_nouveau.so.2.133.0[K[43/45] Linking target intel/libdrm_intel.so.1.133.0[K[43/45] Generating symbol file intel/libdrm_intel.so.1.133.0.p/libdrm_intel.so.1.133.0.symbols[K[44/45] Generating symbol file intel/libdrm_intel.so.1.133.0.p/libdrm_intel.so.1.133.0.symbols[K[44/45] Linking target intel/test_decode[K[45/45] Linking target intel/test_decode[K
+ninja: Entering directory `/var/tmp/hokuto/libdrm-30/build/build'
+ninja: no work to do.
+Installing libdrm.so.2.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib
+Installing intel/libdrm_intel.so.1.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib
+Installing nouveau/libdrm_nouveau.so.2.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib
+Installing radeon/libdrm_radeon.so.1.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib
+Installing amdgpu/libdrm_amdgpu.so.1.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib
+Installing man/drm.7 to /var/tmp/hokuto/libdrm-30/output/usr/share/man/man7
+Installing man/drm-kms.7 to /var/tmp/hokuto/libdrm-30/output/usr/share/man/man7
+Installing man/drm-memory.7 to /var/tmp/hokuto/libdrm-30/output/usr/share/man/man7
+Installing man/drmAvailable.3 to /var/tmp/hokuto/libdrm-30/output/usr/share/man/man3
+Installing man/drmHandleEvent.3 to /var/tmp/hokuto/libdrm-30/output/usr/share/man/man3
+Installing man/drmModeGetResources.3 to /var/tmp/hokuto/libdrm-30/output/usr/share/man/man3
+Installing /var/tmp/hokuto/libdrm-30/build/libsync.h to /var/tmp/hokuto/libdrm-30/output/usr/include
+Installing /var/tmp/hokuto/libdrm-30/build/xf86drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include
+Installing /var/tmp/hokuto/libdrm-30/build/xf86drmMode.h to /var/tmp/hokuto/libdrm-30/output/usr/include
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/drm_fourcc.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/drm_mode.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/drm_sarea.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/i915_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/mach64_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/mga_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/msm_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/nouveau_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/qxl_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/r128_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/radeon_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/amdgpu_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/savage_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/sis_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/tegra_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/vc4_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/via_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/virtgpu_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/vmwgfx_drm.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/intel/intel_bufmgr.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/intel/intel_aub.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/intel/intel_debug.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nouveau.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm/nouveau
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/class.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/cl0080.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/cl9097.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/if0002.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/if0003.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/ioctl.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/unpack.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_bo.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_cs.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_surface.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_bo_gem.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_cs_gem.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_bo_int.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_cs_int.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/r600_pci_ids.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/amdgpu/amdgpu.h to /var/tmp/hokuto/libdrm-30/output/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm.pc to /var/tmp/hokuto/libdrm-30/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm_intel.pc to /var/tmp/hokuto/libdrm-30/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm_nouveau.pc to /var/tmp/hokuto/libdrm-30/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm_radeon.pc to /var/tmp/hokuto/libdrm-30/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm_amdgpu.pc to /var/tmp/hokuto/libdrm-30/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/data/amdgpu.ids to /var/tmp/hokuto/libdrm-30/output/usr/share/libdrm
+Installing symlink pointing to libdrm.so.2.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm.so.2
+Installing symlink pointing to libdrm.so.2 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm.so
+Installing symlink pointing to libdrm_intel.so.1.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm_intel.so.1
+Installing symlink pointing to libdrm_intel.so.1 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm_intel.so
+Installing symlink pointing to libdrm_nouveau.so.2.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm_nouveau.so.2
+Installing symlink pointing to libdrm_nouveau.so.2 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm_nouveau.so
+Installing symlink pointing to libdrm_radeon.so.1.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm_radeon.so.1
+Installing symlink pointing to libdrm_radeon.so.1 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm_radeon.so
+Installing symlink pointing to libdrm_amdgpu.so.1.133.0 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm_amdgpu.so.1
+Installing symlink pointing to libdrm_amdgpu.so.1 to /var/tmp/hokuto/libdrm-30/output/usr/lib/libdrm_amdgpu.so
+[1mThe Meson build system[0m
+Version: 1.11.1
+Source dir: [1m/var/tmp/hokuto/libdrm-30/build[0m
+Build dir: [1m/var/tmp/hokuto/libdrm-30/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mlibdrm[0m
+Project version: [1m2.4.133[0m
+C compiler for the host machine: [1mgcc -m32[0m (gcc 15.2.0 "gcc (GCC) 15.2.0")
+C linker for the host machine: [1mgcc -m32[0m ld.bfd 2.46
+Host machine cpu family: [1mx86[0m
+Host machine cpu: [1mi686[0m
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Checking for function "[1msecure_getenv[0m" : [1;32mYES[0m 
+Program [1msymbols-check.py[0m found: [1;32mYES[0m (/usr/bin/python /var/tmp/hokuto/libdrm-30/build/symbols-check.py)
+Program [1mgcc-nm[0m found: [1;32mYES[0m
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Found CMake: [1m/usr/bin/cmake[0m (4.3.2)
+Run-time dependency [1matomic_ops[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Checking if "[1mIntel Atomics[0m" links: [1;32mYES[0m 
+Run-time dependency [1mpciaccess[0m found: [1;32mYES[0m [36m0.19[0m
+Checking for function "[1mdlsym[0m" : [1;32mYES[0m 
+Checking for function "[1mclock_gettime[0m" : [1;32mYES[0m 
+Check usable header "[1msys/select.h[0m" : [1;32mYES[0m 
+Check usable header "[1malloca.h[0m" : [1;32mYES[0m 
+Header "[1msys/sysmacros.h[0m" has symbol "[1mmajor[0m" : [1;32mYES[0m 
+Header "[1msys/sysmacros.h[0m" has symbol "[1mminor[0m" : [1;32mYES[0m 
+Header "[1msys/sysmacros.h[0m" has symbol "[1mmakedev[0m" : [1;32mYES[0m 
+Header "[1msys/mkdev.h[0m" has symbol "[1mmajor[0m" : [1;31mNO[0m 
+Checking for function "[1mopen_memstream[0m" : [1;32mYES[0m 
+Compiler for C supports arguments -Wsign-compare: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=undef: [1;32mYES[0m 
+Compiler for C supports arguments -Werror=implicit-function-declaration: [1;32mYES[0m 
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C supports arguments -Wwrite-strings: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Wnested-externs: [1;32mYES[0m 
+Compiler for C supports arguments -Wpacked: [1;32mYES[0m 
+Compiler for C supports arguments -Wswitch-enum: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-format-attribute: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-aliasing=2: [1;32mYES[0m 
+Compiler for C supports arguments -Winit-self: [1;32mYES[0m 
+Compiler for C supports arguments -Winline: [1;32mYES[0m 
+Compiler for C supports arguments -Wshadow: [1;32mYES[0m 
+Compiler for C supports arguments -Wdeclaration-after-statement: [1;32mYES[0m 
+Compiler for C supports arguments -Wold-style-definition: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-attributes: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-long-long: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-missing-field-initializers: [1;32mYES[0m 
+Run-time dependency [1mcairo[0m found: [1;32mYES[0m [36m1.18.4[0m
+Dependency [1mvalgrind[0m for [1mhost[0m machine skipped: feature [1mvalgrind[0m disabled
+Program [1mrst2man[0m found: [1;32mYES[0m (/usr/bin/rst2man)
+Compiler for C supports function attribute visibility:hidden: [1;32mYES[0m 
+Configuring [1mconfig.h[0m using configuration
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Program [1mtests/gen4-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen4-3d.batch.sh)
+Program [1mtests/gm45-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gm45-3d.batch.sh)
+Program [1mtests/gen5-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen5-3d.batch.sh)
+Program [1mtests/gen6-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen6-3d.batch.sh)
+Program [1mtests/gen7-3d.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen7-3d.batch.sh)
+Program [1mtests/gen7-2d-copy.batch.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libdrm-30/build/intel/tests/gen7-2d-copy.batch.sh)
+Build targets in project: [1m13[0m
+
+libdrm [36m2.4.133[0m
+
+    Intel         : true
+    Radeon        : true
+    AMDGPU        : true
+    Nouveau       : true
+    vmwgfx        : true
+    OMAP          : false
+    Freedreno     : false
+    Freedreon-kgsl: false
+    Tegra         : false
+    Etnaviv       : false
+    EXYNOS        : false
+    VC4           : false
+
+  [1mUser defined options[0m
+    buildtype     : release
+    libdir        : /usr/lib32
+    prefix        : /usr
+    tests         : false
+    udev          : true
+    valgrind      : disabled
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/libdrm-30/build/build
+ninja: Entering directory `/var/tmp/hokuto/libdrm-30/build/build'
+[0/45] Generating format_mod_static_table with a custom command[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr.c.o[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr_fake.c.o[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr_gem.c.o[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_decode.c.o[K[0/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/mm.c.o[K[0/45] Compiling C object intel/test_decode.p/test_decode.c.o[K[0/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/nouveau.c.o[K[0/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/pushbuf.c.o[K[0/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/bufctx.c.o[K[1/45] Compiling C object intel/test_decode.p/test_decode.c.o[K[1/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/abi16.c.o[K[2/45] Generating format_mod_static_table with a custom command[K[2/45] Compiling C object libdrm.so.2.133.0.p/xf86drm.c.o[K[3/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/mm.c.o[K[3/45] Compiling C object libdrm.so.2.133.0.p/xf86drmHash.c.o[K[4/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/bufctx.c.o[K[4/45] Compiling C object libdrm.so.2.133.0.p/xf86drmRandom.c.o[K[5/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr.c.o[K
+In file included from [01m[K../intel/intel_bufmgr.c:34[m[K:
+[01m[K../include/drm/i915_drm.h:2233:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_load_balance[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2233 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2271:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_bond[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2271 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2399:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_parallel_submit[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2399 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2473:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_param_engines[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2473 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[5/45] Compiling C object libdrm.so.2.133.0.p/xf86drmSL.c.o[K[6/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/pushbuf.c.o[K[6/45] Compiling C object libdrm.so.2.133.0.p/xf86drmMode.c.o[K[7/45] Compiling C object libdrm.so.2.133.0.p/xf86drmRandom.c.o[K[7/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_bo_gem.c.o[K[8/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/abi16.c.o[K[8/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs_gem.c.o[K[9/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr_fake.c.o[K
+In file included from [01m[K../intel/intel_bufmgr_fake.c:47[m[K:
+[01m[K../include/drm/i915_drm.h:2233:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_load_balance[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2233 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2271:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_bond[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2271 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2399:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_parallel_submit[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2399 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2473:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_param_engines[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2473 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[9/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs_space.c.o[K[10/45] Compiling C object libdrm.so.2.133.0.p/xf86drmHash.c.o[K[10/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_bo.c.o[K[11/45] Compiling C object libdrm.so.2.133.0.p/xf86drmSL.c.o[K[11/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs.c.o[K[12/45] Compiling C object nouveau/libdrm_nouveau.so.2.133.0.p/nouveau.c.o[K[12/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_surface.c.o[K[13/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs_space.c.o[K[13/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_asic_id.c.o[K[14/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs_gem.c.o[K[14/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_bo.c.o[K[15/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_cs.c.o[K[15/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_cs.c.o[K[16/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_bo.c.o[K[16/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_device.c.o[K[17/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_bo_gem.c.o[K[17/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_gpu_info.c.o[K[18/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_asic_id.c.o[K[18/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_vamgr.c.o[K[19/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_device.c.o[K[19/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_vm.c.o[K[20/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_bo.c.o[K[20/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/handle_table.c.o[K[21/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_cs.c.o[K[21/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_userq.c.o[K[22/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_gpu_info.c.o[K[22/45] Generating man/drm.7 with a custom command[K[23/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_vm.c.o[K[23/45] Generating man/drm-kms.7 with a custom command[K[24/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_bufmgr_gem.c.o[K
+In file included from [01m[K../intel/intel_bufmgr_gem.c:62[m[K:
+[01m[K../include/drm/i915_drm.h:2233:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_load_balance[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2233 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2271:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_bond[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2271 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2399:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_engines_parallel_submit[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2399 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[01m[K../include/drm/i915_drm.h:2473:1:[m[K [01;35m[Kwarning: [m[Kpacked attribute is unnecessary for ‘[01m[Ki915_context_param_engines[m[K’ [[01;35m[K-Wpacked[m[K]
+ 2473 | [01;35m[K}[m[K __attribute__((packed));
+      | [01;35m[K^[m[K
+[24/45] Generating man/drm-memory.7 with a custom command[K[25/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_vamgr.c.o[K[25/45] Generating man/drmAvailable.3 with a custom command[K[26/45] Compiling C object radeon/libdrm_radeon.so.1.133.0.p/radeon_surface.c.o[K[26/45] Generating man/drmHandleEvent.3 with a custom command[K[27/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/handle_table.c.o[K[27/45] Generating man/drmModeGetResources.3 with a custom command[K[28/45] Compiling C object libdrm.so.2.133.0.p/xf86drmMode.c.o[K[29/45] Compiling C object libdrm.so.2.133.0.p/xf86drm.c.o[K[29/45] Linking target libdrm.so.2.133.0[K[30/45] Compiling C object amdgpu/libdrm_amdgpu.so.1.133.0.p/amdgpu_userq.c.o[K
+[01m[K../amdgpu/amdgpu_userq.c:[m[K In function ‘[01m[Kamdgpu_create_userqueue[m[K’:
+[01m[K../amdgpu/amdgpu_userq.c:77:24:[m[K [01;35m[Kwarning: [m[Kcast from pointer to integer of different size [[01;35m[K-Wpointer-to-int-cast[m[K]
+   77 |         userq.in.mqd = [01;35m[K([m[Kuint64_t)mqd_in;
+      |                        [01;35m[K^[m[K
+[31/45] Generating man/drm.7 with a custom command[K[32/45] Generating man/drmAvailable.3 with a custom command[K[33/45] Generating man/drmHandleEvent.3 with a custom command[K[34/45] Generating man/drmModeGetResources.3 with a custom command[K[35/45] Generating man/drm-kms.7 with a custom command[K[36/45] Generating man/drm-memory.7 with a custom command[K[37/45] Compiling C object intel/libdrm_intel.so.1.133.0.p/intel_decode.c.o[K[38/45] Linking target libdrm.so.2.133.0[K[38/45] Generating symbol file libdrm.so.2.133.0.p/libdrm.so.2.133.0.symbols[K[39/45] Generating symbol file libdrm.so.2.133.0.p/libdrm.so.2.133.0.symbols[K[39/45] Linking target intel/libdrm_intel.so.1.133.0[K[39/45] Linking target nouveau/libdrm_nouveau.so.2.133.0[K[39/45] Linking target radeon/libdrm_radeon.so.1.133.0[K[39/45] Linking target amdgpu/libdrm_amdgpu.so.1.133.0[K[40/45] Linking target amdgpu/libdrm_amdgpu.so.1.133.0[K[41/45] Linking target radeon/libdrm_radeon.so.1.133.0[K[42/45] Linking target nouveau/libdrm_nouveau.so.2.133.0[K[43/45] Linking target intel/libdrm_intel.so.1.133.0[K[43/45] Generating symbol file intel/libdrm_intel.so.1.133.0.p/libdrm_intel.so.1.133.0.symbols[K[44/45] Generating symbol file intel/libdrm_intel.so.1.133.0.p/libdrm_intel.so.1.133.0.symbols[K[44/45] Linking target intel/test_decode[K[45/45] Linking target intel/test_decode[K
+ninja: Entering directory `/var/tmp/hokuto/libdrm-30/build/build'
+ninja: no work to do.
+Installing libdrm.so.2.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32
+Installing intel/libdrm_intel.so.1.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32
+Installing nouveau/libdrm_nouveau.so.2.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32
+Installing radeon/libdrm_radeon.so.1.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32
+Installing amdgpu/libdrm_amdgpu.so.1.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32
+Installing man/drm.7 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/share/man/man7
+Installing man/drm-kms.7 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/share/man/man7
+Installing man/drm-memory.7 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/share/man/man7
+Installing man/drmAvailable.3 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/share/man/man3
+Installing man/drmHandleEvent.3 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/share/man/man3
+Installing man/drmModeGetResources.3 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/share/man/man3
+Installing /var/tmp/hokuto/libdrm-30/build/libsync.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include
+Installing /var/tmp/hokuto/libdrm-30/build/xf86drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include
+Installing /var/tmp/hokuto/libdrm-30/build/xf86drmMode.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/drm_fourcc.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/drm_mode.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/drm_sarea.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/i915_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/mach64_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/mga_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/msm_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/nouveau_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/qxl_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/r128_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/radeon_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/amdgpu_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/savage_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/sis_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/tegra_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/vc4_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/via_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/virtgpu_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/include/drm/vmwgfx_drm.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/intel/intel_bufmgr.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/intel/intel_aub.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/intel/intel_debug.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nouveau.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm/nouveau
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/class.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/cl0080.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/cl9097.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/if0002.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/if0003.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/ioctl.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/nouveau/nvif/unpack.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm/nouveau/nvif
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_bo.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_cs.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_surface.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_bo_gem.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_cs_gem.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_bo_int.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/radeon_cs_int.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/radeon/r600_pci_ids.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/amdgpu/amdgpu.h to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/include/libdrm
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm.pc to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm_intel.pc to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm_nouveau.pc to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm_radeon.pc to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/build/meson-private/libdrm_amdgpu.pc to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/pkgconfig
+Installing /var/tmp/hokuto/libdrm-30/build/data/amdgpu.ids to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/share/libdrm
+Installing symlink pointing to libdrm.so.2.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm.so.2
+Installing symlink pointing to libdrm.so.2 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm.so
+Installing symlink pointing to libdrm_intel.so.1.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm_intel.so.1
+Installing symlink pointing to libdrm_intel.so.1 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm_intel.so
+Installing symlink pointing to libdrm_nouveau.so.2.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm_nouveau.so.2
+Installing symlink pointing to libdrm_nouveau.so.2 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm_nouveau.so
+Installing symlink pointing to libdrm_radeon.so.1.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm_radeon.so.1
+Installing symlink pointing to libdrm_radeon.so.1 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm_radeon.so
+Installing symlink pointing to libdrm_amdgpu.so.1.133.0 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm_amdgpu.so.1
+Installing symlink pointing to libdrm_amdgpu.so.1 to /var/tmp/hokuto/libdrm-30/build/DESTDIR/usr/lib32/libdrm_amdgpu.so
+'DESTDIR/usr/lib32/libdrm_amdgpu.so' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_amdgpu.so'
+'DESTDIR/usr/lib32/libdrm_amdgpu.so.1' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_amdgpu.so.1'
+'DESTDIR/usr/lib32/libdrm_amdgpu.so.1.133.0' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_amdgpu.so.1.133.0'
+'DESTDIR/usr/lib32/libdrm_intel.so' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_intel.so'
+'DESTDIR/usr/lib32/libdrm_intel.so.1' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_intel.so.1'
+'DESTDIR/usr/lib32/libdrm_intel.so.1.133.0' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_intel.so.1.133.0'
+'DESTDIR/usr/lib32/libdrm_nouveau.so' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_nouveau.so'
+'DESTDIR/usr/lib32/libdrm_nouveau.so.2' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_nouveau.so.2'
+'DESTDIR/usr/lib32/libdrm_nouveau.so.2.133.0' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_nouveau.so.2.133.0'
+'DESTDIR/usr/lib32/libdrm_radeon.so' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_radeon.so'
+'DESTDIR/usr/lib32/libdrm_radeon.so.1' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_radeon.so.1'
+'DESTDIR/usr/lib32/libdrm_radeon.so.1.133.0' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm_radeon.so.1.133.0'
+'DESTDIR/usr/lib32/libdrm.so' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm.so'
+'DESTDIR/usr/lib32/libdrm.so.2' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm.so.2'
+'DESTDIR/usr/lib32/libdrm.so.2.133.0' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/libdrm.so.2.133.0'
+'DESTDIR/usr/lib32/pkgconfig' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/pkgconfig'
+'DESTDIR/usr/lib32/pkgconfig/libdrm.pc' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/pkgconfig/libdrm.pc'
+'DESTDIR/usr/lib32/pkgconfig/libdrm_intel.pc' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/pkgconfig/libdrm_intel.pc'
+'DESTDIR/usr/lib32/pkgconfig/libdrm_nouveau.pc' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/pkgconfig/libdrm_nouveau.pc'
+'DESTDIR/usr/lib32/pkgconfig/libdrm_radeon.pc' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/pkgconfig/libdrm_radeon.pc'
+'DESTDIR/usr/lib32/pkgconfig/libdrm_amdgpu.pc' -> '/var/tmp/hokuto/libdrm-30/output/usr/lib32/pkgconfig/libdrm_amdgpu.pc'
+
+Script done on 2026-04-29 20:29:06+07:00 [COMMAND_EXIT_CODE="0"]
