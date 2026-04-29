@@ -1,0 +1,882 @@
+Script started on 2026-04-29 12:39:51+07:00 [COMMAND="cd /var/tmp/hokuto/lvm2-14/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/lvm2-14/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/lvm2-14/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/lvm2-14/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/lvm2-14/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/lvm2-14/build/.cache' /repo/sauzeros/extra/lvm2/build /var/tmp/hokuto/lvm2-14/output 2.03.40 lvm2" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for gawk... gawk
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether make sets $(MAKE)... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for ranlib... gcc-ranlib
+checking for readelf... readelf
+checking for ar... gcc-ar
+checking for cflow... no
+checking for cscope... no
+checking for chmod... /usr/bin/chmod
+checking for wc... /usr/bin/wc
+checking for sort... /usr/bin/sort
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for vfork.h... no
+checking for sys/time.h... yes
+checking for sys/param.h... yes
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99 or later... yes
+checking for assert.h... yes
+checking for ctype.h... yes
+checking for dirent.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for getopt.h... yes
+checking for inttypes.h... (cached) yes
+checking for langinfo.h... yes
+checking for libgen.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for paths.h... yes
+checking for signal.h... yes
+checking for stdarg.h... yes
+checking for stddef.h... yes
+checking for stdio.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for syslog.h... yes
+checking for sys/mman.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/resource.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/utsname.h... yes
+checking for sys/wait.h... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking for termios.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/timerfd.h... yes
+checking for sys/vfs.h... yes
+checking for linux/magic.h... yes
+checking for linux/fiemap.h... yes
+checking for xfs/xfs.h... no
+checking for libaio.h... yes
+checking for asm/byteorder.h... yes
+checking for linux/fs.h... yes
+checking for malloc.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for struct stat.st_rdev... yes
+checking for ptrdiff_t... yes
+checking for struct stat.st_blocks... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for mode_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for ssize_t... yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for __builtin_clz... yes
+checking for __builtin_clzll... yes
+checking for __builtin_ffs... yes
+checking for ftruncate... yes
+checking for gethostname... yes
+checking for getpagesize... yes
+checking for gettimeofday... yes
+checking for localtime_r... yes
+checking for memchr... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mkfifo... yes
+checking for munmap... yes
+checking for nl_langinfo... yes
+checking for pselect... yes
+checking for realpath... yes
+checking for rmdir... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strndup... yes
+checking for strrchr... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for uname... yes
+checking for ffs... yes
+checking for mallinfo2... yes
+checking for prlimit... yes
+checking for versionsort... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether closedir returns void... no
+checking for working chown... yes
+checking for fork... yes
+checking for vfork... yes
+checking for alarm... yes
+checking for getpagesize... (cached) yes
+checking for vprintf... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether lstat accepts an empty string... no
+checking whether malloc (0) returns nonnull... (cached) yes
+checking for working memcmp... yes
+checking for working mktime... yes
+checking for working mmap... yes
+checking whether realloc (0, 0) returns nonnull... (cached) yes
+checking whether stat accepts an empty string... no
+checking for working strtod... yes
+checking whether to enable dependency tracking... yes
+checking whether to build silently... yes
+checking whether to use static linking... no
+checking whether to use dynamic linking... yes
+checking whether cc accepts -pie flag... yes
+checking whether cc accepts -Wl,-z,relro,-z,now,-z,pack-relative-relocs,--as-needed ld flags... yes
+checking file owner... 
+checking group owner... 
+checking device node uid... 0
+checking device node gid... 0
+checking device node mode... 0600
+checking when to create device nodes... on resume
+checking default for use_devicesfile... 0
+checking default name mangling... auto
+checking default for event_activation... 1
+checking whether to include snapshots... internal
+checking whether to include mirrors... internal
+checking whether to include thin provisioning... internal
+checking for thin_check... no
+configure: WARNING: thin_check not found in path /usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/home/dbz/.local/bin:/usr/share/dotnet:/home/dbz/.dotnet/tools:/usr/sbin:/sbin
+checking for thin_dump... no
+configure: WARNING: thin_dump not found in path /usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/home/dbz/.local/bin:/usr/share/dotnet:/home/dbz/.dotnet/tools:/usr/sbin:/sbin
+checking for thin_repair... no
+configure: WARNING: thin_repair not found in path /usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/home/dbz/.local/bin:/usr/share/dotnet:/home/dbz/.dotnet/tools:/usr/sbin:/sbin
+checking for thin_restore... no
+configure: WARNING: thin_restore not found in path /usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/home/dbz/.local/bin:/usr/share/dotnet:/home/dbz/.dotnet/tools:/usr/sbin:/sbin
+checking whether /usr/sbin/thin_check (.) supports the needs-check flag... yes
+checking whether to include cache... internal
+checking for cache_check... no
+configure: WARNING: cache_check not found in path /usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/home/dbz/.local/bin:/usr/share/dotnet:/home/dbz/.dotnet/tools:/usr/sbin:/sbin
+checking for cache_dump... no
+configure: WARNING: cache_dump not found in path /usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/home/dbz/.local/bin:/usr/share/dotnet:/home/dbz/.dotnet/tools:/usr/sbin:/sbin
+checking for cache_repair... no
+configure: WARNING: cache_repair not found in path /usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/home/dbz/.local/bin:/usr/share/dotnet:/home/dbz/.dotnet/tools:/usr/sbin:/sbin
+checking for cache_restore... no
+configure: WARNING: cache_restore not found in path /usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/home/dbz/.local/bin:/usr/share/dotnet:/home/dbz/.dotnet/tools:/usr/sbin:/sbin
+checking whether /usr/sbin/cache_check (..) supports the needs-check flag... yes
+checking whether to include vdo... internal
+checking for vdoformat... no
+configure: WARNING: vdoformat not found in path /usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/home/dbz/.local/bin:/usr/share/dotnet:/home/dbz/.dotnet/tools
+checking whether to include writecache... internal
+checking whether to include integrity... internal
+checking whether to enable realtime support... yes
+checking whether to enable OCF resource agents... no
+checking for default run directory... /run
+checking whether to build cluster mirror log daemon... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether to enable debugging... no
+checking whether cc accepts -Wjump-misses-init flag... yes
+checking whether cc accepts -Wclobbered flag... yes
+checking whether cc accepts -Wsync-nand flag... yes
+checking for C optimisation flag... 
+checking whether to use symbol versioning... gnu
+checking whether to gather gcov profiling data... no
+checking whether to enable valgrind awareness of pools... no
+checking for valgrind... no
+checking whether to use device-mapper... yes
+checking whether to build lvmpolld... no
+checking whether to build lvmlockdsanlock... no
+checking whether to build lvmlockddlm... no
+checking whether to build lvmlockddlmcontrol... no
+checking whether to build lvmlockdidm... no
+checking whether to build lvmlockd... no
+checking for systemd/sd-journal.h... yes
+checking whether to log to systemd journal... yes
+checking for systemd/sd-id128.h... yes
+checking whether to support systemd appmachineid... yes
+checking for systemd/sd-daemon.h... yes
+checking whether to enable to sd_notify... yes
+checking for systemd-run... /usr/bin/systemd-run
+checking for app running udev background service... /usr/bin/systemd-run
+checking for blkid >= 2.24... yes
+checking for blkid.h defines BLKID_SUBLKS_FSINFO.... yes
+checking whether to enable libblkid detection of signatures when wiping... yes
+checking for libnvme >= 1.4... yes
+checking for NVME_NIDT_CSI in libnvme.h... yes
+checking whether to use libnvme for alternate WWIDs... yes
+checking whether to enable synchronization with udev processing... yes
+checking for libudev >= 143... yes
+checking for udev_device_get_is_initialized in -ludev... yes
+checking whether to enable installation of udev rules required for synchronization... yes
+checking whether to enable executable path detection in udev rules... no
+checking whether udev supports built-in blkid... yes
+checking whether to enable O_DIRECT... yes
+checking whether to include Python D-Bus support... no
+checking whether to build notifydbus... no
+checking for libsystemd... yes
+checking whether to install fsadm... yes
+checking whether to install lvm_import_vdo... yes
+checking whether to install blkdeactivate... yes
+checking whether to use dmeventd... no
+checking whether to compile liblvm2cmd.so... yes
+checking whether to build dmfilemapd... no
+checking for getline in -lc... yes
+checking for canonicalize_file_name in -lc... yes
+checking for dlopen in -ldl... yes
+checking for log10 in -lm... yes
+checking for pthread_mutex_lock in -lpthread... yes
+checking whether to enable selinux support... yes
+checking for sepol_check_context in -lsepol... no
+checking for is_selinux_enabled in -lselinux... no
+configure: WARNING: Disabling selinux
+checking for BLKZEROOUT in sys/ioctl.h.... yes
+checking whether to use BLKZEROOUT for device zeroing... yes
+checking for clock_gettime... yes
+checking for struct stat has st_ctim.... yes
+checking for getopt.h... (cached) yes
+checking for library containing tgetent... -lncurses
+checking for readline in -lreadline... yes
+checking for rl_line_buffer in -lreadline... yes
+checking for rl_completion_matches... yes
+checking whether to enable internationalisation... no
+checking for kernel modules directory... /lib/modules
+checking for readline/readline.h... yes
+checking for readline/history.h... yes
+checking whether to enable readline... yes
+checking whether to enable editline... no
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking whether strerror_r is declared... yes
+checking for dlfcn.h... yes
+checking for sys/ipc.h... yes
+checking for sys/sem.h... yes
+checking for modprobe... /usr/bin/modprobe
+checking for default lock directory... /run/lock/lvm
+checking for kernel interface choice... ioctl
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating make.tmpl
+config.status: creating libdm/make.tmpl
+config.status: creating daemons/Makefile
+config.status: creating daemons/cmirrord/Makefile
+config.status: creating daemons/dmeventd/Makefile
+config.status: creating daemons/dmeventd/libdevmapper-event.pc
+config.status: creating daemons/dmeventd/plugins/Makefile
+config.status: creating daemons/dmeventd/plugins/lvm2/Makefile
+config.status: creating daemons/dmeventd/plugins/raid/Makefile
+config.status: creating daemons/dmeventd/plugins/mirror/Makefile
+config.status: creating daemons/dmeventd/plugins/snapshot/Makefile
+config.status: creating daemons/dmeventd/plugins/thin/Makefile
+config.status: creating daemons/dmeventd/plugins/vdo/Makefile
+config.status: creating daemons/lvmdbusd/Makefile
+config.status: creating daemons/lvmdbusd/lvmdbusd
+config.status: creating daemons/lvmdbusd/lvmdb.py
+config.status: creating daemons/lvmdbusd/lvm_shell_proxy.py
+config.status: creating daemons/lvmdbusd/path.py
+config.status: creating daemons/lvmpolld/Makefile
+config.status: creating daemons/lvmlockd/Makefile
+config.status: creating conf/Makefile
+config.status: creating conf/example.conf
+config.status: creating conf/lvmlocal.conf
+config.status: creating conf/command_profile_template.profile
+config.status: creating conf/metadata_profile_template.profile
+config.status: creating include/Makefile
+config.status: creating lib/Makefile
+config.status: creating include/lvm-version.h
+config.status: creating libdaemon/Makefile
+config.status: creating libdaemon/client/Makefile
+config.status: creating libdaemon/server/Makefile
+config.status: creating libdm/Makefile
+config.status: creating libdm/dm-tools/Makefile
+config.status: creating libdm/libdevmapper.pc
+config.status: creating man/Makefile
+config.status: creating po/Makefile
+config.status: creating scripts/lvm2-pvscan.service
+config.status: creating scripts/blkdeactivate.sh
+config.status: creating scripts/blk_availability_init_red_hat
+config.status: creating scripts/blk_availability_systemd_red_hat.service
+config.status: creating scripts/cmirrord_init_red_hat
+config.status: creating scripts/com.redhat.lvmdbus1.service
+config.status: creating scripts/dm_event_systemd_red_hat.service
+config.status: creating scripts/dm_event_systemd_red_hat.socket
+config.status: creating scripts/lvm2_cmirrord_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmdbusd_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmpolld_init_red_hat
+config.status: creating scripts/lvm2_lvmpolld_systemd_red_hat.service
+config.status: creating scripts/lvm2_lvmpolld_systemd_red_hat.socket
+config.status: creating scripts/lvmlockd.service
+config.status: creating scripts/lvmlocks.service
+config.status: creating scripts/lvm2_monitoring_init_red_hat
+config.status: creating scripts/lvm2_monitoring_systemd_red_hat.service
+config.status: creating scripts/lvm2_tmpfiles_red_hat.conf
+config.status: creating scripts/lvmdump.sh
+config.status: creating scripts/Makefile
+config.status: creating test/Makefile
+config.status: creating tools/Makefile
+config.status: creating udev/Makefile
+config.status: creating include/configure.h
+configure: WARNING: Support for thin provisioning is limited since some thin provisioning tools are missing!
+configure: WARNING: Support for cache is limited since some cache tools are missing!
+configure: WARNING: Unrecognized 'vdoformat' tool is REQUIRED for VDO logical volume creation!
+configure: WARNING: 'lvextend --resizefs' is less capable without xfs/xfs.h (see package: xfsprogs devel)
+make -C libdm device-mapper
+make -C conf device-mapper
+make -C include device-mapper
+make -C lib device-mapper
+make -C libdaemon device-mapper
+make -C man device-mapper
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/include'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/conf'
+make -C scripts device-mapper
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/lib'
+make -C udev device-mapper
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/udev'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/man'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/lib'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/udev'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/include'
+    [CC] bitset.c
+    [CC] libdm-common.c
+    [CC] list.c
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+    [CC] hash.c
+    [MAN] dmsetup.8
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+    [CC] libdm-config.c
+    [CC] libdm-deptree.c
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/conf'
+    [MAN] dmstats.8
+    [MAN] dmvdostats.8
+    [MAN] blkdeactivate.8
+    [CC] libdm-file.c
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/man'
+    [CC] libdm-report.c
+    [CC] libdm-stats.c
+    [CC] libdm-string.c
+    [CC] libdm-targets.c
+    [CC] libdm-timestamp.c
+    [CC] dbg_malloc.c
+    [CC] raid_parser.c
+    [CC] pool.c
+    [CC] matcher.c
+    [CC] parse_rx.c
+    [CC] ttree.c
+    [CC] vdo_parse.c
+    [CC] vdo_target.c
+    [CC] vdo_reader.c
+    [CC] vdo_status.c
+    [CC] vdo_stats.c
+    [CC] libdm-iface.c
+    [CC] ioctl/libdevmapper.so.1.02
+    [LN] libdevmapper.so.1.02
+    [CHECK] ioctl/libdevmapper.so
+    [LN] ioctl/libdevmapper.so
+    [LN] ioctl/libdevmapper.so
+make -C daemons device-mapper
+make -C tools device-mapper
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+    [GEN] command-lines-input.h
+    [GEN] command-count.h
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make -C libdm
+make -C conf
+make -C include
+make -C libdaemon
+make -C udev
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/conf'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/include'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/udev'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/conf'
+make -C client device-mapper
+make[2]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make -C dm-tools device-mapper
+    [GEN] cmds.h
+make[2]: Nothing to be done for 'device-mapper'.
+make[2]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make -C client
+    [CC] dmvdostats.c
+make[2]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+    [CC] dmsetup.c
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/include'
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/udev'
+    [CC] config-util.c
+    [CC] daemon-client.c
+    [CC] daemon-io.c
+    [AR] libdaemonclient.a
+/usr/bin/ar: creating libdaemonclient.a
+make[2]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+    [CC] dmsetup
+make -C dm-tools
+make[2]: Nothing to be done for 'all'.
+make -C lib
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/lib'
+    [CC] writecache.c
+    [CC] integrity.c
+    [CC] toolcontext.c
+    [CC] lvmcache.c
+    [CC] btree.c
+    [CC] config.c
+    [CC] activate.c
+    [CC] cache.c
+    [CC] str_list.c
+    [CC] radix-tree.c
+    [CC] bcache.c
+    [CC] bcache-utils.c
+    [CC] dev-cache.c
+    [CC] device_id.c
+    [CC] dev-ext.c
+    [CC] dev-io.c
+    [CC] dev-md.c
+    [CC] dev-mpath.c
+    [CC] dev-swap.c
+    [CC] dev-type.c
+    [CC] dev-luks.c
+    [CC] dev-dasd.c
+    [CC] dev-lvm1-pool.c
+    [CC] filesystem_xfs.c
+    [CC] filesystem.c
+    [CC] online.c
+    [CC] parse_vpd.c
+    [CC] persist.c
+    [CC] nvme.c
+    [CC] dev_util.c
+    [CC] display.c
+    [CC] errseg.c
+    [CC] unknown.c
+    [CC] filter-composite.c
+    [CC] filter-persistent.c
+    [CC] filter-regex.c
+    [CC] filter-sysfs.c
+    [CC] filter-md.c
+    [CC] filter-fwraid.c
+    [CC] filter-mpath.c
+    [CC] filter-partitioned.c
+    [CC] filter-type.c
+    [CC] filter-usable.c
+    [CC] filter-signature.c
+    [CC] filter-deviceid.c
+    [CC] archive.c
+    [CC] export.c
+    [CC] archiver.c
+    [CC] flags.c
+    [CC] format-text.c
+    [CC] import_vsn1.c
+    [CC] import.c
+    [CC] text_label.c
+    [CC] freeseg.c
+    [CC] id.c
+    [CC] label.c
+    [CC] hints.c
+    [CC] file_locking.c
+    [CC] locking.c
+    [CC] log.c
+    [CC] cache_manip.c
+    [CC] writecache_manip.c
+    [CC] lv.c
+    [CC] integrity_manip.c
+    [CC] lv_manip.c
+    [CC] merge.c
+    [CC] metadata.c
+    [CC] mirror.c
+    [CC] pool_manip.c
+    [CC] pv.c
+    [CC] pv_list.c
+    [CC] pv_manip.c
+    [CC] pv_map.c
+    [CC] raid_manip.c
+    [CC] segtype.c
+    [CC] snapshot_manip.c
+    [CC] thin_manip.c
+    [CC] vdo_manip.c
+    [CC] vg.c
+    [CC] mirrored.c
+    [CC] crc.c
+    [CC] lvm-exec.c
+    [CC] lvm-file.c
+    [CC] lvm-flock.c
+    [CC] lvm-globals.c
+    [CC] lvm-maths.c
+    [CC] lvm-signal.c
+    [CC] lvm-string.c
+    [CC] lvm-wrappers.c
+    [CC] lvm-percent.c
+    [CC] sharedlib.c
+    [CC] memlock.c
+    [CC] lvmnotify.c
+    [CC] prop_common.c
+    [CC] raid.c
+    [CC] properties.c
+    [CC] report.c
+    [CC] snapshot.c
+    [CC] striped.c
+    [CC] thin.c
+    [CC] zero.c
+    [CC] dev_manager.c
+    [CC] fs.c
+    [CC] vdo.c
+    [AR] liblvm-internal.a
+/usr/bin/ar: creating liblvm-internal.a
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/lib'
+make -C tools
+make -C scripts
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+    [CC] dumpconfig.c
+    [CC] lvchange.c
+    [CC] formats.c
+    [CC] cmdnames.h
+    [CC] lvconvert.c
+    [CC] command.c
+    [CC] lvconvert_poll.c
+    [CC] lvcreate.c
+    [CC] lvdisplay.c
+    [CC] lvextend.c
+    [CC] lvmcmdline.c
+    [CC] lvmdevices.c
+    [CC] lvmdiskscan.c
+    [CC] lvpoll.c
+    [CC] lvreduce.c
+    [CC] lvremove.c
+    [CC] lvrename.c
+    [CC] lvresize.c
+    [CC] lvscan.c
+    [CC] polldaemon.c
+    [CC] pvchange.c
+    [CC] pvck.c
+    [CC] pvcreate.c
+    [CC] pvmove.c
+    [CC] pvdisplay.c
+    [CC] pvmove_poll.c
+    [CC] pvremove.c
+    [CC] pvresize.c
+    [CC] pvscan.c
+    [CC] reporter.c
+    [CC] segtypes.c
+    [CC] tags.c
+    [CC] toollib.c
+    [CC] vgcfgbackup.c
+    [CC] vgcfgrestore.c
+    [CC] vgchange.c
+    [CC] vgck.c
+    [CC] vgcreate.c
+    [CC] vgdisplay.c
+    [CC] vgexport.c
+    [CC] vgextend.c
+    [CC] vgimport.c
+    [CC] vgimportclone.c
+    [CC] vgimportdevices.c
+    [CC] vgmerge.c
+    [CC] vgmknodes.c
+    [CC] vgreduce.c
+    [CC] vgremove.c
+    [CC] vgrename.c
+    [CC] vgscan.c
+    [CC] vgsplit.c
+    [CC] lvmcmdlib.c
+    [CC] lvm2cmd.c
+    [CC] lvm.c
+    [CC] man-generator.c
+    [AR] liblvm2cmd.a
+    [CC] lvm
+    [CC] liblvm2cmd.so
+    [CC] man-generator
+    [LN] liblvm2cmd.so.2.03
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make -C daemons
+make -C man
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/man'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+    [MAN] lvmsystemid.7
+    [MAN] lvmreport.7
+    [MAN] lvmraid.7
+    [MAN] lvm.conf.5
+    [MAN] lvmcache.7
+    [MAN] lvmautoactivation.7
+    [MAN] lvmvdo.7
+    [TSTMAN] test.gen
+    [MAN] lvm.8
+    [MAN] lvmthin.7
+    [MAN] lvmsadc.8
+    [MAN] lvmsar.8
+    [MAN] lvmdump.8
+    [MAN] lvmpersist.8
+    [MAN] fsadm.8
+    [MAN] lvm_import_vdo.8
+    [MAN] lvmdiskscan.8
+    [MAN] lvmdevices.8
+    [MAN] vgimportdevices.8
+    [MAN] lvmconfig.8
+    [ARGS] lvm-args.7
+    [INDEX] lvm-index.7
+    [INDEX] lvm-categories.7
+    [MAN] lvm-fullreport.8
+    [MAN] lvm-lvpoll.8
+    [MAN] lvcreate.8
+    [MAN] lvchange.8
+    [MAN] lvdisplay.8
+    [MAN] lvextend.8
+    [MAN] lvconvert.8
+    [MAN] lvrename.8
+    [MAN] lvreduce.8
+    [MAN] lvremove.8
+    [MAN] lvresize.8
+    [MAN] lvs.8
+    [MAN] pvchange.8
+    [MAN] lvscan.8
+    [MAN] pvck.8
+    [MAN] pvcreate.8
+    [MAN] pvdisplay.8
+    [MAN] pvmove.8
+    [MAN] pvremove.8
+    [MAN] pvresize.8
+    [MAN] pvs.8
+    [MAN] pvscan.8
+    [MAN] vgcfgrestore.8
+    [MAN] vgck.8
+    [MAN] vgchange.8
+    [MAN] vgcreate.8
+    [MAN] vgcfgbackup.8
+    [MAN] vgconvert.8
+    [MAN] vgexport.8
+    [MAN] vgdisplay.8
+    [MAN] vgextend.8
+    [MAN] vgimport.8
+    [MAN] vgimportclone.8
+    [MAN] vgmerge.8
+    [MAN] vgmknodes.8
+    [MAN] vgremove.8
+    [MAN] vgreduce.8
+    [MAN] vgrename.8
+    [MAN] vgs.8
+    [MAN] vgsplit.8
+    [MAN] vgscan.8
+    [MAN] lvm-config.8
+    [MAN] lvm-dumpconfig.8
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/man'
+make -C libdm device-mapper
+make -C conf device-mapper
+make -C include device-mapper
+make -C lib device-mapper
+make -C libdaemon device-mapper
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/conf'
+make -C man device-mapper
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/include'
+make -C scripts device-mapper
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/lib'
+make -C udev device-mapper
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/udev'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/man'
+make[1]: Nothing to be done for 'device-mapper'.
+make -C daemons device-mapper
+make -C tools device-mapper
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/include'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/udev'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/conf'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/lib'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/man'
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+make[1]: Nothing to be done for 'device-mapper'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make -C libdm
+make -C conf
+make -C include
+make -C libdaemon
+make -C udev
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/include'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/conf'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/udev'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/conf'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/udev'
+make -C client device-mapper
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/include'
+make[2]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make -C dm-tools device-mapper
+make[2]: Nothing to be done for 'device-mapper'.
+make -C dm-tools
+make[2]: Nothing to be done for 'device-mapper'.
+make[2]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make -C client
+make[2]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make[2]: Nothing to be done for 'all'.
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+make -C lib
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/lib'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/lib'
+make -C tools
+make -C scripts
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make -C daemons
+make -C man
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/man'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/man'
+make -C libdm install
+make -C conf install
+make -C daemons install
+make -C include install
+make -C lib install
+make -C libdaemon install
+make -C man install
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+make -C scripts install
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/include'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/conf'
+make -C tools install
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/lib'
+make -C udev install
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/man'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/udev'
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make -C client device-mapper
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/include'
+make -C dm-tools device-mapper
+make[2]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+    [INSTALL] 11-dm-lvm.rules
+    [INSTALL] 69-dm-lvm.rules
+/usr/bin/install -c -p -m 644 -D example.conf /var/tmp/hokuto/lvm2-14/output/etc/lvm/lvm.conf
+    [INSTALL] lvm.conf.5
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/daemons'
+    [INSTALL] lvresize_fs_helper.sh
+    [INSTALL] 10-dm.rules
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/lib'
+    [INSTALL] lvmdump.sh
+/usr/bin/install -c -p -m 644 -D lvmlocal.conf /var/tmp/hokuto/lvm2-14/output/etc/lvm/lvmlocal.conf
+    [INSTALL] lvmsystemid.7 lvmreport.7 lvmraid.7 lvmautoactivation.7 lvmcache.7 lvmthin.7 lvmvdo.7 lvm-index.7 lvm-categories.7 lvm-args.7
+    [INSTALL] fsadm.sh
+    [INSTALL] 13-dm-disk.rules
+    [INSTALL] lvm_import_vdo.sh
+    [INSTALL] lvmpersist.sh
+    [INSTALL] 95-dm-notify.rules
+    [INSTALL] command_profile_template.profile
+    [INSTALL] lvm
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/udev'
+    [INSTALL] lvm.8 lvmdump.8 lvm-fullreport.8 lvm-lvpoll.8 lvcreate.8 lvchange.8 lvmconfig.8 lvconvert.8 lvdisplay.8 lvextend.8 lvreduce.8 lvremove.8 lvrename.8 lvresize.8 lvs.8 lvscan.8 pvchange.8 pvck.8 pvcreate.8 pvdisplay.8 pvmove.8 pvremove.8 pvresize.8 pvs.8 pvscan.8 vgcfgbackup.8 vgcfgrestore.8 vgchange.8 vgck.8 vgcreate.8 vgconvert.8 vgdisplay.8 vgexport.8 vgextend.8 vgimport.8 vgimportclone.8 vgmerge.8 vgmknodes.8 vgreduce.8 vgremove.8 vgrename.8 vgs.8 vgscan.8 vgsplit.8 lvmsar.8 lvmsadc.8 lvmdiskscan.8 lvmdevices.8 vgimportdevices.8 lvmpersist.8 fsadm.8 lvm_import_vdo.8 lvm-config.8 lvm-dumpconfig.8
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/conf'
+    [INSTALL] blkdeactivate.sh
+make[2]: Nothing to be done for 'device-mapper'.
+    [INSTALL] libdevmapper.pc
+make[2]: Nothing to be done for 'device-mapper'.
+make[2]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+make -C client
+make -C dm-tools
+    [INSTALL] ioctl/libdevmapper.so
+make[2]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+    [INSTALL] dmsetup.8 dmstats.8 dmvdostats.8 blkdeactivate.8
+    [INSTALL] libdevmapper.h
+    [INSTALL] lvm2cmd.h
+    [INSTALL] liblvm2cmd.so
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/man'
+Creating symbolic links for individual commands in /var/tmp/hokuto/lvm2-14/output/usr/bin
+make[2]: Nothing to be done for 'all'.
+make -C dm-tools install
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make -C client install
+make[2]: Entering directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make[2]: Nothing to be done for 'install'.
+make[2]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon/client'
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/libdaemon'
+    [INSTALL] dmsetup
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/tools'
+make -C scripts install_systemd_units
+make[1]: Entering directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+    [INSTALL] systemd_units
+make[1]: Leaving directory '/var/tmp/hokuto/lvm2-14/build/scripts'
+
+Script done on 2026-04-29 12:40:10+07:00 [COMMAND_EXIT_CODE="0"]
