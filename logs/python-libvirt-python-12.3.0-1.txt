@@ -1,0 +1,102 @@
+Script started on 2026-05-02 11:03:32+07:00 [COMMAND="cd /var/tmp/hokuto/python-libvirt-python-10/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/python-libvirt-python-10/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/python-libvirt-python-10/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/python-libvirt-python-10/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/python-libvirt-python-10/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/python-libvirt-python-10/build/.cache' /repo/sauzeros/extra/python-libvirt-python/build /var/tmp/hokuto/python-libvirt-python-10/output 12.3.0 python-libvirt-python" <not executed on terminal>]
+[1m* Getting build dependencies for wheel...[0m
+toml section missing PosixPath('pyproject.toml') does not contain any of the tool sections: ['setuptools_scm', 'vcs-versioning']
+/usr/lib/python3.14/site-packages/coherent/licensed/setuptools.py:13: UserWarning: Avoid installing this plugin for projects that don't depend on it.
+  enabled or warnings.warn(
+running egg_info
+writing build/libvirt_python.egg-info/PKG-INFO
+writing dependency_links to build/libvirt_python.egg-info/dependency_links.txt
+writing top-level names to build/libvirt_python.egg-info/top_level.txt
+file build/libvirt.py (for module libvirt) not found
+file build/libvirt_qemu.py (for module libvirt_qemu) not found
+file build/libvirt_lxc.py (for module libvirt_lxc) not found
+file build/libvirtaio.py (for module libvirtaio) not found
+/usr/lib/python3.14/site-packages/vcs_versioning/overrides.py:609: UserWarning: No GlobalOverrides context is active. Auto-creating one with SETUPTOOLS_SCM prefix for backwards compatibility. Consider using 'with GlobalOverrides.from_env("YOUR_TOOL"):' explicitly.
+  return get_active_overrides().subprocess_timeout
+listing git files failed - pretending there aren't any
+reading manifest file 'build/libvirt_python.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '*/__pycache__/*' found anywhere in distribution
+warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+adding license file 'COPYING'
+writing manifest file 'build/libvirt_python.egg-info/SOURCES.txt'
+[1m* Building wheel...[0m
+toml section missing PosixPath('pyproject.toml') does not contain any of the tool sections: ['setuptools_scm', 'vcs-versioning']
+/usr/lib/python3.14/site-packages/coherent/licensed/setuptools.py:13: UserWarning: Avoid installing this plugin for projects that don't depend on it.
+  enabled or warnings.warn(
+running bdist_wheel
+running build
+running build_py
+creating build/lib.linux-x86_64-cpython-314
+copying build/libvirt.py -> build/lib.linux-x86_64-cpython-314
+copying build/libvirt_qemu.py -> build/lib.linux-x86_64-cpython-314
+copying build/libvirt_lxc.py -> build/lib.linux-x86_64-cpython-314
+copying build/libvirtaio.py -> build/lib.linux-x86_64-cpython-314
+running build_ext
+Generated 287 wrapper functions
+Generated 1 wrapper functions
+Generated 1 wrapper functions
+building 'libvirtmod' extension
+creating build/temp.linux-x86_64-cpython-314/build
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c build/libvirt.c -o build/temp.linux-x86_64-cpython-314/build/libvirt.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c libvirt-override.c -o build/temp.linux-x86_64-cpython-314/libvirt-override.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c libvirt-utils.c -o build/temp.linux-x86_64-cpython-314/libvirt-utils.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c typewrappers.c -o build/temp.linux-x86_64-cpython-314/typewrappers.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -shared -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -march=native -O2 -pipe -fomit-frame-pointer -flto=10 build/temp.linux-x86_64-cpython-314/build/libvirt.o build/temp.linux-x86_64-cpython-314/libvirt-override.o build/temp.linux-x86_64-cpython-314/libvirt-utils.o build/temp.linux-x86_64-cpython-314/typewrappers.o -L/usr/lib -lvirt -o build/lib.linux-x86_64-cpython-314/libvirtmod.cpython-314-x86_64-linux-gnu.so
+building 'libvirtmod_qemu' extension
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c build/libvirt-qemu.c -o build/temp.linux-x86_64-cpython-314/build/libvirt-qemu.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c libvirt-qemu-override.c -o build/temp.linux-x86_64-cpython-314/libvirt-qemu-override.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c libvirt-utils.c -o build/temp.linux-x86_64-cpython-314/libvirt-utils.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c typewrappers.c -o build/temp.linux-x86_64-cpython-314/typewrappers.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -shared -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -march=native -O2 -pipe -fomit-frame-pointer -flto=10 build/temp.linux-x86_64-cpython-314/build/libvirt-qemu.o build/temp.linux-x86_64-cpython-314/libvirt-qemu-override.o build/temp.linux-x86_64-cpython-314/libvirt-utils.o build/temp.linux-x86_64-cpython-314/typewrappers.o -L/usr/lib -lvirt-qemu -lvirt -o build/lib.linux-x86_64-cpython-314/libvirtmod_qemu.cpython-314-x86_64-linux-gnu.so
+building 'libvirtmod_lxc' extension
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c build/libvirt-lxc.c -o build/temp.linux-x86_64-cpython-314/build/libvirt-lxc.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c libvirt-lxc-override.c -o build/temp.linux-x86_64-cpython-314/libvirt-lxc-override.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c libvirt-utils.c -o build/temp.linux-x86_64-cpython-314/libvirt-utils.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -I. -I/usr/include/python3.14 -c typewrappers.c -o build/temp.linux-x86_64-cpython-314/typewrappers.o -Ibuild -Wp,-DPy_LIMITED_API=0x03060000
+cc -shared -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -fno-semantic-interposition -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -march=native -O2 -pipe -fomit-frame-pointer -flto=10 build/temp.linux-x86_64-cpython-314/build/libvirt-lxc.o build/temp.linux-x86_64-cpython-314/libvirt-lxc-override.o build/temp.linux-x86_64-cpython-314/libvirt-utils.o build/temp.linux-x86_64-cpython-314/typewrappers.o -L/usr/lib -lvirt-lxc -lvirt -o build/lib.linux-x86_64-cpython-314/libvirtmod_lxc.cpython-314-x86_64-linux-gnu.so
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+copying build/lib.linux-x86_64-cpython-314/libvirt.py -> build/bdist.linux-x86_64/wheel/.
+copying build/lib.linux-x86_64-cpython-314/libvirtmod_qemu.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/.
+copying build/lib.linux-x86_64-cpython-314/libvirtmod.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/.
+copying build/lib.linux-x86_64-cpython-314/libvirt_lxc.py -> build/bdist.linux-x86_64/wheel/.
+copying build/lib.linux-x86_64-cpython-314/libvirtaio.py -> build/bdist.linux-x86_64/wheel/.
+copying build/lib.linux-x86_64-cpython-314/libvirtmod_lxc.cpython-314-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/.
+copying build/lib.linux-x86_64-cpython-314/libvirt_qemu.py -> build/bdist.linux-x86_64/wheel/.
+running install_egg_info
+running egg_info
+writing build/libvirt_python.egg-info/PKG-INFO
+writing dependency_links to build/libvirt_python.egg-info/dependency_links.txt
+writing top-level names to build/libvirt_python.egg-info/top_level.txt
+/usr/lib/python3.14/site-packages/vcs_versioning/overrides.py:609: UserWarning: No GlobalOverrides context is active. Auto-creating one with SETUPTOOLS_SCM prefix for backwards compatibility. Consider using 'with GlobalOverrides.from_env("YOUR_TOOL"):' explicitly.
+  return get_active_overrides().subprocess_timeout
+listing git files failed - pretending there aren't any
+reading manifest file 'build/libvirt_python.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '*/__pycache__/*' found anywhere in distribution
+warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+adding license file 'COPYING'
+writing manifest file 'build/libvirt_python.egg-info/SOURCES.txt'
+Copying build/libvirt_python.egg-info to build/bdist.linux-x86_64/wheel/./libvirt_python-12.3.0-py3.14.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/libvirt_python-12.3.0.dist-info/WHEEL
+creating '/var/tmp/hokuto/python-libvirt-python-10/build/dist/.tmp-lfh86urv/libvirt_python-12.3.0-cp314-cp314-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'libvirt.py'
+adding 'libvirt_lxc.py'
+adding 'libvirt_qemu.py'
+adding 'libvirtaio.py'
+adding 'libvirtmod.cpython-314-x86_64-linux-gnu.so'
+adding 'libvirtmod_lxc.cpython-314-x86_64-linux-gnu.so'
+adding 'libvirtmod_qemu.cpython-314-x86_64-linux-gnu.so'
+adding 'libvirt_python-12.3.0.dist-info/licenses/COPYING'
+adding 'libvirt_python-12.3.0.dist-info/METADATA'
+adding 'libvirt_python-12.3.0.dist-info/WHEEL'
+adding 'libvirt_python-12.3.0.dist-info/top_level.txt'
+adding 'libvirt_python-12.3.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+[1m[92mSuccessfully built [4mlibvirt_python-12.3.0-cp314-cp314-linux_x86_64.whl[0m[1m[92m[0m
+
+Script done on 2026-05-02 11:03:38+07:00 [COMMAND_EXIT_CODE="0"]
