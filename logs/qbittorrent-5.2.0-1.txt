@@ -1,0 +1,612 @@
+Script started on 2026-05-04 11:49:43+07:00 [COMMAND="cd /var/tmp/hokuto/qbittorrent-38/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/qbittorrent-38/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/qbittorrent-38/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/qbittorrent-38/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/qbittorrent-38/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/qbittorrent-38/build/.cache' /repo/sauzeros/extra/qbittorrent/build /var/tmp/hokuto/qbittorrent-38/output 5.2.0 qbittorrent" <not executed on terminal>]
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The following features have been enabled:
+
+ * GUI, Build GUI application (default: ON)
+ * WEBUI, Enable built-in HTTP server for remote control (default: ON)
+ * STACKTRACE, Enable stacktrace support (default: ON)
+ * DBUS, Enable support for notifications and power-management features via D-Bus (default: ON; depends on condition: GUI)
+
+-- The following features have been disabled:
+
+ * TESTING, Build internal testing suite (default: OFF)
+ * VERBOSE_CONFIGURE, Show information about PACKAGES_FOUND and PACKAGES_NOT_FOUND in the configure output (only useful for debugging the CMake build scripts) (default: OFF)
+ * SYSTEMD, Install systemd service file. Target directory is overridable with `SYSTEMD_SERVICES_INSTALL_DIR` variable (default: OFF; depends on condition: NOT GUI)
+
+-- Found ZLIB: /usr/lib/libz.so (found suitable version "1.3.1", minimum required is "1.2.11")
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+[33mCMake Warning at /usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:339 (message):
+  This project is using headers of the CorePrivate module and will therefore
+  be tied to this specific Qt module build version.  Running this project
+  against other versions of the Qt modules may crash at any arbitrary point.
+  This is not a bug, but a result of using Qt internals.  You have been
+  warned!
+
+  You can disable this warning by setting QT_NO_PRIVATE_MODULE_WARNING to ON.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6CorePrivate/Qt6CorePrivateConfig.cmake:58 (_qt_internal_show_private_module_warning)
+  /usr/lib64/cmake/Qt6/Qt6Config.cmake:256 (find_package)
+  cmake/Modules/CheckPackages.cmake:51 (find_package)
+  CMakeLists.txt:55 (include)
+
+[0m
+-- Performing Test SNS_SUPPORT
+-- Performing Test SNS_SUPPORT - Success
+-- Looking for getrandom
+-- Looking for getrandom - found
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Configuring done (1.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /var/tmp/hokuto/qbittorrent-38/build/build
+[  0%] Built target qbt_base_autogen_timestamp_deps
+[  0%] [1m[34mAutomatic MOC for target qbt_base[0m
+AutoMoc: /var/tmp/hokuto/qbittorrent-38/build/src/base/interfaces/iapplication.h: note: No relevant classes found. No output generated.
+[  0%] Built target qbt_base_autogen
+[  0%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/asyncfilestorage.cpp.o[0m
+[  0%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/addtorrentparams.cpp.o[0m
+[  1%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/bandwidthscheduler.cpp.o[0m
+[  1%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/abstractfilestorage.cpp.o[0m
+[  2%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/applicationcomponent.cpp.o[0m
+[  2%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/bencoderesumedatastorage.cpp.o[0m
+[  2%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/customstorage.cpp.o[0m
+[  2%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/qbt_base_autogen/mocs_compilation.cpp.o[0m
+[  2%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/addtorrentmanager.cpp.o[0m
+[  2%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/categoryoptions.cpp.o[0m
+[  3%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/dbresumedatastorage.cpp.o[0m
+[  3%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/downloadpathoption.cpp.o[0m
+[  3%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/downloadpriority.cpp.o[0m
+[  3%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/filesearcher.cpp.o[0m
+[  4%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/filterparserthread.cpp.o[0m
+[  4%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/infohash.cpp.o[0m
+[  4%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/ltqbitarray.cpp.o[0m
+[  4%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/nativesessionextension.cpp.o[0m
+[  5%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/nativetorrentextension.cpp.o[0m
+[  5%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/peeraddress.cpp.o[0m
+[  5%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/peerinfo.cpp.o[0m
+[  5%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/portforwarderimpl.cpp.o[0m
+[  6%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/resumedatastorage.cpp.o[0m
+[  6%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/sessionimpl.cpp.o[0m
+[  6%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/speedmonitor.cpp.o[0m
+[  6%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/sslparameters.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/VKOXE6AELE/../../../../../src/base/bittorrent/session.h:37[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/VKOXE6AELE/moc_session.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/mocs_compilation.cpp:11[m[K:
+[01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/VKOXE6AELE/../../../../../src/base/bittorrent/addtorrenterror.h:36:12:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KBitTorrent::AddTorrentError[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+   36 |     struct [01;35m[KAddTorrentError[m[K
+      |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qobject.h:18[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QObject:1[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/EWIEGA46WW/../../../../../src/base/addtorrentmanager.h:35[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/EWIEGA46WW/moc_addtorrentmanager.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:343:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  343 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[  7%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/torrent.cpp.o[0m
+[  7%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/torrentcontenthandler.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/VKOXE6AELE/../../../../../src/base/bittorrent/sessionimpl.h:59[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/VKOXE6AELE/moc_sessionimpl.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/mocs_compilation.cpp:12[m[K:
+[01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/VKOXE6AELE/../../../../../src/base/bittorrent/torrentinfo.h:50:11:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KBitTorrent::TorrentInfo[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+   50 |     class [01;35m[KTorrentInfo[m[K
+      |           [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:343:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  343 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[  7%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/torrentcontentremover.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/Q6KNN7S663/../../../../../src/base/net/downloadhandlerimpl.h:34[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/Q6KNN7S663/moc_downloadhandlerimpl.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/mocs_compilation.cpp:29[m[K:
+[01m[K/var/tmp/hokuto/qbittorrent-38/build/src/base/net/downloadmanager.h:102:12:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KNet::DownloadResult[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+  102 |     struct [01;35m[KDownloadResult[m[K
+      |            [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:343:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  343 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[  7%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/torrentcreationmanager.cpp.o[0m
+[  8%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/torrentcreationtask.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/RW55AED63F/moc_rss_feed.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/mocs_compilation.cpp:39[m[K:
+[01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/RW55AED63F/../../../../../src/base/rss/rss_feed.h:66:11:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KRSS::Feed[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+   66 |     class [01;35m[KFeed[m[K final : public Item
+      |           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:343:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  343 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/RW55AED63F/moc_rss_parser.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/mocs_compilation.cpp:42[m[K:
+[01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/base/qbt_base_autogen/RW55AED63F/../../../../../src/base/rss/rss_parser.h:43:12:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KRSS::Private::ParsingResult[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+   43 |     struct [01;35m[KParsingResult[m[K
+      |            [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:343:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  343 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[  8%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/torrentcreator.cpp.o[0m
+[  8%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/torrentdescriptor.cpp.o[0m
+[  8%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/torrentimpl.cpp.o[0m
+[  8%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/torrentinfo.cpp.o[0m
+[  9%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/tracker.cpp.o[0m
+[  9%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/trackerentry.cpp.o[0m
+[  9%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/bittorrent/trackerentrystatus.cpp.o[0m
+[  9%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/exceptions.cpp.o[0m
+[ 10%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/freediskspacechecker.cpp.o[0m
+[ 10%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/http/connection.cpp.o[0m
+[ 10%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/http/httperror.cpp.o[0m
+[ 10%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/http/requestparser.cpp.o[0m
+[ 11%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/http/responsebuilder.cpp.o[0m
+[ 11%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/http/responsegenerator.cpp.o[0m
+[ 11%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/http/server.cpp.o[0m
+[ 11%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/logger.cpp.o[0m
+[ 12%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/net/dnsupdater.cpp.o[0m
+[ 12%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/net/downloadhandlerimpl.cpp.o[0m
+[ 12%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/net/downloadmanager.cpp.o[0m
+[ 12%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/net/geoipdatabase.cpp.o[0m
+[ 13%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/net/geoipmanager.cpp.o[0m
+[ 13%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/net/portforwarder.cpp.o[0m
+[ 13%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/net/proxyconfigurationmanager.cpp.o[0m
+[ 13%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/net/reverseresolution.cpp.o[0m
+[ 14%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/net/smtp.cpp.o[0m
+[ 14%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/path.cpp.o[0m
+[ 14%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/preferences.cpp.o[0m
+[ 14%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/profile.cpp.o[0m
+[ 15%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/profile_p.cpp.o[0m
+[ 15%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/rss/feed_serializer.cpp.o[0m
+[ 15%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/rss/rss_article.cpp.o[0m
+[ 15%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/rss/rss_autodownloader.cpp.o[0m
+[ 16%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/rss/rss_autodownloadrule.cpp.o[0m
+[ 16%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/rss/rss_feed.cpp.o[0m
+[ 16%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/rss/rss_folder.cpp.o[0m
+[ 16%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/rss/rss_item.cpp.o[0m
+[ 17%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/rss/rss_parser.cpp.o[0m
+[ 17%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/rss/rss_session.cpp.o[0m
+[ 17%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/search/searchdownloadhandler.cpp.o[0m
+[ 17%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/search/searchhandler.cpp.o[0m
+[ 18%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/search/searchpluginmanager.cpp.o[0m
+[ 18%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/settingsstorage.cpp.o[0m
+[ 18%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/tag.cpp.o[0m
+[ 18%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/tagset.cpp.o[0m
+[ 19%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/torrentfileguard.cpp.o[0m
+[ 19%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/torrentfileswatcher.cpp.o[0m
+[ 19%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/torrentfilter.cpp.o[0m
+[ 19%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/apikey.cpp.o[0m
+[ 19%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/bytearray.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/compare.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/datetime.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/foreignapps.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/fs.cpp.o[0m
+[ 21%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/gzip.cpp.o[0m
+[ 21%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/io.cpp.o[0m
+[ 21%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/misc.cpp.o[0m
+[ 21%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/net.cpp.o[0m
+[ 22%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/number.cpp.o[0m
+[ 22%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/os.cpp.o[0m
+[ 22%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/password.cpp.o[0m
+[ 22%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/random.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/sslkey.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/string.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/thread.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/base/CMakeFiles/qbt_base.dir/utils/version.cpp.o[0m
+[ 24%] [1m[32mLinking CXX static library libqbt_base.a[0m
+[ 24%] Built target qbt_base
+[ 24%] Built target qbt_gui_autogen_timestamp_deps
+[ 24%] Built target qbt_webui_autogen_timestamp_deps
+[ 26%] [1m[34mAutomatic MOC for target qbt_gui[0m
+[ 26%] [1m[34mAutomatic MOC for target qbt_webui[0m
+[ 26%] Built target qbt_webui_autogen
+[ 26%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/apicontroller.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/authcontroller.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/appcontroller.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/clientdatacontroller.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/logcontroller.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/qbt_webui_autogen/mocs_compilation.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/apierror.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/rsscontroller.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/searchcontroller.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/synccontroller.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/torrentcreatorcontroller.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/torrentscontroller.cpp.o[0m
+[ 29%] Built target qbt_gui_autogen
+[ 29%] [1m[34mGenerating ui_watchedfolderoptionsdialog.h[0m
+[ 29%] [1m[34mGenerating ui_aboutdialog.h[0m
+[ 29%] [1m[34mGenerating ui_addnewtorrentdialog.h[0m
+[ 30%] [1m[34mGenerating ui_addtorrentparamswidget.h[0m
+[ 30%] [1m[34mGenerating ui_autoexpandabledialog.h[0m
+[ 30%] [1m[34mGenerating ui_automatedrssdownloader.h[0m
+[ 30%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/transfercontroller.cpp.o[0m
+[ 30%] [1m[34mGenerating ui_banlistoptionsdialog.h[0m
+[ 30%] [1m[34mGenerating ui_cookiesdialog.h[0m
+[ 31%] [1m[34mGenerating ui_deletionconfirmationdialog.h[0m
+[ 31%] [1m[34mGenerating ui_downloadfromurldialog.h[0m
+[ 31%] [1m[34mGenerating ui_executionlogwidget.h[0m
+[ 31%] [1m[34mGenerating ui_ipsubnetwhitelistoptionsdialog.h[0m
+[ 32%] [1m[34mGenerating ui_mainwindow.h[0m
+[ 32%] [1m[34mGenerating ui_optionsdialog.h[0m
+[ 32%] [1m[34mGenerating ui_peersadditiondialog.h[0m
+[ 33%] [1m[34mGenerating ui_pluginselectdialog.h[0m
+[ 33%] [1m[34mGenerating ui_pluginsourcedialog.h[0m
+[ 33%] [1m[34mGenerating ui_previewselectdialog.h[0m
+[ 34%] [1m[34mGenerating ui_propertieswidget.h[0m
+[ 34%] [1m[34mGenerating ui_rssfeeddialog.h[0m
+[ 34%] [1m[34mGenerating ui_rsswidget.h[0m
+[ 34%] [1m[34mGenerating ui_searchjobwidget.h[0m
+[ 34%] [1m[34mGenerating ui_searchwidget.h[0m
+[ 35%] [1m[34mGenerating ui_shutdownconfirmdialog.h[0m
+[ 35%] [1m[34mGenerating ui_speedlimitdialog.h[0m
+[ 35%] [1m[34mGenerating ui_stacktracedialog.h[0m
+[ 35%] [1m[34mGenerating ui_statsdialog.h[0m
+[ 35%] [1m[34mGenerating ui_torrentcategorydialog.h[0m
+[ 35%] [1m[34mGenerating ui_torrentcreatordialog.h[0m
+[ 36%] [1m[34mGenerating ui_torrentoptionsdialog.h[0m
+[ 36%] [1m[34mGenerating ui_torrentsharelimitswidget.h[0m
+[ 36%] [1m[34mGenerating ui_torrenttagsdialog.h[0m
+[ 36%] [1m[34mGenerating ui_trackerentriesdialog.h[0m
+[ 37%] [1m[34mGenerating ui_trackersadditiondialog.h[0m
+[ 37%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/api/serialize/serialize_torrent.cpp.o[0m
+[ 37%] [1m[34mGenerating ui_uithemedialog.h[0m
+[ 38%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/clientdatastorage.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/qbt_gui_autogen/mocs_compilation.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/aboutdialog.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/addnewtorrentdialog.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/addtorrentparamswidget.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/webapplication.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/webui/CMakeFiles/qbt_webui.dir/webui.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/advancedsettings.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/autoexpandabledialog.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/banlistoptionsdialog.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/gui/qbt_gui_autogen/EWIEGA46WW/../../../../../src/gui/addtorrentparamswidget.h:33[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/gui/qbt_gui_autogen/EWIEGA46WW/moc_addtorrentparamswidget.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/gui/qbt_gui_autogen/mocs_compilation.cpp:4[m[K:
+[01m[K/var/tmp/hokuto/qbittorrent-38/build/src/base/bittorrent/addtorrentparams.h:50:12:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KBitTorrent::AddTorrentParams[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+   50 |     struct [01;35m[KAddTorrentParams[m[K
+      |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qobject.h:18[m[K,
+                 from [01m[K/usr/include/qt6/QtWidgets/qwidget.h:10[m[K,
+                 from [01m[K/usr/include/qt6/QtWidgets/qdialog.h:9[m[K,
+                 from [01m[K/usr/include/qt6/QtWidgets/QDialog:1[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/gui/qbt_gui_autogen/EWIEGA46WW/../../../../../src/gui/aboutdialog.h:31[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/gui/qbt_gui_autogen/EWIEGA46WW/moc_aboutdialog.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/gui/qbt_gui_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:343:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  343 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[ 40%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/cookiesdialog.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/cookiesmodel.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/deletionconfirmationdialog.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/desktopintegration.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/downloadfromurldialog.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/executionlogwidget.cpp.o[0m
+[ 41%] [1m[32mLinking CXX static library libqbt_webui.a[0m
+[ 41%] Built target qbt_webui
+[ 41%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/filterpatternformatmenu.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/flowlayout.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/fspathedit.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/fspathedit_p.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/guiaddtorrentmanager.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/hidabletabwidget.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/ipsubnetwhitelistoptionsdialog.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/lineedit.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/log/logfiltermodel.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/log/loglistview.cpp.o[0m
+[ 44%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/log/logmodel.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/qbittorrent-38/build/src/base/torrentfileswatcher.h:35[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/gui/qbt_gui_autogen/EWIEGA46WW/../../../../../src/gui/watchedfolderoptionsdialog.h:34[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/gui/qbt_gui_autogen/EWIEGA46WW/moc_watchedfolderoptionsdialog.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/qbittorrent-38/build/build/src/gui/qbt_gui_autogen/mocs_compilation.cpp:91[m[K:
+[01m[K/var/tmp/hokuto/qbittorrent-38/build/src/base/bittorrent/torrentdescriptor.h:52:11:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KBitTorrent::TorrentDescriptor[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+   52 |     class [01;35m[KTorrentDescriptor[m[K
+      |           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:343:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  343 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[ 44%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/mainwindow.cpp.o[0m
+[ 44%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/optionsdialog.cpp.o[0m
+[ 44%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/powermanagement/inhibitor.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/powermanagement/powermanagement.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/previewlistdelegate.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/previewselectdialog.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/progressbarpainter.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/downloadedpiecesbar.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/peerlistsortmodel.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/peerlistwidget.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/peersadditiondialog.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/pieceavailabilitybar.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/piecesbar.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/propertieswidget.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/proptabbar.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/speedplotview.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/properties/speedwidget.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/raisedmessagebox.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/rss/articlelistwidget.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/rss/automatedrssdownloader.cpp.o[0m
+[ 49%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/rss/feedlistwidget.cpp.o[0m
+[ 49%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/rss/htmlbrowser.cpp.o[0m
+[ 49%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/rss/rssfeeddialog.cpp.o[0m
+[ 49%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/rss/rsswidget.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/search/pluginselectdialog.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/search/pluginsourcedialog.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/search/searchjobwidget.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/search/searchsortmodel.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/search/searchwidget.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/shutdownconfirmdialog.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/speedlimitdialog.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/statsdialog.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/statusbar.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentcategorydialog.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentcontentfiltermodel.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentcontentitemdelegate.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentcontentmodel.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentcontentmodelfile.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentcontentmodelfolder.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentcontentmodelitem.cpp.o[0m
+[ 54%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentcontentwidget.cpp.o[0m
+[ 54%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentcreatordialog.cpp.o[0m
+[ 54%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentoptionsdialog.cpp.o[0m
+[ 54%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrentsharelimitswidget.cpp.o[0m
+[ 55%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/torrenttagsdialog.cpp.o[0m
+[ 55%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/trackerentriesdialog.cpp.o[0m
+[ 55%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/trackerlist/trackerlistitemdelegate.cpp.o[0m
+[ 55%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/trackerlist/trackerlistmodel.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/trackerlist/trackerlistsortmodel.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/trackerlist/trackerlistwidget.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/trackersadditiondialog.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistdelegate.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/basefilterwidget.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/categoryfiltermodel.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/categoryfilterproxymodel.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/categoryfilterwidget.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/statusfilterwidget.cpp.o[0m
+[ 58%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/tagfiltermodel.cpp.o[0m
+[ 58%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/tagfilterproxymodel.cpp.o[0m
+[ 58%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/tagfilterwidget.cpp.o[0m
+[ 58%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/trackersfilterwidget.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilters/trackerstatusfilterwidget.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilterswidget.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistfilterswidgetitem.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistmodel.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistsortmodel.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/transferlistwidget.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/tristateaction.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/tristatewidget.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/uithemedialog.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/uithememanager.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/uithemesource.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/utils.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/utils/keysequence.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/watchedfolderoptionsdialog.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/watchedfoldersmodel.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/notifications/dbusnotifier.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/notifications/dbusnotificationsinterface.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/powermanagement/inhibitordbus.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/gui/CMakeFiles/qbt_gui.dir/stacktracedialog.cpp.o[0m
+[ 63%] [1m[32mLinking CXX static library libqbt_gui.a[0m
+[ 64%] Built target qbt_gui
+[ 64%] Built target qbt_app_autogen_timestamp_deps
+[ 65%] [1m[34mAutomatic MOC for target qbt_app[0m
+[ 65%] Built target qbt_app_autogen
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_gl.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_ja.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_eo.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_sv.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_zh_HK.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_lv_LV.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_ka.qm[0m
+[ 66%] [1m[34mGenerating ../webui/www/translations/webui_zh_TW.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_uk.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_be.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_uz@Latn.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_az@latin.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_fa.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_cs.qm[0m
+[ 66%] [1m[34mGenerating ../lang/qbittorrent_kk.qm[0m
+[ 67%] [1m[34mGenerating ../lang/qbittorrent_ko.qm[0m
+[ 67%] [1m[34mGenerating ../lang/qbittorrent_ne_NP.qm[0m
+[ 67%] [1m[34mGenerating ../lang/qbittorrent_is.qm[0m
+[ 67%] [1m[34mGenerating ../lang/qbittorrent_sk.qm[0m
+[ 67%] [1m[34mGenerating ../lang/qbittorrent_tr.qm[0m
+[ 67%] [1m[34mGenerating ../lang/qbittorrent_fr.qm[0m
+[ 68%] [1m[34mGenerating ../lang/qbittorrent_en_GB.qm[0m
+[ 68%] [1m[34mGenerating ../lang/qbittorrent_el.qm[0m
+[ 68%] [1m[34mGenerating ../lang/qbittorrent_hi_IN.qm[0m
+[ 69%] [1m[34mGenerating ../lang/qbittorrent_ar.qm[0m
+[ 69%] [1m[34mGenerating ../lang/qbittorrent_vi.qm[0m
+[ 69%] [1m[34mGenerating ../lang/qbittorrent_da.qm[0m
+[ 70%] [1m[34mGenerating ../lang/qbittorrent_it.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_de.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_sl.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_ca.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_pt_BR.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_ro.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_ru.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_nb.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_fi.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_he.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_ms_MY.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_en_AU.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_hy.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_zh_TW.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_hr.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_es.qm[0m
+[ 71%] [1m[34mGenerating ../lang/qbittorrent_id.qm[0m
+[ 72%] [1m[34mGenerating ../lang/qbittorrent_nl.qm[0m
+[ 72%] [1m[34mGenerating ../lang/qbittorrent_oc.qm[0m
+[ 72%] [1m[34mGenerating ../lang/qbittorrent_lt.qm[0m
+[ 74%] [1m[34mGenerating ../lang/qbittorrent_th.qm[0m
+[ 74%] [1m[34mGenerating ../lang/qbittorrent_pt_PT.qm[0m
+[ 74%] [1m[34mGenerating ../lang/qbittorrent_ltg.qm[0m
+[ 74%] [1m[34mGenerating ../lang/qbittorrent_zh_CN.qm[0m
+[ 75%] [1m[34mGenerating ../lang/qbittorrent_mn_MN.qm[0m
+[ 75%] [1m[34mGenerating ../lang/qbittorrent_bg.qm[0m
+[ 75%] [1m[34mGenerating ../lang/qbittorrent_en.qm[0m
+[ 75%] [1m[34mGenerating ../lang/qbittorrent_sr.qm[0m
+[ 75%] [1m[34mGenerating ../lang/qbittorrent_pl.qm[0m
+[ 75%] [1m[34mGenerating ../lang/qbittorrent_et.qm[0m
+[ 76%] [1m[34mGenerating ../lang/qbittorrent_eu.qm[0m
+[ 77%] [1m[34mGenerating ../lang/qbittorrent_bs.qm[0m
+[ 78%] [1m[34mGenerating ../lang/qbittorrent_hu.qm[0m
+[ 79%] [1m[34mGenerating ../lang/qbittorrent_sq.qm[0m
+[ 79%] [1m[34mGenerating ../lang/qbittorrent_sr@latin.qm[0m
+[ 79%] [1m[34mAutomatic RCC for ../searchengine/searchengine.qrc[0m
+[ 79%] [1m[34mGenerating ../webui/www/translations/webui_uk.qm[0m
+[ 79%] [1m[34mGenerating ../webui/www/translations/webui_mn_MN.qm[0m
+[ 79%] [1m[34mGenerating ../webui/www/translations/webui_da.qm[0m
+[ 79%] [1m[34mGenerating ../webui/www/translations/webui_pt_PT.qm[0m
+[ 80%] [1m[34mGenerating ../webui/www/translations/webui_ro.qm[0m
+[ 81%] [1m[34mGenerating ../webui/www/translations/webui_sq.qm[0m
+[ 81%] [1m[34mGenerating ../webui/www/translations/webui_et.qm[0m
+[ 82%] [1m[34mGenerating ../webui/www/translations/webui_th.qm[0m
+[ 82%] [1m[34mGenerating ../webui/www/translations/webui_nb.qm[0m
+[ 82%] [1m[34mGenerating ../webui/www/translations/webui_cs.qm[0m
+[ 82%] [1m[34mGenerating ../webui/www/translations/webui_az@latin.qm[0m
+[ 82%] [1m[34mGenerating ../webui/www/translations/webui_el.qm[0m
+[ 82%] [1m[34mGenerating ../webui/www/translations/webui_ja.qm[0m
+[ 82%] [1m[34mGenerating ../webui/www/translations/webui_ca.qm[0m
+[ 83%] [1m[34mGenerating ../webui/www/translations/webui_eu.qm[0m
+[ 83%] [1m[34mGenerating ../webui/www/translations/webui_hr.qm[0m
+[ 83%] [1m[34mGenerating ../webui/www/translations/webui_pt_BR.qm[0m
+[ 83%] [1m[34mGenerating ../webui/www/translations/webui_sr@latin.qm[0m
+[ 83%] [1m[34mGenerating ../webui/www/translations/webui_kk.qm[0m
+[ 84%] [1m[34mGenerating ../webui/www/translations/webui_en_GB.qm[0m
+[ 84%] [1m[34mGenerating ../webui/www/translations/webui_en_AU.qm[0m
+[ 84%] [1m[34mGenerating ../webui/www/translations/webui_lv_LV.qm[0m
+[ 85%] [1m[34mGenerating ../webui/www/translations/webui_de.qm[0m
+[ 86%] [1m[34mGenerating ../webui/www/translations/webui_ar.qm[0m
+[ 86%] [1m[34mGenerating ../webui/www/translations/webui_sk.qm[0m
+[ 86%] [1m[34mGenerating ../webui/www/translations/webui_hy.qm[0m
+[ 86%] [1m[34mGenerating ../webui/www/translations/webui_ka.qm[0m
+[ 86%] [1m[34mGenerating ../webui/www/translations/webui_fr.qm[0m
+[ 86%] [1m[34mGenerating ../webui/www/translations/webui_fa.qm[0m
+[ 87%] [1m[34mGenerating ../webui/www/translations/webui_ms_MY.qm[0m
+[ 88%] [1m[34mGenerating ../webui/www/translations/webui_bs.qm[0m
+[ 88%] [1m[34mGenerating ../webui/www/translations/webui_zh_HK.qm[0m
+[ 88%] [1m[34mGenerating ../webui/www/translations/webui_tr.qm[0m
+[ 88%] [1m[34mGenerating ../webui/www/translations/webui_be.qm[0m
+[ 88%] [1m[34mGenerating ../webui/www/translations/webui_ru.qm[0m
+[ 89%] [1m[34mGenerating ../webui/www/translations/webui_vi.qm[0m
+[ 90%] [1m[34mGenerating ../webui/www/translations/webui_gl.qm[0m
+[ 90%] [1m[34mGenerating ../webui/www/translations/webui_uz@Latn.qm[0m
+[ 91%] [1m[34mGenerating ../webui/www/translations/webui_oc.qm[0m
+[ 91%] [1m[34mGenerating ../webui/www/translations/webui_sv.qm[0m
+[ 92%] [1m[34mGenerating ../webui/www/translations/webui_hu.qm[0m
+[ 92%] [1m[34mGenerating ../webui/www/translations/webui_he.qm[0m
+[ 92%] [1m[34mGenerating ../webui/www/translations/webui_hi_IN.qm[0m
+[ 92%] [1m[34mGenerating ../webui/www/translations/webui_zh_CN.qm[0m
+[ 92%] [1m[34mGenerating ../webui/www/translations/webui_eo.qm[0m
+[ 92%] [1m[34mGenerating ../webui/www/translations/webui_bg.qm[0m
+[ 92%] [1m[34mGenerating ../webui/www/translations/webui_ltg.qm[0m
+[ 92%] [1m[34mGenerating ../webui/www/translations/webui_nl.qm[0m
+[ 93%] [1m[34mGenerating ../webui/www/translations/webui_es.qm[0m
+[ 93%] [1m[34mGenerating ../webui/www/translations/webui_it.qm[0m
+[ 93%] [1m[34mGenerating ../webui/www/translations/webui_fi.qm[0m
+[ 93%] [1m[34mGenerating ../webui/www/translations/webui_sr.qm[0m
+[ 94%] [1m[34mGenerating ../webui/www/translations/webui_lt.qm[0m
+[ 94%] [1m[34mGenerating ../webui/www/translations/webui_ne_NP.qm[0m
+[ 94%] [1m[34mGenerating ../webui/www/translations/webui_en.qm[0m
+[ 94%] [1m[34mGenerating ../webui/www/translations/webui_id.qm[0m
+[ 94%] [1m[34mGenerating ../webui/www/translations/webui_is.qm[0m
+[ 94%] [1m[34mGenerating ../webui/www/translations/webui_pl.qm[0m
+[ 94%] [1m[34mGenerating ../webui/www/translations/webui_sl.qm[0m
+[ 94%] [1m[34mGenerating ../webui/www/translations/webui_ko.qm[0m
+[ 94%] [1m[34mAutomatic RCC for ../webui/www/webui.qrc[0m
+[ 94%] [1m[34mAutomatic RCC for ../gui/about.qrc[0m
+[ 94%] [1m[34mAutomatic RCC for ../lang/lang.qrc[0m
+[ 94%] [1m[34mAutomatic RCC for ../icons/icons.qrc[0m
+[ 95%] [1m[34mAutomatic RCC for ../webui/www/translations/webui_translations.qrc[0m
+[ 95%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/applicationinstancemanager.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/cmdoptions.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/filelogger.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/qbt_app_autogen/mocs_compilation.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/main.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/signalhandler.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/qtlocalpeer/qtlocalpeer.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/upgrade.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/application.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/legalnotice.cpp.o[0m
+[ 98%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/stacktrace.cpp.o[0m
+[ 98%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/qbt_app_autogen/NPXYM6ZNPF/qrc_icons.cpp.o[0m
+[ 98%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/qbt_app_autogen/G6NVOLQRLL/qrc_searchengine.cpp.o[0m
+[ 98%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/qbt_app_autogen/4MDHO3J3ZV/qrc_lang.cpp.o[0m
+[ 99%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/qbt_app_autogen/LTK7X4IA7Q/qrc_webui_translations.cpp.o[0m
+[ 99%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/qbt_app_autogen/TUYZJ7PCOQ/qrc_about.cpp.o[0m
+[ 99%] [32mBuilding CXX object src/app/CMakeFiles/qbt_app.dir/qbt_app_autogen/TEN4WZ4RQ3/qrc_webui.cpp.o[0m
+[ 99%] [1m[32mLinking CXX executable ../../qbittorrent[0m
+[100%] Built target qbt_app
+-- Install configuration: ""
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/bin/qbittorrent
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/man/man1/qbittorrent.1
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/man/ru/man1/qbittorrent.1
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/applications/org.qbittorrent.qBittorrent.desktop
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/metainfo/org.qbittorrent.qBittorrent.metainfo.xml
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/128x128
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/128x128/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/128x128/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/128x128/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/128x128/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/72x72
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/72x72/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/72x72/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/72x72/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/72x72/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/96x96
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/96x96/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/96x96/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/96x96/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/96x96/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/192x192
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/192x192/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/192x192/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/192x192/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/192x192/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/32x32
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/32x32/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/32x32/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/32x32/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/32x32/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/36x36
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/36x36/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/36x36/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/36x36/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/36x36/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/48x48
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/48x48/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/48x48/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/48x48/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/48x48/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/16x16
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/16x16/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/16x16/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/16x16/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/16x16/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/scalable
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/scalable/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/scalable/apps/qbittorrent.svg
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/22x22
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/22x22/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/22x22/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/22x22/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/22x22/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/64x64
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/64x64/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/64x64/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/64x64/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/64x64/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/24x24
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/24x24/apps
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/24x24/apps/qbittorrent.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/24x24/status
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/24x24/status/qbittorrent-tray.png
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/scalable/status/qbittorrent-tray.svg
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/scalable/status/qbittorrent-tray-dark.svg
+-- Installing: /var/tmp/hokuto/qbittorrent-38/output/usr/share/icons/hicolor/scalable/status/qbittorrent-tray-light.svg
+
+Script done on 2026-05-04 11:51:25+07:00 [COMMAND_EXIT_CODE="0"]
