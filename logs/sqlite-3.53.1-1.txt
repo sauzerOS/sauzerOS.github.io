@@ -1,0 +1,243 @@
+Script started on 2026-05-06 10:42:32+07:00 [COMMAND="cd /var/tmp/hokuto/sqlite-10/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/sqlite-10/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/sqlite-10/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/sqlite-10/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/sqlite-10/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/sqlite-10/build/.cache' /repo/sauzeros/core/sqlite/build /var/tmp/hokuto/sqlite-10/output 3.53.1 sqlite" <not executed on terminal>]
+Configuring SQLite version 3.53.1
+Host System...x86_64-pc-linux-gnu
+Build System...x86_64-pc-linux-gnu
+Source dir = /var/tmp/hokuto/sqlite-10/build
+Build dir  = /var/tmp/hokuto/sqlite-10/build
+C compiler... cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -D SQLITE_ENABLE_COLUMN_METADATA=1                       -D SQLITE_ENABLE_UNLOCK_NOTIFY=1                         -D SQLITE_ENABLE_DBSTAT_VTAB=1                           -D SQLITE_SECURE_DELETE=1
+C++ compiler... c++ -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -D SQLITE_ENABLE_COLUMN_METADATA=1                       -D SQLITE_ENABLE_UNLOCK_NOTIFY=1                         -D SQLITE_ENABLE_DBSTAT_VTAB=1                           -D SQLITE_SECURE_DELETE=1
+Build C compiler...cc
+Checking for stdlib.h...ok
+Checking for sys/types.h...ok
+Checking if -D_FILE_OFFSET_BITS=64 is needed...no
+SQLITE_DEBUG build? no
+Looking for install ... /usr/bin/install
+Checking for int8_t...ok
+Checking for int16_t...ok
+Checking for int32_t...ok
+Checking for int64_t...ok
+Checking for intptr_t...ok
+Checking for uint8_t...ok
+Checking for uint16_t...ok
+Checking for uint32_t...ok
+Checking for uint64_t...ok
+Checking for uintptr_t...ok
+Checking for gmtime_r...ok
+Checking for isnan...ok
+Checking for localtime_r...ok
+Checking for localtime_s...not found
+Checking for usleep...ok
+Checking for utime...ok
+Checking for pread...ok
+Checking for pread64...ok
+Checking for pwrite...ok
+Checking for pwrite64...ok
+Checking libs for fdatasync...none needed
+Checking libs for nanosleep...none needed
+Checking for sys/types.h...(cached) ok
+Checking for sys/stat.h...ok
+Checking for dlfcn.h...ok
+Checking for unistd.h...ok
+Checking for stdlib.h...(cached) ok
+Checking for malloc.h...ok
+Checking for memory.h...ok
+Checking for string.h...ok
+Checking for strings.h...ok
+Checking for inttypes.h...ok
+Checking for zlib.h...ok
+Checking libs for deflate...-lz
+Link library statically into the CLI shell? yes
+Statically link CLI shell? no
+Checking whether the C compiler accepts -rpath /usr/lib...no
+Checking whether the C compiler accepts -Wl,-rpath,/usr/lib...yes
+Support threadsafe operation? Checking for libs...
+Checking libs for pthread_create...none needed
+Checking libs for pthread_mutexattr_init...none needed
+Checking libs for dlopen...none needed
+Loadable extension support enabled. 
+Checking libs for ceil...-lm
+Enabling math SQL functions
+ICU support is disabled.
+Checking for line-editing capability...
+Checking libs for tgetent...-lncurses
+Checking libs for readline...-lreadline
+Using readline flags: -I/usr/include -lreadline -lncurses
+Line-editing support for the sqlite3 shell: readline
+Build shared library? yes
+Build static library? yes
+Feature flags...
+  - fts3
+  + fts4
+  + fts5
+  - geopoly
+  - rtree
+  - session
+  - update-limit
+  - memsys5
+  - memsys3
+  - scanstatus
+  - dbpage
+  - dbstat
+  - carray
+  + json
+Library feature flags: -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_ENABLE_PERCENTILE -DSQLITE_HAVE_ZLIB=1 -DSQLITE_THREADSAFE=1
+Shell options: -DHAVE_READLINE=1 -DSQLITE_DQS=0 -DSQLITE_ENABLE_BYTECODE_VTAB -DSQLITE_ENABLE_DBPAGE_VTAB -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_EXPLAIN_COMMENTS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_OFFSET_SQL_FUNC -DSQLITE_ENABLE_PERCENTILE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STMTVTAB -DSQLITE_ENABLE_UNKNOWN_SQL_FUNCTION -DSQLITE_HAVE_ZLIB=1 -DSQLITE_STRICT_SUBTYPE=1
+Created Makefile from Makefile.in
+Created sqlite3.pc from sqlite3.pc.in
+Created sqlite_cfg.h
+cc -c /var/tmp/hokuto/sqlite-10/build/sqlite3.c -o sqlite3.o -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -D SQLITE_ENABLE_COLUMN_METADATA=1 -D SQLITE_ENABLE_UNLOCK_NOTIFY=1 -D SQLITE_ENABLE_DBSTAT_VTAB=1 -D SQLITE_SECURE_DELETE=1 -I. -fPIC  -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_ENABLE_PERCENTILE -DSQLITE_HAVE_ZLIB=1 -DSQLITE_THREADSAFE=1
+cc -o sqlite3 \
+	/var/tmp/hokuto/sqlite-10/build/shell.c /var/tmp/hokuto/sqlite-10/build/sqlite3.c -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -Wl,-rpath,/usr/lib  -lm  -lz   -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack \
+	 \
+	-I. -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_ENABLE_PERCENTILE -DSQLITE_HAVE_ZLIB=1 -DSQLITE_THREADSAFE=1 -DHAVE_READLINE=1 -DSQLITE_DQS=0 -DSQLITE_ENABLE_BYTECODE_VTAB -DSQLITE_ENABLE_DBPAGE_VTAB -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_EXPLAIN_COMMENTS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_OFFSET_SQL_FUNC -DSQLITE_ENABLE_PERCENTILE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STMTVTAB -DSQLITE_ENABLE_UNKNOWN_SQL_FUNCTION -DSQLITE_HAVE_ZLIB=1 -DSQLITE_STRICT_SUBTYPE=1 \
+	-march=native -O2 -pipe -fomit-frame-pointer -flto=10 -D SQLITE_ENABLE_COLUMN_METADATA=1 -D SQLITE_ENABLE_UNLOCK_NOTIFY=1 -D SQLITE_ENABLE_DBSTAT_VTAB=1 -D SQLITE_SECURE_DELETE=1 -I/usr/include  \
+	-lreadline -lncurses
+cc -o libsqlite3.so  sqlite3.o -shared \
+	-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -Wl,-rpath,/usr/lib  -lm  -lz   -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack \
+	 
+gcc-ar cr libsqlite3.a sqlite3.o
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/output/usr/include
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/output/usr/lib/pkgconfig
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/output/usr/lib
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/output/usr/share/man/man1
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/output/usr/bin
+/usr/bin/install -m 0644 /var/tmp/hokuto/sqlite-10/build/sqlite3.h /var/tmp/hokuto/sqlite-10/build/sqlite3ext.h "/var/tmp/hokuto/sqlite-10/output/usr/include"
+if [ x != "x" ] && [ -f "" ]; then \
+	/usr/bin/install  "/var/tmp/hokuto/sqlite-10/output/usr/lib"; \
+fi
+/usr/bin/install -m 0644 libsqlite3.a "/var/tmp/hokuto/sqlite-10/output/usr/lib"
+/usr/bin/install sqlite3 "/var/tmp/hokuto/sqlite-10/output/usr/bin"
+/usr/bin/install -m 0644 sqlite3.pc "/var/tmp/hokuto/sqlite-10/output/usr/lib/pkgconfig"
+/usr/bin/install -m 0644 /var/tmp/hokuto/sqlite-10/build/sqlite3.1 "/var/tmp/hokuto/sqlite-10/output/usr/share/man/man1"
+/usr/bin/install libsqlite3.so "/var/tmp/hokuto/sqlite-10/output/usr/lib"
+Setting up libsqlite3.so version symlinks...
+lrwxrwxrwx 1 dbz dbz      20 May  6 10:42 libsqlite3.so -> libsqlite3.so.3.53.1
+lrwxrwxrwx 1 dbz dbz      20 May  6 10:42 libsqlite3.so.0 -> libsqlite3.so.3.53.1
+-rwxr-xr-x 1 dbz dbz 1688896 May  6 10:42 libsqlite3.so.3.53.1
+rm -f *.o sqlite3
+rm -f libsqlite3.a libsqlite3.so libsqlite3.so.a
+rm -f jimsh0 config.* sqlite3.pc sqlite_cfg.h Makefile
+Configuring SQLite version 3.53.1
+Host System...i686-pc-linux-gnu
+Build System...i686-pc-linux-gnu
+Source dir = /var/tmp/hokuto/sqlite-10/build
+Build dir  = /var/tmp/hokuto/sqlite-10/build
+C compiler... gcc -m32 -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -D SQLITE_ENABLE_COLUMN_METADATA=1                       -D SQLITE_ENABLE_UNLOCK_NOTIFY=1                         -D SQLITE_ENABLE_DBSTAT_VTAB=1                           -D SQLITE_SECURE_DELETE=1
+C++ compiler... g++ -m32 -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -D SQLITE_ENABLE_COLUMN_METADATA=1                       -D SQLITE_ENABLE_UNLOCK_NOTIFY=1                         -D SQLITE_ENABLE_DBSTAT_VTAB=1                           -D SQLITE_SECURE_DELETE=1
+Build C compiler...cc
+Checking for stdlib.h...ok
+Checking for sys/types.h...ok
+Checking if -D_FILE_OFFSET_BITS=64 is needed...yes
+SQLITE_DEBUG build? no
+Warning: Failed to find i686-pc-linux-gnu-ld, falling back to ld which may be incorrect
+Looking for install ... /usr/bin/install
+Checking for int8_t...ok
+Checking for int16_t...ok
+Checking for int32_t...ok
+Checking for int64_t...ok
+Checking for intptr_t...ok
+Checking for uint8_t...ok
+Checking for uint16_t...ok
+Checking for uint32_t...ok
+Checking for uint64_t...ok
+Checking for uintptr_t...ok
+Checking for gmtime_r...ok
+Checking for isnan...ok
+Checking for localtime_r...ok
+Checking for localtime_s...not found
+Checking for usleep...ok
+Checking for utime...ok
+Checking for pread...ok
+Checking for pread64...ok
+Checking for pwrite...ok
+Checking for pwrite64...ok
+Checking libs for fdatasync...none needed
+Checking libs for nanosleep...none needed
+Checking for sys/types.h...(cached) ok
+Checking for sys/stat.h...ok
+Checking for dlfcn.h...ok
+Checking for unistd.h...ok
+Checking for stdlib.h...(cached) ok
+Checking for malloc.h...ok
+Checking for memory.h...ok
+Checking for string.h...ok
+Checking for strings.h...ok
+Checking for inttypes.h...ok
+Checking for zlib.h...ok
+Checking libs for deflate...-lz
+Link library statically into the CLI shell? yes
+Statically link CLI shell? no
+Checking whether the C compiler accepts -rpath /usr/lib32...no
+Checking whether the C compiler accepts -Wl,-rpath,/usr/lib32...yes
+Support threadsafe operation? Checking for libs...
+Checking libs for pthread_create...none needed
+Checking libs for pthread_mutexattr_init...none needed
+Checking libs for dlopen...none needed
+Loadable extension support enabled. 
+Checking libs for ceil...-lm
+Enabling math SQL functions
+ICU support is disabled.
+Checking for line-editing capability...
+Checking libs for tgetent...-lncurses
+Checking libs for readline...-lreadline
+Using readline flags: -I/usr/include -lreadline -lncurses
+Line-editing support for the sqlite3 shell: readline
+Build shared library? yes
+Build static library? yes
+Feature flags...
+  - fts3
+  + fts4
+  + fts5
+  - geopoly
+  - rtree
+  - session
+  - update-limit
+  - memsys5
+  - memsys3
+  - scanstatus
+  - dbpage
+  - dbstat
+  - carray
+  + json
+Library feature flags: -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_ENABLE_PERCENTILE -DSQLITE_HAVE_ZLIB=1 -DSQLITE_THREADSAFE=1
+Shell options: -DHAVE_READLINE=1 -DSQLITE_DQS=0 -DSQLITE_ENABLE_BYTECODE_VTAB -DSQLITE_ENABLE_DBPAGE_VTAB -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_EXPLAIN_COMMENTS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_OFFSET_SQL_FUNC -DSQLITE_ENABLE_PERCENTILE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STMTVTAB -DSQLITE_ENABLE_UNKNOWN_SQL_FUNCTION -DSQLITE_HAVE_ZLIB=1 -DSQLITE_STRICT_SUBTYPE=1
+Created Makefile from Makefile.in
+Created sqlite3.pc from sqlite3.pc.in
+Created sqlite_cfg.h
+gcc -m32 -c /var/tmp/hokuto/sqlite-10/build/sqlite3.c -o sqlite3.o -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -D SQLITE_ENABLE_COLUMN_METADATA=1 -D SQLITE_ENABLE_UNLOCK_NOTIFY=1 -D SQLITE_ENABLE_DBSTAT_VTAB=1 -D SQLITE_SECURE_DELETE=1 -I. -fPIC  -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_ENABLE_PERCENTILE -DSQLITE_HAVE_ZLIB=1 -DSQLITE_THREADSAFE=1
+gcc -m32 -o sqlite3 \
+	/var/tmp/hokuto/sqlite-10/build/shell.c /var/tmp/hokuto/sqlite-10/build/sqlite3.c -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -Wl,-rpath,/usr/lib32  -lm  -lz   -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack \
+	 \
+	-I. -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_ENABLE_PERCENTILE -DSQLITE_HAVE_ZLIB=1 -DSQLITE_THREADSAFE=1 -DHAVE_READLINE=1 -DSQLITE_DQS=0 -DSQLITE_ENABLE_BYTECODE_VTAB -DSQLITE_ENABLE_DBPAGE_VTAB -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_EXPLAIN_COMMENTS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_OFFSET_SQL_FUNC -DSQLITE_ENABLE_PERCENTILE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STMTVTAB -DSQLITE_ENABLE_UNKNOWN_SQL_FUNCTION -DSQLITE_HAVE_ZLIB=1 -DSQLITE_STRICT_SUBTYPE=1 \
+	-march=native -O2 -pipe -fomit-frame-pointer -flto=10 -D SQLITE_ENABLE_COLUMN_METADATA=1 -D SQLITE_ENABLE_UNLOCK_NOTIFY=1 -D SQLITE_ENABLE_DBSTAT_VTAB=1 -D SQLITE_SECURE_DELETE=1 -I/usr/include  \
+	-lreadline -lncurses
+gcc -m32 -o libsqlite3.so  sqlite3.o -shared \
+	-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -Wl,-rpath,/usr/lib32  -lm  -lz   -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack \
+	 
+gcc-ar cr libsqlite3.a sqlite3.o
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/bin
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/include
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/lib32/pkgconfig
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/lib32
+/usr/bin/install sqlite3 "/var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/bin"
+/usr/bin/install -m 0644 /var/tmp/hokuto/sqlite-10/build/sqlite3.h /var/tmp/hokuto/sqlite-10/build/sqlite3ext.h "/var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/include"
+/usr/bin/install -m 0644 sqlite3.pc "/var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/lib32/pkgconfig"
+if [ x != "x" ] && [ -f "" ]; then \
+	/usr/bin/install  "/var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/lib32"; \
+fi
+/usr/bin/install -m 0644 libsqlite3.a "/var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/lib32"
++ /usr/bin/install -d /var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/share/man/man1
+/usr/bin/install -m 0644 /var/tmp/hokuto/sqlite-10/build/sqlite3.1 "/var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/share/man/man1"
+/usr/bin/install libsqlite3.so "/var/tmp/hokuto/sqlite-10/build/DESTDIR/usr/lib32"
+Setting up libsqlite3.so version symlinks...
+lrwxrwxrwx 1 dbz dbz      20 May  6 10:43 libsqlite3.so -> libsqlite3.so.3.53.1
+lrwxrwxrwx 1 dbz dbz      20 May  6 10:43 libsqlite3.so.0 -> libsqlite3.so.3.53.1
+-rwxr-xr-x 1 dbz dbz 1728456 May  6 10:43 libsqlite3.so.3.53.1
+'DESTDIR/usr/lib32/libsqlite3.a' -> '/var/tmp/hokuto/sqlite-10/output/usr/lib32/libsqlite3.a'
+'DESTDIR/usr/lib32/libsqlite3.so' -> '/var/tmp/hokuto/sqlite-10/output/usr/lib32/libsqlite3.so'
+'DESTDIR/usr/lib32/libsqlite3.so.0' -> '/var/tmp/hokuto/sqlite-10/output/usr/lib32/libsqlite3.so.0'
+'DESTDIR/usr/lib32/libsqlite3.so.3.53.1' -> '/var/tmp/hokuto/sqlite-10/output/usr/lib32/libsqlite3.so.3.53.1'
+'DESTDIR/usr/lib32/pkgconfig' -> '/var/tmp/hokuto/sqlite-10/output/usr/lib32/pkgconfig'
+'DESTDIR/usr/lib32/pkgconfig/sqlite3.pc' -> '/var/tmp/hokuto/sqlite-10/output/usr/lib32/pkgconfig/sqlite3.pc'
+
+Script done on 2026-05-06 10:43:01+07:00 [COMMAND_EXIT_CODE="0"]
