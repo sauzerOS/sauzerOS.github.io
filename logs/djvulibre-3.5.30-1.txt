@@ -1,0 +1,1106 @@
+Script started on 2026-05-07 14:32:14+07:00 [COMMAND="cd /var/tmp/hokuto/djvulibre-53/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/djvulibre-53/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/djvulibre-53/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/djvulibre-53/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/djvulibre-53/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/djvulibre-53/build/.cache' /repo/sauzeros/extra/djvulibre/build /var/tmp/hokuto/djvulibre-53/output 3.5.30 djvulibre" <not executed on terminal>]
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'config'.
+libtoolize: copying file 'config/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'config'.
+libtoolize: copying file 'config/libtool.m4'
+libtoolize: copying file 'config/ltoptions.m4'
+libtoolize: copying file 'config/ltsugar.m4'
+libtoolize: copying file 'config/ltversion.m4'
+libtoolize: copying file 'config/lt~obsolete.m4'
+configure.ac:41: warning: The macro 'AC_CONFIG_HEADER' is obsolete.
+configure.ac:41: You should run autoupdate.
+./lib/autoconf/status.m4:719: AC_CONFIG_HEADER is expanded from...
+configure.ac:41: the top level
+configure.ac:161: warning: The macro 'AC_HEADER_TIME' is obsolete.
+configure.ac:161: You should run autoupdate.
+./lib/autoconf/headers.m4:703: AC_HEADER_TIME is expanded from...
+configure.ac:161: the top level
+configure.ac:46: installing 'config/ar-lib'
+configure.ac:46: installing 'config/compile'
+configure.ac:42: installing 'config/config.guess'
+configure.ac:42: installing 'config/config.sub'
+configure.ac:44: installing 'config/install-sh'
+configure.ac:44: installing 'config/missing'
+Makefile.am: installing './INSTALL'
+libdjvu/Makefile.am: installing 'config/depcomp'
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking the archiver (gcc-ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking whether _WIN32 is declared... no
+checking whether __APPLE__ is declared... no
+checking whether make sets $(MAKE)... (cached) yes
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for touch... /usr/bin/touch
+checking for rsvg-convert... /usr/bin/rsvg-convert
+checking for inkscape... false
+checking for convert... /usr/bin/convert
+checking for rm... /usr/bin/rm
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C23 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking dependency style of cc... (cached) gcc3
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking dependency style of c++... gcc3
+checking how to run the C++ preprocessor... c++ -E
+checking for ld used by c++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for c++ option to produce PIC... -fPIC -DPIC
+checking if c++ PIC flag -fPIC -DPIC works... yes
+checking if c++ static flag -static works... yes
+checking if c++ supports -c -o file.o... yes
+checking if c++ supports -c -o file.o... (cached) yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking if c++ accepts -O3... yes
+checking if c++ accepts -O3... yes
+checking if c++ accepts -Wall... yes
+checking if c++ accepts -Wall... yes
+checking whether the compiler recognizes bool as a built-in type... yes
+checking whether the compiler supports exceptions... yes
+checking whether the compiler recognizes typename... yes
+checking whether the compiler comes with standard includes... yes
+checking whether the compiler implements namespaces... yes
+checking whether the compiler supports member templates... yes
+checking whether the compiler supports intel atomic builtins... yes
+checking whether the compiler supports keyword __thread... yes
+checking for sqrt in -lm... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/time.h... yes
+checking for sys/param.h... yes
+checking for vfork.h... no
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for wchar.h... yes
+checking for wctype.h... yes
+checking for sys/mman.h... yes
+checking for iconv.h... yes
+checking for getopt.h... yes
+checking for langinfo.h... yes
+checking for sched.h... yes
+checking for new.h... no
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for sys/ipc.h... yes
+checking for sys/shm.h... yes
+checking for cpuid.h... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for wchar_t... yes
+checking for long long int... yes
+checking for mbstate_t... yes
+checking for cc option to support large files... none needed
+checking for getpagesize... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working mmap... yes
+checking for pid_t... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for declarations of fseeko and ftello... yes
+checking for wcrtomb... yes
+checking for iswspace... yes
+checking for setenv... yes
+checking for nl_langinfo... yes
+checking for putc_unlocked... yes
+checking for strerror... yes
+checking for vsnprintf... yes
+checking for snprintf... yes
+checking for gethostname... yes
+checking for strftime... yes
+checking for getpwuid... yes
+checking for sigaction... yes
+checking for mkstemp... yes
+checking for sched_yield... yes
+checking for iconv... yes
+checking for pthread.h... yes
+checking whether pthreads work with -pthread -lpthread... yes
+checking if more special flags are required for pthreads... no
+checking for jpeg library... yes
+checking for libjpeg... yes
+checking for the libtiff library... yes
+checking for libtiff... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libdjvu/Makefile
+config.status: creating tools/Makefile
+config.status: creating xmltools/Makefile
+config.status: creating share/Makefile
+config.status: creating desktopfiles/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+djvulibre 3.5.29
+
+Configuration Options Summary:
+
+  OS.................: linux-gnu
+  Win32 support......: no
+  Pthread support....: yes
+  Iconv support......: yes
+  JPEG support.......: yes
+  TIFF support.......: yes
+  XML tools..........: yes
+  Desktop files......: yes
+  Icon generation....: rsvg
+
+Compilation..........: make (or gmake)
+  CPPFLAGS...........: 
+  CFLAGS.............:  -march=native -pipe -fomit-frame-pointer -flto=10 -O3 -Wall -DNDEBUG
+  CXXFLAGS...........:  -march=native -pipe -fomit-frame-pointer -flto=10 -O3 -Wall -DNDEBUG
+  LDFLAGS............: -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+
+Installation...........: make install (as root if needed, with 'su' or 'sudo')
+  prefix...............: /usr
+
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/djvulibre-53/build'
+Making all in libdjvu
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/libdjvu'
+  CXX      libdjvulibre_la-BSByteStream.lo
+  CXX      libdjvulibre_la-BSEncodeByteStream.lo
+  CXX      libdjvulibre_la-ByteStream.lo
+  CXX      libdjvulibre_la-DataPool.lo
+  CXX      libdjvulibre_la-Arrays.lo
+  CXX      libdjvulibre_la-DjVmDir.lo
+  CXX      libdjvulibre_la-DjVmDir0.lo
+  CXX      libdjvulibre_la-DjVmNav.lo
+  CXX      libdjvulibre_la-DjVmDoc.lo
+  CXX      libdjvulibre_la-DjVuAnno.lo
+  CXX      libdjvulibre_la-DjVuDocEditor.lo
+  CXX      libdjvulibre_la-DjVuDocument.lo
+  CXX      libdjvulibre_la-DjVuDumpHelper.lo
+[01m[KDjVmDir.cpp:[m[K In static member function '[01m[Kstatic DJVU::GP<DJVU::DjVmDir::File> DJVU::DjVmDir::File::[01;32m[Kcreate[m[K(const DJVU::GUTF8String&, const DJVU::GUTF8String&, const DJVU::GUTF8String&, FILE_TYPE)[m[K':
+[01m[KDjVmDir.cpp:89:30:[m[K [01;35m[Kwarning: [m[Kbitwise operation between different enumeration types '[01m[Kconst DJVU::DjVmDir::File::FILE_TYPE[m[K' and '[01m[KDJVU::DjVmDir::File::FLAGS_1[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wdeprecated-enum-enum-conversion-Wdeprecated-enum-enum-conversion]8;;[m[K]
+   89 |   file_ptr->flags=([01;35m[Kfile_type & TYPE_MASK[m[K);
+      |                    [01;35m[K~~~~~~~~~~^~~~~~~~~~~[m[K
+  CXX      libdjvulibre_la-DjVuErrorList.lo
+  CXX      libdjvulibre_la-DjVuFile.lo
+  CXX      libdjvulibre_la-DjVuFileCache.lo
+  CXX      libdjvulibre_la-DjVuGlobal.lo
+  CXX      libdjvulibre_la-DjVuGlobalMemory.lo
+  CXX      libdjvulibre_la-DjVuImage.lo
+  CXX      libdjvulibre_la-DjVuInfo.lo
+  CXX      libdjvulibre_la-DjVuMessage.lo
+  CXX      libdjvulibre_la-DjVuMessageLite.lo
+  CXX      libdjvulibre_la-DjVuNavDir.lo
+  CXX      libdjvulibre_la-DjVuPalette.lo
+  CXX      libdjvulibre_la-DjVuPort.lo
+  CXX      libdjvulibre_la-DjVuText.lo
+  CXX      libdjvulibre_la-DjVuToPS.lo
+  CXX      libdjvulibre_la-GBitmap.lo
+  CXX      libdjvulibre_la-GContainer.lo
+  CXX      libdjvulibre_la-GException.lo
+  CXX      libdjvulibre_la-GMapAreas.lo
+  CXX      libdjvulibre_la-GIFFManager.lo
+  CXX      libdjvulibre_la-GOS.lo
+  CXX      libdjvulibre_la-GPixmap.lo
+  CXX      libdjvulibre_la-GRect.lo
+  CXX      libdjvulibre_la-GScaler.lo
+  CXX      libdjvulibre_la-GSmartPointer.lo
+  CXX      libdjvulibre_la-GString.lo
+  CXX      libdjvulibre_la-GThreads.lo
+  CXX      libdjvulibre_la-GURL.lo
+  CXX      libdjvulibre_la-GUnicode.lo
+  CXX      libdjvulibre_la-IFFByteStream.lo
+  CXX      libdjvulibre_la-IW44EncodeCodec.lo
+  CXX      libdjvulibre_la-IW44Image.lo
+  CXX      libdjvulibre_la-JB2EncodeCodec.lo
+  CXX      libdjvulibre_la-JB2Image.lo
+  CXX      libdjvulibre_la-JPEGDecoder.lo
+  CXX      libdjvulibre_la-MMRDecoder.lo
+  CXX      libdjvulibre_la-MMX.lo
+  CXX      libdjvulibre_la-UnicodeByteStream.lo
+  CXX      libdjvulibre_la-XMLParser.lo
+  CXX      libdjvulibre_la-XMLTags.lo
+  CXX      libdjvulibre_la-ZPCodec.lo
+  CXX      libdjvulibre_la-atomic.lo
+  CXX      libdjvulibre_la-ddjvuapi.lo
+  CXX      libdjvulibre_la-debug.lo
+  CXX      libdjvulibre_la-miniexp.lo
+  PC       ddjvuapi.pc
+  CXXLD    libdjvulibre.la
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/libdjvu'
+Making all in tools
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/tools'
+  CXX      cjb2-cjb2.o
+  CXX      cjb2-jb2tune.o
+  CXX      bzz.o
+  CXX      jb2tune.o
+  CXX      c44.o
+  CXX      cpaldjvu.o
+  CXX      csepdjvu.o
+  CXX      ddjvu-ddjvu.o
+  CC       ddjvu-tiff2pdf.o
+  CXX      djvm.o
+[01m[Ktiff2pdf.c:298:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  298 |         [01;35m[Kuint32[m[K page_number;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:300:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  300 |         [01;35m[Kuint32[m[K page_extra;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:320:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  320 |         [01;35m[Kuint32[m[K tiles_tilewidth;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:321:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  321 |         [01;35m[Kuint32[m[K tiles_tilelength;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:322:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  322 |         [01;35m[Kuint32[m[K tiles_tilecountx;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:323:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  323 |         [01;35m[Kuint32[m[K tiles_tilecounty;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:324:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  324 |         [01;35m[Kuint32[m[K tiles_edgetilewidth;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:325:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  325 |         [01;35m[Kuint32[m[K tiles_edgetilelength;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:335:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  335 |         [01;35m[Kuint16[m[K tiff_compression;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:336:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  336 |         [01;35m[Kuint16[m[K tiff_photometric;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:337:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  337 |         [01;35m[Kuint16[m[K tiff_fillorder;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:338:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  338 |         [01;35m[Kuint16[m[K tiff_bitspersample;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:339:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  339 |         [01;35m[Kuint16[m[K tiff_samplesperpixel;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:340:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  340 |         [01;35m[Kuint16[m[K tiff_planar;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:341:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  341 |         [01;35m[Kuint32[m[K tiff_width;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:342:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  342 |         [01;35m[Kuint32[m[K tiff_length;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:345:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  345 |         [01;35m[Kuint16[m[K tiff_orientation;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:348:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  348 |         [01;35m[Kuint16[m[K tiff_resunit;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:349:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  349 |         [01;35m[Kuint16[m[K pdf_centimeters;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:350:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  350 |         [01;35m[Kuint16[m[K pdf_overrideres;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:351:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  351 |         [01;35m[Kuint16[m[K pdf_overridepagesize;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:365:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  365 |         [01;35m[Kuint16[m[K pdf_majorversion;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:366:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  366 |         [01;35m[Kuint16[m[K pdf_minorversion;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:367:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  367 |         [01;35m[Kuint32[m[K pdf_catalog;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:368:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  368 |         [01;35m[Kuint32[m[K pdf_pages;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:369:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  369 |         [01;35m[Kuint32[m[K pdf_info;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:370:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  370 |         [01;35m[Kuint32[m[K pdf_palettecs;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:371:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  371 |         [01;35m[Kuint16[m[K pdf_fitwindow;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:372:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  372 |         [01;35m[Kuint32[m[K pdf_startxref;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:388:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  388 |         [01;35m[Kuint16[m[K pdf_colorspace_invert;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:389:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  389 |         [01;35m[Kuint16[m[K pdf_switchdecode;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:390:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  390 |         [01;35m[Kuint16[m[K pdf_palettesize;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:394:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  394 |         [01;35m[Kuint16[m[K pdf_defaultcompressionquality;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:396:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  396 |         [01;35m[Kuint16[m[K pdf_compressionquality;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:397:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  397 |         [01;35m[Kuint16[m[K pdf_nopassthrough;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:400:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  400 |         [01;35m[Kuint32[m[K* pdf_xrefoffsets;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:401:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  401 |         [01;35m[Kuint32[m[K pdf_xrefcount;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:405:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  405 |         [01;35m[Kuint32[m[K pdf_ojpegdatalength;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:406:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  406 |         [01;35m[Kuint32[m[K pdf_ojpegiflength;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:414:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  414 |         [01;35m[Kuint16[m[K tiff_transferfunctioncount;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:415:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  415 |         [01;35m[Kuint32[m[K pdf_icccs;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:416:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  416 |         [01;35m[Kuint32[m[K tiff_iccprofilelength;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:477:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  477 | [01;35m[Kint[m[K t2p_process_jpeg_strip(unsigned char*, tsize_t*, unsigned char*, tsize_t, tsize_t*, tstrip_t, uint32);
+      | [01;35m[K^~~[m[K
+[01m[Ktiff2pdf.c:480:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  480 | [01;35m[Kvoid[m[K t2p_tile_collapse_left(tdata_t, tsize_t, uint32, uint32, uint32);
+      | [01;35m[K^~~~[m[K
+[01m[Ktiff2pdf.c:480:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:480:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:488:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  488 | [01;35m[Ktsize_t[m[K t2p_sample_abgr_to_rgb(tdata_t, uint32);
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:490:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  490 | [01;35m[Ktsize_t[m[K t2p_sample_rgba_to_rgb(tdata_t, uint32);
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:492:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  492 | [01;35m[Ktsize_t[m[K t2p_sample_rgbaa_to_rgb(tdata_t, uint32);
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:494:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  494 | [01;35m[Ktsize_t[m[K t2p_sample_lab_signed_to_unsigned(tdata_t, uint32);
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:498:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  498 | [01;35m[Ktsize_t[m[K t2p_write_pdf_obj_start(uint32, TIFF*);
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:512:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  512 | [01;35m[Ktsize_t[m[K t2p_write_pdf_stream_dict(tsize_t, uint32, TIFF*);
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:530:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  530 | [01;35m[Ktsize_t[m[K t2p_write_pdf_page(uint32, T2P*, TIFF*);
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:534:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  534 | [01;35m[Kvoid[m[K t2p_compose_pdf_page_orient(T2P_BOX*, uint16);
+      | [01;35m[K^~~~[m[K
+[01m[Ktiff2pdf.c:536:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  536 | [01;35m[Kvoid[m[K t2p_compose_pdf_page_orient_flip(T2P_BOX*, uint16);
+      | [01;35m[K^~~~[m[K
+[01m[Ktiff2pdf.c:546:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  546 | [01;35m[Ktsize_t[m[K t2p_write_pdf_transfer_dict(T2P*, TIFF*, uint16);
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:548:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  548 | [01;35m[Ktsize_t[m[K t2p_write_pdf_transfer_stream(T2P*, TIFF*, uint16);
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_validate[m[K’:
+[01m[Ktiff2pdf.c:1166:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1166 |                 [01;35m[Kuint16[m[K m=t2p->pdf_defaultcompressionquality%100;
+      |                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_read_tiff_init[m[K’:
+[01m[Ktiff2pdf.c:1201:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1201 |         [01;35m[Kuint16[m[K pagen=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:1202:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1202 |         [01;35m[Kuint16[m[K paged=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:1203:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1203 |         [01;35m[Kuint16[m[K xuint16=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:1229:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1229 |                 [01;35m[Kuint32[m[K subfiletype = 0;
+      |                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_cmp_t2p_page[m[K’:
+[01m[Ktiff2pdf.c:1394:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1394 |         [01;35m[Kd[m[K = (int32)(((T2P_PAGE*)e1)->page_number) - (int32)(((T2P_PAGE*)e2)->page_number);
+      |         [01;35m[K^[m[K
+[01m[Ktiff2pdf.c:1394:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:1396:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1396 |                 [01;35m[Kd[m[K = (int32)(((T2P_PAGE*)e1)->page_directory) - (int32)(((T2P_PAGE*)e2)->page_directory);
+      |                 [01;35m[K^[m[K
+[01m[Ktiff2pdf.c:1396:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_read_tiff_data[m[K’:
+[01m[Ktiff2pdf.c:1417:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1417 |         [01;35m[Kuint16[m[K* r;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:1418:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1418 |         [01;35m[Kuint16[m[K* g;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:1419:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1419 |         [01;35m[Kuint16[m[K* b;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:1420:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1420 |         [01;35m[Kuint16[m[K* a;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:1421:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1421 |         [01;35m[Kuint16[m[K xuint16;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:1422:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1422 |         [01;35m[Kuint16[m[K* xuint16p;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_read_tiff_size[m[K’:
+[01m[Ktiff2pdf.c:2142:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2142 |                         [01;35m[Kuint32[m[K count = 0;
+      |                         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_read_tiff_size_tile[m[K’:
+[01m[Ktiff2pdf.c:2203:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2203 |         [01;35m[Kuint16[m[K edge=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2234:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2234 |                                 [01;35m[Kuint32[m[K count = 0;
+      |                                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_readwrite_pdf_image[m[K’:
+[01m[Ktiff2pdf.c:2324:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2324 |         [01;35m[Kuint16[m[K h_samp=1;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2325:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2325 |         [01;35m[Kuint16[m[K v_samp=1;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2326:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2326 |         [01;35m[Kuint16[m[K ri=1;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2327:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2327 |         [01;35m[Kuint32[m[K rows=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2335:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2335 |         [01;35m[Kuint32[m[K max_striplength=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2525:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2525 |                         [01;35m[Kuint32[m[K count = 0;
+      |                         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2760:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2760 |                                 [01;35m[K([m[Kuint32*)buffer,
+      |                                 [01;35m[K^[m[K
+[01m[Ktiff2pdf.c:2806:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2806 |                         [01;35m[Kuint16[m[K hor = 0, ver = 0;
+      |                         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2806:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_readwrite_pdf_image_tile[m[K’:
+[01m[Ktiff2pdf.c:2909:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2909 |         [01;35m[Kuint16[m[K edge=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2916:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2916 |         [01;35m[Kuint16[m[K i=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:2924:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2924 |         [01;35m[Kuint32[m[K xuint32=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3032:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3032 |                         [01;35m[Kuint32[m[K count = 0;
+      |                         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3279:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3279 |                         [01;35m[Kuint16[m[K hor = 0, ver = 0;
+      |                         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3279:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_process_ojpeg_tables[m[K’:
+[01m[Ktiff2pdf.c:3355:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3355 |         [01;35m[Kuint16[m[K proc=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3357:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3357 |         [01;35m[Kuint32[m[K q_length=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3359:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3359 |         [01;35m[Kuint32[m[K dc_length=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3361:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3361 |         [01;35m[Kuint32[m[K ac_length=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3362:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3362 |         [01;35m[Kuint16[m[K* lp;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3363:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3363 |         [01;35m[Kuint16[m[K* pt;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3364:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3364 |         [01;35m[Kuint16[m[K h_samp=1;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3365:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3365 |         [01;35m[Kuint16[m[K v_samp=1;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3367:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3367 |         [01;35m[Kuint16[m[K table_count;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3368:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3368 |         [01;35m[Kuint32[m[K offset_table;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3369:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3369 |         [01;35m[Kuint32[m[K offset_ms_l;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3370:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3370 |         [01;35m[Kuint32[m[K code_count;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3371:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3371 |         [01;35m[Kuint32[m[K i=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3372:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3372 |         [01;35m[Kuint32[m[K dest=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3373:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3373 |         [01;35m[Kuint16[m[K ri=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3374:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3374 |         [01;35m[Kuint32[m[K rows=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K At top level:
+[01m[Ktiff2pdf.c:3607:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3607 |         [01;35m[Kuint32[m[K height){
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_process_jpeg_strip[m[K’:
+[01m[Ktiff2pdf.c:3613:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3613 |                 [01;35m[Kuint16[m[K ri;
+      |                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3614:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3614 |                 [01;35m[Kuint16[m[K v_samp;
+      |                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3615:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3615 |                 [01;35m[Kuint16[m[K h_samp;
+      |                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3665:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3665 |                                                 [01;35m[Kuint16[m[K samp = buffer[*bufferoffset+11+(3*j)];
+      |                                                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3673:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3673 |                                         [01;35m[Kri[m[K=((( ((uint16)(buffer[*bufferoffset+5])<<8) |
+      |                                         [01;35m[K^~[m[K
+[01m[Ktiff2pdf.c:3674:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3674 |                                         [01;35m[K([m[Kuint16)(buffer[*bufferoffset+6]) )+v_samp-1)/
+      |                                         [01;35m[K^[m[K
+[01m[Ktiff2pdf.c:3676:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3676 |                                         [01;35m[Kri[m[K*=((( ((uint16)(buffer[*bufferoffset+7])<<8) |
+      |                                         [01;35m[K^~[m[K
+[01m[Ktiff2pdf.c:3677:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3677 |                                         [01;35m[K([m[Kuint16)(buffer[*bufferoffset+8]) )+h_samp-1)/
+      |                                         [01;35m[K^[m[K
+[01m[Kddjvu.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K render[m[K(ddjvu_page_t*, int)[m[K’:
+[01m[Kddjvu.cpp:487:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  487 |         TIFFSetField(tiff, TIFFTAG_IMAGEWIDTH, ([01;35m[Kuint32[m[K)rrect.w);
+      |                                                 [01;35m[K^~~~~~[m[K
+In file included from [01m[Ktiff2pdf.h:27[m[K,
+                 from [01m[Kddjvu.cpp:87[m[K:
+[01m[K/usr/include/tiff.h:86:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   86 | typedef TIFF_MSC_DEPRECATED uint32_t [01;36m[Kuint32[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Kddjvu.cpp:488:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  488 |         TIFFSetField(tiff, TIFFTAG_IMAGELENGTH, ([01;35m[Kuint32[m[K)rrect.h);
+      |                                                  [01;35m[K^~~~~~[m[K
+[01m[K/usr/include/tiff.h:86:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   86 | typedef TIFF_MSC_DEPRECATED uint32_t [01;36m[Kuint32[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Kddjvu.cpp:504:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  504 |               TIFFSetField(tiff, TIFFTAG_ROWSPERSTRIP, ([01;35m[Kuint32[m[K)64);
+      |                                                         [01;35m[K^~~~~~[m[K
+[01m[K/usr/include/tiff.h:86:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   86 | typedef TIFF_MSC_DEPRECATED uint32_t [01;36m[Kuint32[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K At top level:
+[01m[Ktiff2pdf.c:3740:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3740 |         [01;35m[Kuint32[m[K tilewidth,
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3741:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3741 |         [01;35m[Kuint32[m[K edgetilewidth,
+      |         [01;35m[K^~~~~~[m[K
+[01m[Kddjvu.cpp:506:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  506 |           TIFFSetField(tiff, TIFFTAG_BITSPERSAMPLE, ([01;35m[Kuint16[m[K)1);
+      |                                                      [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3742:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3742 |         [01;35m[Kuint32[m[K tilelength){
+      |         [01;35m[K^~~~~~[m[K
+[01m[K/usr/include/tiff.h:83:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   83 | typedef TIFF_MSC_DEPRECATED uint16_t [01;36m[Kuint16[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_tile_collapse_left[m[K’:
+[01m[Ktiff2pdf.c:3744:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3744 |         [01;35m[Kuint32[m[K i;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Kddjvu.cpp:507:56:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  507 |           TIFFSetField(tiff, TIFFTAG_SAMPLESPERPIXEL, ([01;35m[Kuint16[m[K)1);
+      |                                                        [01;35m[K^~~~~~[m[K
+[01m[K/usr/include/tiff.h:83:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   83 | typedef TIFF_MSC_DEPRECATED uint16_t [01;36m[Kuint16[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Kddjvu.cpp:512:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  512 |           TIFFSetField(tiff, TIFFTAG_BITSPERSAMPLE, ([01;35m[Kuint16[m[K)8);
+      |                                                      [01;35m[K^~~~~~[m[K
+[01m[K/usr/include/tiff.h:83:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   83 | typedef TIFF_MSC_DEPRECATED uint16_t [01;36m[Kuint16[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Kddjvu.cpp:514:58:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  514 |             TIFFSetField(tiff, TIFFTAG_SAMPLESPERPIXEL, ([01;35m[Kuint16[m[K)1);
+      |                                                          [01;35m[K^~~~~~[m[K
+[01m[K/usr/include/tiff.h:83:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   83 | typedef TIFF_MSC_DEPRECATED uint16_t [01;36m[Kuint16[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Kddjvu.cpp:518:58:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  518 |             TIFFSetField(tiff, TIFFTAG_SAMPLESPERPIXEL, ([01;35m[Kuint16[m[K)3);
+      |                                                          [01;35m[K^~~~~~[m[K
+[01m[K/usr/include/tiff.h:83:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   83 | typedef TIFF_MSC_DEPRECATED uint16_t [01;36m[Kuint16[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_sample_realize_palette[m[K’:
+[01m[Ktiff2pdf.c:3806:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3806 |         [01;35m[Kuint32[m[K sample_count=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3807:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3807 |         [01;35m[Kuint16[m[K component_count=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3808:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3808 |         [01;35m[Kuint32[m[K palette_offset=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3809:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3809 |         [01;35m[Kuint32[m[K sample_offset=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3810:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3810 |         [01;35m[Kuint32[m[K i=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3811:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3811 |         [01;35m[Kuint32[m[K j=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K At top level:
+[01m[Ktiff2pdf.c:3842:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3842 | [01;35m[Ktsize_t[m[K t2p_sample_abgr_to_rgb(tdata_t data, uint32 samplecount)
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_sample_abgr_to_rgb[m[K’:
+[01m[Ktiff2pdf.c:3844:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3844 |         [01;35m[Kuint32[m[K i=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3845:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3845 |         [01;35m[Kuint32[m[K sample=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3848:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3848 |                 [01;35m[Ksample[m[K=((uint32*)data)[i];
+      |                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K At top level:
+[01m[Ktiff2pdf.c:3864:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3864 | [01;35m[Kt2p_sample_rgbaa_to_rgb[m[K(tdata_t data, uint32 samplecount)
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_sample_rgbaa_to_rgb[m[K’:
+[01m[Ktiff2pdf.c:3866:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3866 |         [01;35m[Kuint32[m[K i;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3872:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3872 |                 [01;35m[Kmemmove[m[K((uint8*)data + i * 3, (uint8*)data + i * 4, 3);
+      |                 [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:3872:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:3874:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3874 |                 [01;35m[Kmemcpy[m[K((uint8*)data + i * 3, (uint8*)data + i * 4, 3);
+      |                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3874:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:[m[K At top level:
+[01m[Ktiff2pdf.c:3886:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3886 | [01;35m[Kt2p_sample_rgba_to_rgb[m[K(tdata_t data, uint32 samplecount)
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_sample_rgba_to_rgb[m[K’:
+[01m[Ktiff2pdf.c:3888:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3888 |         [01;35m[Kuint32[m[K i = 0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3889:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3889 |         [01;35m[Kuint32[m[K sample = 0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3890:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3890 |         [01;35m[Kuint8[m[K alpha = 0;
+      |         [01;35m[K^~~~~[m[K
+[01m[Ktiff2pdf.c:3893:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3893 |                 [01;35m[Ksample[m[K=((uint32*)data)[i];
+      |                 [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:3894:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3894 |                 [01;35m[Kalpha[m[K=(uint8)((255 - ((sample >> 24) & 0xff)));
+      |                 [01;35m[K^~~~~[m[K
+[01m[Ktiff2pdf.c:3895:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3895 |                 [01;35m[K([m[K(uint8 *)data)[i * 3] = (uint8) ((sample >> 16) & 0xff) + alpha;
+      |                 [01;35m[K^[m[K
+[01m[Ktiff2pdf.c:3895:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:3896:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3896 |                 [01;35m[K([m[K(uint8 *)data)[i * 3 + 1] = (uint8) ((sample >> 8) & 0xff) + alpha;
+      |                 [01;35m[K^[m[K
+[01m[Ktiff2pdf.c:3896:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:3897:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3897 |                 [01;35m[K([m[K(uint8 *)data)[i * 3 + 2] = (uint8) (sample & 0xff) + alpha;
+      |                 [01;35m[K^[m[K
+[01m[Ktiff2pdf.c:3897:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint8[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:[m[K At top level:
+[01m[Ktiff2pdf.c:3909:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3909 | [01;35m[Ktsize_t[m[K t2p_sample_lab_signed_to_unsigned(tdata_t buffer, uint32 samplecount){
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_sample_lab_signed_to_unsigned[m[K’:
+[01m[Ktiff2pdf.c:3911:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3911 |         [01;35m[Kuint32[m[K i=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K At top level:
+[01m[Ktiff2pdf.c:3957:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3957 | [01;35m[Ktsize_t[m[K t2p_write_pdf_obj_start(uint32 number, TIFF* output){
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_write_pdf_string[m[K’:
+[01m[Ktiff2pdf.c:3993:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 3993 |         [01;35m[Kuint32[m[K i = 0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K At top level:
+[01m[Ktiff2pdf.c:4087:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4087 | [01;35m[Ktsize_t[m[K t2p_write_pdf_stream_dict(tsize_t len, uint32 number, TIFF* output){
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:4381:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4381 | [01;35m[Ktsize_t[m[K t2p_write_pdf_page(uint32 object, T2P* t2p, TIFF* output){
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_compose_pdf_page[m[K’:
+[01m[Ktiff2pdf.c:4485:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4485 |         [01;35m[Kuint32[m[K i=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:4486:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4486 |         [01;35m[Kuint32[m[K i2=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:4489:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4489 |         [01;35m[Kuint32[m[K tilecountx=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:4490:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4490 |         [01;35m[Kuint32[m[K tilecounty=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:4491:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4491 |         [01;35m[Kuint32[m[K tilewidth=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:4492:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4492 |         [01;35m[Kuint32[m[K tilelength=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K At top level:
+[01m[Ktiff2pdf.c:4692:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4692 | [01;35m[Kvoid[m[K t2p_compose_pdf_page_orient(T2P_BOX* boxp, uint16 orientation){
+      | [01;35m[K^~~~[m[K
+[01m[Ktiff2pdf.c:4768:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 4768 | [01;35m[Kvoid[m[K t2p_compose_pdf_page_orient_flip(T2P_BOX* boxp, uint16 orientation){
+      | [01;35m[K^~~~[m[K
+[01m[Ktiff2pdf.c:5073:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 5073 | [01;35m[Ktsize_t[m[K t2p_write_pdf_transfer_dict(T2P* t2p, TIFF* output, uint16 i){
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:5093:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 5093 | [01;35m[Ktsize_t[m[K t2p_write_pdf_transfer_stream(T2P* t2p, TIFF* output, uint16 i){
+      | [01;35m[K^~~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_write_pdf_xreftable[m[K’:
+[01m[Ktiff2pdf.c:5414:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 5414 |         [01;35m[Kuint32[m[K i=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:[m[K In function ‘[01m[Kt2p_write_pdf[m[K’:
+[01m[Ktiff2pdf.c:5519:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 5519 |         [01;35m[Kuint16[m[K i=0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[Ktiff2pdf.c:5523:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 5523 |         [01;35m[Kt2p[m[K->pdf_xrefoffsets= (uint32*) _TIFFmalloc(TIFFSafeMultiply(tmsize_t,t2p->pdf_xrefcount,sizeof(uint32)) );
+      |         [01;35m[K^~~[m[K
+[01m[Ktiff2pdf.c:5523:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:5523:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:5523:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:5523:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[01m[Ktiff2pdf.c:5528:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 5528 |                         [01;35m[K([m[Kunsigned int) (t2p->pdf_xrefcount * sizeof(uint32)) );
+      |                         [01;35m[K^[m[K
+  CXX      djvmcvt.o
+  CXX      djvudump.o
+  CXX      djvups-djvups.o
+  CXX      djvuextract.o
+[01m[Kcjb2.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K read_tiff[m[K(CCImage&, DJVU::ByteStream*, cjb2opts&)[m[K’:
+[01m[Kcjb2.cpp:782:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  782 |   uint16 [01;35m[Kbps[m[K = 0, spp = 0;
+      |          [01;35m[K^~~[m[K
+In file included from [01m[K/usr/include/tiffio.h:31[m[K,
+                 from [01m[Kcjb2.cpp:122[m[K:
+[01m[K/usr/include/tiff.h:83:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   83 | typedef TIFF_MSC_DEPRECATED uint16_t [01;36m[Kuint16[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Kcjb2.cpp:782:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  782 |   uint16 bps = 0, [01;35m[Kspp[m[K = 0;
+      |                   [01;35m[K^~~[m[K
+[01m[K/usr/include/tiff.h:83:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   83 | typedef TIFF_MSC_DEPRECATED uint16_t [01;36m[Kuint16[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Kcjb2.cpp:788:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  788 |   uint16 [01;35m[Kphoto[m[K = PHOTOMETRIC_MINISWHITE;
+      |          [01;35m[K^~~~~[m[K
+[01m[K/usr/include/tiff.h:83:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   83 | typedef TIFF_MSC_DEPRECATED uint16_t [01;36m[Kuint16[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Kcjb2.cpp:791:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  791 |   uint32 [01;35m[Kw[m[K, h;
+      |          [01;35m[K^[m[K
+[01m[K/usr/include/tiff.h:86:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   86 | typedef TIFF_MSC_DEPRECATED uint32_t [01;36m[Kuint32[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+[01m[Kcjb2.cpp:791:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  791 |   uint32 w, [01;35m[Kh[m[K;
+      |             [01;35m[K^[m[K
+[01m[K/usr/include/tiff.h:86:38:[m[K [01;36m[Knote: [m[Kdeclared here
+   86 | typedef TIFF_MSC_DEPRECATED uint32_t [01;36m[Kuint32[m[K TIFF_GCC_DEPRECATED;
+      |                                      [01;36m[K^~~~~~[m[K
+  CXX      djvumake.o
+  CXX      djvused.o
+  CXX      djvutxt-djvutxt.o
+  CXXLD    bzz
+  CXXLD    c44
+  CXX      djvuserve.o
+  CXX      jb2cmp/cjb2-classify.o
+  CXX      jb2cmp/cjb2-cuts.o
+  CXX      jb2cmp/cjb2-frames.o
+  CXX      jb2cmp/cjb2-patterns.o
+  CXX      jb2cmp/classify.o
+  CXX      jb2cmp/cuts.o
+  CXX      jb2cmp/frames.o
+  CXX      jb2cmp/patterns.o
+  CXXLD    ddjvu
+  CXXLD    djvm
+  CXXLD    djvmcvt
+  CXXLD    djvudump
+  CXXLD    djvups
+  CXXLD    djvuextract
+  CXXLD    djvumake
+  CXXLD    djvutxt
+  CXXLD    djvuserve
+  CXXLD    cjb2
+  CXXLD    cpaldjvu
+  CXXLD    csepdjvu
+  CXXLD    djvused
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/tools'
+Making all in share
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/share'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/share'
+Making all in xmltools
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/xmltools'
+  CXX      djvuxmlparser.o
+  CXX      djvutoxml.o
+  MAN      djvuxml.1
+  CXXLD    djvuxmlparser
+  CXXLD    djvutoxml
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/xmltools'
+Making all in desktopfiles
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/desktopfiles'
+  PNG      20x20/mimetypes/image-vnd.djvu.png
+  PNG      22x22/mimetypes/image-vnd.djvu.png
+  PNG      24x24/mimetypes/image-vnd.djvu.png
+  PNG      64x64/mimetypes/image-vnd.djvu.png
+  PNG      96x96/mimetypes/image-vnd.djvu.png
+  PNG      32x32/mimetypes/image-vnd.djvu.png
+  PNG      48x48/mimetypes/image-vnd.djvu.png
+  PNG      72x72/mimetypes/image-vnd.djvu.png
+  PNG      128x128/mimetypes/image-vnd.djvu.png
+  PNG      16x16/mimetypes/image-vnd.djvu.png
+  PNG      256x256/mimetypes/image-vnd.djvu.png
+  SVG      scalable/mimetypes/image-vnd.djvu.svgz
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/desktopfiles'
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build'
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build'
+make[1]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build'
+Making install in libdjvu
+make[1]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/libdjvu'
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/libdjvu'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/include/libdjvu'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libdjvulibre.la '/var/tmp/hokuto/djvulibre-53/output/usr/lib'
+ /usr/bin/install -c -m 644 ddjvuapi.pc '/var/tmp/hokuto/djvulibre-53/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 ddjvuapi.h miniexp.h '/var/tmp/hokuto/djvulibre-53/output/usr/include/libdjvu'
+libtool: install: /usr/bin/install -c .libs/libdjvulibre.so.21.8.0 /var/tmp/hokuto/djvulibre-53/output/usr/lib/libdjvulibre.so.21.8.0
+libtool: install: (cd /var/tmp/hokuto/djvulibre-53/output/usr/lib && { ln -s -f libdjvulibre.so.21.8.0 libdjvulibre.so.21 || { rm -f libdjvulibre.so.21 && ln -s libdjvulibre.so.21.8.0 libdjvulibre.so.21; }; })
+libtool: install: (cd /var/tmp/hokuto/djvulibre-53/output/usr/lib && { ln -s -f libdjvulibre.so.21.8.0 libdjvulibre.so || { rm -f libdjvulibre.so && ln -s libdjvulibre.so.21.8.0 libdjvulibre.so; }; })
+libtool: install: /usr/bin/install -c .libs/libdjvulibre.lai /var/tmp/hokuto/djvulibre-53/output/usr/lib/libdjvulibre.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/libdjvu'
+make[1]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/libdjvu'
+Making install in tools
+make[1]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/tools'
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/tools'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/bin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/bin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/man/man1'
+ /usr/bin/install -c any2djvu djvudigital '/var/tmp/hokuto/djvulibre-53/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c bzz c44 cjb2 cpaldjvu csepdjvu ddjvu djvm djvmcvt djvudump djvups djvuextract djvumake djvused djvutxt djvuserve '/var/tmp/hokuto/djvulibre-53/output/usr/bin'
+ /usr/bin/install -c -m 644 any2djvu.1 bzz.1 c44.1 cjb2.1 cpaldjvu.1 csepdjvu.1 ddjvu.1 djvm.1 djvmcvt.1 djvu.1 djvudigital.1 djvudump.1 djvuextract.1 djvumake.1 djvups.1 djvused.1 djvuserve.1 djvutxt.1 '/var/tmp/hokuto/djvulibre-53/output/usr/share/man/man1'
+libtool: install: /usr/bin/install -c .libs/bzz /var/tmp/hokuto/djvulibre-53/output/usr/bin/bzz
+libtool: install: /usr/bin/install -c .libs/c44 /var/tmp/hokuto/djvulibre-53/output/usr/bin/c44
+libtool: install: /usr/bin/install -c .libs/cjb2 /var/tmp/hokuto/djvulibre-53/output/usr/bin/cjb2
+libtool: install: /usr/bin/install -c .libs/cpaldjvu /var/tmp/hokuto/djvulibre-53/output/usr/bin/cpaldjvu
+libtool: install: /usr/bin/install -c .libs/csepdjvu /var/tmp/hokuto/djvulibre-53/output/usr/bin/csepdjvu
+libtool: install: /usr/bin/install -c .libs/ddjvu /var/tmp/hokuto/djvulibre-53/output/usr/bin/ddjvu
+libtool: install: /usr/bin/install -c .libs/djvm /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvm
+libtool: install: /usr/bin/install -c .libs/djvmcvt /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvmcvt
+libtool: install: /usr/bin/install -c .libs/djvudump /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvudump
+libtool: install: /usr/bin/install -c .libs/djvups /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvups
+libtool: install: /usr/bin/install -c .libs/djvuextract /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvuextract
+libtool: install: /usr/bin/install -c .libs/djvumake /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvumake
+libtool: install: /usr/bin/install -c .libs/djvused /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvused
+libtool: install: /usr/bin/install -c .libs/djvutxt /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvutxt
+libtool: install: /usr/bin/install -c .libs/djvuserve /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvuserve
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/tools'
+make[1]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/tools'
+Making install in share
+make[1]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/share'
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/share'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/de'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/en'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/fr'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/pubtext'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/cs'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/ja'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/zh'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi'
+ /usr/bin/install -c -m 644 djvu/osi/de/libdjvu++.xml djvu/osi/de/messages.xml '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/de'
+ /usr/bin/install -c -m 644 djvu/osi/fr/libdjvu++.xml djvu/osi/fr/messages.xml '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/fr'
+ /usr/bin/install -c -m 644 djvu/osi/ja/libdjvu++.xml djvu/osi/ja/messages.xml '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/ja'
+ /usr/bin/install -c -m 644 djvu/osi/zh/libdjvu++.xml djvu/osi/zh/messages.xml '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/zh'
+ /usr/bin/install -c -m 644 djvu/osi/en/djvutools-reference.xml djvu/osi/en/libdjvu++.xml djvu/osi/en/messages.xml '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/en'
+ /usr/bin/install -c -m 644 djvu/pubtext/DjVuMessages.dtd djvu/pubtext/DjVuOCR.dtd djvu/pubtext/DjVuXML-s.dtd '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/pubtext'
+ /usr/bin/install -c -m 644 djvu/osi/cs/messages.xml '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi/cs'
+ /usr/bin/install -c -m 644 djvu/osi/languages.xml '/var/tmp/hokuto/djvulibre-53/output/usr/share/djvu/osi'
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/share'
+make[1]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/share'
+Making install in xmltools
+make[1]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/xmltools'
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/xmltools'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/man/man1'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c djvutoxml djvuxmlparser '/var/tmp/hokuto/djvulibre-53/output/usr/bin'
+ /usr/bin/install -c -m 644 djvutoxml.1 djvuxmlparser.1 djvuxml.1 '/var/tmp/hokuto/djvulibre-53/output/usr/share/man/man1'
+libtool: install: /usr/bin/install -c .libs/djvutoxml /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvutoxml
+libtool: install: /usr/bin/install -c .libs/djvuxmlparser /var/tmp/hokuto/djvulibre-53/output/usr/bin/djvuxmlparser
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/xmltools'
+make[1]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/xmltools'
+Making install in desktopfiles
+make[1]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/desktopfiles'
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/desktopfiles'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/128x128/mimetypes'
+ /usr/bin/install -c -m 644  128x128/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/128x128/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/32x32/mimetypes'
+ /usr/bin/install -c -m 644  32x32/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/32x32/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/20x20/mimetypes'
+ /usr/bin/install -c -m 644  20x20/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/20x20/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/16x16/mimetypes'
+ /usr/bin/install -c -m 644  16x16/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/16x16/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/64x64/mimetypes'
+ /usr/bin/install -c -m 644  64x64/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/64x64/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/48x48/mimetypes'
+ /usr/bin/install -c -m 644  48x48/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/48x48/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/24x24/mimetypes'
+ /usr/bin/install -c -m 644  24x24/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/24x24/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/96x96/mimetypes'
+ /usr/bin/install -c -m 644  96x96/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/96x96/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/72x72/mimetypes'
+ /usr/bin/install -c -m 644  72x72/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/72x72/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/22x22/mimetypes'
+ /usr/bin/install -c -m 644  22x22/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/22x22/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/256x256/mimetypes'
+ /usr/bin/install -c -m 644  256x256/mimetypes/image-vnd.djvu.png '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/256x256/mimetypes'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/scalable/mimetypes'
+ /usr/bin/install -c -m 644  scalable/mimetypes/image-vnd.djvu.svgz '/var/tmp/hokuto/djvulibre-53/output/usr/share/icons/hicolor/scalable/mimetypes'
+make  install-data-hook
+make[3]: Entering directory '/var/tmp/hokuto/djvulibre-53/build/desktopfiles'
+echo "*** You must still update various caches with:" ; \
+echo "*** # update-mime-database /usr/share/mime" ; \
+echo "*** # update-icon-caches /usr/share/icons/hicolor" 
+*** You must still update various caches with:
+*** # update-mime-database /usr/share/mime
+*** # update-icon-caches /usr/share/icons/hicolor
+make[3]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/desktopfiles'
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/desktopfiles'
+make[1]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build/desktopfiles'
+make[1]: Entering directory '/var/tmp/hokuto/djvulibre-53/build'
+make[2]: Entering directory '/var/tmp/hokuto/djvulibre-53/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build'
+make[1]: Leaving directory '/var/tmp/hokuto/djvulibre-53/build'
+
+Script done on 2026-05-07 14:32:37+07:00 [COMMAND_EXIT_CODE="0"]
