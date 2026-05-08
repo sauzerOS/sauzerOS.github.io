@@ -1,0 +1,70 @@
+Script started on 2026-05-08 09:15:07+07:00 [COMMAND="cd /var/tmp/hokuto/kmix-37/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/kmix-37/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/kmix-37/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/kmix-37/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/kmix-37/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/kmix-37/build/.cache' /repo/kde/kmix/build /var/tmp/hokuto/kmix-37/output 26.04.1 kmix" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.25.0")
+-- Found KF6ConfigWidgets: /usr/lib64/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake (found version "6.25.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.25.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.25.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.25.0")
+-- Could NOT find KF6DocTools (missing: KF6DocTools_DIR)
+-- Could NOT find KF6DocTools: found neither KF6DocToolsConfig.cmake nor kf6doctools-config.cmake 
+-- Found KF6GlobalAccel: /usr/lib64/cmake/KF6GlobalAccel/KF6GlobalAccelConfig.cmake (found version "6.25.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.25.0")
+-- Found KF6Notifications: /usr/lib64/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.25.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.25.0")
+-- Found KF6StatusNotifierItem: /usr/lib64/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemConfig.cmake (found version "6.25.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.25.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.25.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.25.0")
+[31mCMake Error at /usr/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake:290 (message):
+  Could NOT find KF6 (missing: DocTools) (found suitable version "6.25.0",
+  minimum required is "6.1.0")
+
+      Reason given by package: Missing the following required components: DocTools
+
+Call Stack (most recent call first):
+  /usr/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake:654 (_FPHSA_FAILURE_MESSAGE)
+  /usr/share/ECM/find-modules/FindKF6.cmake:100 (find_package_handle_standard_args)
+  CMakeLists.txt:64 (find_package)
+
+[0m
+-- Configuring incomplete, errors occurred!
+
+Script done on 2026-05-08 09:15:10+07:00 [COMMAND_EXIT_CODE="1"]
