@@ -1,0 +1,864 @@
+Script started on 2026-05-08 09:09:40+07:00 [COMMAND="cd /var/tmp/hokuto/dolphin-52/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/dolphin-52/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/dolphin-52/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/dolphin-52/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/dolphin-52/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/dolphin-52/build/.cache' /repo/kde/dolphin/build /var/tmp/hokuto/dolphin-52/output 26.04.1 dolphin" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.1", minimum required is "0.9.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.25.0")
+-- Found KF6NewStuff: /usr/lib64/cmake/KF6NewStuff/KF6NewStuffConfig.cmake (found version "6.25.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.25.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.25.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.25.0")
+-- Found KF6Bookmarks: /usr/lib64/cmake/KF6Bookmarks/KF6BookmarksConfig.cmake (found version "6.25.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.25.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.25.0")
+-- Found KF6Parts: /usr/lib64/cmake/KF6Parts/KF6PartsConfig.cmake (found version "6.25.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.25.0")
+-- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.25.0")
+-- Found KF6Completion: /usr/lib64/cmake/KF6Completion/KF6CompletionConfig.cmake (found version "6.25.0")
+-- Found KF6TextWidgets: /usr/lib64/cmake/KF6TextWidgets/KF6TextWidgetsConfig.cmake (found version "6.25.0")
+-- Found KF6Notifications: /usr/lib64/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.25.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.25.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.25.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.25.0")
+-- Found KF6Codecs: /usr/lib64/cmake/KF6Codecs/KF6CodecsConfig.cmake (found version "6.25.0")
+-- Found KF6GuiAddons: /usr/lib64/cmake/KF6GuiAddons/KF6GuiAddonsConfig.cmake (found version "6.25.0")
+-- Found KF6ColorScheme: /usr/lib64/cmake/KF6ColorScheme/KF6ColorSchemeConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found suitable version "6.25.0", minimum required is "6.23.0") found components: KCMUtils NewStuff CoreAddons I18n DBusAddons Bookmarks Config KIO Parts Solid IconThemes Completion TextWidgets Notifications Crash WindowSystem WidgetsAddons Codecs GuiAddons ColorScheme
+-- Could NOT find KF6DocTools (missing: KF6DocTools_DIR)
+-- Could NOT find KF6DocTools: found neither KF6DocToolsConfig.cmake nor kf6doctools-config.cmake 
+-- Found KF6: success (Required is at least version "6.23.0")  missing components: DocTools
+[33mCMake Warning at CMakeLists.txt:106 (find_package):
+  By not providing "FindPackageKitQt6.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "PackageKitQt6", but CMake did not find one.
+
+  Could not find a package configuration file provided by "PackageKitQt6"
+  with any of the following names:
+
+    PackageKitQt6.cps
+    packagekitqt6.cps
+    PackageKitQt6Config.cmake
+    packagekitqt6-config.cmake
+
+  Add the installation prefix of "PackageKitQt6" to CMAKE_PREFIX_PATH or set
+  "PackageKitQt6_DIR" to a directory containing one of the above files.  If
+  "PackageKitQt6" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:130 (find_package):
+  By not providing "FindKF6BalooWidgets.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "KF6BalooWidgets", but CMake did not find one.
+
+  Could not find a package configuration file provided by "KF6BalooWidgets"
+  (requested version 26.04.1) with any of the following names:
+
+    KF6BalooWidgets.cps
+    kf6baloowidgets.cps
+    KF6BalooWidgetsConfig.cmake
+    kf6baloowidgets-config.cmake
+
+  Add the installation prefix of "KF6BalooWidgets" to CMAKE_PREFIX_PATH or
+  set "KF6BalooWidgets_DIR" to a directory containing one of the above files.
+  If "KF6BalooWidgets" provides a separate development package or SDK, be
+  sure it has been installed.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:145 (message):
+  Baloo packages not found.  They are needed for the metadata features of
+  Dolphin (including the information panel).
+
+[0m
+-- Looking for 3 include files sys/types.h, ..., fts.h
+-- Looking for 3 include files sys/types.h, ..., fts.h - found
+-- Looking for fts_open
+-- Looking for fts_open - found
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- not found icons_at_22px /var/tmp/hokuto/dolphin-52/build/src/icons/22-apps-org.kde.dolphin.png
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Concurrent (required version >= 6.4.0)
+ * OpenGL
+ * Qt6Core (required version >= 6.9.0)
+ * Qt6DBusTools (required version >= 6.11.0)
+ * Qt6QmlTools (required version >= 6.11.0)
+ * Qt6WidgetsTools (required version >= 6.11.0)
+ * Qt6Widgets (required version >= 6.9.0)
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.11.0)
+ * Qt6GuiTools (required version >= 6.11.0)
+ * KF6UserFeedback (required version >= 6.23.0)
+   Used for submission of telemetry data
+ * KF6Baloo (required version >= 6.23.0), Baloo Core libraries, <https://www.kde.org>
+   For adding desktop-wide search and tagging support to dolphin
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.23.0)
+ * Qt6GuiPrivate
+ * KF6KCMUtils (required version >= 6.23.0)
+ * KF6NewStuff (required version >= 6.23.0)
+ * KF6CoreAddons (required version >= 6.23.0)
+ * KF6DBusAddons (required version >= 6.23.0)
+ * KF6Config (required version >= 6.23.0)
+ * KF6Bookmarks (required version >= 6.25.0)
+ * KF6KIO (required version >= 6.25.0)
+ * KF6Parts (required version >= 6.23.0)
+ * KF6Solid (required version >= 6.23.0)
+ * KF6IconThemes (required version >= 6.23.0)
+ * KF6Completion (required version >= 6.23.0)
+ * Gettext
+ * KF6I18n (required version >= 6.25.0)
+ * KF6TextWidgets (required version >= 6.23.0)
+ * KF6Notifications (required version >= 6.23.0)
+ * KF6Crash (required version >= 6.23.0)
+ * KF6WindowSystem (required version >= 6.23.0)
+ * KF6WidgetsAddons (required version >= 6.23.0)
+ * KF6Codecs (required version >= 6.23.0)
+ * KF6GuiAddons (required version >= 6.23.0)
+ * KF6ColorScheme (required version >= 6.23.0)
+ * Qt6 (required version >= 6.11)
+ * KF6 (required version >= 6.23.0)
+ * KF6FileMetaData (required version >= 6.25.0), <https://projects.kde.org/kfilemetadata>
+   For accessing file metadata labels and filesystem metadata
+
+-- The following OPTIONAL packages have not been found:
+
+ * KF6DocTools (required version >= 6.23.0)
+ * KF6BalooWidgets (required version >= 26.04.1), Baloos Widgets, <https://www.kde.org>
+
+-- The following RECOMMENDED packages have not been found:
+
+ * PackageKitQt6, Software Manager integration
+   Used in the service menu installer
+
+-- Configuring done (3.1s)
+-- Generating done (0.7s)
+-- Build files have been written to: /var/tmp/hokuto/dolphin-52/build/build
+[  1%] Built target servicemenuinstaller_autogen_timestamp_deps
+[  1%] Built target dolphin_update_splitviewsettings_autogen_timestamp_deps
+[  1%] [1m[34mGenerating ts...[0m
+[  2%] Built target dolphinvcs_autogen_timestamp_deps
+[  2%] Built target setfoldericonitemaction_autogen_timestamp_deps
+[  2%] [1m[34mGenerating mo...[0m
+[  2%] Built target dolphin_25.04_update_statusandlocationbarssettings_autogen_timestamp_deps
+[  2%] [1m[34mGenerating org.freedesktop.FileManager1.xml[0m
+[  2%] Built target movetonewfolderitemaction_autogen_timestamp_deps
+[  2%] Built target hidefileitemaction_autogen_timestamp_deps
+[  2%] [1m[34mAutomatic MOC for target servicemenuinstaller[0m
+[  2%] [1m[34mAutomatic MOC for target dolphinvcs[0m
+[  2%] [1m[34mAutomatic MOC for target dolphin_25.04_update_statusandlocationbarssettings[0m
+[  2%] Built target org.freedesktop.FileManager1.xml_target
+[  2%] [1m[34mAutomatic MOC for target dolphin_update_splitviewsettings[0m
+[  3%] Built target tsfiles-2245ab860839045f35e930b36e640cfc
+[  3%] [1m[34mAutomatic MOC for target movetonewfolderitemaction[0m
+[  3%] [1m[34mAutomatic MOC for target hidefileitemaction[0m
+[  3%] [1m[34mAutomatic MOC for target setfoldericonitemaction[0m
+[  3%] Built target dolphin_update_splitviewsettings_autogen
+[  3%] Built target servicemenuinstaller_autogen
+[  3%] Built target dolphin_25.04_update_statusandlocationbarssettings_autogen
+[  3%] [32mBuilding CXX object src/settings/contextmenu/servicemenuinstaller/CMakeFiles/servicemenuinstaller.dir/servicemenuinstaller.cpp.o[0m
+[  3%] [32mBuilding CXX object src/CMakeFiles/dolphin_25.04_update_statusandlocationbarssettings.dir/dolphin_25.04_update_statusandlocationbarssettings_autogen/mocs_compilation.cpp.o[0m
+[  4%] [32mBuilding CXX object src/settings/contextmenu/servicemenuinstaller/CMakeFiles/servicemenuinstaller.dir/servicemenuinstaller_autogen/mocs_compilation.cpp.o[0m
+[  5%] [32mBuilding CXX object src/CMakeFiles/dolphin_update_splitviewsettings.dir/settings/dolphin_update_splitviewsettings.cpp.o[0m
+[  5%] [32mBuilding CXX object src/CMakeFiles/dolphin_update_splitviewsettings.dir/dolphin_update_splitviewsettings_autogen/mocs_compilation.cpp.o[0m
+[  5%] [32mBuilding CXX object src/CMakeFiles/dolphin_25.04_update_statusandlocationbarssettings.dir/settings/dolphin_25.04_update_statusandlocationbarssettings.cpp.o[0m
+[  5%] Built target dolphinvcs_autogen
+[  6%] [32mBuilding CXX object src/CMakeFiles/dolphinvcs.dir/views/versioncontrol/kversioncontrolplugin.cpp.o[0m
+[  6%] [32mBuilding CXX object src/CMakeFiles/dolphinvcs.dir/dolphinvcs_autogen/mocs_compilation.cpp.o[0m
+[  6%] Built target pofiles-2245ab860839045f35e930b36e640cfc
+[  6%] Built target setfoldericonitemaction_autogen
+[  6%] Built target hidefileitemaction_autogen
+[  7%] [32mBuilding CXX object src/itemactions/CMakeFiles/setfoldericonitemaction.dir/setfoldericonitemaction_autogen/mocs_compilation.cpp.o[0m
+[  7%] [32mBuilding CXX object src/itemactions/CMakeFiles/setfoldericonitemaction.dir/__/dolphindebug.cpp.o[0m
+[  7%] [32mBuilding CXX object src/itemactions/CMakeFiles/setfoldericonitemaction.dir/setfoldericonitemaction.cpp.o[0m
+[  7%] Built target movetonewfolderitemaction_autogen
+[  8%] [32mBuilding CXX object src/itemactions/CMakeFiles/hidefileitemaction.dir/hidefileitemaction.cpp.o[0m
+[  8%] [32mBuilding CXX object src/itemactions/CMakeFiles/hidefileitemaction.dir/hidefileitemaction_autogen/mocs_compilation.cpp.o[0m
+[  9%] [32mBuilding CXX object src/itemactions/CMakeFiles/movetonewfolderitemaction.dir/movetonewfolderitemaction.cpp.o[0m
+[  9%] [32mBuilding CXX object src/itemactions/CMakeFiles/movetonewfolderitemaction.dir/movetonewfolderitemaction_autogen/mocs_compilation.cpp.o[0m
+[ 10%] [1m[32mLinking CXX executable ../bin/dolphin_25.04_update_statusandlocationbarssettings[0m
+[ 10%] [1m[32mLinking CXX executable ../bin/dolphin_update_splitviewsettings[0m
+[ 11%] Built target dolphin_25.04_update_statusandlocationbarssettings
+[ 11%] Built target dolphin_update_splitviewsettings
+[ 11%] [1m[32mLinking CXX shared module ../../bin/kf6/kfileitemaction/movetonewfolderitemaction.so[0m
+[ 12%] [1m[32mLinking CXX shared module ../../bin/kf6/kfileitemaction/setfoldericonitemaction.so[0m
+[ 12%] [1m[32mLinking CXX shared module ../../bin/kf6/kfileitemaction/hidefileitemaction.so[0m
+[ 13%] Built target movetonewfolderitemaction
+[ 13%] Built target setfoldericonitemaction
+[ 13%] Built target hidefileitemaction
+[ 14%] [1m[32mLinking CXX executable ../../../../bin/servicemenuinstaller[0m
+[ 15%] [1m[32mLinking CXX shared library ../bin/libdolphinvcs.so[0m
+[ 15%] Built target dolphinvcs
+[ 16%] [1m[34mGenerating dolphin_directoryviewpropertysettings.h, dolphin_directoryviewpropertysettings.cpp[0m
+[ 16%] [1m[34mGenerating dolphin_detailsmodesettings.h, dolphin_detailsmodesettings.cpp[0m
+[ 16%] [1m[34mGenerating dolphin_contextmenusettings.h, dolphin_contextmenusettings.cpp[0m
+[ 16%] [1m[34mGenerating dolphin_iconsmodesettings.h, dolphin_iconsmodesettings.cpp[0m
+[ 16%] [1m[34mGenerating dolphin_generalsettings.h, dolphin_generalsettings.cpp[0m
+[ 18%] [1m[34mGenerating dolphin_versioncontrolsettings.h, dolphin_versioncontrolsettings.cpp[0m
+[ 18%] [1m[34mGenerating dolphin_contentdisplaysettings.h, dolphin_contentdisplaysettings.cpp[0m
+[ 18%] [1m[34mGenerating dolphin_compactmodesettings.h, dolphin_compactmodesettings.cpp[0m
+[ 18%] Built target dolphinprivate_autogen_timestamp_deps
+[ 19%] [1m[34mAutomatic MOC for target dolphinprivate[0m
+[ 19%] Built target servicemenuinstaller
+[ 19%] Built target dolphinprivate_autogen
+[ 19%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/accessibility/kitemlistcontaineraccessible.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kfileitemlistview.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kfileitemlistwidget.cpp.o[0m
+[ 19%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/accessibility/kitemlistdelegateaccessible.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/accessibility/kitemlistviewaccessible.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kfileitemlisttostring.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemlistcontainer.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphinprivate_autogen/mocs_compilation.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kfileitemmodel.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kfileitemmodelrolesupdater.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemlistcontroller.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemlistgroupheader.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemlistheader.cpp.o[0m
+[01m[K/var/tmp/hokuto/dolphin-52/build/src/kitemviews/kfileitemmodelrolesupdater.cpp:[m[K In member function ‘[01m[Kvoid KFileItemModelRolesUpdater::[01;32m[KstartPreviewJob[m[K()[m[K’:
+[01m[K/var/tmp/hokuto/dolphin-52/build/src/kitemviews/kfileitemmodelrolesupdater.cpp:976:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KreferenceItem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+  976 |     const KFileItem &[01;35m[KreferenceItem[m[K = items.first();
+      |                      [01;35m[K^~~~~~~~~~~~~[m[K
+[ 24%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemlistselectionmanager.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemliststyleoption.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemlistview.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemlistwidget.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemmodelbase.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kitemset.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kstandarditemlistgroupheader.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kstandarditemlistwidget.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/kstandarditemlistview.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kdirectorycontentscounter.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kdirectorycontentscounterworker.cpp.o[0m
+[01m[K/var/tmp/hokuto/dolphin-52/build/src/kitemviews/kitemlistcontroller.cpp:[m[K In member function ‘[01m[Kbool KItemListController::[01;32m[KonPress[m[K(const QPointF&, Qt::KeyboardModifiers, Qt::MouseButtons)[m[K’:
+[01m[K/var/tmp/hokuto/dolphin-52/build/src/kitemviews/kitemlistcontroller.cpp:1764:44:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+ 1764 |             [01;35m[Km_selectionManager->setSelected(m_pressedIndex.value())[m[K;
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/dolphin-52/build/src/kitemviews/kitemlistcontroller.cpp:1766:9:[m[K [01;36m[Knote: [m[Khere
+ 1766 |         [01;36m[Kcase[m[K MultiSelection:
+      |         [01;36m[K^~~~[m[K
+[ 28%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kfileitemclipboard.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kfileitemmodelfilter.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemlistheaderwidget.cpp.o[0m
+[ 30%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemlistkeyboardsearchmanager.cpp.o[0m
+[ 30%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemlistroleeditor.cpp.o[0m
+[ 30%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemlistrubberband.cpp.o[0m
+[ 31%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemlistselectiontoggle.cpp.o[0m
+[ 31%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemlistsizehintresolver.cpp.o[0m
+[ 31%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemlistsmoothscroller.cpp.o[0m
+[ 31%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemlistviewlayouter.cpp.o[0m
+[ 32%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemlistviewanimation.cpp.o[0m
+[ 33%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kitemviewsutils.cpp.o[0m
+[ 33%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/kitemviews/private/kpixmapmodifier.cpp.o[0m
+[ 33%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/settings/applyviewpropsjob.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/settings/viewmodes/viewmodesettings.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/settings/viewpropertiesdialog.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/settings/viewpropsprogressinfo.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/selectionmode/actiontexthelper.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/dolphinfileitemlistwidget.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/dolphinitemlistview.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/dolphinnewfilemenuobserver.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/dolphinremoteencoding.cpp.o[0m
+[ 37%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/dolphinview.cpp.o[0m
+[ 37%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/dolphinviewactionhandler.cpp.o[0m
+[ 37%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/draganddrophelper.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/versioncontrol/updateitemstatesthread.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/versioncontrol/versioncontrolobserver.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/viewmodecontroller.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/viewproperties.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/zoomlevelinfo.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/views/zoomwidgetaction.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphinremoveaction.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/middleclickactioneventfilter.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphinnewfilemenu.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphindebug.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphin_compactmodesettings.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphin_directoryviewpropertysettings.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphin_detailsmodesettings.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphin_iconsmodesettings.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphin_contentdisplaysettings.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphin_generalsettings.cpp.o[0m
+[ 44%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphin_contextmenusettings.cpp.o[0m
+[ 44%] [32mBuilding CXX object src/CMakeFiles/dolphinprivate.dir/dolphin_versioncontrolsettings.cpp.o[0m
+[ 44%] [1m[32mLinking CXX shared library ../bin/libdolphinprivate.so[0m
+[ 47%] Built target dolphinprivate
+[ 47%] Built target dolphinstatic_autogen_timestamp_deps
+[ 47%] Built target kcm_dolphinviewmodes_autogen_timestamp_deps
+[ 47%] Built target dolphinpart_autogen_timestamp_deps
+[ 48%] Built target kcm_dolphingeneral_autogen_timestamp_deps
+[ 48%] [1m[34mAutomatic MOC for target kcm_dolphinviewmodes[0m
+[ 48%] [1m[34mAutomatic MOC for target dolphinstatic[0m
+[ 49%] [1m[34mAutomatic MOC for target dolphinpart[0m
+[ 49%] [1m[34mAutomatic MOC for target kcm_dolphingeneral[0m
+[ 49%] Built target kcm_dolphinviewmodes_autogen
+[ 50%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphinviewmodes.dir/settings/kcm/kcmdolphinviewmodes.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphinviewmodes.dir/settings/viewmodes/viewsettingstab.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphinviewmodes.dir/settings/settingspagebase.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphinviewmodes.dir/settings/viewmodes/dolphinfontrequester.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphinviewmodes.dir/views/zoomlevelinfo.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphinviewmodes.dir/settings/viewmodes/viewmodesettings.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphinviewmodes.dir/kcm_dolphinviewmodes_autogen/mocs_compilation.cpp.o[0m
+[ 52%] Built target dolphinpart_autogen
+[ 52%] Built target kcm_dolphingeneral_autogen
+[ 52%] [1m[34mAutomatic RCC for dolphinpart.qrc[0m
+[ 52%] [1m[34mGenerating org.kde.DolphinMainWindow.xml[0m
+Unregistered input type in parameter list: KFileItemList
+Type not registered with QtDBus in parameter list: QUrl
+Unregistered input type in parameter list: KFileItem
+Unregistered input type in parameter list: KFileItemList
+Type not registered with QtDBus in parameter list: QUrl
+Type not registered with QtDBus in parameter list: QUrl
+Unregistered return type: DolphinTabPage*
+Type not registered with QtDBus in parameter list: QUrl
+Type not registered with QtDBus in parameter list: QUrl
+[ 52%] [1m[34mGenerating dolphinmainwindowinterface.cpp, dolphinmainwindowinterface.h[0m
+[ 52%] [32mBuilding CXX object src/CMakeFiles/dolphinpart.dir/dolphinpart.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/CMakeFiles/dolphinpart.dir/dolphinpart_autogen/mocs_compilation.cpp.o[0m
+[ 54%] [1m[34mGenerating moc_dolphinmainwindowinterface.cpp[0m
+[ 54%] [32mBuilding CXX object src/CMakeFiles/dolphinpart.dir/dolphinpart_ext.cpp.o[0m
+[ 54%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/kcm_dolphingeneral_autogen/mocs_compilation.cpp.o[0m
+[ 54%] Built target dolphinstatic_autogen
+[ 55%] [32mBuilding CXX object src/CMakeFiles/dolphinpart.dir/dolphindebug.cpp.o[0m
+[ 55%] [1m[34mGenerating dolphin_folderspanelsettings.h, dolphin_folderspanelsettings.cpp[0m
+[ 56%] [1m[34mGenerating dolphin_placespanelsettings.h, dolphin_placespanelsettings.cpp[0m
+[ 56%] [1m[34mGenerating dolphin_searchsettings.h, dolphin_searchsettings.cpp[0m
+[ 57%] [1m[34mGenerating dolphinmainwindowadaptor.cpp, dolphinmainwindowadaptor.h[0m
+[ 58%] [1m[34mAutomatic RCC for dolphin.qrc[0m
+[ 58%] [1m[34mGenerating kiofuse_interface.cpp, kiofuse_interface.h[0m
+[ 58%] [1m[34mGenerating moc_dolphinmainwindowadaptor.cpp[0m
+[ 59%] [1m[34mGenerating moc_kiofuse_interface.cpp[0m
+[ 60%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinstatic_autogen/mocs_compilation.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/settings/kcm/kcmdolphingeneral.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/settings/interface/folderstabssettingspage.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/CMakeFiles/dolphinpart.dir/dolphinpart_autogen/EWIEGA46WW/qrc_dolphinpart.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/admin/bar.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/settings/interface/statusandlocationbarssettingspage.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/admin/workerintegration.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/animatedheightwidget.cpp.o[0m
+[ 63%] [1m[32mLinking CXX shared module ../bin/kcm_dolphinviewmodes.so[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/settings/interface/previewssettingspage.cpp.o[0m
+[ 63%] Built target kcm_dolphinviewmodes
+[ 63%] [1m[32mLinking CXX shared module ../bin/dolphinpart.so[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/disabledactionnotifier.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/settings/interface/confirmationssettingspage.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinbookmarkhandler.cpp.o[0m
+[ 64%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/settings/settingspagebase.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphindockwidget.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/settings/servicemodel.cpp.o[0m
+[ 66%] Built target dolphinpart
+[ 66%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinmainwindow.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinviewcontainer.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/dolphin_generalsettings.cpp.o[0m
+[ 68%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/dolphindebug.cpp.o[0m
+[ 68%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/dolphinmainwindowinterface.cpp.o[0m
+[ 68%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/views/viewproperties.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/dolphin_directoryviewpropertysettings.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/CMakeFiles/kcm_dolphingeneral.dir/global.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphincontextmenu.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinnavigatorswidgetaction.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphintabbar.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinpackageinstaller.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinplacesmodelsingleton.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinrecenttabsmenu.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphintabpage.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphintabwidget.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinurlnavigator.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinurlnavigatorscontroller.cpp.o[0m
+[ 73%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/trash/dolphintrash.cpp.o[0m
+[ 74%] [1m[32mLinking CXX shared module ../bin/kcm_dolphingeneral.so[0m
+[ 74%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/filterbar/filterbar.cpp.o[0m
+[ 74%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/kitemviews/kfileitemlisttostring.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/panels/places/placespanel.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/panels/panel.cpp.o[0m
+[ 76%] Built target kcm_dolphingeneral
+[ 77%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/panels/folders/foldersitemlistwidget.cpp.o[0m
+[ 77%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/panels/folders/treeviewcontextmenu.cpp.o[0m
+[ 77%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/panels/folders/folderspanel.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/panels/terminal/terminalpanel.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/bar.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/barsecondrowflowlayout.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/chip.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/dolphinquery.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/popup.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/selectors/dateselector.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/selectors/filetypeselector.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/selectors/minimumratingselector.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/selectors/tagsselector.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/search/widgetmenu.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/selectionmode/actiontexthelper.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/selectionmode/actionwithwidget.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/selectionmode/backgroundcolorhelper.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/selectionmode/bottombar.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/selectionmode/bottombarcontentscontainer.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/selectionmode/topbar.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/interface/folderstabssettingspage.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/interface/statusandlocationbarssettingspage.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/interface/confirmationssettingspage.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/interface/interfacesettingspage.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/interface/previewssettingspage.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/dolphinsettingsdialog.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/contextmenu/contextmenusettingspage.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/settingspagebase.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/servicemodel.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/trash/trashsettingspage.cpp.o[0m
+[ 88%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/viewmodes/dolphinfontrequester.cpp.o[0m
+[ 88%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/viewmodes/viewsettingspage.cpp.o[0m
+[ 88%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/viewmodes/viewmodesettings.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/viewmodes/viewsettingstab.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/viewmodes/contentdisplaytab.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/viewmodes/generalviewsettingspage.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/statusbar/diskspaceusagemenu.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/statusbar/dolphinstatusbar.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/statusbar/mountpointobserver.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/statusbar/mountpointobservercache.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/statusbar/spaceinfoobserver.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/statusbar/statusbarspaceinfo.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/views/zoomlevelinfo.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphindebug.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/global.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/userfeedback/dolphinfeedbackprovider.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/userfeedback/settingsdatasource.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/userfeedback/placesdatasource.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/settings/userfeedback/userfeedbacksettingspage.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/servicemenushortcutmanager.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphin_folderspanelsettings.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphin_placespanelsettings.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphin_searchsettings.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinmainwindowadaptor.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinmainwindowinterface.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/kiofuse_interface.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/dolphinstatic.dir/dolphinstatic_autogen/EWIEGA46WW/qrc_dolphin.cpp.o[0m
+[ 98%] [1m[32mLinking CXX static library ../lib/libdolphinstatic.a[0m
+[ 98%] Built target dolphinstatic
+[ 98%] Built target dolphin_autogen_timestamp_deps
+[ 99%] [1m[34mAutomatic MOC for target dolphin[0m
+[ 99%] Built target dolphin_autogen
+[100%] [32mBuilding CXX object src/CMakeFiles/dolphin.dir/main.cpp.o[0m
+[100%] [32mBuilding CXX object src/CMakeFiles/dolphin.dir/dbusinterface.cpp.o[0m
+[100%] [32mBuilding CXX object src/CMakeFiles/dolphin.dir/dolphin_autogen/mocs_compilation.cpp.o[0m
+[100%] [1m[32mLinking CXX executable ../bin/dolphin[0m
+[100%] Built target dolphin
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/libdolphinvcs.so.26.04.1
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/libdolphinvcs.so.6
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/libdolphinvcs.so
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/include/dolphinvcs_export.h
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/include/Dolphin/KVersionControlPlugin
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/include/Dolphin/kversioncontrolplugin.h
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/libdolphinprivate.so.26.04.1
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/libdolphinprivate.so.6
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/dolphin-52/output/usr/lib64/libdolphinprivate.so.26.04.1" to ""
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/include/dolphin_export.h
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib/qt6/plugins/kf6/parts/dolphinpart.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/dolphin-52/output/usr/lib/qt6/plugins/kf6/parts/dolphinpart.so" to ""
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/dolphin/dolphinpartactions.desktop
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/icons/hicolor/scalable/apps/org.kde.dolphin.svg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/dbus-1/interfaces/org.freedesktop.FileManager1.xml
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/bin/dolphin
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/dolphin-52/output/usr/bin/dolphin" to ""
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/metainfo/org.kde.dolphin.appdata.xml
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib/qt6/plugins/dolphin/kcms/kcm_dolphinviewmodes.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/dolphin-52/output/usr/lib/qt6/plugins/dolphin/kcms/kcm_dolphinviewmodes.so" to ""
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib/qt6/plugins/dolphin/kcms/kcm_dolphingeneral.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/dolphin-52/output/usr/lib/qt6/plugins/dolphin/kcms/kcm_dolphingeneral.so" to ""
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/bin/servicemenuinstaller
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/knsrcfiles/servicemenu.knsrc
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/applications/org.kde.dolphin.desktop
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/kglobalaccel
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/config.kcfg/dolphin_directoryviewpropertysettings.kcfg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/config.kcfg/dolphin_generalsettings.kcfg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/config.kcfg/dolphin_contextmenusettings.kcfg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/config.kcfg/dolphin_compactmodesettings.kcfg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/config.kcfg/dolphin_iconsmodesettings.kcfg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/config.kcfg/dolphin_detailsmodesettings.kcfg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/config.kcfg/dolphin_versioncontrolsettings.kcfg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/kconf_update/dolphin_detailsmodesettings.upd
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/kconf_update/dolphin_statusandlocationbarssettings.upd
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/kconf_update/dolphin_replace_view_mode_with_view_settings_in_toolbar.upd
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/kconf_update/dolphin_replace_view_mode_with_view_settings_in_toolbar.py
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/kconf_update_bin/dolphin_25.04_update_statusandlocationbarssettings
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/kconf_update_bin/dolphin_update_splitviewsettings
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib/qt6/plugins/kf6/kfileitemaction/movetonewfolderitemaction.so
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib/qt6/plugins/kf6/kfileitemaction/hidefileitemaction.so
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib/qt6/plugins/kf6/kfileitemaction/setfoldericonitemaction.so
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/cmake/DolphinVcs/DolphinVcsConfig.cmake
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/cmake/DolphinVcs/DolphinVcsConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/cmake/DolphinVcs/DolphinVcsTargets.cmake
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib64/cmake/DolphinVcs/DolphinVcsTargets-release.cmake
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/include/Dolphin/dolphinvcs_version.h
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/dbus-1/services/org.kde.dolphin.FileManager1.service
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/lib/systemd/user/plasma-dolphin.service
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/qlogging-categories6/dolphin.categories
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fr/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fr/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pl/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pl/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/wa
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/wa/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ia/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ia/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/kn
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/kn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/kn/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/zh_CN/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/zh_CN/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/be/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/be/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/th/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sk/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sk/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bs/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pt_BR/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pt_BR/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nn/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nn/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ga/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ga/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/lt/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/lt/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ka/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ka/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uz@cyrillic
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uz@cyrillic/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/se/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ro/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ro/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/he/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/he/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ca@valencia/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ca@valencia/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/kk/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/it/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/it/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/my
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/my/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/my/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/my/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nds/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/da/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/da/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ta/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ta/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nl/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nl/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nb/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/nb/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/or
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/or/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/or/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr@latin/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ru/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ru/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pt/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pt/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hsb/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/az/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/az/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ug/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uz
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uz/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uz/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/es/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/es/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/mai
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/mai/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/si
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/si/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/si/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sa/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sa/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fi/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fi/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/en_GB/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/en_GB/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/vi/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/vi/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/is/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/is/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ja/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ja/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fy
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fy/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fa
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/fa/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/zh_TW/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/zh_TW/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/mr/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/tg/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ast/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ast/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/el/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/el/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bn_IN
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bn_IN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bn_IN/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/mk
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/mk/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/lv/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/lv/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/be@latin
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/be@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/be@latin/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/id/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/id/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/eo/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/eo/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/eu/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/eu/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/te
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/te/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/te/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sl/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sl/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ku
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ku/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/et/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/et/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hi/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hi/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hr/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/csb
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/csb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/csb/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sv/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sv/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ko/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ko/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sq
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/sq/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pa/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/pa/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bg/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bg/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uk/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/uk/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ie
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ie/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ie/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ml/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ml/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ar/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ar/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/cs/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/cs/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/km/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/gl/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/gl/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hu/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hu/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ne
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ne/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hne
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/hne/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/tr/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/tr/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ca/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ca/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/oc
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/oc/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/ms/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/gu
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/gu/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bn
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/bn/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/de/LC_MESSAGES/dolphin.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/locale/de/LC_MESSAGES/dolphin_servicemenuinstaller.mo
+-- Installing: /var/tmp/hokuto/dolphin-52/output/usr/share/zsh/site-functions/_dolphin
+
+Script done on 2026-05-08 09:11:11+07:00 [COMMAND_EXIT_CODE="0"]
