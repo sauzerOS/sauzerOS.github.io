@@ -1,0 +1,609 @@
+Script started on 2026-05-08 09:05:16+07:00 [COMMAND="cd /var/tmp/hokuto/ark-81/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/ark-81/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/ark-81/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/ark-81/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/ark-81/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/ark-81/build/.cache' /repo/kde/ark/build /var/tmp/hokuto/ark-81/output 26.04.1 ark" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.25.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.25.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.25.0")
+-- Found KF6FileMetaData: /usr/lib64/cmake/KF6FileMetaData/KF6FileMetaDataConfig.cmake (found version "6.25.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.25.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.25.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.25.0")
+-- Found KF6Parts: /usr/lib64/cmake/KF6Parts/KF6PartsConfig.cmake (found version "6.25.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.25.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.25.0")
+-- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found suitable version "6.25.0", minimum required is "6.3.0") found components: Config Crash DBusAddons FileMetaData I18n KIO Service Parts WidgetsAddons WindowSystem IconThemes
+-- Found KF6Pty: /usr/lib64/cmake/KF6Pty/KF6PtyConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found suitable version "6.25.0", minimum required is "6.3.0") found components: Pty
+-- Found LibArchive: /usr/lib/libarchive.so (found suitable version "3.8.7", minimum required is "3.3.3")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Found LibZip: /usr/lib/libzip.so (found suitable version "1.11.4", minimum required is "1.3.0")
+[33mCMake Warning at plugins/libarchive/CMakeLists.txt:56 (message):
+  Could not find the lrzip executable.  Ark requires lrzip to handle the
+  tar.lrz archive format.
+
+[0m
+[33mCMake Warning at plugins/libarchive/CMakeLists.txt:63 (message):
+  Could not find the lzop executable.  Ark requires lzop to handle the
+  tar.lzo archive format if libarchive >= 3.3 has been compiled without
+  liblzo2 support.
+
+[0m
+-- Found zstd executable: /usr/bin/zstd
+-- Found unrar executable: /usr/bin/unrar
+-- Found rar executable: /usr/bin/rar
+-- Found 7-Zip executable: /usr/bin/7z
+-- Found unzip executable: /usr/bin/unzip
+-- Found zip executable: /usr/bin/zip
+[33mCMake Warning at plugins/cliunarchiverplugin/CMakeLists.txt:28 (message):
+  Could not find the unar executable.  Ark requires unar or unrar to extract
+  RAR archives.
+
+[0m
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+[33mCMake Warning at plugins/cliarjplugin/CMakeLists.txt:25 (message):
+  Could not find the arj executable.  Ark won't be able to handle the arj
+  archive format.
+
+[0m
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Qt6Concurrent (required version >= 6.6.0)
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.11.0)
+ * Qt6QmlTools (required version >= 6.11.0)
+ * WrapVulkanHeaders
+ * Qt6Gui (required version >= 6.9.0)
+ * Qt6CoreTools (required version >= 6.11.0)
+ * Qt6GuiTools (required version >= 6.11.0)
+ * Qt6WidgetsTools (required version >= 6.11.0)
+ * Qt6Widgets (required version >= 6.9.0)
+ * PkgConfig
+ * LibZip (required version >= 1.3.0), A library for handling zip archives, <https://nih.at/libzip/>
+   Optional for zip archives.
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.3.0)
+ * Qt6 (required version >= 6.6.0)
+ * KF6Crash (required version >= 6.3.0)
+ * KF6DBusAddons (required version >= 6.3.0)
+ * KF6FileMetaData (required version >= 6.3.0)
+ * Gettext
+ * KF6I18n (required version >= 6.3.0)
+ * KF6Config (required version >= 6.25.0)
+ * KF6Service (required version >= 6.3.0)
+ * KF6KIO (required version >= 6.25.0)
+ * KF6Parts (required version >= 6.3.0)
+ * KF6WidgetsAddons (required version >= 6.3.0)
+ * KF6WindowSystem (required version >= 6.3.0)
+ * KF6IconThemes (required version >= 6.3.0)
+ * KF6Pty (required version >= 6.3.0)
+ * KF6 (required version >= 6.3.0)
+ * LibArchive (required version >= 3.3.3), A library for dealing with a wide variety of archive file formats, <https://www.libarchive.org/>
+   Required for among others tar, tar.gz, tar.bz2 formats in Ark.
+ * ZLIB, The Zlib compression library, <https://www.zlib.net/>
+   Required for integrity check in libzip plugin
+
+-- Configuring done (3.6s)
+-- Generating done (0.2s)
+-- Build files have been written to: /var/tmp/hokuto/ark-81/build/build
+[  0%] [1m[34mGenerating settings.h, settings.cpp[0m
+[  2%] [1m[34mGenerating mo...[0m
+[  2%] [1m[34mGenerating ts...[0m
+[  2%] Built target kerfuffle_autogen_timestamp_deps
+[  2%] Built target tsfiles-f2766ed115b7da1db6600dd4d84f0ef2
+[  3%] [1m[34mAutomatic MOC for target kerfuffle[0m
+[  3%] Built target pofiles-f2766ed115b7da1db6600dd4d84f0ef2
+[  3%] Built target kerfuffle_autogen
+[  3%] [1m[34mGenerating ui_propertiesdialog.h[0m
+[  3%] [1m[34mGenerating ui_createdialog.h[0m
+[  4%] [1m[34mGenerating ui_extractiondialog.h[0m
+[  5%] [1m[34mGenerating ui_extractionsettingspage.h[0m
+[  5%] [1m[34mGenerating ui_generalsettingspage.h[0m
+[  6%] [1m[34mGenerating ui_previewsettingspage.h[0m
+[  7%] [1m[34mGenerating ui_compressionoptionswidget.h[0m
+[  8%] [1m[34mGenerating ui_pluginsettingspage.h[0m
+[ 10%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/kerfuffle_autogen/mocs_compilation.cpp.o[0m
+[ 10%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/archiveformat.cpp.o[0m
+[ 10%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/generalsettingspage.cpp.o[0m
+[ 11%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/archiveinterface.cpp.o[0m
+[ 12%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/extractionsettingspage.cpp.o[0m
+[ 13%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/settingsdialog.cpp.o[0m
+[ 14%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/previewsettingspage.cpp.o[0m
+[ 14%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/archive_kerfuffle.cpp.o[0m
+[ 15%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/settingspage.cpp.o[0m
+[ 15%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/jobs.cpp.o[0m
+[ 16%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/adddialog.cpp.o[0m
+[ 17%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/compressionoptionswidget.cpp.o[0m
+[ 17%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/createdialog.cpp.o[0m
+[ 18%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/extractiondialog.cpp.o[0m
+[ 19%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/propertiesdialog.cpp.o[0m
+[ 19%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/queries.cpp.o[0m
+[ 20%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/addtoarchive.cpp.o[0m
+[ 21%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/cliinterface.cpp.o[0m
+[ 21%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/cliproperties.cpp.o[0m
+[ 22%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/mimetypes.cpp.o[0m
+[ 23%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/plugin.cpp.o[0m
+[ 23%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/pluginmanager.cpp.o[0m
+[ 24%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/pluginsettingspage.cpp.o[0m
+[ 25%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/archiveentry.cpp.o[0m
+[ 26%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/options.cpp.o[0m
+[ 26%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/qstringtokenizer.cpp.o[0m
+[ 27%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/metadatabackup.cpp.o[0m
+[ 28%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/settings.cpp.o[0m
+[ 28%] [32mBuilding CXX object kerfuffle/CMakeFiles/kerfuffle.dir/ark_debug.cpp.o[0m
+[ 29%] [1m[32mLinking CXX shared library ../bin/libkerfuffle.so[0m
+[ 29%] Built target kerfuffle
+[ 29%] Built target ark_autogen_timestamp_deps
+[ 29%] Built target kerfuffle_clizip_autogen_timestamp_deps
+[ 29%] Built target kerfuffle_cliunarchiver_autogen_timestamp_deps
+[ 29%] Built target kerfuffle_libarchive_autogen_timestamp_deps
+[ 29%] Built target kerfuffle_libzip_autogen_timestamp_deps
+[ 29%] Built target kerfuffle_clirar_autogen_timestamp_deps
+[ 29%] Built target kerfuffle_cli7z_autogen_timestamp_deps
+[ 29%] Built target kerfuffle_libarchive_readonly_autogen_timestamp_deps
+[ 29%] Built target kerfuffle_cliarj_autogen_timestamp_deps
+[ 29%] Built target arkpart_autogen_timestamp_deps
+[ 29%] [1m[34mAutomatic MOC for target kerfuffle_clizip[0m
+[ 29%] Built target extracthere_autogen_timestamp_deps
+[ 29%] Built target compressfileitemaction_autogen_timestamp_deps
+[ 30%] [1m[34mAutomatic MOC for target kerfuffle_cli7z[0m
+[ 31%] [1m[34mAutomatic MOC for target kerfuffle_libzip[0m
+[ 31%] Built target extractfileitemaction_autogen_timestamp_deps
+[ 33%] [1m[34mAutomatic MOC for target kerfuffle_libarchive[0m
+[ 33%] [1m[34mAutomatic MOC for target kerfuffle_cliunarchiver[0m
+[ 34%] [1m[34mAutomatic MOC for target ark[0m
+[ 35%] [1m[34mAutomatic MOC for target kerfuffle_libarchive_readonly[0m
+[ 35%] [1m[34mAutomatic MOC for target arkpart[0m
+[ 36%] [1m[34mAutomatic MOC for target kerfuffle_cliarj[0m
+[ 37%] [1m[34mAutomatic MOC for target kerfuffle_clirar[0m
+[ 37%] Built target ark_autogen
+[ 38%] [1m[34mAutomatic MOC for target extracthere[0m
+[ 38%] Built target kerfuffle_libarchive_autogen
+[ 38%] Built target kerfuffle_libzip_autogen
+[ 39%] [1m[34mAutomatic MOC for target compressfileitemaction[0m
+[ 39%] Built target kerfuffle_cli7z_autogen
+[ 40%] [1m[34mAutomatic MOC for target extractfileitemaction[0m
+[ 41%] [32mBuilding CXX object plugins/libarchive/CMakeFiles/kerfuffle_libarchive.dir/kerfuffle_libarchive_autogen/mocs_compilation.cpp.o[0m
+[ 41%] [32mBuilding CXX object plugins/libarchive/CMakeFiles/kerfuffle_libarchive.dir/libarchiveplugin.cpp.o[0m
+[ 41%] Built target kerfuffle_clirar_autogen
+[ 41%] Built target kerfuffle_cliunarchiver_autogen
+[ 42%] [32mBuilding CXX object plugins/libarchive/CMakeFiles/kerfuffle_libarchive.dir/readwritelibarchiveplugin.cpp.o[0m
+[ 42%] Built target kerfuffle_clizip_autogen
+[ 43%] [32mBuilding CXX object plugins/cli7zplugin/CMakeFiles/kerfuffle_cli7z.dir/kerfuffle_cli7z_autogen/mocs_compilation.cpp.o[0m
+[ 44%] [32mBuilding CXX object plugins/libarchive/CMakeFiles/kerfuffle_libarchive.dir/ark_debug.cpp.o[0m
+[ 44%] [32mBuilding CXX object plugins/cli7zplugin/CMakeFiles/kerfuffle_cli7z.dir/cliplugin.cpp.o[0m
+[ 44%] Built target kerfuffle_libarchive_readonly_autogen
+[ 45%] [32mBuilding CXX object plugins/cli7zplugin/CMakeFiles/kerfuffle_cli7z.dir/ark_debug.cpp.o[0m
+[ 45%] Built target arkpart_autogen
+[ 45%] Built target kerfuffle_cliarj_autogen
+[ 45%] [32mBuilding CXX object plugins/libzipplugin/CMakeFiles/kerfuffle_libzip.dir/kerfuffle_libzip_autogen/mocs_compilation.cpp.o[0m
+[ 45%] [1m[34mGenerating ui_jobtracker.h[0m
+[ 46%] [1m[34mAutomatic RCC for arkpart.qrc[0m
+[ 47%] [32mBuilding CXX object plugins/libzipplugin/CMakeFiles/kerfuffle_libzip.dir/libzipplugin.cpp.o[0m
+[ 47%] [1m[34mGenerating dnddbusinterfaceadaptor.cpp, dnddbusinterfaceadaptor.h[0m
+[ 48%] [1m[34mGenerating ui_arkviewer.h[0m
+[ 49%] [1m[34mGenerating ui_infopanel.h[0m
+[ 50%] [1m[34mGenerating moc_dnddbusinterfaceadaptor.cpp[0m
+[ 51%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/arkpart_autogen/mocs_compilation.cpp.o[0m
+[ 51%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/factory.cpp.o[0m
+[ 51%] Built target extracthere_autogen
+[ 51%] [1m[34mGenerating ui_welcomeview.h[0m
+[ 52%] [1m[34mAutomatic RCC for ark.qrc[0m
+[ 53%] [32mBuilding CXX object app/CMakeFiles/ark.dir/ark_autogen/mocs_compilation.cpp.o[0m
+[ 53%] [32mBuilding CXX object app/CMakeFiles/ark.dir/main.cpp.o[0m
+[ 53%] Built target compressfileitemaction_autogen
+[ 54%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/part.cpp.o[0m
+[ 54%] Built target extractfileitemaction_autogen
+[ 55%] [32mBuilding CXX object app/CMakeFiles/ark.dir/batchextract.cpp.o[0m
+[ 56%] [32mBuilding CXX object app/CMakeFiles/ark.dir/mainwindow.cpp.o[0m
+[01m[K/var/tmp/hokuto/ark-81/build/plugins/libzipplugin/libzipplugin.cpp:[m[K In member function ‘[01m[Kvirtual bool LibzipPlugin::[01;32m[KcopyFiles[m[K(const QList<Kerfuffle::Archive::Entry*>&, Kerfuffle::Archive::Entry*, const Kerfuffle::CompressionOptions&)[m[K’:
+[01m[K/var/tmp/hokuto/ark-81/build/plugins/libzipplugin/libzipplugin.cpp:1084:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kzip_source_t*[01;32m[K zip_source_zip[m[K(zip_t*, zip_t*, zip_uint64_t, zip_flags_t, zip_uint64_t, zip_int64_t)[m[K’ is deprecated: use 'zip_source_zip_file' instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 1084 |         zip_source_t *src = [01;35m[Kzip_source_zip(archive.get(), archive.get(), srcIndex, 0, 0, -1)[m[K;
+      |                             [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/ark-81/build/plugins/libzipplugin/libzipplugin.h:12[m[K,
+                 from [01m[K/var/tmp/hokuto/ark-81/build/plugins/libzipplugin/libzipplugin.cpp:8[m[K:
+[01m[K/usr/include/zip.h:402:88:[m[K [01;36m[Knote: [m[Kdeclared here
+  402 | ZIP_DEPRECATED("use 'zip_source_zip_file' instead") ZIP_EXTERN zip_source_t *_Nullable [01;36m[Kzip_source_zip[m[K(zip_t *_Nonnull, zip_t *_Nonnull, zip_uint64_t, zip_flags_t, zip_uint64_t, zip_int64_t);
+      |                                                                                        [01;36m[K^~~~~~~~~~~~~~[m[K
+[ 57%] [32mBuilding CXX object app/CMakeFiles/extracthere.dir/extracthere_autogen/mocs_compilation.cpp.o[0m
+[ 58%] [32mBuilding CXX object app/CMakeFiles/extracthere.dir/batchextract.cpp.o[0m
+[ 59%] [1m[32mLinking CXX shared module ../../bin/kerfuffle/kerfuffle_cli7z.so[0m
+[ 60%] [32mBuilding CXX object app/CMakeFiles/compressfileitemaction.dir/compressfileitemaction_autogen/mocs_compilation.cpp.o[0m
+[ 61%] [32mBuilding CXX object app/CMakeFiles/compressfileitemaction.dir/compressfileitemaction.cpp.o[0m
+[ 61%] [32mBuilding CXX object app/CMakeFiles/ark.dir/welcomeview/welcomeview.cpp.o[0m
+[ 62%] [32mBuilding CXX object plugins/libzipplugin/CMakeFiles/kerfuffle_libzip.dir/ark_debug.cpp.o[0m
+[ 63%] [32mBuilding CXX object app/CMakeFiles/extracthere.dir/extractHereDndPlugin.cpp.o[0m
+[ 63%] [1m[32mLinking CXX shared module ../../bin/kerfuffle/kerfuffle_libarchive.so[0m
+[ 64%] Built target kerfuffle_cli7z
+[ 64%] [32mBuilding CXX object app/CMakeFiles/extracthere.dir/ark_debug.cpp.o[0m
+In member function ‘[01m[KinitializeNewFileCompressionOptions[m[K’,
+    inlined from ‘[01m[KinitializeWriter[m[K’ at [01m[K/var/tmp/hokuto/ark-81/build/plugins/libarchive/readwritelibarchiveplugin.cpp:230:49[m[K:
+[01m[K/var/tmp/hokuto/ark-81/build/plugins/libarchive/readwritelibarchiveplugin.cpp:362:53:[m[K [01;35m[Kwarning: [m[K‘[01m[Kret[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  362 |     if ((requiresExecutable && ret != ARCHIVE_WARN) || (!requiresExecutable && ret != ARCHIVE_OK)) {
+      |                                                     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/ark-81/build/plugins/libarchive/readwritelibarchiveplugin.cpp:[m[K In member function ‘[01m[KinitializeWriter[m[K’:
+[01m[K/var/tmp/hokuto/ark-81/build/plugins/libarchive/readwritelibarchiveplugin.cpp:303:9:[m[K [01;36m[Knote: [m[K‘[01m[Kret[m[K’ was declared here
+  303 |     int ret;
+      |         [01;36m[K^[m[K
+[ 64%] [1m[32mLinking CXX shared module ../../bin/kerfuffle/kerfuffle_libzip.so[0m
+[ 65%] [32mBuilding CXX object app/CMakeFiles/ark.dir/welcomeview/recentfilesmodel.cpp.o[0m
+[ 66%] [32mBuilding CXX object app/CMakeFiles/ark.dir/ark_debug.cpp.o[0m
+[ 67%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/infopanel.cpp.o[0m
+[ 67%] [32mBuilding CXX object app/CMakeFiles/extractfileitemaction.dir/extractfileitemaction_autogen/mocs_compilation.cpp.o[0m
+[ 68%] [32mBuilding CXX object app/CMakeFiles/extractfileitemaction.dir/extractfileitemaction.cpp.o[0m
+[ 69%] [32mBuilding CXX object app/CMakeFiles/extractfileitemaction.dir/batchextract.cpp.o[0m
+[ 69%] [32mBuilding CXX object app/CMakeFiles/extractfileitemaction.dir/ark_debug.cpp.o[0m
+[ 70%] [1m[32mLinking CXX shared module ../bin/kf6/kio_dnd/extracthere.so[0m
+[ 71%] Built target kerfuffle_libarchive
+[ 71%] [32mBuilding CXX object app/CMakeFiles/ark.dir/ark_autogen/EWIEGA46WW/qrc_ark.cpp.o[0m
+[ 71%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/arkviewer.cpp.o[0m
+[ 72%] Built target kerfuffle_libzip
+[ 72%] [32mBuilding CXX object plugins/libarchive/CMakeFiles/kerfuffle_libarchive_readonly.dir/kerfuffle_libarchive_readonly_autogen/mocs_compilation.cpp.o[0m
+[ 73%] [32mBuilding CXX object plugins/libarchive/CMakeFiles/kerfuffle_libarchive_readonly.dir/libarchiveplugin.cpp.o[0m
+[ 73%] Built target extracthere
+[ 74%] [32mBuilding CXX object plugins/libarchive/CMakeFiles/kerfuffle_libarchive_readonly.dir/readonlylibarchiveplugin.cpp.o[0m
+[ 75%] [32mBuilding CXX object plugins/clirarplugin/CMakeFiles/kerfuffle_clirar.dir/kerfuffle_clirar_autogen/mocs_compilation.cpp.o[0m
+[ 76%] [32mBuilding CXX object plugins/clirarplugin/CMakeFiles/kerfuffle_clirar.dir/cliplugin.cpp.o[0m
+[ 77%] [1m[32mLinking CXX executable ../bin/ark[0m
+[ 77%] [1m[32mLinking CXX shared module ../bin/kf6/kfileitemaction/compressfileitemaction.so[0m
+[ 78%] Built target compressfileitemaction
+[ 79%] [32mBuilding CXX object plugins/clirarplugin/CMakeFiles/kerfuffle_clirar.dir/ark_debug.cpp.o[0m
+[ 80%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/archivemodel.cpp.o[0m
+[ 81%] [32mBuilding CXX object plugins/libarchive/CMakeFiles/kerfuffle_libarchive_readonly.dir/ark_debug.cpp.o[0m
+[ 81%] [32mBuilding CXX object plugins/clizipplugin/CMakeFiles/kerfuffle_clizip.dir/kerfuffle_clizip_autogen/mocs_compilation.cpp.o[0m
+[ 82%] [32mBuilding CXX object plugins/clizipplugin/CMakeFiles/kerfuffle_clizip.dir/cliplugin.cpp.o[0m
+[ 83%] [32mBuilding CXX object plugins/clizipplugin/CMakeFiles/kerfuffle_clizip.dir/ark_debug.cpp.o[0m
+[ 84%] [1m[32mLinking CXX shared module ../bin/kf6/kfileitemaction/extractfileitemaction.so[0m
+[ 85%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/archivesortfiltermodel.cpp.o[0m
+[ 86%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/archiveview.cpp.o[0m
+[ 86%] [32mBuilding CXX object plugins/cliunarchiverplugin/CMakeFiles/kerfuffle_cliunarchiver.dir/kerfuffle_cliunarchiver_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object plugins/cliunarchiverplugin/CMakeFiles/kerfuffle_cliunarchiver.dir/cliplugin.cpp.o[0m
+[ 88%] Built target extractfileitemaction
+[ 89%] [32mBuilding CXX object plugins/cliarjplugin/CMakeFiles/kerfuffle_cliarj.dir/kerfuffle_cliarj_autogen/mocs_compilation.cpp.o[0m
+[ 90%] [32mBuilding CXX object plugins/cliarjplugin/CMakeFiles/kerfuffle_cliarj.dir/cliplugin.cpp.o[0m
+[ 90%] Built target ark
+[ 90%] [32mBuilding CXX object plugins/cliarjplugin/CMakeFiles/kerfuffle_cliarj.dir/ark_debug.cpp.o[0m
+[ 90%] [1m[32mLinking CXX shared module ../../bin/kerfuffle/kerfuffle_libarchive_readonly.so[0m
+[ 90%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/jobtracker.cpp.o[0m
+[ 91%] [32mBuilding CXX object plugins/cliunarchiverplugin/CMakeFiles/kerfuffle_cliunarchiver.dir/ark_debug.cpp.o[0m
+[ 91%] [1m[32mLinking CXX shared module ../../bin/kerfuffle/kerfuffle_clirar.so[0m
+[ 92%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/overwritedialog.cpp.o[0m
+[ 93%] [1m[32mLinking CXX shared module ../../bin/kerfuffle/kerfuffle_clizip.so[0m
+[ 94%] Built target kerfuffle_libarchive_readonly
+[ 95%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/ark_debug.cpp.o[0m
+[ 95%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/dnddbusinterfaceadaptor.cpp.o[0m
+[ 96%] [32mBuilding CXX object part/CMakeFiles/arkpart.dir/arkpart_autogen/EWIEGA46WW/qrc_arkpart.cpp.o[0m
+[ 97%] Built target kerfuffle_clizip
+[ 97%] Built target kerfuffle_clirar
+[ 97%] [1m[32mLinking CXX shared module ../../bin/kerfuffle/kerfuffle_cliunarchiver.so[0m
+[ 98%] [1m[32mLinking CXX shared module ../../bin/kerfuffle/kerfuffle_cliarj.so[0m
+[ 99%] Built target kerfuffle_cliunarchiver
+[ 99%] Built target kerfuffle_cliarj
+[100%] [1m[32mLinking CXX shared module ../bin/arkpart.so[0m
+[100%] Built target arkpart
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_libarchive_readonly.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_libarchive_readonly.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_libarchive.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_libarchive.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_clirar.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_clirar.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_cli7z.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_cli7z.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_clizip.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_clizip.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_cliunarchiver.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_cliunarchiver.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_libzip.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_libzip.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_cliarj.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kerfuffle/kerfuffle_cliarj.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib64/libkerfuffle.so.26.04.1
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib64/libkerfuffle.so.26
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/config.kcfg/ark.kcfg
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kf6/parts/arkpart.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kf6/parts/arkpart.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/icons/hicolor/48x48/apps/ark.png
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/icons/hicolor/64x64/apps/ark.png
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/icons/hicolor/128x128/apps/ark.png
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/icons/hicolor/scalable/apps/ark.svgz
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/bin/ark
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/bin/ark" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/applications/org.kde.ark.desktop
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/metainfo/org.kde.ark.appdata.xml
+-- Installing: /var/tmp/hokuto/ark-81/output/etc/xdg/arkrc
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kf6/kio_dnd/extracthere.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kf6/kio_dnd/extracthere.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kf6/kfileitemaction/compressfileitemaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kf6/kfileitemaction/compressfileitemaction.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kf6/kfileitemaction/extractfileitemaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/ark-81/output/usr/lib/qt6/plugins/kf6/kfileitemaction/extractfileitemaction.so" to ""
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/fr/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pl/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ia/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/zh_CN/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/be/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/th/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sk/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/bs/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pt_BR/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nn/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ga/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/lt/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ka/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/uz@cyrillic
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/uz@cyrillic/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/se/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ro/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/he/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ca@valencia/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/kk/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/it/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nds/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/da/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ta/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nl/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/zh_HK
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/zh_HK/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/zh_HK/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/nb/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr@latin/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ru/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pt/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/az/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ug/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/uz
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/uz/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/uz/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/es/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sa/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/fi/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/en_GB/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/is/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ja/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/fa
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/fa/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/zh_TW/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/mr/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/tg/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ast/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/el/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/mk
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/mk/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/lv/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/id/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/eo/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/eu/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sl/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ku
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ku/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/et/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hi/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hr/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/cy
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/cy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/cy/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sv/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/xh
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/xh/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/xh/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ko/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sq
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/sq/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/pa/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/bg/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/af
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/af/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/af/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/uk/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ie
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ie/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/br
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/br/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/br/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ar/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/cs/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/km/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/gl/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hu/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ne
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ne/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hne
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/hne/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/tr/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ca/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/oc
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/oc/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/ms/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/locale/de/LC_MESSAGES/ark.mo
+-- Installing: /var/tmp/hokuto/ark-81/output/usr/share/qlogging-categories6/ark.categories
+
+Script done on 2026-05-08 09:05:54+07:00 [COMMAND_EXIT_CODE="0"]
