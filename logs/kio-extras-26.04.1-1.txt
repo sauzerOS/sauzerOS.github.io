@@ -1,0 +1,1940 @@
+Script started on 2026-05-08 09:13:58+07:00 [COMMAND="cd /var/tmp/hokuto/kio-extras-35/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/kio-extras-35/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/kio-extras-35/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/kio-extras-35/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/kio-extras-35/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/kio-extras-35/build/.cache' /repo/kde/kio-extras/build /var/tmp/hokuto/kio-extras-35/output 26.04.1 kio-extras" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:19 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found KF6Archive: /usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake (found version "6.25.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.25.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.25.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.25.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.25.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.25.0")
+-- Found KF6SyntaxHighlighting: /usr/lib64/cmake/KF6SyntaxHighlighting/KF6SyntaxHighlightingConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found suitable version "6.25.0", minimum required is "6.0.0") found components: Archive Config CoreAddons I18n KIO Solid SyntaxHighlighting
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found suitable version "6.25.0", minimum required is "6.0.0") found components: KCMUtils
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found suitable version "6.25.0", minimum required is "6.0.0") found components: DBusAddons
+-- Found KF6Notifications: /usr/lib64/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found suitable version "6.25.0", minimum required is "6.0.0") found components: Notifications
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'libproxy-1.0'
+--   Found libproxy-1.0, version 0.5.12
+-- Checking for module 'smbclient'
+--   Found smbclient, version 0.8.1
+-- Looking for smbc_set_context
+-- Looking for smbc_set_context - found
+-- Looking for smbc_option_set
+-- Looking for smbc_option_set - found
+-- Found samba: /usr/lib/libsmbclient.so
+-- Could NOT find libssh (missing: libssh_DIR)
+-- Could NOT find Libmtp (missing: Libmtp_LIBRARIES Libmtp_INCLUDE_DIRS) (Required is at least version "1.1.2")
+-- Found IMobileDevice: /usr/include (found version "1.4.0")
+-- Found PList: /usr/include (found version "2.7.0")
+-- Looking for utime.h
+-- Looking for utime.h - found
+-- Performing Test OFFT_IS_64BIT
+-- Performing Test OFFT_IS_64BIT - Success
+-- Found Gperf: /usr/bin/gperf (found version "3.3")
+-- Checking for module 'libtirpc'
+--   Found libtirpc, version 1.3.7
+-- Found TIRPC: /usr/lib/libtirpc.so (found version "1.3.7")
+-- Performing Test _flag_present
+-- Performing Test _flag_present - Success
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Looking for include file termios.h
+-- Looking for include file termios.h - found
+-- Looking for include file util.h
+-- Looking for include file util.h - not found
+-- Looking for include file sys/ioctl.h
+-- Looking for include file sys/ioctl.h - found
+-- Looking for include file pty.h
+-- Looking for include file pty.h - found
+-- Looking for include files sys/types.h, libutil.h
+-- Looking for include files sys/types.h, libutil.h - not found
+-- Looking for getpt
+-- Looking for getpt - found
+-- Looking for grantpt
+-- Looking for grantpt - found
+-- Looking for openpty in util
+-- Looking for openpty in util - found
+-- Looking for isastream in util
+-- Looking for isastream in util - not found
+-- Could NOT find OpenEXR (missing: OpenEXR_ILMIMF_LIBRARY OpenEXR_HALF_LIBRARY OpenEXR_IEX_LIBRARY OpenEXR_IMATH_LIBRARY OpenEXR_ILMTHREAD_LIBRARY OpenEXR_INCLUDE_DIR) 
+-- Could NOT find libappimage (missing: libappimage_DIR)
+-- Found Taglib: /usr/lib64/libtag.so (found suitable version "2.2.1", minimum required is "1.11")
+-- Found KF6Codecs: /usr/lib64/cmake/KF6Codecs/KF6CodecsConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found version "6.25.0") found components: Codecs
+-- Looking for xdr_u_int64_t
+-- Looking for xdr_u_int64_t - found
+-- Looking for xdr_uint64_t
+-- Looking for xdr_uint64_t - found
+-- Looking for xdr_u_hyper
+-- Looking for xdr_u_hyper - found
+-- Looking for xdr_u_longlong_t
+-- Looking for xdr_u_longlong_t - found
+-- Found KF6DNSSD: /usr/lib64/cmake/KF6DNSSD/KF6DNSSDConfig.cmake (found version "6.25.0")
+-- Found KF6: success (found suitable version "6.25.0", minimum required is "6.0.0") found components: DNSSD
+-- Found Threads: TRUE
+-- Looking for smbc_readdirplus2
+-- Looking for smbc_readdirplus2 - found
+-- Found SharedMimeInfo: /usr/bin/update-mime-database (found suitable version "2.4", minimum required is "1.3")
+-- The following features have been enabled:
+
+ * libproxy, libproxy for WPAD problem detection (kcm_proxy)
+
+-- The following OPTIONAL packages have been found:
+
+ * OpenGL
+ * Qt6Svg (required version >= 6.5.0)
+ * Qt6DBusTools (required version >= 6.11.0)
+ * Qt6QmlTools (required version >= 6.11.0)
+ * Qt6WidgetsTools (required version >= 6.11.0)
+ * Qt6Widgets (required version >= 6.9.0)
+ * Samba, the SMB client library, a version with smbc_set_context() and smbc_option_set(), <https://www.samba.org/>
+   Needed to build the SMB KIO worker
+ * IMobileDevice, library to communicate with iOS devices, <https://www.libimobiledevice.org/>
+   Needed to build the AFC (Apple File Conduit) KIO worker
+ * PList, library to handle Apple property list format, <https://www.libimobiledevice.org/>
+   Needed to build the AFC (Apple File Conduit) KIO worker
+ * Gperf, Perfect hash function generator, <https://www.gnu.org/software/gperf/>
+   Needed to build the man KIO worker
+ * TIRPC
+   Needed to build the NFS KIO worker
+ * X11, X11 libraries, <https://www.x.org>
+   Provides support for XCursor thumbnails
+ * Taglib (required version >= 1.11), A library for reading and editing the meta-data of audio formats, <https://taglib.org/>
+   Provides support for audio thumbnails
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.11.0)
+ * Qt6Gui (required version >= 6.5.0)
+ * KExiv2Qt6
+   Provides support for extracting JPEG thumbnails
+ * Qt6CoreTools (required version >= 6.11.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.0.0)
+ * KF6Archive (required version >= 6.0.0)
+ * Gettext
+ * KF6I18n (required version >= 6.0.0)
+ * KF6CoreAddons (required version >= 6.25.0)
+ * KF6Config (required version >= 6.25.0)
+ * KF6KIO (required version >= 6.0.0)
+ * KF6Solid (required version >= 6.0.0)
+ * KF6SyntaxHighlighting (required version >= 6.0.0)
+ * KF6KCMUtils (required version >= 6.0.0)
+ * Qt6 (required version >= 6.5.0)
+ * KF6DBusAddons (required version >= 6.0.0)
+ * KF6Notifications (required version >= 6.0.0)
+ * Qt6Sql
+ * PlasmaActivities
+ * PlasmaActivitiesStats
+ * KF6Codecs
+ * KF6DNSSD (required version >= 6.0.0)
+ * KF6 (required version >= 6.0.0)
+ * Qt6Network (required version >= 6.0.0)
+ * KDSoapWSDiscoveryClient
+ * Threads
+ * SharedMimeInfo (required version >= 1.3), A database of common MIME types, <https://freedesktop.org/wiki/Software/shared-mime-info/>
+   Used to update the mimetype database
+
+-- The following OPTIONAL packages have not been found:
+
+ * libssh (required version >= 0.9.8), the SSH library with SFTP support, <https://www.libssh.org/>
+   Needed to build the SFTP KIO worker
+ * Libmtp (required version >= 1.1.2), libmtp, an Initiator implementation of the Media Transfer Protocol (MTP), <http://libmtp.sourceforge.net/>
+   Needed to build the MTP KIO worker
+ * OpenEXR, A library for handling OpenEXR high dynamic-range image files, <https://www.openexr.com/>
+   Provides support for OpenEXR formatted images in the thumbnail KIO worker
+ * libappimage (required version >= 0.1.10), Core library of the AppImage project, <https://github.com/AppImage/libappimage>
+   Provides support for AppImage thumbnails
+
+-- Configuring done (6.0s)
+-- Generating done (0.4s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_PYTHON_BINDINGS
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/kio-extras-35/build/build
+[  0%] Built target wpad-detector-helper_autogen_timestamp_deps
+[  0%] [1m[34mGenerating ts...[0m
+[  0%] Built target wpad-detector_autogen_timestamp_deps
+[  0%] [1m[34mGenerating mo...[0m
+[  0%] Built target kio_activities_a_autogen_timestamp_deps
+[  0%] Built target kio_activities_autogen_timestamp_deps
+[  0%] Built target kcm_webshortcuts-kcm-desktop-gen
+[  0%] Built target kcm_netpref-kcm-desktop-gen
+[  0%] Built target kcm_trash-kcm-desktop-gen
+[  0%] Built target kcm_proxy-kcm-desktop-gen
+[  0%] Built target forgetfileitemaction_autogen_timestamp_deps
+[  0%] Built target kactivitymanagerd_fileitem_linking_plugin_autogen_timestamp_deps
+[  0%] Built target kio_filter_autogen_timestamp_deps
+[  0%] Built target recentlyused_autogen_timestamp_deps
+[  0%] Built target kio_info_autogen_timestamp_deps
+[  0%] Built target kioarchive6_autogen_timestamp_deps
+[  0%] Built target tsfiles-e6fd5d3a39d07588105840bb82f8df79
+[  0%] Built target kio_thumbnail_autogen_timestamp_deps
+[  0%] Built target kio_fish_autogen_timestamp_deps
+[  0%] Built target imagethumbnail_autogen_timestamp_deps
+[  0%] Built target jpegthumbnail_autogen_timestamp_deps
+[  0%] Built target svgthumbnail_autogen_timestamp_deps
+[  0%] Built target textthumbnail_autogen_timestamp_deps
+[  0%] Built target cursorthumbnail_autogen_timestamp_deps
+[  0%] Built target djvuthumbnail_autogen_timestamp_deps
+[  0%] Built target comicbookthumbnail_autogen_timestamp_deps
+[  0%] Built target windowsexethumbnail_autogen_timestamp_deps
+[  0%] Built target windowsimagethumbnail_autogen_timestamp_deps
+[  0%] Built target kraorathumbnail_autogen_timestamp_deps
+[  0%] Built target audiothumbnail_autogen_timestamp_deps
+[  0%] Built target opendocumentthumbnail_autogen_timestamp_deps
+[  0%] Built target ebookthumbnail_autogen_timestamp_deps
+[  0%] Built target kio_man_debug_autogen_timestamp_deps
+[  0%] Built target kio_filenamesearch_autogen_timestamp_deps
+[  0%] Built target directorythumbnail_autogen_timestamp_deps
+[  0%] Built target filenamesearchmodule_autogen_timestamp_deps
+[  0%] Built target kio_nfs_autogen_timestamp_deps
+[  0%] Built target kio_smb_static_autogen_timestamp_deps
+[  0%] Built target kcm_trash_autogen_timestamp_deps
+[  0%] Built target kio_afc_autogen_timestamp_deps
+[  0%] Built target kcm_webshortcuts_autogen_timestamp_deps
+[  0%] Built target kcm_proxy_autogen_timestamp_deps
+[  0%] [1m[34mAutomatic MOC for target wpad-detector-helper[0m
+[  0%] Built target kcm_netpref_autogen_timestamp_deps
+[  1%] [1m[34mAutomatic MOC for target wpad-detector[0m
+[  2%] [1m[34mAutomatic MOC for target kio_activities[0m
+[  2%] [1m[34mAutomatic MOC for target recentlyused[0m
+[  2%] [1m[34mAutomatic MOC for target kactivitymanagerd_fileitem_linking_plugin[0m
+[  4%] [1m[34mAutomatic MOC for target forgetfileitemaction[0m
+[  4%] [1m[34mAutomatic MOC for target kio_filter[0m
+[  4%] [1m[34mAutomatic MOC for target kio_info[0m
+[  4%] [1m[34mAutomatic MOC for target kio_activities_a[0m
+[  4%] Built target wpad-detector-helper_autogen
+[  4%] [1m[34mAutomatic MOC for target kioarchive6[0m
+[  4%] Built target kioarchive6_autogen
+[  4%] [1m[34mAutomatic MOC for target kio_fish[0m
+[  4%] Built target wpad-detector_autogen
+[  4%] [1m[34mAutomatic MOC for target kio_thumbnail[0m
+AutoMoc: /var/tmp/hokuto/kio-extras-35/build/filter/filter.h: note: No relevant classes found. No output generated.
+[  4%] Built target recentlyused_autogen
+[  4%] Built target forgetfileitemaction_autogen
+[  4%] [1m[34mAutomatic MOC for target imagethumbnail[0m
+[  4%] Built target kio_filter_autogen
+[  5%] [1m[34mAutomatic MOC for target jpegthumbnail[0m
+[  6%] [1m[34mAutomatic MOC for target svgthumbnail[0m
+[  6%] Built target kio_activities_autogen
+[  7%] [1m[34mAutomatic MOC for target textthumbnail[0m
+[  7%] Built target kio_activities_a_autogen
+[  7%] [1m[34mAutomatic MOC for target djvuthumbnail[0m
+[  7%] Built target kio_fish_autogen
+[  7%] Built target kio_info_autogen
+[  7%] Built target kactivitymanagerd_fileitem_linking_plugin_autogen
+[  7%] [1m[34mAutomatic MOC for target cursorthumbnail[0m
+[  7%] [1m[34mAutomatic MOC for target windowsexethumbnail[0m
+[  7%] [1m[34mAutomatic MOC for target windowsimagethumbnail[0m
+[  7%] Built target svgthumbnail_autogen
+[  7%] Built target jpegthumbnail_autogen
+[  7%] [1m[34mAutomatic MOC for target comicbookthumbnail[0m
+[  7%] [1m[34mAutomatic MOC for target kraorathumbnail[0m
+[  7%] Built target textthumbnail_autogen
+[  7%] Built target kio_thumbnail_autogen
+[  7%] [1m[34mAutomatic MOC for target audiothumbnail[0m
+[  7%] Built target imagethumbnail_autogen
+[  8%] [1m[34mAutomatic MOC for target opendocumentthumbnail[0m
+[  8%] [1m[34mAutomatic MOC for target ebookthumbnail[0m
+[  8%] Built target windowsexethumbnail_autogen
+[  8%] Built target windowsimagethumbnail_autogen
+[  8%] Built target djvuthumbnail_autogen
+[  8%] [1m[34mAutomatic MOC for target directorythumbnail[0m
+[  8%] [1m[34mAutomatic MOC for target kio_filenamesearch[0m
+[  9%] [1m[34mAutomatic MOC for target filenamesearchmodule[0m
+[  9%] Built target cursorthumbnail_autogen
+[ 10%] [1m[34mAutomatic MOC for target kio_man_debug[0m
+[ 10%] Built target kio_man_debug_autogen
+[ 10%] [1m[34mAutomatic MOC for target kio_nfs[0m
+[ 10%] Built target comicbookthumbnail_autogen
+[ 10%] Built target audiothumbnail_autogen
+[ 10%] Built target opendocumentthumbnail_autogen
+[ 10%] [1m[34mAutomatic MOC for target kio_smb_static[0m
+[ 10%] Built target kraorathumbnail_autogen
+[ 10%] [1m[34mAutomatic MOC for target kio_afc[0m
+[ 10%] Built target ebookthumbnail_autogen
+[ 10%] [1m[34mAutomatic MOC for target kcm_trash[0m
+[ 10%] Built target directorythumbnail_autogen
+[ 11%] [1m[34mAutomatic MOC for target kcm_webshortcuts[0m
+[ 11%] [1m[34mAutomatic MOC for target kcm_proxy[0m
+[ 12%] [32mBuilding CXX object kcms/proxy/wpad-detector/CMakeFiles/wpad-detector.dir/wpad-detector_autogen/mocs_compilation.cpp.o[0m
+[ 12%] Built target kio_filenamesearch_autogen
+[ 12%] [32mBuilding CXX object kcms/proxy/wpad-detector/CMakeFiles/wpad-detector.dir/module.cpp.o[0m
+[ 12%] [32mBuilding CXX object kcms/proxy/wpad-detector/CMakeFiles/wpad-detector-helper.dir/wpad-detector-helper_autogen/mocs_compilation.cpp.o[0m
+[ 12%] [32mBuilding CXX object kcms/proxy/wpad-detector/CMakeFiles/wpad-detector-helper.dir/main.cpp.o[0m
+[ 12%] Built target filenamesearchmodule_autogen
+[ 12%] [1m[34mAutomatic MOC for target kcm_netpref[0m
+[ 12%] Built target kio_afc_autogen
+[ 12%] Built target kio_nfs_autogen
+[ 12%] [32mBuilding CXX object activities/CMakeFiles/kio_activities.dir/KioActivities.cpp.o[0m
+[ 12%] [32mBuilding CXX object activities/CMakeFiles/kio_activities.dir/kio_activities_autogen/mocs_compilation.cpp.o[0m
+[ 13%] [32mBuilding CXX object activities/CMakeFiles/kio_activities.dir/KioActivitiesApi.cpp.o[0m
+[ 13%] Built target kcm_webshortcuts_autogen
+[ 13%] Built target kio_smb_static_autogen
+[ 13%] [32mBuilding CXX object activities/CMakeFiles/kio_activities_a.dir/kio_activities_a_autogen/mocs_compilation.cpp.o[0m
+[ 14%] [32mBuilding CXX object activities/fileitemplugin/CMakeFiles/kactivitymanagerd_fileitem_linking_plugin.dir/kactivitymanagerd_fileitem_linking_plugin_autogen/mocs_compilation.cpp.o[0m
+[ 14%] [32mBuilding CXX object activities/CMakeFiles/kio_activities_a.dir/KioActivities.cpp.o[0m
+[ 14%] [32mBuilding CXX object activities/fileitemplugin/CMakeFiles/kactivitymanagerd_fileitem_linking_plugin.dir/FileItemLinkingPlugin.cpp.o[0m
+[ 14%] Built target kcm_proxy_autogen
+[ 14%] [32mBuilding CXX object activities/CMakeFiles/kio_activities.dir/utils/qsqlquery_iterator.cpp.o[0m
+[ 14%] Built target kcm_trash_autogen
+[ 14%] [32mBuilding CXX object activities/CMakeFiles/kio_activities.dir/common/database/Database.cpp.o[0m
+[ 14%] Built target kcm_netpref_autogen
+[ 15%] [32mBuilding CXX object activities/CMakeFiles/kio_activities_a.dir/KioActivitiesApi.cpp.o[0m
+[ 15%] Built target pofiles-e6fd5d3a39d07588105840bb82f8df79
+[ 16%] [32mBuilding CXX object activities/CMakeFiles/kio_activities.dir/common/database/schema/ResourcesDatabaseSchema.cpp.o[0m
+[ 17%] [1m[32mLinking CXX executable ../../../bin/wpad-detector-helper[0m
+[ 18%] Built target wpad-detector-helper
+[ 18%] [32mBuilding CXX object activities/fileitemplugin/CMakeFiles/kactivitymanagerd_fileitem_linking_plugin.dir/FileItemLinkingPluginActionLoader.cpp.o[0m
+[01m[K/var/tmp/hokuto/kio-extras-35/build/activities/common/database/Database.cpp:[m[K In member function ‘[01m[KQSqlQuery Common::Database::[01;32m[KexecQuery[m[K(const QString&, bool) const[m[K’:
+[01m[K/var/tmp/hokuto/kio-extras-35/build/activities/common/database/Database.cpp:224:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KignoreErrors[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  224 | QSqlQuery Database::execQuery(const QString &query, [01;35m[Kbool ignoreErrors[m[K) const
+      |                                                     [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[ 18%] [32mBuilding CXX object activities/CMakeFiles/kio_activities_a.dir/utils/qsqlquery_iterator.cpp.o[0m
+[ 19%] [32mBuilding CXX object recentlyused/CMakeFiles/recentlyused.dir/recentlyused_autogen/mocs_compilation.cpp.o[0m
+[ 19%] [32mBuilding CXX object recentlyused/CMakeFiles/recentlyused.dir/recentlyused.cpp.o[0m
+[ 20%] [32mBuilding CXX object activities/fileitemplugin/CMakeFiles/kactivitymanagerd_fileitem_linking_plugin.dir/__/utils/qsqlquery_iterator.cpp.o[0m
+[ 20%] [32mBuilding CXX object recentlyused/CMakeFiles/recentlyused.dir/recentlyused-logsettings.cpp.o[0m
+[ 20%] [32mBuilding CXX object recentlyused/CMakeFiles/forgetfileitemaction.dir/forgetfileitemaction_autogen/mocs_compilation.cpp.o[0m
+[ 21%] [32mBuilding CXX object recentlyused/CMakeFiles/forgetfileitemaction.dir/forgetfileitemaction.cpp.o[0m
+[ 21%] [32mBuilding CXX object filter/CMakeFiles/kio_filter.dir/kio_filter_autogen/mocs_compilation.cpp.o[0m
+[ 22%] [32mBuilding CXX object filter/CMakeFiles/kio_filter.dir/filter.cpp.o[0m
+[ 23%] [32mBuilding CXX object info/CMakeFiles/kio_info.dir/kio_info_autogen/mocs_compilation.cpp.o[0m
+[ 23%] [32mBuilding CXX object info/CMakeFiles/kio_info.dir/info.cpp.o[0m
+[01m[K/var/tmp/hokuto/kio-extras-35/build/activities/fileitemplugin/FileItemLinkingPluginActionLoader.cpp:[m[K In member function ‘[01m[Kvirtual void FileItemLinkingPluginActionLoader::[01;32m[Krun[m[K()[m[K’:
+[01m[K/var/tmp/hokuto/kio-extras-35/build/activities/fileitemplugin/FileItemLinkingPluginActionLoader.cpp:83:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QSqlField::[01;32m[KsetType[m[K(QVariant::Type)[m[K’ is deprecated: Use setMetaType() instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   83 |                 [01;35m[Kfield.setType(QVariant::String)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtSql/QSqlField:1[m[K,
+                 from [01m[K/var/tmp/hokuto/kio-extras-35/build/activities/fileitemplugin/FileItemLinkingPluginActionLoader.cpp:20[m[K:
+[01m[K/usr/include/qt6/QtSql/qsqlfield.h:76:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   76 |     void [01;36m[KsetType[m[K(QVariant::Type type) { setMetaType(QMetaType(int(type))); }
+      |          [01;36m[K^~~~~~~[m[K
+[ 23%] [1m[32mLinking CXX shared module ../bin/activities.so[0m
+[ 24%] [32mBuilding CXX object info/CMakeFiles/kio_info.dir/kio_info_debug.cpp.o[0m
+[ 24%] [1m[32mLinking CXX shared module ../../../bin/kf6/kded/wpad-detector.so[0m
+[ 25%] Built target kio_activities
+[ 25%] [32mBuilding CXX object filter/CMakeFiles/kio_filter.dir/loggingcategory.cpp.o[0m
+[ 25%] Built target wpad-detector
+[ 26%] [32mBuilding CXX object archive/CMakeFiles/kioarchive6.dir/kioarchive6_autogen/mocs_compilation.cpp.o[0m
+[ 26%] [32mBuilding CXX object archive/CMakeFiles/kioarchive6.dir/kio_archivebase.cpp.o[0m
+[ 26%] [32mBuilding CXX object activities/CMakeFiles/kio_activities_a.dir/common/database/Database.cpp.o[0m
+[ 26%] [1m[32mLinking CXX shared module ../../bin/kactivitymanagerd_fileitem_linking_plugin.so[0m
+[ 27%] [32mBuilding CXX object activities/CMakeFiles/kio_activities_a.dir/common/database/schema/ResourcesDatabaseSchema.cpp.o[0m
+[ 27%] [32mBuilding CXX object archive/CMakeFiles/kioarchive6.dir/kio_archive_debug.cpp.o[0m
+[ 28%] [1m[32mLinking CXX shared module ../bin/kf6/kio/recentlyused.so[0m
+[ 28%] [1m[32mLinking CXX shared module ../bin/kf6/kfileitemaction/forgetfileitemaction.so[0m
+[ 28%] Built target kactivitymanagerd_fileitem_linking_plugin
+[ 28%] [1m[34mGenerating fishcode.h[0m
+[ 29%] [32mBuilding CXX object fish/CMakeFiles/kio_fish.dir/kio_fish_autogen/mocs_compilation.cpp.o[0m
+[ 29%] [32mBuilding CXX object fish/CMakeFiles/kio_fish.dir/fish.cpp.o[0m
+[ 29%] Built target forgetfileitemaction
+[ 29%] [32mBuilding CXX object fish/CMakeFiles/kio_fish.dir/loggingcategory.cpp.o[0m
+[ 29%] [1m[32mLinking CXX shared module ../bin/filter.so[0m
+[ 29%] Built target recentlyused
+[ 29%] [32mBuilding CXX object thumbnail/CMakeFiles/kio_thumbnail.dir/kio_thumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 29%] [32mBuilding CXX object thumbnail/CMakeFiles/kio_thumbnail.dir/thumbnail.cpp.o[0m
+[ 30%] Built target kio_filter
+[01m[K/var/tmp/hokuto/kio-extras-35/build/activities/common/database/Database.cpp:[m[K In member function ‘[01m[KQSqlQuery Common::Database::[01;32m[KexecQuery[m[K(const QString&, bool) const[m[K’:
+[01m[K/var/tmp/hokuto/kio-extras-35/build/activities/common/database/Database.cpp:224:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KignoreErrors[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  224 | QSqlQuery Database::execQuery(const QString &query, [01;35m[Kbool ignoreErrors[m[K) const
+      |                                                     [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[ 30%] [32mBuilding CXX object thumbnail/CMakeFiles/imagethumbnail.dir/imagethumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 31%] [32mBuilding CXX object thumbnail/CMakeFiles/imagethumbnail.dir/imagecreator.cpp.o[0m
+[ 32%] [32mBuilding CXX object thumbnail/CMakeFiles/kio_thumbnail.dir/imagefilter.cpp.o[0m
+[ 33%] [1m[34mGenerating jpegcreatorsettings5.h, jpegcreatorsettings5.cpp[0m
+[ 33%] [32mBuilding CXX object thumbnail/CMakeFiles/jpegthumbnail.dir/jpegthumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 34%] [32mBuilding CXX object thumbnail/CMakeFiles/jpegthumbnail.dir/jpegcreator.cpp.o[0m
+[ 34%] [1m[32mLinking CXX shared module ../bin/info.so[0m
+[ 34%] [32mBuilding CXX object thumbnail/CMakeFiles/jpegthumbnail.dir/jpegcreatorsettings5.cpp.o[0m
+[ 34%] [1m[32mLinking CXX static library ../lib/libkio_activities_a.a[0m
+[ 35%] Built target kio_activities_a
+[ 36%] [32mBuilding CXX object thumbnail/CMakeFiles/svgthumbnail.dir/svgthumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 36%] [32mBuilding CXX object thumbnail/CMakeFiles/svgthumbnail.dir/svgcreator.cpp.o[0m
+[ 37%] [1m[32mLinking CXX shared library ../bin/libkioarchive6.so[0m
+[ 37%] Built target kio_info
+[ 37%] [32mBuilding CXX object thumbnail/CMakeFiles/textthumbnail.dir/textthumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 38%] [32mBuilding CXX object thumbnail/CMakeFiles/textthumbnail.dir/textcreator.cpp.o[0m
+[ 39%] [32mBuilding CXX object thumbnail/CMakeFiles/djvuthumbnail.dir/djvuthumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 39%] [32mBuilding CXX object thumbnail/CMakeFiles/djvuthumbnail.dir/djvucreator.cpp.o[0m
+[ 39%] Built target kioarchive6
+[ 39%] [32mBuilding CXX object thumbnail/CMakeFiles/cursorthumbnail.dir/cursorthumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 40%] [32mBuilding CXX object thumbnail/CMakeFiles/cursorthumbnail.dir/cursorcreator.cpp.o[0m
+[ 40%] [32mBuilding CXX object thumbnail/CMakeFiles/djvuthumbnail.dir/thumbnail-djvu-logsettings.cpp.o[0m
+[ 41%] [1m[32mLinking CXX shared module ../bin/fish.so[0m
+[ 41%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/imagethumbnail.so[0m
+[ 41%] [32mBuilding CXX object thumbnail/CMakeFiles/kio_thumbnail.dir/thumbnail-logsettings.cpp.o[0m
+[ 41%] Built target imagethumbnail
+[ 42%] [32mBuilding CXX object thumbnail/CMakeFiles/windowsexethumbnail.dir/windowsexethumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 42%] [32mBuilding CXX object thumbnail/CMakeFiles/windowsexethumbnail.dir/windowsexecreator.cpp.o[0m
+[ 42%] [32mBuilding CXX object thumbnail/CMakeFiles/windowsexethumbnail.dir/icoutils.cpp.o[0m
+[ 42%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/svgthumbnail.so[0m
+[ 42%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/textthumbnail.so[0m
+[ 42%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/cursorthumbnail.so[0m
+[ 43%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/djvuthumbnail.so[0m
+[ 43%] Built target svgthumbnail
+[ 43%] [32mBuilding CXX object thumbnail/CMakeFiles/windowsimagethumbnail.dir/windowsimagethumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 43%] [32mBuilding CXX object thumbnail/CMakeFiles/windowsimagethumbnail.dir/windowsimagecreator.cpp.o[0m
+[ 43%] Built target kio_fish
+[ 43%] [32mBuilding CXX object thumbnail/CMakeFiles/comicbookthumbnail.dir/comicbookthumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 43%] [32mBuilding CXX object thumbnail/CMakeFiles/comicbookthumbnail.dir/comiccreator.cpp.o[0m
+[ 43%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/jpegthumbnail.so[0m
+[ 44%] Built target cursorthumbnail
+[ 44%] Built target textthumbnail
+[ 46%] [32mBuilding CXX object thumbnail/CMakeFiles/windowsimagethumbnail.dir/icoutils.cpp.o[0m
+[ 46%] [32mBuilding CXX object thumbnail/CMakeFiles/windowsexethumbnail.dir/exeutils.cpp.o[0m
+[ 46%] Built target djvuthumbnail
+[ 46%] [32mBuilding CXX object thumbnail/CMakeFiles/windowsimagethumbnail.dir/exeutils.cpp.o[0m
+[ 46%] Built target jpegthumbnail
+[ 47%] [32mBuilding CXX object thumbnail/CMakeFiles/comicbookthumbnail.dir/thumbnail-comic-logsettings.cpp.o[0m
+[ 48%] [32mBuilding CXX object thumbnail/CMakeFiles/kraorathumbnail.dir/kraorathumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 48%] [32mBuilding CXX object thumbnail/CMakeFiles/kraorathumbnail.dir/kritacreator.cpp.o[0m
+[ 49%] [1m[32mLinking CXX shared module ../bin/thumbnail.so[0m
+[ 49%] [32mBuilding CXX object thumbnail/CMakeFiles/audiothumbnail.dir/audiothumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 50%] [32mBuilding CXX object thumbnail/CMakeFiles/audiothumbnail.dir/audiocreator.cpp.o[0m
+[ 51%] [32mBuilding CXX object thumbnail/CMakeFiles/opendocumentthumbnail.dir/opendocumentthumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 51%] [32mBuilding CXX object thumbnail/CMakeFiles/opendocumentthumbnail.dir/opendocumentcreator.cpp.o[0m
+[ 51%] [32mBuilding CXX object thumbnail/CMakeFiles/ebookthumbnail.dir/ebookthumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 51%] [32mBuilding CXX object thumbnail/CMakeFiles/ebookthumbnail.dir/ebookcreator.cpp.o[0m
+[ 51%] [32mBuilding CXX object thumbnail/CMakeFiles/directorythumbnail.dir/directorythumbnail_autogen/mocs_compilation.cpp.o[0m
+[ 51%] [32mBuilding CXX object thumbnail/CMakeFiles/directorythumbnail.dir/directorycreator.cpp.o[0m
+[ 51%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/windowsexethumbnail.so[0m
+[ 51%] [32mBuilding CXX object filenamesearch/CMakeFiles/kio_filenamesearch.dir/kio_filenamesearch_autogen/mocs_compilation.cpp.o[0m
+[ 51%] [32mBuilding CXX object filenamesearch/CMakeFiles/kio_filenamesearch.dir/kio_filenamesearch.cpp.o[0m
+[ 52%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/kraorathumbnail.so[0m
+[ 52%] Built target kraorathumbnail
+[ 53%] [32mBuilding CXX object filenamesearch/CMakeFiles/kio_filenamesearch.dir/kio_filenamesearch_debug.cpp.o[0m
+[ 54%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/windowsimagethumbnail.so[0m
+[ 55%] Built target kio_thumbnail
+[ 56%] [32mBuilding CXX object filenamesearch/kded/CMakeFiles/filenamesearchmodule.dir/filenamesearchmodule_autogen/mocs_compilation.cpp.o[0m
+[ 56%] [32mBuilding CXX object filenamesearch/kded/CMakeFiles/filenamesearchmodule.dir/filenamesearchmodule.cpp.o[0m
+[ 56%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/audiothumbnail.so[0m
+[ 57%] Built target windowsimagethumbnail
+[ 57%] Built target windowsexethumbnail
+[ 57%] [32mBuilding CXX object man/CMakeFiles/kio_man_debug.dir/kio_man_debug_autogen/mocs_compilation.cpp.o[0m
+[ 57%] [32mBuilding CXX object man/CMakeFiles/kio_man_debug.dir/kio_man_debug.cpp.o[0m
+[ 57%] [32mBuilding CXX object nfs/CMakeFiles/kio_nfs.dir/kio_nfs_autogen/mocs_compilation.cpp.o[0m
+[ 58%] [32mBuilding CXX object nfs/CMakeFiles/kio_nfs.dir/kio_nfs.cpp.o[0m
+[ 58%] Built target audiothumbnail
+[ 58%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/kio_smb_static_autogen/mocs_compilation.cpp.o[0m
+[ 58%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/kio_smb.cpp.o[0m
+[ 58%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/comicbookthumbnail.so[0m
+[ 58%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/opendocumentthumbnail.so[0m
+[ 58%] [32mBuilding CXX object nfs/CMakeFiles/kio_nfs.dir/nfsv3.cpp.o[0m
+[ 59%] Built target comicbookthumbnail
+[ 59%] Built target opendocumentthumbnail
+[ 60%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/kio_afc_autogen/mocs_compilation.cpp.o[0m
+[ 60%] [32mBuilding CXX object kcms/trash/CMakeFiles/kcm_trash.dir/kcm_trash_autogen/mocs_compilation.cpp.o[0m
+[ 60%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/kio_afc.cpp.o[0m
+[ 60%] [32mBuilding CXX object kcms/trash/CMakeFiles/kcm_trash.dir/kcmtrash.cpp.o[0m
+[ 60%] [1m[32mLinking CXX shared module ../bin/kf6/kio/kio_filenamesearch.so[0m
+[ 61%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/ebookthumbnail.so[0m
+[ 61%] [1m[32mLinking CXX shared module ../../bin/filenamesearchmodule.so[0m
+[ 62%] Built target kio_man_debug
+[ 62%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afcurl.cpp.o[0m
+[ 63%] [1m[32mLinking CXX shared module ../bin/kf6/thumbcreator/directorythumbnail.so[0m
+[ 64%] Built target directorythumbnail
+[ 64%] [32mBuilding C object nfs/CMakeFiles/kio_nfs.dir/rpc_nfs3_prot_xdr.c.o[0m
+[ 64%] Built target filenamesearchmodule
+[ 65%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/kio_smb_auth.cpp.o[0m
+[ 65%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/kio_smb_browse.cpp.o[0m
+[ 66%] Built target ebookthumbnail
+[ 67%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afcutils.cpp.o[0m
+[ 68%] Built target kio_filenamesearch
+[ 68%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/kio_smb_config.cpp.o[0m
+[ 69%] [32mBuilding CXX object nfs/CMakeFiles/kio_nfs.dir/kio_nfs_debug.cpp.o[0m
+[ 69%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afcdevice.cpp.o[0m
+[ 70%] [1m[34mGenerating ui_searchproviderdlg_ui.h[0m
+[ 70%] [1m[34mGenerating ui_ikwsopts_ui.h[0m
+[ 70%] [32mBuilding CXX object kcms/webshortcuts/CMakeFiles/kcm_webshortcuts.dir/kcm_webshortcuts_autogen/mocs_compilation.cpp.o[0m
+[ 71%] [32mBuilding CXX object kcms/webshortcuts/CMakeFiles/kcm_webshortcuts.dir/ikwsopts.cpp.o[0m
+[ 72%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/kio_smb_dir.cpp.o[0m
+[ 73%] [1m[32mLinking CXX shared module ../../bin/kcm_trash.so[0m
+[ 73%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afcclient.cpp.o[0m
+[01m[K/var/tmp/hokuto/kio-extras-35/build/nfs/nfsv3.cpp:[m[K In member function ‘[01m[Kvirtual KIO::WorkerResult NFSProtocolV3::[01;32m[KopenConnection[m[K()[m[K’:
+[01m[K/var/tmp/hokuto/kio-extras-35/build/nfs/nfsv3.cpp:239:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KexportsCount[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  239 |     int [01;35m[KexportsCount[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~~~[m[K
+[ 73%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/kio_smb_file.cpp.o[0m
+[ 73%] [32mBuilding CXX object kcms/webshortcuts/CMakeFiles/kcm_webshortcuts.dir/searchprovider.cpp.o[0m
+[ 74%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afcfile.cpp.o[0m
+[ 74%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afcapp.cpp.o[0m
+[ 74%] [32mBuilding CXX object kcms/webshortcuts/CMakeFiles/kcm_webshortcuts.dir/searchproviderdlg.cpp.o[0m
+[ 75%] Built target kcm_trash
+[ 75%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afcdiskusage.cpp.o[0m
+[ 75%] [1m[32mLinking CXX shared module ../bin/nfs.so[0m
+[ 76%] [32mBuilding CXX object kcms/webshortcuts/CMakeFiles/kcm_webshortcuts.dir/searchproviderregistry.cpp.o[0m
+[ 76%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/smburl.cpp.o[0m
+[ 76%] [1m[34mGenerating ui_kproxydlg.h[0m
+[ 77%] [1m[34mGenerating kioslave.h, kioslave.cpp[0m
+[ 77%] [32mBuilding CXX object kcms/proxy/CMakeFiles/kcm_proxy.dir/kcm_proxy_autogen/mocs_compilation.cpp.o[0m
+[ 78%] [32mBuilding CXX object kcms/proxy/CMakeFiles/kcm_proxy.dir/kproxydlg.cpp.o[0m
+[ 78%] [1m[34mGenerating kioslave.h, kioslave.cpp[0m
+[ 79%] [1m[34mGenerating kio_ftprc.h, kio_ftprc.cpp[0m
+[ 80%] [32mBuilding CXX object kcms/netpref/CMakeFiles/kcm_netpref.dir/kcm_netpref_autogen/mocs_compilation.cpp.o[0m
+[ 80%] [32mBuilding CXX object kcms/netpref/CMakeFiles/kcm_netpref.dir/netpref.cpp.o[0m
+[ 81%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/kio_smb_mount.cpp.o[0m
+[ 81%] Built target kio_archive_autogen_timestamp_deps
+[ 81%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/wsdiscoverer.cpp.o[0m
+[ 81%] Built target kio_nfs
+[ 82%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afcfilereader.cpp.o[0m
+[ 82%] Built target kio_man_autogen_timestamp_deps
+[ 82%] [32mBuilding CXX object kcms/proxy/CMakeFiles/kcm_proxy.dir/__/ksaveioconfig.cpp.o[0m
+[ 82%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afcspringboard.cpp.o[0m
+[ 82%] [32mBuilding CXX object afc/CMakeFiles/kio_afc.dir/afc_debug.cpp.o[0m
+[ 83%] [32mBuilding CXX object kcms/netpref/CMakeFiles/kcm_netpref.dir/__/ksaveioconfig.cpp.o[0m
+[ 83%] [32mBuilding CXX object kcms/netpref/CMakeFiles/kcm_netpref.dir/kio_ftprc.cpp.o[0m
+[ 83%] [1m[34mAutomatic MOC for target kio_archive[0m
+[ 83%] [32mBuilding CXX object kcms/netpref/CMakeFiles/kcm_netpref.dir/kioslave.cpp.o[0m
+[ 83%] Built target kio_archive_autogen
+[ 83%] [32mBuilding CXX object kcms/proxy/CMakeFiles/kcm_proxy.dir/kioslave.cpp.o[0m
+[ 84%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/dnssddiscoverer.cpp.o[0m
+[ 84%] [1m[34mAutomatic MOC for target kio_man[0m
+[ 84%] [32mBuilding CXX object archive/CMakeFiles/kio_archive.dir/kio_archive_autogen/mocs_compilation.cpp.o[0m
+[ 84%] [32mBuilding CXX object archive/CMakeFiles/kio_archive.dir/kio_archive.cpp.o[0m
+[ 84%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/systemsettings_qwidgets/kcm_webshortcuts.so[0m
+[ 84%] Built target kio_man_autogen
+[ 85%] [1m[32mLinking CXX shared module ../bin/kf6/kio/afc.so[0m
+[ 86%] [1m[34mGenerating request_gperf.h[0m
+[ 86%] [32mBuilding CXX object man/CMakeFiles/kio_man.dir/kio_man_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object man/CMakeFiles/kio_man.dir/man2html.cpp.o[0m
+[ 87%] [32mBuilding CXX object man/CMakeFiles/kio_man.dir/kio_man.cpp.o[0m
+[ 87%] Built target kio_afc
+[ 87%] [32mBuilding CXX object man/CMakeFiles/kio_man.dir/request_hash.cpp.o[0m
+[ 87%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/discovery.cpp.o[0m
+[ 87%] Built target kcm_webshortcuts
+[ 88%] [32mBuilding CXX object archive/CMakeFiles/kio_archive.dir/kio_archive_debug.cpp.o[0m
+[ 88%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/transfer.cpp.o[0m
+[ 89%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/smbcdiscoverer.cpp.o[0m
+[ 90%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/systemsettings_qwidgets/kcm_proxy.so[0m
+[ 90%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/smbcontext.cpp.o[0m
+[ 90%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/smbauthenticator.cpp.o[0m
+[ 91%] [32mBuilding CXX object smb/CMakeFiles/kio_smb_static.dir/smb-logsettings.cpp.o[0m
+[ 92%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/systemsettings_qwidgets/kcm_netpref.so[0m
+[ 92%] Built target kcm_netpref
+[01m[K/var/tmp/hokuto/kio-extras-35/build/man/man2html.cpp:[m[K In function ‘[01m[Kchar*[01;32m[K scan_escape_direct[m[K(char*, QByteArray&)[m[K’:
+[01m[K/var/tmp/hokuto/kio-extras-35/build/man/man2html.cpp:1873:16:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+ 1873 |         [01;35m[Kcurpos = 0[m[K;
+      |         [01;35m[K~~~~~~~^~~[m[K
+[01m[K/var/tmp/hokuto/kio-extras-35/build/man/man2html.cpp:1874:5:[m[K [01;36m[Knote: [m[Khere
+ 1874 |     [01;36m[Kcase[m[K 'b':
+      |     [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/kio-extras-35/build/man/man2html.cpp:[m[K In function ‘[01m[Kchar*[01;32m[K scan_table[m[K(char*)[m[K’:
+[01m[K/var/tmp/hokuto/kio-extras-35/build/man/man2html.cpp:2483:21:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+ 2483 |                     [01;35m[Kif[m[K (prev->has(ti1))
+      |                     [01;35m[K^~[m[K
+[01m[K/var/tmp/hokuto/kio-extras-35/build/man/man2html.cpp:2485:17:[m[K [01;36m[Knote: [m[Khere
+ 2485 |                 [01;36m[Kdefault[m[K:
+      |                 [01;36m[K^~~~~~~[m[K
+[01m[K/var/tmp/hokuto/kio-extras-35/build/man/man2html.cpp:2525:48:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+ 2525 |                     [01;35m[Kcurrow->at(curfield).space += 4[m[K;
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/var/tmp/hokuto/kio-extras-35/build/man/man2html.cpp:2526:17:[m[K [01;36m[Knote: [m[Khere
+ 2526 |                 [01;36m[Kcase[m[K 'R':
+      |                 [01;36m[K^~~~[m[K
+[ 92%] Built target kcm_proxy
+[ 92%] [1m[32mLinking CXX shared module ../bin/archive.so[0m
+[ 93%] Built target kio_archive
+[ 94%] [1m[32mLinking CXX shared module ../bin/man.so[0m
+[ 94%] [1m[32mLinking CXX static library ../lib/libkio_smb_static.a[0m
+[ 95%] Built target kio_smb_static
+[ 95%] Built target kded-smbwatcher_autogen_timestamp_deps
+[ 95%] Built target smbnotifier_autogen_timestamp_deps
+[ 95%] Built target kio_smb_autogen_timestamp_deps
+[ 95%] [1m[34mAutomatic MOC for target kded-smbwatcher[0m
+[ 95%] [1m[34mAutomatic MOC for target smbnotifier[0m
+[ 95%] [1m[34mAutomatic MOC for target kio_smb[0m
+[ 95%] Built target smbnotifier_autogen
+[ 95%] [32mBuilding CXX object smb/kded/CMakeFiles/smbnotifier.dir/notifier.cpp.o[0m
+[ 95%] [32mBuilding CXX object smb/kded/CMakeFiles/smbnotifier.dir/smbnotifier_autogen/mocs_compilation.cpp.o[0m
+[ 95%] Built target kio_smb_autogen
+[ 95%] [32mBuilding CXX object smb/CMakeFiles/kio_smb.dir/kio_smb_autogen/mocs_compilation.cpp.o[0m
+[ 96%] [32mBuilding CXX object smb/CMakeFiles/kio_smb.dir/main.cpp.o[0m
+[ 96%] Built target kded-smbwatcher_autogen
+[ 97%] [32mBuilding CXX object smb/kded/CMakeFiles/kded-smbwatcher.dir/watcher.cpp.o[0m
+[ 97%] [32mBuilding CXX object smb/kded/CMakeFiles/kded-smbwatcher.dir/kded-smbwatcher_autogen/mocs_compilation.cpp.o[0m
+[ 97%] Built target kio_man
+[ 98%] [1m[32mLinking CXX executable ../../bin/smbnotifier[0m
+[01m[K/var/tmp/hokuto/kio-extras-35/build/smb/kded/watcher.cpp:[m[K In member function ‘[01m[Kbool Watcher::[01;32m[KisInterestingUrl[m[K(const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/kio-extras-35/build/smb/kded/watcher.cpp:147:16:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSMBURLTYPE_PRINTER[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-switch-Wswitch]8;;[m[K]
+  147 |         switch [01;35m[K([m[Kurl.getType()) {
+      |                [01;35m[K^[m[K
+[ 98%] [1m[32mLinking CXX shared module ../bin/kf6/kio/smb.so[0m
+[ 98%] [1m[32mLinking CXX shared module ../../bin/smbwatcher.so[0m
+[ 99%] Built target kio_smb
+[ 99%] Built target kded-smbwatcher
+[100%] Built target smbnotifier
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/applications/kcm_trash.desktop
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kcm_trash.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_webshortcuts.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/applications/kcm_webshortcuts.desktop
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kded/wpad-detector.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/libexec/wpad-detector-helper
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_proxy.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/applications/kcm_proxy.desktop
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_netpref.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/applications/kcm_netpref.desktop
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kfileitemaction/kactivitymanagerd_fileitem_linking_plugin.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/activities.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/recentlyused.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kfileitemaction/forgetfileitemaction.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/filter.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/info.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/kio_info/kde-info2html.conf
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/kio_info/kde-info2html
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib64/cmake/KioArchive6/KioArchive6Config.cmake
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib64/cmake/KioArchive6/KioArchive6ConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib64/cmake/KioArchive6/KioArchiveTargets.cmake
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib64/cmake/KioArchive6/KioArchiveTargets-release.cmake
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/include/KioArchive6/kio_archivebase.h
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/include/KioArchive6/libkioarchive_export.h
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/include/KioArchive6/kioarchive_version.h
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib64/libkioarchive6.so.6.0.0
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib64/libkioarchive6.so.6
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/archive.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/archive.so" to ""
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/fish.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/thumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/imagethumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/jpegthumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/config.kcfg/jpegcreatorsettings5.kcfg
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/svgthumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/textthumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/djvuthumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/cursorthumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/windowsexethumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/windowsimagethumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/comicbookthumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/kraorathumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/audiothumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/opendocumentthumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/ebookthumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/thumbcreator/directorythumbnail.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/kio_filenamesearch.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kded/filenamesearchmodule.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/kio_filenamesearch/kio-filenamesearch-grep
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/man.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/nfs.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/smb.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/konqueror/dirtree/remote/smb-network.desktop
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/remoteview/smb-network.desktop
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/mime/packages/org.kde.kio.smb.xml
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/libexec/kf6/smbnotifier
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kded/smbwatcher.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/lib/qt6/plugins/kf6/kio/afc.so
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/solid/actions/solid_afc.desktop
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/remoteview/afc-network.desktop
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/qlogging-categories6/kio-extras.categories
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/qlogging-categories6/kio-extras.renamecategories
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fr/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pl/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tok
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tok/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tok/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/wa/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ia/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kn/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_CN/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/th/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sk/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bs/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt_BR/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nn/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ga/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lt/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ka/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/se/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ro/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/he/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca@valencia/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/kk/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/it/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/my
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/my/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/my/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nds/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/da/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ta/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nl/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/nb/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/or
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/or/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/or/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/or/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/or/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/or/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/or/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/or/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/or/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@latin/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ru/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pt/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hsb/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/az/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ug/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uz/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/es/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mai/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/si/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sa/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fi/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/en_GB/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/vi/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/is/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ja/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fy/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/fa/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/zh_TW/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hy
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hy/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mr/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tg/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ast/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/el/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn_IN
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn_IN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn_IN/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn_IN/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn_IN/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn_IN/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn_IN/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn_IN/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn_IN/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/mk/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lv/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be@latin
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be@latin/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be@latin/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be@latin/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be@latin/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be@latin/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be@latin/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/be@latin/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/id/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eo/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/eu/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/te
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/te/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/te/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/te/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/te/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/te/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/te/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/te/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/te/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sl/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ku/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/et/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lb
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lb/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/lb/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hi/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hr/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cy
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cy/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cy/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cy/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cy/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cy/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cy/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/csb/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sv/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/xh
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/xh/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/xh/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/xh/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/xh/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/xh/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/xh/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ko/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/sq/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/pa/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bg/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/af/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/uk/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ie
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ie/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ie/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ie/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ml/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/br
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/br/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/br/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/br/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/br/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/br/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/br/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/br/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/br/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ar/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/cs/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/km/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gl/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hu/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ne/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hne
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hne/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hne/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hne/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hne/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hne/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hne/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/hne/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/tr/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ca/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/oc/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gd
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gd/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gd/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/ms/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/gu/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/bn/LC_MESSAGES/kio6_fish.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_recentlyused.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_man.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_sftp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_activities.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio-extras_kcms.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_info.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_thumbnail.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_mtp.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_filenamesearch.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_afc.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_archive.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_smb.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_nfs.mo
+-- Installing: /var/tmp/hokuto/kio-extras-35/output/usr/share/locale/de/LC_MESSAGES/kio6_fish.mo
+
+Script done on 2026-05-08 09:14:48+07:00 [COMMAND_EXIT_CODE="0"]
