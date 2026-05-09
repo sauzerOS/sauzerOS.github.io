@@ -1,0 +1,48 @@
+Script started on 2026-05-09 09:27:03+07:00 [COMMAND="cd /var/tmp/hokuto/fish-05/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/fish-05/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/fish-05/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/fish-05/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/fish-05/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/fish-05/build/.cache' /repo/sauzeros/extra/fish/build /var/tmp/hokuto/fish-05/output 4.7.1 fish" <not executed on terminal>]
+-- The C compiler identification is Clang 22.1.5
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Trying to use PCRE2 from the system
+-- Found Rust: /usr/bin/rustc
+-- The following features have been enabled:
+
+ * Translation, message localization (requires gettext)
+
+-- The following REQUIRED packages have been found:
+
+ * Rust
+
+-- The following features have been disabled:
+
+ * Documentation, user manual and documentation
+
+-- Configuring done (0.3s)
+-- Generating done (0.3s)
+-- Build files have been written to: /var/tmp/hokuto/fish-05/build/build
+[100%] [1m[34mGenerating fish.pc[0m
+[100%] Built target build_fish_pc
+[1m[92m    Updating[0m crates.io index
+[1m[33mwarning[0m: spurious network error (3 tries remaining): [28] Timeout was reached (Connection timed out after 30013 milliseconds)
+[1m[33mwarning[0m: spurious network error (2 tries remaining): [28] Timeout was reached (Connection timed out after 30007 milliseconds)
+[1m[33mwarning[0m: spurious network error (1 try remaining): [28] Timeout was reached (Connection timed out after 30004 milliseconds)
+[1m[92m    Updating[0m git repository `https://github.com/fish-shell/rust-pcre2`
+[1m[33mwarning[0m: spurious network error (3 tries remaining): failed to connect to github.com: Connection timed out; class=Os (2)
+[1m[33mwarning[0m: spurious network error (2 tries remaining): failed to connect to github.com: Network is unreachable; class=Os (2)
+[1m[91merror[0m: failed to get `walkdir` as a dependency of package `xtask v0.0.0 (/var/tmp/hokuto/fish-05/build/crates/xtask)`
+
+Caused by:
+  download of config.json failed
+
+Caused by:
+  failed to download from `https://index.crates.io/config.json`
+
+Caused by:
+  [28] Timeout was reached (Connection timed out after 30017 milliseconds)
+make[2]: *** [CMakeFiles/fish.dir/build.make:70: CMakeFiles/fish] Error 101
+make[1]: *** [CMakeFiles/Makefile2:349: CMakeFiles/fish.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
+
+Script done on 2026-05-09 13:07:24+07:00 [COMMAND_EXIT_CODE="2"]
