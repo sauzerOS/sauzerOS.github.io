@@ -1,0 +1,1299 @@
+Script started on 2026-05-10 10:22:59+07:00 [COMMAND="cd /var/tmp/hokuto/enchant-73/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/enchant-73/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/enchant-73/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/enchant-73/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/enchant-73/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/enchant-73/build/.cache' /repo/sauzeros/extra/enchant/build /var/tmp/hokuto/enchant-73/output 2.8.16 enchant" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for stdbool.h... yes
+checking for getopt.h... yes
+checking for xlocale.h... no
+checking for sys/file.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... gcc-ar
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking dependency style of c++... gcc3
+checking whether c++ supports C++11 features by default... yes
+checking for g++... g++
+checking whether the compiler supports GNU Objective C++... no
+checking whether g++ accepts -g... no
+checking dependency style of g++... gcc3
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether ln -s works... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... c++ -E
+checking for ld used by c++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for c++ option to produce PIC... -fPIC -DPIC
+checking if c++ PIC flag -fPIC -DPIC works... yes
+checking if c++ static flag -static works... yes
+checking if c++ supports -c -o file.o... yes
+checking if c++ supports -c -o file.o... (cached) yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether ctype.h defines __header_inline... no
+checking for symlink... yes
+checking for flock... yes
+checking for fcntl... yes
+checking for _set_invalid_parameter_handler... no
+checking for working fcntl.h... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether getopt is POSIX compatible... yes
+checking for glibc-compatible sys/cdefs.h... yes
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking for unreachable... yes
+checking whether nullptr_t needs <stddef.h>... yes
+checking whether <stddef.h> is idempotent... guessing yes
+checking whether locale.h defines locale_t... yes
+checking whether locale.h defines _locale_t... no
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether struct lconv is properly defined... yes
+checking whether to activate relocatable installation... no
+checking for off64_t... yes
+checking for blksize_t... yes
+checking for blkcnt_t... yes
+checking for C/C++ restrict keyword... __restrict__
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking whether execvpe is declared... yes
+checking for C compiler option to allow warnings... -Wno-error
+checking for bool, true, false... yes
+checking for library needed for dlopen and dlsym... none
+checking for ssize_t... yes
+checking for variable-length arrays... yes
+checking what extension is used for runtime loadable modules... .so
+checking for doxygen... ./configure: line 26386: not: command not found
+no
+checking for gawk... (cached) gawk
+checking for GNU make... make
+checking for valac... /usr/bin/valac
+checking whether /usr/bin/valac supports at least API version 0.56... yes
+checking for glib-2.0 >= 2.76 gmodule-2.0 gobject-2.0 gio-2.0... yes
+checking whether -Wno-missing-field-initializers is needed... no
+checking whether -Wuninitialized is supported... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... no
+checking whether C compiler handles -fanalyzer... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -fstrict-flex-arrays... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wall... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Warith-conversion... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wbad-function-cast... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wcast-align=strict... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wdate-time... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wdouble-promotion... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wduplicated-branches... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wduplicated-cond... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wextra... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat-signedness... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wflex-array-member-not-at-end... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Winit-self... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Winline... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Winvalid-pch... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wlogical-op... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-declarations... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-include-dirs... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-prototypes... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wmissing-variable-declarations... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wnested-externs... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wnull-dereference... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wold-style-definition... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wopenmp-simd... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Woverlength-strings... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wpacked... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wpointer-arith... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wshadow... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstack-protector... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstrict-flex-arrays... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstrict-overflow... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wstrict-prototypes... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=cold... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=const... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=format... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=malloc... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=noreturn... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-attribute=pure... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-final-methods... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsuggest-final-types... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wsync-nand... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wtrampolines... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wuninitialized... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunknown-pragmas... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunsafe-loop-optimizations... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunused-macros... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvariadic-macros... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvector-operation-performance... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvla... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wwrite-strings... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Warray-bounds=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wattribute-alias=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wbidi-chars=any,ucn... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat-overflow=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wformat-truncation=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wimplicit-fallthrough=5... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wshift-overflow=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wuse-after-free=3... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wunused-const-variable=2... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wvla-larger-than=4031... yes
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wthread-safety... no
+checking whether C compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C compiler handles -Wno-analyzer-malloc-leak... yes
+checking whether -Wno-missing-field-initializers is supported... yes
+checking whether -Wno-missing-field-initializers is needed... yes
+checking whether -Wuninitialized is supported... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... no
+checking whether C++ compiler handles -W... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Waddress... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Waggressive-loop-optimizations... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wall... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wattributes... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wbool-compare... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wbuiltin-macro-redefined... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wcast-align... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wchar-subscripts... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wclobbered... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wcomment... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wcomments... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wconditionally-supported... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wconversion-null... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wcoverage-mismatch... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wcpp... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wctor-dtor-privacy... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wdate-time... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wdelete-incomplete... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wdelete-non-virtual-dtor... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wdeprecated... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wdeprecated-declarations... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wdisabled-optimization... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wdiv-by-zero... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wdouble-promotion... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Weffc++... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wempty-body... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wendif-labels... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wenum-compare... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wextra... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wformat-contains-nul... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wformat-extra-args... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wformat-nonliteral... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wformat-security... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wformat-signedness... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wformat-y2k... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wformat-zero-length... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wfree-nonheap-object... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wignored-qualifiers... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Winherited-variadic-ctor... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Winit-self... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Winline... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wint-to-pointer-cast... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Winvalid-memory-model... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Winvalid-offsetof... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Winvalid-pch... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wliteral-suffix... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wlogical-not-parentheses... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wlogical-op... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wmain... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wmaybe-uninitialized... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wmemset-transposed-args... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wmissing-braces... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wmissing-declarations... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wmissing-field-initializers... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wmissing-include-dirs... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wmultichar... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wnarrowing... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wnoexcept... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wnon-template-friend... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wnon-virtual-dtor... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wnonnull... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wodr... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wopenmp-simd... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Woverflow... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Woverlength-strings... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Woverloaded-virtual... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wpacked... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wpacked-bitfield-compat... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wparentheses... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wpmf-conversions... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wpointer-arith... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wpragmas... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wreorder... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wreturn-local-addr... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wreturn-type... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsequence-point... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wshadow... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wshift-count-negative... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wshift-count-overflow... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsign-promo... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsized-deallocation... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsizeof-array-argument... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsizeof-pointer-memaccess... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wstack-protector... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wstrict-aliasing... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wstrict-null-sentinel... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wstrict-overflow... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsuggest-attribute=const... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsuggest-attribute=format... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsuggest-attribute=noreturn... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsuggest-attribute=pure... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsuggest-final-methods... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsuggest-final-types... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsuggest-override... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wswitch... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wswitch-bool... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wsync-nand... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wtrampolines... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wtrigraphs... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wtype-limits... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wuninitialized... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunknown-pragmas... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunsafe-loop-optimizations... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-but-set-parameter... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-but-set-variable... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-function... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-label... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-local-typedefs... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-macros... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-parameter... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-result... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-value... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-variable... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wvarargs... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wvariadic-macros... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wvector-operation-performance... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wvirtual-move-assign... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wvla... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wvolatile-register-var... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wwrite-strings... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wzero-as-null-pointer-constant... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Warray-bounds=2... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wnormalized=nfc... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wshift-overflow=2... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wunused-const-variable=2... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... (cached) no
+checking whether C++ compiler handles -Wno-missing-field-initializers... yes
+checking whether -Wno-missing-field-initializers is needed... (cached) no
+checking whether -Wuninitialized is supported... (cached) yes
+checking whether C compiler handles -fstrict-flex-arrays... (cached) yes
+checking whether C compiler handles -Warith-conversion... (cached) yes
+checking whether C compiler handles -Wbad-function-cast... (cached) yes
+checking whether C compiler handles -Wcast-align=strict... (cached) yes
+checking whether C compiler handles -Wdate-time... (cached) yes
+checking whether C compiler handles -Wdouble-promotion... (cached) yes
+checking whether C compiler handles -Wduplicated-branches... (cached) yes
+checking whether C compiler handles -Wduplicated-cond... (cached) yes
+checking whether C compiler handles -Wextra... (cached) yes
+checking whether C compiler handles -Wformat-signedness... (cached) yes
+checking whether C compiler handles -Wflex-array-member-not-at-end... (cached) yes
+checking whether C compiler handles -Winit-self... (cached) yes
+checking whether C compiler handles -Winline... (cached) yes
+checking whether C compiler handles -Winvalid-pch... (cached) yes
+checking whether C compiler handles -Wlogical-op... (cached) yes
+checking whether C compiler handles -Wmissing-declarations... (cached) yes
+checking whether C compiler handles -Wmissing-include-dirs... (cached) yes
+checking whether C compiler handles -Wmissing-prototypes... (cached) yes
+checking whether C compiler handles -Wmissing-variable-declarations... (cached) yes
+checking whether C compiler handles -Wnested-externs... (cached) yes
+checking whether C compiler handles -Wold-style-definition... (cached) yes
+checking whether C compiler handles -Wopenmp-simd... (cached) yes
+checking whether C compiler handles -Woverlength-strings... (cached) yes
+checking whether C compiler handles -Wpacked... (cached) yes
+checking whether C compiler handles -Wpointer-arith... (cached) yes
+checking whether C compiler handles -Wstack-protector... (cached) yes
+checking whether C compiler handles -Wstrict-flex-arrays... (cached) yes
+checking whether C compiler handles -Wstrict-overflow... (cached) yes
+checking whether C compiler handles -Wstrict-prototypes... (cached) yes
+checking whether C compiler handles -Wsuggest-attribute=cold... (cached) yes
+checking whether C compiler handles -Wsuggest-attribute=format... (cached) yes
+checking whether C compiler handles -Wsuggest-attribute=noreturn... (cached) yes
+checking whether C compiler handles -Wsuggest-attribute=pure... (cached) yes
+checking whether C compiler handles -Wsuggest-final-methods... (cached) yes
+checking whether C compiler handles -Wsuggest-final-types... (cached) yes
+checking whether C compiler handles -Wsync-nand... (cached) yes
+checking whether C compiler handles -Wtrampolines... (cached) yes
+checking whether C compiler handles -Wuninitialized... (cached) yes
+checking whether C compiler handles -Wunknown-pragmas... (cached) yes
+checking whether C compiler handles -Wunsafe-loop-optimizations... (cached) yes
+checking whether C compiler handles -Wvariadic-macros... (cached) yes
+checking whether C compiler handles -Wvector-operation-performance... (cached) yes
+checking whether C compiler handles -Wvla... (cached) yes
+checking whether C compiler handles -Wwrite-strings... (cached) yes
+checking whether C compiler handles -Warray-bounds=2... (cached) yes
+checking whether C compiler handles -Wattribute-alias=2... (cached) yes
+checking whether C compiler handles -Wbidi-chars=any,ucn... (cached) yes
+checking whether C compiler handles -Wformat-overflow=2... (cached) yes
+checking whether C compiler handles -Wformat=2... (cached) yes
+checking whether C compiler handles -Wformat-truncation=2... (cached) yes
+checking whether C compiler handles -Wimplicit-fallthrough=5... (cached) yes
+checking whether C compiler handles -Wshift-overflow=2... (cached) yes
+checking whether C compiler handles -Wuse-after-free=3... (cached) yes
+checking whether C compiler handles -Wunused-const-variable=2... (cached) yes
+checking whether C compiler handles -Wvla-larger-than=4031... (cached) yes
+checking whether C compiler handles -Wthread-safety... (cached) no
+checking whether C compiler handles -Wno-analyzer-malloc-leak... (cached) yes
+checking whether C compiler handles -Wno-incompatible-pointer-types... yes
+checking for native Win32... no
+checking for aspell.h... yes
+checking for hspell.h... no
+checking for hunspell... no
+checking for nuspell >= 5.1.0... no
+checking for get_aspell_dict_info_list in -laspell... yes
+checking for hspell_get_dictionary_path in -lhspell... no
+checking for libvoikko... no
+checking for cloc... true
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Doxyfile
+config.status: creating Makefile
+config.status: creating enchant-2.pc
+config.status: creating lib/Makefile
+config.status: creating lib/enchant.5.in
+config.status: creating libgnu/Makefile
+config.status: creating program-tests/Makefile
+config.status: creating providers/Makefile
+config.status: creating src/Makefile
+config.status: creating src/enchant.1
+config.status: creating src/enchant-lsmod.1
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Providers to build: aspell
+configure: WARNING: Building without --enable-relocatable: the tests will not work!
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/enchant-73/build'
+Making all in libgnu
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  echo '#if HAVE_WINSOCK2_H'; \
+  echo '# include <winsock2.h> /* avoid mingw pollution on DATADIR */'; \
+  echo '#endif'; \
+  printf '#define PREFIX %s\n' \"/usr\"; \
+  printf '#define EXEC_PREFIX %s\n' \"/usr\"; \
+  printf '#define BINDIR %s\n' \"/usr/bin\"; \
+  printf '#define SBINDIR %s\n' \"/usr/sbin\"; \
+  printf '#define LIBEXECDIR %s\n' \"/usr/libexec\"; \
+  printf '#define DATAROOTDIR %s\n' \"/usr/share\"; \
+  printf '#define DATADIR %s\n' \"/usr/share\"; \
+  printf '#define SYSCONFDIR %s\n' \"/etc\"; \
+  printf '#define SHAREDSTATEDIR %s\n' \"/var/lib\"; \
+  printf '#define LOCALSTATEDIR %s\n' \"/var\"; \
+  printf '#define RUNSTATEDIR %s\n' \"/var/run\"; \
+  printf '#define INCLUDEDIR %s\n' \"/usr/include\"; \
+  printf '#define OLDINCLUDEDIR %s\n' \"/usr/include\"; \
+  printf '#define DOCDIR %s\n' \"/usr/share/doc/enchant\"; \
+  printf '#define INFODIR %s\n' \"/usr/share/info\"; \
+  printf '#define HTMLDIR %s\n' \"/usr/share/doc/enchant\"; \
+  printf '#define DVIDIR %s\n' \"/usr/share/doc/enchant\"; \
+  printf '#define PDFDIR %s\n' \"/usr/share/doc/enchant\"; \
+  printf '#define PSDIR %s\n' \"/usr/share/doc/enchant\"; \
+  printf '#define LIBDIR %s\n' \"/usr/lib\"; \
+  printf '#define LISPDIR %s\n' \"/usr/share/emacs/site-lisp\"; \
+  printf '#define LOCALEDIR %s\n' \"/usr/share/locale\"; \
+  printf '#define MANDIR %s\n' \"/usr/share/man\"; \
+  printf '#define MANEXT %s\n' \"\"; \
+  printf '#define PKGDATADIR %s\n' \"/usr/share/enchant\"; \
+  printf '#define PKGINCLUDEDIR %s\n' \"/usr/include/enchant\"; \
+  printf '#define PKGLIBDIR %s\n' \"/usr/lib/enchant\"; \
+  printf '#define PKGLIBEXECDIR %s\n' \"/usr/libexec/enchant\"; \
+} | sed '/""/d' > configmake.h-t
+sed -e 1h -e '1s,.*,/* DO NOT EDIT! GENERATED AUTOMATICALLY! */,' -e 1G \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_FCNTL_H''@|<fcntl.h>|g' \
+      -e 's/@''GNULIB_CREAT''@/0/g' \
+      -e 's/@''GNULIB_FCNTL''@/0/g' \
+      -e 's/@''GNULIB_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_OPEN''@/0/g' \
+      -e 's/@''GNULIB_OPENAT''@/0/g' \
+      -e 's/@''GNULIB_MDA_CREAT''@/1/g' \
+      -e 's/@''GNULIB_MDA_OPEN''@/1/g' \
+      -e 's|@''HAVE_FCNTL''@|1|g' \
+      -e 's|@''HAVE_OPENAT''@|1|g' \
+      -e 's|@''REPLACE_CREAT''@|0|g' \
+      -e 's|@''REPLACE_FCNTL''@|0|g' \
+      -e 's|@''REPLACE_OPEN''@|0|g' \
+      -e 's|@''REPLACE_OPENAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./warn-on-use.h' \
+      ./fcntl.in.h > fcntl.h-t
+sed -e 1h -e '1s,.*,/* DO NOT EDIT! GENERATED AUTOMATICALLY! */,' -e 1G \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LOCALE_H''@|<locale.h>|g' \
+      -e 's|@''HAVE_LOCALE_T''@|1|g' \
+      -e 's|@''HAVE_WINDOWS_LOCALE_T''@|0|g' \
+      -e 's/@''GNULIB_LOCALECONV''@/0/g' \
+      -e 's/@''GNULIB_SETLOCALE''@/0/g' \
+      -e 's/@''GNULIB_SETLOCALE_NULL''@/0/g' \
+      -e 's/@''GNULIB_NEWLOCALE''@/0/g' \
+      -e 's/@''GNULIB_DUPLOCALE''@/0/g' \
+      -e 's/@''GNULIB_FREELOCALE''@/0/g' \
+      -e 's/@''GNULIB_GETLOCALENAME_L''@/0/g' \
+      -e 's/@''GNULIB_GETLOCALENAME_L_UNSAFE''@/0/g' \
+      -e 's/@''GNULIB_LOCALENAME_UNSAFE''@/0/g' \
+      -e 's|@''HAVE_NEWLOCALE''@|1|g' \
+      -e 's|@''HAVE_DUPLOCALE''@|1|g' \
+      -e 's|@''HAVE_FREELOCALE''@|1|g' \
+      -e 's|@''HAVE_GETLOCALENAME_L''@|1|g' \
+      -e 's|@''HAVE_XLOCALE_H''@|0|g' \
+      -e 's|@''REPLACE_LOCALECONV''@|0|g' \
+      -e 's|@''REPLACE_SETLOCALE''@|0|g' \
+      -e 's|@''REPLACE_NEWLOCALE''@|0|g' \
+      -e 's|@''REPLACE_DUPLOCALE''@|0|g' \
+      -e 's|@''REPLACE_FREELOCALE''@|0|g' \
+      -e 's|@''REPLACE_GETLOCALENAME_L''@|0|g' \
+      -e 's|@''REPLACE_STRUCT_LCONV''@|0|g' \
+      -e 's|@''LOCALENAME_ENHANCE_LOCALE_FUNCS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./warn-on-use.h' \
+      ./locale.in.h > locale.h-t
+/usr/bin/mkdir -p 'sys'
+/usr/bin/mkdir -p 'sys'
+sed -e 1h -e '1s,.*,/* DO NOT EDIT! GENERATED AUTOMATICALLY! */,' -e 1G \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_UNISTD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's/@''GNULIB_ACCESS''@/0/g' \
+      -e 's/@''GNULIB_CHDIR''@/0/g' \
+      -e 's/@''GNULIB_CHOWN''@/0/g' \
+      -e 's/@''GNULIB_CLOSE''@/0/g' \
+      -e 's/@''GNULIB_COPY_FILE_RANGE''@/0/g' \
+      -e 's/@''GNULIB_DUP''@/0/g' \
+      -e 's/@''GNULIB_DUP2''@/0/g' \
+      -e 's/@''GNULIB_DUP3''@/0/g' \
+      -e 's/@''GNULIB_ENVIRON''@/0/g' \
+      -e 's/@''GNULIB_EUIDACCESS''@/0/g' \
+      -e 's/@''GNULIB_EXECL''@/0/g' \
+      -e 's/@''GNULIB_EXECLE''@/0/g' \
+      -e 's/@''GNULIB_EXECLP''@/0/g' \
+      -e 's/@''GNULIB_EXECV''@/0/g' \
+      -e 's/@''GNULIB_EXECVE''@/0/g' \
+      -e 's/@''GNULIB_EXECVP''@/0/g' \
+      -e 's/@''GNULIB_EXECVPE''@/0/g' \
+      -e 's/@''GNULIB_FACCESSAT''@/0/g' \
+      -e 's/@''GNULIB_FCHDIR''@/0/g' \
+      -e 's/@''GNULIB_FCHOWNAT''@/0/g' \
+      -e 's/@''GNULIB_FDATASYNC''@/0/g' \
+      -e 's/@''GNULIB_FSYNC''@/0/g' \
+      -e 's/@''GNULIB_FTRUNCATE''@/0/g' \
+      < ./unistd.in.h > unistd.h-t1
+sed -e 1h -e '1s,.*,/* DO NOT EDIT! GENERATED AUTOMATICALLY! */,' -e 1G \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_SYS_FILE_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_FILE_H''@|<sys/file.h>|g' \
+      -e 's/@''HAVE_FLOCK''@/1/g' \
+      -e 's/@''GNULIB_FLOCK''@/1/g' \
+      -e '/definition of _GL_WARN_ON_USE/r ./warn-on-use.h' \
+      ./sys_file.in.h > sys/file.h-t
+sed -e 1h -e '1s,.*,/* DO NOT EDIT! GENERATED AUTOMATICALLY! */,' -e 1G \
+      -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's|@''HAVE_OFF64_T''@|1|g' \
+      -e 's|@''WINDOWS_STAT_INODES''@|0|g' \
+      -e 's|@''HAVE_BLKSIZE_T''@|1|g' \
+      -e 's|@''HAVE_BLKCNT_T''@|1|g' \
+      ./sys_types.in.h > sys/types.h-t
+mv configmake.h-t configmake.h
+mv sys/file.h-t sys/file.h
+mv sys/types.h-t sys/types.h
+mv locale.h-t locale.h
+mv fcntl.h-t fcntl.h
+sed \
+      -e 's/@''GNULIB_GETCWD''@/0/g' \
+      -e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \
+      -e 's/@''GNULIB_GETDTABLESIZE''@/0/g' \
+      -e 's/@''GNULIB_GETENTROPY''@/0/g' \
+      -e 's/@''GNULIB_GETGROUPS''@/0/g' \
+      -e 's/@''GNULIB_GETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN_R''@/0/g' \
+      -e 's/@''GNULIB_GETOPT_POSIX''@/1/g' \
+      -e 's/@''GNULIB_GETPAGESIZE''@/0/g' \
+      -e 's/@''GNULIB_GETPASS''@/0/g' \
+      -e 's/@''GNULIB_GETPASS_GNU''@/0/g' \
+      -e 's/@''GNULIB_GETUSERSHELL''@/0/g' \
+      -e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \
+      -e 's/@''GNULIB_ISATTY''@/0/g' \
+      -e 's/@''GNULIB_LCHOWN''@/0/g' \
+      -e 's/@''GNULIB_LINK''@/0/g' \
+      -e 's/@''GNULIB_LINKAT''@/0/g' \
+      -e 's/@''GNULIB_LSEEK''@/0/g' \
+      -e 's/@''GNULIB_PIPE''@/0/g' \
+      -e 's/@''GNULIB_PIPE2''@/0/g' \
+      -e 's/@''GNULIB_PREAD''@/0/g' \
+      -e 's/@''GNULIB_PWRITE''@/0/g' \
+      -e 's/@''GNULIB_READ''@/0/g' \
+      -e 's/@''GNULIB_READLINK''@/0/g' \
+      -e 's/@''GNULIB_READLINKAT''@/0/g' \
+      -e 's/@''GNULIB_RMDIR''@/0/g' \
+      -e 's/@''GNULIB_SETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_SLEEP''@/0/g' \
+      -e 's/@''GNULIB_SYMLINK''@/0/g' \
+      -e 's/@''GNULIB_SYMLINKAT''@/0/g' \
+      -e 's/@''GNULIB_TRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_GETOPT''@/00/g' \
+      -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_UNLINK''@/0/g' \
+      -e 's/@''GNULIB_UNLINKAT''@/0/g' \
+      -e 's/@''GNULIB_USLEEP''@/0/g' \
+      -e 's/@''GNULIB_WRITE''@/0/g' \
+      -e 's/@''GNULIB_MDA_ACCESS''@/1/g' \
+      -e 's/@''GNULIB_MDA_CHDIR''@/1/g' \
+      -e 's/@''GNULIB_MDA_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_MDA_DUP''@/1/g' \
+      -e 's/@''GNULIB_MDA_DUP2''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECL''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECLE''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECLP''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECV''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECVE''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECVP''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECVPE''@/1/g' \
+      -e 's/@''GNULIB_MDA_GETCWD''@/1/g' \
+      -e 's/@''GNULIB_MDA_GETPID''@/1/g' \
+      -e 's/@''GNULIB_MDA_ISATTY''@/1/g' \
+      -e 's/@''GNULIB_MDA_LSEEK''@/1/g' \
+      -e 's/@''GNULIB_MDA_READ''@/1/g' \
+      -e 's/@''GNULIB_MDA_RMDIR''@/1/g' \
+      -e 's/@''GNULIB_MDA_SWAB''@/1/g' \
+      -e 's/@''GNULIB_MDA_UNLINK''@/1/g' \
+      -e 's/@''GNULIB_MDA_WRITE''@/1/g' \
+      < unistd.h-t1 > unistd.h-t2
+sed \
+      -e 's|@''HAVE_CHOWN''@|1|g' \
+      -e 's|@''HAVE_COPY_FILE_RANGE''@|1|g' \
+      -e 's|@''HAVE_DUP3''@|1|g' \
+      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+      -e 's|@''HAVE_EXECVPE''@|1|g' \
+      -e 's|@''HAVE_FACCESSAT''@|1|g' \
+      -e 's|@''HAVE_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+      -e 's|@''HAVE_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_FSYNC''@|1|g' \
+      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+      -e 's|@''HAVE_GETENTROPY''@|1|g' \
+      -e 's|@''HAVE_GETGROUPS''@|1|g' \
+      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_GETPASS''@|1|g' \
+      -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+      -e 's|@''HAVE_LCHOWN''@|1|g' \
+      -e 's|@''HAVE_LINK''@|1|g' \
+      -e 's|@''HAVE_LINKAT''@|1|g' \
+      -e 's|@''HAVE_PIPE''@|1|g' \
+      -e 's|@''HAVE_PIPE2''@|1|g' \
+      -e 's|@''HAVE_PREAD''@|1|g' \
+      -e 's|@''HAVE_PWRITE''@|1|g' \
+      -e 's|@''HAVE_READLINK''@|1|g' \
+      -e 's|@''HAVE_READLINKAT''@|1|g' \
+      -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_SLEEP''@|1|g' \
+      -e 's|@''HAVE_SYMLINK''@|1|g' \
+      -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+      -e 's|@''HAVE_UNLINKAT''@|1|g' \
+      -e 's|@''HAVE_USLEEP''@|1|g' \
+      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+      -e 's|@''HAVE_DECL_EXECVPE''@|1|g' \
+      -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+      -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+      -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_TRUNCATE''@|1|g' \
+      -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+      -e 's|@''HAVE_OS_H''@|0|g' \
+      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+      < unistd.h-t2 > unistd.h-t3
+sed \
+      -e 's|@''REPLACE_ACCESS''@|0|g' \
+      -e 's|@''REPLACE_CHOWN''@|0|g' \
+      -e 's|@''REPLACE_CLOSE''@|0|g' \
+      -e 's|@''REPLACE_COPY_FILE_RANGE''@|0|g' \
+      -e 's|@''REPLACE_DUP''@|0|g' \
+      -e 's|@''REPLACE_DUP2''@|0|g' \
+      -e 's|@''REPLACE_DUP3''@|0|g' \
+      -e 's|@''REPLACE_EXECL''@|0|g' \
+      -e 's|@''REPLACE_EXECLE''@|0|g' \
+      -e 's|@''REPLACE_EXECLP''@|0|g' \
+      -e 's|@''REPLACE_EXECV''@|0|g' \
+      -e 's|@''REPLACE_EXECVE''@|0|g' \
+      -e 's|@''REPLACE_EXECVP''@|0|g' \
+      -e 's|@''REPLACE_EXECVPE''@|0|g' \
+      -e 's|@''REPLACE_FACCESSAT''@|0|g' \
+      -e 's|@''REPLACE_FCHDIR''@|0|g' \
+      -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+      -e 's|@''REPLACE_FDATASYNC''@|0|g' \
+      -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_GETCWD''@|0|g' \
+      -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+      -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETENTROPY''@|0|g' \
+      -e 's|@''REPLACE_GETLOGIN''@|0|g' \
+      -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+      -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+      -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETPASS''@|0|g' \
+      -e 's|@''REPLACE_GETPASS_FOR_GETPASS_GNU''@|0|g' \
+      -e 's|@''REPLACE_GETUSERSHELL''@|0|g' \
+      -e 's|@''REPLACE_ISATTY''@|0|g' \
+      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+      -e 's|@''REPLACE_LINK''@|0|g' \
+      -e 's|@''REPLACE_LINKAT''@|0|g' \
+      -e 's|@''REPLACE_LSEEK''@|0|g' \
+      -e 's|@''REPLACE_PIPE2''@|0|g' \
+      -e 's|@''REPLACE_PREAD''@|0|g' \
+      -e 's|@''REPLACE_PWRITE''@|0|g' \
+      -e 's|@''REPLACE_READ''@|0|g' \
+      -e 's|@''REPLACE_READLINK''@|0|g' \
+      -e 's|@''REPLACE_READLINKAT''@|0|g' \
+      -e 's|@''REPLACE_RMDIR''@|0|g' \
+      -e 's|@''REPLACE_SETHOSTNAME''@|0|g' \
+      -e 's|@''REPLACE_SLEEP''@|0|g' \
+      -e 's|@''REPLACE_SYMLINK''@|0|g' \
+      -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+      -e 's|@''REPLACE_TRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+      -e 's|@''REPLACE_UNLINK''@|0|g' \
+      -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+      -e 's|@''REPLACE_USLEEP''@|0|g' \
+      -e 's|@''REPLACE_WRITE''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_SYS_RANDOM_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./warn-on-use.h' \
+      < unistd.h-t3 > unistd.h-t4
+rm -f unistd.h-t1 unistd.h-t2 unistd.h-t3
+mv unistd.h-t4 unistd.h
+make  all-am
+make[3]: Entering directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -DNO_XMALLOC -I. -I..  -DIN_LIBRARY -DENABLE_COSTLY_RELOCATABLE  -DINSTALLDIR=LIBDIR -include configmake.h   -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -Wno-unused-const-variable -Wno-unsuffixed-float-constants -Wno-error -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libgnu_la-unistd.lo -MD -MP -MF .deps/libgnu_la-unistd.Tpo -c -o libgnu_la-unistd.lo `test -f 'unistd.c' || echo './'`unistd.c
+libtool: compile:  cc -DHAVE_CONFIG_H -DNO_XMALLOC -I. -I.. -DIN_LIBRARY -DENABLE_COSTLY_RELOCATABLE -DINSTALLDIR=LIBDIR -include configmake.h -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -Wno-unused-const-variable -Wno-unsuffixed-float-constants -Wno-error -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libgnu_la-unistd.lo -MD -MP -MF .deps/libgnu_la-unistd.Tpo -c unistd.c  -fPIC -DPIC -o .libs/libgnu_la-unistd.o
+mv -f .deps/libgnu_la-unistd.Tpo .deps/libgnu_la-unistd.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link cc  -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits -Wno-unused-const-variable -Wno-unsuffixed-float-constants -Wno-error -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -no-undefined   -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libgnu.la      libgnu_la-unistd.lo  -laspell  
+libtool: link: gcc-ar cr .libs/libgnu.a .libs/libgnu_la-unistd.o 
+libtool: link: gcc-ranlib .libs/libgnu.a
+libtool: link: ( cd ".libs" && rm -f "libgnu.la" && ln -s "../libgnu.la" "libgnu.la" )
+make[3]: Leaving directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+Making all in lib
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/lib'
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN='"libenchant"' -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-dict.lo -MD -MP -MF .deps/libenchant_2_la-dict.Tpo -c -o libenchant_2_la-dict.lo `test -f 'dict.c' || echo './'`dict.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN='"libenchant"' -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-pwl.lo -MD -MP -MF .deps/libenchant_2_la-pwl.Tpo -c -o libenchant_2_la-pwl.lo `test -f 'pwl.c' || echo './'`pwl.c
+rm -f enchant.5 enchant.5.tmp
+sed -e 's|@PKGDATADIR[@]|/usr/share/enchant|g' -e 's|@SYSCONFDIR[@]|/etc|g' /var/tmp/hokuto/enchant-73/build/lib/enchant.5.in >enchant.5.tmp
+mv enchant.5.tmp enchant.5
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN='"libenchant"' -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-composite.lo -MD -MP -MF .deps/libenchant_2_la-composite.Tpo -c -o libenchant_2_la-composite.lo `test -f 'composite.c' || echo './'`composite.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN='"libenchant"' -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-provider.lo -MD -MP -MF .deps/libenchant_2_la-provider.Tpo -c -o libenchant_2_la-provider.lo `test -f 'provider.c' || echo './'`provider.c
+groff -mandoc -Thtml enchant.5 > enchant.html
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN='"libenchant"' -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-provider-dict.lo -MD -MP -MF .deps/libenchant_2_la-provider-dict.Tpo -c -o libenchant_2_la-provider-dict.lo `test -f 'provider-dict.c' || echo './'`provider-dict.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN='"libenchant"' -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-util.lo -MD -MP -MF .deps/libenchant_2_la-util.Tpo -c -o libenchant_2_la-util.lo `test -f 'util.c' || echo './'`util.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN='"libenchant"' -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-api.lo -MD -MP -MF .deps/libenchant_2_la-api.Tpo -c -o libenchant_2_la-api.lo `test -f 'api.c' || echo './'`api.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN='"libenchant"' -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-broker.lo -MD -MP -MF .deps/libenchant_2_la-broker.Tpo -c -o libenchant_2_la-broker.lo `test -f 'broker.c' || echo './'`broker.c
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN=\"libenchant\" -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-dict.lo -MD -MP -MF .deps/libenchant_2_la-dict.Tpo -c dict.c  -fPIC -DPIC -o .libs/libenchant_2_la-dict.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN=\"libenchant\" -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-pwl.lo -MD -MP -MF .deps/libenchant_2_la-pwl.Tpo -c pwl.c  -fPIC -DPIC -o .libs/libenchant_2_la-pwl.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN=\"libenchant\" -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-provider.lo -MD -MP -MF .deps/libenchant_2_la-provider.Tpo -c provider.c  -fPIC -DPIC -o .libs/libenchant_2_la-provider.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN=\"libenchant\" -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-api.lo -MD -MP -MF .deps/libenchant_2_la-api.Tpo -c api.c  -fPIC -DPIC -o .libs/libenchant_2_la-api.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN=\"libenchant\" -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-provider-dict.lo -MD -MP -MF .deps/libenchant_2_la-provider-dict.Tpo -c provider-dict.c  -fPIC -DPIC -o .libs/libenchant_2_la-provider-dict.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN=\"libenchant\" -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-broker.lo -MD -MP -MF .deps/libenchant_2_la-broker.Tpo -c broker.c  -fPIC -DPIC -o .libs/libenchant_2_la-broker.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN=\"libenchant\" -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-composite.lo -MD -MP -MF .deps/libenchant_2_la-composite.Tpo -c composite.c  -fPIC -DPIC -o .libs/libenchant_2_la-composite.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DG_LOG_DOMAIN=\"libenchant\" -D_ENCHANT_BUILD=1 -DENCHANT_VERSION_STRING=\"2.8.16\" -DENCHANT_MAJOR_VERSION=\"2\" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT libenchant_2_la-util.lo -MD -MP -MF .deps/libenchant_2_la-util.Tpo -c util.c  -fPIC -DPIC -o .libs/libenchant_2_la-util.o
+mv -f .deps/libenchant_2_la-api.Tpo .deps/libenchant_2_la-api.Plo
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[Kprovider.c:35[m[K:
+[01m[Kprovider.c:[m[K In function '[01m[Kenchant_provider_get_type[m[K':
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of '[01m[K__atomic_load[m[K' discards '[01m[Kvolatile[m[K' qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_atomic_pointer_get[m[K'
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kprovider.c:971:6:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_once_init_enter[m[K'
+  971 | GType
+      |      [01;36m[K^[m[K                
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[Kprovider-dict.c:33[m[K:
+[01m[Kprovider-dict.c:[m[K In function '[01m[Kenchant_provider_dict_get_type[m[K':
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of '[01m[K__atomic_load[m[K' discards '[01m[Kvolatile[m[K' qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_atomic_pointer_get[m[K'
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kprovider-dict.c:530:13:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_once_init_enter[m[K'
+  530 |         if ([01;36m[Kg_once_init_enter[m[K (&enchant_provider_dict_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+mv -f .deps/libenchant_2_la-provider-dict.Tpo .deps/libenchant_2_la-provider-dict.Plo
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib-object.h:24[m[K,
+                 from [01m[Kcomposite.c:32[m[K:
+[01m[Kcomposite.c:[m[K In function '[01m[Kenchant_composite_dict_get_type[m[K':
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib-object.h:24[m[K,
+                 from [01m[Kdict.c:33[m[K:
+[01m[Kdict.c:[m[K In function '[01m[Kenchant_dict_get_type[m[K':
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of '[01m[K__atomic_load[m[K' discards '[01m[Kvolatile[m[K' qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_atomic_pointer_get[m[K'
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kcomposite.c:410:13:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_once_init_enter[m[K'
+  410 |         if ([01;36m[Kg_once_init_enter[m[K (&enchant_composite_dict_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of '[01m[K__atomic_load[m[K' discards '[01m[Kvolatile[m[K' qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_atomic_pointer_get[m[K'
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kdict.c:2085:13:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_once_init_enter[m[K'
+ 2085 |         if ([01;36m[Kg_once_init_enter[m[K (&enchant_dict_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kcomposite.vala:[m[K In function '[01m[Kcomposite_dict_suggest[m[K':
+[01m[Kcomposite.vala:82:17:[m[K [01;35m[Kwarning: [m[Kassignment to '[01m[K[01;32m[Kgchar **[m[K' {aka [m[K'[01m[K[01;32m[Kchar **[m[K'}[m[K from incompatible pointer type '[01m[K[01;34m[Kvoid **[m[K[m[K' [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   82 |         return r[01;35m[Ke[m[Ks.steal();
+      |                 [01;35m[K^[m[K
+mv -f .deps/libenchant_2_la-provider.Tpo .deps/libenchant_2_la-provider.Plo
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[Kpwl.c:33[m[K:
+[01m[Kpwl.c:[m[K In function '[01m[Kenchant_pwl_get_type[m[K':
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of '[01m[K__atomic_load[m[K' discards '[01m[Kvolatile[m[K' qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_atomic_pointer_get[m[K'
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kpwl.c:2373:13:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_once_init_enter[m[K'
+ 2373 |         if ([01;36m[Kg_once_init_enter[m[K (&enchant_pwl_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kpwl.c:[m[K In function '[01m[Kenchant_pwl_dict_get_type[m[K':
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of '[01m[K__atomic_load[m[K' discards '[01m[Kvolatile[m[K' qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_atomic_pointer_get[m[K'
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kpwl.c:2531:13:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_once_init_enter[m[K'
+ 2531 |         if ([01;36m[Kg_once_init_enter[m[K (&enchant_pwl_dict_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+mv -f .deps/libenchant_2_la-util.Tpo .deps/libenchant_2_la-util.Plo
+mv -f .deps/libenchant_2_la-composite.Tpo .deps/libenchant_2_la-composite.Plo
+mv -f .deps/libenchant_2_la-broker.Tpo .deps/libenchant_2_la-broker.Plo
+mv -f .deps/libenchant_2_la-dict.Tpo .deps/libenchant_2_la-dict.Plo
+mv -f .deps/libenchant_2_la-pwl.Tpo .deps/libenchant_2_la-pwl.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link cc  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -no-undefined -export-symbols-regex '^enchant_.*' -version-info 10:16:8 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libenchant-2.la -rpath /usr/lib libenchant_2_la-api.lo libenchant_2_la-broker.lo libenchant_2_la-composite.lo libenchant_2_la-dict.lo libenchant_2_la-provider.lo libenchant_2_la-provider-dict.lo libenchant_2_la-pwl.lo libenchant_2_la-util.lo ../libgnu/libgnu.la -Wl,--export-dynamic -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -pthread -lglib-2.0  -laspell  
+libtool: link: gcc-nm  .libs/libenchant_2_la-api.o .libs/libenchant_2_la-broker.o .libs/libenchant_2_la-composite.o .libs/libenchant_2_la-dict.o .libs/libenchant_2_la-provider.o .libs/libenchant_2_la-provider-dict.o .libs/libenchant_2_la-pwl.o .libs/libenchant_2_la-util.o   ../libgnu/.libs/libgnu.a | /usr/bin/sed -n -e 's/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | /usr/bin/sed '/ __gnu_lto/d' | /usr/bin/sed 's/.* //' | sort | uniq > .libs/libenchant-2.exp
+/usr/bin/nm: libgnu_la-unistd.o: no symbols
+libtool: link: /usr/bin/grep -E -e "^enchant_.*" ".libs/libenchant-2.exp" > ".libs/libenchant-2.expT"
+libtool: link: mv -f ".libs/libenchant-2.expT" ".libs/libenchant-2.exp"
+libtool: link: echo "{ global:" > .libs/libenchant-2.ver
+libtool: link:  cat .libs/libenchant-2.exp | /usr/bin/sed -e "s/\(.*\)/\1;/" >> .libs/libenchant-2.ver
+libtool: link:  echo "local: *; };" >> .libs/libenchant-2.ver
+libtool: link:  cc -shared  -fPIC -DPIC  .libs/libenchant_2_la-api.o .libs/libenchant_2_la-broker.o .libs/libenchant_2_la-composite.o .libs/libenchant_2_la-dict.o .libs/libenchant_2_la-provider.o .libs/libenchant_2_la-provider-dict.o .libs/libenchant_2_la-pwl.o .libs/libenchant_2_la-util.o  -Wl,--whole-archive ../libgnu/.libs/libgnu.a -Wl,--no-whole-archive  -Wl,-rpath -Wl,/usr/lib/../lib -Wl,-rpath -Wl,/usr/lib/../lib -lm -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 /usr/lib/libaspell.so -L/usr/lib/../lib -ldl /usr/lib/../lib/libstdc++.so  -march=native -O2 -flto=10 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,noexecstack -Wl,--export-dynamic   -pthread -Wl,-soname -Wl,libenchant-2.so.2 -Wl,-version-script -Wl,.libs/libenchant-2.ver -o .libs/libenchant-2.so.2.8.16
+libtool: link: (cd ".libs" && rm -f "libenchant-2.so.2" && ln -s "libenchant-2.so.2.8.16" "libenchant-2.so.2")
+libtool: link: (cd ".libs" && rm -f "libenchant-2.so" && ln -s "libenchant-2.so.2.8.16" "libenchant-2.so")
+libtool: link: ( cd ".libs" && rm -f "libenchant-2.la" && ln -s "../libenchant-2.la" "libenchant-2.la" )
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/lib'
+Making all in src
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/src'
+depbase=`echo util.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -I../lib -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT util.lo -MD -MP -MF $depbase.Tpo -c -o util.lo util.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -I../lib -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DENCHANT_MAJOR_VERSION=\"2\" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT util.lo -MD -MP -MF .deps/util.Tpo -c util.c  -fPIC -DPIC -o .libs/util.o
+[01m[Kutil.vala:[m[K In function '[01m[Kenchant_get_user_language[m[K':
+[01m[Kutil.vala:33:25:[m[K [01;35m[Kwarning: [m[Kassignment to '[01m[K[01;32m[Kgchar **[m[K' {aka [m[K'[01m[K[01;32m[Kchar **[m[K'}[m[K from incompatible pointer type '[01m[K[01;34m[Kconst gchar * const*[m[K' {aka [m[K'[01m[K[01;34m[Kconst char * const*[m[K'}[m[K [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   33 |         unowned string[][01;35m[K [m[Klanguages = Intl.get_language_names();
+      |                         [01;35m[K^[m[K
+/bin/sh ../libtool  --tag=CC   --mode=link cc  -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libutil.la  util.lo -Wl,--export-dynamic -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -pthread -lglib-2.0 -laspell  
+libtool: link: gcc-ar cr .libs/libutil.a .libs/util.o 
+libtool: link: gcc-ranlib .libs/libutil.a
+libtool: link: ( cd ".libs" && rm -f "libutil.la" && ln -s "../libutil.la" "libutil.la" )
+touch dummy.vala
+make  all-am
+make[3]: Entering directory '/var/tmp/hokuto/enchant-73/build/src'
+depbase=`echo enchant.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -I../lib -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT enchant.o -MD -MP -MF $depbase.Tpo -c -o enchant.o enchant.c &&\
+mv -f $depbase.Tpo $depbase.Po
+make[3]: Circular util.h <- libutil.la dependency dropped.
+cp /var/tmp/hokuto/enchant-73/build/src/enchant.1 enchant-2.1
+cp /var/tmp/hokuto/enchant-73/build/src/enchant-lsmod.1 enchant-lsmod-2.1
+groff -mandoc -Thtml enchant-2.1 > enchant-2.html
+groff -mandoc -Thtml enchant-lsmod-2.1 > enchant-lsmod-2.html
+depbase=`echo enchant-lsmod.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H -I. -I..  --include config.h -I.. -isystem ../libgnu -isystem ../libgnu -I../lib -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -fstrict-flex-arrays -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -Wno-incompatible-pointer-types -DENCHANT_MAJOR_VERSION=\"2\"   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT enchant-lsmod.o -MD -MP -MF $depbase.Tpo -c -o enchant-lsmod.o enchant-lsmod.c &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[Kenchant.c:35[m[K:
+[01m[Kenchant.c:[m[K In function ‘[01m[Kmode_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kenchant.c:239:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+  239 |         if ([01;36m[Kg_once_init_enter[m[K (&mode_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kenchant.c:[m[K In function ‘[01m[Ktoken_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kenchant.c:1088:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1088 |         if ([01;36m[Kg_once_init_enter[m[K (&token_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kenchant.c:[m[K In function ‘[01m[Kspelling_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kenchant.c:1520:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1520 |         if ([01;36m[Kg_once_init_enter[m[K (&spelling_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kenchant.c:[m[K In function ‘[01m[Kmain_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kenchant.c:2911:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 2911 |         if ([01;36m[Kg_once_init_enter[m[K (&main_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+/bin/sh ../libtool  --tag=CC   --mode=link cc  -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o enchant-lsmod-2 enchant-lsmod.o ../lib/libenchant-2.la -Wl,--export-dynamic -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -pthread -lglib-2.0 ../libgnu/libgnu.la libutil.la -laspell  
+/bin/sh ../libtool  --tag=CC   --mode=link cc  -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o enchant-2 enchant.o ../lib/libenchant-2.la -Wl,--export-dynamic -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -pthread -lglib-2.0 ../libgnu/libgnu.la libutil.la -laspell  
+libtool: link: cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,noexecstack -o .libs/enchant-lsmod-2 enchant-lsmod.o -Wl,--export-dynamic  ../lib/.libs/libenchant-2.so ../libgnu/.libs/libgnu.a ./.libs/libutil.a -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 /usr/lib/libaspell.so -ldl /usr/lib/../lib/libstdc++.so -lm -pthread -Wl,-rpath -Wl,/usr/lib/../lib
+libtool: link: cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,noexecstack -o .libs/enchant-2 enchant.o -Wl,--export-dynamic  ../lib/.libs/libenchant-2.so ../libgnu/.libs/libgnu.a ./.libs/libutil.a -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 /usr/lib/libaspell.so -ldl /usr/lib/../lib/libstdc++.so -lm -pthread -Wl,-rpath -Wl,/usr/lib/../lib
+make[3]: Leaving directory '/var/tmp/hokuto/enchant-73/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/src'
+Making all in providers
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/providers'
+depbase=`echo enchant_aspell.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I.. -isystem ../libgnu -isystem ../libgnu -I../lib -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -D_ENCHANT_BUILD=1  -fanalyzer -fstrict-flex-arrays -Wall -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wnull-dereference -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wshadow -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=const -Wsuggest-attribute=format -Wsuggest-attribute=malloc -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wunused-macros -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT enchant_aspell.lo -MD -MP -MF $depbase.Tpo -c -o enchant_aspell.lo enchant_aspell.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I.. -isystem ../libgnu -isystem ../libgnu -I../lib -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -D_ENCHANT_BUILD=1 -fanalyzer -fstrict-flex-arrays -Wall -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wnull-dereference -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wshadow -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=const -Wsuggest-attribute=format -Wsuggest-attribute=malloc -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wunused-macros -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT enchant_aspell.lo -MD -MP -MF .deps/enchant_aspell.Tpo -c enchant_aspell.c  -fPIC -DPIC -o .libs/enchant_aspell.o
+/bin/sh ../libtool  --tag=CC   --mode=link cc -fanalyzer -fstrict-flex-arrays -Wall -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wnull-dereference -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wshadow -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=const -Wsuggest-attribute=format -Wsuggest-attribute=malloc -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wunused-macros -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -no-undefined -Wl,--export-dynamic -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -pthread -lglib-2.0 ../lib/libenchant-2.la ../libgnu/libgnu.la -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o enchant_aspell.la -rpath /usr/lib/enchant-2 enchant_aspell.lo  -laspell  
+libtool: link: cc -shared  -fPIC -DPIC  .libs/enchant_aspell.o  -Wl,--whole-archive ../libgnu/.libs/libgnu.a -Wl,--no-whole-archive  -Wl,-rpath -Wl,/var/tmp/hokuto/enchant-73/build/lib/.libs -Wl,-rpath -Wl,/usr/lib/../lib -Wl,-rpath -Wl,/usr/lib/../lib ../lib/.libs/libenchant-2.so -L/usr/lib -L/usr/lib/../lib -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lm /usr/lib/libaspell.so -ldl /usr/lib/../lib/libstdc++.so  -march=native -O2 -flto=10 -Wl,--export-dynamic -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,noexecstack   -pthread -Wl,-soname -Wl,enchant_aspell.so -o .libs/enchant_aspell.so
+libtool: link: ( cd ".libs" && rm -f "enchant_aspell.la" && ln -s "../enchant_aspell.la" "enchant_aspell.la" )
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/providers'
+Making all in tests
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/tests'
+Making all in program-tests
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/program-tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/program-tests'
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build'
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build'
+make[1]: Leaving directory '/var/tmp/hokuto/enchant-73/build'
+Making install in libgnu
+make[1]: Entering directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+make  install-am
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+make[3]: Entering directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+make[1]: Leaving directory '/var/tmp/hokuto/enchant-73/build/libgnu'
+Making install in lib
+make[1]: Entering directory '/var/tmp/hokuto/enchant-73/build/lib'
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/share/enchant-2'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/share/man/man5'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/include/enchant-2'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/share/doc/enchant'
+ /usr/bin/install -c -m 644 enchant.ordering '/var/tmp/hokuto/enchant-73/output/usr/share/enchant-2'
+ /usr/bin/install -c -m 644 enchant.h enchant++.h '/var/tmp/hokuto/enchant-73/output/usr/include/enchant-2'
+ /usr/bin/install -c -m 644 enchant.html '/var/tmp/hokuto/enchant-73/output/usr/share/doc/enchant'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/lib'
+ /usr/bin/install -c -m 644 enchant.5 '/var/tmp/hokuto/enchant-73/output/usr/share/man/man5'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libenchant-2.la '/var/tmp/hokuto/enchant-73/output/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libenchant-2.so.2.8.16 /var/tmp/hokuto/enchant-73/output/usr/lib/libenchant-2.so.2.8.16
+libtool: install: (cd /var/tmp/hokuto/enchant-73/output/usr/lib && { ln -s -f libenchant-2.so.2.8.16 libenchant-2.so.2 || { rm -f libenchant-2.so.2 && ln -s libenchant-2.so.2.8.16 libenchant-2.so.2; }; })
+libtool: install: (cd /var/tmp/hokuto/enchant-73/output/usr/lib && { ln -s -f libenchant-2.so.2.8.16 libenchant-2.so || { rm -f libenchant-2.so && ln -s libenchant-2.so.2.8.16 libenchant-2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libenchant-2.lai /var/tmp/hokuto/enchant-73/output/usr/lib/libenchant-2.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/lib'
+make[1]: Leaving directory '/var/tmp/hokuto/enchant-73/build/lib'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/enchant-73/build/src'
+make[1]: Circular util.h <- libutil.la dependency dropped.
+touch dummy.vala
+make  install-am
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/src'
+make[2]: Circular util.lo <- util.h dependency dropped.
+make[3]: Entering directory '/var/tmp/hokuto/enchant-73/build/src'
+make[3]: Circular util.lo <- util.h dependency dropped.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/share/doc/enchant'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/share/man/man1'
+ /usr/bin/install -c -m 644 enchant-2.html enchant-lsmod-2.html '/var/tmp/hokuto/enchant-73/output/usr/share/doc/enchant'
+ /usr/bin/install -c -m 644 enchant-2.1 enchant-lsmod-2.1 '/var/tmp/hokuto/enchant-73/output/usr/share/man/man1'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c enchant-2 enchant-lsmod-2 '/var/tmp/hokuto/enchant-73/output/usr/bin'
+libtool: [31mwarning[0m: [1m'../lib/libenchant-2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/enchant-2 /var/tmp/hokuto/enchant-73/output/usr/bin/enchant-2
+libtool: [31mwarning[0m: [1m'../lib/libenchant-2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/enchant-lsmod-2 /var/tmp/hokuto/enchant-73/output/usr/bin/enchant-lsmod-2
+make[3]: Leaving directory '/var/tmp/hokuto/enchant-73/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/enchant-73/build/src'
+Making install in providers
+make[1]: Entering directory '/var/tmp/hokuto/enchant-73/build/providers'
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/providers'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/lib/enchant-2'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   enchant_aspell.la '/var/tmp/hokuto/enchant-73/output/usr/lib/enchant-2'
+libtool: [31mwarning[0m: [1mrelinking 'enchant_aspell.la'[0m
+libtool: install: (cd /var/tmp/hokuto/enchant-73/build/providers; /bin/sh "/var/tmp/hokuto/enchant-73/build/libtool"  --tag CC --mode=relink cc -fanalyzer -fstrict-flex-arrays -Wall -Warith-conversion -Wbad-function-cast -Wcast-align=strict -Wdate-time -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wextra -Wformat-signedness -Wflex-array-member-not-at-end -Winit-self -Winline -Winvalid-pch -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wmissing-prototypes -Wmissing-variable-declarations -Wnested-externs -Wnull-dereference -Wold-style-definition -Wopenmp-simd -Woverlength-strings -Wpacked -Wpointer-arith -Wshadow -Wstack-protector -Wstrict-flex-arrays -Wstrict-overflow -Wstrict-prototypes -Wsuggest-attribute=cold -Wsuggest-attribute=const -Wsuggest-attribute=format -Wsuggest-attribute=malloc -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wsuggest-final-methods -Wsuggest-final-types -Wsync-nand -Wtrampolines -Wuninitialized -Wunknown-pragmas -Wunsafe-loop-optimizations -Wunused-macros -Wvariadic-macros -Wvector-operation-performance -Wvla -Wwrite-strings -Warray-bounds=2 -Wattribute-alias=2 -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wshift-overflow=2 -Wuse-after-free=3 -Wunused-const-variable=2 -Wvla-larger-than=4031 -Wno-analyzer-malloc-leak -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -no-undefined -Wl,--export-dynamic -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -pthread -lglib-2.0 ../lib/libenchant-2.la ../libgnu/libgnu.la -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o enchant_aspell.la -rpath /usr/lib/enchant-2 enchant_aspell.lo -laspell -inst-prefix-dir /var/tmp/hokuto/enchant-73/output)
+libtool: relink: cc -shared  -fPIC -DPIC  .libs/enchant_aspell.o  -Wl,--whole-archive ../libgnu/.libs/libgnu.a -Wl,--no-whole-archive  -Wl,-rpath -Wl,/usr/lib/../lib -L/var/tmp/hokuto/enchant-73/output/usr/lib -L/usr/lib -lenchant-2 -L/usr/lib/../lib -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lm -laspell -ldl -L/var/tmp/hokuto/enchant-73/output/usr/lib/../lib -lstdc++  -march=native -O2 -flto=10 -Wl,--export-dynamic -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,noexecstack   -pthread -Wl,-soname -Wl,enchant_aspell.so -o .libs/enchant_aspell.so
+libtool: install: /usr/bin/install -c .libs/enchant_aspell.soT /var/tmp/hokuto/enchant-73/output/usr/lib/enchant-2/enchant_aspell.so
+libtool: install: /usr/bin/install -c .libs/enchant_aspell.lai /var/tmp/hokuto/enchant-73/output/usr/lib/enchant-2/enchant_aspell.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib/enchant-2'[0m
+make  install-data-hook
+make[3]: Entering directory '/var/tmp/hokuto/enchant-73/build/providers'
+cd /var/tmp/hokuto/enchant-73/output/usr/lib/enchant-2 && rm -f enchant_aspell.la       *.a
+make[3]: Leaving directory '/var/tmp/hokuto/enchant-73/build/providers'
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/providers'
+make[1]: Leaving directory '/var/tmp/hokuto/enchant-73/build/providers'
+Making install in tests
+make[1]: Entering directory '/var/tmp/hokuto/enchant-73/build/tests'
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/enchant-73/build/tests'
+Making install in program-tests
+make[1]: Entering directory '/var/tmp/hokuto/enchant-73/build/program-tests'
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build/program-tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build/program-tests'
+make[1]: Leaving directory '/var/tmp/hokuto/enchant-73/build/program-tests'
+make[1]: Entering directory '/var/tmp/hokuto/enchant-73/build'
+make[2]: Entering directory '/var/tmp/hokuto/enchant-73/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/enchant-73/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 enchant-2.pc '/var/tmp/hokuto/enchant-73/output/usr/lib/pkgconfig'
+make[2]: Leaving directory '/var/tmp/hokuto/enchant-73/build'
+make[1]: Leaving directory '/var/tmp/hokuto/enchant-73/build'
+
+Script done on 2026-05-10 10:23:23+07:00 [COMMAND_EXIT_CODE="0"]
