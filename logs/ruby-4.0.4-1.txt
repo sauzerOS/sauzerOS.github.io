@@ -1,0 +1,2389 @@
+Script started on 2026-05-12 22:15:41+07:00 [COMMAND="cd /var/tmp/hokuto/ruby-02/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/ruby-02/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/ruby-02/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/ruby-02/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/ruby-02/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/ruby-02/build/.cache' /repo/sauzeros/extra/ruby/build /var/tmp/hokuto/ruby-02/output 4.0.4 ruby" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking build system type... [33;1mx86_64-pc-linux-gnu[m
+checking host system type... [33;1mx86_64-pc-linux-gnu[m
+checking target system type... [33;1mx86_64-pc-linux-gnu[m
+checking for cl.exe... [33;1mc++[m
+checking for gcc... [33;1mcc[m
+checking whether the C compiler works... [32;1myes[m
+checking for C compiler default output file name... [33;1ma.out[m
+checking for suffix of executables... [33;1m[m
+checking whether we are cross compiling... [31;1mno[m
+checking for suffix of object files... [33;1mo[m
+checking whether the compiler supports GNU C... [32;1myes[m
+checking whether cc accepts -g... [32;1myes[m
+checking for cc option to enable C11 features... [33;1mnone needed[m
+checking whether the compiler supports GNU C++... [32;1myes[m
+checking whether c++ accepts -g... [32;1myes[m
+checking for c++ option to enable C++11 features... [33;1m-std=gnu++11[m
+checking how to run the C preprocessor... [33;1mcc -E[m
+checking for ranlib... [33;1mgcc-ranlib[m
+checking for gas... [31;1mno[m
+checking for as... [33;1mas[m
+checking for gld... [31;1mno[m
+checking for ld... [33;1mld[m
+checking for gobjcopy... [31;1mno[m
+checking for objcopy... [33;1mobjcopy[m
+checking for gobjdump... [31;1mno[m
+checking for objdump... [33;1mobjdump[m
+checking for gstrip... [31;1mno[m
+checking for strip... [33;1mstrip[m
+checking for stdio.h... [32;1myes[m
+checking for stdlib.h... (cached) [32;1myes[m
+checking for string.h... (cached) [32;1myes[m
+checking for inttypes.h... (cached) [32;1myes[m
+checking for stdint.h... (cached) [32;1myes[m
+checking for strings.h... (cached) [32;1myes[m
+checking for sys/stat.h... (cached) [32;1myes[m
+checking for sys/types.h... (cached) [32;1myes[m
+checking for unistd.h... (cached) [32;1myes[m
+checking for wchar.h... [32;1myes[m
+checking for minix/config.h... [31;1mno[m
+checking for vfork.h... [31;1mno[m
+checking whether it is safe to define __EXTENSIONS__... [32;1myes[m
+checking whether _XOPEN_SOURCE should be defined... [31;1mno[m
+checking whether the linker is GNU ld... [32;1myes[m
+checking whether cc -E accepts -o... [32;1myes[m
+checking for gcc-ar flags... [33;1mrcD[m
+checking whether ln -s works... [32;1myes[m
+checking whether make sets $(MAKE)... [32;1myes[m
+checking for a BSD-compatible install... [33;1m/usr/bin/install -c[m
+checking for a race-free mkdir -p... [33;1m/usr/bin/mkdir -p[m
+checking for dtrace... [31;1mno[m
+checking for dot... [31;1mno[m
+checking for doxygen... [31;1mno[m
+checking for pkg-config... [33;1mpkg-config[m
+checking whether it is Android... [31;1mno[m
+checking for cd using physical directory... [33;1mcd -P[m
+checking if make is GNU make... [32;1myes[m
+checking whether CFLAGS is valid... [32;1myes[m
+checking whether LDFLAGS is valid... [32;1myes[m
+checking whether ELF binaries are produced... [32;1myes[m
+checking whether -Wl,-rpath,. is accepted as LDFLAGS... [32;1myes[m
+checking whether -fdeclspec is accepted as LDFLAGS... [31;1mno[m
+checking whether -fdeclspec is accepted as CXXFLAGS... [31;1mno[m
+checking whether -Wextra-tokens is accepted as CFLAGS... [31;1mno[m
+checking whether -Wdeprecated-declarations is accepted as CFLAGS... [32;1myes[m
+checking whether -Wdivision-by-zero is accepted as CFLAGS... [31;1mno[m
+checking whether -Wdiv-by-zero is accepted as CFLAGS... [32;1myes[m
+checking whether -Wduplicated-cond is accepted as CFLAGS... [32;1myes[m
+checking whether -Wimplicit-function-declaration is accepted as CFLAGS... [32;1myes[m
+checking whether -Wimplicit-int is accepted as CFLAGS... [32;1myes[m
+checking whether -Wpointer-arith is accepted as CFLAGS... [32;1myes[m
+checking whether -Wshorten-64-to-32 is accepted as CFLAGS... [31;1mno[m
+checking whether -Wwrite-strings is accepted as CFLAGS... [32;1myes[m
+checking whether -Wold-style-definition is accepted as CFLAGS... [32;1myes[m
+checking whether -Wimplicit-fallthrough=0 is accepted as CFLAGS... [32;1myes[m
+checking whether -Wmissing-noreturn is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-cast-function-type is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-constant-logical-operand is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-long-long is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-missing-field-initializers is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-overlength-strings is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-packed-bitfield-compat is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-parentheses-equality is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-self-assign is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-tautological-compare is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-unused-parameter is accepted as CFLAGS... [32;1myes[m
+checking whether -Wno-unused-value is accepted as CFLAGS... [32;1myes[m
+checking whether -Wsuggest-attribute=format is accepted as CFLAGS... [32;1myes[m
+checking whether -Wsuggest-attribute=noreturn is accepted as CFLAGS... [32;1myes[m
+checking whether -Wunused-variable is accepted as CFLAGS... [32;1myes[m
+checking whether -diag-disable=175,188,1684,2259,2312 is accepted as CFLAGS... [31;1mno[m
+checking whether -Wmisleading-indentation is accepted as CFLAGS... [32;1myes[m
+checking whether -Wundef is accepted as CFLAGS... [32;1myes[m
+checking whether -Wall -Wextra is accepted as CFLAGS... [32;1myes[m
+checking whether -Qunused-arguments is accepted as CFLAGS... [31;1mno[m
+checking whether -O3 -D_FORTIFY_SOURCE=2 is accepted as CFLAGS... [32;1myes[m
+checking whether -fstack-protector-strong is accepted as CFLAGS... [32;1myes[m
+checking whether -fstack-protector-strong is accepted as LDFLAGS... [32;1myes[m
+checking for -fstack-protector... [33;1m-fstack-protector-strong[m
+checking whether -Wl,--compress-debug-sections=zlib is accepted as LDFLAGS... [32;1myes[m
+checking whether -fno-strict-overflow is accepted as CFLAGS... [32;1myes[m
+checking whether -ggdb3 is accepted as LDFLAGS... [32;1myes[m
+checking whether -fvisibility=hidden is accepted as CFLAGS... [32;1myes[m
+checking whether -fno-fast-math is accepted as CFLAGS... [32;1myes[m
+checking whether -fexcess-precision=standard is accepted as CFLAGS... [32;1myes[m
+checking whether -fp-model precise is accepted as CFLAGS... [31;1mno[m
+checking whether compiler has statement and declarations in expressions... [32;1myes[m
+checking for pthread.h... [32;1myes[m
+checking for pthread_create in -lthr... [31;1mno[m
+checking for pthread_create in -lpthread... [32;1myes[m
+checking for pthread_np.h... [31;1mno[m
+checking thread model... [33;1mpthread[m
+checking whether CXXFLAGS is valid... [32;1myes[m
+checking for crypt in -lcrypt... [32;1myes[m
+checking for dlopen in -ldl... [32;1myes[m
+checking for shutdown in -lsocket... [31;1mno[m
+checking for dirent.h that defines DIR... [32;1myes[m
+checking for library containing opendir... [33;1mnone required[m
+checking for _Bool... [32;1myes[m
+checking for stdbool.h that conforms to C99... [31;1mno[m
+checking for sys/wait.h that is POSIX.1 compatible... [32;1myes[m
+checking for afunix.h... [31;1mno[m
+checking for atomic.h... [31;1mno[m
+checking for copyfile.h... [31;1mno[m
+checking for direct.h... [31;1mno[m
+checking for grp.h... [32;1myes[m
+checking for fcntl.h... [32;1myes[m
+checking for float.h... [32;1myes[m
+checking for ieeefp.h... [31;1mno[m
+checking for intrinsics.h... [31;1mno[m
+checking for langinfo.h... [32;1myes[m
+checking for limits.h... [32;1myes[m
+checking for locale.h... [32;1myes[m
+checking for malloc.h... [32;1myes[m
+checking for malloc/malloc.h... [31;1mno[m
+checking for malloc_np.h... [31;1mno[m
+checking for net/socket.h... [31;1mno[m
+checking for process.h... [31;1mno[m
+checking for pwd.h... [32;1myes[m
+checking for sanitizer/asan_interface.h... [32;1myes[m
+checking for sanitizer/msan_interface.h... [31;1mno[m
+checking for sanitizer/tsan_interface.h... [32;1myes[m
+checking for setjmpex.h... [31;1mno[m
+checking for stdalign.h... [32;1myes[m
+checking for stdio.h... (cached) [32;1myes[m
+checking for sys/attr.h... [31;1mno[m
+checking for sys/eventfd.h... [32;1myes[m
+checking for sys/fcntl.h... [32;1myes[m
+checking for sys/file.h... [32;1myes[m
+checking for sys/id.h... [31;1mno[m
+checking for sys/ioctl.h... [32;1myes[m
+checking for sys/mkdev.h... [31;1mno[m
+checking for sys/param.h... [32;1myes[m
+checking for sys/prctl.h... [32;1myes[m
+checking for sys/random.h... [32;1myes[m
+checking for sys/resource.h... [32;1myes[m
+checking for sys/select.h... [32;1myes[m
+checking for sys/sendfile.h... [32;1myes[m
+checking for sys/socket.h... [32;1myes[m
+checking for sys/syscall.h... [32;1myes[m
+checking for sys/sysmacros.h... [32;1myes[m
+checking for sys/time.h... [32;1myes[m
+checking for sys/times.h... [32;1myes[m
+checking for sys/uio.h... [32;1myes[m
+checking for sys/utime.h... [31;1mno[m
+checking for syscall.h... [32;1myes[m
+checking for time.h... [32;1myes[m
+checking for ucontext.h... [32;1myes[m
+checking for utime.h... [32;1myes[m
+checking for sys/epoll.h... [32;1myes[m
+checking for sys/event.h... [31;1mno[m
+checking for stdckdint.h... [32;1myes[m
+checking for stdatomic.h... [32;1myes[m
+checking for x86intrin.h... [32;1myes[m
+checking for x86intrin.h when defined(__x86_64__)... [32;1myes[m
+checking for gmp.h... [32;1myes[m
+checking for library containing __gmpz_init... [33;1m-lgmp[m
+checking for special C compiler options needed for large files... [31;1mno[m
+checking for _FILE_OFFSET_BITS value needed for large files... [31;1mno[m
+checking whether byte ordering is bigendian... (cached) [31;1mno[m
+checking for an ANSI C-conforming const... [32;1myes[m
+checking whether char is unsigned... [31;1mno[m
+checking for inline... [33;1minline[m
+checking for working volatile... [32;1myes[m
+checking for typeof syntax and keyword spelling... [33;1mtypeof[m
+checking for C/C++ restrict keyword... [33;1m__restrict__[m
+checking for long long... [32;1myes[m
+checking for off_t... [32;1myes[m
+checking char bit... [33;1m8[m
+checking size of int... (cached) [33;1m4[m
+checking size of short... (cached) [33;1m2[m
+checking size of long... [33;1m8[m
+checking size of long long... (cached) [33;1m8[m
+checking size of __int64... [33;1m0[m
+checking size of __int128... [33;1m16[m
+checking size of off_t... [33;1m8[m
+checking size of void*... [33;1m8[m
+checking size of float... (cached) [33;1m4[m
+checking size of double... (cached) [33;1m8[m
+checking size of time_t... [33;1m8[m
+checking size of clock_t... [33;1m8[m
+checking word size... [33;1m8[m
+checking packed struct attribute... [33;1mx __attribute__((packed))[m
+checking whether -Wno-address-of-packed-member is accepted as CFLAGS... [32;1myes[m
+checking for printf prefix for long long... [33;1mll[m
+checking for pid_t... [32;1myes[m
+checking for convertible type of pid_t... [33;1mINT[m
+checking for uid_t... [32;1myes[m
+checking for convertible type of uid_t... [33;1mUINT[m
+checking for gid_t... [32;1myes[m
+checking for convertible type of gid_t... [33;1mUINT[m
+checking for time_t... [32;1myes[m
+checking for convertible type of time_t... [33;1mLONG[m
+checking for dev_t... [32;1myes[m
+checking for convertible type of dev_t... [33;1mULONG[m
+checking for mode_t... [32;1myes[m
+checking for convertible type of mode_t... [33;1mUINT[m
+checking for rlim_t... [32;1myes[m
+checking for convertible type of rlim_t... [33;1mULONG[m
+checking for off_t... (cached) [32;1myes[m
+checking for convertible type of off_t... [33;1mLONG[m
+checking for clockid_t... [32;1myes[m
+checking for convertible type of clockid_t... [33;1mINT[m
+checking for variable length macro... [32;1myes[m
+checking if _Alignof() works... [32;1myes[m
+checking for CONSTFUNC function attribute... [33;1m__attribute__ ((__const__)) x[m
+checking for PUREFUNC function attribute... [33;1m__attribute__ ((__pure__)) x[m
+checking for NORETURN function attribute... [33;1m__attribute__ ((__noreturn__)) x[m
+checking for DEPRECATED function attribute... [33;1m__attribute__ ((__deprecated__)) x[m
+checking for DEPRECATED_BY function attribute... [33;1m__attribute__ ((__deprecated__("by "#n))) x[m
+checking for NOINLINE function attribute... [33;1m__attribute__ ((__noinline__)) x[m
+checking for ALWAYS_INLINE function attribute... [33;1m__attribute__ ((__always_inline__)) x[m
+checking for NO_SANITIZE function attribute... [33;1m__attribute__ ((__no_sanitize__(san))) x[m
+checking for NO_SANITIZE_ADDRESS function attribute... [33;1m__attribute__ ((__no_sanitize_address__)) x[m
+checking for NO_ADDRESS_SAFETY_ANALYSIS function attribute... [33;1m__attribute__ ((__no_address_safety_analysis__)) x[m
+checking for WARN_UNUSED_RESULT function attribute... [33;1m__attribute__ ((__warn_unused_result__)) x[m
+checking for MAYBE_UNUSED function attribute... [33;1m__attribute__ ((__unused__)) x[m
+checking for ERRORFUNC function attribute... [33;1m__attribute__ ((__error__ mesg)) x[m
+checking for WARNINGFUNC function attribute... [33;1m__attribute__ ((__warning__ mesg)) x[m
+checking for WEAK function attribute... [33;1m__attribute__ ((__weak__)) x[m
+checking for std::nullptr_t... [32;1myes[m
+checking for FUNC_STDCALL function attribute... [33;1mx[m
+checking for FUNC_CDECL function attribute... [33;1mx[m
+checking for FUNC_FASTCALL function attribute... [33;1mx[m
+checking for FUNC_UNOPTIMIZED function attribute... [33;1m__attribute__ ((__optimize__("O0"))) x[m
+checking for FUNC_MINIMIZED function attribute... [33;1m__attribute__ ((__optimize__("-Os","-fomit-frame-pointer"))) x[m
+checking for function alias... [33;1malias[m
+checking for __atomic builtins... [32;1myes[m
+checking for 64bit __atomic builtins... [32;1myes[m
+checking for __sync builtins... [32;1myes[m
+checking for __builtin_unreachable... [32;1myes[m
+checking for __assume... [31;1mno[m
+checking for exported function attribute... [33;1m__attribute__ ((__visibility__("default")))[m
+checking for RUBY_FUNC_NONNULL function attribute... [33;1m__attribute__ ((__nonnull__(n))) x[m
+checking for function name string predefined identifier... [33;1m__func__[m
+checking if enum over int is allowed... [32;1myes[m
+checking for cc options needed to detect all undeclared functions... [33;1mnone needed[m
+checking whether sys_nerr is declared... [31;1mno[m
+checking whether getenv is declared... [32;1myes[m
+checking for size_t... [32;1myes[m
+checking size of size_t... [33;1m8[m
+checking size of ptrdiff_t... [33;1m8[m
+checking size of dev_t... [33;1m8[m
+checking for printf prefix for size_t... [33;1mz[m
+checking for printf prefix for ptrdiff_t... [33;1mt[m
+checking for struct stat.st_blksize... [32;1myes[m
+checking for struct stat.st_blocks... [32;1myes[m
+checking for struct stat.st_rdev... [32;1myes[m
+checking size of struct stat.st_size... [33;1mSIZEOF_OFF_T[m
+checking size of struct stat.st_blocks... [33;1mSIZEOF_OFF_T[m
+checking size of struct stat.st_ino... [33;1mSIZEOF_LONG[m
+checking size of struct stat.st_dev... [33;1mSIZEOF_DEV_T[m
+checking size of struct stat.st_rdev... [33;1mSIZEOF_DEV_T[m
+checking for struct stat.st_atim... [32;1myes[m
+checking for struct stat.st_atimespec... [31;1mno[m
+checking for struct stat.st_atimensec... [31;1mno[m
+checking for struct stat.st_mtim... [32;1myes[m
+checking for struct stat.st_mtimespec... [31;1mno[m
+checking for struct stat.st_mtimensec... [31;1mno[m
+checking for struct stat.st_ctim... [32;1myes[m
+checking for struct stat.st_ctimespec... [31;1mno[m
+checking for struct stat.st_ctimensec... [31;1mno[m
+checking for struct stat.st_birthtimespec... [31;1mno[m
+checking for struct statx.stx_btime... [32;1myes[m
+checking for struct timeval... [32;1myes[m
+checking size of struct timeval.tv_sec... [33;1mSIZEOF_TIME_T[m
+checking for struct timespec... [32;1myes[m
+checking for struct timezone... [32;1myes[m
+checking for fd_mask... [32;1myes[m
+checking for int8_t... [32;1myes[m
+checking size of int8_t... [33;1m1[m
+checking for uint8_t... [32;1myes[m
+checking size of uint8_t... [33;1m1[m
+checking for int16_t... [32;1myes[m
+checking size of int16_t... [33;1m2[m
+checking for uint16_t... [32;1myes[m
+checking size of uint16_t... [33;1m2[m
+checking for int32_t... [32;1myes[m
+checking size of int32_t... [33;1m4[m
+checking for uint32_t... [32;1myes[m
+checking size of uint32_t... [33;1m4[m
+checking for int64_t... [32;1myes[m
+checking size of int64_t... [33;1m8[m
+checking for uint64_t... [32;1myes[m
+checking size of uint64_t... [33;1m8[m
+checking for int128_t... [33;1m__int128[m
+checking for uint128_t... [33;1munsigned __int128[m
+checking for intptr_t... [32;1myes[m
+checking size of intptr_t... [33;1m8[m
+checking for uintptr_t... [32;1myes[m
+checking size of uintptr_t... [33;1m8[m
+checking for printf prefix for intptr_t... [33;1mNONE[m
+checking for ssize_t... [32;1myes[m
+checking size of ssize_t... [33;1m8[m
+checking for printf prefix for int64_t... [33;1mNONE[m
+checking for stack end address... [33;1m__libc_stack_end[m
+checking for grep that handles long lines and -e... [33;1m/usr/bin/grep[m
+checking for egrep... [33;1m/usr/bin/grep -E[m
+checking for uid_t in sys/types.h... (cached) [32;1myes[m
+checking type of array argument to getgroups... [33;1mgid_t[m
+checking for working alloca.h... [32;1myes[m
+checking for alloca... [32;1myes[m
+checking for dynamic size alloca... [33;1mok[m
+checking for working memcmp... [32;1myes[m
+checking for dup... [32;1myes[m
+checking for dup2... [32;1myes[m
+checking for acosh... [32;1myes[m
+checking for cbrt... [32;1myes[m
+checking for crypt... [32;1myes[m
+checking for erf... [32;1myes[m
+checking for explicit_bzero... [32;1myes[m
+checking for ffs... [32;1myes[m
+checking for flock... [32;1myes[m
+checking for hypot... [32;1myes[m
+checking for lgamma_r... [32;1myes[m
+checking for memmove... [32;1myes[m
+checking for nan... [32;1myes[m
+checking for nextafter... [32;1myes[m
+checking for setproctitle... [31;1mno[m
+checking for strchr... [32;1myes[m
+checking for strerror... [32;1myes[m
+checking for strlcat... [32;1myes[m
+checking for strlcpy... [32;1myes[m
+checking for strstr... [32;1myes[m
+checking for tgamma... [32;1myes[m
+checking for sys/pstat.h... [31;1mno[m
+checking for pid_t... (cached) [32;1myes[m
+checking for fork... [32;1myes[m
+checking for vfork... [32;1myes[m
+checking for working fork... [32;1myes[m
+checking for working vfork... (cached) [32;1myes[m
+checking for __syscall... [31;1mno[m
+checking for _longjmp... [32;1myes[m
+checking for arc4random_buf... [32;1myes[m
+checking for atan2l... [32;1myes[m
+checking for atan2f... [32;1myes[m
+checking whether atomic_signal_fence is declared... [32;1myes[m
+checking for chmod... [32;1myes[m
+checking for chown... [32;1myes[m
+checking for chroot... [32;1myes[m
+checking for chsize... [31;1mno[m
+checking for clock_gettime... [32;1myes[m
+checking for copy_file_range... [32;1myes[m
+checking for cosh... [32;1myes[m
+checking for crypt_r... [32;1myes[m
+checking for daemon... (cached) [31;1mno[m
+checking for dirfd... [32;1myes[m
+checking for dl_iterate_phdr... [32;1myes[m
+checking for dlopen... [32;1myes[m
+checking for dladdr... [32;1myes[m
+checking for dup3... [32;1myes[m
+checking for eaccess... [32;1myes[m
+checking for endgrent... [32;1myes[m
+checking for eventfd... [32;1myes[m
+checking for execl... [32;1myes[m
+checking for execle... [32;1myes[m
+checking for execv... [32;1myes[m
+checking for execve... [32;1myes[m
+checking for explicit_memset... [31;1mno[m
+checking for fcopyfile... [31;1mno[m
+checking for fchdir... [32;1myes[m
+checking for fchmod... [32;1myes[m
+checking for fchown... [32;1myes[m
+checking for fcntl... [32;1myes[m
+checking for fdatasync... [32;1myes[m
+checking for fdopendir... [32;1myes[m
+checking for fgetattrlist... [31;1mno[m
+checking for fmod... [32;1myes[m
+checking for fstatat... [32;1myes[m
+checking for fsync... [32;1myes[m
+checking for ftruncate... [32;1myes[m
+checking for ftruncate64... [32;1myes[m
+checking for getattrlist... [31;1mno[m
+checking for getcwd... [32;1myes[m
+checking for getegid... [32;1myes[m
+checking for getentropy... [32;1myes[m
+checking for geteuid... [32;1myes[m
+checking for getgid... [32;1myes[m
+checking for getgidx... [31;1mno[m
+checking for getgrnam... [32;1myes[m
+checking for getgrnam_r... [32;1myes[m
+checking for getgroups... [32;1myes[m
+checking for getlogin... [32;1myes[m
+checking for getlogin_r... [32;1myes[m
+checking for getpgid... [32;1myes[m
+checking for getpgrp... [32;1myes[m
+checking for getppid... [32;1myes[m
+checking for getpriority... [32;1myes[m
+checking for getpwnam... [32;1myes[m
+checking for getpwnam_r... [32;1myes[m
+checking for getpwuid... [32;1myes[m
+checking for getpwuid_r... [32;1myes[m
+checking for getrandom... [32;1myes[m
+checking for getresgid... [32;1myes[m
+checking for getresuid... [32;1myes[m
+checking for getrlimit... [32;1myes[m
+checking for getsid... [32;1myes[m
+checking for gettimeofday... [32;1myes[m
+checking for getuid... [32;1myes[m
+checking for getuidx... [31;1mno[m
+checking for gmtime_r... [32;1myes[m
+checking for initgroups... [32;1myes[m
+checking for ioctl... [32;1myes[m
+checking for isfinite... [31;1mno[m
+checking for issetugid... [31;1mno[m
+checking for kill... [32;1myes[m
+checking for killpg... [32;1myes[m
+checking for lchmod... [32;1myes[m
+checking for lchown... [32;1myes[m
+checking for link... [32;1myes[m
+checking for llabs... [32;1myes[m
+checking for lockf... [32;1myes[m
+checking for log2... [32;1myes[m
+checking for lstat... [32;1myes[m
+checking for lutimes... [32;1myes[m
+checking for malloc_usable_size... [32;1myes[m
+checking for malloc_size... [31;1mno[m
+checking for malloc_trim... [32;1myes[m
+checking for mblen... [32;1myes[m
+checking for memalign... [32;1myes[m
+checking for memset_s... [31;1mno[m
+checking for writev... [32;1myes[m
+checking for memrchr... [32;1myes[m
+checking for memmem... [32;1myes[m
+checking for mkfifo... [32;1myes[m
+checking for mknod... [32;1myes[m
+checking for mktime... [32;1myes[m
+checking for mmap... [32;1myes[m
+checking for mremap... [32;1myes[m
+checking for openat... [32;1myes[m
+checking for pclose... [32;1myes[m
+checking for pipe... [32;1myes[m
+checking for pipe2... [32;1myes[m
+checking for poll... [32;1myes[m
+checking for popen... [32;1myes[m
+checking for posix_fadvise... [32;1myes[m
+checking for posix_madvise... [32;1myes[m
+checking for posix_memalign... [32;1myes[m
+checking for ppoll... [32;1myes[m
+checking for pread... [32;1myes[m
+checking for pwrite... [32;1myes[m
+checking for qsort_r... (cached) [31;1mno[m
+checking for qsort_s... [31;1mno[m
+checking for readlink... [32;1myes[m
+checking for realpath... [32;1myes[m
+checking for round... [32;1myes[m
+checking for sched_getaffinity... [32;1myes[m
+checking for seekdir... [32;1myes[m
+checking for select_large_fdset... [31;1mno[m
+checking for sendfile... [32;1myes[m
+checking for setegid... [32;1myes[m
+checking for setenv... [32;1myes[m
+checking for seteuid... [32;1myes[m
+checking for setgid... [32;1myes[m
+checking for setgroups... [32;1myes[m
+checking for setpgid... [32;1myes[m
+checking for setpgrp... [32;1myes[m
+checking for setregid... [32;1myes[m
+checking for setresgid... [32;1myes[m
+checking for setresuid... [32;1myes[m
+checking for setreuid... [32;1myes[m
+checking for setrgid... [31;1mno[m
+checking for setrlimit... [32;1myes[m
+checking for setruid... [31;1mno[m
+checking for setsid... [32;1myes[m
+checking for setuid... [32;1myes[m
+checking for shutdown... [32;1myes[m
+checking for sigaction... [32;1myes[m
+checking for sigaltstack... [32;1myes[m
+checking for sigprocmask... [32;1myes[m
+checking for sinh... [32;1myes[m
+checking for snprintf... [32;1myes[m
+checking for spawnv... [31;1mno[m
+checking for symlink... [32;1myes[m
+checking for syscall... [32;1myes[m
+checking for sysconf... [32;1myes[m
+checking for system... [32;1myes[m
+checking for tanh... [32;1myes[m
+checking for telldir... [32;1myes[m
+checking for timegm... [32;1myes[m
+checking for times... [32;1myes[m
+checking for truncate... [32;1myes[m
+checking for truncate64... [32;1myes[m
+checking for tzset... [32;1myes[m
+checking for umask... [32;1myes[m
+checking for unsetenv... [32;1myes[m
+checking for utimensat... [32;1myes[m
+checking for utimes... [32;1myes[m
+checking for wait4... [32;1myes[m
+checking for waitpid... [32;1myes[m
+checking for __cospi... [31;1mno[m
+checking for __sinpi... [31;1mno[m
+checking for statx... [32;1myes[m
+checking if getcwd allocates buffer if NULL is given... [32;1myes[m
+checking for crypt.h... [32;1myes[m
+checking for struct crypt_data.initialized... [32;1myes[m
+checking for __builtin_alloca_with_align... [32;1myes[m
+checking for __builtin_assume_aligned... [32;1myes[m
+checking for __builtin_bswap16... [32;1myes[m
+checking for __builtin_bswap32... [32;1myes[m
+checking for __builtin_bswap64... [32;1myes[m
+checking for __builtin_popcount... [32;1myes[m
+checking for __builtin_popcountll... [32;1myes[m
+checking for __builtin_clz... [32;1myes[m
+checking for __builtin_clzl... [32;1myes[m
+checking for __builtin_clzll... [32;1myes[m
+checking for __builtin_ctz... [32;1myes[m
+checking for __builtin_ctzll... [32;1myes[m
+checking for __builtin_constant_p... [32;1myes[m
+checking for __builtin_choose_expr... [32;1myes[m
+checking for __builtin_choose_expr_constant_p... [32;1myes[m
+checking for __builtin_types_compatible_p... [32;1myes[m
+checking for __builtin_trap... [32;1myes[m
+checking for __builtin_expect... [32;1myes[m
+checking for __builtin_add_overflow... [32;1myes[m
+checking for __builtin_add_overflow_p... [32;1myes[m
+checking for __builtin_add_overflow with long long arguments... [32;1myes[m
+checking for __builtin_sub_overflow... [32;1myes[m
+checking for __builtin_sub_overflow_p... [32;1myes[m
+checking for __builtin_sub_overflow with long long arguments... [32;1myes[m
+checking for __builtin_mul_overflow... [32;1myes[m
+checking for __builtin_mul_overflow_p... [32;1myes[m
+checking for __builtin_mul_overflow with long long arguments... [32;1myes[m
+checking whether atan2 handles Inf as C99... [32;1myes[m
+checking for clock_getres... [32;1myes[m
+checking for timer_create in -lrt... [32;1myes[m
+checking for timer_settime in -lrt... [32;1myes[m
+checking for unsetenv returns a value... [32;1myes[m
+checking whether struct tm is in sys/time.h or time.h... [33;1mtime.h[m
+checking for struct tm.tm_zone... [32;1myes[m
+checking for struct tm.tm_gmtoff... [32;1myes[m
+checking for external int daylight... [32;1myes[m
+checking for negative time_t for gmtime(3)... [32;1myes[m
+checking for localtime(3) overflow correctly... [32;1myes[m
+checking for sig_t... [32;1myes[m
+checking whether right shift preserve sign bit... [32;1myes[m
+checking whether _SC_CLK_TCK is supported... [32;1myes[m
+checking stack growing direction on x86_64... [33;1m-1[m
+checking native coroutine implementation for x86_64-linux... [33;1mamd64[m
+checking whether pthread_t is scalar type... [32;1myes[m
+checking for sched_yield... [32;1myes[m
+checking for pthread_attr_setinheritsched... [32;1myes[m
+checking for pthread_attr_get_np... [31;1mno[m
+checking for pthread_attr_getstack... [32;1myes[m
+checking for pthread_attr_getguardsize... [32;1myes[m
+checking for pthread_get_stackaddr_np... [31;1mno[m
+checking for pthread_get_stacksize_np... [31;1mno[m
+checking for thr_stksegment... [31;1mno[m
+checking for pthread_stackseg_np... [31;1mno[m
+checking for pthread_getthrds_np... [31;1mno[m
+checking for pthread_condattr_setclock... [32;1myes[m
+checking for pthread_setname_np... [32;1myes[m
+checking for pthread_set_name_np... [31;1mno[m
+checking for pthread_sigmask... [32;1myes[m
+checking for pthread_getattr_np... [32;1myes[m
+checking arguments of pthread_setname_np... [33;1m(pthread_self(), name)[m
+checking for thread-local storage specifier... [33;1m_Thread_local[m
+checking if mcontext_t is a pointer... [31;1mno[m
+checking for getcontext... [32;1myes[m
+checking for setcontext... [32;1myes[m
+checking if fork works with pthread... [32;1myes[m
+checking for sys/user.h... [32;1myes[m
+checking whether PAGE_SIZE is compile-time const... [31;1mno[m
+checking ioctl request type... [33;1munsigned long[m
+checking for elf.h... [32;1myes[m
+checking for elf_abi.h... [31;1mno[m
+checking for uncompress in -lz... [32;1myes[m
+checking for mach-o/loader.h... [31;1mno[m
+checking whether OS depend dynamic link works... [32;1myes[m
+checking for backtrace... [32;1myes[m
+checking for broken backtrace... [31;1mno[m
+checking for strip flags... [33;1m-S -x[m
+checking whether -Wl,--no-as-needed is accepted as LDFLAGS... [32;1myes[m
+checking whether -Wl,--no-undefined is accepted as LDFLAGS... [32;1myes[m
+checking whether wrapper for LD_LIBRARY_PATH is needed... [31;1mno[m
+checking whether dtrace USDT is available... [31;1mno[m
+checking for __builtin_setjmp... [32;1myes[m
+checking for _setjmpex as a macro or function... [31;1mno[m
+checking for _setjmp as a macro or function... [32;1myes[m
+checking for setjmp type... [33;1m__builtin_setjmp[m
+checking if building with modular GC support... [31;1mno[m
+checking for rustc... [33;1mrustc[m
+checking whether rustc works for YJIT... [32;1myes[m
+checking prerequisites for ZJIT... [32;1myes[m
+checking for prefix of external symbols... [33;1mNONE[m
+checking for default symbols in empty shared library... [33;1m[m
+.ext/include/x86_64-linux/ruby/config.h [31;1mupdated[m
+configure: ruby library version = 4.0.0
+configure: creating ./config.status
+config.status: creating GNUmakefile
+config.status: creating Makefile
+---
+Configuration summary for ruby version 4.0.4
+
+   * Installation prefix: /usr
+   * exec prefix:         ${prefix}
+   * arch:                x86_64-linux
+   * site arch:           ${arch}
+   * RUBY_BASE_NAME:      ruby
+   * enable shared:       yes
+   * ruby lib prefix:     ${libdir}/${RUBY_BASE_NAME}
+   * site libraries path: ${rubylibprefix}/${sitearch}
+   * vendor path:         ${rubylibprefix}/vendor_ruby
+   * target OS:           linux
+   * compiler:            cc
+   * with thread:         pthread
+   * with coroutine:      amd64
+   * with modular GC:     no
+   * enable shared libs:  yes
+   * dynamic library ext: so
+   * CFLAGS:              ${hardenflags}  ${optflags} ${debugflags} \
+                          ${warnflags}
+   * LDFLAGS:             -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common \
+                          -Wl,--as-needed -Wl,-z,relro -Wl,-z,now \
+                          -Wl,-z,noexecstack -fstack-protector-strong \
+                          -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed
+   * DLDFLAGS:            -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common \
+                          -Wl,--as-needed -Wl,-z,relro -Wl,-z,now \
+                          -Wl,-z,noexecstack \
+                          -Wl,--compress-debug-sections=zlib
+   * optflags:            -O3 -fno-fast-math
+   * debugflags:          -ggdb3
+   * warnflags:           -Wall -Wextra -Wdeprecated-declarations \
+                          -Wdiv-by-zero -Wduplicated-cond \
+                          -Wimplicit-function-declaration -Wimplicit-int \
+                          -Wpointer-arith -Wwrite-strings \
+                          -Wold-style-definition -Wimplicit-fallthrough=0 \
+                          -Wmissing-noreturn -Wno-cast-function-type \
+                          -Wno-constant-logical-operand -Wno-long-long \
+                          -Wno-missing-field-initializers \
+                          -Wno-overlength-strings \
+                          -Wno-packed-bitfield-compat \
+                          -Wno-parentheses-equality -Wno-self-assign \
+                          -Wno-tautological-compare -Wno-unused-parameter \
+                          -Wno-unused-value -Wsuggest-attribute=format \
+                          -Wsuggest-attribute=noreturn -Wunused-variable \
+                          -Wmisleading-indentation -Wundef
+   * hardenflags:         -fstack-protector-strong -U_FORTIFY_SOURCE \
+                          -D_FORTIFY_SOURCE=2
+   * strip command:       strip -S -x
+   * install doc:         rdoc
+   * YJIT support:        yes
+   * ZJIT support:        yes
+   * man page type:       doc
+
+---
+/bin/sh: line 1: fg: no job control
+sed -f ./tool/prereq.status ./common.mk ./prism/srcs.mk ./depend > uncommon.mk
+	BASERUBY = ./tool/missing-baseruby.bat
+	CC = cc
+	LD = ld
+	LDSHARED = cc -shared
+	CFLAGS = -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC 
+	XCFLAGS = -fno-strict-overflow -fvisibility=hidden -fexcess-precision=standard -DRUBY_EXPORT -I. -I.ext/include/x86_64-linux -I.ext/include -I./include -I. -I./prism -I./enc/unicode/17.0.0   -Dmodular_gc_dir=
+	CPPFLAGS =   
+	DLDFLAGS = -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -Wl,--compress-debug-sections=zlib -Wl,-soname,libruby.so.4.0  -fstack-protector-strong  
+	SOLIBS = -lz -lrt -lrt -lgmp -ldl -lcrypt -lm -lpthread 
+	LANG = en_US.utf8
+	LC_ALL = 
+	LC_CTYPE = 
+	MFLAGS = -j10 --jobserver-auth=fifo:/var/tmp/hokuto/GMfifo649915
+	RUSTC = rustc
+	YJIT_RUSTC_ARGS = --crate-name=yjit --crate-type=rlib --edition=2021 -g -C lto=thin -C opt-level=3 -C overflow-checks=on '--out-dir=/var/tmp/hokuto/ruby-02/build/target/release/' './yjit/src/lib.rs'
+	ZJIT_RUSTC_ARGS = --crate-name=zjit --crate-type=rlib --edition=2024 -g -C lto=thin -C opt-level=3 -C overflow-checks=on '--out-dir=/var/tmp/hokuto/ruby-02/build/target/release/' './zjit/src/lib.rs'
+compiling ./main.c
+cc (GCC) 16.1.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+compiling dmydln.c
+compiling miniinit.c
+making dummy probes.h
+compiling ast.c
+compiling bignum.c
+compiling box.c
+compiling class.c
+compiling compar.c
+compiling compile.c
+compiling complex.c
+compiling concurrent_set.c
+compiling cont.c
+compiling debug.c
+compiling debug_counter.c
+compiling dir.c
+compiling dln_find.c
+compiling encoding.c
+compiling enum.c
+compiling enumerator.c
+compiling error.c
+compiling eval.c
+compiling file.c
+compiling gc.c
+compiling hash.c
+compiling imemo.c
+compiling inits.c
+compiling io.c
+compiling io_buffer.c
+compiling iseq.c
+compiling load.c
+compiling marshal.c
+compiling math.c
+compiling memory_view.c
+[01m[Khash.c:[m[K In function ‘[01m[Kenv_rassoc[m[K’:
+[01m[Khash.c:6443:23:[m[K [01;35m[Kwarning: [m[Kinitialization discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+ 6443 |             char *s = [01;35m[Kstrchr[m[K(p, '=');
+      |                       [01;35m[K^~~~~~[m[K
+[01m[Khash.c:[m[K In function ‘[01m[Kenv_shift[m[K’:
+[01m[Khash.c:6663:23:[m[K [01;35m[Kwarning: [m[Kinitialization discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+ 6663 |             char *s = [01;35m[Kstrchr[m[K(p, '=');
+      |                       [01;35m[K^~~~~~[m[K
+compiling node.c
+compiling node_dump.c
+compiling numeric.c
+[01m[Kload.c:[m[K In function ‘[01m[Krb_ext_resolve_symbol[m[K’:
+[01m[Kload.c:1652:13:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+ 1652 |         ext [01;35m[K=[m[K strrchr(fname, '.');
+      |             [01;35m[K^[m[K
+compiling object.c
+compiling pack.c
+compiling pathname.c
+compiling parse.c
+compiling parser_st.c
+compiling proc.c
+compiling process.c
+compiling ractor.c
+compiling random.c
+compiling range.c
+compiling rational.c
+compiling re.c
+compiling regcomp.c
+compiling regenc.c
+compiling regerror.c
+compiling regexec.c
+compiling regparse.c
+compiling regsyntax.c
+compiling ruby.c
+compiling ruby_parser.c
+compiling scheduler.c
+compiling set.c
+compiling shape.c
+compiling signal.c
+compiling sprintf.c
+compiling st.c
+compiling strftime.c
+compiling string.c
+compiling struct.c
+compiling symbol.c
+[01m[Kruby.c:[m[K In function ‘[01m[Kproc_encoding_option[m[K’:
+[01m[Kruby.c:1378:13:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+ 1378 |     if (!(p [01;35m[K=[m[K strchr(s, ':'))) {                        \
+      |             [01;35m[K^[m[K
+[01m[Kruby.c:1385:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kset_encoding_part[m[K’
+ 1385 |     [01;36m[Kset_encoding_part[m[K(external);
+      |     [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kruby.c:1378:13:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+ 1378 |     if (!(p [01;35m[K=[m[K strchr(s, ':'))) {                        \
+      |             [01;35m[K^[m[K
+[01m[Kruby.c:1387:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kset_encoding_part[m[K’
+ 1387 |     [01;36m[Kset_encoding_part[m[K(internal);
+      |     [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+compiling thread.c
+compiling time.c
+compiling transcode.c
+compiling util.c
+compiling variable.c
+compiling version.c
+compiling vm.c
+compiling vm_backtrace.c
+compiling vm_dump.c
+compiling vm_sync.c
+compiling vm_trace.c
+compiling weakmap.c
+compiling yjit.c
+compiling zjit.c
+compiling jit.c
+building libjit.rlib
+compiling ./missing/setproctitle.c
+compiling addr2line.c
+compiling dln.c
+compiling localeinit.c
+compiling dmyext.c
+compiling dmyenc.c
+compiling array.c
+compiling prism/api_node.c
+compiling prism/api_pack.c
+compiling prism/diagnostic.c
+compiling prism/encoding.c
+compiling prism/extension.c
+compiling prism/node.c
+compiling prism/options.c
+compiling prism/pack.c
+compiling prism/prettyprint.c
+compiling prism/regexp.c
+compiling prism/serialize.c
+compiling prism/static_literals.c
+compiling prism/token_type.c
+compiling prism/util/pm_buffer.c
+compiling prism/util/pm_char.c
+compiling prism/util/pm_constant_pool.c
+compiling prism/util/pm_integer.c
+compiling prism/util/pm_list.c
+compiling prism/util/pm_memchr.c
+compiling prism/util/pm_newline_list.c
+compiling prism/util/pm_string.c
+compiling prism/util/pm_strncasecmp.c
+[01m[Kprism/util/pm_memchr.c:[m[K In function ‘[01m[Kpm_memchr[m[K’:
+[01m[Kprism/util/pm_memchr.c:31:16:[m[K [01;35m[Kwarning: [m[Kreturn discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+   31 |         return [01;35m[Kmemchr[m[K(memory, character, number);
+      |                [01;35m[K^~~~~~[m[K
+compiling prism/util/pm_strpbrk.c
+compiling prism/prism.c
+compiling prism_init.c
+building libyjit.rlib
+building libzjit.rlib
+assembling coroutine/amd64/Context.S
+compiling enc/ascii.c
+compiling enc/us_ascii.c
+compiling enc/unicode.c
+compiling enc/utf_8.c
+compiling enc/trans/newline.c
+building libruby.a
+partial linking /var/tmp/hokuto/ruby-02/build/target/release/libruby.a into /var/tmp/hokuto/ruby-02/build/target/release/libruby.o
+linking miniruby
+builtin_binary.rbbin [31;1mupdated[m
+ac5be0e878796c86f3f15c7e48ec6c54b815e8ee5ad05d23f716761c52982b4b  builtin_binary.rbbin
+compiling builtin.c
+/bin/sh ./tool/ifchange "--timestamp=.rbconfig.time" rbconfig.rb rbconfig.tmp
+rbconfig.rb [31;1mupdated[m
+generating encdb.h
+generating enc.mk
+creating verconf.h
+encdb.h [31;1mupdated[m
+verconf.h [31;1mupdated[m
+compiling loadpath.c
+linking static-library libruby-static.a
+making srcs under enc
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Nothing to be done for 'srcs'.
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+generating transdb.h
+transdb.h [31;1mupdated[m
+linking shared-library libruby.so.4.0.4
+generating makefiles ext/configure-ext.mk
+making enc
+making trans
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+compiling ./enc/encdb.c
+compiling ./enc/big5.c
+compiling ./enc/cesu_8.c
+compiling ./enc/cp949.c
+compiling ./enc/emacs_mule.c
+compiling ./enc/euc_jp.c
+compiling ./enc/euc_kr.c
+ext/configure-ext.mk [31;1mupdated[m
+compiling ./enc/euc_tw.c
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+compiling ./enc/trans/transdb.c
+configuring -test-/RUBY_ALIGNOF
+compiling ./enc/trans/big5.c
+compiling ./enc/gb2312.c
+compiling ./enc/gb18030.c
+compiling ./enc/gbk.c
+compiling ./enc/iso_8859_1.c
+configuring cgi/escape
+compiling ./enc/trans/cesu_8.c
+configuring continuation
+compiling ./enc/iso_8859_2.c
+compiling ./enc/trans/chinese.c
+configuring coverage
+compiling ./enc/iso_8859_3.c
+compiling ./enc/iso_8859_4.c
+compiling ./enc/trans/ebcdic.c
+configuring date
+compiling ./enc/trans/emoji.c
+configuring digest
+configuring digest/bubblebabble
+configuring digest/md5
+compiling ./enc/trans/emoji_iso2022_kddi.c
+compiling ./enc/iso_8859_5.c
+compiling ./enc/iso_8859_6.c
+configuring erb/escape
+configuring -test-/abi
+configuring -test-/arith_seq/beg_len_step
+configuring -test-/arith_seq/extract
+configuring -test-/array/concat
+configuring -test-/array/resize
+configuring -test-/bignum
+configuring -test-/box/yay1
+configuring -test-/box/yay2
+configuring -test-/bug-14834
+configuring -test-/bug-3571
+configuring -test-/bug-5832
+configuring -test-/bug_reporter
+configuring -test-/class
+configuring -test-/cxxanyargs
+compiling ./enc/iso_8859_7.c
+configuring etc
+compiling ./enc/trans/emoji_sjis_docomo.c
+compiling ./enc/iso_8859_8.c
+compiling ./enc/iso_8859_9.c
+configuring -test-/debug
+configuring digest/rmd160
+configuring -test-/dln/empty
+configuring -test-/econv
+configuring -test-/ensure_and_callcc
+configuring -test-/enumerator_kw
+configuring -test-/eval
+configuring -test-/exception
+configuring -test-/fatal
+configuring -test-/file
+compiling ./enc/iso_8859_10.c
+compiling ./enc/trans/emoji_sjis_kddi.c
+compiling ./enc/trans/emoji_sjis_softbank.c
+compiling ./enc/iso_8859_11.c
+configuring digest/sha1
+compiling ./enc/iso_8859_13.c
+compiling ./enc/iso_8859_14.c
+configuring digest/sha2
+compiling ./enc/iso_8859_15.c
+compiling ./enc/trans/escape.c
+compiling ./enc/iso_8859_16.c
+compiling ./enc/koi8_r.c
+configuring fcntl
+compiling ./enc/koi8_u.c
+configuring json
+configuring json/generator
+configuring io/console
+configuring monitor
+compiling ./enc/trans/gb18030.c
+compiling ./enc/trans/gbk.c
+compiling ./enc/shift_jis.c
+compiling ./enc/utf_16be.c
+compiling ./enc/utf_16le.c
+compiling ./enc/utf_32be.c
+compiling ./enc/trans/iso2022.c
+compiling ./enc/utf_32le.c
+compiling ./enc/trans/japanese.c
+compiling ./enc/windows_31j.c
+compiling ./enc/trans/japanese_euc.c
+compiling ./enc/windows_1250.c
+configuring -test-/float
+configuring -test-/funcall
+configuring -test-/gvl/call_without_gvl
+configuring -test-/hash
+configuring -test-/integer
+configuring -test-/iseq_load
+configuring -test-/iter
+configuring -test-/load/dot.dot
+configuring -test-/load/protect
+configuring -test-/load/resolve_symbol_resolver
+configuring -test-/load/resolve_symbol_target
+configuring -test-/load/stringify_symbols
+configuring -test-/load/stringify_target
+configuring -test-/marshal/compat
+configuring -test-/marshal/internal_ivar
+configuring -test-/marshal/usr
+configuring -test-/memory_status
+configuring -test-/memory_view
+configuring -test-/method
+configuring -test-/notimplement
+configuring -test-/num2int
+configuring -test-/path_to_class
+configuring -test-/popen_deadlock
+compiling ./enc/windows_1251.c
+configuring -test-/postponed_job
+configuring -test-/printf
+configuring -test-/proc
+configuring -test-/public_header_warnings
+configuring -test-/random
+compiling ./enc/trans/japanese_sjis.c
+configuring -test-/rational
+configuring -test-/rb_call_super_kw
+configuring -test-/recursion
+configuring -test-/regexp
+configuring -test-/sanitizers
+configuring -test-/scan_args
+configuring -test-/scheduler
+configuring -test-/st/foreach
+configuring -test-/st/numhash
+configuring -test-/st/update
+configuring -test-/stack
+configuring -test-/string
+configuring -test-/struct
+configuring objspace
+configuring -test-/symbol
+compiling ./enc/windows_1252.c
+configuring openssl
+compiling ./enc/windows_1253.c
+compiling ./enc/windows_1254.c
+configuring -test-/thread/id
+compiling ./enc/windows_1257.c
+configuring json/parser
+compiling ./enc/trans/korean.c
+configuring -test-/thread/instrumentation
+configuring -test-/thread/lock_native_thread
+configuring -test-/time
+configuring -test-/tracepoint
+configuring -test-/typeddata
+configuring -test-/vm
+configuring -test-/wait
+linking encoding encdb.so
+compiling ./enc/trans/single_byte.c
+linking encoding big5.so
+linking encoding cesu_8.so
+compiling ./enc/trans/utf8_mac.c
+linking encoding cp949.so
+linking encoding emacs_mule.so
+linking encoding euc_jp.so
+compiling ./enc/trans/utf_16_32.c
+configuring psych
+linking encoding euc_kr.so
+linking encoding euc_tw.so
+configuring pty
+linking encoding gb2312.so
+linking transcoder transdb.so
+linking encoding gb18030.so
+linking transcoder big5.so
+linking encoding gbk.so
+configuring rbconfig/sizeof
+linking encoding iso_8859_1.so
+linking transcoder cesu_8.so
+linking encoding iso_8859_2.so
+linking transcoder chinese.so
+linking encoding iso_8859_3.so
+linking transcoder ebcdic.so
+linking encoding iso_8859_4.so
+linking transcoder emoji.so
+linking encoding iso_8859_5.so
+linking transcoder emoji_iso2022_kddi.so
+linking encoding iso_8859_6.so
+linking transcoder emoji_sjis_docomo.so
+linking encoding iso_8859_7.so
+linking transcoder emoji_sjis_kddi.so
+linking encoding iso_8859_8.so
+linking transcoder emoji_sjis_softbank.so
+linking encoding iso_8859_9.so
+configuring ripper
+linking transcoder escape.so
+configuring rubyvm
+linking encoding iso_8859_10.so
+linking transcoder gb18030.so
+configuring socket
+linking encoding iso_8859_11.so
+linking transcoder gbk.so
+linking encoding iso_8859_13.so
+linking encoding iso_8859_14.so
+linking transcoder iso2022.so
+linking encoding iso_8859_15.so
+linking transcoder japanese.so
+linking transcoder japanese_euc.so
+linking encoding iso_8859_16.so
+linking encoding koi8_r.so
+linking encoding koi8_u.so
+linking transcoder japanese_sjis.so
+linking encoding shift_jis.so
+linking transcoder korean.so
+linking encoding utf_16be.so
+linking transcoder single_byte.so
+linking encoding utf_16le.so
+linking transcoder utf8_mac.so
+linking encoding utf_32be.so
+linking encoding utf_32le.so
+linking encoding windows_31j.so
+linking transcoder utf_16_32.so
+linking encoding windows_1250.so
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+linking encoding windows_1251.so
+linking encoding windows_1252.so
+linking encoding windows_1253.so
+linking encoding windows_1254.so
+linking encoding windows_1257.so
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+configuring stringio
+making encs
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Nothing to be done for 'encs'.
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+configuring strscan
+configuring zlib
+configuring bigdecimal-4.0.1/ext/bigdecimal
+configuring debug-1.11.1/ext/debug
+configuring fiddle-1.1.8/ext/fiddle
+libffi_version: 3.5.2
+configuring nkf-0.2.0/ext/nkf
+configuring racc-1.8.1/ext/racc/cparse
+configuring rbs-3.10.0/ext/rbs_extension
+configuring syslog-0.3.0/ext/syslog
+configuring io/nonblock
+configuring io/wait
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+generating makefile exts.mk
+exts.mk [31;1mupdated[m
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/box/yay1'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/arith_seq/beg_len_step'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/box/yay2'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/arith_seq/extract'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/RUBY_ALIGNOF'
+compiling beg_len_step.c
+compiling yay1.c
+compiling yay2.c
+compiling extract.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/array/concat'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/array/resize'
+compiling c.c
+compiling to_ary_concat.c
+compiling resize.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bug-14834'
+compiling bug-14834.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bignum'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bug-3571'
+compiling bug.c
+compiling big2str.c
+linking shared-object -test-/box/yay2.so
+linking shared-object -test-/bug_3571.so
+compiling bigzero.c
+linking shared-object -test-/array/to_ary_concat.so
+linking shared-object -test-/arith_seq/extract.so
+compiling cpp.cpp
+linking shared-object -test-/box/yay1.so
+linking shared-object -test-/bug_14834.so
+linking shared-object -test-/arith_seq/beg_len_step.so
+linking shared-object -test-/array/resize.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/box/yay2'
+compiling div.c
+compiling init.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/array/concat'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bug-3571'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bug-5832'
+compiling bug.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bug_reporter'
+compiling bug_reporter.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/box/yay1'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/arith_seq/extract'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/class'
+compiling class2name.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/cxxanyargs'
+compiling cxxanyargs.cpp
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/arith_seq/beg_len_step'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bug-14834'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/array/resize'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/debug'
+compiling init.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/dln/empty'
+compiling empty.c
+linking shared-object -test-/RUBY_ALIGNOF.so
+compiling inspector.c
+compiling intpack.c
+compiling init.c
+compiling mul.c
+linking shared-object -test-/dln/empty.so
+linking shared-object -test-/bug_reporter.so
+linking shared-object -test-/bug_5832.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/RUBY_ALIGNOF'
+compiling profile_frames.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/econv'
+compiling append.c
+compiling init.c
+linking shared-object -test-/class.so
+compiling str2big.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/dln/empty'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bug_reporter'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/enumerator_kw'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/ensure_and_callcc'
+compiling enumerator_kw.c
+compiling ensure_and_callcc.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/eval'
+compiling eval.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bug-5832'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/exception'
+linking shared-object -test-/debug.so
+compiling dataerror.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/fatal'
+compiling init.c
+linking shared-object -test-/econv.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/class'
+compiling enc_raise.c
+linking shared-object -test-/bignum.so
+linking shared-object -test-/eval.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/file'
+compiling fs.c
+linking shared-object -test-/cxxanyargs.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/debug'
+compiling invalid.c
+linking shared-object -test-/ensure_and_callcc.so
+linking shared-object -test-/enumerator_kw.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/econv'
+compiling init.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/float'
+compiling ensured.c
+compiling init.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/eval'
+compiling init.c
+compiling rb_fatal.c
+compiling nextafter.c
+compiling newline_conv.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/enumerator_kw'
+compiling stat.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/funcall'
+compiling funcall.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/gvl/call_without_gvl'
+compiling call_without_gvl.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/ensure_and_callcc'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/hash'
+compiling delete.c
+linking shared-object -test-/fatal.so
+linking shared-object -test-/exception.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/bignum'
+linking shared-object -test-/float.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/integer'
+compiling core_ext.c
+compiling init.c
+linking shared-object -test-/funcall.so
+compiling init.c
+linking shared-object -test-/file.so
+linking shared-object -test-/gvl/call_without_gvl.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/fatal'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/iseq_load'
+compiling iseq_load.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/exception'
+compiling my_integer.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/cxxanyargs'
+linking shared-object -test-/hash.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/iter'
+compiling break.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/float'
+compiling init.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/dot.dot'
+compiling dot.dot.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/funcall'
+compiling yield.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/file'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/protect'
+compiling protect.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/resolve_symbol_resolver'
+compiling resolve_symbol_resolver.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/hash'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/stringify_symbols'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/resolve_symbol_target'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/gvl/call_without_gvl'
+compiling resolve_symbol_target.c
+compiling stringify_symbols.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/stringify_target'
+compiling stringify_target.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/marshal/compat'
+compiling usrcompat.c
+linking shared-object -test-/load/dot.dot.so
+linking shared-object -test-/iseq_load.so
+linking shared-object -test-/iter.so
+linking shared-object -test-/load/resolve_symbol_resolver.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/dot.dot'
+linking shared-object -test-/load/protect.so
+linking shared-object -test-/load/resolve_symbol_target.so
+linking shared-object -test-/load/stringify_target.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/marshal/internal_ivar'
+compiling internal_ivar.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/iseq_load'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/marshal/usr'
+compiling usrmarshal.c
+linking shared-object -test-/load/stringify_symbols.so
+linking shared-object -test-/marshal/compat.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/iter'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/resolve_symbol_resolver'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/stringify_target'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/memory_view'
+compiling memory_view.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/resolve_symbol_target'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/method'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/notimplement'
+compiling arity.c
+compiling bug.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/num2int'
+compiling num2int.c
+linking shared-object -test-/marshal/internal_ivar.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/protect'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/path_to_class'
+compiling path_to_class.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/load/stringify_symbols'
+linking shared-object -test-/marshal/usr.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/popen_deadlock'
+compiling infinite_loop_dlsym.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/marshal/compat'
+compiling init.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/postponed_job'
+compiling postponed_job.c
+linking shared-object -test-/notimplement.so
+linking shared-object -test-/num2int.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/marshal/internal_ivar'
+linking shared-object -test-/popen_deadlock/infinite_loop_dlsym.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/printf'
+compiling printf.c
+linking shared-object -test-/path_to_class.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/marshal/usr'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/proc'
+compiling init.c
+linking shared-object -test-/integer.so
+linking shared-object -test-/method.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/notimplement'
+compiling receiver.c
+linking shared-object -test-/postponed_job.so
+linking shared-object -test-/memory_view.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/popen_deadlock'
+compiling super.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/path_to_class'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/random'
+compiling bad_version.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/rational'
+compiling rat.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/method'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/rb_call_super_kw'
+compiling rb_call_super_kw.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/num2int'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/recursion'
+compiling init.c
+compiling recursion.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/integer'
+compiling loop.c
+linking shared-object -test-/printf.so
+linking shared-object -test-/proc.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/regexp'
+compiling init.c
+linking shared-object -test-/rb_call_super_kw.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/postponed_job'
+linking shared-object -test-/recursion.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/sanitizers'
+compiling sanitizers.c
+compiling parse_depth_limit.c
+linking shared-object -test-/random.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/rb_call_super_kw'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/proc'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/scheduler'
+compiling scheduler.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/st/foreach'
+compiling foreach.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/scan_args'
+compiling scan_args.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/recursion'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/st/numhash'
+compiling numhash.c
+linking shared-object -test-/sanitizers.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/printf'
+linking shared-object -test-/regexp.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/memory_view'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/st/update'
+compiling update.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/stack'
+compiling stack.c
+linking shared-object -test-/scheduler.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/sanitizers'
+linking shared-object -test-/st/foreach.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/string'
+compiling capacity.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/regexp'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/struct'
+compiling data.c
+linking shared-object -test-/st/update.so
+linking shared-object -test-/st/numhash.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/scheduler'
+compiling coderange.c
+linking shared-object -test-/stack.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/random'
+compiling duplicate.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/symbol'
+compiling init.c
+compiling cstr.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/st/update'
+compiling init.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/st/foreach'
+compiling ellipsize.c
+compiling enc_associate.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/thread/id'
+compiling id.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/stack'
+compiling len.c
+compiling type.c
+linking shared-object -test-/rational.so
+compiling member.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/thread/instrumentation'
+compiling instrumentation.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/thread/lock_native_thread'
+compiling lock_native_thread.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/st/numhash'
+compiling enc_dummy.c
+compiling enc_str_buf_cat.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/time'
+compiling init.c
+linking shared-object -test-/symbol.so
+linking shared-object -test-/struct.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/rational'
+compiling fstring.c
+linking shared-object -test-/thread/id.so
+compiling new.c
+linking shared-object -test-/thread/lock_native_thread.so
+linking shared-object -test-/thread/instrumentation.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/tracepoint'
+compiling gc_hook.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/thread/id'
+compiling tracepoint.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/struct'
+compiling init.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/typeddata'
+compiling typeddata.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/vm'
+compiling at_exit.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/symbol'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/wait'
+compiling wait.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/thread/lock_native_thread'
+linking shared-object -test-/time.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/cgi/escape'
+compiling escape.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/continuation'
+compiling continuation.c
+compiling modify.c
+linking shared-object -test-/scan_args.so
+linking shared-object -test-/typeddata.so
+linking shared-object -test-/tracepoint.so
+linking shared-object -test-/vm/at_exit.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/thread/instrumentation'
+compiling new.c
+linking shared-object -test-/wait.so
+linking shared-object continuation.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/coverage'
+compiling coverage.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/typeddata'
+compiling nofree.c
+linking shared-object cgi/escape.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/vm'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/date'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/digest'
+compiling date_core.c
+compiling digest.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/time'
+compiling normalize.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/tracepoint'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/wait'
+compiling qsort.c
+compiling date_parse.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/continuation'
+installing default coverage libraries
+compiling date_strftime.c
+installing digest libraries
+compiling date_strptime.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/erb/escape'
+compiling escape.c
+linking shared-object coverage.so
+linking shared-object erb/escape.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/cgi/escape'
+compiling rb_interned_str.c
+compiling rb_str_dup.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/etc'
+compiling etc.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/scan_args'
+compiling set_len.c
+installing default digest libraries
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/fcntl'
+compiling fcntl.c
+linking shared-object digest.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/erb/escape'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/io/console'
+compiling console.c
+installing default date_core libraries
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/io/nonblock'
+compiling nonblock.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/io/wait'
+compiling wait.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/json'
+linking shared-object fcntl.so
+linking shared-object -test-/string.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/json'
+installing default console libraries
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/monitor'
+compiling monitor.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/coverage'
+installing default monitor libraries
+linking shared-object io/wait.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/objspace'
+compiling object_tracing.c
+linking shared-object etc.so
+linking shared-object io/nonblock.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/fcntl'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/openssl'
+compiling ossl.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/io/wait'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/psych'
+compiling psych.c
+linking shared-object monitor.so
+linking shared-object io/console.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/digest'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/pty'
+compiling pty.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/io/nonblock'
+compiling psych_emitter.c
+compiling objspace.c
+compiling ossl_asn1.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/-test-/string'
+installing default pty libraries
+compiling psych_parser.c
+linking shared-object pty.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/etc'
+compiling ossl_bio.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/monitor'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/rbconfig/sizeof'
+compiling sizes.c
+compiling ossl_bn.c
+compiling objspace_dump.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/ripper'
+compiling eventids1.c
+compiling limits.c
+compiling psych_to_ruby.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/pty'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/rubyvm'
+installing default libraries
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/rubyvm'
+compiling psych_yaml_tree.c
+compiling ossl_cipher.c
+linking shared-object rbconfig/sizeof.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/socket'
+compiling init.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/io/console'
+compiling constants.c
+compiling eventids2.c
+installing default objspace libraries
+compiling ossl_config.c
+linking shared-object objspace.so
+linking shared-object psych.so
+compiling ripper.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/rbconfig/sizeof'
+compiling ossl_digest.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/stringio'
+compiling stringio.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/strscan'
+compiling strscan.c
+compiling ripper_init.c
+compiling basicsocket.c
+compiling socket.c
+compiling ossl_engine.c
+linking shared-object date_core.so
+linking shared-object strscan.so
+linking shared-object stringio.so
+compiling ossl_hmac.c
+compiling ossl_kdf.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/psych'
+compiling ipsocket.c
+compiling tcpsocket.c
+installing default strscan libraries
+compiling tcpserver.c
+checking ../.././parse.y and ../.././ext/ripper/eventids2.c
+compiling ossl_ns_spki.c
+compiling ossl_ocsp.c
+compiling sockssocket.c
+compiling udpsocket.c
+compiling ossl_pkcs12.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/strscan'
+compiling ossl_pkcs7.c
+compiling unixsocket.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/stringio'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/zlib'
+compiling zlib.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/objspace'
+compiling unixserver.c
+compiling option.c
+installing default ripper libraries
+compiling ancdata.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/bigdecimal-4.0.1/ext/bigdecimal'
+compiling bigdecimal.c
+compiling missing.c
+compiling raddrinfo.c
+compiling ossl_pkey.c
+compiling ifaddr.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/debug-1.11.1/ext/debug'
+compiling debug.c
+installing default socket libraries
+linking shared-object socket.so
+linking shared-object zlib.so
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+compiling ossl_pkey_dh.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/debug-1.11.1/ext/debug'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/fiddle-1.1.8/ext/fiddle'
+compiling closure.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/nkf-0.2.0/ext/nkf'
+compiling nkf.c
+compiling conversions.c
+compiling fiddle.c
+linking shared-object bigdecimal.so
+compiling ossl_pkey_dsa.c
+compiling function.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/racc-1.8.1/ext/racc/cparse'
+compiling cparse.c
+compiling handle.c
+linking shared-object ripper.so
+linking shared-object racc/cparse.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/rbs-3.10.0/ext/rbs_extension'
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/ast.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/date'
+compiling ossl_pkey_ec.c
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/lexer.c
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/lexstate.c
+compiling memory_view.c
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/location.c
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:[m[K In function ‘[01m[Kparse_params[m[K’:
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:514:9:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+  514 |         [01;35m[Kdefault[m[K:
+      |         [01;35m[K^~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:499:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  499 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:509:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  509 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:585:9:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+  585 |         [01;35m[Kcase[m[K tUIDENT:
+      |         [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:586:9:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+  586 |         [01;35m[Kcase[m[K tLIDENT:
+      |         [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:587:9:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+  587 |         [01;35m[Kcase[m[K tQIDENT:
+      |         [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:588:9:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+  588 |         [01;35m[Kcase[m[K tULIDENT:
+      |         [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:589:9:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+  589 |         [01;35m[Kcase[m[K tULLIDENT:
+      |         [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:590:9:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+  590 |         [01;35m[Kcase[m[K tBANGIDENT:
+      |         [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:32:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   32 |     [01;35m[Kcase[m[K kBOOL:         \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:33:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   33 |     [01;35m[Kcase[m[K kBOT:          \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:34:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   34 |     [01;35m[Kcase[m[K kCLASS:        \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:35:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   35 |     [01;35m[Kcase[m[K kFALSE:        \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:36:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   36 |     [01;35m[Kcase[m[K kINSTANCE:     \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:37:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   37 |     [01;35m[Kcase[m[K kINTERFACE:    \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:38:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   38 |     [01;35m[Kcase[m[K kNIL:          \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:39:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   39 |     [01;35m[Kcase[m[K kSELF:         \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:40:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   40 |     [01;35m[Kcase[m[K kSINGLETON:    \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:41:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   41 |     [01;35m[Kcase[m[K kTOP:          \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:42:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   42 |     [01;35m[Kcase[m[K kTRUE:         \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:43:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   43 |     [01;35m[Kcase[m[K kVOID:         \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:44:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   44 |     [01;35m[Kcase[m[K kTYPE:         \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:45:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   45 |     [01;35m[Kcase[m[K kUNCHECKED:    \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:46:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   46 |     [01;35m[Kcase[m[K kIN:           \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:47:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   47 |     [01;35m[Kcase[m[K kOUT:          \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:48:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   48 |     [01;35m[Kcase[m[K kEND:          \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:49:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   49 |     [01;35m[Kcase[m[K kDEF:          \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:50:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   50 |     [01;35m[Kcase[m[K kINCLUDE:      \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:51:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   51 |     [01;35m[Kcase[m[K kEXTEND:       \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:52:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   52 |     [01;35m[Kcase[m[K kPREPEND:      \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:53:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   53 |     [01;35m[Kcase[m[K kALIAS:        \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:54:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   54 |     [01;35m[Kcase[m[K kMODULE:       \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:55:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   55 |     [01;35m[Kcase[m[K kATTRREADER:   \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:56:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   56 |     [01;35m[Kcase[m[K kATTRWRITER:   \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:57:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   57 |     [01;35m[Kcase[m[K kATTRACCESSOR: \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:58:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   58 |     [01;35m[Kcase[m[K kPUBLIC:       \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:59:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   59 |     [01;35m[Kcase[m[K kPRIVATE:      \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:60:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   60 |     [01;35m[Kcase[m[K kUNTYPED:      \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:61:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   61 |     [01;35m[Kcase[m[K kUSE:          \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:62:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   62 |     [01;35m[Kcase[m[K kAS:           \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:63:5:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+   63 |     [01;35m[Kcase[m[K k__TODO__:     \
+      |     [01;35m[K^~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:591:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KKEYWORD_CASES[m[K’
+  591 |             [01;36m[KKEYWORD_CASES[m[K
+      |             [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:600:9:[m[K [01;35m[Kwarning: [m[Kswitch jumps over variable initialization [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wjump-misses-init-Wjump-misses-init]8;;[m[K]
+  600 |         [01;35m[Kdefault[m[K:
+      |         [01;35m[K^~~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:567:9:[m[K [01;36m[Knote: [m[Kswitch starts here
+  567 |         [01;36m[Kswitch[m[K (parser->next_token.type) {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/parser.c:580:41:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  580 |             rbs_types_function_param_t *[01;36m[Kparam[m[K = NULL;
+      |                                         [01;36m[K^~~~~[m[K
+compiling pinned.c
+linking shared-object nkf.so
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/string.c
+compiling pointer.c
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/util/rbs_allocator.c
+compiling ossl_pkey_rsa.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/racc-1.8.1/ext/racc/cparse'
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/util/rbs_assert.c
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/util/rbs_buffer.c
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/util/rbs_constant_pool.c
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/util/rbs_encoding.c
+linking shared-object fiddle.so
+compiling ../../../../.././.bundle/gems/rbs-3.10.0/ext/rbs_extension/../../src/util/rbs_unescape.c
+compiling ossl_provider.c
+compiling ast_translation.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/zlib'
+compiling class_constants.c
+compiling ossl_rand.c
+compiling legacy_location.c
+compiling main.c
+compiling ossl_ssl.c
+compiling rbs_string_bridging.c
+linking shared-object rbs_extension.so
+compiling ossl_ssl_session.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/fiddle-1.1.8/ext/fiddle'
+compiling ossl_ts.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/nkf-0.2.0/ext/nkf'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/syslog-0.3.0/ext/syslog'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/bigdecimal-4.0.1/ext/bigdecimal'
+compiling ossl_x509.c
+compiling syslog.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/digest/bubblebabble'
+compiling bubblebabble.c
+linking shared-object syslog_ext.so
+compiling ossl_x509attr.c
+compiling ossl_x509cert.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/digest/md5'
+compiling md5init.c
+linking shared-object digest/bubblebabble.so
+compiling md5.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/syslog-0.3.0/ext/syslog'
+compiling ossl_x509crl.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/digest/rmd160'
+compiling rmd160init.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/digest/bubblebabble'
+compiling rmd160.c
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/digest/sha1'
+compiling sha1init.c
+compiling sha1.c
+linking shared-object digest/md5.so
+linking shared-object digest/rmd160.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/socket'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/digest/sha2'
+compiling ossl_x509ext.c
+compiling sha2init.c
+linking shared-object digest/sha1.so
+compiling sha2.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/digest/md5'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/json/generator'
+compiling generator.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/digest/rmd160'
+compiling ossl_x509name.c
+linking shared-object digest/sha2.so
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/json/parser'
+compiling parser.c
+installing default sha2 libraries
+compiling ossl_x509req.c
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/digest/sha1'
+compiling ossl_x509revoked.c
+compiling ossl_x509store.c
+installing default openssl libraries
+linking shared-object openssl.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/digest/sha2'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/.bundle/gems/rbs-3.10.0/ext/rbs_extension'
+linking shared-object json/ext/generator.so
+linking shared-object json/ext/parser.so
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/json/generator'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/json/parser'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/ripper'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/openssl'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+linking ruby
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Nothing to be done for 'note'.
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+	BASERUBY = ./tool/missing-baseruby.bat
+	CC = cc
+	LD = ld
+	LDSHARED = cc -shared
+	CFLAGS = -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC 
+	XCFLAGS = -fno-strict-overflow -fvisibility=hidden -fexcess-precision=standard -DRUBY_EXPORT -I. -I.ext/include/x86_64-linux -I.ext/include -I./include -I. -I./prism -I./enc/unicode/17.0.0   -Dmodular_gc_dir=
+	CPPFLAGS =   
+	DLDFLAGS = -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -Wl,--compress-debug-sections=zlib -Wl,-soname,libruby.so.4.0  -fstack-protector-strong  
+	SOLIBS = -lz -lrt -lrt -lgmp -ldl -lcrypt -lm -lpthread 
+	LANG = en_US.utf8
+	LC_ALL = 
+	LC_CTYPE = 
+	MFLAGS = -j10 --jobserver-auth=fifo:/var/tmp/hokuto/GMfifo665381
+	RUSTC = rustc
+	YJIT_RUSTC_ARGS = --crate-name=yjit --crate-type=rlib --edition=2021 -g -C lto=thin -C opt-level=3 -C overflow-checks=on '--out-dir=/var/tmp/hokuto/ruby-02/build/target/release/' './yjit/src/lib.rs'
+	ZJIT_RUSTC_ARGS = --crate-name=zjit --crate-type=rlib --edition=2024 -g -C lto=thin -C opt-level=3 -C overflow-checks=on '--out-dir=/var/tmp/hokuto/ruby-02/build/target/release/' './zjit/src/lib.rs'
+cc (GCC) 16.1.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+generating enc.mk
+generating x86_64-linux-fake.rb
+x86_64-linux-fake.rb [31;1mupdated[m
+making srcs under enc
+making enc
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Nothing to be done for 'enc'.
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Nothing to be done for 'srcs'.
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+generating transdb.h
+transdb.h [32munchanged[m
+generating makefiles ext/configure-ext.mk
+making trans
+ext/configure-ext.mk [31;1mupdated[m
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Nothing to be done for 'trans'.
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+making encs
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Nothing to be done for 'encs'.
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+generating makefile exts.mk
+exts.mk [32munchanged[m
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/digest'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/json'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/coverage'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/io/console'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/date'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/monitor'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/io/console'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/coverage'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/monitor'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/objspace'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/psych'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/date'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/pty'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/digest'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/json'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/rubyvm'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/strscan'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/pty'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/objspace'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/rubyvm'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/strscan'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/ripper'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/socket'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/openssl'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build/ext/digest/sha2'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/ripper'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/digest/sha2'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/socket'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/psych'
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build/ext/openssl'
+make[2]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[2]: 'ruby' is up to date.
+make[2]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Entering directory '/var/tmp/hokuto/ruby-02/build'
+make[1]: Nothing to be done for 'note'.
+make[1]: Leaving directory '/var/tmp/hokuto/ruby-02/build'
+Generating RDoc documentation
+Parsing sources...
+  0% [ 1/758]  /var/tmp/hokuto/ruby-02/build/rbconfig.rb[K  0% [ 2/758]  COPYING[K  0% [ 3/758]  COPYING.ja[K  0% [ 4/758]  LEGAL[K  0% [ 5/758]  NEWS.md[K  0% [ 6/758]  README.ja.md[K  0% [ 7/758]  README.md[K  1% [ 8/758]  addr2line.c[K  1% [ 9/758]  array.c[K  1% [10/758]  array.rb[K  1% [11/758]  ast.c[K  1% [12/758]  ast.rb[K  1% [13/758]  bignum.c[K  1% [14/758]  box.c[K  1% [15/758]  builtin.c[K  2% [16/758]  class.c[K  2% [17/758]  compar.c[K  2% [18/758]  compile.c[K  2% [19/758]  complex.c[K  2% [20/758]  concurrent_set.c[K  2% [21/758]  cont.c[K  2% [22/758]  debug.c[K  3% [23/758]  debug_counter.c[K  3% [24/758]  dir.c[K  3% [25/758]  dir.rb[K  3% [26/758]  dln.c[K  3% [27/758]  dln_find.c[K  3% [28/758]  dmydln.c[K  3% [29/758]  dmyenc.c[K  3% [30/758]  dmyext.c[K  4% [31/758]  doc/NEWS/NEWS-1.8.7[K  4% [32/758]  doc/NEWS/NEWS-1.9.1[K  4% [33/758]  doc/NEWS/NEWS-1.9.2[K  4% [34/758]  doc/NEWS/NEWS-1.9.3[K  4% [35/758]  doc/NEWS/NEWS-2.0.0[K  4% [36/758]  doc/NEWS/NEWS-2.1.0[K  4% [37/758]  doc/NEWS/NEWS-2.2.0[K  5% [38/758]  doc/NEWS/NEWS-2.3.0[K  5% [39/758]  doc/NEWS/NEWS-2.4.0[K  5% [40/758]  doc/NEWS/NEWS-2.5.0[K  5% [41/758]  doc/NEWS/NEWS-2.6.0[K  5% [42/758]  doc/NEWS/NEWS-2.7.0[K  5% [43/758]  doc/NEWS/NEWS-3.0.0.md[K  5% [44/758]  doc/NEWS/NEWS-3.1.0.md[K  5% [45/758]  doc/NEWS/NEWS-3.2.0.md[K  6% [46/758]  doc/NEWS/NEWS-3.3.0.md[K  6% [47/758]  doc/NEWS/NEWS-3.4.0.md[K  6% [48/758]  doc/contributing/bug_triaging.rdoc[K  6% [49/758]  doc/contributing/building_ruby.md[K  6% [50/758]  doc/contributing/concurrency_guide.md[K  6% [51/758]  doc/contributing/contributing.md[K  6% [52/758]  doc/contributing/documentation_guide.md[K  6% [53/758]  doc/contributing/dtrace_probes.rdoc[K  7% [54/758]  doc/contributing/glossary.md[K  7% [55/758]  doc/contributing/making_changes_to_ruby.md[K  7% [56/758]  doc/contributing/making_changes_to_stdlibs.md[K  7% [57/758]  doc/contributing/memory_view.md[K  7% [58/758]  doc/contributing/reporting_issues.md[K  7% [59/758]  doc/contributing/testing_ruby.md[K  7% [60/758]  doc/contributing/vm_stack_and_frames.md[K  8% [61/758]  doc/distribution/distribution.md[K  8% [62/758]  doc/distribution/windows.md[K  8% [63/758]  doc/extension.ja.rdoc[K  8% [64/758]  doc/extension.rdoc[K  8% [65/758]  doc/float.rb[K  8% [66/758]  doc/index.md[K  8% [67/758]  doc/jit/yjit.md[K  8% [68/758]  doc/jit/zjit.md[K  9% [69/758]  doc/language/box.md[K  9% [70/758]  doc/language/bsearch.rdoc[K  9% [71/758]  doc/language/calendars.rdoc[K  9% [72/758]  doc/language/case_mapping.rdoc[K  9% [73/758]  doc/language/character_selectors.rdoc[K  9% [74/758]  doc/language/dig_methods.rdoc[K  9% [75/758]  doc/language/encodings.rdoc[K 10% [76/758]  doc/language/exceptions.md[K 10% [77/758]  doc/language/fiber.md[K 10% [78/758]  doc/language/format_specifications.rdoc[K 10% [79/758]  doc/language/globals.md[K 10% [80/758]  doc/language/hash_inclusion.rdoc[K 10% [81/758]  doc/language/implicit_conversion.rdoc[K 10% [82/758]  doc/language/marshal.rdoc[K 10% [83/758]  doc/language/option_dump.md[K 11% [84/758]  doc/language/options.md[K 11% [85/758]  doc/language/packed_data.rdoc[K 11% [86/758]  doc/language/ractor.md[K 11% [87/758]  doc/language/regexp/methods.rdoc[K 11% [88/758]  doc/language/regexp/unicode_properties.rdoc[K 11% [89/758]  doc/language/signals.rdoc[K 11% [90/758]  doc/language/strftime_formatting.rdoc[K 12% [91/758]  doc/maintainers.md[K 12% [92/758]  doc/optparse/argument_converters.rdoc[K 12% [93/758]  doc/optparse/creates_option.rdoc[K 12% [94/758]  doc/optparse/option_params.rdoc[K 12% [95/758]  doc/optparse/tutorial.rdoc[K 12% [96/758]  doc/security/command_injection.rdoc[K 12% [97/758]  doc/security/security.rdoc[K 12% [98/758]  doc/standard_library.md[K 13% [99/758]  doc/string.rb[K 13% [100/758]  doc/syntax.rdoc[K 13% [101/758]  doc/syntax/assignment.rdoc[K 13% [102/758]  doc/syntax/calling_methods.rdoc[K 13% [103/758]  doc/syntax/comments.rdoc[K 13% [104/758]  doc/syntax/control_expressions.rdoc[K 13% [105/758]  doc/syntax/exceptions.rdoc[K 13% [106/758]  doc/syntax/keywords.rdoc[K 14% [107/758]  doc/syntax/layout.rdoc[K 14% [108/758]  doc/syntax/literals.rdoc[K 14% [109/758]  doc/syntax/methods.rdoc[K 14% [110/758]  doc/syntax/miscellaneous.rdoc[K 14% [111/758]  doc/syntax/modules_and_classes.rdoc[K 14% [112/758]  doc/syntax/operators.rdoc[K 14% [113/758]  doc/syntax/pattern_matching.rdoc[K 15% [114/758]  doc/syntax/precedence.rdoc[K 15% [115/758]  doc/syntax/refinements.rdoc[K 15% [116/758]  encoding.c[K 15% [117/758]  enum.c[K 15% [118/758]  enumerator.c[K 15% [119/758]  error.c[K 15% [120/758]  eval.c[K 15% [121/758]  eval_error.c[K 16% [122/758]  eval_jump.c[K 16% [123/758]  ext/cgi/escape/escape.c[K 16% [124/758]  ext/continuation/continuation.c[K 16% [125/758]  ext/coverage/coverage.c[K 16% [126/758]  ext/coverage/lib/coverage.rb[K 16% [127/758]  ext/date/date_core.c[K 16% [128/758]  ext/date/date_parse.c[K 17% [129/758]  ext/date/date_strftime.c[K 17% [130/758]  ext/date/date_strptime.c[K 17% [131/758]  ext/date/lib/date.rb[K 17% [132/758]  ext/digest/bubblebabble/bubblebabble.c[K 17% [133/758]  ext/digest/digest.c[K 17% [134/758]  ext/digest/lib/digest.rb[K 17% [135/758]  ext/digest/lib/digest/loader.rb[K 17% [136/758]  ext/digest/lib/digest/version.rb[K 18% [137/758]  ext/digest/md5/md5init.c[K 18% [138/758]  ext/digest/rmd160/rmd160init.c[K 18% [139/758]  ext/digest/sha1/sha1init.c[K 18% [140/758]  ext/digest/sha2/lib/sha2.rb[K 18% [141/758]  ext/digest/sha2/lib/sha2/loader.rb[K 18% [142/758]  ext/digest/sha2/sha2init.c[K 18% [143/758]  ext/etc/etc.c[K 18% [144/758]  ext/fcntl/fcntl.c[K 19% [145/758]  ext/io/console/console.c[K 19% [146/758]  ext/io/nonblock/nonblock.c[K 19% [147/758]  ext/io/wait/wait.c[K 19% [148/758]  ext/json/generator/generator.c[K 19% [149/758]  ext/json/lib/json.rb[K 19% [150/758]  ext/json/lib/json/add/bigdecimal.rb[K 19% [151/758]  ext/json/lib/json/add/complex.rb[K 20% [152/758]  ext/json/lib/json/add/core.rb[K 20% [153/758]  ext/json/lib/json/add/date.rb[K 20% [154/758]  ext/json/lib/json/add/date_time.rb[K 20% [155/758]  ext/json/lib/json/add/exception.rb[K 20% [156/758]  ext/json/lib/json/add/ostruct.rb[K 20% [157/758]  ext/json/lib/json/add/range.rb[K 20% [158/758]  ext/json/lib/json/add/rational.rb[K 20% [159/758]  ext/json/lib/json/add/regexp.rb[K 21% [160/758]  ext/json/lib/json/add/set.rb[K 21% [161/758]  ext/json/lib/json/add/string.rb[K 21% [162/758]  ext/json/lib/json/add/struct.rb[K 21% [163/758]  ext/json/lib/json/add/symbol.rb[K 21% [164/758]  ext/json/lib/json/add/time.rb[K 21% [165/758]  ext/json/lib/json/common.rb[K 21% [166/758]  ext/json/lib/json/ext.rb[K 22% [167/758]  ext/json/lib/json/ext/generator/state.rb[K 22% [168/758]  ext/json/lib/json/generic_object.rb[K 22% [169/758]  ext/json/lib/json/version.rb[K 22% [170/758]  ext/json/parser/parser.c[K 22% [171/758]  ext/monitor/lib/monitor.rb[K 22% [172/758]  ext/monitor/monitor.c[K 22% [173/758]  ext/objspace/lib/objspace.rb[K 22% [174/758]  ext/objspace/lib/objspace/trace.rb[K 23% [175/758]  ext/objspace/object_tracing.c[K 23% [176/758]  ext/objspace/objspace.c[K 23% [177/758]  ext/objspace/objspace_dump.c[K 23% [178/758]  ext/openssl/lib/openssl.rb[K 23% [179/758]  ext/openssl/lib/openssl/bn.rb[K 23% [180/758]  ext/openssl/lib/openssl/buffering.rb[K 23% [181/758]  ext/openssl/lib/openssl/cipher.rb[K 24% [182/758]  ext/openssl/lib/openssl/digest.rb[K 24% [183/758]  ext/openssl/lib/openssl/hmac.rb[K 24% [184/758]  ext/openssl/lib/openssl/marshal.rb[K 24% [185/758]  ext/openssl/lib/openssl/pkcs5.rb[K 24% [186/758]  ext/openssl/lib/openssl/pkey.rb[K 24% [187/758]  ext/openssl/lib/openssl/ssl.rb[K 24% [188/758]  ext/openssl/lib/openssl/version.rb[K 24% [189/758]  ext/openssl/lib/openssl/x509.rb[K 25% [190/758]  ext/openssl/ossl.c[K 25% [191/758]  ext/openssl/ossl_asn1.c[K 25% [192/758]  ext/openssl/ossl_bio.c[K 25% [193/758]  ext/openssl/ossl_bn.c[K 25% [194/758]  ext/openssl/ossl_cipher.c[K 25% [195/758]  ext/openssl/ossl_config.c[K 25% [196/758]  ext/openssl/ossl_digest.c[K 25% [197/758]  ext/openssl/ossl_engine.c[K 26% [198/758]  ext/openssl/ossl_hmac.c[K 26% [199/758]  ext/openssl/ossl_kdf.c[K 26% [200/758]  ext/openssl/ossl_ns_spki.c[K 26% [201/758]  ext/openssl/ossl_ocsp.c[K 26% [202/758]  ext/openssl/ossl_pkcs12.c[K 26% [203/758]  ext/openssl/ossl_pkcs7.c[K 26% [204/758]  ext/openssl/ossl_pkey.c[K 27% [205/758]  ext/openssl/ossl_pkey_dh.c[K 27% [206/758]  ext/openssl/ossl_pkey_dsa.c[K 27% [207/758]  ext/openssl/ossl_pkey_ec.c[K 27% [208/758]  ext/openssl/ossl_pkey_rsa.c[K 27% [209/758]  ext/openssl/ossl_rand.c[K 27% [210/758]  ext/openssl/ossl_ssl.c[K 27% [211/758]  ext/openssl/ossl_ssl_session.c[K 27% [212/758]  ext/openssl/ossl_ts.c[K 28% [213/758]  ext/openssl/ossl_x509.c[K 28% [214/758]  ext/openssl/ossl_x509attr.c[K 28% [215/758]  ext/openssl/ossl_x509cert.c[K 28% [216/758]  ext/openssl/ossl_x509crl.c[K 28% [217/758]  ext/openssl/ossl_x509ext.c[K 28% [218/758]  ext/openssl/ossl_x509name.c[K 28% [219/758]  ext/openssl/ossl_x509req.c[K 29% [220/758]  ext/openssl/ossl_x509revoked.c[K 29% [221/758]  ext/openssl/ossl_x509store.c[K 29% [222/758]  ext/psych/lib/psych.rb[K 29% [223/758]  ext/psych/lib/psych/class_loader.rb[K 29% [224/758]  ext/psych/lib/psych/coder.rb[K 29% [225/758]  ext/psych/lib/psych/core_ext.rb[K 29% [226/758]  ext/psych/lib/psych/exception.rb[K 29% [227/758]  ext/psych/lib/psych/handler.rb[K 30% [228/758]  ext/psych/lib/psych/handlers/document_stream.rb[K 30% [229/758]  ext/psych/lib/psych/handlers/recorder.rb[K 30% [230/758]  ext/psych/lib/psych/json/ruby_events.rb[K 30% [231/758]  ext/psych/lib/psych/json/stream.rb[K 30% [232/758]  ext/psych/lib/psych/json/tree_builder.rb[K 30% [233/758]  ext/psych/lib/psych/json/yaml_events.rb[K 30% [234/758]  ext/psych/lib/psych/nodes.rb[K 31% [235/758]  ext/psych/lib/psych/nodes/alias.rb[K 31% [236/758]  ext/psych/lib/psych/nodes/document.rb[K 31% [237/758]  ext/psych/lib/psych/nodes/mapping.rb[K 31% [238/758]  ext/psych/lib/psych/nodes/node.rb[K 31% [239/758]  ext/psych/lib/psych/nodes/scalar.rb[K 31% [240/758]  ext/psych/lib/psych/nodes/sequence.rb[K 31% [241/758]  ext/psych/lib/psych/nodes/stream.rb[K 31% [242/758]  ext/psych/lib/psych/omap.rb[K 32% [243/758]  ext/psych/lib/psych/parser.rb[K 32% [244/758]  ext/psych/lib/psych/scalar_scanner.rb[K 32% [245/758]  ext/psych/lib/psych/set.rb[K 32% [246/758]  ext/psych/lib/psych/stream.rb[K 32% [247/758]  ext/psych/lib/psych/streaming.rb[K 32% [248/758]  ext/psych/lib/psych/syntax_error.rb[K 32% [249/758]  ext/psych/lib/psych/tree_builder.rb[K 32% [250/758]  ext/psych/lib/psych/versions.rb[K 33% [251/758]  ext/psych/lib/psych/visitors.rb[K 33% [252/758]  ext/psych/lib/psych/visitors/depth_first.rb[K 33% [253/758]  ext/psych/lib/psych/visitors/emitter.rb[K 33% [254/758]  ext/psych/lib/psych/visitors/json_tree.rb[K 33% [255/758]  ext/psych/lib/psych/visitors/to_ruby.rb[K 33% [256/758]  ext/psych/lib/psych/visitors/visitor.rb[K 33% [257/758]  ext/psych/lib/psych/visitors/yaml_tree.rb[K 34% [258/758]  ext/psych/lib/psych/y.rb[K 34% [259/758]  ext/psych/psych.c[K 34% [260/758]  ext/psych/psych_emitter.c[K 34% [261/758]  ext/psych/psych_parser.c[K 34% [262/758]  ext/psych/psych_to_ruby.c[K 34% [263/758]  ext/psych/psych_yaml_tree.c[K 34% [264/758]  ext/pty/lib/expect.rb[K 34% [265/758]  ext/pty/pty.c[K 35% [266/758]  ext/rbconfig/sizeof/limits.c[K 35% [267/758]  ext/rbconfig/sizeof/sizes.c[K 35% [268/758]  ext/ripper/lib/ripper.rb[K 35% [269/758]  ext/ripper/lib/ripper/core.rb[K 35% [270/758]  ext/ripper/lib/ripper/filter.rb[K 35% [271/758]  ext/ripper/lib/ripper/lexer.rb[K 35% [272/758]  ext/ripper/lib/ripper/sexp.rb[K 36% [273/758]  ext/socket/ancdata.c[K 36% [274/758]  ext/socket/basicsocket.c[K 36% [275/758]  ext/socket/constants.c[K 36% [276/758]  ext/socket/constdefs.c[K 36% [277/758]  ext/socket/ifaddr.c[K 36% [278/758]  ext/socket/init.c[K 36% [279/758]  ext/socket/ipsocket.c[K 36% [280/758]  ext/socket/lib/socket.rb[K 37% [281/758]  ext/socket/option.c[K 37% [282/758]  ext/socket/raddrinfo.c[K 37% [283/758]  ext/socket/socket.c[K 37% [284/758]  ext/socket/sockssocket.c[K 37% [285/758]  ext/socket/tcpserver.c[K 37% [286/758]  ext/socket/tcpsocket.c[K 37% [287/758]  ext/socket/udpsocket.c[K 37% [288/758]  ext/socket/unixserver.c[K 38% [289/758]  ext/socket/unixsocket.c[K 38% [290/758]  ext/stringio/stringio.c[K 38% [291/758]  ext/strscan/lib/strscan/strscan.rb[K 38% [292/758]  ext/strscan/strscan.c[K 38% [293/758]  ext/win32/lib/win32/registry.rb[K 38% [294/758]  ext/win32/lib/win32/resolv.rb[K 38% [295/758]  ext/win32/resolv/resolv.c[K 39% [296/758]  ext/zlib/zlib.c[K 39% [297/758]  file.c[K 39% [298/758]  gc.c[K 39% [299/758]  gc.rb[K 39% [300/758]  goruby.c[K 39% [301/758]  hash.c[K 39% [302/758]  hash.rb[K 39% [303/758]  id.c[K 40% [304/758]  id_table.c[K 40% [305/758]  imemo.c[K 40% [306/758]  inits.c[K 40% [307/758]  io.c[K 40% [308/758]  io.rb[K 40% [309/758]  io_buffer.c[K 40% [310/758]  iseq.c[K 41% [311/758]  jit.c[K 41% [312/758]  kernel.rb[K 41% [313/758]  known_errors.inc[K 41% [314/758]  lex.c[K 41% [315/758]  lib/English.rb[K 41% [316/758]  lib/bundled_gems.rb[K 41% [317/758]  lib/bundler.rb[K 41% [318/758]  lib/cgi.rb[K 42% [319/758]  lib/cgi/escape.rb[K 42% [320/758]  lib/cgi/util.rb[K 42% [321/758]  lib/delegate.rb[K 42% [322/758]  lib/did_you_mean.rb[K 42% [323/758]  lib/did_you_mean/core_ext/name_error.rb[K 42% [324/758]  lib/did_you_mean/experimental.rb[K 42% [325/758]  lib/did_you_mean/formatter.rb[K 43% [326/758]  lib/did_you_mean/formatters/plain_formatter.rb[K 43% [327/758]  lib/did_you_mean/formatters/verbose_formatter.rb[K 43% [328/758]  lib/did_you_mean/jaro_winkler.rb[K 43% [329/758]  lib/did_you_mean/levenshtein.rb[K 43% [330/758]  lib/did_you_mean/spell_checker.rb[K 43% [331/758]  lib/did_you_mean/spell_checkers/key_error_checker.rb[K 43% [332/758]  lib/did_you_mean/spell_checkers/method_name_checker.rb[K 43% [333/758]  lib/did_you_mean/spell_checkers/name_error_checkers.rb[K 44% [334/758]  ...ean/spell_checkers/name_error_checkers/class_name_checker.rb[K 44% [335/758]  .../spell_checkers/name_error_checkers/variable_name_checker.rb[K 44% [336/758]  lib/did_you_mean/spell_checkers/null_checker.rb[K 44% [337/758]  lib/did_you_mean/spell_checkers/pattern_key_name_checker.rb[K 44% [338/758]  lib/did_you_mean/spell_checkers/require_path_checker.rb[K 44% [339/758]  lib/did_you_mean/tree_spell_checker.rb[K 44% [340/758]  lib/did_you_mean/verbose.rb[K 44% [341/758]  lib/did_you_mean/version.rb[K 45% [342/758]  lib/erb.rb[K 45% [343/758]  lib/erb/compiler.rb[K 45% [344/758]  lib/erb/def_method.rb[K 45% [345/758]  lib/erb/util.rb[K 45% [346/758]  lib/erb/version.rb[K 45% [347/758]  lib/error_highlight.rb[K 45% [348/758]  lib/error_highlight/base.rb[K 46% [349/758]  lib/error_highlight/core_ext.rb[K 46% [350/758]  lib/error_highlight/formatter.rb[K 46% [351/758]  lib/error_highlight/version.rb[K 46% [352/758]  lib/fileutils.rb[K 46% [353/758]  lib/find.rb[K 46% [354/758]  lib/forwardable.rb[K 46% [355/758]  lib/ipaddr.rb[K 46% [356/758]  lib/mkmf.rb[K 47% [357/758]  lib/net/http.rb[K 47% [358/758]  lib/net/http/exceptions.rb[K 47% [359/758]  lib/net/http/generic_request.rb[K 47% [360/758]  lib/net/http/header.rb[K 47% [361/758]  lib/net/http/proxy_delta.rb[K 47% [362/758]  lib/net/http/request.rb[K 47% [363/758]  lib/net/http/requests.rb[K 48% [364/758]  lib/net/http/response.rb[K 48% [365/758]  lib/net/http/responses.rb[K 48% [366/758]  lib/net/http/status.rb[K 48% [367/758]  lib/net/https.rb[K 48% [368/758]  lib/net/protocol.rb[K 48% [369/758]  lib/open-uri.rb[K 48% [370/758]  lib/open3.rb[K 48% [371/758]  lib/open3/version.rb[K 49% [372/758]  lib/optionparser.rb[K 49% [373/758]  lib/optparse.rb[K 49% [374/758]  lib/optparse/ac.rb[K 49% [375/758]  lib/optparse/date.rb[K 49% [376/758]  lib/optparse/kwargs.rb[K 49% [377/758]  lib/optparse/shellwords.rb[K 49% [378/758]  lib/optparse/time.rb[K 50% [379/758]  lib/optparse/uri.rb[K 50% [380/758]  lib/optparse/version.rb[K 50% [381/758]  lib/pathname.rb[K 50% [382/758]  lib/pp.rb[K 50% [383/758]  lib/prettyprint.rb[K 50% [384/758]  lib/prism.rb[K 50% [385/758]  lib/prism/compiler.rb[K 50% [386/758]  lib/prism/desugar_compiler.rb[K 51% [387/758]  lib/prism/dispatcher.rb[K 51% [388/758]  lib/prism/dot_visitor.rb[K 51% [389/758]  lib/prism/dsl.rb[K 51% [390/758]  lib/prism/ffi.rb[K 51% [391/758]  lib/prism/inspect_visitor.rb[K 51% [392/758]  lib/prism/lex_compat.rb[K 51% [393/758]  lib/prism/lex_ripper.rb[K 51% [394/758]  lib/prism/mutation_compiler.rb[K 52% [395/758]  lib/prism/node.rb[K 52% [396/758]  lib/prism/node_ext.rb[K 52% [397/758]  lib/prism/pack.rb[K 52% [398/758]  lib/prism/parse_result.rb[K 52% [399/758]  lib/prism/parse_result/comments.rb[K 52% [400/758]  lib/prism/parse_result/errors.rb[K 52% [401/758]  lib/prism/parse_result/newlines.rb[K 53% [402/758]  lib/prism/pattern.rb[K 53% [403/758]  lib/prism/polyfill/append_as_bytes.rb[K 53% [404/758]  lib/prism/polyfill/byteindex.rb[K 53% [405/758]  lib/prism/polyfill/scan_byte.rb[K 53% [406/758]  lib/prism/polyfill/unpack1.rb[K 53% [407/758]  lib/prism/polyfill/warn.rb[K 53% [408/758]  lib/prism/reflection.rb[K 53% [409/758]  lib/prism/relocation.rb[K 54% [410/758]  lib/prism/serialize.rb[K 54% [411/758]  lib/prism/string_query.rb[K 54% [412/758]  lib/prism/translation.rb[K 54% [413/758]  lib/prism/translation/parser.rb[K 54% [414/758]  lib/prism/translation/parser/builder.rb[K 54% [415/758]  lib/prism/translation/parser/compiler.rb[K 54% [416/758]  lib/prism/translation/parser/lexer.rb[K 55% [417/758]  lib/prism/translation/parser_current.rb[K 55% [418/758]  lib/prism/translation/parser_versions.rb[K 55% [419/758]  lib/prism/translation/ripper.rb[K 55% [420/758]  lib/prism/translation/ripper/lexer.rb[K 55% [421/758]  lib/prism/translation/ripper/sexp.rb[K 55% [422/758]  lib/prism/translation/ripper/shim.rb[K 55% [423/758]  lib/prism/translation/ruby_parser.rb[K 55% [424/758]  lib/prism/visitor.rb[K 56% [425/758]  lib/random/formatter.rb[K 56% [426/758]  lib/resolv.rb[K 56% [427/758]  lib/rubygems.rb[K 56% [428/758]  lib/rubygems/available_set.rb[K 56% [429/758]  lib/rubygems/basic_specification.rb[K 56% [430/758]  lib/rubygems/bundler_version_finder.rb[K 56% [431/758]  lib/rubygems/ci_detector.rb[K 56% [432/758]  lib/rubygems/command.rb[K 57% [433/758]  lib/rubygems/command_manager.rb[K 57% [434/758]  lib/rubygems/commands/build_command.rb[K 57% [435/758]  lib/rubygems/commands/cert_command.rb[K 57% [436/758]  lib/rubygems/commands/check_command.rb[K 57% [437/758]  lib/rubygems/commands/cleanup_command.rb[K 57% [438/758]  lib/rubygems/commands/contents_command.rb[K 57% [439/758]  lib/rubygems/commands/dependency_command.rb[K 58% [440/758]  lib/rubygems/commands/environment_command.rb[K 58% [441/758]  lib/rubygems/commands/exec_command.rb[K 58% [442/758]  lib/rubygems/commands/fetch_command.rb[K 58% [443/758]  lib/rubygems/commands/generate_index_command.rb[K 58% [444/758]  lib/rubygems/commands/help_command.rb[K 58% [445/758]  lib/rubygems/commands/info_command.rb[K 58% [446/758]  lib/rubygems/commands/install_command.rb[K 58% [447/758]  lib/rubygems/commands/list_command.rb[K 59% [448/758]  lib/rubygems/commands/lock_command.rb[K 59% [449/758]  lib/rubygems/commands/mirror_command.rb[K 59% [450/758]  lib/rubygems/commands/open_command.rb[K 59% [451/758]  lib/rubygems/commands/outdated_command.rb[K 59% [452/758]  lib/rubygems/commands/owner_command.rb[K 59% [453/758]  lib/rubygems/commands/pristine_command.rb[K 59% [454/758]  lib/rubygems/commands/push_command.rb[K 60% [455/758]  lib/rubygems/commands/rdoc_command.rb[K 60% [456/758]  lib/rubygems/commands/rebuild_command.rb[K 60% [457/758]  lib/rubygems/commands/search_command.rb[K 60% [458/758]  lib/rubygems/commands/server_command.rb[K 60% [459/758]  lib/rubygems/commands/setup_command.rb[K 60% [460/758]  lib/rubygems/commands/signin_command.rb[K 60% [461/758]  lib/rubygems/commands/signout_command.rb[K 60% [462/758]  lib/rubygems/commands/sources_command.rb[K 61% [463/758]  lib/rubygems/commands/specification_command.rb[K 61% [464/758]  lib/rubygems/commands/stale_command.rb[K 61% [465/758]  lib/rubygems/commands/uninstall_command.rb[K 61% [466/758]  lib/rubygems/commands/unpack_command.rb[K 61% [467/758]  lib/rubygems/commands/update_command.rb[K 61% [468/758]  lib/rubygems/commands/which_command.rb[K 61% [469/758]  lib/rubygems/commands/yank_command.rb[K 62% [470/758]  lib/rubygems/config_file.rb[K 62% [471/758]  lib/rubygems/core_ext/kernel_gem.rb[K 62% [472/758]  lib/rubygems/core_ext/kernel_require.rb[K 62% [473/758]  lib/rubygems/core_ext/kernel_warn.rb[K 62% [474/758]  lib/rubygems/core_ext/tcpsocket_init.rb[K 62% [475/758]  lib/rubygems/defaults.rb[K 62% [476/758]  lib/rubygems/dependency.rb[K 62% [477/758]  lib/rubygems/dependency_installer.rb[K 63% [478/758]  lib/rubygems/dependency_list.rb[K 63% [479/758]  lib/rubygems/deprecate.rb[K 63% [480/758]  lib/rubygems/doctor.rb[K 63% [481/758]  lib/rubygems/errors.rb[K 63% [482/758]  lib/rubygems/exceptions.rb[K 63% [483/758]  lib/rubygems/ext.rb[K 63% [484/758]  lib/rubygems/ext/build_error.rb[K 63% [485/758]  lib/rubygems/ext/builder.rb[K 64% [486/758]  lib/rubygems/ext/cargo_builder.rb[K 64% [487/758]  lib/rubygems/ext/cargo_builder/link_flag_converter.rb[K 64% [488/758]  lib/rubygems/ext/cmake_builder.rb[K 64% [489/758]  lib/rubygems/ext/configure_builder.rb[K 64% [490/758]  lib/rubygems/ext/ext_conf_builder.rb[K 64% [491/758]  lib/rubygems/ext/rake_builder.rb[K 64% [492/758]  lib/rubygems/gem_runner.rb[K 65% [493/758]  lib/rubygems/gemcutter_utilities.rb[K 65% [494/758]  lib/rubygems/gemcutter_utilities/webauthn_listener.rb[K 65% [495/758]  lib/rubygems/gemcutter_utilities/webauthn_listener/response.rb[K 65% [496/758]  lib/rubygems/gemcutter_utilities/webauthn_poller.rb[K 65% [497/758]  lib/rubygems/gemspec_helpers.rb[K 65% [498/758]  lib/rubygems/install_message.rb[K 65% [499/758]  lib/rubygems/install_update_options.rb[K 65% [500/758]  lib/rubygems/installer.rb[K 66% [501/758]  lib/rubygems/installer_uninstaller_utils.rb[K 66% [502/758]  lib/rubygems/local_remote_options.rb[K 66% [503/758]  lib/rubygems/name_tuple.rb[K 66% [504/758]  lib/rubygems/openssl.rb[K 66% [505/758]  lib/rubygems/package.rb[K 66% [506/758]  lib/rubygems/package/digest_io.rb[K 66% [507/758]  lib/rubygems/package/file_source.rb[K 67% [508/758]  lib/rubygems/package/io_source.rb[K 67% [509/758]  lib/rubygems/package/old.rb[K 67% [510/758]  lib/rubygems/package/source.rb[K 67% [511/758]  lib/rubygems/package/tar_header.rb[K 67% [512/758]  lib/rubygems/package/tar_reader.rb[K 67% [513/758]  lib/rubygems/package/tar_reader/entry.rb[K 67% [514/758]  lib/rubygems/package/tar_writer.rb[K 67% [515/758]  lib/rubygems/package_task.rb[K 68% [516/758]  lib/rubygems/path_support.rb[K 68% [517/758]  lib/rubygems/platform.rb[K 68% [518/758]  lib/rubygems/psych_tree.rb[K 68% [519/758]  lib/rubygems/query_utils.rb[K 68% [520/758]  lib/rubygems/rdoc.rb[K 68% [521/758]  lib/rubygems/remote_fetcher.rb[K 68% [522/758]  lib/rubygems/request.rb[K 68% [523/758]  lib/rubygems/request/connection_pools.rb[K 69% [524/758]  lib/rubygems/request/http_pool.rb[K 69% [525/758]  lib/rubygems/request/https_pool.rb[K 69% [526/758]  lib/rubygems/request_set.rb[K 69% [527/758]  lib/rubygems/request_set/gem_dependency_api.rb[K 69% [528/758]  lib/rubygems/request_set/lockfile.rb[K 69% [529/758]  lib/rubygems/request_set/lockfile/parser.rb[K 69% [530/758]  lib/rubygems/request_set/lockfile/tokenizer.rb[K 70% [531/758]  lib/rubygems/requirement.rb[K 70% [532/758]  lib/rubygems/resolver.rb[K 70% [533/758]  lib/rubygems/resolver/activation_request.rb[K 70% [534/758]  lib/rubygems/resolver/api_set.rb[K 70% [535/758]  lib/rubygems/resolver/api_set/gem_parser.rb[K 70% [536/758]  lib/rubygems/resolver/api_specification.rb[K 70% [537/758]  lib/rubygems/resolver/best_set.rb[K 70% [538/758]  lib/rubygems/resolver/composed_set.rb[K 71% [539/758]  lib/rubygems/resolver/conflict.rb[K 71% [540/758]  lib/rubygems/resolver/current_set.rb[K 71% [541/758]  lib/rubygems/resolver/dependency_request.rb[K 71% [542/758]  lib/rubygems/resolver/git_set.rb[K 71% [543/758]  lib/rubygems/resolver/git_specification.rb[K 71% [544/758]  lib/rubygems/resolver/index_set.rb[K 71% [545/758]  lib/rubygems/resolver/index_specification.rb[K 72% [546/758]  lib/rubygems/resolver/installed_specification.rb[K 72% [547/758]  lib/rubygems/resolver/installer_set.rb[K 72% [548/758]  lib/rubygems/resolver/local_specification.rb[K 72% [549/758]  lib/rubygems/resolver/lock_set.rb[K 72% [550/758]  lib/rubygems/resolver/lock_specification.rb[K 72% [551/758]  lib/rubygems/resolver/requirement_list.rb[K 72% [552/758]  lib/rubygems/resolver/set.rb[K 72% [553/758]  lib/rubygems/resolver/source_set.rb[K 73% [554/758]  lib/rubygems/resolver/spec_specification.rb[K 73% [555/758]  lib/rubygems/resolver/specification.rb[K 73% [556/758]  lib/rubygems/resolver/stats.rb[K 73% [557/758]  lib/rubygems/resolver/vendor_set.rb[K 73% [558/758]  lib/rubygems/resolver/vendor_specification.rb[K 73% [559/758]  lib/rubygems/s3_uri_signer.rb[K 73% [560/758]  lib/rubygems/safe_marshal.rb[K 74% [561/758]  lib/rubygems/safe_marshal/elements.rb[K 74% [562/758]  lib/rubygems/safe_marshal/reader.rb[K 74% [563/758]  lib/rubygems/safe_marshal/visitors/stream_printer.rb[K 74% [564/758]  lib/rubygems/safe_marshal/visitors/to_ruby.rb[K 74% [565/758]  lib/rubygems/safe_marshal/visitors/visitor.rb[K 74% [566/758]  lib/rubygems/safe_yaml.rb[K 74% [567/758]  lib/rubygems/security.rb[K 74% [568/758]  lib/rubygems/security/policies.rb[K 75% [569/758]  lib/rubygems/security/policy.rb[K 75% [570/758]  lib/rubygems/security/signer.rb[K 75% [571/758]  lib/rubygems/security/trust_dir.rb[K 75% [572/758]  lib/rubygems/security_option.rb[K 75% [573/758]  lib/rubygems/source.rb[K 75% [574/758]  lib/rubygems/source/git.rb[K 75% [575/758]  lib/rubygems/source/installed.rb[K 75% [576/758]  lib/rubygems/source/local.rb[K 76% [577/758]  lib/rubygems/source/lock.rb[K 76% [578/758]  lib/rubygems/source/specific_file.rb[K 76% [579/758]  lib/rubygems/source/vendor.rb[K 76% [580/758]  lib/rubygems/source_list.rb[K 76% [581/758]  lib/rubygems/spec_fetcher.rb[K 76% [582/758]  lib/rubygems/specification.rb[K 76% [583/758]  lib/rubygems/specification_policy.rb[K 77% [584/758]  lib/rubygems/specification_record.rb[K 77% [585/758]  lib/rubygems/stub_specification.rb[K 77% [586/758]  lib/rubygems/target_rbconfig.rb[K 77% [587/758]  lib/rubygems/text.rb[K 77% [588/758]  lib/rubygems/uninstaller.rb[K 77% [589/758]  lib/rubygems/unknown_command_spell_checker.rb[K 77% [590/758]  lib/rubygems/update_suggestion.rb[K 77% [591/758]  lib/rubygems/uri.rb[K 78% [592/758]  lib/rubygems/uri_formatter.rb[K 78% [593/758]  lib/rubygems/user_interaction.rb[K 78% [594/758]  lib/rubygems/util.rb[K 78% [595/758]  lib/rubygems/util/licenses.rb[K 78% [596/758]  lib/rubygems/util/list.rb[K 78% [597/758]  lib/rubygems/validator.rb[K 78% [598/758]  lib/rubygems/vendored_molinillo.rb[K 79% [599/758]  lib/rubygems/vendored_net_http.rb[K 79% [600/758]  lib/rubygems/vendored_optparse.rb[K 79% [601/758]  lib/rubygems/vendored_securerandom.rb[K 79% [602/758]  lib/rubygems/vendored_timeout.rb[K 79% [603/758]  lib/rubygems/vendored_tsort.rb[K 79% [604/758]  lib/rubygems/version.rb[K 79% [605/758]  lib/rubygems/version_option.rb[K 79% [606/758]  lib/rubygems/win_platform.rb[K 80% [607/758]  lib/rubygems/yaml_serializer.rb[K 80% [608/758]  lib/securerandom.rb[K 80% [609/758]  lib/shellwords.rb[K 80% [610/758]  lib/singleton.rb[K 80% [611/758]  lib/syntax_suggest.rb[K 80% [612/758]  lib/syntax_suggest/api.rb[K 80% [613/758]  lib/syntax_suggest/around_block_scan.rb[K 81% [614/758]  lib/syntax_suggest/block_expand.rb[K 81% [615/758]  lib/syntax_suggest/capture/before_after_keyword_ends.rb[K 81% [616/758]  lib/syntax_suggest/capture/falling_indent_lines.rb[K 81% [617/758]  lib/syntax_suggest/capture_code_context.rb[K 81% [618/758]  lib/syntax_suggest/clean_document.rb[K 81% [619/758]  lib/syntax_suggest/cli.rb[K 81% [620/758]  lib/syntax_suggest/code_block.rb[K 81% [621/758]  lib/syntax_suggest/code_frontier.rb[K 82% [622/758]  lib/syntax_suggest/code_line.rb[K 82% [623/758]  lib/syntax_suggest/code_search.rb[K 82% [624/758]  lib/syntax_suggest/core_ext.rb[K 82% [625/758]  lib/syntax_suggest/display_code_with_line_numbers.rb[K 82% [626/758]  lib/syntax_suggest/display_invalid_blocks.rb[K 82% [627/758]  lib/syntax_suggest/explain_syntax.rb[K 82% [628/758]  lib/syntax_suggest/left_right_lex_count.rb[K 82% [629/758]  lib/syntax_suggest/lex_all.rb[K 83% [630/758]  lib/syntax_suggest/lex_value.rb[K 83% [631/758]  lib/syntax_suggest/mini_stringio.rb[K 83% [632/758]  lib/syntax_suggest/parse_blocks_from_indent_line.rb[K 83% [633/758]  lib/syntax_suggest/pathname_from_message.rb[K 83% [634/758]  lib/syntax_suggest/priority_engulf_queue.rb[K 83% [635/758]  lib/syntax_suggest/priority_queue.rb[K 83% [636/758]  lib/syntax_suggest/ripper_errors.rb[K 84% [637/758]  lib/syntax_suggest/scan_history.rb[K 84% [638/758]  lib/syntax_suggest/unvisited_lines.rb[K 84% [639/758]  lib/syntax_suggest/version.rb[K 84% [640/758]  lib/tempfile.rb[K 84% [641/758]  lib/time.rb[K 84% [642/758]  lib/timeout.rb[K 84% [643/758]  lib/tmpdir.rb[K 84% [644/758]  lib/tsort.rb[K 85% [645/758]  lib/un.rb[K 85% [646/758]  lib/unicode_normalize/normalize.rb[K 85% [647/758]  lib/unicode_normalize/tables.rb[K 85% [648/758]  lib/uri.rb[K 85% [649/758]  lib/uri/common.rb[K 85% [650/758]  lib/uri/file.rb[K 85% [651/758]  lib/uri/ftp.rb[K 86% [652/758]  lib/uri/generic.rb[K 86% [653/758]  lib/uri/http.rb[K 86% [654/758]  lib/uri/https.rb[K 86% [655/758]  lib/uri/ldap.rb[K 86% [656/758]  lib/uri/ldaps.rb[K 86% [657/758]  lib/uri/mailto.rb[K 86% [658/758]  lib/uri/rfc2396_parser.rb[K 86% [659/758]  lib/uri/rfc3986_parser.rb[K 87% [660/758]  lib/uri/version.rb[K 87% [661/758]  lib/uri/ws.rb[K 87% [662/758]  lib/uri/wss.rb[K 87% [663/758]  lib/weakref.rb[K 87% [664/758]  lib/yaml.rb[K 87% [665/758]  lib/yaml/dbm.rb[K 87% [666/758]  lib/yaml/store.rb[K 87% [667/758]  load.c[K 88% [668/758]  loadpath.c[K 88% [669/758]  localeinit.c[K 88% [670/758]  main.c[K 88% [671/758]  marshal.c[K 88% [672/758]  marshal.rb[K 88% [673/758]  math.c[K 88% [674/758]  memory_view.c[K 89% [675/758]  mini_builtin.c[K 89% [676/758]  miniinit.c[K 89% [677/758]  miniprelude.c[K 89% [678/758]  nilclass.rb[K 89% [679/758]  node.c[K 89% [680/758]  node_dump.c[K 89% [681/758]  numeric.c[K 89% [682/758]  numeric.rb[K 90% [683/758]  object.c[K 90% [684/758]  pack.c[K 90% [685/758]  pack.rb[K 90% [686/758]  parse.c[K 90% [687/758]  parse.y[K 90% [688/758]  parser_st.c[K 90% [689/758]  pathname.c[K 91% [690/758]  pathname_builtin.rb[K 91% [691/758]  prelude.rb[K 91% [692/758]  prism_compile.c[K 91% [693/758]  prism_init.c[K 91% [694/758]  proc.c[K 91% [695/758]  process.c[K 91% [696/758]  ractor.c[K 91% [697/758]  ractor.rb[K 92% [698/758]  ractor_sync.c[K 92% [699/758]  random.c[K 92% [700/758]  range.c[K 92% [701/758]  rational.c[K 92% [702/758]  rbconfig.rb[K 92% [703/758]  re.c[K 92% [704/758]  regcomp.c[K 93% [705/758]  regenc.c[K 93% [706/758]  regerror.c[K 93% [707/758]  regexec.c[K 93% [708/758]  regparse.c[K 93% [709/758]  regsyntax.c[K 93% [710/758]  ruby-runner.c[K 93% [711/758]  ruby.c[K 93% [712/758]  ruby_parser.c[K 94% [713/758]  rubystub.c[K 94% [714/758]  scheduler.c[K 94% [715/758]  set.c[K 94% [716/758]  shape.c[K 94% [717/758]  signal.c[K 94% [718/758]  siphash.c[K 94% [719/758]  sparc.c[K 94% [720/758]  sprintf.c[K 95% [721/758]  st.c[K 95% [722/758]  strftime.c[K 95% [723/758]  string.c[K 95% [724/758]  struct.c[K 95% [725/758]  symbol.c[K 95% [726/758]  symbol.rb[K 95% [727/758]  thread.c[K 96% [728/758]  thread_none.c[K 96% [729/758]  thread_pthread.c[K 96% [730/758]  thread_pthread_mn.c[K 96% [731/758]  thread_sync.c[K 96% [732/758]  thread_sync.rb[K 96% [733/758]  thread_win32.c[K 96% [734/758]  time.c[K 96% [735/758]  timev.rb[K 97% [736/758]  trace_point.rb[K 97% [737/758]  transcode.c[K 97% [738/758]  universal_parser.c[K 97% [739/758]  util.c[K 97% [740/758]  variable.c[K 97% [741/758]  version.c[K 97% [742/758]  vm.c[K 98% [743/758]  vm_args.c[K 98% [744/758]  vm_backtrace.c[K 98% [745/758]  vm_dump.c[K 98% [746/758]  vm_eval.c[K 98% [747/758]  vm_exec.c[K 98% [748/758]  vm_insnhelper.c[K 98% [749/758]  vm_method.c[K 98% [750/758]  vm_sync.c[K 99% [751/758]  vm_trace.c[K 99% [752/758]  vsnprintf.c[K 99% [753/758]  warning.rb[K 99% [754/758]  weakmap.c[K 99% [755/758]  yjit.c[K 99% [756/758]  yjit.rb[K 99% [757/758]  zjit.c[K100% [758/758]  zjit.rb
+
+Generating RI format into /var/tmp/hokuto/ruby-02/build/.ext/rdoc...
+
+You can visit the home page at: ]8;;file:///var/tmp/hokuto/ruby-02/build/.ext/rdoc/index.html\file:///var/tmp/hokuto/ruby-02/build/.ext/rdoc/index.html]8;;\
+
+  Files:        758
+
+  Classes:     1004 ( 188 undocumented)
+  Modules:      163 (  37 undocumented)
+  Constants:   1879 ( 158 undocumented)
+  Attributes:   903 ( 147 undocumented)
+  Methods:    11735 (1252 undocumented)
+
+  Total:      15684 (1782 undocumented)
+   88.64% documented
+
+  Elapsed: 21.0s
+
+./miniruby -I./lib -I. -I.ext/common  ./tool/runruby.rb --extout=.ext  -- --disable-gems -r./x86_64-linux-fake ./tool/rbinstall.rb --make="make" --dest-dir="/var/tmp/hokuto/ruby-02/output" --extout=".ext" --ext-build-dir="./ext" --mflags="-j10 --jobserver-auth=fifo:/var/tmp/hokuto/GMfifo665381" --make-flags=" -j10 --jobserver-auth=fifo:/var/tmp/hokuto/GMfifo665381 -- DESTDIR=/var/tmp/hokuto/ruby-02/output" --data-mode=0644 --prog-mode=0755 --installed-list .installed.list --mantype="doc"  --gnumake --install=all --rdoc-output=".ext/rdoc" --html-output=".ext/html"
+installing binary commands:         /usr/bin
+installing base libraries:          /usr/lib
+installing arch files:              /usr/lib/ruby/4.0.0/x86_64-linux
+installing pkgconfig data:          /usr/lib/pkgconfig
+installing extension objects:       /usr/lib/ruby/4.0.0/x86_64-linux
+installing extension objects:       /usr/lib/ruby/site_ruby/4.0.0/x86_64-linux
+installing extension objects:       /usr/lib/ruby/vendor_ruby/4.0.0/x86_64-linux
+installing extension headers:       /usr/include/ruby-4.0.0/x86_64-linux
+installing extension scripts:       /usr/lib/ruby/4.0.0
+installing extension scripts:       /usr/lib/ruby/site_ruby/4.0.0
+installing extension scripts:       /usr/lib/ruby/vendor_ruby/4.0.0
+installing extension headers:       /usr/include/ruby-4.0.0/ruby
+installing rdoc:                    /usr/share/ri/4.0.0/system
+installing html-docs:               /usr/share/doc/ruby
+installing capi-docs:               /usr/share/doc/ruby
+installing command scripts:         /usr/bin
+installing library scripts:         /usr/lib/ruby/4.0.0
+installing common headers:          /usr/include/ruby-4.0.0
+installing manpages:                /usr/share/man/man1
+installing default gems from lib:   /usr/lib/ruby/gems/4.0.0
+                                    bundler 4.0.10
+                                    delegate 0.6.1
+                                    did_you_mean 2.0.0
+                                    english 0.8.1
+                                    erb 6.0.1.1
+                                    error_highlight 0.7.1
+                                    fileutils 1.8.0
+                                    find 0.2.0
+                                    forwardable 1.4.0
+                                    ipaddr 1.2.8
+                                    net-http 0.9.1
+                                    net-protocol 0.2.2
+                                    open-uri 0.5.0
+                                    open3 0.2.1
+                                    optparse 0.8.1
+                                    pp 0.6.3
+                                    prettyprint 0.2.0
+                                    prism 1.8.1
+                                    resolv 0.7.0
+                                    ruby2_keywords 0.0.5
+                                    securerandom 0.4.1
+                                    shellwords 0.2.2
+                                    singleton 0.3.0
+                                    syntax_suggest 2.0.3
+                                    tempfile 0.3.1
+                                    time 0.4.2
+                                    timeout 0.6.0
+                                    tmpdir 0.3.1
+                                    tsort 0.2.0
+                                    un 0.3.0
+                                    uri 1.1.1
+                                    weakref 0.1.4
+                                    yaml 0.4.0
+installing default gems from ext:   /usr/lib/ruby/gems/4.0.0
+                                    date 3.5.1
+                                    digest 3.2.1
+                                    etc 1.4.6
+                                    fcntl 1.3.0
+                                    io-console 0.8.2
+                                    io-nonblock 0.3.2
+                                    io-wait 0.4.0
+                                    json 2.18.0
+                                    openssl 4.0.0
+                                    psych 5.3.1
+                                    stringio 3.2.0
+                                    strscan 3.1.6
+                                    zlib 3.2.3
+installing bundled gems:            /usr/lib/ruby/gems/4.0.0
+                                    minitest 6.0.0
+                                    power_assert 3.0.1
+                                    rake 13.3.1
+                                    test-unit 3.7.5
+                                    rexml 3.4.4
+                                    rss 0.3.2
+                                    net-ftp 0.3.9
+                                    net-imap 0.6.2
+                                    net-pop 0.1.2
+                                    net-smtp 0.5.1
+                                    matrix 0.4.3
+                                    prime 0.1.4
+                                    rbs 3.10.0
+                                    typeprof 0.31.1
+                                    debug 1.11.1
+                                    racc 1.8.1
+                                    mutex_m 0.3.0
+                                    getoptlong 0.2.1
+                                    base64 0.3.0
+                                    bigdecimal 4.0.1
+                                    observer 0.1.2
+                                    abbrev 0.1.2
+                                    resolv-replace 0.1.1
+                                    rinda 0.2.0
+                                    drb 2.2.3
+                                    nkf 0.2.0
+                                    syslog 0.3.0
+                                    csv 3.3.5
+                                    repl_type_completor 0.1.12
+                                    ostruct 0.6.3
+                                    pstore 0.2.1
+                                    benchmark 0.5.0
+                                    logger 1.7.0
+                                    rdoc 7.0.3
+                                    irb 1.16.0
+                                    reline 0.6.3
+                                    readline 0.0.4
+                                    fiddle 1.1.8
+installing bundled gem cache:       /usr/lib/ruby/gems/4.0.0/cache
+skipped bundled gems:
+    win32ole-1.9.2.gem              extensions not found or build failed win32ole-1.9.2
+Installed under [95m/var/tmp/hokuto/ruby-02/output[m
+
+Script done on 2026-05-12 22:23:45+07:00 [COMMAND_EXIT_CODE="0"]
