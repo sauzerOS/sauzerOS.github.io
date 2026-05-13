@@ -1,0 +1,1499 @@
+Script started on 2026-05-13 10:58:13+07:00 [COMMAND="cd /var/tmp/hokuto/imagemagick-74/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/imagemagick-74/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/imagemagick-74/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/imagemagick-74/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/imagemagick-74/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/imagemagick-74/build/.cache' /repo/sauzeros/extra/imagemagick/build /var/tmp/hokuto/imagemagick-74/output 7.1.2-22 imagemagick" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+Configuring ImageMagick 7.1.2-22
+checking whether build environment is sane... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/param.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking the archiver (gcc-ar) interface... ar
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking dependency style of cc... (cached) gcc3
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking for c++ option to enable C++11 features... none needed
+checking dependency style of c++... gcc3
+checking how to run the C preprocessor... cc -E
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking how to print strings... printf
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for C compiler vendor... gnu
+checking CFLAGS for most reasonable warnings... -Wall
+checking whether make sets $(MAKE)... (cached) yes
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for gawk... (cached) gawk
+checking if malloc debugging is wanted... no
+checking for __attribute__... yes
+checking for gcc architecture flag... 
+checking for x86 cpuid 0 output... 20:756e6547:6c65746e:49656e69
+checking for x86 cpuid 1 output... 90672:4c800800:7ffafbbf:bfebfbff
+checking whether C compiler accepts -mtune=core2... yes
+checking for gcc architecture flag... -mtune=core2
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for C compiler vendor... (cached) gnu
+checking if LD -Wl,--version-script works... yes
+checking for linker lazyload option... none
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking whether cc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for cc option to support OpenMP... -fopenmp
+checking for cc options needed to detect all undeclared functions... none needed
+checking whether _OPENMP is declared... yes
+checking for OpenCL library... disabled
+checking for cc option to enable large file support... none needed
+checking for declarations of fseeko and ftello... yes
+checking Linux compatible sendfile()... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... c++ -E
+checking for ld used by c++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for c++ option to produce PIC... -fPIC -DPIC
+checking if c++ PIC flag -fPIC -DPIC works... yes
+checking if c++ static flag -static works... yes
+checking if c++ supports -c -o file.o... yes
+checking if c++ supports -c -o file.o... (cached) yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking which variant of security policy to enforce... open
+checking whether to enable assertions... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for arm/limits.h... no
+checking for arpa/inet.h... yes
+checking for complex.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for float.h... yes
+checking for inttypes.h... (cached) yes
+checking for limits.h... yes
+checking for linux/unistd.h... yes
+checking for locale.h... yes
+checking for machine/param.h... no
+checking for mach-o/dyld.h... no
+checking for malloc.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for OS.h... no
+checking for process.h... no
+checking for sun_prefetch.h... no
+checking for stdarg.h... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/ipc.h... yes
+checking for sys/loadavg.h... no
+checking for sys/mman.h... yes
+checking for sys/resource.h... yes
+checking for sys/sendfile.h... yes
+checking for sys/socket.h... yes
+checking for sys/syslimits.h... no
+checking for sys/time.h... yes
+checking for sys/times.h... yes
+checking for sys/uio.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/wait.h... yes
+checking for utime.h... yes
+checking for wchar.h... (cached) yes
+checking for xlocale.h... no
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99 or later... yes
+checking for working volatile... yes
+checking whether stat file-mode macros are broken... no
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking whether #! works in shell scripts... yes
+checking whether char is unsigned... no
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for C/C++ restrict keyword... __restrict__
+checking for working volatile... (cached) yes
+checking whether byte ordering is bigendian... (cached) no
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for intmax_t... yes
+checking for intptr_t... yes
+checking for mbstate_t... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uintmax_t... yes
+checking for uintptr_t... yes
+checking size of float_t... 4
+checking size of double_t... 8
+checking size of float... (cached) 4
+checking size of double... (cached) 8
+checking size of long double... 16
+checking size of unsigned long long... 8
+checking size of size_t... 8
+checking size of void *... 8
+checking whether our compiler supports __func__... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for working strtod... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for sqrt in -lm... yes
+checking for library containing gethostbyname... none required
+checking for library containing socket... none required
+checking for library containing clock_gettime... none required
+checking whether clock_gettime supports CLOCK_REALTIME... yes
+checking whether pread is declared... yes
+checking whether pwrite is declared... yes
+checking whether strlcpy is declared... no
+checking whether vsnprintf is declared... yes
+checking whether the compiler supports GNU C++... (cached) yes
+checking whether c++ accepts -g... (cached) yes
+checking for c++ option to enable C++11 features... (cached) none needed
+checking dependency style of c++... (cached) gcc3
+checking whether the compiler recognizes bool as a built-in type... yes
+checking whether the compiler implements namespaces... yes
+checking if g++ supports namespace std... yes
+checking for c++ option to support OpenMP... -fopenmp
+checking whether C++ compiler is sufficient for Magick++... yes
+checking for X11 configure files... 
+checking for omp.h... yes
+checking for OpenMP library ... -lgomp
+checking for BZLIB support ... 
+checking for bzip2 >= 1.0.0... yes
+checking for bzlib.h... yes
+checking for BZ2_bzDecompress in -lbz2... yes
+checking if BZLIB package is complete... yes
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+-------------------------------------------------------------
+checking for X11... 
+checking for shmctl... yes
+checking for XShmAttach in -lXext... yes
+checking for XShapeCombineMask in -lXext... yes
+checking for XtSetEventDispatcher in -lXt... yes
+-------------------------------------------------------------
+checking for libzip >= 1.0.0... yes
+
+-------------------------------------------------------------
+checking for zlib >= 1.0.0... yes
+
+-------------------------------------------------------------
+checking for libzstd >= 1.0.0... yes
+
+-------------------------------------------------------------
+checking for ddjvuapi >= 3.5.0... yes
+
+-------------------------------------------------------------
+checking for fontconfig >= 2.1.0... yes
+
+-------------------------------------------------------------
+checking for freetype2 >= 2.8.0... yes
+
+-------------------------------------------------------------
+checking for raqm... no
+
+checking for Windows GDI32 support... 
+checking for windows.h... no
+checking for winuser.h... no
+checking for wingdi.h... no
+checking if Windows GDI32 support is complete... no
+-------------------------------------------------------------
+checking for libgvc >= 2.9.0... no
+
+-------------------------------------------------------------
+checking for MagickCache >= 0.9.3... no
+
+-------------------------------------------------------------
+checking for libheif >= 1.4.0... yes
+
+-------------------------------------------------------------
+checking for JBIG... 
+checking for jbig.h... no
+checking for jbg_dec_init in -ljbig... no
+checking if JBIG package is complete... no
+-------------------------------------------------------------
+checking for JPEG... 
+checking for libjpeg >= 2.0.0... yes
+checking for jconfig.h... yes
+checking for jerror.h... yes
+checking for jmorecfg.h... yes
+checking for jpeglib.h... yes
+checking for jpeg_read_header in -ljpeg... yes
+checking if JPEG package is complete... yes
+checking for jpeg12_read_scanlines... yes
+checking for jpeg12_write_scanlines... yes
+checking for jpeg16_read_scanlines... yes
+checking for jpeg16_write_scanlines... yes
+checking for jpeg_enable_lossless... yes
+checking for jpeg_simple_lossless... no
+-------------------------------------------------------------
+checking for libjxl >= 0.7.0 libjxl_threads... yes
+
+-------------------------------------------------------------
+checking for lcms2 >= 2.0.0... yes
+
+checking for lcms2/lcms2.h... no
+-------------------------------------------------------------
+checking for libopenjp2 >= 2.1.0... yes
+
+-------------------------------------------------------------
+checking for lqr-1 >= 0.1.0... no
+
+-------------------------------------------------------------
+checking for liblzma >= 2.9.0... yes
+
+-------------------------------------------------------------
+checking for OpenEXR >= 1.0.6... no
+
+-------------------------------------------------------------
+checking for pangocairo >= 1.28.1... yes
+
+checking for pango >= 1.28.1... yes
+
+-------------------------------------------------------------
+checking for libpng >= 1.0.0... yes
+
+-------------------------------------------------------------
+checking for libraw_r >= 0.14.8... no
+
+-------------------------------------------------------------
+checking for libtiff-4 >= 4.0.0... yes
+
+-------------------------------------------------------------
+checking for libwebp >= 0.4.1... yes
+checking for libwebpmux >= 0.5.0 libwebpdemux >= 0.5.0... yes
+
+checking if WMF package is complete... no
+-------------------------------------------------------------
+checking for libxml-2.0 >= 2.0.0... yes
+
+checking for acosh... yes
+checking for _aligned_malloc... no
+checking for aligned_malloc... no
+checking for asinh... yes
+checking for atanh... yes
+checking for atoll... yes
+checking for atexit... yes
+checking for cabs... yes
+checking for carg... yes
+checking for cimag... yes
+checking for creal... yes
+checking for clock... yes
+checking for clock_getres... yes
+checking for clock_gettime... yes
+checking for ctime_r... yes
+checking for directio... no
+checking for erf... yes
+checking for _exit... yes
+checking for execvp... yes
+checking for fchmod... yes
+checking for floor... yes
+checking for fork... yes
+checking for ftime... yes
+checking for ftruncate... yes
+checking for getc_unlocked... yes
+checking for getcwd... yes
+checking for getentropy... yes
+checking for getexecname... no
+checking for getdtablesize... yes
+checking for getloadavg... yes
+checking for getpagesize... (cached) yes
+checking for getpid... yes
+checking for getpwnam_r... yes
+checking for getrlimit... yes
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for gmtime_r... yes
+checking for isnan... yes
+checking for j0... yes
+checking for j1... yes
+checking for lltostr... no
+checking for localtime_r... yes
+checking for lstat... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkdir... yes
+checking for mkstemp... yes
+checking for mmap... yes
+checking for munmap... yes
+checking for nanosleep... yes
+checking for newlocale... yes
+checking for _NSGetExecutablePath... no
+checking for pclose... yes
+checking for _pclose... no
+checking for poll... yes
+checking for popen... yes
+checking for _popen... no
+checking for posix_fadvise... yes
+checking for posix_fallocate... yes
+checking for posix_madvise... yes
+checking for posix_memalign... yes
+checking for posix_spawnp... yes
+checking for pow... yes
+checking for pread... yes
+checking for putenv... yes
+checking for pwrite... yes
+checking for qsort_r... yes
+checking for raise... yes
+checking for rand_r... yes
+checking for readlink... yes
+checking for realpath... yes
+checking for select... yes
+checking for seekdir... yes
+checking for sendfile... yes
+checking for setlocale... yes
+checking for socket... yes
+checking for sqrt... yes
+checking for setvbuf... yes
+checking for stat... yes
+checking for strcasestr... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strcspn... yes
+checking for strdup... yes
+checking for strpbrk... yes
+checking for strspn... yes
+checking for strstr... yes
+checking for strtod... (cached) yes
+checking for strtod_l... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for symlink... yes
+checking for sysconf... yes
+checking for sigemptyset... yes
+checking for sigaction... yes
+checking for spawnvp... no
+checking for strerror... yes
+checking for strlcat... yes
+checking for strlcpy... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking for system... yes
+checking for telldir... yes
+checking for tempnam... yes
+checking for times... yes
+checking for ulltostr... no
+checking for uselocale... yes
+checking for usleep... yes
+checking for utime... yes
+checking for utimensat... yes
+checking for vfprintf... yes
+checking for vfprintf_l... no
+checking for vsprintf... yes
+checking for vsnprintf... yes
+checking for vsnprintf_l... no
+checking for waitpid... yes
+checking for _wfopen... no
+checking for _wstat... no
+-------------------------------------------------------------
+checking for ImageMagick delegate programs... 
+checking for bpgdec... bpgdec
+checking for bpgenc... bpgenc
+checking for blender... blender
+checking for xdg-open... /usr/bin/xdg-open
+checking for xclip... no
+checking for darktable-cli... darktable-cli
+checking for libreoffice... libreoffice
+checking for dvips... dvips
+checking for magick... /usr/bin/magick
+checking for magick... /usr/bin/magick
+checking for xterm... xterm
+checking for dot... dot
+checking for hp2xx... hp2xx
+checking for html2ps... html2ps
+checking for ilbmtoppm... ilbmtoppm
+checking for ppmtoilbm... ppmtoilbm
+checking for JxrDecApp... JxrDecApp
+checking for JxrEncApp... JxrEncApp
+checking for lepton... lepton
+checking for lp... /usr/bin/lp
+checking for lpr... /usr/bin/lpr
+checking for gimp... gimp
+checking for magick... /usr/bin/magick
+checking for ffmpeg... /usr/bin/ffmpeg
+checking for ffmpeg... /usr/bin/ffmpeg
+checking for mkdir... /usr/bin/mkdir
+checking for mrsidgeodecode... mrsidgeodecode
+checking for mv... /usr/bin/mv
+checking for open... open
+checking for pcl6... pcl6
+checking for gsx... /usr/bin/gsx
+checking for rm... /usr/bin/rm
+checking for rsvg-convert... /usr/bin/rsvg-convert
+checking for inkscape... inkscape
+checking for tesseract... tesseract
+checking for potrace... potrace
+checking for fig2dev... fig2dev
+checking for dwebp... /usr/bin/dwebp
+checking for cwebp... /usr/bin/cwebp
+checking for curl... /usr/bin/curl
+checking for gxps... gxps
+checking for Apple fonts directory... not found!
+checking for Dejavu fonts directory... not found!
+checking for Ghostscript fonts directory... /usr/share/ghostscript/fontsx/
+checking for URW-base35 OTF fonts directory... not found!
+checking for URW-base35 Type1 fonts directory... not found!
+checking for Windows fonts directory... not found!
+checking for gnutar... no
+checking for gtar... no
+checking for tar... tar
+checking for perl... perl
+checking for rpmbuild... rpmbuild
+checking for 7za... 7za
+checking for zip... zip
+-------------------------------------------------------------
+checking for Ghostscript... 
+checking for Ghostscript version... 10.07.0
+checking for gs color device... png16m
+checking for gs alpha device... png16malpha
+checking for gs CMYK device... pamcmyk32
+checking for gs mono device... pbmraw
+checking for gs PDF writing device... pdfwrite
+checking for gs PS writing device... ps2write
+checking for gs EPS writing device... eps2write
+-------------------------------------------------------------
+Update ImageMagick configuration
+checking that generated files are newer than configure... done
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating app-image/AppRun
+config.status: creating common.shi
+config.status: creating config/policy.xml
+config.status: creating config/configure.xml
+config.status: creating config/delegates.xml
+config.status: creating config/ImageMagick.rdf
+config.status: creating config/MagickCore.dox
+config.status: creating config/MagickWand.dox
+config.status: creating config/Magick++.dox
+config.status: creating config/type-apple.xml
+config.status: creating config/type-dejavu.xml
+config.status: creating config/type-ghostscript.xml
+config.status: creating config/type-urw-base35.xml
+config.status: creating config/type-urw-base35-type1.xml
+config.status: creating config/type-windows.xml
+config.status: creating config/type.xml
+config.status: creating ImageMagick.spec
+config.status: creating Magick++/bin/Magick++-config
+config.status: creating MagickCore/ImageMagick.pc
+config.status: creating Magick++/lib/Magick++.pc
+config.status: creating MagickCore/MagickCore-config
+config.status: creating MagickCore/MagickCore.pc
+config.status: creating MagickCore/version.h
+config.status: creating Makefile
+config.status: creating magick.sh
+config.status: creating PerlMagick/check.sh
+config.status: creating PerlMagick/default/Magick.pm
+config.status: creating PerlMagick/Makefile.PL
+config.status: creating PerlMagick/default/Makefile.PL
+config.status: creating PerlMagick/quantum/Makefile.PL
+config.status: creating PerlMagick/quantum/quantum.pm
+config.status: creating PerlMagick/quantum/quantum.xs
+config.status: creating PerlMagick/quantum/typemap
+config.status: creating utilities/animate.1
+config.status: creating utilities/compare.1
+config.status: creating utilities/composite.1
+config.status: creating utilities/conjure.1
+config.status: creating utilities/convert.1
+config.status: creating utilities/display.1
+config.status: creating utilities/identify.1
+config.status: creating utilities/ImageMagick.1
+config.status: creating utilities/import.1
+config.status: creating utilities/magick.1
+config.status: creating utilities/magick-script.1
+config.status: creating utilities/mogrify.1
+config.status: creating utilities/montage.1
+config.status: creating utilities/stream.1
+config.status: creating MagickWand/MagickWand-config
+config.status: creating MagickWand/MagickWand.pc
+config.status: creating config/config.h
+config.status: executing MagickCore/magick-baseconfig.h commands
+config.status: creating MagickCore/magick-baseconfig.h - prefix MAGICKCORE for config/config.h defines
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default commands
+config.status: executing magick.sh.in commands
+config.status: executing MagickCore-config.in commands
+config.status: executing MagickWand-config.in commands
+config.status: executing Magick++-config.in commands
+config.status: executing PerlMagick/check.sh.in commands
+configure:
+==============================================================================
+ImageMagick 7.1.2-22 is configured as follows. Verify that this configuration
+matches your expectations.
+
+Host system type: x86_64-pc-linux-gnu
+Build system type: x86_64-pc-linux-gnu
+
+                    Option				Value
+------------------------------------------------------------------------------
+Shared libraries    --enable-shared=yes			yes
+Static libraries    --enable-static=yes			yes
+Build utilities     --with-utilities=yes		yes
+Module support      --with-modules=no			no
+GNU ld              --with-gnu-ld=yes			yes
+OpenMP              --enable-openmp=			yes
+Security policy     --with-security-policy=open	        open
+Quantum depth       --with-quantum-depth=16		16
+Channel mask depth  --enable-64bit-channel-masks=no	32
+High Dynamic Range Imagery
+                    --enable-hdri=yes			yes
+
+Install documentation:					yes
+
+Memory allocation library:
+  JEMalloc          --with-jemalloc=no			no
+  MTMalloc          --with-mtmalloc=no			no
+  TCMalloc          --with-tcmalloc=no			no
+  UMem              --with-umem=no			no
+
+Delegate library configuration:
+  BZLIB             --with-bzlib=yes			yes
+  Autotrace         --with-autotrace=no			no
+  DJVU              --with-djvu=yes			yes
+  DPS               --with-dps=no			no
+  FFTW              --with-fftw=no			no
+  FLIF              --with-flif=no			no
+  FlashPIX          --with-fpx=no			no
+  FontConfig        --with-fontconfig=yes		yes
+  FreeType          --with-freetype=yes			yes
+  Ghostscript lib   --with-gslib=no			no
+  Graphviz          --with-gvc=yes			no
+  HEIC              --with-heic=yes			yes
+  JBIG              --with-jbig=yes			no
+  JPEG v1           --with-jpeg=yes			yes
+  JPEG XL           --with-jxl=yes			yes
+  DMR               --with-dmr=yes			no
+  LCMS              --with-lcms=yes			yes
+  LQR               --with-lqr=yes			no
+  LTDL              --with-ltdl=no			no
+  LZMA              --with-lzma=yes			yes
+  Magick++          --with-magick-plus-plus=yes		yes
+  OpenEXR           --with-openexr=yes			no
+  OpenJP2           --with-openjp2=yes			yes
+  PANGO             --with-pango=yes			yes
+  PERL              --with-perl=no			no
+  PNG               --with-png=yes			yes
+  RAQM              --with-raqm=yes			no
+  RAW               --with-raw=yes			no
+  RSVG              --with-rsvg=no			no
+  TIFF              --with-tiff=yes			yes
+  UHDR              --with-uhdr=no			no
+  WEBP              --with-webp=yes			yes
+  WMF               --with-wmf=no			no
+  X11               --with-x=				yes
+  XML               --with-xml=yes			yes
+  ZIP               --with-zip=yes			yes
+  ZLIB              --with-zlib=yes			yes
+  ZSTD              --with-zstd=yes			yes
+
+Delegate program configuration:
+  GhostPCL          None				pcl6 (unknown)
+  GhostXPS          None				gxps (unknown)
+  Ghostscript       None				gs (10.07.0)
+
+Font configuration:
+  Apple fonts       --with-apple-font-dir=default	
+  Dejavu fonts      --with-dejavu-font-dir=default	none
+  Ghostscript fonts --with-gs-font-dir=default		/usr/share/ghostscript/fontsx/
+  URW OTF fonts     --with-urw-base35-font-dir=default	none
+  URW Type1 fonts   --with-urw-base35-type1-font-dir=default	none
+  Windows fonts     --with-windows-font-dir=default	none
+
+X11 configuration:
+  X_CFLAGS          = 
+  X_PRE_LIBS        =  -lSM -lICE
+  X_LIBS            = 
+  X_EXTRA_LIBS      = 
+
+Options used to compile and link:
+  PREFIX            = /usr
+  EXEC-PREFIX       = /usr
+  VERSION           = 7.1.2-22
+  CC                = cc
+  CFLAGS            = -I/usr/include/libxml2 -DWITH_GZFILEOP -I/usr/include/webp -I/usr/include/webp -DWITH_GZFILEOP -I/usr/include/webp -I/usr/include/libpng16 -DWITH_GZFILEOP -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -pthread -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -DWITH_GZFILEOP -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/openjpeg-2.5 -DHWY_SHARED_DEFINE -I/usr/include/webp -I/usr/include/freetype2 -I/usr/include/libpng16 -DWITH_GZFILEOP -I/usr/include/freetype2 -I/usr/include/libpng16 -DWITH_GZFILEOP -pthread -DWITH_GZFILEOP -fopenmp -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -mtune=core2 -fexceptions -pthread -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -DMAGICKCORE_CHANNEL_MASK_DEPTH=32
+  CPPFLAGS          = -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -DMAGICKCORE_CHANNEL_MASK_DEPTH=32
+  PCFLAGS           = 
+  DEFS              = -DHAVE_CONFIG_H
+  LDFLAGS           = -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+  LIBS              = -llcms2 -L/usr/lib64 -ltiff -lfreetype -ljpeg -L/usr/lib64 -ljxl -ljxl_threads -L/usr/lib64 -lpng16 -ldjvulibre -lfontconfig -L/usr/lib64 -lheif -lwebpmux -lwebpdemux -lwebp -lXext -lXt -lSM -lICE -lX11 -llzma -lbz2 -L/usr/lib64 -lopenjp2 -lpangocairo-1.0 -lpango-1.0 -lcairo -lharfbuzz -lgobject-2.0 -lglib-2.0 -lxml2 -lz -lzip -lm -lpthread -lgomp
+  CXX               = c++
+  CXXFLAGS          = -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -pthread
+  FEATURES          = Channel-masks(32-bit) Cipher DPC HDRI OpenMP
+  DELEGATES         = bzlib djvu fontconfig freetype heic jng jp2 jpeg jxl lcms lzma pangocairo png ps tiff video webp x xml zip zlib zstd
+==============================================================================
+
+make  all-am
+make[1]: Entering directory '/var/tmp/hokuto/imagemagick-74/build'
+cp -f MagickCore/ImageMagick.pc MagickCore/ImageMagick-7.Q16HDRI.pc
+cp -f MagickCore/MagickCore.pc MagickCore/MagickCore-7.Q16HDRI.pc
+cp -f MagickWand/MagickWand.pc MagickWand/MagickWand-7.Q16HDRI.pc
+cp -f Magick++/lib/Magick++.pc Magick++/lib/Magick++-7.Q16HDRI.pc
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-accelerate.lo
+  CC       utilities/magick.o
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-animate.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-artifact.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-attribute.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-blob.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-cache.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-annotate.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-channel.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-cache-view.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-cipher.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-client.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-coder.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-color.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-colormap.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-colorspace.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-compare.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-composite.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-compress.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-configure.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-constitute.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-decorate.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-delegate.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-deprecate.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-display.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-distort.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-distribute-cache.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-draw.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-effect.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-enhance.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-exception.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-feature.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-fourier.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-fx.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-gem.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-geometry.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-histogram.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-identify.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-image.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-image-view.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-layer.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-linked-list.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-list.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-locale.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-log.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-magic.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-magick.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-matrix.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-memory.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-mime.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-module.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-monitor.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-montage.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-morphology.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-opencl.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-option.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-paint.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-pixel.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-policy.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-prepress.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-property.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-profile.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-quantize.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-quantum.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-quantum-export.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-quantum-import.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-random.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-registry.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-resample.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-resize.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-resource.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-segment.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-semaphore.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-shear.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-signature.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-splay-tree.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-static.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-statistic.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-stream.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-string.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-thread.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-timer.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-token.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-transform.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-threshold.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-type.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-utility.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-version.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-visual-effects.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-vision.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-widget.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-xml-tree.lo
+  CC       MagickCore/libMagickCore_7_Q16HDRI_la-xwindow.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-aai.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-art.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ashlar.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-avs.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-bayer.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-bgr.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-bmp.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-braille.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-caption.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-cals.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-cin.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-cip.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-clip.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-cmyk.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-cube.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-cut.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-dcm.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-dds.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-debug.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-dib.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-dng.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-dot.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-dpx.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-farbfeld.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-fax.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-fits.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-fl32.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ftxt.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-gif.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-gradient.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-gray.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-hald.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-hdr.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-histogram.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-hrz.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-html.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-icon.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-info.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-inline.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ipl.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-jnx.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-json.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-kernel.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-label.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-mac.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-magick.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-map.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-mask.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-mat.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-matte.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-meta.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-miff.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-mono.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-mpc.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-mpr.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-msl.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-mtv.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-mvg.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-null.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ora.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-otb.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-palm.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pango.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pattern.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pcd.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pcl.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pcx.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pdb.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pdf.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pes.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pgx.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pict.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-plasma.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pix.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pnm.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ps2.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ps3.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ps.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-psd.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-pwp.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-qoi.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-raw.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-rgb.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-rgf.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-rla.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-rle.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-scr.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-screenshot.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-sct.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-sf3.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-sfw.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-sgi.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-sixel.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-stegano.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-strimg.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-sun.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-svg.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-tga.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-thumbnail.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-tile.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-tim2.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-tim.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ttf.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-txt.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-uil.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-url.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-uyvy.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-vicar.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-vid.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-video.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-viff.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-vips.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-wbmp.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-wpg.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-xbm.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-xc.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-xcf.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-xpm.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-xps.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-yaml.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ycbcr.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-yuv.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-djvu.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-heic.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-jpeg.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-jp2.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-jxl.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-png.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-ept.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-tiff.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-webp.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-x.lo
+  CC       coders/MagickCore_libMagickCore_7_Q16HDRI_la-xwd.lo
+  CC       filters/MagickCore_libMagickCore_7_Q16HDRI_la-analyze.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-animate.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-compare.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-composite.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-conjure.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-deprecate.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-display.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-drawing-wand.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-identify.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-import.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-magick-cli.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-magick-image.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-magick-property.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-magick-wand.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-mogrify.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-montage.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-operation.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-pixel-iterator.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-pixel-wand.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-script-token.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-stream.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-wand.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-wandcli.lo
+  CC       MagickWand/libMagickWand_7_Q16HDRI_la-wand-view.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Blob.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-BlobRef.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-CoderInfo.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Color.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Drawable.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Exception.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Functions.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Geometry.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Image.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-ImageRef.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Montage.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Options.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Pixels.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-ResourceLimits.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-SecurityPolicy.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Statistic.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-STL.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-Thread.lo
+  CXX      Magick++/lib/libMagick___7_Q16HDRI_la-TypeMetric.lo
+  CCLD     MagickCore/libMagickCore-7.Q16HDRI.la
+  CCLD     MagickWand/libMagickWand-7.Q16HDRI.la
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblcms2.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libfreetype.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libdjvulibre.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXext.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXt.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libSM.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libICE.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libX11.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblzma.la' seems to be moved[0m
+  CXXLD    Magick++/lib/libMagick++-7.Q16HDRI.la
+  CXXLD    utilities/magick
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblcms2.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libfreetype.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libdjvulibre.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXext.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXt.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libSM.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libICE.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libX11.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblzma.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblcms2.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libfreetype.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libdjvulibre.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXext.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXt.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libSM.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libICE.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libX11.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblzma.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib/libgomp.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblcms2.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libfreetype.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libdjvulibre.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXext.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXt.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libSM.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libICE.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libX11.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblzma.la' seems to be moved[0m
+make[1]: Leaving directory '/var/tmp/hokuto/imagemagick-74/build'
+make  install-am
+make[1]: Entering directory '/var/tmp/hokuto/imagemagick-74/build'
+make[2]: Entering directory '/var/tmp/hokuto/imagemagick-74/build'
+/bin/sh ./config/mkinstalldirs /var/tmp/hokuto/imagemagick-74/output/usr/bin
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   MagickCore/libMagickCore-7.Q16HDRI.la MagickWand/libMagickWand-7.Q16HDRI.la Magick++/lib/libMagick++-7.Q16HDRI.la '/var/tmp/hokuto/imagemagick-74/output/usr/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/MagickCore'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/bin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/MagickCore'
+/bin/sh ./config/mkinstalldirs /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/MagickWand'
+mkdir -p -- /var/tmp/hokuto/imagemagick-74/output/usr/bin
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/etc/ImageMagick-7/'
+cd /var/tmp/hokuto/imagemagick-74/output/usr/bin ; \
+magick=`echo "magick" | sed 's,^.*/,,;s/$//;s,x,x,;s/$//'`; \
+for name in animate compare composite conjure convert display identify import magick-script mogrify montage stream ; \
+do \
+  target=`echo "$name" | sed 's,^.*/,,;s/$//;s,x,x,;s/$//'`; \
+  rm -f $target ; \
+  ln -s $magick $target ; \
+done
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/share/ImageMagick-7'
+ /usr/bin/install -c -m 644 MagickCore/magick-baseconfig.h '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/MagickCore'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/lib/ImageMagick-7.1.2/config-Q16HDRI'
+ /usr/bin/install -c -m 644 MagickCore/MagickCore.h MagickCore/animate.h MagickCore/annotate.h MagickCore/artifact.h MagickCore/attribute.h MagickCore/blob.h MagickCore/cache.h MagickCore/cache-view.h MagickCore/channel.h MagickCore/cipher.h MagickCore/client.h MagickCore/coder.h MagickCore/color.h MagickCore/colormap.h MagickCore/colorspace.h MagickCore/compare.h MagickCore/composite.h MagickCore/compress.h MagickCore/configure.h MagickCore/constitute.h MagickCore/decorate.h MagickCore/delegate.h MagickCore/deprecate.h MagickCore/display.h MagickCore/distort.h MagickCore/distribute-cache.h MagickCore/draw.h MagickCore/effect.h MagickCore/enhance.h MagickCore/exception.h MagickCore/feature.h MagickCore/fourier.h MagickCore/fx.h MagickCore/gem.h MagickCore/geometry.h MagickCore/histogram.h MagickCore/identify.h MagickCore/image.h MagickCore/image-view.h MagickCore/layer.h '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/MagickCore'
+ /usr/bin/install -c MagickCore/MagickCore-config MagickWand/MagickWand-config Magick++/bin/Magick++-config '/var/tmp/hokuto/imagemagick-74/output/usr/bin'
+ /usr/bin/install -c -m 644 MagickWand/MagickWand.h MagickWand/animate.h MagickWand/compare.h MagickWand/composite.h MagickWand/conjure.h MagickWand/deprecate.h MagickWand/display.h MagickWand/drawing-wand.h MagickWand/identify.h MagickWand/import.h MagickWand/magick-cli.h MagickWand/magick-image.h MagickWand/magick-property.h MagickWand/method-attribute.h MagickWand/mogrify.h MagickWand/montage.h MagickWand/operation.h MagickWand/pixel-iterator.h MagickWand/pixel-wand.h MagickWand/stream.h MagickWand/wandcli.h MagickWand/wand-view.h '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/MagickWand'
+ /usr/bin/install -c -m 644 config/colors.xml config/delegates.xml config/log.xml config/mime.xml config/policy.xml config/quantization-table.xml config/thresholds.xml config/type.xml config/type-apple.xml config/type-dejavu.xml config/type-ghostscript.xml config/type-urw-base35.xml config/type-urw-base35-type1.xml config/type-windows.xml '/var/tmp/hokuto/imagemagick-74/output/usr/etc/ImageMagick-7/'
+mkdir -p -- /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7
+ /usr/bin/install -c -m 644 MagickCore/linked-list.h MagickCore/list.h MagickCore/locale_.h MagickCore/log.h MagickCore/magic.h MagickCore/magick.h MagickCore/magick-config.h MagickCore/magick-type.h MagickCore/matrix.h MagickCore/memory_.h MagickCore/method-attribute.h MagickCore/methods.h MagickCore/mime.h MagickCore/module.h MagickCore/monitor.h MagickCore/montage.h MagickCore/morphology.h MagickCore/nt-base.h MagickCore/opencl.h MagickCore/option.h MagickCore/paint.h MagickCore/pixel.h MagickCore/pixel-accessor.h MagickCore/policy.h MagickCore/prepress.h MagickCore/profile.h MagickCore/property.h MagickCore/quantize.h MagickCore/quantum.h MagickCore/random_.h MagickCore/registry.h MagickCore/resample.h MagickCore/resize.h MagickCore/resource_.h MagickCore/segment.h MagickCore/semaphore.h MagickCore/shear.h MagickCore/signature.h MagickCore/splay-tree.h MagickCore/static.h '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/MagickCore'
+ /usr/bin/install -c -m 644 config/english.xml config/francais.xml config/locale.xml '/var/tmp/hokuto/imagemagick-74/output/usr/share/ImageMagick-7'
+/usr/bin/install -c -m 644 ./index.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7'
+ /usr/bin/install -c -m 644 MagickCore/statistic.h MagickCore/stream.h MagickCore/string_.h MagickCore/studio.h MagickCore/timer.h MagickCore/token.h MagickCore/transform.h MagickCore/threshold.h MagickCore/type.h MagickCore/utility.h MagickCore/version.h MagickCore/vision.h MagickCore/visual-effects.h MagickCore/widget.h MagickCore/xml-tree.h MagickCore/xwindow.h '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/MagickCore'
+ /usr/bin/install -c -m 644 config/configure.xml '/var/tmp/hokuto/imagemagick-74/output/usr/lib/ImageMagick-7.1.2/config-Q16HDRI'
+ /usr/bin/install -c -m 644 LICENSE '/var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/Magick++'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/share/man/man1'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/lib/pkgconfig'
+mkdir -p -- /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+ /usr/bin/install -c -m 644 Magick++/lib/Magick++/Blob.h Magick++/lib/Magick++/CoderInfo.h Magick++/lib/Magick++/Color.h Magick++/lib/Magick++/Drawable.h Magick++/lib/Magick++/Exception.h Magick++/lib/Magick++/Functions.h Magick++/lib/Magick++/Geometry.h Magick++/lib/Magick++/Image.h Magick++/lib/Magick++/Include.h Magick++/lib/Magick++/Montage.h Magick++/lib/Magick++/Pixels.h Magick++/lib/Magick++/ResourceLimits.h Magick++/lib/Magick++/SecurityPolicy.h Magick++/lib/Magick++/Statistic.h Magick++/lib/Magick++/STL.h Magick++/lib/Magick++/TypeMetric.h '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7/Magick++'
+ /usr/bin/install -c -m 644 Magick++/lib/Magick++.h '/var/tmp/hokuto/imagemagick-74/output/usr/include/ImageMagick-7'
+/usr/bin/install -c -m 644 ./images/affine.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+ /usr/bin/install -c -m 644 MagickCore/ImageMagick.pc MagickCore/ImageMagick-7.Q16HDRI.pc MagickCore/MagickCore.pc MagickCore/MagickCore-7.Q16HDRI.pc MagickWand/MagickWand.pc MagickWand/MagickWand-7.Q16HDRI.pc Magick++/lib/Magick++.pc Magick++/lib/Magick++-7.Q16HDRI.pc '/var/tmp/hokuto/imagemagick-74/output/usr/lib/pkgconfig'
+/usr/bin/install -c -m 644 ./images/annotate.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/arc.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/atop.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/background.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+ /usr/bin/install -c -m 644 MagickCore/MagickCore-config.1 MagickWand/MagickWand-config.1 Magick++/bin/Magick++-config.1 utilities/ImageMagick.1 utilities/animate.1 utilities/compare.1 utilities/composite.1 utilities/conjure.1 utilities/convert.1 utilities/display.1 utilities/identify.1 utilities/import.1 utilities/magick.1 utilities/magick-script.1 utilities/mogrify.1 utilities/montage.1 utilities/stream.1 '/var/tmp/hokuto/imagemagick-74/output/usr/share/man/man1'
+/usr/bin/install -c -m 644 ./images/bitcoin.svg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/black.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/bluebells_clipped.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/bluebells_darker.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/bluebells_lin.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/bluebells_log.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/button.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/color-thresholding.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/color-thresholding-gray.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/color-thresholding-hsv.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+libtool: install: /usr/bin/install -c MagickCore/.libs/libMagickCore-7.Q16HDRI.so.10.0.2 /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickCore-7.Q16HDRI.so.10.0.2
+/usr/bin/install -c -m 644 ./images/color-thresholding-hsv-rgb.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/color-thresholding.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/color-thresholding-rgb.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/configure.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/convex-hull-barn-closure.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/convex-hull-barn.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/convex-hull-blocks-closure.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/convex-hull-blocks.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/convex-hull.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/cylinder_shaded.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+libtool: install: (cd /var/tmp/hokuto/imagemagick-74/output/usr/lib && { ln -s -f libMagickCore-7.Q16HDRI.so.10.0.2 libMagickCore-7.Q16HDRI.so.10 || { rm -f libMagickCore-7.Q16HDRI.so.10 && ln -s libMagickCore-7.Q16HDRI.so.10.0.2 libMagickCore-7.Q16HDRI.so.10; }; })
+/usr/bin/install -c -m 644 ./images/difference.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/examples.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/frame.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+libtool: install: (cd /var/tmp/hokuto/imagemagick-74/output/usr/lib && { ln -s -f libMagickCore-7.Q16HDRI.so.10.0.2 libMagickCore-7.Q16HDRI.so || { rm -f libMagickCore-7.Q16HDRI.so && ln -s libMagickCore-7.Q16HDRI.so.10.0.2 libMagickCore-7.Q16HDRI.so; }; })
+/usr/bin/install -c -m 644 ./images/fuzzy-magick.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/gaussian-blur.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/granite.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/imade_art2.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+libtool: install: /usr/bin/install -c MagickCore/.libs/libMagickCore-7.Q16HDRI.lai /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickCore-7.Q16HDRI.la
+/usr/bin/install -c -m 644 ./images/ImageMagick.ico /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/label.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/logo.eps /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/logo.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/logo.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/logo-sm-flop.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/logo-sm-fx.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/logo-sm.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/montage.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/mountains-clahe.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/mountains-equalize.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/mountains.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/navy.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/objects.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/objects.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/objects.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/over.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/piechart.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/radial-gradient.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/reconstruct.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/red-ball.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/red-circle.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/right.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/rose.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/rose-over.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/rose.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/rose.pnm /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+libtool: [31mwarning[0m: [1mrelinking 'MagickWand/libMagickWand-7.Q16HDRI.la'[0m
+/usr/bin/install -c -m 644 ./images/rose-sigmoidal.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/script.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/smile.gif /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+libtool: install: (cd /var/tmp/hokuto/imagemagick-74/build; /bin/sh "/var/tmp/hokuto/imagemagick-74/build/libtool"  --silent --tag CC --mode=relink cc -I/usr/include/libxml2 -DWITH_GZFILEOP -I/usr/include/webp -I/usr/include/webp -DWITH_GZFILEOP -I/usr/include/webp -I/usr/include/libpng16 -DWITH_GZFILEOP -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -pthread -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -DWITH_GZFILEOP -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/openjpeg-2.5 -DHWY_SHARED_DEFINE -I/usr/include/webp -I/usr/include/freetype2 -I/usr/include/libpng16 -DWITH_GZFILEOP -I/usr/include/freetype2 -I/usr/include/libpng16 -DWITH_GZFILEOP -pthread -DWITH_GZFILEOP -fopenmp -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -mtune=core2 -fexceptions -pthread -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -DMAGICKCORE_CHANNEL_MASK_DEPTH=32 -no-undefined -Wl,--version-script=./MagickWand/libMagickWand.map -version-info 10:2:0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o MagickWand/libMagickWand-7.Q16HDRI.la -rpath /usr/lib MagickWand/libMagickWand_7_Q16HDRI_la-animate.lo MagickWand/libMagickWand_7_Q16HDRI_la-compare.lo MagickWand/libMagickWand_7_Q16HDRI_la-composite.lo MagickWand/libMagickWand_7_Q16HDRI_la-conjure.lo MagickWand/libMagickWand_7_Q16HDRI_la-deprecate.lo MagickWand/libMagickWand_7_Q16HDRI_la-display.lo MagickWand/libMagickWand_7_Q16HDRI_la-drawing-wand.lo MagickWand/libMagickWand_7_Q16HDRI_la-identify.lo MagickWand/libMagickWand_7_Q16HDRI_la-import.lo MagickWand/libMagickWand_7_Q16HDRI_la-magick-cli.lo MagickWand/libMagickWand_7_Q16HDRI_la-magick-image.lo MagickWand/libMagickWand_7_Q16HDRI_la-magick-property.lo MagickWand/libMagickWand_7_Q16HDRI_la-magick-wand.lo MagickWand/libMagickWand_7_Q16HDRI_la-mogrify.lo MagickWand/libMagickWand_7_Q16HDRI_la-montage.lo MagickWand/libMagickWand_7_Q16HDRI_la-operation.lo MagickWand/libMagickWand_7_Q16HDRI_la-pixel-iterator.lo MagickWand/libMagickWand_7_Q16HDRI_la-pixel-wand.lo MagickWand/libMagickWand_7_Q16HDRI_la-script-token.lo MagickWand/libMagickWand_7_Q16HDRI_la-stream.lo MagickWand/libMagickWand_7_Q16HDRI_la-wand.lo MagickWand/libMagickWand_7_Q16HDRI_la-wandcli.lo MagickWand/libMagickWand_7_Q16HDRI_la-wand-view.lo MagickCore/libMagickCore-7.Q16HDRI.la -lSM -lICE -lX11 -lgomp -lm -inst-prefix-dir /var/tmp/hokuto/imagemagick-74/output)
+/usr/bin/install -c -m 644 ./images/sponsor.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/sprite.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/t-shirt.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/wand.ico /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/wand.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/white-highlight.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/wizard.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+/usr/bin/install -c -m 644 ./images/wizard.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images
+mkdir -p -- /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/bricks.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/checkerboard.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/circles.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/crosshatch30.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/crosshatch45.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/crosshatch.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/fishscales.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray0.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray100.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray10.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray15.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray20.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray25.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray30.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray35.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray40.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray45.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray50.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray55.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray5.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray60.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray65.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray70.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray75.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray80.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray85.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray90.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/gray95.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/hexagons.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/horizontal2.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/horizontal3.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/horizontal.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/horizontalsaw.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/hs_bdiagonal.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/hs_cross.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/hs_diagcross.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/hs_fdiagonal.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/hs_horizontal.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/hs_vertical.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/left30.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/left45.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/leftshingle.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/octagons.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/right30.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/right45.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/rightshingle.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/smallfishscales.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/vertical2.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/vertical3.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/verticalbricks.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/verticalleftshingle.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/vertical.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/verticalrightshingle.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+/usr/bin/install -c -m 644 ./images/patterns/verticalsaw.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/images/patterns
+mkdir -p -- /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/advanced-linux-installation.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/advanced-unix-installation.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/advanced-windows-installation.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/animate.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/architecture.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/changelog.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/cipher.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/cite.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/clahe.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/color.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/color-management.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/color-thresholding.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/command-line-options.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/command-line-processing.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/command-line-tools.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/compare.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/compose.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/composite.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/conjure.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/connected-components.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/contact.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/convert.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/convex-hull.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/defines.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/develop.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/display.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/distribute-pixel-cache.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/download.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/escape.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/examples.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/exception.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/export.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/favicon.ico /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/formats.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/fx.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/gradient.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/high-dynamic-range.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/history.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/identify.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/import.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/index.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/install-source.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/jp2.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/license.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/links.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/magick-cache.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/magick-core.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/magick++.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/magick.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/magick-script.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/magick-vector-graphics.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/magick-wand.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/miff.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/mirror.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/mogrify.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/montage.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/motion-picture.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/multispectral-imagery.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/news.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/opencl.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/openmp.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/perl-magick.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/porting.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/privacy-policy.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/quantize.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/resources.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/search.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/security-policy.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/sitemap.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/stream.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/support.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/vpat.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/wand.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+/usr/bin/install -c -m 644 ./www/webp.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblcms2.la' seems to be moved[0m
+mkdir -p -- /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/assets
+/usr/bin/install -c -m 644 ./www/assets/bootstrap.bundle.min.js /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/assets
+/usr/bin/install -c -m 644 ./www/assets/bootstrap.min.css /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/assets
+/usr/bin/install -c -m 644 ./www/assets/color-modes.js /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/assets
+mkdir -p -- /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/animate.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/annotate.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/attribute.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/blob.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/cache.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/cache-view.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/channel.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/cipher.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+libtool: [31mwarning[0m: [1m'/usr/lib64/libfreetype.la' seems to be moved[0m
+/usr/bin/install -c -m 644 ./www/api/color.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/colormap.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/colorspace.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/compare.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/composite.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/constitute.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/decorate.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/deprecate.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/display.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/distort.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/draw.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/drawing-wand.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/effect.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/enhance.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/exception.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/feature.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/fourier.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/fx.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/histogram.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/image.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/Image++.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/image-view.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/layer.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/list.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/magick++-classes.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/magick-deprecate.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/magick.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/magick-image.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/magick-property.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/magick-wand.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+libtool: [31mwarning[0m: [1m'/usr/lib64/libdjvulibre.la' seems to be moved[0m
+/usr/bin/install -c -m 644 ./www/api/memory.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/mime.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/module.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/mogrify.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/monitor.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/montage.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/morphology.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/paint.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/pixel-iterator.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/pixel-wand.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/profile.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/property.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/quantize.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/registry.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/resize.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/resource.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/segment.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/shear.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/signature.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/statistic.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/stream.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/transform.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/version.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/vision.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+/usr/bin/install -c -m 644 ./www/api/wand-view.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/api
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXext.la' seems to be moved[0m
+mkdir -p -- /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/analyze.c /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/coder.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/colors.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/configure.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/contrast.c /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/core.c /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/delegates.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/english.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/examples.pl /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/francais.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/incantation.msl /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/locale.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/log.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/magic.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/mgk.c /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/mime.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/piechart.mvg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/piechart.svg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/policy.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/quantization-table.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/thresholds.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/type-apple.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/type-dejavu.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/type-ghostscript.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/type-urw-base35.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/type-windows.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+/usr/bin/install -c -m 644 ./www/source/type.xml /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXt.la' seems to be moved[0m
+/usr/bin/install -c -m 644 ./www/source/wand.c /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/source
+mkdir -p -- /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Blob.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Cache.fig /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Cache.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Cache.svg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/ChangeLog.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/CoderInfo.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Color.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Documentation.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Drawable_example_1.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Drawable.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Enumerations.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Exception.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/FormatCharacters.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Future.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Geometry.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/ImageDesign.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Image.fig /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Image++.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Image.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/ImageMagick.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Image.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/index.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Install.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/magick.css /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+libtool: [31mwarning[0m: [1m'/usr/lib64/libSM.la' seems to be moved[0m
+/usr/bin/install -c -m 644 ./www/Magick++/Magick++.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Montage.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/montage-sample-framed.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/NEWS.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/PixelPacket.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Pixels.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/Quantum.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/README.txt /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/right_triangle.png /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/STL.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/thumbnail-anatomy-framed.fig /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/thumbnail-anatomy-framed.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/thumbnail-anatomy-plain.fig /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/thumbnail-anatomy-plain.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/thumbnail-sample-framed.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/thumbnail-sample-plain.jpg /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+/usr/bin/install -c -m 644 ./www/Magick++/TypeMetric.html /var/tmp/hokuto/imagemagick-74/output/usr/share/doc/ImageMagick-7/www/Magick++
+libtool: [31mwarning[0m: [1m'/usr/lib64/libICE.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libX11.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblzma.la' seems to be moved[0m
+libtool: install: /usr/bin/install -c MagickWand/.libs/libMagickWand-7.Q16HDRI.so.10.0.2T /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickWand-7.Q16HDRI.so.10.0.2
+libtool: install: (cd /var/tmp/hokuto/imagemagick-74/output/usr/lib && { ln -s -f libMagickWand-7.Q16HDRI.so.10.0.2 libMagickWand-7.Q16HDRI.so.10 || { rm -f libMagickWand-7.Q16HDRI.so.10 && ln -s libMagickWand-7.Q16HDRI.so.10.0.2 libMagickWand-7.Q16HDRI.so.10; }; })
+libtool: install: (cd /var/tmp/hokuto/imagemagick-74/output/usr/lib && { ln -s -f libMagickWand-7.Q16HDRI.so.10.0.2 libMagickWand-7.Q16HDRI.so || { rm -f libMagickWand-7.Q16HDRI.so && ln -s libMagickWand-7.Q16HDRI.so.10.0.2 libMagickWand-7.Q16HDRI.so; }; })
+libtool: install: /usr/bin/install -c MagickWand/.libs/libMagickWand-7.Q16HDRI.lai /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickWand-7.Q16HDRI.la
+libtool: [31mwarning[0m: [1mrelinking 'Magick++/lib/libMagick++-7.Q16HDRI.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imagemagick-74/build; /bin/sh "/var/tmp/hokuto/imagemagick-74/build/libtool"  --silent --tag CXX --mode=relink c++ -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -pthread -no-undefined -version-info 5:0:0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o Magick++/lib/libMagick++-7.Q16HDRI.la -rpath /usr/lib Magick++/lib/libMagick___7_Q16HDRI_la-Blob.lo Magick++/lib/libMagick___7_Q16HDRI_la-BlobRef.lo Magick++/lib/libMagick___7_Q16HDRI_la-CoderInfo.lo Magick++/lib/libMagick___7_Q16HDRI_la-Color.lo Magick++/lib/libMagick___7_Q16HDRI_la-Drawable.lo Magick++/lib/libMagick___7_Q16HDRI_la-Exception.lo Magick++/lib/libMagick___7_Q16HDRI_la-Functions.lo Magick++/lib/libMagick___7_Q16HDRI_la-Geometry.lo Magick++/lib/libMagick___7_Q16HDRI_la-Image.lo Magick++/lib/libMagick___7_Q16HDRI_la-ImageRef.lo Magick++/lib/libMagick___7_Q16HDRI_la-Montage.lo Magick++/lib/libMagick___7_Q16HDRI_la-Options.lo Magick++/lib/libMagick___7_Q16HDRI_la-Pixels.lo Magick++/lib/libMagick___7_Q16HDRI_la-ResourceLimits.lo Magick++/lib/libMagick___7_Q16HDRI_la-SecurityPolicy.lo Magick++/lib/libMagick___7_Q16HDRI_la-Statistic.lo Magick++/lib/libMagick___7_Q16HDRI_la-STL.lo Magick++/lib/libMagick___7_Q16HDRI_la-Thread.lo Magick++/lib/libMagick___7_Q16HDRI_la-TypeMetric.lo MagickCore/libMagickCore-7.Q16HDRI.la MagickWand/libMagickWand-7.Q16HDRI.la -inst-prefix-dir /var/tmp/hokuto/imagemagick-74/output)
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblcms2.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libfreetype.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libdjvulibre.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXext.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXt.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libSM.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libICE.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libX11.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblzma.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblcms2.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libfreetype.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libdjvulibre.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXext.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXt.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libSM.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libICE.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libX11.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblzma.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib/libgomp.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblcms2.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libfreetype.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libdjvulibre.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXext.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libXt.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libSM.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libICE.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/libX11.la' seems to be moved[0m
+libtool: [31mwarning[0m: [1m'/usr/lib64/liblzma.la' seems to be moved[0m
+libtool: install: /usr/bin/install -c Magick++/lib/.libs/libMagick++-7.Q16HDRI.so.5.0.0T /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagick++-7.Q16HDRI.so.5.0.0
+libtool: install: (cd /var/tmp/hokuto/imagemagick-74/output/usr/lib && { ln -s -f libMagick++-7.Q16HDRI.so.5.0.0 libMagick++-7.Q16HDRI.so.5 || { rm -f libMagick++-7.Q16HDRI.so.5 && ln -s libMagick++-7.Q16HDRI.so.5.0.0 libMagick++-7.Q16HDRI.so.5; }; })
+libtool: install: (cd /var/tmp/hokuto/imagemagick-74/output/usr/lib && { ln -s -f libMagick++-7.Q16HDRI.so.5.0.0 libMagick++-7.Q16HDRI.so || { rm -f libMagick++-7.Q16HDRI.so && ln -s libMagick++-7.Q16HDRI.so.5.0.0 libMagick++-7.Q16HDRI.so; }; })
+libtool: install: /usr/bin/install -c Magick++/lib/.libs/libMagick++-7.Q16HDRI.lai /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagick++-7.Q16HDRI.la
+libtool: install: /usr/bin/install -c MagickCore/.libs/libMagickCore-7.Q16HDRI.a /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickCore-7.Q16HDRI.a
+libtool: install: chmod 644 /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickCore-7.Q16HDRI.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickCore-7.Q16HDRI.a
+libtool: install: /usr/bin/install -c MagickWand/.libs/libMagickWand-7.Q16HDRI.a /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickWand-7.Q16HDRI.a
+libtool: install: chmod 644 /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickWand-7.Q16HDRI.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagickWand-7.Q16HDRI.a
+libtool: install: /usr/bin/install -c Magick++/lib/.libs/libMagick++-7.Q16HDRI.a /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagick++-7.Q16HDRI.a
+libtool: install: chmod 644 /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagick++-7.Q16HDRI.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/imagemagick-74/output/usr/lib/libMagick++-7.Q16HDRI.a
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imagemagick-74/output/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c utilities/magick '/var/tmp/hokuto/imagemagick-74/output/usr/bin'
+libtool: install: /usr/bin/install -c utilities/.libs/magick /var/tmp/hokuto/imagemagick-74/output/usr/bin/magick
+make[2]: Leaving directory '/var/tmp/hokuto/imagemagick-74/build'
+make[1]: Leaving directory '/var/tmp/hokuto/imagemagick-74/build'
+
+Script done on 2026-05-13 10:59:12+07:00 [COMMAND_EXIT_CODE="0"]
