@@ -1,0 +1,690 @@
+Script started on 2026-05-14 21:25:15+07:00 [COMMAND="cd /var/tmp/hokuto/syncthingtray-48/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/syncthingtray-48/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/syncthingtray-48/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/syncthingtray-48/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/syncthingtray-48/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/syncthingtray-48/build/.cache' /repo/sauzeros/extra/syncthingtray/build /var/tmp/hokuto/syncthingtray-48/output 2.1.0 syncthingtray" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using system qtforkawesome
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- systemd support enabled
+-- Configuring project syncthingconnector
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  syncthingconnector/CMakeLists.txt:162 (include)
+
+[0m
+-- Project has D-Bus interface declarations which will be processed.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Linking syncthingconnector-qt6 against Qt module Qt6::Network.
+-- Linking syncthingconnector-qt6 against Qt module Qt6::Core.
+-- Linking syncthingconnector-qt6 against Qt module Qt6::DBus.
+-- Building syncthingconnector-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for one of the modules 'cppunit>=1.13.0'
+-- Could NOT find CppUnit (missing: CppUnit_DIR)
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/TestTarget.cmake:79 (message):
+  Unable to add test target because CppUnit could not be located.
+Call Stack (most recent call first):
+  syncthingconnector/CMakeLists.txt:170 (include)
+
+[0m
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingconnector-qt6
+Call Stack (most recent call first):
+  syncthingconnector/CMakeLists.txt:214 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Configuring project syncthingtesthelper
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  testhelper/CMakeLists.txt:45 (include)
+
+[0m
+-- Linking syncthingtesthelper against Qt module Qt6::Network.
+-- Linking syncthingtesthelper against Qt module Qt6::Core.
+-- Building syncthingtesthelper against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Linking test target against syncthingtesthelper
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingtesthelper
+Call Stack (most recent call first):
+  testhelper/CMakeLists.txt:50 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Performing Test STD_FILESYSTEM_TEST_0
+-- Performing Test STD_FILESYSTEM_TEST_0 - Success
+-- Linking syncthingctl against special library for std::filesystem support is not required.
+-- Configuring project syncthingctl
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  cli/CMakeLists.txt:39 (include)
+
+[0m
+-- Using Qt QML as JavaScript provider.
+-- Using template for jsdefs.h.in from QT_UTILITIES installation.
+-- Using template for jsincludes.h.in from QT_UTILITIES installation.
+-- Linking syncthingctl-qt6 against Qt module Qt6::Qml.
+-- Linking syncthingctl-qt6 against Qt module Qt6::Core.
+-- Building syncthingctl-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for desktop.in from CPP_UTILITIES installation.
+-- Using template for appdata.xml.in from CPP_UTILITIES installation.
+-- Checking for one of the modules 'cppunit>=1.13.0'
+-- Could NOT find CppUnit (missing: CppUnit_DIR)
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/TestTarget.cmake:79 (message):
+  Unable to add test target because CppUnit could not be located.
+Call Stack (most recent call first):
+  cli/CMakeLists.txt:49 (include)
+
+[0m
+-- Using template for bash-completion.sh.in from CPP_UTILITIES installation.
+-- Generating files for bash completion.
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingctl-qt6
+Call Stack (most recent call first):
+  cli/CMakeLists.txt:51 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Linking syncthingmodel against special library for std::filesystem support is not required.
+-- Configuring project syncthingmodel
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  syncthingmodel/CMakeLists.txt:85 (include)
+
+[0m
+-- Building with Qt Widgets GUI.
+-- Building WITHOUT Qt Quick GUI.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Concurrent.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Network.
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Gui.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Svg.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Widgets.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Core.
+-- Building syncthingmodel-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingmodel-qt6
+Call Stack (most recent call first):
+  syncthingmodel/CMakeLists.txt:90 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Test.
+-- Configuring project syncthingwidgets
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  syncthingwidgets/CMakeLists.txt:295 (include)
+
+[0m
+-- Building with Qt Widgets GUI.
+-- Building WITHOUT Qt Quick GUI.
+[33mCMake Warning at /usr/share/qtutilities-qt6/cmake/modules/QtWebViewProviderConfig.cmake:13 (find_package):
+  By not providing "FindQt6WebEngineWidgets.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "Qt6WebEngineWidgets", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "Qt6WebEngineWidgets" (requested version 5.6) with any of the following
+  names:
+
+    Qt6WebEngineWidgets.cps
+    qt6webenginewidgets.cps
+    Qt6WebEngineWidgetsConfig.cmake
+    qt6webenginewidgets-config.cmake
+
+  Add the installation prefix of "Qt6WebEngineWidgets" to CMAKE_PREFIX_PATH
+  or set "Qt6WebEngineWidgets_DIR" to a directory containing one of the above
+  files.  If "Qt6WebEngineWidgets" provides a separate development package or
+  SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  syncthingwidgets/CMakeLists.txt:492 (include)
+
+[0m
+-- Built-in web view has been disabled.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Network.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Concurrent.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Gui.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Widgets.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Core.
+-- Building syncthingwidgets-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingwidgets-qt6
+Call Stack (most recent call first):
+  syncthingwidgets/CMakeLists.txt:496 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Test.
+-- Configuring project syncthingtray
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  tray/CMakeLists.txt:176 (include)
+
+[0m
+-- Using PNG icon from "/var/tmp/hokuto/syncthingtray-48/build/tray/resources/icons/hicolor/256x256/apps/syncthingtray.png".
+-- Building with Qt Widgets GUI.
+-- Building WITHOUT Qt Quick GUI.
+-- Linking syncthingtray-qt6 against Qt module Qt6::Network.
+-- Linking syncthingtray-qt6 against Qt module Qt6::Gui.
+-- Linking syncthingtray-qt6 against Qt module Qt6::Widgets.
+-- Linking syncthingtray-qt6 against Qt module Qt6::Core.
+-- Building syncthingtray-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for desktop.in from CPP_UTILITIES installation.
+-- Using template for appdata.xml.in from CPP_UTILITIES installation.
+-- Using template for bash-completion.sh.in from own (syncthingtray) source directory.
+-- Generating files for bash completion.
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingtray-qt6
+Call Stack (most recent call first):
+  tray/CMakeLists.txt:263 (include)
+
+[0m
+-- Using template for sphinx-conf.py.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Sphinx.cmake:19 (message):
+  Sphinx not found, unable to add target for generating documentation for
+  syncthingtray-qt6
+Call Stack (most recent call first):
+  tray/CMakeLists.txt:264 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_BINDIR got its value from CMAKE_INSTALL_BINDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_BINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_BINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:255 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SBINDIR got its value from CMAKE_INSTALL_SBINDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SBINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SBINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:258 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBDIR got its value from CMAKE_INSTALL_LIBDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:261 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INCLUDEDIR got its value from CMAKE_INSTALL_INCLUDEDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INCLUDEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INCLUDEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:279 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALSTATEDIR got its value from CMAKE_INSTALL_LOCALSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_LOCALSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_LOCALSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:288 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SHAREDSTATEDIR got its value from CMAKE_INSTALL_SHAREDSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_SHAREDSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_SHAREDSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:291 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATAROOTDIR got its value from CMAKE_INSTALL_DATAROOTDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATAROOTDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATAROOTDIR instead to suppress this
+  message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:299 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATADIR got its value from CMAKE_INSTALL_DATADIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATADIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATADIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:304 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALEDIR got its value from CMAKE_INSTALL_LOCALEDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LOCALEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LOCALEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:332 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_MANDIR got its value from CMAKE_INSTALL_MANDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_MANDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_MANDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:357 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INFODIR got its value from CMAKE_INSTALL_INFODIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INFODIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INFODIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:360 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SYSCONFDIR got its value from CMAKE_INSTALL_SYSCONFDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SYSCONFDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SYSCONFDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:387 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.5") found components: Interpreter
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Configuring project syncthingplasmoid
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  plasmoid/lib/CMakeLists.txt:52 (include)
+
+[0m
+-- Building with Qt Widgets GUI.
+-- Building with Qt Quick GUI.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Network.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Qml.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Gui.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Widgets.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Quick.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Core.
+-- Linking syncthingplasmoid-qt6 against Qt module KF6::ConfigCore.
+-- Building syncthingplasmoid-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Qt variable QT_INSTALL_PLUGINS taken from QT6_INSTALL_PLUGINS: lib/qt6/plugins
+-- Qt variable QT_INSTALL_PLUGINS resolved to path: /usr/lib/qt6/plugins
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Using template for desktop.in from CPP_UTILITIES installation.
+-- Using template for appdata.xml.in from own (syncthingplasmoid) source directory.
+-- Using template for metadata.json.in from own (syncthingplasmoid) source directory.
+-- Configuring project syncthingfileitemaction
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  fileitemactionplugin/CMakeLists.txt:49 (include)
+
+[0m
+-- GUI is completely disabled.
+-- Linking syncthingfileitemaction-qt6 against Qt module Qt6::Network.
+-- Linking syncthingfileitemaction-qt6 against Qt module Qt6::Core.
+-- Linking syncthingfileitemaction-qt6 against Qt module KF6::KIOCore.
+-- Linking syncthingfileitemaction-qt6 against Qt module KF6::KIOFileWidgets.
+-- Linking syncthingfileitemaction-qt6 against Qt module KF6::KIOWidgets.
+-- Building syncthingfileitemaction-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Qt variable QT_INSTALL_PLUGINS taken from QT6_INSTALL_PLUGINS: lib/qt6/plugins
+-- Qt variable QT_INSTALL_PLUGINS resolved to path: /usr/lib/qt6/plugins
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Using template for desktop.in from CPP_UTILITIES installation.
+-- Using template for appdata.xml.in from own (syncthingfileitemaction) source directory.
+-- Using template for syncthingfileitemaction.json.in from own (syncthingfileitemaction) source directory.
+-- Configuring done (3.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /var/tmp/hokuto/syncthingtray-48/build/build
+[  0%] Built target syncthingconnector-qt6_autogen_timestamp_deps
+[  0%] [1m[34mAutomatic MOC for target syncthingconnector-qt6[0m
+[  0%] Built target syncthingconnector-qt6_autogen
+[  0%] [1m[34mGenerating .lupdate/translations/syncthingconnector_fr_FR.ts.stamp[0m
+[  0%] [1m[34mGenerating .lupdate/translations/syncthingconnector_en_US.ts.stamp[0m
+[  0%] [1m[34mGenerating .lupdate/translations/syncthingconnector_de_DE.ts.stamp[0m
+[  1%] [1m[34mGenerating .lupdate/translations/syncthingconnector_ru_RU.ts.stamp[0m
+[  3%] [1m[34mGenerating managerinterface.cpp, managerinterface.h[0m
+[  4%] [1m[34mGenerating .lupdate/translations/syncthingconnector_zh_CN.ts.stamp[0m
+[  4%] [1m[34mGenerating loginmanagerinterface.cpp, loginmanagerinterface.h[0m
+[  4%] [1m[34mGenerating unitinterface.cpp, unitinterface.h[0m
+[  4%] [1m[34mGenerating .lupdate/translations/syncthingconnector_cs_CZ.ts.stamp[0m
+[  4%] [1m[34mGenerating propertiesinterface.cpp, propertiesinterface.h[0m
+[  4%] [1m[34mGenerating serviceinterface.cpp, serviceinterface.h[0m
+[  4%] [1m[34mGenerating moc_propertiesinterface.cpp[0m
+Updating '../../syncthingconnector/translations/syncthingconnector_fr_FR.ts'...
+Updating '../../syncthingconnector/translations/syncthingconnector_zh_CN.ts'...
+    Found 128 source text(s) (0 new and 128 already existing)
+[  6%] [1m[34mGenerating moc_unitinterface.cpp[0m
+Updating '../../syncthingconnector/translations/syncthingconnector_en_US.ts'...
+    Found 128 source text(s) (0 new and 128 already existing)
+    Found 128 source text(s) (0 new and 128 already existing)
+Updating '../../syncthingconnector/translations/syncthingconnector_cs_CZ.ts'...
+Updating '../../syncthingconnector/translations/syncthingconnector_ru_RU.ts'...
+    Found 128 source text(s) (0 new and 128 already existing)
+    Found 128 source text(s) (0 new and 128 already existing)
+[  6%] [1m[34mGenerating moc_managerinterface.cpp[0m
+Updating '../../syncthingconnector/translations/syncthingconnector_de_DE.ts'...
+    Found 128 source text(s) (0 new and 128 already existing)
+[  7%] [1m[34mGenerating moc_loginmanagerinterface.cpp[0m
+[  9%] [1m[34mGenerating syncthingconnector_fr_FR.qm[0m
+[  9%] [1m[34mGenerating syncthingconnector_en_US.qm[0m
+[ 10%] [1m[34mGenerating syncthingconnector_cs_CZ.qm[0m
+[ 10%] [1m[34mGenerating syncthingconnector_ru_RU.qm[0m
+[ 10%] [1m[34mGenerating syncthingconnector_zh_CN.qm[0m
+[ 10%] [1m[34mGenerating moc_serviceinterface.cpp[0m
+Updating '/var/tmp/hokuto/syncthingtray-48/build/build/syncthingconnector/syncthingconnector_fr_FR.qm'...
+Updating '/var/tmp/hokuto/syncthingtray-48/build/build/syncthingconnector/syncthingconnector_cs_CZ.qm'...
+    Generated 128 translation(s) (128 finished and 0 unfinished)
+    Generated 73 translation(s) (73 finished and 0 unfinished)
+    Ignored 55 untranslated source text(s)
+Updating '/var/tmp/hokuto/syncthingtray-48/build/build/syncthingconnector/syncthingconnector_en_US.qm'...
+    Generated 2 translation(s) (2 finished and 0 unfinished)
+    Ignored 126 untranslated source text(s)
+Updating '/var/tmp/hokuto/syncthingtray-48/build/build/syncthingconnector/syncthingconnector_ru_RU.qm'...
+    Generated 126 translation(s) (126 finished and 0 unfinished)
+    Ignored 2 untranslated source text(s)
+[ 10%] [1m[34mGenerating syncthingconnector_de_DE.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-48/build/build/syncthingconnector/syncthingconnector_zh_CN.qm'...
+    Generated 124 translation(s) (124 finished and 0 unfinished)
+    Ignored 4 untranslated source text(s)
+Updating '/var/tmp/hokuto/syncthingtray-48/build/build/syncthingconnector/syncthingconnector_de_DE.qm'...
+    Generated 128 translation(s) (128 finished and 0 unfinished)
+[ 12%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconnection.cpp.o[0m
+[ 12%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconnection_requests.cpp.o[0m
+[ 12%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingdev.cpp.o[0m
+[ 13%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconnectionsettings.cpp.o[0m
+[ 13%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconfig.cpp.o[0m
+[ 13%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingprocess.cpp.o[0m
+[ 13%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingnotifier.cpp.o[0m
+[ 15%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconnector-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 15%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingdir.cpp.o[0m
+[ 16%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingignorepattern.cpp.o[0m
+[ 16%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingservice.cpp.o[0m
+[ 18%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/utils.cpp.o[0m
+[ 18%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/propertiesinterface.cpp.o[0m
+[ 18%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/loginmanagerinterface.cpp.o[0m
+[ 20%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/managerinterface.cpp.o[0m
+[ 20%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/serviceinterface.cpp.o[0m
+[ 20%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/unitinterface.cpp.o[0m
+[ 21%] [1m[32mLinking CXX shared library libsyncthingconnector-qt6.so[0m
+[01m[Klto1:[m[K [01;31m[Kfatal error: [m[Kbytecode stream in file ‘[01m[K/usr/lib/libc++utilities.a[m[K’ generated with LTO version 15.1 instead of the expected 16.0
+compilation terminated.
+[01m[Klto-wrapper:[m[K [01;31m[Kfatal error: [m[K/usr/bin/c++ returned 1 exit status
+compilation terminated.
+/usr/bin/ld.bfd: error: lto-wrapper failed
+collect2: error: ld returned 1 exit status
+make[2]: *** [syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/build.make:632: syncthingconnector/libsyncthingconnector-qt6.so.2.1.0] Error 1
+make[1]: *** [CMakeFiles/Makefile2:539: syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
+
+Script done on 2026-05-14 21:25:26+07:00 [COMMAND_EXIT_CODE="2"]
