@@ -1,0 +1,248 @@
+Script started on 2026-05-15 00:10:29+07:00 [COMMAND="cd /var/tmp/hokuto/libinput-61/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libinput-61/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libinput-61/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libinput-61/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libinput-61/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libinput-61/build/.cache' /repo/sauzeros/extra/libinput/build /var/tmp/hokuto/libinput-61/output 1.31.2 libinput" <not executed on terminal>]
+[1mThe Meson build system[0m
+Version: 1.11.1
+Source dir: [1m/var/tmp/hokuto/libinput-61/build[0m
+Build dir: [1m/var/tmp/hokuto/libinput-61/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mlibinput[0m
+Project version: [1m1.31.2[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.1.0 "cc (GCC) 16.1.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Compiler for C supports arguments -Wno-error=deprecated-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wundef: [1;32mYES[0m 
+Compiler for C supports arguments -Wlogical-op: [1;32mYES[0m 
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C supports arguments -Wuninitialized: [1;32mYES[0m 
+Compiler for C supports arguments -Winit-self: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-prototypes: [1;32mYES[0m [1;34m(cached)[0m
+Compiler for C supports arguments -Wimplicit-fallthrough: [1;32mYES[0m 
+Compiler for C supports arguments -Wredundant-decls: [1;32mYES[0m 
+Compiler for C supports arguments -Wincompatible-pointer-types: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat=2: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-missing-field-initializers: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -fvisibility=hidden: [1;32mYES[0m 
+Fetching value of define "[1mstatic_assert[0m" : _Static_assert 
+Header "[1mdirent.h[0m" has symbol "[1mversionsort[0m" : [1;32mYES[0m 
+Fetching value of define "[1mSYS_pidfd_open[0m" : 434 
+Checking for function "[1msigabbrev_np[0m" : [1;32mYES[0m 
+Header "[1merrno.h[0m" has symbol "[1mprogram_invocation_short_name[0m" : [1;32mYES[0m 
+Has header "[1mxlocale.h[0m" : [1;31mNO[0m 
+Checking if "[1mhas C23 auto keyword[0m" compiles: [1;31mNO[0m 
+Checking if "[1mlocale.h[0m" links: [1;32mYES[0m 
+Header "[1msys/ptrace.h[0m" has symbol "[1mPTRACE_ATTACH[0m" : [1;32mYES[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Run-time dependency [1mlibudev[0m found: [1;32mYES[0m [36m260[0m
+Run-time dependency [1mlibevdev[0m found: [1;32mYES[0m [36m1.13.6[0m
+Library [1mm[0m found: [1;32mYES[0m
+Library [1mrt[0m found: [1;32mYES[0m
+Found CMake: [1m/usr/bin/cmake[0m (4.3.2)
+Run-time dependency [1mlua-5.4[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Run-time dependency [1mlua5.4[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Dependency [1mlua[0m for [1mhost[0m machine found: [1;31mNO[0m. Found [36m5.1.5[0m but need: [1m'>= 5.4'[0m
+Run-time dependency [1mlua[0m found: [1;31mNO[0m  (tried pkg-config)
+Run-time dependency [1mmtdev[0m found: [1;32mYES[0m [36m1.1.7[0m
+Configuring [1m80-libinput-device-groups.rules[0m using configuration
+Configuring [1m90-libinput-fuzz-override.rules[0m using configuration
+Configuring [1m80-libinput-device-groups-litest.rules[0m using configuration
+Configuring [1m90-libinput-fuzz-override-litest.rules[0m using configuration
+Header "[1msys/epoll.h[0m" has symbol "[1mepoll_create1[0m" : [1;32mYES[0m 
+Configuring [1mtest-util-includes-util-backtrace.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-bits.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-input-event.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-list.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-files.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-macros.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-matrix.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-prop-parsers.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-ratelimit.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-stringbuf.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-strings.h.c[0m using configuration
+Configuring [1mtest-util-includes-util-time.h.c[0m using configuration
+Configuring [1mlibinput-version.h[0m using configuration
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Program [1mtest/test_quirks_files.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/libinput-61/build/test/test_quirks_files.py)
+Configuring [1mtest_tool_option_parsing.py[0m using configuration
+[1;31mDEPRECATION:[0m Variable substitution with boolean value 'MESON_ENABLED_DEBUG_GUI' is deprecated.
+Program [1mtest/helper-copy-and-exec-from-tmp.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/libinput-61/build/test/helper-copy-and-exec-from-tmp.sh)
+Program [1mtest/symbols-leak-test[0m found: [1;32mYES[0m (/var/tmp/hokuto/libinput-61/build/test/symbols-leak-test)
+C++ compiler for the host machine: [1mc++[0m (gcc 16.1.0 "c++ (GCC) 16.1.0")
+C++ linker for the host machine: [1mc++[0m ld.bfd 2.46
+Configuring [1mlibinput.1[0m using configuration
+Configuring [1mlibinput-analyze.1[0m using configuration
+Configuring [1mlibinput-analyze-buttons.1[0m using configuration
+Configuring [1mlibinput-analyze-per-slot-delta.1[0m using configuration
+Configuring [1mlibinput-analyze-recording.1[0m using configuration
+Configuring [1mlibinput-analyze-touch-down-state.1[0m using configuration
+Configuring [1mlibinput-debug-events.1[0m using configuration
+Configuring [1mlibinput-debug-tablet.1[0m using configuration
+Configuring [1mlibinput-debug-tablet-pad.1[0m using configuration
+Configuring [1mlibinput-list-devices.1[0m using configuration
+Configuring [1mlibinput-list-kernel-devices.1[0m using configuration
+Configuring [1mlibinput-measure.1[0m using configuration
+Configuring [1mlibinput-measure-fuzz.1[0m using configuration
+Configuring [1mlibinput-measure-touchpad-size.1[0m using configuration
+Configuring [1mlibinput-measure-touchpad-tap.1[0m using configuration
+Configuring [1mlibinput-measure-touchpad-pressure.1[0m using configuration
+Configuring [1mlibinput-measure-touch-size.1[0m using configuration
+Configuring [1mlibinput-quirks.1[0m using configuration
+Configuring [1mlibinput-record.1[0m using configuration
+Configuring [1mlibinput-replay.1[0m using configuration
+Configuring [1mlibinput-test.1[0m using configuration
+Configuring [1mlibinput-quirks-list.1[0m using configuration
+Configuring [1mlibinput-quirks-validate.1[0m using configuration
+Configuring [1mconfig.h[0m using configuration
+Build targets in project: [1m48[0m
+
+libinput [36m1.31.2[0m
+
+  [1mPlugins[0m
+    Plugins enabled   : [1;31mNO[0m
+    Autoload plugins  : [1;31mNO[0m
+    Lua Plugin support: [1;31mNO[0m
+
+  [1mTests[0m
+    Tests enabled     : [1;31mNO[0m
+    Install tests     : [1;31mNO[0m
+
+  [1mUser defined options[0m
+    debug-gui         : false
+    default_library   : both
+    documentation     : false
+    libexecdir        : /usr/lib
+    libwacom          : false
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sysconfdir        : /etc
+    tests             : false
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/libinput-61/build/build
+ninja: Entering directory `/var/tmp/hokuto/libinput-61/build/build'
+[0/141] Compiling C object liblibinput-util.a.p/src_util-files.c.o[K[0/141] Compiling C object liblibinput-util.a.p/src_util-list.c.o[K[0/141] Compiling C object liblibinput-util.a.p/src_util-ratelimit.c.o[K[0/141] Compiling C object liblibinput-util.a.p/src_util-strings.c.o[K[0/141] Compiling C object liblibinput-util.a.p/src_util-prop-parsers.c.o[K[0/141] Compiling C object libquirks.a.p/src_quirks.c.o[K[0/141] Compiling C object libinput.so.10.13.0.p/src_filter.c.o[K[0/141] Compiling C object libinput.so.10.13.0.p/src_filter-custom.c.o[K[0/141] Compiling C object libinput.so.10.13.0.p/src_filter-flat.c.o[K[0/141] Compiling C object libinput.so.10.13.0.p/src_filter-low-dpi.c.o[K[1/141] Compiling C object liblibinput-util.a.p/src_util-ratelimit.c.o[K[1/141] Compiling C object libinput.so.10.13.0.p/src_filter-mouse.c.o[K[2/141] Compiling C object libinput.so.10.13.0.p/src_filter-flat.c.o[K[2/141] Compiling C object libinput.so.10.13.0.p/src_filter-touchpad.c.o[K[3/141] Compiling C object liblibinput-util.a.p/src_util-strings.c.o[K[3/141] Compiling C object libinput.so.10.13.0.p/src_filter-touchpad-flat.c.o[K[4/141] Compiling C object libinput.so.10.13.0.p/src_filter-low-dpi.c.o[K[4/141] Compiling C object libinput.so.10.13.0.p/src_filter-touchpad-x230.c.o[K[5/141] Compiling C object liblibinput-util.a.p/src_util-prop-parsers.c.o[K[5/141] Compiling C object libinput.so.10.13.0.p/src_filter-tablet.c.o[K[6/141] Compiling C object libinput.so.10.13.0.p/src_filter-mouse.c.o[K[6/141] Compiling C object libinput.so.10.13.0.p/src_filter-trackpoint.c.o[K[7/141] Compiling C object liblibinput-util.a.p/src_util-list.c.o[K[7/141] Compiling C object libinput.so.10.13.0.p/src_filter-trackpoint-flat.c.o[K[8/141] Compiling C object libinput.so.10.13.0.p/src_filter-custom.c.o[K[8/141] Compiling C object libinput.so.10.13.0.p/src_libinput.c.o[K[9/141] Compiling C object liblibinput-util.a.p/src_util-files.c.o[K[9/141] Linking static target liblibinput-util.a[K[10/141] Linking static target liblibinput-util.a[K[10/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin.c.o[K[11/141] Compiling C object libinput.so.10.13.0.p/src_filter.c.o[K[11/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-button-debounce.c.o[K[12/141] Compiling C object libinput.so.10.13.0.p/src_filter-touchpad.c.o[K[12/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-mouse-wheel.c.o[K[13/141] Compiling C object libquirks.a.p/src_quirks.c.o[K[13/141] Linking static target libquirks.a[K[14/141] Linking static target libquirks.a[K[14/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-mouse-wheel-lowres.c.o[K[15/141] Compiling C object libinput.so.10.13.0.p/src_filter-touchpad-flat.c.o[K[15/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-tablet-double-tool.c.o[K[16/141] Compiling C object libinput.so.10.13.0.p/src_filter-trackpoint-flat.c.o[K[16/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-tablet-eraser-button.c.o[K[17/141] Compiling C object libinput.so.10.13.0.p/src_filter-trackpoint.c.o[K[17/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-tablet-forced-tool.c.o[K[18/141] Compiling C object libinput.so.10.13.0.p/src_filter-touchpad-x230.c.o[K[18/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-tablet-proximity-timer.c.o[K[19/141] Compiling C object libinput.so.10.13.0.p/src_filter-tablet.c.o[K[19/141] Compiling C object libinput.so.10.13.0.p/src_libinput-private-config.c.o[K[20/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-tablet-double-tool.c.o[K[20/141] Compiling C object libinput.so.10.13.0.p/src_evdev.c.o[K[21/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-mouse-wheel-lowres.c.o[K[21/141] Compiling C object libinput.so.10.13.0.p/src_evdev-fallback.c.o[K[22/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-mouse-wheel.c.o[K[22/141] Compiling C object libinput.so.10.13.0.p/src_evdev-plugin.c.o[K[23/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-tablet-eraser-button.c.o[K[23/141] Compiling C object libinput.so.10.13.0.p/src_evdev-totem.c.o[K[24/141] Compiling C object libinput.so.10.13.0.p/src_libinput-private-config.c.o[K[24/141] Compiling C object libinput.so.10.13.0.p/src_evdev-middle-button.c.o[K[25/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-tablet-proximity-timer.c.o[K[25/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad.c.o[K[26/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-button-debounce.c.o[K[26/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-tap.c.o[K[27/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin.c.o[K[27/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-thumb.c.o[K[28/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-tablet-forced-tool.c.o[K[28/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-buttons.c.o[K[29/141] Compiling C object libinput.so.10.13.0.p/src_evdev-plugin.c.o[K[29/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-edge-scroll.c.o[K[30/141] Compiling C object libinput.so.10.13.0.p/src_libinput.c.o[K[30/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-gestures.c.o[K[31/141] Compiling C object libinput.so.10.13.0.p/src_evdev-middle-button.c.o[K[31/141] Compiling C object libinput.so.10.13.0.p/src_evdev-tablet.c.o[K[32/141] Compiling C object libinput.so.10.13.0.p/src_evdev-totem.c.o[K[32/141] Compiling C object libinput.so.10.13.0.p/src_evdev-tablet-pad.c.o[K[33/141] Compiling C object libinput.so.10.13.0.p/src_evdev-fallback.c.o[K[33/141] Compiling C object libinput.so.10.13.0.p/src_evdev-tablet-pad-leds.c.o[K[34/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-thumb.c.o[K[34/141] Compiling C object libinput.so.10.13.0.p/src_path-seat.c.o[K[35/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-edge-scroll.c.o[K[35/141] Compiling C object libinput.so.10.13.0.p/src_udev-seat.c.o[K[36/141] Compiling C object libinput.so.10.13.0.p/src_evdev.c.o[K[36/141] Compiling C object libinput.so.10.13.0.p/src_timer.c.o[K[37/141] Compiling C object libinput.so.10.13.0.p/src_evdev-tablet-pad-leds.c.o[K[37/141] Compiling C object libinput.so.10.13.0.p/src_util-libinput.c.o[K[38/141] Compiling C object libinput.so.10.13.0.p/src_path-seat.c.o[K[38/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-mtdev.c.o[K[39/141] Compiling C object libinput.so.10.13.0.p/src_udev-seat.c.o[K[39/141] Compiling C object libfilter.a.p/src_filter.c.o[K[40/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-tap.c.o[K[40/141] Compiling C object libfilter.a.p/src_filter-custom.c.o[K[41/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-gestures.c.o[K[41/141] Compiling C object libfilter.a.p/src_filter-flat.c.o[K[42/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad-buttons.c.o[K[42/141] Compiling C object libfilter.a.p/src_filter-low-dpi.c.o[K[43/141] Compiling C object libinput.so.10.13.0.p/src_evdev-tablet-pad.c.o[K[43/141] Compiling C object libfilter.a.p/src_filter-mouse.c.o[K[44/141] Compiling C object libinput.so.10.13.0.p/src_timer.c.o[K[44/141] Compiling C object libfilter.a.p/src_filter-touchpad.c.o[K[45/141] Compiling C object libinput.so.10.13.0.p/src_util-libinput.c.o[K[45/141] Compiling C object libfilter.a.p/src_filter-touchpad-flat.c.o[K[46/141] Compiling C object libinput.so.10.13.0.p/src_evdev-mt-touchpad.c.o[K[46/141] Compiling C object libfilter.a.p/src_filter-touchpad-x230.c.o[K[47/141] Compiling C object libinput.so.10.13.0.p/src_evdev-tablet.c.o[K
+[01m[K../src/evdev-tablet.c:[m[K In function ‘[01m[Ktablet_init[m[K’:
+[01m[K../src/evdev-tablet.c:2947:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kli[m[K’ [[01;35m[K-Wunused-variable[m[K]
+ 2947 |         struct libinput *[01;35m[Kli[m[K = evdev_libinput_context(device);
+      |                          [01;35m[K^~[m[K
+At top level:
+[01m[Kcc1:[m[K [01;36m[Knote: [m[Kunrecognized command-line option ‘[01m[K-Wno-unused-command-line-argument[m[K’ may have been intended to silence earlier diagnostics
+[47/141] Compiling C object libfilter.a.p/src_filter-tablet.c.o[K[48/141] Compiling C object libfilter.a.p/src_filter.c.o[K[48/141] Compiling C object libfilter.a.p/src_filter-trackpoint.c.o[K[49/141] Compiling C object libfilter.a.p/src_filter-custom.c.o[K[49/141] Compiling C object libfilter.a.p/src_filter-trackpoint-flat.c.o[K[50/141] Compiling C object libinput.so.10.13.0.p/src_libinput-plugin-mtdev.c.o[K[50/141] Linking target libinput.so.10.13.0[K[51/141] Compiling C object libfilter.a.p/src_filter-low-dpi.c.o[K[51/141] Generating libinput-git-version.h with a custom command[K[52/141] Compiling C object libfilter.a.p/src_filter-mouse.c.o[K[52/141] Compiling C object liblibinput-util-libinput.a.p/src_util-libinput.c.o[K[53/141] Compiling C object libfilter.a.p/src_filter-flat.c.o[K[53/141] Compiling C object libtools_shared.a.p/tools_shared.c.o[K[54/141] Compiling C object libfilter.a.p/src_filter-touchpad-x230.c.o[K[54/141] Compiling C object libinput-device-group.p/udev_libinput-device-group.c.o[K[55/141] Compiling C object libfilter.a.p/src_filter-trackpoint.c.o[K[55/141] Compiling C object libinput-fuzz-extract.p/udev_libinput-fuzz-extract.c.o[K[56/141] Compiling C object libfilter.a.p/src_filter-touchpad-flat.c.o[K[56/141] Compiling C object libinput-fuzz-extract.p/src_util-strings.c.o[K[57/141] Compiling C object libfilter.a.p/src_filter-touchpad.c.o[K[57/141] Compiling C object libinput-fuzz-extract.p/src_util-prop-parsers.c.o[K[58/141] Compiling C object libfilter.a.p/src_filter-trackpoint-flat.c.o[K[58/141] Compiling C object libinput-fuzz-to-zero.p/udev_libinput-fuzz-to-zero.c.o[K[59/141] Compiling C object libinput-fuzz-extract.p/udev_libinput-fuzz-extract.c.o[K[59/141] Compiling C object test-build-util-backtrace.h.p/meson-generated_.._test-util-includes-util-backtrace.h.c.o[K[60/141] Compiling C object libfilter.a.p/src_filter-tablet.c.o[K[60/141] Compiling C object test-build-util-bits.h.p/meson-generated_.._test-util-includes-util-bits.h.c.o[K[61/141] Generating libinput-git-version.h with a custom command[K[61/141] Compiling C object test-build-util-input-event.h.p/meson-generated_.._test-util-includes-util-input-event.h.c.o[K[62/141] Compiling C object libinput-fuzz-to-zero.p/udev_libinput-fuzz-to-zero.c.o[K[62/141] Compiling C object test-build-util-list.h.p/meson-generated_.._test-util-includes-util-list.h.c.o[K[63/141] Compiling C object liblibinput-util-libinput.a.p/src_util-libinput.c.o[K[63/141] Compiling C object test-build-util-files.h.p/meson-generated_.._test-util-includes-util-files.h.c.o[K[64/141] Compiling C object test-build-util-list.h.p/meson-generated_.._test-util-includes-util-list.h.c.o[K[64/141] Compiling C object test-build-util-macros.h.p/meson-generated_.._test-util-includes-util-macros.h.c.o[K[65/141] Compiling C object test-build-util-bits.h.p/meson-generated_.._test-util-includes-util-bits.h.c.o[K[65/141] Compiling C object test-build-util-matrix.h.p/meson-generated_.._test-util-includes-util-matrix.h.c.o[K[66/141] Compiling C object libinput-fuzz-extract.p/src_util-strings.c.o[K[66/141] Compiling C object test-build-util-prop-parsers.h.p/meson-generated_.._test-util-includes-util-prop-parsers.h.c.o[K[67/141] Compiling C object test-build-util-macros.h.p/meson-generated_.._test-util-includes-util-macros.h.c.o[K[67/141] Compiling C object test-build-util-ratelimit.h.p/meson-generated_.._test-util-includes-util-ratelimit.h.c.o[K[68/141] Compiling C object libinput-device-group.p/udev_libinput-device-group.c.o[K[68/141] Compiling C object test-build-util-stringbuf.h.p/meson-generated_.._test-util-includes-util-stringbuf.h.c.o[K[69/141] Compiling C object libinput-fuzz-extract.p/src_util-prop-parsers.c.o[K[69/141] Compiling C object test-build-util-strings.h.p/meson-generated_.._test-util-includes-util-strings.h.c.o[K[70/141] Compiling C object test-build-util-input-event.h.p/meson-generated_.._test-util-includes-util-input-event.h.c.o[K[70/141] Compiling C object test-build-util-time.h.p/meson-generated_.._test-util-includes-util-time.h.c.o[K[71/141] Compiling C object test-build-util-prop-parsers.h.p/meson-generated_.._test-util-includes-util-prop-parsers.h.c.o[K[71/141] Linking static target libfilter.a[K[72/141] Linking static target libfilter.a[K[72/141] Linking static target liblibinput-util-libinput.a[K[73/141] Compiling C object test-build-util-ratelimit.h.p/meson-generated_.._test-util-includes-util-ratelimit.h.c.o[K[73/141] Compiling C object libinput-debug-events.p/tools_libinput-debug-events.c.o[K[74/141] Compiling C object test-build-util-matrix.h.p/meson-generated_.._test-util-includes-util-matrix.h.c.o[K[74/141] Compiling C object libinput-debug-tablet.p/tools_libinput-debug-tablet.c.o[K[75/141] Compiling C object test-build-util-files.h.p/meson-generated_.._test-util-includes-util-files.h.c.o[K[75/141] Compiling C object libinput-debug-tablet-pad.p/tools_libinput-debug-tablet-pad.c.o[K[76/141] Linking static target liblibinput-util-libinput.a[K[76/141] Compiling C object libinput-quirks.p/tools_libinput-quirks.c.o[K[77/141] Compiling C object libtools_shared.a.p/tools_shared.c.o[K[77/141] Linking static target libtools_shared.a[K[78/141] Compiling C object test-build-util-stringbuf.h.p/meson-generated_.._test-util-includes-util-stringbuf.h.c.o[K[78/141] Compiling C object libinput-list-devices.p/tools_libinput-list-devices.c.o[K[79/141] Compiling C object test-build-util-backtrace.h.p/meson-generated_.._test-util-includes-util-backtrace.h.c.o[K[79/141] Compiling C object libinput-measure.p/tools_libinput-measure.c.o[K[80/141] Linking static target libtools_shared.a[K[80/141] Compiling C object libinput-analyze.p/tools_libinput-analyze.c.o[K[81/141] Compiling C object test-build-util-time.h.p/meson-generated_.._test-util-includes-util-time.h.c.o[K[81/141] Compiling C object libinput-record.p/tools_libinput-record.c.o[K[82/141] Compiling C object test-build-util-strings.h.p/meson-generated_.._test-util-includes-util-strings.h.c.o[K[82/141] Compiling C object libinput.p/tools_libinput-tool.c.o[K[83/141] Compiling C object libinput-measure.p/tools_libinput-measure.c.o[K[83/141] Compiling C object ptraccel-debug.p/tools_ptraccel-debug.c.o[K[84/141] Compiling C object libinput-debug-events.p/tools_libinput-debug-events.c.o[K[84/141] Compiling C object test-builddir-lookup.p/test_test-builddir-lookup.c.o[K[85/141] Compiling C object libinput-list-devices.p/tools_libinput-list-devices.c.o[K[85/141] Compiling C object test-build-pedantic.p/test_build-pedantic.c.o[K[86/141] Compiling C object libinput-debug-tablet-pad.p/tools_libinput-debug-tablet-pad.c.o[K[86/141] Compiling C object test-build-std-gnuc90.p/test_build-pedantic.c.o[K[87/141] Compiling C object libinput-quirks.p/tools_libinput-quirks.c.o[K[87/141] Compiling C object test-build-linker.p/test_build-pedantic.c.o[K[88/141] Compiling C object libinput-analyze.p/tools_libinput-analyze.c.o[K[88/141] Compiling C++ object test-build-cxx.p/test_build-cxx.cc.o[K[89/141] Compiling C object test-build-pedantic.p/test_build-pedantic.c.o[K[89/141] Compiling C object libinput-test.p/tools_libinput-test.c.o[K[90/141] Compiling C object test-build-std-gnuc90.p/test_build-pedantic.c.o[K[90/141] Linking target libinput-device-group[K[91/141] Compiling C object libinput-debug-tablet.p/tools_libinput-debug-tablet.c.o[K[91/141] Linking target libinput-fuzz-extract[K[92/141] Compiling C object libinput.p/tools_libinput-tool.c.o[K[92/141] Linking target libinput-fuzz-to-zero[K[93/141] Compiling C object test-build-linker.p/test_build-pedantic.c.o[K[93/141] Linking target test-build-util-backtrace.h[K[94/141] Compiling C++ object test-build-cxx.p/test_build-cxx.cc.o[K[94/141] Linking target test-build-util-bits.h[K[95/141] Compiling C object test-builddir-lookup.p/test_test-builddir-lookup.c.o[K[95/141] Linking target test-build-util-input-event.h[K[96/141] Compiling C object ptraccel-debug.p/tools_ptraccel-debug.c.o[K[96/141] Linking target test-build-util-list.h[K[97/141] Linking target libinput-device-group[K[97/141] Linking target test-build-util-files.h[K[98/141] Linking target libinput-fuzz-to-zero[K[98/141] Linking target test-build-util-macros.h[K[99/141] Compiling C object libinput-test.p/tools_libinput-test.c.o[K[99/141] Linking target test-build-util-matrix.h[K[100/141] Linking target test-build-util-backtrace.h[K[100/141] Linking target test-build-util-prop-parsers.h[K[101/141] Linking target test-build-util-bits.h[K[101/141] Linking target test-build-util-ratelimit.h[K[102/141] Linking target test-build-util-input-event.h[K[102/141] Linking target test-build-util-stringbuf.h[K[103/141] Compiling C object libinput-record.p/tools_libinput-record.c.o[K[103/141] Linking target test-build-util-strings.h[K[104/141] Linking target test-build-util-list.h[K[104/141] Linking target test-build-util-time.h[K[105/141] Linking target libinput-fuzz-extract[K[105/141] Copying file plugins/10-example.lua[K[106/141] Linking target test-build-util-macros.h[K[106/141] Copying file plugins/10-dwt.lua[K[107/141] Linking target test-build-util-matrix.h[K[107/141] Copying file plugins/10-logitech-mx-master-horiz-scroll.lua[K[108/141] Linking target test-build-util-prop-parsers.h[K[108/141] Copying file plugins/10-pointer-go-faster.lua[K[109/141] Linking target test-build-util-ratelimit.h[K[109/141] Copying file plugins/10-pointer-go-slower.lua[K[110/141] Linking target test-build-util-stringbuf.h[K[110/141] Copying file plugins/10-delay-motion.lua[K[111/141] Linking target test-build-util-files.h[K[111/141] Copying file plugins/10-disable-feature.lua[K[112/141] Linking target test-build-util-time.h[K[112/141] Copying file plugins/10-copilot-key-override.lua[K[113/141] Copying file plugins/10-example.lua[K[113/141] Copying file plugins/10-wheel-to-button.lua[K[114/141] Linking target test-build-util-strings.h[K[114/141] Copying file plugins/10-tablet-mouse-control.lua[K[115/141] Copying file plugins/10-pointer-go-faster.lua[K[115/141] Linking target test-build-pedantic[K[116/141] Copying file plugins/10-dwt.lua[K[116/141] Linking target test-build-std-gnuc90[K[117/141] Copying file plugins/10-logitech-mx-master-horiz-scroll.lua[K[117/141] Linking target test-build-cxx[K[118/141] Copying file plugins/10-pointer-go-slower.lua[K[119/141] Copying file plugins/10-delay-motion.lua[K[120/141] Copying file plugins/10-copilot-key-override.lua[K[121/141] Copying file plugins/10-disable-feature.lua[K[122/141] Linking target test-build-std-gnuc90[K[123/141] Copying file plugins/10-tablet-mouse-control.lua[K[124/141] Copying file plugins/10-wheel-to-button.lua[K[125/141] Linking target test-build-pedantic[K[126/141] Linking target test-build-cxx[K[127/141] Linking target libinput.so.10.13.0[K[127/141] Generating symbol file libinput.so.10.13.0.p/libinput.so.10.13.0.symbols[K[128/141] Generating symbol file libinput.so.10.13.0.p/libinput.so.10.13.0.symbols[K[128/141] Linking target libinput-debug-events[K[128/141] Linking target libinput-debug-tablet[K[128/141] Linking target libinput-debug-tablet-pad[K[128/141] Linking target libinput-quirks[K[128/141] Linking target libinput-list-devices[K[128/141] Linking target libinput-measure[K[128/141] Linking target libinput-analyze[K[128/141] Linking target libinput-record[K[128/141] Linking target libinput[K[128/141] Linking target ptraccel-debug[K[129/141] Linking target libinput-measure[K[129/141] Linking target test-builddir-lookup[K[130/141] Linking target libinput[K[130/141] Linking target test-build-linker[K[131/141] Linking target libinput-analyze[K[131/141] Linking target libinput-test[K[132/141] Linking target test-build-linker[K[133/141] Linking target test-builddir-lookup[K[134/141] Linking target libinput-test[K[135/141] Linking target libinput-list-devices[K[136/141] Linking target libinput-debug-tablet[K[137/141] Linking target ptraccel-debug[K[138/141] Linking target libinput-debug-tablet-pad[K[139/141] Linking target libinput-debug-events[K[140/141] Linking target libinput-quirks[K[141/141] Linking target libinput-record[K
+ninja: Entering directory `/var/tmp/hokuto/libinput-61/build/build'
+[0/3] Generating libinput-git-version.h with a custom command[K[1/3] Generating libinput-git-version.h with a custom command[K
+Installing subdir /var/tmp/hokuto/libinput-61/build/quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-google.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-synaptics.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-apple.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-qemu.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-lenovo.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/10-generic-trackball.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-madcatz.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-cypress.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-oracle.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-trust.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-hantick.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-glorious.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-system76.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-ite.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-graviton.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-framework.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-starlabs.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-pixart.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-logitech.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-cyborg.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-razer.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-elantech.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-icl.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-aiptek.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-positivo.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-contour.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-minisforum.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-wareus.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-lg.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-goodix.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-sony.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-acer.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-alps.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-pine64.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-toshiba.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-dell.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-a4tech.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-huawei.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-nulea.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/10-generic-keyboard.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-microsoft.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-asus.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-huion.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-kensington.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-honor.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-hp.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-gpd.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/10-generic-mouse.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-clevetura.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/50-system-gigabyte.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-vmware.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing /var/tmp/hokuto/libinput-61/build/quirks/30-vendor-wacom.quirks to /var/tmp/hokuto/libinput-61/output/usr/share/libinput
+Installing libinput-device-group to /var/tmp/hokuto/libinput-61/output/usr/lib/udev
+Installing libinput-fuzz-extract to /var/tmp/hokuto/libinput-61/output/usr/lib/udev
+Installing libinput-fuzz-to-zero to /var/tmp/hokuto/libinput-61/output/usr/lib/udev
+Installing libinput.so.10.13.0 to /var/tmp/hokuto/libinput-61/output/usr/lib
+Installing libinput-debug-events to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing libinput-debug-tablet to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing libinput-debug-tablet-pad to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing libinput-quirks to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing libinput-list-devices to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing libinput-measure to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing libinput-analyze to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing libinput-record to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing libinput to /var/tmp/hokuto/libinput-61/output/usr/bin
+Installing libinput-test to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/src/libinput.h to /var/tmp/hokuto/libinput-61/output/usr/include
+Installing new directory /var/tmp/hokuto/libinput-61/output/etc/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/80-libinput-device-groups.rules to /var/tmp/hokuto/libinput-61/output/usr/lib/udev/rules.d
+Installing /var/tmp/hokuto/libinput-61/build/build/90-libinput-fuzz-override.rules to /var/tmp/hokuto/libinput-61/output/usr/lib/udev/rules.d
+Installing /var/tmp/hokuto/libinput-61/build/build/meson-private/libinput.pc to /var/tmp/hokuto/libinput-61/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/libinput-61/build/completion/zsh/_libinput to /var/tmp/hokuto/libinput-61/output/usr/share/zsh/site-functions
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-analyze-buttons to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-analyze-per-slot-delta to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-analyze-recording to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-analyze-touch-down-state to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-list-kernel-devices to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-fuzz to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-touchpad-size to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-touchpad-tap to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-touchpad-pressure to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-touch-size to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-replay to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-analyze.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-analyze-buttons.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-analyze-per-slot-delta.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-analyze-recording.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-analyze-touch-down-state.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-debug-events.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-debug-tablet.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-debug-tablet-pad.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-list-devices.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-list-kernel-devices.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-fuzz.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-touchpad-size.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-touchpad-tap.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-touchpad-pressure.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-measure-touch-size.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-quirks.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-record.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-replay.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-test.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-quirks-list.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing /var/tmp/hokuto/libinput-61/build/build/libinput-quirks-validate.1 to /var/tmp/hokuto/libinput-61/output/usr/share/man/man1
+Installing symlink pointing to libinput.so.10.13.0 to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput.so.10
+Installing symlink pointing to libinput.so.10 to /var/tmp/hokuto/libinput-61/output/usr/lib/libinput.so
+
+Script done on 2026-05-15 00:10:35+07:00 [COMMAND_EXIT_CODE="0"]
