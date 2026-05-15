@@ -1,0 +1,107 @@
+Script started on 2026-05-15 11:01:07+07:00 [COMMAND="cd /var/tmp/hokuto/busybox-86/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/busybox-86/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/busybox-86/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/busybox-86/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/busybox-86/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/busybox-86/build/.cache' /repo/sauzeros/extra/busybox/build /var/tmp/hokuto/busybox-86/output 1.36.1 busybox" <not executed on terminal>]
+  GEN     include/applets.h
+  GEN     include/usage.h
+  GEN     mailutils/Kbuild
+  GEN     mailutils/Config.in
+  GEN     init/Kbuild
+  GEN     init/Config.in
+  GEN     procps/Kbuild
+  GEN     procps/Config.in
+  GEN     findutils/Kbuild
+  GEN     findutils/Config.in
+  GEN     modutils/Kbuild
+  GEN     modutils/Config.in
+  GEN     miscutils/Kbuild
+  GEN     miscutils/Config.in
+  GEN     scripts/Kbuild
+  GEN     e2fsprogs/Kbuild
+  GEN     e2fsprogs/Config.in
+  GEN     libpwdgrp/Kbuild
+  GEN     shell/Kbuild
+  GEN     shell/Config.in
+  GEN     editors/Kbuild
+  GEN     editors/Config.in
+  GEN     console-tools/Kbuild
+  GEN     console-tools/Config.in
+  GEN     sysklogd/Kbuild
+  GEN     sysklogd/Config.in
+  GEN     coreutils/Kbuild
+  GEN     coreutils/Config.in
+  GEN     coreutils/libcoreutils/Kbuild
+  GEN     util-linux/Kbuild
+  GEN     util-linux/Config.in
+  GEN     util-linux/volume_id/Kbuild
+  GEN     util-linux/volume_id/Config.in
+  GEN     archival/Kbuild
+  GEN     archival/Config.in
+  GEN     archival/libarchive/Kbuild
+  GEN     printutils/Kbuild
+  GEN     printutils/Config.in
+  GEN     debianutils/Kbuild
+  GEN     debianutils/Config.in
+  GEN     applets/Kbuild
+  GEN     selinux/Kbuild
+  GEN     selinux/Config.in
+  GEN     libbb/Kbuild
+  GEN     libbb/Config.in
+  GEN     klibc-utils/Kbuild
+  GEN     klibc-utils/Config.in
+  GEN     loginutils/Kbuild
+  GEN     loginutils/Config.in
+  GEN     runit/Kbuild
+  GEN     runit/Config.in
+  GEN     networking/Kbuild
+  GEN     networking/Config.in
+  GEN     networking/libiproute/Kbuild
+  GEN     networking/udhcp/Kbuild
+  GEN     networking/udhcp/Config.in
+In file included from [01m[Kscripts/kconfig/zconf.tab.c:2168[m[K:
+[01m[Kscripts/kconfig/confdata.c:[m[K In function ‘[01m[Kconf_write[m[K’:
+[01m[Kscripts/kconfig/confdata.c:357:35:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  357 |                 } else if ((slash [01;35m[K=[m[K strrchr(name, '/'))) {
+      |                                   [01;35m[K^[m[K
+scripts/kconfig/conf -s Config.in
+#
+# using defaults found in .config
+#
+.config:20:warning: trying to assign nonexistent symbol TIME64
+.config:473:warning: trying to assign nonexistent symbol FEATURE_FIND_EXEC_OK
+.config:800:warning: trying to assign nonexistent symbol GETFATTR
+.config:939:warning: trying to assign nonexistent symbol FEATURE_IP_LINK_CAN
+.config:1014:warning: trying to assign nonexistent symbol FEATURE_UDHCPD_BOOTP
+*
+* Restart config...
+*
+*
+* Shells
+*
+Choose which shell is aliased to 'sh' name
+> 1. ash (SH_IS_ASH)
+  2. hush (SH_IS_HUSH)
+  3. none (SH_IS_NONE)
+choice[1-3?]: 1
+Choose which shell is aliased to 'bash' name
+  1. ash (BASH_IS_ASH)
+  2. hush (BASH_IS_HUSH)
+> 3. none (BASH_IS_NONE)
+choice[1-3?]: 3
+ash (78 kb) (ASH) [Y/n/?] y
+  Optimize for size instead of speed (ASH_OPTIMIZE_FOR_SIZE) [Y/n] y
+  Use internal glob() implementation (ASH_INTERNAL_GLOB) [Y/n/?] y
+  bash-compatible extensions (ASH_BASH_COMPAT) [Y/n] y
+    'source' and '.' builtins search current directory after $PATH (ASH_BASH_SOURCE_CURDIR) [N/y/?] n
+    command_not_found_handle hook support (ASH_BASH_NOT_FOUND_HOOK) [Y/n/?] y
+  Job control (ASH_JOB_CONTROL) [Y/n] y
+  Alias support (ASH_ALIAS) [Y/n] y
+  Pseudorandom generator and $RANDOM variable (ASH_RANDOM_SUPPORT) [Y/n/?] y
+  Expand prompt string (ASH_EXPAND_PRMT) [Y/n/?] y
+  Idle timeout variable $TMOUT (ASH_IDLE_TIMEOUT) [Y/n/?] y
+  Check for new mail in interactive shell (ASH_MAIL) [Y/n/?] y
+  echo builtin (ASH_ECHO) [Y/n] y
+  printf builtin (ASH_PRINTF) [Y/n] y
+  test builtin (ASH_TEST) [Y/n] y
+  sleep builtin (ASH_SLEEP) [Y/n] (NEW) make[2]: *** [/var/tmp/hokuto/busybox-86/build/scripts/kconfig/Makefile:40: silentoldconfig] Error 1
+make[1]: *** [/var/tmp/hokuto/busybox-86/build/Makefile:444: silentoldconfig] Error 2
+make: *** [Makefile:522: include/autoconf.h] Error 2
+
+Script done on 2026-05-15 11:01:11+07:00 [COMMAND_EXIT_CODE="2"]
