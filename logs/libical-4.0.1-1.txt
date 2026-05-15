@@ -1,0 +1,734 @@
+Script started on 2026-05-15 10:57:56+07:00 [COMMAND="cd /var/tmp/hokuto/libical-58/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libical-58/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libical-58/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libical-58/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libical-58/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libical-58/build/.cache' /repo/sauzeros/extra/libical/build /var/tmp/hokuto/libical-58/output 4.0.1 libical" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Perl: /usr/bin/perl (found version "5.42.2")
+-- Found ICU: /usr/include (found version "78.3") found components: i18n uc data
+-- Looking for include file byteswap.h
+-- Looking for include file byteswap.h - found
+-- Looking for include file dirent.h
+-- Looking for include file dirent.h - found
+-- Looking for include file endian.h
+-- Looking for include file endian.h - found
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for include file sys/endian.h
+-- Looking for include file sys/endian.h - not found
+-- Looking for include file sys/param.h
+-- Looking for include file sys/param.h - found
+-- Looking for include file sys/utsname.h
+-- Looking for include file sys/utsname.h - found
+-- Looking for include file fcntl.h
+-- Looking for include file fcntl.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file wctype.h
+-- Looking for include file wctype.h - found
+-- Looking for access
+-- Looking for access - found
+-- Looking for fork
+-- Looking for fork - found
+-- Looking for getopt
+-- Looking for getopt - found
+-- Looking for getpid
+-- Looking for getpid - found
+-- Looking for getpwent
+-- Looking for getpwent - found
+-- Looking for gmtime_r
+-- Looking for gmtime_r - found
+-- Looking for localtime_r
+-- Looking for localtime_r - found
+-- Looking for mkdir
+-- Looking for mkdir - found
+-- Looking for open
+-- Looking for open - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for signal
+-- Looking for signal - found
+-- Looking for stat
+-- Looking for stat - found
+-- Looking for fstat
+-- Looking for fstat - found
+-- Looking for strdup
+-- Looking for strdup - found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for strncasecmp
+-- Looking for strncasecmp - found
+-- Looking for read
+-- Looking for read - found
+-- Looking for unlink
+-- Looking for unlink - found
+-- Looking for usleep
+-- Looking for usleep - found
+-- Looking for waitpid
+-- Looking for waitpid - found
+-- Looking for write
+-- Looking for write - found
+-- Looking for alarm
+-- Looking for alarm - found
+-- Looking for backtrace
+-- Looking for backtrace - found
+-- Looking for iswspace
+-- Looking for iswspace - found
+-- Looking for setenv
+-- Looking for setenv - found
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of int
+-- Check size of int - done
+-- Check size of intptr_t
+-- Check size of intptr_t - done
+-- Check size of pid_t
+-- Check size of pid_t - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of ssize_t
+-- Check size of ssize_t - done
+-- Check size of time_t
+-- Check size of time_t - done
+-- Check size of __time64_t
+-- Check size of __time64_t - failed
+-- Check size of time_t
+-- Check size of time_t - done
+-- Check size of wint_t
+-- Check size of wint_t - failed
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for pthread_attr_get_np in pthread
+-- Looking for pthread_attr_get_np in pthread - not found
+-- Looking for pthread_getattr_np in pthread
+-- Looking for pthread_getattr_np in pthread - found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Looking for include files pthread.h, pthread_np.h
+-- Looking for include files pthread.h, pthread_np.h - not found
+[33mCMake Warning at cmake/modules/LibIcalMacrosInternal.cmake:37 (message):
+  GOBJECT_INTROSPECTION is deprecated.  Use LIBICAL_GOBJECT_INTROSPECTION
+  instead
+Call Stack (most recent call first):
+  CMakeLists.txt:579 (libical_deprecated_option)
+
+[0m
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'gobject-introspection-1.0>=0.6.7'
+--   Found gobject-introspection-1.0, version 1.86.0
+[33mCMake Warning at cmake/modules/LibIcalMacrosInternal.cmake:37 (message):
+  ICAL_GLIB_VAPI is deprecated.  Use LIBICAL_GLIB_VAPI instead
+Call Stack (most recent call first):
+  CMakeLists.txt:629 (libical_deprecated_option)
+
+[0m
+-- Checking for one of the modules 'glib-2.0>=2.44'
+-- Checking for one of the modules 'gobject-2.0>=2.44'
+-- Found LibXml2: /usr/lib/libxml2.so (found suitable version "2.15.3", minimum required is "2.7.3")
+-- Performing Test C_SUPPORTS_UNUSED_BUT_SET
+-- Performing Test C_SUPPORTS_UNUSED_BUT_SET - Success
+-- Performing Test C_SUPPORTS_LOGICAL_OP
+-- Performing Test C_SUPPORTS_LOGICAL_OP - Success
+-- Performing Test C_SUPPORTS_POINTER_MEMACCESS
+-- Performing Test C_SUPPORTS_POINTER_MEMACCESS - Success
+-- Performing Test C_SUPPORTS_FORMAT_SECURITY
+-- Performing Test C_SUPPORTS_FORMAT_SECURITY - Success
+-- Performing Test C_SUPPORTS_REDUNDANT_DECLS
+-- Performing Test C_SUPPORTS_REDUNDANT_DECLS - Success
+-- Performing Test C_SUPPORTS_UNREACHABLE_CODE
+-- Performing Test C_SUPPORTS_UNREACHABLE_CODE - Success
+-- Performing Test C_SUPPORTS_VARARGS
+-- Performing Test C_SUPPORTS_VARARGS - Success
+-- Performing Test CXX_SUPPORTS_UNUSED_BUT_SET
+-- Performing Test CXX_SUPPORTS_UNUSED_BUT_SET - Success
+-- Performing Test CXX_SUPPORTS_LOGICAL_OP
+-- Performing Test CXX_SUPPORTS_LOGICAL_OP - Success
+-- Performing Test CXX_SUPPORTS_POINTER_MEMACCESS
+-- Performing Test CXX_SUPPORTS_POINTER_MEMACCESS - Success
+-- Performing Test CXX_SUPPORTS_REORDER
+-- Performing Test CXX_SUPPORTS_REORDER - Success
+-- Performing Test CXX_SUPPORTS_FORMAT_SECURITY
+-- Performing Test CXX_SUPPORTS_FORMAT_SECURITY - Success
+-- Performing Test CXX_SUPPORTS_REDUNDANT_DECLS
+-- Performing Test CXX_SUPPORTS_REDUNDANT_DECLS - Success
+-- Performing Test CXX_SUPPORTS_UNREACHABLE_CODE
+-- Performing Test CXX_SUPPORTS_UNREACHABLE_CODE - Success
+-- Performing Test CXX_SUPPORTS_VARARGS
+-- Performing Test CXX_SUPPORTS_VARARGS - Success
+-- Performing Test C_SUPPORTS_WALL
+-- Performing Test C_SUPPORTS_WALL - Success
+-- Performing Test C_SUPPORTS_WEXTRA
+-- Performing Test C_SUPPORTS_WEXTRA - Success
+-- Performing Test C_SUPPORTS_WFORMAT
+-- Performing Test C_SUPPORTS_WFORMAT - Success
+-- Performing Test C_SUPPORTS_WFORMAT2
+-- Performing Test C_SUPPORTS_WFORMAT2 - Success
+-- Performing Test C_SUPPORTS_WSIGNCONVERSION
+-- Performing Test C_SUPPORTS_WSIGNCONVERSION - Success
+-- Performing Test C_SUPPORTS_WTRAMPOLINES
+-- Performing Test C_SUPPORTS_WTRAMPOLINES - Success
+-- Performing Test C_SUPPORTS_WIMPLICIT_FALLTHROUGH
+-- Performing Test C_SUPPORTS_WIMPLICIT_FALLTHROUGH - Success
+-- Performing Test C_SUPPORTS_WBIDI_CHARS_ANY
+-- Performing Test C_SUPPORTS_WBIDI_CHARS_ANY - Success
+-- Performing Test C_SUPPORTS_WERROR_FORMAT_SECURITY
+-- Performing Test C_SUPPORTS_WERROR_FORMAT_SECURITY - Success
+-- Performing Test C_SUPPORTS_WERROR_IMPLICIT
+-- Performing Test C_SUPPORTS_WERROR_IMPLICIT - Success
+-- Performing Test C_SUPPORTS_WERROR_INCOMPATIBLE_POINTER_TYPES
+-- Performing Test C_SUPPORTS_WERROR_INCOMPATIBLE_POINTER_TYPES - Success
+-- Performing Test C_SUPPORTS_WERROR_INT_CONVERSION
+-- Performing Test C_SUPPORTS_WERROR_INT_CONVERSION - Success
+-- Performing Test C_SUPPORTS_FORTIFY_SOURCE
+-- Performing Test C_SUPPORTS_FORTIFY_SOURCE - Success
+-- Performing Test C_SUPPORTS_GLIBC_ASSERTIONS
+-- Performing Test C_SUPPORTS_GLIBC_ASSERTIONS - Success
+-- Performing Test C_SUPPORTS_FSTRICT_FLEX_ARRAYS3
+-- Performing Test C_SUPPORTS_FSTRICT_FLEX_ARRAYS3 - Success
+-- Performing Test C_SUPPORTS_FSTACK_CLASH_PROTECTION
+-- Performing Test C_SUPPORTS_FSTACK_CLASH_PROTECTION - Success
+-- Performing Test C_SUPPORTS_FSTACK_PROTECTOR_STRONG
+-- Performing Test C_SUPPORTS_FSTACK_PROTECTOR_STRONG - Success
+-- Performing Test C_SUPPORTS_FCF_PROTECTION_FULL
+-- Performing Test C_SUPPORTS_FCF_PROTECTION_FULL - Success
+-- Performing Test C_SUPPORTS_MBRANCH_PROTECTION_STANDARD
+-- Performing Test C_SUPPORTS_MBRANCH_PROTECTION_STANDARD - Failed
+-- Performing Test C_SUPPORTS_FNO_DELETE_NULL_POINTER_CHECKS
+-- Performing Test C_SUPPORTS_FNO_DELETE_NULL_POINTER_CHECKS - Success
+-- Performing Test C_SUPPORTS_FNO_STRICT_OVERFLOW
+-- Performing Test C_SUPPORTS_FNO_STRICT_OVERFLOW - Success
+-- Performing Test C_SUPPORTS_FNO_STRICT_ALIASING
+-- Performing Test C_SUPPORTS_FNO_STRICT_ALIASING - Success
+-- Performing Test C_SUPPORTS_FTRIVIAL_AUTO_VAR_INIT
+-- Performing Test C_SUPPORTS_FTRIVIAL_AUTO_VAR_INIT - Failed
+-- Performing Test C_LINKER_SUPPORTS_NODLOPEN
+-- Performing Test C_LINKER_SUPPORTS_NODLOPEN - Success
+-- Performing Test C_LINKER_SUPPORTS_NOEXECSTACK
+-- Performing Test C_LINKER_SUPPORTS_NOEXECSTACK - Success
+-- Performing Test C_LINKER_SUPPORTS_RELRO
+-- Performing Test C_LINKER_SUPPORTS_RELRO - Success
+-- Performing Test C_LINKER_SUPPORTS_NOW
+-- Performing Test C_LINKER_SUPPORTS_NOW - Success
+-- Performing Test C_LINKER_SUPPORTS_AS_NEEDED
+-- Performing Test C_LINKER_SUPPORTS_AS_NEEDED - Success
+-- Performing Test C_LINKER_SUPPORTS_NO_COPY_DT_NEEDED_ENTRIES
+-- Performing Test C_LINKER_SUPPORTS_NO_COPY_DT_NEEDED_ENTRIES - Success
+-- Performing Test CXX_SUPPORTS_WALL
+-- Performing Test CXX_SUPPORTS_WALL - Success
+-- Performing Test CXX_SUPPORTS_WEXTRA
+-- Performing Test CXX_SUPPORTS_WEXTRA - Success
+-- Performing Test CXX_SUPPORTS_WFORMAT
+-- Performing Test CXX_SUPPORTS_WFORMAT - Success
+-- Performing Test CXX_SUPPORTS_WFORMAT2
+-- Performing Test CXX_SUPPORTS_WFORMAT2 - Success
+-- Performing Test CXX_SUPPORTS_WCONVERSION
+-- Performing Test CXX_SUPPORTS_WCONVERSION - Success
+-- Performing Test CXX_SUPPORTS_WSIGNCONVERSION
+-- Performing Test CXX_SUPPORTS_WSIGNCONVERSION - Success
+-- Performing Test CXX_SUPPORTS_WTRAMPOLINES
+-- Performing Test CXX_SUPPORTS_WTRAMPOLINES - Success
+-- Performing Test CXX_SUPPORTS_WIMPLICIT_FALLTHROUGH
+-- Performing Test CXX_SUPPORTS_WIMPLICIT_FALLTHROUGH - Success
+-- Performing Test CXX_SUPPORTS_WBIDI_CHARS_ANY
+-- Performing Test CXX_SUPPORTS_WBIDI_CHARS_ANY - Success
+-- Performing Test CXX_SUPPORTS_WERROR_FORMAT_SECURITY
+-- Performing Test CXX_SUPPORTS_WERROR_FORMAT_SECURITY - Success
+-- Performing Test CXX_SUPPORTS_WERROR_IMPLICIT
+-- Performing Test CXX_SUPPORTS_WERROR_IMPLICIT - Failed
+-- Performing Test CXX_SUPPORTS_WERROR_INCOMPATIBLE_POINTER_TYPES
+-- Performing Test CXX_SUPPORTS_WERROR_INCOMPATIBLE_POINTER_TYPES - Failed
+-- Performing Test CXX_SUPPORTS_WERROR_INT_CONVERSION
+-- Performing Test CXX_SUPPORTS_WERROR_INT_CONVERSION - Failed
+-- Performing Test CXX_SUPPORTS_FORTIFY_SOURCE
+-- Performing Test CXX_SUPPORTS_FORTIFY_SOURCE - Success
+-- Performing Test CXX_SUPPORTS_GLIBCXX_ASSERTIONS
+-- Performing Test CXX_SUPPORTS_GLIBCXX_ASSERTIONS - Success
+-- Performing Test CXX_SUPPORTS_FSTRICT_FLEX_ARRAYS3
+-- Performing Test CXX_SUPPORTS_FSTRICT_FLEX_ARRAYS3 - Success
+-- Performing Test CXX_SUPPORTS_FSTACK_CLASH_PROTECTION
+-- Performing Test CXX_SUPPORTS_FSTACK_CLASH_PROTECTION - Success
+-- Performing Test CXX_SUPPORTS_FSTACK_PROTECTOR_STRONG
+-- Performing Test CXX_SUPPORTS_FSTACK_PROTECTOR_STRONG - Success
+-- Performing Test CXX_SUPPORTS_FCF_PROTECTION_FULL
+-- Performing Test CXX_SUPPORTS_FCF_PROTECTION_FULL - Success
+-- Performing Test CXX_SUPPORTS_MBRANCH_PROTECTION_STANDARD
+-- Performing Test CXX_SUPPORTS_MBRANCH_PROTECTION_STANDARD - Failed
+-- Performing Test CXX_SUPPORTS_FNO_DELETE_NULL_POINTER_CHECKS
+-- Performing Test CXX_SUPPORTS_FNO_DELETE_NULL_POINTER_CHECKS - Success
+-- Performing Test CXX_SUPPORTS_FNO_STRICT_OVERFLOW
+-- Performing Test CXX_SUPPORTS_FNO_STRICT_OVERFLOW - Success
+-- Performing Test CXX_SUPPORTS_FNO_STRICT_ALIASING
+-- Performing Test CXX_SUPPORTS_FNO_STRICT_ALIASING - Success
+-- Performing Test CXX_SUPPORTS_FTRIVIAL_AUTO_VAR_INIT
+-- Performing Test CXX_SUPPORTS_FTRIVIAL_AUTO_VAR_INIT - Failed
+-- Performing Test CXX_LINKER_SUPPORTS_NODLOPEN
+-- Performing Test CXX_LINKER_SUPPORTS_NODLOPEN - Success
+-- Performing Test CXX_LINKER_SUPPORTS_NOEXECSTACK
+-- Performing Test CXX_LINKER_SUPPORTS_NOEXECSTACK - Success
+-- Performing Test CXX_LINKER_SUPPORTS_RELRO
+-- Performing Test CXX_LINKER_SUPPORTS_RELRO - Success
+-- Performing Test CXX_LINKER_SUPPORTS_NOW
+-- Performing Test CXX_LINKER_SUPPORTS_NOW - Success
+-- Performing Test CXX_LINKER_SUPPORTS_AS_NEEDED
+-- Performing Test CXX_LINKER_SUPPORTS_AS_NEEDED - Success
+-- Performing Test CXX_LINKER_SUPPORTS_NO_COPY_DT_NEEDED_ENTRIES
+-- Performing Test CXX_LINKER_SUPPORTS_NO_COPY_DT_NEEDED_ENTRIES - Success
+-- Performing Test c_flag_Wswitch_enum_supported
+-- Performing Test c_flag_Wswitch_enum_supported - Success
+-- Performing Test c_flag_Wswitch_supported
+-- Performing Test c_flag_Wswitch_supported - Success
+[33mCMake Warning at cmake/modules/LibIcalMacrosInternal.cmake:37 (message):
+  ICAL_BUILD_DOCS is deprecated.  Use LIBICAL_BUILD_DOCS instead
+Call Stack (most recent call first):
+  CMakeLists.txt:1046 (libical_deprecated_option)
+
+[0m
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- The following features have been enabled:
+
+ * Option LIBICAL_CXX_BINDINGS, build the C++ bindings. Requires a C++ compiler
+ * RSCALE support (RFC7529), build in RSCALE support
+ * Option LIBICAL_GOBJECT_INTROSPECTION, Build GObject introspection "typelib" files.   Requires GObject Introspection development package 0.6.7 or higher.
+ * Option LIBICAL_GLIB_VAPI, Build Vala "vapi" files.
+ * Option LIBICAL_GLIB, Build libical-glib interface.   Requires glib 2.44 and libxml 2.7.3 development packages or higher.
+ * Option LIBICAL_BUILD_EXAMPLES, Build examples.
+ * Option LIBICAL_BUILD_DOCS, Build documentation
+
+-- The following OPTIONAL packages have been found:
+
+ * Threads
+ * GObjectIntrospection (required version >= 0.6.7), <https://wiki.gnome.org/Projects/GObjectIntrospection>
+   Needed in order to build the GObject introspection "typelib" files.
+ * PkgConfig
+ * LibXml2 (required version >= 2.7.3)
+
+-- The following RECOMMENDED packages have been found:
+
+ * ICU
+   For RSCALE (RFC7529) support
+
+-- The following REQUIRED packages have been found:
+
+ * Perl
+   Required by the libical build system.
+
+-- The following features have been disabled:
+
+ * Option LIBICAL_DEVMODE, Developer mode
+ * Option LIBICAL_STATIC, Build static versions of the libraries.
+ * Build type, build static libraries
+ * Option LIBICAL_JAVA_BINDINGS, build the Java bindings. Requires a java compiler
+ * Berkeley DB storage support, build in support for Berkeley DB storage
+ * Option LIBICAL_ENABLE_64BIT_ICALTIME_T, Redirect icaltime_t and related functions to a 64-bit version of time_t rather than to the   C standard library time_t. Intended for use on 32-bit systems which have a 64-bit time_t available.   May not be implemented on all platforms yet.
+ * Option LIBICAL_ENABLE_BUILTIN_TZDATA, (Careful) Build using libical's built-in timezone data, else use the system timezone data on non-Windows systems.   ALWAYS true on Windows. Non-Windows users should know what they're doing if they choose not to use system provided   timezone data. The libical project does not guarantee that the built-in timezone data is up-to-date.
+ * Option LIBICAL_GLIB_CHECK_API_FILES, Check libical-glib API files for completeness.
+ * Option LIBICAL_GLIB_BUILD_DOCS, Build libical-glib documentation
+ * Option LIBICAL_DEVMODE_ABI_DUMPER, (Developer-only) Build for abi-dumper.
+ * Option LIBICAL_DEVMODE_MEMORY_CONSISTENCY, (Developer-only) Build with memory consistency functions.
+ * Option LIBICAL_DEVMODE_ADDRESS_SANITIZER, (Developer-only) Build with the address sanitizer.
+ * Option LIBICAL_DEVMODE_LEAK_SANITIZER, (Developer-only) Build with the leak sanitizer.
+ * Option LIBICAL_DEVMODE_MEMORY_SANITIZER, (Developer-only) Build with the memory sanitizer.
+ * Option LIBICAL_DEVMODE_THREAD_SANITIZER, (Developer-only) Build with the thread sanitizer.
+ * Option LIBICAL_DEVMODE_UNDEFINED_SANITIZER, (Developer-only) Build with the undefined sanitizer.
+ * Option LIBICAL_DEVMODE_SYNCMODE_THREADLOCAL, Mark global variables as thread-local.
+ * Option CMAKE_INTERPROCEDURAL_OPTIMIZATION, Build a link-time optimized version.
+ * Option LIBICAL_BUILD_TESTING, Build tests.
+ * Option LIBICAL_BUILD_TESTING_BIGFUZZ, Build fuzzer tests
+ * Option LIBICAL_BUILD_VZIC, Build the vzic tool to generate zoneinfo files from the Olson timezone database
+
+-- The following OPTIONAL packages have not been found:
+
+ * BerkeleyDB
+   For Berkeley DB storage support
+ * Doxygen, API Documentation system, <https://www.doxygen.org>
+   Needed to build the API documentation.
+
+-- Configuring done (12.5s)
+-- Generating done (0.1s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    GOBJECT_INTROSPECTION
+    ICAL_BUILD_DOCS
+    ICAL_GLIB_VAPI
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/libical-58/build/build
+[  2%] [1m[34mGenerate icalderivedparameter.c[0m
+[  2%] [1m[34mGenerate icalderivedproperty.c[0m
+[  2%] [1m[34mGenerate icalderivedvalue.c[0m
+[  3%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib-src-generator.dir/tools/xml-parser.c.o[0m
+[  3%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib-src-generator.dir/tools/header-parser.c.o[0m
+[  4%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib-src-generator.dir/tools/generator.c.o[0m
+[  4%] [1m[34mGenerate icalderivedproperty.h[0m
+[  5%] [1m[34mGenerate icalrestriction.c[0m
+[  5%] [1m[34mGenerate the aggregate libicalss header[0m
+[  5%] [1m[34mGenerate vcardderivedproperty.c[0m
+[  7%] [1m[34mGenerate vcardderivedparameter.c[0m
+[  7%] [1m[34mGenerate icalderivedparameter.h[0m
+[  7%] [1m[34mGenerate icalderivedvalue.h[0m
+[  8%] [1m[34mGenerate vcardrestriction.c[0m
+[  8%] [1m[34mGenerate vcardderivedvalue.c[0m
+[  9%] [1m[34mTarget to generate the aggregate libicalss header[0m
+[ 10%] [1m[34mGenerate vcardderivedproperty.h[0m
+[ 10%] Built target icalss-header
+[ 11%] [1m[34mGenerate vcardderivedparameter.h[0m
+[ 12%] [1m[34mGenerate vcardderivedvalue.h[0m
+[ 13%] [1m[34mGenerate the aggregate ical.h header[0m
+[ 13%] [1m[34mGenerate the aggregate vcard.h header[0m
+[ 13%] [1m[34mTarget to generate the aggregate ical.h header[0m
+[ 13%] Built target ical-header
+[ 14%] [1m[34mTarget to generate the aggregate vcard.h header[0m
+[ 14%] Built target icalvcard-header
+[ 15%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalderivedproperty.c.o[0m
+[ 15%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalderivedparameter.c.o[0m
+[ 16%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalderivedvalue.c.o[0m
+[ 17%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalarray.c.o[0m
+[ 17%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalattach.c.o[0m
+[ 17%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalrestriction.c.o[0m
+[ 18%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalcomponent.c.o[0m
+[ 18%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalenumarray.c.o[0m
+[ 19%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalenums.c.o[0m
+[ 20%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalerror_p.c.o[0m
+[ 20%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalerror.c.o[0m
+[ 21%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icallimits.c.o[0m
+[ 21%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalmemory.c.o[0m
+[ 23%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalparser.c.o[0m
+[ 23%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalparameter.c.o[0m
+[ 23%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalproperty.c.o[0m
+[ 24%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalrecur.c.o[0m
+[ 24%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalstrarray.c.o[0m
+[ 25%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icaltime_p.c.o[0m
+[ 26%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icaltime.c.o[0m
+[ 26%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icaltimezone_p.c.o[0m
+[ 27%] [1m[32mLinking C executable ../../bin/ical-glib-src-generator[0m
+[ 28%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icaltimezone.c.o[0m
+[ 28%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalduration.c.o[0m
+[ 29%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalperiod.c.o[0m
+[ 30%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icaltypes.c.o[0m
+[ 30%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalvalue.c.o[0m
+[ 31%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icalpvl_p.c.o[0m
+[ 31%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/qsort_gen.c.o[0m
+[ 32%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icallangbind_p.c.o[0m
+[ 32%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/icaldate_p.c.o[0m
+[ 33%] [32mBuilding C object src/libical/CMakeFiles/ical.dir/byref.c.o[0m
+[ 34%] [1m[32mLinking C shared library ../../lib/libical.so[0m
+[ 34%] Built target ical-glib-src-generator
+[ 34%] Built target ical
+[ 37%] [32mBuilding CXX object src/libical/CMakeFiles/ical_cxx.dir/icalparameter_cxx.cpp.o[0m
+[ 37%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardderivedproperty.c.o[0m
+[ 37%] [32mBuilding C object src/libicalvcal/CMakeFiles/icalvcal.dir/icalvcal.c.o[0m
+[ 37%] [32mBuilding CXX object src/libical/CMakeFiles/ical_cxx.dir/icalproperty_cxx.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/libical/CMakeFiles/ical_cxx.dir/icalvalue_cxx.cpp.o[0m
+[ 39%] [32mBuilding C object src/libicalvcal/CMakeFiles/icalvcal.dir/vobject.c.o[0m
+[ 39%] [32mBuilding C object src/libicalvcal/CMakeFiles/icalvcal.dir/vcaltmp.c.o[0m
+[ 40%] [1m[34mRun the gobject introspection scanner[0m
+[ 41%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalcalendar.c.o[0m
+[ 42%] [1m[34mRun the gobject introspection scanner[0m
+[ 42%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalclassify.c.o[0m
+[ 43%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalcluster.c.o[0m
+[ 44%] [32mBuilding C object src/libicalvcal/CMakeFiles/icalvcal.dir/vcc.c.o[0m
+[ 44%] [32mBuilding CXX object src/libical/CMakeFiles/ical_cxx.dir/vcomponent_cxx.cpp.o[0m
+[ 45%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardderivedparameter.c.o[0m
+[ 45%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalgauge.c.o[0m
+[ 46%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icaldirset.c.o[0m
+[ 46%] [1m[32mLinking C shared library ../../lib/libicalvcal.so[0m
+[ 46%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardrestriction.c.o[0m
+[ 47%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalfileset.c.o[0m
+[ 47%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalset.c.o[0m
+[ 48%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardderivedvalue.c.o[0m
+[ 49%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalspanlist.c.o[0m
+[ 49%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardcomponent.c.o[0m
+[ 50%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardparameter.c.o[0m
+[ 50%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalmessage.c.o[0m
+[ 51%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardparser.c.o[0m
+[ 52%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalsslexer.c.o[0m
+[ 53%] [1m[32mLinking CXX shared library ../../lib/libical_cxx.so[0m
+[ 53%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardproperty.c.o[0m
+[ 53%] [32mBuilding C object src/libicalss/CMakeFiles/icalss.dir/icalssyacc.c.o[0m
+[ 54%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardstructured.c.o[0m
+[ 54%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardtextlist.c.o[0m
+[ 55%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardtime.c.o[0m
+[ 56%] [32mBuilding C object src/libicalvcard/CMakeFiles/icalvcard.dir/vcardvalue.c.o[0m
+[ 57%] [1m[32mLinking C shared library ../../lib/libicalss.so[0m
+[ 57%] [1m[32mLinking C shared library ../../lib/libicalvcard.so[0m
+g-ir-scanner: link: cc -o /var/tmp/hokuto/libical-58/build/build/src/libical/tmp-introspect2bdaseao/ICal-4.0 -march=native -O2 -pipe -fomit-frame-pointer -flto=10 /var/tmp/hokuto/libical-58/build/build/src/libical/tmp-introspect2bdaseao/ICal-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/var/tmp/hokuto/libical-58/build/build/lib -Wl,-rpath,/var/tmp/hokuto/libical-58/build/build/lib -lical -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+g-ir-scanner: link: cc -o /var/tmp/hokuto/libical-58/build/build/src/libical/tmp-introspectw_wbwf9d/ICal-4.0 -march=native -O2 -pipe -fomit-frame-pointer -flto=10 /var/tmp/hokuto/libical-58/build/build/src/libical/tmp-introspectw_wbwf9d/ICal-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/var/tmp/hokuto/libical-58/build/build/lib -Wl,-rpath,/var/tmp/hokuto/libical-58/build/build/lib -lical -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+g-ir-scanner: ICal: warning: 1207 warnings suppressed (use --warn-all to see them)
+[ 57%] [1m[34mTarget for the gobject introspection compiler[0m
+[ 57%] Built target gir-girs-ICal_4_0_gir
+g-ir-scanner: ICal: warning: 1207 warnings suppressed (use --warn-all to see them)
+[ 57%] Built target icalvcal
+[ 58%] [1m[34mRun the gobject introspection compiler[0m
+[ 58%] Built target icalss
+[ 58%] [32mBuilding C object examples/CMakeFiles/doesnothing.dir/access_properties_and_parameters.c.o[0m
+[ 59%] [32mBuilding C object examples/CMakeFiles/doesnothing.dir/errors.c.o[0m
+[ 59%] [32mBuilding C object examples/CMakeFiles/doesnothing.dir/main.c.o[0m
+[ 60%] [32mBuilding C object examples/CMakeFiles/doesnothing.dir/parse_text.c.o[0m
+[ 61%] [32mBuilding C object examples/CMakeFiles/doesnothing.dir/access_components.c.o[0m
+[ 61%] Built target ical_cxx
+[ 62%] [32mBuilding CXX object src/libicalss/CMakeFiles/icalss_cxx.dir/icalspanlist_cxx.cpp.o[0m
+[ 62%] [1m[34mTarget for the gobject introspection typelibs[0m
+[ 62%] Built target gir-typelibs-ICal_4_0_gir
+[ 63%] [1m[32mLinking CXX executable ../bin/doesnothing[0m
+[ 63%] [1m[32mLinking CXX shared library ../../lib/libicalss_cxx.so[0m
+[ 63%] Built target doesnothing
+[ 63%] Built target icalss_cxx
+[ 63%] Built target icalvcard
+[ 63%] [1m[34mGenerate the libical-glib sources[0m
+[ 65%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-datetimeperiod.c.o[0m
+[ 65%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-component.c.o[0m
+[ 65%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-comp-iter.c.o[0m
+[ 65%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-derived-property.c.o[0m
+[ 66%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-derived-value.c.o[0m
+[ 66%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-enum-array.c.o[0m
+[ 67%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-duration.c.o[0m
+[ 68%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-array.c.o[0m
+[ 68%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-attach.c.o[0m
+[ 69%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-derived-parameter.c.o[0m
+[ 70%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-enums.c.o[0m
+[ 70%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-error.c.o[0m
+[ 71%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-geo.c.o[0m
+[ 72%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-limits.c.o[0m
+[ 73%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-parameter.c.o[0m
+[ 73%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-memory.c.o[0m
+[ 73%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-param-iter.c.o[0m
+[ 74%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-parser.c.o[0m
+[ 75%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-period.c.o[0m
+[ 75%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-property.c.o[0m
+[ 76%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-prop-iter.c.o[0m
+[ 76%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-recur-iterator.c.o[0m
+[ 77%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-recurrence.c.o[0m
+[ 78%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-recur.c.o[0m
+[ 78%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-reqstat.c.o[0m
+[ 79%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-restriction.c.o[0m
+[ 79%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-str-array.c.o[0m
+[ 80%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-time-span.c.o[0m
+[ 81%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-time.c.o[0m
+[ 81%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-timezone.c.o[0m
+[ 82%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-trigger.c.o[0m
+[ 82%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-unknowntokenhandling.c.o[0m
+[ 83%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-value.c.o[0m
+[ 84%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-component.c.o[0m
+[ 84%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-derived-parameter.c.o[0m
+[ 85%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-derived-property.c.o[0m
+[ 85%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-derived-value.c.o[0m
+[ 86%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-enum-array.c.o[0m
+[ 86%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-geo.c.o[0m
+[ 87%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-parameter.c.o[0m
+[ 88%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-parser.c.o[0m
+[ 88%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-property.c.o[0m
+[ 89%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-restriction.c.o[0m
+[ 90%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-structured.c.o[0m
+[ 90%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-str-array.c.o[0m
+[ 91%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-time.c.o[0m
+[ 91%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-tz.c.o[0m
+[ 92%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-vcard-value.c.o[0m
+[ 92%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib.dir/i-cal-object.c.o[0m
+[ 93%] [1m[32mLinking C shared library ../../lib/libical-glib.so[0m
+[ 93%] Built target ical-glib
+[ 95%] [1m[34mRun the gobject introspection scanner[0m
+[ 95%] [1m[34mRun the gobject introspection scanner[0m
+[ 96%] [1m[34mRun the gobject introspection scanner[0m
+[ 97%] [32mBuilding C object src/libical-glib/CMakeFiles/ical-glib-build-check.dir/ical-glib-build-check.c.o[0m
+[ 97%] [1m[32mLinking C executable ../../bin/ical-glib-build-check[0m
+[ 97%] Built target ical-glib-build-check
+g-ir-scanner: link: cc -o /var/tmp/hokuto/libical-58/build/build/src/libical-glib/tmp-introspect4_ivd9qp/ICalGLib-4.0 -march=native -O2 -pipe -fomit-frame-pointer -flto=10 /var/tmp/hokuto/libical-58/build/build/src/libical-glib/tmp-introspect4_ivd9qp/ICalGLib-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/var/tmp/hokuto/libical-58/build/build/lib -Wl,-rpath,/var/tmp/hokuto/libical-58/build/build/lib -lical-glib -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+g-ir-scanner: link: cc -o /var/tmp/hokuto/libical-58/build/build/src/libical-glib/tmp-introspectbjmrkvkb/ICalGLib-4.0 -march=native -O2 -pipe -fomit-frame-pointer -flto=10 /var/tmp/hokuto/libical-58/build/build/src/libical-glib/tmp-introspectbjmrkvkb/ICalGLib-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/var/tmp/hokuto/libical-58/build/build/lib -Wl,-rpath,/var/tmp/hokuto/libical-58/build/build/lib -lical-glib -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+g-ir-scanner: link: cc -o /var/tmp/hokuto/libical-58/build/build/src/libical-glib/tmp-introspectb9uzlg72/ICalGLib-4.0 -march=native -O2 -pipe -fomit-frame-pointer -flto=10 /var/tmp/hokuto/libical-58/build/build/src/libical-glib/tmp-introspectb9uzlg72/ICalGLib-4.0.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/var/tmp/hokuto/libical-58/build/build/lib -Wl,-rpath,/var/tmp/hokuto/libical-58/build/build/lib -lical-glib -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+[ 97%] [1m[34mRun the gobject introspection compiler[0m
+[ 97%] [1m[34mTarget for the gobject introspection compiler[0m
+[ 97%] Built target gir-girs-ICalGLib_4_0_gir
+[ 98%] [1m[34mTarget for the gobject introspection typelibs[0m
+[ 98%] Built target gir-typelibs-ICalGLib_4_0_gir
+[ 99%] [1m[34mRun the gobject introspection compiler[0m
+[ 99%] [1m[34mRun the tool to generate the Vala API[0m
+Generation succeeded - 0 warning(s)
+[100%] [1m[34mTarget to run valafile[0m
+[100%] Built target valafile
+[100%] Built target vala
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/share/gir-1.0/ICal-4.0.gir
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/girepository-1.0/ICal-4.0.typelib
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libical.so.4.0.1
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libical.so.4.0
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libical.so
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/pkgconfig/libical.pc
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libical_cxx.so.4.0.1
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libical_cxx.so.4.0
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libical-58/output/usr/lib64/libical_cxx.so.4.0.1" to ""
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libical_cxx.so
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/ical.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalarray.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalattach.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalcomponent.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalderivedproperty.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalderivedparameter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalderivedvalue.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalduration.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalenumarray.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalenums.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalerror.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icallimits.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalmemory.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalparameter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalparser.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalperiod.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalproperty.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalrecur.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalrestriction.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalstrarray.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icaltime_p.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icaltime.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icaltimezone.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icaltypes.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalvalue.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/libical_deprecated.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/libical_sentinel.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/libical_ical_export.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalparameter_cxx.hpp
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalproperty_cxx.hpp
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalvalue_cxx.hpp
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icptrholder_cxx.hpp
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcomponent_cxx.hpp
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalss.so.4.0.1
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalss.so.4.0
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libical-58/output/usr/lib64/libicalss.so.4.0.1" to ""
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalss.so
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/pkgconfig/libicalss.pc
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalss_cxx.so.4.0.1
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalss_cxx.so.4.0
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libical-58/output/usr/lib64/libicalss_cxx.so.4.0.1" to ""
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalss_cxx.so
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalss.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalcalendar.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalclassify.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalcluster.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icaldirset.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icaldirsetimpl.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalfileset.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalfilesetimpl.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalgauge.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalgaugeimpl.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalmessage.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalset.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalspanlist.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalssyacc.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/libical_icalss_export.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalspanlist_cxx.hpp
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalvcal.so.4.0.1
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalvcal.so.4.0
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libical-58/output/usr/lib64/libicalvcal.so.4.0.1" to ""
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalvcal.so
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/pkgconfig/libicalvcal.pc
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/icalvcal.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcaltmp.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcc.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vobject.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/libical_vcal_export.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/libexec/libical/ical-glib-src-generator
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/cmake/LibIcal/IcalGlibSrcGenerator.cmake
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/cmake/LibIcal/IcalGlibSrcGenerator-release.cmake
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/share/gir-1.0/ICalGLib-4.0.gir
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/girepository-1.0/ICalGLib-4.0.typelib
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/share/vala/vapi/libical-glib.vapi
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libical-glib.so.4.0.1
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libical-glib.so.4.0
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libical-58/output/usr/lib64/libical-glib.so.4.0.1" to ""
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libical-glib.so
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/libical-glib.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-object.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-forward-declarations.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-array.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-attach.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-comp-iter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-component.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-datetimeperiod.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-derived-parameter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-derived-property.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-derived-value.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-duration.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-enum-array.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-enums.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-error.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-geo.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-limits.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-memory.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-parameter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-param-iter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-parser.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-period.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-property.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-prop-iter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-recur-iterator.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-recurrence.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-recur.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-reqstat.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-restriction.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-str-array.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-time-span.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-time.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-timezone.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-trigger.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-unknowntokenhandling.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-value.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-component.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-derived-parameter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-derived-property.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-derived-value.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-enum-array.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-geo.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-parameter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-parser.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-property.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-restriction.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-str-array.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-structured.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-time.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-tz.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical-glib/i-cal-vcard-value.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/pkgconfig/libical-glib.pc
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalvcard.so.4.0.1
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalvcard.so.4.0
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libical-58/output/usr/lib64/libicalvcard.so.4.0.1" to ""
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/libicalvcard.so
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/pkgconfig/libicalvcard.pc
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcard.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardderivedproperty.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardderivedparameter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardderivedvalue.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/libical_vcard_export.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardtime.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardtypes.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardcomponent.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardenumarray.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardparameter.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardparser.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardproperty.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardstrarray.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardstructured.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/include/libical/vcardvalue.h
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/cmake/LibIcal/LibIcalConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/cmake/LibIcal/LibIcalConfig.cmake
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/cmake/LibIcal/LibIcalTargets.cmake
+-- Installing: /var/tmp/hokuto/libical-58/output/usr/lib64/cmake/LibIcal/LibIcalTargets-release.cmake
+
+Script done on 2026-05-15 10:58:16+07:00 [COMMAND_EXIT_CODE="0"]
