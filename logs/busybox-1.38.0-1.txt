@@ -1,0 +1,83 @@
+Script started on 2026-05-18 14:03:33+07:00 [COMMAND="cd /var/tmp/hokuto/busybox-29/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/busybox-29/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/busybox-29/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/busybox-29/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/busybox-29/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/busybox-29/build/.cache' /repo/sauzeros/extra/busybox/build /var/tmp/hokuto/busybox-29/output 1.38.0 busybox" <not executed on terminal>]
+  GEN     include/applets.h
+  GEN     include/usage.h
+  GEN     init/Kbuild
+  GEN     init/Config.in
+  GEN     procps/Kbuild
+  GEN     procps/Config.in
+  GEN     scripts/Kbuild
+  GEN     sysklogd/Kbuild
+  GEN     sysklogd/Config.in
+  GEN     networking/Kbuild
+  GEN     networking/Config.in
+  GEN     networking/libiproute/Kbuild
+  GEN     networking/udhcp/Kbuild
+  GEN     networking/udhcp/Config.in
+  GEN     runit/Kbuild
+  GEN     runit/Config.in
+  GEN     coreutils/Kbuild
+  GEN     coreutils/Config.in
+  GEN     coreutils/libcoreutils/Kbuild
+  GEN     debianutils/Kbuild
+  GEN     debianutils/Config.in
+  GEN     archival/Kbuild
+  GEN     archival/Config.in
+  GEN     archival/libarchive/Kbuild
+  GEN     loginutils/Kbuild
+  GEN     loginutils/Config.in
+  GEN     libbb/Kbuild
+  GEN     libbb/Config.in
+  GEN     libbb/yescrypt/Kbuild
+  GEN     applets/Kbuild
+  GEN     modutils/Kbuild
+  GEN     modutils/Config.in
+  GEN     miscutils/Kbuild
+  GEN     miscutils/Config.in
+  GEN     findutils/Kbuild
+  GEN     findutils/Config.in
+  GEN     printutils/Kbuild
+  GEN     printutils/Config.in
+  GEN     util-linux/Kbuild
+  GEN     util-linux/Config.in
+  GEN     util-linux/volume_id/Kbuild
+  GEN     util-linux/volume_id/Config.in
+  GEN     klibc-utils/Kbuild
+  GEN     klibc-utils/Config.in
+  GEN     console-tools/Kbuild
+  GEN     console-tools/Config.in
+  GEN     selinux/Kbuild
+  GEN     selinux/Config.in
+  GEN     shell/Kbuild
+  GEN     shell/Config.in
+  GEN     libpwdgrp/Kbuild
+  GEN     e2fsprogs/Kbuild
+  GEN     e2fsprogs/Config.in
+  GEN     editors/Kbuild
+  GEN     editors/Config.in
+  GEN     mailutils/Kbuild
+  GEN     mailutils/Config.in
+scripts/kconfig/conf -s Config.in
+#
+# using defaults found in .config
+#
+.config:1154:warning: trying to assign nonexistent symbol ASH_SLEEP
+*
+* Restart config...
+*
+*
+* Settings
+*
+Enable compatibility for full-blown desktop systems (8kb) (DESKTOP) [Y/n/?] y
+Provide compatible behavior for rare corner cases (bigger code) (EXTRA_COMPAT) [N/y/?] n
+Building for Fedora distribution (FEDORA_COMPAT) [N/y/?] n
+Enable obsolete features removed before SUSv3 (INCLUDE_SUSv2) [Y/n/?] y
+Support --long-options (LONG_OPTS) [Y/?] y
+Show applet usage messages (SHOW_USAGE) [Y/n/?] y
+  Show verbose applet usage messages (FEATURE_VERBOSE_USAGE) [Y/n/?] y
+  Store applet usage messages in compressed form (FEATURE_COMPRESS_USAGE) [Y/n/?] y
+Support files > 2 GB (LFS) [Y/n/?] y
+  Support 64bit wide time types (TIME64) [Y/n/?] (NEW) make[2]: *** [/var/tmp/hokuto/busybox-29/build/scripts/kconfig/Makefile:40: silentoldconfig] Error 1
+make[1]: *** [/var/tmp/hokuto/busybox-29/build/Makefile:444: silentoldconfig] Error 2
+make: *** [Makefile:523: include/autoconf.h] Error 2
+
+Script done on 2026-05-18 14:03:36+07:00 [COMMAND_EXIT_CODE="2"]
