@@ -1,0 +1,953 @@
+Script started on 2026-05-19 04:45:57+07:00 [COMMAND="cd /var/tmp/hokuto/haruna-38/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/haruna-38/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/haruna-38/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/haruna-38/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/haruna-38/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/haruna-38/build/.cache' /repo/kde/haruna/build /var/tmp/hokuto/haruna-38/output 1.8.0 haruna" <not executed on terminal>]
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.5") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Libmpv: /usr/lib/libmpv.so (found version "2.5.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Found FFmpeg: /usr/lib/libavcodec.so;/usr/lib/libavformat.so;/usr/lib/libavutil.so  found components: AVCODEC AVFORMAT AVUTIL
+-- Found Ytdlp: /usr/bin/yt-dlp
+-- The following RUNTIME packages have been found:
+
+ * Ytdlp, needed to play videos from youtube and other online sources, <https://github.com/yt-dlp/yt-dlp>
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6ShaderToolsTools (required version >= 6.11.1)
+ * Qt6DBusTools (required version >= 6.11.1)
+ * WrapVulkanHeaders
+ * Qt6QmlTools (required version >= 6.11.1)
+ * Qt6QuickTools (required version >= 6.11.1)
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Qt6WidgetsTools (required version >= 6.11.1)
+ * PkgConfig
+
+-- The following RECOMMENDED packages have been found:
+
+ * Breeze, <https://api.kde.org/frameworks/breeze-icons/html/index.html>
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.10.0), Extra modules and scripts for CMake, <https://api.kde.org/ecm/>
+ * Qt6Core5Compat (required version >= 6.6.0)
+ * Qt6QuickControls2 (required version >= 6.6.0)
+ * Qt6Sql (required version >= 6.6.0)
+ * Qt6ShaderTools (required version >= 6.6.0)
+ * MpvQt, <https://invent.kde.org/libraries/mpvqt>
+ * Qt6DBus (required version >= 6.9.0)
+ * Qt6Qml (required version >= 6.9.0)
+ * KF6ColorScheme (required version >= 6.10.0), <https://invent.kde.org/frameworks/kcolorscheme>
+ * KF6Config (required version >= 6.10.0), <https://api.kde.org/frameworks/kconfig/html/index.html>
+ * Qt6Core (required version >= 6.9.0)
+ * KF6FileMetaData (required version >= 6.10.0), <https://api.kde.org/frameworks/kfilemetadata/html/index.html>
+ * Gettext
+ * KF6I18n (required version >= 6.10.0), <https://api.kde.org/frameworks/ki18n/html/index.html>
+ * KF6IconThemes (required version >= 6.10.0), <https://api.kde.org/frameworks/kiconthemes/html/index.html>
+ * KF6CoreAddons (required version >= 6.26.0), <https://api.kde.org/frameworks/kcoreaddons/html/index.html>
+ * Qt6Gui (required version >= 6.9.0)
+ * KF6KIO (required version >= 6.10.0), <https://api.kde.org/frameworks/kio/html/index.html>
+ * Qt6Quick (required version >= 6.9.0)
+ * KF6Kirigami (required version >= 6.10.0), <https://api.kde.org/frameworks/kirigami/html/index.html>
+ * KF6WindowSystem (required version >= 6.10.0), <https://api.kde.org/frameworks/kwindowsystem/html/index.html>
+ * KF6Crash (required version >= 6.10.0), <https://api.kde.org/frameworks/kcrash/html/index.html>
+ * KDSingleApplication-qt6, helper class for single-instance policy applications, <https://github.com/KDAB/KDSingleApplication>
+ * FFmpeg, needed for playlist and mpris thumbnails, <https://ffmpeg.org>
+
+-- not found icons_at_22px /var/tmp/hokuto/haruna-38/build/data/icons/22-apps-haruna.png
+-- not found icons_at_44px /var/tmp/hokuto/haruna-38/build/data/icons/44-apps-haruna.png
+-- not found icons_at_150px /var/tmp/hokuto/haruna-38/build/data/icons/150-apps-haruna.png
+-- not found icons_at_310px /var/tmp/hokuto/haruna-38/build/data/icons/310-apps-haruna.png
+[0mshader/colorfill.frag -> shader/colorfill.frag.qsb exposed as ://shader/colorfill.frag.qsb[0m
+[33mCMake Warning (dev) at /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:3565 (message):
+  Qt policy QTP0004 is not set: You need qmldir files for each extra
+  directory that contains .qml files for your module.  Check
+  https://doc.qt.io/qt-6/qt-cmake-policy-qtp0004.html for policy details.
+  Use the qt_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4013 (__qt_internal_setup_policy)
+  /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:1035 (qt6_target_qml_sources)
+  /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:1507 (qt6_add_qml_module)
+  src/CMakeLists.txt:78 (qt_add_qml_module)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'Kirigamiplugin' is a dependency of 'haruna', but the link
+  target it defines (KF6Kirigamiplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'itemmodelsplugin' is a dependency of 'haruna', but the link
+  target it defines (itemmodelsplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'kquickcontrols' is a dependency of 'haruna', but the link
+  target it defines (kquickcontrols) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'kcoreaddonsplugin' is a dependency of 'haruna', but the
+  link target it defines (KF6::kcoreaddonsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KF6ConfigQmlplugin' is a dependency of 'haruna', but the
+  link target it defines (KF6ConfigQmlplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiPrivateplugin' is a dependency of 'haruna', but the
+  link target it defines (KF6KirigamiPrivateplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiPolyfillplugin' is a dependency of 'haruna', but
+  the link target it defines (KF6KirigamiPolyfillplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiControlsplugin' is a dependency of 'haruna', but
+  the link target it defines (KF6KirigamiControlsplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiPlatformplugin' is a dependency of 'haruna', but
+  the link target it defines (KF6::KirigamiPlatformplugin) does not exist in
+  the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiDialogsplugin' is a dependency of 'haruna', but the
+  link target it defines (KF6KirigamiDialogsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiLayoutsplugin' is a dependency of 'haruna', but the
+  link target it defines (KF6KirigamiLayoutsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiFormsplugin' is a dependency of 'haruna', but the
+  link target it defines (KF6KirigamiFormsplugin) does not exist in the
+  current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'kquickcontrolsprivateplugin' is a dependency of 'haruna',
+  but the link target it defines (kquickcontrolsprivateplugin) does not exist
+  in the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiLayoutsPrivateplugin' is a dependency of 'haruna',
+  but the link target it defines (KF6KirigamiLayoutsPrivateplugin) does not
+  exist in the current scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiFormsPrivateTemplatesplugin' is a dependency of
+  'haruna', but the link target it defines
+  (KF6KirigamiFormsPrivateTemplatesplugin) does not exist in the current
+  scope.  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiFormsPrivateFlatplugin' is a dependency of
+  'haruna', but the link target it defines
+  (KF6KirigamiFormsPrivateFlatplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+[33mCMake Warning at /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4813 (message):
+  The qml plugin 'KirigamiFormsPrivateCardsplugin' is a dependency of
+  'haruna', but the link target it defines
+  (KF6KirigamiFormsPrivateCardsplugin) does not exist in the current scope.
+  The plugin will not be linked.
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (qt6_import_qml_plugins)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:818 (cmake_language)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:898 (_qt_internal_finalize_executable)
+  /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:867:EVAL:1 (qt6_finalize_target)
+  src/CMakeLists.txt:DEFERRED
+
+[0m
+-- Configuring done (3.7s)
+-- Generating done (0.2s)
+-- Build files have been written to: /var/tmp/hokuto/haruna-38/build/build
+[  1%] [1m[34mCopying haruna qml sources into build dir[0m
+[  1%] [1m[34mGenerating mo...[0m
+[  1%] [1m[34mCopying youtube qml sources into build dir[0m
+[  3%] [1m[34mGenerating ts...[0m
+[  3%] [1m[34mCopying haruna qml resources into build dir[0m
+[  3%] [1m[34mRunning qmlimportscanner for haruna[0m
+[  3%] [32mBuilding CXX object src/youtube/CMakeFiles/youtube_resources_1.dir/.qt/rcc/qrc_qmake_org_kde_haruna_youtube_init.cpp.o[0m
+[  3%] [1m[34mCopying framedecoder qml resources into build dir[0m
+[  3%] [1m[34mPopulating .qmlls.ini file at /var/tmp/hokuto/haruna-38/build/build/.qt/.qmlls.build.ini[0m
+[  3%] [1m[34mCopying youtube qml resources into build dir[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/youtube/youtube_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[  3%] Built target youtube_copy_qml
+[  3%] Built target framedecoder_copy_res
+[  3%] Built target tsfiles-2655919e513bdebd1e1ff35fe48e5fcf
+[  3%] Built target haruna_copy_res
+[  3%] Built target haruna_copy_qml
+[  3%] Built target youtube_copy_res
+[  3%] [1m[34mCopying utilities qml resources into build dir[0m
+[  4%] [1m[34mCopying utilities qml sources into build dir[0m
+[  4%] [1m[34mCopying framedecoder qml sources into build dir[0m
+[  4%] [32mBuilding CXX object src/framedecoder/CMakeFiles/framedecoder_resources_1.dir/.qt/rcc/qrc_qmake_org_kde_haruna_framedecoder_init.cpp.o[0m
+[  4%] [1m[34mCopying playlist qml sources into build dir[0m
+[  5%] [1m[34mCopying playlist qml resources into build dir[0m
+[  5%] Built target generate_qmlls_build_ini_file
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/framedecoder/framedecoder_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[  5%] Built target utilities_copy_res
+[  5%] Built target utilities_copy_qml
+[  5%] Built target playlist_copy_res
+[  5%] Built target framedecoder_copy_qml
+[  5%] Built target playlist_copy_qml
+[  5%] Built target youtube_resources_1
+[  6%] [32mBuilding CXX object src/utilities/CMakeFiles/utilities_resources_1.dir/.qt/rcc/qrc_qmake_org_kde_haruna_utilities_init.cpp.o[0m
+[  7%] [1m[34mCopying settings qml sources into build dir[0m
+[  7%] [1m[34mCopying settings qml resources into build dir[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/utilities/utilities_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[  8%] [32mBuilding CXX object src/settings/CMakeFiles/settings_resources_1.dir/.qt/rcc/qrc_qmake_org_kde_haruna_settings_init.cpp.o[0m
+[  8%] Built target settingsplugin_init_autogen_timestamp_deps
+[  8%] Built target utilitiesplugin_init_autogen_timestamp_deps
+[  8%] Built target youtubeplugin_init_autogen_timestamp_deps
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/settings/settings_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[  8%] Built target pofiles-2655919e513bdebd1e1ff35fe48e5fcf
+[  8%] Built target settings_copy_qml
+[  8%] Built target framedecoder_resources_1
+[  8%] Built target settings_copy_res
+[  9%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist_resources_2.dir/.qt/rcc/qrc_playlist_raw_qml_0_init.cpp.o[0m
+[  9%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist_resources_1.dir/.qt/rcc/qrc_qmake_org_kde_haruna_playlist_init.cpp.o[0m
+[  9%] Built target framedecoderplugin_init_autogen_timestamp_deps
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/playlist/playlist_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[  9%] Built target youtube_autogen_timestamp_deps
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/playlist/playlist_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[  9%] [1m[34mGenerating audiosettings.h, audiosettings.cpp[0m
+[  9%] Built target framedecoder_autogen_timestamp_deps
+[  9%] Built target playlistplugin_init_autogen_timestamp_deps
+[  9%] Built target utilities_autogen_timestamp_deps
+[  9%] [1m[34mAutomatic MOC and UIC for target utilitiesplugin_init[0m
+[ 10%] [1m[34mGenerating generalsettings.h, generalsettings.cpp[0m
+[ 10%] [1m[34mGenerating informationsettings.h, informationsettings.cpp[0m
+[ 10%] Built target utilities_resources_1
+[ 10%] [1m[34mGenerating mousesettings.h, mousesettings.cpp[0m
+[ 10%] [1m[34mAutomatic MOC and UIC for target settingsplugin_init[0m
+[ 10%] [1m[34mGenerating playbacksettings.h, playbacksettings.cpp[0m
+[ 10%] Built target settings_resources_1
+[ 12%] [1m[34mGenerating playlistsettings.h, playlistsettings.cpp[0m
+[ 13%] [1m[34mAutomatic MOC and UIC for target youtubeplugin_init[0m
+[ 13%] Built target playlist_resources_2
+[ 13%] [1m[34mGenerating subtitlessettings.h, subtitlessettings.cpp[0m
+[ 13%] [1m[34mGenerating videosettings.h, videosettings.cpp[0m
+[ 13%] Built target haruna_qmlimportscan
+[ 14%] [1m[34mAutomatic MOC and UIC for target framedecoderplugin_init[0m
+[ 14%] Built target playlist_resources_1
+[ 14%] Built target utilitiesplugin_init_autogen
+[ 14%] [1m[34mAutomatic MOC and UIC for target playlistplugin_init[0m
+[ 15%] [1m[34mAutomatic MOC and UIC for target youtube[0m
+[ 15%] Built target settingsplugin_init_autogen
+[ 15%] [1m[34mRunning AUTOMOC file extraction for target utilitiesplugin_init[0m
+[ 16%] [1m[34mAutomatic MOC and UIC for target utilities[0m
+[ 16%] [1m[34mAutomatic MOC and UIC for target framedecoder[0m
+[ 16%] [1m[34mRunning AUTOMOC file extraction for target settingsplugin_init[0m
+[ 16%] Built target youtubeplugin_init_autogen
+[ 16%] [1m[34mRunning moc --collect-json for target utilitiesplugin_init[0m
+[ 16%] Built target settings_autogen_timestamp_deps
+[ 17%] [1m[34mRunning AUTOMOC file extraction for target youtubeplugin_init[0m
+[ 17%] Built target framedecoderplugin_init_autogen
+[ 17%] [1m[34mRunning moc --collect-json for target settingsplugin_init[0m
+[ 18%] [1m[34mRunning AUTOMOC file extraction for target framedecoderplugin_init[0m
+[ 18%] [1m[34mAutomatic MOC and UIC for target settings[0m
+[ 18%] Built target playlistplugin_init_autogen
+[ 18%] [1m[34mRunning moc --collect-json for target youtubeplugin_init[0m
+[ 19%] [1m[34mRunning AUTOMOC file extraction for target playlistplugin_init[0m
+[ 19%] Built target framedecoder_autogen
+[ 19%] [1m[34mRunning moc --collect-json for target framedecoderplugin_init[0m
+[ 19%] [32mBuilding CXX object src/utilities/CMakeFiles/utilitiesplugin_init.dir/utilitiesplugin_init.cpp.o[0m
+[ 20%] [1m[34mRunning AUTOMOC file extraction for target framedecoder[0m
+[ 21%] [32mBuilding CXX object src/utilities/CMakeFiles/utilitiesplugin_init.dir/utilitiesplugin_init_autogen/mocs_compilation.cpp.o[0m
+[ 21%] [1m[34mRunning moc --collect-json for target playlistplugin_init[0m
+[ 23%] [32mBuilding CXX object src/settings/CMakeFiles/settingsplugin_init.dir/settingsplugin_init_autogen/mocs_compilation.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/utilities/utilitiesplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/utilities/utilitiesplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[ 23%] [1m[34mRunning rcc for resource qmake_org_kde_haruna_framedecoder[0m
+[ 23%] [32mBuilding CXX object src/youtube/CMakeFiles/youtubeplugin_init.dir/youtubeplugin_init_autogen/mocs_compilation.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/settings/settingsplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[ 23%] [32mBuilding CXX object src/youtube/CMakeFiles/youtubeplugin_init.dir/youtubeplugin_init.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/youtube/youtubeplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[ 23%] [32mBuilding CXX object src/settings/CMakeFiles/settingsplugin_init.dir/settingsplugin_init.cpp.o[0m
+[ 24%] [1m[34mRunning moc --collect-json for target framedecoder[0m
+[ 24%] [32mBuilding CXX object src/framedecoder/CMakeFiles/framedecoderplugin_init.dir/framedecoderplugin_init_autogen/mocs_compilation.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/youtube/youtubeplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[ 24%] [32mBuilding CXX object src/playlist/CMakeFiles/playlistplugin_init.dir/playlistplugin_init_autogen/mocs_compilation.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/framedecoder/framedecoderplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/settings/settingsplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[ 24%] [32mBuilding CXX object src/playlist/CMakeFiles/playlistplugin_init.dir/playlistplugin_init.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/playlist/playlistplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/playlist/playlistplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[ 24%] [1m[34mGenerating meta_types/qt6framedecoder_metatypes.json[0m
+[ 24%] [32mBuilding CXX object src/framedecoder/CMakeFiles/framedecoderplugin_init.dir/framedecoderplugin_init.cpp.o[0m
+[ 24%] [1m[34mAutomatic QML type registration for target framedecoder[0m
+[01m[Kcc1plus:[m[K [01;35m[Kwarning: [m[K/var/tmp/hokuto/haruna-38/build/build/src/framedecoder/framedecoderplugin_autogen/include: No such file or directory [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-include-dirs-Wmissing-include-dirs]8;;[m[K]
+[ 24%] [32mBuilding CXX object src/framedecoder/CMakeFiles/framedecoder.dir/framedecoder_autogen/mocs_compilation.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/framedecoder/CMakeFiles/framedecoder.dir/framedecoder_qmltyperegistrations.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/framedecoder/CMakeFiles/framedecoder.dir/.qt/rcc/qrc_qmake_org_kde_haruna_framedecoder.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/framedecoder/CMakeFiles/framedecoder.dir/framedecoder.cpp.o[0m
+[ 25%] Built target utilities_autogen
+[ 26%] [1m[34mRunning AUTOMOC file extraction for target utilities[0m
+[ 26%] [1m[34mRunning rcc for resource qmake_org_kde_haruna_utilities[0m
+[ 26%] Built target youtube_autogen
+[ 26%] [1m[34mRunning moc --collect-json for target utilities[0m
+[ 26%] [1m[34mRunning AUTOMOC file extraction for target youtube[0m
+[ 26%] Built target settings_autogen
+[ 26%] [1m[34mRunning rcc for resource qmake_org_kde_haruna_youtube[0m
+[ 26%] [1m[34mGenerating meta_types/qt6utilities_metatypes.json[0m
+[ 27%] [1m[34mRunning moc --collect-json for target youtube[0m
+[ 28%] [1m[34mGenerating meta_types/qt6youtube_metatypes.json[0m
+[ 28%] [1m[34mAutomatic QML type registration for target utilities[0m
+[ 28%] [1m[34mRunning AUTOMOC file extraction for target settings[0m
+[ 28%] [1m[34mAutomatic QML type registration for target youtube[0m
+[ 29%] [1m[34mRunning rcc for resource qmake_org_kde_haruna_settings[0m
+[ 29%] [1m[34mRunning moc --collect-json for target settings[0m
+[ 29%] [1m[34mGenerating meta_types/qt6settings_metatypes.json[0m
+[ 29%] [32mBuilding CXX object src/youtube/CMakeFiles/youtube.dir/youtube_autogen/mocs_compilation.cpp.o[0m
+[ 29%] [1m[34mAutomatic QML type registration for target settings[0m
+[ 29%] [32mBuilding CXX object src/utilities/CMakeFiles/utilities.dir/utilities_autogen/mocs_compilation.cpp.o[0m
+Warning: audiosettings.h:14: KConfigSkeleton is used as base type but cannot be found.
+Warning: generalsettings.h:16: KConfigSkeleton is used as base type but cannot be found.
+Warning: informationsettings.h:14: KConfigSkeleton is used as base type but cannot be found.
+Warning: mousesettings.h:14: KConfigSkeleton is used as base type but cannot be found.
+Warning: playbacksettings.h:14: KConfigSkeleton is used as base type but cannot be found.
+Warning: playlistsettings.h:14: KConfigSkeleton is used as base type but cannot be found.
+Warning: subtitlessettings.h:14: KConfigSkeleton is used as base type but cannot be found.
+Warning: videosettings.h:16: KConfigSkeleton is used as base type but cannot be found.
+[ 29%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/settings_autogen/mocs_compilation.cpp.o[0m
+[ 29%] Built target youtubeplugin_init
+[ 30%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/settings_qmltyperegistrations.cpp.o[0m
+[ 30%] Built target playlistplugin_init
+[ 31%] [32mBuilding CXX object src/utilities/CMakeFiles/utilities.dir/utilities_qmltyperegistrations.cpp.o[0m
+[ 31%] Built target framedecoderplugin_init
+[ 31%] [32mBuilding CXX object src/youtube/CMakeFiles/youtube.dir/youtube_qmltyperegistrations.cpp.o[0m
+[ 31%] Built target utilitiesplugin_init
+[ 31%] [32mBuilding CXX object src/utilities/CMakeFiles/utilities.dir/.qt/rcc/qrc_qmake_org_kde_haruna_utilities.cpp.o[0m
+[ 31%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/.qt/rcc/qrc_qmake_org_kde_haruna_settings.cpp.o[0m
+[ 31%] Built target settingsplugin_init
+[ 32%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/audiosettings.cpp.o[0m
+[ 32%] [32mBuilding CXX object src/youtube/CMakeFiles/youtube.dir/.qt/rcc/qrc_qmake_org_kde_haruna_youtube.cpp.o[0m
+[ 32%] [32mBuilding CXX object src/youtube/CMakeFiles/youtube.dir/youtube.cpp.o[0m
+[ 32%] [32mBuilding CXX object src/utilities/CMakeFiles/utilities.dir/miscutils.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/generalsettings.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/utilities/CMakeFiles/utilities.dir/pathutils.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/informationsettings.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/utilities/CMakeFiles/utilities.dir/systemutils.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/mousesettings.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/playbacksettings.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/playlistsettings.cpp.o[0m
+[ 36%] [1m[32mLinking CXX static library ../../lib/libyoutube.a[0m
+[ 36%] Built target youtube
+[ 36%] Built target youtubeplugin_autogen_timestamp_deps
+[ 36%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/subtitlessettings.cpp.o[0m
+[ 36%] [1m[32mLinking CXX static library ../../lib/libframedecoder.a[0m
+[ 36%] Built target framedecoder
+[ 36%] [1m[34mAutomatic MOC and UIC for target youtubeplugin[0m
+[ 36%] [32mBuilding CXX object src/settings/CMakeFiles/settings.dir/videosettings.cpp.o[0m
+[ 36%] Built target youtubeplugin_autogen
+[ 36%] Built target framedecoderplugin_autogen_timestamp_deps
+[ 36%] [32mBuilding CXX object src/youtube/CMakeFiles/youtubeplugin.dir/youtubeplugin_autogen/mocs_compilation.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/youtube/CMakeFiles/youtubeplugin.dir/youtubeplugin_org_kde_haruna_youtubePlugin.cpp.o[0m
+[ 36%] [1m[34mAutomatic MOC and UIC for target framedecoderplugin[0m
+[ 36%] Built target framedecoderplugin_autogen
+[ 36%] [32mBuilding CXX object src/framedecoder/CMakeFiles/framedecoderplugin.dir/framedecoderplugin_autogen/mocs_compilation.cpp.o[0m
+[ 37%] [32mBuilding CXX object src/framedecoder/CMakeFiles/framedecoderplugin.dir/framedecoderplugin_org_kde_haruna_framedecoderPlugin.cpp.o[0m
+[ 38%] [1m[32mLinking CXX static library ../org/kde/haruna/youtube/libyoutubeplugin.a[0m
+[ 38%] Built target youtubeplugin
+[ 38%] [1m[32mLinking CXX static library ../org/kde/haruna/framedecoder/libframedecoderplugin.a[0m
+[ 38%] Built target framedecoderplugin
+[ 39%] [1m[32mLinking CXX static library ../../lib/libsettings.a[0m
+[ 39%] Built target settings
+[ 39%] Built target settingsplugin_autogen_timestamp_deps
+[ 40%] [1m[34mAutomatic MOC and UIC for target settingsplugin[0m
+[ 40%] [1m[32mLinking CXX static library ../../lib/libutilities.a[0m
+[ 40%] Built target utilities
+[ 40%] Built target utilitiesplugin_autogen_timestamp_deps
+[ 40%] [1m[34mAutomatic MOC and UIC for target utilitiesplugin[0m
+[ 40%] Built target settingsplugin_autogen
+[ 40%] [32mBuilding CXX object src/settings/CMakeFiles/settingsplugin.dir/settingsplugin_org_kde_haruna_settingsPlugin.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/settings/CMakeFiles/settingsplugin.dir/settingsplugin_autogen/mocs_compilation.cpp.o[0m
+[ 40%] Built target utilitiesplugin_autogen
+[ 40%] [32mBuilding CXX object src/utilities/CMakeFiles/utilitiesplugin.dir/utilitiesplugin_org_kde_haruna_utilitiesPlugin.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/utilities/CMakeFiles/utilitiesplugin.dir/utilitiesplugin_autogen/mocs_compilation.cpp.o[0m
+[ 40%] [1m[32mLinking CXX static library ../org/kde/haruna/settings/libsettingsplugin.a[0m
+[ 40%] Built target settingsplugin
+[ 41%] [1m[32mLinking CXX static library ../org/kde/haruna/utilities/libutilitiesplugin.a[0m
+[ 41%] Built target utilitiesplugin
+[ 41%] Built target playlist_autogen_timestamp_deps
+[ 41%] [1m[34mAutomatic MOC and UIC for target playlist[0m
+[ 41%] Built target playlist_autogen
+[ 41%] [1m[34mRunning rcc for resource playlist_raw_qml_0[0m
+[ 41%] [1m[34mGenerating .rcc/qmlcache/playlist_qmlcache_loader.cpp[0m
+[ 41%] [1m[34mRunning AUTOMOC file extraction for target playlist[0m
+[ 41%] [1m[34mRunning rcc for resource qmake_org_kde_haruna_playlist[0m
+[ 41%] [1m[34mRunning moc --collect-json for target playlist[0m
+[ 41%] [1m[34mGenerating meta_types/qt6playlist_metatypes.json[0m
+[ 42%] [1m[34mAutomatic QML type registration for target playlist[0m
+[ 42%] [1m[34mGenerating .rcc/qmlcache/playlist_PlaylistItemCompact_qml.cpp, .rcc/qmlcache/playlist_PlaylistItemCompact_qml.cpp.aotstats[0m
+[ 43%] [1m[34mGenerating .rcc/qmlcache/playlist_PlaylistItemDelegate_qml.cpp, .rcc/qmlcache/playlist_PlaylistItemDelegate_qml.cpp.aotstats[0m
+[ 43%] [1m[34mGenerating .rcc/qmlcache/playlist_PlaylistItem_qml.cpp, .rcc/qmlcache/playlist_PlaylistItem_qml.cpp.aotstats[0m
+[ 45%] [1m[34mGenerating .rcc/qmlcache/playlist_PlaylistSectionDelegate_qml.cpp, .rcc/qmlcache/playlist_PlaylistSectionDelegate_qml.cpp.aotstats[0m
+[ 45%] [1m[34mGenerating .rcc/qmlcache/playlist_PlaylistTabDelegate_qml.cpp, .rcc/qmlcache/playlist_PlaylistTabDelegate_qml.cpp.aotstats[0m
+[ 45%] [1m[34mGenerating .rcc/qmlcache/playlist_Playlist_qml.cpp, .rcc/qmlcache/playlist_Playlist_qml.cpp.aotstats[0m
+[ 46%] [1m[34mGenerating .rcc/qmlcache/playlist_PlaylistItemWithThumbnail_qml.cpp, .rcc/qmlcache/playlist_PlaylistItemWithThumbnail_qml.cpp.aotstats[0m
+[ 46%] [1m[34mGenerating .rcc/qmlcache/playlist_PlaylistAdvancedSortWindow_qml.cpp, .rcc/qmlcache/playlist_PlaylistAdvancedSortWindow_qml.cpp.aotstats[0m
+[ 46%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.qt/rcc/qrc_qmake_org_kde_haruna_playlist.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlistsortproxymodel.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlistproxymodel.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlistmodel.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlistfilterproxymodel.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlistmultiproxiesmodel.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlistrenamevalidator.cpp.o[0m
+[ 49%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlist_autogen/mocs_compilation.cpp.o[0m
+[ 49%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlist_qmltyperegistrations.cpp.o[0m
+[ 49%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlistsortpropertymodel.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/playlistsortpropertyproxymodel.cpp.o[0m
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortpropertyproxymodel.cpp:[m[K In member function ‘[01m[Kvoid PlaylistSortPropertyProxyModel::[01;32m[KsetSearchText[m[K(const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortpropertyproxymodel.cpp:31:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QSortFilterProxyModel::[01;32m[KinvalidateFilter[m[K()[m[K’ is deprecated: Use begin/endFilterChange() instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   31 |     [01;35m[KinvalidateFilter()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QSortFilterProxyModel:1[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortpropertyproxymodel.h:10[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortpropertyproxymodel.cpp:7[m[K:
+[01m[K/usr/include/qt6/QtCore/qsortfilterproxymodel.h:128:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  128 |     void [01;36m[KinvalidateFilter[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortpropertyproxymodel.cpp:[m[K In member function ‘[01m[Kvoid PlaylistSortPropertyProxyModel::[01;32m[KsetFilterCategory[m[K(uint)[m[K’:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortpropertyproxymodel.cpp:43:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QSortFilterProxyModel::[01;32m[KinvalidateFilter[m[K()[m[K’ is deprecated: Use begin/endFilterChange() instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   43 |     [01;35m[KinvalidateFilter()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/usr/include/qt6/QtCore/qsortfilterproxymodel.h:128:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  128 |     void [01;36m[KinvalidateFilter[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[ 50%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.rcc/qmlcache/playlist_qmlcache_loader.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.rcc/qmlcache/playlist_Playlist_qml.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.rcc/qmlcache/playlist_PlaylistItemDelegate_qml.cpp.o[0m
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortproxymodel.cpp:[m[K In member function ‘[01m[Kvirtual bool PlaylistSortProxyModel::[01;32m[KlessThan[m[K(const QModelIndex&, const QModelIndex&) const[m[K’:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortproxymodel.cpp:250:17:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+  250 |                 [01;35m[Kswitch[m[K (m_sortingOrder) {
+      |                 [01;35m[K^~~~~~[m[K
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortproxymodel.cpp:256:13:[m[K [01;36m[Knote: [m[Khere
+  256 |             [01;36m[Kcase[m[K PlaylistSortPropertyModel::Ascending: {
+      |             [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistfilterproxymodel.cpp:[m[K In member function ‘[01m[Kvoid PlaylistFilterProxyModel::[01;32m[KsetSearchText[m[K(const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistfilterproxymodel.cpp:76:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QSortFilterProxyModel::[01;32m[KinvalidateFilter[m[K()[m[K’ is deprecated: Use begin/endFilterChange() instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     [01;35m[KinvalidateFilter()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QSortFilterProxyModel:1[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistsortproxymodel.h:10[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistfilterproxymodel.h:15[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistfilterproxymodel.cpp:8[m[K:
+[01m[K/usr/include/qt6/QtCore/qsortfilterproxymodel.h:128:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  128 |     void [01;36m[KinvalidateFilter[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistfilterproxymodel.cpp:[m[K In member function ‘[01m[Kvoid PlaylistFilterProxyModel::[01;32m[KmoveItems[m[K(uint, uint)[m[K’:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/playlist/playlistfilterproxymodel.cpp:455:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QSortFilterProxyModel::[01;32m[KinvalidateRowsFilter[m[K()[m[K’ is deprecated: Use begin/endFilterChange(QSortFilterProxyModel::Direction::Rows) instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  455 |     [01;35m[KinvalidateRowsFilter()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/usr/include/qt6/QtCore/qsortfilterproxymodel.h:130:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  130 |     void [01;36m[KinvalidateRowsFilter[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[ 51%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.rcc/qmlcache/playlist_PlaylistItem_qml.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.rcc/qmlcache/playlist_PlaylistItemCompact_qml.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.rcc/qmlcache/playlist_PlaylistItemWithThumbnail_qml.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.rcc/qmlcache/playlist_PlaylistTabDelegate_qml.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.rcc/qmlcache/playlist_PlaylistAdvancedSortWindow_qml.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.rcc/qmlcache/playlist_PlaylistSectionDelegate_qml.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/playlist/CMakeFiles/playlist.dir/.qt/rcc/qrc_playlist_raw_qml_0.cpp.o[0m
+[ 53%] [1m[32mLinking CXX static library ../../lib/libplaylist.a[0m
+[ 53%] Built target playlist
+[ 53%] Built target playlistplugin_autogen_timestamp_deps
+[ 53%] [1m[34mAutomatic MOC and UIC for target playlistplugin[0m
+[ 53%] Built target playlistplugin_autogen
+[ 53%] [32mBuilding CXX object src/playlist/CMakeFiles/playlistplugin.dir/playlistplugin_org_kde_haruna_playlistPlugin.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/playlist/CMakeFiles/playlistplugin.dir/playlistplugin_autogen/mocs_compilation.cpp.o[0m
+[ 54%] [1m[32mLinking CXX static library ../org/kde/haruna/playlist/libplaylistplugin.a[0m
+[ 54%] Built target playlistplugin
+[ 54%] Built target haruna_autogen_timestamp_deps
+[ 54%] [1m[34mAutomatic MOC and UIC for target haruna[0m
+[ 54%] Built target haruna_autogen
+[ 54%] [1m[34mRunning rcc for resource animations[0m
+[ 54%] [1m[34mRunning rcc for resource haruna_raw_qml_0[0m
+[ 54%] [1m[34mRunning rcc for resource qmake_org_kde_haruna[0m
+[ 54%] [1m[34mRunning rcc for resource sql_files[0m
+[ 54%] [1m[34mRunning AUTOMOC file extraction for target haruna[0m
+[ 54%] [1m[34mGenerating .rcc/qmlcache/haruna_qmlcache_loader.cpp[0m
+[ 54%] [1m[34mGenerating screensaverdbusinterface.cpp, screensaverdbusinterface.h[0m
+[ 56%] [1m[34mGenerating .qsb/shader/colorfill.frag.qsb[0m
+[ 57%] [1m[34mRunning moc --collect-json for target haruna[0m
+[ 57%] [1m[34mGenerating moc_screensaverdbusinterface.cpp[0m
+[ 57%] [1m[34mGenerating meta_types/qt6haruna_metatypes.json[0m
+[ 57%] [1m[34mAutomatic QML type registration for target haruna[0m
+[ 58%] [1m[34mRunning rcc for resource URI[0m
+Warning: mpvitem.h:23: MpvAbstractItem is used as base type but cannot be found.
+Warning: mpvpreview.h:14: MpvAbstractItem is used as base type but cannot be found.
+[ 60%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/ColorPickerButton_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/ColorPickerButton_qml.cpp.aotstats[0m
+[ 60%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/HamburgerMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/HamburgerMenu_qml.cpp.aotstats[0m
+[ 60%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/ImageAdjustmentSlider_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/ImageAdjustmentSlider_qml.cpp.aotstats[0m
+[ 60%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/HProgressBar_qml.cpp, .rcc/qmlcache/haruna_qml/HProgressBar_qml.cpp.aotstats[0m
+[ 61%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/InputPopup_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/InputPopup_qml.cpp.aotstats[0m
+[ 61%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/SelectActionPopup_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/SelectActionPopup_qml.cpp.aotstats[0m
+[ 61%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/LabelWithTooltip_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/LabelWithTooltip_qml.cpp.aotstats[0m
+[ 61%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/AudioTracksMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/AudioTracksMenu_qml.cpp.aotstats[0m
+[ 62%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Footer_qml.cpp, .rcc/qmlcache/haruna_qml/Footer_qml.cpp.aotstats[0m
+[ 62%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Actions_qml.cpp, .rcc/qmlcache/haruna_qml/Actions_qml.cpp.aotstats[0m
+[ 62%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/SettingsBasePage_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/SettingsBasePage_qml.cpp.aotstats[0m
+[ 63%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/SettingsHeader_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/SettingsHeader_qml.cpp.aotstats[0m
+[ 63%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/SubtitleTracksMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/SubtitleTracksMenu_qml.cpp.aotstats[0m
+[ 63%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/SubtitlesFolders_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/SubtitlesFolders_qml.cpp.aotstats[0m
+[ 64%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Haruna/Components/ToolTipButton_qml.cpp, .rcc/qmlcache/haruna_qml/Haruna/Components/ToolTipButton_qml.cpp.aotstats[0m
+[ 64%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Header_qml.cpp, .rcc/qmlcache/haruna_qml/Header_qml.cpp.aotstats[0m
+[ 64%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Main_qml.cpp, .rcc/qmlcache/haruna_qml/Main_qml.cpp.aotstats[0m
+[ 64%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/MenuBarLoader_qml.cpp, .rcc/qmlcache/haruna_qml/MenuBarLoader_qml.cpp.aotstats[0m
+[ 64%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/AudioMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/AudioMenu_qml.cpp.aotstats[0m
+[ 65%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/FileMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/FileMenu_qml.cpp.aotstats[0m
+[ 67%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/Global/GlobalAudioMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/Global/GlobalAudioMenu_qml.cpp.aotstats[0m
+[ 67%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/Global/GlobalFileMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/Global/GlobalFileMenu_qml.cpp.aotstats[0m
+[ 67%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/Global/GlobalHelpMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/Global/GlobalHelpMenu_qml.cpp.aotstats[0m
+[ 67%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/Global/GlobalPlaybackMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/Global/GlobalPlaybackMenu_qml.cpp.aotstats[0m
+[ 68%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/Global/GlobalSettingsMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/Global/GlobalSettingsMenu_qml.cpp.aotstats[0m
+[ 68%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/Global/GlobalSubtitlesMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/Global/GlobalSubtitlesMenu_qml.cpp.aotstats[0m
+[ 68%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/Global/GlobalVideoMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/Global/GlobalVideoMenu_qml.cpp.aotstats[0m
+[ 69%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/Global/GlobalViewMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/Global/GlobalViewMenu_qml.cpp.aotstats[0m
+[ 69%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/HelpMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/HelpMenu_qml.cpp.aotstats[0m
+[ 69%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/MpvContextMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/MpvContextMenu_qml.cpp.aotstats[0m
+[ 69%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/PlaybackMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/PlaybackMenu_qml.cpp.aotstats[0m
+[ 69%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/SettingsMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/SettingsMenu_qml.cpp.aotstats[0m
+[ 70%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/SubtitlesMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/SubtitlesMenu_qml.cpp.aotstats[0m
+[ 70%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/VideoMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/VideoMenu_qml.cpp.aotstats[0m
+[ 70%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Menus/ViewMenu_qml.cpp, .rcc/qmlcache/haruna_qml/Menus/ViewMenu_qml.cpp.aotstats[0m
+[ 70%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/MpvVideo_qml.cpp, .rcc/qmlcache/haruna_qml/MpvVideo_qml.cpp.aotstats[0m
+[ 71%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Osd_qml.cpp, .rcc/qmlcache/haruna_qml/Osd_qml.cpp.aotstats[0m
+[ 72%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/AudioSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/AudioSettings_qml.cpp.aotstats[0m
+[ 72%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/CustomCommandsSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/CustomCommandsSettings_qml.cpp.aotstats[0m
+[ 72%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/DebugSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/DebugSettings_qml.cpp.aotstats[0m
+[ 73%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/EditCustomCommand_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/EditCustomCommand_qml.cpp.aotstats[0m
+[ 73%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/GeneralSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/GeneralSettings_qml.cpp.aotstats[0m
+[ 74%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/MouseSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/MouseSettings_qml.cpp.aotstats[0m
+[ 74%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/PlaybackSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/PlaybackSettings_qml.cpp.aotstats[0m
+[ 74%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/PlaylistSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/PlaylistSettings_qml.cpp.aotstats[0m
+[ 74%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/SettingsWindow_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/SettingsWindow_qml.cpp.aotstats[0m
+[ 74%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/ShortcutsSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/ShortcutsSettings_qml.cpp.aotstats[0m
+[ 74%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/SubtitlesSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/SubtitlesSettings_qml.cpp.aotstats[0m
+[ 74%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/Settings/VideoSettings_qml.cpp, .rcc/qmlcache/haruna_qml/Settings/VideoSettings_qml.cpp.aotstats[0m
+[ 74%] [1m[34mGenerating .rcc/qmlcache/haruna_qml/VolumeSlider_qml.cpp, .rcc/qmlcache/haruna_qml/VolumeSlider_qml.cpp.aotstats[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/lockmanager.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/database.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/models/actionsmodel.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/main.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/models/chaptersmodel.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/models/mouseactionsmodel.cpp.o[0m
+[ 76%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/models/customcommandsmodel.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/application.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/haruna_autogen/mocs_compilation.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/models/recentfilesmodel.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/haruna-38/build/src/application.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/application.h:100:36:[m[K [01;35m[Kwarning: [m[K‘[01m[KQQmlPropertyMap::[01;32m[KQQmlPropertyMap[m[K(QObject*)[m[K’ is deprecated: Use create() or the protected two-argument constructor instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  100 |     QQmlPropertyMap *m_actions{new [01;35m[KQQmlPropertyMap[m[K};
+      |                                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtQml/QQmlPropertyMap:1[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/application.h:11[m[K:
+[01m[K/usr/include/qt6/QtQml/qqmlpropertymap.h:28:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   28 |     explicit [01;36m[KQQmlPropertyMap[m[K(QObject *parent = nullptr);
+      |              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/haruna-38/build/src/models/actionsmodel.cpp:[m[K In member function ‘[01m[Kvoid ProxyActionsModel::[01;32m[KsetNameFilter[m[K(const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/models/actionsmodel.cpp:827:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QSortFilterProxyModel::[01;32m[KinvalidateFilter[m[K()[m[K’ is deprecated: Use begin/endFilterChange() instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  827 |     [01;35m[KinvalidateFilter()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QSortFilterProxyModel:1[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/models/actionsmodel.h:12[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/models/actionsmodel.cpp:7[m[K:
+[01m[K/usr/include/qt6/QtCore/qsortfilterproxymodel.h:128:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  128 |     void [01;36m[KinvalidateFilter[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/haruna-38/build/src/models/actionsmodel.cpp:[m[K In member function ‘[01m[Kvoid ProxyActionsModel::[01;32m[KsetTypeFilter[m[K(const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/models/actionsmodel.cpp:833:21:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QSortFilterProxyModel::[01;32m[KinvalidateFilter[m[K()[m[K’ is deprecated: Use begin/endFilterChange() instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  833 |     [01;35m[KinvalidateFilter()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/usr/include/qt6/QtCore/qsortfilterproxymodel.h:128:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  128 |     void [01;36m[KinvalidateFilter[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/haruna-38/build/src/main.cpp:20[m[K:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/application.h:100:36:[m[K [01;35m[Kwarning: [m[K‘[01m[KQQmlPropertyMap::[01;32m[KQQmlPropertyMap[m[K(QObject*)[m[K’ is deprecated: Use create() or the protected two-argument constructor instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  100 |     QQmlPropertyMap *m_actions{new [01;35m[KQQmlPropertyMap[m[K};
+      |                                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtQml/QQmlPropertyMap:1[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/application.h:11[m[K:
+[01m[K/usr/include/qt6/QtQml/qqmlpropertymap.h:28:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   28 |     explicit [01;36m[KQQmlPropertyMap[m[K(QObject *parent = nullptr);
+      |              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[ 78%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/models/subtitlesfoldersmodel.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/models/tracksmodel.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/mpv/mpvitem.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/mpv/mpvpreview.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/thumbnailimageprovider.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/worker.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.qt/rcc/qrc_sql_files.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.qt/rcc/qrc_animations.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.qt/rcc/qrc_URI.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/mpris2/mediaplayer2.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/mpris2/mediaplayer2player.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/screensaverdbusinterface.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/haruna_qmltyperegistrations.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.qt/rcc/qrc_qmake_org_kde_haruna.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qmlcache_loader.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Actions_qml.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/haruna-38/build/src/mpv/mpvitem.cpp:21[m[K:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/application.h:100:36:[m[K [01;35m[Kwarning: [m[K‘[01m[KQQmlPropertyMap::[01;32m[KQQmlPropertyMap[m[K(QObject*)[m[K’ is deprecated: Use create() or the protected two-argument constructor instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  100 |     QQmlPropertyMap *m_actions{new [01;35m[KQQmlPropertyMap[m[K};
+      |                                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtQml/QQmlPropertyMap:1[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/application.h:11[m[K:
+[01m[K/usr/include/qt6/QtQml/qqmlpropertymap.h:28:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   28 |     explicit [01;36m[KQQmlPropertyMap[m[K(QObject *parent = nullptr);
+      |              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[ 83%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Footer_qml.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Header_qml.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/HProgressBar_qml.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/MenuBarLoader_qml.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/MpvVideo_qml.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Osd_qml.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/VolumeSlider_qml.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Main_qml.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/AudioTracksMenu_qml.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/ColorPickerButton_qml.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/haruna-38/build/build/src/haruna_qmltyperegistrations.cpp:14[m[K:
+[01m[K/var/tmp/hokuto/haruna-38/build/src/application.h:100:36:[m[K [01;35m[Kwarning: [m[K‘[01m[KQQmlPropertyMap::[01;32m[KQQmlPropertyMap[m[K(QObject*)[m[K’ is deprecated: Use create() or the protected two-argument constructor instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  100 |     QQmlPropertyMap *m_actions{new [01;35m[KQQmlPropertyMap[m[K};
+      |                                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtQml/QQmlPropertyMap:1[m[K,
+                 from [01m[K/var/tmp/hokuto/haruna-38/build/src/application.h:11[m[K:
+[01m[K/usr/include/qt6/QtQml/qqmlpropertymap.h:28:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   28 |     explicit [01;36m[KQQmlPropertyMap[m[K(QObject *parent = nullptr);
+      |              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[ 86%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/HamburgerMenu_qml.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/ImageAdjustmentSlider_qml.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/InputPopup_qml.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/LabelWithTooltip_qml.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/SelectActionPopup_qml.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/SettingsBasePage_qml.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/SettingsHeader_qml.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/SubtitlesFolders_qml.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/SubtitleTracksMenu_qml.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Haruna/Components/ToolTipButton_qml.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/AudioMenu_qml.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/MpvContextMenu_qml.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/FileMenu_qml.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/HelpMenu_qml.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/PlaybackMenu_qml.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/SettingsMenu_qml.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/SubtitlesMenu_qml.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/VideoMenu_qml.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/ViewMenu_qml.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/Global/GlobalAudioMenu_qml.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/Global/GlobalFileMenu_qml.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/Global/GlobalHelpMenu_qml.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/Global/GlobalPlaybackMenu_qml.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/Global/GlobalSettingsMenu_qml.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/Global/GlobalSubtitlesMenu_qml.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/Global/GlobalVideoMenu_qml.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Menus/Global/GlobalViewMenu_qml.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/GeneralSettings_qml.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/PlaybackSettings_qml.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/VideoSettings_qml.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/AudioSettings_qml.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/SubtitlesSettings_qml.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/PlaylistSettings_qml.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/MouseSettings_qml.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/ShortcutsSettings_qml.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/CustomCommandsSettings_qml.cpp.o[0m
+[ 98%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/EditCustomCommand_qml.cpp.o[0m
+[ 98%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/DebugSettings_qml.cpp.o[0m
+[ 98%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.rcc/qmlcache/haruna_qml/Settings/SettingsWindow_qml.cpp.o[0m
+[100%] [32mBuilding CXX object src/CMakeFiles/haruna.dir/.qt/rcc/qrc_haruna_raw_qml_0.cpp.o[0m
+[100%] [1m[32mLinking CXX executable ../bin/haruna[0m
+[100%] Built target haruna
+-- Install configuration: ""
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/lt/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ca/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/zh_TW/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/it/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/lv/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ko/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/en_GB/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ja/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ta/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/gl/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sl/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sk/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/pt/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sv/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ro/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ga/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/uk/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/hi/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/nl/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/fi/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/fr/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/zh_CN/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ka/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/pl/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/cs/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/pt_BR/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/de/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/eu/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/tr/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ru/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ast/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/es/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/he/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ar/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/sa/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ca@valencia/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/eo/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/ia/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/locale/id/LC_MESSAGES/haruna.mo
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/scalable/apps/haruna.svg
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/16x16/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/22x22/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/32x32/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/44x44/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/48x48/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/64x64/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/128x128/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/150x150/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/256x256/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/310x310/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/icons/hicolor/512x512/apps/haruna.png
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/applications/org.kde.haruna.desktop
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/share/metainfo/org.kde.haruna.metainfo.xml
+-- Installing: /var/tmp/hokuto/haruna-38/output/usr/bin/haruna
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/haruna-38/output/usr/bin/haruna" to "$ORIGIN:$ORIGIN/../lib64"
+
+Script done on 2026-05-19 04:46:41+07:00 [COMMAND_EXIT_CODE="0"]
