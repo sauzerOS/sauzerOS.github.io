@@ -1,0 +1,761 @@
+Script started on 2026-05-19 10:53:43+07:00 [COMMAND="cd /var/tmp/hokuto/libxi-45/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libxi-45/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libxi-45/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libxi-45/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libxi-45/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libxi-45/build/.cache' /repo/sauzeros/extra/libxi/build /var/tmp/hokuto/libxi-45/output 1.8.3 libxi" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for cc options needed to detect all undeclared functions... none needed
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if cc supports -Werror=unknown-warning-option... no
+checking if cc supports -Werror=unused-command-line-argument... no
+checking if cc supports -Wall... yes
+checking if cc supports -Wpointer-arith... yes
+checking if cc supports -Wmissing-declarations... yes
+checking if cc supports -Wformat=2... yes
+checking if cc supports -Wstrict-prototypes... yes
+checking if cc supports -Wmissing-prototypes... yes
+checking if cc supports -Wnested-externs... yes
+checking if cc supports -Wbad-function-cast... yes
+checking if cc supports -Wold-style-definition... yes
+checking if cc supports -Wunused... yes
+checking if cc supports -Wuninitialized... yes
+checking if cc supports -Wshadow... yes
+checking if cc supports -Wmissing-noreturn... yes
+checking if cc supports -Wmissing-format-attribute... yes
+checking if cc supports -Wredundant-decls... yes
+checking if cc supports -Wlogical-op... yes
+checking if cc supports -Werror=implicit... yes
+checking if cc supports -Werror=nonnull... yes
+checking if cc supports -Werror=init-self... yes
+checking if cc supports -Werror=main... yes
+checking if cc supports -Werror=missing-braces... yes
+checking if cc supports -Werror=sequence-point... yes
+checking if cc supports -Werror=return-type... yes
+checking if cc supports -Werror=trigraphs... yes
+checking if cc supports -Werror=array-bounds... yes
+checking if cc supports -Werror=write-strings... yes
+checking if cc supports -Werror=address... yes
+checking if cc supports -Werror=int-to-pointer-cast... yes
+checking if cc supports -Werror=pointer-to-int-cast... yes
+checking if cc supports -pedantic... yes
+checking if cc supports -Werror... yes
+checking if cc supports -Werror=attributes... yes
+checking whether to build documentation... yes
+checking whether to build functional specifications... no
+checking for fop... no
+configure: WARNING: fop not found - documentation targets will be skipped
+checking for xsltproc... /usr/bin/xsltproc
+checking for X.Org SGML entities >= 1.8... no
+checking for asciidoc... no
+configure: WARNING: asciidoc not found - documentation targets will be skipped
+checking whether to act as if malloc(0) can return NULL... yes
+checking for xproto >= 7.0.13 x11 >= 1.6 xextproto >= 7.0.3 xext >= 1.0.99.1 inputproto >= 2.3.99.1... yes
+checking for xfixes >= 5... yes
+configure: WARNING: xmlto or asciidoc not found - cannot create man pages without it
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating specs/Makefile
+config.status: creating xi.pc
+config.status: creating src/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Making all in src
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/src'
+make  all-am
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build/src'
+  CC       XChgDCtl.lo
+  CC       XChgFCtl.lo
+  CC       XAllowDv.lo
+  CC       XChgKbd.lo
+  CC       XChgKMap.lo
+  CC       XChDProp.lo
+  CC       XChgPnt.lo
+  CC       XChgProp.lo
+  CC       XCloseDev.lo
+  CC       XDelDProp.lo
+  CC       XDevBell.lo
+  CC       XExtToWire.lo
+  CC       XGetBMap.lo
+  CC       XGetCPtr.lo
+  CC       XGetDCtl.lo
+  CC       XGetDProp.lo
+  CC       XGetFCtl.lo
+  CC       XGetKMap.lo
+  CC       XGetMMap.lo
+  CC       XGetProp.lo
+  CC       XGetVers.lo
+  CC       XGMotion.lo
+  CC       XGrabDev.lo
+  CC       XGrDvBut.lo
+  CC       XGrDvKey.lo
+  CC       XGtFocus.lo
+  CC       XGtSelect.lo
+  CC       XListDev.lo
+  CC       XListDProp.lo
+  CC       XOpenDev.lo
+  CC       XQueryDv.lo
+  CC       XSelect.lo
+  CC       XSetBMap.lo
+  CC       XSetDVal.lo
+  CC       XSetMMap.lo
+  CC       XSetMode.lo
+  CC       XSndExEv.lo
+  CC       XStFocus.lo
+  CC       XUngrDev.lo
+  CC       XUngrDvB.lo
+  CC       XUngrDvK.lo
+  CC       XExtInt.lo
+  CC       XIAllowEvents.lo
+  CC       XIGrabDevice.lo
+  CC       XIQueryVersion.lo
+  CC       XIQueryDevice.lo
+  CC       XISetDevFocus.lo
+  CC       XIGetDevFocus.lo
+  CC       XIPassiveGrab.lo
+  CC       XIProperties.lo
+  CC       XISelEv.lo
+  CC       XISetCPtr.lo
+  CC       XIWarpPointer.lo
+  CC       XIHierarchy.lo
+  CC       XIDefineCursor.lo
+  CC       XIQueryPointer.lo
+  CC       XIBarrier.lo
+  CCLD     libXi.la
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/src'
+Making all in man
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/man'
+  GEN      XChangeKeyboardDevice.3
+  GEN      XChangePointerDevice.3
+  GEN      XDeviceBell.3
+  GEN      XGetDeviceControl.3
+  GEN      XAllowDeviceEvents.3
+  GEN      XChangeDeviceDontPropagateList.3
+  GEN      XGetDeviceKeyMapping.3
+  GEN      XGetDeviceModifierMapping.3
+  GEN      XGetDeviceMotionEvents.3
+  GEN      XGetDeviceProperty.3
+  GEN      XGetFeedbackControl.3
+  GEN      XGetExtensionVersion.3
+  GEN      XGrabDeviceKey.3
+  GEN      XGrabDeviceButton.3
+  GEN      XGrabDevice.3
+  GEN      XListDeviceProperties.3
+  GEN      XListInputDevices.3
+  GEN      XQueryDeviceState.3
+  GEN      XSelectExtensionEvent.3
+  GEN      XOpenDevice.3
+  GEN      XSendExtensionEvent.3
+  GEN      XSetDeviceMode.3
+  GEN      XSetDeviceValuators.3
+  GEN      XIAllowEvents.3
+  GEN      XIBarrierReleasePointer.3
+  GEN      XSetDeviceButtonMapping.3
+  GEN      XSetDeviceFocus.3
+  GEN      XIDefineCursor.3
+  GEN      XIGrabButton.3
+  GEN      XIChangeHierarchy.3
+  GEN      XIGrabEnter.3
+  GEN      XIGrabDevice.3
+  GEN      XIQueryPointer.3
+  GEN      XIQueryDevice.3
+  GEN      XIQueryVersion.3
+  GEN      XISelectEvents.3
+  GEN      XISetClientPointer.3
+  GEN      XISetFocus.3
+  GEN      XIListProperties.3
+  GEN      XIWarpPointer.3
+  GEN      XGetDeviceDontPropagateList.3
+  GEN      XIChangeProperty.3
+  GEN      XChangeDeviceControl.3
+  GEN      XChangeDeviceKeyMapping.3
+  GEN      XSetDeviceModifierMapping.3
+  GEN      XChangeFeedbackControl.3
+  GEN      XUngrabDeviceKey.3
+  GEN      XDeviceTimeCoord.3
+  GEN      XFreeDeviceList.3
+  GEN      XUngrabDeviceButton.3
+  GEN      XCloseDevice.3
+  GEN      XGetSelectedExtensionEvents.3
+  GEN      XGetDeviceButtonMapping.3
+  GEN      XUngrabDevice.3
+  GEN      XGetDeviceFocus.3
+  GEN      XChangeDeviceProperty.3
+  GEN      XIBarrierReleasePointers.3
+  GEN      XIUndefineCursor.3
+  GEN      XIUngrabButton.3
+  GEN      XDeleteDeviceProperty.3
+  GEN      XIUngrabKeycode.3
+  GEN      XIGrabKeycode.3
+  GEN      XIUngrabDevice.3
+  GEN      XIUngrabEnter.3
+  GEN      XIGrabFocusIn.3
+  GEN      XIGetFocus.3
+  GEN      XIUngrabFocusIn.3
+  GEN      XIGetClientPointer.3
+  GEN      XIGetSelectedEvents.3
+  GEN      XIDeleteProperty.3
+  GEN      XIGetProperty.3
+  GEN      XIFreeDeviceInfo.3
+  GEN      XIGrabTouchBegin.3
+  GEN      XIUngrabTouchBegin.3
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/man'
+Making all in specs
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/src'
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build/src'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxi-45/output/usr/include/X11/extensions'
+ /usr/bin/install -c -m 644 ../include/X11/extensions/XInput.h ../include/X11/extensions/XInput2.h '/var/tmp/hokuto/libxi-45/output/usr/include/X11/extensions'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxi-45/output/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libXi.la '/var/tmp/hokuto/libxi-45/output/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libXi.so.6.1.0 /var/tmp/hokuto/libxi-45/output/usr/lib/libXi.so.6.1.0
+libtool: install: (cd /var/tmp/hokuto/libxi-45/output/usr/lib && { ln -s -f libXi.so.6.1.0 libXi.so.6 || { rm -f libXi.so.6 && ln -s libXi.so.6.1.0 libXi.so.6; }; })
+libtool: install: (cd /var/tmp/hokuto/libxi-45/output/usr/lib && { ln -s -f libXi.so.6.1.0 libXi.so || { rm -f libXi.so && ln -s libXi.so.6.1.0 libXi.so; }; })
+libtool: install: /usr/bin/install -c .libs/libXi.lai /var/tmp/hokuto/libxi-45/output/usr/lib/libXi.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/src'
+Making install in man
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/man'
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxi-45/output/usr/share/man/man3'
+ /usr/bin/install -c -m 644 XAllowDeviceEvents.3 XChangeDeviceDontPropagateList.3 XChangeKeyboardDevice.3 XChangePointerDevice.3 XDeviceBell.3 XGetDeviceControl.3 XGetDeviceKeyMapping.3 XGetDeviceModifierMapping.3 XGetDeviceMotionEvents.3 XGetDeviceProperty.3 XGetExtensionVersion.3 XGetFeedbackControl.3 XGrabDeviceButton.3 XGrabDeviceKey.3 XGrabDevice.3 XListDeviceProperties.3 XListInputDevices.3 XOpenDevice.3 XQueryDeviceState.3 XSelectExtensionEvent.3 XSendExtensionEvent.3 XSetDeviceButtonMapping.3 XSetDeviceFocus.3 XSetDeviceMode.3 XSetDeviceValuators.3 XIAllowEvents.3 XIBarrierReleasePointer.3 XIChangeHierarchy.3 XIDefineCursor.3 XIGrabButton.3 XIGrabDevice.3 XIGrabEnter.3 XIQueryDevice.3 XIQueryPointer.3 XIQueryVersion.3 XISelectEvents.3 XISetClientPointer.3 XISetFocus.3 XIWarpPointer.3 XIListProperties.3 '/var/tmp/hokuto/libxi-45/output/usr/share/man/man3'
+ /usr/bin/install -c -m 644 XIChangeProperty.3 XGetDeviceDontPropagateList.3 XChangeDeviceControl.3 XChangeDeviceKeyMapping.3 XSetDeviceModifierMapping.3 XChangeFeedbackControl.3 XUngrabDeviceButton.3 XUngrabDeviceKey.3 XUngrabDevice.3 XDeviceTimeCoord.3 XFreeDeviceList.3 XCloseDevice.3 XGetSelectedExtensionEvents.3 XGetDeviceButtonMapping.3 XGetDeviceFocus.3 XChangeDeviceProperty.3 XDeleteDeviceProperty.3 XIBarrierReleasePointers.3 XIUndefineCursor.3 XIUngrabButton.3 XIGrabKeycode.3 XIUngrabKeycode.3 XIUngrabDevice.3 XIUngrabEnter.3 XIGrabFocusIn.3 XIUngrabFocusIn.3 XIGetClientPointer.3 XIGetFocus.3 XIGetSelectedEvents.3 XIDeleteProperty.3 XIGetProperty.3 XIFreeDeviceInfo.3 XIGrabTouchBegin.3 XIUngrabTouchBegin.3 '/var/tmp/hokuto/libxi-45/output/usr/share/man/man3'
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build/man'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/man'
+Making install in specs
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build'
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxi-45/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 xi.pc '/var/tmp/hokuto/libxi-45/output/usr/lib/pkgconfig'
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build'
+Making distclean in src
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/src'
+rm -f  libXi.la
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+rm -f  
+rm -f config.h stamp-h1
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || rm -f  
+rm -f ./so_locations
+rm -f ./.deps/XAllowDv.Plo
+rm -f ./.deps/XChDProp.Plo
+rm -f ./.deps/XChgDCtl.Plo
+rm -f ./.deps/XChgFCtl.Plo
+rm -f ./.deps/XChgKMap.Plo
+rm -f ./.deps/XChgKbd.Plo
+rm -f ./.deps/XChgPnt.Plo
+rm -f ./.deps/XChgProp.Plo
+rm -f ./.deps/XCloseDev.Plo
+rm -f ./.deps/XDelDProp.Plo
+rm -f ./.deps/XDevBell.Plo
+rm -f ./.deps/XExtInt.Plo
+rm -f ./.deps/XExtToWire.Plo
+rm -f ./.deps/XGMotion.Plo
+rm -f ./.deps/XGetBMap.Plo
+rm -f ./.deps/XGetCPtr.Plo
+rm -f ./.deps/XGetDCtl.Plo
+rm -f ./.deps/XGetDProp.Plo
+rm -f ./.deps/XGetFCtl.Plo
+rm -f ./.deps/XGetKMap.Plo
+rm -f ./.deps/XGetMMap.Plo
+rm -f ./.deps/XGetProp.Plo
+rm -f ./.deps/XGetVers.Plo
+rm -f ./.deps/XGrDvBut.Plo
+rm -f ./.deps/XGrDvKey.Plo
+rm -f ./.deps/XGrabDev.Plo
+rm -f ./.deps/XGtFocus.Plo
+rm -f ./.deps/XGtSelect.Plo
+rm -f ./.deps/XIAllowEvents.Plo
+rm -f ./.deps/XIBarrier.Plo
+rm -f ./.deps/XIDefineCursor.Plo
+rm -f ./.deps/XIGetDevFocus.Plo
+rm -f ./.deps/XIGrabDevice.Plo
+rm -f ./.deps/XIHierarchy.Plo
+rm -f ./.deps/XIPassiveGrab.Plo
+rm -f ./.deps/XIProperties.Plo
+rm -f ./.deps/XIQueryDevice.Plo
+rm -f ./.deps/XIQueryPointer.Plo
+rm -f ./.deps/XIQueryVersion.Plo
+rm -f ./.deps/XISelEv.Plo
+rm -f ./.deps/XISetCPtr.Plo
+rm -f ./.deps/XISetDevFocus.Plo
+rm -f ./.deps/XIWarpPointer.Plo
+rm -f ./.deps/XListDProp.Plo
+rm -f ./.deps/XListDev.Plo
+rm -f ./.deps/XOpenDev.Plo
+rm -f ./.deps/XQueryDv.Plo
+rm -f ./.deps/XSelect.Plo
+rm -f ./.deps/XSetBMap.Plo
+rm -f ./.deps/XSetDVal.Plo
+rm -f ./.deps/XSetMMap.Plo
+rm -f ./.deps/XSetMode.Plo
+rm -f ./.deps/XSndExEv.Plo
+rm -f ./.deps/XStFocus.Plo
+rm -f ./.deps/XUngrDev.Plo
+rm -f ./.deps/XUngrDvB.Plo
+rm -f ./.deps/XUngrDvK.Plo
+rm -f Makefile
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/src'
+Making distclean in man
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/man'
+rm -f  XAllowDeviceEvents.3 XChangeDeviceDontPropagateList.3 XChangeKeyboardDevice.3 XChangePointerDevice.3 XDeviceBell.3 XGetDeviceControl.3 XGetDeviceKeyMapping.3 XGetDeviceModifierMapping.3 XGetDeviceMotionEvents.3 XGetDeviceProperty.3 XGetExtensionVersion.3 XGetFeedbackControl.3 XGrabDeviceButton.3 XGrabDeviceKey.3 XGrabDevice.3 XListDeviceProperties.3 XListInputDevices.3 XOpenDevice.3 XQueryDeviceState.3 XSelectExtensionEvent.3 XSendExtensionEvent.3 XSetDeviceButtonMapping.3 XSetDeviceFocus.3 XSetDeviceMode.3 XSetDeviceValuators.3 XIAllowEvents.3 XIBarrierReleasePointer.3 XIChangeHierarchy.3 XIDefineCursor.3 XIGrabButton.3 XIGrabDevice.3 XIGrabEnter.3 XIQueryDevice.3 XIQueryPointer.3 XIQueryVersion.3 XISelectEvents.3 XISetClientPointer.3 XISetFocus.3 XIWarpPointer.3 XIListProperties.3 XIChangeProperty.3 XGetDeviceDontPropagateList.3 XChangeDeviceControl.3 XChangeDeviceKeyMapping.3 XSetDeviceModifierMapping.3 XChangeFeedbackControl.3 XUngrabDeviceButton.3 XUngrabDeviceKey.3 XUngrabDevice.3 XDeviceTimeCoord.3 XFreeDeviceList.3 XCloseDevice.3 XGetSelectedExtensionEvents.3 XGetDeviceButtonMapping.3 XGetDeviceFocus.3 XChangeDeviceProperty.3 XDeleteDeviceProperty.3 XIBarrierReleasePointers.3 XIUndefineCursor.3 XIUngrabButton.3 XIGrabKeycode.3 XIUngrabKeycode.3 XIUngrabDevice.3 XIUngrabEnter.3 XIGrabFocusIn.3 XIUngrabFocusIn.3 XIGetClientPointer.3 XIGetFocus.3 XIGetSelectedEvents.3 XIDeleteProperty.3 XIGetProperty.3 XIFreeDeviceInfo.3 XIGrabTouchBegin.3 XIUngrabTouchBegin.3 *.libmansuffix
+rm -rf .libs _libs
+rm -f *.lo
+rm -f  
+test . = "." || rm -f  
+rm -f Makefile
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/man'
+Making distclean in specs
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/specs'
+rm -f  
+rm -rf .libs _libs
+rm -f *.lo
+rm -f  
+test . = "." || rm -f  
+rm -f Makefile
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f  xi.pc
+rm -f libtool config.lt
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "." || rm -f  
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f Makefile
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to enable C11 features... none needed
+checking whether gcc -m32 understands -c and -o together... yes
+checking dependency style of gcc -m32... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc -m32... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from gcc -m32 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -m32 supports -fno-rtti -fno-exceptions... no
+checking for gcc -m32 option to produce PIC... -fPIC -DPIC
+checking if gcc -m32 PIC flag -fPIC -DPIC works... yes
+checking if gcc -m32 static flag -static works... yes
+checking if gcc -m32 supports -c -o file.o... yes
+checking if gcc -m32 supports -c -o file.o... (cached) yes
+checking whether the gcc -m32 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for gcc -m32 options needed to detect all undeclared functions... none needed
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if gcc -m32 supports -Werror=unknown-warning-option... no
+checking if gcc -m32 supports -Werror=unused-command-line-argument... no
+checking if gcc -m32 supports -Wall... yes
+checking if gcc -m32 supports -Wpointer-arith... yes
+checking if gcc -m32 supports -Wmissing-declarations... yes
+checking if gcc -m32 supports -Wformat=2... yes
+checking if gcc -m32 supports -Wstrict-prototypes... yes
+checking if gcc -m32 supports -Wmissing-prototypes... yes
+checking if gcc -m32 supports -Wnested-externs... yes
+checking if gcc -m32 supports -Wbad-function-cast... yes
+checking if gcc -m32 supports -Wold-style-definition... yes
+checking if gcc -m32 supports -Wunused... yes
+checking if gcc -m32 supports -Wuninitialized... yes
+checking if gcc -m32 supports -Wshadow... yes
+checking if gcc -m32 supports -Wmissing-noreturn... yes
+checking if gcc -m32 supports -Wmissing-format-attribute... yes
+checking if gcc -m32 supports -Wredundant-decls... yes
+checking if gcc -m32 supports -Wlogical-op... yes
+checking if gcc -m32 supports -Werror=implicit... yes
+checking if gcc -m32 supports -Werror=nonnull... yes
+checking if gcc -m32 supports -Werror=init-self... yes
+checking if gcc -m32 supports -Werror=main... yes
+checking if gcc -m32 supports -Werror=missing-braces... yes
+checking if gcc -m32 supports -Werror=sequence-point... yes
+checking if gcc -m32 supports -Werror=return-type... yes
+checking if gcc -m32 supports -Werror=trigraphs... yes
+checking if gcc -m32 supports -Werror=array-bounds... yes
+checking if gcc -m32 supports -Werror=write-strings... yes
+checking if gcc -m32 supports -Werror=address... yes
+checking if gcc -m32 supports -Werror=int-to-pointer-cast... yes
+checking if gcc -m32 supports -Werror=pointer-to-int-cast... yes
+checking if gcc -m32 supports -pedantic... yes
+checking if gcc -m32 supports -Werror... yes
+checking if gcc -m32 supports -Werror=attributes... yes
+checking whether to build documentation... yes
+checking whether to build functional specifications... no
+checking for fop... no
+configure: WARNING: fop not found - documentation targets will be skipped
+checking for xsltproc... /usr/bin/xsltproc
+checking for X.Org SGML entities >= 1.8... no
+checking for asciidoc... no
+configure: WARNING: asciidoc not found - documentation targets will be skipped
+checking whether to act as if malloc(0) can return NULL... yes
+checking for xproto >= 7.0.13 x11 >= 1.6 xextproto >= 7.0.3 xext >= 1.0.99.1 inputproto >= 2.3.99.1... yes
+checking for xfixes >= 5... yes
+configure: WARNING: xmlto or asciidoc not found - cannot create man pages without it
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating specs/Makefile
+config.status: creating xi.pc
+config.status: creating src/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Making all in src
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/src'
+make  all-am
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build/src'
+  CC       XChgDCtl.lo
+  CC       XChgFCtl.lo
+  CC       XChgKbd.lo
+  CC       XAllowDv.lo
+  CC       XChgKMap.lo
+  CC       XChDProp.lo
+  CC       XChgPnt.lo
+  CC       XCloseDev.lo
+  CC       XChgProp.lo
+  CC       XDelDProp.lo
+  CC       XDevBell.lo
+  CC       XExtToWire.lo
+  CC       XGetBMap.lo
+  CC       XGetCPtr.lo
+  CC       XGetDCtl.lo
+  CC       XGetDProp.lo
+  CC       XGetFCtl.lo
+  CC       XGetKMap.lo
+  CC       XGetMMap.lo
+  CC       XGetProp.lo
+  CC       XGetVers.lo
+  CC       XGMotion.lo
+  CC       XGrDvBut.lo
+  CC       XGrabDev.lo
+  CC       XGrDvKey.lo
+  CC       XGtFocus.lo
+  CC       XGtSelect.lo
+  CC       XListDev.lo
+  CC       XListDProp.lo
+  CC       XOpenDev.lo
+  CC       XQueryDv.lo
+  CC       XSelect.lo
+  CC       XSetBMap.lo
+  CC       XSetDVal.lo
+  CC       XSetMMap.lo
+  CC       XSetMode.lo
+  CC       XSndExEv.lo
+  CC       XStFocus.lo
+  CC       XUngrDev.lo
+  CC       XUngrDvB.lo
+  CC       XUngrDvK.lo
+  CC       XExtInt.lo
+  CC       XIAllowEvents.lo
+  CC       XIGrabDevice.lo
+  CC       XIQueryVersion.lo
+  CC       XIQueryDevice.lo
+  CC       XISetDevFocus.lo
+  CC       XIGetDevFocus.lo
+  CC       XIPassiveGrab.lo
+  CC       XIProperties.lo
+  CC       XISelEv.lo
+  CC       XISetCPtr.lo
+  CC       XIWarpPointer.lo
+  CC       XIHierarchy.lo
+  CC       XIDefineCursor.lo
+  CC       XIQueryPointer.lo
+  CC       XIBarrier.lo
+  CCLD     libXi.la
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/src'
+Making all in man
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/man'
+  GEN      XChangeDeviceDontPropagateList.3
+  GEN      XAllowDeviceEvents.3
+  GEN      XChangeKeyboardDevice.3
+  GEN      XDeviceBell.3
+  GEN      XGetDeviceControl.3
+  GEN      XChangePointerDevice.3
+  GEN      XGetDeviceKeyMapping.3
+  GEN      XGetDeviceModifierMapping.3
+  GEN      XGetDeviceMotionEvents.3
+  GEN      XGetDeviceProperty.3
+  GEN      XGetExtensionVersion.3
+  GEN      XGetFeedbackControl.3
+  GEN      XGrabDeviceButton.3
+  GEN      XGrabDeviceKey.3
+  GEN      XGrabDevice.3
+  GEN      XListDeviceProperties.3
+  GEN      XQueryDeviceState.3
+  GEN      XListInputDevices.3
+  GEN      XOpenDevice.3
+  GEN      XSelectExtensionEvent.3
+  GEN      XSendExtensionEvent.3
+  GEN      XSetDeviceMode.3
+  GEN      XSetDeviceButtonMapping.3
+  GEN      XIAllowEvents.3
+  GEN      XSetDeviceFocus.3
+  GEN      XIBarrierReleasePointer.3
+  GEN      XSetDeviceValuators.3
+  GEN      XIDefineCursor.3
+  GEN      XIGrabButton.3
+  GEN      XIGrabDevice.3
+  GEN      XIChangeHierarchy.3
+  GEN      XIGrabEnter.3
+  GEN      XIQueryDevice.3
+  GEN      XIQueryPointer.3
+  GEN      XISetClientPointer.3
+  GEN      XIQueryVersion.3
+  GEN      XISetFocus.3
+  GEN      XISelectEvents.3
+  GEN      XIWarpPointer.3
+  GEN      XIChangeProperty.3
+  GEN      XIListProperties.3
+  GEN      XGetDeviceDontPropagateList.3
+  GEN      XChangeDeviceKeyMapping.3
+  GEN      XChangeDeviceControl.3
+  GEN      XSetDeviceModifierMapping.3
+  GEN      XChangeFeedbackControl.3
+  GEN      XUngrabDeviceKey.3
+  GEN      XUngrabDevice.3
+  GEN      XUngrabDeviceButton.3
+  GEN      XDeviceTimeCoord.3
+  GEN      XFreeDeviceList.3
+  GEN      XCloseDevice.3
+  GEN      XGetSelectedExtensionEvents.3
+  GEN      XGetDeviceFocus.3
+  GEN      XGetDeviceButtonMapping.3
+  GEN      XChangeDeviceProperty.3
+  GEN      XDeleteDeviceProperty.3
+  GEN      XIBarrierReleasePointers.3
+  GEN      XIUndefineCursor.3
+  GEN      XIUngrabButton.3
+  GEN      XIGrabKeycode.3
+  GEN      XIUngrabKeycode.3
+  GEN      XIUngrabDevice.3
+  GEN      XIUngrabEnter.3
+  GEN      XIGrabFocusIn.3
+  GEN      XIGetClientPointer.3
+  GEN      XIUngrabFocusIn.3
+  GEN      XIGetFocus.3
+  GEN      XIGetSelectedEvents.3
+  GEN      XIDeleteProperty.3
+  GEN      XIFreeDeviceInfo.3
+  GEN      XIGetProperty.3
+  GEN      XIGrabTouchBegin.3
+  GEN      XIUngrabTouchBegin.3
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/man'
+Making all in specs
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/src'
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build/src'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxi-45/build/DESTDIR/usr/include/X11/extensions'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxi-45/build/DESTDIR/usr/lib32'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libXi.la '/var/tmp/hokuto/libxi-45/build/DESTDIR/usr/lib32'
+ /usr/bin/install -c -m 644 ../include/X11/extensions/XInput.h ../include/X11/extensions/XInput2.h '/var/tmp/hokuto/libxi-45/build/DESTDIR/usr/include/X11/extensions'
+libtool: install: /usr/bin/install -c .libs/libXi.so.6.1.0 /var/tmp/hokuto/libxi-45/build/DESTDIR/usr/lib32/libXi.so.6.1.0
+libtool: install: (cd /var/tmp/hokuto/libxi-45/build/DESTDIR/usr/lib32 && { ln -s -f libXi.so.6.1.0 libXi.so.6 || { rm -f libXi.so.6 && ln -s libXi.so.6.1.0 libXi.so.6; }; })
+libtool: install: (cd /var/tmp/hokuto/libxi-45/build/DESTDIR/usr/lib32 && { ln -s -f libXi.so.6.1.0 libXi.so || { rm -f libXi.so && ln -s libXi.so.6.1.0 libXi.so; }; })
+libtool: install: /usr/bin/install -c .libs/libXi.lai /var/tmp/hokuto/libxi-45/build/DESTDIR/usr/lib32/libXi.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib32'[0m
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/src'
+Making install in man
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/man'
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxi-45/build/DESTDIR/usr/share/man/man3'
+ /usr/bin/install -c -m 644 XAllowDeviceEvents.3 XChangeDeviceDontPropagateList.3 XChangeKeyboardDevice.3 XChangePointerDevice.3 XDeviceBell.3 XGetDeviceControl.3 XGetDeviceKeyMapping.3 XGetDeviceModifierMapping.3 XGetDeviceMotionEvents.3 XGetDeviceProperty.3 XGetExtensionVersion.3 XGetFeedbackControl.3 XGrabDeviceButton.3 XGrabDeviceKey.3 XGrabDevice.3 XListDeviceProperties.3 XListInputDevices.3 XOpenDevice.3 XQueryDeviceState.3 XSelectExtensionEvent.3 XSendExtensionEvent.3 XSetDeviceButtonMapping.3 XSetDeviceFocus.3 XSetDeviceMode.3 XSetDeviceValuators.3 XIAllowEvents.3 XIBarrierReleasePointer.3 XIChangeHierarchy.3 XIDefineCursor.3 XIGrabButton.3 XIGrabDevice.3 XIGrabEnter.3 XIQueryDevice.3 XIQueryPointer.3 XIQueryVersion.3 XISelectEvents.3 XISetClientPointer.3 XISetFocus.3 XIWarpPointer.3 XIListProperties.3 '/var/tmp/hokuto/libxi-45/build/DESTDIR/usr/share/man/man3'
+ /usr/bin/install -c -m 644 XIChangeProperty.3 XGetDeviceDontPropagateList.3 XChangeDeviceControl.3 XChangeDeviceKeyMapping.3 XSetDeviceModifierMapping.3 XChangeFeedbackControl.3 XUngrabDeviceButton.3 XUngrabDeviceKey.3 XUngrabDevice.3 XDeviceTimeCoord.3 XFreeDeviceList.3 XCloseDevice.3 XGetSelectedExtensionEvents.3 XGetDeviceButtonMapping.3 XGetDeviceFocus.3 XChangeDeviceProperty.3 XDeleteDeviceProperty.3 XIBarrierReleasePointers.3 XIUndefineCursor.3 XIUngrabButton.3 XIGrabKeycode.3 XIUngrabKeycode.3 XIUngrabDevice.3 XIUngrabEnter.3 XIGrabFocusIn.3 XIUngrabFocusIn.3 XIGetClientPointer.3 XIGetFocus.3 XIGetSelectedEvents.3 XIDeleteProperty.3 XIGetProperty.3 XIFreeDeviceInfo.3 XIGrabTouchBegin.3 XIUngrabTouchBegin.3 '/var/tmp/hokuto/libxi-45/build/DESTDIR/usr/share/man/man3'
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build/man'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/man'
+Making install in specs
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build/specs'
+make[1]: Entering directory '/var/tmp/hokuto/libxi-45/build'
+make[2]: Entering directory '/var/tmp/hokuto/libxi-45/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxi-45/build/DESTDIR/usr/lib32/pkgconfig'
+ /usr/bin/install -c -m 644 xi.pc '/var/tmp/hokuto/libxi-45/build/DESTDIR/usr/lib32/pkgconfig'
+make[2]: Leaving directory '/var/tmp/hokuto/libxi-45/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libxi-45/build'
+'DESTDIR/usr/lib32/libXi.la' -> '/var/tmp/hokuto/libxi-45/output/usr/lib32/libXi.la'
+'DESTDIR/usr/lib32/libXi.so' -> '/var/tmp/hokuto/libxi-45/output/usr/lib32/libXi.so'
+'DESTDIR/usr/lib32/libXi.so.6' -> '/var/tmp/hokuto/libxi-45/output/usr/lib32/libXi.so.6'
+'DESTDIR/usr/lib32/libXi.so.6.1.0' -> '/var/tmp/hokuto/libxi-45/output/usr/lib32/libXi.so.6.1.0'
+'DESTDIR/usr/lib32/pkgconfig' -> '/var/tmp/hokuto/libxi-45/output/usr/lib32/pkgconfig'
+'DESTDIR/usr/lib32/pkgconfig/xi.pc' -> '/var/tmp/hokuto/libxi-45/output/usr/lib32/pkgconfig/xi.pc'
+
+Script done on 2026-05-19 10:53:54+07:00 [COMMAND_EXIT_CODE="0"]
