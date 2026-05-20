@@ -1,0 +1,710 @@
+Script started on 2026-05-20 22:08:01+07:00 [COMMAND="cd /var/tmp/hokuto/xfsprogs-68/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/xfsprogs-68/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/xfsprogs-68/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/xfsprogs-68/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/xfsprogs-68/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/xfsprogs-68/build/.cache' /repo/sauzeros/extra/xfsprogs/build /var/tmp/hokuto/xfsprogs-68/output 7.0.1 xfsprogs" <not executed on terminal>]
+./configure $LOCAL_CONFIGURE_OPTIONS
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for gawk... gawk
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking for c++ option to enable C++11 features... -std=gnu++11
+checking how to run the C++ preprocessor... c++ -std=gnu++11 -E
+checking for ld used by c++ -std=gnu++11... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for c++ -std=gnu++11 option to produce PIC... -fPIC -DPIC
+checking if c++ -std=gnu++11 PIC flag -fPIC -DPIC works... yes
+checking if c++ -std=gnu++11 static flag -static works... yes
+checking if c++ -std=gnu++11 supports -c -o file.o... yes
+checking if c++ -std=gnu++11 supports -c -o file.o... (cached) yes
+checking whether the c++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking whether the compiler supports GNU C++... (cached) yes
+checking whether c++ -std=gnu++11 accepts -g... (cached) yes
+checking for c++ -std=gnu++11 option to enable C++11 features... (cached) -std=gnu++11
+./configure: line 20466: test: syntax error: `-std=gnu++11' unexpected
+checking for gmake... no
+checking for make... /usr/bin/make
+checking for tar... /usr/bin/tar
+checking for gzip... /usr/bin/gzip
+checking whether gcc -MM is supported... yes
+checking for sort... /bin/sort
+checking whether ln -s works... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for msgmerge... /usr/bin/msgmerge
+checking for xgettext... /usr/bin/xgettext
+checking for rpm... no
+checking for ini.h... yes
+checking for ini_parse in -linih... yes
+checking for uuid.h... no
+checking for sys/uuid.h... no
+checking for uuid/uuid.h... yes
+checking for uuid_compare... no
+checking for uuid_compare in -luuid... yes
+checking for pthread.h... yes
+checking for pthread_mutex_init in -lpthread... yes
+checking for urcu.h... yes
+checking for liburcu... yes
+checking for pwritev2... yes
+checking for copy_file_range... yes
+checking for cachestat... yes
+checking for file_getattr syscall... yes
+checking for struct fsxattr... yes
+checking for struct fsxattr.fsx_cowextsize... yes
+checking for struct fscrypt_add_key_arg... yes
+checking for struct fscrypt_add_key_arg.key_id... yes
+checking for struct fscrypt_policy_v2... yes
+checking for struct fscrypt_policy_v2.log2_data_unit_size... yes
+checking for struct statx... yes
+checking for struct statx.stx_atomic_write_unit_max_opt... yes
+checking for GETFSMAP... yes
+checking for MAP_SYNC... yes
+checking for library containing dm_task_create... -ldevmapper
+checking for mallinfo ... yes
+checking for mallinfo2 ... yes
+checking for memfd_create... yes
+checking for getrandom and GRND_NONBLOCK... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for icu-i18n icu-uc... yes
+checking for systemd... yes
+checking for systemd system unit dir... /usr/lib/systemd/system
+checking for system crontab dir... yes
+checking for udev... yes
+checking for udev rule dir... /usr/lib/udev/rules.d
+checking for library containing blkid_probe_all... -lblkid
+checking for blkid_probe_get_topology... yes
+checking if C compiler supports zeroing automatic vars... yes
+checking if strerror_r returns char *... yes
+checking for close_range... yes
+checking for listmount... yes
+checking for struct mnt_id_req::mnt_ns_fd... yes
+checking for struct statmount::supported_mask... yes
+checking for fanotify mount events... yes
+checking for atomic64_t support in liburcu... yes
+configure: creating ./config.status
+config.status: creating include/builddefs
+config.status: executing libtool commands
+   [HEADERS] libxfs
+   [HEADERS] include
+Building include
+    [LN]     disk
+make[2]: Nothing to be done for 'include'.
+Building libfrog
+    [CC]     gen_crc32table
+    [GENERATE] crc32table.h
+    [CC]     avl64.lo
+    [CC]     bulkstat.lo
+    [CC]     crc32.lo
+    [CC]     file_exchange.lo
+    [CC]     bitmap.lo
+    [CC]     flagmap.lo
+    [CC]     convert.lo
+    [CC]     fsgeom.lo
+    [CC]     fsproperties.lo
+    [CC]     fsprops.lo
+    [CC]     getparents.lo
+    [CC]     histogram.lo
+    [CC]     healthevent.lo
+    [CC]     file_attr.lo
+    [CC]     list_sort.lo
+    [CC]     linux.lo
+    [CC]     logging.lo
+    [CC]     paths.lo
+    [CC]     projects.lo
+    [CC]     ptvar.lo
+    [CC]     radix-tree.lo
+    [CC]     randbytes.lo
+    [CC]     scrub.lo
+    [CC]     systemd.lo
+    [CC]     util.lo
+    [CC]     workqueue.lo
+    [CC]     zones.lo
+    [CC]     statmount.lo
+    [SED]    gettext.py
+    [LD]     libfrog.la
+Building libxfs
+    [CC]     defer_item.lo
+    [CC]     buf_mem.lo
+    [CC]     init.lo
+    [CC]     cache.lo
+    [CC]     inode.lo
+    [CC]     iunlink.lo
+    [CC]     kmem.lo
+    [CC]     listxattr.lo
+    [CC]     rdwr.lo
+    [CC]     logitem.lo
+    [CC]     topology.lo
+    [CC]     trans.lo
+    [CC]     util.lo
+    [CC]     xfblob.lo
+    [CC]     xfile.lo
+    [CC]     xfs_ag.lo
+    [CC]     xfs_ag_resv.lo
+    [CC]     xfs_alloc.lo
+    [CC]     xfs_alloc_btree.lo
+    [CC]     xfs_attr.lo
+[01m[Kxfs_alloc.c:[m[K In function '[01m[K__xfs_free_extent[m[K':
+[01m[Kxfs_alloc.c:4013:41:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[Kbusy_flags[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+ 4013 |         unsigned int                    [01;35m[Kbusy_flags[m[K = 0;
+      |                                         [01;35m[K^~~~~~~~~~[m[K
+    [CC]     xfs_attr_leaf.lo
+    [CC]     xfs_attr_remote.lo
+    [CC]     xfs_bit.lo
+    [CC]     xfs_bmap.lo
+    [CC]     xfs_bmap_btree.lo
+    [CC]     xfs_btree.lo
+    [CC]     xfs_btree_mem.lo
+    [CC]     xfs_btree_staging.lo
+[01m[Kxfs_bmap.c:[m[K In function '[01m[Kxfs_bmapi_convert_one_delalloc[m[K':
+[01m[Kxfs_bmap.c:4360:33:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[Kflags[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+ 4360 |         uint16_t                [01;35m[Kflags[m[K = 0;
+      |                                 [01;35m[K^~~~~[m[K
+    [CC]     xfs_da_btree.lo
+    [CC]     xfs_defer.lo
+    [CC]     xfs_dir2.lo
+    [CC]     xfs_dir2_block.lo
+    [CC]     xfs_dir2_data.lo
+    [CC]     xfs_dir2_leaf.lo
+    [CC]     xfs_dir2_node.lo
+    [CC]     xfs_dir2_sf.lo
+    [CC]     xfs_dquot_buf.lo
+    [CC]     xfs_exchmaps.lo
+    [CC]     xfs_group.lo
+    [CC]     xfs_ialloc.lo
+    [CC]     xfs_iext_tree.lo
+    [CC]     xfs_inode_buf.lo
+    [CC]     xfs_inode_fork.lo
+    [CC]     xfs_inode_util.lo
+    [CC]     xfs_ialloc_btree.lo
+    [CC]     xfs_metadir.lo
+    [CC]     xfs_metafile.lo
+    [CC]     xfs_log_rlimit.lo
+    [CC]     xfs_parent.lo
+    [CC]     xfs_refcount.lo
+    [CC]     xfs_refcount_btree.lo
+    [CC]     xfs_rtrefcount_btree.lo
+[01m[Kxfs_log_rlimit.c:[m[K In function '[01m[Klibxfs_log_get_max_trans_res[m[K':
+[01m[Kxfs_log_rlimit.c:162:33:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[Ki[m[K' set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  162 |         unsigned int            [01;35m[Ki[m[K;
+      |                                 [01;35m[K^[m[K
+    [CC]     xfs_rmap.lo
+    [CC]     xfs_rmap_btree.lo
+    [CC]     xfs_rtbitmap.lo
+    [CC]     xfs_rtgroup.lo
+    [CC]     xfs_rtrmap_btree.lo
+    [CC]     xfs_sb.lo
+    [CC]     xfs_symlink_remote.lo
+    [CC]     xfs_trans_inode.lo
+    [CC]     xfs_trans_resv.lo
+    [CC]     xfs_trans_space.lo
+    [CC]     xfs_types.lo
+    [CC]     xfs_zones.lo
+    [CCD]    ioctl_c_dummy.o
+    [CXXD]   ioctl_cxx_dummy.o
+    [LD]     libxfs.la
+Building estimate
+Building fsck
+Building libhandle
+Building mdrestore
+Building libxlog
+Building libxcmd
+Building m4
+Building man
+Building rtcp
+Building doc
+Building debian
+    [ZIP]    CHANGES.gz
+Building man3
+Building man2
+Building man5
+Building man8
+Building po
+    [SED]    mkfs.xfs.8
+    [SED]    xfs_scrub_all.8
+    [CC]     xfs_estimate.o
+    [CC]     xfs_mdrestore.o
+    [CC]     xfs_rtcp.o
+    [CC]     handle.lo
+    [CC]     jdm.lo
+    [MSGFMT] de.mo
+    [MSGFMT] pl.mo
+    [CC]     xfs_log_recover.lo
+    [CC]     util.lo
+    [CC]     command.lo
+3139 translated messages.
+    [CC]     input.lo
+2345 translated messages.
+    [CC]     help.lo
+    [LD]     xfs_estimate
+    [LD]     xfs_rtcp
+    [LD]     xfs_mdrestore
+    [CC]     quit.lo
+    [LD]     libhandle.la
+    [LD]     libxcmd.la
+Building growfs
+Building mkfs
+Building quota
+    [CC]     xfs_growfs.o
+    [CC]     proto.o
+    [CC]     xfs_mkfs.o
+    [SED]    xfs_protofile.py
+    [LD]     libxlog.la
+    [LD]     xfs_growfs
+Building copy
+Building db
+Building logprint
+Building repair
+    [CC]     xfs_copy.o
+Building io
+Building fsr
+    [CC]     xfs_fsr.o
+    [CC]     init.o
+Building spaceman
+[01m[Kxfs_copy.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kxfs_copy.c:562:25:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Knum_threads[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  562 |         int             [01;35m[Knum_threads[m[K = 0;
+      |                         [01;35m[K^~~~~~~~~~~[m[K
+    [CC]     util.o
+    [CC]     logprint.o
+    [LD]     xfs_fsr
+    [LD]     mkfs.xfs
+    [LD]     xfs_copy
+    [CC]     edit.o
+    [CC]     log_copy.o
+    [CC]     file.o
+    [CC]     free.o
+    [CC]     log_dump.o
+    [CC]     linux.o
+    [CC]     health.o
+    [CC]     path.o
+    [CC]     project.o
+    [CC]     info.o
+    [CC]     log_misc.o
+    [CC]     quot.o
+    [CC]     init.o
+    [CC]     quota.o
+    [CC]     report.o
+    [CC]     prealloc.o
+    [CC]     log_print_all.o
+    [CC]     state.o
+    [CC]     trim.o
+    [LD]     xfs_quota
+    [CC]     freesp.o
+    [CC]     log_print_trans.o
+    [CC]     log_redo.o
+    [LD]     xfs_spaceman
+    [LD]     xfs_logprint
+    [CC]     aginfo.o
+    [CC]     agheader.o
+    [CC]     attr.o
+    [CC]     bmap.o
+    [CC]     agbtree.o
+Building scrub
+    [CC]     bulkstat.o
+    [CC]     attr_repair.o
+    [CC]     cowextsize.o
+    [CC]     crc32cselftest.o
+    [CC]     addr.o
+    [CC]     encrypt.o
+    [CC]     agf.o
+    [CC]     avl.o
+    [CC]     exchrange.o
+    [CC]     agfl.o
+    [CC]     fadvise.o
+    [CC]     bulkload.o
+    [CC]     fiemap.o
+    [CC]     agi.o
+    [CC]     file.o
+    [CC]     common.o
+    [CC]     bmap.o
+    [CC]     attr.o
+    [CC]     freeze.o
+    [CC]     counter.o
+    [CC]     fsproperties.o
+    [CC]     descr.o
+    [CC]     bmap_repair.o
+    [CC]     attrset.o
+    [CC]     disk.o
+    [CC]     fsuuid.o
+    [CC]     filemap.o
+    [CC]     btree.o
+    [CC]     attrshort.o
+    [CC]     fsync.o
+    [CC]     getrusage.o
+    [CC]     fscounters.o
+    [CC]     bit.o
+    [CC]     healthmon.o
+Building healer
+    [CC]     da_util.o
+    [CC]     inodes.o
+    [CC]     block.o
+    [CC]     imap.o
+    [CC]     fsrepair.o
+    [CC]     init.o
+    [CC]     dino_chunks.o
+    [CC]     dinode.o
+    [CC]     weakhandle.o
+    [CC]     phase1.o
+    [CC]     bmap.o
+    [CC]     inject.o
+[01m[Kdino_chunks.c:[m[K In function ‘[01m[Kprocess_uncertain_aginodes[m[K’:
+[01m[Kdino_chunks.c:1349:33:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcnt[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+ 1349 |         int                     [01;35m[Kcnt[m[K;
+      |                                 [01;35m[K^~~[m[K
+    [CC]     xfs_healer.o
+    [CC]     label.o
+    [CC]     phase2.o
+    [CC]     xfs_healer_start.o
+    [CC]     phase3.o
+    [CC]     link.o
+    [CC]     bmroot.o
+    [CC]     btblock.o
+    [CC]     check.o
+    [SED]    xfs_healer@.service
+    [CC]     madvise.o
+    [SED]    xfs_healer_start.service
+    [CC]     phase4.o
+    [LD]     xfs_healer
+    [CC]     dir2.o
+    [CC]     mincore.o
+    [CC]     phase5.o
+    [LD]     xfs_healer_start
+    [CC]     mmap.o
+    [CC]     command.o
+    [CC]     open.o
+    [CC]     phase6.o
+    [CC]     globals.o
+    [CC]     phase7.o
+    [CC]     incore_bmc.o
+    [CC]     parent.o
+    [CC]     phase8.o
+    [CC]     incore.o
+    [CC]     progress.o
+    [CC]     pread.o
+    [CC]     read_verify.o
+    [CC]     incore_ext.o
+    [CC]     crc.o
+    [CC]     prealloc.o
+    [CC]     repair.o
+    [CC]     pwrite.o
+    [CC]     debug.o
+    [CC]     scrub.o
+    [CC]     incore_ino.o
+    [CC]     spacemap.o
+    [CC]     readdir.o
+    [CC]     init.o
+    [CC]     dir2.o
+    [CC]     phase1.o
+    [CC]     reflink.o
+    [CC]     vfs.o
+    [CC]     xfs_scrub.o
+    [CC]     resblks.o
+    [CC]     unicrash.o
+    [SED]    xfs_scrub_all.py
+    [CC]     phase2.o
+    [CC]     scrub.o
+    [CC]     dir2sf.o
+    [CC]     seek.o
+    [SED]    xfs_scrub_fail
+    [SED]    xfs_scrub@.service
+    [SED]    xfs_scrub_fail@.service
+    [SED]    xfs_scrub_media@.service
+    [SED]    xfs_scrub_media_fail@.service
+    [CC]     phase3.o
+    [SED]    xfs_scrub_all.service
+    [CC]     sendfile.o
+    [CC]     dquot.o
+    [SED]    xfs_scrub_all_fail.service
+    [CC]     echo.o
+    [SED]    xfs_scrub_all.timer
+    [SED]    xfs_scrub_all.cron
+    [LD]     xfs_scrub
+    [CC]     shutdown.o
+    [CC]     faddr.o
+    [CC]     phase4.o
+    [CC]     stat.o
+    [CC]     phase5.o
+    [CC]     swapext.o
+    [CC]     field.o
+    [CC]     sync.o
+    [CC]     flist.o
+    [CC]     sync_file_range.o
+    [CC]     phase6.o
+    [CC]     truncate.o
+    [CC]     fprint.o
+    [CC]     utimes.o
+    [CC]     verify_media.o
+    [CC]     frag.o
+    [CC]     copy_file_range.o
+    [CC]     phase7.o
+    [CC]     cachestat.o
+    [CC]     freesp.o
+    [CC]     log_writes.o
+    [CC]     pptr.o
+    [CC]     prefetch.o
+    [CC]     fsmap.o
+    [CC]     fsmap.o
+[01m[Kprefetch.c:[m[K In function ‘[01m[Kdo_inode_prefetch[m[K’:
+[01m[Kprefetch.c:1027:33:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kqueues_started[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+ 1027 |         int                     [01;35m[Kqueues_started[m[K = 0;
+      |                                 [01;35m[K^~~~~~~~~~~~~~[m[K
+    [CC]     listmount.o
+    [CC]     fuzz.o
+    [CC]     progress.o
+    [LD]     xfs_io
+    [CC]     quotacheck.o
+    [CC]     hash.o
+    [CC]     rcbag_btree.o
+    [CC]     help.o
+    [CC]     init.o
+    [CC]     rcbag.o
+    [CC]     rmap.o
+    [CC]     inode.o
+    [CC]     rt.o
+    [CC]     input.o
+    [CC]     io.o
+    [CC]     logformat.o
+    [CC]     rtrefcount_repair.o
+    [CC]     rtrmap_repair.o
+    [CC]     malloc.o
+    [CC]     metadump.o
+    [CC]     sb.o
+    [CC]     scan.o
+    [CC]     slab.o
+    [CC]     namei.o
+    [CC]     obfuscate.o
+    [CC]     output.o
+    [CC]     strblobs.o
+    [CC]     print.o
+    [CC]     quit.o
+    [CC]     rtgroup.o
+    [CC]     threads.o
+    [CC]     sb.o
+    [CC]     versions.o
+    [CC]     sig.o
+    [CC]     zoned.o
+    [CC]     strvec.o
+    [CC]     xfs_repair.o
+    [CC]     symlink.o
+    [CC]     text.o
+    [CC]     type.o
+    [CC]     write.o
+    [CC]     bmap_inflate.o
+    [CC]     btdump.o
+    [CC]     btheight.o
+    [LD]     xfs_repair
+    [CC]     convert.o
+[01m[Kbtheight.c:[m[K In function ‘[01m[Kconstruct_records_per_block[m[K’:
+[01m[Kbtheight.c:158:11:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  158 |         p [01;35m[K=[m[K strchr(tag, ':');
+      |           [01;35m[K^[m[K
+    [CC]     info.o
+    [CC]     iunlink.o
+    [CC]     rdump.o
+    [CC]     timelimit.o
+    [LD]     xfs_db
+Installing libxlog-install
+Installing libxcmd-install
+Installing libhandle-install
+Installing libfrog-install
+Installing libxfs-install
+Installing copy-install
+Installing db-install
+Installing estimate-install
+Installing fsck-install
+Installing fsr-install
+../install-sh -o root -g root -m 755 -d /usr/sbin
+../install-sh -o root -g root -m 755 xfs_fsck.sh /usr/sbin/fsck.xfs
+../install-sh -o root -g root -m 755 -d /usr/sbin
+Installing growfs-install
+../install-sh -o root -g root -m 755 -d /usr/sbin
+../install-sh -o root -g root -m 755 -d /usr/sbin
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_estimate /usr/sbin
+cd ../libhandle/.libs; ../../install-sh -o root -g root -m 755 -d /usr/lib; ../../install-sh -o root -g root -m 755 -T so_dot_version libhandle.lai /usr/lib; ../../install-sh -o root -g root -T so_dot_current libhandle.lai /usr/lib
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_fsr /usr/sbin
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_copy /usr/sbin
+../install-sh -o root -g root -m 755 -d /usr/sbin
+Installing io-install
+Installing logprint-install
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_growfs /usr/sbin
+Installing mkfs-install
+Installing quota-install
+Installing mdrestore-install
+Installing rtcp-install
+Installing repair-install
+../install-sh -o root -g root -m 755 -d /usr/sbin
+../install-sh -o root -g root -m 755 -d /usr/sbin
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_mdrestore /usr/sbin
+../install-sh -o root -g root -m 755 -d /usr/sbin
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_rtcp /usr/sbin
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 mkfs.xfs /usr/sbin
+Installing m4-install
+make[1]: Nothing to be done for 'install'.
+Installing man-install
+make[2]: Nothing to be done for 'install'.
+Installing doc-install
+../install-sh -o root -g root -m 755 -d /usr/share/doc/xfsprogs
+../install-sh -o root -g root -m 755 xfs_protofile.py /usr/sbin/xfs_protofile
+make[2]: Nothing to be done for 'install'.
+../../install-sh -o root -g root -m 755 -d /usr/share/man/man5
+../install-sh -o root -g root -m 755 -d /usr/share/xfsprogs/mkfs
+../install-sh -o root -g root -m 644 CHANGES.gz CREDITS /usr/share/doc/xfsprogs
+../install-sh -o root -g root -m 644 dax_x86_64.conf lts_4.19.conf lts_5.4.conf lts_5.10.conf lts_5.15.conf lts_6.1.conf lts_6.6.conf lts_6.12.conf lts_6.18.conf /usr/share/xfsprogs/mkfs
+../../install-sh -o root -g root -m 644 projects.5 /usr/share/man/man5/projects.5
+Installing debian-install
+make[1]: Nothing to be done for 'install'.
+Installing spaceman-install
+../../install-sh -o root -g root -m 644 projid.5 /usr/share/man/man5/projid.5
+Installing scrub-install
+../../install-sh -o root -g root -m 644 xfs.5 /usr/share/man/man5/xfs.5
+../../install-sh -o root -g root -m 755 -d /usr/share/man/man8
+../install-sh -o root -g root -m 755 -d /usr/sbin
+../../install-sh -o root -g root -m 644 fsck.xfs.8 /usr/share/man/man8/fsck.xfs.8
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_logprint /usr/sbin
+../../install-sh -o root -g root -m 644 mkfs.xfs.8 /usr/share/man/man8/mkfs.xfs.8
+../../install-sh -o root -g root -m 644 xfs_admin.8 /usr/share/man/man8/xfs_admin.8
+Installing healer-install
+../../install-sh -o root -g root -m 644 xfs_bmap.8 /usr/share/man/man8/xfs_bmap.8
+../../install-sh -o root -g root -m 644 xfs_copy.8 /usr/share/man/man8/xfs_copy.8
+../install-sh -o root -g root -m 755 -d /usr/sbin
+../../install-sh -o root -g root -m 644 xfs_db.8 /usr/share/man/man8/xfs_db.8
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_quota /usr/sbin
+../../install-sh -o root -g root -m 644 xfs_estimate.8 /usr/share/man/man8/xfs_estimate.8
+../install-sh -o root -g root -m 755 -d /usr/libexec/xfsprogs
+../../install-sh -o root -g root -m 644 xfs_freeze.8 /usr/share/man/man8/xfs_freeze.8
+../install-sh -o root -g root -m 755 -d /usr/lib/systemd/system
+../install-sh -o root -g root -m 755 xfs_healer xfs_healer_start /usr/libexec/xfsprogs
+../../install-sh -o root -g root -m 644 xfs_fsr.8 /usr/share/man/man8/xfs_fsr.8
+../install-sh -o root -g root -m 644 system-xfs_healer.slice xfs_healer@.service xfs_healer_start.service /usr/lib/systemd/system
+Installing po-install
+../../install-sh -o root -g root -m 644 xfs_growfs.8 /usr/share/man/man8/xfs_growfs.8
+Installing include-install
+../install-sh -o root -g root -m 755 -d /usr/include/xfs
+../install-sh -o root -g root -m 755 -d /usr/sbin
+../../install-sh -o root -g root -m 644 xfs_info.8 /usr/share/man/man8/xfs_info.8
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_spaceman /usr/sbin
+../../install-sh -o root -g root -m 644 xfs_io.8 /usr/share/man/man8/xfs_io.8
+../../install-sh -o root -g root -m 644 xfs_logprint.8 /usr/share/man/man8/xfs_logprint.8
+../install-sh -o root -g root -m 755 xfs_info.sh /usr/sbin/xfs_info
+../../install-sh -o root -g root -m 644 xfs_mdrestore.8 /usr/share/man/man8/xfs_mdrestore.8
+../../install-sh -o root -g root -m 644 xfs_metadump.8 /usr/share/man/man8/xfs_metadump.8
+../../install-sh -o root -g root -m 644 xfs_mkfile.8 /usr/share/man/man8/xfs_mkfile.8
+../../install-sh -o root -g root -m 644 xfs_ncheck.8 /usr/share/man/man8/xfs_ncheck.8
+../../install-sh -o root -g root -m 644 xfs_property.8 /usr/share/man/man8/xfs_property.8
+../../install-sh -o root -g root -m 644 xfs_protofile.8 /usr/share/man/man8/xfs_protofile.8
+../../install-sh -o root -g root -m 644 xfs_quota.8 /usr/share/man/man8/xfs_quota.8
+../../install-sh -o root -g root -m 644 xfs_repair.8 /usr/share/man/man8/xfs_repair.8
+../../install-sh -o root -g root -m 644 xfs_rtcp.8 /usr/share/man/man8/xfs_rtcp.8
+../../install-sh -o root -g root -m 644 xfs_spaceman.8 /usr/share/man/man8/xfs_spaceman.8
+../../install-sh -o root -g root -m 644 xfs_healer.8 /usr/share/man/man8/xfs_healer.8
+../../install-sh -o root -g root -m 644 xfs_healer_start.8 /usr/share/man/man8/xfs_healer_start.8
+../../install-sh -o root -g root -m 644 xfs_scrub.8 /usr/share/man/man8/xfs_scrub.8
+../../install-sh -o root -g root -m 644 xfs_scrub_all.8 /usr/share/man/man8/xfs_scrub_all.8
+../install-sh -o root -g root -m 755 -d /usr/lib/udev/rules.d
+../install-sh -o root -g root -m 755 -d /usr/sbin
+../install-sh -o root -g root -m 755 -d /usr/lib/systemd/system
+../install-sh -o root -g root -m 755 -d /usr/share/xfsprogs
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_scrub /usr/sbin
+for i in xfs.rules; do \
+	../install-sh -o root -g root -m 644 $i /usr/lib/udev/rules.d/64-$i; \
+done
+../install-sh -o root -g root -m 644 xfs_scrub_all.cron /usr/share/xfsprogs
+../install-sh -o root -g root -m 644 xfs_scrub@.service xfs_scrub_fail@.service xfs_scrub_media@.service xfs_scrub_media_fail@.service xfs_scrub_all.service xfs_scrub_all_fail.service xfs_scrub_all.timer system-xfs_scrub.slice /usr/lib/systemd/system
+../install-sh -o root -g root -m 755 -d /usr/libexec/xfsprogs
+../install-sh -o root -g root -m 755 xfs_scrub_all.py /usr/sbin/xfs_scrub_all
+../install-sh -o root -g root -m 755 xfs_scrub_fail /usr/libexec/xfsprogs
+../install-sh -o root -g root -m 755 -d /var/lib/xfsprogs
+../install-sh -o root -g root -m 755 -d /usr/sbin
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_io /usr/sbin
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_bmap.sh /usr/sbin/xfs_bmap
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_freeze.sh /usr/sbin/xfs_freeze
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_mkfile.sh /usr/sbin/xfs_mkfile
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_property /usr/sbin/xfs_property
+../install-sh -o root -g root -m 755 -d /usr/sbin
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_repair /usr/sbin
+../install-sh -o root -g root -m 755 -d /usr/sbin
+/bin/sh ../libtool --quiet --mode=install ../install-sh -o root -g root -m 755 xfs_db /usr/sbin
+../install-sh -o root -g root -m 755 -d /usr/include/xfs
+../install-sh -o root -g root -m 755 xfs_admin.sh /usr/sbin/xfs_admin
+../install-sh -o root -g root -m 755 xfs_ncheck.sh /usr/sbin/xfs_ncheck
+../install-sh -o root -g root -m 755 xfs_metadump.sh /usr/sbin/xfs_metadump
+./install-sh -o root -g root -m 755 -d /usr/share/doc/xfsprogs
+./install-sh -o root -g root -m 644 README /usr/share/doc/xfsprogs
+
+Script done on 2026-05-20 22:08:22+07:00 [COMMAND_EXIT_CODE="0"]
