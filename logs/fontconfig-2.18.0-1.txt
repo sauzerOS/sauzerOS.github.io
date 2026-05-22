@@ -1,0 +1,548 @@
+Script started on 2026-05-22 11:20:23+07:00 [COMMAND="cd /var/tmp/hokuto/fontconfig-88/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/fontconfig-88/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/fontconfig-88/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/fontconfig-88/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/fontconfig-88/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/fontconfig-88/build/.cache' /repo/sauzeros/extra/fontconfig/build /var/tmp/hokuto/fontconfig-88/output 2.18.0 fontconfig" <not executed on terminal>]
+[1mThe Meson build system[0m
+Version: 1.11.1
+Source dir: [1m/var/tmp/hokuto/fontconfig-88/build[0m
+Build dir: [1m/var/tmp/hokuto/fontconfig-88/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mfontconfig[0m
+Project version: [1m2.18.0[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.1.0 "cc (GCC) 16.1.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Library [1mm[0m found: [1;32mYES[0m
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Run-time dependency [1mfreetype2[0m found: [1;32mYES[0m [36m26.6.20[0m
+Run-time dependency [1mjson-c[0m found: [1;32mYES[0m [36m0.18[0m
+Run-time dependency [1mexpat[0m found: [1;32mYES[0m [36m2.8.1[0m
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+Program [1mpytest[0m found: [1;32mYES[0m (/usr/bin/pytest)
+Run-time dependency [1mintl[0m found: [1;32mYES[0m
+Has header "[1mdirent.h[0m" : [1;32mYES[0m 
+Has header "[1mdlfcn.h[0m" : [1;32mYES[0m 
+Has header "[1mfcntl.h[0m" : [1;32mYES[0m 
+Has header "[1minttypes.h[0m" : [1;32mYES[0m 
+Has header "[1mstdint.h[0m" : [1;32mYES[0m 
+Has header "[1mstdio.h[0m" : [1;32mYES[0m 
+Has header "[1mstdlib.h[0m" : [1;32mYES[0m 
+Has header "[1mstrings.h[0m" : [1;32mYES[0m 
+Has header "[1mstring.h[0m" : [1;32mYES[0m 
+Has header "[1munistd.h[0m" : [1;32mYES[0m 
+Has header "[1msys/statvfs.h[0m" : [1;32mYES[0m 
+Has header "[1msys/vfs.h[0m" : [1;32mYES[0m 
+Has header "[1msys/statfs.h[0m" : [1;32mYES[0m 
+Has header "[1msys/stat.h[0m" : [1;32mYES[0m 
+Has header "[1msys/types.h[0m" : [1;32mYES[0m 
+Has header "[1msys/param.h[0m" : [1;32mYES[0m 
+Has header "[1msys/mount.h[0m" : [1;32mYES[0m 
+Has header "[1mtime.h[0m" : [1;32mYES[0m 
+Has header "[1mwchar.h[0m" : [1;32mYES[0m 
+Has header "[1mxlocale.h[0m" : [1;31mNO[0m 
+Checking for function "[1mlink[0m" : [1;32mYES[0m 
+Checking for function "[1mmkstemp[0m" : [1;32mYES[0m 
+Checking for function "[1m_mktemp_s[0m" : [1;31mNO[0m 
+Checking for function "[1mmkdtemp[0m" : [1;32mYES[0m 
+Checking for function "[1mgetopt[0m" : [1;32mYES[0m 
+Checking for function "[1mgetopt_long[0m" : [1;32mYES[0m 
+Checking for function "[1mgetprogname[0m" : [1;31mNO[0m 
+Checking for function "[1mgetexecname[0m" : [1;31mNO[0m 
+Checking for function "[1mrand[0m" : [1;32mYES[0m 
+Checking for function "[1mrandom[0m" : [1;32mYES[0m 
+Checking for function "[1mlrand48[0m" : [1;32mYES[0m 
+Checking for function "[1mrandom_r[0m" : [1;32mYES[0m 
+Checking for function "[1mrand_r[0m" : [1;32mYES[0m 
+Checking for function "[1mreadlink[0m" : [1;32mYES[0m 
+Checking for function "[1mfstatvfs[0m" : [1;32mYES[0m 
+Checking for function "[1mfstatfs[0m" : [1;32mYES[0m 
+Checking for function "[1mlstat[0m" : [1;32mYES[0m 
+Checking for function "[1mstrerror[0m" : [1;32mYES[0m 
+Checking for function "[1mstrerror_r[0m" : [1;32mYES[0m 
+Checking for function "[1mmmap[0m" : [1;32mYES[0m 
+Checking for function "[1mvasprintf_l[0m" : [1;31mNO[0m 
+Checking for function "[1mvasprintf[0m" : [1;32mYES[0m 
+Checking for function "[1mvprintf[0m" : [1;32mYES[0m 
+Checking for function "[1mvsnprintf[0m" : [1;32mYES[0m 
+Checking for function "[1m_vsnprintf_l[0m" : [1;31mNO[0m 
+Checking for function "[1m_vsnprintf_l[0m" : [1;31mNO[0m 
+Checking for function "[1mvsprintf[0m" : [1;32mYES[0m 
+Checking for function "[1mgetpagesize[0m" : [1;32mYES[0m 
+Checking for function "[1mgetpid[0m" : [1;32mYES[0m 
+Checking for function "[1mdcgettext[0m" : [1;32mYES[0m 
+Checking for function "[1mgettext[0m" : [1;32mYES[0m 
+Checking for function "[1mlocaltime_r[0m" : [1;32mYES[0m 
+Checking for function "[1mstrdup[0m" : [1;32mYES[0m 
+Checking for function "[1mFT_Get_BDF_Property[0m" with dependency freetype2: [1;32mYES[0m 
+Checking for function "[1mFT_Get_PS_Font_Info[0m" with dependency freetype2: [1;32mYES[0m 
+Checking for function "[1mFT_Has_PS_Glyph_Names[0m" with dependency freetype2: [1;32mYES[0m 
+Checking for function "[1mFT_Get_X11_Font_Format[0m" with dependency freetype2: [1;32mYES[0m 
+Checking for function "[1mFT_Done_MM_Var[0m" with dependency freetype2: [1;32mYES[0m 
+Header "[1mfcntl.h[0m" has symbol "[1mposix_fadvise[0m" : [1;31mNO[0m 
+Header "[1mstdlib.h[0m" has symbol "[1mmkostemp[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct statvfs[0m" has member "[1mf_basetype[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct statvfs[0m" has member "[1mf_fstypename[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct statfs[0m" has member "[1mf_flags[0m" : [1;32mYES[0m 
+Checking whether type "[1mstruct statfs[0m" has member "[1mf_fstypename[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct stat[0m" has member "[1mst_mtim[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct dirent[0m" has member "[1md_type[0m" : [1;32mYES[0m 
+Checking for size of "[1mvoid *[0m" : [1m8[0m 
+Checking for alignment of "[1mvoid *[0m" : [1m8[0m 
+Checking for alignment of "[1mdouble[0m" : [1m8[0m 
+Checking if "[1mstdatomic.h atomics[0m" links: [1;32mYES[0m 
+Checking if "[1mIntel atomics[0m" links: [1;32mYES[0m 
+Checking if "[1mSolaris atomic ops[0m" links: [1;31mNO[0m 
+Checking if "[1mC99 compliant vsnprintf()[0m" links: [1;32mYES[0m 
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Has header "[1mpthread.h[0m" : [1;32mYES[0m 
+Program [1mgperf[0m found: [1;32mYES[0m (/usr/bin/gperf)
+[1mMessage:[0m gperf len type is size_t
+Checking for type "[1muint64_t[0m" : [1;32mYES[0m 
+Checking for type "[1mint32_t[0m" : [1;32mYES[0m 
+Checking for type "[1muintptr_t[0m" : [1;32mYES[0m 
+Checking for type "[1mintptr_t[0m" : [1;32mYES[0m 
+Configuring [1mfontconfig.h[0m using configuration
+Program [1mfc-case.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/fc-case/fc-case.py)
+Program [1mfc-lang.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/fc-lang/fc-lang.py)
+Program [1mfc-const.py[0m found: [1;32mYES[0m (/usr/bin/python /var/tmp/hokuto/fontconfig-88/build/fc-const/fc-const.py)
+Program [1mfc-const.py[0m found: [1;32mYES[0m (/usr/bin/python /var/tmp/hokuto/fontconfig-88/build/fc-const/fc-const.py)
+[1;33mWARNING:[0m Build target preprocessor_0 has no sources. This was never supposed to be allowed but did because of a bug, support will be removed in a future release of Meson
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Dependency [1mthreads[0m for [1mhost[0m machine found: [1;32mYES[0m [36munknown[0m [1;34m(cached)[0m
+Dependency [1mthreads[0m for [1mhost[0m machine found: [1;32mYES[0m [36munknown[0m [1;34m(cached)[0m
+Program [1mwrite-35-lang-normalize-conf.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/conf.d/write-35-lang-normalize-conf.py)
+Configuring [1mREADME[0m using configuration
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Program [1mmsgfmt[0m found: [1;32mYES[0m (/usr/bin/msgfmt)
+Program [1mmsginit[0m found: [1;32mYES[0m (/usr/bin/msginit)
+Program [1mmsgmerge[0m found: [1;32mYES[0m (/usr/bin/msgmerge)
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Program [1mcheck-whitespace-in-args.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/check-whitespace-in-args.py)
+Program [1mdocbook2man[0m found: [1;31mNO[0m
+Program [1mdocbook2txt[0m found: [1;31mNO[0m
+Program [1mdocbook2pdf[0m found: [1;31mNO[0m
+Program [1mdocbook2html[0m found: [1;31mNO[0m
+Program [1mrun-quiet.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/run-quiet.py)
+Program [1mextract-man-list.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/extract-man-list.py)
+Program [1medit-sgml.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/edit-sgml.py)
+Configuring [1mcache-version.sgml[0m using configuration
+Configuring [1mversion.sgml[0m using configuration
+Configuring [1mconfdir.sgml[0m using configuration
+Program [1mcheck-missing-doc.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/check-missing-doc.py)
+Configuring [1mmeson-config.h[0m using configuration
+Configuring [1mfonts.conf[0m using configuration
+Build targets in project: [1m80[0m
+
+fontconfig [36m2.18.0[0m
+
+  [1mGeneral[0m
+    Documentation              : [1;31mNO[0m
+    NLS                        : [1;32mYES[0m
+    Tests                      : [1;32mYES[0m
+    Pytest                     : [1;32mYES[0m
+    Tools                      : [1;32mYES[0m
+    iconv                      : [1;31mNO[0m
+    XML backend                : expat
+    Fontations support         : disabled
+
+  [1mDefaults[0m
+    Hinting                    : slight
+    Sub Pixel Rendering        : none
+    Bitmap                     : no-except-emoji
+    Font directories           : /usr/share/fonts, /usr/local/share/fonts
+    Additional font directories:
+
+  [1mPaths[0m
+    Cache directory            : /var/cache/fontconfig
+    Template directory         : /usr/share/fontconfig/conf.avail
+    Base config directory      : /etc/fonts
+    Config directory           : /etc/fonts/conf.d
+    XML directory              : /usr/share/xml/fontconfig
+
+  [1mUser defined options[0m
+    buildtype                  : release
+    prefix                     : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/fontconfig-88/build/build
+ninja: Entering directory `/var/tmp/hokuto/fontconfig-88/build/build'
+[0/135] Compiling C object src/preprocessor_0.p/fcobjshash.gperf.h.i[K[0/135] Copying file fcstdint.h[K[0/135] Generating alias_headers with a custom command[K[0/135] Generating ft_alias_headers with a custom command[K[0/135] Generating fc-lang/fclang.h with a custom command[K[0/135] Generating fc-case/fccase.h with a custom command[K[0/135] Generating fc-const/fcconst.h with a custom command[K[0/135] Generating fc-const/test_const_name.c with a custom command[K[0/135] Compiling C object test/test-conf.p/test-conf.c.o[K[0/135] Copying file test/out.expected[K[1/135] Compiling C object src/preprocessor_0.p/fcobjshash.gperf.h.i[K[1/135] Generating src/fcobjshash.gperf with a custom command[K[2/135] Generating fc-const/test_const_name.c with a custom command[K[2/135] Compiling C object test/test_const_name.p/meson-generated_.._.._fc-const_test_const_name.c.o[K[3/135] Generating fc-case/fccase.h with a custom command[K[3/135] Generating conf.d/35-lang-normalize.conf with a custom command[K[4/135] Generating alias_headers with a custom command[K[4/135] Building translation po/ka/LC_MESSAGES/fontconfig-ka.mo[K[5/135] Generating fc-const/fcconst.h with a custom command[K[5/135] Building translation po/zh_CN/LC_MESSAGES/fontconfig-zh_CN.mo[K[6/135] Compiling C object test/test-conf.p/test-conf.c.o[K[6/135] Building translation po-conf/ka/LC_MESSAGES/fontconfig-conf-ka.mo[K[7/135] Generating src/fcobjshash.gperf with a custom command[K[7/135] Generating src/fcobjshash.h with a custom command[K[8/135] Generating conf.d/35-lang-normalize.conf with a custom command[K[8/135] Building translation po-conf/zh_CN/LC_MESSAGES/fontconfig-conf-zh_CN.mo[K[9/135] Building translation po-conf/ka/LC_MESSAGES/fontconfig-conf-ka.mo[K[9/135] Copying file doc/fontconfig-devel.sgml[K[10/135] Compiling C object test/test_const_name.p/meson-generated_.._.._fc-const_test_const_name.c.o[K[10/135] Copying file doc/fontconfig-user.sgml[K[11/135] Building translation po/zh_CN/LC_MESSAGES/fontconfig-zh_CN.mo[K[12/135] Generating ft_alias_headers with a custom command[K[13/135] Building translation po/ka/LC_MESSAGES/fontconfig-ka.mo[K[14/135] Building translation po-conf/zh_CN/LC_MESSAGES/fontconfig-conf-zh_CN.mo[K[15/135] Generating src/fcobjshash.h with a custom command[K[16/135] Copying file fcstdint.h[K[16/135] Compiling C object fc-cache/fc-cache.p/fc-cache.c.o[K[16/135] Compiling C object fc-cat/fc-cat.p/fc-cat.c.o[K[16/135] Compiling C object fc-conflist/fc-conflist.p/fc-conflist.c.o[K[16/135] Compiling C object fc-genconf/fc-genconf.p/fc-genconf.c.o[K[16/135] Compiling C object fc-list/fc-list.p/fc-list.c.o[K[16/135] Compiling C object fc-match/fc-match.p/fc-match.c.o[K[17/135] Copying file test/out.expected[K[17/135] Compiling C object fc-pattern/fc-pattern.p/fc-pattern.c.o[K[18/135] Copying file doc/fontconfig-user.sgml[K[18/135] Compiling C object fc-query/fc-query.p/fc-query.c.o[K[19/135] Compiling C object fc-pattern/fc-pattern.p/fc-pattern.c.o[K[19/135] Compiling C object fc-scan/fc-scan.p/fc-scan.c.o[K[20/135] Compiling C object fc-cat/fc-cat.p/fc-cat.c.o[K
+[01m[K../fc-cat/fc-cat.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[K../fc-cat/fc-cat.c:259:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable=[m[K]
+  259 |     int        [01;35m[Kret[m[K = 0;
+      |                [01;35m[K^~~[m[K
+[20/135] Compiling C object fc-validate/fc-validate.p/fc-validate.c.o[K[21/135] Compiling C object fc-match/fc-match.p/fc-match.c.o[K[22/135] Compiling C object fc-genconf/fc-genconf.p/fc-genconf.c.o[K[23/135] Compiling C object fc-conflist/fc-conflist.p/fc-conflist.c.o[K[24/135] Compiling C object fc-list/fc-list.p/fc-list.c.o[K[25/135] Compiling C object fc-cache/fc-cache.p/fc-cache.c.o[K[26/135] Compiling C object fc-query/fc-query.p/fc-query.c.o[K[27/135] Compiling C object fc-validate/fc-validate.p/fc-validate.c.o[K[28/135] Copying file doc/fontconfig-devel.sgml[K[29/135] Compiling C object fc-scan/fc-scan.p/fc-scan.c.o[K[30/135] Generating fc-lang/fclang.h with a custom command[K[30/135] Compiling C object src/libpatternlib_internal.a.p/fcpat.c.o[K[30/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcatomic.c.o[K[30/135] Compiling C object libfontconfig.so.1.17.0.p/src_fccache.c.o[K[30/135] Compiling C object libfontconfig.so.1.17.0.p/src_fccfg.c.o[K[30/135] Compiling C object libfontconfig.so.1.17.0.p/src_fccharset.c.o[K[30/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcconffile.c.o[K[30/135] Compiling C object libfontconfig.so.1.17.0.p/src_fccompat.c.o[K[30/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcdbg.c.o[K[30/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcdefault.c.o[K[30/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcdir.c.o[K[31/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcdbg.c.o[K[31/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcformat.c.o[K[32/135] Compiling C object libfontconfig.so.1.17.0.p/src_fccompat.c.o[K[32/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcfreetype.c.o[K[33/135] Compiling C object libfontconfig.so.1.17.0.p/src_fccharset.c.o[K
+In file included from [01m[K../src/fccharset.c:25[m[K:
+[01m[K../src/fccharset.c:[m[K In function ‘[01m[KFcCharSetPutLeaf[m[K’:
+[01m[K../src/fcint.h:172:47:[m[K [01;35m[Kwarning: [m[Kpointer ‘[01m[Kleaves_109[m[K’ may be used after ‘[01m[Krealloc[m[K’ [[01;35m[K-Wuse-after-free[m[K]
+  172 | #define FcOffsetToPtr(b, o, t)         ((t *)([01;35m[K(uintptr_t)(b)[m[K + (ptrdiff_t)(o)))
+      |                                               [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K../src/fccharset.c:177:26:[m[K [01;36m[Knote: [m[Kcall to ‘[01m[Krealloc[m[K’ here
+  177 |             new_leaves = [01;36m[Krealloc (leaves, alloced * sizeof (*leaves))[m[K;
+      |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[33/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcfs.c.o[K[34/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcdefault.c.o[K[34/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcptrlist.c.o[K[35/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcdir.c.o[K[35/135] Compiling C object libfontconfig.so.1.17.0.p/src_fchash.c.o[K[36/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcatomic.c.o[K[36/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcinit.c.o[K[37/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcconffile.c.o[K[37/135] Compiling C object libfontconfig.so.1.17.0.p/src_fclang.c.o[K[38/135] Compiling C object libfontconfig.so.1.17.0.p/src_fccache.c.o[K[38/135] Compiling C object libfontconfig.so.1.17.0.p/src_fclist.c.o[K[39/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcformat.c.o[K[39/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcmatch.c.o[K[40/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcptrlist.c.o[K[40/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcmatrix.c.o[K[41/135] Compiling C object libfontconfig.so.1.17.0.p/src_fchash.c.o[K[41/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcname.c.o[K[42/135] Compiling C object libfontconfig.so.1.17.0.p/src_fccfg.c.o[K[42/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcobjs.c.o[K[43/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcinit.c.o[K[43/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcrange.c.o[K[44/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcfs.c.o[K[44/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcserialize.c.o[K[45/135] Compiling C object src/libpatternlib_internal.a.p/fcpat.c.o[K[45/135] Linking static target src/libpatternlib_internal.a[K[46/135] Linking static target src/libpatternlib_internal.a[K[46/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcstat.c.o[K[47/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcfreetype.c.o[K[47/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcstr.c.o[K[48/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcmatrix.c.o[K[48/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcweight.c.o[K[49/135] Compiling C object libfontconfig.so.1.17.0.p/src_fclang.c.o[K[49/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcxml.c.o[K[50/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcrange.c.o[K[50/135] Compiling C object libfontconfig.so.1.17.0.p/src_ftglue.c.o[K[51/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcobjs.c.o[K[51/135] Compiling C object libfontconfig.a.p/src_fcatomic.c.o[K[52/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcname.c.o[K[52/135] Compiling C object libfontconfig.a.p/src_fccache.c.o[K[53/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcserialize.c.o[K[53/135] Compiling C object libfontconfig.a.p/src_fccfg.c.o[K[54/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcmatch.c.o[K[54/135] Compiling C object libfontconfig.a.p/src_fccharset.c.o[K[55/135] Compiling C object libfontconfig.a.p/src_fcatomic.c.o[K[55/135] Compiling C object libfontconfig.a.p/src_fcconffile.c.o[K[56/135] Compiling C object libfontconfig.so.1.17.0.p/src_fclist.c.o[K[56/135] Compiling C object libfontconfig.a.p/src_fccompat.c.o[K[57/135] Compiling C object libfontconfig.so.1.17.0.p/src_ftglue.c.o[K[57/135] Compiling C object libfontconfig.a.p/src_fcdbg.c.o[K[58/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcstr.c.o[K[58/135] Compiling C object libfontconfig.a.p/src_fcdefault.c.o[K[59/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcstat.c.o[K[59/135] Compiling C object libfontconfig.a.p/src_fcdir.c.o[K[60/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcweight.c.o[K[60/135] Compiling C object libfontconfig.a.p/src_fcformat.c.o[K[61/135] Compiling C object libfontconfig.so.1.17.0.p/src_fcxml.c.o[K[61/135] Linking target libfontconfig.so.1.17.0[K[62/135] Compiling C object libfontconfig.a.p/src_fccache.c.o[K[62/135] Compiling C object libfontconfig.a.p/src_fcfreetype.c.o[K[63/135] Compiling C object libfontconfig.a.p/src_fccharset.c.o[K
+In file included from [01m[K../src/fccharset.c:25[m[K:
+[01m[K../src/fccharset.c:[m[K In function ‘[01m[KFcCharSetPutLeaf[m[K’:
+[01m[K../src/fcint.h:172:47:[m[K [01;35m[Kwarning: [m[Kpointer ‘[01m[Kleaves_109[m[K’ may be used after ‘[01m[Krealloc[m[K’ [[01;35m[K-Wuse-after-free[m[K]
+  172 | #define FcOffsetToPtr(b, o, t)         ((t *)([01;35m[K(uintptr_t)(b)[m[K + (ptrdiff_t)(o)))
+      |                                               [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K../src/fccharset.c:177:26:[m[K [01;36m[Knote: [m[Kcall to ‘[01m[Krealloc[m[K’ here
+  177 |             new_leaves = [01;36m[Krealloc (leaves, alloced * sizeof (*leaves))[m[K;
+      |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[63/135] Compiling C object libfontconfig.a.p/src_fcfs.c.o[K[64/135] Compiling C object libfontconfig.a.p/src_fcconffile.c.o[K[64/135] Compiling C object libfontconfig.a.p/src_fcptrlist.c.o[K[65/135] Compiling C object libfontconfig.a.p/src_fcdbg.c.o[K[65/135] Compiling C object libfontconfig.a.p/src_fchash.c.o[K[66/135] Compiling C object libfontconfig.a.p/src_fccfg.c.o[K[66/135] Compiling C object libfontconfig.a.p/src_fcinit.c.o[K[67/135] Compiling C object libfontconfig.a.p/src_fcdir.c.o[K[67/135] Compiling C object libfontconfig.a.p/src_fclang.c.o[K[68/135] Compiling C object libfontconfig.a.p/src_fccompat.c.o[K[68/135] Compiling C object libfontconfig.a.p/src_fclist.c.o[K[69/135] Compiling C object libfontconfig.a.p/src_fcptrlist.c.o[K[69/135] Compiling C object libfontconfig.a.p/src_fcmatch.c.o[K[70/135] Compiling C object libfontconfig.a.p/src_fcfs.c.o[K[70/135] Compiling C object libfontconfig.a.p/src_fcmatrix.c.o[K[71/135] Compiling C object libfontconfig.a.p/src_fcdefault.c.o[K[71/135] Compiling C object libfontconfig.a.p/src_fcname.c.o[K[72/135] Compiling C object libfontconfig.a.p/src_fcinit.c.o[K[72/135] Compiling C object libfontconfig.a.p/src_fcobjs.c.o[K[73/135] Compiling C object libfontconfig.a.p/src_fchash.c.o[K[73/135] Compiling C object libfontconfig.a.p/src_fcrange.c.o[K[74/135] Compiling C object libfontconfig.a.p/src_fcfreetype.c.o[K[74/135] Compiling C object libfontconfig.a.p/src_fcserialize.c.o[K[75/135] Compiling C object libfontconfig.a.p/src_fcformat.c.o[K[75/135] Compiling C object libfontconfig.a.p/src_fcstat.c.o[K[76/135] Compiling C object libfontconfig.a.p/src_fclist.c.o[K[76/135] Compiling C object libfontconfig.a.p/src_fcstr.c.o[K[77/135] Compiling C object libfontconfig.a.p/src_fcmatrix.c.o[K[77/135] Compiling C object libfontconfig.a.p/src_fcweight.c.o[K[78/135] Compiling C object libfontconfig.a.p/src_fclang.c.o[K[78/135] Compiling C object libfontconfig.a.p/src_fcxml.c.o[K[79/135] Compiling C object libfontconfig.a.p/src_fcobjs.c.o[K[79/135] Compiling C object libfontconfig.a.p/src_ftglue.c.o[K[80/135] Compiling C object libfontconfig.a.p/src_fcname.c.o[K[80/135] Compiling C object src/fcarch.p/fcarch.c.o[K[81/135] Compiling C object libfontconfig.a.p/src_fcmatch.c.o[K[81/135] Compiling C object test/test_bz89617.p/test-bz89617.c.o[K[82/135] Compiling C object libfontconfig.a.p/src_fcserialize.c.o[K[82/135] Compiling C object test/test_bz131804.p/test-bz131804.c.o[K[83/135] Compiling C object test/test_bz89617.p/test-bz89617.c.o[K[83/135] Compiling C object test/test_bz96676.p/test-bz96676.c.o[K[84/135] Compiling C object libfontconfig.a.p/src_fcrange.c.o[K[84/135] Compiling C object test/test_name_parse.p/test-name-parse.c.o[K[85/135] Compiling C object libfontconfig.a.p/src_fcstat.c.o[K[85/135] Compiling C object test/test_bz106618.p/test-bz106618.c.o[K[86/135] Compiling C object test/test_bz96676.p/test-bz96676.c.o[K[86/135] Compiling C object test/test_bz1744377.p/test-bz1744377.c.o[K[87/135] Compiling C object test/test_bz131804.p/test-bz131804.c.o[K[87/135] Compiling C object test/test_issue180.p/test-issue180.c.o[K[88/135] Compiling C object libfontconfig.a.p/src_fcstr.c.o[K[88/135] Compiling C object test/test_family_matching.p/test-family-matching.c.o[K[89/135] Compiling C object test/test_bz106618.p/test-bz106618.c.o[K[89/135] Compiling C object test/test_ptrlist.p/test-ptrlist.c.o[K[90/135] Compiling C object test/test_name_parse.p/test-name-parse.c.o[K[90/135] Compiling C object test/test_ostest.p/test-ostest.c.o[K[91/135] Compiling C object test/test_bz1744377.p/test-bz1744377.c.o[K[91/135] Compiling C object test/test_bz106632.p/test-bz106632.c.o[K[92/135] Compiling C object test/test_issue180.p/test-issue180.c.o[K[92/135] Compiling C object test/test_issue107.p/test-issue107.c.o[K[93/135] Compiling C object test/test_ostest.p/test-ostest.c.o[K[93/135] Compiling C object test/test_crbug1004254.p/test-crbug1004254.c.o[K[94/135] Compiling C object src/fcarch.p/fcarch.c.o[K[94/135] Compiling C object test/test_mt_fccfg.p/test-mt-fccfg.c.o[K[95/135] Compiling C object libfontconfig.a.p/src_ftglue.c.o[K[95/135] Compiling C object test/test_gen_testcache.p/test-gen-testcache.c.o[K[96/135] Compiling C object libfontconfig.a.p/src_fcweight.c.o[K[96/135] Linking target src/fcarch[K[97/135] Compiling C object test/test_family_matching.p/test-family-matching.c.o[K[98/135] Compiling C object test/test_bz106632.p/test-bz106632.c.o[K[99/135] Compiling C object test/test_crbug1004254.p/test-crbug1004254.c.o[K[100/135] Compiling C object test/test_issue107.p/test-issue107.c.o[K[101/135] Compiling C object test/test_mt_fccfg.p/test-mt-fccfg.c.o[K[102/135] Compiling C object libfontconfig.a.p/src_fcxml.c.o[K[102/135] Linking static target libfontconfig.a[K[103/135] Linking target src/fcarch[K[104/135] Linking static target libfontconfig.a[K[104/135] Linking target test/test_bz89617[K[104/135] Linking target test/test_bz131804[K[104/135] Linking target test/test_bz96676[K[104/135] Linking target test/test_name_parse[K[104/135] Linking target test/test_bz106618[K[104/135] Linking target test/test_bz1744377[K[104/135] Linking target test/test_issue180[K[105/135] Compiling C object test/test_ptrlist.p/test-ptrlist.c.o[K[105/135] Linking target test/test_family_matching[K[106/135] Linking target test/test_bz96676[K[106/135] Linking target test/test_ptrlist[K[107/135] Compiling C object test/test_gen_testcache.p/test-gen-testcache.c.o[K[107/135] Linking target test/test_ostest[K[108/135] Linking target test/test_ptrlist[K[108/135] Linking target test/test_bz106632[K[109/135] Linking target test/test_ostest[K[109/135] Linking target test/test_issue107[K[110/135] Linking target test/test_bz131804[K[110/135] Linking target test/test_crbug1004254[K[111/135] Linking target test/test_name_parse[K[111/135] Linking target test/test_mt_fccfg[K[112/135] Linking target libfontconfig.so.1.17.0[K[112/135] Generating symbol file libfontconfig.so.1.17.0.p/libfontconfig.so.1.17.0.symbols[K[113/135] Generating symbol file libfontconfig.so.1.17.0.p/libfontconfig.so.1.17.0.symbols[K[113/135] Linking target fc-cache/fc-cache[K[114/135] Linking target fc-cache/fc-cache[K[114/135] Linking target fc-cat/fc-cat[K[115/135] Linking target fc-cat/fc-cat[K[115/135] Linking target fc-conflist/fc-conflist[K[116/135] Linking target fc-conflist/fc-conflist[K[116/135] Linking target fc-genconf/fc-genconf[K[117/135] Linking target fc-genconf/fc-genconf[K[117/135] Linking target fc-list/fc-list[K[118/135] Linking target test/test_bz1744377[K[118/135] Linking target fc-match/fc-match[K[119/135] Linking target test/test_family_matching[K[119/135] Linking target fc-pattern/fc-pattern[K[120/135] Linking target fc-pattern/fc-pattern[K[120/135] Linking target fc-query/fc-query[K[121/135] Linking target test/test_issue180[K[121/135] Linking target fc-scan/fc-scan[K[122/135] Linking target fc-match/fc-match[K[122/135] Linking target fc-validate/fc-validate[K[123/135] Linking target fc-list/fc-list[K[123/135] Linking target test/test_gen_testcache[K[124/135] Linking target fc-query/fc-query[K[124/135] Linking target test/test-conf[K[125/135] Linking target fc-validate/fc-validate[K[125/135] Linking target test/test_const_name[K[126/135] Linking target fc-scan/fc-scan[K[127/135] Linking target test/test_const_name[K[128/135] Linking target test/test-conf[K[129/135] Linking target test/test_bz106632[K[130/135] Linking target test/test_crbug1004254[K[131/135] Linking target test/test_bz106618[K[132/135] Linking target test/test_bz89617[K[133/135] Linking target test/test_issue107[K[134/135] Linking target test/test_mt_fccfg[K[135/135] Linking target test/test_gen_testcache[K
+ninja: Entering directory `/var/tmp/hokuto/fontconfig-88/build/build'
+ninja: no work to do.
+Installing libfontconfig.so.1.17.0 to /var/tmp/hokuto/fontconfig-88/output/usr/lib
+Installing fc-cache/fc-cache to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing fc-cat/fc-cat to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing fc-conflist/fc-conflist to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing fc-genconf/fc-genconf to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing fc-list/fc-list to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing fc-match/fc-match to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing fc-pattern/fc-pattern to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing fc-query/fc-query to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing fc-scan/fc-scan to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing fc-validate/fc-validate to /var/tmp/hokuto/fontconfig-88/output/usr/bin
+Installing conf.d/35-lang-normalize.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing po/ka/LC_MESSAGES/fontconfig.mo to /var/tmp/hokuto/fontconfig-88/output/usr/share/locale/ka/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/fontconfig.mo to /var/tmp/hokuto/fontconfig-88/output/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po-conf/ka/LC_MESSAGES/fontconfig-conf.mo to /var/tmp/hokuto/fontconfig-88/output/usr/share/locale/ka/LC_MESSAGES
+Installing po-conf/zh_CN/LC_MESSAGES/fontconfig-conf.mo to /var/tmp/hokuto/fontconfig-88/output/usr/share/locale/zh_CN/LC_MESSAGES
+Installing /var/tmp/hokuto/fontconfig-88/build/build/fontconfig/fontconfig.h to /var/tmp/hokuto/fontconfig-88/output/usr/include/fontconfig
+Installing /var/tmp/hokuto/fontconfig-88/build/fontconfig/fcfreetype.h to /var/tmp/hokuto/fontconfig-88/output/usr/include/fontconfig
+Installing /var/tmp/hokuto/fontconfig-88/build/fontconfig/fcprivate.h to /var/tmp/hokuto/fontconfig-88/output/usr/include/fontconfig
+Installing new directory /var/tmp/hokuto/fontconfig-88/output/var/cache/fontconfig
+Installing /var/tmp/hokuto/fontconfig-88/build/build/meson-private/fontconfig.pc to /var/tmp/hokuto/fontconfig-88/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/05-macos.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/05-reset-dirs-sample.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/09-autohint-if-no-hinting.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-autohint.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-hinting-full.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-hinting-medium.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-hinting-none.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-hinting-slight.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-no-antialias.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-scale-bitmap-fonts.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-bgr.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-none.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-rgb.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-vbgr.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-vrgb.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-unhinted.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-yes-antialias.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/11-lcdfilter-default.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/11-lcdfilter-legacy.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/11-lcdfilter-light.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/11-lcdfilter-none.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/20-unhint-small-vera.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/25-unhint-nonlatin.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/30-metric-aliases.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/40-nonlatin.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/45-generic.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/45-latin.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/48-guessfamily.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/48-spacing.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/49-sansserif.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/50-user.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/51-local.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/60-generic.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/60-latin.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/65-fonts-persian.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/65-khmer.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/65-nonlatin.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/69-unifont.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/70-no-bitmaps.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/70-no-bitmaps-and-emoji.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/70-no-bitmaps-except-emoji.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/70-yes-bitmaps.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/80-delicious.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/90-synthetic.conf to /var/tmp/hokuto/fontconfig-88/output/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/build/conf.d/README to /var/tmp/hokuto/fontconfig-88/output/etc/fonts/conf.d
+Installing /var/tmp/hokuto/fontconfig-88/build/its/fontconfig.its to /var/tmp/hokuto/fontconfig-88/output/usr/share/gettext/its
+Installing /var/tmp/hokuto/fontconfig-88/build/its/fontconfig.loc to /var/tmp/hokuto/fontconfig-88/output/usr/share/gettext/its
+Installing /var/tmp/hokuto/fontconfig-88/build/build/fonts.conf to /var/tmp/hokuto/fontconfig-88/output/etc/fonts
+Installing /var/tmp/hokuto/fontconfig-88/build/fonts.dtd to /var/tmp/hokuto/fontconfig-88/output/usr/share/xml/fontconfig
+Installing symlink pointing to libfontconfig.so.1.17.0 to /var/tmp/hokuto/fontconfig-88/output/usr/lib/libfontconfig.so.1
+Installing symlink pointing to libfontconfig.so.1 to /var/tmp/hokuto/fontconfig-88/output/usr/lib/libfontconfig.so
+Skipping custom install script because DESTDIR is set '/var/tmp/hokuto/fontconfig-88/build/build/fc-cache/fc-cache -s -f -v'
+Running custom install script '/usr/bin/python /var/tmp/hokuto/fontconfig-88/build/conf.d/link_confs.py /usr/share/fontconfig/conf.avail /etc/fonts/conf.d 05-macos.conf 10-scale-bitmap-fonts.conf 10-yes-antialias.conf 11-lcdfilter-default.conf 20-unhint-small-vera.conf 30-metric-aliases.conf 40-nonlatin.conf 45-generic.conf 45-latin.conf 48-guessfamily.conf 48-spacing.conf 49-sansserif.conf 50-user.conf 51-local.conf 60-generic.conf 60-latin.conf 65-fonts-persian.conf 65-nonlatin.conf 69-unifont.conf 80-delicious.conf 90-synthetic.conf 10-hinting-slight.conf 10-sub-pixel-none.conf 70-no-bitmaps-except-emoji.conf'
+[1mThe Meson build system[0m
+Version: 1.11.1
+Source dir: [1m/var/tmp/hokuto/fontconfig-88/build[0m
+Build dir: [1m/var/tmp/hokuto/fontconfig-88/build/build[0m
+Build type: [1mcross build[0m
+Project name: [1mfontconfig[0m
+Project version: [1m2.18.0[0m
+C compiler for the host machine: [1mgcc -m32[0m (gcc 16.1.0 "gcc (GCC) 16.1.0")
+C linker for the host machine: [1mgcc -m32[0m ld.bfd 2.46
+C compiler for the build machine: [1mcc[0m (gcc 16.1.0 "cc (GCC) 16.1.0")
+C linker for the build machine: [1mcc[0m ld.bfd 2.46
+Build machine cpu family: [1mx86_64[0m
+Build machine cpu: [1mx86_64[0m
+Host machine cpu family: [1mx86[0m
+Host machine cpu: [1mi686[0m
+Target machine cpu family: [1mx86[0m
+Target machine cpu: [1mi686[0m
+Library [1mm[0m found: [1;32mYES[0m
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/i686-pc-linux-gnu-pkg-config)[0m [1;34m2.5.1[0m
+Run-time dependency [1mfreetype2[0m found: [1;32mYES[0m [36m26.6.20[0m
+Found CMake: [1;31mNO[0m
+Run-time dependency [1mjson-c[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Run-time dependency [1mexpat[0m found: [1;32mYES[0m [36m2.8.1[0m
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+Program [1mpytest[0m found: [1;32mYES[0m (/usr/bin/pytest)
+Run-time dependency [1mintl[0m found: [1;32mYES[0m
+Has header "[1mdirent.h[0m" : [1;32mYES[0m 
+Has header "[1mdlfcn.h[0m" : [1;32mYES[0m 
+Has header "[1mfcntl.h[0m" : [1;32mYES[0m 
+Has header "[1minttypes.h[0m" : [1;32mYES[0m 
+Has header "[1mstdint.h[0m" : [1;32mYES[0m 
+Has header "[1mstdio.h[0m" : [1;32mYES[0m 
+Has header "[1mstdlib.h[0m" : [1;32mYES[0m 
+Has header "[1mstrings.h[0m" : [1;32mYES[0m 
+Has header "[1mstring.h[0m" : [1;32mYES[0m 
+Has header "[1munistd.h[0m" : [1;32mYES[0m 
+Has header "[1msys/statvfs.h[0m" : [1;32mYES[0m 
+Has header "[1msys/vfs.h[0m" : [1;32mYES[0m 
+Has header "[1msys/statfs.h[0m" : [1;32mYES[0m 
+Has header "[1msys/stat.h[0m" : [1;32mYES[0m 
+Has header "[1msys/types.h[0m" : [1;32mYES[0m 
+Has header "[1msys/param.h[0m" : [1;32mYES[0m 
+Has header "[1msys/mount.h[0m" : [1;32mYES[0m 
+Has header "[1mtime.h[0m" : [1;32mYES[0m 
+Has header "[1mwchar.h[0m" : [1;32mYES[0m 
+Has header "[1mxlocale.h[0m" : [1;31mNO[0m 
+Checking for function "[1mlink[0m" : [1;32mYES[0m 
+Checking for function "[1mmkstemp[0m" : [1;32mYES[0m 
+Checking for function "[1m_mktemp_s[0m" : [1;31mNO[0m 
+Checking for function "[1mmkdtemp[0m" : [1;32mYES[0m 
+Checking for function "[1mgetopt[0m" : [1;32mYES[0m 
+Checking for function "[1mgetopt_long[0m" : [1;32mYES[0m 
+Checking for function "[1mgetprogname[0m" : [1;31mNO[0m 
+Checking for function "[1mgetexecname[0m" : [1;31mNO[0m 
+Checking for function "[1mrand[0m" : [1;32mYES[0m 
+Checking for function "[1mrandom[0m" : [1;32mYES[0m 
+Checking for function "[1mlrand48[0m" : [1;32mYES[0m 
+Checking for function "[1mrandom_r[0m" : [1;32mYES[0m 
+Checking for function "[1mrand_r[0m" : [1;32mYES[0m 
+Checking for function "[1mreadlink[0m" : [1;32mYES[0m 
+Checking for function "[1mfstatvfs[0m" : [1;32mYES[0m 
+Checking for function "[1mfstatfs[0m" : [1;32mYES[0m 
+Checking for function "[1mlstat[0m" : [1;32mYES[0m 
+Checking for function "[1mstrerror[0m" : [1;32mYES[0m 
+Checking for function "[1mstrerror_r[0m" : [1;32mYES[0m 
+Checking for function "[1mmmap[0m" : [1;32mYES[0m 
+Checking for function "[1mvasprintf_l[0m" : [1;31mNO[0m 
+Checking for function "[1mvasprintf[0m" : [1;32mYES[0m 
+Checking for function "[1mvprintf[0m" : [1;32mYES[0m 
+Checking for function "[1mvsnprintf[0m" : [1;32mYES[0m 
+Checking for function "[1m_vsnprintf_l[0m" : [1;31mNO[0m 
+Checking for function "[1m_vsnprintf_l[0m" : [1;31mNO[0m 
+Checking for function "[1mvsprintf[0m" : [1;32mYES[0m 
+Checking for function "[1mgetpagesize[0m" : [1;32mYES[0m 
+Checking for function "[1mgetpid[0m" : [1;32mYES[0m 
+Checking for function "[1mdcgettext[0m" : [1;32mYES[0m 
+Checking for function "[1mgettext[0m" : [1;32mYES[0m 
+Checking for function "[1mlocaltime_r[0m" : [1;32mYES[0m 
+Checking for function "[1mstrdup[0m" : [1;32mYES[0m 
+Checking for function "[1mFT_Get_BDF_Property[0m" with dependency freetype2: [1;32mYES[0m 
+Checking for function "[1mFT_Get_PS_Font_Info[0m" with dependency freetype2: [1;32mYES[0m 
+Checking for function "[1mFT_Has_PS_Glyph_Names[0m" with dependency freetype2: [1;32mYES[0m 
+Checking for function "[1mFT_Get_X11_Font_Format[0m" with dependency freetype2: [1;32mYES[0m 
+Checking for function "[1mFT_Done_MM_Var[0m" with dependency freetype2: [1;32mYES[0m 
+Header "[1mfcntl.h[0m" has symbol "[1mposix_fadvise[0m" : [1;31mNO[0m 
+Header "[1mstdlib.h[0m" has symbol "[1mmkostemp[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct statvfs[0m" has member "[1mf_basetype[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct statvfs[0m" has member "[1mf_fstypename[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct statfs[0m" has member "[1mf_flags[0m" : [1;32mYES[0m 
+Checking whether type "[1mstruct statfs[0m" has member "[1mf_fstypename[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct stat[0m" has member "[1mst_mtim[0m" : [1;31mNO[0m 
+Checking whether type "[1mstruct dirent[0m" has member "[1md_type[0m" : [1;32mYES[0m 
+Checking for size of "[1mvoid *[0m" : [1m4[0m 
+Checking for alignment of "[1mvoid *[0m" : [1m4[0m 
+Checking for alignment of "[1mdouble[0m" : [1m4[0m 
+Checking if "[1mstdatomic.h atomics[0m" links: [1;32mYES[0m 
+Checking if "[1mIntel atomics[0m" links: [1;32mYES[0m 
+Checking if "[1mSolaris atomic ops[0m" links: [1;31mNO[0m 
+Checking if "[1mC99 compliant vsnprintf()[0m" links: [1;32mYES[0m 
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Has header "[1mpthread.h[0m" : [1;32mYES[0m 
+Program [1mgperf[0m found: [1;32mYES[0m (/usr/bin/gperf)
+[1mMessage:[0m gperf len type is size_t
+Checking for type "[1muint64_t[0m" : [1;32mYES[0m 
+Checking for type "[1mint32_t[0m" : [1;32mYES[0m 
+Checking for type "[1muintptr_t[0m" : [1;32mYES[0m 
+Checking for type "[1mintptr_t[0m" : [1;32mYES[0m 
+Configuring [1mfontconfig.h[0m using configuration
+Program [1mfc-case.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/fc-case/fc-case.py)
+Program [1mfc-lang.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/fc-lang/fc-lang.py)
+Program [1mfc-const.py[0m found: [1;32mYES[0m (/usr/bin/python /var/tmp/hokuto/fontconfig-88/build/fc-const/fc-const.py)
+Program [1mfc-const.py[0m found: [1;32mYES[0m (/usr/bin/python /var/tmp/hokuto/fontconfig-88/build/fc-const/fc-const.py)
+[1;33mWARNING:[0m Build target preprocessor_0 has no sources. This was never supposed to be allowed but did because of a bug, support will be removed in a future release of Meson
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/i686-pc-linux-gnu-pkg-config)[0m [1;34m2.5.1[0m
+Dependency [1mthreads[0m for [1mhost[0m machine found: [1;32mYES[0m [36munknown[0m [1;34m(cached)[0m
+Dependency [1mthreads[0m for [1mhost[0m machine found: [1;32mYES[0m [36munknown[0m [1;34m(cached)[0m
+Program [1mwrite-35-lang-normalize-conf.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/conf.d/write-35-lang-normalize-conf.py)
+Configuring [1mREADME[0m using configuration
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Program [1mmsgfmt[0m found: [1;32mYES[0m (/usr/bin/msgfmt)
+Program [1mmsginit[0m found: [1;32mYES[0m (/usr/bin/msginit)
+Program [1mmsgmerge[0m found: [1;32mYES[0m (/usr/bin/msgmerge)
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Program [1mcheck-whitespace-in-args.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/check-whitespace-in-args.py)
+Program [1mdocbook2man[0m found: [1;31mNO[0m
+Program [1mdocbook2txt[0m found: [1;31mNO[0m
+Program [1mdocbook2pdf[0m found: [1;31mNO[0m
+Program [1mdocbook2html[0m found: [1;31mNO[0m
+Program [1mrun-quiet.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/run-quiet.py)
+Program [1mextract-man-list.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/extract-man-list.py)
+Program [1medit-sgml.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/edit-sgml.py)
+Configuring [1mcache-version.sgml[0m using configuration
+Configuring [1mversion.sgml[0m using configuration
+Configuring [1mconfdir.sgml[0m using configuration
+Program [1mcheck-missing-doc.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fontconfig-88/build/doc/check-missing-doc.py)
+Configuring [1mmeson-config.h[0m using configuration
+Configuring [1mfonts.conf[0m using configuration
+Build targets in project: [1m79[0m
+
+fontconfig [36m2.18.0[0m
+
+  [1mGeneral[0m
+    Documentation              : [1;31mNO[0m
+    NLS                        : [1;32mYES[0m
+    Tests                      : [1;32mYES[0m
+    Pytest                     : [1;32mYES[0m
+    Tools                      : [1;32mYES[0m
+    iconv                      : [1;31mNO[0m
+    XML backend                : expat
+    Fontations support         : disabled
+
+  [1mDefaults[0m
+    Hinting                    : slight
+    Sub Pixel Rendering        : none
+    Bitmap                     : no-except-emoji
+    Font directories           : /usr/share/fonts, /usr/local/share/fonts
+    Additional font directories:
+
+  [1mPaths[0m
+    Cache directory            : /var/cache/fontconfig
+    Template directory         : /usr/share/fontconfig/conf.avail
+    Base config directory      : /etc/fonts
+    Config directory           : /etc/fonts/conf.d
+    XML directory              : /usr/share/xml/fontconfig
+
+  [1mUser defined options[0m
+    Cross files                : lib32
+    buildtype                  : release
+    libdir                     : /usr/lib32
+    prefix                     : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/fontconfig-88/build/build
+ninja: Entering directory `/var/tmp/hokuto/fontconfig-88/build/build'
+[0/133] Compiling C object src/preprocessor_0.p/fcobjshash.gperf.h.i[K[0/133] Copying file fcstdint.h[K[0/133] Generating alias_headers with a custom command[K[0/133] Generating ft_alias_headers with a custom command[K[0/133] Generating fc-lang/fclang.h with a custom command[K[0/133] Generating fc-case/fccase.h with a custom command[K[0/133] Generating fc-const/fcconst.h with a custom command[K[0/133] Generating fc-const/test_const_name.c with a custom command[K[0/133] Copying file test/out.expected[K[0/133] Generating conf.d/35-lang-normalize.conf with a custom command[K[1/133] Generating conf.d/35-lang-normalize.conf with a custom command[K[1/133] Building translation po/ka/LC_MESSAGES/fontconfig-ka.mo[K[2/133] Compiling C object src/preprocessor_0.p/fcobjshash.gperf.h.i[K[2/133] Generating src/fcobjshash.gperf with a custom command[K[3/133] Building translation po/ka/LC_MESSAGES/fontconfig-ka.mo[K[3/133] Building translation po/zh_CN/LC_MESSAGES/fontconfig-zh_CN.mo[K[4/133] Building translation po/zh_CN/LC_MESSAGES/fontconfig-zh_CN.mo[K[4/133] Building translation po-conf/ka/LC_MESSAGES/fontconfig-conf-ka.mo[K[5/133] Building translation po-conf/ka/LC_MESSAGES/fontconfig-conf-ka.mo[K[5/133] Building translation po-conf/zh_CN/LC_MESSAGES/fontconfig-conf-zh_CN.mo[K[6/133] Generating fc-const/test_const_name.c with a custom command[K[6/133] Compiling C object test/test_const_name.p/meson-generated_.._.._fc-const_test_const_name.c.o[K[7/133] Building translation po-conf/zh_CN/LC_MESSAGES/fontconfig-conf-zh_CN.mo[K[7/133] Copying file doc/fontconfig-devel.sgml[K[8/133] Generating fc-const/fcconst.h with a custom command[K[8/133] Copying file doc/fontconfig-user.sgml[K[9/133] Generating fc-case/fccase.h with a custom command[K[10/133] Generating alias_headers with a custom command[K[11/133] Generating ft_alias_headers with a custom command[K[12/133] Copying file test/out.expected[K[13/133] Compiling C object test/test_const_name.p/meson-generated_.._.._fc-const_test_const_name.c.o[K[14/133] Generating src/fcobjshash.gperf with a custom command[K[14/133] Generating src/fcobjshash.h with a custom command[K[15/133] Copying file fcstdint.h[K[15/133] Compiling C object fc-cache/fc-cache.p/fc-cache.c.o[K[15/133] Compiling C object fc-cat/fc-cat.p/fc-cat.c.o[K[15/133] Compiling C object fc-conflist/fc-conflist.p/fc-conflist.c.o[K[15/133] Compiling C object fc-genconf/fc-genconf.p/fc-genconf.c.o[K[15/133] Compiling C object fc-list/fc-list.p/fc-list.c.o[K[15/133] Compiling C object fc-match/fc-match.p/fc-match.c.o[K[16/133] Copying file doc/fontconfig-devel.sgml[K[16/133] Compiling C object fc-pattern/fc-pattern.p/fc-pattern.c.o[K[17/133] Copying file doc/fontconfig-user.sgml[K[17/133] Compiling C object fc-query/fc-query.p/fc-query.c.o[K[18/133] Compiling C object fc-conflist/fc-conflist.p/fc-conflist.c.o[K[18/133] Compiling C object fc-scan/fc-scan.p/fc-scan.c.o[K[19/133] Compiling C object fc-genconf/fc-genconf.p/fc-genconf.c.o[K[19/133] Compiling C object fc-validate/fc-validate.p/fc-validate.c.o[K[20/133] Compiling C object fc-pattern/fc-pattern.p/fc-pattern.c.o[K[21/133] Compiling C object fc-list/fc-list.p/fc-list.c.o[K[22/133] Generating src/fcobjshash.h with a custom command[K[23/133] Compiling C object fc-query/fc-query.p/fc-query.c.o[K[24/133] Compiling C object fc-match/fc-match.p/fc-match.c.o[K[25/133] Compiling C object fc-cat/fc-cat.p/fc-cat.c.o[K
+[01m[K../fc-cat/fc-cat.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[K../fc-cat/fc-cat.c:259:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable=[m[K]
+  259 |     int        [01;35m[Kret[m[K = 0;
+      |                [01;35m[K^~~[m[K
+[26/133] Compiling C object fc-scan/fc-scan.p/fc-scan.c.o[K[27/133] Compiling C object fc-cache/fc-cache.p/fc-cache.c.o[K[28/133] Compiling C object fc-validate/fc-validate.p/fc-validate.c.o[K[29/133] Generating fc-lang/fclang.h with a custom command[K[29/133] Compiling C object src/libpatternlib_internal.a.p/fcpat.c.o[K[29/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcatomic.c.o[K[29/133] Compiling C object libfontconfig.so.1.17.0.p/src_fccache.c.o[K[29/133] Compiling C object libfontconfig.so.1.17.0.p/src_fccfg.c.o[K[29/133] Compiling C object libfontconfig.so.1.17.0.p/src_fccharset.c.o[K[29/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcconffile.c.o[K[29/133] Compiling C object libfontconfig.so.1.17.0.p/src_fccompat.c.o[K[29/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcdbg.c.o[K[29/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcdefault.c.o[K[29/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcdir.c.o[K[30/133] Compiling C object libfontconfig.so.1.17.0.p/src_fccompat.c.o[K[30/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcformat.c.o[K[31/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcatomic.c.o[K[31/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcfreetype.c.o[K[32/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcdbg.c.o[K[32/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcfs.c.o[K[33/133] Compiling C object libfontconfig.so.1.17.0.p/src_fccharset.c.o[K
+In file included from [01m[K../src/fccharset.c:25[m[K:
+[01m[K../src/fccharset.c:[m[K In function ‘[01m[KFcCharSetPutLeaf[m[K’:
+[01m[K../src/fcint.h:172:47:[m[K [01;35m[Kwarning: [m[Kpointer ‘[01m[Kleaves_103[m[K’ may be used after ‘[01m[Krealloc[m[K’ [[01;35m[K-Wuse-after-free[m[K]
+  172 | #define FcOffsetToPtr(b, o, t)         ((t *)([01;35m[K(uintptr_t)(b)[m[K + (ptrdiff_t)(o)))
+      |                                               [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K../src/fccharset.c:177:26:[m[K [01;36m[Knote: [m[Kcall to ‘[01m[Krealloc[m[K’ here
+  177 |             new_leaves = [01;36m[Krealloc (leaves, alloced * sizeof (*leaves))[m[K;
+      |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[33/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcptrlist.c.o[K[34/133] Compiling C object libfontconfig.so.1.17.0.p/src_fccache.c.o[K[34/133] Compiling C object libfontconfig.so.1.17.0.p/src_fchash.c.o[K[35/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcconffile.c.o[K[35/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcinit.c.o[K[36/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcdir.c.o[K[36/133] Compiling C object libfontconfig.so.1.17.0.p/src_fclang.c.o[K[37/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcdefault.c.o[K[37/133] Compiling C object libfontconfig.so.1.17.0.p/src_fclist.c.o[K[38/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcformat.c.o[K[38/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcmatch.c.o[K[39/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcfs.c.o[K[39/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcmatrix.c.o[K[40/133] Compiling C object libfontconfig.so.1.17.0.p/src_fccfg.c.o[K[40/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcname.c.o[K[41/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcinit.c.o[K[41/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcobjs.c.o[K[42/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcptrlist.c.o[K[42/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcrange.c.o[K[43/133] Compiling C object libfontconfig.so.1.17.0.p/src_fchash.c.o[K[43/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcserialize.c.o[K[44/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcfreetype.c.o[K[44/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcstat.c.o[K[45/133] Compiling C object src/libpatternlib_internal.a.p/fcpat.c.o[K[45/133] Linking static target src/libpatternlib_internal.a[K[46/133] Compiling C object libfontconfig.so.1.17.0.p/src_fclang.c.o[K[46/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcstr.c.o[K[47/133] Linking static target src/libpatternlib_internal.a[K[47/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcweight.c.o[K[48/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcmatrix.c.o[K[48/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcxml.c.o[K[49/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcobjs.c.o[K[49/133] Compiling C object libfontconfig.so.1.17.0.p/src_ftglue.c.o[K[50/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcrange.c.o[K[50/133] Compiling C object libfontconfig.a.p/src_fcatomic.c.o[K[51/133] Compiling C object libfontconfig.so.1.17.0.p/src_fclist.c.o[K[51/133] Compiling C object libfontconfig.a.p/src_fccache.c.o[K[52/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcserialize.c.o[K[52/133] Compiling C object libfontconfig.a.p/src_fccfg.c.o[K[53/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcmatch.c.o[K[53/133] Compiling C object libfontconfig.a.p/src_fccharset.c.o[K[54/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcstat.c.o[K[54/133] Compiling C object libfontconfig.a.p/src_fcconffile.c.o[K[55/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcweight.c.o[K[55/133] Compiling C object libfontconfig.a.p/src_fccompat.c.o[K[56/133] Compiling C object libfontconfig.so.1.17.0.p/src_ftglue.c.o[K[56/133] Compiling C object libfontconfig.a.p/src_fcdbg.c.o[K[57/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcname.c.o[K[57/133] Compiling C object libfontconfig.a.p/src_fcdefault.c.o[K[58/133] Compiling C object libfontconfig.a.p/src_fcconffile.c.o[K[58/133] Compiling C object libfontconfig.a.p/src_fcdir.c.o[K[59/133] Compiling C object libfontconfig.a.p/src_fccompat.c.o[K[59/133] Compiling C object libfontconfig.a.p/src_fcformat.c.o[K[60/133] Compiling C object libfontconfig.a.p/src_fccache.c.o[K[60/133] Compiling C object libfontconfig.a.p/src_fcfreetype.c.o[K[61/133] Compiling C object libfontconfig.a.p/src_fcatomic.c.o[K[61/133] Compiling C object libfontconfig.a.p/src_fcfs.c.o[K[62/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcxml.c.o[K[62/133] Compiling C object libfontconfig.a.p/src_fcptrlist.c.o[K[63/133] Compiling C object libfontconfig.a.p/src_fccharset.c.o[K
+In file included from [01m[K../src/fccharset.c:25[m[K:
+[01m[K../src/fccharset.c:[m[K In function ‘[01m[KFcCharSetPutLeaf[m[K’:
+[01m[K../src/fcint.h:172:47:[m[K [01;35m[Kwarning: [m[Kpointer ‘[01m[Kleaves_103[m[K’ may be used after ‘[01m[Krealloc[m[K’ [[01;35m[K-Wuse-after-free[m[K]
+  172 | #define FcOffsetToPtr(b, o, t)         ((t *)([01;35m[K(uintptr_t)(b)[m[K + (ptrdiff_t)(o)))
+      |                                               [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K../src/fccharset.c:177:26:[m[K [01;36m[Knote: [m[Kcall to ‘[01m[Krealloc[m[K’ here
+  177 |             new_leaves = [01;36m[Krealloc (leaves, alloced * sizeof (*leaves))[m[K;
+      |                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[63/133] Compiling C object libfontconfig.a.p/src_fchash.c.o[K[64/133] Compiling C object libfontconfig.a.p/src_fccfg.c.o[K[64/133] Compiling C object libfontconfig.a.p/src_fcinit.c.o[K[65/133] Compiling C object libfontconfig.so.1.17.0.p/src_fcstr.c.o[K[65/133] Linking target libfontconfig.so.1.17.0[K[66/133] Compiling C object libfontconfig.a.p/src_fcdir.c.o[K[66/133] Compiling C object libfontconfig.a.p/src_fclang.c.o[K[67/133] Compiling C object libfontconfig.a.p/src_fcptrlist.c.o[K[67/133] Compiling C object libfontconfig.a.p/src_fclist.c.o[K[68/133] Compiling C object libfontconfig.a.p/src_fcdefault.c.o[K[68/133] Compiling C object libfontconfig.a.p/src_fcmatch.c.o[K[69/133] Compiling C object libfontconfig.a.p/src_fcdbg.c.o[K[69/133] Compiling C object libfontconfig.a.p/src_fcmatrix.c.o[K[70/133] Compiling C object libfontconfig.a.p/src_fcformat.c.o[K[70/133] Compiling C object libfontconfig.a.p/src_fcname.c.o[K[71/133] Compiling C object libfontconfig.a.p/src_fchash.c.o[K[71/133] Compiling C object libfontconfig.a.p/src_fcobjs.c.o[K[72/133] Compiling C object libfontconfig.a.p/src_fcfs.c.o[K[72/133] Compiling C object libfontconfig.a.p/src_fcrange.c.o[K[73/133] Compiling C object libfontconfig.a.p/src_fcinit.c.o[K[73/133] Compiling C object libfontconfig.a.p/src_fcserialize.c.o[K[74/133] Compiling C object libfontconfig.a.p/src_fcfreetype.c.o[K[74/133] Compiling C object libfontconfig.a.p/src_fcstat.c.o[K[75/133] Compiling C object libfontconfig.a.p/src_fcmatrix.c.o[K[75/133] Compiling C object libfontconfig.a.p/src_fcstr.c.o[K[76/133] Compiling C object libfontconfig.a.p/src_fcrange.c.o[K[76/133] Compiling C object libfontconfig.a.p/src_fcweight.c.o[K[77/133] Compiling C object libfontconfig.a.p/src_fcserialize.c.o[K[77/133] Compiling C object libfontconfig.a.p/src_fcxml.c.o[K[78/133] Compiling C object libfontconfig.a.p/src_fcobjs.c.o[K[78/133] Compiling C object libfontconfig.a.p/src_ftglue.c.o[K[79/133] Compiling C object libfontconfig.a.p/src_fclist.c.o[K[79/133] Compiling C object src/fcarch.p/fcarch.c.o[K[80/133] Compiling C object libfontconfig.a.p/src_fcname.c.o[K[80/133] Compiling C object test/test_bz89617.p/test-bz89617.c.o[K[81/133] Compiling C object libfontconfig.a.p/src_fcstat.c.o[K[81/133] Compiling C object test/test_bz131804.p/test-bz131804.c.o[K[82/133] Compiling C object test/test_bz89617.p/test-bz89617.c.o[K[82/133] Compiling C object test/test_bz96676.p/test-bz96676.c.o[K[83/133] Compiling C object libfontconfig.a.p/src_fcmatch.c.o[K[83/133] Compiling C object test/test_name_parse.p/test-name-parse.c.o[K[84/133] Compiling C object test/test_bz131804.p/test-bz131804.c.o[K[84/133] Compiling C object test/test_bz106618.p/test-bz106618.c.o[K[85/133] Compiling C object test/test_bz96676.p/test-bz96676.c.o[K[85/133] Compiling C object test/test_bz1744377.p/test-bz1744377.c.o[K[86/133] Compiling C object test/test_bz106618.p/test-bz106618.c.o[K[86/133] Compiling C object test/test_issue180.p/test-issue180.c.o[K[87/133] Compiling C object test/test_name_parse.p/test-name-parse.c.o[K[87/133] Compiling C object test/test_family_matching.p/test-family-matching.c.o[K[88/133] Compiling C object test/test_bz1744377.p/test-bz1744377.c.o[K[88/133] Compiling C object test/test_ptrlist.p/test-ptrlist.c.o[K[89/133] Compiling C object libfontconfig.a.p/src_fclang.c.o[K[89/133] Compiling C object test/test_ostest.p/test-ostest.c.o[K[90/133] Compiling C object test/test_issue180.p/test-issue180.c.o[K[90/133] Compiling C object test/test_bz106632.p/test-bz106632.c.o[K[91/133] Compiling C object test/test_ostest.p/test-ostest.c.o[K[91/133] Compiling C object test/test_issue107.p/test-issue107.c.o[K[92/133] Compiling C object test/test_family_matching.p/test-family-matching.c.o[K[92/133] Compiling C object test/test_crbug1004254.p/test-crbug1004254.c.o[K[93/133] Compiling C object libfontconfig.a.p/src_fcweight.c.o[K[93/133] Compiling C object test/test_mt_fccfg.p/test-mt-fccfg.c.o[K[94/133] Compiling C object test/test_crbug1004254.p/test-crbug1004254.c.o[K[94/133] Compiling C object test/test_gen_testcache.p/test-gen-testcache.c.o[K[95/133] Compiling C object test/test_bz106632.p/test-bz106632.c.o[K[96/133] Compiling C object test/test_mt_fccfg.p/test-mt-fccfg.c.o[K[97/133] Compiling C object src/fcarch.p/fcarch.c.o[K[97/133] Linking target src/fcarch[K[98/133] Compiling C object test/test_issue107.p/test-issue107.c.o[K[99/133] Compiling C object libfontconfig.a.p/src_ftglue.c.o[K[100/133] Compiling C object libfontconfig.a.p/src_fcstr.c.o[K[101/133] Compiling C object test/test_ptrlist.p/test-ptrlist.c.o[K[102/133] Compiling C object test/test_gen_testcache.p/test-gen-testcache.c.o[K[103/133] Compiling C object libfontconfig.a.p/src_fcxml.c.o[K[103/133] Linking static target libfontconfig.a[K[104/133] Linking target src/fcarch[K[105/133] Linking static target libfontconfig.a[K[105/133] Linking target test/test_bz89617[K[105/133] Linking target test/test_bz131804[K[105/133] Linking target test/test_bz96676[K[105/133] Linking target test/test_name_parse[K[105/133] Linking target test/test_bz106618[K[105/133] Linking target test/test_bz1744377[K[105/133] Linking target test/test_issue180[K[105/133] Linking target test/test_family_matching[K[105/133] Linking target test/test_ptrlist[K[106/133] Linking target test/test_bz96676[K[106/133] Linking target test/test_ostest[K[107/133] Linking target test/test_ptrlist[K[107/133] Linking target test/test_bz106632[K[108/133] Linking target test/test_bz131804[K[108/133] Linking target test/test_issue107[K[109/133] Linking target test/test_ostest[K[109/133] Linking target test/test_crbug1004254[K[110/133] Linking target test/test_name_parse[K[110/133] Linking target test/test_mt_fccfg[K[111/133] Linking target libfontconfig.so.1.17.0[K[111/133] Generating symbol file libfontconfig.so.1.17.0.p/libfontconfig.so.1.17.0.symbols[K[112/133] Generating symbol file libfontconfig.so.1.17.0.p/libfontconfig.so.1.17.0.symbols[K[112/133] Linking target fc-cache/fc-cache[K[113/133] Linking target fc-cache/fc-cache[K[113/133] Linking target fc-cat/fc-cat[K[114/133] Linking target fc-cat/fc-cat[K[114/133] Linking target fc-conflist/fc-conflist[K[115/133] Linking target test/test_crbug1004254[K[115/133] Linking target fc-genconf/fc-genconf[K[116/133] Linking target test/test_bz1744377[K[116/133] Linking target fc-list/fc-list[K[117/133] Linking target fc-conflist/fc-conflist[K[117/133] Linking target fc-match/fc-match[K[118/133] Linking target test/test_family_matching[K[118/133] Linking target fc-pattern/fc-pattern[K[119/133] Linking target test/test_bz106618[K[119/133] Linking target fc-query/fc-query[K[120/133] Linking target fc-genconf/fc-genconf[K[120/133] Linking target fc-scan/fc-scan[K[121/133] Linking target fc-list/fc-list[K[121/133] Linking target fc-validate/fc-validate[K[122/133] Linking target fc-pattern/fc-pattern[K[122/133] Linking target test/test_gen_testcache[K[123/133] Linking target test/test_issue180[K[123/133] Linking target test/test_const_name[K[124/133] Linking target fc-query/fc-query[K[125/133] Linking target fc-match/fc-match[K[126/133] Linking target fc-scan/fc-scan[K[127/133] Linking target fc-validate/fc-validate[K[128/133] Linking target test/test_issue107[K[129/133] Linking target test/test_const_name[K[130/133] Linking target test/test_bz89617[K[131/133] Linking target test/test_bz106632[K[132/133] Linking target test/test_mt_fccfg[K[133/133] Linking target test/test_gen_testcache[K
+ninja: Entering directory `/var/tmp/hokuto/fontconfig-88/build/build'
+ninja: no work to do.
+Installing libfontconfig.so.1.17.0 to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/lib32
+Installing fc-cache/fc-cache to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing fc-cat/fc-cat to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing fc-conflist/fc-conflist to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing fc-genconf/fc-genconf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing fc-list/fc-list to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing fc-match/fc-match to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing fc-pattern/fc-pattern to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing fc-query/fc-query to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing fc-scan/fc-scan to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing fc-validate/fc-validate to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/bin
+Installing conf.d/35-lang-normalize.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing po/ka/LC_MESSAGES/fontconfig.mo to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/locale/ka/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/fontconfig.mo to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po-conf/ka/LC_MESSAGES/fontconfig-conf.mo to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/locale/ka/LC_MESSAGES
+Installing po-conf/zh_CN/LC_MESSAGES/fontconfig-conf.mo to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/locale/zh_CN/LC_MESSAGES
+Installing /var/tmp/hokuto/fontconfig-88/build/build/fontconfig/fontconfig.h to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/include/fontconfig
+Installing /var/tmp/hokuto/fontconfig-88/build/fontconfig/fcfreetype.h to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/include/fontconfig
+Installing /var/tmp/hokuto/fontconfig-88/build/fontconfig/fcprivate.h to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/include/fontconfig
+Installing new directory /var/tmp/hokuto/fontconfig-88/build/DESTDIR/var/cache/fontconfig
+Installing /var/tmp/hokuto/fontconfig-88/build/build/meson-private/fontconfig.pc to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/lib32/pkgconfig
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/05-macos.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/05-reset-dirs-sample.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/09-autohint-if-no-hinting.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-autohint.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-hinting-full.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-hinting-medium.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-hinting-none.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-hinting-slight.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-no-antialias.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-scale-bitmap-fonts.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-bgr.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-none.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-rgb.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-vbgr.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-sub-pixel-vrgb.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-unhinted.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/10-yes-antialias.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/11-lcdfilter-default.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/11-lcdfilter-legacy.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/11-lcdfilter-light.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/11-lcdfilter-none.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/20-unhint-small-vera.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/25-unhint-nonlatin.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/30-metric-aliases.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/40-nonlatin.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/45-generic.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/45-latin.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/48-guessfamily.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/48-spacing.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/49-sansserif.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/50-user.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/51-local.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/60-generic.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/60-latin.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/65-fonts-persian.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/65-khmer.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/65-nonlatin.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/69-unifont.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/70-no-bitmaps.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/70-no-bitmaps-and-emoji.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/70-no-bitmaps-except-emoji.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/70-yes-bitmaps.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/80-delicious.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/conf.d/90-synthetic.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/fontconfig/conf.avail
+Installing /var/tmp/hokuto/fontconfig-88/build/build/conf.d/README to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/etc/fonts/conf.d
+Installing /var/tmp/hokuto/fontconfig-88/build/its/fontconfig.its to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/gettext/its
+Installing /var/tmp/hokuto/fontconfig-88/build/its/fontconfig.loc to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/gettext/its
+Installing /var/tmp/hokuto/fontconfig-88/build/build/fonts.conf to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/etc/fonts
+Installing /var/tmp/hokuto/fontconfig-88/build/fonts.dtd to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/share/xml/fontconfig
+Installing symlink pointing to libfontconfig.so.1.17.0 to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/lib32/libfontconfig.so.1
+Installing symlink pointing to libfontconfig.so.1 to /var/tmp/hokuto/fontconfig-88/build/DESTDIR/usr/lib32/libfontconfig.so
+Running custom install script '/usr/bin/python /var/tmp/hokuto/fontconfig-88/build/conf.d/link_confs.py /usr/share/fontconfig/conf.avail /etc/fonts/conf.d 05-macos.conf 10-scale-bitmap-fonts.conf 10-yes-antialias.conf 11-lcdfilter-default.conf 20-unhint-small-vera.conf 30-metric-aliases.conf 40-nonlatin.conf 45-generic.conf 45-latin.conf 48-guessfamily.conf 48-spacing.conf 49-sansserif.conf 50-user.conf 51-local.conf 60-generic.conf 60-latin.conf 65-fonts-persian.conf 65-nonlatin.conf 69-unifont.conf 80-delicious.conf 90-synthetic.conf 10-hinting-slight.conf 10-sub-pixel-none.conf 70-no-bitmaps-except-emoji.conf'
+'DESTDIR/usr/lib32/libfontconfig.so' -> '/var/tmp/hokuto/fontconfig-88/output/usr/lib32/libfontconfig.so'
+'DESTDIR/usr/lib32/libfontconfig.so.1' -> '/var/tmp/hokuto/fontconfig-88/output/usr/lib32/libfontconfig.so.1'
+'DESTDIR/usr/lib32/libfontconfig.so.1.17.0' -> '/var/tmp/hokuto/fontconfig-88/output/usr/lib32/libfontconfig.so.1.17.0'
+'DESTDIR/usr/lib32/pkgconfig' -> '/var/tmp/hokuto/fontconfig-88/output/usr/lib32/pkgconfig'
+'DESTDIR/usr/lib32/pkgconfig/fontconfig.pc' -> '/var/tmp/hokuto/fontconfig-88/output/usr/lib32/pkgconfig/fontconfig.pc'
+
+Script done on 2026-05-22 11:20:44+07:00 [COMMAND_EXIT_CODE="0"]
