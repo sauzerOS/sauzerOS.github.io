@@ -1,0 +1,1208 @@
+Script started on 2026-05-25 10:59:38+07:00 [COMMAND="cd /var/tmp/hokuto/syncthingtray-10/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/syncthingtray-10/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/syncthingtray-10/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/syncthingtray-10/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/syncthingtray-10/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/syncthingtray-10/build/.cache' /repo/sauzeros/extra/syncthingtray/build /var/tmp/hokuto/syncthingtray-10/output 2.1.1 syncthingtray" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using system qtforkawesome
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- systemd support enabled
+-- Configuring project syncthingconnector
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  syncthingconnector/CMakeLists.txt:162 (include)
+
+[0m
+-- Project has D-Bus interface declarations which will be processed.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Linking syncthingconnector-qt6 against Qt module Qt6::Network.
+-- Linking syncthingconnector-qt6 against Qt module Qt6::Core.
+-- Linking syncthingconnector-qt6 against Qt module Qt6::DBus.
+-- Building syncthingconnector-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for one of the modules 'cppunit>=1.13.0'
+-- Could NOT find CppUnit (missing: CppUnit_DIR)
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/TestTarget.cmake:79 (message):
+  Unable to add test target because CppUnit could not be located.
+Call Stack (most recent call first):
+  syncthingconnector/CMakeLists.txt:170 (include)
+
+[0m
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingconnector-qt6
+Call Stack (most recent call first):
+  syncthingconnector/CMakeLists.txt:214 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Configuring project syncthingtesthelper
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  testhelper/CMakeLists.txt:45 (include)
+
+[0m
+-- Linking syncthingtesthelper against Qt module Qt6::Network.
+-- Linking syncthingtesthelper against Qt module Qt6::Core.
+-- Building syncthingtesthelper against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Linking test target against syncthingtesthelper
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingtesthelper
+Call Stack (most recent call first):
+  testhelper/CMakeLists.txt:50 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Performing Test STD_FILESYSTEM_TEST_0
+-- Performing Test STD_FILESYSTEM_TEST_0 - Success
+-- Linking syncthingctl against special library for std::filesystem support is not required.
+-- Configuring project syncthingctl
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  cli/CMakeLists.txt:39 (include)
+
+[0m
+-- Using Qt QML as JavaScript provider.
+-- Using template for jsdefs.h.in from QT_UTILITIES installation.
+-- Using template for jsincludes.h.in from QT_UTILITIES installation.
+-- Linking syncthingctl-qt6 against Qt module Qt6::Qml.
+-- Linking syncthingctl-qt6 against Qt module Qt6::Core.
+-- Building syncthingctl-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for desktop.in from CPP_UTILITIES installation.
+-- Using template for appdata.xml.in from CPP_UTILITIES installation.
+-- Checking for one of the modules 'cppunit>=1.13.0'
+-- Could NOT find CppUnit (missing: CppUnit_DIR)
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/TestTarget.cmake:79 (message):
+  Unable to add test target because CppUnit could not be located.
+Call Stack (most recent call first):
+  cli/CMakeLists.txt:49 (include)
+
+[0m
+-- Using template for bash-completion.sh.in from CPP_UTILITIES installation.
+-- Generating files for bash completion.
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingctl-qt6
+Call Stack (most recent call first):
+  cli/CMakeLists.txt:51 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Linking syncthingmodel against special library for std::filesystem support is not required.
+-- Configuring project syncthingmodel
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  syncthingmodel/CMakeLists.txt:85 (include)
+
+[0m
+-- Building with Qt Widgets GUI.
+-- Building WITHOUT Qt Quick GUI.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Concurrent.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Network.
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Gui.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Svg.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Widgets.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Core.
+-- Building syncthingmodel-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingmodel-qt6
+Call Stack (most recent call first):
+  syncthingmodel/CMakeLists.txt:90 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Linking syncthingmodel-qt6 against Qt module Qt6::Test.
+-- Configuring project syncthingwidgets
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  syncthingwidgets/CMakeLists.txt:296 (include)
+
+[0m
+-- Building with Qt Widgets GUI.
+-- Building WITHOUT Qt Quick GUI.
+[33mCMake Warning at /usr/share/qtutilities-qt6/cmake/modules/QtWebViewProviderConfig.cmake:13 (find_package):
+  By not providing "FindQt6WebEngineWidgets.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "Qt6WebEngineWidgets", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "Qt6WebEngineWidgets" (requested version 5.6) with any of the following
+  names:
+
+    Qt6WebEngineWidgets.cps
+    qt6webenginewidgets.cps
+    Qt6WebEngineWidgetsConfig.cmake
+    qt6webenginewidgets-config.cmake
+
+  Add the installation prefix of "Qt6WebEngineWidgets" to CMAKE_PREFIX_PATH
+  or set "Qt6WebEngineWidgets_DIR" to a directory containing one of the above
+  files.  If "Qt6WebEngineWidgets" provides a separate development package or
+  SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  syncthingwidgets/CMakeLists.txt:493 (include)
+
+[0m
+-- Built-in web view has been disabled.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Network.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Concurrent.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Gui.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Widgets.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Core.
+-- Building syncthingwidgets-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingwidgets-qt6
+Call Stack (most recent call first):
+  syncthingwidgets/CMakeLists.txt:497 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Linking syncthingwidgets-qt6 against Qt module Qt6::Test.
+-- Configuring project syncthingtray
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  tray/CMakeLists.txt:176 (include)
+
+[0m
+-- Using PNG icon from "/var/tmp/hokuto/syncthingtray-10/build/tray/resources/icons/hicolor/256x256/apps/syncthingtray.png".
+-- Building with Qt Widgets GUI.
+-- Building WITHOUT Qt Quick GUI.
+-- Linking syncthingtray-qt6 against Qt module Qt6::Network.
+-- Linking syncthingtray-qt6 against Qt module Qt6::Gui.
+-- Linking syncthingtray-qt6 against Qt module Qt6::Widgets.
+-- Linking syncthingtray-qt6 against Qt module Qt6::Core.
+-- Building syncthingtray-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for desktop.in from CPP_UTILITIES installation.
+-- Using template for appdata.xml.in from CPP_UTILITIES installation.
+-- Using template for bash-completion.sh.in from own (syncthingtray) source directory.
+-- Generating files for bash completion.
+-- Using template for doxygen.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Doxygen.cmake:32 (message):
+  Doxygen not found, unable to add target for generating API documentation
+  for syncthingtray-qt6
+Call Stack (most recent call first):
+  tray/CMakeLists.txt:268 (include)
+
+[0m
+-- Using template for sphinx-conf.py.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/Sphinx.cmake:19 (message):
+  Sphinx not found, unable to add target for generating documentation for
+  syncthingtray-qt6
+Call Stack (most recent call first):
+  tray/CMakeLists.txt:269 (include)
+
+[0m
+-- Using template for config.h.in from CPP_UTILITIES installation.
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_BINDIR got its value from CMAKE_INSTALL_BINDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_BINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_BINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:255 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SBINDIR got its value from CMAKE_INSTALL_SBINDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SBINDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SBINDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:258 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBDIR got its value from CMAKE_INSTALL_LIBDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:261 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INCLUDEDIR got its value from CMAKE_INSTALL_INCLUDEDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INCLUDEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INCLUDEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:279 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALSTATEDIR got its value from CMAKE_INSTALL_LOCALSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_LOCALSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_LOCALSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:288 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SHAREDSTATEDIR got its value from CMAKE_INSTALL_SHAREDSTATEDIR.
+  In most cases this is unintended, check if you included GNUInstallDirs
+  before KDEInstallDirs.  Some third party modules include GNUInstallDirs too
+  so eg.  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If
+  you set CMAKE_INSTALL_SHAREDSTATEDIR deliberately before including
+  KDEInstallDirs its recommended to use KDE_INSTALL_SHAREDSTATEDIR instead to
+  suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:291 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATAROOTDIR got its value from CMAKE_INSTALL_DATAROOTDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATAROOTDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATAROOTDIR instead to suppress this
+  message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:299 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_DATADIR got its value from CMAKE_INSTALL_DATADIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_DATADIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_DATADIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:304 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LOCALEDIR got its value from CMAKE_INSTALL_LOCALEDIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LOCALEDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LOCALEDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:332 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_MANDIR got its value from CMAKE_INSTALL_MANDIR.  In most cases
+  this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_MANDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_MANDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:357 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_INFODIR got its value from CMAKE_INSTALL_INFODIR.  In most
+  cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_INFODIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_INFODIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:360 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_SYSCONFDIR got its value from CMAKE_INSTALL_SYSCONFDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_SYSCONFDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_SYSCONFDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:220 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:387 (_define_absolute)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:201 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageMacros.cmake:4 (include)
+  /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake:57 (include)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /usr/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /usr/lib64/cmake/Plasma/PlasmaConfig.cmake:52 (find_dependency)
+  plasmoid/CMakeLists.txt:16 (find_package)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.5") found components: Interpreter
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Configuring project syncthingplasmoid
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  plasmoid/lib/CMakeLists.txt:52 (include)
+
+[0m
+-- Building with Qt Widgets GUI.
+-- Building with Qt Quick GUI.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Network.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Qml.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Gui.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Widgets.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Quick.
+-- Linking syncthingplasmoid-qt6 against Qt module Qt6::Core.
+-- Linking syncthingplasmoid-qt6 against Qt module KF6::ConfigCore.
+-- Building syncthingplasmoid-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Qt variable QT_INSTALL_PLUGINS taken from QT6_INSTALL_PLUGINS: lib/qt6/plugins
+-- Qt variable QT_INSTALL_PLUGINS resolved to path: /usr/lib/qt6/plugins
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Using template for desktop.in from CPP_UTILITIES installation.
+-- Using template for appdata.xml.in from own (syncthingplasmoid) source directory.
+-- Using template for metadata.json.in from own (syncthingplasmoid) source directory.
+-- Configuring project syncthingfileitemaction
+-- Using default CXX11-ABI (not forcing old CXX11-ABI of libstdc++).
+-- For the check target to work, it is required to call enable_testing() on the source directory root.
+[33mCMake Warning at /usr/share/c++utilities/cmake/modules/BasicConfig.cmake:416 (message):
+  Format rules for clang-format not found.
+Call Stack (most recent call first):
+  fileitemactionplugin/CMakeLists.txt:49 (include)
+
+[0m
+-- GUI is completely disabled.
+-- Linking syncthingfileitemaction-qt6 against Qt module Qt6::Network.
+-- Linking syncthingfileitemaction-qt6 against Qt module Qt6::Core.
+-- Linking syncthingfileitemaction-qt6 against Qt module KF6::KIOCore.
+-- Linking syncthingfileitemaction-qt6 against Qt module KF6::KIOFileWidgets.
+-- Linking syncthingfileitemaction-qt6 against Qt module KF6::KIOWidgets.
+-- Building syncthingfileitemaction-qt6 against Qt version 6.11.1
+-- Qt variable QT_INSTALL_TRANSLATIONS taken from QT6_INSTALL_TRANSLATIONS: share/qt6/translations
+-- Qt variable QT_INSTALL_TRANSLATIONS resolved to path: /usr/share/qt6/translations
+-- Project has translations which will be released.
+-- Using template for qtconfig.h.in from QT_UTILITIES installation.
+-- Using template for global.h.in from CPP_UTILITIES installation.
+-- Using template for version.h.in from CPP_UTILITIES installation.
+-- Using template for Config.cmake.in from CPP_UTILITIES installation.
+-- Using template for template.pc.in from CPP_UTILITIES installation.
+-- Qt variable QT_INSTALL_PLUGINS taken from QT6_INSTALL_PLUGINS: lib/qt6/plugins
+-- Qt variable QT_INSTALL_PLUGINS resolved to path: /usr/lib/qt6/plugins
+-- Using template for config.h.in from CPP_UTILITIES installation.
+-- Using template for desktop.in from CPP_UTILITIES installation.
+-- Using template for appdata.xml.in from own (syncthingfileitemaction) source directory.
+-- Using template for syncthingfileitemaction.json.in from own (syncthingfileitemaction) source directory.
+-- Configuring done (3.7s)
+-- Generating done (0.2s)
+-- Build files have been written to: /var/tmp/hokuto/syncthingtray-10/build/build
+[  0%] Built target syncthingconnector-qt6_autogen_timestamp_deps
+[  0%] [1m[34mAutomatic MOC for target syncthingconnector-qt6[0m
+[  0%] Built target syncthingconnector-qt6_autogen
+[  0%] [1m[34mGenerating .lupdate/translations/syncthingconnector_de_DE.ts.stamp[0m
+[  0%] [1m[34mGenerating .lupdate/translations/syncthingconnector_en_US.ts.stamp[0m
+[  0%] [1m[34mGenerating .lupdate/translations/syncthingconnector_fr_FR.ts.stamp[0m
+[  3%] [1m[34mGenerating .lupdate/translations/syncthingconnector_zh_CN.ts.stamp[0m
+[  3%] [1m[34mGenerating loginmanagerinterface.cpp, loginmanagerinterface.h[0m
+[  3%] [1m[34mGenerating .lupdate/translations/syncthingconnector_ru_RU.ts.stamp[0m
+[  3%] [1m[34mGenerating unitinterface.cpp, unitinterface.h[0m
+[  3%] [1m[34mGenerating propertiesinterface.cpp, propertiesinterface.h[0m
+[  4%] [1m[34mGenerating managerinterface.cpp, managerinterface.h[0m
+[  4%] [1m[34mGenerating .lupdate/translations/syncthingconnector_cs_CZ.ts.stamp[0m
+[  4%] [1m[34mGenerating serviceinterface.cpp, serviceinterface.h[0m
+Updating '../../syncthingconnector/translations/syncthingconnector_fr_FR.ts'...
+Updating '../../syncthingconnector/translations/syncthingconnector_de_DE.ts'...
+    Found 128 source text(s) (0 new and 128 already existing)
+    Found 128 source text(s) (0 new and 128 already existing)
+Updating '../../syncthingconnector/translations/syncthingconnector_en_US.ts'...
+    Found 128 source text(s) (0 new and 128 already existing)
+[  6%] [1m[34mGenerating moc_loginmanagerinterface.cpp[0m
+[  7%] [1m[34mGenerating moc_propertiesinterface.cpp[0m
+[  7%] [1m[34mGenerating moc_unitinterface.cpp[0m
+Updating '../../syncthingconnector/translations/syncthingconnector_ru_RU.ts'...
+    Found 128 source text(s) (0 new and 128 already existing)
+Updating '../../syncthingconnector/translations/syncthingconnector_zh_CN.ts'...
+    Found 128 source text(s) (0 new and 128 already existing)
+[  7%] [1m[34mGenerating moc_managerinterface.cpp[0m
+Updating '../../syncthingconnector/translations/syncthingconnector_cs_CZ.ts'...
+    Found 128 source text(s) (0 new and 128 already existing)
+[  9%] [1m[34mGenerating syncthingconnector_fr_FR.qm[0m
+[  9%] [1m[34mGenerating syncthingconnector_de_DE.qm[0m
+[  9%] [1m[34mGenerating syncthingconnector_en_US.qm[0m
+[  9%] [1m[34mGenerating moc_serviceinterface.cpp[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingconnector/syncthingconnector_fr_FR.qm'...
+    Generated 128 translation(s) (128 finished and 0 unfinished)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingconnector/syncthingconnector_en_US.qm'...
+    Generated 2 translation(s) (2 finished and 0 unfinished)
+    Ignored 126 untranslated source text(s)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingconnector/syncthingconnector_de_DE.qm'...
+    Generated 128 translation(s) (128 finished and 0 unfinished)
+[  9%] [1m[34mGenerating syncthingconnector_ru_RU.qm[0m
+[  9%] [1m[34mGenerating syncthingconnector_zh_CN.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingconnector/syncthingconnector_zh_CN.qm'...
+    Generated 124 translation(s) (124 finished and 0 unfinished)
+    Ignored 4 untranslated source text(s)
+[ 10%] [1m[34mGenerating syncthingconnector_cs_CZ.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingconnector/syncthingconnector_ru_RU.qm'...
+    Generated 126 translation(s) (126 finished and 0 unfinished)
+    Ignored 2 untranslated source text(s)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingconnector/syncthingconnector_cs_CZ.qm'...
+    Generated 73 translation(s) (73 finished and 0 unfinished)
+    Ignored 55 untranslated source text(s)
+[ 12%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconnection.cpp.o[0m
+[ 12%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingnotifier.cpp.o[0m
+[ 12%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingdev.cpp.o[0m
+[ 12%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconnection_requests.cpp.o[0m
+[ 13%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconnectionsettings.cpp.o[0m
+[ 13%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconfig.cpp.o[0m
+[ 13%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingprocess.cpp.o[0m
+[ 15%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingconnector-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 15%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingdir.cpp.o[0m
+[ 16%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingignorepattern.cpp.o[0m
+[ 16%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/syncthingservice.cpp.o[0m
+[ 18%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/utils.cpp.o[0m
+[ 18%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/propertiesinterface.cpp.o[0m
+[ 18%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/loginmanagerinterface.cpp.o[0m
+[ 20%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/managerinterface.cpp.o[0m
+[ 20%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/serviceinterface.cpp.o[0m
+[ 20%] [32mBuilding CXX object syncthingconnector/CMakeFiles/syncthingconnector-qt6.dir/unitinterface.cpp.o[0m
+[ 21%] [1m[32mLinking CXX shared library libsyncthingconnector-qt6.so[0m
+[ 21%] Built target syncthingconnector-qt6
+[ 21%] Built target syncthingctl-qt6_autogen_timestamp_deps
+[ 21%] Built target syncthingmodel-qt6_autogen_timestamp_deps
+[ 23%] [1m[34mAutomatic MOC for target syncthingctl-qt6[0m
+[ 23%] [1m[34mAutomatic MOC for target syncthingmodel-qt6[0m
+[ 23%] Built target syncthingmodel-qt6_autogen
+[ 23%] [1m[34mGenerating .lupdate/translations/syncthingmodel_de_DE.ts.stamp[0m
+[ 23%] [1m[34mGenerating .lupdate/translations/syncthingmodel_en_US.ts.stamp[0m
+[ 24%] Built target syncthingctl-qt6_autogen
+[ 24%] [1m[34mGenerating .lupdate/translations/syncthingmodel_ru_RU.ts.stamp[0m
+[ 24%] [1m[34mGenerating .lupdate/translations/syncthingmodel_fr_FR.ts.stamp[0m
+[ 24%] [1m[34mAutomatic RCC for resources/syncthingmodelicons.qrc[0m
+[ 26%] [1m[34mGenerating .lupdate/translations/syncthingmodel_cs_CZ.ts.stamp[0m
+[ 26%] [1m[34mGenerating .lupdate/translations/syncthingmodel_zh_CN.ts.stamp[0m
+[ 26%] [1m[34mAutomatic RCC for resources/js/js.qrc[0m
+Updating '../../syncthingmodel/translations/syncthingmodel_ru_RU.ts'...
+Updating '../../syncthingmodel/translations/syncthingmodel_en_US.ts'...
+    Found 108 source text(s) (0 new and 108 already existing)
+Updating '../../syncthingmodel/translations/syncthingmodel_fr_FR.ts'...
+    Found 108 source text(s) (0 new and 108 already existing)
+    Found 108 source text(s) (0 new and 108 already existing)
+Updating '../../syncthingmodel/translations/syncthingmodel_de_DE.ts'...
+    Found 108 source text(s) (0 new and 108 already existing)
+Updating '../../syncthingmodel/translations/syncthingmodel_cs_CZ.ts'...
+Updating '../../syncthingmodel/translations/syncthingmodel_zh_CN.ts'...
+    Found 108 source text(s) (0 new and 108 already existing)
+    Found 108 source text(s) (0 new and 108 already existing)
+[ 27%] [1m[34mGenerating syncthingmodel_ru_RU.qm[0m
+[ 27%] [1m[34mGenerating syncthingmodel_fr_FR.qm[0m
+[ 27%] [1m[34mGenerating syncthingmodel_de_DE.qm[0m
+[ 27%] [1m[34mGenerating syncthingmodel_en_US.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingmodel/syncthingmodel_fr_FR.qm'...
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingmodel/syncthingmodel_ru_RU.qm'...
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingmodel/syncthingmodel_de_DE.qm'...
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingmodel/syncthingmodel_en_US.qm'...
+    Generated 108 translation(s) (108 finished and 0 unfinished)
+    Generated 108 translation(s) (108 finished and 0 unfinished)
+    Generated 4 translation(s) (3 finished and 1 unfinished)
+    Ignored 104 untranslated source text(s)
+    Generated 107 translation(s) (107 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+[ 29%] [32mBuilding CXX object cli/CMakeFiles/syncthingctl-qt6.dir/args.cpp.o[0m
+[ 29%] [32mBuilding CXX object cli/CMakeFiles/syncthingctl-qt6.dir/syncthingctl-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 29%] [32mBuilding CXX object cli/CMakeFiles/syncthingctl-qt6.dir/main.cpp.o[0m
+[ 29%] [32mBuilding CXX object cli/CMakeFiles/syncthingctl-qt6.dir/syncthingctl-qt6_autogen/UEZOVR3B67/qrc_js.cpp.o[0m
+[ 29%] [32mBuilding CXX object cli/CMakeFiles/syncthingctl-qt6.dir/application.cpp.o[0m
+[ 29%] [1m[34mGenerating syncthingmodel_cs_CZ.qm[0m
+[ 30%] [32mBuilding CXX object cli/CMakeFiles/syncthingctl-qt6.dir/jsconsole.cpp.o[0m
+[ 32%] [1m[34mGenerating syncthingmodel_zh_CN.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingmodel/syncthingmodel_cs_CZ.qm'...
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingmodel/syncthingmodel_zh_CN.qm'...
+    Generated 42 translation(s) (40 finished and 2 unfinished)
+    Ignored 66 untranslated source text(s)
+    Generated 107 translation(s) (106 finished and 1 unfinished)
+    Ignored 1 untranslated source text(s)
+[ 35%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingdevicemodel.cpp.o[0m
+[ 35%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingmodel.cpp.o[0m
+[ 35%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingdirectorymodel.cpp.o[0m
+[ 35%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingerrormodel.cpp.o[0m
+[ 35%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingmodel-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 35%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingfilemodel.cpp.o[0m
+[ 36%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingrecentchangesmodel.cpp.o[0m
+[ 36%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingsortfiltermodel.cpp.o[0m
+[ 36%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingstatuscomputionmodel.cpp.o[0m
+[ 38%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingstatusselectionmodel.cpp.o[0m
+[ 38%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingicons.cpp.o[0m
+[ 38%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingdownloadmodel.cpp.o[0m
+[ 40%] [32mBuilding CXX object syncthingmodel/CMakeFiles/syncthingmodel-qt6.dir/syncthingmodel-qt6_autogen/3YJK5W5UP7/qrc_syncthingmodelicons.cpp.o[0m
+[ 40%] [1m[32mLinking CXX shared library libsyncthingmodel-qt6.so[0m
+[ 40%] [1m[32mLinking CXX executable syncthingctl-qt6[0m
+[ 41%] Built target syncthingctl-qt6
+[ 43%] Built target syncthingmodel-qt6
+[ 43%] Built target syncthingwidgets-qt6_autogen_timestamp_deps
+[ 43%] Built target syncthingfileitemaction-qt6_autogen_timestamp_deps
+[ 44%] [1m[34mAutomatic MOC and UIC for target syncthingwidgets-qt6[0m
+[ 44%] [1m[34mAutomatic MOC for target syncthingfileitemaction-qt6[0m
+AutoMoc: /var/tmp/hokuto/syncthingtray-10/build/syncthingwidgets/webview/webpage.h: note: No relevant classes found. No output generated.
+AutoMoc: /var/tmp/hokuto/syncthingtray-10/build/syncthingwidgets/webview/webviewinterceptor.h: note: No relevant classes found. No output generated.
+[ 44%] Built target syncthingfileitemaction-qt6_autogen
+[ 46%] [1m[34mGenerating .lupdate/translations/syncthingfileitemaction_fr_FR.ts.stamp[0m
+[ 46%] [1m[34mGenerating .lupdate/translations/syncthingfileitemaction_cs_CZ.ts.stamp[0m
+[ 47%] [1m[34mGenerating .lupdate/translations/syncthingfileitemaction_en_US.ts.stamp[0m
+[ 47%] [1m[34mGenerating .lupdate/translations/syncthingfileitemaction_ru_RU.ts.stamp[0m
+[ 46%] [1m[34mGenerating .lupdate/translations/syncthingfileitemaction_de_DE.ts.stamp[0m
+[ 47%] [1m[34mGenerating .lupdate/translations/syncthingfileitemaction_zh_CN.ts.stamp[0m
+Updating '../../fileitemactionplugin/translations/syncthingfileitemaction_de_DE.ts'...
+Updating '../../fileitemactionplugin/translations/syncthingfileitemaction_zh_CN.ts'...
+    Found 34 source text(s) (0 new and 34 already existing)
+    Found 34 source text(s) (0 new and 34 already existing)
+Updating '../../fileitemactionplugin/translations/syncthingfileitemaction_ru_RU.ts'...
+Updating '../../fileitemactionplugin/translations/syncthingfileitemaction_cs_CZ.ts'...
+Updating '../../fileitemactionplugin/translations/syncthingfileitemaction_fr_FR.ts'...
+    Found 34 source text(s) (0 new and 34 already existing)
+    Found 34 source text(s) (0 new and 34 already existing)
+Updating '../../fileitemactionplugin/translations/syncthingfileitemaction_en_US.ts'...
+    Found 34 source text(s) (0 new and 34 already existing)
+    Found 34 source text(s) (0 new and 34 already existing)
+[ 47%] [1m[34mGenerating syncthingfileitemaction_zh_CN.qm[0m
+[ 49%] [1m[34mGenerating syncthingfileitemaction_cs_CZ.qm[0m
+[ 50%] [1m[34mGenerating syncthingfileitemaction_en_US.qm[0m
+[ 50%] [1m[34mGenerating syncthingfileitemaction_fr_FR.qm[0m
+[ 50%] [1m[34mGenerating syncthingfileitemaction_ru_RU.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/fileitemactionplugin/syncthingfileitemaction_zh_CN.qm'...
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/fileitemactionplugin/syncthingfileitemaction_en_US.qm'...
+    Generated 34 translation(s) (34 finished and 0 unfinished)
+    Generated 1 translation(s) (1 finished and 0 unfinished)
+    Ignored 33 untranslated source text(s)
+[ 50%] [1m[34mGenerating syncthingfileitemaction_de_DE.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/fileitemactionplugin/syncthingfileitemaction_ru_RU.qm'...
+    Generated 34 translation(s) (34 finished and 0 unfinished)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/fileitemactionplugin/syncthingfileitemaction_fr_FR.qm'...
+    Generated 34 translation(s) (34 finished and 0 unfinished)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/fileitemactionplugin/syncthingfileitemaction_cs_CZ.qm'...
+    Generated 33 translation(s) (33 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/fileitemactionplugin/syncthingfileitemaction_de_DE.qm'...
+    Generated 34 translation(s) (34 finished and 0 unfinished)
+[ 53%] [32mBuilding CXX object fileitemactionplugin/CMakeFiles/syncthingfileitemaction-qt6.dir/syncthingfileitemaction.cpp.o[0m
+[ 53%] [32mBuilding CXX object fileitemactionplugin/CMakeFiles/syncthingfileitemaction-qt6.dir/syncthingfileitemaction-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 53%] [32mBuilding CXX object fileitemactionplugin/CMakeFiles/syncthingfileitemaction-qt6.dir/syncthingdiractions.cpp.o[0m
+[ 53%] [32mBuilding CXX object fileitemactionplugin/CMakeFiles/syncthingfileitemaction-qt6.dir/syncthingmenuaction.cpp.o[0m
+[ 53%] [32mBuilding CXX object fileitemactionplugin/CMakeFiles/syncthingfileitemaction-qt6.dir/syncthinginfoaction.cpp.o[0m
+[ 53%] [32mBuilding CXX object fileitemactionplugin/CMakeFiles/syncthingfileitemaction-qt6.dir/syncthingfileitemactionstaticdata.cpp.o[0m
+AutoMoc: /var/tmp/hokuto/syncthingtray-10/build/syncthingwidgets/webview/webviewdialog.h: note: No relevant classes found. No output generated.
+[ 53%] Built target syncthingwidgets-qt6_autogen
+[ 55%] [1m[34mGenerating .lupdate/translations/syncthingwidgets_en_US.ts.stamp[0m
+[ 55%] [1m[34mGenerating .lupdate/translations/syncthingwidgets_cs_CZ.ts.stamp[0m
+[ 55%] [1m[34mGenerating .lupdate/translations/syncthingwidgets_zh_CN.ts.stamp[0m
+[ 55%] [1m[34mGenerating .lupdate/translations/syncthingwidgets_de_DE.ts.stamp[0m
+Updating '../../syncthingwidgets/translations/syncthingwidgets_cs_CZ.ts'...
+Updating '../../syncthingwidgets/translations/syncthingwidgets_zh_CN.ts'...
+    Found 1051 source text(s) (0 new and 1051 already existing)
+    Kept 89 obsolete entries
+    Found 1051 source text(s) (0 new and 1051 already existing)
+    Kept 89 obsolete entries
+Updating '../../syncthingwidgets/translations/syncthingwidgets_en_US.ts'...
+[ 55%] [1m[34mGenerating .lupdate/translations/syncthingwidgets_fr_FR.ts.stamp[0m
+Updating '../../syncthingwidgets/translations/syncthingwidgets_de_DE.ts'...
+[ 56%] [1m[34mGenerating .lupdate/translations/syncthingwidgets_ru_RU.ts.stamp[0m
+    Found 1051 source text(s) (0 new and 1051 already existing)
+    Kept 89 obsolete entries
+    Found 1051 source text(s) (0 new and 1051 already existing)
+    Kept 89 obsolete entries
+[ 56%] [1m[34mAutomatic RCC for resources/syncthingwidgetsicons.qrc[0m
+[ 56%] [1m[34mGenerating syncthingwidgets_cs_CZ.qm[0m
+Updating '../../syncthingwidgets/translations/syncthingwidgets_fr_FR.ts'...
+Updating '../../syncthingwidgets/translations/syncthingwidgets_ru_RU.ts'...
+    Found 1051 source text(s) (0 new and 1051 already existing)
+    Kept 89 obsolete entries
+    Found 1051 source text(s) (0 new and 1051 already existing)
+    Kept 89 obsolete entries
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets_cs_CZ.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 1051 untranslated source text(s)
+[ 56%] [1m[34mGenerating syncthingwidgets_de_DE.qm[0m
+[ 56%] [1m[34mGenerating syncthingwidgets_en_US.qm[0m
+[ 56%] [1m[34mGenerating syncthingwidgets_fr_FR.qm[0m
+[ 58%] [1m[34mGenerating syncthingwidgets_zh_CN.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets_en_US.qm'...
+    Generated 4 translation(s) (4 finished and 0 unfinished)
+    Ignored 1047 untranslated source text(s)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets_fr_FR.qm'...
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets_zh_CN.qm'...
+    Generated 465 translation(s) (459 finished and 6 unfinished)
+    Ignored 586 untranslated source text(s)
+    Generated 1049 translation(s) (1048 finished and 1 unfinished)
+    Ignored 2 untranslated source text(s)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets_de_DE.qm'...
+[ 60%] [1m[34mGenerating syncthingwidgets_ru_RU.qm[0m
+    Generated 1051 translation(s) (1051 finished and 0 unfinished)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets_ru_RU.qm'...
+    Generated 975 translation(s) (974 finished and 1 unfinished)
+    Ignored 76 untranslated source text(s)
+[ 61%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/statusinfo.cpp.o[0m
+[ 61%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/diffhighlighter.cpp.o[0m
+[ 63%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/internalerror.cpp.o[0m
+[ 63%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/syncthingwidgets-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 63%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/syncthinglauncher.cpp.o[0m
+[ 63%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/utils.cpp.o[0m
+[ 64%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/syncthingdata.cpp.o[0m
+[ 64%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/syncthingmodels.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingwidgets/../syncthingconnector/syncthingconnection.h:7[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/ZWKA2O7I7G/../../../../syncthingwidgets/misc/syncthingdata.h:8[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/ZWKA2O7I7G/moc_syncthingdata.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/mocs_compilation.cpp:8[m[K:
+[01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingwidgets/../syncthingconnector/./syncthingdir.h:144:39:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KData::SyncthingDir[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+  144 | struct LIB_SYNCTHING_CONNECTOR_EXPORT [01;35m[KSyncthingDir[m[K {
+      |                                       [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qobject.h:19[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QObject:1[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/ZWKA2O7I7G/../../../../syncthingwidgets/misc/./internalerror.h:9[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/ZWKA2O7I7G/../../../../syncthingwidgets/misc/dbusstatusnotifier.h:4[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/ZWKA2O7I7G/moc_dbusstatusnotifier.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:344:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[ 64%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/settings/settings.cpp.o[0m
+[ 66%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/settings/settingsdialog.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/YPB6MEUM2W/../../../../syncthingwidgets/settings/./settings.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/YPB6MEUM2W/../../../../syncthingwidgets/settings/settingsdialog.h:4[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/YPB6MEUM2W/moc_settingsdialog.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/mocs_compilation.cpp:13[m[K:
+[01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingwidgets/../syncthingmodel/syncthingicons.h:112:35:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KData::StatusIcons[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+  112 | struct LIB_SYNCTHING_MODEL_EXPORT [01;35m[KStatusIcons[m[K {
+      |                                   [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:344:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/syncthingtray-10/build/build/syncthingwidgets/syncthingwidgets-qt6_autogen/YPB6MEUM2W/../../../../syncthingwidgets/settings/./settings.h:88:32:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KSettings::Launcher[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+   88 | struct SYNCTHINGWIDGETS_EXPORT [01;35m[KLauncher[m[K {
+      |                                [01;35m[K^~~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:344:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[ 66%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/settings/setupdetection.cpp.o[0m
+[ 66%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/settings/wizard.cpp.o[0m
+[ 67%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/webview/webpage.cpp.o[0m
+[ 67%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/webview/webviewdialog.cpp.o[0m
+[ 67%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/webview/webviewinterceptor.cpp.o[0m
+[ 69%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/textviewdialog.cpp.o[0m
+[ 69%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/internalerrorsdialog.cpp.o[0m
+[ 70%] [1m[32mLinking CXX shared module kf6/kfileitemaction/libsyncthingfileitemaction-qt6.so[0m
+[ 72%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/direrrorsdialog.cpp.o[0m
+[ 72%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/dbusstatusnotifier.cpp.o[0m
+[ 72%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/otherdialogs.cpp.o[0m
+[ 73%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/misc/syncthingkiller.cpp.o[0m
+[ 73%] [32mBuilding CXX object syncthingwidgets/CMakeFiles/syncthingwidgets-qt6.dir/syncthingwidgets-qt6_autogen/3YJK5W5UP7/qrc_syncthingwidgetsicons.cpp.o[0m
+[ 73%] Built target syncthingfileitemaction-qt6
+[ 73%] [1m[32mLinking CXX shared library libsyncthingwidgets-qt6.so[0m
+[ 75%] Built target syncthingwidgets-qt6
+[ 75%] Built target syncthingtray-qt6_autogen_timestamp_deps
+[ 75%] Built target syncthingplasmoid-qt6_autogen_timestamp_deps
+[ 75%] [1m[34mAutomatic MOC and UIC for target syncthingtray-qt6[0m
+[ 76%] [1m[34mAutomatic MOC and UIC for target syncthingplasmoid-qt6[0m
+[ 76%] Built target syncthingtray-qt6_autogen
+[ 80%] [1m[34mGenerating .lupdate/translations/syncthingtray_zh_CN.ts.stamp[0m
+[ 80%] [1m[34mGenerating .lupdate/translations/syncthingtray_de_DE.ts.stamp[0m
+[ 80%] [1m[34mGenerating .lupdate/translations/syncthingtray_en_US.ts.stamp[0m
+[ 80%] [1m[34mGenerating .lupdate/translations/syncthingtray_cs_CZ.ts.stamp[0m
+[ 80%] [1m[34mGenerating .lupdate/translations/syncthingtray_ru_RU.ts.stamp[0m
+[ 80%] [1m[34mGenerating .lupdate/translations/syncthingtray_fr_FR.ts.stamp[0m
+[ 81%] [1m[34mAutomatic RCC for resources/syncthingtrayicons.qrc[0m
+Updating '../../tray/translations/syncthingtray_en_US.ts'...
+Updating '../../tray/translations/syncthingtray_de_DE.ts'...
+    Found 86 source text(s) (0 new and 86 already existing)
+    Found 86 source text(s) (0 new and 86 already existing)
+Updating '../../tray/translations/syncthingtray_ru_RU.ts'...
+    Found 86 source text(s) (0 new and 86 already existing)
+Updating '../../tray/translations/syncthingtray_fr_FR.ts'...
+    Found 86 source text(s) (0 new and 86 already existing)
+Updating '../../tray/translations/syncthingtray_cs_CZ.ts'...
+    Found 86 source text(s) (0 new and 86 already existing)
+Updating '../../tray/translations/syncthingtray_zh_CN.ts'...
+    Found 86 source text(s) (0 new and 86 already existing)
+[ 81%] [1m[34mGenerating syncthingtray_de_DE.qm[0m
+[ 83%] [1m[34mGenerating syncthingtray_fr_FR.qm[0m
+[ 83%] [1m[34mGenerating syncthingtray_ru_RU.qm[0m
+[ 83%] [1m[34mGenerating syncthingtray_zh_CN.qm[0m
+[ 84%] [1m[34mGenerating syncthingtray_cs_CZ.qm[0m
+[ 84%] [1m[34mGenerating syncthingtray_en_US.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray_fr_FR.qm'...
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray_de_DE.qm'...
+    Generated 86 translation(s) (86 finished and 0 unfinished)
+    Generated 86 translation(s) (86 finished and 0 unfinished)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray_zh_CN.qm'...
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray_ru_RU.qm'...
+    Generated 86 translation(s) (86 finished and 0 unfinished)
+    Generated 86 translation(s) (86 finished and 0 unfinished)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray_cs_CZ.qm'...
+    Generated 68 translation(s) (67 finished and 1 unfinished)
+    Ignored 18 untranslated source text(s)
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray_en_US.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 86 untranslated source text(s)
+[ 87%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/trayicon.cpp.o[0m
+[ 87%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/devbuttonsitemdelegate.cpp.o[0m
+[ 87%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/traymenu.cpp.o[0m
+[ 87%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/application/singleinstance.cpp.o[0m
+[ 87%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/application/main.cpp.o[0m
+[ 87%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/dirbuttonsitemdelegate.cpp.o[0m
+[ 87%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/traywidget.cpp.o[0m
+[ 87%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/syncthingtray-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 89%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/downloaditemdelegate.cpp.o[0m
+[ 89%] Built target syncthingplasmoid-qt6_autogen
+[ 89%] [1m[34mGenerating .lupdate/__/translations/syncthingplasmoid_zh_CN.ts.stamp[0m
+Updating '../../../plasmoid/translations/syncthingplasmoid_zh_CN.ts'...
+    Found 81 source text(s) (0 new and 81 already existing)
+[ 90%] [1m[34mGenerating .lupdate/__/translations/syncthingplasmoid_cs_CZ.ts.stamp[0m
+Updating '../../../plasmoid/translations/syncthingplasmoid_cs_CZ.ts'...
+    Found 81 source text(s) (0 new and 81 already existing)
+[ 90%] [1m[34mGenerating .lupdate/__/translations/syncthingplasmoid_de_DE.ts.stamp[0m
+Updating '../../../plasmoid/translations/syncthingplasmoid_de_DE.ts'...
+    Found 81 source text(s) (0 new and 81 already existing)
+[ 92%] [1m[34mGenerating .lupdate/__/translations/syncthingplasmoid_en_US.ts.stamp[0m
+Updating '../../../plasmoid/translations/syncthingplasmoid_en_US.ts'...
+    Found 81 source text(s) (0 new and 81 already existing)
+[ 92%] [1m[34mGenerating .lupdate/__/translations/syncthingplasmoid_ru_RU.ts.stamp[0m
+Updating '../../../plasmoid/translations/syncthingplasmoid_ru_RU.ts'...
+    Found 81 source text(s) (0 new and 81 already existing)
+[ 93%] [1m[34mGenerating syncthingplasmoid_cs_CZ.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/plasmoid/lib/syncthingplasmoid_cs_CZ.qm'...
+    Generated 48 translation(s) (34 finished and 14 unfinished)
+    Ignored 33 untranslated source text(s)
+[ 93%] [1m[34mGenerating syncthingplasmoid_de_DE.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/plasmoid/lib/syncthingplasmoid_de_DE.qm'...
+    Generated 81 translation(s) (81 finished and 0 unfinished)
+[ 95%] [1m[34mGenerating syncthingplasmoid_en_US.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/plasmoid/lib/syncthingplasmoid_en_US.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 81 untranslated source text(s)
+[ 95%] [1m[34mGenerating syncthingplasmoid_ru_RU.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/plasmoid/lib/syncthingplasmoid_ru_RU.qm'...
+    Generated 78 translation(s) (76 finished and 2 unfinished)
+    Ignored 3 untranslated source text(s)
+[ 95%] [1m[34mGenerating syncthingplasmoid_zh_CN.qm[0m
+Updating '/var/tmp/hokuto/syncthingtray-10/build/build/plasmoid/lib/syncthingplasmoid_zh_CN.qm'...
+    Generated 78 translation(s) (76 finished and 2 unfinished)
+    Ignored 3 untranslated source text(s)
+[ 95%] [32mBuilding CXX object plasmoid/lib/CMakeFiles/syncthingplasmoid-qt6.dir/syncthingplasmoid-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 95%] [32mBuilding CXX object plasmoid/lib/CMakeFiles/syncthingplasmoid-qt6.dir/syncthingapplet.cpp.o[0m
+[ 95%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/dirview.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingconnector/../syncthingconnector/syncthingconnection.h:6[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingconnector/../syncthingwidgets/misc/./syncthingdata.h:8[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingconnector/../syncthingwidgets/misc/syncthingmodels.h:4[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray-qt6_autogen/DMHXEJ42XS/../../../../tray/gui/traywidget.h:4[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray-qt6_autogen/DMHXEJ42XS/moc_traywidget.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray-qt6_autogen/mocs_compilation.cpp:12[m[K:
+[01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingconnector/../syncthingconnector/./syncthingdev.h:34:39:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KData::SyncthingDev[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+   34 | struct LIB_SYNCTHING_CONNECTOR_EXPORT [01;35m[KSyncthingDev[m[K {
+      |                                       [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qobject.h:19[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QObject:1[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray-qt6_autogen/WTMXIFCN4H/../../../../tray/application/singleinstance.h:4[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray-qt6_autogen/WTMXIFCN4H/moc_singleinstance.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/syncthingtray-10/build/build/tray/syncthingtray-qt6_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:344:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[ 96%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/devview.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingconnector/../syncthingconnector/syncthingconnection.h:7[m[K:
+[01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingconnector/../syncthingconnector/./syncthingdir.h:72:39:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KData::SyncthingItemDownloadProgress[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+   72 | struct LIB_SYNCTHING_CONNECTOR_EXPORT [01;35m[KSyncthingItemDownloadProgress[m[K {
+      |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:344:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/syncthingtray-10/build/syncthingconnector/../syncthingconnector/./syncthingdir.h:144:39:[m[K [01;35m[Kwarning: [m[Kdefining ‘[01m[KData::SyncthingDir[m[K’, which previously failed to be complete in a SFINAE context [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=]8;;[m[K]
+  144 | struct LIB_SYNCTHING_CONNECTOR_EXPORT [01;35m[KSyncthingDir[m[K {
+      |                                       [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qmetatype.h:344:64:[m[K [01;36m[Knote: [m[Khere.  Use ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-sfinae-incomplete-Wsfinae-incomplete=2]8;;[m[K’ for a diagnostic at that point
+  344 |         static auto check(U *) -> std::integral_constant<bool, [01;36m[Ksizeof(U)[m[K != 0>;
+      |                                                                [01;36m[K^~~~~~~~~[m[K
+[ 98%] [32mBuilding CXX object plasmoid/lib/CMakeFiles/syncthingplasmoid-qt6.dir/settingsdialog.cpp.o[0m
+[ 98%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/downloadview.cpp.o[0m
+[ 98%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/gui/helper.cpp.o[0m
+[100%] [32mBuilding CXX object tray/CMakeFiles/syncthingtray-qt6.dir/syncthingtray-qt6_autogen/3YJK5W5UP7/qrc_syncthingtrayicons.cpp.o[0m
+[100%] [1m[32mLinking CXX executable syncthingtray-qt6[0m
+[100%] [1m[32mLinking CXX shared module plasma/applets/martchus.syncthingplasmoid-qt6.so[0m
+[100%] Built target syncthingtray-qt6
+[100%] Built target syncthingplasmoid-qt6
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/translations/syncthingconnector_zh_CN.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/translations/syncthingconnector_cs_CZ.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/translations/syncthingconnector_de_DE.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/translations/syncthingconnector_ru_RU.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/translations/syncthingconnector_fr_FR.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/translations/syncthingconnector_en_US.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/cmake/syncthingconnector-qt6Config.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/cmake/syncthingconnector-qt6ConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/pkgconfig/syncthingconnector-qt6.pc
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingconnector-qt6.so.2.1.1
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingconnector-qt6.so.37
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingconnector-qt6.so
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/cmake/syncthingconnector-qt6Targets.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingconnector-qt6/cmake/syncthingconnector-qt6Targets-release.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingcompletion.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingdir.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingdev.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingconnection.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingconnectionenums.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingconnectionstatus.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingconnectionsettings.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingnotifier.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingconfig.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingignorepattern.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingprocess.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingservice.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/qstringhash.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/utils.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/global.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/version.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingconnector-qt6/syncthingconnector/syncthingconnector-definitions.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/bin/syncthingctl-qt6
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/syncthingtray-10/output/usr/bin/syncthingctl-qt6" to ""
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/bash-completion/completions
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/bash-completion/completions/syncthingctl-qt6
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/translations/syncthingmodel_zh_CN.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/translations/syncthingmodel_cs_CZ.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/translations/syncthingmodel_de_DE.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/translations/syncthingmodel_ru_RU.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/translations/syncthingmodel_fr_FR.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/translations/syncthingmodel_en_US.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/cmake/syncthingmodel-qt6Config.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/cmake/syncthingmodel-qt6ConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/pkgconfig/syncthingmodel-qt6.pc
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingmodel-qt6.so.2.1.1
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingmodel-qt6.so.37
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingmodel-qt6.so.2.1.1" to ""
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingmodel-qt6.so
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/cmake/syncthingmodel-qt6Targets.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingmodel-qt6/cmake/syncthingmodel-qt6Targets-release.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingmodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingdirectorymodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingdevicemodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingerrormodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingfilemodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingrecentchangesmodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingsortfiltermodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingstatuscomputionmodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingstatusselectionmodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingicons.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/colors.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/global.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingdownloadmodel.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/version.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingmodel-qt6/syncthingmodel/syncthingmodel-definitions.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/translations/syncthingwidgets_zh_CN.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/translations/syncthingwidgets_cs_CZ.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/translations/syncthingwidgets_de_DE.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/translations/syncthingwidgets_ru_RU.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/translations/syncthingwidgets_fr_FR.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/translations/syncthingwidgets_en_US.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/cmake/syncthingwidgets-qt6Config.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/cmake/syncthingwidgets-qt6ConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/pkgconfig/syncthingwidgets-qt6.pc
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingwidgets-qt6.so.2.1.1
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingwidgets-qt6.so.37
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingwidgets-qt6.so.2.1.1" to ""
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/libsyncthingwidgets-qt6.so
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/cmake/syncthingwidgets-qt6Targets.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingwidgets-qt6/cmake/syncthingwidgets-qt6Targets-release.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/diffhighlighter.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/internalerror.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/statusinfo.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/syncthinglauncher.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/utils.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/syncthingdata.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/syncthingmodels.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/global.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/settings/settings.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/settings/settingsdialog.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/settings/wizard.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/settings/wizardenums.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/webview/webpage.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/webview/webviewdialog.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/textviewdialog.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/internalerrorsdialog.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/direrrorsdialog.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/dbusstatusnotifier.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/otherdialogs.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/misc/syncthingkiller.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/version.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/include/syncthingwidgets-qt6/syncthingwidgets/syncthingwidgets-definitions.h
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingtray-qt6/translations/syncthingtray_zh_CN.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingtray-qt6/translations/syncthingtray_cs_CZ.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingtray-qt6/translations/syncthingtray_de_DE.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingtray-qt6/translations/syncthingtray_ru_RU.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingtray-qt6/translations/syncthingtray_fr_FR.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingtray-qt6/translations/syncthingtray_en_US.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/bin/syncthingtray-qt6
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/syncthingtray-10/output/usr/bin/syncthingtray-qt6" to ""
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/icons/hicolor/scalable/apps/syncthingtray-qt6.svg
+-- Up-to-date: /var/tmp/hokuto/syncthingtray-10/output/usr/share/bash-completion/completions
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/bash-completion/completions/syncthingtray-qt6
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/applications/syncthingtray-qt6.desktop
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/metainfo/io.github.martchus.syncthingtray-qt6.metainfo.xml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingplasmoid-qt6/translations/syncthingplasmoid_de_DE.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingplasmoid-qt6/translations/syncthingplasmoid_cs_CZ.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingplasmoid-qt6/translations/syncthingplasmoid_zh_CN.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingplasmoid-qt6/translations/syncthingplasmoid_ru_RU.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingplasmoid-qt6/translations/syncthingplasmoid_en_US.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingplasmoid-qt6/cmake/syncthingplasmoid-qt6Config.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingplasmoid-qt6/cmake/syncthingplasmoid-qt6ConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/pkgconfig/syncthingplasmoid-qt6.pc
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/qt6/plugins/plasma/applets/martchus.syncthingplasmoid-qt6.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/syncthingtray-10/output/usr/lib/qt6/plugins/plasma/applets/martchus.syncthingplasmoid-qt6.so" to ""
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingplasmoid-qt6/cmake/syncthingplasmoid-qt6Targets.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingplasmoid-qt6/cmake/syncthingplasmoid-qt6Targets-release.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/metainfo/io.github.martchus.syncthingplasmoid-qt6.metainfo.xml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/ToolButton.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/FullRepresentation.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/DirectoriesPage.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/TabButton.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/StatisticsView.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/main.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/TopLevelView.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/RecentChangesPage.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/TopLevelItem.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/CompactRepresentation.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/TinyButton.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/ToolTipView.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/IconLabel.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/SectionHeader.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/ToolBar.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/DownloadsPage.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/DetailView.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/DevicesPage.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/contents/ui/DetailItem.qml
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/plasma/plasmoids/martchus.syncthingplasmoid-qt6/metadata.json
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/translations/syncthingfileitemaction_zh_CN.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/translations/syncthingfileitemaction_cs_CZ.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/translations/syncthingfileitemaction_de_DE.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/translations/syncthingfileitemaction_ru_RU.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/translations/syncthingfileitemaction_fr_FR.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/translations/syncthingfileitemaction_en_US.qm
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/cmake/syncthingfileitemaction-qt6Config.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/cmake/syncthingfileitemaction-qt6ConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/pkgconfig/syncthingfileitemaction-qt6.pc
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/lib/qt6/plugins/kf6/kfileitemaction/libsyncthingfileitemaction-qt6.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/syncthingtray-10/output/usr/lib/qt6/plugins/kf6/kfileitemaction/libsyncthingfileitemaction-qt6.so" to ""
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/cmake/syncthingfileitemaction-qt6Targets.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/syncthingfileitemaction-qt6/cmake/syncthingfileitemaction-qt6Targets-release.cmake
+-- Installing: /var/tmp/hokuto/syncthingtray-10/output/usr/share/metainfo/io.github.martchus.syncthingfileitemaction-qt6.metainfo.xml
+
+Script done on 2026-05-25 11:00:22+07:00 [COMMAND_EXIT_CODE="0"]
