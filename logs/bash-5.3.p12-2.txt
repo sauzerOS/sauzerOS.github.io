@@ -1,0 +1,1274 @@
+Script started on 2026-06-03 21:41:25+07:00 [COMMAND="cd /var/tmp/hokuto/bash-86/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/bash-86/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' CMAKE_BUILD_PARALLEL_LEVEL='20' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/bash-86/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/bash-86/build' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j20' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/bash-86/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/bash-86/build/.cache' /repo/sauzeros/core/bash/build /var/tmp/hokuto/bash-86/output 5.3.p12 bash" <not executed on terminal>]
+patching file jobs.c
+patching file patchlevel.h
+patching file lib/sh/anonfile.c
+patching file patchlevel.h
+patching file subst.c
+patching file tests/quotearray.right
+patching file patchlevel.h
+patching file builtins/evalfile.c
+patching file patchlevel.h
+patching file trap.c
+patching file patchlevel.h
+patching file lib/glob/smatch.c
+patching file patchlevel.h
+patching file subst.c
+patching file patchlevel.h
+patching file lib/sh/strtrans.c
+patching file patchlevel.h
+patching file lib/readline/input.c
+Hunk #1 succeeded at 972 (offset -4 lines).
+patching file lib/readline/isearch.c
+patching file patchlevel.h
+patching file jobs.c
+patching file patchlevel.h
+patching file builtins/mapfile.def
+patching file patchlevel.h
+patching file execute_cmd.c
+patching file sig.c
+patching file patchlevel.h
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+
+Beginning configuration for bash-5.3-release for x86_64-pc-linux-gnu
+
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for stdbool.h... yes
+checking for sys/param.h... yes
+checking for threads.h... yes
+checking for xlocale.h... no
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for cc option to enable large file support... none needed
+checking for tgetent... no
+checking for tgetent in -ltermcap... no
+checking for tgetent in -ltinfo... no
+checking for tgetent in -lcurses... yes
+checking which library has the termcap functions... using libcurses
+checking version of installed readline library... 8.3
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for ar... gcc-ar
+checking for ranlib... gcc-ranlib
+checking for bison... bison -y
+checking whether make sets $(MAKE)... yes
+checking for strip... strip
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether byte ordering is bigendian... (cached) no
+checking for long double... yes
+checking whether char is unsigned... no
+checking for working volatile... yes
+checking for C/C++ restrict keyword... __restrict__
+checking for bool, true, false... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... /usr/bin/grep -E
+checking whether we are using the GNU C Library 2 or newer... yes
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for size_t... yes
+checking for stdint.h... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for getpagesize... yes
+checking for symlink... yes
+checking for uselocale... yes
+checking for vprintf... yes
+checking for alarm... yes
+checking for fpurge... no
+checking for __fpurge... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for working mmap... yes
+checking whether integer division by zero raises SIGFPE... no
+checking for inttypes.h... yes
+checking for unsigned long long int... yes
+checking whether imported symbols can be declared weak... yes
+checking for pthread.h... yes
+checking for pthread_kill in -lpthread... yes
+checking whether POSIX threads API is available... yes
+checking for multithread API to use... posix
+checking for pthread_rwlock_t... yes
+checking whether pthread_rwlock_rdlock prefers a writer to a reader... no
+checking for cc options needed to detect all undeclared functions... none needed
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for iconv... yes
+checking for working iconv... yes
+checking whether iconv is compatible with its POSIX signature... yes
+checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for mempcpy... yes
+checking for munmap... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for tsearch... yes
+checking for __fsetlocking... yes
+checking whether feof_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking for localeconv... yes
+checking for bison... bison
+checking for bison 3.0 or newer... 3.8.2, ok
+checking for long long int... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking whether wint_t is large enough... yes
+checking for intmax_t... yes
+checking whether printf() supports POSIX/XSI format strings... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for stdint.h... (cached) yes
+checking for working fcntl.h... no
+checking whether uselocale works... yes
+checking for fake locale system (OpenBSD)... no
+checking for Solaris 11.4 locale system... no
+checking for getlocalename_l... no
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for flexible array member... yes
+checking for ar... (cached) gcc-ar
+checking for ptrdiff_t... yes
+checking for features.h... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for asprintf... yes
+checking for wprintf... yes
+checking for newlocale... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for snprintf... (cached) yes
+checking for strnlen... yes
+checking for uselocale... (cached) yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking whether _snprintf is declared... no
+checking whether _snwprintf is declared... no
+checking whether getc_unlocked is declared... yes
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyPreferredLanguages... (cached) no
+checking whether included gettext is requested... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for varargs.h... no
+checking for limits.h... yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for locale.h... yes
+checking for termcap.h... yes
+checking for termio.h... no
+checking for termios.h... yes
+checking for dlfcn.h... yes
+checking for stddef.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for netdb.h... yes
+checking for pwd.h... yes
+checking for grp.h... yes
+checking for strings.h... (cached) yes
+checking for stdckdint.h... yes
+checking for regex.h... yes
+checking for syslog.h... yes
+checking for ulimit.h... yes
+checking for sys/pte.h... no
+checking for sys/stream.h... no
+checking for sys/select.h... yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/mman.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/random.h... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/times.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/wait.h... yes
+checking for netinet/in.h... yes
+checking for arpa/inet.h... yes
+checking for sys/ptem.h... no
+checking for sys/resource.h... yes
+checking for working alloca.h... (cached) yes
+checking for alloca... (cached) yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking for working chown... yes
+checking whether getpgrp requires zero arguments... yes
+checking for working strcoll... yes
+checking for __setostype... no
+checking for wait3... yes
+checking for mkfifo... yes
+checking for dup2... yes
+checking for eaccess... yes
+checking for fcntl... yes
+checking for getdtablesize... yes
+checking for getentropy... yes
+checking for getgroups... yes
+checking for gethostname... yes
+checking for getpagesize... (cached) yes
+checking for getpeername... yes
+checking for getrandom... yes
+checking for getrlimit... yes
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for kill... yes
+checking for killpg... yes
+checking for lstat... yes
+checking for nanosleep... yes
+checking for pselect... yes
+checking for readlink... yes
+checking for select... yes
+checking for setdtablesize... no
+checking for setitimer... yes
+checking for statfs... yes
+checking for tcgetpgrp... yes
+checking for uname... yes
+checking for ulimit... yes
+checking for waitpid... yes
+checking for rename... yes
+checking for bcopy... yes
+checking for bzero... yes
+checking for clock_gettime... yes
+checking for confstr... yes
+checking for faccessat... yes
+checking for fnmatch... yes
+checking for getaddrinfo... yes
+checking for gethostbyname... yes
+checking for getservbyname... yes
+checking for getservent... yes
+checking for inet_aton... yes
+checking for imaxdiv... yes
+checking for memmove... yes
+checking for pathconf... yes
+checking for putenv... (cached) yes
+checking for raise... yes
+checking for random... yes
+checking for regcomp... yes
+checking for regexec... yes
+checking for setenv... (cached) yes
+checking for setlinebuf... yes
+checking for setlocale... yes
+checking for setvbuf... yes
+checking for siginterrupt... yes
+checking for strchr... yes
+checking for sysconf... yes
+checking for syslog... yes
+checking for tcgetattr... yes
+checking for tcgetwinsize... no
+checking for tcsetwinsize... no
+checking for times... yes
+checking for ttyname... yes
+checking for tzset... yes
+checking for unsetenv... yes
+checking for vasprintf... yes
+checking for asprintf... (cached) yes
+checking for isascii... yes
+checking for isblank... yes
+checking for isgraph... yes
+checking for isprint... yes
+checking for isspace... yes
+checking for isxdigit... yes
+checking for getpwent... yes
+checking for getpwnam... yes
+checking for getpwuid... yes
+checking for mkstemp... yes
+checking for mkdtemp... yes
+checking for arc4random... yes
+checking for strlcat... yes
+checking for memfd_create... yes
+checking for shm_open... yes
+checking for shm_mkstemp... no
+checking for getcwd... (cached) yes
+checking for memset... yes
+checking for strcasecmp... (cached) yes
+checking for strcasestr... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for strnlen... (cached) yes
+checking for strpbrk... yes
+checking for strstr... yes
+checking for strtod... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for strtoll... yes
+checking for strtoull... yes
+checking for strtoumax... yes
+checking for dprintf... yes
+checking for strdup... yes
+checking for strlcpy... yes
+checking for reallocarray... yes
+checking for libaudit.h... no
+checking whether AUDIT_USER_TTY is declared... yes
+checking whether confstr is declared... yes
+checking whether printf is declared... yes
+checking whether brk is declared... yes
+checking whether sbrk is declared... yes
+checking whether setregid is declared... yes
+checking whether strcpy is declared... yes
+checking whether strsignal is declared... yes
+checking for setresuid... yes
+checking for setresgid... yes
+checking whether strtold is declared... yes
+checking for broken strtold... no
+checking whether strtol is declared... yes
+checking whether strtoll is declared... yes
+checking whether strtoul is declared... yes
+checking whether strtoull is declared... yes
+checking whether strtoumax is declared... yes
+checking for working mktime... yes
+checking for argz.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for malloc.h... yes
+checking for stdio_ext.h... yes
+checking for working mmap... (cached) yes
+checking for __argz_count... yes
+checking for __argz_next... yes
+checking for __argz_stringify... yes
+checking for dcgettext... yes
+checking for locale_charset... no
+checking for mempcpy... (cached) yes
+checking for munmap... (cached) yes
+checking for mremap... yes
+checking for stpcpy... (cached) yes
+checking for strcspn... yes
+checking for wctype.h... yes
+checking for wchar.h... (cached) yes
+checking for langinfo.h... yes
+checking for mbstr.h... no
+checking for mbrlen... yes
+checking for mbscasecmp... no
+checking for mbscmp... no
+checking for mbsncmp... no
+checking for mbsnrtowcs... yes
+checking for mbsrtowcs... yes
+checking for mbschr... no
+checking for wcrtomb... (cached) yes
+checking for wcscoll... yes
+checking for wcsdup... yes
+checking for wcwidth... yes
+checking for wctype... yes
+checking for wcsnrtombs... yes
+checking for wcswidth... yes
+checking whether mbrtowc and mbstate_t are properly declared... (cached) yes
+checking for iswlower... yes
+checking for iswupper... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for iswctype... yes
+checking for wchar_t in wchar.h... yes
+checking for wctype_t in wctype.h... yes
+checking for wint_t in wctype.h... yes
+checking for wcwidth broken with unicode combining characters... no
+checking for locale_charset... (cached) no
+checking size of wchar_t... 4
+checking for dlopen in -ldl... yes
+checking for dlopen... yes
+checking for dlclose... yes
+checking for dlsym... yes
+checking type of array argument to getgroups... gid_t
+checking for off_t... yes
+checking for mode_t... yes
+checking for uid_t... (cached) yes
+checking for gid_t... (cached) yes
+checking for pid_t... yes
+checking for size_t... (cached) yes
+checking for intptr_t... yes
+checking for uintptr_t... yes
+checking for ssize_t... yes
+checking for time_t... yes
+checking for long long int... (cached) yes
+checking for unsigned long long int... (cached) yes
+checking for sig_atomic_t in signal.h... yes
+checking size of char... (cached) 1
+checking size of short... (cached) 2
+checking size of int... (cached) 4
+checking size of long... 8
+checking size of char *... 8
+checking size of size_t... 8
+checking size of double... (cached) 8
+checking size of long long... (cached) 8
+checking for bits16_t... no
+checking for u_bits16_t... no
+checking for bits32_t... no
+checking for u_bits32_t... no
+checking for bits64_t... no
+checking for ptrdiff_t... (cached) yes
+checking whether stat file-mode macros are broken... no
+checking whether #! works in shell scripts... yes
+checking whether strchrnul works... yes
+checking if dup2 fails to clear the close-on-exec flag... no
+checking whether pgrps need synchronization... no
+checking for type of signal functions... posix
+checking for sys_errlist and sys_nerr... yes
+checking whether sys_siglist is declared... no
+checking for sys_siglist in system C library... no
+checking for _sys_siglist in signal.h or unistd.h... no
+checking for _sys_siglist in system C library... no
+checking for clock_t... yes
+checking for sigset_t... yes
+checking for socklen_t... yes
+checking for quad_t... yes
+checking for type of struct rlimit fields... rlim_t
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking size of intmax_t... 8
+checking for struct termios.c_line... yes
+checking for struct termio.c_line... no
+checking for struct dirent.d_ino... yes
+checking for struct dirent.d_fileno... yes
+checking for struct dirent.d_namlen... no
+checking for d_type member in directory struct... yes
+checking for struct winsize in sys/ioctl.h and termios.h... sys/ioctl.h
+checking for struct timeval in sys/time.h and time.h... yes
+checking for struct stat.st_blocks... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for struct timezone in sys/time.h and time.h... yes
+checking for offset of exit status in return status from wait... 8
+checking for struct timespec in <time.h>... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for sbrk... yes
+checking for working sbrk... yes
+checking for brk... no
+checking for the existence of strsignal... yes
+checking if opendir() opens non-directories... no
+checking whether ulimit can substitute for getdtablesize... yes
+checking whether fpurge is declared... no
+checking to see if getenv can be redefined... yes
+checking if getcwd() will dynamically allocate memory with 0 size... yes
+checking for presence of POSIX-style sigsetjmp/siglongjmp... present
+checking whether or not strcoll and strcmp differ... no
+checking for standard-conformant snprintf... yes
+checking for standard-conformant vsnprintf... yes
+checking for strtoimax... yes
+checking whether strtoimax is declared... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... (cached) yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether fgets_unlocked is declared... (cached) yes
+checking whether fputc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getc_unlocked is declared... (cached) yes
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking for standard-conformant putenv declaration... yes
+checking for standard-conformant unsetenv declaration... yes
+checking for printf floating point output in hex notation... yes
+checking whether fnmatch can be used to check bracket equivalence classes... yes
+checking if signal handlers must be reinstalled when invoked... no
+checking for presence of necessary job control definitions... present
+checking for presence of named pipes... present
+checking whether termios.h defines TIOCGWINSZ... no
+checking whether sys/ioctl.h defines TIOCGWINSZ... yes
+checking for TIOCSTAT in sys/ioctl.h... no
+checking for FIONREAD in sys/ioctl.h... yes
+checking whether WCONTINUED flag to waitpid is unavailable or available but broken... no
+checking for speed_t in sys/types.h... no
+checking whether getpw functions are declared in pwd.h... yes
+checking for unusable real-time signals due to large values... no
+checking which library has the termcap functions... (cached) using libcurses
+checking whether /dev/fd is available... standard
+checking whether /dev/stdin stdout stderr are available... present
+checking for default mail directory... /var/mail
+checking shared object configuration for loadable builtins... supported
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating builtins/Makefile
+config.status: creating lib/readline/Makefile
+config.status: creating lib/glob/Makefile
+config.status: creating lib/intl/Makefile
+config.status: creating lib/malloc/Makefile
+config.status: creating lib/sh/Makefile
+config.status: creating lib/termcap/Makefile
+config.status: creating lib/tilde/Makefile
+config.status: creating doc/Makefile
+config.status: creating support/Makefile
+config.status: creating po/Makefile.in
+config.status: creating examples/loadables/Makefile
+config.status: creating examples/loadables/Makefile.inc
+config.status: creating examples/loadables/Makefile.sample
+config.status: creating examples/loadables/perl/Makefile
+config.status: creating support/bash.pc
+config.status: creating support/bashbug.sh
+config.status: creating config.h
+config.status: creating buildconf.h
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing stamp-h commands
+rm -f mksignames.o
+rm -f buildsignames.o
+cc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -DBUILDTOOL -c ./support/mksignames.c
+cc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -DBUILDTOOL -o buildsignames.o -c ./support/signames.c
+rm -f unwind_prot.o
+rm -f mksyntax
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/builtins'
+rm -f mkbuiltins.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c unwind_prot.c
+cc -c  -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  mkbuiltins.c
+cc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -o mksyntax ./mksyntax.c 
+rm -f alias.o
+rm -f xmalloc.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c alias.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c xmalloc.c
+rm -f shell.o
+rm -f eval.o
+rm -f general.o
+rm -f make_cmd.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c shell.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c eval.c
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/support'
+rm -f man2html.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c general.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c make_cmd.c
+rm -f print_cmd.o
+cc -c  -DHAVE_CONFIG_H -DSHELL -I/var/tmp/hokuto/bash-86/build -I..    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' man2html.c
+rm -f dispose_cmd.o
+rm -f copy_cmd.o
+rm -f error.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c copy_cmd.c
+rm -f flags.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c dispose_cmd.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c print_cmd.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c error.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c flags.c
+rm -f hashcmd.o
+rm -f hashlib.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c hashlib.c
+rm -f mailcheck.o
+rm -f input.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c input.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c mailcheck.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c hashcmd.c
+rm -f pathexp.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c pathexp.c
+rm -f test.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c test.c
+rm -f array.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c array.c
+rm -f arrayfunc.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c arrayfunc.c
+rm -f assoc.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c assoc.c
+rm -f braces.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c braces.c
+cc -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -o mkbuiltins mkbuiltins.o -ldl 
+rm -f bracecomp.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c bracecomp.c
+rm -f bashhist.o
+rm -f list.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c bashhist.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c list.c
+rm -f stringlib.o
+rm -f locale.o
+rm -f findcmd.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c locale.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c stringlib.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c findcmd.c
+[01m[Kpathexp.c:[m[K In function ‘[01m[Kglob_name_is_acceptable[m[K’:
+[01m[Kpathexp.c:536:5:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  536 |   n [01;35m[K=[m[K strrchr (name, '/');
+      |     [01;35m[K^[m[K
+rm -f pcomplib.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c pcomplib.c
+rm -f mksignames
+cc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -o mksignames mksignames.o buildsignames.o 
+cc -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -rdynamic -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' man2html.o -o man2html -ldl 		
+rm -f syntax.c
+./mksyntax -o syntax.c
+/bin/sh ./support/mkversion.sh -b -S . -s release -d 5.3 -o newversion.h \
+	&& mv newversion.h version.h
+rm -f syntax.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c syntax.c
+rm -f version.o
+cc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -DBUILDTOOL -c -o buildversion.o ./version.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c version.c
+rm -f lsignames.h
+./mksignames lsignames.h
+if cmp -s lsignames.h signames.h ; then :; else rm -f signames.h ; cp lsignames.h signames.h ; fi
+cc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -o bashversion ./support/bashversion.c buildversion.o 
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/builtins'
+rm -f execute_cmd.o
+rm -f variables.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c execute_cmd.c
+rm -f expr.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c variables.c
+rm -f jobs.o
+rm -f subst.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c expr.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c jobs.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c subst.c
+rm -f trap.o
+rm -f sig.o
+rm -f bashline.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c trap.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c sig.c
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c bashline.c
+rm -f pcomplete.o
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/builtins'
+rm -f builtins.o
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' builtins.c
+
+rm -f alias.o
+./mkbuiltins -D . alias.def
+rm -f bind.o
+	  ***********************************************************
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' alias.c || ( rm -f alias.c ; exit 1 )
+./mkbuiltins -D . bind.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' bind.c || ( rm -f bind.c ; exit 1 )
+	  *                                                         *
+rm -f break.o
+rm -f builtin.o
+rm -f caller.o
+./mkbuiltins -D . break.def
+rm -f cd.o
+rm -f colon.o
+./mkbuiltins -D . builtin.def
+./mkbuiltins -D . caller.def
+./mkbuiltins -D . colon.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' break.c || ( rm -f break.c ; exit 1 )
+./mkbuiltins -D . cd.def
+	  * GNU bash, version 5.3.12(1)-release (x86_64-pc-linux-gnu)
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' builtin.c || ( rm -f builtin.c ; exit 1 )
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' caller.c || ( rm -f caller.c ; exit 1 )
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c pcomplete.c
+	  *                                                         *
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' cd.c || ( rm -f cd.c ; exit 1 )
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' colon.c || ( rm -f colon.c ; exit 1 )
+rm -f command.o
+./mkbuiltins -D . command.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' command.c || ( rm -f command.c ; exit 1 )
+	  ***********************************************************
+
+making lib/glob/libglob.a in ./lib/glob
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/lib/glob'
+rm -f common.o
+rm -f glob.o
+cc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  glob.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' common.c
+rm -f colon.c
+rm -f strmatch.o
+cc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  strmatch.c
+rm -f alias.c
+rm -f caller.c
+rm -f declare.o
+./mkbuiltins -D . declare.def
+making lib/sh/libsh.a in ./lib/sh
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' declare.c || ( rm -f declare.c ; exit 1 )
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/lib/sh'
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   clktck.c
+rm -f command.c
+making lib/tilde/libtilde.a in ./lib/tilde
+rm -f smatch.o
+cc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  smatch.c
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/lib/tilde'
+cc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I../.. -I../.. -I../../include -I../../lib   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  tilde.c
+rm -f builtin.c
+rm -f break.c
+rm -f echo.o
+./mkbuiltins -D . echo.def
+rm -f enable.o
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' echo.c || ( rm -f echo.c ; exit 1 )
+./mkbuiltins -D . enable.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' enable.c || ( rm -f enable.c ; exit 1 )
+[01m[Ktilde.c:[m[K In function ‘[01m[Ktilde_expand[m[K’:
+[01m[Ktilde.c:188:14:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  188 |   if (result [01;35m[K=[m[K strchr (string, '~'))
+      |              [01;35m[K^[m[K
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/lib/malloc'
+cc  -I. -I../.. -I../.. -I../../include -I../../lib  -DHAVE_CONFIG_H -DSHELL  -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -DRCHECK -Dbotch=programming_error    -c malloc.c
+rm -f cd.c
+rm -f libtilde.a
+gcc-ar cr libtilde.a tilde.o
+cc  -I. -I../.. -I../.. -I../../include -I../../lib  -DHAVE_CONFIG_H -DSHELL  -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -DRCHECK -Dbotch=programming_error    -c trace.c
+test -n "gcc-ranlib" && gcc-ranlib libtilde.a
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   clock.c
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/lib/tilde'
+rm -f xmbsrtowcs.o
+cc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  xmbsrtowcs.c
+rm -f eval.o
+./mkbuiltins -D . eval.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' eval.c || ( rm -f eval.c ; exit 1 )
+rm -f gmisc.o
+cc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  gmisc.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   getenv.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   oslib.c
+rm -f declare.c
+rm -f echo.c
+rm -f evalfile.o
+cc  -I. -I../.. -I../.. -I../../include -I../../lib  -DHAVE_CONFIG_H -DSHELL  -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -DRCHECK -Dbotch=programming_error    -c stats.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' evalfile.c
+rm -f evalstring.o
+cc  -I. -I../.. -I../.. -I../../include -I../../lib  -DHAVE_CONFIG_H -DSHELL  -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -DRCHECK -Dbotch=programming_error    -c table.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' evalstring.c
+rm -f bind.c
+rm -f exec.o
+rm -f exit.o
+./mkbuiltins -D . exit.def
+./mkbuiltins -D . exec.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' exit.c || ( rm -f exit.c ; exit 1 )
+rm -f enable.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' exec.c || ( rm -f exec.c ; exit 1 )
+cc  -I. -I../.. -I../.. -I../../include -I../../lib  -DHAVE_CONFIG_H -DSHELL  -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -DRCHECK -Dbotch=programming_error    -c watch.c
+rm -f fc.o
+./mkbuiltins -D . fc.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' fc.c || ( rm -f fc.c ; exit 1 )
+rm -f fg_bg.o
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   setlinebuf.c
+./mkbuiltins -D . fg_bg.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' fg_bg.c || ( rm -f fg_bg.c ; exit 1 )
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   strnlen.c
+rm -f hash.o
+./mkbuiltins -D . hash.def
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   itos.c
+rm -f exit.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   zread.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' hash.c || ( rm -f hash.c ; exit 1 )
+rm -f libmalloc.a
+rm -f help.o
+gcc-ar cr libmalloc.a malloc.o  trace.o stats.o table.o watch.o
+rm -f eval.c
+./mkbuiltins -D . help.def
+rm -f history.o
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' help.c || ( rm -f help.c ; exit 1 )
+./mkbuiltins -D . history.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' history.c || ( rm -f history.c ; exit 1 )
+test -n "gcc-ranlib" && gcc-ranlib libmalloc.a
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   zwrite.c
+rm -f jobs.o
+./mkbuiltins -D . jobs.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' jobs.c || ( rm -f jobs.c ; exit 1 )
+rm -f kill.o
+./mkbuiltins -D . kill.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' kill.c || ( rm -f kill.c ; exit 1 )
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   shtty.c
+rm -f fg_bg.c
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/lib/malloc'
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   shmatch.c
+rm -f let.o
+rm -f mapfile.o
+./mkbuiltins -D . let.def
+./mkbuiltins -D . mapfile.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' let.c || ( rm -f let.c ; exit 1 )
+rm -f pushd.o
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' mapfile.c || ( rm -f mapfile.c ; exit 1 )
+rm -f -f libglob.a
+./mkbuiltins -D . pushd.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' pushd.c || ( rm -f pushd.c ; exit 1 )
+gcc-ar cr libglob.a glob.o strmatch.o smatch.o xmbsrtowcs.o gmisc.o
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   eaccess.c
+rm -f read.o
+rm -f exec.c
+rm -f return.o
+./mkbuiltins -D . read.def
+./mkbuiltins -D . return.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' read.c || ( rm -f read.c ; exit 1 )
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   netconn.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' return.c || ( rm -f return.c ; exit 1 )
+test -n "gcc-ranlib" && gcc-ranlib libglob.a
+rm -f jobs.c
+rm -f set.o
+rm -f hash.c
+./mkbuiltins -D . set.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' set.c || ( rm -f set.c ; exit 1 )
+rm -f setattr.o
+./mkbuiltins -D . setattr.def
+rm -f shift.o
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/lib/glob'
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   netopen.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' setattr.c || ( rm -f setattr.c ; exit 1 )
+./mkbuiltins -D . shift.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' shift.c || ( rm -f shift.c ; exit 1 )
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   timeval.c
+rm -f let.c
+rm -f source.o
+./mkbuiltins -D . source.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' source.c || ( rm -f source.c ; exit 1 )
+rm -f history.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   makepath.c
+rm -f suspend.o
+./mkbuiltins -D . suspend.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' suspend.c || ( rm -f suspend.c ; exit 1 )
+rm -f kill.c
+rm -f y.tab.o
+rm -f mapfile.c
+rm -f test.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c y.tab.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   pathcanon.c
+./mkbuiltins -D . test.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' test.c || ( rm -f test.c ; exit 1 )
+rm -f times.o
+rm -f pushd.c
+rm -f shift.c
+./mkbuiltins -D . times.def
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   pathphys.c
+rm -f trap.o
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' times.c || ( rm -f times.c ; exit 1 )
+./mkbuiltins -D . trap.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' trap.c || ( rm -f trap.c ; exit 1 )
+rm -f set.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   tmpfile.c
+rm -f type.o
+./mkbuiltins -D . type.def
+rm -f setattr.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' type.c || ( rm -f type.c ; exit 1 )
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   stringlist.c
+rm -f test.c
+cc  -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -o psize.aux ./psize.c
+rm -f source.c
+rm -f umask.o
+./mkbuiltins -D . umask.def
+rm -f return.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' umask.c || ( rm -f umask.c ; exit 1 )
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   stringvec.c
+rm -f wait.o
+rm -f suspend.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   spell.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   shquote.c
+./mkbuiltins -D . wait.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' wait.c || ( rm -f wait.c ; exit 1 )
+rm -f type.c
+rm -f getopts.o
+./mkbuiltins -D . getopts.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' getopts.c || ( rm -f getopts.c ; exit 1 )
+rm -f read.c
+rm -f shopt.o
+./mkbuiltins -D . shopt.def
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   strtrans.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' shopt.c || ( rm -f shopt.c ; exit 1 )
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   snprintf.c
+rm -f fc.c
+rm -f help.c
+rm -f printf.o
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   mailstat.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   fmtulong.c
+./mkbuiltins -D . printf.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' printf.c || ( rm -f printf.c ; exit 1 )
+rm -f trap.c
+rm -f getopt.o
+rm -f wait.c
+rm -f bashgetopt.o
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' bashgetopt.c
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' getopt.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   fmtullong.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   fmtumax.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   zcatfd.c
+rm -f times.c
+rm -f complete.o
+./mkbuiltins -D . complete.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' complete.c || ( rm -f complete.c ; exit 1 )
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   zmapfd.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   winsize.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   wcsdup.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   fpurge.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   zgetline.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   mbscmp.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   mbsncmp.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   uconvert.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   ufuncs.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   casemod.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   input_avail.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   mbscasecmp.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   fnxform.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   unicode.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   shmbchar.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   strvis.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   strscpy.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   anonfile.c
+[01m[Kgetopt.c:[m[K In function ‘[01m[Ksh_getopt[m[K’:
+[01m[Kgetopt.c:168:8:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  168 |   temp [01;35m[K=[m[K strchr (optstring, c);
+      |        [01;35m[K^[m[K
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   compat.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   utf8.c
+rm -f umask.c
+rm -f getopts.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   random.c
+rm -f complete.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   gettimeofday.c
+/bin/sh ./psize.sh > pipesize.h
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   timers.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   wcsnwidth.c
+cc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   mbschr.c
+[01m[Kmbschr.c:[m[K In function ‘[01m[Kmbschr[m[K’:
+[01m[Kmbschr.c:84:11:[m[K [01;35m[Kwarning: [m[Kreturn discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+   84 |   return ([01;35m[Kstrchr[m[K (s, c));
+      |           [01;35m[K^~~~~~[m[K
+rm -f shopt.c
+[01m[Kutf8.c:[m[K In function ‘[01m[Kutf8_mbschr[m[K’:
+[01m[Kutf8.c:38:10:[m[K [01;35m[Kwarning: [m[Kreturn discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+   38 |   return [01;35m[Kstrchr[m[K (s, c);         /* for now */
+      |          [01;35m[K^~~~~~[m[K
+rm -f libsh.a
+gcc-ar cr libsh.a clktck.o clock.o getenv.o oslib.o setlinebuf.o strnlen.o itos.o zread.o zwrite.o shtty.o shmatch.o eaccess.o netconn.o netopen.o timeval.o makepath.o pathcanon.o pathphys.o tmpfile.o stringlist.o stringvec.o spell.o shquote.o strtrans.o snprintf.o mailstat.o fmtulong.o fmtullong.o fmtumax.o zcatfd.o zmapfd.o winsize.o wcsdup.o fpurge.o zgetline.o mbscmp.o mbsncmp.o uconvert.o ufuncs.o casemod.o input_avail.o mbscasecmp.o fnxform.o unicode.o shmbchar.o strvis.o strscpy.o anonfile.o compat.o utf8.o random.o gettimeofday.o timers.o wcsnwidth.o mbschr.o
+test -n "gcc-ranlib" && gcc-ranlib libsh.a
+rm -f printf.c
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/lib/sh'
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/support'
+rm -f ulimit.o
+./mkbuiltins -D . ulimit.def
+cc -c   -DHAVE_CONFIG_H -DSHELL -I. -I..  -I.. -I../include -I../lib -I.     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' ulimit.c || ( rm -f ulimit.c ; exit 1 )
+rm -f ulimit.c
+rm -f libbuiltins.a
+gcc-ar cr libbuiltins.a builtins.o alias.o bind.o break.o builtin.o caller.o cd.o colon.o command.o common.o declare.o echo.o enable.o eval.o evalfile.o evalstring.o exec.o exit.o fc.o fg_bg.o hash.o help.o history.o jobs.o kill.o let.o mapfile.o pushd.o read.o return.o set.o setattr.o shift.o source.o suspend.o test.o times.o trap.o type.o ulimit.o umask.o wait.o getopts.o shopt.o printf.o getopt.o bashgetopt.o complete.o
+gcc-ranlib libbuiltins.a
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/builtins'
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/builtins'
+make[1]: 'pipesize.h' is up to date.
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/builtins'
+rm -f redir.o
+cc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-pc-linux-gnu"' -DCONF_VENDOR='"pc"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"' -c redir.c
+rm -f bash
+cc -L./builtins -L/usr/lib -L/usr/lib -L./lib/glob -L./lib/tilde -L./lib/malloc -L./lib/sh  -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -rdynamic -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'   -o bash shell.o eval.o y.tab.o general.o make_cmd.o print_cmd.o dispose_cmd.o execute_cmd.o variables.o copy_cmd.o error.o expr.o flags.o jobs.o subst.o hashcmd.o hashlib.o mailcheck.o trap.o input.o unwind_prot.o pathexp.o sig.o test.o version.o alias.o array.o arrayfunc.o assoc.o braces.o bracecomp.o bashhist.o bashline.o  list.o stringlib.o locale.o findcmd.o redir.o pcomplete.o pcomplib.o syntax.o xmalloc.o  -lbuiltins -lglob -lsh -lreadline -lhistory -lcurses -ltilde -lmalloc    -ldl 
+/usr/bin/ld.bfd: /var/tmp/hokuto/ccKdprwZ.ltrans16.ltrans.o: in function `sh_mktmpname':
+<artificial>:(.text+0xa82a): warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+ls -l bash
+-rwxr-xr-x 1 dbz dbz 1352280 Jun  3 21:42 bash
+size bash
+   text	   data	    bss	    dec	    hex	filename
+1190496	  22920	  62576	1275992	 137858	bash
+
+	  ***********************************************************
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/builtins'
+make[1]: 'pipesize.h' is up to date.
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/builtins'
+	  *                                                         *
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/bin
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/man/man1
+	  * GNU bash, version 5.3.12(1)-release (x86_64-pc-linux-gnu)
+	  *                                                         *
+	  ***********************************************************
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/info
+
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/doc/bash
+( cd ./po/ ; make  DESTDIR=/var/tmp/hokuto/bash-86/output installdirs )
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/po'
+/bin/sh ../support/mkinstalldirs /var/tmp/hokuto/bash-86/output/usr/share
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/en@quot/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/en@boldquot/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/af/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/bg/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/ca/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/cs/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/da/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/de/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/el/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/eo/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/es/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/et/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/fi/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/fr/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/ga/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/gl/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/hr/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/hu/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/id/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/it/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/ja/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/ka/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/ko/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/lt/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/nb/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/nl/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/pl/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/pt/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/pt_BR/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/ro/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/ru/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/sk/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/sl/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/sq/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/sr/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/sv/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/tr/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/uk/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/vi/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/zh_CN/LC_MESSAGES
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/share/locale/zh_TW/LC_MESSAGES
+if test "bash" = "gettext-tools"; then \
+  /bin/sh ../support/mkinstalldirs /var/tmp/hokuto/bash-86/output/usr/share/gettext/po; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/po'
+/usr/bin/install -c -m 0755 bash /var/tmp/hokuto/bash-86/output/usr/bin/bash
+/usr/bin/install -c -m 0555 bashbug /var/tmp/hokuto/bash-86/output/usr/bin/bashbug
+/usr/bin/install -c -m 644 ./CHANGES ./COMPAT ./NEWS ./POSIX ./RBASH ./README /var/tmp/hokuto/bash-86/output/usr/share/doc/bash
+( cd ./doc ; make  \
+	man1dir=/usr/share/man/man1 man1ext=.1 \
+	man3dir=/usr/share/man/man3 man3ext=.3 \
+	infodir=/usr/share/info htmldir=/usr/share/doc/bash DESTDIR=/var/tmp/hokuto/bash-86/output install )
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/doc'
+/bin/sh ../support/mkinstalldirs /var/tmp/hokuto/bash-86/output/usr/share/man/man1
+/bin/sh ../support/mkinstalldirs /var/tmp/hokuto/bash-86/output/usr/share/info
+/bin/sh ../support/mkinstalldirs /var/tmp/hokuto/bash-86/output/usr/share/doc/bash
+if test -n "/usr/share/doc/bash" ; then \
+	/bin/sh ../support/mkinstalldirs /var/tmp/hokuto/bash-86/output/usr/share/doc/bash ; \
+fi
+/usr/bin/install -c -m 644 ./bash.1 /var/tmp/hokuto/bash-86/output/usr/share/man/man1/bash.1
+/usr/bin/install -c -m 644 ./bashbug.1 /var/tmp/hokuto/bash-86/output/usr/share/man/man1/bashbug.1
+/usr/bin/install -c -m 644 ./FAQ ./INTRO /var/tmp/hokuto/bash-86/output/usr/share/doc/bash
+if test -f bash.info; then d=.; else d=.; fi; \
+  /usr/bin/install -c -m 644 $d/bash.info /var/tmp/hokuto/bash-86/output/usr/share/info/bash.info
+if /bin/sh -c 'install-info --version' >/dev/null 2>&1; then \
+	install-info --dir-file=/var/tmp/hokuto/bash-86/output/usr/share/info/dir /var/tmp/hokuto/bash-86/output/usr/share/info/bash.info; \
+else true; fi
+if test -n "/usr/share/doc/bash" ; then \
+	/usr/bin/install -c -m 644 ./bash.html /var/tmp/hokuto/bash-86/output/usr/share/doc/bash ; \
+	/usr/bin/install -c -m 644 ./bashref.html /var/tmp/hokuto/bash-86/output/usr/share/doc/bash ; \
+fi
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/doc'
+( cd ./builtins ; make  DESTDIR=/var/tmp/hokuto/bash-86/output install )
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/builtins'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/builtins'
+( cd ./po/ ; make  DESTDIR=/var/tmp/hokuto/bash-86/output install )
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/po'
+/bin/sh ../support/mkinstalldirs /var/tmp/hokuto/bash-86/output/usr/share
+installing en@quot.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/en@quot/LC_MESSAGES/bash.mo
+installing en@boldquot.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/en@boldquot/LC_MESSAGES/bash.mo
+installing af.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/af/LC_MESSAGES/bash.mo
+installing bg.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/bg/LC_MESSAGES/bash.mo
+installing ca.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/ca/LC_MESSAGES/bash.mo
+installing cs.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/cs/LC_MESSAGES/bash.mo
+installing da.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/da/LC_MESSAGES/bash.mo
+installing de.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/de/LC_MESSAGES/bash.mo
+installing el.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/el/LC_MESSAGES/bash.mo
+installing eo.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/eo/LC_MESSAGES/bash.mo
+installing es.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/es/LC_MESSAGES/bash.mo
+installing et.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/et/LC_MESSAGES/bash.mo
+installing fi.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/fi/LC_MESSAGES/bash.mo
+installing fr.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/fr/LC_MESSAGES/bash.mo
+installing ga.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/ga/LC_MESSAGES/bash.mo
+installing gl.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/gl/LC_MESSAGES/bash.mo
+installing hr.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/hr/LC_MESSAGES/bash.mo
+installing hu.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/hu/LC_MESSAGES/bash.mo
+installing id.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/id/LC_MESSAGES/bash.mo
+installing it.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/it/LC_MESSAGES/bash.mo
+installing ja.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/ja/LC_MESSAGES/bash.mo
+installing ka.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/ka/LC_MESSAGES/bash.mo
+installing ko.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/ko/LC_MESSAGES/bash.mo
+installing lt.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/lt/LC_MESSAGES/bash.mo
+installing nb.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/nb/LC_MESSAGES/bash.mo
+installing nl.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/nl/LC_MESSAGES/bash.mo
+installing pl.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/pl/LC_MESSAGES/bash.mo
+installing pt.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/pt/LC_MESSAGES/bash.mo
+installing pt_BR.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/pt_BR/LC_MESSAGES/bash.mo
+installing ro.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/ro/LC_MESSAGES/bash.mo
+installing ru.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/ru/LC_MESSAGES/bash.mo
+installing sk.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/sk/LC_MESSAGES/bash.mo
+installing sl.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/sl/LC_MESSAGES/bash.mo
+installing sq.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/sq/LC_MESSAGES/bash.mo
+installing sr.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/sr/LC_MESSAGES/bash.mo
+installing sv.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/sv/LC_MESSAGES/bash.mo
+installing tr.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/tr/LC_MESSAGES/bash.mo
+installing uk.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/uk/LC_MESSAGES/bash.mo
+installing vi.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/vi/LC_MESSAGES/bash.mo
+installing zh_CN.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/zh_CN/LC_MESSAGES/bash.mo
+installing zh_TW.gmo as /var/tmp/hokuto/bash-86/output/usr/share/locale/zh_TW/LC_MESSAGES/bash.mo
+if test "bash" = "gettext-tools"; then \
+  /bin/sh ../support/mkinstalldirs /var/tmp/hokuto/bash-86/output/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /var/tmp/hokuto/bash-86/output/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /var/tmp/hokuto/bash-86/output/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/po'
+( cd /var/tmp/hokuto/bash-86/build/examples/loadables && make  DESTDIR=/var/tmp/hokuto/bash-86/output install )
+make[1]: Entering directory '/var/tmp/hokuto/bash-86/build/examples/loadables'
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o print.o print.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o truefalse.o truefalse.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o sleep.o sleep.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o finfo.o finfo.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o logname.o logname.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o basename.o basename.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o dirname.o dirname.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o fdflags.o fdflags.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o tty.o tty.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o pathchk.o pathchk.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o tee.o tee.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o head.o head.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o mkdir.o mkdir.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o rmdir.o rmdir.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o mkfifo.o mkfifo.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o mktemp.o mktemp.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o printenv.o printenv.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o id.o id.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o whoami.o whoami.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o uname.o uname.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o sync.o sync.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o push.o push.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o ln.o ln.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o unlink.o unlink.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o realpath.o realpath.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o strftime.o strftime.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o mypid.o mypid.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o setpgid.o setpgid.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o seq.o seq.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o rm.o rm.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o accept.o accept.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o csv.o csv.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o dsv.o dsv.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o cut.o cut.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o stat.o stat.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o getconf.o getconf.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o kv.o kv.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o strptime.o strptime.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o chmod.o chmod.c
+cc -fPIC -DHAVE_CONFIG_H -DSHELL   -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -DSYS_BASHRC='"/etc/bash/bashrc"'  -I. -I.. -I../.. -I../../lib -I../../builtins -I. -I../../include -I/var/tmp/hokuto/bash-86/build -I/var/tmp/hokuto/bash-86/build/lib -I/var/tmp/hokuto/bash-86/build/builtins  -c -o fltexpr.o fltexpr.c
+cc -shared -Wl,-soname,print -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o print print.o 
+[01m[Kseq.c:[m[K In function ‘[01m[Kgetprec[m[K’:
+[01m[Kseq.c:176:10:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  176 |   if (dp [01;35m[K=[m[K strchr (numbuf, decimal_point))
+      |          [01;35m[K^[m[K
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/lib/bash
+cc -shared -Wl,-soname,truefalse -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o truefalse truefalse.o 
+cc -shared -Wl,-soname,sleep -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o sleep sleep.o 
+cc -shared -Wl,-soname,logname -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o logname logname.o 
+cc -shared -Wl,-soname,basename -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o basename basename.o 
+cc -shared -Wl,-soname,dirname -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o dirname dirname.o 
+cc -shared -Wl,-soname,fdflags -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o fdflags fdflags.o 
+cc -shared -Wl,-soname,tty -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o tty tty.o 
+cc -shared -Wl,-soname,pathchk -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o pathchk pathchk.o 
+cc -shared -Wl,-soname,tee -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o tee tee.o 
+cc -shared -Wl,-soname,mkdir -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o mkdir mkdir.o 
+cc -shared -Wl,-soname,rmdir -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o rmdir rmdir.o 
+cc -shared -Wl,-soname,mkfifo -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o mkfifo mkfifo.o 
+cc -shared -Wl,-soname,mktemp -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o mktemp mktemp.o 
+cc -shared -Wl,-soname,printenv -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o printenv printenv.o 
+cc -shared -Wl,-soname,id -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o id id.o 
+cc -shared -Wl,-soname,whoami -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o whoami whoami.o 
+cc -shared -Wl,-soname,uname -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o uname uname.o 
+cc -shared -Wl,-soname,sync -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o sync sync.o 
+cc -shared -Wl,-soname,push -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o push push.o 
+cc -shared -Wl,-soname,ln -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o ln ln.o 
+cc -shared -Wl,-soname,unlink -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o unlink unlink.o 
+cc -shared -Wl,-soname,realpath -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o realpath realpath.o 
+cc -shared -Wl,-soname,strftime -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o strftime strftime.o 
+cc -shared -Wl,-soname,mypid -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o mypid mypid.o 
+cc -shared -Wl,-soname,setpgid -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o setpgid setpgid.o 
+cc -shared -Wl,-soname,seq -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o seq seq.o 
+cc -shared -Wl,-soname,rm -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o rm rm.o 
+cc -shared -Wl,-soname,accept -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o accept accept.o 
+cc -shared -Wl,-soname,csv -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o csv csv.o 
+cc -shared -Wl,-soname,dsv -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o dsv dsv.o 
+cc -shared -Wl,-soname,cut -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o cut cut.o 
+cc -shared -Wl,-soname,stat -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o stat stat.o 
+cc -shared -Wl,-soname,getconf -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o getconf getconf.o 
+cc -shared -Wl,-soname,kv -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o kv kv.o 
+cc -shared -Wl,-soname,strptime -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o strptime strptime.o 
+cc -shared -Wl,-soname,chmod -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o chmod chmod.o 
+cc -shared -Wl,-soname,fltexpr -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o fltexpr fltexpr.o  -lm
+make[2]: Entering directory '/var/tmp/hokuto/bash-86/build'
+make[2]: warning: -j20 forced in submake: resetting jobserver mode.
+cc -shared -Wl,-soname,finfo -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o finfo finfo.o 
+cc -shared -Wl,-soname,head -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -o head head.o 
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/include/bash
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/include/bash/builtins
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/include/bash/include
+mkdir -p -- /var/tmp/hokuto/bash-86/output/usr/lib/pkgconfig
+/usr/bin/install -c -m 644 ./support/bash.pc /var/tmp/hokuto/bash-86/output/usr/lib/pkgconfig/bash.pc
+make[2]: Leaving directory '/var/tmp/hokuto/bash-86/build'
+installing example loadable builtins in /var/tmp/hokuto/bash-86/output/usr/lib/bash
+print
+truefalse
+sleep
+finfo
+logname
+basename
+dirname
+fdflags
+tty
+pathchk
+tee
+head
+mkdir
+rmdir
+mkfifo
+mktemp
+printenv
+id
+whoami
+uname
+sync
+push
+ln
+unlink
+realpath
+strftime
+mypid
+setpgid
+seq
+rm
+accept
+csv
+dsv
+cut
+stat
+getconf
+kv
+strptime
+chmod
+fltexpr
+make[1]: Leaving directory '/var/tmp/hokuto/bash-86/build/examples/loadables'
+
+Script done on 2026-06-03 21:42:25+07:00 [COMMAND_EXIT_CODE="0"]
