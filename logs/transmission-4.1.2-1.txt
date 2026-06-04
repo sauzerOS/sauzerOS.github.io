@@ -1,0 +1,851 @@
+Script started on 2026-06-04 11:25:42+07:00 [COMMAND="cd /var/tmp/hokuto/transmission-43/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/transmission-43/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/transmission-43/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/transmission-43/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/transmission-43/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/transmission-43/build/.cache' /repo/sauzeros/extra/transmission/build /var/tmp/hokuto/transmission-43/output 4.1.2 transmission" <not executed on terminal>]
+Submodule 'third-party/dht' (https://github.com/transmission/dht.git) registered for path 'third-party/dht'
+Submodule 'third-party/fast_float' (https://github.com/transmission/fast_float.git) registered for path 'third-party/fast_float'
+Submodule 'third-party/fmt' (https://github.com/transmission/fmt.git) registered for path 'third-party/fmt'
+Submodule 'third-party/googletest' (https://github.com/google/googletest.git) registered for path 'third-party/googletest'
+Submodule 'third-party/libb64' (https://github.com/transmission/libb64.git) registered for path 'third-party/libb64'
+Submodule 'third-party/libdeflate' (https://github.com/transmission/libdeflate.git) registered for path 'third-party/libdeflate'
+Submodule 'third-party/libevent' (https://github.com/transmission/libevent.git) registered for path 'third-party/libevent'
+Submodule 'third-party/libnatpmp' (https://github.com/transmission/libnatpmp.git) registered for path 'third-party/libnatpmp'
+Submodule 'third-party/libpsl' (https://github.com/transmission/libpsl.git) registered for path 'third-party/libpsl'
+Submodule 'third-party/libutp' (https://github.com/transmission/libutp.git) registered for path 'third-party/libutp'
+Submodule 'third-party/miniupnp' (https://github.com/transmission/miniupnp.git) registered for path 'third-party/miniupnp'
+Submodule 'third-party/rapidjson' (https://github.com/transmission/rapidjson.git) registered for path 'third-party/rapidjson'
+Submodule 'third-party/rpavlik-cmake-modules' (https://github.com/transmission/rpavlik-cmake-modules.git) registered for path 'third-party/rpavlik-cmake-modules'
+Submodule 'third-party/small' (https://github.com/transmission/small.git) registered for path 'third-party/small'
+Submodule 'third-party/utfcpp' (https://github.com/transmission/utfcpp.git) registered for path 'third-party/utfcpp'
+Submodule 'third-party/wide-integer' (https://github.com/transmission/wide-integer.git) registered for path 'third-party/wide-integer'
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/dht'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/fast_float'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/fmt'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/googletest'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/libb64'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/libdeflate'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/libevent'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/libnatpmp'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/libpsl'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/libutp'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/miniupnp'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/rapidjson'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/rpavlik-cmake-modules'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/small'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/utfcpp'...
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/wide-integer'...
+Submodule path 'third-party/dht': checked out '38c9f261d9b58b76b9eaf85f84ec1b35151a1eac'
+Submodule path 'third-party/fast_float': checked out 'd7417618f93d2c47e9bbde561510f9fc8bafe003'
+Submodule path 'third-party/fmt': checked out '407c905e45ad75fc29bf0f9bb7c5c2fd3475976f'
+Submodule path 'third-party/googletest': checked out '52eb8108c5bdec04579160ae17225d66034bd723'
+Submodule path 'third-party/libb64': checked out '64ab5ed7693d7a063c43f9da64c7d8e4e9519ef4'
+Submodule path 'third-party/libdeflate': checked out '275aa5141db6eda3587214e0f1d3a134768f557d'
+Submodule path 'third-party/libevent': checked out 'e6a287d452b424cfd19c65afffc03c0c374392f5'
+Submodule path 'third-party/libnatpmp': checked out '134fc89e2781e154e40042641f4d8bcbe42579f1'
+Submodule path 'third-party/libpsl': checked out 'f88562a8d9bf79d9fb74f59b7bc5a22ee6664fda'
+Submodule 'list' (https://github.com/publicsuffix/list) registered for path 'third-party/libpsl/list'
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/libpsl/list'...
+Submodule path 'third-party/libpsl/list': checked out '5db9b65997e3c9230ac4353b01994c2ae9667cb9'
+Submodule path 'third-party/libutp': checked out '490874c44a2ecf914404b0a20e043c9755fff47b'
+Submodule path 'third-party/miniupnp': checked out '9ff3c71bfb6c7f7bf525d6bda447387de7257aff'
+Submodule path 'third-party/rapidjson': checked out '24b5e7a8b27f42fa16b96fc70aade9106cf7102f'
+Submodule 'thirdparty/gtest' (https://github.com/google/googletest.git) registered for path 'third-party/rapidjson/thirdparty/gtest'
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/rapidjson/thirdparty/gtest'...
+Submodule path 'third-party/rapidjson/thirdparty/gtest': checked out 'ba96d0b1161f540656efdaed035b3c062b60e006'
+Submodule path 'third-party/rpavlik-cmake-modules': checked out 'd66fc5dec3eaea3a4f9778ceeeb65cbec490b5b9'
+Submodule path 'third-party/small': checked out '0437070c376f08b2fc2bcb1fbcea106fb7fc6b38'
+Submodule path 'third-party/utfcpp': checked out '6be08bbea14ffa0a5c594257fb6285a054395cd7'
+Submodule 'extern/ftest' (https://github.com/nemtrif/ftest) registered for path 'third-party/utfcpp/extern/ftest'
+Cloning into '/var/tmp/hokuto/transmission-43/build/third-party/utfcpp/extern/ftest'...
+Submodule path 'third-party/utfcpp/extern/ftest': checked out 'c4ad4af0946b73ce1a40cbc72205d15d196c7e06'
+Submodule path 'third-party/wide-integer': checked out 'a0c823ee4c1c97501df5786f3439f2a53623e7ad'
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Git: /usr/bin/git (found version "2.54.0")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found CURL: /usr/lib/libcurl.so (found suitable version "8.20.0", minimum required is "7.28.0")
+-- Found OpenSSL: /usr/lib/libcrypto.so (found suitable version "3.6.2", minimum required is "1.1.0")
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Could NOT find DEFLATE (missing: DEFLATE_INCLUDE_DIR DEFLATE_LIBRARY) (Required is at least version "1.7")
+-- Found EVENT2: /usr/lib/libevent.so (found suitable version "2.1.12-stable", minimum required is "2.1.0")
+-- Could NOT find NATPMP (missing: NATPMP_LIBRARY NATPMP_INCLUDE_DIR) 
+-- Found MINIUPNPC: /usr/lib/libminiupnpc.so
+-- Could NOT find DHT (missing: DHT_LIBRARY DHT_INCLUDE_DIR) 
+-- Found PSL: /usr/lib/libpsl.so (Required is at least version "0.21.1")
+-- Could NOT find UTP (missing: UTP_LIBRARY UTP_INCLUDE_DIR) 
+-- Could NOT find B64 (missing: B64_LIBRARY B64_INCLUDE_DIR) 
+[0mCMake Deprecation Warning at third-party/libb64/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+-- Looking for sys/inotify.h
+-- Looking for sys/inotify.h - found
+-- Looking for inotify_init
+-- Looking for inotify_init - found
+-- Looking for include files sys/types.h, sys/event.h
+-- Looking for include files sys/types.h, sys/event.h - not found
+-- Looking for kqueue
+-- Looking for kqueue - not found
+-- Found SYSTEMD: /usr/lib/libsystemd.so
+-- Performing Test gnu_c_has_werror
+-- Performing Test gnu_c_has_werror - Success
+-- Performing Test gnu_c_has_w
+-- Performing Test gnu_c_has_w - Success
+-- Performing Test gnu_cxx_has_w
+-- Performing Test gnu_cxx_has_w - Success
+-- Performing Test gnu_c_has_wall
+-- Performing Test gnu_c_has_wall - Success
+-- Performing Test gnu_cxx_has_wall
+-- Performing Test gnu_cxx_has_wall - Success
+-- Performing Test gnu_c_has_wextra
+-- Performing Test gnu_c_has_wextra - Success
+-- Performing Test gnu_cxx_has_wextra
+-- Performing Test gnu_cxx_has_wextra - Success
+-- Performing Test gnu_c_has_warc_unsafe_retained_assign
+-- Performing Test gnu_c_has_warc_unsafe_retained_assign - Failed
+-- Performing Test gnu_cxx_has_warc_unsafe_retained_assign
+-- Performing Test gnu_cxx_has_warc_unsafe_retained_assign - Failed
+-- Performing Test gnu_c_has_wcast_align
+-- Performing Test gnu_c_has_wcast_align - Success
+-- Performing Test gnu_cxx_has_wcast_align
+-- Performing Test gnu_cxx_has_wcast_align - Success
+-- Performing Test gnu_c_has_wduplicated_cond
+-- Performing Test gnu_c_has_wduplicated_cond - Success
+-- Performing Test gnu_cxx_has_wduplicated_cond
+-- Performing Test gnu_cxx_has_wduplicated_cond - Success
+-- Performing Test gnu_c_has_wextra_semi
+-- Performing Test gnu_c_has_wextra_semi - Failed
+-- Performing Test gnu_cxx_has_wextra_semi
+-- Performing Test gnu_cxx_has_wextra_semi - Success
+-- Performing Test gnu_c_has_wextra_semi_stmt
+-- Performing Test gnu_c_has_wextra_semi_stmt - Failed
+-- Performing Test gnu_cxx_has_wextra_semi_stmt
+-- Performing Test gnu_cxx_has_wextra_semi_stmt - Failed
+-- Performing Test gnu_c_has_wextra_tokens
+-- Performing Test gnu_c_has_wextra_tokens - Failed
+-- Performing Test gnu_cxx_has_wextra_tokens
+-- Performing Test gnu_cxx_has_wextra_tokens - Failed
+-- Performing Test gnu_c_has_wfloat_equal
+-- Performing Test gnu_c_has_wfloat_equal - Success
+-- Performing Test gnu_cxx_has_wfloat_equal
+-- Performing Test gnu_cxx_has_wfloat_equal - Success
+-- Performing Test gnu_c_has_wgnu
+-- Performing Test gnu_c_has_wgnu - Failed
+-- Performing Test gnu_cxx_has_wgnu
+-- Performing Test gnu_cxx_has_wgnu - Failed
+-- Performing Test gnu_c_has_winit_self
+-- Performing Test gnu_c_has_winit_self - Success
+-- Performing Test gnu_cxx_has_winit_self
+-- Performing Test gnu_cxx_has_winit_self - Success
+-- Performing Test gnu_c_has_wint_in_bool_context
+-- Performing Test gnu_c_has_wint_in_bool_context - Success
+-- Performing Test gnu_cxx_has_wint_in_bool_context
+-- Performing Test gnu_cxx_has_wint_in_bool_context - Success
+-- Performing Test gnu_c_has_wlogical_op
+-- Performing Test gnu_c_has_wlogical_op - Success
+-- Performing Test gnu_cxx_has_wlogical_op
+-- Performing Test gnu_cxx_has_wlogical_op - Success
+-- Performing Test gnu_c_has_wmissing_format_attribute
+-- Performing Test gnu_c_has_wmissing_format_attribute - Success
+-- Performing Test gnu_cxx_has_wmissing_format_attribute
+-- Performing Test gnu_cxx_has_wmissing_format_attribute - Success
+-- Performing Test gnu_c_has_wnull_dereference
+-- Performing Test gnu_c_has_wnull_dereference - Success
+-- Performing Test gnu_cxx_has_wnull_dereference
+-- Performing Test gnu_cxx_has_wnull_dereference - Success
+-- Performing Test gnu_c_has_wpointer_arith
+-- Performing Test gnu_c_has_wpointer_arith - Success
+-- Performing Test gnu_cxx_has_wpointer_arith
+-- Performing Test gnu_cxx_has_wpointer_arith - Success
+-- Performing Test gnu_c_has_wredundant_decls
+-- Performing Test gnu_c_has_wredundant_decls - Success
+-- Performing Test gnu_cxx_has_wredundant_decls
+-- Performing Test gnu_cxx_has_wredundant_decls - Success
+-- Performing Test gnu_c_has_wredundant_move
+-- Performing Test gnu_c_has_wredundant_move - Failed
+-- Performing Test gnu_cxx_has_wredundant_move
+-- Performing Test gnu_cxx_has_wredundant_move - Success
+-- Performing Test gnu_c_has_wreorder_ctor
+-- Performing Test gnu_c_has_wreorder_ctor - Failed
+-- Performing Test gnu_cxx_has_wreorder_ctor
+-- Performing Test gnu_cxx_has_wreorder_ctor - Failed
+-- Performing Test gnu_c_has_wrestrict
+-- Performing Test gnu_c_has_wrestrict - Success
+-- Performing Test gnu_cxx_has_wrestrict
+-- Performing Test gnu_cxx_has_wrestrict - Success
+-- Performing Test gnu_c_has_wreturn_std_move
+-- Performing Test gnu_c_has_wreturn_std_move - Failed
+-- Performing Test gnu_cxx_has_wreturn_std_move
+-- Performing Test gnu_cxx_has_wreturn_std_move - Failed
+-- Performing Test gnu_c_has_wself_assign
+-- Performing Test gnu_c_has_wself_assign - Failed
+-- Performing Test gnu_cxx_has_wself_assign
+-- Performing Test gnu_cxx_has_wself_assign - Failed
+-- Performing Test gnu_c_has_wself_move
+-- Performing Test gnu_c_has_wself_move - Failed
+-- Performing Test gnu_cxx_has_wself_move
+-- Performing Test gnu_cxx_has_wself_move - Success
+-- Performing Test gnu_c_has_wsemicolon_before_method_body
+-- Performing Test gnu_c_has_wsemicolon_before_method_body - Failed
+-- Performing Test gnu_cxx_has_wsemicolon_before_method_body
+-- Performing Test gnu_cxx_has_wsemicolon_before_method_body - Failed
+-- Performing Test gnu_c_has_wsentinel
+-- Performing Test gnu_c_has_wsentinel - Failed
+-- Performing Test gnu_cxx_has_wsentinel
+-- Performing Test gnu_cxx_has_wsentinel - Failed
+-- Performing Test gnu_c_has_wshadow
+-- Performing Test gnu_c_has_wshadow - Success
+-- Performing Test gnu_cxx_has_wshadow
+-- Performing Test gnu_cxx_has_wshadow - Success
+-- Performing Test gnu_c_has_wsign_compare
+-- Performing Test gnu_c_has_wsign_compare - Success
+-- Performing Test gnu_cxx_has_wsign_compare
+-- Performing Test gnu_cxx_has_wsign_compare - Success
+-- Performing Test gnu_c_has_wsometimes_uninitialized
+-- Performing Test gnu_c_has_wsometimes_uninitialized - Failed
+-- Performing Test gnu_cxx_has_wsometimes_uninitialized
+-- Performing Test gnu_cxx_has_wsometimes_uninitialized - Failed
+-- Performing Test gnu_c_has_wstring_conversion
+-- Performing Test gnu_c_has_wstring_conversion - Failed
+-- Performing Test gnu_cxx_has_wstring_conversion
+-- Performing Test gnu_cxx_has_wstring_conversion - Failed
+-- Performing Test gnu_c_has_wsuggest_destructor_override
+-- Performing Test gnu_c_has_wsuggest_destructor_override - Failed
+-- Performing Test gnu_cxx_has_wsuggest_destructor_override
+-- Performing Test gnu_cxx_has_wsuggest_destructor_override - Failed
+-- Performing Test gnu_c_has_wsuggest_override
+-- Performing Test gnu_c_has_wsuggest_override - Failed
+-- Performing Test gnu_cxx_has_wsuggest_override
+-- Performing Test gnu_cxx_has_wsuggest_override - Success
+-- Performing Test gnu_c_has_wuninitialized
+-- Performing Test gnu_c_has_wuninitialized - Success
+-- Performing Test gnu_cxx_has_wuninitialized
+-- Performing Test gnu_cxx_has_wuninitialized - Success
+-- Performing Test gnu_c_has_wunreachable_code
+-- Performing Test gnu_c_has_wunreachable_code - Success
+-- Performing Test gnu_cxx_has_wunreachable_code
+-- Performing Test gnu_cxx_has_wunreachable_code - Success
+-- Performing Test gnu_c_has_wunused
+-- Performing Test gnu_c_has_wunused - Success
+-- Performing Test gnu_cxx_has_wunused
+-- Performing Test gnu_cxx_has_wunused - Success
+-- Performing Test gnu_c_has_wunused_const_variable
+-- Performing Test gnu_c_has_wunused_const_variable - Success
+-- Performing Test gnu_cxx_has_wunused_const_variable
+-- Performing Test gnu_cxx_has_wunused_const_variable - Success
+-- Performing Test gnu_c_has_wunused_parameter
+-- Performing Test gnu_c_has_wunused_parameter - Success
+-- Performing Test gnu_cxx_has_wunused_parameter
+-- Performing Test gnu_cxx_has_wunused_parameter - Success
+-- Performing Test gnu_c_has_wunused_result
+-- Performing Test gnu_c_has_wunused_result - Success
+-- Performing Test gnu_cxx_has_wunused_result
+-- Performing Test gnu_cxx_has_wunused_result - Success
+-- Performing Test gnu_c_has_wwrite_strings
+-- Performing Test gnu_c_has_wwrite_strings - Success
+-- Performing Test gnu_cxx_has_wwrite_strings
+-- Performing Test gnu_cxx_has_wwrite_strings - Success
+-- Performing Test gnu_c_has_wformat_security
+-- Performing Test gnu_c_has_wformat_security - Failed
+-- Performing Test gnu_cxx_has_wformat_security
+-- Performing Test gnu_cxx_has_wformat_security - Failed
+-- Performing Test NO_LFS_MACROS_REQUIRED
+-- Performing Test NO_LFS_MACROS_REQUIRED - Success
+-- Looking for sqrt in m
+-- Looking for sqrt in m - found
+-- Looking for quotacursor_skipidtype in quota
+-- Looking for quotacursor_skipidtype in quota - not found
+-- Looking for socket in c
+-- Looking for socket in c - found
+-- Looking for gethostbyname in c
+-- Looking for gethostbyname in c - found
+-- Looking for clang-tidy
+-- Looking for clang-tidy - not found
+-- Performing Test gnu_cxx_has-wnull-dereference
+-- Performing Test gnu_cxx_has-wnull-dereference - Success
+-- Performing Test HAVE_CXX_ATOMICS_WITHOUT_LIB
+-- Performing Test HAVE_CXX_ATOMICS_WITHOUT_LIB - Success
+-- Found Intl: built in to C library
+-- Looking for SO_REUSEPORT
+-- Looking for SO_REUSEPORT - found
+-- Looking for sys/statvfs.h
+-- Looking for sys/statvfs.h - found
+-- Looking for xfs/xfs.h
+-- Looking for xfs/xfs.h - not found
+-- Looking for xlocale.h
+-- Looking for xlocale.h - not found
+-- Looking for copyfile
+-- Looking for copyfile - not found
+-- Looking for copy_file_range
+-- Looking for copy_file_range - found
+-- Looking for fallocate64
+-- Looking for fallocate64 - found
+-- Looking for flock
+-- Looking for flock - found
+-- Looking for getmntent
+-- Looking for getmntent - found
+-- Looking for htonll
+-- Looking for htonll - not found
+-- Looking for mkdtemp
+-- Looking for mkdtemp - found
+-- Looking for ntohll
+-- Looking for ntohll - not found
+-- Looking for posix_fadvise
+-- Looking for posix_fadvise - found
+-- Looking for posix_fallocate
+-- Looking for posix_fallocate - found
+-- Looking for pread
+-- Looking for pread - found
+-- Looking for pwrite
+-- Looking for pwrite - found
+-- Looking for sendfile64
+-- Looking for sendfile64 - found
+-- Looking for statvfs
+-- Looking for statvfs - found
+-- Looking for sys/signalfd.h
+-- Looking for sys/signalfd.h - found
+-- Looking for daemon
+-- Looking for daemon - found
+-- Looking for syslog
+-- Looking for syslog - found
+-- Configuring done (10.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /var/tmp/hokuto/transmission-43/build/build
+[  0%] [1m[34mCreating directories for 'dht'[0m
+[  1%] [32mBuilding CXX object libtransmission-app/CMakeFiles/transmission-app.dir/app.cc.o[0m
+[  1%] [32mBuilding C object third-party/libb64.bld/src/CMakeFiles/libb64.dir/cdecode.c.o[0m
+[  1%] [32mBuilding CXX object tests/gtest/CMakeFiles/gtestall.dir/__/__/third-party/googletest/googletest/src/gtest-all.cc.o[0m
+[  1%] [1m[34mCreating directories for 'deflate'[0m
+[  1%] [32mBuilding CXX object third-party/libutp.bld/CMakeFiles/libutp.dir/utp_api.cpp.o[0m
+[  1%] [32mBuilding C object third-party/madler-crcany/CMakeFiles/MadlerCrcany.dir/crc32iscsi.c.o[0m
+[  2%] [32mBuilding CXX object tests/gtest/CMakeFiles/gtestall.dir/__/__/third-party/googletest/googletest/src/gtest_main.cc.o[0m
+[  3%] [1m[34mCreating directories for 'natpmp'[0m
+[  3%] [32mBuilding C object third-party/wildmat/CMakeFiles/wildmat.dir/wildmat.c.o[0m
+[  4%] [1m[34mNo download step for 'dht'[0m
+[  5%] [1m[34mNo download step for 'deflate'[0m
+[  5%] [1m[34mNo download step for 'natpmp'[0m
+[  6%] [32mBuilding C object third-party/libb64.bld/src/CMakeFiles/libb64.dir/cencode.c.o[0m
+[  6%] [1m[34mNo update step for 'dht'[0m
+[  6%] [1m[34mNo update step for 'natpmp'[0m
+[  6%] [1m[34mNo update step for 'deflate'[0m
+[  7%] [1m[32mLinking C static library libwildmat.a[0m
+[  7%] [1m[32mLinking C static library libMadlerCrcany.a[0m
+[  8%] [1m[34mNo patch step for 'deflate'[0m
+[  8%] [1m[34mNo patch step for 'natpmp'[0m
+[  9%] [1m[34mNo patch step for 'dht'[0m
+[  9%] [1m[32mLinking C static library libb64.a[0m
+[  9%] [1m[34mPerforming configure step for 'deflate'[0m
+[  9%] [1m[34mPerforming configure step for 'dht'[0m
+[ 10%] [1m[34mPerforming configure step for 'natpmp'[0m
+[ 10%] Built target wildmat
+Not searching for unused variables given on the command line.
+Not searching for unused variables given on the command line.
+Not searching for unused variables given on the command line.
+[ 11%] [32mBuilding CXX object third-party/libutp.bld/CMakeFiles/libutp.dir/utp_callbacks.cpp.o[0m
+[ 11%] Built target MadlerCrcany
+-- No build type selected; defaulting to Release
+[ 11%] [32mBuilding CXX object third-party/libutp.bld/CMakeFiles/libutp.dir/utp_hash.cpp.o[0m
+[ 11%] Built target libb64
+[ 11%] [32mBuilding CXX object libtransmission-app/CMakeFiles/transmission-app.dir/converters.cc.o[0m
+[ 11%] [32mBuilding CXX object third-party/libutp.bld/CMakeFiles/libutp.dir/utp_internal.cpp.o[0m
+-- The C compiler identification is GNU 16.1.0
+-- The C compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info
+-- The C compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (0.2s)
+-- Detecting C compiler ABI info - done
+-- Generating done (0.0s)
+-- Build files have been written to: /var/tmp/hokuto/transmission-43/build/build/third-party/libnatpmp.bld/src/natpmp-build
+-- Performing Test HAVE_WDECLARATION_AFTER_STATEMENT
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+[ 11%] [1m[34mPerforming build step for 'natpmp'[0m
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /var/tmp/hokuto/transmission-43/build/build/third-party/dht.bld/src/dht-build
+[ 12%] [1m[34mPerforming build step for 'dht'[0m
+[ 12%] [32mBuilding C object CMakeFiles/natpmp.dir/natpmp.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/natpmp.dir/getgateway.c.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/dht.dir/dht.c.o[0m
+[ 13%] [32mBuilding CXX object third-party/libutp.bld/CMakeFiles/libutp.dir/utp_packedsockaddr.cpp.o[0m
+[ 37%] [1m[32mLinking C static library libnatpmp.a[0m
+[ 13%] [32mBuilding CXX object third-party/libutp.bld/CMakeFiles/libutp.dir/utp_utils.cpp.o[0m
+[ 37%] Built target natpmp
+-- Performing Test HAVE_WDECLARATION_AFTER_STATEMENT - Success
+-- Performing Test HAVE_WIMPLICIT_FALLTHROUGH
+[ 62%] [32mBuilding C object CMakeFiles/testgetgateway.dir/testgetgateway.c.o[0m
+[ 62%] [32mBuilding C object CMakeFiles/natpmpc.dir/natpmpc.c.o[0m
+[ 75%] [32mBuilding C object CMakeFiles/testgetgateway.dir/getgateway.c.o[0m
+[ 87%] [1m[32mLinking C executable natpmpc[0m
+[100%] [1m[32mLinking C executable testgetgateway[0m
+-- Performing Test HAVE_WIMPLICIT_FALLTHROUGH - Success
+-- Performing Test HAVE_WMISSING_FIELD_INITIALIZERS
+[100%] [1m[32mLinking C static library libdht.a[0m
+[100%] Built target testgetgateway
+[100%] Built target dht
+[ 13%] [1m[34mPerforming install step for 'dht'[0m
+-- Performing Test HAVE_WMISSING_FIELD_INITIALIZERS - Success
+-- Performing Test HAVE_WMISSING_PROTOTYPES
+[100%] Built target dht
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/dht.bld/pfx/lib/libdht.a
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/dht.bld/pfx/include/dht/dht.h
+[100%] Built target natpmpc
+[ 13%] [1m[34mCompleted 'dht'[0m
+[ 13%] [1m[34mPerforming install step for 'natpmp'[0m
+[ 13%] Built target dht
+[ 37%] Built target natpmp
+-- Performing Test HAVE_WMISSING_PROTOTYPES - Success
+-- Performing Test HAVE_WPEDANTIC
+[ 75%] Built target testgetgateway
+[100%] Built target natpmpc
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libnatpmp.bld/pfx/lib/libnatpmp.a
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libnatpmp.bld/pfx/bin/natpmpc
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libnatpmp.bld/pfx/include/natpmp.h
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libnatpmp.bld/pfx/include/natpmp_declspec.h
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libnatpmp.bld/pfx/lib/pkgconfig/natpmp.pc
+[ 14%] [1m[34mCompleted 'natpmp'[0m
+[ 14%] [1m[32mLinking CXX static library libutp.a[0m
+[ 14%] Built target natpmp
+[ 14%] Built target libutp
+-- Performing Test HAVE_WPEDANTIC - Success
+-- Performing Test HAVE_WSHADOW
+-- Performing Test HAVE_WSHADOW - Success
+-- Performing Test HAVE_WSTRICT_PROTOTYPES
+-- Performing Test HAVE_WSTRICT_PROTOTYPES - Success
+-- Performing Test HAVE_WUNDEF
+-- Performing Test HAVE_WUNDEF - Success
+-- Performing Test HAVE_WVLA
+-- Performing Test HAVE_WVLA - Success
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /var/tmp/hokuto/transmission-43/build/build/third-party/libdeflate.bld/src/deflate-build
+[ 14%] [1m[34mPerforming build step for 'deflate'[0m
+[ 25%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/utils.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/x86/cpu_features.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/arm/cpu_features.c.o[0m
+[ 33%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/deflate_decompress.c.o[0m
+[ 41%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/deflate_compress.c.o[0m
+[ 50%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/zlib_compress.c.o[0m
+[ 58%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/adler32.c.o[0m
+[ 75%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/crc32.c.o[0m
+[ 75%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/gzip_compress.c.o[0m
+[ 83%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/zlib_decompress.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/libdeflate_static.dir/lib/gzip_decompress.c.o[0m
+[ 14%] [1m[32mLinking CXX static library libtransmission-app.a[0m
+[ 14%] Built target transmission-app
+[100%] [1m[32mLinking C static library libdeflate.a[0m
+[100%] Built target libdeflate_static
+[ 14%] [1m[34mPerforming install step for 'deflate'[0m
+[100%] Built target libdeflate_static
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libdeflate.bld/pfx/lib/libdeflate.a
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libdeflate.bld/pfx/include/libdeflate.h
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libdeflate.bld/pfx/lib/pkgconfig/libdeflate.pc
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libdeflate.bld/pfx/lib/cmake/libdeflate/libdeflate-targets.cmake
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libdeflate.bld/pfx/lib/cmake/libdeflate/libdeflate-targets-release.cmake
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libdeflate.bld/pfx/lib/cmake/libdeflate/libdeflate-config.cmake
+-- Installing: /var/tmp/hokuto/transmission-43/build/build/third-party/libdeflate.bld/pfx/lib/cmake/libdeflate/libdeflate-config-version.cmake
+[ 15%] [1m[34mCompleted 'deflate'[0m
+[ 15%] Built target deflate
+[ 15%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/announce-list.cc.o[0m
+[ 15%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/announcer-udp.cc.o[0m
+[ 16%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/api-compat.cc.o[0m
+[ 16%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/bandwidth.cc.o[0m
+[ 17%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/block-info.cc.o[0m
+[ 17%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/announcer-http.cc.o[0m
+[ 18%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/bitfield.cc.o[0m
+[ 18%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/announcer.cc.o[0m
+[ 18%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/blocklist.cc.o[0m
+[ 19%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/cache.cc.o[0m
+[ 19%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/clients.cc.o[0m
+[ 19%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/completion.cc.o[0m
+[ 20%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/crypto-utils-fallback.cc.o[0m
+[ 20%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/crypto-utils-openssl.cc.o[0m
+[ 20%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/crypto-utils.cc.o[0m
+[ 21%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/error.cc.o[0m
+[ 21%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/file-capacity.cc.o[0m
+[ 22%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/file-piece-map.cc.o[0m
+[ 22%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/file-posix.cc.o[0m
+[ 22%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/file.cc.o[0m
+[ 23%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/handshake.cc.o[0m
+[ 23%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/inout.cc.o[0m
+[ 23%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/ip-cache.cc.o[0m
+[ 23%] [1m[32mLinking CXX static library libgtestall.a[0m
+[ 23%] Built target gtestall
+[ 23%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/magnet-metainfo.cc.o[0m
+[ 24%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/log.cc.o[0m
+[ 24%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/makemeta.cc.o[0m
+[ 25%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/net.cc.o[0m
+[ 25%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/open-files.cc.o[0m
+[ 25%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/peer-io.cc.o[0m
+[ 26%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/peer-mgr-wishlist.cc.o[0m
+[ 26%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/peer-mgr.cc.o[0m
+[ 27%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/peer-mse.cc.o[0m
+[ 27%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/peer-msgs.cc.o[0m
+[ 27%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/peer-socket.cc.o[0m
+[ 28%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/platform.cc.o[0m
+[ 28%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/port-forwarding-natpmp.cc.o[0m
+[ 28%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/port-forwarding-upnp.cc.o[0m
+[ 29%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/port-forwarding.cc.o[0m
+[ 29%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/quark.cc.o[0m
+[ 29%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/resume.cc.o[0m
+[ 30%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/rpc-server.cc.o[0m
+[ 30%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/rpcimpl.cc.o[0m
+[ 31%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/serializer.cc.o[0m
+[ 31%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/session-alt-speeds.cc.o[0m
+[ 31%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/session-id.cc.o[0m
+[ 32%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/session-thread.cc.o[0m
+[ 32%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/session.cc.o[0m
+[ 32%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/stats.cc.o[0m
+[ 33%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/subprocess-posix.cc.o[0m
+[ 33%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/timer-ev.cc.o[0m
+[ 33%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/torrent-ctor.cc.o[0m
+[ 34%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/torrent-files.cc.o[0m
+[ 34%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/torrent-magnet.cc.o[0m
+[ 34%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/torrent-metainfo.cc.o[0m
+[ 35%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/torrent-queue.cc.o[0m
+[ 35%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/torrent.cc.o[0m
+[ 36%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/torrents.cc.o[0m
+[ 36%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/tr-assert.cc.o[0m
+[ 36%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/tr-dht.cc.o[0m
+[ 37%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/tr-getopt.cc.o[0m
+[ 37%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/tr-lpd.cc.o[0m
+[ 37%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/tr-udp.cc.o[0m
+[ 38%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/tr-utp.cc.o[0m
+[ 38%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/utils-ev.cc.o[0m
+[ 38%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/utils.cc.o[0m
+[ 39%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/variant-benc.cc.o[0m
+[ 39%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/variant-json.cc.o[0m
+[ 39%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/variant.cc.o[0m
+[ 40%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/verify.cc.o[0m
+[ 40%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/watchdir-generic.cc.o[0m
+[ 41%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/watchdir-inotify.cc.o[0m
+[ 41%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/watchdir.cc.o[0m
+[ 41%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/web-utils.cc.o[0m
+[ 42%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/web.cc.o[0m
+[ 42%] [32mBuilding CXX object libtransmission/CMakeFiles/transmission.dir/webseed.cc.o[0m
+[ 42%] [1m[32mLinking CXX static library libtransmission.a[0m
+[ 42%] Built target transmission
+[ 43%] [32mBuilding CXX object utils/CMakeFiles/transmission-show.dir/show.cc.o[0m
+[ 44%] [32mBuilding CXX object daemon/CMakeFiles/transmission-daemon.dir/daemon.cc.o[0m
+[ 43%] [32mBuilding CXX object utils/CMakeFiles/transmission-remote.dir/remote.cc.o[0m
+[ 45%] [32mBuilding CXX object utils/CMakeFiles/transmission-create.dir/create.cc.o[0m
+[ 46%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/subprocess-test.dir/subprocess-test-program.cc.o[0m
+[ 47%] [32mBuilding CXX object utils/CMakeFiles/transmission-edit.dir/edit.cc.o[0m
+[ 47%] [32mBuilding CXX object daemon/CMakeFiles/transmission-daemon.dir/daemon-posix.cc.o[0m
+[ 47%] Built target transmission-qt_autogen_timestamp_deps
+[ 47%] [1m[34mAutomatic MOC and UIC for target transmission-qt[0m
+[ 47%] Built target transmission-qt_autogen
+[ 48%] [1m[34mGenerating transmission_zh_TW.qm[0m
+[ 49%] [1m[34mAutomatic RCC for application.qrc[0m
+[ 49%] [1m[34mGenerating transmission_af.qm[0m
+[ 50%] [1m[34mGenerating transmission_ca.qm[0m
+[ 50%] [1m[34mGenerating transmission_de.qm[0m
+[ 50%] [1m[34mGenerating transmission_da.qm[0m
+[ 51%] [1m[34mGenerating transmission_el.qm[0m
+[ 51%] [1m[34mGenerating transmission_en.qm[0m
+[ 51%] [1m[34mGenerating transmission_es.qm[0m
+[ 52%] [1m[34mGenerating transmission_eu.qm[0m
+[ 52%] [1m[34mGenerating transmission_fi.qm[0m
+[ 52%] [1m[34mGenerating transmission_he.qm[0m
+[ 53%] [1m[34mGenerating transmission_fr.qm[0m
+[ 53%] [1m[34mGenerating transmission_hu.qm[0m
+[ 54%] [1m[34mGenerating transmission_id.qm[0m
+[ 54%] [1m[34mGenerating transmission_is.qm[0m
+[ 54%] [1m[34mGenerating transmission_it.qm[0m
+[ 54%] [1m[34mGenerating transmission_ka.qm[0m
+[ 55%] [1m[34mGenerating transmission_ja.qm[0m
+[ 55%] [1m[34mGenerating transmission_kk.qm[0m
+[ 56%] [1m[34mGenerating transmission_ko.qm[0m
+[ 56%] [1m[34mGenerating transmission_lt.qm[0m
+[ 57%] [1m[34mGenerating transmission_nb.qm[0m
+[ 57%] [1m[34mGenerating transmission_nl.qm[0m
+[ 57%] [1m[34mGenerating transmission_pl.qm[0m
+[ 58%] [1m[34mGenerating transmission_pt.qm[0m
+[ 58%] [1m[34mGenerating transmission_pt_BR.qm[0m
+[ 58%] [1m[34mGenerating transmission_pt_PT.qm[0m
+[ 59%] [1m[34mGenerating transmission_ru.qm[0m
+[ 59%] [1m[34mGenerating transmission_sl.qm[0m
+[ 59%] [1m[34mGenerating transmission_sv.qm[0m
+[ 60%] [1m[34mGenerating transmission_tr.qm[0m
+[ 60%] [1m[34mGenerating transmission_uk.qm[0m
+[ 60%] [1m[34mGenerating transmission_zh_CN.qm[0m
+[ 60%] [1m[32mLinking CXX executable transmission-edit[0m
+[ 61%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/AccessibleSqueezeLabel.cc.o[0m
+[ 61%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/AboutDialog.cc.o[0m
+[ 61%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/AddData.cc.o[0m
+[ 61%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/transmission-qt_autogen/mocs_compilation.cpp.o[0m
+[ 61%] [1m[32mLinking CXX executable subprocess-test[0m
+[ 61%] [1m[32mLinking CXX executable transmission-daemon[0m
+[ 62%] [1m[32mLinking CXX executable transmission-show[0m
+[ 62%] [1m[32mLinking CXX executable transmission-create[0m
+[ 62%] [1m[32mLinking CXX executable transmission-remote[0m
+[ 62%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/Application.cc.o[0m
+[01m[K/var/tmp/hokuto/transmission-43/build/qt/AddData.cc:[m[K In member function ‘[01m[Kint AddData::[01;32m[Kset[m[K(const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/transmission-43/build/qt/AddData.cc:72:22:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kvirtual bool QFile::[01;32m[Kopen[m[K(QIODeviceBase::OpenMode)[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-result-Wunused-result]8;;[m[K]
+   72 |             [01;35m[Kfile.open(QIODevice::ReadOnly)[m[K;
+      |             [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qdir.h:11[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QDir:1[m[K,
+                 from [01m[K/var/tmp/hokuto/transmission-43/build/qt/AddData.cc:6[m[K:
+[01m[K/usr/include/qt6/QtCore/qfile.h:264:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  264 |     QFILE_MAYBE_NODISCARD bool [01;36m[Kopen[m[K(OpenMode flags) override;
+      |                                [01;36m[K^~~~[m[K
+[ 63%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/ColumnResizer.cc.o[0m
+[ 63%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/DBusInteropHelper.cc.o[0m
+[ 63%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/DetailsDialog.cc.o[0m
+[ 64%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/FaviconCache.cc.o[0m
+[ 64%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/FileTreeDelegate.cc.o[0m
+[ 65%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/FileTreeItem.cc.o[0m
+[ 65%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/FileTreeModel.cc.o[0m
+[ 65%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/FileTreeView.cc.o[0m
+[ 66%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/FilterBar.cc.o[0m
+[ 66%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/FilterBarComboBox.cc.o[0m
+[ 66%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/FilterBarComboBoxDelegate.cc.o[0m
+[ 67%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/Filters.cc.o[0m
+[ 67%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/Formatter.cc.o[0m
+[ 67%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/FreeSpaceLabel.cc.o[0m
+[ 68%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/IconCache.cc.o[0m
+[ 68%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/IconToolButton.cc.o[0m
+[ 68%] Built target subprocess-test
+[ 68%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/InteropHelper.cc.o[0m
+[ 69%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/InteropObject.cc.o[0m
+[ 69%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/announce-list-test.cc.o[0m
+[ 70%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/announcer-test.cc.o[0m
+[ 70%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/announcer-udp-test.cc.o[0m
+[ 70%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/LicenseDialog.cc.o[0m
+[ 70%] Built target transmission-remote
+[ 71%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/main.cc.o[0m
+[ 71%] Built target transmission-edit
+[ 71%] Built target transmission-create
+[ 71%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/MainWindow.cc.o[0m
+[ 71%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/MakeDialog.cc.o[0m
+[ 72%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/NativeIcon.cc.o[0m
+[ 73%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/api-compat-test.cc.o[0m
+[ 73%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/benc-test.cc.o[0m
+[ 73%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/bitfield-test.cc.o[0m
+[ 73%] Built target transmission-show
+[ 73%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/OptionsDialog.cc.o[0m
+[ 74%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/block-info-test.cc.o[0m
+[ 74%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/blocklist-test.cc.o[0m
+[ 74%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/PathButton.cc.o[0m
+[ 74%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/buffer-test.cc.o[0m
+[ 75%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/Prefs.cc.o[0m
+[ 76%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/clients-test.cc.o[0m
+[ 76%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/completion-test.cc.o[0m
+[ 76%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/copy-test.cc.o[0m
+[ 76%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/PrefsDialog.cc.o[0m
+[ 76%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/RelocateDialog.cc.o[0m
+[ 77%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/crypto-test.cc.o[0m
+[ 77%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/dht-test.cc.o[0m
+[ 78%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/RpcClient.cc.o[0m
+[ 78%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/RpcQueue.cc.o[0m
+[ 79%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/Session.cc.o[0m
+[ 79%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/SessionDialog.cc.o[0m
+[ 79%] Built target transmission-daemon
+[ 80%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/error-test.cc.o[0m
+[ 80%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/SqueezeLabel.cc.o[0m
+[ 81%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/StatsDialog.cc.o[0m
+[ 81%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/StyleHelper.cc.o[0m
+[ 81%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/file-piece-map-test.cc.o[0m
+[ 81%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/Torrent.cc.o[0m
+[ 82%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/TorrentDelegate.cc.o[0m
+[ 82%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/file-test.cc.o[0m
+[ 83%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/getopt-test.cc.o[0m
+[ 83%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/handshake-test.cc.o[0m
+[ 83%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/TorrentDelegateMin.cc.o[0m
+[ 83%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/history-test.cc.o[0m
+[ 84%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/ip-cache-test.cc.o[0m
+[ 84%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/json-test.cc.o[0m
+[ 84%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/TorrentFilter.cc.o[0m
+[ 85%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/TorrentModel.cc.o[0m
+[ 85%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/TorrentView.cc.o[0m
+[ 85%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/lpd-test.cc.o[0m
+[ 86%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/magnet-metainfo-test.cc.o[0m
+[ 86%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/TrackerDelegate.cc.o[0m
+[ 86%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/makemeta-test.cc.o[0m
+[ 87%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/TrackerModel.cc.o[0m
+[ 87%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/move-test.cc.o[0m
+[ 88%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/net-test.cc.o[0m
+[ 88%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/open-files-test.cc.o[0m
+[ 89%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/peer-mgr-wishlist-test.cc.o[0m
+[ 89%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/TrackerModelFilter.cc.o[0m
+[ 89%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/peer-msgs-test.cc.o[0m
+[ 89%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/platform-test.cc.o[0m
+[ 90%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/quark-test.cc.o[0m
+[ 90%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/remove-test.cc.o[0m
+[ 91%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/Utils.cc.o[0m
+[ 91%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/rename-test.cc.o[0m
+[ 91%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/VariantHelpers.cc.o[0m
+[ 91%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/WatchDir.cc.o[0m
+[ 92%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/rpc-test.cc.o[0m
+[ 93%] [32mBuilding CXX object qt/CMakeFiles/transmission-qt.dir/transmission-qt_autogen/EWIEGA46WW/qrc_application.cpp.o[0m
+[ 93%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/serializer-tests.cc.o[0m
+[ 93%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/session-test.cc.o[0m
+[ 94%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/session-alt-speeds-test.cc.o[0m
+[ 94%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/settings-test.cc.o[0m
+[ 95%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/strbuf-test.cc.o[0m
+[ 95%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/subprocess-test.cc.o[0m
+[ 95%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/timer-test.cc.o[0m
+[ 95%] [1m[32mLinking CXX executable transmission-qt[0m
+[ 96%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/torrent-files-test.cc.o[0m
+[ 96%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/torrent-magnet-test.cc.o[0m
+[ 96%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/torrent-metainfo-test.cc.o[0m
+[ 97%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/torrent-queue-test.cc.o[0m
+[ 97%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/torrent-test.cc.o[0m
+[ 97%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/torrents-test.cc.o[0m
+[ 98%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/tr-peer-info-test.cc.o[0m
+[ 98%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/utils-test.cc.o[0m
+[ 98%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/values-test.cc.o[0m
+[ 99%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/variant-test.cc.o[0m
+[ 99%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/watchdir-test.cc.o[0m
+[100%] [32mBuilding CXX object tests/libtransmission/CMakeFiles/libtransmission-test.dir/web-utils-test.cc.o[0m
+[100%] [1m[32mLinking CXX executable libtransmission-test[0m
+[100%] Built target transmission-qt
+[100%] Built target libtransmission-test
+-- Install configuration: ""
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/bin/transmission-daemon
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/man/man1/transmission-daemon.1
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/lib/systemd/system/transmission-daemon.service
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/bin/transmission-qt
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/icons/hicolor/scalable/apps/transmission-qt.svg
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/icons/hicolor/scalable/apps/transmission-qt-devel.svg
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/icons/hicolor/symbolic/apps/transmission-qt-symbolic.svg
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/man/man1/transmission-qt.1
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/applications/transmission-qt.desktop
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_af.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_ca.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_da.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_de.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_el.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_en.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_es.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_eu.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_fi.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_fr.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_he.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_hu.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_id.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_is.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_it.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_ja.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_ka.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_kk.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_ko.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_lt.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_nb.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_nl.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_pl.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_pt.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_pt_BR.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_pt_PT.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_ru.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_sl.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_sv.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_tr.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_uk.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_zh_CN.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/translations/transmission_zh_TW.qm
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/bin/transmission-create
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/man/man1/transmission-create.1
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/bin/transmission-edit
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/man/man1/transmission-edit.1
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/bin/transmission-remote
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/man/man1/transmission-remote.1
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/bin/transmission-show
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/man/man1/transmission-show.1
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/images
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/images/favicon.ico
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/images/favicon.svg
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/images/apple-touch-icon.png
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/index.html
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/transmission-app.js.LEGAL.txt
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/transmission-app.js
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/transmission-app.css
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/transmission-app.css.LEGAL.txt
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/transmission/public_html/transmission-app.css.map
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/AUTHORS
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/COPYING
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/README.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/rpc-spec.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/send-email-when-torrent-done.sh
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.1.0-beta.3.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.94.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.1.2.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.81.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.6.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.74.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.84.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-5.0.0-draft.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.60.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.73.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.1.0-beta.4.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.70.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.0-beta-2.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.90.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.3.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.52.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.83.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.1.0-beta.5.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.93.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.61.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.4.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.42-and-older.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.2.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.1.1.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.1.0-beta.1.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.72.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.71.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.80.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.82.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.0-beta-1.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.1.0-beta.2.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.75.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.50.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-3.00.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.92.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.1.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.51.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.5.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.0.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.91.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.0.0-beta-3.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-4.1.0.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.76.md
+-- Installing: /var/tmp/hokuto/transmission-43/output/usr/share/doc/transmission/news/news-2.77.md
+
+Script done on 2026-06-04 11:28:38+07:00 [COMMAND_EXIT_CODE="0"]
