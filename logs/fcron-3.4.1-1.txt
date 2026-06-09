@@ -1,0 +1,448 @@
+Script started on 2026-06-09 21:56:31+07:00 [COMMAND="cd /var/tmp/hokuto/fcron-37/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/fcron-37/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/fcron-37/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/fcron-37/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/fcron-37/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/fcron-37/build/.cache' /repo/sauzeros/extra/fcron/build /var/tmp/hokuto/fcron-37/output 3.4.1 fcron" TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="139" LINES="45"]
+configure: loading site script /usr/share/config.site
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking for gmake... no
+checking for make... /usr/sbin/make
+checking if make is actually GNU Make... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for strip... /usr/sbin/strip
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/time.h... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99... no
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for fcntl.h... yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/time.h... (cached) yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking for errno.h... yes
+checking for sys/fcntl.h... yes
+checking for getopt.h... yes
+checking for limits.h... yes
+checking for stdarg.h... yes
+checking for termios.h... yes
+checking for strings.h... (cached) yes
+checking for sys/select.h... yes
+checking for sys/timerfd.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/socket.h... yes
+checking for sys/un.h... yes
+checking for security/pam_appl.h... yes
+checking for pam/pam_appl.h... no
+checking for crypt.h... yes
+checking for shadow.h... yes
+checking for libaudit.h... no
+checking for sys/resource.h... yes
+checking for grp.h... yes
+checking for an ANSI C-conforming const... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking how to run the C preprocessor... cc -E
+checking for grep that handles long lines and -e... /usr/sbin/grep
+checking for egrep... /usr/sbin/grep -E
+checking for uid_t in sys/types.h... yes
+checking for ssize_t... yes
+checking size of time_t... 8
+checking size of pid_t... 4
+checking size of time_t... (cached) 8
+checking size of short int... 2
+checking size of int... (cached) 4
+checking size of long int... 8
+checking size of long long int... 8
+checking whether cc needs -traditional... no
+checking for working memcmp... yes
+checking for strftime... yes
+checking for shutdown in -lxnet... no
+checking for getcon in -lselinux... no
+checking for audit_open in -laudit... no
+checking for a readline compatible library... -lreadline
+checking for readline.h... no
+checking for readline/readline.h... yes
+checking whether readline supports history... yes
+checking for history.h... no
+checking for readline/history.h... yes
+checking for getloadavg... yes
+checking for kstat_open in -lkstat... no
+checking for setlocale... yes
+checking for getloadavg... (cached) yes
+checking for pstat_getdynamic... no
+checking for kstat_open in -lkstat... (cached) no
+checking for getloadavg... (cached) yes
+checking whether getloadavg requires setgid... no
+checking function to use for lavg* options... getloadavg()
+checking for getcwd... yes
+checking for gettimeofday... yes
+checking for mktime... yes
+checking for putenv... yes
+checking for strerror... yes
+checking for setenv... yes
+checking for unsetenv... yes
+checking for gethostname... yes
+checking for getopt_long... yes
+checking for mkstemp... yes
+checking for flock... yes
+checking for lockf... yes
+checking for setlinebuf... yes
+checking for sigaction... yes
+checking for signal... yes
+checking for sigset... yes
+checking for gettimeofday... (cached) yes
+checking for seteuid... yes
+checking for setegid... yes
+checking for setresuid... yes
+checking for setresgid... yes
+checking for setpriority... yes
+checking for library containing getspnam... none required
+checking for crypt... no
+checking for crypt in -lcrypt... yes
+checking for sa_len... no
+checking for cred.h... no
+checking for sys/cred.h... no
+checking for ucred.h... no
+checking for sys/ucred.h... no
+checking for getpeerucred... no
+checking for getpeereid... no
+checking mail display name... Fcron Daemon
+checking for sendmail... /usr/sbin/sendmail
+checking actual sendmail to use... /usr/bin/sendmail
+checking for sh... /usr/sbin/sh
+checking default shell to use to run a job... /usr/sbin/sh
+checking for vi... no
+checking editor to use for fcrontab... /usr/bin/nano
+checking location of pid files... /run
+checking location of fifo files... /var/run
+checking location of spool directory... /var/spool/fcron
+checking for pkg-config... pkg-config
+checking for systemd... yes
+checking run non-privileged... no
+checking max fcrontab reload delay seconds... checking if fcrondyn should be compiled... yes
+checking root's username... root
+checking root's groupname... root
+checking username to run fcrontab under... fcron
+checking groupname to run fcrontab under... fcron
+checking use a system fcrontab... yes
+checking install interactively a boot script... no
+checking automatic answer to make install's questions... no
+checking if audit trails should be enabled if available... no
+checking if pam should be used if available... no
+checking if SELinux should be used... not available
+checking for openjade... no
+checking for jade... no
+checking for docbook2man... no
+checking for db2man... no
+checking Looking for docbook2man converter... default: 
+checking for nsgmls... no
+checking for sgmlspl... no
+checking Looking for docbook2man-spec file... default
+./configure: line 8869: test: -f: binary operator expected
+checking Looking for dsssl stylsheets... default
+configure: WARNING:
+
+/usr/share/sgml/docbook/stylesheet/dsssl/modular/html/docbook.dsl does not exist. You will probably not be able to generate the documentation from the DocBook source files.
+configure: WARNING: Use --with-dsssl-dir to specify a directory.
+
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/stylesheets/fcron-doc.dsl
+config.status: creating config.h
+
+Summary :
+-------
+
+run in debug mode by default :      no
+Audit trails :                      no
+PAM :                               no
+SELinux :                           no
+Readline :                          yes
+Run without root's rights :         no
+Max fcrontab reload delay seconds : 5
+Load average support :              yes
+compile fcrondyn :                  yes
+fcron's user (resp. group) name :   fcron (resp. fcron)
+sysfcrontab :                       yes (systab)
+prefix:                             /usr
+exec_prefix:                        ${prefix}
+datarootdir:                        ${prefix}/share
+bin dir:                            ${exec_prefix}/bin
+sbin dir:                           ${exec_prefix}/sbin
+spool dir:                          /var/spool/fcron
+etc dir:                            /etc/fcron
+doc dir:                            ${datarootdir}/doc/${PACKAGE_TARNAME}
+man dir:                            ${datarootdir}/man
+
+You can now run '/usr/sbin/make' to compile
+and then (as root) '/usr/sbin/make install' to install fcron.
+
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c fcron.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c cl.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c subs.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c mem.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c save.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c temp_file.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c log.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c database.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c job.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c conf.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c u_list.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c exe_list.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c lavg_list.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c env_list.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c fcronconf.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c mail.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c filesubs.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c select.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c fcrondyn_svr.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c suspend.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c fcronsighup.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c allow.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c fcrontab.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c fileconf.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c read_string.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c fcrondyn.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -DPIDFILE="\"/run/fcron.pid\"" -DREBOOT_LOCK="\"/run/fcron.reboot\"" \
+-DSUSPEND_FILE="\"/run/fcron.suspend\"" -DFIFOFILE="\"/var/run/fcron.fifo\"" -DETC="\"/etc/fcron\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DFCRON_CONF="\"fcron.conf\"" \
+-DFCRONTABS="\"/var/spool/fcron\"" \
+-DFCRON_ALLOW="\"fcron.allow\"" -DFCRON_DENY="\"fcron.deny\"" \
+-DFCRON_SHELL="\"/usr/sbin/sh\"" -DSENDMAIL="\"/usr/bin/sendmail\"" \
+-DFCRON_EDITOR="\"/usr/bin/nano\"" \-DMAILDISPLAYNAME="\"Fcron Daemon\"" -DBINDIREX="\"/usr/bin\"" \
+-c convert-fcrontab.c
+if test ! -d files; then mkdir files ; fi
+./script/gen-in.pl ./files/fcron.conf.in files/fcron.conf ./
+make -C doc doc-if-none
+make[1]: Entering directory '/var/tmp/hokuto/fcron-37/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/fcron-37/build/doc'
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o fcron fcron.o cl.o subs.o mem.o save.o temp_file.o log.o database.o job.o conf.o u_list.o exe_list.o lavg_list.o env_list.o fcronconf.o mail.o filesubs.o select.o fcrondyn_svr.o suspend.o  -lreadline -lcrypt
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o fcronsighup fcronsighup.o subs.o mem.o log.o allow.o fcronconf.o mail.o filesubs.o -lreadline -lcrypt
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o convert-fcrontab convert-fcrontab.o cl.o subs.o mem.o save.o log.o u_list.o env_list.o fcronconf.o mail.o filesubs.o -lreadline -lcrypt
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o fcrondyn fcrondyn.o subs.o mem.o log.o allow.o read_string.o fcronconf.o mail.o filesubs.o -lreadline -lcrypt
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -O2 -Wall  -DHAVE_CONFIG_H -I. -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o fcrontab fcrontab.o cl.o subs.o mem.o save.o temp_file.o  log.o fileconf.o allow.o read_string.o u_list.o env_list.o fcronconf.o mail.o filesubs.o -lreadline -lcrypt
+make -C doc doc-if-none
+make[1]: Entering directory '/var/tmp/hokuto/fcron-37/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/fcron-37/build/doc'
+echo `fcron -V 2>&1 | grep "^fcron "` > PREVIOUS_VERSION && chmod a+rw PREVIOUS_VERSION
+./script/user-group fcron fcron 2 .
+Checking if group fcron exists ... no.
+Would you like to add fcron in /etc/passwd with the following command ?
+    groupadd fcron
+If you use NYS, ldap, etc, you should add the group manually (say no here)
+Please answer with 'y' or 'n' (default: 'y'): no
+Would you like to add fcron in /etc/passwd with the following command ?
+    groupadd fcron
+If you use NYS, ldap, etc, you should add the group manually (say no here)
+Please answer with 'y' or 'n' (default: 'y'): no
+Would you like to add fcron in /etc/passwd with the following command ?
+    groupadd fcron
+If you use NYS, ldap, etc, you should add the group manually (say no here)
+Please answer with 'y' or 'n' (default: 'y'): no 
+
+Group "fcron" does not exist : please create it or choose
+another groupname with configure script.
+make: *** [Makefile:185: install-staged] Error 1
+
+Script done on 2026-06-09 21:56:58+07:00 [COMMAND_EXIT_CODE="2"]
