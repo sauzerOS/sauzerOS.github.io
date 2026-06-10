@@ -1,0 +1,106 @@
+Script started on 2026-06-10 20:11:07+07:00 [COMMAND="cd /var/tmp/hokuto/discount-85/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/discount-85/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/discount-85/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/discount-85/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/discount-85/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/discount-85/build/.cache' /repo/sauzeros/extra/discount/build /var/tmp/hokuto/discount-85/output 3.0.1.3 discount" <not executed on terminal>]
+Configuring for [markdown]
+checking the C compiler (cc) oh ick, it looks like gcc
+CFLAGS="-march=native -O2 -pipe -fomit-frame-pointer -flto=10" are okay
+LDFLAGS="-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack" are okay
+Looking for cpp (using $CC -E as a cpp pipeline)
+looking for install (/usr/bin/install)
+checking for C compiler option to produce PIC (-fPIC)
+looking for find (/usr/bin/find)
+looking for "ln -s" (/usr/bin/ln)
+checking whether the C compiler can build shared libraries (yes; -shared)
+looking for ar (defined as gcc-ar) (/usr/bin/gcc-ar)
+looking for ranlib (defined as gcc-ranlib) (/usr/bin/gcc-ranlib)
+looking for pkg-config (/usr/bin/pkg-config)
+checking for "volatile" keyword (found)
+checking for "const" keyword (found)
+Checking for "inline" keyword (found)
+defining WORD & DWORD scalar types (using standard types in <inttypes.h>)
+looking for a reentrant basename (found)
+looking for header libgen.h (found)
+looking for header stdlib.h (found)
+looking for the alloca function (found in alloca.h)
+looking for header sys/types.h (found)
+looking for header pwd.h (found)
+looking for the getpwuid function (found)
+looking for header sys/stat.h (found)
+looking for the stat function (found)
+special file macros in sys/stat.h: S_ISSOCK S_ISCHR S_ISFIFO.
+is isspace() broken: no
+looking for the srandom function (found)
+looking for the memset function (found)
+looking for the random function (found)
+looking for the strcasecmp function (found)
+looking for the strncasecmp function (found)
+looking for the fchdir function (found)
+looking for header malloc.h (found)
+looking for sed (/usr/bin/sed)
+generating Makefile
+generating version.c
+generating mkdio.h
+generating libmarkdown.pc
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c main.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c gethopt.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c notspecial.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o mkdio.o mkdio.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o markdown.o markdown.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o dumptree.o dumptree.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o generate.o generate.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o resource.o resource.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o docheader.o docheader.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o branch.o tools/branch.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o toc.o toc.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o css.o css.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o xml.o xml.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o Csio.o Csio.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o xmlpage.o xmlpage.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o basename.o basename.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o emmatch.o emmatch.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o github_flavoured.o github_flavoured.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o setup.o setup.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o mktags.o mktags.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o html5.o html5.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c pgm_options.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o flags.o flags.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o v2compat.o v2compat.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o flagprocs.o flagprocs.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o mkd2html.o mkd2html.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c makepage.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o theme.o theme.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o rep.o tools/rep.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o echo.o tools/echo.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o cols.o tools/cols.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o pandoc_headers.o tools/pandoc_headers.c
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o space2nl.o tools/space2nl.c
+[01m[Ktools/rep.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ktools/rep.c:37:1:[m[K [01;35m[Kwarning: [m[Kold-style function definition [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition]8;;[m[K]
+   37 | [01;35m[Kmain[m[K(argc, argv)
+      | [01;35m[K^~~~[m[K
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o tests/exercisers/flags.o tests/exercisers/flags.c
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o branch branch.o
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o mktags mktags.o
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o rep rep.o
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o echo echo.o
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o cols cols.o
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o space2nl space2nl.o
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -DBRANCH=`./branch` -DVERSION=\"`cat VERSION`\" -c version.c
+./mktags > blocktags
+cc -Wno-return-type -Wno-implicit-int -I.  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fPIC -c -o tags.o tags.c
+touch .libmarkdown
+./librarian.sh make libmarkdown VERSION mkdio.o markdown.o dumptree.o generate.o resource.o docheader.o version.o toc.o css.o xml.o Csio.o xmlpage.o basename.o emmatch.o github_flavoured.o setup.o tags.o html5.o pgm_options.o flags.o v2compat.o flagprocs.o 
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o markdown main.o gethopt.o notspecial.o -lmarkdown 
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o mkd2html mkd2html.o gethopt.o notspecial.o -lmarkdown 
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o makepage makepage.o gethopt.o notspecial.o -lmarkdown 
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o theme theme.o gethopt.o notspecial.o -lmarkdown 
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o pandoc_headers pandoc_headers.o gethopt.o notspecial.o -lmarkdown 
+cc -Wno-return-type -Wno-implicit-int -L. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o tests/exercisers/flags tests/exercisers/flags.o -lmarkdown
+/var/tmp/hokuto/discount-85/build/config.md /var/tmp/hokuto/discount-85/output/usr/bin
+/var/tmp/hokuto/discount-85/build/config.md /var/tmp/hokuto/discount-85/output/usr/lib
+/var/tmp/hokuto/discount-85/build/config.md /var/tmp/hokuto/discount-85/output/usr/include
+/var/tmp/hokuto/discount-85/build/config.md /var/tmp/hokuto/discount-85/output/usr/lib/pkgconfig
+/usr/bin/install -s -m 755 markdown /var/tmp/hokuto/discount-85/output/usr/bin
+./librarian.sh install libmarkdown VERSION /var/tmp/hokuto/discount-85/output/usr/lib
+/usr/bin/install -m 444 mkdio.h /var/tmp/hokuto/discount-85/output/usr/include
+/usr/bin/install -m 444 libmarkdown.pc /var/tmp/hokuto/discount-85/output/usr/lib/pkgconfig
+
+Script done on 2026-06-10 20:11:11+07:00 [COMMAND_EXIT_CODE="0"]
