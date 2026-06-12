@@ -1,0 +1,424 @@
+Script started on 2026-06-13 01:22:27+07:00 [COMMAND="cd /var/tmp/hokuto/gst-plugins-ugly-54/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/gst-plugins-ugly-54/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/gst-plugins-ugly-54/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/gst-plugins-ugly-54/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/gst-plugins-ugly-54/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/gst-plugins-ugly-54/build/.cache' /repo/sauzeros/extra/gst-plugins-ugly/build /var/tmp/hokuto/gst-plugins-ugly-54/output 1.28.4 gst-plugins-ugly" <not executed on terminal>]
+[1mThe Meson build system[0m
+Version: 1.11.1
+Source dir: [1m/var/tmp/hokuto/gst-plugins-ugly-54/build[0m
+Build dir: [1m/var/tmp/hokuto/gst-plugins-ugly-54/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mgst-plugins-ugly[0m
+Project version: [1m1.28.4[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.1.0 "cc (GCC) 16.1.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+C++ compiler for the host machine: [1mc++[0m (gcc 16.1.0 "c++ (GCC) 16.1.0")
+C++ linker for the host machine: [1mc++[0m ld.bfd 2.46.1
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: [1;32mYES[0m 
+Compiler for C++ supports link arguments -Wl,-Bsymbolic-functions: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,-z,nodelete: [1;32mYES[0m 
+Compiler for C++ supports link arguments -Wl,-z,nodelete: [1;32mYES[0m 
+Has header "[1mdlfcn.h[0m" : [1;32mYES[0m 
+Has header "[1minttypes.h[0m" : [1;32mYES[0m 
+Has header "[1mmalloc.h[0m" : [1;32mYES[0m 
+Has header "[1mmemory.h[0m" : [1;32mYES[0m 
+Has header "[1mstdint.h[0m" : [1;32mYES[0m 
+Has header "[1mstdlib.h[0m" : [1;32mYES[0m 
+Has header "[1mstrings.h[0m" : [1;32mYES[0m 
+Has header "[1mstring.h[0m" : [1;32mYES[0m 
+Has header "[1msys/stat.h[0m" : [1;32mYES[0m 
+Has header "[1msys/types.h[0m" : [1;32mYES[0m 
+Has header "[1munistd.h[0m" : [1;32mYES[0m 
+Has header "[1mwinsock2.h[0m" : [1;31mNO[0m 
+Checking for function "[1mdcgettext[0m" : [1;32mYES[0m 
+Checking for size of "[1mchar[0m" : [1m1[0m 
+Checking for size of "[1mint[0m" : [1m4[0m 
+Checking for size of "[1mlong[0m" : [1m8[0m 
+Checking for size of "[1mshort[0m" : [1m2[0m 
+Checking for size of "[1mvoid*[0m" : [1m8[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m2.5.1[0m
+Run-time dependency [1mgstreamer-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-app-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-video-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-pbutils-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-tag-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-fft-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-audio-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-base-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-riff-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-rtp-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-net-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-sdp-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-rtsp-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-check-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-controller-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Found CMake: [1m/usr/bin/cmake[0m (4.3.3)
+Run-time dependency [1morc-0.4[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency [1morc-0.4[0m
+Attempted to resolve subproject without subprojects directory present.
+Subproject [1morc[0m is buildable: [1;31mNO[0m (disabling)
+Dependency [1morc-0.4[0m for [1mhost[0m machine from subproject orc found: [1;31mNO[0m [1;34m(subproject failed to configure)[0m
+Run-time dependency [1mgmodule-no-export-2.0[0m found: [1;32mYES[0m [36m2.88.1[0m
+Header "[1mgst/gstconfig.h[0m" has symbol "[1mGST_DISABLE_GST_DEBUG[0m" with dependency gstreamer-1.0: [1;32mYES[0m 
+[1mMessage:[0m GStreamer debug system is disabled
+Compiler for C supports arguments -Wno-unused: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-unused: [1;32mYES[0m 
+Compiler for C supports arguments -Waddress: [1;32mYES[0m 
+Compiler for C++ supports arguments -Waddress: [1;32mYES[0m 
+Compiler for C supports arguments -Waggregate-return: [1;32mYES[0m 
+Compiler for C++ supports arguments -Waggregate-return: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wformat: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat-nonliteral: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wformat-nonliteral: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat-security: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wformat-security: [1;32mYES[0m 
+Compiler for C supports arguments -Wimplicit-fallthrough=3: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wimplicit-fallthrough=3: [1;32mYES[0m 
+Compiler for C supports arguments -Winit-self: [1;32mYES[0m 
+Compiler for C++ supports arguments -Winit-self: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-declarations: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wmissing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-include-dirs: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wmissing-include-dirs: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-multichar: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-multichar: [1;32mYES[0m 
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C supports arguments -Wredundant-decls: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wredundant-decls: [1;32mYES[0m 
+Compiler for C supports arguments -Wshift-negative-value: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wshift-negative-value: [1;32mYES[0m 
+Compiler for C supports arguments -Wtype-limits: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wtype-limits: [1;32mYES[0m 
+Compiler for C supports arguments -Wvla: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wvla: [1;32mYES[0m 
+Compiler for C supports arguments -Wwrite-strings: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wwrite-strings: [1;32mYES[0m 
+Compiler for C supports arguments -fno-strict-aliasing: [1;32mYES[0m 
+Compiler for C++ supports arguments -fno-strict-aliasing: [1;32mYES[0m 
+Compiler for C supports arguments -fvisibility=hidden: [1;32mYES[0m 
+Compiler for C++ supports arguments -fvisibility=hidden: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wold-style-definition: [1;32mYES[0m 
+Compiler for C supports arguments -Wnested-externs: [1;32mYES[0m 
+[1mMessage:[0m Disabling GLib cast checks
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+Library [1ma52[0m found: [1;32mYES[0m
+Header "[1ma52dec/a52.h[0m" has symbol "[1ma52_init[0m" : [1;32mYES[0m 
+Run-time dependency [1mlibcdio[0m found: [1;32mYES[0m [36m2.3.0[0m
+Run-time dependency [1mdvdread[0m found: [1;32mYES[0m [36m7.0.1[0m
+Run-time dependency [1mlibmpeg2[0m found: [1;32mYES[0m [36m0.5.1[0m
+ext/mpeg2dec/meson.build:26: [1;33mWARNING:[0m The `mpeg2dec` plugin is deprecated and will be removed in the next release cycle. `avdec_mpeg2video` from gst-libav should be used instead
+Has header "[1msidplay/player.h[0m" : [1;31mNO[0m 
+Run-time dependency [1mx264[0m found: [1;32mYES[0m [36m0.165.x[0m
+Run-time dependency [1mgstreamer-plugins-base-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Library [1mm[0m found: [1;32mYES[0m
+Compiler for C supports arguments -Wno-missing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-missing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-old-style-definition: [1;32mYES[0m 
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Program [1mmsgfmt[0m found: [1;32mYES[0m (/usr/bin/msgfmt)
+Program [1mmsginit[0m found: [1;32mYES[0m (/usr/bin/msginit)
+Program [1mmsgmerge[0m found: [1;32mYES[0m (/usr/bin/msgmerge)
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Program [1mgst-plugins-doc-cache-generator[0m found: [1;32mYES[0m (/usr/libexec/gstreamer-1.0/gst-plugins-doc-cache-generator)
+Configuring [1mgst_api_version.md[0m using configuration
+Configuring [1mdoc_sources.json[0m using configuration
+Configuring [1mdoc_plugin_libs.json[0m using configuration
+Program [1mscripts/extract-release-date-from-doap-file.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/gst-plugins-ugly-54/build/scripts/extract-release-date-from-doap-file.py)
+[1mMessage:[0m Package release date: 2026-06-12
+Configuring [1mconfig.h[0m using configuration
+Build targets in project: [1m64[0m
+
+gst-plugins-ugly [36m1.28.4[0m
+
+    Plugins               : asf, dvdlpcmdec, dvdsub, realmedia, a52dec, cdio,
+                            dvdread, mpeg2dec, x264
+    (A)GPL license allowed: true
+
+  [1mSubprojects[0m
+    orc                   : [1;31mNO[0m
+                            Attempted to resolve subproject without subprojects directory present.
+
+  [1mUser defined options[0m
+    buildtype             : release
+    gpl                   : enabled
+    prefix                : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/gst-plugins-ugly-54/build/build
+ninja: Entering directory `/var/tmp/hokuto/gst-plugins-ugly-54/build/build'
+[0/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstasfdemux.c.o[K[0/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstasf.c.o[K[0/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstasfelement.c.o[K[0/83] Compiling C object gst/asfdemux/libgstasf.so.p/asfheaders.c.o[K[0/83] Compiling C object gst/asfdemux/libgstasf.so.p/asfpacket.c.o[K[0/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstrtpasfdepay.c.o[K[0/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstrtspwms.c.o[K[0/83] Compiling C object gst/dvdlpcmdec/libgstdvdlpcmdec.so.p/gstdvdlpcmdec.c.o[K[0/83] Compiling C object gst/dvdsub/libgstdvdsub.so.p/gstdvdsubdec.c.o[K[0/83] Compiling C object gst/dvdsub/libgstdvdsub.so.p/gstdvdsubparse.c.o[K[1/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstrtspwms.c.o[K[1/83] Compiling C object gst/realmedia/libgstrealmedia.so.p/rademux.c.o[K[2/83] Compiling C object gst/dvdlpcmdec/libgstdvdlpcmdec.so.p/gstdvdlpcmdec.c.o[K[2/83] Compiling C object gst/realmedia/libgstrealmedia.so.p/rmdemux.c.o[K[3/83] Compiling C object gst/asfdemux/libgstasf.so.p/asfheaders.c.o[K[3/83] Compiling C object gst/realmedia/libgstrealmedia.so.p/rmutils.c.o[K[4/83] Compiling C object gst/dvdsub/libgstdvdsub.so.p/gstdvdsubparse.c.o[K[4/83] Compiling C object gst/realmedia/libgstrealmedia.so.p/realmedia.c.o[K[5/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstasf.c.o[K[5/83] Compiling C object ext/a52dec/libgsta52dec.so.p/gsta52dec.c.o[K[6/83] Compiling C object gst/dvdsub/libgstdvdsub.so.p/gstdvdsubdec.c.o[K[6/83] Compiling C object ext/cdio/libgstcdio.so.p/gstcdio.c.o[K[7/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstrtpasfdepay.c.o[K[7/83] Compiling C object ext/cdio/libgstcdio.so.p/gstcdiocddasrc.c.o[K[8/83] Compiling C object gst/asfdemux/libgstasf.so.p/asfpacket.c.o[K[8/83] Compiling C object ext/dvdread/libgstdvdread.so.p/dvdreadsrc.c.o[K[9/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstasfelement.c.o[K[9/83] Compiling C object ext/mpeg2dec/libgstmpeg2dec.so.p/gstmpeg2dec.c.o[K[10/83] Compiling C object gst/realmedia/libgstrealmedia.so.p/realmedia.c.o[K[10/83] Compiling C object ext/x264/libgstx264.so.p/gstx264enc.c.o[K[11/83] Compiling C object gst/realmedia/libgstrealmedia.so.p/rmutils.c.o[K[11/83] Compiling C object ext/x264/libgstx264.so.p/gstencoderbitrateprofilemanager.c.o[K[12/83] Compiling C object gst/realmedia/libgstrealmedia.so.p/rademux.c.o[K[12/83] Compiling C object tests/check/elements_x264enc.p/elements_x264enc.c.o[K[13/83] Compiling C object ext/a52dec/libgsta52dec.so.p/gsta52dec.c.o[K[13/83] Compiling C object tests/check/generic_states.p/generic_states.c.o[K[14/83] Compiling C object ext/cdio/libgstcdio.so.p/gstcdio.c.o[K[14/83] Compiling C object tests/check/elements_mpeg2dec.p/elements_mpeg2dec.c.o[K[15/83] Compiling C object ext/cdio/libgstcdio.so.p/gstcdiocddasrc.c.o[K[15/83] Linking target gst/dvdlpcmdec/libgstdvdlpcmdec.so[K[16/83] Compiling C object ext/mpeg2dec/libgstmpeg2dec.so.p/gstmpeg2dec.c.o[K[16/83] Linking target gst/dvdsub/libgstdvdsub.so[K[17/83] Compiling C object ext/dvdread/libgstdvdread.so.p/dvdreadsrc.c.o[K[17/83] Linking target ext/a52dec/libgsta52dec.so[K[18/83] Compiling C object gst/asfdemux/libgstasf.so.p/gstasfdemux.c.o[K[18/83] Linking target gst/asfdemux/libgstasf.so[K[19/83] Compiling C object gst/realmedia/libgstrealmedia.so.p/rmdemux.c.o[K[19/83] Linking target gst/realmedia/libgstrealmedia.so[K[20/83] Compiling C object ext/x264/libgstx264.so.p/gstencoderbitrateprofilemanager.c.o[K[20/83] Linking target ext/cdio/libgstcdio.so[K[21/83] Compiling C object tests/check/elements_x264enc.p/elements_x264enc.c.o[K[21/83] Linking target ext/dvdread/libgstdvdread.so[K[22/83] Compiling C object tests/check/generic_states.p/generic_states.c.o[K[22/83] Linking target ext/mpeg2dec/libgstmpeg2dec.so[K[23/83] Compiling C object tests/check/elements_mpeg2dec.p/elements_mpeg2dec.c.o[K[23/83] Linking target tests/check/elements_x264enc[K[24/83] Linking target ext/a52dec/libgsta52dec.so[K[24/83] Linking target tests/check/generic_states[K[25/83] Linking target gst/dvdlpcmdec/libgstdvdlpcmdec.so[K[25/83] Linking target tests/check/elements_mpeg2dec[K[26/83] Linking target ext/cdio/libgstcdio.so[K[26/83] Building translation po/af/LC_MESSAGES/gst-plugins-ugly-1.0-af.mo[K[27/83] Building translation po/af/LC_MESSAGES/gst-plugins-ugly-1.0-af.mo[K[27/83] Building translation po/ar/LC_MESSAGES/gst-plugins-ugly-1.0-ar.mo[K[28/83] Building translation po/ar/LC_MESSAGES/gst-plugins-ugly-1.0-ar.mo[K[28/83] Building translation po/ast/LC_MESSAGES/gst-plugins-ugly-1.0-ast.mo[K[29/83] Building translation po/ast/LC_MESSAGES/gst-plugins-ugly-1.0-ast.mo[K[29/83] Building translation po/az/LC_MESSAGES/gst-plugins-ugly-1.0-az.mo[K[30/83] Building translation po/az/LC_MESSAGES/gst-plugins-ugly-1.0-az.mo[K[30/83] Building translation po/bg/LC_MESSAGES/gst-plugins-ugly-1.0-bg.mo[K[31/83] Compiling C object ext/x264/libgstx264.so.p/gstx264enc.c.o[K[31/83] Linking target ext/x264/libgstx264.so[K[32/83] Building translation po/bg/LC_MESSAGES/gst-plugins-ugly-1.0-bg.mo[K[32/83] Building translation po/ca/LC_MESSAGES/gst-plugins-ugly-1.0-ca.mo[K[33/83] Building translation po/ca/LC_MESSAGES/gst-plugins-ugly-1.0-ca.mo[K[33/83] Building translation po/cs/LC_MESSAGES/gst-plugins-ugly-1.0-cs.mo[K[34/83] Building translation po/cs/LC_MESSAGES/gst-plugins-ugly-1.0-cs.mo[K[34/83] Building translation po/da/LC_MESSAGES/gst-plugins-ugly-1.0-da.mo[K[35/83] Building translation po/da/LC_MESSAGES/gst-plugins-ugly-1.0-da.mo[K[35/83] Building translation po/de/LC_MESSAGES/gst-plugins-ugly-1.0-de.mo[K[36/83] Building translation po/de/LC_MESSAGES/gst-plugins-ugly-1.0-de.mo[K[36/83] Building translation po/el/LC_MESSAGES/gst-plugins-ugly-1.0-el.mo[K[37/83] Building translation po/el/LC_MESSAGES/gst-plugins-ugly-1.0-el.mo[K[37/83] Building translation po/en_GB/LC_MESSAGES/gst-plugins-ugly-1.0-en_GB.mo[K[38/83] Building translation po/en_GB/LC_MESSAGES/gst-plugins-ugly-1.0-en_GB.mo[K[38/83] Building translation po/eo/LC_MESSAGES/gst-plugins-ugly-1.0-eo.mo[K[39/83] Building translation po/eo/LC_MESSAGES/gst-plugins-ugly-1.0-eo.mo[K[39/83] Building translation po/es/LC_MESSAGES/gst-plugins-ugly-1.0-es.mo[K[40/83] Building translation po/es/LC_MESSAGES/gst-plugins-ugly-1.0-es.mo[K[40/83] Building translation po/eu/LC_MESSAGES/gst-plugins-ugly-1.0-eu.mo[K[41/83] Linking target ext/mpeg2dec/libgstmpeg2dec.so[K[41/83] Building translation po/fi/LC_MESSAGES/gst-plugins-ugly-1.0-fi.mo[K[42/83] Building translation po/fi/LC_MESSAGES/gst-plugins-ugly-1.0-fi.mo[K[42/83] Building translation po/fr/LC_MESSAGES/gst-plugins-ugly-1.0-fr.mo[K[43/83] Building translation po/eu/LC_MESSAGES/gst-plugins-ugly-1.0-eu.mo[K[43/83] Building translation po/fur/LC_MESSAGES/gst-plugins-ugly-1.0-fur.mo[K[44/83] Building translation po/fur/LC_MESSAGES/gst-plugins-ugly-1.0-fur.mo[K[44/83] Building translation po/gl/LC_MESSAGES/gst-plugins-ugly-1.0-gl.mo[K[45/83] Building translation po/fr/LC_MESSAGES/gst-plugins-ugly-1.0-fr.mo[K[45/83] Building translation po/hr/LC_MESSAGES/gst-plugins-ugly-1.0-hr.mo[K[46/83] Building translation po/gl/LC_MESSAGES/gst-plugins-ugly-1.0-gl.mo[K[46/83] Building translation po/hu/LC_MESSAGES/gst-plugins-ugly-1.0-hu.mo[K[47/83] Building translation po/hr/LC_MESSAGES/gst-plugins-ugly-1.0-hr.mo[K[47/83] Building translation po/id/LC_MESSAGES/gst-plugins-ugly-1.0-id.mo[K[48/83] Building translation po/hu/LC_MESSAGES/gst-plugins-ugly-1.0-hu.mo[K[48/83] Building translation po/it/LC_MESSAGES/gst-plugins-ugly-1.0-it.mo[K[49/83] Building translation po/id/LC_MESSAGES/gst-plugins-ugly-1.0-id.mo[K[49/83] Building translation po/ja/LC_MESSAGES/gst-plugins-ugly-1.0-ja.mo[K[50/83] Linking target tests/check/generic_states[K[50/83] Building translation po/ka/LC_MESSAGES/gst-plugins-ugly-1.0-ka.mo[K[51/83] Building translation po/it/LC_MESSAGES/gst-plugins-ugly-1.0-it.mo[K[51/83] Building translation po/kk/LC_MESSAGES/gst-plugins-ugly-1.0-kk.mo[K[52/83] Building translation po/ja/LC_MESSAGES/gst-plugins-ugly-1.0-ja.mo[K[52/83] Building translation po/lt/LC_MESSAGES/gst-plugins-ugly-1.0-lt.mo[K[53/83] Building translation po/ka/LC_MESSAGES/gst-plugins-ugly-1.0-ka.mo[K[53/83] Building translation po/lv/LC_MESSAGES/gst-plugins-ugly-1.0-lv.mo[K[54/83] Building translation po/kk/LC_MESSAGES/gst-plugins-ugly-1.0-kk.mo[K[54/83] Building translation po/ms/LC_MESSAGES/gst-plugins-ugly-1.0-ms.mo[K[55/83] Building translation po/lt/LC_MESSAGES/gst-plugins-ugly-1.0-lt.mo[K[55/83] Building translation po/mt/LC_MESSAGES/gst-plugins-ugly-1.0-mt.mo[K[56/83] Linking target tests/check/elements_x264enc[K[56/83] Building translation po/nb/LC_MESSAGES/gst-plugins-ugly-1.0-nb.mo[K[57/83] Building translation po/lv/LC_MESSAGES/gst-plugins-ugly-1.0-lv.mo[K[57/83] Building translation po/nl/LC_MESSAGES/gst-plugins-ugly-1.0-nl.mo[K[58/83] Building translation po/ms/LC_MESSAGES/gst-plugins-ugly-1.0-ms.mo[K[58/83] Building translation po/or/LC_MESSAGES/gst-plugins-ugly-1.0-or.mo[K[59/83] Building translation po/mt/LC_MESSAGES/gst-plugins-ugly-1.0-mt.mo[K[59/83] Building translation po/pl/LC_MESSAGES/gst-plugins-ugly-1.0-pl.mo[K[60/83] Building translation po/nb/LC_MESSAGES/gst-plugins-ugly-1.0-nb.mo[K[60/83] Building translation po/pt_BR/LC_MESSAGES/gst-plugins-ugly-1.0-pt_BR.mo[K[61/83] Building translation po/nl/LC_MESSAGES/gst-plugins-ugly-1.0-nl.mo[K[61/83] Building translation po/ro/LC_MESSAGES/gst-plugins-ugly-1.0-ro.mo[K[62/83] Building translation po/or/LC_MESSAGES/gst-plugins-ugly-1.0-or.mo[K[62/83] Building translation po/ru/LC_MESSAGES/gst-plugins-ugly-1.0-ru.mo[K[63/83] Building translation po/pl/LC_MESSAGES/gst-plugins-ugly-1.0-pl.mo[K[63/83] Building translation po/sk/LC_MESSAGES/gst-plugins-ugly-1.0-sk.mo[K[64/83] Building translation po/pt_BR/LC_MESSAGES/gst-plugins-ugly-1.0-pt_BR.mo[K[64/83] Building translation po/sl/LC_MESSAGES/gst-plugins-ugly-1.0-sl.mo[K[65/83] Building translation po/ro/LC_MESSAGES/gst-plugins-ugly-1.0-ro.mo[K[65/83] Building translation po/sq/LC_MESSAGES/gst-plugins-ugly-1.0-sq.mo[K[66/83] Building translation po/ru/LC_MESSAGES/gst-plugins-ugly-1.0-ru.mo[K[66/83] Building translation po/sr/LC_MESSAGES/gst-plugins-ugly-1.0-sr.mo[K[67/83] Building translation po/sk/LC_MESSAGES/gst-plugins-ugly-1.0-sk.mo[K[67/83] Building translation po/sv/LC_MESSAGES/gst-plugins-ugly-1.0-sv.mo[K[68/83] Building translation po/sl/LC_MESSAGES/gst-plugins-ugly-1.0-sl.mo[K[68/83] Building translation po/ta/LC_MESSAGES/gst-plugins-ugly-1.0-ta.mo[K[69/83] Building translation po/sq/LC_MESSAGES/gst-plugins-ugly-1.0-sq.mo[K[69/83] Building translation po/tr/LC_MESSAGES/gst-plugins-ugly-1.0-tr.mo[K[70/83] Building translation po/sr/LC_MESSAGES/gst-plugins-ugly-1.0-sr.mo[K[70/83] Building translation po/uk/LC_MESSAGES/gst-plugins-ugly-1.0-uk.mo[K[71/83] Building translation po/ta/LC_MESSAGES/gst-plugins-ugly-1.0-ta.mo[K[71/83] Building translation po/vi/LC_MESSAGES/gst-plugins-ugly-1.0-vi.mo[K[72/83] Linking target tests/check/elements_mpeg2dec[K[72/83] Building translation po/zh_CN/LC_MESSAGES/gst-plugins-ugly-1.0-zh_CN.mo[K[73/83] Building translation po/sv/LC_MESSAGES/gst-plugins-ugly-1.0-sv.mo[K[73/83] Building translation po/zh_TW/LC_MESSAGES/gst-plugins-ugly-1.0-zh_TW.mo[K[74/83] Building translation po/vi/LC_MESSAGES/gst-plugins-ugly-1.0-vi.mo[K[75/83] Building translation po/uk/LC_MESSAGES/gst-plugins-ugly-1.0-uk.mo[K[76/83] Building translation po/zh_CN/LC_MESSAGES/gst-plugins-ugly-1.0-zh_CN.mo[K[77/83] Building translation po/zh_TW/LC_MESSAGES/gst-plugins-ugly-1.0-zh_TW.mo[K[78/83] Building translation po/tr/LC_MESSAGES/gst-plugins-ugly-1.0-tr.mo[K[79/83] Linking target gst/dvdsub/libgstdvdsub.so[K[80/83] Linking target ext/dvdread/libgstdvdread.so[K[81/83] Linking target gst/realmedia/libgstrealmedia.so[K[82/83] Linking target ext/x264/libgstx264.so[K[83/83] Linking target gst/asfdemux/libgstasf.so[K
+ninja: Entering directory `/var/tmp/hokuto/gst-plugins-ugly-54/build/build'
+ninja: no work to do.
+Installing gst/asfdemux/libgstasf.so to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib/gstreamer-1.0
+Installing gst/dvdlpcmdec/libgstdvdlpcmdec.so to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib/gstreamer-1.0
+Installing gst/dvdsub/libgstdvdsub.so to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib/gstreamer-1.0
+Installing gst/realmedia/libgstrealmedia.so to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib/gstreamer-1.0
+Installing ext/a52dec/libgsta52dec.so to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib/gstreamer-1.0
+Installing ext/cdio/libgstcdio.so to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib/gstreamer-1.0
+Installing ext/dvdread/libgstdvdread.so to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib/gstreamer-1.0
+Installing ext/mpeg2dec/libgstmpeg2dec.so to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib/gstreamer-1.0
+Installing ext/x264/libgstx264.so to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib/gstreamer-1.0
+Installing po/af/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/af/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/ar/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/ast/LC_MESSAGES
+Installing po/az/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/az/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/bg/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/ca/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/es/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/eu/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/fur/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/gl/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/kk/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/lv/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/ms/LC_MESSAGES
+Installing po/mt/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/mt/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/nl/LC_MESSAGES
+Installing po/or/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/or/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/sr/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/ta/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/vi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/locale/zh_TW/LC_MESSAGES
+Installing /var/tmp/hokuto/gst-plugins-ugly-54/build/ext/x264/GstX264Enc.prs to /var/tmp/hokuto/gst-plugins-ugly-54/output/usr/share/gstreamer-1.0/presets
+[1mThe Meson build system[0m
+Version: 1.11.1
+Source dir: [1m/var/tmp/hokuto/gst-plugins-ugly-54/build[0m
+Build dir: [1m/var/tmp/hokuto/gst-plugins-ugly-54/build/build[0m
+Build type: [1mcross build[0m
+Project name: [1mgst-plugins-ugly[0m
+Project version: [1m1.28.4[0m
+C compiler for the host machine: [1mgcc -m32[0m (gcc 16.1.0 "gcc (GCC) 16.1.0")
+C linker for the host machine: [1mgcc -m32[0m ld.bfd 2.46.1
+C compiler for the build machine: [1mcc[0m (gcc 16.1.0 "cc (GCC) 16.1.0")
+C linker for the build machine: [1mcc[0m ld.bfd 2.46.1
+Build machine cpu family: [1mx86_64[0m
+Build machine cpu: [1mx86_64[0m
+Host machine cpu family: [1mx86[0m
+Host machine cpu: [1mi686[0m
+Target machine cpu family: [1mx86[0m
+Target machine cpu: [1mi686[0m
+C++ compiler for the host machine: [1mg++ -m32[0m (gcc 16.1.0 "g++ (GCC) 16.1.0")
+C++ linker for the host machine: [1mg++ -m32[0m ld.bfd 2.46.1
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: [1;32mYES[0m 
+Compiler for C++ supports link arguments -Wl,-Bsymbolic-functions: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,-z,nodelete: [1;32mYES[0m 
+Compiler for C++ supports link arguments -Wl,-z,nodelete: [1;32mYES[0m 
+Has header "[1mdlfcn.h[0m" : [1;32mYES[0m 
+Has header "[1minttypes.h[0m" : [1;32mYES[0m 
+Has header "[1mmalloc.h[0m" : [1;32mYES[0m 
+Has header "[1mmemory.h[0m" : [1;32mYES[0m 
+Has header "[1mstdint.h[0m" : [1;32mYES[0m 
+Has header "[1mstdlib.h[0m" : [1;32mYES[0m 
+Has header "[1mstrings.h[0m" : [1;32mYES[0m 
+Has header "[1mstring.h[0m" : [1;32mYES[0m 
+Has header "[1msys/stat.h[0m" : [1;32mYES[0m 
+Has header "[1msys/types.h[0m" : [1;32mYES[0m 
+Has header "[1munistd.h[0m" : [1;32mYES[0m 
+Has header "[1mwinsock2.h[0m" : [1;31mNO[0m 
+Checking for function "[1mdcgettext[0m" : [1;32mYES[0m 
+Checking for size of "[1mchar[0m" : [1m1[0m 
+Checking for size of "[1mint[0m" : [1m4[0m 
+Checking for size of "[1mlong[0m" : [1m4[0m 
+Checking for size of "[1mshort[0m" : [1m2[0m 
+Checking for size of "[1mvoid*[0m" : [1m4[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/i686-pc-linux-gnu-pkg-config)[0m [1;34m2.5.1[0m
+Run-time dependency [1mgstreamer-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-app-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-video-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-pbutils-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-tag-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-fft-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-audio-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-base-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-riff-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-rtp-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-net-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-sdp-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-rtsp-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-check-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Run-time dependency [1mgstreamer-controller-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Found CMake: [1;31mNO[0m
+Run-time dependency [1morc-0.4[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency [1morc-0.4[0m
+Attempted to resolve subproject without subprojects directory present.
+Subproject [1morc[0m is buildable: [1;31mNO[0m (disabling)
+Dependency [1morc-0.4[0m for [1mhost[0m machine from subproject orc found: [1;31mNO[0m [1;34m(subproject failed to configure)[0m
+Run-time dependency [1mgmodule-no-export-2.0[0m found: [1;32mYES[0m [36m2.88.1[0m
+Header "[1mgst/gstconfig.h[0m" has symbol "[1mGST_DISABLE_GST_DEBUG[0m" with dependency gstreamer-1.0: [1;32mYES[0m 
+[1mMessage:[0m GStreamer debug system is disabled
+Compiler for C supports arguments -Wno-unused: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-unused: [1;32mYES[0m 
+Compiler for C supports arguments -Waddress: [1;32mYES[0m 
+Compiler for C++ supports arguments -Waddress: [1;32mYES[0m 
+Compiler for C supports arguments -Waggregate-return: [1;32mYES[0m 
+Compiler for C++ supports arguments -Waggregate-return: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wformat: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat-nonliteral: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wformat-nonliteral: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat-security: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wformat-security: [1;32mYES[0m 
+Compiler for C supports arguments -Wimplicit-fallthrough=3: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wimplicit-fallthrough=3: [1;32mYES[0m 
+Compiler for C supports arguments -Winit-self: [1;32mYES[0m 
+Compiler for C++ supports arguments -Winit-self: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-declarations: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wmissing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-include-dirs: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wmissing-include-dirs: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-multichar: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wno-multichar: [1;32mYES[0m 
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C supports arguments -Wredundant-decls: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wredundant-decls: [1;32mYES[0m 
+Compiler for C supports arguments -Wshift-negative-value: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wshift-negative-value: [1;32mYES[0m 
+Compiler for C supports arguments -Wtype-limits: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wtype-limits: [1;32mYES[0m 
+Compiler for C supports arguments -Wvla: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wvla: [1;32mYES[0m 
+Compiler for C supports arguments -Wwrite-strings: [1;32mYES[0m 
+Compiler for C++ supports arguments -Wwrite-strings: [1;32mYES[0m 
+Compiler for C supports arguments -fno-strict-aliasing: [1;32mYES[0m 
+Compiler for C++ supports arguments -fno-strict-aliasing: [1;32mYES[0m 
+Compiler for C supports arguments -fvisibility=hidden: [1;32mYES[0m 
+Compiler for C++ supports arguments -fvisibility=hidden: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wold-style-definition: [1;32mYES[0m 
+Compiler for C supports arguments -Wnested-externs: [1;32mYES[0m 
+[1mMessage:[0m Disabling GLib cast checks
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+Library [1ma52[0m found: [1;31mNO[0m
+Run-time dependency [1mlibcdio[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Run-time dependency [1mdvdread[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Run-time dependency [1mlibmpeg2[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Has header "[1msidplay/player.h[0m" : [1;31mNO[0m 
+Run-time dependency [1mx264[0m found: [1;32mYES[0m [36m0.165.x[0m
+Run-time dependency [1mgstreamer-plugins-base-1.0[0m found: [1;32mYES[0m [36m1.28.3[0m
+Library [1mm[0m found: [1;32mYES[0m
+Compiler for C supports arguments -Wno-missing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-missing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-old-style-definition: [1;32mYES[0m 
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Program [1mmsgfmt[0m found: [1;32mYES[0m (/usr/bin/msgfmt)
+Program [1mmsginit[0m found: [1;32mYES[0m (/usr/bin/msginit)
+Program [1mmsgmerge[0m found: [1;32mYES[0m (/usr/bin/msgmerge)
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+[1mMessage:[0m Documentation not built as building it while cross building is not supported yet.
+Program [1mscripts/extract-release-date-from-doap-file.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/gst-plugins-ugly-54/build/scripts/extract-release-date-from-doap-file.py)
+[1mMessage:[0m Package release date: 2026-06-12
+Configuring [1mconfig.h[0m using configuration
+Build targets in project: [1m57[0m
+
+gst-plugins-ugly [36m1.28.4[0m
+
+    Plugins               : asf, dvdlpcmdec, dvdsub, realmedia, x264
+    (A)GPL license allowed: true
+
+  [1mSubprojects[0m
+    orc                   : [1;31mNO[0m
+                            Attempted to resolve subproject without subprojects directory present.
+
+  [1mUser defined options[0m
+    Cross files           : lib32
+    gpl                   : enabled
+    libdir                : /usr/lib32
+    prefix                : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/gst-plugins-ugly-54/build/build
+ninja: Entering directory `/var/tmp/hokuto/gst-plugins-ugly-54/build/build'
+[0/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstasfdemux.c.o[K[0/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstasf.c.o[K[0/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstasfelement.c.o[K[0/72] Compiling C object gst/asfdemux/libgstasf.so.p/asfheaders.c.o[K[0/72] Compiling C object gst/asfdemux/libgstasf.so.p/asfpacket.c.o[K[0/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstrtpasfdepay.c.o[K[0/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstrtspwms.c.o[K[0/72] Compiling C object gst/dvdlpcmdec/libgstdvdlpcmdec.so.p/gstdvdlpcmdec.c.o[K[0/72] Compiling C object gst/dvdsub/libgstdvdsub.so.p/gstdvdsubdec.c.o[K[0/72] Compiling C object gst/dvdsub/libgstdvdsub.so.p/gstdvdsubparse.c.o[K[1/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstasf.c.o[K[1/72] Compiling C object gst/realmedia/libgstrealmedia.so.p/rademux.c.o[K[2/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstasfelement.c.o[K[2/72] Compiling C object gst/realmedia/libgstrealmedia.so.p/rmdemux.c.o[K[3/72] Compiling C object gst/asfdemux/libgstasf.so.p/asfpacket.c.o[K[3/72] Compiling C object gst/realmedia/libgstrealmedia.so.p/rmutils.c.o[K[4/72] Compiling C object gst/asfdemux/libgstasf.so.p/asfheaders.c.o[K[4/72] Compiling C object gst/realmedia/libgstrealmedia.so.p/realmedia.c.o[K[5/72] Compiling C object gst/dvdlpcmdec/libgstdvdlpcmdec.so.p/gstdvdlpcmdec.c.o[K[5/72] Compiling C object ext/x264/libgstx264.so.p/gstx264enc.c.o[K[6/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstrtpasfdepay.c.o[K[6/72] Compiling C object ext/x264/libgstx264.so.p/gstencoderbitrateprofilemanager.c.o[K[7/72] Compiling C object gst/dvdsub/libgstdvdsub.so.p/gstdvdsubparse.c.o[K[7/72] Compiling C object tests/check/elements_x264enc.p/elements_x264enc.c.o[K[8/72] Compiling C object gst/dvdsub/libgstdvdsub.so.p/gstdvdsubdec.c.o[K[8/72] Compiling C object tests/check/generic_states.p/generic_states.c.o[K[9/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstrtspwms.c.o[K[9/72] Linking target gst/dvdlpcmdec/libgstdvdlpcmdec.so[K[10/72] Compiling C object gst/realmedia/libgstrealmedia.so.p/rmutils.c.o[K[10/72] Linking target gst/dvdsub/libgstdvdsub.so[K[11/72] Compiling C object ext/x264/libgstx264.so.p/gstencoderbitrateprofilemanager.c.o[K[11/72] Building translation po/af/LC_MESSAGES/gst-plugins-ugly-1.0-af.mo[K[12/72] Compiling C object gst/realmedia/libgstrealmedia.so.p/realmedia.c.o[K[12/72] Building translation po/ar/LC_MESSAGES/gst-plugins-ugly-1.0-ar.mo[K[13/72] Building translation po/af/LC_MESSAGES/gst-plugins-ugly-1.0-af.mo[K[13/72] Building translation po/ast/LC_MESSAGES/gst-plugins-ugly-1.0-ast.mo[K[14/72] Building translation po/ar/LC_MESSAGES/gst-plugins-ugly-1.0-ar.mo[K[14/72] Building translation po/az/LC_MESSAGES/gst-plugins-ugly-1.0-az.mo[K[15/72] Building translation po/ast/LC_MESSAGES/gst-plugins-ugly-1.0-ast.mo[K[15/72] Building translation po/bg/LC_MESSAGES/gst-plugins-ugly-1.0-bg.mo[K[16/72] Building translation po/az/LC_MESSAGES/gst-plugins-ugly-1.0-az.mo[K[16/72] Building translation po/ca/LC_MESSAGES/gst-plugins-ugly-1.0-ca.mo[K[17/72] Building translation po/bg/LC_MESSAGES/gst-plugins-ugly-1.0-bg.mo[K[17/72] Building translation po/cs/LC_MESSAGES/gst-plugins-ugly-1.0-cs.mo[K[18/72] Compiling C object tests/check/generic_states.p/generic_states.c.o[K[18/72] Linking target tests/check/generic_states[K[19/72] Building translation po/ca/LC_MESSAGES/gst-plugins-ugly-1.0-ca.mo[K[19/72] Building translation po/da/LC_MESSAGES/gst-plugins-ugly-1.0-da.mo[K[20/72] Building translation po/cs/LC_MESSAGES/gst-plugins-ugly-1.0-cs.mo[K[20/72] Building translation po/de/LC_MESSAGES/gst-plugins-ugly-1.0-de.mo[K[21/72] Building translation po/de/LC_MESSAGES/gst-plugins-ugly-1.0-de.mo[K[21/72] Building translation po/el/LC_MESSAGES/gst-plugins-ugly-1.0-el.mo[K[22/72] Building translation po/da/LC_MESSAGES/gst-plugins-ugly-1.0-da.mo[K[22/72] Building translation po/en_GB/LC_MESSAGES/gst-plugins-ugly-1.0-en_GB.mo[K[23/72] Compiling C object gst/realmedia/libgstrealmedia.so.p/rmdemux.c.o[K[23/72] Building translation po/eo/LC_MESSAGES/gst-plugins-ugly-1.0-eo.mo[K[24/72] Compiling C object gst/realmedia/libgstrealmedia.so.p/rademux.c.o[K[24/72] Linking target gst/realmedia/libgstrealmedia.so[K[25/72] Building translation po/el/LC_MESSAGES/gst-plugins-ugly-1.0-el.mo[K[25/72] Building translation po/es/LC_MESSAGES/gst-plugins-ugly-1.0-es.mo[K[26/72] Building translation po/en_GB/LC_MESSAGES/gst-plugins-ugly-1.0-en_GB.mo[K[26/72] Building translation po/eu/LC_MESSAGES/gst-plugins-ugly-1.0-eu.mo[K[27/72] Building translation po/eo/LC_MESSAGES/gst-plugins-ugly-1.0-eo.mo[K[27/72] Building translation po/fi/LC_MESSAGES/gst-plugins-ugly-1.0-fi.mo[K[28/72] Building translation po/es/LC_MESSAGES/gst-plugins-ugly-1.0-es.mo[K[28/72] Building translation po/fr/LC_MESSAGES/gst-plugins-ugly-1.0-fr.mo[K[29/72] Building translation po/eu/LC_MESSAGES/gst-plugins-ugly-1.0-eu.mo[K[29/72] Building translation po/fur/LC_MESSAGES/gst-plugins-ugly-1.0-fur.mo[K[30/72] Building translation po/fi/LC_MESSAGES/gst-plugins-ugly-1.0-fi.mo[K[30/72] Building translation po/gl/LC_MESSAGES/gst-plugins-ugly-1.0-gl.mo[K[31/72] Building translation po/fr/LC_MESSAGES/gst-plugins-ugly-1.0-fr.mo[K[31/72] Building translation po/hr/LC_MESSAGES/gst-plugins-ugly-1.0-hr.mo[K[32/72] Building translation po/fur/LC_MESSAGES/gst-plugins-ugly-1.0-fur.mo[K[32/72] Building translation po/hu/LC_MESSAGES/gst-plugins-ugly-1.0-hu.mo[K[33/72] Building translation po/gl/LC_MESSAGES/gst-plugins-ugly-1.0-gl.mo[K[33/72] Building translation po/id/LC_MESSAGES/gst-plugins-ugly-1.0-id.mo[K[34/72] Building translation po/hr/LC_MESSAGES/gst-plugins-ugly-1.0-hr.mo[K[34/72] Building translation po/it/LC_MESSAGES/gst-plugins-ugly-1.0-it.mo[K[35/72] Compiling C object tests/check/elements_x264enc.p/elements_x264enc.c.o[K[35/72] Linking target tests/check/elements_x264enc[K[36/72] Building translation po/id/LC_MESSAGES/gst-plugins-ugly-1.0-id.mo[K[36/72] Building translation po/ja/LC_MESSAGES/gst-plugins-ugly-1.0-ja.mo[K[37/72] Building translation po/hu/LC_MESSAGES/gst-plugins-ugly-1.0-hu.mo[K[37/72] Building translation po/ka/LC_MESSAGES/gst-plugins-ugly-1.0-ka.mo[K[38/72] Building translation po/it/LC_MESSAGES/gst-plugins-ugly-1.0-it.mo[K[38/72] Building translation po/kk/LC_MESSAGES/gst-plugins-ugly-1.0-kk.mo[K[39/72] Building translation po/ja/LC_MESSAGES/gst-plugins-ugly-1.0-ja.mo[K[39/72] Building translation po/lt/LC_MESSAGES/gst-plugins-ugly-1.0-lt.mo[K[40/72] Building translation po/ka/LC_MESSAGES/gst-plugins-ugly-1.0-ka.mo[K[40/72] Building translation po/lv/LC_MESSAGES/gst-plugins-ugly-1.0-lv.mo[K[41/72] Building translation po/kk/LC_MESSAGES/gst-plugins-ugly-1.0-kk.mo[K[41/72] Building translation po/ms/LC_MESSAGES/gst-plugins-ugly-1.0-ms.mo[K[42/72] Building translation po/lv/LC_MESSAGES/gst-plugins-ugly-1.0-lv.mo[K[42/72] Building translation po/mt/LC_MESSAGES/gst-plugins-ugly-1.0-mt.mo[K[43/72] Building translation po/lt/LC_MESSAGES/gst-plugins-ugly-1.0-lt.mo[K[43/72] Building translation po/nb/LC_MESSAGES/gst-plugins-ugly-1.0-nb.mo[K[44/72] Building translation po/mt/LC_MESSAGES/gst-plugins-ugly-1.0-mt.mo[K[44/72] Building translation po/nl/LC_MESSAGES/gst-plugins-ugly-1.0-nl.mo[K[45/72] Building translation po/nb/LC_MESSAGES/gst-plugins-ugly-1.0-nb.mo[K[45/72] Building translation po/or/LC_MESSAGES/gst-plugins-ugly-1.0-or.mo[K[46/72] Building translation po/ms/LC_MESSAGES/gst-plugins-ugly-1.0-ms.mo[K[46/72] Building translation po/pl/LC_MESSAGES/gst-plugins-ugly-1.0-pl.mo[K[47/72] Building translation po/nl/LC_MESSAGES/gst-plugins-ugly-1.0-nl.mo[K[47/72] Building translation po/pt_BR/LC_MESSAGES/gst-plugins-ugly-1.0-pt_BR.mo[K[48/72] Building translation po/or/LC_MESSAGES/gst-plugins-ugly-1.0-or.mo[K[48/72] Building translation po/ro/LC_MESSAGES/gst-plugins-ugly-1.0-ro.mo[K[49/72] Building translation po/pl/LC_MESSAGES/gst-plugins-ugly-1.0-pl.mo[K[49/72] Building translation po/ru/LC_MESSAGES/gst-plugins-ugly-1.0-ru.mo[K[50/72] Building translation po/pt_BR/LC_MESSAGES/gst-plugins-ugly-1.0-pt_BR.mo[K[50/72] Building translation po/sk/LC_MESSAGES/gst-plugins-ugly-1.0-sk.mo[K[51/72] Building translation po/ro/LC_MESSAGES/gst-plugins-ugly-1.0-ro.mo[K[51/72] Building translation po/sl/LC_MESSAGES/gst-plugins-ugly-1.0-sl.mo[K[52/72] Building translation po/ru/LC_MESSAGES/gst-plugins-ugly-1.0-ru.mo[K[52/72] Building translation po/sq/LC_MESSAGES/gst-plugins-ugly-1.0-sq.mo[K[53/72] Compiling C object gst/asfdemux/libgstasf.so.p/gstasfdemux.c.o[K[53/72] Linking target gst/asfdemux/libgstasf.so[K[54/72] Building translation po/sk/LC_MESSAGES/gst-plugins-ugly-1.0-sk.mo[K[54/72] Building translation po/sr/LC_MESSAGES/gst-plugins-ugly-1.0-sr.mo[K[55/72] Building translation po/sq/LC_MESSAGES/gst-plugins-ugly-1.0-sq.mo[K[55/72] Building translation po/sv/LC_MESSAGES/gst-plugins-ugly-1.0-sv.mo[K[56/72] Building translation po/sl/LC_MESSAGES/gst-plugins-ugly-1.0-sl.mo[K[56/72] Building translation po/ta/LC_MESSAGES/gst-plugins-ugly-1.0-ta.mo[K[57/72] Building translation po/sr/LC_MESSAGES/gst-plugins-ugly-1.0-sr.mo[K[57/72] Building translation po/tr/LC_MESSAGES/gst-plugins-ugly-1.0-tr.mo[K[58/72] Building translation po/sv/LC_MESSAGES/gst-plugins-ugly-1.0-sv.mo[K[58/72] Building translation po/uk/LC_MESSAGES/gst-plugins-ugly-1.0-uk.mo[K[59/72] Building translation po/ta/LC_MESSAGES/gst-plugins-ugly-1.0-ta.mo[K[59/72] Building translation po/vi/LC_MESSAGES/gst-plugins-ugly-1.0-vi.mo[K[60/72] Building translation po/tr/LC_MESSAGES/gst-plugins-ugly-1.0-tr.mo[K[60/72] Building translation po/zh_CN/LC_MESSAGES/gst-plugins-ugly-1.0-zh_CN.mo[K[61/72] Building translation po/uk/LC_MESSAGES/gst-plugins-ugly-1.0-uk.mo[K[61/72] Building translation po/zh_TW/LC_MESSAGES/gst-plugins-ugly-1.0-zh_TW.mo[K[62/72] Building translation po/vi/LC_MESSAGES/gst-plugins-ugly-1.0-vi.mo[K[63/72] Building translation po/zh_CN/LC_MESSAGES/gst-plugins-ugly-1.0-zh_CN.mo[K[64/72] Building translation po/zh_TW/LC_MESSAGES/gst-plugins-ugly-1.0-zh_TW.mo[K[65/72] Compiling C object ext/x264/libgstx264.so.p/gstx264enc.c.o[K[65/72] Linking target ext/x264/libgstx264.so[K[66/72] Linking target tests/check/generic_states[K[67/72] Linking target gst/dvdlpcmdec/libgstdvdlpcmdec.so[K[68/72] Linking target tests/check/elements_x264enc[K[69/72] Linking target gst/dvdsub/libgstdvdsub.so[K[70/72] Linking target gst/realmedia/libgstrealmedia.so[K[71/72] Linking target ext/x264/libgstx264.so[K[72/72] Linking target gst/asfdemux/libgstasf.so[K
+ninja: Entering directory `/var/tmp/hokuto/gst-plugins-ugly-54/build/build'
+ninja: no work to do.
+Installing gst/asfdemux/libgstasf.so to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/lib32/gstreamer-1.0
+Installing gst/dvdlpcmdec/libgstdvdlpcmdec.so to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/lib32/gstreamer-1.0
+Installing gst/dvdsub/libgstdvdsub.so to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/lib32/gstreamer-1.0
+Installing gst/realmedia/libgstrealmedia.so to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/lib32/gstreamer-1.0
+Installing ext/x264/libgstx264.so to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/lib32/gstreamer-1.0
+Installing po/af/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/af/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/ar/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/ast/LC_MESSAGES
+Installing po/az/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/az/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/bg/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/ca/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/es/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/eu/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/fur/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/gl/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/kk/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/lv/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/ms/LC_MESSAGES
+Installing po/mt/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/mt/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/nl/LC_MESSAGES
+Installing po/or/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/or/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/sr/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/ta/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/vi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/gst-plugins-ugly-1.0.mo to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/locale/zh_TW/LC_MESSAGES
+Installing /var/tmp/hokuto/gst-plugins-ugly-54/build/ext/x264/GstX264Enc.prs to /var/tmp/hokuto/gst-plugins-ugly-54/build/DESTDIR/usr/share/gstreamer-1.0/presets
+'DESTDIR/usr/lib32/gstreamer-1.0' -> '/var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib32/gstreamer-1.0'
+'DESTDIR/usr/lib32/gstreamer-1.0/libgstasf.so' -> '/var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib32/gstreamer-1.0/libgstasf.so'
+'DESTDIR/usr/lib32/gstreamer-1.0/libgstdvdlpcmdec.so' -> '/var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib32/gstreamer-1.0/libgstdvdlpcmdec.so'
+'DESTDIR/usr/lib32/gstreamer-1.0/libgstdvdsub.so' -> '/var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib32/gstreamer-1.0/libgstdvdsub.so'
+'DESTDIR/usr/lib32/gstreamer-1.0/libgstrealmedia.so' -> '/var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib32/gstreamer-1.0/libgstrealmedia.so'
+'DESTDIR/usr/lib32/gstreamer-1.0/libgstx264.so' -> '/var/tmp/hokuto/gst-plugins-ugly-54/output/usr/lib32/gstreamer-1.0/libgstx264.so'
+
+Script done on 2026-06-13 01:22:40+07:00 [COMMAND_EXIT_CODE="0"]
