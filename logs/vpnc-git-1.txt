@@ -1,0 +1,41 @@
+Script started on 2026-06-16 11:05:44+07:00 [COMMAND="cd /var/tmp/hokuto/vpnc-37/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/vpnc-37/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' CMAKE_BUILD_PARALLEL_LEVEL='20' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/vpnc-37/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/vpnc-37/build' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j20' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/vpnc-37/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/vpnc-37/build/.cache' /repo/sauzeros/extra/vpnc/build /var/tmp/hokuto/vpnc-37/output git vpnc" <not executed on terminal>]
+mkdir: created directory '/var/tmp/hokuto/vpnc-37/output/usr'
+mkdir: created directory '/var/tmp/hokuto/vpnc-37/output/usr/lib'
+mkdir: created directory '/var/tmp/hokuto/vpnc-37/output/usr/lib/systemd'
+mkdir: created directory '/var/tmp/hokuto/vpnc-37/output/usr/lib/systemd/system'
+mkdir: created directory '/var/tmp/hokuto/vpnc-37/output/etc'
+mkdir: created directory '/var/tmp/hokuto/vpnc-37/output/etc/vpnc/'
+cd src && LC_ALL=C perl -w ./enum2debug.pl isakmp.h >vpnc-debug.c 2>vpnc-debug.h
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/sysdep.o src/sysdep.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/vpnc-debug.o src/vpnc-debug.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/isakmp-pkt.o src/isakmp-pkt.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/tunip.o src/tunip.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/config.o src/config.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/dh.o src/dh.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/math_group.o src/math_group.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/supp.o src/supp.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/decrypt-utils.o src/decrypt-utils.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/crypto.o src/crypto.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/crypto-gnutls.o src/crypto-gnutls.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/vpnc.o src/vpnc.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/cisco-decrypt.o src/cisco-decrypt.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -W -Wall -Wmissing-declarations -Wwrite-strings  -I/usr/include/p11-kit-1 -DCRYPTO_GNUTLS -DVERSION=\"0.5.3\" -DSCRIPT_PATH=\"/etc/vpnc/vpnc-script\"  -c -o src/test-crypto.o src/test-crypto.c
+[01m[Ksrc/vpnc.c:[m[K In function ‘[01m[Kinit_netaddr[m[K’:
+[01m[Ksrc/vpnc.c:308:16:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  308 |         if ((p [01;35m[K=[m[K strchr(string, '/')) != NULL) {
+      |                [01;35m[K^[m[K
+cc -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o /var/tmp/hokuto/vpnc-37/build/bin/cisco-decrypt src/cisco-decrypt.o src/decrypt-utils.o -lgcrypt -lgnutls
+cc -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o /var/tmp/hokuto/vpnc-37/build/bin/test-crypto src/sysdep.o src/test-crypto.o src/crypto.o src/crypto-gnutls.o -lgcrypt -lgnutls
+cc -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o /var/tmp/hokuto/vpnc-37/build/bin/vpnc src/sysdep.o src/vpnc-debug.o src/isakmp-pkt.o src/tunip.o src/config.o src/dh.o src/math_group.o src/supp.o src/decrypt-utils.o src/crypto.o src/crypto-gnutls.o src/vpnc.o -lgcrypt -lgnutls
+./src/makeman.pl /var/tmp/hokuto/vpnc-37/build/bin/vpnc
+install -d /var/tmp/hokuto/vpnc-37/output/etc/vpnc /var/tmp/hokuto/vpnc-37/output/usr/bin /var/tmp/hokuto/vpnc-37/output/usr/bin /var/tmp/hokuto/vpnc-37/output/usr/share/man/man1 /var/tmp/hokuto/vpnc-37/output/usr/share/man/man8 /var/tmp/hokuto/vpnc-37/output/usr/lib/systemd/system /var/tmp/hokuto/vpnc-37/output/usr/share/licenses/vpnc
+install -m600 src/vpnc.conf /var/tmp/hokuto/vpnc-37/output/etc/vpnc/default.conf
+install -m755 src/vpnc-disconnect /var/tmp/hokuto/vpnc-37/output/usr/bin
+install -m755 src/pcf2vpnc /var/tmp/hokuto/vpnc-37/output/usr/bin
+install -m644 src/vpnc.8 /var/tmp/hokuto/vpnc-37/output/usr/share/man/man8
+install -m644 src/pcf2vpnc.1 /var/tmp/hokuto/vpnc-37/output/usr/share/man/man1
+install -m644 src/cisco-decrypt.1 /var/tmp/hokuto/vpnc-37/output/usr/share/man/man1
+install -m644 src/vpnc@.service -t /var/tmp/hokuto/vpnc-37/output/usr/lib/systemd/system
+install -m644 LICENSE /var/tmp/hokuto/vpnc-37/output/usr/share/licenses/vpnc
+
+Script done on 2026-06-16 11:05:47+07:00 [COMMAND_EXIT_CODE="0"]
