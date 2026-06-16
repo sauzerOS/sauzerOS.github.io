@@ -1,0 +1,409 @@
+Script started on 2026-06-16 11:05:57+07:00 [COMMAND="cd /var/tmp/hokuto/openconnect-74/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/openconnect-74/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' CMAKE_BUILD_PARALLEL_LEVEL='20' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/openconnect-74/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/openconnect-74/build' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j20' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/openconnect-74/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/openconnect-74/build/.cache' /repo/sauzeros/extra/openconnect/build /var/tmp/hokuto/openconnect-74/output 9.20 openconnect" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+configure: Applying feature macros for GNU build
+checking for xdg-open... checking for xdg-open... /usr/bin/xdg-open
+checking for vpnc-script in standard locations... /etc/vpnc/vpnc-script
+checking for fdevname_r... no
+checking for statfs... yes
+checking for getline... yes
+checking for strcasestr... yes
+checking for strndup... yes
+checking for strchrnul... yes
+checking for asprintf... yes
+checking for vasprintf... yes
+checking for __builtin_clz... yes
+checking for supported compiler flags...  -Wall -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wno-unused-parameter -Werror=pointer-to-int-cast -Werror-implicit-function-declaration -Wformat-nonliteral -Wformat-security -Winit-self -Wmissing-declarations -Wmissing-include-dirs -Wnested-externs -Wparentheses -Wpointer-arith -Wunused-function -Wwrite-strings
+checking For memset_s... no
+checking for explicit_memset... no
+checking for explicit_bzero... yes
+checking For localtime_r... yes
+checking for socket... yes
+checking for inet_aton... yes
+checking for IPV6_PATHMTU socket option... yes
+checking for __android_log_vprint... no
+checking for __android_log_vprint in -llog... no
+checking for nl_langinfo... yes
+checking for posix_spawn... yes
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for msgfmt... /usr/bin/msgfmt
+checking for functional NLS support... yes
+checking for gnutls... yes
+checking for known-broken versions of GnuTLS... no
+checking for gnutls_system_key_add_x509... yes
+checking for gnutls_pkcs11_add_provider... yes
+checking for p11-kit-1... yes
+checking for gnutls_hkdf_expand... yes
+checking for Trousers tss library... no
+checking for hogweed... yes
+checking For hogweed built-in mini-gmp... yes
+checking for libtasn1... yes
+checking for tss2-esys tss2-mu tss2-tctildr... no
+checking for TSS_Create in -ltss... no
+checking for TSS_Create in -libmtss... no
+checking for swtpm... no
+checking for tpm2tss-genkey... no
+checking for create_tpm2_key... no
+checking for softhsm2-util... no
+checking for liblz4... yes
+checking for LZ4_compress_default()... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking linker version script flag... --version-script
+checking if version scripts can use complex wildcards... yes
+checking for libxml-2.0... yes
+checking for json-parser... no
+checking for library containing pow... -lm
+checking for zlib... yes
+checking for libproxy-1.0... yes
+checking for stoken... no
+checking for libpcsclite... yes
+checking for epoll_create1... yes
+checking for libpskc >= 2.2.0... no
+checking for krb5-config... /usr/bin/krb5-config
+checking whether /usr/bin/krb5-config supports gssapi... yes
+checking for gssapi/gssapi.h... yes
+checking GSSAPI compilation with "-lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err"... yes
+checking for if_tun.h... no
+checking for linux/if_tun.h... yes
+checking for net/if_utun.h... no
+checking for vhost-net support... yes
+checking for alloca.h... yes
+checking for endian.h... yes
+checking for python3... /usr/bin/python3
+checking if groff can create UTF-8 XHTML... no. Not building HTML pages
+checking for uid_wrapper, socket_wrapper... no
+checking for Python 3.6+ with Flask module... not found
+checking for Python 3.7+ or 3.6 with dataclasses backport... found
+checking for nuttcp... no
+checking whether to enable broken in asan tests... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating openconnect.pc
+config.status: creating po/Makefile
+config.status: creating www/Makefile
+config.status: creating libopenconnect.map
+config.status: creating openconnect.8
+config.status: creating www/styles/Makefile
+config.status: creating www/inc/Makefile
+config.status: creating www/images/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/softhsm2.conf
+config.status: creating tests/configs/test-user-cert.config
+config.status: creating tests/configs/test-user-pass.config
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+BUILD OPTIONS:
+  SSL library:            GnuTLS
+  PKCS#11 support:        GnuTLS
+  TSS2 library:           none
+  DTLS support:           yes
+  ESP support:            yes
+  HPKE support:           yes
+  libproxy support:       yes
+  RSA SecurID support:    no
+  PSKC OATH file support: no
+  GSSAPI support:         yes
+  vhost-net support:      yes
+  Yubikey support:        yes
+  JSON parser:            builtin
+  LZ4 compression:        yes
+  Java bindings:          no
+  Build docs:             no
+  Unit tests:             no
+  Net namespace tests:    no
+  DSA tests:              yes
+  PPP tests:              no
+  Flask tests:            no
+  Insecure debugging:     no
+  External browser:       /usr/bin/xdg-open
+  VPNC script:            /etc/vpnc/vpnc-script
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/openconnect-74/build'
+  CC       libopenconnect_la-version.lo
+  CC       libopenconnect_la-ssl.lo
+  CC       libopenconnect_la-http-auth.lo
+  CC       libopenconnect_la-http.lo
+  CC       libopenconnect_la-auth-common.lo
+  CC       libopenconnect_la-auth-html.lo
+  CC       libopenconnect_la-library.lo
+  CC       libopenconnect_la-textbuf.lo
+  CC       libopenconnect_la-compat.lo
+  CC       libopenconnect_la-lzs.lo
+  CC       libopenconnect_la-mainloop.lo
+  CC       libopenconnect_la-script.lo
+  CC       libopenconnect_la-digest.lo
+  CC       libopenconnect_la-ntlm.lo
+  CC       libopenconnect_la-oncp.lo
+  CC       libopenconnect_la-mtucalc.lo
+  CC       libopenconnect_la-lzo.lo
+  CC       libopenconnect_la-auth-juniper.lo
+  CC       libopenconnect_la-esp-seqno.lo
+  CC       libopenconnect_la-esp.lo
+  CC       libopenconnect_la-gnutls-esp.lo
+  CC       libopenconnect_la-auth.lo
+  CC       libopenconnect_la-cstp.lo
+  CC       libopenconnect_la-hpke.lo
+  CC       libopenconnect_la-multicert.lo
+  CC       libopenconnect_la-dtls.lo
+  CC       libopenconnect_la-gnutls-dtls.lo
+  CC       libopenconnect_la-oath.lo
+  CC       libopenconnect_la-gpst.lo
+  CC       libopenconnect_la-auth-globalprotect.lo
+  CC       libopenconnect_la-pulse.lo
+  CC       libopenconnect_la-oidc.lo
+  CC       libopenconnect_la-ppp.lo
+  CC       libopenconnect_la-nullppp.lo
+  CC       libopenconnect_la-f5.lo
+  CC       libopenconnect_la-fortinet.lo
+  CC       libopenconnect_la-jsondump.lo
+  CC       libopenconnect_la-array.lo
+  CC       libopenconnect_la-vhost.lo
+  CC       libopenconnect_la-yubikey.lo
+  CC       libopenconnect_la-gssapi.lo
+  CC       libopenconnect_la-gnutls_tpm.lo
+  CC       libopenconnect_la-gnutls.lo
+  CC       libopenconnect_la-gnutls_tpm2.lo
+  CC       libopenconnect_la-iconv.lo
+  CC       libopenconnect_la-tun.lo
+  CC       json/libopenconnect_la-json.lo
+  CCLD     libopenconnect.la
+Making all in tests
+make[2]: Entering directory '/var/tmp/hokuto/openconnect-74/build/tests'
+  CC       lzstest.o
+  CC       seqtest.o
+  CC       buftest.o
+  CC       serverhash.o
+  CCLD     seqtest
+  CCLD     serverhash
+  CCLD     lzstest
+  CCLD     buftest
+make[2]: Leaving directory '/var/tmp/hokuto/openconnect-74/build/tests'
+Making all in po
+make[2]: Entering directory '/var/tmp/hokuto/openconnect-74/build/po'
+rm -f  && /usr/bin/msgfmt -o ar.mo ar.po
+rm -f  && /usr/bin/msgfmt -o bs.mo bs.po
+rm -f  && /usr/bin/msgfmt -o ca.mo ca.po
+rm -f  && /usr/bin/msgfmt -o cs.mo cs.po
+rm -f  && /usr/bin/msgfmt -o da.mo da.po
+rm -f  && /usr/bin/msgfmt -o de.mo de.po
+rm -f  && /usr/bin/msgfmt -o el.mo el.po
+rm -f  && /usr/bin/msgfmt -o en_GB.mo en_GB.po
+rm -f  && /usr/bin/msgfmt -o en_US.mo en_US.po
+rm -f  && /usr/bin/msgfmt -o es.mo es.po
+rm -f  && /usr/bin/msgfmt -o eu.mo eu.po
+rm -f  && /usr/bin/msgfmt -o fi.mo fi.po
+rm -f  && /usr/bin/msgfmt -o fr.mo fr.po
+rm -f  && /usr/bin/msgfmt -o gl.mo gl.po
+rm -f  && /usr/bin/msgfmt -o hr.mo hr.po
+rm -f  && /usr/bin/msgfmt -o hu.mo hu.po
+rm -f  && /usr/bin/msgfmt -o id.mo id.po
+rm -f  && /usr/bin/msgfmt -o it.mo it.po
+rm -f  && /usr/bin/msgfmt -o ka.mo ka.po
+rm -f  && /usr/bin/msgfmt -o lt.mo lt.po
+rm -f  && /usr/bin/msgfmt -o nl.mo nl.po
+rm -f  && /usr/bin/msgfmt -o pa.mo pa.po
+rm -f  && /usr/bin/msgfmt -o pl.mo pl.po
+rm -f  && /usr/bin/msgfmt -o pt_BR.mo pt_BR.po
+rm -f  && /usr/bin/msgfmt -o pt.mo pt.po
+rm -f  && /usr/bin/msgfmt -o sk.mo sk.po
+rm -f  && /usr/bin/msgfmt -o sl.mo sl.po
+rm -f  && /usr/bin/msgfmt -o sr@latin.mo sr@latin.po
+rm -f  && /usr/bin/msgfmt -o sr.mo sr.po
+rm -f  && /usr/bin/msgfmt -o sv.mo sv.po
+rm -f  && /usr/bin/msgfmt -o tg.mo tg.po
+rm -f  && /usr/bin/msgfmt -o tr.mo tr.po
+rm -f  && /usr/bin/msgfmt -o ug.mo ug.po
+rm -f  && /usr/bin/msgfmt -o uk.mo uk.po
+rm -f  && /usr/bin/msgfmt -o zh_CN.mo zh_CN.po
+rm -f  && /usr/bin/msgfmt -o zh_TW.mo zh_TW.po
+make[2]: Leaving directory '/var/tmp/hokuto/openconnect-74/build/po'
+make[2]: Entering directory '/var/tmp/hokuto/openconnect-74/build'
+  CC       list_system_keys-list-system-keys.o
+  CC       openconnect-xml.o
+  CC       os-tcp-mtu.o
+  CC       openconnect-main.o
+  CCLD     list-system-keys
+  CCLD     os-tcp-mtu
+  CCLD     openconnect
+make[2]: Leaving directory '/var/tmp/hokuto/openconnect-74/build'
+make[1]: Leaving directory '/var/tmp/hokuto/openconnect-74/build'
+Making install in tests
+make[1]: Entering directory '/var/tmp/hokuto/openconnect-74/build/tests'
+make[2]: Entering directory '/var/tmp/hokuto/openconnect-74/build/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/openconnect-74/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/openconnect-74/build/tests'
+Making install in po
+make[1]: Entering directory '/var/tmp/hokuto/openconnect-74/build/po'
+make[2]: Entering directory '/var/tmp/hokuto/openconnect-74/build/po'
+make[2]: Nothing to be done for 'install-exec-am'.
+make  install-data-hook
+make[3]: Entering directory '/var/tmp/hokuto/openconnect-74/build/po'
+linguas="ar bs ca cs da de el en_GB en_US es eu fi fr gl hr hu id it ka lt nl pa pl pt_BR pt sk sl sr@latin sr sv tg tr ug uk zh_CN zh_TW"; \
+for l in $linguas; do \
+  dir="/var/tmp/hokuto/openconnect-74/output/usr/share/locale/$l/LC_MESSAGES"; \
+  /usr/bin/mkdir -p $dir; \
+  echo Installing $l.mo to $dir/openconnect.mo ; \
+  /usr/bin/install -c -m 644 $l.mo $dir/openconnect.mo; \
+done
+Installing ar.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/ar/LC_MESSAGES/openconnect.mo
+Installing bs.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/bs/LC_MESSAGES/openconnect.mo
+Installing ca.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/ca/LC_MESSAGES/openconnect.mo
+Installing cs.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/cs/LC_MESSAGES/openconnect.mo
+Installing da.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/da/LC_MESSAGES/openconnect.mo
+Installing de.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/de/LC_MESSAGES/openconnect.mo
+Installing el.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/el/LC_MESSAGES/openconnect.mo
+Installing en_GB.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/en_GB/LC_MESSAGES/openconnect.mo
+Installing en_US.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/en_US/LC_MESSAGES/openconnect.mo
+Installing es.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/es/LC_MESSAGES/openconnect.mo
+Installing eu.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/eu/LC_MESSAGES/openconnect.mo
+Installing fi.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/fi/LC_MESSAGES/openconnect.mo
+Installing fr.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/fr/LC_MESSAGES/openconnect.mo
+Installing gl.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/gl/LC_MESSAGES/openconnect.mo
+Installing hr.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/hr/LC_MESSAGES/openconnect.mo
+Installing hu.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/hu/LC_MESSAGES/openconnect.mo
+Installing id.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/id/LC_MESSAGES/openconnect.mo
+Installing it.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/it/LC_MESSAGES/openconnect.mo
+Installing ka.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/ka/LC_MESSAGES/openconnect.mo
+Installing lt.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/lt/LC_MESSAGES/openconnect.mo
+Installing nl.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/nl/LC_MESSAGES/openconnect.mo
+Installing pa.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/pa/LC_MESSAGES/openconnect.mo
+Installing pl.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/pl/LC_MESSAGES/openconnect.mo
+Installing pt_BR.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/pt_BR/LC_MESSAGES/openconnect.mo
+Installing pt.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/pt/LC_MESSAGES/openconnect.mo
+Installing sk.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/sk/LC_MESSAGES/openconnect.mo
+Installing sl.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/sl/LC_MESSAGES/openconnect.mo
+Installing sr@latin.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/sr@latin/LC_MESSAGES/openconnect.mo
+Installing sr.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/sr/LC_MESSAGES/openconnect.mo
+Installing sv.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/sv/LC_MESSAGES/openconnect.mo
+Installing tg.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/tg/LC_MESSAGES/openconnect.mo
+Installing tr.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/tr/LC_MESSAGES/openconnect.mo
+Installing ug.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/ug/LC_MESSAGES/openconnect.mo
+Installing uk.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/uk/LC_MESSAGES/openconnect.mo
+Installing zh_CN.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/zh_CN/LC_MESSAGES/openconnect.mo
+Installing zh_TW.mo to /var/tmp/hokuto/openconnect-74/output/usr/share/locale/zh_TW/LC_MESSAGES/openconnect.mo
+make[3]: Leaving directory '/var/tmp/hokuto/openconnect-74/build/po'
+make[2]: Leaving directory '/var/tmp/hokuto/openconnect-74/build/po'
+make[1]: Leaving directory '/var/tmp/hokuto/openconnect-74/build/po'
+make[1]: Entering directory '/var/tmp/hokuto/openconnect-74/build'
+make[2]: Entering directory '/var/tmp/hokuto/openconnect-74/build'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/openconnect-74/output/usr/libexec/openconnect'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/openconnect-74/output/usr/sbin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/openconnect-74/output/usr/share/bash-completion/completions'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/openconnect-74/output/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/openconnect-74/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 bash/openconnect '/var/tmp/hokuto/openconnect-74/output/usr/share/bash-completion/completions'
+ /usr/bin/install -c trojans/csd-post.sh trojans/csd-wrapper.sh trojans/tncc-wrapper.py trojans/hipreport.sh trojans/hipreport-android.sh trojans/tncc-emulate.py '/var/tmp/hokuto/openconnect-74/output/usr/libexec/openconnect'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/openconnect-74/output/usr/lib'
+ /usr/bin/install -c -m 644 openconnect.h '/var/tmp/hokuto/openconnect-74/output/usr/include'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libopenconnect.la '/var/tmp/hokuto/openconnect-74/output/usr/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/openconnect-74/output/usr/share/man/man8'
+ /usr/bin/install -c -m 644 openconnect.pc '/var/tmp/hokuto/openconnect-74/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 openconnect.8 '/var/tmp/hokuto/openconnect-74/output/usr/share/man/man8'
+libtool: install: /usr/bin/install -c .libs/libopenconnect.so.5.9.0 /var/tmp/hokuto/openconnect-74/output/usr/lib/libopenconnect.so.5.9.0
+libtool: install: (cd /var/tmp/hokuto/openconnect-74/output/usr/lib && { ln -s -f libopenconnect.so.5.9.0 libopenconnect.so.5 || { rm -f libopenconnect.so.5 && ln -s libopenconnect.so.5.9.0 libopenconnect.so.5; }; })
+libtool: install: (cd /var/tmp/hokuto/openconnect-74/output/usr/lib && { ln -s -f libopenconnect.so.5.9.0 libopenconnect.so || { rm -f libopenconnect.so && ln -s libopenconnect.so.5.9.0 libopenconnect.so; }; })
+libtool: install: /usr/bin/install -c .libs/libopenconnect.lai /var/tmp/hokuto/openconnect-74/output/usr/lib/libopenconnect.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+ /usr/bin/mkdir -p '/var/tmp/hokuto/openconnect-74/output/usr/sbin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c openconnect '/var/tmp/hokuto/openconnect-74/output/usr/sbin'
+libtool: [31mwarning[0m: [1m'libopenconnect.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/openconnect /var/tmp/hokuto/openconnect-74/output/usr/sbin/openconnect
+make[2]: Leaving directory '/var/tmp/hokuto/openconnect-74/build'
+make[1]: Leaving directory '/var/tmp/hokuto/openconnect-74/build'
+
+Script done on 2026-06-16 11:06:17+07:00 [COMMAND_EXIT_CODE="0"]
