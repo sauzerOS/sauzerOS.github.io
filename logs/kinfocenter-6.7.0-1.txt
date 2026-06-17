@@ -1,0 +1,1042 @@
+Script started on 2026-06-18 01:00:52+07:00 [COMMAND="cd /var/tmp/hokuto/kinfocenter-88/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/kinfocenter-88/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/kinfocenter-88/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/kinfocenter-88/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/kinfocenter-88/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/kinfocenter-88/build/.cache' /repo/kde/kinfocenter/build /var/tmp/hokuto/kinfocenter-88/output 6.7.0 kinfocenter" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:15 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.27.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.27.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.27.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.27.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.27.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.27.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.27.0")
+-- Found KF6Auth: /usr/lib64/cmake/KF6Auth/KF6AuthConfig.cmake (found version "6.27.0")
+-- Found KF6: success (found suitable version "6.27.0", minimum required is "6.26.0") found components: Config CoreAddons I18n KCMUtils KIO Service Solid Auth
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'libdrm'
+--   Found libdrm, version 2.4.134
+-- Found UDev: /usr/include (found version "260")
+-- Found org.kde.kirigami-QMLModule: TRUE (found version "6.27.0")
+-- Found dmidecode: /usr/bin/dmidecode
+-- Found vulkaninfo: /usr/bin/vulkaninfo
+-- Found lscpu: /usr/bin/lscpu
+-- Could NOT find wayland-info (missing: wayland-info_PATH) 
+-- Found xdpyinfo: /usr/bin/xdpyinfo
+-- Could NOT find eglinfo (missing: eglinfo_PATH) 
+-- Could NOT find glxinfo (missing: glxinfo_PATH) 
+-- Found lspci: /usr/bin/lspci
+-- Could NOT find fwupdmgr (missing: fwupdmgr_PATH) 
+-- Could NOT find aha (missing: aha_PATH) 
+-- Could NOT find clinfo (missing: clinfo_PATH) 
+-- Found lsblk: /usr/bin/lsblk
+-- Found ip: /usr/bin/ip
+-- Could NOT find aha (missing: aha_PATH) 
+[33mCMake Warning at kcms/audio_information/CMakeLists.txt:4 (find_package):
+  By not providing "Findpipewire.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "pipewire",
+  but CMake did not find one.
+
+  Could not find a package configuration file provided by "pipewire" with any
+  of the following names:
+
+    pipewire.cps
+    pipewireConfig.cmake
+    pipewire-config.cmake
+
+  Add the installation prefix of "pipewire" to CMAKE_PREFIX_PATH or set
+  "pipewire_DIR" to a directory containing one of the above files.  If
+  "pipewire" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m
+-- Found di-edid-decode: /usr/bin/di-edid-decode
+-- Found sensors: /usr/bin/sensors
+-- Found USB1: /usr/lib/libusb-1.0.so (found version "1.0.30")
+-- The following RUNTIME packages have been found:
+
+ * vulkaninfo
+ * lscpu
+ * xdpyinfo
+ * lspci
+ * lsblk
+ * ip
+ * dmidecode
+ * di-edid-decode
+ * sensors
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6Core (required version >= 6.9.0)
+ * WrapVulkanHeaders
+ * Qt6Gui (required version >= 6.9.0)
+ * Qt6QmlTools (required version >= 6.11.1)
+ * Qt6Qml (required version >= 6.9.0)
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Qt6WidgetsTools (required version >= 6.11.1)
+ * Qt6Widgets (required version >= 6.9.0)
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6DBusTools (required version >= 6.11.1)
+ * org.kde.kirigami-QMLModule, QML module 'org.kde.kirigami' is a dependency.
+ * PkgConfig
+ * USB1, library that provides generic access to USB devices, <https://libusb.info/>
+   View USB devices in kinfocenter
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6Config (required version >= 6.27.0)
+ * KF6CoreAddons (required version >= 6.27.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6Service (required version >= 6.26.0)
+ * KF6Solid (required version >= 6.26.0)
+ * KF6Auth (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * UDev, API for enumerating and introspecting local devices (part of systemd), <https://www.freedesktop.org/wiki/Software/systemd/>
+ * Qt6
+
+-- The following RUNTIME packages have not been found:
+
+ * wayland-info, <https://gitlab.freedesktop.org/wayland/wayland-utils>
+   Wayland KCM
+ * eglinfo
+ * glxinfo
+ * fwupdmgr
+ * clinfo
+ * aha
+ * pipewire
+
+-- Configuring done (3.0s)
+-- Generating done (0.3s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/kinfocenter-88/build/build
+[  0%] Built target kinfocenter-dmidecode-helper_autogen_timestamp_deps
+[  2%] [1m[34mGenerating org.kde.kinfocenter.dmidecode.policy[0m
+[  2%] [1m[34mGenerating ts...[0m
+[  2%] Built target kinfocenter-opengl-helper_autogen_timestamp_deps
+[  2%] Built target kinfocenter-vulkan-helper_autogen_timestamp_deps
+[  2%] [1m[34mGenerating mo...[0m
+[  2%] Built target kinfocenter_link
+[  2%] [1m[34mPopulating .qmlls.ini file at /var/tmp/hokuto/kinfocenter-88/build/build/.qt/.qmlls.build.ini[0m
+[  2%] Built target kcm_about-distro-kcm-desktop-gen
+[  2%] Built target kcm_usb_autogen_timestamp_deps
+[  2%] Built target tsfiles-5e3d6ee46a3939668fcd5093a45ea6e7
+[  2%] Built target kcm_samba_static_autogen_timestamp_deps
+[  3%] [1m[34mCopying KInfoCenterInternal qml sources into build dir[0m
+[  3%] Built target kcm_energyinfo_autogen_timestamp_deps
+[  3%] [1m[34mCopying KInfoCenterInternal qml resources into build dir[0m
+[  4%] [1m[34mAutomatic MOC for target kinfocenter-dmidecode-helper[0m
+[  4%] [1m[34mactions for org.kde.kinfocenter.dmidecode[0m
+[  4%] Built target kcm_about-distro_autogen_timestamp_deps
+[  4%] [1m[34mAutomatic MOC for target kinfocenter-opengl-helper[0m
+[  4%] [1m[34mAutomatic MOC for target kinfocenter-vulkan-helper[0m
+[  4%] Built target KInfoCenterInternal_copy_qml
+[  4%] Built target org.kde.kinfocenter.dmidecode.policy-customtarget
+[  4%] [1m[34mAutomatic MOC for target kcm_samba_static[0m
+[  4%] Built target KInfoCenterInternal_copy_res
+[  4%] [1m[34mAutomatic MOC for target kcm_usb[0m
+[  4%] Built target generate_qmlls_build_ini_file
+[  4%] [1m[34mAutomatic MOC for target kcm_energyinfo[0m
+[  5%] [1m[34mAutomatic MOC for target kcm_about-distro[0m
+[  5%] Built target KInfoCenterInternal_autogen_timestamp_deps
+[  5%] Built target kinfocenter-opengl-helper_autogen
+[  5%] Built target kinfocenter-vulkan-helper_autogen
+[  6%] [32mBuilding CXX object kcms/about-distro/src/opengl-helper/CMakeFiles/kinfocenter-opengl-helper.dir/kinfocenter-opengl-helper_autogen/mocs_compilation.cpp.o[0m
+[  6%] [32mBuilding CXX object kcms/about-distro/src/opengl-helper/CMakeFiles/kinfocenter-opengl-helper.dir/main.cpp.o[0m
+[  6%] [32mBuilding CXX object kcms/about-distro/src/vulkan-helper/CMakeFiles/kinfocenter-vulkan-helper.dir/kinfocenter-vulkan-helper_autogen/mocs_compilation.cpp.o[0m
+[  6%] [1m[34mAutomatic MOC for target KInfoCenterInternal[0m
+[  6%] [32mBuilding CXX object kcms/about-distro/src/vulkan-helper/CMakeFiles/kinfocenter-vulkan-helper.dir/main.cpp.o[0m
+[  6%] Built target pofiles-5e3d6ee46a3939668fcd5093a45ea6e7
+[  6%] Built target kcm_samba_static_autogen
+[  6%] Built target kinfocenter-dmidecode-helper_autogen
+[  6%] [1m[34mGenerating org.freedesktop.Avahi.Server.cpp, org.freedesktop.Avahi.Server.h[0m
+[  7%] [32mBuilding CXX object kcms/helpers/dmidecode-helper/CMakeFiles/kinfocenter-dmidecode-helper.dir/kinfocenter-dmidecode-helper_autogen/mocs_compilation.cpp.o[0m
+[  7%] [32mBuilding CXX object kcms/helpers/dmidecode-helper/CMakeFiles/kinfocenter-dmidecode-helper.dir/helper.cpp.o[0m
+[  8%] [1m[34mGenerating moc_org.freedesktop.Avahi.Server.cpp[0m
+[  8%] Built target kcm_usb_autogen
+[  8%] [32mBuilding CXX object kcms/usbview/CMakeFiles/kcm_usb.dir/kcm_usb_autogen/mocs_compilation.cpp.o[0m
+[  8%] [32mBuilding CXX object kcms/usbview/CMakeFiles/kcm_usb.dir/usbdb.cpp.o[0m
+[  9%] [32mBuilding CXX object kcms/usbview/CMakeFiles/kcm_usb.dir/kcmusb.cpp.o[0m
+[  9%] [32mBuilding CXX object kcms/samba/CMakeFiles/kcm_samba_static.dir/kcm_samba_static_autogen/mocs_compilation.cpp.o[0m
+[ 10%] [32mBuilding CXX object kcms/samba/CMakeFiles/kcm_samba_static.dir/smbmountmodel.cpp.o[0m
+[ 10%] [32mBuilding CXX object kcms/samba/CMakeFiles/kcm_samba_static.dir/ksambasharemodel.cpp.o[0m
+[ 10%] Built target kcm_energyinfo_autogen
+[ 10%] Built target kcm_about-distro_autogen
+[ 11%] [32mBuilding CXX object kcms/usbview/CMakeFiles/kcm_usb.dir/usbdevices.cpp.o[0m
+[ 11%] [32mBuilding CXX object kcms/samba/CMakeFiles/kcm_samba_static.dir/org.freedesktop.Avahi.Server.cpp.o[0m
+[ 11%] Built target KInfoCenterInternal_autogen
+[ 12%] [1m[34mGenerating qrc_kcm_energyinfo.cpp[0m
+[ 13%] [32mBuilding CXX object kcms/energy/CMakeFiles/kcm_energyinfo.dir/kcm_energyinfo_autogen/mocs_compilation.cpp.o[0m
+[ 13%] [32mBuilding CXX object kcms/energy/CMakeFiles/kcm_energyinfo.dir/batterymodel.cpp.o[0m
+[ 14%] [1m[32mLinking CXX executable ../../../../bin/kinfocenter-vulkan-helper[0m
+[ 15%] [1m[32mLinking CXX executable ../../../../bin/kinfocenter-opengl-helper[0m
+[ 16%] [1m[34mGenerating qrc_kcm_about-distro.cpp[0m
+[ 16%] [1m[32mLinking CXX executable ../../../bin/kinfocenter-dmidecode-helper[0m
+[ 17%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/kcm_about-distro_autogen/mocs_compilation.cpp.o[0m
+[ 17%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/CPUEntry.cpp.o[0m
+[ 17%] [32mBuilding CXX object kcms/energy/CMakeFiles/kcm_energyinfo.dir/kcm.cpp.o[0m
+[ 18%] Built target kinfocenter-vulkan-helper
+[ 18%] [1m[34mRunning AUTOMOC file extraction for target KInfoCenterInternal[0m
+[ 18%] Built target kinfocenter-opengl-helper
+[ 20%] [32mBuilding CXX object kcms/energy/CMakeFiles/kcm_energyinfo.dir/statisticsprovider.cpp.o[0m
+[ 20%] [1m[34mRunning rcc for resource KInfoCenterInternal_raw_qml_0[0m
+[ 21%] [1m[34mRunning rcc for resource qmake_org_kde_kinfocenter_private[0m
+[ 21%] [1m[34mGenerating .rcc/qmlcache/KInfoCenterInternal_qmlcache_loader.cpp[0m
+[ 21%] [1m[34mRunning moc --collect-json for target KInfoCenterInternal[0m
+[ 21%] [1m[34mGenerating meta_types/qt6kinfocenterinternal_metatypes.json[0m
+[ 21%] [1m[34mAutomatic QML type registration for target KInfoCenterInternal[0m
+[ 22%] [1m[34mGenerating .rcc/qmlcache/KInfoCenterInternal_qml/CommandOutputKCM_qml.cpp, .rcc/qmlcache/KInfoCenterInternal_qml/CommandOutputKCM_qml.cpp.aotstats[0m
+[ 22%] [32mBuilding CXX object kcms/energy/CMakeFiles/kcm_energyinfo.dir/qrc_kcm_energyinfo.cpp.o[0m
+[ 23%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/Entry.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/CMakeFiles/KInfoCenterInternal.dir/KInfoCenterInternal_autogen/mocs_compilation.cpp.o[0m
+[ 24%] Built target kinfocenter-dmidecode-helper
+[ 24%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/FancyString.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/CMakeFiles/KInfoCenterInternal.dir/CommandOutputContext.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/CMakeFiles/KInfoCenterInternal.dir/kinfocenterinternal_qmltyperegistrations.cpp.o[0m
+[ 26%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/GPUEntry.cpp.o[0m
+[ 26%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/GPUEntryFactory.cpp.o[0m
+[ 26%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_usb.so[0m
+[ 27%] [1m[32mLinking CXX static library ../../lib/libkcm_samba_static.a[0m
+[ 28%] Built target kcm_samba_static
+[ 28%] [32mBuilding CXX object src/CMakeFiles/KInfoCenterInternal.dir/.qt/rcc/qrc_qmake_org_kde_kinfocenter_private.cpp.o[0m
+[ 28%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/GraphicsPlatformEntry.cpp.o[0m
+[ 29%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/KernelEntry.cpp.o[0m
+[ 29%] Built target kcm_samba_autogen_timestamp_deps
+[ 29%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/main.cpp.o[0m
+[ 30%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_energyinfo.so[0m
+[ 31%] [32mBuilding CXX object src/CMakeFiles/KInfoCenterInternal.dir/.rcc/qmlcache/KInfoCenterInternal_qmlcache_loader.cpp.o[0m
+[ 31%] [1m[34mAutomatic MOC for target kcm_samba[0m
+[ 32%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/MemoryEntry.cpp.o[0m
+[ 32%] Built target kcm_samba_autogen
+[ 32%] [32mBuilding CXX object src/CMakeFiles/KInfoCenterInternal.dir/.rcc/qmlcache/KInfoCenterInternal_qml/CommandOutputKCM_qml.cpp.o[0m
+[ 32%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/OSVersionEntry.cpp.o[0m
+[ 33%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/PlasmaEntry.cpp.o[0m
+[ 33%] [1m[34mGenerating qrc_kcm_samba.cpp[0m
+[ 34%] [1m[34mGenerating org.freedesktop.DBus.Properties.cpp, org.freedesktop.DBus.Properties.h[0m
+[ 34%] [1m[34mGenerating moc_org.freedesktop.DBus.Properties.cpp[0m
+[ 34%] [32mBuilding CXX object kcms/samba/CMakeFiles/kcm_samba.dir/kcm_samba_autogen/mocs_compilation.cpp.o[0m
+[ 35%] [32mBuilding CXX object kcms/samba/CMakeFiles/kcm_samba.dir/main.cpp.o[0m
+[ 35%] Built target kcm_energyinfo
+[ 36%] Built target kcm_usb
+[ 37%] [32mBuilding CXX object src/CMakeFiles/KInfoCenterInternal.dir/.qt/rcc/qrc_KInfoCenterInternal_raw_qml_0.cpp.o[0m
+[ 37%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/ServiceRunner.cpp.o[0m
+[ 38%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/ThirdPartyEntry.cpp.o[0m
+[ 38%] [32mBuilding CXX object kcms/about-distro/src/CMakeFiles/kcm_about-distro.dir/qrc_kcm_about-distro.cpp.o[0m
+[ 38%] [32mBuilding CXX object kcms/samba/CMakeFiles/kcm_samba.dir/org.freedesktop.DBus.Properties.cpp.o[0m
+[ 38%] [32mBuilding CXX object kcms/samba/CMakeFiles/kcm_samba.dir/qrc_kcm_samba.cpp.o[0m
+[ 38%] [1m[32mLinking CXX shared library ../bin/libKInfoCenterInternal.so[0m
+[ 40%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_samba.so[0m
+[ 40%] [1m[32mLinking CXX shared module ../../../bin/plasma/kcms/kcm_about-distro.so[0m
+[ 41%] Built target KInfoCenterInternal
+[ 41%] Built target kcm_wayland_autogen_timestamp_deps
+[ 41%] Built target kcm_xserver_autogen_timestamp_deps
+[ 41%] Built target kcm_kwinsupportinfo_autogen_timestamp_deps
+[ 41%] Built target kcm_cpu_autogen_timestamp_deps
+[ 41%] Built target kcm_vulkan_autogen_timestamp_deps
+[ 41%] Built target kcm_egl_autogen_timestamp_deps
+[ 41%] Built target kcm_interrupts_autogen_timestamp_deps
+[ 41%] Built target kcm_firmware_security_autogen_timestamp_deps
+[ 41%] Built target kcm_pci_autogen_timestamp_deps
+[ 41%] Built target kcm_opencl_autogen_timestamp_deps
+[ 41%] Built target kcm_glx_autogen_timestamp_deps
+[ 41%] Built target kcm_block_devices_autogen_timestamp_deps
+[ 41%] Built target kcm_audio_information_autogen_timestamp_deps
+[ 41%] Built target kcm_network_autogen_timestamp_deps
+[ 41%] Built target kcm_memory_autogen_timestamp_deps
+[ 41%] Built target kcm_edid_autogen_timestamp_deps
+[ 41%] [1m[34mAutomatic MOC for target kcm_cpu[0m
+[ 41%] Built target kcm_sensors_autogen_timestamp_deps
+[ 42%] [1m[34mAutomatic MOC for target kcm_kwinsupportinfo[0m
+[ 42%] Built target KInfoCenterInternalplugin_autogen_timestamp_deps
+[ 43%] [1m[34mAutomatic MOC for target kcm_vulkan[0m
+[ 44%] [1m[34mAutomatic MOC for target kcm_wayland[0m
+[ 44%] [1m[34mAutomatic MOC for target kcm_interrupts[0m
+[ 45%] [1m[34mAutomatic MOC for target kcm_xserver[0m
+[ 45%] [1m[34mAutomatic MOC for target kcm_egl[0m
+[ 45%] [1m[34mAutomatic MOC for target kcm_glx[0m
+[ 45%] Built target kcm_kwinsupportinfo_autogen
+[ 46%] [1m[34mAutomatic MOC for target kcm_pci[0m
+[ 46%] Built target kcm_wayland_autogen
+[ 46%] Built target kcm_vulkan_autogen
+[ 46%] Built target kcm_cpu_autogen
+[ 46%] Built target kcm_interrupts_autogen
+[ 46%] Built target kcm_xserver_autogen
+[ 46%] [1m[34mAutomatic MOC for target kcm_firmware_security[0m
+[ 46%] [1m[34mAutomatic MOC for target kcm_block_devices[0m
+[ 47%] [1m[34mAutomatic MOC for target kcm_opencl[0m
+[ 48%] [1m[34mAutomatic MOC for target kcm_network[0m
+[ 49%] [1m[34mAutomatic MOC for target kcm_audio_information[0m
+[ 49%] Built target kcm_egl_autogen
+[ 50%] [1m[34mAutomatic MOC for target kcm_memory[0m
+[ 50%] Built target kcm_glx_autogen
+[ 50%] [1m[34mAutomatic MOC for target kcm_edid[0m
+[ 50%] Built target kcm_network_autogen
+[ 50%] [1m[34mAutomatic MOC for target kcm_sensors[0m
+[ 50%] Built target kcm_pci_autogen
+[ 50%] Built target kcm_firmware_security_autogen
+[ 52%] [1m[34mGenerating qrc_kcm_vulkan.cpp[0m
+[ 52%] [1m[34mAutomatic MOC for target KInfoCenterInternalplugin[0m
+[ 52%] Built target kcm_block_devices_autogen
+[ 52%] Built target kcm_opencl_autogen
+[ 53%] [1m[34mGenerating qrc_kcm_kwinsupportinfo.cpp[0m
+[ 53%] [1m[34mGenerating qrc_kcm_cpu.cpp[0m
+[ 53%] Built target kcm_audio_information_autogen
+[ 54%] [32mBuilding CXX object kcms/vulkan/CMakeFiles/kcm_vulkan.dir/kcm_vulkan_autogen/mocs_compilation.cpp.o[0m
+[ 54%] [32mBuilding CXX object kcms/vulkan/CMakeFiles/kcm_vulkan.dir/main.cpp.o[0m
+[ 55%] [32mBuilding CXX object kcms/kwinsupportinfo/CMakeFiles/kcm_kwinsupportinfo.dir/kcm_kwinsupportinfo_autogen/mocs_compilation.cpp.o[0m
+[ 55%] [32mBuilding CXX object kcms/cpu/CMakeFiles/kcm_cpu.dir/kcm_cpu_autogen/mocs_compilation.cpp.o[0m
+[ 56%] [32mBuilding CXX object kcms/cpu/CMakeFiles/kcm_cpu.dir/main.cpp.o[0m
+[ 56%] [32mBuilding CXX object kcms/kwinsupportinfo/CMakeFiles/kcm_kwinsupportinfo.dir/main.cpp.o[0m
+[ 56%] [32mBuilding CXX object kcms/cpu/CMakeFiles/kcm_cpu.dir/qrc_kcm_cpu.cpp.o[0m
+[ 57%] [32mBuilding CXX object kcms/vulkan/CMakeFiles/kcm_vulkan.dir/qrc_kcm_vulkan.cpp.o[0m
+[ 57%] [1m[34mGenerating qrc_kcm_wayland.cpp[0m
+[ 57%] Built target kcm_memory_autogen
+[ 58%] [32mBuilding CXX object kcms/wayland/CMakeFiles/kcm_wayland.dir/kcm_wayland_autogen/mocs_compilation.cpp.o[0m
+[ 60%] [1m[34mGenerating qrc_kcm_interrupts.cpp[0m
+[ 60%] [32mBuilding CXX object kcms/wayland/CMakeFiles/kcm_wayland.dir/main.cpp.o[0m
+[ 61%] [32mBuilding CXX object kcms/interrupts/CMakeFiles/kcm_interrupts.dir/kcm_interrupts_autogen/mocs_compilation.cpp.o[0m
+[ 61%] [32mBuilding CXX object kcms/interrupts/CMakeFiles/kcm_interrupts.dir/main.cpp.o[0m
+[ 61%] Built target KInfoCenterInternalplugin_autogen
+[ 62%] [32mBuilding CXX object kcms/interrupts/CMakeFiles/kcm_interrupts.dir/qrc_kcm_interrupts.cpp.o[0m
+[ 63%] [32mBuilding CXX object kcms/wayland/CMakeFiles/kcm_wayland.dir/qrc_kcm_wayland.cpp.o[0m
+[ 63%] Built target kcm_about-distro
+[ 64%] [32mBuilding CXX object kcms/kwinsupportinfo/CMakeFiles/kcm_kwinsupportinfo.dir/qrc_kcm_kwinsupportinfo.cpp.o[0m
+[ 64%] [1m[34mGenerating qrc_kcm_xserver.cpp[0m
+[ 65%] [1m[34mGenerating qrc_kcm_egl.cpp[0m
+[ 66%] [32mBuilding CXX object kcms/xserver/CMakeFiles/kcm_xserver.dir/kcm_xserver_autogen/mocs_compilation.cpp.o[0m
+[ 67%] [32mBuilding CXX object kcms/egl/CMakeFiles/kcm_egl.dir/kcm_egl_autogen/mocs_compilation.cpp.o[0m
+[ 67%] [32mBuilding CXX object kcms/xserver/CMakeFiles/kcm_xserver.dir/main.cpp.o[0m
+[ 67%] [32mBuilding CXX object kcms/egl/CMakeFiles/kcm_egl.dir/main.cpp.o[0m
+[ 68%] Built target kcm_samba
+[ 69%] [1m[34mGenerating qrc_kcm_glx.cpp[0m
+[ 69%] Built target kcm_edid_autogen
+[ 70%] [32mBuilding CXX object kcms/glx/CMakeFiles/kcm_glx.dir/kcm_glx_autogen/mocs_compilation.cpp.o[0m
+[ 71%] [32mBuilding CXX object kcms/xserver/CMakeFiles/kcm_xserver.dir/qrc_kcm_xserver.cpp.o[0m
+[ 71%] Built target kcm_sensors_autogen
+[ 71%] [32mBuilding CXX object kcms/glx/CMakeFiles/kcm_glx.dir/main.cpp.o[0m
+[ 71%] [32mBuilding CXX object kcms/egl/CMakeFiles/kcm_egl.dir/qrc_kcm_egl.cpp.o[0m
+[ 72%] [32mBuilding CXX object kcms/glx/CMakeFiles/kcm_glx.dir/qrc_kcm_glx.cpp.o[0m
+[ 72%] [1m[34mGenerating qrc_kcm_pci.cpp[0m
+[ 73%] [1m[34mGenerating qrc_kcm_firmware_security.cpp[0m
+[ 73%] [32mBuilding CXX object kcms/pci/CMakeFiles/kcm_pci.dir/kcm_pci_autogen/mocs_compilation.cpp.o[0m
+[ 74%] [32mBuilding CXX object kcms/firmware_security/CMakeFiles/kcm_firmware_security.dir/kcm_firmware_security_autogen/mocs_compilation.cpp.o[0m
+[ 75%] [32mBuilding CXX object kcms/pci/CMakeFiles/kcm_pci.dir/main.cpp.o[0m
+[ 75%] [32mBuilding CXX object kcms/firmware_security/CMakeFiles/kcm_firmware_security.dir/main.cpp.o[0m
+[ 75%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_vulkan.so[0m
+[ 75%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_kwinsupportinfo.so[0m
+[ 76%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_cpu.so[0m
+[ 76%] Built target kcm_vulkan
+[ 76%] [32mBuilding CXX object kcms/firmware_security/CMakeFiles/kcm_firmware_security.dir/qrc_kcm_firmware_security.cpp.o[0m
+[ 76%] [32mBuilding CXX object kcms/pci/CMakeFiles/kcm_pci.dir/qrc_kcm_pci.cpp.o[0m
+[ 76%] [1m[34mGenerating qrc_kcm_opencl.cpp[0m
+[ 77%] Built target kcm_cpu
+[ 77%] [1m[34mGenerating qrc_kcm_block_devices.cpp[0m
+[ 77%] [32mBuilding CXX object kcms/opencl/CMakeFiles/kcm_opencl.dir/kcm_opencl_autogen/mocs_compilation.cpp.o[0m
+[ 77%] Built target kcm_kwinsupportinfo
+[ 77%] [1m[34mGenerating qrc_kcm_network.cpp[0m
+[ 77%] [32mBuilding CXX object kcms/opencl/CMakeFiles/kcm_opencl.dir/main.cpp.o[0m
+[ 77%] [32mBuilding CXX object kcms/block_devices/CMakeFiles/kcm_block_devices.dir/kcm_block_devices_autogen/mocs_compilation.cpp.o[0m
+[ 78%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_egl.so[0m
+[ 80%] [32mBuilding CXX object kcms/block_devices/CMakeFiles/kcm_block_devices.dir/main.cpp.o[0m
+[ 80%] [32mBuilding CXX object kcms/network/CMakeFiles/kcm_network.dir/kcm_network_autogen/mocs_compilation.cpp.o[0m
+[ 80%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_xserver.so[0m
+[ 80%] [32mBuilding CXX object kcms/network/CMakeFiles/kcm_network.dir/main.cpp.o[0m
+[ 80%] Built target kcm_egl
+[ 80%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_pci.so[0m
+[ 80%] Built target kcm_xserver
+[ 81%] [32mBuilding CXX object kcms/network/CMakeFiles/kcm_network.dir/qrc_kcm_network.cpp.o[0m
+[ 81%] [32mBuilding CXX object kcms/block_devices/CMakeFiles/kcm_block_devices.dir/qrc_kcm_block_devices.cpp.o[0m
+[ 81%] [1m[34mGenerating qrc_kcm_audio_information.cpp[0m
+[ 81%] [1m[34mGenerating qrc_kcm_memory.cpp[0m
+[ 81%] [32mBuilding CXX object kcms/audio_information/CMakeFiles/kcm_audio_information.dir/kcm_audio_information_autogen/mocs_compilation.cpp.o[0m
+[ 82%] [32mBuilding CXX object kcms/memory/CMakeFiles/kcm_memory.dir/kcm_memory_autogen/mocs_compilation.cpp.o[0m
+[ 83%] [32mBuilding CXX object kcms/audio_information/CMakeFiles/kcm_audio_information.dir/main.cpp.o[0m
+[ 83%] [32mBuilding CXX object kcms/memory/CMakeFiles/kcm_memory.dir/main.cpp.o[0m
+[ 84%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_firmware_security.so[0m
+[ 84%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_interrupts.so[0m
+[ 85%] Built target kcm_pci
+[ 86%] [32mBuilding CXX object kcms/memory/CMakeFiles/kcm_memory.dir/qrc_kcm_memory.cpp.o[0m
+[ 87%] [32mBuilding CXX object kcms/opencl/CMakeFiles/kcm_opencl.dir/qrc_kcm_opencl.cpp.o[0m
+[ 88%] [1m[34mGenerating qrc_kcm_edid.cpp[0m
+[ 88%] [32mBuilding CXX object kcms/edid/CMakeFiles/kcm_edid.dir/kcm_edid_autogen/mocs_compilation.cpp.o[0m
+[ 89%] [32mBuilding CXX object kcms/edid/CMakeFiles/kcm_edid.dir/main.cpp.o[0m
+[ 89%] Built target kcm_interrupts
+[ 89%] [32mBuilding CXX object kcms/audio_information/CMakeFiles/kcm_audio_information.dir/qrc_kcm_audio_information.cpp.o[0m
+[ 90%] [1m[34mGenerating qrc_kcm_sensors.cpp[0m
+[ 91%] [32mBuilding CXX object kcms/sensors/CMakeFiles/kcm_sensors.dir/kcm_sensors_autogen/mocs_compilation.cpp.o[0m
+[ 91%] [32mBuilding CXX object kcms/sensors/CMakeFiles/kcm_sensors.dir/main.cpp.o[0m
+[ 91%] Built target kcm_firmware_security
+[ 91%] [32mBuilding CXX object kcms/sensors/CMakeFiles/kcm_sensors.dir/qrc_kcm_sensors.cpp.o[0m
+[ 91%] [32mBuilding CXX object kcms/edid/CMakeFiles/kcm_edid.dir/qrc_kcm_edid.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/KInfoCenterInternalplugin.dir/KInfoCenterInternalplugin_autogen/mocs_compilation.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/KInfoCenterInternalplugin.dir/KInfoCenterInternalplugin_org_kde_kinfocenter_privatePlugin.cpp.o[0m
+[ 92%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_glx.so[0m
+[ 92%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_wayland.so[0m
+[ 92%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_memory.so[0m
+[ 92%] Built target kcm_glx
+[ 92%] Built target kcm_wayland
+[ 92%] Built target kcm_memory
+[ 92%] [1m[32mLinking CXX shared module ../bin/org/kde/kinfocenter/private/libKInfoCenterInternalplugin.so[0m
+[ 92%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_network.so[0m
+[ 93%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_block_devices.so[0m
+[ 93%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_opencl.so[0m
+[ 93%] Built target KInfoCenterInternalplugin
+[ 94%] Built target kcm_network
+[ 95%] Built target kcm_block_devices
+[ 95%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_audio_information.so[0m
+[ 96%] Built target kcm_opencl
+[ 97%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_edid.so[0m
+[ 98%] Built target kcm_audio_information
+[100%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_sensors.so[0m
+[100%] Built target kcm_edid
+[100%] Built target kcm_sensors
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/kinfocenter/categories/deviceinfocategory.desktop
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/kinfocenter/categories/graphicalinfocategory.desktop
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/kinfocenter/categories/networkinfocategory.desktop
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/kinfocenter/categories/lostfoundcategory.desktop
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/kinfocenter/categories/basicinformation.desktop
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/polkit-1/actions/org.kde.kinfocenter.dmidecode.policy
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/dbus-1/system.d/org.kde.kinfocenter.dmidecode.conf
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/dbus-1/system-services/org.kde.kinfocenter.dmidecode.service
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/libexec/kf6/kauth/kinfocenter-dmidecode-helper
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/libexec/kinfocenter-opengl-helper
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/libexec/kinfocenter-vulkan-helper
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kcm_about-distro.so
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/applications/kcm_about-distro.desktop
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_vulkan.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_vulkan.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_kwinsupportinfo.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_kwinsupportinfo.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_cpu.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_cpu.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_wayland.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_wayland.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_interrupts.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_interrupts.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_xserver.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_xserver.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_egl.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_egl.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_glx.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_glx.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_pci.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_pci.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_firmware_security.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_firmware_security.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/kinfocenter/firmware_security/fwupdmgr.sh
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_opencl.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_opencl.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_block_devices.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_block_devices.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_network.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_network.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/kinfocenter/network/ip.sh
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_audio_information.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_audio_information.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_memory.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_memory.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_edid.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_edid.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/kinfocenter/edid/edid.sh
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_sensors.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_sensors.so" to ""
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_samba.so
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_usb.so
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_energyinfo.so
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/qml/org/kde/kinfocenter/private/libKInfoCenterInternalplugin.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/qml/org/kde/kinfocenter/private/libKInfoCenterInternalplugin.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/qml/org/kde/kinfocenter/private/qmldir
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/qml/org/kde/kinfocenter/private/KInfoCenterInternal.qmltypes
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/qml/org/kde/kinfocenter/private/qml/CommandOutputKCM.qml
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib/qt6/qml/org/kde/kinfocenter/private/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/lib64/libKInfoCenterInternal.so
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/metainfo/org.kde.kinfocenter.appdata.xml
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/applications/org.kde.kinfocenter.desktop
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/bin/kinfocenter
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fr/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fr/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fr/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fr/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fr/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gu
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gu/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gu/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/et/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/et/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/et/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/et/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lt/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lt/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lt/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lt/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lt/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eu/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eu/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eu/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eu/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eu/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/wa
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/wa/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/wa/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_CN/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_CN/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hsb/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hsb/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ru/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ru/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ru/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ru/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ru/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ne
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ne/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ne/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/or
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/or/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/or/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/or/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lv/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lv/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lv/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lv/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/lv/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/en_GB/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/en_GB/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sa/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sa/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sa/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sa/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sa/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ro/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ro/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ro/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ro/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ro/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tr/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tr/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tr/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tr/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tr/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nn/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nn/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nn/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nn/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nn/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hr/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hr/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/az/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/az/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/az/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/az/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ar/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ar/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ar/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ar/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ar/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hi/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hi/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hi/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hi/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hi/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fy
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fy/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fy/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ku
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ku/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ku/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sk/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sk/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sk/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sk/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sk/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uz@cyrillic
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uz@cyrillic/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uk/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uk/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uk/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uk/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uk/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ast/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ast/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ast/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ast/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ast/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/es/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/es/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/es/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/es/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/es/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hu/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hu/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hu/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hu/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hu/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca@valencia/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sl/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sl/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sl/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sl/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sl/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ka/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ka/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ka/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ka/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ka/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mr/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mr/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sq
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sq/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sq/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ga/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ga/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ga/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ga/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ga/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cs/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cs/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cs/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cs/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cs/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eo/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eo/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eo/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eo/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/eo/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/id/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/id/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/id/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/id/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pl/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pl/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pl/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pl/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pl/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mk
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mk/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mk/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nl/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nl/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nl/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nl/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nl/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cy
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cy/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/cy/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bn
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bn/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/kn
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/kn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/kn/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/kn/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/is/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/is/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/is/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/is/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/is/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pa/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pa/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pa/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pa/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pa/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ta/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ta/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ta/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ta/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ta/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ja/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ja/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ja/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ja/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ja/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/xh
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/xh/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/xh/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/xh/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bn_IN
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bn_IN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bn_IN/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bn_IN/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mai
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mai/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/mai/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/vi/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/vi/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/vi/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/vi/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ml/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ml/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ml/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ml/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/el/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/el/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/el/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/el/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/oc
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/oc/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/oc/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/he/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/he/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/he/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/he/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/he/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/da/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/da/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/da/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/da/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/da/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nds/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nds/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/se/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/se/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ia/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ia/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ia/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ia/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ia/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bg/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bg/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bg/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bg/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bg/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ca/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gl/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gl/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gl/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gl/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/gl/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ug/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ug/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ug/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sv/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sv/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sv/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sv/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sv/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fa
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fa/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fa/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uz
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uz/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uz/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/uz/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/si
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/si/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/si/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/si/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hne
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hne/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/hne/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/th/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/th/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nb/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nb/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nb/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nb/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/nb/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/te
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/te/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/te/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/te/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fi/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fi/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fi/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fi/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/fi/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/it/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/it/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/it/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/it/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/it/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/af
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/af/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/af/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/af/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ko/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ko/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ko/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ko/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ko/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bs/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bs/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/bs/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/br
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/br/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/br/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/br/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/km/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/km/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/kk/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/kk/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tg/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tg/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/tg/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ms/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/ms/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/csb
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/csb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/csb/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/csb/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/be/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/be/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@latin/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@latin/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@latin/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/sr@latin/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt_BR/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt_BR/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_TW/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_TW/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_energyinfo.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/de/LC_MESSAGES/kcmusb.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/de/LC_MESSAGES/kcm_about-distro.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/de/LC_MESSAGES/kcm_samba.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/de/LC_MESSAGES/kinfocenter.mo
+-- Installing: /var/tmp/hokuto/kinfocenter-88/output/usr/share/locale/de/LC_MESSAGES/kcm_energyinfo.mo
+
+Script done on 2026-06-18 01:01:15+07:00 [COMMAND_EXIT_CODE="0"]
