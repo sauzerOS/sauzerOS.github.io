@@ -1,0 +1,451 @@
+Script started on 2026-06-18 00:59:00+07:00 [COMMAND="cd /var/tmp/hokuto/kactivitymanagerd-59/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/kactivitymanagerd-59/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/kactivitymanagerd-59/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/kactivitymanagerd-59/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/kactivitymanagerd-59/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/kactivitymanagerd-59/build/.cache' /repo/kde/kactivitymanagerd/build /var/tmp/hokuto/kactivitymanagerd-59/output 6.7.0 kactivitymanagerd" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:37 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found Boost: /usr/lib64/cmake/Boost-1.91.0/BoostConfig.cmake (found suitable version "1.91.0", minimum required is "1.58")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.11.1)
+ * WrapVulkanHeaders
+ * Qt6QmlTools (required version >= 6.11.1)
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Qt6WidgetsTools (required version >= 6.11.1)
+ * Qt6Sql
+
+-- The following REQUIRED packages have been found:
+
+ * Qt6DBus (required version >= 6.9.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * Qt6Core (required version >= 6.9.0)
+ * Qt6Widgets (required version >= 6.9.0)
+ * boost_headers (required version == 1.91.0)
+ * Boost (required version >= 1.58), Boost C++ Libraries, <https://www.boost.org>
+ * ECM (required version >= 0.0.8), Extra CMake Modules., <https://projects.kde.org/projects/kdesupport/extra-cmake-modules>
+ * Qt6
+ * KF6Config (required version >= 6.26.0)
+ * KF6CoreAddons (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6GlobalAccel (required version >= 6.26.0)
+ * KF6XmlGui (required version >= 6.26.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6Crash (required version >= 6.26.0)
+
+-- Configuring done (2.9s)
+-- Generating done (0.1s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/kactivitymanagerd-59/build/build
+[  0%] Built target debug_STATIC_autogen_timestamp_deps
+[  1%] [1m[34mGenerating ts...[0m
+[  2%] [1m[34mGenerating mo...[0m
+[  2%] Built target tsfiles-fee3ccfafec98a71f5a87c2576e130c8
+[  3%] [1m[34mAutomatic MOC for target debug_STATIC[0m
+[  3%] Built target debug_STATIC_autogen
+[  6%] [32mBuilding CXX object src/CMakeFiles/debug_STATIC.dir/DebugApplication.cpp.o[0m
+[  6%] [32mBuilding CXX object src/CMakeFiles/debug_STATIC.dir/DebugActivities.cpp.o[0m
+[  6%] [32mBuilding CXX object src/CMakeFiles/debug_STATIC.dir/DebugResources.cpp.o[0m
+[  7%] [32mBuilding CXX object src/CMakeFiles/debug_STATIC.dir/debug_STATIC_autogen/mocs_compilation.cpp.o[0m
+[  7%] Built target pofiles-fee3ccfafec98a71f5a87c2576e130c8
+[  8%] [1m[32mLinking CXX static library ../lib/libdebug_STATIC.a[0m
+[ 10%] Built target debug_STATIC
+[ 10%] Built target kactivitymanagerd_plugin_autogen_timestamp_deps
+[ 11%] [1m[34mAutomatic MOC for target kactivitymanagerd_plugin[0m
+[ 11%] Built target kactivitymanagerd_plugin_autogen
+[ 13%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd_plugin.dir/Module.cpp.o[0m
+[ 13%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd_plugin.dir/Event.cpp.o[0m
+[ 14%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd_plugin.dir/kactivitymanagerd_plugin_autogen/mocs_compilation.cpp.o[0m
+[ 15%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd_plugin.dir/Plugin.cpp.o[0m
+[ 16%] [1m[32mLinking CXX shared library ../../bin/libkactivitymanagerd_plugin.so[0m
+[ 17%] Built target kactivitymanagerd_plugin
+[ 17%] Built target org.kde.ActivityManager.RecentlyUsedEventSpy_autogen_timestamp_deps
+[ 17%] Built target kactivitymanagerd_autogen_timestamp_deps
+[ 17%] Built target org.kde.ActivityManager.GlobalShortcuts_autogen_timestamp_deps
+[ 17%] Built target org.kde.ActivityManager.ActivityRunner_autogen_timestamp_deps
+[ 17%] Built target org.kde.ActivityManager.LibreOfficeEventSpy_autogen_timestamp_deps
+[ 17%] Built target org.kde.ActivityManager.ActivityTemplates_autogen_timestamp_deps
+[ 17%] Built target org.kde.ActivityManager.ResourceScoring_autogen_timestamp_deps
+[ 17%] Built target org.kde.ActivityManager.RunApplication_autogen_timestamp_deps
+[ 18%] [1m[34mAutomatic MOC for target kactivitymanagerd[0m
+[ 21%] [1m[34mAutomatic MOC for target org.kde.ActivityManager.LibreOfficeEventSpy[0m
+[ 22%] [1m[34mAutomatic MOC for target org.kde.ActivityManager.GlobalShortcuts[0m
+[ 23%] [1m[34mAutomatic MOC for target org.kde.ActivityManager.ActivityTemplates[0m
+[ 23%] [1m[34mAutomatic MOC for target org.kde.ActivityManager.ActivityRunner[0m
+[ 24%] [1m[34mAutomatic MOC for target org.kde.ActivityManager.ResourceScoring[0m
+[ 25%] [1m[34mAutomatic MOC for target org.kde.ActivityManager.RecentlyUsedEventSpy[0m
+[ 26%] [1m[34mAutomatic MOC for target org.kde.ActivityManager.RunApplication[0m
+[ 26%] Built target org.kde.ActivityManager.RunApplication_autogen
+[ 26%] Built target org.kde.ActivityManager.RecentlyUsedEventSpy_autogen
+[ 27%] [32mBuilding CXX object src/service/plugins/runapplication/CMakeFiles/org.kde.ActivityManager.RunApplication.dir/org.kde.ActivityManager.RunApplication_autogen/mocs_compilation.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/service/plugins/runapplication/CMakeFiles/org.kde.ActivityManager.RunApplication.dir/RunApplicationPlugin.cpp.o[0m
+[ 28%] Built target org.kde.ActivityManager.ActivityRunner_autogen
+[ 30%] [32mBuilding CXX object src/service/plugins/recentlyused-eventspy/CMakeFiles/org.kde.ActivityManager.RecentlyUsedEventSpy.dir/RecentlyUsedEventSpy.cpp.o[0m
+[ 31%] [32mBuilding CXX object src/service/plugins/recentlyused-eventspy/CMakeFiles/org.kde.ActivityManager.RecentlyUsedEventSpy.dir/org.kde.ActivityManager.RecentlyUsedEventSpy_autogen/mocs_compilation.cpp.o[0m
+[ 31%] Built target org.kde.ActivityManager.ActivityTemplates_autogen
+[ 32%] [1m[34mGenerating krunner1adaptor.cpp, krunner1adaptor.h[0m
+[ 33%] [32mBuilding CXX object src/service/plugins/recentlyused-eventspy/CMakeFiles/org.kde.ActivityManager.RecentlyUsedEventSpy.dir/DebugPluginRecentlyUsedEventSpy.cpp.o[0m
+[ 34%] [1m[34mGenerating templatesadaptor.cpp, templatesadaptor.h[0m
+[ 35%] [1m[34mGenerating moc_krunner1adaptor.cpp[0m
+[ 35%] Built target org.kde.ActivityManager.LibreOfficeEventSpy_autogen
+[ 36%] [1m[34mGenerating moc_templatesadaptor.cpp[0m
+[ 37%] [32mBuilding CXX object src/service/plugins/libreoffice-spy/CMakeFiles/org.kde.ActivityManager.LibreOfficeEventSpy.dir/org.kde.ActivityManager.LibreOfficeEventSpy_autogen/mocs_compilation.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/service/plugins/krunner/CMakeFiles/org.kde.ActivityManager.ActivityRunner.dir/org.kde.ActivityManager.ActivityRunner_autogen/mocs_compilation.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/service/plugins/libreoffice-spy/CMakeFiles/org.kde.ActivityManager.LibreOfficeEventSpy.dir/LibreOfficeEventSpy.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/service/plugins/activitytemplates/CMakeFiles/org.kde.ActivityManager.ActivityTemplates.dir/org.kde.ActivityManager.ActivityTemplates_autogen/mocs_compilation.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/service/plugins/krunner/CMakeFiles/org.kde.ActivityManager.ActivityRunner.dir/ActivityRunner.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/service/plugins/activitytemplates/CMakeFiles/org.kde.ActivityManager.ActivityTemplates.dir/TemplatesPlugin.cpp.o[0m
+[ 43%] Built target org.kde.ActivityManager.GlobalShortcuts_autogen
+[ 44%] [32mBuilding CXX object src/service/plugins/activitytemplates/CMakeFiles/org.kde.ActivityManager.ActivityTemplates.dir/templatesadaptor.cpp.o[0m
+[ 44%] Built target kactivitymanagerd_autogen
+[ 45%] [32mBuilding CXX object src/service/plugins/libreoffice-spy/CMakeFiles/org.kde.ActivityManager.LibreOfficeEventSpy.dir/DebugLibreOfficeEventSpy.cpp.o[0m
+[ 45%] Built target org.kde.ActivityManager.ResourceScoring_autogen
+[ 46%] [32mBuilding CXX object src/service/plugins/krunner/CMakeFiles/org.kde.ActivityManager.ActivityRunner.dir/krunner1adaptor.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/service/plugins/globalshortcuts/CMakeFiles/org.kde.ActivityManager.GlobalShortcuts.dir/org.kde.ActivityManager.GlobalShortcuts_autogen/mocs_compilation.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/service/plugins/globalshortcuts/CMakeFiles/org.kde.ActivityManager.GlobalShortcuts.dir/GlobalShortcutsPlugin.cpp.o[0m
+[ 50%] [1m[34mGenerating resourcesadaptor.cpp, resourcesadaptor.h[0m
+[ 51%] [1m[34mGenerating activitiesadaptor.cpp, activitiesadaptor.h[0m
+[ 52%] [1m[34mGenerating featuresadaptor.cpp, featuresadaptor.h[0m
+[ 53%] [1m[34mGenerating moc_activitiesadaptor.cpp[0m
+[ 54%] [1m[34mGenerating moc_featuresadaptor.cpp[0m
+[ 55%] [1m[32mLinking CXX shared module ../../../../bin/kactivitymanagerd1/org.kde.ActivityManager.RunApplication.so[0m
+[ 56%] [1m[34mGenerating moc_resourcesadaptor.cpp[0m
+[ 57%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd.dir/kactivitymanagerd_autogen/mocs_compilation.cpp.o[0m
+[ 58%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd.dir/Application.cpp.o[0m
+[ 60%] [1m[34mGenerating resourcescoringadaptor.cpp, resourcescoringadaptor.h[0m
+[ 61%] [1m[34mGenerating resourcelinkingadaptor.cpp, resourcelinkingadaptor.h[0m
+[ 62%] [1m[34mGenerating moc_resourcescoringadaptor.cpp[0m
+[ 63%] [1m[34mGenerating moc_resourcelinkingadaptor.cpp[0m
+[ 64%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/org.kde.ActivityManager.ResourceScoring_autogen/mocs_compilation.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/Database.cpp.o[0m
+[ 66%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd.dir/__/common/dbus/org.kde.ActivityManager.Activities.cpp.o[0m
+[ 67%] [1m[32mLinking CXX shared module ../../../../bin/kactivitymanagerd1/org.kde.ActivityManager.LibreOfficeEventSpy.so[0m
+[ 68%] [1m[32mLinking CXX shared module ../../../../bin/kactivitymanagerd1/org.kde.ActivityManager.ActivityTemplates.so[0m
+[ 70%] Built target org.kde.ActivityManager.RunApplication
+[ 71%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd.dir/Activities.cpp.o[0m
+[ 72%] [1m[32mLinking CXX shared module ../../../../bin/kactivitymanagerd1/org.kde.ActivityManager.RecentlyUsedEventSpy.so[0m
+[ 73%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/StatsPlugin.cpp.o[0m
+[ 74%] [1m[32mLinking CXX shared module ../../../../bin/kactivitymanagerd1/org.kde.ActivityManager.ActivityRunner.so[0m
+[ 75%] Built target org.kde.ActivityManager.LibreOfficeEventSpy
+[ 76%] Built target org.kde.ActivityManager.ActivityTemplates
+[ 77%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd.dir/Resources.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd.dir/Features.cpp.o[0m
+[ 80%] [1m[32mLinking CXX shared module ../../../../bin/kactivitymanagerd1/org.kde.ActivityManager.GlobalShortcuts.so[0m
+[ 81%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd.dir/activitiesadaptor.cpp.o[0m
+[ 82%] Built target org.kde.ActivityManager.RecentlyUsedEventSpy
+[ 83%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/ResourceScoreCache.cpp.o[0m
+[ 84%] Built target org.kde.ActivityManager.ActivityRunner
+[ 85%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd.dir/resourcesadaptor.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/ResourceScoreMaintainer.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/service/CMakeFiles/kactivitymanagerd.dir/featuresadaptor.cpp.o[0m
+[ 88%] Built target org.kde.ActivityManager.GlobalShortcuts
+[ 90%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/ResourceLinking.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/__/__/__/common/database/Database.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/__/__/__/common/database/schema/ResourcesDatabaseSchema.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/__/__/__/utils/qsqlquery_iterator.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/resourcelinkingadaptor.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/service/plugins/sqlite/CMakeFiles/org.kde.ActivityManager.ResourceScoring.dir/resourcescoringadaptor.cpp.o[0m
+[ 96%] [1m[32mLinking CXX executable ../../bin/kactivitymanagerd[0m
+[ 97%] [1m[32mLinking CXX shared module ../../../../bin/kactivitymanagerd1/org.kde.ActivityManager.ResourceScoring.so[0m
+[ 98%] Built target kactivitymanagerd
+[100%] Built target org.kde.ActivityManager.ResourceScoring
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/fr/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/gu
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/gu/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/et/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/lt/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/eu/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/wa
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/wa/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/zh_CN/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ru/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/lv/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/en_GB/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sa/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ro/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/tr/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nn/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/hr/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/az/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ar/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/hi/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sk/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/uk/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ast/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/es/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/hu/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ca@valencia/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sl/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ka/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/mr/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ga/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/cs/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/eo/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/gd
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/gd/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/gd/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/id/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pl/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nl/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/kn
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/kn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/kn/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/is/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pa/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ta/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ja/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/vi/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ml/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/el/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/he/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/da/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nds/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/se/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ia/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/bg/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ca/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/gl/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ug/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sv/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/th/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/nb/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/fi/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/it/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ko/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/bs/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/km/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/kk/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/tg/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/ms/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/sr@latin/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pt/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/pt_BR/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/zh_TW/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/locale/de/LC_MESSAGES/kactivities6.mo
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/dbus-1/services/org.kde.ActivityManager.service
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/systemd/user/plasma-kactivitymanagerd.service
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ResourceScoring.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ResourceScoring.so" to ""
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityTemplates.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityTemplates.so" to ""
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.GlobalShortcuts.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.GlobalShortcuts.so" to ""
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RecentlyUsedEventSpy.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RecentlyUsedEventSpy.so" to ""
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RunApplication.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.RunApplication.so" to ""
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityRunner.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.ActivityRunner.so" to ""
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/krunner/dbusplugins/plasma-runnners-activities.desktop
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.LibreOfficeEventSpy.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib/qt6/plugins/kactivitymanagerd1/org.kde.ActivityManager.LibreOfficeEventSpy.so" to ""
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/libexec/kactivitymanagerd
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/kactivitymanagerd-59/output/usr/libexec/kactivitymanagerd" to ""
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/lib64/libkactivitymanagerd_plugin.so
+-- Installing: /var/tmp/hokuto/kactivitymanagerd-59/output/usr/share/qlogging-categories6/kactivitymanagerd.categories
+
+Script done on 2026-06-18 00:59:21+07:00 [COMMAND_EXIT_CODE="0"]
