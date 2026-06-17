@@ -1,0 +1,67 @@
+Script started on 2026-06-18 01:02:44+07:00 [COMMAND="cd /var/tmp/hokuto/kwallet-pam-75/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/kwallet-pam-75/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/kwallet-pam-75/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/kwallet-pam-75/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/kwallet-pam-75/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/kwallet-pam-75/build/.cache' /repo/kde/kwallet-pam/build /var/tmp/hokuto/kwallet-pam-75/output 6.7.0 kwallet-pam" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:14 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+-- Performing Test PAM_MESSAGE_CONST
+-- Performing Test PAM_MESSAGE_CONST - Success
+-- Found PAM: /usr/lib/libpam.so;/usr/lib/libdl.a
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'libgcrypt'
+--   Found libgcrypt, version 1.12.2
+-- Found socat executable: /usr/bin/socat
+-- KWALLETD_BIN_PATH not set, trying KF6::Wallet
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found KF6Wallet: /usr/lib64/cmake/KF6Wallet/KF6WalletConfig.cmake (found version "6.27.0")
+-- Found KF6: success (found suitable version "6.27.0", minimum required is "6.26.0") found components: Wallet
+-- Looking for explicit_bzero
+-- Looking for explicit_bzero - found
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+    BUILD_TESTING
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/kwallet-pam-75/build/build
+[ 50%] [32mBuilding C object CMakeFiles/pam_kwallet5.dir/pam_kwallet.c.o[0m
+[100%] [1m[32mLinking C shared library pam_kwallet5.so[0m
+[100%] Built target pam_kwallet5
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/kwallet-pam-75/output/usr/lib64/security/pam_kwallet5.so
+-- Installing: /var/tmp/hokuto/kwallet-pam-75/output/usr/libexec/pam_kwallet_init
+-- Installing: /var/tmp/hokuto/kwallet-pam-75/output/etc/xdg/autostart/pam_kwallet_init.desktop
+-- Installing: /var/tmp/hokuto/kwallet-pam-75/output/usr/lib/systemd/user/plasma-kwallet-pam.service
+
+Script done on 2026-06-18 01:02:46+07:00 [COMMAND_EXIT_CODE="0"]
