@@ -1,0 +1,331 @@
+Script started on 2026-06-18 01:18:36+07:00 [COMMAND="cd /var/tmp/hokuto/sddm-kcm-15/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/sddm-kcm-15/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/sddm-kcm-15/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/sddm-kcm-15/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/sddm-kcm-15/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/sddm-kcm-15/build/.cache' /repo/kde/sddm-kcm/build /var/tmp/hokuto/sddm-kcm-15/output 6.7.0 sddm-kcm" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:14 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.27.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.27.0")
+-- Found KF6Auth: /usr/lib64/cmake/KF6Auth/KF6AuthConfig.cmake (found version "6.27.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.27.0")
+-- Found KF6Archive: /usr/lib64/cmake/KF6Archive/KF6ArchiveConfig.cmake (found version "6.27.0")
+-- Found KF6NewStuff: /usr/lib64/cmake/KF6NewStuff/KF6NewStuffConfig.cmake (found version "6.27.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.27.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.27.0")
+-- Found KF6: success (found suitable version "6.27.0", minimum required is "6.26.0") found components: CoreAddons I18n Auth KIO Archive NewStuff KCMUtils Service
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6QuickTools (required version >= 6.11.1)
+ * Qt6Quick (required version >= 6.10.0)
+ * Qt6QuickWidgets (required version >= 6.10.0)
+ * Qt6Core (required version >= 6.9.0)
+ * WrapVulkanHeaders
+ * Qt6Gui (required version >= 6.9.0)
+ * Qt6QmlTools (required version >= 6.11.1)
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Qt6WidgetsTools (required version >= 6.11.1)
+ * Qt6Widgets (required version >= 6.9.0)
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6DBusTools (required version >= 6.11.1)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6 (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6CoreAddons (required version >= 6.27.0)
+ * KF6Auth (required version >= 6.26.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6Archive (required version >= 6.26.0)
+ * KF6NewStuff (required version >= 6.26.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6Service (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+
+-- Configuring done (4.8s)
+-- Generating done (0.1s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/sddm-kcm-15/build/build
+[  3%] [1m[34mGenerating mo...[0m
+[  6%] [1m[34mGenerating org.kde.kcontrol.kcmsddm.policy[0m
+[  6%] Built target kcmsddm_authhelper_autogen_timestamp_deps
+[  6%] Built target sddmthemeinstaller_autogen_timestamp_deps
+[ 10%] [1m[34mGenerating ts...[0m
+[ 10%] Built target kcm_sddm-kcm-desktop-gen
+[ 13%] [1m[34mactions for org.kde.kcontrol.kcmsddm[0m
+[ 16%] [1m[34mAutomatic MOC for target sddmthemeinstaller[0m
+[ 13%] Built target org.kde.kcontrol.kcmsddm.policy-customtarget
+[ 20%] [1m[34mAutomatic MOC for target kcmsddm_authhelper[0m
+[ 23%] [1m[34mGenerating sddmsettings.h, sddmsettings.cpp[0m
+[ 23%] Built target tsfiles-7008dcfb4b9da604440cad0d185f9648
+[ 23%] Built target kcm_sddm_autogen_timestamp_deps
+[ 23%] Built target sddmthemeinstaller_autogen
+[ 26%] [1m[34mAutomatic MOC for target kcm_sddm[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/sddmthemeinstaller.dir/sddmthemeinstaller_autogen/mocs_compilation.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/sddmthemeinstaller.dir/sddmthemeinstaller.cpp.o[0m
+[ 33%] Built target pofiles-7008dcfb4b9da604440cad0d185f9648
+[ 33%] Built target kcmsddm_authhelper_autogen
+[ 36%] [32mBuilding CXX object CMakeFiles/kcmsddm_authhelper.dir/sddmauthhelper.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/kcmsddm_authhelper.dir/kcmsddm_authhelper_autogen/mocs_compilation.cpp.o[0m
+[ 40%] Built target kcm_sddm_autogen
+[ 43%] [1m[34mGenerating qrc_kcm_sddm.cpp[0m
+[ 46%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/kcm_sddm_autogen/mocs_compilation.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/sddmkcm.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/thememetadata.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/themesmodel.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/qrc_kcm_sddm.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/sessionmodel.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/sddmdata.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/usersmodel.cpp.o[0m
+[ 73%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/sddmsettingsbase.cpp.o[0m
+[ 76%] [1m[32mLinking CXX executable bin/sddmthemeinstaller[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/kcm_sddm.dir/sddmsettings.cpp.o[0m
+[01m[K/var/tmp/hokuto/sddm-kcm-15/build/sddmauthhelper.cpp:[m[K In function ‘[01m[KQSharedPointer<KConfig>[01;32m[K openConfig[m[K(const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/sddm-kcm-15/build/sddmauthhelper.cpp:46:18:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kvirtual bool QFile::[01;32m[Kopen[m[K(QIODeviceBase::OpenMode)[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-result-Wunused-result]8;;[m[K]
+   46 |         [01;35m[Kfile.open(QIODevice::WriteOnly)[m[K;
+      |         [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qdir.h:11[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QDir:1[m[K,
+                 from [01m[K/var/tmp/hokuto/sddm-kcm-15/build/sddmauthhelper.cpp:16[m[K:
+[01m[K/usr/include/qt6/QtCore/qfile.h:264:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  264 |     QFILE_MAYBE_NODISCARD bool [01;36m[Kopen[m[K(OpenMode flags) override;
+      |                                [01;36m[K^~~~[m[K
+[ 83%] Built target sddmthemeinstaller
+[ 86%] [1m[32mLinking CXX executable bin/kcmsddm_authhelper[0m
+[ 90%] Built target kcmsddm_authhelper
+[ 93%] [1m[32mLinking CXX shared module ../bin/plasma/kcms/systemsettings/kcm_sddm.so[0m
+[100%] Built target kcm_sddm
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/polkit-1/actions/org.kde.kcontrol.kcmsddm.policy
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/dbus-1/system.d/org.kde.kcontrol.kcmsddm.conf
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/dbus-1/system-services/org.kde.kcontrol.kcmsddm.service
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/libexec/kf6/kauth/kcmsddm_authhelper
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/bin/sddmthemeinstaller
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_sddm.so
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/applications/kcm_sddm.desktop
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/knsrcfiles/sddmtheme.knsrc
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/fr/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/et/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/lt/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/eu/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ru/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/lv/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sa/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ro/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/tr/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/nn/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/az/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ar/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/hi/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sk/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/uk/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ast/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/es/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/hu/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sl/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ka/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ga/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/cs/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/eo/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/id/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pl/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/nl/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/is/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pa/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ta/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ja/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ml/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/el/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/he/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/da/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ia/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/bg/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ca/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/gl/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sv/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/nb/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/fi/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/it/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/ko/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/bs/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/sr@latin/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pt/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_sddm.mo
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/sddm-kcm-15/output/usr/share/locale/de/LC_MESSAGES/kcm_sddm.mo
+
+Script done on 2026-06-18 01:18:57+07:00 [COMMAND_EXIT_CODE="0"]
