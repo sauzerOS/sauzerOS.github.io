@@ -1,4 +1,4 @@
-Script started on 2026-06-18 01:06:35+07:00 [COMMAND="cd /var/tmp/hokuto/cifs-utils-57/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/cifs-utils-57/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' CMAKE_BUILD_PARALLEL_LEVEL='20' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/cifs-utils-57/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/cifs-utils-57/build' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j20' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/cifs-utils-57/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/cifs-utils-57/build/.cache' /repo/sauzeros/extra/cifs-utils/build /var/tmp/hokuto/cifs-utils-57/output 7.6 cifs-utils" <not executed on terminal>]
+Script started on 2026-06-18 01:11:25+07:00 [COMMAND="cd /var/tmp/hokuto/cifs-utils-42/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/cifs-utils-42/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' CMAKE_BUILD_PARALLEL_LEVEL='20' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=20' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/cifs-utils-42/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/cifs-utils-42/build' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j20' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/cifs-utils-42/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/cifs-utils-42/build/.cache' /repo/sauzeros/extra/cifs-utils/build /var/tmp/hokuto/cifs-utils-42/output 7.6 cifs-utils" <not executed on terminal>]
 autoreconf: export WARNINGS=
 autoreconf: Entering directory '.'
 autoreconf: configure.ac: no obvious need to run autopoint
@@ -131,7 +131,174 @@ checking for syslog.h... yes
 checking for unistd.h... (cached) yes
 checking for sys/fsuid.h... yes
 checking for setfsuid... yes
-checking for talloc.h... no
-configure: error: talloc.h not found, consider installing libtalloc-devel.
+checking for talloc.h... yes
+checking for talloc_init in -ltalloc... yes
+checking for krb5.h... yes
+checking for krb5/krb5.h... yes
+checking for keyvalue in krb5_keyblock... no
+checking for keyutils.h... yes
+checking for krb5_init_context in -lkrb5... yes
+checking for library containing gss_init_sec_context... -lgssapi_krb5
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for wbclient... yes
+checking for wbcSidsToUnixIds in -lwbclient... yes
+checking for sys/xattr.h... yes
+checking whether WBC_ID_TYPE_BOTH enum value is defined... yes
+checking for keyutils.h... (cached) yes
+checking for security/pam_appl.h... yes
+checking for krb5_auth_con_getsendsubkey... yes
+checking for krb5_principal_get_realm... no
+checking for krb5_free_unparsed_name... yes
+checking for krb5_auth_con_setaddrs... yes
+checking for krb5_auth_con_set_req_cksumtype... yes
+checking for krb5_free_string... yes
+checking for rst2man-3.6... no
+checking for rst2man-3.4... no
+checking for rst2man-3... no
+checking for rst2man.py... no
+checking for rst2man... rst2man
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking whether krb5_auth_con_set_req_cksumtype is declared... yes
+checking for cap-ng.h... yes
+checking for capng_clear in -lcap-ng... yes
+checking whether to use libcap-ng... checking whether CAPNG_AMBIENT is declared... yes
+yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating contrib/Makefile
+config.status: creating contrib/request-key.d/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build'
+Making all in contrib
+make[2]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+Making all in request-key.d
+make[3]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build/contrib/request-key.d'
+/usr/bin/sed 's,[@]sbindir@,/usr/sbin,' ./cifs.idmap.conf.in > cifs.idmap.conf-t && mv cifs.idmap.conf-t cifs.idmap.conf
+/usr/bin/sed 's,[@]sbindir@,/usr/sbin,' ./cifs.spnego.conf.in > cifs.spnego.conf-t && mv cifs.spnego.conf-t cifs.spnego.conf
+make[3]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build/contrib/request-key.d'
+make[3]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+make[2]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+make[2]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build'
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT cifscreds.o -MD -MP -MF .deps/cifscreds.Tpo -c -o cifscreds.o cifscreds.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT cifskey.o -MD -MP -MF .deps/cifskey.Tpo -c -o cifskey.o cifskey.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT data_blob.o -MD -MP -MF .deps/data_blob.Tpo -c -o data_blob.o data_blob.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT asn1.o -MD -MP -MF .deps/asn1.Tpo -c -o asn1.o asn1.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT cldap_ping.o -MD -MP -MF .deps/cldap_ping.Tpo -c -o cldap_ping.o cldap_ping.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT resolve_host.o -MD -MP -MF .deps/resolve_host.Tpo -c -o resolve_host.o resolve_host.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT getcifsacl.o -MD -MP -MF .deps/getcifsacl.Tpo -c -o getcifsacl.o getcifsacl.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT idmap_plugin.o -MD -MP -MF .deps/idmap_plugin.Tpo -c -o idmap_plugin.o idmap_plugin.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT setcifsacl.o -MD -MP -MF .deps/setcifsacl.Tpo -c -o setcifsacl.o setcifsacl.c
+cc -DHAVE_CONFIG_H -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -shared -fpic -o pam_cifscreds.so pam_cifscreds.c cifskey.c data_blob.c asn1.c cldap_ping.c resolve_host.c util.c -lpam -lkeyutils -ltalloc -lresolv
+cc -DHAVE_CONFIG_H -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -I/usr/include/samba-4.0 -DHAVE_IMMEDIATE_STRUCTURES=1 -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -shared -fpic -o idmapwb.so idmapwb.c -Wl,-rpath,/usr/lib -lwbclient
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT mount.cifs.o -MD -MP -MF .deps/mount.cifs.Tpo -c -o mount.cifs.o mount.cifs.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT mtab.o -MD -MP -MF .deps/mtab.Tpo -c -o mtab.o mtab.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT cifs.upcall.o -MD -MP -MF .deps/cifs.upcall.Tpo -c -o cifs.upcall.o cifs.upcall.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT spnego.o -MD -MP -MF .deps/spnego.Tpo -c -o spnego.o spnego.c
+cc -DHAVE_CONFIG_H -I.    -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20 -MT cifs.idmap.o -MD -MP -MF .deps/cifs.idmap.Tpo -c -o cifs.idmap.o cifs.idmap.c
+rst2man --syntax-highlight=none mount.cifs.rst mount.cifs.8
+/usr/bin/sed 's,[@]sbindir@,/usr/sbin,' ./cifs.upcall.rst.in > cifs.upcall.rst-t && mv cifs.upcall.rst-t cifs.upcall.rst
+rst2man --syntax-highlight=none cifscreds.rst cifscreds.1
+mv -f .deps/cifskey.Tpo .deps/cifskey.Po
+/usr/bin/sed -e 's,[@]sbindir@,/usr/sbin,' -e 's,[@]pluginpath@,/etc/cifs-utils/idmap-plugin,' ./cifs.idmap.rst.in > cifs.idmap.rst-t && mv cifs.idmap.rst-t cifs.idmap.rst
+/usr/bin/sed 's,[@]pluginpath@,/etc/cifs-utils/idmap-plugin,' ./getcifsacl.rst.in > getcifsacl.rst-t && mv getcifsacl.rst-t getcifsacl.rst
+mv -f .deps/util.Tpo .deps/util.Po
+/usr/bin/sed 's,[@]pluginpath@,/etc/cifs-utils/idmap-plugin,' ./setcifsacl.rst.in > setcifsacl.rst-t && mv setcifsacl.rst-t setcifsacl.rst
+rst2man --syntax-highlight=none smbinfo.rst smbinfo.1
+mv -f .deps/data_blob.Tpo .deps/data_blob.Po
+mv -f .deps/spnego.Tpo .deps/spnego.Po
+rst2man --syntax-highlight=none smb2-quota.rst smb2-quota.1
+/usr/bin/sed 's,[@]pluginpath@,/etc/cifs-utils/idmap-plugin,' ./idmapwb.rst.in > idmapwb.rst-t && mv idmapwb.rst-t idmapwb.rst
+rst2man --syntax-highlight=none pam_cifscreds.rst pam_cifscreds.8
+[01m[Kcifs.idmap.c:[m[K In function ‘[01m[Kstrget[m[K’:
+[01m[Kcifs.idmap.c:70:19:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+   70 |         substrptr [01;35m[K=[m[K strstr(str, substr);
+      |                   [01;35m[K^[m[K
+rst2man --syntax-highlight=none cifs.upcall.rst cifs.upcall.8
+mv -f .deps/idmap_plugin.Tpo .deps/idmap_plugin.Po
+rst2man --syntax-highlight=none cifs.idmap.rst cifs.idmap.8
+rst2man --syntax-highlight=none getcifsacl.rst getcifsacl.1
+[01m[Kmount.cifs.c:[m[K In function ‘[01m[Kparse_options[m[K’:
+[01m[Kmount.cifs.c:887:30:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  887 |                 next_keyword [01;35m[K=[m[K strchr(data, ',');       /* BB handle sep= */
+      |                              [01;35m[K^[m[K
+[01m[Kmount.cifs.c:895:29:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  895 |                 if ((equals [01;35m[K=[m[K strchr(data, '=')) != NULL) {
+      |                             [01;35m[K^[m[K
+mv -f .deps/asn1.Tpo .deps/asn1.Po
+rst2man --syntax-highlight=none setcifsacl.rst setcifsacl.1
+mv -f .deps/cifs.idmap.Tpo .deps/cifs.idmap.Po
+rst2man --syntax-highlight=none idmapwb.rst idmapwb.8
+mv -f .deps/cldap_ping.Tpo .deps/cldap_ping.Po
+cc -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20  -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o cifs.idmap cifs.idmap.o idmap_plugin.o -lkeyutils -ldl -ltalloc 
+mv -f .deps/setcifsacl.Tpo .deps/setcifsacl.Po
+cc -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20  -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o setcifsacl setcifsacl.o idmap_plugin.o -ldl -ltalloc 
+mv -f .deps/resolve_host.Tpo .deps/resolve_host.Po
+mv -f .deps/mtab.Tpo .deps/mtab.Po
+mv -f .deps/cifscreds.Tpo .deps/cifscreds.Po
+cc -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20  -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o cifscreds cifscreds.o cifskey.o data_blob.o asn1.o cldap_ping.o resolve_host.o util.o -lkeyutils -ltalloc -lresolv -ltalloc 
+mv -f .deps/getcifsacl.Tpo .deps/getcifsacl.Po
+cc -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20  -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o getcifsacl getcifsacl.o idmap_plugin.o -ldl -ltalloc 
+mv -f .deps/mount.cifs.Tpo .deps/mount.cifs.Po
+cc -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20  -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o mount.cifs mount.cifs.o mtab.o data_blob.o asn1.o cldap_ping.o resolve_host.o util.o  -lcap-ng  -ltalloc -lresolv -ltalloc 
+mv -f .deps/cifs.upcall.Tpo .deps/cifs.upcall.Po
+cc -Wall -Wextra -D_FORTIFY_SOURCE=2 -fpie -pie -Wl,-z,relro,-z,now -march=native -O2 -pipe -fomit-frame-pointer -flto=20  -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o cifs.upcall cifs.upcall.o data_blob.o asn1.o spnego.o -ltalloc -lkeyutils -lgssapi_krb5 -lkrb5 -lcap-ng -ltalloc 
+make[2]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build'
+make[1]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build'
+Making install in contrib
+make[1]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+Making install in request-key.d
+make[2]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build/contrib/request-key.d'
+make[3]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build/contrib/request-key.d'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build/contrib/request-key.d'
+make[2]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build/contrib/request-key.d'
+make[2]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+make[3]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+make[2]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+make[1]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build/contrib'
+make[1]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build'
+make[2]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/usr/bin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/usr/share/man/man1'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/usr/lib/cifs-utils'
+ /usr/bin/install -c smbinfo smb2-quota '/var/tmp/hokuto/cifs-utils-42/output/usr/bin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/usr/lib/security'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/sbin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/usr/share/man/man8'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/usr/bin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/usr/sbin'
+ /usr/bin/install -c -m 644 cifsidmap.h '/var/tmp/hokuto/cifs-utils-42/output/usr/include'
+  /usr/bin/install -c idmapwb.so '/var/tmp/hokuto/cifs-utils-42/output/usr/lib/cifs-utils'
+  /usr/bin/install -c cifs.upcall cifs.idmap '/var/tmp/hokuto/cifs-utils-42/output/usr/sbin'
+ /usr/bin/install -c -m 644 cifscreds.1 getcifsacl.1 setcifsacl.1 smbinfo.1 smb2-quota.1 '/var/tmp/hokuto/cifs-utils-42/output/usr/share/man/man1'
+  /usr/bin/install -c pam_cifscreds.so '/var/tmp/hokuto/cifs-utils-42/output/usr/lib/security'
+  /usr/bin/install -c mount.cifs '/var/tmp/hokuto/cifs-utils-42/output/sbin'
+  /usr/bin/install -c cifscreds getcifsacl setcifsacl '/var/tmp/hokuto/cifs-utils-42/output/usr/bin'
+make  install-exec-hook
+make[3]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build'
+ /usr/bin/install -c -m 644 mount.cifs.8 cifs.upcall.8 cifs.idmap.8 idmapwb.8 pam_cifscreds.8 '/var/tmp/hokuto/cifs-utils-42/output/usr/share/man/man8'
+make  install-data-hook
+make[3]: Entering directory '/var/tmp/hokuto/cifs-utils-42/build'
+( cd /var/tmp/hokuto/cifs-utils-42/output/usr/share/man/man8 && ln -sf mount.cifs.8 mount.smb3.8)
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cifs-utils-42/output/usr/sbin'
+make[3]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build'
+  /usr/bin/install -c cifs.upcall cifs.idmap '/var/tmp/hokuto/cifs-utils-42/output/usr/sbin'
+(cd /var/tmp/hokuto/cifs-utils-42/output/sbin && ln -sf mount.cifs mount.smb3)
+make[3]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build'
+make[2]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build'
+make[1]: Leaving directory '/var/tmp/hokuto/cifs-utils-42/build'
 
-Script done on 2026-06-18 01:06:48+07:00 [COMMAND_EXIT_CODE="1"]
+Script done on 2026-06-18 01:11:44+07:00 [COMMAND_EXIT_CODE="0"]
