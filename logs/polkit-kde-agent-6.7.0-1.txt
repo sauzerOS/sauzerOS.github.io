@@ -1,0 +1,342 @@
+Script started on 2026-06-18 01:16:14+07:00 [COMMAND="cd /var/tmp/hokuto/polkit-kde-agent-18/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/polkit-kde-agent-18/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/polkit-kde-agent-18/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/polkit-kde-agent-18/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/polkit-kde-agent-18/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/polkit-kde-agent-18/build/.cache' /repo/kde/polkit-kde-agent/build /var/tmp/hokuto/polkit-kde-agent-18/output 6.7.0 polkit-kde-agent" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:17 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.27.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.27.0")
+-- Found KF6Notifications: /usr/lib64/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.27.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.27.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.27.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.27.0")
+-- Found KF6: success (found suitable version "6.27.0", minimum required is "6.26.0") found components: I18n WindowSystem Notifications DBusAddons CoreAddons Crash
+-- Looking for sys/prctl.h
+-- Looking for sys/prctl.h - found
+-- Looking for PR_SET_DUMPABLE
+-- Looking for PR_SET_DUMPABLE - found
+-- Looking for sys/procctl.h
+-- Looking for sys/procctl.h - not found
+-- Looking for PROC_TRACE_CTL
+-- Looking for PROC_TRACE_CTL - not found
+-- The following features have been enabled:
+
+ * prctl/procctl tracing control, Required for disallowing ptrace on polkit agent
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6WidgetsTools (required version >= 6.11.1)
+ * OpenGL
+ * Qt6Widgets (required version >= 6.10.0)
+ * Qt6QuickTools (required version >= 6.11.1)
+ * Qt6QmlTools (required version >= 6.11.1)
+ * Qt6Quick (required version >= 6.10.0)
+ * Qt6Core (required version >= 6.9.0)
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6DBusTools (required version >= 6.11.1)
+ * Qt6DBus (required version >= 6.9.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6 (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6WindowSystem (required version >= 6.26.0)
+ * KF6Notifications (required version >= 6.26.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6CoreAddons (required version >= 6.26.0)
+ * KF6Crash (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * PolkitQt6-1
+
+-- Configuring done (5.5s)
+-- Generating done (0.1s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/polkit-kde-agent-18/build/build
+[  6%] Built target polkit-kde-authentication-agent-1_autogen_timestamp_deps
+[  6%] [1m[34mGenerating mo...[0m
+[ 13%] [1m[34mGenerating ts...[0m
+[ 20%] [1m[34mAutomatic MOC for target polkit-kde-authentication-agent-1[0m
+[ 20%] Built target tsfiles-4063889817da769108c224b4255b47cb
+[ 20%] Built target pofiles-4063889817da769108c224b4255b47cb
+[ 20%] Built target polkit-kde-authentication-agent-1_autogen
+[ 26%] [1m[34mAutomatic RCC for QuickAuthDialog.qrc[0m
+[ 33%] [1m[34mGenerating polkit1authagentadaptor.cpp, polkit1authagentadaptor.h[0m
+[ 40%] [1m[34mGenerating moc_polkit1authagentadaptor.cpp[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/polkit-kde-authentication-agent-1.dir/polkit-kde-authentication-agent-1_autogen/mocs_compilation.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/polkit-kde-authentication-agent-1.dir/policykitlistener.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/polkit-kde-authentication-agent-1.dir/polkit1authagentadaptor.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/polkit-kde-authentication-agent-1.dir/QuickAuthDialog.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/polkit-kde-authentication-agent-1.dir/polkit-kde-authentication-agent-1_autogen/EWIEGA46WW/qrc_QuickAuthDialog.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/polkit-kde-authentication-agent-1.dir/main.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/polkit-kde-authentication-agent-1.dir/IdentitiesModel.cpp.o[0m
+[ 93%] [1m[32mLinking CXX executable bin/polkit-kde-authentication-agent-1[0m
+[100%] Built target polkit-kde-authentication-agent-1
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/libexec/polkit-kde-authentication-agent-1
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/etc/xdg/autostart/polkit-kde-authentication-agent-1.desktop
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/applications/org.kde.polkit-kde-authentication-agent-1.desktop
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/lib/systemd/user/plasma-polkit-agent.service
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/knotifications6/polkit-kde-authentication-agent-1.notifyrc
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/fr/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/et/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/lt/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/eu/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/zh_CN/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hsb/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ru/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ie
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ie/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/lv/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/en_GB/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sa/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ro/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/tr/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nn/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hr/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ar/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hi/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sk/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/uk/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ast/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/es/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/hu/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ca@valencia/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sl/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ka/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/mr/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ga/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/cs/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/eo/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/id/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pl/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nl/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/is/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pa/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ja/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/mai
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/mai/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/vi/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ml/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/el/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/he/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/da/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nds/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ia/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/bg/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ca/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/gl/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ug/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sv/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/th/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/nb/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/fi/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/it/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ko/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/bs/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/km/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/kk/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/tg/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/ms/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/be/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/sr@latin/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pt/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/pt_BR/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/zh_TW/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/polkit-kde-agent-18/output/usr/share/locale/de/LC_MESSAGES/polkit-kde-authentication-agent-1.mo
+
+Script done on 2026-06-18 01:16:34+07:00 [COMMAND_EXIT_CODE="0"]
