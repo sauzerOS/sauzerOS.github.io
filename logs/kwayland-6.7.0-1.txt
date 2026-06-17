@@ -1,0 +1,397 @@
+Script started on 2026-06-18 01:02:49+07:00 [COMMAND="cd /var/tmp/hokuto/kwayland-52/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/kwayland-52/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/kwayland-52/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/kwayland-52/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/kwayland-52/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/kwayland-52/build/.cache' /repo/kde/kwayland/build /var/tmp/hokuto/kwayland-52/output 6.7.0 kwayland" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:16 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+fatal: not a git repository (or any parent up to mount point /var)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+fatal: not a git repository (or any parent up to mount point /var)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found Wayland_Client: /usr/lib/libwayland-client.so (found version "1.25.0")
+-- Found Wayland_Server: /usr/lib/libwayland-server.so (found version "1.25.0")
+-- Found Wayland_Cursor: /usr/lib/libwayland-cursor.so (found version "1.25.0")
+-- Found Wayland_Egl: /usr/lib/libwayland-egl.so (found version "18.1.0")
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so;/usr/lib/libwayland-cursor.so;/usr/lib/libwayland-egl.so (found version "1.25.0")
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so;/usr/lib/libwayland-cursor.so;/usr/lib/libwayland-egl.so (found suitable version "1.25.0", minimum required is "1.24") found components: Client
+-- Found WaylandProtocols: //usr/share/wayland-protocols (found suitable version "1.49", minimum required is "1.15")
+-- Performing Test HAVE_EGL
+-- Performing Test HAVE_EGL - Success
+-- Found EGL: /usr/include (found version "1.5")
+-- Performing Test HAVE_MEMFD
+-- Performing Test HAVE_MEMFD - Success
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6DBusTools (required version >= 6.11.1)
+ * Qt6Concurrent (required version >= 6.10.0)
+ * Qt6WaylandScannerTools (required version >= 6.11.1)
+ * WaylandScanner, Executable that converts XML protocol files to C code, <https://wayland.freedesktop.org/>
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6Gui (required version >= 6.10.0)
+ * Qt6 (required version >= 6.10.0)
+ * Qt6WaylandClient (required version >= 6.10.0)
+ * Qt6GuiPrivate
+ * Qt6WaylandClientPrivate
+ * Wayland (required version >= 1.24), C library implementation of the Wayland protocol: a protocol for a compositor to talk to its clients, <https://wayland.freedesktop.org/>
+ * WaylandProtocols (required version >= 1.15), Specifications of extended Wayland protocols, <https://wayland.freedesktop.org/>
+ * EGL, A platform-agnostic mechanism for creating rendering surfaces for use with other graphics libraries, such as OpenGL|ES and OpenVG., <https://www.khronos.org/egl/>
+ * PlasmaWaylandProtocols (required version >= 1.21.0)
+
+-- The following features have been disabled:
+
+ * QCH, API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)
+
+-- Configuring done (2.5s)
+-- Generating done (0.1s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/kwayland-52/build/build
+[  0%] Built target KWaylandClient_autogen_timestamp_deps
+[  1%] [1m[34mAutomatic MOC for target KWaylandClient[0m
+[  1%] Built target KWaylandClient_autogen
+[  2%] [1m[34mGenerating wayland-contrast-client-protocol.h[0m
+[  2%] [1m[34mGenerating wayland-dpms-client-protocol.h[0m
+[  2%] [1m[34mGenerating wayland-blur-client-protocol.h[0m
+[  4%] [1m[34mGenerating wayland-plasma-shell-client-protocol.h[0m
+[  4%] [1m[34mGenerating wayland-fake-input-client-protocol.h[0m
+[  4%] [1m[34mGenerating wayland-plasma-virtual-desktop-client-protocol.h[0m
+[  4%] [1m[34mGenerating wayland-idle-inhibit-unstable-v1-client-protocol.h[0m
+[  7%] [1m[34mGenerating wayland-plasma-window-management-client-protocol.h[0m
+[  7%] [1m[34mGenerating wayland-appmenu-client-protocol.h[0m
+[  7%] [1m[34mGenerating wayland-xdg-shell-v6-client-protocol.h[0m
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:72: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:217: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:304: warning: since version not increasing
+
+[  8%] [1m[34mGenerating wayland-pointer-constraints-unstable-v1-client-protocol.h[0m
+[  9%] [1m[34mGenerating wayland-relativepointer-unstable-v1-client-protocol.h[0m
+[ 13%] [1m[34mGenerating wayland-slide-client-protocol.h[0m
+[ 13%] [1m[34mGenerating wayland-text-input-v0-client-protocol.h[0m
+[ 13%] [1m[34mGenerating wayland-xdg-decoration-unstable-v1-client-protocol.h[0m
+[ 14%] [1m[34mGenerating wayland-text-input-v2-client-protocol.h[0m
+[ 13%] [1m[34mGenerating wayland-pointer-gestures-unstable-v1-client-protocol.h[0m
+[ 14%] [1m[34mGenerating wayland-xdg-foreign-unstable-v2-client-protocol.h[0m
+[ 15%] [1m[34mGenerating wayland-shadow-client-protocol.h[0m
+[ 17%] [1m[34mGenerating wayland-xdg-output-unstable-v1-client-protocol.h[0m
+[ 18%] [1m[34mGenerating wayland-xdg-shell-client-protocol.h[0m
+[ 19%] [1m[34mGenerating wayland-appmenu-protocol.c[0m
+[ 22%] [1m[34mGenerating wayland-contrast-protocol.c[0m
+[ 22%] [1m[34mGenerating wayland-xdg-shell-v6-protocol.c[0m
+[ 23%] [1m[34mGenerating wayland-fake-input-protocol.c[0m
+[ 23%] [1m[34mGenerating wayland-blur-protocol.c[0m
+[ 25%] [1m[34mGenerating wayland-plasma-shell-protocol.c[0m
+[ 25%] [1m[34mGenerating wayland-dpms-protocol.c[0m
+[ 26%] [1m[34mGenerating wayland-idle-inhibit-unstable-v1-protocol.c[0m
+[ 27%] [1m[34mGenerating wayland-plasma-virtual-desktop-protocol.c[0m
+[ 27%] [1m[34mGenerating wayland-plasma-window-management-protocol.c[0m
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:72: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:217: warning: since version not increasing
+
+/usr/share/plasma-wayland-protocols/plasma-window-management.xml:304: warning: since version not increasing
+
+[ 29%] [1m[34mGenerating wayland-shadow-protocol.c[0m
+[ 29%] [1m[34mGenerating wayland-pointer-gestures-unstable-v1-protocol.c[0m
+[ 34%] [1m[34mGenerating wayland-relativepointer-unstable-v1-protocol.c[0m
+[ 34%] [1m[34mGenerating wayland-pointer-constraints-unstable-v1-protocol.c[0m
+[ 34%] [1m[34mGenerating wayland-text-input-v2-protocol.c[0m
+[ 34%] [1m[34mGenerating wayland-slide-protocol.c[0m
+[ 34%] [1m[34mGenerating wayland-text-input-v0-protocol.c[0m
+[ 35%] [1m[34mGenerating wayland-xdg-decoration-unstable-v1-protocol.c[0m
+[ 36%] [1m[34mGenerating wayland-xdg-foreign-unstable-v2-protocol.c[0m
+[ 36%] [1m[34mGenerating wayland-xdg-output-unstable-v1-protocol.c[0m
+[ 37%] [1m[34mGenerating wayland-xdg-shell-protocol.c[0m
+[ 43%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/event_queue.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/connection_thread.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/buffer.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/blur.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/contrast.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/slide.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/appmenu.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/KWaylandClient_autogen/mocs_compilation.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/compositor.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/datadevice.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer_p.h:17:29:[m[K [01;35m[Kwarning: [m[K‘[01m[KKWayland::Client::Buffer::Private[m[K’ has a field ‘[01m[KKWayland::Client::WaylandPointer<wl_buffer, wl_buffer_destroy> KWayland::Client::Buffer::Private::nativeBuffer[m[K’ whose type has internal linkage [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-subobject-linkage-Wsubobject-linkage]8;;[m[K]
+   17 | class Q_DECL_HIDDEN Buffer::[01;35m[KPrivate[m[K
+      |                             [01;35m[K^~~~~~~[m[K
+[ 46%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/datadevicemanager.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/dataoffer.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/datasource.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/dpms.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/fakeinput.cpp.o[0m
+[ 51%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/idleinhibit.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/keyboard.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/output.cpp.o[0m
+[ 54%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/pointer.cpp.o[0m
+[ 55%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/pointerconstraints.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/pointergestures.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmashell.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmavirtualdesktop.cpp.o[0m
+[ 58%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmawindowmanagement.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/plasmawindowmodel.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/region.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/registry.cpp.o[0m
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/pointer.cpp:72:155:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kwl_pointer_listener::axis_value120[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   72 |     {enterCallback, leaveCallback, motionCallback, buttonCallback, axisCallback, frameCallback, axisSourceCallback, axisStopCallback, axisDiscreteCallback[01;35m[K}[m[K;
+      |                                                                                                                                                           [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/pointer.cpp:72:155:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kwl_pointer_listener::axis_relative_direction[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[ 61%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/relativepointer.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/seat.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/shadow.cpp.o[0m
+[ 64%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/shell.cpp.o[0m
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/plasmawindowmanagement.cpp:[m[K In static member function ‘[01m[Kstatic void KWayland::Client::PlasmaWindowManagement::Private::[01;32m[KstackingOrderCallback[m[K(void*, org_kde_plasma_window_management*, wl_array*)[m[K’:
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/plasmawindowmanagement.cpp:298:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  298 | void PlasmaWindowManagement::Private::stackingOrderCallback([01;35m[Kvoid *data[m[K, org_kde_plasma_window_management *interface, wl_array *ids)
+      |                                                             [01;35m[K~~~~~~^~~~[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/plasmawindowmanagement.cpp:298:107:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinterface[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  298 | void PlasmaWindowManagement::Private::stackingOrderCallback(void *data, [01;35m[Korg_kde_plasma_window_management *interface[m[K, wl_array *ids)
+      |                                                                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/plasmawindowmanagement.cpp:298:128:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kids[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  298 | void PlasmaWindowManagement::Private::stackingOrderCallback(void *data, org_kde_plasma_window_management *interface, [01;35m[Kwl_array *ids[m[K)
+      |                                                                                                                      [01;35m[K~~~~~~~~~~^~~[m[K
+[ 64%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/shm_pool.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/subcompositor.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/subsurface.cpp.o[0m
+[ 68%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/surface.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/touch.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/kwayland-52/build/src/client/shm_pool.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer_p.h:17:29:[m[K [01;35m[Kwarning: [m[K‘[01m[KKWayland::Client::Buffer::Private[m[K’ has a field ‘[01m[KKWayland::Client::WaylandPointer<wl_buffer, wl_buffer_destroy> KWayland::Client::Buffer::Private::nativeBuffer[m[K’ whose type has internal linkage [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-subobject-linkage-Wsubobject-linkage]8;;[m[K]
+   17 | class Q_DECL_HIDDEN Buffer::[01;35m[KPrivate[m[K
+      |                             [01;35m[K^~~~~~~[m[K
+[ 70%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/textinput.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/textinput_v0.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/textinput_v2.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgdecoration.cpp.o[0m
+[ 73%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell.cpp.o[0m
+[ 74%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgforeign_v2.cpp.o[0m
+[ 74%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgforeign.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface.cpp:9[m[K:
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface_p.h:18:30:[m[K [01;35m[Kwarning: [m[K‘[01m[KKWayland::Client::Surface::Private[m[K’ has a field ‘[01m[KKWayland::Client::WaylandPointer<wl_surface, wl_surface_destroy> KWayland::Client::Surface::Private::surface[m[K’ whose type has internal linkage [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-subobject-linkage-Wsubobject-linkage]8;;[m[K]
+   18 | class Q_DECL_HIDDEN Surface::[01;35m[KPrivate[m[K
+      |                              [01;35m[K^~~~~~~[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface.cpp:86:101:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kwl_surface_listener::preferred_buffer_scale[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+   86 | const struct wl_surface_listener Surface::Private::s_surfaceListener = {enterCallback, leaveCallback[01;35m[K}[m[K;
+      |                                                                                                     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface.cpp:86:101:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kwl_surface_listener::preferred_buffer_transform[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[ 75%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell_v5.cpp.o[0m
+[ 76%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell_v6.cpp.o[0m
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/touch.cpp:127:126:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kwl_touch_listener::shape[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+  127 | const wl_touch_listener Touch::Private::s_listener = {downCallback, upCallback, motionCallback, frameCallback, cancelCallback[01;35m[K}[m[K;
+      |                                                                                                                              [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/touch.cpp:127:126:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kwl_touch_listener::orientation[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[ 77%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgshell_stable.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/xdgoutput.cpp.o[0m
+[ 78%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/__/compat/wayland-xdg-shell-v5-protocol.c.o[0m
+[ 79%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/logging.cpp.o[0m
+[ 80%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-plasma-shell-protocol.c.o[0m
+[ 81%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-plasma-virtual-desktop-protocol.c.o[0m
+[ 82%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-plasma-window-management-protocol.c.o[0m
+[ 84%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-fake-input-protocol.c.o[0m
+[ 84%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-shadow-protocol.c.o[0m
+[ 85%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-blur-protocol.c.o[0m
+[ 87%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-contrast-protocol.c.o[0m
+[ 87%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-slide-protocol.c.o[0m
+[ 88%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-dpms-protocol.c.o[0m
+[ 88%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-text-input-v0-protocol.c.o[0m
+[ 89%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-text-input-v2-protocol.c.o[0m
+[ 90%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-shell-v6-protocol.c.o[0m
+[ 91%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-relativepointer-unstable-v1-protocol.c.o[0m
+[ 92%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-pointer-gestures-unstable-v1-protocol.c.o[0m
+[ 93%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-foreign-unstable-v2-protocol.c.o[0m
+[ 93%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-pointer-constraints-unstable-v1-protocol.c.o[0m
+[ 94%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-idle-inhibit-unstable-v1-protocol.c.o[0m
+[ 95%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-appmenu-protocol.c.o[0m
+[ 96%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-output-unstable-v1-protocol.c.o[0m
+[ 97%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-shell-protocol.c.o[0m
+[ 97%] [32mBuilding C object src/client/CMakeFiles/KWaylandClient.dir/wayland-xdg-decoration-unstable-v1-protocol.c.o[0m
+[ 98%] [32mBuilding CXX object src/client/CMakeFiles/KWaylandClient.dir/surface_p.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_v5.cpp:12[m[K:
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_p.h:76:28:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::[01;32m[KgetXdgPopup[m[K(KWayland::Client::Surface*, KWayland::Client::XdgShellSurface*, const KWayland::Client::XdgPositioner&, QObject*)[m[K’ was hidden [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-overloaded-virtual-Woverloaded-virtual=]8;;[m[K]
+   76 |     virtual XdgShellPopup *[01;35m[KgetXdgPopup[m[K(Surface *surface, XdgShellSurface *parentSurface, const XdgPositioner &positioner, QObject *parent)
+      |                            [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_v5.cpp:26:20:[m[K [01;36m[Knote: [m[K  by ‘[01m[Kvirtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShellUnstableV5::Private::[01;32m[KgetXdgPopup[m[K(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)[m[K’
+   26 |     XdgShellPopup *[01;36m[KgetXdgPopup[m[K(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent) override;
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_p.h:86:28:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::[01;32m[KgetXdgPopup[m[K(KWayland::Client::Surface*, KWayland::Client::XdgShellPopup*, const KWayland::Client::XdgPositioner&, QObject*)[m[K’ was hidden [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-overloaded-virtual-Woverloaded-virtual=]8;;[m[K]
+   86 |     virtual XdgShellPopup *[01;35m[KgetXdgPopup[m[K(Surface *surface, XdgShellPopup *parentSurface, const XdgPositioner &positioner, QObject *parent)
+      |                            [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_v5.cpp:26:20:[m[K [01;36m[Knote: [m[K  by ‘[01m[Kvirtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShellUnstableV5::Private::[01;32m[KgetXdgPopup[m[K(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)[m[K’
+   26 |     XdgShellPopup *[01;36m[KgetXdgPopup[m[K(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent) override;
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_v6.cpp:11[m[K:
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_p.h:64:28:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::[01;32m[KgetXdgPopup[m[K(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)[m[K’ was hidden [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-overloaded-virtual-Woverloaded-virtual=]8;;[m[K]
+   64 |     virtual XdgShellPopup *[01;35m[KgetXdgPopup[m[K(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent)
+      |                            [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_v6.cpp:29:20:[m[K [01;36m[Knote: [m[K  by ‘[01m[Kvirtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShellUnstableV6::Private::[01;32m[KgetXdgPopup[m[K(KWayland::Client::Surface*, KWayland::Client::XdgShellSurface*, const KWayland::Client::XdgPositioner&, QObject*)[m[K’
+   29 |     XdgShellPopup *[01;36m[KgetXdgPopup[m[K(Surface *surface, XdgShellSurface *parentSurface, const XdgPositioner &positioner, QObject *parent) override;
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface_p.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface_p.h:18:30:[m[K [01;35m[Kwarning: [m[K‘[01m[KKWayland::Client::Surface::Private[m[K’ has a field ‘[01m[KKWayland::Client::WaylandPointer<wl_surface, wl_surface_destroy> KWayland::Client::Surface::Private::surface[m[K’ whose type has internal linkage [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-subobject-linkage-Wsubobject-linkage]8;;[m[K]
+   18 | class Q_DECL_HIDDEN Surface::[01;35m[KPrivate[m[K
+      |                              [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_stable.cpp:11[m[K:
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_p.h:64:28:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShell::Private::[01;32m[KgetXdgPopup[m[K(KWayland::Client::Surface*, KWayland::Client::Surface*, KWayland::Client::Seat*, quint32, const QPoint&, QObject*)[m[K’ was hidden [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/C_002b_002b-Dialect-Options.html#index-Wno-overloaded-virtual-Woverloaded-virtual=]8;;[m[K]
+   64 |     virtual XdgShellPopup *[01;35m[KgetXdgPopup[m[K(Surface *surface, Surface *parentSurface, Seat *seat, quint32 serial, const QPoint &parentPos, QObject *parent)
+      |                            [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_stable.cpp:27:20:[m[K [01;36m[Knote: [m[K  by ‘[01m[Kvirtual KWayland::Client::XdgShellPopup* KWayland::Client::XdgShellStable::Private::[01;32m[KgetXdgPopup[m[K(KWayland::Client::Surface*, KWayland::Client::XdgShellSurface*, const KWayland::Client::XdgPositioner&, QObject*)[m[K’
+   27 |     XdgShellPopup *[01;36m[KgetXdgPopup[m[K(Surface *surface, XdgShellSurface *parentSurface, const XdgPositioner &positioner, QObject *parent) override;
+      |                    [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_stable.cpp:288:118:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kxdg_toplevel_listener::configure_bounds[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+  288 | const struct xdg_toplevel_listener XdgTopLevelStable::Private::s_toplevelListener = {configureCallback, closeCallback[01;35m[K}[m[K;
+      |                                                                                                                      [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_stable.cpp:288:118:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kxdg_toplevel_listener::wm_capabilities[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/xdgshell_stable.cpp:527:118:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kxdg_popup_listener::repositioned[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+  527 | const struct xdg_popup_listener XdgShellPopupStable::Private::s_popupListener = {configureCallback, popupDoneCallback[01;35m[K}[m[K;
+      |                                                                                                                      [01;35m[K^[m[K
+[100%] [1m[32mLinking CXX shared library ../../bin/libKWaylandClient.so[0m
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer_p.h:17:29:[m[K [01;35m[Kwarning: [m[Ktype ‘[01m[Kstruct Private[m[K’ violates the C++ One Definition Rule [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-odr-Wodr]8;;[m[K]
+   17 | class Q_DECL_HIDDEN Buffer::Private
+      |                             [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer_p.h:17:29:[m[K [01;36m[Knote: [m[Ka different type is defined in another translation unit
+   17 | class Q_DECL_HIDDEN Buffer::Private
+      |                             [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer_p.h:25:50:[m[K [01;36m[Knote: [m[Kthe first difference of corresponding definitions is field ‘[01m[KnativeBuffer[m[K’
+   25 |     WaylandPointer<wl_buffer, wl_buffer_destroy> nativeBuffer;
+      |                                                  [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer_p.h:25:50:[m[K [01;36m[Knote: [m[Ka field of same name but different type is defined in another translation unit
+   25 |     WaylandPointer<wl_buffer, wl_buffer_destroy> nativeBuffer;
+      |                                                  [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/wayland_pointer_p.h:16:7:[m[K [01;36m[Knote: [m[Ktype ‘[01m[Kstruct WaylandPointer[m[K’ defined in anonymous namespace cannot match across the translation unit boundary
+   16 | class WaylandPointer
+      |       [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface_p.h:18:30:[m[K [01;35m[Kwarning: [m[Ktype ‘[01m[Kstruct Private[m[K’ violates the C++ One Definition Rule [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-odr-Wodr]8;;[m[K]
+   18 | class Q_DECL_HIDDEN Surface::Private
+      |                              [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface_p.h:18:30:[m[K [01;36m[Knote: [m[Ka different type is defined in another translation unit
+   18 | class Q_DECL_HIDDEN Surface::Private
+      |                              [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface_p.h:24:52:[m[K [01;36m[Knote: [m[Kthe first difference of corresponding definitions is field ‘[01m[Ksurface[m[K’
+   24 |     WaylandPointer<wl_surface, wl_surface_destroy> surface;
+      |                                                    [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/surface_p.h:24:52:[m[K [01;36m[Knote: [m[Ka field of same name but different type is defined in another translation unit
+   24 |     WaylandPointer<wl_surface, wl_surface_destroy> surface;
+      |                                                    [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/wayland_pointer_p.h:16:7:[m[K [01;36m[Knote: [m[Ktype ‘[01m[Kstruct WaylandPointer[m[K’ defined in anonymous namespace cannot match across the translation unit boundary
+   16 | class WaylandPointer
+      |       [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer_p.h:22:10:[m[K [01;35m[Kwarning: [m[Ktype of ‘[01m[Kdestroy[m[K’ does not match original declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wlto-type-mismatch-Wlto-type-mismatch]8;;[m[K]
+   22 |     void destroy();
+      |          [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer.cpp:41:6:[m[K [01;36m[Knote: [m[K‘[01m[Kdestroy[m[K’ was previously declared here
+   41 | void Buffer::Private::destroy()
+      |      [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/kwayland-52/build/src/client/buffer.cpp:41:6:[m[K [01;36m[Knote: [m[Kcode may be misoptimized unless ‘[01m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Optimize-Options.html#index-fno-strict-aliasing-fno-strict-aliasing]8;;[m[K’ is used
+[100%] Built target KWaylandClient
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/lib64/libKWaylandClient.so.6.7.0
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/lib64/libKWaylandClient.so.6
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/lib64/libKWaylandClient.so
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/kwaylandclient_export.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/appmenu.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/blur.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/buffer.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/compositor.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/connection_thread.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/contrast.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/event_queue.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/datadevice.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/datadevicemanager.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/dataoffer.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/datasource.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/dpms.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/fakeinput.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/idleinhibit.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/keyboard.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/output.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/pointer.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/pointerconstraints.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/plasmashell.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/plasmavirtualdesktop.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/plasmawindowmanagement.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/plasmawindowmodel.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/pointergestures.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/region.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/registry.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/relativepointer.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/seat.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/shadow.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/shell.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/shm_pool.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/slide.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/subcompositor.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/subsurface.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/surface.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/touch.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/textinput.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/xdgdecoration.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/xdgshell.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/xdgforeign.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/KWayland/Client/xdgoutput.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/share/qlogging-categories6/kwayland.categories
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/share/qlogging-categories6/kwayland.renamecategories
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/lib64/cmake/KWayland/KWaylandConfig.cmake
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/lib64/cmake/KWayland/KWaylandConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/lib64/cmake/KWayland/KWaylandTargets.cmake
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/lib64/cmake/KWayland/KWaylandTargets-release.cmake
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/include/KWayland/kwayland_version.h
+-- Installing: /var/tmp/hokuto/kwayland-52/output/usr/lib64/pkgconfig/KWaylandClient.pc
+
+Script done on 2026-06-18 01:03:08+07:00 [COMMAND_EXIT_CODE="0"]
