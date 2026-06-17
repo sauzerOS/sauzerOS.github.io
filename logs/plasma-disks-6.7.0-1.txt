@@ -1,0 +1,326 @@
+Script started on 2026-06-18 01:10:58+07:00 [COMMAND="cd /var/tmp/hokuto/plasma-disks-56/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/plasma-disks-56/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/plasma-disks-56/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/plasma-disks-56/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/plasma-disks-56/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/plasma-disks-56/build/.cache' /repo/kde/plasma-disks/build /var/tmp/hokuto/plasma-disks-56/output 6.7.0 plasma-disks" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:19 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.27.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.27.0")
+-- Found KF6Notifications: /usr/lib64/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.27.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.27.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.27.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.27.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.27.0")
+-- Found KF6Auth: /usr/lib64/cmake/KF6Auth/KF6AuthConfig.cmake (found version "6.27.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.27.0")
+-- Found KF6: success (found suitable version "6.27.0", minimum required is "6.26.0") found components: CoreAddons DBusAddons Notifications I18n Solid Service KIO Auth KCMUtils
+-- Found smartctl: /usr/bin/smartctl
+-- The following RUNTIME packages have been found:
+
+ * smartctl
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.11.1)
+ * WrapVulkanHeaders
+ * Qt6Gui (required version >= 6.9.0)
+ * Qt6QmlTools (required version >= 6.11.1)
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Qt6WidgetsTools (required version >= 6.11.1)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6 (required version >= 6.10.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6Notifications (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6CoreAddons (required version >= 6.27.0)
+ * KF6Solid (required version >= 6.27.0)
+ * KF6Service (required version >= 6.27.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6Auth (required version >= 6.26.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+
+-- Configuring done (4.5s)
+-- Generating done (0.2s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/plasma-disks-56/build/build
+[  2%] [1m[34mGenerating ts...[0m
+
+[  4%] [1m[34mGenerating org.kde.kded.smart.policy[0m
+[  4%] Built target statickdedsmart_autogen_timestamp_deps
+[  6%] [1m[34mGenerating mo...[0m
+[  6%] Built target kcm_disks-kcm-desktop-gen
+[  6%] Built target kded-smart-helper_autogen_timestamp_deps
+[  6%] Built target QmlFiles
+[  8%] [1m[34mactions for org.kde.kded.smart[0m
+[  8%] Built target tsfiles-5a321bb1b108f0f6fd731d6a66283508
+[ 10%] [1m[34mAutomatic MOC for target statickdedsmart[0m
+[ 10%] Built target org.kde.kded.smart.policy-customtarget
+[ 12%] [1m[34mAutomatic MOC for target kded-smart-helper[0m
+[ 12%] Built target pofiles-5a321bb1b108f0f6fd731d6a66283508
+[ 12%] Built target kded-smart-helper_autogen
+[ 14%] [32mBuilding CXX object src/CMakeFiles/kded-smart-helper.dir/kded-smart-helper_autogen/mocs_compilation.cpp.o[0m
+[ 16%] [32mBuilding CXX object src/CMakeFiles/kded-smart-helper.dir/helper.cpp.o[0m
+[ 16%] Built target statickdedsmart_autogen
+[ 18%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/statickdedsmart_autogen/mocs_compilation.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/devicenotifier.cpp.o[0m
+[ 22%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/smartmonitor.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/smartctl.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/smartdata.cpp.o[0m
+[ 31%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/device.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/smartnotifier.cpp.o[0m
+[ 33%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/dbusobjectmanagerserver.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/soliddevicenotifier.cpp.o[0m
+[ 37%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/instabilities.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/smartfailure.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/CMakeFiles/statickdedsmart.dir/kded_debug.cpp.o[0m
+[ 43%] [1m[32mLinking CXX executable ../bin/kded-smart-helper[0m
+[ 45%] Built target kded-smart-helper
+[ 47%] [1m[32mLinking CXX static library ../lib/libstatickdedsmart.a[0m
+[ 50%] Built target statickdedsmart
+[ 50%] Built target kded-smart_autogen_timestamp_deps
+[ 50%] Built target kcm_disks_autogen_timestamp_deps
+[ 52%] [1m[34mAutomatic MOC for target kded-smart[0m
+[ 54%] [1m[34mAutomatic MOC for target kcm_disks[0m
+[ 54%] Built target kded-smart_autogen
+[ 58%] [32mBuilding CXX object src/CMakeFiles/kded-smart.dir/main.cpp.o[0m
+[ 58%] [32mBuilding CXX object src/CMakeFiles/kded-smart.dir/kded-smart_autogen/mocs_compilation.cpp.o[0m
+[ 58%] Built target kcm_disks_autogen
+[ 60%] [1m[34mGenerating org.freedesktop.DBus.ObjectManager.cpp, org.freedesktop.DBus.ObjectManager.h[0m
+[ 64%] [1m[34mGenerating org.freedesktop.DBus.Properties.cpp, org.freedesktop.DBus.Properties.h[0m
+[ 64%] [1m[34mGenerating qrc_kcm_disks.cpp[0m
+[ 66%] [1m[34mGenerating org.kde.kded.smart.Device.xml[0m
+[ 68%] [1m[34mGenerating moc_org.freedesktop.DBus.Properties.cpp[0m
+[ 70%] [1m[34mGenerating moc_org.freedesktop.DBus.ObjectManager.cpp[0m
+[ 72%] [1m[34mGenerating org.kde.kded.smart.Device.cpp, org.kde.kded.smart.Device.h[0m
+[ 75%] [1m[34mGenerating moc_org.kde.kded.smart.Device.cpp[0m
+[ 77%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_disks.dir/kcm_disks_autogen/mocs_compilation.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_disks.dir/servicerunner.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_disks.dir/module.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_disks.dir/org.kde.kded.smart.Device.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_disks.dir/devicemodel.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_disks.dir/org.freedesktop.DBus.Properties.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_disks.dir/org.freedesktop.DBus.ObjectManager.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_disks.dir/qrc_kcm_disks.cpp.o[0m
+[ 93%] [1m[32mLinking CXX shared module ../bin/smart.so[0m
+[ 95%] Built target kded-smart
+[ 97%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/kinfocenter/kcm_disks.so[0m
+[100%] Built target kcm_disks
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/lib/qt6/plugins/kf6/kded/smart.so
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/polkit-1/actions/org.kde.kded.smart.policy
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/dbus-1/system.d/org.kde.kded.smart.conf
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/dbus-1/system-services/org.kde.kded.smart.service
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/libexec/kf6/kauth/kded-smart-helper
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/knotifications6/org.kde.kded.smart.notifyrc
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/lib/qt6/plugins/plasma/kcms/kinfocenter/kcm_disks.so
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/applications/kcm_disks.desktop
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/fr/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/et/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/lt/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/eu/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ru/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/lv/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sa/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ro/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/tr/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/nn/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/az/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ar/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/hi/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sk/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/uk/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ast/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/es/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/hu/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sl/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ka/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ga/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/cs/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/eo/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/id/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pl/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/nl/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/is/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pa/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ta/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ja/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/el/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/he/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/da/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ia/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/bg/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ca/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/gl/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/sv/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/fi/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/it/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/ko/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pt/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/locale/de/LC_MESSAGES/kcm_disks.mo
+-- Installing: /var/tmp/hokuto/plasma-disks-56/output/usr/share/metainfo/org.kde.plasma.disks.metainfo.xml
+
+Script done on 2026-06-18 01:11:28+07:00 [COMMAND_EXIT_CODE="0"]
