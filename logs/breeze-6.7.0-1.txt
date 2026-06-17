@@ -1,0 +1,1245 @@
+Script started on 2026-06-18 00:53:38+07:00 [COMMAND="cd /var/tmp/hokuto/breeze-05/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/breeze-05/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/breeze-05/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/breeze-05/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/breeze-05/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/breeze-05/build/.cache' /repo/kde/breeze/build /var/tmp/hokuto/breeze-05/output 6.7.0 breeze" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  CMakeLists.txt:108 (include)
+  CMakeLists.txt:189 (build_Qt6)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.27.0")
+-- Found KF6ColorScheme: /usr/lib64/cmake/KF6ColorScheme/KF6ColorSchemeConfig.cmake (found version "6.27.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.27.0")
+-- Found KF6GuiAddons: /usr/lib64/cmake/KF6GuiAddons/KF6GuiAddonsConfig.cmake (found version "6.27.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.27.0")
+-- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.27.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.27.0")
+-- Found KF6: success (found suitable version "6.27.0", minimum required is "6.26.0") found components: CoreAddons ColorScheme Config GuiAddons I18n IconThemes WindowSystem
+-- The following OPTIONAL packages have been found:
+
+ * Qt6DBusTools (required version >= 6.11.1)
+ * Qt6DBus
+ * OpenGL
+ * Qt6WidgetsTools (required version >= 6.11.1)
+ * KF6FrameworkIntegration (required version >= 6.26.0), KF6 Framework Integration, <https://projects.kde.org/projects/frameworks/frameworkintegration>
+   Required to use KStyle convenience functionalities in style
+ * Qt6Svg (required version >= 6.10.0)
+ * Qt6QmlTools (required version >= 6.11.1)
+ * Qt6QuickTools (required version >= 6.11.1)
+ * Qt6Quick (required version >= 6.10.0)
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Python3
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 5.102.0)
+ * KF6KCMUtils (required version >= 6.26.0), Helps create configuration modules
+   KCMUtils used for the configuration modules or the decoration and Qt Style
+ * KF6CoreAddons (required version >= 6.26.0)
+ * KF6ColorScheme (required version >= 6.26.0)
+ * KF6Config (required version >= 6.26.0)
+ * KF6GuiAddons (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6IconThemes (required version >= 6.26.0)
+ * KF6WindowSystem (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * KDecoration3
+ * Qt6
+
+-- Configuring done (2.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /var/tmp/hokuto/breeze-05/build/build
+[  1%] [1m[34mGenerating ts...[0m
+[  1%] Built target breezecommon6_autogen_timestamp_deps
+[  2%] [1m[34mGenerating mo...[0m
+[  2%] Built target kcursorgen_autogen_timestamp_deps
+[  2%] Built target breeze-settings_autogen_timestamp_deps
+[  2%] Built target kcm_breezedecoration-kcm-desktop-gen
+[  2%] Built target breezestyleconfig-kcm-desktop-gen
+[  2%] Built target tsfiles-3858a8ab32fb23253adb201a90f4b499
+[  3%] [1m[34mAutomatic MOC for target kcursorgen[0m
+[  4%] [1m[34mAutomatic MOC for target breezecommon6[0m
+[  5%] [1m[34mAutomatic MOC for target breeze-settings[0m
+[  5%] Built target kcm_breezedecoration_autogen_timestamp_deps
+[  5%] Built target breezestyleconfig_autogen_timestamp_deps
+[  6%] [1m[34mAutomatic MOC for target kcm_breezedecoration[0m
+[  7%] [1m[34mAutomatic MOC for target breezestyleconfig[0m
+[  7%] Built target kcursorgen_autogen
+[  7%] Built target breezecommon6_autogen
+[  7%] Built target breeze-settings_autogen
+[  8%] [32mBuilding CXX object cursors/src/kcursorgen/CMakeFiles/kcursorgen.dir/kcursorgen_autogen/mocs_compilation.cpp.o[0m
+[  9%] [32mBuilding CXX object cursors/src/kcursorgen/CMakeFiles/kcursorgen.dir/kcursorgen.cpp.o[0m
+[ 10%] [32mBuilding CXX object libbreezecommon6/CMakeFiles/breezecommon6.dir/breezecommon6_autogen/mocs_compilation.cpp.o[0m
+[ 11%] [32mBuilding CXX object libbreezecommon6/CMakeFiles/breezecommon6.dir/breezeboxshadowrenderer.cpp.o[0m
+[ 12%] [32mBuilding CXX object cursors/src/kcursorgen/CMakeFiles/kcursorgen.dir/main.cpp.o[0m
+[ 13%] [32mBuilding CXX object kstyle6/config/CMakeFiles/breeze-settings.dir/breeze-settings_autogen/mocs_compilation.cpp.o[0m
+[ 14%] [32mBuilding CXX object kstyle6/config/CMakeFiles/breeze-settings.dir/main.cpp.o[0m
+[ 14%] Built target pofiles-3858a8ab32fb23253adb201a90f4b499
+[ 14%] Built target kcm_breezedecoration_autogen
+[ 16%] [1m[34mGenerating ui_breezeconfigurationui.h[0m
+[ 16%] [1m[34mGenerating breezesettings.h, breezesettings.cpp[0m
+[ 17%] [1m[34mGenerating ui_breezeexceptionlistwidget.h[0m
+[ 18%] [1m[34mGenerating ui_breezeexceptiondialog.h[0m
+[ 20%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/breezeconfigwidget.cpp.o[0m
+[ 20%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/__/breezeexceptionlist.cpp.o[0m
+[ 21%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/breezedetectwidget.cpp.o[0m
+[ 23%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/kcm_breezedecoration_autogen/mocs_compilation.cpp.o[0m
+[ 23%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/kcm_breezedecoration.cpp.o[0m
+[ 23%] Built target breezestyleconfig_autogen
+[ 24%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/breezeexceptiondialog.cpp.o[0m
+[ 25%] Built target breezecommon6
+[ 26%] [1m[34mGenerating ui_breezestyleconfig.h[0m
+[ 27%] [1m[34mGenerating breezestyleconfigdata.h, breezestyleconfigdata.cpp[0m
+[ 28%] [32mBuilding CXX object kstyle6/config/CMakeFiles/breezestyleconfig.dir/breezestyleconfig_autogen/mocs_compilation.cpp.o[0m
+[ 29%] [32mBuilding CXX object kstyle6/config/CMakeFiles/breezestyleconfig.dir/breezestyleconfig.cpp.o[0m
+[ 30%] [1m[32mLinking CXX executable ../../bin/breeze-settings6[0m
+[ 31%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/breezeexceptionlistwidget.cpp.o[0m
+[ 32%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/breezeexceptionmodel.cpp.o[0m
+[ 32%] Built target breeze-settings
+[ 32%] Built target breezedecoration_autogen_timestamp_deps
+[ 33%] [32mBuilding CXX object kstyle6/config/CMakeFiles/breezestyleconfig.dir/breezestyleconfigmodule.cpp.o[0m
+[ 34%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/breezeitemmodel.cpp.o[0m
+[ 35%] [32mBuilding CXX object kdecoration/config/CMakeFiles/kcm_breezedecoration.dir/breezesettings.cpp.o[0m
+[ 36%] [32mBuilding CXX object kstyle6/config/CMakeFiles/breezestyleconfig.dir/breezestyleconfigdata.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/breeze-05/build/cursors/src/kcursorgen/kcursorgen.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/breeze-05/build/cursors/src/kcursorgen/options.h:41:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KQCommandLineOption Options::[01;32m[Kscales[m[K()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+   41 | static QCommandLineOption [01;35m[Kscales[m[K()
+      |                           [01;35m[K^~~~~~[m[K
+[01m[K/var/tmp/hokuto/breeze-05/build/cursors/src/kcursorgen/options.h:35:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KQCommandLineOption Options::[01;32m[Ksizes[m[K()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+   35 | static QCommandLineOption [01;35m[Ksizes[m[K()
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/var/tmp/hokuto/breeze-05/build/cursors/src/kcursorgen/options.h:29:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KQCommandLineOption Options::[01;32m[KxcursorDir[m[K()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+   29 | static QCommandLineOption [01;35m[KxcursorDir[m[K()
+      |                           [01;35m[K^~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/breeze-05/build/cursors/src/kcursorgen/options.h:23:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KQCommandLineOption Options::[01;32m[KsvgDir[m[K()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+   23 | static QCommandLineOption [01;35m[KsvgDir[m[K()
+      |                           [01;35m[K^~~~~~[m[K
+[01m[K/var/tmp/hokuto/breeze-05/build/cursors/src/kcursorgen/options.h:15:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KQCommandLineOption Options::[01;32m[KsvgThemeToXCursor[m[K()[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+   15 | static QCommandLineOption [01;35m[KsvgThemeToXCursor[m[K()
+      |                           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[ 37%] [1m[32mLinking CXX executable kcursorgen[0m
+[ 37%] Built target breeze6_autogen_timestamp_deps
+[ 38%] [1m[34mAutomatic MOC for target breezedecoration[0m
+[ 39%] [1m[34mAutomatic MOC for target breeze6[0m
+[ 39%] Built target breezedecoration_autogen
+[ 40%] [1m[34mGenerating breezesettings.h, breezesettings.cpp[0m
+[ 41%] [32mBuilding CXX object kdecoration/CMakeFiles/breezedecoration.dir/breezedecoration_autogen/mocs_compilation.cpp.o[0m
+[ 42%] [32mBuilding CXX object kdecoration/CMakeFiles/breezedecoration.dir/breezebutton.cpp.o[0m
+[ 43%] Built target kcursorgen
+[ 44%] [32mBuilding CXX object kdecoration/CMakeFiles/breezedecoration.dir/breezedecoration.cpp.o[0m
+[ 45%] [32mBuilding CXX object kdecoration/CMakeFiles/breezedecoration.dir/breezesettingsprovider.cpp.o[0m
+[ 46%] [32mBuilding CXX object kdecoration/CMakeFiles/breezedecoration.dir/breezeexceptionlist.cpp.o[0m
+[ 46%] Built target breeze6_autogen
+[ 47%] [32mBuilding CXX object kdecoration/CMakeFiles/breezedecoration.dir/breezesettings.cpp.o[0m
+[ 48%] [1m[34mGenerating breezestyleconfigdata.h, breezestyleconfigdata.cpp[0m
+[ 49%] [1m[34mGenerating breezesettings.h, breezesettings.cpp[0m
+[ 50%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breeze6_autogen/mocs_compilation.cpp.o[0m
+[ 51%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezeanimation.cpp.o[0m
+[ 52%] [1m[32mLinking CXX shared module ../../bin/kstyle_config/breezestyleconfig.so[0m
+[ 53%] [1m[32mLinking CXX shared module ../../bin/org.kde.kdecoration3.kcm/kcm_breezedecoration.so[0m
+[ 54%] Built target breezestyleconfig
+[ 55%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezeanimations.cpp.o[0m
+[ 56%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezeanimationdata.cpp.o[0m
+[ 57%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezebaseengine.cpp.o[0m
+[ 58%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezebusyindicatordata.cpp.o[0m
+[ 59%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezebusyindicatorengine.cpp.o[0m
+[ 60%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezedialdata.cpp.o[0m
+[ 61%] Built target kcm_breezedecoration
+[ 62%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezedialengine.cpp.o[0m
+[ 63%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezeenabledata.cpp.o[0m
+[ 64%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezegenericdata.cpp.o[0m
+[ 65%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezeheaderviewdata.cpp.o[0m
+[ 66%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezeheaderviewengine.cpp.o[0m
+[ 67%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezescrollbardata.cpp.o[0m
+[ 68%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezescrollbarengine.cpp.o[0m
+[ 69%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezespinboxengine.cpp.o[0m
+[ 70%] [1m[32mLinking CXX shared module ../bin/org.kde.breeze.so[0m
+[ 71%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezespinboxdata.cpp.o[0m
+[ 72%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezestackedwidgetdata.cpp.o[0m
+[ 73%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezestackedwidgetengine.cpp.o[0m
+[ 74%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezetabbarengine.cpp.o[0m
+[ 75%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezetabbardata.cpp.o[0m
+[ 76%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezetoolboxengine.cpp.o[0m
+[ 78%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezetransitiondata.cpp.o[0m
+[ 78%] Built target breezedecoration
+[ 79%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezetransitionwidget.cpp.o[0m
+[ 80%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezewidgetstateengine.cpp.o[0m
+[ 81%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/animations/breezewidgetstatedata.cpp.o[0m
+[ 82%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/debug/breezewidgetexplorer.cpp.o[0m
+[ 83%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezeaddeventfilter.cpp.o[0m
+[ 84%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezeblurhelper.cpp.o[0m
+[ 85%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezeframeshadow.cpp.o[0m
+[ 86%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezehelper.cpp.o[0m
+[ 87%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezemdiwindowshadow.cpp.o[0m
+[ 88%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezemnemonics.cpp.o[0m
+[ 89%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezepropertynames.cpp.o[0m
+[ 90%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezeshadowhelper.cpp.o[0m
+[ 91%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezesplitterproxy.cpp.o[0m
+[ 92%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezestyle.cpp.o[0m
+[ 93%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezestyleplugin.cpp.o[0m
+[01m[K/var/tmp/hokuto/breeze-05/build/kstyle/breezehelper.cpp:[m[K In member function ‘[01m[Kvoid Breeze::Helper::[01;32m[KrenderStaticTabBarTab[m[K(QPainter*, const QRectF&, const QPalette&, const QHash<QByteArray, bool>&, Breeze::Corners, qreal) const[m[K’:
+[01m[K/var/tmp/hokuto/breeze-05/build/kstyle/breezehelper.cpp:1303:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcorners[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+ 1303 |                                    [01;35m[KCorners corners[m[K,
+      |                                    [01;35m[K~~~~~~~~^~~~~~~[m[K
+[ 94%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezetileset.cpp.o[0m
+[ 95%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezewindowmanager.cpp.o[0m
+[ 96%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezetoolsareamanager.cpp.o[0m
+[ 97%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezesettings.cpp.o[0m
+[ 98%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breezestyleconfigdata.cpp.o[0m
+[ 98%] [32mBuilding CXX object kstyle6/CMakeFiles/breeze6.dir/breeze_logging.cpp.o[0m
+[ 99%] [1m[32mLinking CXX shared module ../bin/breeze6.so[0m
+[100%] Built target breeze6
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/lib/qt6/plugins/styles/breeze6.so
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/kstyle/themes/breeze.themerc
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/lib/qt6/plugins/kstyle_config/breezestyleconfig.so
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/applications/breezestyleconfig.desktop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/bin/breeze-settings6
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/hicolor/scalable/apps/breeze-settings.svgz
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/QtCurve/Breeze.qtcurve
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/lib/qt6/plugins/org.kde.kdecoration3/org.kde.breeze.so
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/lib/qt6/plugins/org.kde.kdecoration3.kcm/kcm_breezedecoration.so
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/applications/kcm_breezedecoration.desktop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/contents
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/contents/images_dark
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/contents/images_dark/7680x2160.png
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/contents/images_dark/5120x2880.png
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/contents/images_dark/1440x2960.png
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/contents/images
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/contents/images/7680x2160.png
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/contents/images/5120x2880.png
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/wallpapers/Next/contents/images/1440x2960.png
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/fr/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/fr/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/et/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/et/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/lt/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/lt/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/eu/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/eu/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/zh_CN/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/zh_CN/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ru/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ru/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/lv/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/lv/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/en_GB/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/en_GB/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sa/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sa/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ro/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ro/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/tr/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/tr/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nn/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nn/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/az/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/az/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ar/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ar/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/hi/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/hi/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sk/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sk/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/uk/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/uk/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ast/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ast/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/es/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/es/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/hu/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/hu/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ca@valencia/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ca@valencia/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sl/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sl/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ka/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ka/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ga/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ga/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/cs/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/cs/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/eo/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/eo/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/id/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/id/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pl/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pl/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nl/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nl/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/is/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/is/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pa/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pa/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ta/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ta/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ja/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ja/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ml/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ml/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/el/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/el/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/he/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/he/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/da/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/da/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nds/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nds/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/se/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ia/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ia/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/bg/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/bg/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ca/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ca/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/gl/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/gl/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sv/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sv/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nb/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/nb/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/fi/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/fi/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/it/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/it/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ko/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/ko/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/bs/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/bs/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/tg/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/tg/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@latin/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/sr@latin/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pt/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pt/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pt_BR/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/pt_BR/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/zh_TW/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/zh_TW/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/de/LC_MESSAGES/breeze_style_config.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/locale/de/LC_MESSAGES/breeze_kwin_deco.mo
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/lib64/cmake/Breeze/BreezeConfig.cmake
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/lib64/cmake/Breeze/BreezeConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/color-schemes/BreezeClassic.colors
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/color-schemes/BreezeDark.colors
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/color-schemes/BreezeLight.colors
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/bin/kcursorgen
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size-ver
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/w-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_fdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_fdiag/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_fdiag/size_fdiag.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/zoom-out
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/zoom-out/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/zoom-out/zoom-out.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/row-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/row-resize/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/row-resize/row-resize.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_bdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_bdiag/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_bdiag/size_bdiag.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-15.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-14.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-19.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-08.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-09.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-18.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-12.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-13.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-06.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-11.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-05.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-17.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-04.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-21.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-16.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-22.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-10.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-23.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-07.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-02.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-20.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-01.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/progress/progress-03.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/closedhand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/dnd-no-drop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/dnd-no-drop/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/dnd-no-drop/dnd-no-drop.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/left_ptr_help
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/s-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/hand1
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/half-busy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/text
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/text/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/text/text.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/ns-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/col-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/col-resize/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/col-resize/col-resize.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size-bdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/question_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/d9ce0ab605698f320427677b458ad60b
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_side/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_side/top_side.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/b66166c04f8c3109214a4fbd64a50fc8
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/ew-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/nw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/grabbing
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/crossed_circle
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/crosshair
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/crosshair/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/crosshair/crosshair.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/n-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/left-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/left-arrow/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/left-arrow/left-arrow.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/up-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/up-arrow/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/up-arrow/up-arrow.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size-fdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pencil
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pencil/pencil.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pencil/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/zoom-in
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/zoom-in/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/zoom-in/zoom-in.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_left_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/no-drop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/no-drop/no-drop.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/no-drop/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/08e8e1c95fe2fc01f976f1e063a24ccd
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/draft
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/draft/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/draft/draft.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/xterm
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/tcross
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/not-allowed
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/not-allowed/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/not-allowed/not-allowed.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/vertical-text
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/vertical-text/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/vertical-text/vertical-text.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/e-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/sw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/context-menu
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/context-menu/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/context-menu/context-menu.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/640fb0e74195791501fd1ed57b41487f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/left_ptr_watch
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/dnd-none
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/fleur
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/fleur/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/fleur/fleur.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/watch
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/color-picker
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/color-picker/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/color-picker/color-picker.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_hor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_hor/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_hor/size_hor.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/openhand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/openhand/openhand.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/openhand/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/left_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/left_side/left_side.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/left_side/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/bottom_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/bottom_side/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/bottom_side/bottom_side.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/nesw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/help
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/help/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/help/help.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/grab
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/v_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/ibeam
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/se-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/a2a266d0498c3104214a47bd64ab0fc8
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/h_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/circle
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/ne-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/default
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/default/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/default/default.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/cross
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/9081237383d90e509aa00f00170e968f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/hand2
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/left_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pirate
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pirate/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pirate/pirate.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/alias
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/alias/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/alias/alias.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wayland-cursor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wayland-cursor/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wayland-cursor/wayland-cursor.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/center_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/center_ptr/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/center_ptr/center_ptr.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/right_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/right_side/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/right_side/right_side.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/nwse-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/1081e37283d90000800003c07f3ef6bf
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/4498f0e0c1937ffe01fd06f973665830
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/e29285e634086352946a0e7090d73106
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/move
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/all-scroll
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/all-scroll/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/all-scroll/all-scroll.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/03b6e0fcb3499374a867c041f52298f0
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/plus
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/9d800788f1b08800ae810202380a0822
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/forbidden
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/sb_v_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/split_h
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/cell
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/cell/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/cell/cell.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/bottom_right_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/bottom_right_corner/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/bottom_right_corner/bottom_right_corner.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/whats_this
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pointing_hand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_right_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_right_corner/top_right_corner.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_right_corner/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/down-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/down-arrow/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/down-arrow/down-arrow.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/dnd-copy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/x-cursor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/x-cursor/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/x-cursor/x-cursor.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/00008160000006810000408080010102
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/3ecb610c1bf2410f44200f48c40d3599
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/bottom_left_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/bottom_left_corner/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/bottom_left_corner/bottom_left_corner.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_ver
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_ver/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_ver/size_ver.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/link
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/right-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/right-arrow/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/right-arrow/right-arrow.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_left_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_left_corner/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/top_left_corner/top_left_corner.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/sb_h_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size_all
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/00000000000000020006000e7e9ffc3f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/copy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/copy/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/copy/copy.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pointer
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pointer/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/pointer/pointer.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/right_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/right_ptr/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/right_ptr/right_ptr.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/fcf21c00b30f7e3f83fe0dfd12e71cff
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/size-hor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-21.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-05.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-06.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-02.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-18.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-01.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-04.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-17.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-14.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-11.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-20.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-15.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-10.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-19.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-08.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-03.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-07.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-22.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-09.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-23.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-16.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-12.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/wait/wait-13.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/5c6cd98b3f3ebcb1f9c7f1c204630408
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/split_v
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/dnd-move
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/dnd-move/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/dnd-move/dnd-move.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/6407b0e94181790501fd1e167b474872
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors_scalable/3085a0e285430894940527032f8b26df
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/index.theme
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/size-ver
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/w-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/size_fdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/zoom-out
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/row-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/size_bdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/progress
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/closedhand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/dnd-no-drop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/left_ptr_help
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/s-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/hand1
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/half-busy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/text
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/ns-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/col-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/size-bdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/question_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/d9ce0ab605698f320427677b458ad60b
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/top_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/b66166c04f8c3109214a4fbd64a50fc8
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/ew-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/nw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/grabbing
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/crossed_circle
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/crosshair
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/n-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/left-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/up-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/size-fdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/pencil
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/zoom-in
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/top_left_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/no-drop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/08e8e1c95fe2fc01f976f1e063a24ccd
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/draft
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/xterm
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/tcross
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/not-allowed
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/vertical-text
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/e-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/sw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/context-menu
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/640fb0e74195791501fd1ed57b41487f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/left_ptr_watch
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/dnd-none
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/fleur
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/watch
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/color-picker
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/size_hor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/openhand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/left_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/bottom_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/nesw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/help
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/grab
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/v_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/ibeam
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/se-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/a2a266d0498c3104214a47bd64ab0fc8
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/h_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/circle
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/ne-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/default
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/cross
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/9081237383d90e509aa00f00170e968f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/hand2
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/left_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/pirate
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/alias
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/wayland-cursor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/center_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/right_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/nwse-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/1081e37283d90000800003c07f3ef6bf
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/4498f0e0c1937ffe01fd06f973665830
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/e29285e634086352946a0e7090d73106
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/move
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/all-scroll
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/03b6e0fcb3499374a867c041f52298f0
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/plus
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/9d800788f1b08800ae810202380a0822
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/forbidden
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/sb_v_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/split_h
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/cell
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/bottom_right_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/whats_this
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/pointing_hand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/top_right_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/down-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/dnd-copy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/x-cursor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/00008160000006810000408080010102
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/3ecb610c1bf2410f44200f48c40d3599
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/bottom_left_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/size_ver
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/link
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/right-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/top_left_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/sb_h_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/size_all
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/00000000000000020006000e7e9ffc3f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/copy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/pointer
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/right_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/fcf21c00b30f7e3f83fe0dfd12e71cff
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/size-hor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/wait
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/5c6cd98b3f3ebcb1f9c7f1c204630408
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/split_v
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/dnd-move
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/6407b0e94181790501fd1e167b474872
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/breeze_cursors/cursors/3085a0e285430894940527032f8b26df
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size-ver
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/w-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_fdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_fdiag/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_fdiag/size_fdiag.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/zoom-out
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/zoom-out/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/zoom-out/zoom-out.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/row-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/row-resize/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/row-resize/row-resize.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_bdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_bdiag/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_bdiag/size_bdiag.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-15.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-14.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-19.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-08.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-09.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-18.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-12.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-13.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-06.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-11.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-05.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-17.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-04.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-21.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-16.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-22.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-10.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-23.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-07.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-02.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-20.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-01.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/progress/progress-03.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/closedhand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/dnd-no-drop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/dnd-no-drop/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/dnd-no-drop/dnd-no-drop.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/left_ptr_help
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/s-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/hand1
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/half-busy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/text
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/text/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/text/text.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/ns-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/col-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/col-resize/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/col-resize/col-resize.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size-bdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/question_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/d9ce0ab605698f320427677b458ad60b
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_side/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_side/top_side.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/b66166c04f8c3109214a4fbd64a50fc8
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/ew-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/nw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/grabbing
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/crossed_circle
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/crosshair
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/crosshair/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/crosshair/crosshair.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/n-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/left-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/left-arrow/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/left-arrow/left-arrow.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/up-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/up-arrow/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/up-arrow/up-arrow.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size-fdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pencil
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pencil/pencil.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pencil/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/zoom-in
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/zoom-in/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/zoom-in/zoom-in.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_left_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/no-drop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/no-drop/no-drop.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/no-drop/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/08e8e1c95fe2fc01f976f1e063a24ccd
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/draft
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/draft/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/draft/draft.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/xterm
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/tcross
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/not-allowed
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/not-allowed/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/not-allowed/not-allowed.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/vertical-text
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/vertical-text/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/vertical-text/vertical-text.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/e-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/sw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/context-menu
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/context-menu/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/context-menu/context-menu.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/640fb0e74195791501fd1ed57b41487f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/left_ptr_watch
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/dnd-none
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/fleur
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/fleur/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/fleur/fleur.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/watch
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/color-picker
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/color-picker/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/color-picker/color-picker.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_hor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_hor/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_hor/size_hor.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/openhand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/openhand/openhand.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/openhand/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/left_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/left_side/left_side.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/left_side/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/bottom_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/bottom_side/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/bottom_side/bottom_side.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/nesw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/help
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/help/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/help/help.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/grab
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/v_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/ibeam
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/se-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/a2a266d0498c3104214a47bd64ab0fc8
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/h_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/circle
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/ne-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/default
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/default/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/default/default.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/cross
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/9081237383d90e509aa00f00170e968f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/hand2
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/left_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pirate
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pirate/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pirate/pirate.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/alias
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/alias/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/alias/alias.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wayland-cursor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wayland-cursor/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wayland-cursor/wayland-cursor.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/center_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/center_ptr/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/center_ptr/center_ptr.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/right_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/right_side/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/right_side/right_side.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/nwse-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/1081e37283d90000800003c07f3ef6bf
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/4498f0e0c1937ffe01fd06f973665830
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/e29285e634086352946a0e7090d73106
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/move
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/all-scroll
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/all-scroll/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/all-scroll/all-scroll.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/03b6e0fcb3499374a867c041f52298f0
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/plus
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/9d800788f1b08800ae810202380a0822
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/forbidden
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/sb_v_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/split_h
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/cell
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/cell/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/cell/cell.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/bottom_right_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/bottom_right_corner/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/bottom_right_corner/bottom_right_corner.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/whats_this
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pointing_hand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_right_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_right_corner/top_right_corner.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_right_corner/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/down-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/down-arrow/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/down-arrow/down-arrow.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/dnd-copy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/x-cursor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/x-cursor/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/x-cursor/x-cursor.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/00008160000006810000408080010102
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/3ecb610c1bf2410f44200f48c40d3599
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/bottom_left_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/bottom_left_corner/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/bottom_left_corner/bottom_left_corner.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_ver
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_ver/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_ver/size_ver.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/link
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/right-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/right-arrow/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/right-arrow/right-arrow.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_left_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_left_corner/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/top_left_corner/top_left_corner.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/sb_h_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size_all
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/00000000000000020006000e7e9ffc3f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/copy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/copy/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/copy/copy.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pointer
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pointer/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/pointer/pointer.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/right_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/right_ptr/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/right_ptr/right_ptr.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/fcf21c00b30f7e3f83fe0dfd12e71cff
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/size-hor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-21.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-05.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-06.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-02.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-18.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-01.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-04.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-17.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-14.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-11.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-20.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-15.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-10.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-19.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-08.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-03.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-07.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-22.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-09.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-23.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-16.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-12.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/wait/wait-13.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/5c6cd98b3f3ebcb1f9c7f1c204630408
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/split_v
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/dnd-move
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/dnd-move/metadata.json
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/dnd-move/dnd-move.svg
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/6407b0e94181790501fd1e167b474872
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors_scalable/3085a0e285430894940527032f8b26df
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/index.theme
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/size-ver
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/w-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/size_fdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/zoom-out
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/row-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/size_bdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/progress
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/closedhand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/dnd-no-drop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/left_ptr_help
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/s-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/hand1
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/half-busy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/text
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/ns-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/col-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/size-bdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/question_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/d9ce0ab605698f320427677b458ad60b
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/top_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/b66166c04f8c3109214a4fbd64a50fc8
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/ew-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/nw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/grabbing
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/crossed_circle
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/crosshair
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/n-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/left-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/up-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/size-fdiag
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/pencil
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/zoom-in
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/top_left_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/no-drop
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/08e8e1c95fe2fc01f976f1e063a24ccd
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/draft
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/xterm
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/tcross
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/not-allowed
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/vertical-text
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/e-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/sw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/context-menu
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/640fb0e74195791501fd1ed57b41487f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/left_ptr_watch
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/dnd-none
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/fleur
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/watch
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/color-picker
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/size_hor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/openhand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/left_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/bottom_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/nesw-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/help
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/grab
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/v_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/ibeam
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/se-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/a2a266d0498c3104214a47bd64ab0fc8
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/h_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/circle
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/ne-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/default
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/cross
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/9081237383d90e509aa00f00170e968f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/hand2
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/left_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/pirate
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/alias
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/wayland-cursor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/center_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/right_side
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/nwse-resize
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/1081e37283d90000800003c07f3ef6bf
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/4498f0e0c1937ffe01fd06f973665830
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/e29285e634086352946a0e7090d73106
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/move
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/all-scroll
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/03b6e0fcb3499374a867c041f52298f0
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/plus
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/9d800788f1b08800ae810202380a0822
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/forbidden
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/sb_v_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/split_h
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/cell
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/bottom_right_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/whats_this
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/pointing_hand
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/top_right_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/down-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/dnd-copy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/x-cursor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/00008160000006810000408080010102
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/3ecb610c1bf2410f44200f48c40d3599
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/bottom_left_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/size_ver
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/link
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/right-arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/top_left_corner
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/sb_h_double_arrow
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/size_all
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/00000000000000020006000e7e9ffc3f
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/copy
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/pointer
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/right_ptr
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/fcf21c00b30f7e3f83fe0dfd12e71cff
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/size-hor
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/wait
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/5c6cd98b3f3ebcb1f9c7f1c204630408
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/split_v
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/dnd-move
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/6407b0e94181790501fd1e167b474872
+-- Installing: /var/tmp/hokuto/breeze-05/output/usr/share/icons/Breeze_Light/cursors/3085a0e285430894940527032f8b26df
+
+Script done on 2026-06-18 00:54:05+07:00 [COMMAND_EXIT_CODE="0"]
