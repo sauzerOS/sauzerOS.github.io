@@ -1,0 +1,1768 @@
+Script started on 2026-06-18 01:04:46+07:00 [COMMAND="cd /var/tmp/hokuto/libksysguard-31/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libksysguard-31/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libksysguard-31/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libksysguard-31/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libksysguard-31/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libksysguard-31/build/.cache' /repo/kde/libksysguard/build /var/tmp/hokuto/libksysguard-31/output 6.7.0 libksysguard" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:15 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.27.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.27.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.27.0")
+-- Found KF6Auth: /usr/lib64/cmake/KF6Auth/KF6AuthConfig.cmake (found version "6.27.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.27.0")
+-- Found KF6Package: /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake (found version "6.27.0")
+-- Found KF6NewStuff: /usr/lib64/cmake/KF6NewStuff/KF6NewStuffConfig.cmake (found version "6.27.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.27.0")
+-- Found KF6: success (found suitable version "6.27.0", minimum required is "6.26.0") found components: CoreAddons Config I18n Auth Service Package NewStuff Solid
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Looking for clock_gettime in c
+-- Looking for clock_gettime in c - found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for modules 'libnl-3.0;libnl-route-3.0'
+--   Found libnl-3.0, version 3.12.0
+--   Found libnl-route-3.0, version 3.12.0
+-- Found NL: /usr/lib/libnl-3.so
+-- Found libpcap: /usr/lib/libpcap.so
+-- Performing Test PCAP_LINKS_SOLO
+-- Performing Test PCAP_LINKS_SOLO - Success
+-- Looking for pcap_get_pfring_id
+-- Looking for pcap_get_pfring_id - not found
+-- Found Libcap: /usr/bin/setcap
+-- Found Sensors: /usr/include
+-- Found UDev: /usr/include (found version "260")
+-- Found Libdrm: /usr/lib/libdrm.so (found version "2.4.134")
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following features have been enabled:
+
+ * KAUTH_HELPER, Build and install ksysguardprocesslist_helper KAuth helper
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6DBusTools (required version >= 6.11.1)
+ * Qt6DBus (required version >= 6.10.0)
+ * OpenGL
+ * Qt6QuickTools (required version >= 6.11.1)
+ * Qt6Quick (required version >= 6.10.0)
+ * Qt6Core (required version >= 6.9.0)
+ * WrapVulkanHeaders
+ * Qt6QmlTools (required version >= 6.11.1)
+ * Qt6Qml (required version >= 6.9.0)
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6GuiTools (required version >= 6.11.1)
+ * Qt6WidgetsTools (required version >= 6.11.1)
+ * Qt6Widgets (required version >= 6.9.0)
+ * Libcap, Capabilities are a measure to limit the omnipotence of the superuser., <https://sites.google.com/site/fullycapable/>
+   Needed for setting capabilities of the per-application network plugin.
+ * UDev, API for enumerating and introspecting local devices (part of systemd), <https://www.freedesktop.org/wiki/Software/systemd/>
+   UDev is used for finding graphics cards.
+ * PkgConfig
+
+-- The following RECOMMENDED packages have been found:
+
+ * libpcap
+   libpcap is used for per-application network usage.
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6 (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6CoreAddons (required version >= 6.27.0)
+ * KF6Auth (required version >= 6.26.0)
+ * KF6Config (required version >= 6.27.0)
+ * KF6Service (required version >= 6.26.0)
+ * KF6Package (required version >= 6.26.0)
+ * KF6NewStuff (required version >= 6.26.0)
+ * KF6Solid (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * ZLIB, Support for gzip compressed files and data streams, <https://zlib.net/>
+ * NL, <https://github.com/thom311/libnl/>
+   Used for gathering socket info via the sock_diag netlink subsystem.
+ * Sensors
+   Used for reading hardware sensors
+ * Libdrm, Userspace interface to kernel DRM services, <https://wiki.freedesktop.org/dri/>
+
+-- Configuring done (5.5s)
+-- Generating done (0.5s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/libksysguard-31/build/build
+[  1%] [1m[34mGenerating mo...[0m
+[  2%] [1m[34mCopying processcore qml resources into build dir[0m
+[  3%] [1m[34mGenerating ts...[0m
+[  4%] [1m[34mCopying Formatter qml sources into build dir[0m
+[  4%] Built target ksysguardprocesslist_helper_autogen_timestamp_deps
+[  4%] [1m[34mGenerating org.kde.ksysguard.processlisthelper.policy[0m
+[  4%] [1m[34mPopulating .qmlls.ini file at /var/tmp/hokuto/libksysguard-31/build/build/.qt/.qmlls.build.ini[0m
+[  4%] [1m[34mCopying processcore qml sources into build dir[0m
+[  4%] [1m[34mCopying Formatter qml resources into build dir[0m
+[  5%] [1m[34mactions for org.kde.ksysguard.processlisthelper[0m
+[  5%] Built target processcore_copy_qml
+[  5%] Built target Formatter_copy_qml
+[  5%] Built target tsfiles-969d968cb9e0c41147054cdb4f1b91fc
+[  5%] Built target ksgrd_network_helper_autogen_timestamp_deps
+[  5%] Built target processcore_copy_res
+[  6%] [1m[34mCopying Sensors qml sources into build dir[0m
+[  6%] [1m[34mCopying Sensors qml resources into build dir[0m
+[  6%] Built target Formatter_copy_res
+[  6%] Built target generate_qmlls_build_ini_file
+[  6%] [1m[34mCopying SensorFaces qml resources into build dir[0m
+[  6%] Built target org.kde.ksysguard.processlisthelper.policy-customtarget
+[  6%] Built target Sensors_copy_qml
+[  6%] Built target Sensors_copy_res
+[  7%] [1m[34mCopying SensorFaces qml sources into build dir[0m
+[  7%] [1m[34mCopying SensorFacesPrivate qml sources into build dir[0m
+[  7%] Built target SensorFaces_copy_res
+[  7%] [1m[34mAutomatic MOC for target ksysguardprocesslist_helper[0m
+[  7%] Built target ksysguard_sensorface_autogen_timestamp_deps
+[  9%] [1m[34mCopying SensorFacesPrivate qml resources into build dir[0m
+[  9%] [1m[34mAutomatic MOC for target ksgrd_network_helper[0m
+[  9%] Built target SensorFaces_copy_qml
+[  9%] [1m[34mAutomatic MOC for target ksysguard_sensorface[0m
+[  9%] Built target SensorFacesPrivate_copy_qml
+[  9%] Built target Formatter_autogen_timestamp_deps
+[  9%] Built target SensorFacesPrivate_copy_res
+[  9%] Built target SensorFacesPrivate_autogen_timestamp_deps
+[  9%] [1m[34mAutomatic MOC for target Formatter[0m
+[  9%] Built target ksgrd_network_helper_autogen
+[ 10%] [1m[34mAutomatic MOC for target SensorFacesPrivate[0m
+[ 10%] [32mBuilding CXX object processcore/plugins/network/helper/CMakeFiles/ksgrd_network_helper.dir/ksgrd_network_helper_autogen/mocs_compilation.cpp.o[0m
+[ 10%] [32mBuilding CXX object processcore/plugins/network/helper/CMakeFiles/ksgrd_network_helper.dir/Packet.cpp.o[0m
+[ 11%] [32mBuilding CXX object processcore/plugins/network/helper/CMakeFiles/ksgrd_network_helper.dir/ConnectionMapping.cpp.o[0m
+[ 11%] [32mBuilding CXX object processcore/plugins/network/helper/CMakeFiles/ksgrd_network_helper.dir/main.cpp.o[0m
+[ 12%] [32mBuilding CXX object processcore/plugins/network/helper/CMakeFiles/ksgrd_network_helper.dir/Capture.cpp.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[ 12%] [32mBuilding CXX object processcore/plugins/network/helper/CMakeFiles/ksgrd_network_helper.dir/Accumulator.cpp.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[ 12%] Built target Formatter_autogen
+[ 13%] [1m[34mRunning AUTOMOC file extraction for target Formatter[0m
+[ 14%] [1m[34mRunning rcc for resource qmake_org_kde_ksysguard_formatter[0m
+[ 14%] [1m[34mRunning moc --collect-json for target Formatter[0m
+[ 14%] [1m[34mGenerating meta_types/qt6formatter_metatypes.json[0m
+[ 14%] Built target ksysguardprocesslist_helper_autogen
+[ 14%] [1m[34mAutomatic QML type registration for target Formatter[0m
+[ 14%] [32mBuilding CXX object processcore/CMakeFiles/ksysguardprocesslist_helper.dir/ksysguardprocesslist_helper_autogen/mocs_compilation.cpp.o[0m
+[ 15%] [32mBuilding CXX object processcore/CMakeFiles/ksysguardprocesslist_helper.dir/helper.cpp.o[0m
+[ 15%] Built target SensorFacesPrivate_autogen
+[ 17%] [1m[34mRunning AUTOMOC file extraction for target SensorFacesPrivate[0m
+[ 17%] Built target ksysguard_sensorface_autogen
+[ 18%] [1m[34mRunning rcc for resource qmake_org_kde_ksysguard_faces_private[0m
+[ 19%] [1m[34mRunning moc --collect-json for target SensorFacesPrivate[0m
+[ 19%] [32mBuilding CXX object faces/packagestructure/CMakeFiles/ksysguard_sensorface.dir/ksysguard_sensorface_autogen/mocs_compilation.cpp.o[0m
+[ 20%] [32mBuilding CXX object formatter/CMakeFiles/Formatter.dir/Formatter_autogen/mocs_compilation.cpp.o[0m
+[ 20%] [1m[34mGenerating meta_types/qt6sensorfacesprivate_metatypes.json[0m
+[ 20%] [32mBuilding CXX object faces/packagestructure/CMakeFiles/ksysguard_sensorface.dir/sensorfacepackage.cpp.o[0m
+[ 20%] [1m[34mAutomatic QML type registration for target SensorFacesPrivate[0m
+[ 20%] [32mBuilding CXX object processcore/CMakeFiles/ksysguardprocesslist_helper.dir/process.cpp.o[0m
+[ 21%] [32mBuilding CXX object faces/CMakeFiles/SensorFacesPrivate.dir/SensorFacesPrivate_autogen/mocs_compilation.cpp.o[0m
+[ 21%] [32mBuilding CXX object formatter/CMakeFiles/Formatter.dir/Formatter.cpp.o[0m
+[ 21%] Built target pofiles-969d968cb9e0c41147054cdb4f1b91fc
+[ 21%] [32mBuilding CXX object formatter/CMakeFiles/Formatter.dir/Unit.cpp.o[0m
+[ 21%] [32mBuilding CXX object faces/CMakeFiles/SensorFacesPrivate.dir/SensorFacesPrivate_org_kde_ksysguard_faces_privatePlugin.cpp.o[0m
+[ 22%] [1m[32mLinking CXX executable ../../../../bin/ksgrd_network_helper[0m
+[ 23%] Built target ksgrd_network_helper
+[ 25%] [32mBuilding CXX object processcore/CMakeFiles/ksysguardprocesslist_helper.dir/processes_local_p.cpp.o[0m
+[01m[K/var/tmp/hokuto/libksysguard-31/build/formatter/Formatter.cpp:[m[K In function ‘[01m[KKSysGuard::Unit KSysGuard::[01;32m[KadjustedUnit[m[K(qreal, Unit, MetricPrefix)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/formatter/Formatter.cpp:478:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KinputOrder[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  478 |     int [01;35m[KinputOrder[m[K = order;
+      |         [01;35m[K^~~~~~~~~~[m[K
+[ 26%] [1m[32mLinking CXX shared module ../../bin/ksysguard_sensorface.so[0m
+[ 27%] [32mBuilding CXX object formatter/CMakeFiles/Formatter.dir/FormatterWrapper.cpp.o[0m
+[ 27%] [32mBuilding CXX object faces/CMakeFiles/SensorFacesPrivate.dir/sensorfacesprivate_qmltyperegistrations.cpp.o[0m
+[ 27%] [32mBuilding CXX object formatter/CMakeFiles/Formatter.dir/formatter_debug.cpp.o[0m
+[ 28%] Built target ksysguard_sensorface
+[ 29%] [32mBuilding CXX object faces/CMakeFiles/SensorFacesPrivate.dir/.qt/rcc/qrc_qmake_org_kde_ksysguard_faces_private.cpp.o[0m
+[ 30%] [32mBuilding CXX object formatter/CMakeFiles/Formatter.dir/formatter_qmltyperegistrations.cpp.o[0m
+[ 30%] [32mBuilding CXX object formatter/CMakeFiles/Formatter.dir/.qt/rcc/qrc_qmake_org_kde_ksysguard_formatter.cpp.o[0m
+[ 30%] [1m[32mLinking CXX executable ../bin/ksysguardprocesslist_helper[0m
+[ 30%] [1m[32mLinking CXX shared module ../bin/org/kde/ksysguard/faces/private/libSensorFacesPrivate.so[0m
+[ 31%] [1m[32mLinking CXX shared library ../bin/libKSysGuardFormatter.so[0m
+[ 31%] Built target SensorFacesPrivate
+[ 31%] Built target Formatter
+[ 31%] Built target processcore_autogen_timestamp_deps
+[ 31%] Built target Formatterplugin_autogen_timestamp_deps
+[ 31%] Built target dbusinterface_autogen_timestamp_deps
+[ 31%] [1m[34mAutomatic MOC for target Formatterplugin[0m
+[ 31%] [1m[34mAutomatic MOC for target dbusinterface[0m
+[ 32%] [1m[34mAutomatic MOC for target processcore[0m
+[ 32%] Built target dbusinterface_autogen
+[ 32%] [1m[34mGenerating org.kde.ksystemstats1.cpp, org.kde.ksystemstats1.h[0m
+[ 34%] [1m[34mGenerating moc_org.kde.ksystemstats1.cpp[0m
+[ 34%] [32mBuilding CXX object systemstats/CMakeFiles/dbusinterface.dir/org.kde.ksystemstats1.cpp.o[0m
+[ 35%] [32mBuilding CXX object systemstats/CMakeFiles/dbusinterface.dir/dbusinterface_autogen/mocs_compilation.cpp.o[0m
+[ 35%] Built target processcore_autogen
+[ 35%] [1m[34mRunning rcc for resource qmake_org_kde_ksysguard_process[0m
+[ 35%] [1m[34mRunning AUTOMOC file extraction for target processcore[0m
+[ 35%] [1m[34mRunning moc --collect-json for target processcore[0m
+[ 35%] Built target Formatterplugin_autogen
+[ 35%] [1m[34mGenerating meta_types/qt6processcore_metatypes.json[0m
+[ 35%] [32mBuilding CXX object formatter/CMakeFiles/Formatterplugin.dir/Formatterplugin_autogen/mocs_compilation.cpp.o[0m
+[ 36%] [32mBuilding CXX object formatter/CMakeFiles/Formatterplugin.dir/Formatterplugin_org_kde_ksysguard_formatterPlugin.cpp.o[0m
+[ 37%] [1m[34mAutomatic QML type registration for target processcore[0m
+[ 38%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/processcore_autogen/mocs_compilation.cpp.o[0m
+[ 39%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/application_data_model.cpp.o[0m
+[ 39%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/cgroup.cpp.o[0m
+[ 39%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/cgroup_data_model.cpp.o[0m
+[ 39%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/processes.cpp.o[0m
+[ 39%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/process.cpp.o[0m
+[ 40%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/extended_process_list.cpp.o[0m
+[ 42%] Built target ksysguardprocesslist_helper
+[ 43%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/process_attribute.cpp.o[0m
+[ 43%] [1m[32mLinking CXX shared module ../bin/org/kde/ksysguard/formatter/libFormatterplugin.so[0m
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/org.kde.ksystemstats1.h:22[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/org.kde.ksystemstats1.cpp:12[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QVariant:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/org.kde.ksystemstats1.h:20[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[ 44%] Built target Formatterplugin
+[ 44%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/processes_local_p.cpp.o[0m
+[ 44%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/process_attribute_model.cpp.o[0m
+[ 45%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/process_controller.cpp.o[0m
+[ 46%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/process_data_model.cpp.o[0m
+[ 46%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/process_data_provider.cpp.o[0m
+[ 47%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/gpu_utils.cpp.o[0m
+[ 47%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/processcore_debug.cpp.o[0m
+[ 47%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/processcore_qmltyperegistrations.cpp.o[0m
+[ 48%] [1m[32mLinking CXX static library ../lib/libdbusinterface.a[0m
+[ 48%] Built target dbusinterface
+[ 48%] Built target SystemStats_autogen_timestamp_deps
+[ 50%] [32mBuilding CXX object processcore/CMakeFiles/processcore.dir/.qt/rcc/qrc_qmake_org_kde_ksysguard_process.cpp.o[0m
+[ 50%] [1m[34mAutomatic MOC for target SystemStats[0m
+[ 50%] Built target SystemStats_autogen
+[ 51%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/AggregateSensor.cpp.o[0m
+[ 51%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/SystemStats_autogen/mocs_compilation.cpp.o[0m
+[ 51%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/SensorObject.cpp.o[0m
+[ 52%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/SensorContainer.cpp.o[0m
+[ 52%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/SensorPlugin.cpp.o[0m
+[ 53%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/SensorProperty.cpp.o[0m
+[ 53%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/SysFsSensor.cpp.o[0m
+[ 54%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/DBusInterface.cpp.o[0m
+[ 54%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/systemstats_logging.cpp.o[0m
+[ 54%] [1m[32mLinking CXX shared library ../bin/libprocesscore.so[0m
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorObject.h:14[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/AggregateSensor.h:18[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/AggregateSensor.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qregularexpression.h:14[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QRegularExpression:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/AggregateSensor.h:15[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/../../../../systemstats/SensorProperty.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/../../../../systemstats/SensorObject.h:14[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/../../../../systemstats/AggregateSensor.h:18[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/moc_AggregateSensor.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/../../../../systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qregularexpression.h:14[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QRegularExpression:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/../../../../systemstats/AggregateSensor.h:15[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:[m[K At global scope:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:84:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   84 |     void setVariantType(QVariant::Type type[01;35m[K)[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/../../../../systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/../../../../systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/../../../../systemstats/SensorProperty.h:[m[K At global scope:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/SystemStats_autogen/EWIEGA46WW/../../../../systemstats/SensorProperty.h:84:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   84 |     void setVariantType(QVariant::Type type[01;35m[K)[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[ 54%] [32mBuilding CXX object systemstats/CMakeFiles/SystemStats.dir/SensorsFeatureSensor.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SysFsSensor.h:13[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SysFsSensor.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtDBus/qtdbusglobal.h:10[m[K,
+                 from [01m[K/usr/include/qt6/QtDBus/qdbusargument.h:8[m[K,
+                 from [01m[K/usr/include/qt6/QtDBus/QDBusArgument:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:9[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:[m[K At global scope:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:84:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   84 |     void setVariantType(QVariant::Type type[01;35m[K)[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorObject.h:14[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorObject.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QVariant:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorPlugin.h:12[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorObject.h:13[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorObject.h:14[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorContainer.cpp:9[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QVariant:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorPlugin.h:12[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorContainer.h:13[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorContainer.cpp:7[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:[m[K At global scope:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:84:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   84 |     void setVariantType(QVariant::Type type[01;35m[K)[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:[m[K At global scope:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:84:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   84 |     void setVariantType(QVariant::Type type[01;35m[K)[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtDBus/qtdbusglobal.h:10[m[K,
+                 from [01m[K/usr/include/qt6/QtDBus/qdbusargument.h:8[m[K,
+                 from [01m[K/usr/include/qt6/QtDBus/QDBusArgument:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:9[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:[m[K At global scope:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:84:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   84 |     void setVariantType(QVariant::Type type[01;35m[K)[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.cpp:164:56:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  164 | void SensorProperty::setVariantType(QVariant::Type type[01;35m[K)[m[K
+      |                                                        [01;35m[K^[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorsFeatureSensor.h:10[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorsFeatureSensor.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtDBus/qtdbusglobal.h:10[m[K,
+                 from [01m[K/usr/include/qt6/QtDBus/qdbusargument.h:8[m[K,
+                 from [01m[K/usr/include/qt6/QtDBus/QDBusArgument:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:9[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:[m[K At global scope:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorProperty.h:84:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   84 |     void setVariantType(QVariant::Type type[01;35m[K)[m[K;
+      |                                            [01;35m[K^[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/org.kde.ksystemstats1.h:22[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/DBusInterface.h:9[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/DBusInterface.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QVariant:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/systemstats/org.kde.ksystemstats1.h:20[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[ 55%] Built target processcore
+[ 55%] Built target ksysguard-identify_autogen_timestamp_deps
+[ 55%] Built target ksysguard_plugin_network_autogen_timestamp_deps
+[ 55%] Built target processcoreplugin_autogen_timestamp_deps
+[ 55%] Built target ksysguard_plugin_gpu_autogen_timestamp_deps
+[ 55%] [1m[34mAutomatic MOC for target ksysguard-identify[0m
+[ 55%] [1m[34mAutomatic MOC for target ksysguard_plugin_network[0m
+[ 55%] [1m[34mAutomatic MOC for target processcoreplugin[0m
+[ 56%] [1m[34mAutomatic MOC for target ksysguard_plugin_gpu[0m
+[ 57%] [1m[32mLinking CXX shared library ../bin/libKSysGuardSystemStats.so[0m
+[ 57%] Built target ksysguard-identify_autogen
+[ 57%] [32mBuilding CXX object processcore/identifytool/CMakeFiles/ksysguard-identify.dir/main.cpp.o[0m
+[ 57%] [32mBuilding CXX object processcore/identifytool/CMakeFiles/ksysguard-identify.dir/ksysguard-identify_autogen/mocs_compilation.cpp.o[0m
+[ 57%] Built target processcoreplugin_autogen
+[ 57%] [32mBuilding CXX object processcore/CMakeFiles/processcoreplugin.dir/processcoreplugin_org_kde_ksysguard_processPlugin.cpp.o[0m
+[ 59%] [32mBuilding CXX object processcore/CMakeFiles/processcoreplugin.dir/processcoreplugin_autogen/mocs_compilation.cpp.o[0m
+[ 59%] Built target ksysguard_plugin_network_autogen
+[ 59%] Built target ksysguard_plugin_gpu_autogen
+[ 60%] [32mBuilding CXX object processcore/plugins/gpu/CMakeFiles/ksysguard_plugin_gpu.dir/gpu.cpp.o[0m
+[ 60%] [32mBuilding CXX object processcore/plugins/gpu/CMakeFiles/ksysguard_plugin_gpu.dir/ksysguard_plugin_gpu_autogen/mocs_compilation.cpp.o[0m
+[ 60%] [32mBuilding CXX object processcore/plugins/network/CMakeFiles/ksysguard_plugin_network.dir/ksysguard_plugin_network_autogen/mocs_compilation.cpp.o[0m
+[ 61%] [32mBuilding CXX object processcore/plugins/network/CMakeFiles/ksysguard_plugin_network.dir/network.cpp.o[0m
+[ 61%] [32mBuilding CXX object processcore/plugins/network/CMakeFiles/ksysguard_plugin_network.dir/networklogging.cpp.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K‘[01m[KTRANSLATION_DOMAIN[m[K’ redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[ 61%] Built target SystemStats
+[ 61%] Built target Sensors_autogen_timestamp_deps
+[ 61%] [1m[34mAutomatic MOC for target Sensors[0m
+[ 61%] Built target Sensors_autogen
+[ 61%] [1m[34mGenerating ksysguarddaemon.cpp, ksysguarddaemon.h[0m
+[ 62%] [1m[34mRunning rcc for resource qmake_org_kde_ksysguard_sensors[0m
+[ 63%] [1m[34mRunning AUTOMOC file extraction for target Sensors[0m
+[ 64%] [1m[34mRunning moc --collect-json for target Sensors[0m
+[ 64%] [1m[34mGenerating moc_ksysguarddaemon.cpp[0m
+[ 64%] [1m[34mGenerating meta_types/qt6sensors_metatypes.json[0m
+[ 64%] [1m[34mAutomatic QML type registration for target Sensors[0m
+[ 65%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/SensorTreeModel.cpp.o[0m
+[ 64%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/SensorDataModel.cpp.o[0m
+[ 67%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/Sensors_autogen/mocs_compilation.cpp.o[0m
+[ 67%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/Sensor.cpp.o[0m
+[ 68%] [1m[32mLinking CXX executable ../../bin/ksysguard-identify[0m
+[ 68%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/SensorGroup.cpp.o[0m
+[ 69%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/SensorQuery.cpp.o[0m
+[ 70%] [1m[32mLinking CXX shared module ../../../bin/ksysguard_plugin_network.so[0m
+[ 71%] [1m[32mLinking CXX shared module ../bin/org/kde/ksysguard/process/libprocesscoreplugin.so[0m
+[ 71%] Built target processcoreplugin
+[ 71%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/SensorDaemonInterface.cpp.o[0m
+[ 72%] Built target ksysguard-identify
+[ 73%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/SensorUnitModel.cpp.o[0m
+[ 73%] Built target ksysguard_plugin_network
+[ 73%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/sensors_logging.cpp.o[0m
+[ 73%] [1m[32mLinking CXX shared module ../../../bin/ksysguard_plugin_gpu.so[0m
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/Sensors_autogen/EWIEGA46WW/moc_Sensor.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/Sensors_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/Sensors_autogen/EWIEGA46WW/../../../../sensors/Sensor.h:159:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  159 |     QVariant::Type type() [01;35m[Kconst[m[K;
+      |                           [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QVariant:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/Sensors_autogen/EWIEGA46WW/../../../../sensors/Sensor.h:15[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/Sensors_autogen/EWIEGA46WW/../../../../sensors/SensorDaemonInterface_p.h:12[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/Sensors_autogen/EWIEGA46WW/moc_SensorDaemonInterface_p.cpp:9[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/Sensors_autogen/mocs_compilation.cpp:3[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorDataModel.cpp:16[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qabstractitemmodel.h:13[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QAbstractTableModel:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorDataModel.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorDataModel.cpp:8[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.cpp:14[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QVariant:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/formatter/Formatter.h:15[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.cpp:13[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.cpp:16[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.h:[m[K At global scope:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.h:159:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  159 |     QVariant::Type type() [01;35m[Kconst[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.cpp:161:31:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  161 | QVariant::Type Sensor::type() [01;35m[Kconst[m[K
+      |                               [01;35m[K^~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.cpp:[m[K In member function ‘[01m[KQVariant KSysGuard::Sensor::[01;32m[Kvalue[m[K() const[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.cpp:169:50:[m[K [01;35m[Kwarning: [m[K‘[01m[KQVariant::[01;32m[KQVariant[m[K(Type)[m[K’ is deprecated: Use the constructor taking a QMetaType instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  169 |         return QVariant{d->sensorInfo.variantType[01;35m[K}[m[K;
+      |                                                  [01;35m[K^[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:598:14:[m[K [01;36m[Knote: [m[Kdeclared here
+  598 |     explicit [01;36m[KQVariant[m[K(Type type)
+      |              [01;36m[K^~~~~~~~[m[K
+[ 75%] Built target ksysguard_plugin_gpu
+[ 76%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/ksysguarddaemon.cpp.o[0m
+[ 76%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/sensors_qmltyperegistrations.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorDaemonInterface_p.h:12[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorQuery.cpp:14[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qlocale.h:8[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/qcollator.h:11[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QCollator:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorQuery.cpp:9[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[ 76%] [32mBuilding CXX object sensors/CMakeFiles/Sensors.dir/.qt/rcc/qrc_qmake_org_kde_ksysguard_sensors.cpp.o[0m
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorDaemonInterface_p.h:12[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorDaemonInterface.cpp:7[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtDBus/qtdbusglobal.h:10[m[K,
+                 from [01m[K/usr/include/qt6/QtDBus/qdbusargument.h:8[m[K,
+                 from [01m[K/usr/include/qt6/QtDBus/QDBusArgument:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:9[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorUnitModel.cpp:16[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qabstractitemmodel.h:13[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QAbstractListModel:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorUnitModel.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorUnitModel.cpp:7[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorUnitModel.cpp:[m[K In member function ‘[01m[Kvirtual QVariant KSysGuard::SensorUnitModel::[01;32m[Kdata[m[K(const QModelIndex&, int) const[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorUnitModel.cpp:104:45:[m[K [01;35m[Kwarning: [m[K‘[01m[KQMap<KSysGuard::Unit, UnitInfo>::iterator[01;32m[K operator+[m[K(QMap<KSysGuard::Unit, UnitInfo>::iterator, QMap<KSysGuard::Unit, UnitInfo>::iterator::difference_type)[m[K’ is deprecated: Use std::next; QMap iterators are not random access [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  104 |     auto itr = d->units.begin() + index.row([01;35m[K)[m[K;
+      |                                             [01;35m[K^[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qdebug.h:42[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/qvariant.h:13[m[K:
+[01m[K/usr/include/qt6/QtCore/qmap.h:611:25:[m[K [01;36m[Knote: [m[Kdeclared here
+  611 |         friend iterator [01;36m[Koperator[m[K+(iterator it, difference_type j) { return std::next(it, j); }
+      |                         [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorTreeModel.cpp:20[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qabstractitemmodel.h:13[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QAbstractItemModel:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorTreeModel.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorTreeModel.cpp:8[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/SensorTreeModel.cpp:22[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.h:[m[K At global scope:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.h:159:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  159 |     QVariant::Type type() [01;35m[Kconst[m[K;
+      |                           [01;35m[K^~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/sensors_qmltyperegistrations.cpp:11[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.h:159:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  159 |     QVariant::Type type() [01;35m[Kconst[m[K;
+      |                           [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtQml/qjsprimitivevalue.h:13[m[K,
+                 from [01m[K/usr/include/qt6/QtQml/qqmlprivate.h:19[m[K,
+                 from [01m[K/usr/include/qt6/QtQml/qqml.h:8[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/sensors_qmltyperegistrations.cpp:7[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/ksysguarddaemon.h:22[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/ksysguarddaemon.cpp:12[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/../systemstats/SensorInfo.h:32:44:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   32 |     QVariant::Type variantType = QVariant::[01;35m[KInvalid[m[K;
+      |                                            [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QVariant:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/build/sensors/ksysguarddaemon.h:20[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/../systemstats/SensorInfo.h:[m[K In function ‘[01m[Kconst QDBusArgument& KSysGuard::[01;32m[Koperator>>[m[K(const QDBusArgument&, SensorInfo&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/../systemstats/SensorInfo.h:76:43:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   76 |     s.variantType = static_cast<QVariant::[01;35m[KType[m[K>(t);
+      |                                           [01;35m[K^~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[ 77%] [1m[32mLinking CXX shared library ../bin/libKSysGuardSensors.so[0m
+[ 77%] Built target Sensors
+[ 77%] Built target Sensorsplugin_autogen_timestamp_deps
+[ 77%] Built target SensorFaces_autogen_timestamp_deps
+[ 78%] [1m[34mAutomatic MOC for target Sensorsplugin[0m
+[ 78%] [1m[34mAutomatic MOC for target SensorFaces[0m
+[ 78%] Built target Sensorsplugin_autogen
+[ 79%] [32mBuilding CXX object sensors/CMakeFiles/Sensorsplugin.dir/Sensorsplugin_org_kde_ksysguard_sensorsPlugin.cpp.o[0m
+[ 79%] [32mBuilding CXX object sensors/CMakeFiles/Sensorsplugin.dir/Sensorsplugin_autogen/mocs_compilation.cpp.o[0m
+[ 79%] Built target SensorFaces_autogen
+[ 79%] [1m[34mRunning rcc for resource SensorFaces_raw_qml_0[0m
+[ 80%] [1m[34mRunning AUTOMOC file extraction for target SensorFaces[0m
+[ 81%] [1m[34mRunning rcc for resource qmake_org_kde_ksysguard_faces[0m
+[ 81%] [1m[34mGenerating .rcc/qmlcache/SensorFaces_qmlcache_loader.cpp[0m
+[ 81%] [1m[34mAutomatic RCC for resources.qrc[0m
+[ 82%] [1m[34mRunning moc --collect-json for target SensorFaces[0m
+[ 82%] [1m[34mGenerating meta_types/qt6sensorfaces_metatypes.json[0m
+[ 82%] [1m[34mAutomatic QML type registration for target SensorFaces[0m
+[ 84%] [1m[34mGenerating .rcc/qmlcache/SensorFaces_import/SensorFace_qml.cpp[0m
+[ 85%] [1m[34mGenerating .rcc/qmlcache/SensorFaces_import/Choices_qml.cpp[0m
+[ 85%] [1m[34mGenerating .rcc/qmlcache/SensorFaces_import/ExtendedLegend_qml.cpp[0m
+[ 85%] [1m[34mGenerating .rcc/qmlcache/SensorFaces_import/SensorRangeSpinBox_qml.cpp[0m
+[ 84%] [1m[34mGenerating .rcc/qmlcache/SensorFaces_import/CompactSensorFace_qml.cpp[0m
+[ 86%] [1m[34mGenerating .rcc/qmlcache/SensorFaces_import/SuffixSpinBox_qml.cpp[0m
+[ 86%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/SensorFace.cpp.o[0m
+[ 87%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/FaceLoader.cpp.o[0m
+[ 87%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/SensorFaces_autogen/mocs_compilation.cpp.o[0m
+[ 88%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/SensorFaceController.cpp.o[0m
+[ 90%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/sensorfaces_qmltyperegistrations.cpp.o[0m
+[ 90%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/.qt/rcc/qrc_qmake_org_kde_ksysguard_faces.cpp.o[0m
+[ 90%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/.rcc/qmlcache/SensorFaces_qmlcache_loader.cpp.o[0m
+[ 90%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/faces_logging.cpp.o[0m
+[ 90%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/.rcc/qmlcache/SensorFaces_import/ExtendedLegend_qml.cpp.o[0m
+[ 90%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/.rcc/qmlcache/SensorFaces_import/SensorFace_qml.cpp.o[0m
+[ 92%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/.rcc/qmlcache/SensorFaces_import/SensorRangeSpinBox_qml.cpp.o[0m
+[ 92%] [1m[32mLinking CXX shared module ../bin/org/kde/ksysguard/sensors/libSensorsplugin.so[0m
+In file included from [01m[K/var/tmp/hokuto/libksysguard-31/build/faces/SensorFaceController.cpp:10[m[K:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/sensors/Sensor.h:159:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KType[m[K’ is deprecated: Use QMetaType::Type instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  159 |     QVariant::Type type() [01;35m[Kconst[m[K;
+      |                           [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qabstractitemmodel.h:13[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QAbstractItemModel:1[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/faces/SensorFaceController.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/libksysguard-31/build/faces/SensorFaceController.cpp:7[m[K:
+[01m[K/usr/include/qt6/QtCore/qvariant.h:149:70:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 |     enum QT_DEPRECATED_VERSION_X_6_0("Use QMetaType::Type instead.") [01;36m[KType[m[K
+      |                                                                      [01;36m[K^~~~[m[K
+[ 93%] Built target Sensorsplugin
+[ 93%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/.rcc/qmlcache/SensorFaces_import/Choices_qml.cpp.o[0m
+[ 94%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/.rcc/qmlcache/SensorFaces_import/CompactSensorFace_qml.cpp.o[0m
+[01m[K/var/tmp/hokuto/libksysguard-31/build/faces/SensorFaceController.cpp:[m[K In member function ‘[01m[Kvoid KSysGuard::SensorFaceController::[01;32m[KloadPreset[m[K(const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/libksysguard-31/build/faces/SensorFaceController.cpp:940:42:[m[K [01;35m[Kwarning: [m[K‘[01m[KQVariant::Type QVariant::[01;32m[Ktype[m[K() const[m[K’ is deprecated: Use typeId() or metaType(). [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  940 |                 if ([01;35m[Kitem->property().type()[m[K == QVariant::StringList) {
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/usr/include/qt6/QtCore/qvariant.h:602:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  602 |     Type [01;36m[Ktype[m[K() const
+      |          [01;36m[K^~~~[m[K
+[ 94%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/.rcc/qmlcache/SensorFaces_import/SuffixSpinBox_qml.cpp.o[0m
+[ 95%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/.qt/rcc/qrc_SensorFaces_raw_qml_0.cpp.o[0m
+[ 95%] [32mBuilding CXX object faces/CMakeFiles/SensorFaces.dir/SensorFaces_autogen/EWIEGA46WW/qrc_resources.cpp.o[0m
+[ 95%] [1m[32mLinking CXX shared library ../bin/libKSysGuardSensorFaces.so[0m
+[ 96%] Built target SensorFaces
+[ 96%] Built target SensorFacesplugin_autogen_timestamp_deps
+[ 97%] [1m[34mAutomatic MOC for target SensorFacesplugin[0m
+[ 97%] Built target SensorFacesplugin_autogen
+[ 97%] [32mBuilding CXX object faces/CMakeFiles/SensorFacesplugin.dir/SensorFacesplugin_autogen/mocs_compilation.cpp.o[0m
+[ 98%] [32mBuilding CXX object faces/CMakeFiles/SensorFacesplugin.dir/SensorFacesplugin_org_kde_ksysguard_facesPlugin.cpp.o[0m
+[ 98%] [1m[32mLinking CXX shared module ../bin/org/kde/ksysguard/faces/libSensorFacesplugin.so[0m
+[100%] Built target SensorFacesplugin
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/formatter/libFormatterplugin.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/formatter/libFormatterplugin.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/formatter/qmldir
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/formatter/Formatter.qmltypes
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/formatter/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardFormatter.so.6.7.0
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardFormatter.so.2
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardFormatter.so
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/formatter/Formatter.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/formatter/Unit.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/formatter/FormatterWrapper.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/formatter/formatter_export.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/process/libprocesscoreplugin.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/process/libprocesscoreplugin.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/process/qmldir
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/process/processcore.qmltypes
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/process/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libprocesscore.so.6.7.0
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libprocesscore.so.11
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib64/libprocesscore.so.6.7.0" to ""
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libprocesscore.so
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/libexec/ksysguard/ksgrd_network_helper
+unable to set CAP_SETFCAP effective capability: Operation not permitted
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/plugins/ksysguard/process/ksysguard_plugin_network.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/plugins/ksysguard/process/ksysguard_plugin_network.so" to ""
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/plugins/ksysguard/process/ksysguard_plugin_gpu.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/plugins/ksysguard/process/ksysguard_plugin_gpu.so" to ""
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/bin/ksysguard-identify
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/bin/ksysguard-identify" to ""
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/processes.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/process.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/process_controller.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/process_attribute.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/process_data_provider.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/process_data_model.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/process_attribute_model.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/formatter.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/gpu_utils.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/unit.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/enums.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/processcore/processcore_export.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/libexec/kf6/kauth/ksysguardprocesslist_helper
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/dbus-1/system.d/org.kde.ksysguard.processlisthelper.conf
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/dbus-1/system-services/org.kde.ksysguard.processlisthelper.service
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/polkit-1/actions/org.kde.ksysguard.processlisthelper.policy
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/sensors/libSensorsplugin.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/sensors/libSensorsplugin.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/sensors/qmldir
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/sensors/Sensors.qmltypes
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/sensors/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSensors.so.6.7.0
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSensors.so.2
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSensors.so.6.7.0" to ""
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSensors.so
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/sensors/Sensor.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/sensors/SensorDataModel.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/sensors/SensorTreeModel.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/sensors/SensorQuery.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/sensors/SensorUnitModel.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/sensors/SensorInfo_p.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/sensors/sensors_export.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/metadata.json
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/config
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/config/main.xml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/ui
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/ui/FullRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/ui/Config.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/ui/CompactRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/ui/BarChart.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.barchart/contents/faceproperties
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/metadata.json
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents/config
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents/config/main.xml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents/ui
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents/ui/FullRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents/ui/FaceGrid.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents/ui/Config.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents/ui/CompactRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents/ui/SensorRect.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.colorgrid/contents/faceproperties
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/metadata.json
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/config
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/config/main.xml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/ui
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/ui/FullRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/ui/LineChart.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/ui/Config.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/ui/CompactRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.linechart/contents/faceproperties
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/metadata.json
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/config
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/config/main.xml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/UsedTotalDisplay.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/PieChart.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/Config.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/faceproperties
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/metadata.json
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/config
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/config/main.xml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/ui
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/ui/FullRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/ui/Config.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/ui/GroupedText.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/ui/CompactRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.textonly/contents/faceproperties
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/metadata.json
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/config
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/config/main.xml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/ui
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/ui/FullRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/ui/Config.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/ui/Bar.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/ui/CompactRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.horizontalbars/contents/faceproperties
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/metadata.json
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents/config
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents/config/main.xml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents/ui
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents/ui/FullRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents/ui/FaceGrid.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents/ui/FaceControl.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents/ui/Config.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents/ui/CompactRepresentation.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/ksysguard/sensorfaces/org.kde.ksysguard.facegrid/contents/faceproperties
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/plugins/kf6/packagestructure/ksysguard_sensorface.so
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/libSensorFacesplugin.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/libSensorFacesplugin.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/qmldir
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/SensorFaces.qmltypes
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/ExtendedLegend.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/SensorFace.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/SensorRangeSpinBox.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/Choices.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/CompactSensorFace.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/SuffixSpinBox.qml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/private/libSensorFacesPrivate.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/private/libSensorFacesPrivate.so" to "$ORIGIN/../../../../../../lib64"
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/private/qmldir
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/private/SensorFacesPrivate.qmltypes
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib/qt6/qml/org/kde/ksysguard/faces/private/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSensorFaces.so.6.7.0
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSensorFaces.so.2
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSensorFaces.so.6.7.0" to ""
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSensorFaces.so
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/faces/SensorFace_p.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/faces/SensorFaceController.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/faces/FaceLoader.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/faces/sensorfaces_export.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/knsrcfiles/systemmonitor-faces.knsrc
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/knsrcfiles/systemmonitor-presets.knsrc
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSystemStats.so.6.7.0
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSystemStats.so.2
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSystemStats.so.6.7.0" to ""
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/libKSysGuardSystemStats.so
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/AggregateSensor.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/SensorObject.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/SensorContainer.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/SensorPlugin.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/SensorProperty.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/SensorsFeatureSensor.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/SysFsSensor.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/SysctlSensor.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/SensorInfo.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/DBusInterface.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/systemstats_export.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/include/ksysguard/systemstats/org.kde.ksystemstats1.h
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/dbus-1/interfaces/org.kde.ksystemstats1.xml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/cmake/KSysGuard/KSysGuardConfig.cmake
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/cmake/KSysGuard/KSysGuardConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/cmake/KSysGuard/KSysGuardLibraryTargets.cmake
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/lib64/cmake/KSysGuard/KSysGuardLibraryTargets-release.cmake
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/qlogging-categories6/libksysguard.categories
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gu
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gu/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/et/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/et/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/et/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/et/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/et/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/et/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/wa
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/wa/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_CN/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hsb/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ru/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ne
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ne/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/or
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/or/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/or/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/lv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/en_GB/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ro/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tr/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nn/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hr/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/az/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ar/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fy
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fy/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ku
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ku/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/uk/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ast/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/es/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hu/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ka/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/mr/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sq
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sq/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ga/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/cs/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/eo/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/id/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/mk
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/mk/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/is/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pa/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ta/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ta/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ja/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bn_IN
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bn_IN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bn_IN/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/mai
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/mai/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/vi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/vi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/vi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/vi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/vi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/vi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ml/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/el/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/oc
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/oc/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/he/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/da/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/da/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/da/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/da/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nds/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/se/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ia/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bg/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ca/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/gl/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ug/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sv/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fa
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fa/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/si
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/si/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/si/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hne
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/hne/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/th/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/nb/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/te
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/te/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/te/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/fi/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/it/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ko/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/bs/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/km/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/kk/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/tg/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/ms/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/csb
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/csb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/csb/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/be/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/sr@latin/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/pt_BR/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/zh_TW/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/KSysGuardSensorFaces.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/ksysguard_sensors.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.textonly.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/KSysGuardFormatter.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/processcore.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.piechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.linechart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.horizontalbars.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.barchart.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/ksysguard_systemstats.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.facegrid.mo
+-- Installing: /var/tmp/hokuto/libksysguard-31/output/usr/share/locale/de/LC_MESSAGES/ksysguard_face_org.kde.ksysguard.colorgrid.mo
+
+Script done on 2026-06-18 01:06:32+07:00 [COMMAND_EXIT_CODE="0"]
