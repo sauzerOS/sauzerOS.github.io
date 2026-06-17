@@ -1,0 +1,1025 @@
+Script started on 2026-06-18 00:59:25+07:00 [COMMAND="cd /var/tmp/hokuto/kde-cli-tools-50/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/kde-cli-tools-50/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/kde-cli-tools-50/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/kde-cli-tools-50/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/kde-cli-tools-50/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/kde-cli-tools-50/build/.cache' /repo/kde/kde-cli-tools/build /var/tmp/hokuto/kde-cli-tools-50/output 6.7.0 kde-cli-tools" <not executed on terminal>]
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:18 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.6") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.27.0")
+-- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.27.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.27.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.27.0")
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.27.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.27.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.27.0")
+-- Found KF6Parts: /usr/lib64/cmake/KF6Parts/KF6PartsConfig.cmake (found version "6.27.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.27.0")
+-- Found KF6Su: /usr/lib64/cmake/KF6Su/KF6SuConfig.cmake (found version "6.27.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.27.0")
+-- Looking for include file sys/wait.h
+-- Looking for include file sys/wait.h - found
+-- Looking for sys/prctl.h
+-- Looking for sys/prctl.h - found
+-- Looking for PR_SET_DUMPABLE
+-- Looking for PR_SET_DUMPABLE - found
+-- Looking for sys/procctl.h
+-- Looking for sys/procctl.h - not found
+-- Looking for PROC_TRACE_CTL
+-- Looking for PROC_TRACE_CTL - not found
+-- The following features have been enabled:
+
+ * prctl-dumpable, Required for disallowing ptrace on kdesu process
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6Svg (required version >= 6.10.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6 (required version >= 6.10.0)
+ * Qt6GuiPrivate
+ * KF6IconThemes (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6Config (required version >= 6.27.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6Service (required version >= 6.26.0)
+ * KF6WindowSystem (required version >= 6.26.0)
+ * KF6KIO (required version >= 6.27.0)
+ * KF6Parts (required version >= 6.26.0)
+ * KF6CoreAddons (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+
+-- Configuring done (2.9s)
+-- Generating done (0.1s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/kde-cli-tools-50/build/build
+[  2%] [1m[34mGenerating mo...[0m
+[  2%] [1m[34mGenerating ts...[0m
+[  2%] Built target libfiletypes_autogen_timestamp_deps
+[  2%] Built target kde-open_autogen_timestamp_deps
+[  2%] Built target kdemv_autogen_timestamp_deps
+[  2%] Built target ksvgtopng_autogen_timestamp_deps
+[  2%] Built target kmimetypefinder_autogen_timestamp_deps
+[  2%] Built target kioclient_autogen_timestamp_deps
+[  2%] Built target kdecp_autogen_timestamp_deps
+[  2%] Built target kcm_filetypes-kcm-desktop-gen
+[  2%] Built target kbroadcastnotification_autogen_timestamp_deps
+[  2%] Built target plasma-open-settings_autogen_timestamp_deps
+[  2%] Built target kde-inhibit_autogen_timestamp_deps
+[  2%] Built target kstart_autogen_timestamp_deps
+[  2%] Built target kdesu_executable_autogen_timestamp_deps
+[  3%] Built target tsfiles-26c61b50255c7d003a5a35e6012c730f
+[  3%] [1m[34mAutomatic MOC for target libfiletypes[0m
+[  4%] [1m[34mAutomatic MOC for target kmimetypefinder[0m
+[  5%] [1m[34mAutomatic MOC for target kioclient[0m
+[  7%] [1m[34mAutomatic MOC for target kde-open[0m
+[  8%] [1m[34mAutomatic MOC for target kdemv[0m
+[  9%] [1m[34mAutomatic MOC for target ksvgtopng[0m
+[ 11%] [1m[34mAutomatic MOC for target kdecp[0m
+[ 11%] [1m[34mAutomatic MOC for target kde-inhibit[0m
+[ 13%] [1m[34mAutomatic MOC for target plasma-open-settings[0m
+[ 13%] Built target kmimetypefinder_autogen
+[ 13%] Built target kde-inhibit_autogen
+[ 13%] Built target ksvgtopng_autogen
+[ 14%] [1m[34mAutomatic MOC for target kstart[0m
+[ 14%] Built target plasma-open-settings_autogen
+[ 15%] [1m[34mAutomatic MOC for target kbroadcastnotification[0m
+[ 16%] [1m[34mAutomatic MOC for target kdesu_executable[0m
+[ 17%] [32mBuilding CXX object kmimetypefinder/CMakeFiles/kmimetypefinder.dir/kmimetypefinder_autogen/mocs_compilation.cpp.o[0m
+[ 19%] [32mBuilding CXX object kmimetypefinder/CMakeFiles/kmimetypefinder.dir/kmimetypefinder.cpp.o[0m
+[ 19%] Built target kbroadcastnotification_autogen
+[ 20%] [32mBuilding CXX object ksvgtopng/CMakeFiles/ksvgtopng.dir/ksvgtopng_autogen/mocs_compilation.cpp.o[0m
+[ 21%] [32mBuilding CXX object ksvgtopng/CMakeFiles/ksvgtopng.dir/ksvgtopng.cpp.o[0m
+[ 21%] Built target kioclient_autogen
+[ 22%] [32mBuilding CXX object kdeinhibit/CMakeFiles/kde-inhibit.dir/kde-inhibit_autogen/mocs_compilation.cpp.o[0m
+[ 22%] Built target kstart_autogen
+[ 22%] Built target kde-open_autogen
+[ 23%] [32mBuilding CXX object kdeinhibit/CMakeFiles/kde-inhibit.dir/main.cpp.o[0m
+[ 25%] [32mBuilding CXX object plasma-open-settings/CMakeFiles/plasma-open-settings.dir/plasma-open-settings_autogen/mocs_compilation.cpp.o[0m
+[ 26%] [32mBuilding CXX object kstart/CMakeFiles/kstart.dir/kstart_autogen/mocs_compilation.cpp.o[0m
+[ 26%] Built target kdemv_autogen
+[ 27%] [32mBuilding CXX object plasma-open-settings/CMakeFiles/plasma-open-settings.dir/main.cpp.o[0m
+[ 28%] [32mBuilding CXX object kstart/CMakeFiles/kstart.dir/kstart.cpp.o[0m
+[ 29%] [32mBuilding CXX object kbroadcastnotification/CMakeFiles/kbroadcastnotification.dir/kbroadcastnotification_autogen/mocs_compilation.cpp.o[0m
+[ 29%] Built target kdecp_autogen
+[ 29%] Built target libfiletypes_autogen
+[ 29%] Built target kdesu_executable_autogen
+[ 30%] [32mBuilding CXX object kbroadcastnotification/CMakeFiles/kbroadcastnotification.dir/main.cpp.o[0m
+[ 32%] [32mBuilding CXX object kioclient/CMakeFiles/kioclient.dir/kioclient_autogen/mocs_compilation.cpp.o[0m
+[ 33%] [32mBuilding CXX object kioclient/CMakeFiles/kdemv.dir/kdemv_autogen/mocs_compilation.cpp.o[0m
+[ 34%] [32mBuilding CXX object kioclient/CMakeFiles/kdecp.dir/kdecp_autogen/mocs_compilation.cpp.o[0m
+[ 35%] [32mBuilding CXX object kioclient/CMakeFiles/kioclient.dir/kioclient.cpp.o[0m
+[ 36%] [32mBuilding CXX object kioclient/CMakeFiles/kdemv.dir/kioclient.cpp.o[0m
+[ 38%] [32mBuilding CXX object kioclient/CMakeFiles/kdecp.dir/kioclient.cpp.o[0m
+[ 38%] Built target pofiles-26c61b50255c7d003a5a35e6012c730f
+[ 39%] [32mBuilding CXX object kioclient/CMakeFiles/kde-open.dir/kde-open_autogen/mocs_compilation.cpp.o[0m
+[ 40%] [32mBuilding CXX object kioclient/CMakeFiles/kde-open.dir/kioclient.cpp.o[0m
+[ 41%] [1m[32mLinking CXX executable ../bin/ksvgtopng[0m
+[ 42%] [1m[32mLinking CXX executable ../bin/plasma-open-settings[0m
+[ 44%] [1m[32mLinking CXX executable ../bin/kde-inhibit[0m
+[ 45%] [1m[32mLinking CXX executable ../bin/kstart[0m
+[ 46%] Built target ksvgtopng
+[ 47%] [32mBuilding CXX object kdesu/CMakeFiles/kdesu_executable.dir/kdesu_executable_autogen/mocs_compilation.cpp.o[0m
+[ 48%] [32mBuilding CXX object kdesu/CMakeFiles/kdesu_executable.dir/kdesu.cpp.o[0m
+[ 50%] Built target plasma-open-settings
+[ 51%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/libfiletypes_autogen/mocs_compilation.cpp.o[0m
+[ 52%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/filetypedetails.cpp.o[0m
+[ 53%] Built target kde-inhibit
+[ 54%] [32mBuilding CXX object kdesu/CMakeFiles/kdesu_executable.dir/sudlg.cpp.o[0m
+[01m[K/var/tmp/hokuto/kde-cli-tools-50/build/kmimetypefinder/kmimetypefinder.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/var/tmp/hokuto/kde-cli-tools-50/build/kmimetypefinder/kmimetypefinder.cpp:50:20:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool QFile::[01;32m[Kopen[m[K(FILE*, QIODeviceBase::OpenMode, QFileDevice::FileHandleFlags)[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-result-Wunused-result]8;;[m[K]
+   50 |         [01;35m[Kqstdin.open(stdin, QIODevice::ReadOnly)[m[K;
+      |         [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QFile:1[m[K,
+                 from [01m[K/var/tmp/hokuto/kde-cli-tools-50/build/kmimetypefinder/kmimetypefinder.cpp:14[m[K:
+[01m[K/usr/include/qt6/QtCore/qfile.h:266:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  266 |     QFILE_MAYBE_NODISCARD bool [01;36m[Kopen[m[K(FILE *f, OpenMode ioFlags, FileHandleFlags handleFlags=DontCloseHandle);
+      |                                [01;36m[K^~~~[m[K
+[ 55%] [1m[32mLinking CXX executable ../bin/kdecp[0m
+[ 57%] [1m[32mLinking CXX executable ../bin/kioclient[0m
+[ 58%] [1m[32mLinking CXX executable ../bin/kde-open[0m
+[ 59%] Built target kstart
+[ 60%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/filegroupdetails.cpp.o[0m
+[ 61%] [1m[32mLinking CXX executable ../bin/kbroadcastnotification[0m
+[ 63%] [1m[32mLinking CXX executable ../bin/kdemv[0m
+[ 64%] [1m[32mLinking CXX executable ../bin/kmimetypefinder[0m
+[ 65%] Built target kmimetypefinder
+[ 66%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/kservicelistwidget.cpp.o[0m
+[ 67%] Built target kbroadcastnotification
+[ 69%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/typeslistitem.cpp.o[0m
+[ 70%] Built target kde-open
+[ 71%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/typeslistitembase.cpp.o[0m
+[ 72%] Built target kdemv
+[ 73%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/typeslistproxyitem.cpp.o[0m
+[ 75%] Built target kioclient
+[ 76%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/typeslisttreewidget.cpp.o[0m
+[ 77%] Built target kdecp
+[ 78%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/mimetypedata.cpp.o[0m
+[ 79%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/mimetypewriter.cpp.o[0m
+[ 80%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/multiapplydialog.cpp.o[0m
+[ 82%] [1m[32mLinking CXX executable ../bin/kdesu[0m
+[ 83%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/newtypedlg.cpp.o[0m
+[ 84%] [32mBuilding CXX object keditfiletype/CMakeFiles/libfiletypes.dir/kserviceselectdlg.cpp.o[0m
+[ 85%] Built target kdesu_executable
+[ 86%] [1m[32mLinking CXX static library ../lib/liblibfiletypes.a[0m
+[ 88%] Built target libfiletypes
+[ 88%] Built target kcm_filetypes_autogen_timestamp_deps
+[ 88%] Built target keditfiletype_autogen_timestamp_deps
+[ 90%] [1m[34mAutomatic MOC for target kcm_filetypes[0m
+[ 90%] [1m[34mAutomatic MOC for target keditfiletype[0m
+[ 90%] Built target kcm_filetypes_autogen
+[ 91%] [32mBuilding CXX object keditfiletype/CMakeFiles/kcm_filetypes.dir/filetypesview.cpp.o[0m
+[ 92%] [32mBuilding CXX object keditfiletype/CMakeFiles/kcm_filetypes.dir/kcm_filetypes_autogen/mocs_compilation.cpp.o[0m
+[ 92%] Built target keditfiletype_autogen
+[ 94%] [32mBuilding CXX object keditfiletype/CMakeFiles/keditfiletype.dir/keditfiletype.cpp.o[0m
+[ 95%] [32mBuilding CXX object keditfiletype/CMakeFiles/keditfiletype.dir/keditfiletype_autogen/mocs_compilation.cpp.o[0m
+[ 96%] [1m[32mLinking CXX shared module ../bin/plasma/kcms/systemsettings_qwidgets/kcm_filetypes.so[0m
+[ 97%] [1m[32mLinking CXX executable ../bin/keditfiletype[0m
+[ 98%] Built target kcm_filetypes
+[100%] Built target keditfiletype
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_filetypes.so
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/applications/kcm_filetypes.desktop
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/keditfiletype5
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/keditfiletype
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/applications/org.kde.keditfiletype.desktop
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kmimetypefinder5
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kmimetypefinder
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kioclient5
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kioclient
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kdecp5
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kdecp
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kdemv5
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kdemv
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kde-open5
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kde-open
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/ksvgtopng5
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/ksvgtopng
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kde-inhibit
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/zsh/site-functions/_kde-inhibit
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/plasma-open-settings
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/applications/org.kde.plasma.settings.open.desktop
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kinfo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kstart5
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kstart
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/libexec/kf6/kdesu
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/libexec/kf6/kdeeject
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/bin/kbroadcastnotification
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fr/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gu
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gu/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gu/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gu/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gu/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gu/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/et/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/et/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/et/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/et/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/et/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/et/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lt/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eu/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/wa
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/wa/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/wa/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/wa/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/wa/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/wa/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hsb/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hsb/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hsb/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hsb/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hsb/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ru/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ne
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ne/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ne/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ne/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ne/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ne/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/or
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/or/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/or/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/or/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/or/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/or/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/lv/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sa/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ro/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ro/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ro/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ro/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ro/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ro/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ro/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tr/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nn/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hr/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hr/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hr/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hr/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hr/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/az/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/az/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/az/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/az/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/az/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/az/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/az/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ar/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hi/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fy
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fy/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fy/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fy/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fy/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fy/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ku
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ku/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ku/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ku/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ku/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ku/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sk/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz@cyrillic
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz@cyrillic/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz@cyrillic/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uk/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ast/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/es/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hu/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sl/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ka/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mr/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mr/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mr/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mr/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mr/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sq
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sq/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sq/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sq/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sq/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sq/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ga/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cs/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/eo/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/id/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/id/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/id/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/id/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/id/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/id/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pl/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mk
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mk/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mk/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mk/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mk/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mk/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nl/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cy
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cy/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cy/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/cy/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kn
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kn/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kn/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kn/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kn/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kn/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/is/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/is/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/is/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/is/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/is/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/is/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pa/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pa/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pa/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pa/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pa/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be@latin
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be@latin/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be@latin/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be@latin/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be@latin/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ta/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ja/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/xh
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/xh/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/xh/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/xh/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/xh/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn_IN
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn_IN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn_IN/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn_IN/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn_IN/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn_IN/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bn_IN/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mai
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mai/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mai/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mai/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mai/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/mai/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/vi/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/vi/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/vi/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/vi/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/vi/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/vi/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/vi/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ml/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ml/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ml/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ml/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ml/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ml/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/el/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/el/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/el/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/el/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/el/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/el/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/el/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/oc
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/oc/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/oc/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/oc/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/oc/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/oc/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/he/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/da/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/da/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/da/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/da/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/da/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/da/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nds/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nds/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nds/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nds/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nds/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/se/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/se/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/se/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/se/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/se/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ia/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bg/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ca/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/gl/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ug/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ug/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ug/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ug/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ug/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sv/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fa
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fa/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fa/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fa/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fa/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fa/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/uz/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/si
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/si/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/si/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/si/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/si/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/si/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/si/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hne
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hne/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hne/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hne/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hne/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/hne/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/th/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/th/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/th/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/th/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/th/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nb/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nb/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nb/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nb/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/nb/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/te
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/te/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/te/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/te/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/te/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/te/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/te/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/fi/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/it/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/af
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/af/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/af/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/af/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/af/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ko/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bs/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bs/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bs/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bs/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/bs/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/br
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/br/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/br/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/br/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/br/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/km/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/km/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/km/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/km/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/km/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kk/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kk/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kk/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kk/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/kk/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tg/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tg/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tg/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tg/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/tg/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ms/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ms/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ms/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ms/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/ms/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/csb
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/csb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/csb/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/csb/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/csb/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/csb/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/csb/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/be/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@latin/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@latin/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@latin/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@latin/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@latin/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/sr@latin/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_filetypes.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de/LC_MESSAGES/plasma-open-settings.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de/LC_MESSAGES/kdesu.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de/LC_MESSAGES/kstart.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de/LC_MESSAGES/kbroadcastnotification.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de/LC_MESSAGES/kmimetypefinder.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de/LC_MESSAGES/kioclient.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de/LC_MESSAGES/kde-inhibit.mo
+-- Installing: /var/tmp/hokuto/kde-cli-tools-50/output/usr/share/locale/de/LC_MESSAGES/kcm_filetypes.mo
+
+Script done on 2026-06-18 00:59:44+07:00 [COMMAND_EXIT_CODE="0"]
