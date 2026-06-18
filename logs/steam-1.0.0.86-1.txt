@@ -1,0 +1,47 @@
+Script started on 2026-06-18 12:35:37+07:00 [COMMAND="cd /var/tmp/hokuto/steam-72/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/steam-72/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/steam-72/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/steam-72/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/steam-72/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/steam-72/build/.cache' /repo/sauzeros/extra/steam/build /var/tmp/hokuto/steam-72/output 1.0.0.86 steam" <not executed on terminal>]
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/bin/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/doc/steam/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/16x16/apps/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/lib/steam/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/applications/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/metainfo/
+if [ -d /etc/apt ]; then \
+	install -d -m 755 /var/tmp/hokuto/steam-72/output/etc/apt/sources.list.d/; \
+	install -p -m 644 steam-stable.list /var/tmp/hokuto/steam-72/output/etc/apt/sources.list.d/; \
+	install -p -m 644 steam-beta.list /var/tmp/hokuto/steam-72/output/etc/apt/sources.list.d/; \
+	install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/keyrings/; \
+	install -p -m 644 steam.gpg /var/tmp/hokuto/steam-72/output/usr/share/keyrings/; \
+fi
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/lib/steam/steam_launcher/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/lib/steam/
+install -p -m 644 README steam_subscriber_agreement.txt /var/tmp/hokuto/steam-72/output/usr/share/doc/steam/
+install -p -m 644 bootstraplinux_ubuntu12_32.tar.xz /var/tmp/hokuto/steam-72/output/usr/lib/steam/
+install -p -m 644 com.valvesoftware.Steam.metainfo.xml /var/tmp/hokuto/steam-72/output/usr/share/metainfo/
+install -p -m 755 bin_steam.sh /var/tmp/hokuto/steam-72/output/usr/lib/steam/
+# If we create a desktop symlink in /usr/share/applications/, the md5sum deb file
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/man/man6/
+install -p -m 644 icons/16/steam.png /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/16x16/apps/
+install -p -m 755 bin_steamdeps.py /var/tmp/hokuto/steam-72/output/usr/lib/steam/
+install -m 644 steam.6 /var/tmp/hokuto/steam-72/output/usr/share/man/man6/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/24x24/apps/
+# will not contain an entry for it and appstream-generator will complain that
+install -p -m 644 steam_launcher/__init__.py /var/tmp/hokuto/steam-72/output/usr/lib/steam/steam_launcher/
+install -p -m 644 steam_launcher/launcherutils.py /var/tmp/hokuto/steam-72/output/usr/lib/steam/steam_launcher/
+install -p -m 644 icons/24/steam.png /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/24x24/apps/
+ln -fns /usr/lib/steam/bin_steam.sh /var/tmp/hokuto/steam-72/output/usr/bin/steam
+# the package is missing the desktop file. Instead we place the real file in
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/256x256/apps/
+ln -fns /usr/lib/steam/bin_steamdeps.py /var/tmp/hokuto/steam-72/output/usr/bin/steamdeps
+install -p -m 644 icons/256/steam.png /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/256x256/apps/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/32x32/apps/
+# /usr/share/applications/ and create a symlink in /usr/lib/steam
+install -p -m 644 icons/32/steam.png /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/32x32/apps/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/48x48/apps/
+install -p -m 644 steam.desktop /var/tmp/hokuto/steam-72/output/usr/share/applications/
+install -p -m 644 icons/48/steam.png /var/tmp/hokuto/steam-72/output/usr/share/icons/hicolor/48x48/apps/
+ln -fns /usr/share/applications/steam.desktop /var/tmp/hokuto/steam-72/output/usr/lib/steam/
+install -d -m 755 /var/tmp/hokuto/steam-72/output/usr/share/pixmaps/
+install -p -m 644 icons/48/steam.png /var/tmp/hokuto/steam-72/output/usr/share/pixmaps/
+install -p -m 644 icons/48/steam_tray_mono.png /var/tmp/hokuto/steam-72/output/usr/share/pixmaps/steam_tray_mono.png
+
+Script done on 2026-06-18 12:35:37+07:00 [COMMAND_EXIT_CODE="0"]
