@@ -1,0 +1,728 @@
+Script started on 2026-06-20 12:42:11+07:00 [COMMAND="cd /var/tmp/hokuto/mutt-88/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/mutt-88/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/mutt-88/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/mutt-88/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='0' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/mutt-88/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/mutt-88/build/.cache' /repo/sauzeros/extra/mutt/build /var/tmp/hokuto/mutt-88/output 2.4.0 mutt" <not executed on terminal>]
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: running: autopoint --force
+Copying file po/Makevars.template
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: not running autopoint a second time
+autoreconf: running: aclocal --force -I m4 -I m4
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+autoreconf: './config.sub' is updated
+autoreconf: './config.guess' is updated
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/sbin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '0' is supported by ustar format... yes
+checking whether GID '0' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for prefix... /usr
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C23 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking dependency style of cc... (cached) gcc3
+checking for library containing strerror... none required
+checking how to run the C preprocessor... cc -E
+checking whether make sets $(MAKE)... (cached) yes
+checking for ranlib... gcc-ranlib
+checking for ar... gcc-ar
+checking for GNU make... yes
+checking for inline... inline
+checking for an ANSI C-conforming const... yes
+checking whether byte ordering is bigendian... (cached) no
+checking for cc option to support large files... none needed
+checking for declarations of fseeko and ftello... yes
+checking size of off_t... 8
+checking for dbx... no
+checking for gdb... /usr/sbin/gdb
+checking for sdb... no
+checking for inttypes.h... (cached) yes
+checking for uint32_t... yes
+checking size of short... (cached) 2
+checking size of int... (cached) 4
+checking size of long... 8
+checking size of long long... (cached) 8
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for sendmail... /usr/sbin/sendmail
+checking whether to build with GPGME support... no
+checking for ispell... /usr/sbin/ispell
+checking for initscr... no
+checking for waddnwstr in -lncurses... yes
+checking for initscr in -lncurses... yes
+checking for tgetent in -ltinfo... no
+checking for ncurses/ncurses.h... no
+checking for ncurses.h... yes
+checking for ncurses/term.h... no
+checking for term.h... yes
+checking for start_color declaration... yes
+checking for typeahead declaration... yes
+checking for bkgdset declaration... yes
+checking for curs_set declaration... yes
+checking for meta declaration... yes
+checking for use_default_colors declaration... yes
+checking for resizeterm declaration... yes
+checking for setcchar declaration... yes
+checking for bkgrndset declaration... yes
+checking for use_tioctl declaration... yes
+checking for use_extended_names... yes
+checking for stdarg.h... yes
+checking for sys/ioctl.h... yes
+checking for ioctl.h... no
+checking for sysexits.h... yes
+checking for sys/resource.h... yes
+checking for unix.h... no
+checking for setrlimit... yes
+checking for getsid... yes
+checking for fgets_unlocked... yes
+checking for fgetc_unlocked... yes
+checking for sig_atomic_t in signal.h... checking for egrep -e... /usr/sbin/grep -E
+yes, non volatile
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking whether sys_siglist is declared... no
+checking for pid_t... yes
+checking for ssize_t... yes
+checking for fgetpos... yes
+checking for memmove... yes
+checking for memccpy... yes
+checking for setegid... yes
+checking for srand48... yes
+checking for strerror... yes
+checking for sys/random.h... yes
+checking for getrandom... yes
+checking for arc4random_buf... yes
+checking for setenv... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strsep... yes
+checking for strtok_r... yes
+checking for wcscasecmp... yes
+checking for strcasestr... yes
+checking for mkdtemp... yes
+checking for getopt... yes
+checking for getopt.h... yes
+checking for ftruncate... yes
+checking for strftime... yes
+checking for futimens... yes
+checking for struct timespec... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking for struct stat.st_mtim.tv_nsec... yes
+checking for struct stat.st_ctim.tv_nsec... yes
+checking for utimensat... yes
+checking for clock_gettime... yes
+checking for fchdir... yes
+checking for regcomp... yes
+checking whether your system's regexp library is completely broken... no
+checking where new mail is stored... /var/mail
+checking if /var/mail is world writable... yes
+checking where to put the documentation... ${datarootdir}/doc/mutt
+checking for gethostent... yes
+checking for setsockopt... yes
+checking for getaddrinfo... yes
+checking for sys/select.h... yes
+checking for socklen_t... yes
+checking for zlib.h... yes
+checking for deflate in -lz... yes
+checking for deflate in -lz... (cached) yes
+checking for X509_STORE_CTX_new in -lcrypto... yes
+checking for SSL_new in -lssl... yes
+checking for RAND_egd... no
+checking whether SSL_set_mode is declared... yes
+checking whether SSL_MODE_AUTO_RETRY is declared... yes
+checking whether X509_V_FLAG_PARTIAL_CHAIN is declared... yes
+checking for inotify_init... yes
+checking for inotify_add_watch... yes
+checking for inotify_rm_watch... yes
+checking for inotify_init1... yes
+checking for sys/inotify.h... yes
+checking whether struct dirent defines d_ino... yes
+checking for kclangc.h... no
+checking for tcbdb.h... no
+checking for mdb_env_create... yes
+checking for a sed that does not truncate output... /usr/sbin/sed
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/sbin/msgfmt
+checking for gmsgfmt... /usr/sbin/msgfmt
+checking for xgettext... /usr/sbin/xgettext
+checking for msgmerge... /usr/sbin/msgmerge
+checking for ld used by cc... /usr/sbin/ld
+checking if the linker (/usr/sbin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for iconv.h... yes
+checking whether iconv.h defines iconv_t... yes
+checking whether this iconv is good enough... yes
+checking whether iconv is non-transcribing... no
+checking for bind_textdomain_codeset... yes
+checking for stringprep.h... no
+checking for idn/stringprep.h... no
+checking for idna.h... no
+checking for idn/idna.h... no
+checking for library containing stringprep_check_version... no
+checking for wchar.h... (cached) yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for wctype.h... yes
+checking for iswalnum... yes
+checking for iswalpha... yes
+checking for iswblank... yes
+checking for iswcntrl... yes
+checking for iswdigit... yes
+checking for iswgraph... yes
+checking for iswlower... yes
+checking for iswprint... yes
+checking for iswpunct... yes
+checking for iswspace... yes
+checking for iswupper... yes
+checking for iswxdigit... yes
+checking for towupper... yes
+checking for towlower... yes
+checking for mbstate_t... yes
+checking for wchar_t functions... yes
+checking for nl_langinfo and CODESET... yes
+checking for nl_langinfo and YESEXPR... yes
+checking for ospcat... none
+checking for docbook2x-texi... no
+checking for db2x_docbook2texi... no
+checking for docbook2texi... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating contrib/Makefile
+config.status: creating doc/Makefile
+config.status: creating imap/Makefile
+config.status: creating m4/Makefile
+config.status: creating po/Makefile.in
+config.status: creating autocrypt/Makefile
+config.status: creating doc/instdoc.sh
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+./patchlist.sh < ./PATCHES > patchlist.c
+echo 'const char *ReleaseDate = "'`(cd . && ./mkreldate.sh)`'";' > reldate.h
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT txt2c.o -MD -MP -MF .deps/txt2c.Tpo -c -o txt2c.o txt2c.c
+echo '#define MUTT_VERSION "'`sh "./version.sh"`'"' > version.h.tmp
+cmp -s version.h version.h.tmp && rm -f version.h.tmp || mv version.h.tmp version.h
+./gen_defs ./OPS ./OPS.SIDEBAR ./OPS.PGP ./OPS.SMIME ./OPS.CRYPT  > keymap_defs.h
+( echo '#include "config.h"'; echo '#undef ENABLE_NLS'; echo '#include "mutt.h"'; ) \
+| cc -E -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include - | perl ./hcachever.pl > hcversion.h
+mv -f .deps/txt2c.Tpo .deps/txt2c.Po
+cc  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -L/usr/lib -o txt2c txt2c.o  
+( \
+	(cc -v >/dev/null 2>&1 && cc -v) || \
+	(cc --version >/dev/null 2>&1 && cc --version) || \
+	(cc -V >/dev/null 2>&1 && cc -V) || \
+	echo "unknown compiler"; \
+) 2>&1 | ./txt2c.sh cc_version >conststrings_c
+echo "-Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10" | ./txt2c.sh cc_cflags >>conststrings_c
+( eval "`grep '^ac_cs_config=' config.status`" && echo $ac_cs_config; ) | ./txt2c.sh configure_options >>conststrings_c
+mv -f conststrings_c conststrings.c
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/mutt-88/build'
+Making all in m4
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/m4'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/m4'
+Making all in po
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/po'
+Making all in doc
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/doc'
+sed -e 's,@sysconfdir\@,/etc,g' -e 's,@pkgdatadir\@,/usr/share/mutt,g' -e 's,@bindir\@,/usr/bin,g' -e 's,@docdir\@,/usr/share/doc/mutt,g' ./mutt.man > mutt.1
+sed -e 's,@sysconfdir\@,/etc,g' -e 's,@pkgdatadir\@,/usr/share/mutt,g' -e 's,@bindir\@,/usr/bin,g' -e 's,@docdir\@,/usr/share/doc/mutt,g' ./smime_keys.man > smime_keys.1
+rm -f Muttrc stamp-doc-rc
+sed -e 's,@sysconfdir\@,/etc,g' -e 's,@pkgdatadir\@,/usr/share/mutt,g' -e 's,@bindir\@,/usr/bin,g' -e 's,@docdir\@,/usr/share/doc/mutt,g' ./pgpewrap.man > pgpewrap.1
+sed -e 's,@sysconfdir\@,/etc,g' -e 's,@pkgdatadir\@,/usr/share/mutt,g' -e 's,@bindir\@,/usr/bin,g' -e 's,@docdir\@,/usr/share/doc/mutt,g' ./pgpring.man > mutt_pgpring.1
+sed -e 's,[@]docdir[@],/usr/share/doc/mutt,' ./Muttrc.head > Muttrc
+LC_ALL=C lynx -localhost -dump -nolist -nonumbers -with_backspaces -display_charset=us-ascii manual.html > manual.txt || \
+LC_ALL=C w3m -T text/html -I utf-8 -O utf-8 -dump < manual.html > manual.txt || \
+LC_ALL=C elinks -dump -no-numbering -no-references manual.html | sed -e 's,\\001, ,g' > manual.txt
+/bin/sh: line 1: lynx: command not found
+/bin/sh: line 2: w3m: command not found
+/bin/sh: line 3: elinks: command not found
+cc -E -I. -I.. -I/usr/include -I.. -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DHAVE_CONFIG_H=1 -I/usr/include -D_MAKEDOC -C \
+  ../init.h | perl ./makedoc.pl -c >> Muttrc
+touch stamp-doc-rc
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/doc'
+Making all in contrib
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/contrib'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/contrib'
+Making all in imap
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/imap'
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT auth.o -MD -MP -MF .deps/auth.Tpo -c -o auth.o auth.c
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT auth_login.o -MD -MP -MF .deps/auth_login.Tpo -c -o auth_login.o auth_login.c
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT auth_oauth.o -MD -MP -MF .deps/auth_oauth.Tpo -c -o auth_oauth.o auth_oauth.c
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT browse.o -MD -MP -MF .deps/browse.Tpo -c -o browse.o browse.c
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT command.o -MD -MP -MF .deps/command.Tpo -c -o command.o command.c
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT imap.o -MD -MP -MF .deps/imap.Tpo -c -o imap.o imap.c
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT message.o -MD -MP -MF .deps/message.Tpo -c -o message.o message.c
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT utf7.o -MD -MP -MF .deps/utf7.Tpo -c -o utf7.o utf7.c
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.c
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT auth_anon.o -MD -MP -MF .deps/auth_anon.Tpo -c -o auth_anon.o auth_anon.c
+mv -f .deps/auth_anon.Tpo .deps/auth_anon.Po
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT auth_cram.o -MD -MP -MF .deps/auth_cram.Tpo -c -o auth_cram.o auth_cram.c
+mv -f .deps/browse.Tpo .deps/browse.Po
+mv -f .deps/auth_oauth.Tpo .deps/auth_oauth.Po
+mv -f .deps/auth.Tpo .deps/auth.Po
+mv -f .deps/auth_login.Tpo .deps/auth_login.Po
+mv -f .deps/utf7.Tpo .deps/utf7.Po
+mv -f .deps/auth_cram.Tpo .deps/auth_cram.Po
+mv -f .deps/command.Tpo .deps/command.Po
+mv -f .deps/util.Tpo .deps/util.Po
+mv -f .deps/message.Tpo .deps/message.Po
+mv -f .deps/imap.Tpo .deps/imap.Po
+rm -f libimap.a
+gcc-ar cr libimap.a auth.o auth_login.o auth_oauth.o browse.o command.o imap.o message.o utf7.o util.o auth_anon.o auth_cram.o  
+gcc-ranlib libimap.a
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/imap'
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build'
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT addrbook.o -MD -MP -MF .deps/addrbook.Tpo -c -o addrbook.o addrbook.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT alias.o -MD -MP -MF .deps/alias.Tpo -c -o alias.o alias.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT attach.o -MD -MP -MF .deps/attach.Tpo -c -o attach.o attach.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT background.o -MD -MP -MF .deps/background.Tpo -c -o background.o background.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT base64.o -MD -MP -MF .deps/base64.Tpo -c -o base64.o base64.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT browser.o -MD -MP -MF .deps/browser.Tpo -c -o browser.o browser.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT buffer.o -MD -MP -MF .deps/buffer.Tpo -c -o buffer.o buffer.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT buffy.o -MD -MP -MF .deps/buffy.Tpo -c -o buffy.o buffy.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT color.o -MD -MP -MF .deps/color.Tpo -c -o color.o color.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT crypt.o -MD -MP -MF .deps/crypt.Tpo -c -o crypt.o crypt.c
+mv -f .deps/base64.Tpo .deps/base64.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT cryptglue.o -MD -MP -MF .deps/cryptglue.Tpo -c -o cryptglue.o cryptglue.c
+mv -f .deps/background.Tpo .deps/background.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT commands.o -MD -MP -MF .deps/commands.Tpo -c -o commands.o commands.c
+mv -f .deps/buffer.Tpo .deps/buffer.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT complete.o -MD -MP -MF .deps/complete.Tpo -c -o complete.o complete.c
+mv -f .deps/addrbook.Tpo .deps/addrbook.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT compose.o -MD -MP -MF .deps/compose.Tpo -c -o compose.o compose.c
+mv -f .deps/color.Tpo .deps/color.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT copy.o -MD -MP -MF .deps/copy.Tpo -c -o copy.o copy.c
+mv -f .deps/buffy.Tpo .deps/buffy.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT curs_lib.o -MD -MP -MF .deps/curs_lib.Tpo -c -o curs_lib.o curs_lib.c
+mv -f .deps/alias.Tpo .deps/alias.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT curs_main.o -MD -MP -MF .deps/curs_main.Tpo -c -o curs_main.o curs_main.c
+mv -f .deps/attach.Tpo .deps/attach.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT curs_ti_lib.o -MD -MP -MF .deps/curs_ti_lib.Tpo -c -o curs_ti_lib.o curs_ti_lib.c
+mv -f .deps/browser.Tpo .deps/browser.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT date.o -MD -MP -MF .deps/date.Tpo -c -o date.o date.c
+mv -f .deps/crypt.Tpo .deps/crypt.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT edit.o -MD -MP -MF .deps/edit.Tpo -c -o edit.o edit.c
+mv -f .deps/curs_ti_lib.Tpo .deps/curs_ti_lib.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT enter.o -MD -MP -MF .deps/enter.Tpo -c -o enter.o enter.c
+mv -f .deps/cryptglue.Tpo .deps/cryptglue.Po
+mv -f .deps/date.Tpo .deps/date.Po
+mv -f .deps/complete.Tpo .deps/complete.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT flags.o -MD -MP -MF .deps/flags.Tpo -c -o flags.o flags.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT init.o -MD -MP -MF .deps/init.Tpo -c -o init.o init.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT filter.o -MD -MP -MF .deps/filter.Tpo -c -o filter.o filter.c
+mv -f .deps/commands.Tpo .deps/commands.Po
+mv -f .deps/copy.Tpo .deps/copy.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT from.o -MD -MP -MF .deps/from.Tpo -c -o from.o from.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT getdomain.o -MD -MP -MF .deps/getdomain.Tpo -c -o getdomain.o getdomain.c
+mv -f .deps/edit.Tpo .deps/edit.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT group.o -MD -MP -MF .deps/group.Tpo -c -o group.o group.c
+mv -f .deps/curs_lib.Tpo .deps/curs_lib.Po
+mv -f .deps/from.Tpo .deps/from.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT handler.o -MD -MP -MF .deps/handler.Tpo -c -o handler.o handler.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT hash.o -MD -MP -MF .deps/hash.Tpo -c -o hash.o hash.c
+mv -f .deps/compose.Tpo .deps/compose.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT hdrline.o -MD -MP -MF .deps/hdrline.Tpo -c -o hdrline.o hdrline.c
+mv -f .deps/filter.Tpo .deps/filter.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT headers.o -MD -MP -MF .deps/headers.Tpo -c -o headers.o headers.c
+mv -f .deps/group.Tpo .deps/group.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT help.o -MD -MP -MF .deps/help.Tpo -c -o help.o help.c
+mv -f .deps/flags.Tpo .deps/flags.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT hook.o -MD -MP -MF .deps/hook.Tpo -c -o hook.o hook.c
+mv -f .deps/getdomain.Tpo .deps/getdomain.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT keymap.o -MD -MP -MF .deps/keymap.Tpo -c -o keymap.o keymap.c
+mv -f .deps/hash.Tpo .deps/hash.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+mv -f .deps/headers.Tpo .deps/headers.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mbox.o -MD -MP -MF .deps/mbox.Tpo -c -o mbox.o mbox.c
+mv -f .deps/enter.Tpo .deps/enter.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT menu.o -MD -MP -MF .deps/menu.Tpo -c -o menu.o menu.c
+mv -f .deps/hdrline.Tpo .deps/hdrline.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mh.o -MD -MP -MF .deps/mh.Tpo -c -o mh.o mh.c
+mv -f .deps/help.Tpo .deps/help.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mx.o -MD -MP -MF .deps/mx.Tpo -c -o mx.o mx.c
+mv -f .deps/handler.Tpo .deps/handler.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pager.o -MD -MP -MF .deps/pager.Tpo -c -o pager.o pager.c
+mv -f .deps/main.Tpo .deps/main.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT parse.o -MD -MP -MF .deps/parse.Tpo -c -o parse.o parse.c
+mv -f .deps/hook.Tpo .deps/hook.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pattern.o -MD -MP -MF .deps/pattern.Tpo -c -o pattern.o pattern.c
+mv -f .deps/curs_main.Tpo .deps/curs_main.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT postpone.o -MD -MP -MF .deps/postpone.Tpo -c -o postpone.o postpone.c
+mv -f .deps/menu.Tpo .deps/menu.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT query.o -MD -MP -MF .deps/query.Tpo -c -o query.o query.c
+mv -f .deps/mbox.Tpo .deps/mbox.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT recvattach.o -MD -MP -MF .deps/recvattach.Tpo -c -o recvattach.o recvattach.c
+mv -f .deps/mx.Tpo .deps/mx.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT recvcmd.o -MD -MP -MF .deps/recvcmd.Tpo -c -o recvcmd.o recvcmd.c
+mv -f .deps/keymap.Tpo .deps/keymap.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT rfc822.o -MD -MP -MF .deps/rfc822.Tpo -c -o rfc822.o rfc822.c
+mv -f .deps/query.Tpo .deps/query.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT rfc1524.o -MD -MP -MF .deps/rfc1524.Tpo -c -o rfc1524.o rfc1524.c
+mv -f .deps/parse.Tpo .deps/parse.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT rfc2047.o -MD -MP -MF .deps/rfc2047.Tpo -c -o rfc2047.o rfc2047.c
+mv -f .deps/postpone.Tpo .deps/postpone.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT rfc2231.o -MD -MP -MF .deps/rfc2231.Tpo -c -o rfc2231.o rfc2231.c
+mv -f .deps/init.Tpo .deps/init.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT rfc3676.o -MD -MP -MF .deps/rfc3676.Tpo -c -o rfc3676.o rfc3676.c
+mv -f .deps/mh.Tpo .deps/mh.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT score.o -MD -MP -MF .deps/score.Tpo -c -o score.o score.c
+mv -f .deps/rfc822.Tpo .deps/rfc822.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT send.o -MD -MP -MF .deps/send.Tpo -c -o send.o send.c
+mv -f .deps/pattern.Tpo .deps/pattern.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT sendlib.o -MD -MP -MF .deps/sendlib.Tpo -c -o sendlib.o sendlib.c
+mv -f .deps/rfc2231.Tpo .deps/rfc2231.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT signal.o -MD -MP -MF .deps/signal.Tpo -c -o signal.o signal.c
+mv -f .deps/score.Tpo .deps/score.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT sort.o -MD -MP -MF .deps/sort.Tpo -c -o sort.o sort.c
+mv -f .deps/rfc3676.Tpo .deps/rfc3676.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT status.o -MD -MP -MF .deps/status.Tpo -c -o status.o status.c
+mv -f .deps/rfc2047.Tpo .deps/rfc2047.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT system.o -MD -MP -MF .deps/system.Tpo -c -o system.o system.c
+mv -f .deps/rfc1524.Tpo .deps/rfc1524.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT thread.o -MD -MP -MF .deps/thread.Tpo -c -o thread.o thread.c
+mv -f .deps/pager.Tpo .deps/pager.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT charset.o -MD -MP -MF .deps/charset.Tpo -c -o charset.o charset.c
+mv -f .deps/signal.Tpo .deps/signal.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT history.o -MD -MP -MF .deps/history.Tpo -c -o history.o history.c
+mv -f .deps/sort.Tpo .deps/sort.Po
+mv -f .deps/recvcmd.Tpo .deps/recvcmd.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT lib.o -MD -MP -MF .deps/lib.Tpo -c -o lib.o lib.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mutt_lisp.o -MD -MP -MF .deps/mutt_lisp.Tpo -c -o mutt_lisp.o mutt_lisp.c
+mv -f .deps/system.Tpo .deps/system.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT muttlib.o -MD -MP -MF .deps/muttlib.Tpo -c -o muttlib.o muttlib.c
+mv -f .deps/status.Tpo .deps/status.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT editmsg.o -MD -MP -MF .deps/editmsg.Tpo -c -o editmsg.o editmsg.c
+mv -f .deps/recvattach.Tpo .deps/recvattach.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mbyte.o -MD -MP -MF .deps/mbyte.Tpo -c -o mbyte.o mbyte.c
+mv -f .deps/charset.Tpo .deps/charset.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT url.o -MD -MP -MF .deps/url.Tpo -c -o url.o url.c
+mv -f .deps/history.Tpo .deps/history.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT ascii.o -MD -MP -MF .deps/ascii.Tpo -c -o ascii.o ascii.c
+mv -f .deps/lib.Tpo .deps/lib.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT crypt-mod.o -MD -MP -MF .deps/crypt-mod.Tpo -c -o crypt-mod.o crypt-mod.c
+mv -f .deps/editmsg.Tpo .deps/editmsg.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT safe_asprintf.o -MD -MP -MF .deps/safe_asprintf.Tpo -c -o safe_asprintf.o safe_asprintf.c
+mv -f .deps/send.Tpo .deps/send.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mutt_random.o -MD -MP -MF .deps/mutt_random.Tpo -c -o mutt_random.o mutt_random.c
+mv -f .deps/mbyte.Tpo .deps/mbyte.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT listmenu.o -MD -MP -MF .deps/listmenu.Tpo -c -o listmenu.o listmenu.c
+mv -f .deps/safe_asprintf.Tpo .deps/safe_asprintf.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT messageid.o -MD -MP -MF .deps/messageid.Tpo -c -o messageid.o messageid.c
+mv -f .deps/ascii.Tpo .deps/ascii.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT patchlist.o -MD -MP -MF .deps/patchlist.Tpo -c -o patchlist.o patchlist.c
+mv -f .deps/mutt_lisp.Tpo .deps/mutt_lisp.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT conststrings.o -MD -MP -MF .deps/conststrings.Tpo -c -o conststrings.o conststrings.c
+mv -f .deps/crypt-mod.Tpo .deps/crypt-mod.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pgp.o -MD -MP -MF .deps/pgp.Tpo -c -o pgp.o pgp.c
+mv -f .deps/sendlib.Tpo .deps/sendlib.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pgpinvoke.o -MD -MP -MF .deps/pgpinvoke.Tpo -c -o pgpinvoke.o pgpinvoke.c
+mv -f .deps/conststrings.Tpo .deps/conststrings.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pgpkey.o -MD -MP -MF .deps/pgpkey.Tpo -c -o pgpkey.o pgpkey.c
+mv -f .deps/mutt_random.Tpo .deps/mutt_random.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pgplib.o -MD -MP -MF .deps/pgplib.Tpo -c -o pgplib.o pgplib.c
+mv -f .deps/patchlist.Tpo .deps/patchlist.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT gnupgparse.o -MD -MP -MF .deps/gnupgparse.Tpo -c -o gnupgparse.o gnupgparse.c
+mv -f .deps/messageid.Tpo .deps/messageid.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pgpmicalg.o -MD -MP -MF .deps/pgpmicalg.Tpo -c -o pgpmicalg.o pgpmicalg.c
+mv -f .deps/url.Tpo .deps/url.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pgppacket.o -MD -MP -MF .deps/pgppacket.Tpo -c -o pgppacket.o pgppacket.c
+mv -f .deps/listmenu.Tpo .deps/listmenu.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT crypt-mod-pgp-classic.o -MD -MP -MF .deps/crypt-mod-pgp-classic.Tpo -c -o crypt-mod-pgp-classic.o crypt-mod-pgp-classic.c
+mv -f .deps/pgplib.Tpo .deps/pgplib.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT smime.o -MD -MP -MF .deps/smime.Tpo -c -o smime.o smime.c
+mv -f .deps/pgpinvoke.Tpo .deps/pgpinvoke.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT crypt-mod-smime-classic.o -MD -MP -MF .deps/crypt-mod-smime-classic.Tpo -c -o crypt-mod-smime-classic.o crypt-mod-smime-classic.c
+mv -f .deps/thread.Tpo .deps/thread.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT sidebar.o -MD -MP -MF .deps/sidebar.Tpo -c -o sidebar.o sidebar.c
+mv -f .deps/muttlib.Tpo .deps/muttlib.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT resize.o -MD -MP -MF .deps/resize.Tpo -c -o resize.o resize.c
+mv -f .deps/pgpmicalg.Tpo .deps/pgpmicalg.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pop.o -MD -MP -MF .deps/pop.Tpo -c -o pop.o pop.c
+mv -f .deps/pgppacket.Tpo .deps/pgppacket.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pop_lib.o -MD -MP -MF .deps/pop_lib.Tpo -c -o pop_lib.o pop_lib.c
+mv -f .deps/gnupgparse.Tpo .deps/gnupgparse.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pop_auth.o -MD -MP -MF .deps/pop_auth.Tpo -c -o pop_auth.o pop_auth.c
+mv -f .deps/crypt-mod-smime-classic.Tpo .deps/crypt-mod-smime-classic.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT bcache.o -MD -MP -MF .deps/bcache.Tpo -c -o bcache.o bcache.c
+mv -f .deps/crypt-mod-pgp-classic.Tpo .deps/crypt-mod-pgp-classic.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT account.o -MD -MP -MF .deps/account.Tpo -c -o account.o account.c
+mv -f .deps/pgp.Tpo .deps/pgp.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mutt_socket.o -MD -MP -MF .deps/mutt_socket.Tpo -c -o mutt_socket.o mutt_socket.c
+mv -f .deps/pop_auth.Tpo .deps/pop_auth.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mutt_tunnel.o -MD -MP -MF .deps/mutt_tunnel.Tpo -c -o mutt_tunnel.o mutt_tunnel.c
+mv -f .deps/pop_lib.Tpo .deps/pop_lib.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mutt_zstrm.o -MD -MP -MF .deps/mutt_zstrm.Tpo -c -o mutt_zstrm.o mutt_zstrm.c
+mv -f .deps/resize.Tpo .deps/resize.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mutt_ssl.o -MD -MP -MF .deps/mutt_ssl.Tpo -c -o mutt_ssl.o mutt_ssl.c
+mv -f .deps/bcache.Tpo .deps/bcache.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT monitor.o -MD -MP -MF .deps/monitor.Tpo -c -o monitor.o monitor.c
+mv -f .deps/account.Tpo .deps/account.Po
+mv -f .deps/pgpkey.Tpo .deps/pgpkey.Po
+mv -f .deps/pop.Tpo .deps/pop.Po
+mv -f .deps/sidebar.Tpo .deps/sidebar.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT hcache.o -MD -MP -MF .deps/hcache.Tpo -c -o hcache.o hcache.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT md5.o -MD -MP -MF .deps/md5.Tpo -c -o md5.o md5.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mutt_idna.o -MD -MP -MF .deps/mutt_idna.Tpo -c -o mutt_idna.o mutt_idna.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT mutt_dotlock.o -MD -MP -MF .deps/mutt_dotlock.Tpo -c -o mutt_dotlock.o mutt_dotlock.c
+mv -f .deps/smime.Tpo .deps/smime.Po
+mv -f .deps/mutt_zstrm.Tpo .deps/mutt_zstrm.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pgppubring.o -MD -MP -MF .deps/pgppubring.Tpo -c -o pgppubring.o pgppubring.c
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT extlib.o -MD -MP -MF .deps/extlib.Tpo -c -o extlib.o extlib.c
+mv -f .deps/md5.Tpo .deps/md5.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT sha1.o -MD -MP -MF .deps/sha1.Tpo -c -o sha1.o sha1.c
+mv -f .deps/mutt_tunnel.Tpo .deps/mutt_tunnel.Po
+cc -DPKGDATADIR=\"/usr/share/mutt\" -DSYSCONFDIR=\"/etc\" -DBINDIR=\"/usr/bin\" -DMUTTLOCALEDIR=\"/usr/share/locale\" -DHAVE_CONFIG_H=1 -I.  -I. -I. -I./imap    -I/usr/include  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT pgpewrap.o -MD -MP -MF .deps/pgpewrap.Tpo -c -o pgpewrap.o pgpewrap.c
+mv -f .deps/mutt_dotlock.Tpo .deps/mutt_dotlock.Po
+cp ./muttbug flea
+chmod +x flea
+cp ./smime_keys.pl smime_keys
+chmod +x smime_keys
+mv -f .deps/monitor.Tpo .deps/monitor.Po
+mv -f .deps/mutt_idna.Tpo .deps/mutt_idna.Po
+cc  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -L/usr/lib -o mutt_dotlock mutt_dotlock.o  
+mv -f .deps/mutt_socket.Tpo .deps/mutt_socket.Po
+mv -f .deps/pgpewrap.Tpo .deps/pgpewrap.Po
+cc  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -L/usr/lib -o pgpewrap pgpewrap.o   
+mv -f .deps/sha1.Tpo .deps/sha1.Po
+mv -f .deps/hcache.Tpo .deps/hcache.Po
+mv -f .deps/extlib.Tpo .deps/extlib.Po
+mv -f .deps/pgppubring.Tpo .deps/pgppubring.Po
+cc  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -L/usr/lib -o mutt_pgpring pgppubring.o pgplib.o lib.o extlib.o sha1.o md5.o pgppacket.o ascii.o   
+mv -f .deps/mutt_ssl.Tpo .deps/mutt_ssl.Po
+cc  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -L/usr/lib -o mutt addrbook.o alias.o attach.o background.o base64.o browser.o buffer.o buffy.o color.o crypt.o cryptglue.o commands.o complete.o compose.o copy.o curs_lib.o curs_main.o curs_ti_lib.o date.o edit.o enter.o flags.o init.o filter.o from.o getdomain.o group.o handler.o hash.o hdrline.o headers.o help.o hook.o keymap.o main.o mbox.o menu.o mh.o mx.o pager.o parse.o pattern.o postpone.o query.o recvattach.o recvcmd.o rfc822.o rfc1524.o rfc2047.o rfc2231.o rfc3676.o score.o send.o sendlib.o signal.o sort.o status.o system.o thread.o charset.o history.o lib.o mutt_lisp.o muttlib.o editmsg.o mbyte.o url.o ascii.o crypt-mod.o safe_asprintf.o mutt_random.o listmenu.o messageid.o patchlist.o conststrings.o  pgp.o pgpinvoke.o pgpkey.o pgplib.o gnupgparse.o pgpmicalg.o pgppacket.o crypt-mod-pgp-classic.o smime.o crypt-mod-smime-classic.o sidebar.o resize.o pop.o pop_lib.o pop_auth.o bcache.o account.o mutt_socket.o mutt_tunnel.o mutt_zstrm.o mutt_ssl.o monitor.o hcache.o md5.o mutt_idna.o  -Limap -limap  -lncurses -lz -lssl -lcrypto -lz -llmdb      
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build'
+make[1]: Leaving directory '/var/tmp/hokuto/mutt-88/build'
+echo '#define MUTT_VERSION "'`sh "./version.sh"`'"' > version.h.tmp
+cmp -s version.h version.h.tmp && rm -f version.h.tmp || mv version.h.tmp version.h
+make  install-recursive
+make[1]: Entering directory '/var/tmp/hokuto/mutt-88/build'
+Making install in m4
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/m4'
+make[3]: Entering directory '/var/tmp/hokuto/mutt-88/build/m4'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/mutt-88/build/m4'
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/m4'
+Making install in po
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/po'
+installing bg.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/bg/LC_MESSAGES/mutt.mo
+installing ca.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/ca/LC_MESSAGES/mutt.mo
+installing cs.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/cs/LC_MESSAGES/mutt.mo
+installing da.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/da/LC_MESSAGES/mutt.mo
+installing de.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/de/LC_MESSAGES/mutt.mo
+installing el.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/el/LC_MESSAGES/mutt.mo
+installing eo.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/eo/LC_MESSAGES/mutt.mo
+installing es.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/es/LC_MESSAGES/mutt.mo
+installing et.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/et/LC_MESSAGES/mutt.mo
+installing eu.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/eu/LC_MESSAGES/mutt.mo
+installing fi.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/fi/LC_MESSAGES/mutt.mo
+installing fr.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/fr/LC_MESSAGES/mutt.mo
+installing ga.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/ga/LC_MESSAGES/mutt.mo
+installing gl.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/gl/LC_MESSAGES/mutt.mo
+installing hu.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/hu/LC_MESSAGES/mutt.mo
+installing id.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/id/LC_MESSAGES/mutt.mo
+installing it.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/it/LC_MESSAGES/mutt.mo
+installing ja.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/ja/LC_MESSAGES/mutt.mo
+installing ko.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/ko/LC_MESSAGES/mutt.mo
+installing lt.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/lt/LC_MESSAGES/mutt.mo
+installing nl.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/nl/LC_MESSAGES/mutt.mo
+installing pl.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/pl/LC_MESSAGES/mutt.mo
+installing pt_BR.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/pt_BR/LC_MESSAGES/mutt.mo
+installing ru.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/ru/LC_MESSAGES/mutt.mo
+installing sk.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/sk/LC_MESSAGES/mutt.mo
+installing sv.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/sv/LC_MESSAGES/mutt.mo
+installing tr.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/tr/LC_MESSAGES/mutt.mo
+installing uk.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/uk/LC_MESSAGES/mutt.mo
+installing zh_CN.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/zh_CN/LC_MESSAGES/mutt.mo
+installing zh_TW.gmo as /var/tmp/hokuto/mutt-88/output/usr/share/locale/zh_TW/LC_MESSAGES/mutt.mo
+if test "mutt" = "gettext-tools"; then \
+  /usr/sbin/mkdir -p /var/tmp/hokuto/mutt-88/output/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /var/tmp/hokuto/mutt-88/output/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /var/tmp/hokuto/mutt-88/output/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/po'
+Making install in doc
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/doc'
+make[3]: Entering directory '/var/tmp/hokuto/mutt-88/build/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+cat instdoc.sh > instdoc
+chmod a+x instdoc
+/usr/sbin/mkdir -p /var/tmp/hokuto/mutt-88/output/usr/share/man/man1
+/usr/sbin/mkdir -p /var/tmp/hokuto/mutt-88/output/usr/share/man/man5
+/usr/sbin/mkdir -p /var/tmp/hokuto/mutt-88/output/etc
+./instdoc mutt.1 /var/tmp/hokuto/mutt-88/output/usr/share/man/man1/mutt.1
+./instdoc smime_keys.1 /var/tmp/hokuto/mutt-88/output/usr/share/man/man1/smime_keys.1
+./instdoc pgpewrap.1 /var/tmp/hokuto/mutt-88/output/usr/share/man/man1/pgpewrap.1
+./instdoc mutt_pgpring.1 /var/tmp/hokuto/mutt-88/output/usr/share/man/man1/mutt_pgpring.1
+test xmutt_dotlock = x || ./instdoc ./dotlock.man \
+	/var/tmp/hokuto/mutt-88/output/usr/share/man/man1/mutt_dotlock.1
+if [ -f muttrc.man ] ; then \
+  ./instdoc muttrc.man /var/tmp/hokuto/mutt-88/output/usr/share/man/man5/muttrc.5 ; \
+elif [ -f ./muttrc.man ] ; then \
+  ./instdoc ./muttrc.man /var/tmp/hokuto/mutt-88/output/usr/share/man/man5/muttrc.5 ; \
+fi
+./instdoc ./mbox.man /var/tmp/hokuto/mutt-88/output/usr/share/man/man5/mbox.5
+./instdoc ./mmdf.man /var/tmp/hokuto/mutt-88/output/usr/share/man/man5/mmdf.5
+/usr/sbin/mkdir -p /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt
+for f in COPYRIGHT GPL INSTALL ChangeLog README NEWS TODO README.SECURITY README.SSL  ; do \
+	/usr/bin/install -c -m 644 ../$f /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt ; \
+done
+for f in PGP-Notes.txt applying-patches.txt devel-notes.txt patch-notes.txt smime-notes.txt ; do \
+	/usr/bin/install -c -m 644 ./$f /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt ; \
+done
+if [ -s manual.txt ] ; then \
+  /usr/bin/install -c -m 644 manual.txt /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt ; \
+fi
+for f in manual.html index.html intro.html gettingstarted.html configuration.html mimesupport.html advancedusage.html optionalfeatures.html security.html tuning.html reference.html miscellany.html ; do \
+  if [ -f $f ] ; then \
+    /usr/bin/install -c -m 644 $f /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt ; \
+  elif [ -f ./$f ] ; then \
+    /usr/bin/install -c -m 644 ./$f /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt ; \
+  fi \
+done
+/usr/bin/install -c -m 644 Muttrc /var/tmp/hokuto/mutt-88/output/etc/Muttrc.dist
+if [ -f /var/tmp/hokuto/mutt-88/output/usr/share/mutt/Muttrc ] ; then \
+	mv /var/tmp/hokuto/mutt-88/output/usr/share/mutt/Muttrc* /var/tmp/hokuto/mutt-88/output/etc ; \
+elif [ -f /var/tmp/hokuto/mutt-88/output/usr/share/mutt/../Muttrc ] ; then \
+ 	mv /var/tmp/hokuto/mutt-88/output/usr/share/mutt/../Muttrc* /var/tmp/hokuto/mutt-88/output/etc ; \
+elif [ ! -f /var/tmp/hokuto/mutt-88/output/etc/Muttrc ] ; then \
+	/usr/bin/install -c -m 644 Muttrc /var/tmp/hokuto/mutt-88/output/etc ; \
+fi
+if [ -f mutt.info ] ; then \
+  /usr/sbin/mkdir -p /var/tmp/hokuto/mutt-88/output/usr/share/info ; \
+  /usr/bin/install -c -m 644 mutt.info /var/tmp/hokuto/mutt-88/output/usr/share/info ; \
+  if command -v install-info >/dev/null 2>&1 ; then \
+    install-info /var/tmp/hokuto/mutt-88/output/usr/share/info/mutt.info /var/tmp/hokuto/mutt-88/output/usr/share/info/dir ; \
+  fi \
+elif [ -f ./mutt.info ] ; then \
+  /usr/sbin/mkdir -p /var/tmp/hokuto/mutt-88/output/usr/share/info ; \
+  /usr/bin/install -c -m 644 ./mutt.info /var/tmp/hokuto/mutt-88/output/usr/share/info ; \
+  if command -v install-info >/dev/null 2>&1 ; then \
+    install-info /var/tmp/hokuto/mutt-88/output/usr/share/info/mutt.info /var/tmp/hokuto/mutt-88/output/usr/share/info/dir ; \
+  fi \
+fi
+make[3]: Leaving directory '/var/tmp/hokuto/mutt-88/build/doc'
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/doc'
+Making install in contrib
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/contrib'
+make[3]: Entering directory '/var/tmp/hokuto/mutt-88/build/contrib'
+make[3]: Nothing to be done for 'install-exec-am'.
+/usr/sbin/mkdir -p /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt/samples /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt/samples/iconv
+for f in Mush.rc Pine.rc gpg.rc pgp2.rc pgp5.rc pgp6.rc Tin.rc sample.mailcap sample.muttrc sample.muttrc-sidebar sample.muttrc-tlr sample.muttrc-compress sample.muttrc-starter sample.vimrc-sidebar colors.default colors.linux smime.rc ca-bundle.crt smime_keys_test.pl mutt_xtitle markdown2html bgedit-detectgui.sh bgedit-screen-tmux.sh mutt_oauth2.py mutt_oauth2.py.README ; do \
+	/usr/bin/install -c -m 644 ./$f /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt/samples ;	\
+done
+for f in ./iconv/*.rc ; do					\
+	/usr/bin/install -c -m 644 $f /var/tmp/hokuto/mutt-88/output/usr/share/doc/mutt/samples/iconv	  ;	\
+done
+make[3]: Leaving directory '/var/tmp/hokuto/mutt-88/build/contrib'
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/contrib'
+Making install in imap
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build/imap'
+make[3]: Entering directory '/var/tmp/hokuto/mutt-88/build/imap'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/mutt-88/build/imap'
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build/imap'
+make[2]: Entering directory '/var/tmp/hokuto/mutt-88/build'
+echo '#define MUTT_VERSION "'`sh "./version.sh"`'"' > version.h.tmp
+cmp -s version.h version.h.tmp && rm -f version.h.tmp || mv version.h.tmp version.h
+make[3]: Entering directory '/var/tmp/hokuto/mutt-88/build'
+echo '#define MUTT_VERSION "'`sh "./version.sh"`'"' > version.h.tmp
+/usr/sbin/mkdir -p /var/tmp/hokuto/mutt-88/output/etc
+/usr/bin/install -c -m 644 ./mime.types /var/tmp/hokuto/mutt-88/output/etc/mime.types.dist
+if [ ! -f /var/tmp/hokuto/mutt-88/output/etc/mime.types ]; then \
+	/usr/bin/install -c -m 644 ./mime.types /var/tmp/hokuto/mutt-88/output/etc; \
+fi
+ /usr/sbin/mkdir -p '/var/tmp/hokuto/mutt-88/output/usr/bin'
+cmp -s version.h version.h.tmp && rm -f version.h.tmp || mv version.h.tmp version.h
+ /usr/bin/install -c muttbug flea smime_keys '/var/tmp/hokuto/mutt-88/output/usr/bin'
+ /usr/sbin/mkdir -p '/var/tmp/hokuto/mutt-88/output/usr/bin'
+  /usr/bin/install -c mutt mutt_dotlock mutt_pgpring pgpewrap '/var/tmp/hokuto/mutt-88/output/usr/bin'
+make  install-exec-hook
+make[4]: Entering directory '/var/tmp/hokuto/mutt-88/build'
+if test -f /var/tmp/hokuto/mutt-88/output/usr/bin/mutt.dotlock && test -f /var/tmp/hokuto/mutt-88/output/usr/bin/mutt_dotlock ; then	\
+	rm -f /var/tmp/hokuto/mutt-88/output/usr/bin/mutt.dotlock ;		\
+	ln -sf /var/tmp/hokuto/mutt-88/output/usr/bin/mutt_dotlock /var/tmp/hokuto/mutt-88/output/usr/bin/mutt.dotlock ; \
+fi
+if test -f /var/tmp/hokuto/mutt-88/output/usr/bin/mutt_dotlock && test x != x ; then \
+	chgrp  /var/tmp/hokuto/mutt-88/output/usr/bin/mutt_dotlock && \
+	chmod 755 /var/tmp/hokuto/mutt-88/output/usr/bin/mutt_dotlock || \
+	{ echo "Can't fix mutt_dotlock's permissions!  This is required to lock mailboxes in the mail spool directory." >&2 ; exit 1 ; } \
+fi
+make[4]: Leaving directory '/var/tmp/hokuto/mutt-88/build'
+make[3]: Leaving directory '/var/tmp/hokuto/mutt-88/build'
+make[2]: Leaving directory '/var/tmp/hokuto/mutt-88/build'
+make[1]: Leaving directory '/var/tmp/hokuto/mutt-88/build'
+mode of '/var/tmp/hokuto/mutt-88/output/usr/bin/mutt_dotlock' changed from 0755 (rwxr-xr-x) to 2755 (rwxr-sr-x)
+
+Script done on 2026-06-20 12:42:29+07:00 [COMMAND_EXIT_CODE="0"]
