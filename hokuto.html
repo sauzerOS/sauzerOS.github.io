@@ -180,16 +180,19 @@
             $TMPDIR: current tmpdir<br>
             $HOKUTO_BUILD_DIR: current build dir path<br>
             $HOKUTO_REAL_USER: user that executed hokuto (allows installation in user home directory)
+            $HOKUTO_SPLIT_DIR: split dir output (split packages generation)
           </div>
         </li>
         <li><strong>checksums</strong>: b3sums of source files</li>
         <li>
-          <strong>depends</strong>: dependencies
+          <strong>depends{.supackage}</strong>: dependencies
           <ul>
             <li><code>pkgname</code>: runtime/build dependency</li>
             <li><code>pkgname make</code>: build dependency</li>
             <li><code>pkgname optional</code>: package will be automatically rebuilt once the dependency is available
               (solves circular deps)</li>
+            <li><code>pkgname runtime</code>: runtime only dependency</li>
+            <li><code>pkgname suggest "comment"</code>: suggested optional dependency</li>
             <li><code>pkgname rebuild</code>: forces rebuild of package even if already installed, only enabled with
               -rebuilds build command flag</li>
             <li><code>pkgname cross make</code>: cross (arm64) build dependency</li>
@@ -211,9 +214,11 @@
             <code>noram</code>: build in TMPDIR2<br>
             <code>nolto</code>: disable LTO<br>
             <code>nostrip</code>: disable stripping
+            <code>staticlibs</code>: keep static libraries
           </div>
         </li>
         <li><strong>files</strong>: local package files</li>
+        <li><strong>libdeps.ignore{.subpackage}</strong>: ignore dependency during auto dependency resolution</li>
         <li><strong>post-install</strong>: bash script executed after package install</li>
         <li>
           <strong>.sources</strong>: source links with substitutions

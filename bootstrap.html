@@ -90,6 +90,24 @@
       font-weight: bold;
     }
 
+    pre {
+      background-color: #eee8d5;
+      border: 1px solid #93a1a1;
+      border-radius: 3px;
+      color: #586e75;
+      overflow-x: auto;
+      padding: 12px;
+      white-space: pre;
+    }
+
+    pre code {
+      background: transparent;
+      border-radius: 0;
+      display: block;
+      font-weight: normal;
+      padding: 0;
+    }
+
     .section {
       margin-bottom: 30px;
     }
@@ -112,40 +130,55 @@
 
     <div class="section">
       <h3>Bootstrap process:</h3>
-      <ul>
-        <li>
-          get latest hokuto release<br>
-          <code>wget hokuto.xdd.ovh/hokuto.tar.xz</code><br>
-          <code>tar xvf hokuto.tar.xz && mv hokuto-* hokuto</code>
-        </li>
-        <li>
-          build bootstrap chroot<br>
-          <code>hokuto bootstrap &lt;target dir&gt;</code>
-        </li>
-        <li>
-          chroot in bootstrap chroot<br>
-          <code>hokuto chroot &lt;target dir&gt;</code>
-        </li>
-        <li>
-          configure chroot<br>
-          <code>hokuto settings (generate and set signing key, set build type)</code>
-        </li>
-        <li>
-          bootstrap python and python build tools<br>
-          <code>hokuto build python</code><br>
-          <code>pip install build flit_core installer</code><br>
-          <code>hokuto build --nodeps python-build python-flit-core python-installer python-packaging python-pyproject-hooks python-setuptools</code><br>
-          <code>hokuto alt discard-unmanaged</code>
-        </li>
-        <li>
-          build clean toolchain<br>
-          <code>hokuto build --rebuilds toolchain</code>
-        </li>
-        <li>
-          build base system<br>
-          <code>hokuto build --rebuilds base-system</code>
-        </li>
-      </ul>
+      <p>Enter the bootstrap chroot, configure package signing, initialize repositories, then build the devel tools and base system:</p>
+      <pre><code>hk chroot /path-to-chroot
+hk settings # generate/set package signature key
+hk init-repos
+
+# build the devel-tools
+hk b --no-devel --no-remote bison
+hk b --no-devel --no-remote --no-deps zlib-ng
+hk b --no-devel --no-remote --no-deps ncurses
+hk b --no-devel --no-remote --no-deps bzip2 gdbm
+hk i --no-remote --no-deps lib32-ncurses
+hk b --no-devel --no-remote --no-deps readline
+hk b --no-devel --no-remote --no-deps perl
+hk b --no-devel --no-remote --no-deps openssl
+hk b --no-devel --no-remote --no-deps expat
+hk b --no-devel --no-remote --no-deps python
+pip install build flit_core installer
+hk b --no-devel --no-remote --no-deps python-build python-flit-core python-installer python-packaging python-pyproject-hooks python-setuptools
+hk alt discard-unmanaged # remove pip installs
+hk b --no-devel --no-remote bash
+hk b --no-devel --no-remote autoconf automake
+hk b --no-devel --no-remote --no-deps acl attr mpc zstd tar
+hk b --no-devel --no-remote --no-deps gcc
+hk i --no-remote --no-deps libgcc libstdc++
+hk b --no-devel --no-remote --no-deps binutils
+hk b --no-devel --no-remote --no-deps file findutils
+hk b --no-devel --no-remote --no-deps grep gzip make patch sed flex coreutils
+hk i --no-remote --no-deps lib32-gcc-libs
+hk b --no-devel --no-remote glibc
+hk b --no-devel --no-remote gettext libtool texinfo which
+hk b --no-devel --no-remote pkgconf
+hk b --no-remote gcc
+hk b --no-remote gettext
+hk b --no-remote python
+hk b --no-remote nano
+hk b --no-remote hokuto
+hk b --no-remote file
+hk b --no-remote elfutils
+hk i --no-remote lib32-ncurses
+hk b --no-remote --no-deps util-linux
+hk i --no-remote util-linux
+hk b --no-remote systemd
+hk b --no-remote util-linux
+hk b --no-remote dbus
+hk r lib32-ncurses lib32-gcc-libs
+hk i sauzeros systemd
+passwd
+exit</code></pre>
+      <p>All the packages for a basic sauzerOS chroot have been built and the chroot can be re-entered with <code>systemd-nspawn -b -D /path-to-chroot</code>.</p>
     </div>
   </main>
 </body>
