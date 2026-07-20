@@ -175,6 +175,7 @@
             $3: package name<br>
             $HOKUTO_ARCH: build arch (aarch64 or x86_64)<br>
             $HOKUTO_CROSS: (1 or 0) and $HOKUTO_CARCH (arm64)<br>
+            $HOKUTO_LTO: whether LTO is enabled for the current build (1 or 0)<br>
             $MULTILIB: (1 or 0)<br>
             $HOKUTO_ROOT: rootdir, usually / but can be set to another dir<br>
             $TMPDIR: current tmpdir<br>
@@ -188,6 +189,7 @@
           <strong>depends{.supackage}</strong>: dependencies
           <ul>
             <li><code>pkgname</code>: runtime/build dependency</li>
+            <li><code>pkgname==17.*</code>: require any release from major version 17</li>
             <li><code>pkgname make</code>: build dependency</li>
             <li><code>pkgname optional</code>: package will be automatically rebuilt once the dependency is available
               (solves circular deps)</li>
@@ -205,12 +207,14 @@
           <strong>options</strong>:
           <div class="options-list">
             <code>asroot</code>: build package as root<br>
-            <code>binary</code>: binary package with bundled deps, ignored by automatic dependency resolver<br>
+            <code>binary</code>: binary package with bundled deps, ignored by automatic dependency resolver and built without base-devel<br>
             <code>clang</code>: sets flto=auto for clang builds<br>
             <code>cross-simple</code>: use the native host compiler instead of the cross-compiler<br>
+            <code>devel</code>: install base-devel for a binary or nodevel package that explicitly requires build tools<br>
             <code>host-tool</code>: don't modify the PATH in the build env to include the cross-toolchain binaries<br>
             <code>interactive</code>: shows build output log and allows interactive scripts<br>
             <code>nocrossopt</code>: don't enable CFLAGS_ARM64 for cross builds<br>
+            <code>nodevel</code>: don't install base-devel packages for this build<br>
             <code>noram</code>: build in TMPDIR2<br>
             <code>nolto</code>: disable LTO<br>
             <code>nostrip</code>: disable stripping<br>
@@ -243,6 +247,65 @@
         </li>
         <li><strong>version</strong>: version revision</li>
       </ul>
+    </div>
+
+    <div class="section">
+      <h3>Git Source Checkouts</h3>
+      <p>
+        Prefix a source URL with <code>git+</code> to have Hokuto check out a Git repository. Git sources are not
+        included in the <code>checksums</code> file. The checked-out repository is linked into the package source
+        directory and its contents are copied into the temporary build directory before the build script runs.
+      </p>
+
+      <div class="env-vars">
+        <strong>Source syntax:</strong><br>
+        <code>git+https://github.com/example/project</code> — default branch<br>
+        <code>git+https://github.com/example/project#2.3.0</code> — raw branch, tag, or revision<br>
+        <code>git+https://github.com/example/project#545a54...</code> — commit hash<br>
+        <code>git+https://github.com/example/project#branch=dev</code> — named branch<br>
+        <code>git+https://github.com/example/project#tag=v2.3.0</code> — named tag<br>
+        <code>git+https://github.com/example/project#branch=dev&amp;depth=1</code> — shallow branch checkout<br>
+        <code>git+https://github.com/example/project#tag=v2.3.0&amp;depth=1</code> — shallow tag checkout<br>
+        <code>git+https://github.com/example/project#depth=1</code> — shallow checkout of the default branch
+      </div>
+
+      <h3>Shared cache</h3>
+      <p>
+        Normal Git sources use a full bare mirror under
+        <code>/var/cache/hokuto/sources/_cache/git/</code>. Hokuto reuses that object store for packages which use the
+        same repository, updates it with the remote, and creates a shared working checkout under
+        <code>/var/cache/hokuto/sources/_cache/checkouts/</code>. Branch and tag selectors are resolved to their full
+        Git refs, while raw fragments continue to work as branches, tags, or commit revisions.
+      </p>
+      <p>
+        Each package receives a symbolic link such as
+        <code>/var/cache/hokuto/sources/pkgname/project</code> pointing to the matching shared checkout. Checkout cache
+        keys include the repository URL and selected ref, so different branches or tags do not overwrite one another.
+        Fetching and checkout updates are protected by locks, allowing parallel package operations to safely reuse the
+        same cache.
+      </p>
+
+      <h3>Shallow checkouts</h3>
+      <p>
+        Add <code>depth=N</code> to download only the requested number of commits. Shallow checkouts bypass the full
+        bare mirror and use a separate checkout keyed by repository URL, ref, and depth. Existing shallow branches are
+        refreshed with a depth-limited fetch, so updating a package does not automatically download the complete
+        history.
+      </p>
+      <ul>
+        <li><code>depth</code> must be a positive integer.</li>
+        <li>Shallow named refs must use <code>branch=</code> or <code>tag=</code>.</li>
+        <li>Arbitrary commit hashes cannot be combined with <code>depth</code>, because servers may refuse to fetch an
+          unadvertised commit into a shallow repository.</li>
+        <li>Shallow checkout support requires the system <code>git</code> client. Hokuto's internal Git fallback remains
+          available for normal, full-history sources only.</li>
+      </ul>
+
+      <p>
+        To give two checkouts of the same repository different names in the package source cache, use the source
+        filename override:
+        <code>git+https://github.com/example/project#branch=stable -&gt; project-stable</code>.
+      </p>
     </div>
   </main>
 </body>
