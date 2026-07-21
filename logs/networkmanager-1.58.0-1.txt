@@ -1,0 +1,103 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mnetworkmanager[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mnetworkmanager 1.58.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mTue, 21 Jul 2026 05:34:05 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mnetworkmanager[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mcurl dnsmasq glib glibc iproute2 jansson libgcc libmm-glib libndp libnewt libpsl mobile-broadband-provider-info nspr nss readline systemd-libs bash curl docbook-xsl glib glibc gobject-introspection iproute2 iwd jansson libmm-glib libndp libnewt libnvme libpsl meson modemmanager nftables openresolv perl-yaml polkit python-pygobject systemd vala[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mnetworkmanager[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 bash-5.3.p15-1 binutils-2.46.1-1 bison-3.8.2-1 curl-8.21.0-1 dnsmasq-2.93-1 docbook-xsl-1.79.2-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.1.0-1 gettext-1.0-1 glib-2.88.2-1 glibc-2.43.fe0ccc9564-1 gobject-introspection-1.86.0-1 grep-3.12-1 gzip-1.14-1 iproute2-7.1.0-1 iwd-3.12-1 jansson-2.15.1-1 libgcc-16.1.0-1 libmm-glib-1.24.2-1 libndp-1.9-1 libnewt-0.52.25-1 libnvme-1.16.2-1 libpsl-0.23.0-1 libtool-2.6.1-1 m4-1.4.21-1 make-4.4.1-1 meson-1.11.2-1 mobile-broadband-provider-info-20251101-1 modemmanager-1.24.2-1 nftables-1.1.6-1 nspr-4.39-1 nss-3.126-1 openresolv-3.17.4-1 patch-2.8-1 perl-yaml-1.31-1 pkgconf-3.0.3-1 polkit-127-1 python-pygobject-3.56.3-1 readline-8.3.3-1 sed-4.10-1 systemd-261.1-1 systemd-libs-261.1-1 texinfo-7.3-1 vala-0.56.19-1 which-2.25-1[0m
+
+Script started on 2026-07-21 12:34:05+07:00 [COMMAND="cd /var/tmp/hokuto/networkmanager-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/networkmanager-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/networkmanager-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/networkmanager-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/networkmanager-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/networkmanager-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/networkmanager-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/networkmanager-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/networkmanager-01/build/.cache' /repo/sauzeros/extra/networkmanager/build /var/tmp/hokuto/networkmanager-01/output 1.58.0 networkmanager" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build -D iwd=true -D b_lto=true -D suspend_resume=systemd -D config_dns_rc_manager_default=symlink -D libaudit=no -D ppp=false -D nmtui=true -D selinux=false -D qt=false -D session_tracking=systemd -D modem_manager=true
+[1mThe Meson build system[0m
+Version: 1.11.2
+Source dir: [1m/var/tmp/hokuto/networkmanager-01/build[0m
+Build dir: [1m/var/tmp/hokuto/networkmanager-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mNetworkManager[0m
+Project version: [1m1.58.0[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.1.0 "cc (GCC) 16.1.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Program [1mperl[0m found: [1;32mYES[0m (/usr/bin/perl)
+Program [1m/var/tmp/hokuto/networkmanager-01/build/tools/check-exports.sh[0m found: [1;32mYES[0m (/var/tmp/hokuto/networkmanager-01/build/tools/check-exports.sh)
+Has header "[1msys/auxv.h[0m" : [1;32mYES[0m 
+Has header "[1mthreads.h[0m" : [1;32mYES[0m 
+Checking for function "[1mgetrandom[0m" : [1;32mYES[0m 
+Checking for function "[1mpidfd_open[0m" : [1;31mNO[0m 
+Checking for function "[1mpidfd_send_signal[0m" : [1;31mNO[0m 
+Checking for function "[1mrt_sigqueueinfo[0m" : [1;31mNO[0m 
+Checking for function "[1msecure_getenv[0m" : [1;32mYES[0m 
+Checking for function "[1m__secure_getenv[0m" : [1;31mNO[0m 
+Checking for function "[1mreallocarray[0m" : [1;32mYES[0m 
+Checking for function "[1mexplicit_bzero[0m" : [1;32mYES[0m 
+Checking for function "[1mmemfd_create[0m" : [1;31mNO[0m 
+Checking for function "[1mdlvsym[0m" : [1;32mYES[0m 
+Checking for size of "[1mpid_t[0m" : [1m4[0m 
+Checking for size of "[1muid_t[0m" : [1m4[0m 
+Checking for size of "[1mgid_t[0m" : [1m4[0m 
+Checking for size of "[1mdev_t[0m" : [1m8[0m 
+Checking for size of "[1mino_t[0m" : [1m8[0m 
+Checking for size of "[1mtime_t[0m" : [1m8[0m 
+Checking for size of "[1mrlim_t[0m" : [1m8[0m 
+Compiler for C supports arguments -fdata-sections: [1;32mYES[0m 
+Compiler for C supports arguments -ffunction-sections: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,--gc-sections: [1;32mYES[0m 
+Compiler for C supports arguments -Wcast-align=strict: [1;32mYES[0m 
+Compiler for C supports arguments -Wdeclaration-after-statement: [1;32mYES[0m 
+Compiler for C supports arguments -Wfloat-equal: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat-nonliteral: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat-security: [1;32mYES[0m 
+Compiler for C supports arguments -Wimplicit-function-declaration: [1;32mYES[0m 
+Compiler for C supports arguments -Wimplicit-int: [1;32mYES[0m 
+Compiler for C supports arguments -Winit-self: [1;32mYES[0m 
+Compiler for C supports arguments -Wint-conversion: [1;32mYES[0m 
+Compiler for C supports arguments -Wlogical-op: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-include-dirs: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wold-style-definition: [1;32mYES[0m 
+Compiler for C supports arguments -Wparentheses-equality: [1;31mNO[0m 
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C supports arguments -Wshadow: [1;32mYES[0m 
+Compiler for C supports arguments -Wshift-negative-value: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wtypedef-redefinition: [1;31mNO[0m 
+Compiler for C supports arguments -Wundef: [1;32mYES[0m 
+Compiler for C supports arguments -Wunknown-attributes: [1;31mNO[0m 
+Compiler for C supports arguments -Wvla: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-duplicate-decl-specifier: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-format-truncation: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-format-y2k: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-gnu-variable-sized-type-not-at-end: [1;31mNO[0m 
+Compiler for C supports arguments -Wno-missing-field-initializers: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-pragmas: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-sign-compare: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-tautological-constant-out-of-range-compare: [1;31mNO[0m 
+Compiler for C supports arguments -Wno-unknown-pragmas: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C supports arguments -fno-strict-aliasing: [1;32mYES[0m 
+Compiler for C supports arguments -Wimplicit-fallthrough: [1;32mYES[0m 
+Checking if "[1m-Werror=implicit-fallthrough[0m" compiles: [1;32mYES[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.3[0m
+Run-time dependency [1muuid[0m found: [1;32mYES[0m [36m2.42.2[0m
+Did not find CMake 'cmake'
+Found CMake: [1;31mNO[0m
+Run-time dependency [1mlibelogind[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Run-time dependency [1mlibudev[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1mdbus-1[0m found: [1;32mYES[0m [36m1.16.2[0m
+Run-time dependency [1mlibndp[0m found: [1;32mYES[0m [36m1.9[0m
+Run-time dependency [1mjansson[0m found: [1;32mYES[0m [36m2.15.1[0m
+Program [1meu-readelf[0m found: [1;32mYES[0m (/usr/bin/eu-readelf)
+Run-time dependency [1mlibsystemd[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1mlibsystemd-login[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+Run-time dependency [1msystemd[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1mgio-unix-2.0[0m found: [1;32mYES[0m [36m2.88.2[0m
+Run-time dependency [1mgmodule-2.0[0m found: [1;32mYES[0m [36m2.88.2[0m
+Library [1mdl[0m found: [1;32mYES[0m
+Run-time dependency [1mgobject-introspection-1.0[0m found: [1;32mYES[0m [36m1.86.0[0m
+Run-time dependency [1mlibbpf[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+
+meson.build:522:2: [1;31mERROR:[0m Assert failed: You must have libbpf >= 1.3.0 installed to build. Use -Dclat=false to disable use of it
+
+A full log can be found at [1m/var/tmp/hokuto/networkmanager-01/build/build/meson-logs/meson-log.txt[0m
+
+Script done on 2026-07-21 12:34:08+07:00 [COMMAND_EXIT_CODE="1"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mnetworkmanager[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mfailed[0m[38;2;25;118;210m at [0m[38;2;11;169;19mTue, 21 Jul 2026 05:34:08 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m2s[0m
