@@ -136,44 +136,60 @@ hk settings # generate/set package signature key
 hk init-repos
 
 # build the devel-tools
-hk b --no-devel --no-remote bison
-hk b --no-devel --no-remote --no-deps zlib-ng
-hk b --no-devel --no-remote --no-deps ncurses
-hk b --no-devel --no-remote --no-deps bzip2 gdbm
+hk b --no-remote --no-devel bison
+hk b --no-remote --no-devel --no-deps zlib-ng
+hk b --no-remote --no-devel --no-deps ncurses
+hk b --no-remote --no-devel --no-deps bzip2 gdbm
 hk i --no-remote --no-deps lib32-ncurses
-hk b --no-devel --no-remote --no-deps readline
-hk b --no-devel --no-remote --no-deps perl
-hk b --no-devel --no-remote --no-deps openssl
-hk b --no-devel --no-remote --no-deps expat
-hk b --no-devel --no-remote --no-deps python
+hk b --no-remote --no-devel --no-deps readline
+hk b --no-remote --no-devel --no-deps perl
+hk b --no-remote --no-devel --no-deps openssl
+hk b --no-remote --no-devel --no-deps expat
+hk b --no-remote --no-devel --no-deps python
 pip install build flit_core installer
-hk b --no-devel --no-remote --no-deps python-build python-flit-core python-installer python-packaging python-pyproject-hooks python-setuptools
+hk b --no-remote --no-devel --no-deps python-build python-flit-core python-installer python-packaging python-pyproject-hooks python-setuptools
 hk alt discard-unmanaged # remove pip installs
-hk b --no-devel --no-remote bash
-hk b --no-devel --no-remote autoconf automake
-hk b --no-devel --no-remote --no-deps acl attr mpc zstd tar
-hk b --no-devel --no-remote --no-deps gcc
+hk b --no-remote --no-devel --no-deps bash
+hk b --no-remote --no-devel --no-deps autoconf 
+hk b --no-remote --no-devel --no-deps automake
+hk b --no-remote --no-devel --no-deps attr
+hk b --no-remote --no-devel --no-deps acl
+hk b --no-remote --no-devel --no-deps gmp
+hk b --no-remote --no-devel --no-deps mpfr 
+hk b --no-remote --no-devel --no-deps mpc
+hk b --no-remote --no-devel --no-deps wget
+hk b --no-remote --no-devel --no-deps isl
+hk b --no-remote --no-devel --no-deps zstd tar
+hk b --no-remote --no-devel --no-deps gawk
+hk b --no-remote --no-devel --no-deps gcc
 hk i --no-remote --no-deps libgcc libstdc++
-hk b --no-devel --no-remote --no-deps binutils
-hk b --no-devel --no-remote --no-deps file findutils
-hk b --no-devel --no-remote --no-deps grep gzip make patch sed flex coreutils
+hk b --no-remote --no-devel --no-deps binutils
+hk b --no-remote --no-devel --no-deps file findutils
+hk b --no-remote --no-devel --no-deps grep gzip make patch sed flex coreutils
 hk i --no-remote --no-deps lib32-gcc-libs
-hk b --no-devel --no-remote glibc
-hk b --no-devel --no-remote gettext libtool texinfo which
-hk b --no-devel --no-remote pkgconf
-hk b --no-remote gcc
-hk b --no-remote gettext
+hk b --no-remote --no-devel glibc
+locale-gen
+hk b --no-remote --no-devel --no-deps libtool
+hk b --no-remote --no-devel --no-deps gettext texinfo which
+hk b --no-remote --no-devel pkgconf
 hk b --no-remote python
-hk b --no-remote nano
-hk b --no-remote hokuto
-hk b --no-remote file
-hk b --no-remote elfutils
-hk i --no-remote lib32-ncurses
+hk b --no-remote --no-deps gcc
+hk b --no-remote --no-deps nano file
+hk b --no-remote --no-deps zlib-ng
+hk i --no-remote --force lib32-zlib-ng
+hk b --no-remote --no-deps zstd
+hk b --no-remote --no-deps rsync
+hk b --no-remote --no-deps hokuto
+hk b --no-remote --no-deps elfutils
+hk b --no-remote meson
+hk i --no-remote lib32-openssl lib32-libxcrypt
+hk b --no-remote --no-deps pam
 hk b --no-remote --no-deps util-linux
-hk i --no-remote util-linux
+hk b --no-remote grep
+hk b --no-remote diffutils
 hk b --no-remote systemd
 hk b --no-remote util-linux
-hk b --no-remote dbus
+rebuild packages that have not been rebuilt with optional deps
 hk r lib32-ncurses lib32-gcc-libs
 hk i sauzeros systemd
 passwd
