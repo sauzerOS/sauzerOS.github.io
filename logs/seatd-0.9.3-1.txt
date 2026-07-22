@@ -1,0 +1,82 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mseatd[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mseatd 0.9.3-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 22 Jul 2026 15:51:08 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mseatd[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19msystemd-libs meson scdoc systemd[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mseatd[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.1.0-1 gettext-1.0-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 meson-1.11.2-1 patch-2.8-1 pkgconf-3.0.3-1 scdoc-1.11.5-1 sed-4.10-1 systemd-261.1-1 systemd-libs-261.1-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-07-22 22:51:10+07:00 [COMMAND="cd /var/tmp/hokuto/seatd-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/seatd-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/seatd-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/seatd-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/seatd-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/seatd-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/seatd-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/seatd-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/seatd-01/build/.cache' /repo/sauzeros/extra/seatd/build /var/tmp/hokuto/seatd-01/output 0.9.3 seatd" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build -D default_library=both -D server=enabled -D libseat-logind=systemd
+[1mThe Meson build system[0m
+Version: 1.11.2
+Source dir: [1m/var/tmp/hokuto/seatd-01/build[0m
+Build dir: [1m/var/tmp/hokuto/seatd-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mseatd[0m
+Project version: [1m0.9.3[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.1.0 "cc (GCC) 16.1.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Compiler for C supports arguments -Wundef: [1;32mYES[0m 
+Compiler for C supports arguments -Wunused: [1;32mYES[0m 
+Compiler for C supports arguments -Wlogical-op: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-include-dirs: [1;32mYES[0m 
+Compiler for C supports arguments -Wold-style-definition: [1;32mYES[0m 
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-aliasing: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wimplicit-fallthrough: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unknown-warning-option: [1;31mNO[0m 
+Compiler for C supports arguments -Wno-unused-command-line-argument: [1;31mNO[0m 
+Compiler for C supports arguments -Wvla: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-hardened: [1;32mYES[0m 
+Compiler for C supports arguments -fhardened: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,--exclude-libs=ALL: [1;32mYES[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.3[0m
+Run-time dependency [1mlibsystemd[0m found: [1;32mYES[0m [36m261[0m
+Library [1mrt[0m found: [1;32mYES[0m
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.3[0m
+Build-time dependency [1mscdoc[0m found: [1;32mYES[0m [36m1.11.5[0m
+Build targets in project: [1m10[0m
+
+seatd [36m0.9.3[0m
+
+    libseat-seatd     : [1;32mYES[0m
+    libseat-builtin   : [1;31mNO[0m
+    libseat-systemd   : [1;32mYES[0m
+    libseat-elogind   : [1;31mNO[0m
+    server            : [1;32mYES[0m
+    man-pages         : [1;32mYES[0m
+
+  [1mUser defined options[0m
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    default_library   : both
+    libexecdir        : lib
+    libseat-logind    : systemd
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    server            : enabled
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/seatd-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/seatd-01/build/build'
+[0/39] Compiling C object libseat-private.a.p/common_connection.c.o[K[0/39] Compiling C object libseat-private.a.p/common_linked_list.c.o[K[0/39] Compiling C object libseat-private.a.p/common_log.c.o[K[0/39] Compiling C object libseat-private.a.p/libseat_backend_seatd.c.o[K[0/39] Compiling C object libseat-private.a.p/libseat_backend_logind.c.o[K[0/39] Compiling C object libseat-private.a.p/common_drm.c.o[K[0/39] Compiling C object libseat.so.1.p/libseat_libseat.c.o[K[0/39] Compiling C object libseat.so.1.p/libseat_backend_noop.c.o[K[0/39] Compiling C object seatd.p/common_log.c.o[K[0/39] Compiling C object seatd.p/common_linked_list.c.o[K[1/39] Compiling C object seatd.p/common_linked_list.c.o[K[1/39] Compiling C object seatd.p/common_terminal.c.o[K[2/39] Compiling C object libseat-private.a.p/common_linked_list.c.o[K[2/39] Compiling C object seatd.p/common_connection.c.o[K[3/39] Compiling C object libseat-private.a.p/common_drm.c.o[K[3/39] Compiling C object seatd.p/common_evdev.c.o[K[4/39] Compiling C object libseat.so.1.p/libseat_libseat.c.o[K[4/39] Compiling C object seatd.p/common_hidraw.c.o[K[5/39] Compiling C object libseat-private.a.p/common_log.c.o[K[5/39] Compiling C object seatd.p/common_drm.c.o[K[6/39] Compiling C object libseat.so.1.p/libseat_backend_noop.c.o[K[6/39] Compiling C object seatd.p/common_wscons.c.o[K[7/39] Compiling C object libseat-private.a.p/common_connection.c.o[K[7/39] Compiling C object seatd.p/seatd_poller.c.o[K[8/39] Compiling C object seatd.p/common_log.c.o[K[8/39] Compiling C object seatd.p/seatd_seat.c.o[K[9/39] Compiling C object seatd.p/common_evdev.c.o[K[9/39] Compiling C object seatd.p/seatd_client.c.o[K[10/39] Compiling C object seatd.p/common_hidraw.c.o[K[10/39] Compiling C object seatd.p/seatd_server.c.o[K[11/39] Compiling C object seatd.p/common_drm.c.o[K[11/39] Compiling C object seatd.p/seatd_seatd.c.o[K[12/39] Compiling C object libseat-private.a.p/libseat_backend_seatd.c.o[K[12/39] Compiling C object seatd-launch.p/seatd-launch_seatd-launch.c.o[K[13/39] Compiling C object seatd.p/common_connection.c.o[K[13/39] Compiling C object linked_list_test.p/tests_linked_list.c.o[K[14/39] Compiling C object seatd.p/common_wscons.c.o[K[14/39] Compiling C object linked_list_test.p/common_linked_list.c.o[K[15/39] Compiling C object libseat-private.a.p/libseat_backend_logind.c.o[K[15/39] Linking static target libseat-private.a[K[16/39] Compiling C object seatd.p/common_terminal.c.o[K[16/39] Compiling C object connection_test.p/tests_connection.c.o[K[17/39] Linking static target libseat-private.a[K[17/39] Compiling C object connection_test.p/common_connection.c.o[K[18/39] Compiling C object linked_list_test.p/common_linked_list.c.o[K[18/39] Compiling C object poller_test.p/tests_poller.c.o[K[19/39] Compiling C object seatd.p/seatd_server.c.o[K[19/39] Compiling C object poller_test.p/common_linked_list.c.o[K[20/39] Compiling C object seatd.p/seatd_poller.c.o[K[20/39] Compiling C object poller_test.p/seatd_poller.c.o[K[21/39] Compiling C object seatd.p/seatd_seat.c.o[K[21/39] Linking target libseat.so.1[K[22/39] Compiling C object seatd.p/seatd_seatd.c.o[K[22/39] Linking static target libseat.a[K[23/39] Compiling C object linked_list_test.p/tests_linked_list.c.o[K[23/39] Linking target linked_list_test[K[24/39] Compiling C object poller_test.p/common_linked_list.c.o[K[24/39] Generating seatd.1 with a custom command (wrapped by meson to capture output, to feed input)[K[25/39] Compiling C object seatd-launch.p/seatd-launch_seatd-launch.c.o[K[25/39] Linking target seatd-launch[K[26/39] Linking static target libseat.a[K[26/39] Generating seatd-launch.1 with a custom command (wrapped by meson to capture output, to feed input)[K[27/39] Compiling C object connection_test.p/tests_connection.c.o[K[28/39] Compiling C object poller_test.p/seatd_poller.c.o[K[29/39] Compiling C object seatd.p/seatd_client.c.o[K[29/39] Linking target seatd[K[30/39] Compiling C object poller_test.p/tests_poller.c.o[K[30/39] Linking target poller_test[K[31/39] Compiling C object connection_test.p/common_connection.c.o[K[31/39] Linking target connection_test[K[32/39] Generating seatd.1 with a custom command (wrapped by meson to capture output, to feed input)[K[33/39] Linking target seatd-launch[K[34/39] Linking target linked_list_test[K[35/39] Generating seatd-launch.1 with a custom command (wrapped by meson to capture output, to feed input)[K[36/39] Linking target poller_test[K[37/39] Linking target connection_test[K[38/39] Linking target libseat.so.1[K[39/39] Linking target seatd[K
+ninja: Entering directory `/var/tmp/hokuto/seatd-01/build/build'
+ninja: no work to do.
+Installing libseat.so.1 to /var/tmp/hokuto/seatd-01/output/usr/lib
+Installing libseat.a to /var/tmp/hokuto/seatd-01/output/usr/lib
+Installing seatd to /var/tmp/hokuto/seatd-01/output/usr/bin
+Installing seatd-launch to /var/tmp/hokuto/seatd-01/output/usr/bin
+Installing seatd.1 to /var/tmp/hokuto/seatd-01/output/usr/share/man/man1
+Installing seatd-launch.1 to /var/tmp/hokuto/seatd-01/output/usr/share/man/man1
+Installing /var/tmp/hokuto/seatd-01/build/include/libseat.h to /var/tmp/hokuto/seatd-01/output/usr/include
+Installing /var/tmp/hokuto/seatd-01/build/build/meson-private/libseat.pc to /var/tmp/hokuto/seatd-01/output/usr/lib/pkgconfig
+Installing symlink pointing to libseat.so.1 to /var/tmp/hokuto/seatd-01/output/usr/lib/libseat.so
+
+Script done on 2026-07-22 22:51:12+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mseatd[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 22 Jul 2026 15:51:12 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m4s[0m
