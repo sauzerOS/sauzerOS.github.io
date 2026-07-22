@@ -1,0 +1,410 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mcryptsetup[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mcryptsetup 2.8.7-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 22 Jul 2026 15:50:40 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mcryptsetup[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mdevice-mapper glibc json-c openssl popt util-linux-libs util-linux[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mcryptsetup[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 device-mapper-2.03.41-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.1.0-1 gettext-1.0-1 glibc-2.43.fe0ccc9564-1 grep-3.12-1 gzip-1.14-1 json-c-0.19-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 openssl-4.0.1-2 patch-2.8-1 pkgconf-3.0.3-1 popt-1.19-1 sed-4.10-1 texinfo-7.3-1 util-linux-2.42.2-1 util-linux-libs-2.42.2-1 which-2.25-1[0m
+
+Script started on 2026-07-22 22:50:41+07:00 [COMMAND="cd /var/tmp/hokuto/cryptsetup-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/cryptsetup-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/cryptsetup-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/cryptsetup-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/cryptsetup-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/cryptsetup-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/cryptsetup-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/cryptsetup-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/cryptsetup-01/build/.cache' /repo/sauzeros/core/cryptsetup/build /var/tmp/hokuto/cryptsetup-01/output 2.8.7 cryptsetup" <not executed on terminal>]
+configure: WARNING: unrecognized options: --with-modprobedir
+configure: loading site script /usr/share/config.site
+checking whether make supports nested variables... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C23 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking dependency style of cc... (cached) gcc3
+checking how to run the C preprocessor... cc -E
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking dependency style of c++... gcc3
+checking whether make sets $(MAKE)... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... c++ -E
+checking for ld used by c++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for c++ option to produce PIC... -fPIC -DPIC
+checking if c++ PIC flag -fPIC -DPIC works... yes
+checking if c++ static flag -static works... yes
+checking if c++ supports -c -o file.o... yes
+checking if c++ supports -c -o file.o... (cached) yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for asciidoctor... no
+configure: re-use already generated man-pages.
+checking for C/C++ restrict keyword... __restrict__
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for fcntl.h... yes
+checking for malloc.h... yes
+checking for inttypes.h... (cached) yes
+checking for uchar.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/mman.h... yes
+checking for sys/sysmacros.h... yes
+checking for sys/statvfs.h... yes
+checking for ctype.h... yes
+checking for unistd.h... (cached) yes
+checking for locale.h... yes
+checking for byteswap.h... yes
+checking for endian.h... yes
+checking for stdint.h... (cached) yes
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking whether O_CLOEXEC is declared... yes
+checking for uuid/uuid.h... yes
+checking for libdevmapper.h... yes
+checking for linux/keyctl.h... yes
+checking whether __NR_add_key is declared... yes
+checking whether __NR_keyctl is declared... yes
+checking whether __NR_request_key is declared... yes
+checking for key_serial_t... no
+checking for uuid_clear in -luuid... yes
+checking for library containing clock_gettime... none required
+checking for posix_memalign... yes
+checking for clock_gettime... yes
+checking for posix_fallocate... yes
+checking for explicit_bzero... yes
+checking whether byte ordering is bigendian... (cached) no
+checking for off_t... yes
+checking for cc option to support large files... none needed
+checking for declarations of fseeko and ftello... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for library containing dlsym... none required
+checking for dlvsym... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by cc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for poptConfigFileToString in -lpopt... yes
+checking for devmapper >= 1.02.03... yes
+checking whether dm_task_secure_data is declared... yes
+checking whether dm_task_retry_remove is declared... yes
+checking whether dm_task_deferred_remove is declared... yes
+checking whether dm_device_has_mounted_fs is declared... yes
+checking whether dm_device_has_holders is declared... yes
+checking whether dm_device_get_name is declared... yes
+checking whether DM_DEVICE_GET_TARGET_VERSION is declared... yes
+checking whether DM_UDEV_DISABLE_DISK_RULES_FLAG is declared... yes
+checking for json-c... yes
+checking whether json_object_object_add_ex is declared... yes
+checking whether json_object_deep_copy is declared... yes
+checking for linux/if_alg.h... yes
+checking for libcrypto >= 0.9.8... yes
+checking whether OSSL_get_max_threads is declared... yes
+checking whether OSSL_KDF_PARAM_ARGON2_VERSION is declared... yes
+configure: Argon2 in openssl lib is used; internal Argon2 options are ignored.
+checking for blkid... yes
+checking for blkid/blkid.h... yes
+checking whether blkid_do_wipe is declared... yes
+checking whether blkid_probe_step_back is declared... yes
+checking whether blkid_reset_probe is declared... yes
+checking whether blkid_probe_set_device is declared... yes
+checking whether blkid_probe_filter_superblocks_type is declared... yes
+checking whether blkid_do_safeprobe is declared... yes
+checking whether blkid_do_probe is declared... yes
+checking whether blkid_probe_lookup_value is declared... yes
+checking whether OPAL_FL_SUM_SUPPORTED is declared... yes
+checking whether IOC_OPAL_GET_LR_STATUS is declared... yes
+checking whether IOC_OPAL_GET_GEOMETRY is declared... yes
+checking for symver attribute support... yes
+checking for zero_call_used_regs(user)... yes
+checking for systemd tmpfiles config directory... /usr/lib/tmpfiles.d
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/libcryptsetup.pc
+config.status: creating po/Makefile.in
+config.status: creating scripts/cryptsetup.conf
+config.status: creating tests/Makefile
+config.status: creating tests/fuzz/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+configure: WARNING: unrecognized options: --with-modprobedir
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build'
+Making all in po
+make[2]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/po'
+Making all in tests
+make[2]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+./generate-symbols-list ../lib/libcryptsetup.sym > ./test-symbols-list.h
+make  all-am
+make[3]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+make[2]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+Making all in tests/fuzz
+make[2]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/tests/fuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/tests/fuzz'
+make[2]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build'
+  CC       lib/libcryptsetup_la-utils_blkid.lo
+  CC       lib/libutils_io_la-utils_io.lo
+  CC       src/veritysetup.o
+  CC       lib/utils_loop.o
+  CC       lib/utils_crypt.o
+  CC       src/integritysetup.o
+  CC       lib/utils_io.o
+  CC       lib/utils_blkid.o
+  CC       src/utils_args.o
+  CC       src/utils_tools.o
+  CC       src/utils_password.o
+  CC       src/utils_luks.o
+  CC       src/utils_blockdev.o
+  CC       src/utils_reencrypt.o
+  CC       src/utils_reencrypt_luks1.o
+  CC       src/utils_progress.o
+  CC       src/utils_key_description.o
+  CC       src/utils_keyslot_check.o
+  CC       src/cryptsetup.o
+  CC       lib/libcryptsetup_la-setup.lo
+  CC       lib/libcryptsetup_la-utils.lo
+  CC       lib/libcryptsetup_la-utils_benchmark.lo
+  CC       lib/libcryptsetup_la-utils_crypt.lo
+  CC       lib/libcryptsetup_la-utils_loop.lo
+  CC       lib/libcryptsetup_la-utils_devpath.lo
+  CC       lib/libcryptsetup_la-utils_wipe.lo
+  CC       lib/libcryptsetup_la-utils_device.lo
+  CC       lib/libcryptsetup_la-utils_keyring.lo
+  CC       lib/libcryptsetup_la-utils_device_locking.lo
+  CC       lib/libcryptsetup_la-utils_pbkdf.lo
+  CC       lib/libcryptsetup_la-utils_safe_memory.lo
+  CC       lib/libcryptsetup_la-utils_storage_wrappers.lo
+  CC       lib/libcryptsetup_la-libdevmapper.lo
+  CC       lib/libcryptsetup_la-volumekey.lo
+  CC       lib/libcryptsetup_la-random.lo
+  CC       lib/libcryptsetup_la-crypt_plain.lo
+  CC       lib/integrity/libcryptsetup_la-integrity.lo
+  CC       lib/loopaes/libcryptsetup_la-loopaes.lo
+  CC       lib/tcrypt/libcryptsetup_la-tcrypt.lo
+  CC       lib/libcryptsetup_la-keyslot_context.lo
+  CC       lib/luks1/libcryptsetup_la-af.lo
+  CC       lib/luks1/libcryptsetup_la-keyencryption.lo
+  CC       lib/luks1/libcryptsetup_la-keymanage.lo
+  CC       lib/verity/libcryptsetup_la-verity_hash.lo
+  CC       lib/verity/libcryptsetup_la-verity_fec.lo
+  CC       lib/verity/libcryptsetup_la-verity.lo
+  CC       lib/verity/libcryptsetup_la-rs_encode_char.lo
+  CC       lib/verity/libcryptsetup_la-rs_decode_char.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_disk_metadata.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_json_format.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_json_metadata.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_luks1_convert.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_digest.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_digest_pbkdf2.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_keyslot.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_keyslot_luks2.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_keyslot_reenc.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_reencrypt.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_reencrypt_digest.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_segment.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_token_keyring.lo
+  CC       lib/luks2/libcryptsetup_la-luks2_token.lo
+  CC       lib/luks2/hw_opal/libcryptsetup_la-hw_opal.lo
+  CC       lib/bitlk/libcryptsetup_la-bitlk.lo
+  CC       lib/fvault2/libcryptsetup_la-fvault2.lo
+  CCLD     libutils_io.la
+  CC       lib/crypto_backend/libcrypto_backend_la-crypto_cipher_kernel.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-crypto_storage.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-pbkdf_check.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-crc32.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-base64.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-utf8.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-argon2_generic.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-cipher_generic.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-cipher_check.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-memutils.lo
+  CC       lib/crypto_backend/libcrypto_backend_la-crypto_openssl.lo
+  CCLD     libcrypto_backend.la
+  CCLD     libcryptsetup.la
+  CCLD     cryptsetup
+  CCLD     integritysetup
+  CCLD     veritysetup
+make[2]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build'
+Making install in po
+make[1]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/po'
+installing cs.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/cs/LC_MESSAGES/cryptsetup.mo
+installing da.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/da/LC_MESSAGES/cryptsetup.mo
+installing de.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/de/LC_MESSAGES/cryptsetup.mo
+installing es.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/es/LC_MESSAGES/cryptsetup.mo
+installing fi.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/fi/LC_MESSAGES/cryptsetup.mo
+installing fr.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/fr/LC_MESSAGES/cryptsetup.mo
+installing id.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/id/LC_MESSAGES/cryptsetup.mo
+installing it.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/it/LC_MESSAGES/cryptsetup.mo
+installing ja.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/ja/LC_MESSAGES/cryptsetup.mo
+installing ka.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/ka/LC_MESSAGES/cryptsetup.mo
+installing ko.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/ko/LC_MESSAGES/cryptsetup.mo
+installing nl.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/nl/LC_MESSAGES/cryptsetup.mo
+installing pl.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/pl/LC_MESSAGES/cryptsetup.mo
+installing pt_BR.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/pt_BR/LC_MESSAGES/cryptsetup.mo
+installing ro.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/ro/LC_MESSAGES/cryptsetup.mo
+installing ru.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/ru/LC_MESSAGES/cryptsetup.mo
+installing sk.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/sk/LC_MESSAGES/cryptsetup.mo
+installing sr.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/sr/LC_MESSAGES/cryptsetup.mo
+installing sv.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/sv/LC_MESSAGES/cryptsetup.mo
+installing uk.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/uk/LC_MESSAGES/cryptsetup.mo
+installing vi.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/vi/LC_MESSAGES/cryptsetup.mo
+installing zh_CN.gmo as /var/tmp/hokuto/cryptsetup-01/output/usr/share/locale/zh_CN/LC_MESSAGES/cryptsetup.mo
+if test "cryptsetup" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /var/tmp/hokuto/cryptsetup-01/output/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /var/tmp/hokuto/cryptsetup-01/output/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /var/tmp/hokuto/cryptsetup-01/output/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/po'
+Making install in tests
+make[1]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+make  install-am
+make[2]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+make[3]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+make[2]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/tests'
+Making install in tests/fuzz
+make[1]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/tests/fuzz'
+make[2]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build/tests/fuzz'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/tests/fuzz'
+make[1]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build/tests/fuzz'
+make[1]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/cryptsetup-01/build'
+/usr/bin/mkdir -p -m 0755 /var/tmp/hokuto/cryptsetup-01/output//usr/lib/cryptsetup
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cryptsetup-01/output/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cryptsetup-01/output/usr/share/man/man8'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cryptsetup-01/output/usr/lib/tmpfiles.d'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cryptsetup-01/output/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cryptsetup-01/output/usr/lib'
+ /usr/bin/install -c -m 644 lib/libcryptsetup.h '/var/tmp/hokuto/cryptsetup-01/output/usr/include'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libcryptsetup.la '/var/tmp/hokuto/cryptsetup-01/output/usr/lib'
+ /usr/bin/install -c -m 644 scripts/cryptsetup.conf '/var/tmp/hokuto/cryptsetup-01/output/usr/lib/tmpfiles.d'
+ /usr/bin/install -c -m 644 lib/libcryptsetup.pc '/var/tmp/hokuto/cryptsetup-01/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 man/cryptsetup.8 man/cryptsetup-open.8 man/cryptsetup-close.8 man/cryptsetup-reencrypt.8 man/cryptsetup-status.8 man/cryptsetup-resize.8 man/cryptsetup-refresh.8 man/cryptsetup-luksFormat.8 man/cryptsetup-luksSuspend.8 man/cryptsetup-luksResume.8 man/cryptsetup-luksAddKey.8 man/cryptsetup-luksRemoveKey.8 man/cryptsetup-luksConvertKey.8 man/cryptsetup-luksKillSlot.8 man/cryptsetup-luksChangeKey.8 man/cryptsetup-erase.8 man/cryptsetup-luksUUID.8 man/cryptsetup-isLuks.8 man/cryptsetup-luksDump.8 man/cryptsetup-luksHeaderBackup.8 man/cryptsetup-luksHeaderRestore.8 man/cryptsetup-token.8 man/cryptsetup-convert.8 man/cryptsetup-config.8 man/cryptsetup-tcryptDump.8 man/cryptsetup-bitlkDump.8 man/cryptsetup-fvault2Dump.8 man/cryptsetup-repair.8 man/cryptsetup-benchmark.8 man/veritysetup.8 man/integritysetup.8 man/cryptsetup-create.8 man/cryptsetup-plainOpen.8 man/cryptsetup-luksOpen.8 man/cryptsetup-loopaesOpen.8 man/cryptsetup-tcryptOpen.8 man/cryptsetup-bitlkOpen.8 man/cryptsetup-fvault2Open.8 man/cryptsetup-luksErase.8 '/var/tmp/hokuto/cryptsetup-01/output/usr/share/man/man8'
+libtool: install: /usr/bin/install -c .libs/libcryptsetup.so.12.11.0 /var/tmp/hokuto/cryptsetup-01/output/usr/lib/libcryptsetup.so.12.11.0
+libtool: install: (cd /var/tmp/hokuto/cryptsetup-01/output/usr/lib && { ln -s -f libcryptsetup.so.12.11.0 libcryptsetup.so.12 || { rm -f libcryptsetup.so.12 && ln -s libcryptsetup.so.12.11.0 libcryptsetup.so.12; }; })
+libtool: install: (cd /var/tmp/hokuto/cryptsetup-01/output/usr/lib && { ln -s -f libcryptsetup.so.12.11.0 libcryptsetup.so || { rm -f libcryptsetup.so && ln -s libcryptsetup.so.12.11.0 libcryptsetup.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcryptsetup.lai /var/tmp/hokuto/cryptsetup-01/output/usr/lib/libcryptsetup.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+ /usr/bin/mkdir -p '/var/tmp/hokuto/cryptsetup-01/output/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c cryptsetup veritysetup integritysetup '/var/tmp/hokuto/cryptsetup-01/output/usr/bin'
+libtool: [31mwarning[0m: [1m'libcryptsetup.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/cryptsetup /var/tmp/hokuto/cryptsetup-01/output/usr/bin/cryptsetup
+libtool: [31mwarning[0m: [1m'libcryptsetup.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/veritysetup /var/tmp/hokuto/cryptsetup-01/output/usr/bin/veritysetup
+libtool: [31mwarning[0m: [1m'libcryptsetup.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/integritysetup /var/tmp/hokuto/cryptsetup-01/output/usr/bin/integritysetup
+make[2]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/cryptsetup-01/build'
+
+Script done on 2026-07-22 22:50:49+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mcryptsetup[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 22 Jul 2026 15:50:50 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m9s[0m
