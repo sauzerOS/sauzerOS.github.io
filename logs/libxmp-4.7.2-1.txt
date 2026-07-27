@@ -1,0 +1,265 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxmp[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibxmp 4.7.2-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 27 Jul 2026 03:06:02 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxmp[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxmp[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.1.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.4-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-07-27 10:06:02+07:00 [COMMAND="cd /var/tmp/hokuto/libxmp-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libxmp-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libxmp-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libxmp-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libxmp-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libxmp-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libxmp-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libxmp-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libxmp-01/build/.cache' /repo/sauzeros/extra/libxmp/build /var/tmp/hokuto/libxmp-01/output 4.7.2 libxmp" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether cc accepts -g... yes
+checking for cc option to accept ISO C89... none needed
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking how to print strings... printf
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for ar... gcc-ar
+checking for ranlib... gcc-ranlib
+checking for a BSD-compatible install... /usr/bin/install -c
+checking how to run the C preprocessor... cc -E
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking whether byte ordering is bigendian... (cached) no
+checking for __clang__ defined... no
+checking for __cplusplus defined... no
+checking for _WIN32 defined... no
+checking for __APPLE__ defined... no
+checking whether compiler understands -Wall... yes
+checking whether compiler understands -Wextra... yes
+checking whether compiler understands -Wunused-parameter... yes
+checking whether compiler understands -Wsign-compare... yes
+checking whether compiler understands -Wwrite-strings... yes
+checking whether compiler understands -Wdeclaration-after-statement... yes
+checking whether compiler understands -Wmissing-prototypes... yes
+checking whether compiler understands -Wstrict-prototypes... yes
+checking whether compiler understands -Wundef... yes
+checking whether compiler understands -Werror... yes
+checking whether compiler understands -xldscope=hidden... no
+checking whether compiler understands -fvisibility=hidden... yes
+checking whether compiler understands attribute externally_visible... yes
+checking whether compiler understands attribute __symver__... yes
+checking whether to enable versioned symbols support... yes
+checking whether compiler understands -Wunknown-warning-option... no
+checking for ceil in -lm... yes
+checking for powf... yes
+checking for dirent... yes
+checking for popen... yes
+checking for mkstemp... yes
+checking for fnmatch... yes
+checking for umask... yes
+checking for wait... yes
+checking for pipe... yes
+checking for fork... yes
+checking for execvp... yes
+checking for dup2... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libxmp.pc
+config.status: creating libxmp-config-version.cmake.autotools
+Building dependencies...
+CC src/format.lo
+CC src/period.lo
+CC src/virtual.lo
+CC src/read_event.lo
+CC src/dataio.lo
+CC src/misc.lo
+CC src/player.lo
+CC src/mkstemp.lo
+CC src/md5.lo
+CC src/lfo.lo
+CC src/scan.lo
+CC src/control.lo
+CC src/far_extras.lo
+CC src/flt_extras.lo
+CC src/med_extras.lo
+CC src/filter.lo
+CC src/effects.lo
+CC src/flow.lo
+CC src/mixer.lo
+CC src/mix_all.lo
+CC src/rng.lo
+CC src/load_helpers.lo
+CC src/load.lo
+CC src/hio.lo
+CC src/hmn_extras.lo
+CC src/extras.lo
+CC src/smix.lo
+CC src/path.lo
+CC src/filetype.lo
+CC src/memio.lo
+CC src/tempfile.lo
+CC src/mix_paula.lo
+CC src/miniz_tinfl.lo
+CC src/win32.lo
+CC src/loaders/common.lo
+CC src/loaders/iff.lo
+CC src/loaders/itsex.lo
+CC src/loaders/lzw.lo
+CC src/loaders/voltable.lo
+CC src/loaders/sample.lo
+CC src/loaders/vorbis.lo
+CC src/loaders/xm_load.lo
+CC src/loaders/mod_load.lo
+CC src/loaders/s3m_load.lo
+CC src/loaders/stm_load.lo
+CC src/loaders/669_load.lo
+CC src/loaders/far_load.lo
+CC src/loaders/mtm_load.lo
+CC src/loaders/ptm_load.lo
+CC src/loaders/okt_load.lo
+CC src/loaders/ult_load.lo
+CC src/loaders/mdl_load.lo
+CC src/loaders/it_load.lo
+CC src/loaders/stx_load.lo
+CC src/loaders/pt3_load.lo
+CC src/loaders/sfx_load.lo
+CC src/loaders/flt_load.lo
+CC src/loaders/st_load.lo
+CC src/loaders/emod_load.lo
+CC src/loaders/imf_load.lo
+CC src/loaders/digi_load.lo
+CC src/loaders/fnk_load.lo
+CC src/loaders/ice_load.lo
+CC src/loaders/liq_load.lo
+CC src/loaders/ims_load.lo
+CC src/loaders/masi_load.lo
+CC src/loaders/masi16_load.lo
+CC src/loaders/amf_load.lo
+CC src/loaders/stim_load.lo
+CC src/loaders/mmd_common.lo
+CC src/loaders/mmd3_load.lo
+CC src/loaders/mmd1_load.lo
+CC src/loaders/rtm_load.lo
+CC src/loaders/dt_load.lo
+CC src/loaders/no_load.lo
+CC src/loaders/arch_load.lo
+CC src/loaders/sym_load.lo
+CC src/loaders/med2_load.lo
+CC src/loaders/med3_load.lo
+CC src/loaders/med4_load.lo
+CC src/loaders/dbm_load.lo
+CC src/loaders/umx_load.lo
+CC src/loaders/gdm_load.lo
+CC src/loaders/pw_load.lo
+CC src/loaders/gal5_load.lo
+CC src/loaders/gal4_load.lo
+CC src/loaders/mfp_load.lo
+CC src/loaders/asylum_load.lo
+CC src/loaders/muse_load.lo
+CC src/loaders/hmn_load.lo
+CC src/loaders/mgt_load.lo
+CC src/loaders/chip_load.lo
+CC src/loaders/abk_load.lo
+CC src/loaders/coco_load.lo
+CC src/loaders/xmf_load.lo
+CC src/loaders/prowizard/prowiz.lo
+CC src/loaders/prowizard/ptktable.lo
+CC src/loaders/prowizard/tuning.lo
+CC src/loaders/prowizard/ac1d.lo
+CC src/loaders/prowizard/di.lo
+CC src/loaders/prowizard/eureka.lo
+CC src/loaders/prowizard/fc-m.lo
+CC src/loaders/prowizard/fuchs.lo
+CC src/loaders/prowizard/gmc.lo
+CC src/loaders/prowizard/fuzzac.lo
+CC src/loaders/prowizard/heatseek.lo
+CC src/loaders/prowizard/ksm.lo
+CC src/loaders/prowizard/mp.lo
+CC src/loaders/prowizard/np1.lo
+CC src/loaders/prowizard/np2.lo
+CC src/loaders/prowizard/np3.lo
+CC src/loaders/prowizard/p61a.lo
+CC src/loaders/prowizard/pm10c.lo
+CC src/loaders/prowizard/pm18a.lo
+CC src/loaders/prowizard/prun1.lo
+CC src/loaders/prowizard/pha.lo
+CC src/loaders/prowizard/prun2.lo
+CC src/loaders/prowizard/tdd.lo
+CC src/loaders/prowizard/unic.lo
+CC src/loaders/prowizard/unic2.lo
+CC src/loaders/prowizard/wn.lo
+CC src/loaders/prowizard/zen.lo
+CC src/loaders/prowizard/tp1.lo
+CC src/loaders/prowizard/tp3.lo
+CC src/loaders/prowizard/p40.lo
+CC src/loaders/prowizard/xann.lo
+CC src/loaders/prowizard/theplayer.lo
+CC src/loaders/prowizard/pp10.lo
+CC src/loaders/prowizard/pp21.lo
+CC src/loaders/prowizard/starpack.lo
+CC src/loaders/prowizard/titanics.lo
+CC src/loaders/prowizard/skyt.lo
+CC src/loaders/prowizard/novotrade.lo
+CC src/loaders/prowizard/hrt.lo
+CC src/loaders/prowizard/noiserun.lo
+CC src/depackers/depacker.lo
+CC src/depackers/ppdepack.lo
+CC src/depackers/unsqsh.lo
+CC src/depackers/mmcmp.lo
+CC src/depackers/s404_dec.lo
+CC src/depackers/arc.lo
+CC src/depackers/arcfs.lo
+CC src/depackers/arc_unpack.lo
+CC src/depackers/lzx.lo
+CC src/depackers/lzx_unpack.lo
+CC src/depackers/ice.lo
+CC src/depackers/ice_unpack.lo
+CC src/depackers/miniz_zip.lo
+CC src/depackers/unzip.lo
+CC src/depackers/gunzip.lo
+CC src/depackers/uncompress.lo
+CC src/depackers/bunzip2.lo
+CC src/depackers/unlha.lo
+CC src/depackers/unxz.lo
+CC src/depackers/xz_dec_lzma2.lo
+CC src/depackers/xz_dec_stream.lo
+CC src/depackers/crc32.lo
+CC src/depackers/xfnmatch.lo
+CC src/depackers/ptpopen.lo
+CC src/depackers/xfd.lo
+CC src/depackers/xfd_link.lo
+CC src/depackers/lhasa/ext_header.lo
+CC src/depackers/lhasa/lha_file_header.lo
+CC src/depackers/lhasa/lha_decoder.lo
+CC src/depackers/lhasa/lha_input_stream.lo
+CC src/depackers/lhasa/lha_reader.lo
+CC src/depackers/lhasa/lha_basic_reader.lo
+CC src/depackers/lhasa/lh1_decoder.lo
+CC src/depackers/lhasa/lh5_decoder.lo
+CC src/depackers/lhasa/lh6_decoder.lo
+CC src/depackers/lhasa/lh7_decoder.lo
+CC src/depackers/lhasa/lhx_decoder.lo
+CC src/depackers/lhasa/lk7_decoder.lo
+CC src/depackers/lhasa/lz5_decoder.lo
+CC src/depackers/lhasa/lzs_decoder.lo
+CC src/depackers/lhasa/null_decoder.lo
+CC src/depackers/lhasa/pm1_decoder.lo
+CC src/depackers/lhasa/pm2_decoder.lo
+CC src/depackers/lhasa/macbinary.lo
+LD lib/libxmp.so.4.7.2
+ln -sf libxmp.so.4.7.2 lib/libxmp.so.4
+ln -sf libxmp.so.4 lib/libxmp.so
+Installing libxmp.so.4.7.2...
+Installing xmp.h...
+Installing libxmp.pc...
+Installing libxmp-config.cmake...
+
+Script done on 2026-07-27 10:06:09+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxmp[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 27 Jul 2026 03:06:09 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m7s[0m
