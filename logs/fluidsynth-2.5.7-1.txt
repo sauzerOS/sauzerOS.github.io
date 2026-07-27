@@ -1,0 +1,848 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfluidsynth[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mfluidsynth 2.5.7-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 27 Jul 2026 02:56:17 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfluidsynth[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19malsa-lib dbus glib glibc libgcc libgomp libpipewire libpulse libsndfile libstdc++ readline sdl3 systemd-libs 7zip cmake rsync lib32-alsa-lib lib32-dbus lib32-glib lib32-libpipewire lib32-libpulse lib32-libsndfile lib32-readline lib32-sdl3 lib32-systemd[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfluidsynth[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19m7zip-26.02-1 alsa-lib-1.2.16.1-1 autoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 cmake-4.4.0-1 dbus-1.16.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.1.0-1 gettext-1.0-1 glib-2.88.2-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 lib32-alsa-lib-1.2.16.1-1 lib32-dbus-1.16.2-1 lib32-gcc-libs-16.1.0-1 lib32-glib-2.88.2-1 lib32-glibc-2.44-1 lib32-libpipewire-1.6.8-1 lib32-libpulse-17.0-1 lib32-libsndfile-1.2.2-1 lib32-readline-8.3.3-1 lib32-sdl3-3.4.12-1 lib32-systemd-261.2-1 libgcc-16.1.0-1 libgomp-16.1.0-1 libpipewire-1.6.8-1 libpulse-17.0-1 libsndfile-1.2.2-1 libstdc++-16.1.0-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.4-1 readline-8.3.3-1 rsync-3.4.4-1 sdl3-3.4.12-1 sed-4.10-1 systemd-libs-261.2-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-07-27 09:56:17+07:00 [COMMAND="cd /var/tmp/hokuto/fluidsynth-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/fluidsynth-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/fluidsynth-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/fluidsynth-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/fluidsynth-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/fluidsynth-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/fluidsynth-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/fluidsynth-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/fluidsynth-01/build/.cache' /repo/sauzeros/extra/fluidsynth/build /var/tmp/hokuto/fluidsynth-01/output 2.5.7 fluidsynth" <not executed on terminal>]
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking whether system has ANSI C header files
+-- Looking for 8 include files dlfcn.h, ..., float.h
+-- Looking for 8 include files dlfcn.h, ..., float.h - found
+-- Performing Test memchrExists
+-- Performing Test memchrExists - Success
+-- Performing Test freeExists
+-- Performing Test freeExists - Success
+-- ANSI C header files - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for DIR in sys/stat.h;sys/types.h;dirent.h
+-- Looking for DIR in sys/stat.h;sys/types.h;dirent.h - found
+-- Looking for stdio.h
+-- Looking for stdio.h - found
+-- Looking for math.h
+-- Looking for math.h - found
+-- Looking for errno.h
+-- Looking for errno.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for sys/mman.h
+-- Looking for sys/mman.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for sys/socket.h
+-- Looking for sys/socket.h - found
+-- Looking for netinet/in.h
+-- Looking for netinet/in.h - found
+-- Looking for netinet/tcp.h
+-- Looking for netinet/tcp.h - found
+-- Looking for arpa/inet.h
+-- Looking for arpa/inet.h - found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for getopt.h
+-- Looking for getopt.h - found
+-- Check size of long long
+-- Check size of long long - done
+-- Performing Test _have_inline
+-- Performing Test _have_inline - Success
+-- Performing Test _have_vla
+-- Performing Test _have_vla - Success
+-- Performing Test HAVE_INCOMPATIBLE_POINTER_TYPES
+-- Performing Test HAVE_INCOMPATIBLE_POINTER_TYPES - Success
+[0mThe 'gcem' submodule directory seems to be empty or incomplete. Attempting to download gcem from Github.[0m
+-- gcem source downloaded and extracted to /var/tmp/hokuto/fluidsynth-01/build/build/gcem-extracted
+-- Found GCEM: /var/tmp/hokuto/fluidsynth-01/build/build/gcem-extracted/gcem-012ae73c6d0a2cb09ffe86475f5c6fba3926e200/include
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found GLib2: /usr/lib/libglib-2.0.so (found suitable version "2.88.2", minimum required is "2.6.5")
+-- Performing Test SNDFILE_SUPPORTS_VORBIS
+-- Performing Test SNDFILE_SUPPORTS_VORBIS - Success
+-- Performing Test SNDFILE_SUPPORTS_MPEG
+-- Performing Test SNDFILE_SUPPORTS_MPEG - Failed
+-- Found SndFileLegacy: /usr/lib/libsndfile.so (found version "1.2.2")
+-- Found libSndFile: 1.2.2
+-- Found PulseAudio: /usr/lib/libpulse-simple.so;/usr/lib/libpulse.so
+-- Found ALSA: /usr/lib/libasound.so (found suitable version "1.2.16.1", minimum required is "0.9.1")
+-- Could NOT find PortAudio (missing: PortAudio_LIBRARY PortAudio_INCLUDE_DIR) (Required is at least version "2.19")
+-- Could NOT find Jack (missing: Jack_LIBRARY Jack_INCLUDE_DIR) 
+-- Found PipeWire: /usr/lib/libpipewire-0.3.so (found suitable version "1.6.8", minimum required is "0.3")
+-- Found Systemd: /usr/lib/libsystemd.so
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.4")
+-- Found DBus1: dbus-1
+-- Looking for ladspa.h
+-- Looking for ladspa.h - not found
+-- Found SDL3: SDL3::SDL3 (version: 3.4.12)
+-- Found Readline: /usr/lib/libreadline.so (found version "8.3")
+-- Looking for sys/soundcard.h
+-- Looking for sys/soundcard.h - found
+-- Looking for linux/soundcard.h
+-- Looking for linux/soundcard.h - found
+-- Looking for machine/soundcard.h
+-- Looking for machine/soundcard.h - not found
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2") found components: C
+-- Found OpenMP version: 5.2 date: 202111
+-- Could NOT find InstPatch (missing: InstPatch_LIBRARY InstPatch_INCLUDE_DIR) (Required is at least version "1.1.0")
+-- Looking for sinf
+-- Looking for sinf - found
+-- Looking for cosf
+-- Looking for cosf - found
+-- Looking for fabsf
+-- Looking for fabsf - found
+-- Looking for powf
+-- Looking for powf - found
+-- Looking for sqrtf
+-- Looking for sqrtf - found
+-- Looking for logf
+-- Looking for logf - found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- 
+**************************************************************
+Build Summary:
+FluidSynth Version:    2.5.7
+Library version:       3.5.6
+Git revision:          not a git working copy
+Build type:            None
+Install Prefix:        /usr
+
+Audio / MIDI driver support:
+  ALSA:                  yes
+  CoreAudio:             no
+  CoreMIDI:              no
+  DSound:                no
+  JACK:                  no
+  MidiShare:             no
+  Oboe:                  no
+  OpenSLES:              no
+  OS/2 DART:             no
+  OS/2 KAI:              no
+  OSS:                   yes
+  PipeWire:              yes
+  PortAudio:             no
+  PulseAudio:            yes
+  SDL3:                  yes
+  WASAPI:                no
+  WaveOut:               no
+  WinMidi:               no
+
+Support for SF3 files:   yes
+Support for DLS files:   yes
+  native:                yes
+  libinstpatch:          no
+
+Audio to file rendering: yes
+  libsndfile:            yes
+
+Miscellaneous support:
+  D-Bus:                 yes
+  LADSPA support:        no
+  NETWORK Support:       yes
+    IPV6 Support:        yes
+  Readline:              yes (NOTE: GPL library)
+  systemd:               yes
+  getopt:                yes
+
+Developer nerds info:
+  OS abstraction:        glib
+  Samples type:          double
+  Multithread rendering: yes
+  OpenMP 4.0:            yes
+  Profiling:             no
+  Debug Build:           no
+  Trap on FPE (debug):   no
+  Check FPE (debug):     no
+  UBSan (debug):         no
+  Coverage:              no
+
+[0m**************************************************************
+
+[0m
+-- Configuring done (7.9s)
+-- Generating done (0.2s)
+[33mCMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    LIB_SUFFIX
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/fluidsynth-01/build/build
+[  2%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/bindings/fluid_rtkit.c.o[0m
+[  2%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_pipewire.c.o[0m
+[  2%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_oss.c.o[0m
+[  5%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_pulse.c.o[0m
+[  5%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_dls.cpp.o[0m
+[  8%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_sdl3.c.o[0m
+[ 11%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_sys_glib.c.o[0m
+[ 13%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_alsa.c.o[0m
+[ 16%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_aufile.c.o[0m
+[ 16%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_file.cpp.o[0m
+[ 19%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_ct2hz.cpp.o[0m
+[ 22%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_cb2amp.cpp.o[0m
+[ 22%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_concave.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_convex.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_pan.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_interp_coeff.cpp.o[0m
+[ 30%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_interp_coeff_linear.cpp.o[0m
+[ 30%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_interp_coeff_sinc7.cpp.o[0m
+[ 33%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_conv.c.o[0m
+[ 33%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_hash.c.o[0m
+[ 36%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_list.c.o[0m
+[ 38%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_ringbuffer.c.o[0m
+[ 38%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_settings.c.o[0m
+[ 41%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_sys.c.o[0m
+[ 41%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_defsfont.c.o[0m
+[ 44%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_sfont.c.o[0m
+[ 44%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_sffile.c.o[0m
+[ 47%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_samplecache.c.o[0m
+[ 50%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_adsr_env.c.o[0m
+[ 50%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_chorus.c.o[0m
+[ 52%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_iir_filter_impl.cpp.o[0m
+[ 52%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_iir_filter.c.o[0m
+[ 55%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_lfo.c.o[0m
+[ 58%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rvoice.c.o[0m
+[ 58%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rvoice_dsp.cpp.o[0m
+[ 61%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rvoice_event.c.o[0m
+[ 61%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rvoice_mixer.c.o[0m
+[ 63%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rev.c.o[0m
+[ 66%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_chan.c.o[0m
+[ 66%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_event.c.o[0m
+[ 69%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_gen.c.o[0m
+[ 69%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_mod.c.o[0m
+[ 72%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_synth.c.o[0m
+[ 75%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_synth_monopoly.c.o[0m
+[ 75%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_tuning.c.o[0m
+[ 77%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_voice.c.o[0m
+[ 77%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_midi.c.o[0m
+[ 80%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_midi_router.c.o[0m
+[ 83%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_seqbind.c.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_seqbind_notes.cpp.o[0m
+[ 86%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_seq.c.o[0m
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/midi/fluid_midi.c:[m[K In function ‘[01m[Kfluid_player_set_bpm[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/midi/fluid_midi.c:2578:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kfluid_player_set_midi_tempo[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2578 |     [01;35m[Kreturn[m[K fluid_player_set_midi_tempo(player, 60000000L / bpm);
+      |     [01;35m[K^~~~~~[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/midi/fluid_midi.c:2555:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 2555 | int [01;36m[Kfluid_player_set_midi_tempo[m[K(fluid_player_t *player, int tempo)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 86%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_seq_queue.cpp.o[0m
+[ 88%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_adriver.c.o[0m
+[ 91%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_mdriver.c.o[0m
+[ 91%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/bindings/fluid_cmd.c.o[0m
+[ 94%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/bindings/fluid_filerenderer.c.o[0m
+[ 94%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/bindings/fluid_ladspa.c.o[0m
+[ 94%] Built target libfluidsynth-OBJ
+[ 94%] [1m[32mLinking CXX shared library libfluidsynth.so[0m
+In function ‘[01m[Kfluid_channel_remove_monolist[m[K’,
+    inlined from ‘[01m[Kfluid_synth_noteoff_mono_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth_monopoly.c:404:9[m[K,
+    inlined from ‘[01m[Kfluid_synth_noteoff_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:1445:18[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_chan.c:595:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Ki_prev[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  595 |             chan->monolist[* i_prev].next = chan->monolist[i].next; /* unlinks i */
+      |                                           [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth_monopoly.c:[m[K In function ‘[01m[Kfluid_synth_noteoff_LOCAL[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth_monopoly.c:395:12:[m[K [01;36m[Knote: [m[K‘[01m[Ki_prev[m[K’ was declared here
+  395 |     int i, i_prev;
+      |            [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_release_voice_on_same_note_LOCAL.part.0[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:7078:17[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_release_voice_on_same_note_LOCAL.part.0[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kprocess_info[m[K’,
+    inlined from ‘[01m[Kload_header[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:603:9[m[K,
+    inlined from ‘[01m[Kfluid_sffile_open[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:405:9[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:875:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kitem.chr[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  875 |             FLUID_LOG(FLUID_DBG, "INFO chunk %c%c%c%c (%d bytes) -> %s", p[0], p[1], p[2], p[3], chunk.size, item.chr);
+      |             [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:[m[K In function ‘[01m[Kfluid_sffile_open[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:685:7:[m[K [01;36m[Knote: [m[K‘[01m[Kitem.chr[m[K’ was declared here
+  685 |     } item;
+      |       [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_update_polyphony_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:3872:13[m[K,
+    inlined from ‘[01m[Kfluid_synth_set_polyphony[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:3823:14[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_set_polyphony[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kdelete_fluid_synth[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:1186:17[m[K,
+    inlined from ‘[01m[Kdelete_fluid_synth[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:1108:1[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kdelete_fluid_synth[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_voice_init[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:313:9[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_voice_init[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_init[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:325:5[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_voice_init[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:325:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  325 |     UPDATE_RVOICE0(fluid_rvoice_reset);
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_update_multi_retrigger_attack[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1325:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_noteon_monopoly_legato[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth_monopoly.c:686:25[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_noteon_monopoly_legato[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1325:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1325 |     UPDATE_RVOICE0(fluid_rvoice_multi_retrigger_attack);
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_all_sounds_off_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:2809:13[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_all_sounds_off_LOCAL[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_free_voice_by_kill_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:5299:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_alloc_voice_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:5356:17[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_alloc_voice_LOCAL[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+[ 94%] Built target libfluidsynth
+[ 97%] [32mBuilding C object src/CMakeFiles/fluidsynth.dir/fluidsynth.c.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/fluidsynth.dir/utils/fluid_file.cpp.o[0m
+[100%] [1m[32mLinking CXX executable fluidsynth[0m
+[100%] Built target fluidsynth
+-- Install configuration: "None"
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/lib64/pkgconfig/fluidsynth.pc
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/lib64/cmake/fluidsynth/FluidSynthConfig.cmake
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/lib64/cmake/fluidsynth/FluidSynthConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/bin/fluidsynth
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/fluidsynth-01/output/usr/bin/fluidsynth" to ""
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/lib64/libfluidsynth.so.3.5.6
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/lib64/libfluidsynth.so.3
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/lib64/libfluidsynth.so
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/audio.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/event.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/gen.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/ladspa.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/log.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/midi.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/misc.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/mod.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/seq.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/seqbind.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/settings.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/sfont.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/shell.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/synth.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/types.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/voice.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth/version.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/include/fluidsynth.h
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/lib64/cmake/fluidsynth/FluidSynth-shared-targets.cmake
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/lib64/cmake/fluidsynth/FluidSynth-shared-targets-none.cmake
+-- Installing: /var/tmp/hokuto/fluidsynth-01/output/usr/share/man/man1/fluidsynth.1
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.1.0
+-- The CXX compiler identification is GNU 16.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking whether system has ANSI C header files
+-- Looking for 8 include files dlfcn.h, ..., float.h
+-- Looking for 8 include files dlfcn.h, ..., float.h - found
+-- Performing Test memchrExists
+-- Performing Test memchrExists - Success
+-- Performing Test freeExists
+-- Performing Test freeExists - Success
+-- ANSI C header files - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for DIR in sys/stat.h;sys/types.h;dirent.h
+-- Looking for DIR in sys/stat.h;sys/types.h;dirent.h - found
+-- Looking for stdio.h
+-- Looking for stdio.h - found
+-- Looking for math.h
+-- Looking for math.h - found
+-- Looking for errno.h
+-- Looking for errno.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for sys/mman.h
+-- Looking for sys/mman.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for sys/socket.h
+-- Looking for sys/socket.h - found
+-- Looking for netinet/in.h
+-- Looking for netinet/in.h - found
+-- Looking for netinet/tcp.h
+-- Looking for netinet/tcp.h - found
+-- Looking for arpa/inet.h
+-- Looking for arpa/inet.h - found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for getopt.h
+-- Looking for getopt.h - found
+-- Check size of long long
+-- Check size of long long - done
+-- Performing Test _have_inline
+-- Performing Test _have_inline - Success
+-- Performing Test _have_vla
+-- Performing Test _have_vla - Success
+-- Performing Test HAVE_INCOMPATIBLE_POINTER_TYPES
+-- Performing Test HAVE_INCOMPATIBLE_POINTER_TYPES - Success
+[0mThe 'gcem' submodule directory seems to be empty or incomplete. Attempting to download gcem from Github.[0m
+-- [download 8% complete]
+-- [download 14% complete]
+-- [download 16% complete]
+-- [download 18% complete]
+-- [download 20% complete]
+-- [download 21% complete]
+-- [download 23% complete]
+-- [download 28% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 33% complete]
+-- [download 35% complete]
+-- [download 36% complete]
+-- [download 38% complete]
+-- [download 40% complete]
+-- [download 41% complete]
+-- [download 43% complete]
+-- [download 45% complete]
+-- [download 46% complete]
+-- [download 48% complete]
+-- [download 50% complete]
+-- [download 51% complete]
+-- [download 53% complete]
+-- [download 55% complete]
+-- [download 58% complete]
+-- [download 61% complete]
+-- [download 63% complete]
+-- [download 66% complete]
+-- [download 68% complete]
+-- [download 71% complete]
+-- [download 73% complete]
+-- [download 76% complete]
+-- [download 78% complete]
+-- [download 81% complete]
+-- [download 84% complete]
+-- [download 88% complete]
+-- [download 91% complete]
+-- [download 100% complete]
+-- gcem source downloaded and extracted to /var/tmp/hokuto/fluidsynth-01/build/build/gcem-extracted
+-- Found GCEM: /var/tmp/hokuto/fluidsynth-01/build/build/gcem-extracted/gcem-012ae73c6d0a2cb09ffe86475f5c6fba3926e200/include
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found GLib2: /usr/lib32/libglib-2.0.so (found suitable version "2.88.2", minimum required is "2.6.5")
+-- Performing Test SNDFILE_SUPPORTS_VORBIS
+-- Performing Test SNDFILE_SUPPORTS_VORBIS - Failed
+-- Performing Test SNDFILE_SUPPORTS_MPEG
+-- Performing Test SNDFILE_SUPPORTS_MPEG - Failed
+-- Found SndFileLegacy: /usr/lib32/libsndfile.so (found version "1.2.2")
+-- Found libSndFile: 1.2.2
+[0mSeems like libsndfile was compiled without OGG/Vorbis support.[0m
+-- Found PulseAudio: /usr/lib32/libpulse-simple.so;/usr/lib32/libpulse.so
+-- Found ALSA: /usr/lib32/libasound.so (found suitable version "1.2.16.1", minimum required is "0.9.1")
+-- Could NOT find Jack (missing: Jack_LIBRARY Jack_INCLUDE_DIR) 
+-- Found PipeWire: /usr/lib32/libpipewire-0.3.so (found suitable version "1.6.8", minimum required is "0.3")
+-- Found Systemd: /usr/lib32/libsystemd.so
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.4")
+-- Found DBus1: dbus-1
+-- Looking for ladspa.h
+-- Looking for ladspa.h - not found
+-- Found SDL3: SDL3::SDL3 (version: 3.4.12)
+-- Found Readline: /usr/lib32/libreadline.so (found version "8.3")
+-- Looking for sys/soundcard.h
+-- Looking for sys/soundcard.h - found
+-- Looking for linux/soundcard.h
+-- Looking for linux/soundcard.h - found
+-- Looking for machine/soundcard.h
+-- Looking for machine/soundcard.h - not found
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2") found components: C
+-- Found OpenMP version: 5.2 date: 202111
+-- Could NOT find InstPatch (missing: InstPatch_LIBRARY InstPatch_INCLUDE_DIR) (Required is at least version "1.1.0")
+-- Looking for sinf
+-- Looking for sinf - found
+-- Looking for cosf
+-- Looking for cosf - found
+-- Looking for fabsf
+-- Looking for fabsf - found
+-- Looking for powf
+-- Looking for powf - found
+-- Looking for sqrtf
+-- Looking for sqrtf - found
+-- Looking for logf
+-- Looking for logf - found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- 
+**************************************************************
+Build Summary:
+FluidSynth Version:    2.5.7
+Library version:       3.5.6
+Git revision:          not a git working copy
+Build type:            None
+Install Prefix:        /usr
+
+Audio / MIDI driver support:
+  ALSA:                  yes
+  CoreAudio:             no
+  CoreMIDI:              no
+  DSound:                no
+  JACK:                  no
+  MidiShare:             no
+  Oboe:                  no
+  OpenSLES:              no
+  OS/2 DART:             no
+  OS/2 KAI:              no
+  OSS:                   yes
+  PipeWire:              yes
+  PortAudio:             no
+  PulseAudio:            yes
+  SDL3:                  yes
+  WASAPI:                no
+  WaveOut:               no
+  WinMidi:               no
+
+Support for SF3 files:   no (libsndfile has no ogg vorbis support)
+Support for DLS files:   yes
+  native:                yes
+  libinstpatch:          no
+
+Audio to file rendering: yes
+  libsndfile:            yes
+
+Miscellaneous support:
+  D-Bus:                 yes
+  LADSPA support:        no
+  NETWORK Support:       yes
+    IPV6 Support:        yes
+  Readline:              yes (NOTE: GPL library)
+  systemd:               yes
+  getopt:                yes
+
+Developer nerds info:
+  OS abstraction:        glib
+  Samples type:          double
+  Multithread rendering: yes
+  OpenMP 4.0:            yes
+  Profiling:             no
+  Debug Build:           no
+  Trap on FPE (debug):   no
+  Check FPE (debug):     no
+  UBSan (debug):         no
+  Coverage:              no
+
+[0m**************************************************************
+
+[0m
+-- Configuring done (5.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: /var/tmp/hokuto/fluidsynth-01/build/build
+[  0%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/bindings/fluid_rtkit.c.o[0m
+[  0%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_pulse.c.o[0m
+[  2%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_oss.c.o[0m
+[  5%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_pipewire.c.o[0m
+[  8%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_sdl3.c.o[0m
+[  8%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_alsa.c.o[0m
+[  8%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_dls.cpp.o[0m
+[ 10%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_aufile.c.o[0m
+[ 13%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_sys_glib.c.o[0m
+[ 16%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_file.cpp.o[0m
+[ 16%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_ct2hz.cpp.o[0m
+[ 18%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_cb2amp.cpp.o[0m
+[ 18%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_concave.cpp.o[0m
+[ 21%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_convex.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_pan.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_interp_coeff.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_interp_coeff_linear.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/gentables/fluid_interp_coeff_sinc7.cpp.o[0m
+[ 29%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_conv.c.o[0m
+[ 32%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_hash.c.o[0m
+[ 32%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_list.c.o[0m
+[ 35%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_ringbuffer.c.o[0m
+[ 35%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_settings.c.o[0m
+[ 37%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/utils/fluid_sys.c.o[0m
+[ 40%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_defsfont.c.o[0m
+[ 40%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_sfont.c.o[0m
+[ 43%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_sffile.c.o[0m
+[ 43%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/sfloader/fluid_samplecache.c.o[0m
+[ 45%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_adsr_env.c.o[0m
+[ 48%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_chorus.c.o[0m
+[ 48%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_iir_filter_impl.cpp.o[0m
+[ 51%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_iir_filter.c.o[0m
+[ 51%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_lfo.c.o[0m
+[ 54%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rvoice.c.o[0m
+[ 56%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rvoice_dsp.cpp.o[0m
+[ 56%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rvoice_event.c.o[0m
+[ 59%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rvoice_mixer.c.o[0m
+[ 59%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/rvoice/fluid_rev.c.o[0m
+[ 62%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_chan.c.o[0m
+[ 64%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_event.c.o[0m
+[ 64%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_gen.c.o[0m
+[ 67%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_mod.c.o[0m
+[ 67%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_synth.c.o[0m
+[ 70%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_synth_monopoly.c.o[0m
+[ 72%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_voice.c.o[0m
+[ 72%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/synth/fluid_tuning.c.o[0m
+[ 75%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_midi.c.o[0m
+[ 75%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_midi_router.c.o[0m
+[ 78%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_seqbind.c.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_seqbind_notes.cpp.o[0m
+[ 81%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_seq.c.o[0m
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/midi/fluid_midi.c:[m[K In function ‘[01m[Kfluid_player_set_bpm[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/midi/fluid_midi.c:2578:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kfluid_player_set_midi_tempo[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2578 |     [01;35m[Kreturn[m[K fluid_player_set_midi_tempo(player, 60000000L / bpm);
+      |     [01;35m[K^~~~~~[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/midi/fluid_midi.c:2555:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 2555 | int [01;36m[Kfluid_player_set_midi_tempo[m[K(fluid_player_t *player, int tempo)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 83%] [32mBuilding CXX object src/CMakeFiles/libfluidsynth-OBJ.dir/midi/fluid_seq_queue.cpp.o[0m
+[ 83%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_adriver.c.o[0m
+[ 86%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/drivers/fluid_mdriver.c.o[0m
+[ 89%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/bindings/fluid_cmd.c.o[0m
+[ 89%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/bindings/fluid_filerenderer.c.o[0m
+[ 91%] [32mBuilding C object src/CMakeFiles/libfluidsynth-OBJ.dir/bindings/fluid_ladspa.c.o[0m
+[ 91%] Built target libfluidsynth-OBJ
+[ 94%] [1m[32mLinking CXX shared library libfluidsynth.so[0m
+In function ‘[01m[Kfluid_channel_remove_monolist[m[K’,
+    inlined from ‘[01m[Kfluid_synth_noteoff_mono_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth_monopoly.c:404:9[m[K,
+    inlined from ‘[01m[Kfluid_synth_noteoff_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:1445:18[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_chan.c:595:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Ki_prev[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  595 |             chan->monolist[* i_prev].next = chan->monolist[i].next; /* unlinks i */
+      |                                           [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth_monopoly.c:[m[K In function ‘[01m[Kfluid_synth_noteoff_LOCAL[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth_monopoly.c:395:12:[m[K [01;36m[Knote: [m[K‘[01m[Ki_prev[m[K’ was declared here
+  395 |     int i, i_prev;
+      |            [01;36m[K^[m[K
+In function ‘[01m[Kprocess_info[m[K’,
+    inlined from ‘[01m[Kload_header[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:603:9[m[K,
+    inlined from ‘[01m[Kfluid_sffile_open[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:405:9[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:875:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kitem.chr[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  875 |             FLUID_LOG(FLUID_DBG, "INFO chunk %c%c%c%c (%d bytes) -> %s", p[0], p[1], p[2], p[3], chunk.size, item.chr);
+      |             [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:[m[K In function ‘[01m[Kfluid_sffile_open[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/sfloader/fluid_sffile.c:685:7:[m[K [01;36m[Knote: [m[K‘[01m[Kitem.chr[m[K’ was declared here
+  685 |     } item;
+      |       [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_update_polyphony_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:3872:13[m[K,
+    inlined from ‘[01m[Kfluid_synth_set_polyphony[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:3823:14[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_set_polyphony[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_release_voice_on_same_note_LOCAL.part.0[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:7078:17[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_release_voice_on_same_note_LOCAL.part.0[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kdelete_fluid_synth[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:1186:17[m[K,
+    inlined from ‘[01m[Kdelete_fluid_synth[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:1108:1[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kdelete_fluid_synth[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_all_sounds_off_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:2809:13[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_all_sounds_off_LOCAL[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_voice_init[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:313:9[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_voice_init[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_init[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:325:5[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_voice_init[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:325:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+  325 |     UPDATE_RVOICE0(fluid_rvoice_reset);
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_off[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_free_voice_by_kill_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:5299:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_alloc_voice_LOCAL[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth.c:5356:17[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_alloc_voice_LOCAL[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1445:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1445 |     UPDATE_RVOICE0(fluid_rvoice_voiceoff); /* request to finish the voice */
+      |     [01;36m[K^[m[K
+In function ‘[01m[Kfluid_rvoice_eventhandler_push[m[K’,
+    inlined from ‘[01m[Kfluid_voice_update_multi_retrigger_attack[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1325:5[m[K,
+    inlined from ‘[01m[Kfluid_synth_noteon_monopoly_legato[m[K’ at [01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_synth_monopoly.c:686:25[m[K:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/rvoice/fluid_rvoice_event.c:62:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kparam[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     FLUID_MEMCPY(&local_event.param, param, sizeof(*param) * MAX_EVENT_PARAMS);
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:[m[K In function ‘[01m[Kfluid_synth_noteon_monopoly_legato[m[K’:
+[01m[K/var/tmp/hokuto/fluidsynth-01/build/src/synth/fluid_voice.c:1325:5:[m[K [01;36m[Knote: [m[K‘[01m[Kparam[m[K’ declared here
+ 1325 |     UPDATE_RVOICE0(fluid_rvoice_multi_retrigger_attack);
+      |     [01;36m[K^[m[K
+[ 94%] Built target libfluidsynth
+[ 94%] [32mBuilding CXX object src/CMakeFiles/fluidsynth.dir/utils/fluid_file.cpp.o[0m
+[ 97%] [32mBuilding C object src/CMakeFiles/fluidsynth.dir/fluidsynth.c.o[0m
+[100%] [1m[32mLinking CXX executable fluidsynth[0m
+[100%] Built target fluidsynth
+-- Install configuration: "None"
+-- Installing: tmp32dir/usr/lib32/pkgconfig/fluidsynth.pc
+-- Installing: tmp32dir/usr/lib32/cmake/fluidsynth/FluidSynthConfig.cmake
+-- Installing: tmp32dir/usr/lib32/cmake/fluidsynth/FluidSynthConfigVersion.cmake
+-- Installing: tmp32dir/usr/bin/fluidsynth
+-- Set non-toolchain portion of runtime path of "tmp32dir/usr/bin/fluidsynth" to ""
+-- Installing: tmp32dir/usr/lib32/libfluidsynth.so.3.5.6
+-- Installing: tmp32dir/usr/lib32/libfluidsynth.so.3
+-- Installing: tmp32dir/usr/lib32/libfluidsynth.so
+-- Installing: tmp32dir/usr/include/fluidsynth/audio.h
+-- Installing: tmp32dir/usr/include/fluidsynth/event.h
+-- Installing: tmp32dir/usr/include/fluidsynth/gen.h
+-- Installing: tmp32dir/usr/include/fluidsynth/ladspa.h
+-- Installing: tmp32dir/usr/include/fluidsynth/log.h
+-- Installing: tmp32dir/usr/include/fluidsynth/midi.h
+-- Installing: tmp32dir/usr/include/fluidsynth/misc.h
+-- Installing: tmp32dir/usr/include/fluidsynth/mod.h
+-- Installing: tmp32dir/usr/include/fluidsynth/seq.h
+-- Installing: tmp32dir/usr/include/fluidsynth/seqbind.h
+-- Installing: tmp32dir/usr/include/fluidsynth/settings.h
+-- Installing: tmp32dir/usr/include/fluidsynth/sfont.h
+-- Installing: tmp32dir/usr/include/fluidsynth/shell.h
+-- Installing: tmp32dir/usr/include/fluidsynth/synth.h
+-- Installing: tmp32dir/usr/include/fluidsynth/types.h
+-- Installing: tmp32dir/usr/include/fluidsynth/voice.h
+-- Installing: tmp32dir/usr/include/fluidsynth/version.h
+-- Installing: tmp32dir/usr/include/fluidsynth.h
+-- Installing: tmp32dir/usr/lib32/cmake/fluidsynth/FluidSynth-shared-targets.cmake
+-- Installing: tmp32dir/usr/lib32/cmake/fluidsynth/FluidSynth-shared-targets-none.cmake
+-- Installing: tmp32dir/usr/share/man/man1/fluidsynth.1
+
+7-Zip 26.02 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-06-25
+ 64-bit locale=en_US.utf8 Threads:20 OPEN_MAX:4096, ASM
+
+Scanning the drive for archives:
+  0M Scan         1 file, 103809024 bytes (99 MiB)
+
+Extracting archive: soundfonts.7z.001
+  0% 1 Open           --
+Path = soundfonts.7z.001
+Type = Split
+Physical Size = 103809024
+Volumes = 4
+Total Physical Size = 333974946
+----
+Path = soundfonts.7z
+Size = 333974946
+--
+Path = soundfonts.7z
+Type = 7z
+Physical Size = 333974946
+Headers Size = 211
+Method = LZMA2:25
+Solid = +
+Blocks = 1
+
+  0%      5%     14%     23%     34%     44%     52%     60%     67%     73%     80%     86%     92%     98% - FatBoy-v0.790.sf2                        Everything is Ok
+
+Files: 2
+Size:       468546088
+Compressed: 333974946
+
+Script done on 2026-07-27 09:56:41+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfluidsynth[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 27 Jul 2026 02:56:41 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m24s[0m
