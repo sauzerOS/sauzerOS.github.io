@@ -1,0 +1,1115 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mnghttp2[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mnghttp2 1.70.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 29 Jul 2026 19:16:10 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mnghttp2[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mnghttp2[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.1.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 lib32-gcc-libs-16.1.0-1 lib32-glibc-2.44-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.4-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-07-30 02:16:10+07:00 [COMMAND="cd /var/tmp/hokuto/nghttp2-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/nghttp2-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/nghttp2-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/nghttp2-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/nghttp2-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/nghttp2-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/nghttp2-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/nghttp2-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/nghttp2-01/build/.cache' /repo/sauzeros/core/nghttp2/build /var/tmp/hokuto/nghttp2-01/output 1.70.0 nghttp2" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for vfork.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... gcc-ranlib
+checking for gawk... gawk
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking dependency style of cc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking for c++ option to enable C++11 features... -std=gnu++11
+checking how to run the C++ preprocessor... c++ -std=gnu++11 -E
+checking for ld used by c++ -std=gnu++11... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for c++ -std=gnu++11 option to produce PIC... -fPIC -DPIC
+checking if c++ -std=gnu++11 PIC flag -fPIC -DPIC works... yes
+checking if c++ -std=gnu++11 static flag -static works... yes
+checking if c++ -std=gnu++11 supports -c -o file.o... yes
+checking if c++ -std=gnu++11 supports -c -o file.o... (cached) yes
+checking whether the c++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking dependency style of c++ -std=gnu++11... gcc3
+checking how to run the C preprocessor... cc -E
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for a Python interpreter with version >= 3.8... python
+checking for python... /usr/bin/python
+checking for python version... 3.14
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.14/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.14/site-packages
+checking whether c++ -std=gnu++11 supports C++23 features by default... no
+checking whether c++ -std=gnu++11 supports C++23 features with -std=gnu++23... yes
+checking whether std::future is available... yes
+checking whether std::atomic<std::shared_ptr<T>> is supported... yes
+checking whether std::chrono::time_zone is available... yes
+checking for library containing dlopen... none required
+checking for wolfssl >= 5.7.0... no
+configure: Package 'wolfssl' not found
+checking whether to enable assertions... yes
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking for limits.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for netinet/ip.h... yes
+checking for pwd.h... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/socket.h... yes
+checking for sys/time.h... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking for windows.h... no
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for uid_t in sys/types.h... yes
+checking for ptrdiff_t... yes
+checking whether byte ordering is bigendian... (cached) no
+checking for inline... inline
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for struct tm.tm_gmtoff... yes
+checking for struct sockaddr_in.sin_len... no
+checking for struct sockaddr_in6.sin6_len... no
+checking for working chown... yes
+checking for error_at_line... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for cc options needed to detect all undeclared functions... none needed
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for working strnlen... yes
+checking for _Exit... yes
+checking for accept4... yes
+checking for clock_gettime... yes
+checking for dup2... yes
+checking for getcwd... yes
+checking for getpwnam... yes
+checking for localtime_r... yes
+checking for memchr... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkostemp... yes
+checking for pipe2... yes
+checking for socket... yes
+checking for sqrt... no
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strndup... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for timegm... yes
+checking for timerfd_create... yes
+checking checking for GetTickCount64... no
+checking whether initgroups is declared... yes
+checking whether CLOCK_MONOTONIC is declared... yes
+checking whether C compiler accepts -fvisibility=hidden... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating lib/libnghttp2.pc
+config.status: creating lib/includes/Makefile
+config.status: creating lib/includes/nghttp2/nghttp2ver.h
+config.status: creating tests/Makefile
+config.status: creating tests/testdata/Makefile
+config.status: creating third-party/Makefile
+config.status: creating src/Makefile
+config.status: creating src/testdata/Makefile
+config.status: creating bpf/Makefile
+config.status: creating examples/Makefile
+config.status: creating integration-tests/Makefile
+config.status: creating integration-tests/config.go
+config.status: creating integration-tests/setenv
+config.status: creating doc/Makefile
+config.status: creating doc/conf.py
+config.status: creating doc/index.rst
+config.status: creating doc/package_README.rst
+config.status: creating doc/tutorial-client.rst
+config.status: creating doc/tutorial-server.rst
+config.status: creating doc/tutorial-hpack.rst
+config.status: creating doc/nghttpx-howto.rst
+config.status: creating doc/h2load-howto.rst
+config.status: creating doc/building-android-binary.rst
+config.status: creating doc/nghttp2.h.rst
+config.status: creating doc/nghttp2ver.h.rst
+config.status: creating doc/contribute.rst
+config.status: creating contrib/Makefile
+config.status: creating config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
+configure: summary of build options:
+
+    Package version: 1.70.0
+    Library version: 43:5:29
+    Install prefix:  /usr
+    System types:
+      Build:         x86_64-pc-linux-gnu
+      Host:          x86_64-pc-linux-gnu
+      Target:        x86_64-pc-linux-gnu
+    Compiler:
+      C compiler:     cc
+      CFLAGS:         -march=native -O2 -pipe -fomit-frame-pointer -flto=10
+      LDFLAGS:        -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+      C++ compiler:   c++ -std=gnu++11 -std=gnu++23
+      CXXFLAGS:       -march=native -O2 -pipe -fomit-frame-pointer -flto=10
+      CXXCPP:         c++ -std=gnu++11 -E -std=gnu++23
+      C preprocessor: cc -E
+      CPPFLAGS:       
+      WARNCFLAGS:     
+      WARNCXXFLAGS:   
+      CXX1XCXXFLAGS:  
+      EXTRACFLAG:     -fvisibility=hidden
+      BPFCFLAGS:      
+      EXTRABPFCFLAGS: 
+      LIBS:           
+      DEFS:           -DHAVE_CONFIG_H
+      EXTRA_DEFS:     
+    Library:
+      Shared:         yes
+      Static:         no
+    Libtool:
+      LIBTOOL_LDFLAGS: 
+    Python:
+      Python:         /usr/bin/python
+      PYTHON_VERSION: 3.14
+    Test:
+      Failmalloc:     yes
+    Libs:
+      wolfSSL:        no (CFLAGS='' LIBS='')
+      OpenSSL:        no (CFLAGS='' LIBS='')
+      Libxml2:        no (CFLAGS='' LIBS='')
+      Libev:          no (CFLAGS='' LIBS='')
+      Libc-ares:      no (CFLAGS='' LIBS='')
+      libngtcp2:      no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_quictls: no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_libressl: no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_boringssl: no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_ossl: no (CFLAGS='' LIBS='')
+      libnghttp3:     no (CFLAGS='' LIBS='')
+      libbpf:         no (CFLAGS='' LIBS='')
+      Libevent(SSL):  no (CFLAGS='' LIBS='')
+      Jansson:        no (CFLAGS='' LIBS='')
+      Jemalloc:       no (CFLAGS='' LIBS='')
+      Zlib:           no (CFLAGS='' LIBS='')
+      Systemd:        no (CFLAGS='' LIBS='')
+      Libbrotlienc:   no (CFLAGS="' LIBS='')
+      Libbrotlidec:   no (CFLAGS="' LIBS='')
+    Third-party:
+      http-parser:    no
+      MRuby:          no (CFLAGS='' LIBS='')
+      Neverbleed:     no
+    Features:
+      Applications:   no
+      HPACK tools:    no
+      Examples:       no
+      Threading:      yes
+      HTTP/3 (EXPERIMENTAL): no
+
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build'
+Making all in lib
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making all in includes
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+  CC       nghttp2_pq.lo
+  CC       nghttp2_map.lo
+  CC       nghttp2_stream.lo
+  CC       nghttp2_submit.lo
+  CC       nghttp2_buf.lo
+  CC       nghttp2_helper.lo
+  CC       nghttp2_outbound_item.lo
+  CC       nghttp2_queue.lo
+  CC       nghttp2_session.lo
+  CC       nghttp2_frame.lo
+  CC       nghttp2_alpn.lo
+  CC       nghttp2_hd.lo
+  CC       nghttp2_hd_huffman.lo
+  CC       nghttp2_hd_huffman_data.lo
+  CC       nghttp2_version.lo
+  CC       nghttp2_priority_spec.lo
+  CC       nghttp2_option.lo
+  CC       nghttp2_callbacks.lo
+  CC       nghttp2_mem.lo
+  CC       nghttp2_http.lo
+  CC       nghttp2_rcbuf.lo
+  CC       nghttp2_extpri.lo
+  CC       nghttp2_ratelim.lo
+  CC       nghttp2_time.lo
+  CC       nghttp2_debug.lo
+  CC       sfparse.lo
+  CCLD     libnghttp2.la
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making all in tests
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making all in testdata
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making all in third-party
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+Making all in src
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making all in testdata
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making all in bpf
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+Making all in examples
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+Making all in integration-tests
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+Making all in doc
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+Making all in contrib
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+rm -f nghttpx-init nghttpx-init.tmp
+sed -e 's|@bindir[@]|/usr/bin|g' nghttpx.service.in > nghttpx.service
+sed -e 's|@bindir[@]|/usr/bin|g' nghttpx-upstart.conf.in > nghttpx-upstart.conf
+sed -e 's|@bindir[@]|/usr/bin|g' nghttpx-init.in > nghttpx-init.tmp
+chmod +x nghttpx-init.tmp
+mv nghttpx-init.tmp nghttpx-init
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build'
+Making install in lib
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making install in includes
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/output/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/output/usr/include/nghttp2'
+ /usr/bin/install -c -m 644  nghttp2/nghttp2.h nghttp2/nghttp2ver.h '/var/tmp/hokuto/nghttp2-01/output/usr/include/nghttp2'
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/output/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libnghttp2.la '/var/tmp/hokuto/nghttp2-01/output/usr/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libnghttp2.pc '/var/tmp/hokuto/nghttp2-01/output/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libnghttp2.so.14.29.5 /var/tmp/hokuto/nghttp2-01/output/usr/lib/libnghttp2.so.14.29.5
+libtool: install: (cd /var/tmp/hokuto/nghttp2-01/output/usr/lib && { ln -s -f libnghttp2.so.14.29.5 libnghttp2.so.14 || { rm -f libnghttp2.so.14 && ln -s libnghttp2.so.14.29.5 libnghttp2.so.14; }; })
+libtool: install: (cd /var/tmp/hokuto/nghttp2-01/output/usr/lib && { ln -s -f libnghttp2.so.14.29.5 libnghttp2.so || { rm -f libnghttp2.so && ln -s libnghttp2.so.14.29.5 libnghttp2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libnghttp2.lai /var/tmp/hokuto/nghttp2-01/output/usr/lib/libnghttp2.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making install in tests
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making install in testdata
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making install in third-party
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making install in testdata
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/output/usr/bin'
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making install in bpf
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+Making install in examples
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+Making install in integration-tests
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+Making install in doc
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/output/usr/share/man/man1'
+ /usr/bin/install -c -m 644 nghttp.1 nghttpd.1 nghttpx.1 h2load.1 '/var/tmp/hokuto/nghttp2-01/output/usr/share/man/man1'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+Making install in contrib
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/output/usr/share/doc/nghttp2'
+ /usr/bin/install -c -m 644 README.rst '/var/tmp/hokuto/nghttp2-01/output/usr/share/doc/nghttp2'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build'
+Making clean in lib
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making clean in includes
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+rm -rf .libs _libs
+rm -f *.lo
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+test -z "libnghttp2.la" || rm -f libnghttp2.la
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f ./so_locations
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making clean in tests
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making clean in testdata
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+rm -rf .libs _libs
+rm -f *.lo
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+rm -rf .libs _libs
+rm -f *.o
+test -z "main.log failmalloc.log" || rm -f main.log failmalloc.log
+rm -f *.lo
+ rm -f main failmalloc
+rm -f munit/*.o
+test -z "main.trs failmalloc.trs" || rm -f main.trs failmalloc.trs
+test -z "test-suite.log" || rm -f test-suite.log
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making clean in third-party
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+rm -rf .libs _libs
+test -z "" || rm -f 
+rm -f *.o
+rm -rf llhttp/src/.libs llhttp/src/_libs
+rm -f *.lo
+rm -rf neverbleed/.libs neverbleed/_libs
+rm -rf urlparse/.libs urlparse/_libs
+rm -f llhttp/src/*.o
+rm -f llhttp/src/*.lo
+rm -f neverbleed/*.o
+rm -f neverbleed/*.lo
+rm -f urlparse/*.o
+rm -f urlparse/*.lo
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+Making clean in src
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making clean in testdata
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+rm -rf .libs _libs
+rm -f *.lo
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+rm -rf .libs _libs
+test -z "" || rm -f 
+rm -f *.o
+test -z "" || rm -f 
+rm -f *.lo
+ rm -f
+test -z "" || rm -f 
+rm -f ../tests/munit/*.o
+test -z "test-suite.log" || rm -f test-suite.log
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making clean in bpf
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+Making clean in examples
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+Making clean in integration-tests
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+Making clean in doc
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+rm -rf .libs _libs
+if [ . != . ]; then for i in README.rst programmers-guide.rst nghttp.1.rst nghttpd.1.rst nghttpx.1.rst h2load.1.rst; do rm -f ./$i; done fi
+rm -f *.lo
+rm -f apiref.rst
+rm -f macros.rst enums.rst types.rst nghttp2_check_authority.rst nghttp2_check_header_name.rst nghttp2_check_header_value.rst nghttp2_check_header_value_rfc9113.rst nghttp2_check_method.rst nghttp2_check_path.rst nghttp2_extpri_parse_priority.rst nghttp2_hd_deflate_bound.rst nghttp2_hd_deflate_change_table_size.rst nghttp2_hd_deflate_del.rst nghttp2_hd_deflate_get_dynamic_table_size.rst nghttp2_hd_deflate_get_max_dynamic_table_size.rst nghttp2_hd_deflate_get_num_table_entries.rst nghttp2_hd_deflate_get_table_entry.rst nghttp2_hd_deflate_hd.rst nghttp2_hd_deflate_hd2.rst nghttp2_hd_deflate_hd_vec.rst nghttp2_hd_deflate_hd_vec2.rst nghttp2_hd_deflate_new.rst nghttp2_hd_deflate_new2.rst nghttp2_hd_inflate_change_table_size.rst nghttp2_hd_inflate_del.rst nghttp2_hd_inflate_end_headers.rst nghttp2_hd_inflate_get_dynamic_table_size.rst nghttp2_hd_inflate_get_max_dynamic_table_size.rst nghttp2_hd_inflate_get_num_table_entries.rst nghttp2_hd_inflate_get_table_entry.rst nghttp2_hd_inflate_hd.rst nghttp2_hd_inflate_hd2.rst nghttp2_hd_inflate_hd3.rst nghttp2_hd_inflate_new.rst nghttp2_hd_inflate_new2.rst nghttp2_http2_strerror.rst nghttp2_is_fatal.rst nghttp2_nv_compare_name.rst nghttp2_option_del.rst nghttp2_option_new.rst nghttp2_option_set_builtin_recv_extension_type.rst nghttp2_option_set_max_deflate_dynamic_table_size.rst nghttp2_option_set_max_reserved_remote_streams.rst nghttp2_option_set_max_send_header_block_length.rst nghttp2_option_set_no_auto_ping_ack.rst nghttp2_option_set_no_auto_window_update.rst nghttp2_option_set_no_closed_streams.rst nghttp2_option_set_no_http_messaging.rst nghttp2_option_set_no_recv_client_magic.rst nghttp2_option_set_no_rfc9113_leading_and_trailing_ws_validation.rst nghttp2_option_set_peer_max_concurrent_streams.rst nghttp2_option_set_server_fallback_rfc7540_priorities.rst nghttp2_option_set_user_recv_extension_type.rst nghttp2_option_set_max_continuations.rst nghttp2_option_set_max_outbound_ack.rst nghttp2_option_set_max_settings.rst nghttp2_option_set_stream_reset_rate_limit.rst nghttp2_option_set_glitch_rate_limit.rst nghttp2_pack_settings_payload.rst nghttp2_pack_settings_payload2.rst nghttp2_priority_spec_check_default.rst nghttp2_priority_spec_default_init.rst nghttp2_priority_spec_init.rst nghttp2_rcbuf_decref.rst nghttp2_rcbuf_get_buf.rst nghttp2_rcbuf_incref.rst nghttp2_rcbuf_is_static.rst nghttp2_select_next_protocol.rst nghttp2_select_alpn.rst nghttp2_session_callbacks_del.rst nghttp2_session_callbacks_new.rst nghttp2_session_callbacks_set_before_frame_send_callback.rst nghttp2_session_callbacks_set_data_source_read_length_callback.rst nghttp2_session_callbacks_set_data_source_read_length_callback2.rst nghttp2_session_callbacks_set_error_callback.rst nghttp2_session_callbacks_set_error_callback2.rst nghttp2_session_callbacks_set_on_begin_frame_callback.rst nghttp2_session_callbacks_set_on_begin_headers_callback.rst nghttp2_session_callbacks_set_on_data_chunk_recv_callback.rst nghttp2_session_callbacks_set_on_extension_chunk_recv_callback.rst nghttp2_session_callbacks_set_on_frame_not_send_callback.rst nghttp2_session_callbacks_set_on_frame_recv_callback.rst nghttp2_session_callbacks_set_on_frame_send_callback.rst nghttp2_session_callbacks_set_on_header_callback.rst nghttp2_session_callbacks_set_on_header_callback2.rst nghttp2_session_callbacks_set_on_invalid_frame_recv_callback.rst nghttp2_session_callbacks_set_on_invalid_header_callback.rst nghttp2_session_callbacks_set_on_invalid_header_callback2.rst nghttp2_session_callbacks_set_on_stream_close_callback.rst nghttp2_session_callbacks_set_pack_extension_callback.rst nghttp2_session_callbacks_set_pack_extension_callback2.rst nghttp2_session_callbacks_set_rand_callback.rst nghttp2_session_callbacks_set_recv_callback.rst nghttp2_session_callbacks_set_recv_callback2.rst nghttp2_session_callbacks_set_select_padding_callback.rst nghttp2_session_callbacks_set_select_padding_callback2.rst nghttp2_session_callbacks_set_send_callback.rst nghttp2_session_callbacks_set_send_callback2.rst nghttp2_session_callbacks_set_send_data_callback.rst nghttp2_session_callbacks_set_unpack_extension_callback.rst nghttp2_session_change_extpri_stream_priority.rst nghttp2_session_change_stream_priority.rst nghttp2_session_check_request_allowed.rst nghttp2_session_check_server_session.rst nghttp2_session_client_new.rst nghttp2_session_client_new2.rst nghttp2_session_client_new3.rst nghttp2_session_consume.rst nghttp2_session_consume_connection.rst nghttp2_session_consume_stream.rst nghttp2_session_create_idle_stream.rst nghttp2_session_del.rst nghttp2_session_find_stream.rst nghttp2_session_get_effective_local_window_size.rst nghttp2_session_get_effective_recv_data_length.rst nghttp2_session_get_extpri_stream_priority.rst nghttp2_session_get_hd_deflate_dynamic_table_size.rst nghttp2_session_get_hd_inflate_dynamic_table_size.rst nghttp2_session_get_last_proc_stream_id.rst nghttp2_session_get_local_settings.rst nghttp2_session_get_local_window_size.rst nghttp2_session_get_next_stream_id.rst nghttp2_session_get_outbound_queue_size.rst nghttp2_session_get_remote_settings.rst nghttp2_session_get_remote_window_size.rst nghttp2_session_get_root_stream.rst nghttp2_session_get_stream_effective_local_window_size.rst nghttp2_session_get_stream_effective_recv_data_length.rst nghttp2_session_get_stream_local_close.rst nghttp2_session_get_stream_local_window_size.rst nghttp2_session_get_stream_remote_close.rst nghttp2_session_get_stream_remote_window_size.rst nghttp2_session_get_stream_user_data.rst nghttp2_session_mem_recv.rst nghttp2_session_mem_recv2.rst nghttp2_session_mem_send.rst nghttp2_session_mem_send2.rst nghttp2_session_recv.rst nghttp2_session_resume_data.rst nghttp2_session_send.rst nghttp2_session_server_new.rst nghttp2_session_server_new2.rst nghttp2_session_server_new3.rst nghttp2_session_set_local_window_size.rst nghttp2_session_set_next_stream_id.rst nghttp2_session_set_stream_user_data.rst nghttp2_session_set_user_data.rst nghttp2_session_terminate_session.rst nghttp2_session_terminate_session2.rst nghttp2_session_upgrade.rst nghttp2_session_upgrade2.rst nghttp2_session_want_read.rst nghttp2_session_want_write.rst nghttp2_set_debug_vprintf_callback.rst nghttp2_stream_get_first_child.rst nghttp2_stream_get_next_sibling.rst nghttp2_stream_get_parent.rst nghttp2_stream_get_previous_sibling.rst nghttp2_stream_get_state.rst nghttp2_stream_get_sum_dependency_weight.rst nghttp2_stream_get_weight.rst nghttp2_strerror.rst nghttp2_submit_altsvc.rst nghttp2_submit_data.rst nghttp2_submit_data2.rst nghttp2_submit_extension.rst nghttp2_submit_goaway.rst nghttp2_submit_headers.rst nghttp2_submit_origin.rst nghttp2_submit_ping.rst nghttp2_submit_priority.rst nghttp2_submit_priority_update.rst nghttp2_submit_push_promise.rst nghttp2_submit_request.rst nghttp2_submit_request2.rst nghttp2_submit_response.rst nghttp2_submit_response2.rst nghttp2_submit_rst_stream.rst nghttp2_submit_settings.rst nghttp2_submit_shutdown_notice.rst nghttp2_submit_trailer.rst nghttp2_submit_window_update.rst nghttp2_version.rst
+rm -rf manual/*
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+Making clean in contrib
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+rm -rf .libs _libs
+rm -f nghttpx-init.tmp nghttpx-init nghttpx.service nghttpx-upstart.conf
+rm -f *.lo
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build'
+configure: WARNING: unrecognized options: --disable-python-bindings
+configure: loading site script /usr/share/config.site
+checking for gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to enable C11 features... none needed
+checking whether gcc -m32 understands -c and -o together... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for vfork.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnux32
+checking host system type... x86_64-pc-linux-gnux32
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc -m32... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnux32 file names to x86_64-pc-linux-gnux32 format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnux32 file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... gcc-ranlib
+checking for gawk... gawk
+checking command to parse gcc-nm output from gcc -m32 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -m32 supports -fno-rtti -fno-exceptions... no
+checking for gcc -m32 option to produce PIC... -fPIC -DPIC
+checking if gcc -m32 PIC flag -fPIC -DPIC works... yes
+checking if gcc -m32 static flag -static works... no
+checking if gcc -m32 supports -c -o file.o... yes
+checking if gcc -m32 supports -c -o file.o... (cached) yes
+checking whether the gcc -m32 linker (/usr/bin/ld -m elf_i386) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking target system type... x86_64-pc-linux-gnux32
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking dependency style of gcc -m32... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for gcc... (cached) gcc -m32
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc -m32 accepts -g... (cached) yes
+checking for gcc -m32 option to enable C11 features... (cached) none needed
+checking whether gcc -m32 understands -c and -o together... (cached) yes
+checking whether the compiler supports GNU C++... yes
+checking whether g++ -m32 accepts -g... yes
+checking for g++ -m32 option to enable C++11 features... -std=gnu++11
+checking how to run the C++ preprocessor... g++ -m32 -std=gnu++11 -E
+checking for ld used by g++ -m32 -std=gnu++11... /usr/bin/ld -m elf_i386
+checking if the linker (/usr/bin/ld -m elf_i386) is GNU ld... yes
+checking whether the g++ -m32 -std=gnu++11 linker (/usr/bin/ld -m elf_i386) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ -m32 -std=gnu++11 option to produce PIC... -fPIC -DPIC
+checking if g++ -m32 -std=gnu++11 PIC flag -fPIC -DPIC works... yes
+checking if g++ -m32 -std=gnu++11 static flag -static works... no
+checking if g++ -m32 -std=gnu++11 supports -c -o file.o... yes
+checking if g++ -m32 -std=gnu++11 supports -c -o file.o... (cached) yes
+checking whether the g++ -m32 -std=gnu++11 linker (/usr/bin/ld -m elf_i386) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking dependency style of g++ -m32 -std=gnu++11... gcc3
+checking how to run the C preprocessor... gcc -m32 -E
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.20... yes
+checking for a Python interpreter with version >= 3.8... python
+checking for python... /usr/bin/python
+checking for python version... 3.14
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.14/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.14/site-packages
+checking whether g++ -m32 -std=gnu++11 supports C++23 features by default... no
+checking whether g++ -m32 -std=gnu++11 supports C++23 features with -std=gnu++23... yes
+checking whether std::future is available... yes
+checking whether std::atomic<std::shared_ptr<T>> is supported... yes
+checking whether std::chrono::time_zone is available... yes
+checking for library containing dlopen... none required
+checking for wolfssl >= 5.7.0... no
+configure: Package 'wolfssl' not found
+checking whether to enable assertions... yes
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking for limits.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for netinet/ip.h... yes
+checking for pwd.h... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/socket.h... yes
+checking for sys/time.h... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking for windows.h... no
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for int8_t... yes
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for uid_t in sys/types.h... yes
+checking for ptrdiff_t... yes
+checking whether byte ordering is bigendian... (cached) no
+checking for inline... inline
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking for struct tm.tm_gmtoff... yes
+checking for struct sockaddr_in.sin_len... no
+checking for struct sockaddr_in6.sin6_len... no
+checking for working chown... yes
+checking for error_at_line... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for gcc -m32 options needed to detect all undeclared functions... none needed
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for working strnlen... yes
+checking for _Exit... yes
+checking for accept4... yes
+checking for clock_gettime... yes
+checking for dup2... yes
+checking for getcwd... yes
+checking for getpwnam... yes
+checking for localtime_r... yes
+checking for memchr... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkostemp... yes
+checking for pipe2... yes
+checking for socket... yes
+checking for sqrt... no
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strndup... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for timegm... yes
+checking for timerfd_create... yes
+checking checking for GetTickCount64... no
+checking whether initgroups is declared... yes
+checking whether CLOCK_MONOTONIC is declared... yes
+checking whether C compiler accepts -fvisibility=hidden... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating lib/libnghttp2.pc
+config.status: creating lib/includes/Makefile
+config.status: creating lib/includes/nghttp2/nghttp2ver.h
+config.status: creating tests/Makefile
+config.status: creating tests/testdata/Makefile
+config.status: creating third-party/Makefile
+config.status: creating src/Makefile
+config.status: creating src/testdata/Makefile
+config.status: creating bpf/Makefile
+config.status: creating examples/Makefile
+config.status: creating integration-tests/Makefile
+config.status: creating integration-tests/config.go
+config.status: creating integration-tests/setenv
+config.status: creating doc/Makefile
+config.status: creating doc/conf.py
+config.status: creating doc/index.rst
+config.status: creating doc/package_README.rst
+config.status: creating doc/tutorial-client.rst
+config.status: creating doc/tutorial-server.rst
+config.status: creating doc/tutorial-hpack.rst
+config.status: creating doc/nghttpx-howto.rst
+config.status: creating doc/h2load-howto.rst
+config.status: creating doc/building-android-binary.rst
+config.status: creating doc/nghttp2.h.rst
+config.status: creating doc/nghttp2ver.h.rst
+config.status: creating doc/contribute.rst
+config.status: creating contrib/Makefile
+config.status: creating config.h
+config.status: executing libtool commands
+config.status: executing depfiles commands
+configure: WARNING: unrecognized options: --disable-python-bindings
+configure: summary of build options:
+
+    Package version: 1.70.0
+    Library version: 43:5:29
+    Install prefix:  /usr
+    System types:
+      Build:         x86_64-pc-linux-gnux32
+      Host:          x86_64-pc-linux-gnux32
+      Target:        x86_64-pc-linux-gnux32
+    Compiler:
+      C compiler:     gcc -m32
+      CFLAGS:         -march=native -O2 -pipe -fomit-frame-pointer -flto=10
+      LDFLAGS:        -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+      C++ compiler:   g++ -m32 -std=gnu++11 -std=gnu++23
+      CXXFLAGS:       -march=native -O2 -pipe -fomit-frame-pointer -flto=10
+      CXXCPP:         g++ -m32 -std=gnu++11 -E -std=gnu++23
+      C preprocessor: gcc -m32 -E
+      CPPFLAGS:       
+      WARNCFLAGS:     
+      WARNCXXFLAGS:   
+      CXX1XCXXFLAGS:  
+      EXTRACFLAG:     -fvisibility=hidden
+      BPFCFLAGS:      
+      EXTRABPFCFLAGS: 
+      LIBS:           
+      DEFS:           -DHAVE_CONFIG_H
+      EXTRA_DEFS:     
+    Library:
+      Shared:         yes
+      Static:         yes
+    Libtool:
+      LIBTOOL_LDFLAGS: 
+    Python:
+      Python:         /usr/bin/python
+      PYTHON_VERSION: 3.14
+    Test:
+      Failmalloc:     yes
+    Libs:
+      wolfSSL:        no (CFLAGS='' LIBS='')
+      OpenSSL:        no (CFLAGS='' LIBS='')
+      Libxml2:        no (CFLAGS='' LIBS='')
+      Libev:          no (CFLAGS='' LIBS='')
+      Libc-ares:      no (CFLAGS='' LIBS='')
+      libngtcp2:      no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_quictls: no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_libressl: no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_boringssl: no (CFLAGS='' LIBS='')
+      libngtcp2_crypto_ossl: no (CFLAGS='' LIBS='')
+      libnghttp3:     no (CFLAGS='' LIBS='')
+      libbpf:         no (CFLAGS='' LIBS='')
+      Libevent(SSL):  no (CFLAGS='' LIBS='')
+      Jansson:        no (CFLAGS='' LIBS='')
+      Jemalloc:       no (CFLAGS='' LIBS='')
+      Zlib:           no (CFLAGS='' LIBS='')
+      Systemd:        no (CFLAGS='' LIBS='')
+      Libbrotlienc:   no (CFLAGS="' LIBS='')
+      Libbrotlidec:   no (CFLAGS="' LIBS='')
+    Third-party:
+      http-parser:    no
+      MRuby:          no (CFLAGS='' LIBS='')
+      Neverbleed:     no
+    Features:
+      Applications:   no
+      HPACK tools:    no
+      Examples:       no
+      Threading:      yes
+      HTTP/3 (EXPERIMENTAL): no
+
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build'
+Making all in lib
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making all in includes
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+  CC       nghttp2_pq.lo
+  CC       nghttp2_map.lo
+  CC       nghttp2_queue.lo
+  CC       nghttp2_buf.lo
+  CC       nghttp2_stream.lo
+  CC       nghttp2_session.lo
+  CC       nghttp2_submit.lo
+  CC       nghttp2_frame.lo
+  CC       nghttp2_helper.lo
+  CC       nghttp2_outbound_item.lo
+  CC       nghttp2_hd.lo
+  CC       nghttp2_alpn.lo
+  CC       nghttp2_hd_huffman.lo
+  CC       nghttp2_hd_huffman_data.lo
+  CC       nghttp2_version.lo
+  CC       nghttp2_priority_spec.lo
+  CC       nghttp2_option.lo
+  CC       nghttp2_callbacks.lo
+  CC       nghttp2_mem.lo
+  CC       nghttp2_http.lo
+  CC       nghttp2_rcbuf.lo
+  CC       nghttp2_extpri.lo
+  CC       nghttp2_ratelim.lo
+  CC       nghttp2_time.lo
+  CC       nghttp2_debug.lo
+  CC       sfparse.lo
+  CCLD     libnghttp2.la
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making all in tests
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making all in testdata
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making all in third-party
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+Making all in src
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making all in testdata
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making all in bpf
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+Making all in examples
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+Making all in integration-tests
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+Making all in doc
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+Making all in contrib
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+rm -f nghttpx-init nghttpx-init.tmp
+sed -e 's|@bindir[@]|/usr/bin|g' nghttpx.service.in > nghttpx.service
+sed -e 's|@bindir[@]|/usr/bin|g' nghttpx-upstart.conf.in > nghttpx-upstart.conf
+sed -e 's|@bindir[@]|/usr/bin|g' nghttpx-init.in > nghttpx-init.tmp
+chmod +x nghttpx-init.tmp
+mv nghttpx-init.tmp nghttpx-init
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build'
+Making install in lib
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making install in includes
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/include/nghttp2'
+ /usr/bin/install -c -m 644  nghttp2/nghttp2.h nghttp2/nghttp2ver.h '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/include/nghttp2'
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib/includes'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32/pkgconfig'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libnghttp2.la '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32'
+ /usr/bin/install -c -m 644 libnghttp2.pc '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libnghttp2.so.14.29.5 /var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32/libnghttp2.so.14.29.5
+libtool: install: (cd /var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32 && { ln -s -f libnghttp2.so.14.29.5 libnghttp2.so.14 || { rm -f libnghttp2.so.14 && ln -s libnghttp2.so.14.29.5 libnghttp2.so.14; }; })
+libtool: install: (cd /var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32 && { ln -s -f libnghttp2.so.14.29.5 libnghttp2.so || { rm -f libnghttp2.so && ln -s libnghttp2.so.14.29.5 libnghttp2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libnghttp2.lai /var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32/libnghttp2.la
+libtool: install: /usr/bin/install -c .libs/libnghttp2.a /var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32/libnghttp2.a
+libtool: install: chmod 644 /var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32/libnghttp2.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/lib32/libnghttp2.a
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib32'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/lib'
+Making install in tests
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making install in testdata
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests/testdata'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/tests'
+Making install in third-party
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/third-party'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making install in testdata
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src/testdata'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[3]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/bin'
+make[3]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/src'
+Making install in bpf
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/bpf'
+Making install in examples
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/examples'
+Making install in integration-tests
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/integration-tests'
+Making install in doc
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/share/man/man1'
+ /usr/bin/install -c -m 644 nghttp.1 nghttpd.1 nghttpx.1 h2load.1 '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/share/man/man1'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/doc'
+Making install in contrib
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build/contrib'
+make[1]: Entering directory '/var/tmp/hokuto/nghttp2-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/nghttp2-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/share/doc/nghttp2'
+ /usr/bin/install -c -m 644 README.rst '/var/tmp/hokuto/nghttp2-01/split/lib32-libnghttp2/usr/share/doc/nghttp2'
+make[2]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/nghttp2-01/build'
+
+Script done on 2026-07-30 02:16:28+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mnghttp2[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 29 Jul 2026 19:16:28 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m17s[0m
