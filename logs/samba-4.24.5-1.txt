@@ -1,0 +1,826 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19msamba[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19msamba 4.24.5-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 29 Jul 2026 03:51:16 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19msamba[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mgnutls gpgme libcap libcups liburing popt python talloc acl python-dateutil dbus docbook-xsl gnutls jansson krb5 libcap libcups libnsl libtirpc liburing pam perl-json perl-parse-yapp popt python python-dnspython python-markdown readline rpcsvc-proto systemd talloc[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19msamba[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19macl-2.4.0-1 autoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 dbus-1.16.2-1 diffutils-3.12-1 docbook-xsl-1.79.2-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.1.0-1 gettext-1.0-1 gnutls-3.8.13-1 gpgme-2.1.2-1 grep-3.12-1 gzip-1.14-1 jansson-2.15.1-1 krb5-1.22.2-1 libcap-2.78-1 libcups-2.4.19-1 libnsl-2.0.1-1 libtirpc-1.3.7-1 libtool-2.6.2-1 liburing-2.15-1 m4-1.4.21-1 make-4.4.1-1 pam-1.7.2-1 patch-2.8-1 perl-json-4.11-1 perl-parse-yapp-1.21-1 pkgconf-3.0.4-1 popt-1.19-1 python-3.14.6-1 python-dateutil-2.9.0.post0.48bd1af-1 python-dnspython-2.8.0-1 python-markdown-3.10.2-1 readline-8.3.3-1 rpcsvc-proto-1.4.4-1 sed-4.10-1 systemd-261.2-1 talloc-2.4.4-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-07-29 10:51:16+07:00 [COMMAND="cd /var/tmp/hokuto/samba-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/samba-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/samba-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/samba-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/samba-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/samba-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/samba-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/samba-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/samba-01/build/.cache' /repo/sauzeros/extra/samba/build /var/tmp/hokuto/samba-01/output 4.24.5 samba" <not executed on terminal>]
+[32m[0mSetting top to                           :[0m [0m[32m[32m/var/tmp/hokuto/samba-01/build[0m [0m
+[32m[0mSetting out to                           :[0m [0m[32m[32m/var/tmp/hokuto/samba-01/build/bin[0m [0m
+[32m[0mChecking for 'gcc' (C compiler)          :[0m [0m[32m[32mcc[0m [0m
+[32m[0mChecking for program 'git'               :[0m [0m[32m[32m/usr/bin/git[0m [0m
+[32m[0mChecking for c flags '-MMD'              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for program 'gdb'               :[0m [0m[32m[32m/usr/bin/gdb[0m [0m
+[32m[0mChecking for header sys/utsname.h        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking uname sysname type              :[0m [0m[32m[32mLinux[0m [0m
+[32m[0mChecking uname machine type              :[0m [0m[32m[32mx86_64[0m [0m
+[32m[0mChecking uname release type              :[0m [0m[32m[32m7.1.4-sauzerOS[0m [0m
+[32m[0mChecking uname version type              :[0m [0m[32m[32m#1 SMP PREEMPT_DYNAMIC Sun Jul 19 13:08:32 +07 2026[0m [0m
+[32m[0mChecking for header stdio.h              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking simple C program                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking compiler accepts ['-Werror']    :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking linker accepts ['-Wl,-rpath,.'] :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for rpath library support       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for -Wl,--version-script support :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-fvisibility=hidden'] :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for HAVE_VISIBILITY_ATTR                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for library constructor support          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for library destructor support           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for __attribute__                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking compiler accepts ['-fPIC']               :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for inline                               :[0m [0m[32m[32minline[0m [0m
+[32m[0mChecking for program 'pkg-config'                 :[0m [0m[32m[32m/usr/bin/pkg-config[0m [0m
+[32m[0mChecking for pkg-config version >= '0.0.0'        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-D__STDC_WANT_LIB_EXT1__=1'] :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['']                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/types.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/stat.h                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header stdlib.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header stddef.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header memory.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header string.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header strings.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header inttypes.h                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header stdint.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header unistd.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header minix/config.h                       :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header ctype.h                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header standards.h                          :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header stdbool.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header stdarg.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header vararg.h                             :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header limits.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header assert.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking getconf LFS_CFLAGS                              :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking getconf large file support flags work           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for large file support without additional flags :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header sys/time.h                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header time.h                               :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header endian.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/endian.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for HAVE_LITTLE_ENDIAN                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for HAVE_BIG_ENDIAN                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for header signal.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking if signal handlers return int                   :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for variable __FUNCTION__                       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for va_copy                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header linux/types.h                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header crypt.h                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header locale.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header acl/libacl.h                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header compat.h                             :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header attr/xattr.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header dustat.h                             :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header fcntl.h                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header fnmatch.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header glob.h                               :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header history.h                            :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header krb5.h                               :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header langinfo.h                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header ndir.h                               :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header pwd.h                                :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header shadow.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/acl.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/attributes.h                     :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header attr/attributes.h                    :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/capability.h                     :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/dir.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/epoll.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/fcntl.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/filio.h                          :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/filsys.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/fs/s5param.h                     :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/id.h                             :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/ioctl.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/ipc.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/mman.h                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/mode.h                           :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/ndir.h                           :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/priv.h                           :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/resource.h                       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/security.h                       :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/shm.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/statfs.h                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/statvfs.h                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/termio.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/vfs.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/xattr.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header termio.h                             :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header termios.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/file.h                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/ucontext.h                       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/wait.h                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for declaration of malloc                       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header grp.h                                :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/select.h                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header setjmp.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header utime.h                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/syslog.h                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header syslog.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/mount.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header mntent.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header stropts.h                            :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header unix.h                               :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/param.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/socket.h                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header netinet/in.h                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header netdb.h                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header arpa/inet.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header netinet/in_systm.h                   :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header netinet/ip.h                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header netinet/tcp.h                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header netinet/in_ip.h                      :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/sockio.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/un.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/uio.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header ifaddrs.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header direct.h                             :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header dirent.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header windows.h                            :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header winsock2.h                           :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header ws2tcpip.h                           :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header errno.h                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header getopt.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header iconv.h                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header nss.h                                :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sasl/sasl.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header linux/openat2.h                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for inotify_init                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header security/pam_appl.h                  :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header zlib.h                               :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header asm/unistd.h                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/unistd.h                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header alloca.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header float.h                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header rpc/rpc.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header rpc/nettype.h                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for tirpc rpc headers in default system path    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for libtirpc headers                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header rpc/rpc.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/sysctl.h                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for header sys/fileio.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/filesys.h                        :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/dustat.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/sysmacros.h                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header xfs/libxfs.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header netgroup.h                           :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header valgrind.h                           :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header valgrind/valgrind.h                  :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header valgrind/memcheck.h                  :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header valgrind/helgrind.h                  :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header valgrind/callgrind.h                 :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header nss_common.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header nsswitch.h                           :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header ns_api.h                             :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/extattr.h                        :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/ea.h                             :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/proplist.h                       :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/cdefs.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header utmp.h                               :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header utmpx.h                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header lastlog.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header syscall.h                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/syscall.h                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/atomic.h                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header stdatomic.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header libgen.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts -Wno-format-truncation         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts -Wno-unused-function           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts -Wno-strict-overflow           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts -Wno-unused-but-set-variable   :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts -Wuse-after-free=1             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/prctl.h                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for prctl syscall                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for O_DIRECT flag to open(2)                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for long long                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for intptr_t                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for uintptr_t                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for ptrdiff_t                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for comparison_fn_t                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for bool                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for int8_t                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for uint8_t                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for int16_t                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for uint16_t                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for int32_t                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for uint32_t                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for int64_t                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for uint64_t                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for size_t                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for ssize_t                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for ino_t                                       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for loff_t                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for offset_t                                    :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for volatile int                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for uint_t                                      :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for blksize_t                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for blkcnt_t                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of bool == 1                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of char == 1                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of int == 1                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of int == 2                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of int == 4                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of long long == 1                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of long long == 2                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of long long == 4                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of long long == 8                       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of long == 1                            :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of long == 2                            :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of long == 4                            :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of long == 8                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of short == 1                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of short == 2                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of size_t == 1                          :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of size_t == 2                          :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of size_t == 4                          :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of size_t == 8                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of ssize_t == 1                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of ssize_t == 2                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of ssize_t == 4                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of ssize_t == 8                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of int8_t == 1                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of uint8_t == 1                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of int16_t == 1                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of int16_t == 2                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of uint16_t == 1                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of uint16_t == 2                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of int32_t == 1                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of int32_t == 2                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of int32_t == 4                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of uint32_t == 1                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of uint32_t == 2                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of uint32_t == 4                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of int64_t == 1                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of int64_t == 2                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of int64_t == 4                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of int64_t == 8                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of uint64_t == 1                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of uint64_t == 2                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of uint64_t == 4                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of uint64_t == 8                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of void* == 1                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of void* == 2                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of void* == 4                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of void* == 8                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of off_t == 1                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of off_t == 2                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of off_t == 4                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of off_t == 8                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of dev_t == 1                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of dev_t == 2                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of dev_t == 4                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of dev_t == 8                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of ino_t == 1                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of ino_t == 2                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of ino_t == 4                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of ino_t == 8                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking if size of time_t == 1                          :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of time_t == 2                          :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of time_t == 4                          :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if size of time_t == 8                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for socklen_t                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for struct ifaddrs                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for struct addrinfo                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for struct sockaddr                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for HAVE_STRUCT_SOCKADDR_IN6                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for struct sockaddr_storage                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for sa_family_t                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for sig_atomic_t                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for sigsetmask                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for siggetmask                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for sigprocmask                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for sigblock                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for sigaction                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for sigset                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for inet_ntoa                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for inet_aton                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for inet_ntop                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for inet_pton                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for connect                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for gethostbyname                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getaddrinfo                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getnameinfo                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for freeaddrinfo                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for gai_strerror                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for socketpair                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for memset_s                                    :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for memset_explicit                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for volatile memory protection                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for variable IPV6_V6ONLY                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header net/if.h                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for HAVE_IPV6                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking whether we have ucontext_t                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for __sync_fetch_and_add compiler builtin       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for __sync_add_and_fetch compiler builtin       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for atomic_add_32 compiler builtin              :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for __atomic_add_fetch compiler builtin         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for __atomic_load compiler builtin              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for atomic_thread_fence(memory_order_seq_cst) in stdatomic.h :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for fallthrough attribute                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strdup                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for memmem                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for printf                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for memcpy                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for memmove                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strcpy                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strncpy                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for shl_load                                                 :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for shl_unload                                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for shl_findsym                                              :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for pipe                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strftime                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for srandom                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for random                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for srand                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for rand                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for usleep                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setbuffer                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for lstat                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getpgrp                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for utime                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for utimes                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setuid                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for seteuid                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setreuid                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setresuid                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setgid                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setegid                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setregid                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setresgid                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for chroot                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strerror                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for vsyslog                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setlinebuf                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for mktime                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for ftruncate                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for chsize                                                   :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for rename                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for waitpid                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for wait4                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for initgroups                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for pread                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for pwrite                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strndup                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strcasestr                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strsep                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strtok_r                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for mkdtemp                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for dup2                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for dprintf                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for vdprintf                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for isatty                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for chown                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for lchown                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for link                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for readlink                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for symlink                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for realpath                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for snprintf                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for vsnprintf                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for asprintf                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for vasprintf                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setenv                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for unsetenv                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strnlen                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strtoull                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for __strtoull                                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for strtouq                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strtoll                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for __strtoll                                                :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for strtoq                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for memalign                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for posix_memalign                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for fmemopen                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for renameat2                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header malloc.h                                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for declaration of memalign                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for posix_fallocate-capable libc                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for posix_fallocate                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for dirname                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for basename                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strlcpy                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strlcat                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getpeereid                                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for library bsd                                              :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for getpeereid                                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for library setproctitle                                     :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for setproctitle                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for library bsd                                              :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for setproctitle                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for setproctitle_init                                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for library bsd                                              :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for setproctitle_init                                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for closefrom                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking whether we can use SO_PEERCRED to get socket credentials     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking correct behavior of strtoll                                  :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for if_nameindex                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for if_nametoindex                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strerror_r                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for syslog                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for gai_strerror                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for get_current_dir_name                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for timegm                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getifaddrs                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for freeifaddrs                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for mmap                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setgroups                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for syscall                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setsid                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getgrent_r                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getgrgid_r                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getgrnam_r                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getgrouplist                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getpagesize                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getpwent_r                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getpwnam_r                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getpwuid_r                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for epoll_create1                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getprogname                                              :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for copy_file_range                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getxattr                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking whether xattr interface takes additional options             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for dlopen                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for dlsym                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for dlerror                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for dlclose                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of dlopen                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking C prototype for dlopen                                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for fdatasync                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of fdatasync                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for clock_gettime                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking whether the clock_gettime clock ID CLOCK_MONOTONIC is available :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking whether the clock_gettime clock ID CLOCK_PROCESS_CPUTIME_ID is available :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking whether the clock_gettime clock ID CLOCK_REALTIME is available           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for struct timespec                                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header arpa/nameser.h                                                :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header resolv.h                                                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for res_search                                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header libintl.h                                                     :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for library intl                                                         :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for declaration of dgettext                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of gettext                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of bindtextdomain                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of textdomain                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of bind_textdomain_codeset                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for bindtextdomain                                                       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for textdomain                                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for bind_textdomain_codeset                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for dgettext                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for gettext                                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for pthread_create                                                       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for pthread_attr_init                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for pthread_mutexattr_setrobust                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of PTHREAD_MUTEX_ROBUST                                  :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for declaration of PTHREAD_MUTEX_ROBUST (as enum)                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for pthread_mutex_consistent                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for __thread local storage                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for crypt                                                                :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for library crypt                                                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for crypt in crypt                                                       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for crypt_r                                                              :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for crypt_r in crypt                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for crypt_rn                                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for crypt_rn in crypt                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header readline.h                                                    :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header readline/readline.h                                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header readline/history.h                                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for variable rl_event_hook                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for variable program_invocation_short_name                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of snprintf                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of vsnprintf                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of asprintf                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of vasprintf                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of errno                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of EWOULDBLOCK                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of environ                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of getgrent_r                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of getpwent_r                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of pread                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of pwrite                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of setenv                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of setresgid                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of setresuid                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for eventfd                                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header poll.h                                                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for poll                                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strptime                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of strptime                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for working strptime                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of gettimeofday                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking C prototype for gettimeofday                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking C prototype for gettimeofday                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for C99 vsnprintf                                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for HAVE_SHARED_MMAP                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for HAVE_MREMAP                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for HAVE_INCOHERENT_MMAP                                                 :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for HAVE_IMMEDIATE_STRUCTURES                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for HAVE_MKDIR_MODE                                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for member st_rdev in struct stat                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for member st_rdev in struct stat                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for member ss_family in struct sockaddr_storage                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for member __ss_family in struct sockaddr_storage                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for member sa_len in struct sockaddr                                     :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for member sin_len in struct sockaddr_in                                 :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for member sin6_len in struct sockaddr_in6                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for HAVE_UNIXSOCKET                                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for HAVE_SECURE_MKSTEMP                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for HAVE_IFACE_GETIFADDRS                                                :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for HAVE_IFACE_AIX                                                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for HAVE_IFACE_IFCONF                                                    :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for HAVE_IFACE_IFREQ                                                     :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for declaration of getpwent_r                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking C prototype for getpwent_r                                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for declaration of getgrent_r                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking C prototype for getgrent_r                                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking C prototype for getpwent_r                                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking C prototype for getgrent_r                                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for strerror_r                                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for XSI (rather than GNU) prototype for strerror_r                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for HAVE_FUSE_FUSE_LOWLEVEL_H                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for library fuse                                                         :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for fuse_mount in fuse                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for program 'i386-mingw32-gcc'                                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'i386-mingw32msvc-gcc'                                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'i386-w64-mingw32-gcc'                                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'i586-mingw32-gcc'                                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'i586-mingw32msvc-gcc'                                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'i586-w64-mingw32-gcc'                                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'i686-mingw32-gcc'                                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'i686-mingw32msvc-gcc'                                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'i686-w64-mingw32-gcc'                                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'x86_64-mingw32-gcc'                                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'x86_64-mingw32msvc-gcc'                                     :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'x86_64-w64-mingw32-gcc'                                     :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'amd64-mingw32-gcc'                                          :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'amd64-mingw32msvc-gcc'                                      :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'amd64-w64-mingw32-gcc'                                      :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for program 'perl'                                                       :[0m [0m[32m[32m/usr/bin/perl[0m [0m
+[32m[0mChecking for program 'perl'                                                       :[0m [0m[32m[32m/usr/bin/perl[0m [0m
+[32m[0mChecking for minimum perl version 5.0.0                                           :[0m [0m[32m[32m5.44.0[0m [0m
+[32m[0mChecking for perl $Config{vendorprefix}:                                          :[0m [0m[32m[32m'/usr'[0m [0m
+[32m[0mChecking for perl $Config{vendorarch}:                                            :[0m [0m[32m[32m'/usr/lib/perl5/5.44.0/vendor_perl'[0m [0m
+[32m[0mPERL_ARCH_INSTALL_DIR:                                                            :[0m [0m[32m[32m'/usr/lib/perl5/5.44.0/vendor_perl'[0m [0m
+[32m[0mChecking for perl $Config{vendorlib}:                                             :[0m [0m[32m[32m'/usr/lib/perl5/5.44.0/vendor_perl'[0m [0m
+[32m[0mPERL_LIB_INSTALL_DIR:                                                             :[0m [0m[32m[32m'/usr/lib/perl5/5.44.0/vendor_perl'[0m [0m
+[32m[0mPERL_INC:                                                                         :[0m [0m[32m[32m['/usr/lib/perl5/5.44.0/site_perl', '/usr/lib/perl5/5.44.0/vendor_perl', '/usr/lib/perl5/5.44.0/core_perl'][0m [0m
+[32m[0mChecking for program 'xsltproc'                                                   :[0m [0m[32m[32m/usr/bin/xsltproc[0m [0m
+[32m[0mChecking for stylesheet http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for program 'python3'                                                                  :[0m [0m[32m[32m/usr/bin/python3[0m [0m
+[32m[0mChecking for program 'python'                                                                   :[0m [0m[32m[32m/usr/bin/python3[0m [0m
+[32m[0mChecking for program 'python3'                                                                  :[0m [0m[32m[32m/usr/bin/python3[0m [0m
+[32m[0mChecking for python version >= 3.6.0                                                            :[0m [0m[32m[32m3.14.6[0m [0m
+[32m[0mpython-config                                                                                   :[0m [0m[32m[32m/usr/bin/python3-config[0m [0m
+[32m[0mAsking python-config for pyembed '--cflags --libs --ldflags --embed' flags                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mTesting pyembed configuration                                                                   :[0m [0m[32m[32myes[0m [0m
+[32m[0mAsking python-config for pyext '--cflags --libs --ldflags' flags                                :[0m [0m[32m[32myes[0m [0m
+[32m[0mTesting pyext configuration                                                                     :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for program 'cargo'                                                                    :[0m [0m[32m[32m/usr/bin/cargo[0m [0m
+[32m[0mDynconfig[BINDIR]:                                                                              :[0m [0m[32m[32m'/usr/bin'[0m [0m
+[32m[0mDynconfig[SBINDIR]:                                                                             :[0m [0m[32m[32m'/usr/sbin'[0m [0m
+[32m[0mDynconfig[LIBDIR]:                                                                              :[0m [0m[32m[32m'/usr/lib'[0m [0m
+[32m[0mDynconfig[LIBEXECDIR]:                                                                          :[0m [0m[32m[32m'/usr/libexec'[0m [0m
+[32m[0mDynconfig[SAMBA_LIBEXECDIR]:                                                                    :[0m [0m[32m[32m'/usr/libexec/samba'[0m [0m
+[32m[0mDynconfig[DATADIR]:                                                                             :[0m [0m[32m[32m'/usr/share'[0m [0m
+[32m[0mDynconfig[CTDB_DATADIR]:                                                                        :[0m [0m[32m[32m'/usr/share/ctdb'[0m [0m
+[32m[0mDynconfig[SAMBA_DATADIR]:                                                                       :[0m [0m[32m[32m'/usr/share/samba'[0m [0m
+[32m[0mDynconfig[LOCALEDIR]:                                                                           :[0m [0m[32m[32m'/usr/share/locale'[0m [0m
+[32m[0mDynconfig[PYTHONDIR]:                                                                           :[0m [0m[32m[32m'/usr/lib/python3.14/site-packages'[0m [0m
+[32m[0mDynconfig[PYTHONARCHDIR]:                                                                       :[0m [0m[32m[32m'/usr/lib/python3.14/site-packages'[0m [0m
+[32m[0mDynconfig[PERL_LIB_INSTALL_DIR]:                                                                :[0m [0m[32m[32m'/usr/lib/perl5/5.44.0/vendor_perl'[0m [0m
+[32m[0mDynconfig[PERL_ARCH_INSTALL_DIR]:                                                               :[0m [0m[32m[32m'/usr/lib/perl5/5.44.0/vendor_perl'[0m [0m
+[32m[0mDynconfig[INCLUDEDIR]:                                                                          :[0m [0m[32m[32m'/usr/include/samba-4.0'[0m [0m
+[32m[0mDynconfig[SCRIPTSBINDIR]:                                                                       :[0m [0m[32m[32m'/usr/sbin'[0m [0m
+[32m[0mDynconfig[SETUPDIR]:                                                                            :[0m [0m[32m[32m'/usr/share/samba/setup'[0m [0m
+[32m[0mDynconfig[PKGCONFIGDIR]:                                                                        :[0m [0m[32m[32m'/usr/lib/pkgconfig'[0m [0m
+[32m[0mDynconfig[CODEPAGEDIR]:                                                                         :[0m [0m[32m[32m'/usr/share/samba/codepages'[0m [0m
+[32m[0mDynconfig[PRIVATELIBDIR]:                                                                       :[0m [0m[32m[32m'/usr/lib/samba'[0m [0m
+[32m[0mDynconfig[MODULESDIR]:                                                                          :[0m [0m[32m[32m'/usr/lib/samba'[0m [0m
+[32m[0mDynconfig[LDBMODULESDIR]:                                                                       :[0m [0m[32m[32m'/usr/lib/samba/ldb'[0m [0m
+[32m[0mDynconfig[PAMMODULESDIR]:                                                                       :[0m [0m[32m[32m'/usr/lib/security'[0m [0m
+[32m[0mDynconfig[CONFIGDIR]:                                                                           :[0m [0m[32m[32m'/etc/samba'[0m [0m
+[32m[0mDynconfig[PRIVATE_DIR]:                                                                         :[0m [0m[32m[32m'/var/lib/samba/private'[0m [0m
+[32m[0mDynconfig[BINDDNS_DIR]:                                                                         :[0m [0m[32m[32m'/var/lib/samba/bind-dns'[0m [0m
+[32m[0mDynconfig[LOCKDIR]:                                                                             :[0m [0m[32m[32m'/var/lock/samba'[0m [0m
+[32m[0mDynconfig[PIDDIR]:                                                                              :[0m [0m[32m[32m'/run/samba'[0m [0m
+[32m[0mDynconfig[STATEDIR]:                                                                            :[0m [0m[32m[32m'/var/lib/samba'[0m [0m
+[32m[0mDynconfig[CACHEDIR]:                                                                            :[0m [0m[32m[32m'/var/cache/samba'[0m [0m
+[32m[0mDynconfig[LOGFILEBASE]:                                                                         :[0m [0m[32m[32m'/var/log/samba'[0m [0m
+[32m[0mDynconfig[SOCKET_DIR]:                                                                          :[0m [0m[32m[32m'/var/run/samba'[0m [0m
+[32m[0mDynconfig[PRIVILEGED_SOCKET_DIR]:                                                               :[0m [0m[32m[32m'/var/lib/samba'[0m [0m
+[32m[0mDynconfig[WINBINDD_SOCKET_DIR]:                                                                 :[0m [0m[32m[32m'/var/run/samba/winbindd'[0m [0m
+[32m[0mDynconfig[NMBDSOCKETDIR]:                                                                       :[0m [0m[32m[32m'/var/run/samba/nmbd'[0m [0m
+[32m[0mDynconfig[NTP_SIGND_SOCKET_DIR]:                                                                :[0m [0m[32m[32m'/var/lib/samba/ntp_signd'[0m [0m
+[32m[0mDynconfig[NCALRPCDIR]:                                                                          :[0m [0m[32m[32m'/var/run/samba/ncalrpc'[0m [0m
+[32m[0mDynconfig[CONFIGFILE]:                                                                          :[0m [0m[32m[32m'/etc/samba/smb.conf'[0m [0m
+[32m[0mDynconfig[LMHOSTSFILE]:                                                                         :[0m [0m[32m[32m'/etc/samba/lmhosts'[0m [0m
+[32m[0mDynconfig[SMB_PASSWD_FILE]:                                                                     :[0m [0m[32m[32m'/var/lib/samba/private/smbpasswd'[0m [0m
+[32m[0mChecking for getrandom                                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for GnuTLS >= 3.6.13                                                                   :[0m [0m[32m[32myes[0m [0m
+[32m[0mFound GnuTLS Version                                                                            :[0m [0m[32m[32m3.8.13[0m [0m
+[32m[0mDefined ALLOW_GNUTLS_AEAD_CIPHER_ENCRYPTV2_AES_CCM                                              :[0m [0m[32m[32m1[0m [0m
+[32m[0mDefined HAVE_GNUTLS_CB_TLS_SERVER_END_POINT                                                     :[0m [0m[32m[32m1[0m [0m
+[32m[0mChecking for gnutls_cipher_encrypt3 in gnutls                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for gnutls fips mode support                                                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for 'zlib'                                                                             :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for library z                                                                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for inflateInit2 in z                                                                  :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for strsignal                                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for longjmp                                                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for siglongjmp                                                                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for system cmocka (>=1.1.8)                                                            :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for system popt                                                                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header popt.h                                                                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for library popt                                                                       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for poptGetContext in popt                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header linux/tls.h                                                                 :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for declaration of TLS_CIPHER_AES_GCM_256                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of TLS_CIPHER_AES_CCM_128                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of TLS_CIPHER_CHACHA20_POLY1305                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for system libquic (>=1.1)                                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-cast-qual']                                                    :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=cast-qual']                                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=format-nonliteral']                                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for system libngtcp2_crypto_gnutls (>=1.12.0)                                          :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-cast-qual']                                                    :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=cast-qual']                                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-strict-aliasing']                                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=strict-aliasing']                                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-strict-overflow']                                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=strict-overflow']                                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=format-nonliteral']                                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=implicit-fallthrough']                                   :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for system tdb (>=1.4.15)                                                              :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for stylesheet http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for python version >= 3.6.0                                                            :[0m [0m[32m[32m3.14.6[0m [0m
+[32m[0mpython headers                                                                                  :[0m [0m[32m[32musing cache[0m [0m
+[32m[0mChecking linker accepts -Wl,-no-undefined                                                       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking linker accepts ['-undefined', 'dynamic_lookup']                                        :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for stylesheet http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header sys/auxv.h                                                                  :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for getauxval                                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking linker accepts -Wl,-no-undefined                                                       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking linker accepts ['-undefined', 'dynamic_lookup']                                        :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for python version >= 3.6.0                                                            :[0m [0m[32m[32m3.14.6[0m [0m
+[32m[0mpython headers                                                                                  :[0m [0m[32m[32musing cache[0m [0m
+[32m[0mChecking for system talloc (>=2.4.4)                                                            :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for system pytalloc-util.cpython-314-x86_64-linux-gnu (>=2.4.4)                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for system tevent (>=0.17.1)                                                           :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for epoll_create1                                                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking value of NSIG                                                                          :[0m [0m[32m[32m65[0m [0m
+[32m[0mChecking value of _NSIG                                                                         :[0m [0m[32m[32m65[0m [0m
+[32m[0mChecking value of SIGRTMAX                                                                      :[0m [0m[32m[32m64[0m [0m
+[32m[0mChecking value of SIGRTMIN                                                                      :[0m [0m[32m[32m34[0m [0m
+[32m[0mChecking for python version >= 3.6.0                                                            :[0m [0m[32m[32m3.14.6[0m [0m
+[32m[0mpython headers                                                                                  :[0m [0m[32m[32musing cache[0m [0m
+[32m[0mChecking linker accepts -Wl,-no-undefined                                                       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking linker accepts ['-undefined', 'dynamic_lookup']                                        :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for a 64-bit host to support lmdb                                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for lmdb >= 0.9.16                                                                     :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for header lmdb.h                                                                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for lmdb >= 0.9.16 via header check                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for library lmdb                                                                       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for mdb_env_create in lmdb                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking linker accepts ['-Wl,--wrap=test']                                                     :[0m [0m[32m[32myes[0m [0m
+[32mChecking for flex[0m
+[32m[0mChecking for program 'flex'                                                                     :[0m [0m[32m[32m/usr/bin/flex[0m [0m
+[32m[0mUsing flex version                                                                              :[0m [0m[32m[32mflex 2.6.4[0m [0m
+[32mChecking for bison[0m
+[32m[0mChecking for program 'bison'                                                                    :[0m [0m[32m[32m/usr/bin/bison[0m [0m
+[32m[0mUsing bison version                                                                             :[0m [0m[32m[32mbison (GNU Bison) 3.8.2[0m [0m
+[32m[0mChecking for u_char                                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for u_int32_t                                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header err.h                                                                       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/bswap.h                                                                 :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/stropts.h                                                               :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header sys/timeb.h                                                                 :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header sys/times.h                                                                 :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header timezone.h                                                                  :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header ttyname.h                                                                   :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header netinet/in6.h                                                               :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header netinet6/in6.h                                                              :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header curses.h                                                                    :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header term.h                                                                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header termcap.h                                                                   :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for atexit                                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for cgetent                                                                            :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for getprogname                                                                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for setprogname                                                                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for gethostname                                                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for putenv                                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for rcmd                                                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for readv                                                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for secure_getenv                                                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for sendmsg                                                                            :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for setitimer                                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strlwr                                                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for strncasecmp                                                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for mkostemp                                                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strptime                                                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strsep                                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strsep_copy                                                                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for strtok_r                                                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for strupr                                                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for swab                                                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for umask                                                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for uname                                                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for unsetenv                                                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for closefrom                                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for err                                                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for warn                                                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for errx                                                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for warnx                                                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for flock                                                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for writev                                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for hstrerror                                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for socket                                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getipnodebyname                                                                    :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for gethostent                                                                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for gethostent_r                                                                       :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for sethostent                                                                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for endhostent                                                                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for getipnodebyaddr                                                                    :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for freehostent                                                                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for gethostbyname_r                                                                    :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for gethostbyaddr                                                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for library socket                                                                     :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for library nsl                                                                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for getipnodebyname in nsl                                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for getipnodebyaddr in nsl                                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for freehostent in nsl                                                                 :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for iruserok                                                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for bswap16                                                                            :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for bswap32                                                                            :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for header sys/termios.h                                                               :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for struct winsize                                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for member ws_xpixel in struct winsize                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for member ws_ypixel in struct winsize                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for variable h_errno                                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of h_errno                                                             :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for res_nsearch                                                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for res_ndestroy                                                                       :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for dns_search                                                                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for dn_expand                                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for library resolv                                                                     :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for res_ndestroy in resolv                                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for dns_search in resolv                                                               :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for variable _res                                                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of _res                                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for dirfd                                                                              :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of dirfd                                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for member dd_fd in DIR                                                                :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=cast-qual']                                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=discarded-qualifiers']                                   :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=old-style-definition']                                   :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=unused-result']                                          :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=unused-variable']                                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-strict-overflow']                                              :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=free-nonheap-object']                                    :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=implicit-fallthrough']                                   :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking compiler accepts ['-Wno-error=strict-prototypes']                                      :[0m [0m[32m[32myes[0m [0m
+[32mMost warnings in Heimdal code will error due to -Werror (good)[0m
+[32mUsing in-tree heimdal kerberos defines[0m
+[32m[0mChecking if 'time_t' is signed                                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for declaration of SA_SIGINFO                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for backtrace                                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for backtrace_symbols                                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for member f_frsize in struct statvfs                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for statvfs (SVR4)                                                                     :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for *bsd style statfs with statfs.f_iosize                                             :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking if f_fsid is an integer                                                                :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking whether statvfs.f_flag exists                                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking whether statvfs.f_flags exists                                                         :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for mallinfo2()                                                                        :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header gpfs.h                                                                      :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header gpfs.h                                                                      :[0m [0m[32m[32myes[0m [0m
+[32mUsing gpfs.h from third_party directory.[0m
+[32m[0mChecking for library iconv                                                                      :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for library iconv                                                                      :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for iconv_open                                                                         :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking errno of iconv for illegal multibyte sequence                                          :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for icu-i18n icu-uc                                                                    :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for code snippet                                                                       :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header unicode/ustring.h                                                           :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for pam_start                                                                          :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for library pam                                                                        :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for pam_start in pam                                                                   :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for header security/pam_modules.h                                                      :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for header pam/pam_modules.h                                                           :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for header nss_dbdefs.h                                                                :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for member ipnode.af_family in union nss_XbyY_key                                      :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for member pw_comment in struct passwd                                                 :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for member pw_age in struct passwd                                                     :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for header usersec.h                                                                   :[0m [0m[32m[33mno[0m [0m
+[32m[0mChecking for member method_attrlist in struct secmethod_table                                   :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for member method_version in struct secmethod_table                                    :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for library ncurses                                                                    :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for tgetent in ncurses                                                                 :[0m [0m[32m[32mok[0m [0m
+[32m[0mfor compiling <readline/readline.h> with strict prototypes                                      :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for rl_completion_func_t                                                               :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for CPPFunction                                                                        :[0m [0m[32m[33mnot found[0m [0m
+[32m[0mChecking for library readline                                                                   :[0m [0m[32m[32myes[0m [0m
+[32m[0mChecking for rl_completion_matches in readline                                                  :[0m [0m[32m[32mok[0m [0m
+[32m[0mChecking for history_list in readline                                                           :[0m [0m[32m[32mok[0m [0m
+[32m[0mperl module Parse::Yapp::Driver 1.05                                                            :[0m [0m[32m[33mnot found[0m [0m
+[01;31mperl module "Parse::Yapp::Driver" not found[0m
+
+Script done on 2026-07-29 10:51:48+07:00 [COMMAND_EXIT_CODE="1"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19msamba[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mfailed[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 29 Jul 2026 03:51:48 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m32s[0m
