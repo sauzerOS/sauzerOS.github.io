@@ -1,0 +1,26 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mhwdata[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mhwdata 0.410-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 01 Aug 2026 04:28:30 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mhwdata[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19m(none)[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mhwdata[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.1.0-2 gettext-1.0-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.4-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-08-01 11:28:30+07:00 [COMMAND="cd /var/tmp/hokuto/hwdata-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/hwdata-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/hwdata-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/hwdata-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/hwdata-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/hwdata-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/hwdata-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/hwdata-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/hwdata-01/build/.cache' /repo/sauzeros/core/hwdata/build /var/tmp/hokuto/hwdata-01/output 0.410 hwdata" <not executed on terminal>]
+make: Nothing to be done for 'all'.
+datadir="/usr/share"; \
+if [ "${datadir#/usr}" != "$datadir" ]; then \
+	datadir="\${prefix}${datadir#/usr}"; \
+fi; \
+sed -e 's|@prefix@|/usr|g' \
+	-e "s|@datadir@|$datadir|g" \
+	-e 's|@pkgdatadir@|${datadir}/hwdata|g' \
+	-e 's|@VERSION@|0.410|g' \
+	-e 's|@NAME@|hwdata|g' \
+	hwdata.pc.in > hwdata.pc
+mkdir -p -m 755 /var/tmp/hokuto/hwdata-01/output/usr/share/hwdata
+for foo in pci.ids usb.ids oui.txt iab.txt pnp.ids ; do \
+	install -m 644 $foo /var/tmp/hokuto/hwdata-01/output/usr/share/hwdata ;\
+done
+mkdir -p -m 755 /var/tmp/hokuto/hwdata-01/output/usr/share/pkgconfig
+install -m 644 hwdata.pc /var/tmp/hokuto/hwdata-01/output/usr/share/pkgconfig/
+
+Script done on 2026-08-01 11:28:30+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mhwdata[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 01 Aug 2026 04:28:30 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m0s[0m
