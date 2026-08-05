@@ -1,0 +1,701 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxfont2[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibxfont2 2.0.9-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 05 Aug 2026 18:17:05 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxfont2[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mfreetype glibc libfontenc xorgproto zlib-ng xorg-util-macros xtrans lib32-freetype lib32-libfontenc lib32-zlib-ng[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxfont2[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 freetype-2.14.3-1 gawk-5.4.1-1 gcc-16.1.0-2 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 lib32-freetype-2.14.3-1 lib32-gcc-libs-16.1.0-2 lib32-glibc-2.44-1 lib32-libfontenc-1.1.9-1 lib32-zlib-ng-2.3.3-1 libfontenc-1.1.9-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.5-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1 xorg-util-macros-1.20.2-1 xorgproto-2025.1-1 xtrans-1.6.0-1 zlib-ng-2.3.3-1[0m
+
+Script started on 2026-08-06 01:17:05+07:00 [COMMAND="cd /var/tmp/hokuto/libxfont2-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libxfont2-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libxfont2-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libxfont2-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libxfont2-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libxfont2-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libxfont2-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libxfont2-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libxfont2-01/build/.cache' /repo/sauzeros/extra/libxfont2/build /var/tmp/hokuto/libxfont2-01/output 2.0.9 libxfont2" <not executed on terminal>]
+configure: WARNING: unrecognized options: --disable-specs
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for cc options needed to detect all undeclared functions... none needed
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if cc supports -Werror=unknown-warning-option... no
+checking if cc supports -Werror=unused-command-line-argument... no
+checking if cc supports -Wall... yes
+checking if cc supports -Wpointer-arith... yes
+checking if cc supports -Wmissing-declarations... yes
+checking if cc supports -Wformat=2... yes
+checking if cc supports -Wstrict-prototypes... yes
+checking if cc supports -Wmissing-prototypes... yes
+checking if cc supports -Wnested-externs... yes
+checking if cc supports -Wbad-function-cast... yes
+checking if cc supports -Wold-style-definition... yes
+checking if cc supports -Wunused... yes
+checking if cc supports -Wuninitialized... yes
+checking if cc supports -Wshadow... yes
+checking if cc supports -Wmissing-noreturn... yes
+checking if cc supports -Wmissing-format-attribute... yes
+checking if cc supports -Wredundant-decls... yes
+checking if cc supports -Wlogical-op... yes
+checking if cc supports -Werror=implicit... yes
+checking if cc supports -Werror=nonnull... yes
+checking if cc supports -Werror=init-self... yes
+checking if cc supports -Werror=main... yes
+checking if cc supports -Werror=missing-braces... yes
+checking if cc supports -Werror=sequence-point... yes
+checking if cc supports -Werror=return-type... yes
+checking if cc supports -Werror=trigraphs... yes
+checking if cc supports -Werror=array-bounds... yes
+checking if cc supports -Werror=write-strings... yes
+checking if cc supports -Werror=address... yes
+checking if cc supports -Werror=int-to-pointer-cast... yes
+checking if cc supports -Werror=pointer-to-int-cast... yes
+checking if cc supports -pedantic... yes
+checking if cc supports -Werror... yes
+checking if cc supports -Werror=attributes... yes
+checking whether to build developer documentation... yes
+checking for fop... no
+configure: WARNING: fop not found - documentation targets will be skipped
+checking for X.Org SGML entities >= 1.7... no
+checking for a Python interpreter with version >= 3.0... python
+checking for python... /usr/bin/python
+checking for python version... 3.14
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.14/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.14/site-packages
+checking for endian.h... yes
+checking for poll.h... yes
+checking for sys/poll.h... yes
+checking for poll... yes
+checking for readlink... yes
+checking for strlcat... yes
+checking for reallocarray... yes
+checking for realpath... yes
+checking for strlcat... (cached) yes
+checking for strlcpy... yes
+checking for err.h... yes
+checking for float.h... yes
+checking for cc option to enable large file support... none needed
+checking for freetype2... yes
+checking for zlib... yes
+checking for hypot in -lm... yes
+checking for xproto xtrans fontsproto >= 2.1.3 fontenc... yes
+checking if Xtrans should support UNIX socket connections... yes
+checking if Xtrans should support TCP socket connections... yes
+checking for library containing socket... none required
+checking for library containing gethostbyname... none required
+checking for getaddrinfo... yes
+checking for inet_ntop... yes
+checking if IPv6 support should be built... yes
+checking for struct sockaddr_in.sin_len... no
+checking for socklen_t... yes
+checking for struct sockaddr_storage... yes
+checking for struct msghdr.msg_control... yes
+checking if Xtrans should support os-specific local connections... no
+checking for strcasecmp... yes
+checking for strlcpy... (cached) yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating xfont2.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-specs
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/libxfont2-01/build'
+Making all in doc
+make[2]: Entering directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libxfont2-01/build'
+  CC       src/stubs/atom.lo
+  CC       src/util/fontaccel.lo
+  CC       src/stubs/libxfontstubs.lo
+  CC       test/utils/lsfontdir.o
+  CC       src/util/fontnames.lo
+  CC       test/utils/font-test-utils.o
+  CC       src/util/fontxlfd.lo
+  CC       src/util/format.lo
+  CC       src/util/fontutil.lo
+  CC       src/util/miscutil.lo
+  CC       src/util/patcache.lo
+  CC       src/util/private.lo
+  CC       src/util/utilbitmap.lo
+  CC       src/fontfile/bitsource.lo
+  CC       src/fontfile/bufio.lo
+  CC       src/fontfile/decompress.lo
+  CC       src/fontfile/defaults.lo
+  CC       src/fontfile/dirfile.lo
+  CC       src/fontfile/fileio.lo
+  CC       src/fontfile/filewr.lo
+  CC       src/fontfile/fontdir.lo
+  CC       src/fontfile/fontfile.lo
+  CC       src/fontfile/gunzip.lo
+  CC       src/fontfile/fontscale.lo
+[01m[Ksrc/fontfile/dirfile.c:[m[K In function '[01m[KFontFileReadDirectory[m[K':
+[01m[Ksrc/fontfile/dirfile.c:88:14:[m[K [01;35m[Kwarning: [m[Kassignment discards '[01m[Kconst[m[K' qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+   88 |     if ((ptr [01;35m[K=[m[K strchr(directory, ':'))) {
+      |              [01;35m[K^[m[K
+  CC       src/fontfile/register.lo
+  CC       src/fontfile/catalogue.lo
+  CC       src/fontfile/renderers.lo
+  CC       src/FreeType/ftenc.lo
+  CC       src/FreeType/ftfuncs.lo
+  CC       src/FreeType/fttools.lo
+  CC       src/FreeType/xttcap.lo
+  CC       src/bitmap/bitmap.lo
+  CC       src/bitmap/bitmapfunc.lo
+  CC       src/bitmap/bitmaputil.lo
+  CC       src/bitmap/bitscale.lo
+  CC       src/bitmap/fontink.lo
+  CC       src/bitmap/bdfread.lo
+  CC       src/bitmap/bdfutils.lo
+  CC       src/bitmap/pcfread.lo
+  CC       src/bitmap/pcfwrite.lo
+  CC       src/builtins/dir.lo
+  CC       src/builtins/fonts.lo
+  CC       src/builtins/file.lo
+  CC       src/builtins/fpe.lo
+[01m[Ksrc/bitmap/bitscale.c:[m[K In function '[01m[KBitmapScaleBitmaps[m[K':
+[01m[Ksrc/bitmap/bitscale.c:1514:54:[m[K [01;35m[Kwarning: [m[Kformat '[01m[K[01;32m[K%d[m[K[m[K' expects argument of type '[01m[K[01;32m[Kint[m[K[m[K', but argument 3 has type '[01m[K[01;34m[Ksize_t[m[K' {aka [m[K'[01m[K[01;34m[Klong unsigned int[m[K'}[m[K [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+ 1514 |  fprintf(stderr, "Error: Couldn't allocate bitmaps ([01;32m[K%d[m[K)\n", [01;34m[Kbytestoalloc[m[K);
+      |                                                     [01;32m[K~^[m[K      [01;34m[K~~~~~~~~~~~~[m[K
+      |                                                      [01;32m[K|[m[K      [01;34m[K|[m[K
+      |                                                      [01;32m[Kint[m[K    [01;34m[Ksize_t {aka long unsigned int}[m[K
+      |                                                     [32m[K%ld[m[K
+  CC       src/builtins/render.lo
+  CCLD     libXfont2.la
+  CCLD     lsfontdir
+make[2]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build'
+Making install in doc
+make[1]: Entering directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[1]: Entering directory '/var/tmp/hokuto/libxfont2-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/libxfont2-01/build'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfont2-01/output/usr/include/X11/fonts'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfont2-01/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 include/X11/fonts/libxfont2.h '/var/tmp/hokuto/libxfont2-01/output/usr/include/X11/fonts'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfont2-01/output/usr/lib'
+ /usr/bin/install -c -m 644 xfont2.pc '/var/tmp/hokuto/libxfont2-01/output/usr/lib/pkgconfig'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libXfont2.la '/var/tmp/hokuto/libxfont2-01/output/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libXfont2.so.2.0.0 /var/tmp/hokuto/libxfont2-01/output/usr/lib/libXfont2.so.2.0.0
+libtool: install: (cd /var/tmp/hokuto/libxfont2-01/output/usr/lib && { ln -s -f libXfont2.so.2.0.0 libXfont2.so.2 || { rm -f libXfont2.so.2 && ln -s libXfont2.so.2.0.0 libXfont2.so.2; }; })
+libtool: install: (cd /var/tmp/hokuto/libxfont2-01/output/usr/lib && { ln -s -f libXfont2.so.2.0.0 libXfont2.so || { rm -f libXfont2.so && ln -s libXfont2.so.2.0.0 libXfont2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libXfont2.lai /var/tmp/hokuto/libxfont2-01/output/usr/lib/libXfont2.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[2]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build'
+Making distclean in doc
+make[1]: Entering directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+rm -f  
+rm -rf .libs _libs
+rm -f *.lo
+rm -f  
+test . = "." || rm -f  
+rm -f Makefile
+make[1]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[1]: Entering directory '/var/tmp/hokuto/libxfont2-01/build'
+rm -f   test-pcf-repad test-pcf-props test-pcf-bitmapscale test-pcf-encoding test-pcf-norepad
+rm -f  test/data/repad/evil-repad.pcf test/data/props/evil-props.pcf test/data/scale/evil-scale.pcf test/data/encoding/evil-encoding.pcf test/data/norepad/evil-norepad.pcf test/data/repad/fonts.dir test/data/props/fonts.dir test/data/scale/fonts.dir test/data/scale/fonts.scale test/data/encoding/fonts.dir test/data/norepad/fonts.dir
+rm -f  libXfont2.la
+rm -rf .libs _libs
+rmdir test/data/repad test/data/props test/data/scale test/data/encoding test/data/norepad test/data 2>/dev/null || true
+rm -f  lsfontdir
+test -z "" || rm -f  test-pcf-repad test-pcf-props test-pcf-bitmapscale test-pcf-encoding test-pcf-norepad
+rm -f *.o
+rm -rf src/FreeType/.libs src/FreeType/_libs
+test -z "" || rm -f  lsfontdir
+rm -f  test-pcf-repad.log test-pcf-props.log test-pcf-bitmapscale.log test-pcf-encoding.log test-pcf-norepad.log
+rm -f *.lo
+rm -f *.tab.c
+rm -rf src/bitmap/.libs src/bitmap/_libs
+rm -f  xfont2.pc
+rm -f  test-pcf-repad.trs test-pcf-props.trs test-pcf-bitmapscale.trs test-pcf-encoding.trs test-pcf-norepad.trs
+rm -rf src/builtins/.libs src/builtins/_libs
+test . = "." || rm -f  
+rm -f  test-suite.log
+rm -rf src/fc/.libs src/fc/_libs
+rm -f  src/util/reallocarray.o
+rm -rf src/fontfile/.libs src/fontfile/_libs
+rm -f  src/util/reallocarray.lo
+rm -f config.h stamp-h1
+rm -f src/FreeType/*.o
+rm -rf src/stubs/.libs src/stubs/_libs
+rm -f  src/util/realpath.o
+rm -f libtool config.lt
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf src/util/.libs src/util/_libs
+rm -f  src/util/realpath.lo
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+rm -f  src/FreeType/.deps/.dirstamp
+rm -f  src/util/strlcat.o
+rm -f  src/FreeType/.dirstamp
+rm -f  src/util/strlcat.lo
+rm -f  src/bitmap/.deps/.dirstamp
+rm -f ./so_locations
+rm -f  src/util/strlcpy.o
+rm -f  src/util/strlcpy.lo
+rm -f src/FreeType/*.lo
+rm -f  src/bitmap/.dirstamp
+rm -f  src/builtins/.deps/.dirstamp
+rm -f  src/builtins/.dirstamp
+rm -f  src/fc/.deps/.dirstamp
+rm -f  src/fc/.dirstamp
+rm -f  src/fontfile/.deps/.dirstamp
+rm -f  src/fontfile/.dirstamp
+rm -f  src/stubs/.deps/.dirstamp
+rm -f  src/stubs/.dirstamp
+rm -f  src/util/.deps/.dirstamp
+rm -f  src/util/.dirstamp
+rm -f src/bitmap/*.o
+rm -f  test/.deps/.dirstamp
+rm -f  test/.dirstamp
+rm -f  test/utils/.deps/.dirstamp
+rm -f  test/utils/.dirstamp
+rm -f src/bitmap/*.lo
+rm -f src/builtins/*.o
+rm -f src/builtins/*.lo
+rm -f src/fc/*.o
+rm -f src/fc/*.lo
+rm -f src/fontfile/*.o
+rm -f src/fontfile/*.lo
+rm -f src/stubs/*.o
+rm -f src/stubs/*.lo
+rm -f src/util/*.o
+rm -f src/util/*.lo
+rm -f test/*.o
+rm -f test/utils/*.o
+make[1]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f src/FreeType/.deps/ftenc.Plo
+rm -f src/FreeType/.deps/ftfuncs.Plo
+rm -f src/FreeType/.deps/fttools.Plo
+rm -f src/FreeType/.deps/xttcap.Plo
+rm -f src/bitmap/.deps/bdfread.Plo
+rm -f src/bitmap/.deps/bdfutils.Plo
+rm -f src/bitmap/.deps/bitmap.Plo
+rm -f src/bitmap/.deps/bitmapfunc.Plo
+rm -f src/bitmap/.deps/bitmaputil.Plo
+rm -f src/bitmap/.deps/bitscale.Plo
+rm -f src/bitmap/.deps/fontink.Plo
+rm -f src/bitmap/.deps/pcfread.Plo
+rm -f src/bitmap/.deps/pcfwrite.Plo
+rm -f src/bitmap/.deps/snfread.Plo
+rm -f src/builtins/.deps/dir.Plo
+rm -f src/builtins/.deps/file.Plo
+rm -f src/builtins/.deps/fonts.Plo
+rm -f src/builtins/.deps/fpe.Plo
+rm -f src/builtins/.deps/render.Plo
+rm -f src/fc/.deps/fsconvert.Plo
+rm -f src/fc/.deps/fserve.Plo
+rm -f src/fc/.deps/fsio.Plo
+rm -f src/fc/.deps/fstrans.Plo
+rm -f src/fontfile/.deps/bitsource.Plo
+rm -f src/fontfile/.deps/bufio.Plo
+rm -f src/fontfile/.deps/bunzip2.Plo
+rm -f src/fontfile/.deps/catalogue.Plo
+rm -f src/fontfile/.deps/decompress.Plo
+rm -f src/fontfile/.deps/defaults.Plo
+rm -f src/fontfile/.deps/dirfile.Plo
+rm -f src/fontfile/.deps/fileio.Plo
+rm -f src/fontfile/.deps/filewr.Plo
+rm -f src/fontfile/.deps/fontdir.Plo
+rm -f src/fontfile/.deps/fontfile.Plo
+rm -f src/fontfile/.deps/fontscale.Plo
+rm -f src/fontfile/.deps/gunzip.Plo
+rm -f src/fontfile/.deps/register.Plo
+rm -f src/fontfile/.deps/renderers.Plo
+rm -f src/stubs/.deps/atom.Plo
+rm -f src/stubs/.deps/libxfontstubs.Plo
+rm -f src/util/.deps/fontaccel.Plo
+rm -f src/util/.deps/fontnames.Plo
+rm -f src/util/.deps/fontutil.Plo
+rm -f src/util/.deps/fontxlfd.Plo
+rm -f src/util/.deps/format.Plo
+rm -f src/util/.deps/miscutil.Plo
+rm -f src/util/.deps/patcache.Plo
+rm -f src/util/.deps/private.Plo
+rm -f src/util/.deps/reallocarray.Plo
+rm -f src/util/.deps/realpath.Plo
+rm -f src/util/.deps/strlcat.Plo
+rm -f src/util/.deps/strlcpy.Plo
+rm -f src/util/.deps/utilbitmap.Plo
+rm -f test/.deps/fserve_read_glyphs-test-fserve-read-glyphs.Po
+rm -f test/.deps/pcf-test-common.Po
+rm -f test/.deps/test-pcf-bitmapscale.Po
+rm -f test/.deps/test-pcf-encoding.Po
+rm -f test/.deps/test-pcf-norepad.Po
+rm -f test/.deps/test-pcf-props.Po
+rm -f test/.deps/test-pcf-repad.Po
+rm -f test/utils/.deps/font-test-utils.Po
+rm -f test/utils/.deps/fserve_read_glyphs-font-test-utils.Po
+rm -f test/utils/.deps/lsfontdir.Po
+rm -f Makefile
+configure: WARNING: unrecognized options: --disable-specs
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to enable C11 features... none needed
+checking whether gcc -m32 understands -c and -o together... yes
+checking dependency style of gcc -m32... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc -m32... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from gcc -m32 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -m32 supports -fno-rtti -fno-exceptions... no
+checking for gcc -m32 option to produce PIC... -fPIC -DPIC
+checking if gcc -m32 PIC flag -fPIC -DPIC works... yes
+checking if gcc -m32 static flag -static works... no
+checking if gcc -m32 supports -c -o file.o... yes
+checking if gcc -m32 supports -c -o file.o... (cached) yes
+checking whether the gcc -m32 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for gcc -m32 options needed to detect all undeclared functions... none needed
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if gcc -m32 supports -Werror=unknown-warning-option... no
+checking if gcc -m32 supports -Werror=unused-command-line-argument... no
+checking if gcc -m32 supports -Wall... yes
+checking if gcc -m32 supports -Wpointer-arith... yes
+checking if gcc -m32 supports -Wmissing-declarations... yes
+checking if gcc -m32 supports -Wformat=2... yes
+checking if gcc -m32 supports -Wstrict-prototypes... yes
+checking if gcc -m32 supports -Wmissing-prototypes... yes
+checking if gcc -m32 supports -Wnested-externs... yes
+checking if gcc -m32 supports -Wbad-function-cast... yes
+checking if gcc -m32 supports -Wold-style-definition... yes
+checking if gcc -m32 supports -Wunused... yes
+checking if gcc -m32 supports -Wuninitialized... yes
+checking if gcc -m32 supports -Wshadow... yes
+checking if gcc -m32 supports -Wmissing-noreturn... yes
+checking if gcc -m32 supports -Wmissing-format-attribute... yes
+checking if gcc -m32 supports -Wredundant-decls... yes
+checking if gcc -m32 supports -Wlogical-op... yes
+checking if gcc -m32 supports -Werror=implicit... yes
+checking if gcc -m32 supports -Werror=nonnull... yes
+checking if gcc -m32 supports -Werror=init-self... yes
+checking if gcc -m32 supports -Werror=main... yes
+checking if gcc -m32 supports -Werror=missing-braces... yes
+checking if gcc -m32 supports -Werror=sequence-point... yes
+checking if gcc -m32 supports -Werror=return-type... yes
+checking if gcc -m32 supports -Werror=trigraphs... yes
+checking if gcc -m32 supports -Werror=array-bounds... yes
+checking if gcc -m32 supports -Werror=write-strings... yes
+checking if gcc -m32 supports -Werror=address... yes
+checking if gcc -m32 supports -Werror=int-to-pointer-cast... yes
+checking if gcc -m32 supports -Werror=pointer-to-int-cast... yes
+checking if gcc -m32 supports -pedantic... yes
+checking if gcc -m32 supports -Werror... yes
+checking if gcc -m32 supports -Werror=attributes... yes
+checking whether to build developer documentation... yes
+checking for fop... no
+configure: WARNING: fop not found - documentation targets will be skipped
+checking for X.Org SGML entities >= 1.7... no
+checking for a Python interpreter with version >= 3.0... python
+checking for python... /usr/bin/python
+checking for python version... 3.14
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.14/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.14/site-packages
+checking for endian.h... yes
+checking for poll.h... yes
+checking for sys/poll.h... yes
+checking for poll... yes
+checking for readlink... yes
+checking for strlcat... yes
+checking for reallocarray... yes
+checking for realpath... yes
+checking for strlcat... (cached) yes
+checking for strlcpy... yes
+checking for err.h... yes
+checking for float.h... yes
+checking for gcc -m32 option to enable large file support... -D_FILE_OFFSET_BITS=64
+checking for freetype2... yes
+checking for zlib... yes
+checking for hypot in -lm... yes
+checking for xproto xtrans fontsproto >= 2.1.3 fontenc... yes
+checking if Xtrans should support UNIX socket connections... yes
+checking if Xtrans should support TCP socket connections... yes
+checking for library containing socket... none required
+checking for library containing gethostbyname... none required
+checking for getaddrinfo... yes
+checking for inet_ntop... yes
+checking if IPv6 support should be built... yes
+checking for struct sockaddr_in.sin_len... no
+checking for socklen_t... yes
+checking for struct sockaddr_storage... yes
+checking for struct msghdr.msg_control... yes
+checking if Xtrans should support os-specific local connections... no
+checking for strcasecmp... yes
+checking for strlcpy... (cached) yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating xfont2.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-specs
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/libxfont2-01/build'
+Making all in doc
+make[2]: Entering directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libxfont2-01/build'
+  CC       test/utils/lsfontdir.o
+  CC       test/utils/font-test-utils.o
+  CC       src/stubs/atom.lo
+  CC       src/stubs/libxfontstubs.lo
+  CC       src/util/fontaccel.lo
+  CC       src/util/fontxlfd.lo
+  CC       src/util/fontutil.lo
+  CC       src/util/format.lo
+  CC       src/util/fontnames.lo
+  CC       src/util/miscutil.lo
+  CC       src/util/patcache.lo
+  CC       src/util/private.lo
+  CC       src/util/utilbitmap.lo
+  CC       src/fontfile/bitsource.lo
+  CC       src/fontfile/bufio.lo
+  CC       src/fontfile/decompress.lo
+  CC       src/fontfile/defaults.lo
+  CC       src/fontfile/dirfile.lo
+  CC       src/fontfile/fileio.lo
+  CC       src/fontfile/filewr.lo
+  CC       src/fontfile/fontdir.lo
+  CC       src/fontfile/fontfile.lo
+  CC       src/fontfile/fontscale.lo
+  CC       src/fontfile/gunzip.lo
+  CC       src/fontfile/register.lo
+  CC       src/fontfile/renderers.lo
+  CC       src/fontfile/catalogue.lo
+  CC       src/FreeType/ftenc.lo
+[01m[Ksrc/fontfile/dirfile.c:[m[K In function '[01m[KFontFileReadDirectory[m[K':
+[01m[Ksrc/fontfile/dirfile.c:88:14:[m[K [01;35m[Kwarning: [m[Kassignment discards '[01m[Kconst[m[K' qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+   88 |     if ((ptr [01;35m[K=[m[K strchr(directory, ':'))) {
+      |              [01;35m[K^[m[K
+  CC       src/FreeType/ftfuncs.lo
+  CC       src/FreeType/fttools.lo
+  CC       src/FreeType/xttcap.lo
+  CC       src/bitmap/bitmap.lo
+  CC       src/bitmap/bitmapfunc.lo
+  CC       src/bitmap/bitmaputil.lo
+  CC       src/bitmap/bitscale.lo
+  CC       src/bitmap/fontink.lo
+  CC       src/bitmap/bdfread.lo
+  CC       src/bitmap/bdfutils.lo
+  CC       src/bitmap/pcfread.lo
+  CC       src/bitmap/pcfwrite.lo
+  CC       src/builtins/dir.lo
+  CC       src/builtins/file.lo
+  CC       src/builtins/fonts.lo
+  CC       src/builtins/fpe.lo
+  CC       src/builtins/render.lo
+[01m[Ksrc/bitmap/pcfread.c:[m[K In function '[01m[KpcfReadFont[m[K':
+[01m[Ksrc/bitmap/pcfread.c:597:26:[m[K [01;35m[Kwarning: [m[Kformat '[01m[K[01;32m[K%u[m[K[m[K' expects argument of type '[01m[K[01;32m[Kunsigned int[m[K[m[K', but argument 2 has type '[01m[K[01;34m[KCARD32[m[K' {aka [m[K'[01m[K[01;34m[Klong unsigned int[m[K'}[m[K [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wformat-Wformat=]8;;[m[K]
+  597 |                 pcfError([01;32m[K"pcfReadFont(): bitmap offset/size out of bounds "[m[K
+      |                          [01;32m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  598 |                          "(offset %u, size %d, total %d)\n",
+  599 |                          [01;34m[Koffsets[i][m[K, glyphBytes, sizebitmaps);
+      |                          [01;34m[K~~~~~~~~~~[m[K
+      |                                 [01;34m[K|[m[K
+      |                                 [01;34m[KCARD32 {aka long unsigned int}[m[K
+[01m[Ksrc/bitmap/pcfread.c:598:36:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  598 |                          "(offset [01;32m[K%u[m[K, size %d, total %d)\n",
+      |                                   [01;32m[K~^[m[K
+      |                                    [01;32m[K|[m[K
+      |                                    [01;32m[Kunsigned int[m[K
+      |                                   [32m[K%lu[m[K
+  CCLD     libXfont2.la
+  CCLD     lsfontdir
+make[2]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build'
+Making install in doc
+make[1]: Entering directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build/doc'
+make[1]: Entering directory '/var/tmp/hokuto/libxfont2-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/libxfont2-01/build'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/include/X11/fonts'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/lib32/pkgconfig'
+ /usr/bin/install -c -m 644 include/X11/fonts/libxfont2.h '/var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/include/X11/fonts'
+ /usr/bin/install -c -m 644 xfont2.pc '/var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/lib32/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/lib32'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libXfont2.la '/var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/libXfont2.so.2.0.0 /var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/lib32/libXfont2.so.2.0.0
+libtool: install: (cd /var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/lib32 && { ln -s -f libXfont2.so.2.0.0 libXfont2.so.2 || { rm -f libXfont2.so.2 && ln -s libXfont2.so.2.0.0 libXfont2.so.2; }; })
+libtool: install: (cd /var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/lib32 && { ln -s -f libXfont2.so.2.0.0 libXfont2.so || { rm -f libXfont2.so && ln -s libXfont2.so.2.0.0 libXfont2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libXfont2.lai /var/tmp/hokuto/libxfont2-01/build/DESTDIR/usr/lib32/libXfont2.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib32'[0m
+make[2]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfont2-01/build'
+'DESTDIR/usr/lib32/libXfont2.la' -> '/var/tmp/hokuto/libxfont2-01/split/lib32-libxfont2/usr/lib32/libXfont2.la'
+'DESTDIR/usr/lib32/libXfont2.so' -> '/var/tmp/hokuto/libxfont2-01/split/lib32-libxfont2/usr/lib32/libXfont2.so'
+'DESTDIR/usr/lib32/libXfont2.so.2' -> '/var/tmp/hokuto/libxfont2-01/split/lib32-libxfont2/usr/lib32/libXfont2.so.2'
+'DESTDIR/usr/lib32/libXfont2.so.2.0.0' -> '/var/tmp/hokuto/libxfont2-01/split/lib32-libxfont2/usr/lib32/libXfont2.so.2.0.0'
+'DESTDIR/usr/lib32/pkgconfig' -> '/var/tmp/hokuto/libxfont2-01/split/lib32-libxfont2/usr/lib32/pkgconfig'
+'DESTDIR/usr/lib32/pkgconfig/xfont2.pc' -> '/var/tmp/hokuto/libxfont2-01/split/lib32-libxfont2/usr/lib32/pkgconfig/xfont2.pc'
+
+Script done on 2026-08-06 01:17:21+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxfont2[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 05 Aug 2026 18:17:21 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m16s[0m
