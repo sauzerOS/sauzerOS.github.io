@@ -1,0 +1,524 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mostree[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mostree 2026.3-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mFri, 07 Aug 2026 05:01:05 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mostree[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mbash curl fuse3 glib glibc gpgme libarchive libgpg-error systemd-libs util-linux which xz zlib-ng e2fsprogs gobject-introspection libsoup libxslt openssl python systemd[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mostree[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 bash-5.3.p15-1 binutils-2.46.1-1 bison-3.8.2-1 curl-8.21.0-1 diffutils-3.12-1 e2fsprogs-1.47.4-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 fuse3-3.18.2-1 gawk-5.4.1-1 gcc-16.1.0-2 gettext-1.0-1 glib-2.88.3-1 glibc-2.44-1 gobject-introspection-1.86.0-1 gpgme-2.1.2-1 grep-3.12-1 gzip-1.14-1 libarchive-3.8.9-1 libgpg-error-1.61-1 libsoup-3.6.6-1 libtool-2.6.2-1 libxslt-1.1.45-1 m4-1.4.21-1 make-4.4.1-1 openssl-4.0.1-2 patch-2.8-1 pkgconf-3.0.5-1 python-3.14.7-1 sed-4.10-1 systemd-261.2-1 systemd-libs-261.2-1 texinfo-7.3-1 util-linux-2.42.2-1 which-2.25-1 xz-5.8.3-1 zlib-ng-2.3.3-1[0m
+
+Script started on 2026-08-07 12:01:05+07:00 [COMMAND="cd /var/tmp/hokuto/ostree-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/ostree-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/ostree-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/ostree-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/ostree-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/ostree-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/ostree-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/ostree-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/ostree-01/build/.cache' /repo/sauzeros/extra/ostree/build /var/tmp/hokuto/ostree-01/output 2026.3 ostree" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for cc option to enable large file support... none needed
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking dependency style of cc... (cached) gcc3
+checking for bison... bison -y
+checking if cc supports flag -pipe in envvar CFLAGS... yes
+checking if cc supports flag -Wall in envvar CFLAGS... yes
+checking if cc supports flag -Werror=shadow in envvar CFLAGS... yes
+checking if cc supports flag -Werror=empty-body in envvar CFLAGS... yes
+checking if cc supports flag -Werror=strict-prototypes in envvar CFLAGS... yes
+checking if cc supports flag -Werror=missing-prototypes in envvar CFLAGS... yes
+checking if cc supports flag -Werror=implicit-function-declaration in envvar CFLAGS... yes
+checking if cc supports flag -Werror=format=2 -Werror=format-security -Werror=format-nonliteral in envvar CFLAGS... yes
+checking if cc supports flag -Werror=pointer-arith in envvar CFLAGS... yes
+checking if cc supports flag -Werror=init-self in envvar CFLAGS... yes
+checking if cc supports flag -Werror=missing-declarations in envvar CFLAGS... yes
+checking if cc supports flag -Werror=return-type in envvar CFLAGS... yes
+checking if cc supports flag -Werror=switch in envvar CFLAGS... yes
+checking if cc supports flag -Werror=overflow in envvar CFLAGS... yes
+checking if cc supports flag -Werror=int-conversion in envvar CFLAGS... yes
+checking if cc supports flag -Werror=parentheses in envvar CFLAGS... yes
+checking if cc supports flag -Werror=undef in envvar CFLAGS... yes
+checking if cc supports flag -Werror=incompatible-pointer-types in envvar CFLAGS... yes
+checking if cc supports flag -Werror=misleading-indentation in envvar CFLAGS... yes
+checking if cc supports flag -Werror=missing-include-dirs in envvar CFLAGS... yes
+checking if cc supports flag -Wstrict-aliasing=2 in envvar CFLAGS... yes
+checking if cc supports flag -Werror=unused-result in envvar CFLAGS... yes
+checking for -fsanitize=thread in CFLAGS... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for cc options needed to detect all undeclared functions... none needed
+checking whether renameat2 is declared... yes
+checking whether memfd_create is declared... yes
+checking whether copy_file_range is declared... yes
+checking for nanotime... no
+checking for clock_gettime... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for sys/xattr.h... yes
+checking for open_tree... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.16... yes
+checking for glib-2.0 >= 2.0.0... yes
+checking for GLIB - version >= 2.0.0... yes (version 2.88.3)
+checking for gio-unix-2.0 >= 2.66.0... yes
+checking for liblzma >= 5.0.5... yes
+checking for zlib... yes
+checking for e2p... yes
+checking for libcurl >= 7.29.0... yes
+checking for libsoup-3.0 >= 3.0.0... yes
+checking for libsoup-3.0 >= 3.0.0... yes
+checking for gobject-introspection... yes
+checking for gpgme >= 1.8.0 gpg-error... yes
+checking for gpgrt-config... /usr/bin/gpgrt-config
+configure: Use gpgrt-config as gpgme-config
+checking for composefs... no
+checking for linux/fsverity.h... yes
+checking for gtk-doc... no
+configure: WARNING:
+  You will not be able to create source packages with 'make dist'
+  because gtk-doc >= 1.15 is not found.
+checking for gtkdoc-check... no
+checking for gtkdoc-check... no
+checking for gtkdoc-rebase... no
+checking for gtkdoc-mkpdf... no
+checking whether to build gtk-doc documentation... no
+checking for glib-2.0 >= 2.10.0 gobject-2.0  >= 2.10.0... yes
+checking for libarchive >= 2.8.0... yes
+checking for libarchive >= 2.8.0... yes
+checking for archive_read_support_filter_all... yes
+checking for libselinux >= 2.1.13... no
+checking for avahi-client >= 0.6.31 avahi-glib >= 0.6.31... yes
+checking for avahi-client >= 0.6.31 avahi-glib >= 0.6.31... yes
+checking for mount >= 2.23.0... yes
+checking for mount >= 2.23.0... yes
+checking for mnt_unref_cache... yes
+checking for libsystemd... yes
+checking for libsystemd... yes
+checking for grub2-mkconfig... no
+checking for grub-mkconfig... no
+checking for gjs... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating apidoc/Makefile
+config.status: creating src/libostree/ostree-1.pc
+config.status: creating src/libostree/ostree-version.h
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+    libostree 2026.3 (release)
+    features: inode64 initial-var libcurl libsoup3 gpgme ex-fsverity libarchive avahi libmount systemd release p2p
+    ===============
+
+
+    introspection:                                yes
+    rofiles-fuse:                                 no
+    HTTP backend:                                 curl
+    libsoup:                                      no
+    libsoup3:                                     yes
+    SELinux:                                      no
+    fs-verity:                                    yes
+    cryptographic checksums:                      glib
+    systemd:                                      yes
+    libmount:                                     yes
+    libsodium (ed25519 signatures):               no
+    openssl (ed25519 and spki signatures):        no
+    libarchive (parse tar files directly):        yes
+    static deltas:                                yes (always enabled now)
+    O_TMPFILE:                                    yes
+    wrpseudo-compat:                              no
+    man pages (xsltproc):                         no
+    api docs (gtk-doc):                           no
+    installed tests:                              
+    gjs-based tests:                              no
+    dracut:                                       no
+    mkinitcpio:                                   no
+    Static compiler for ostree-prepare-root:      no
+    Composefs:                                    no
+    grub2-mkconfig path:                          grub2-mkconfig
+
+echo '#include "config.h"' > libglnx-config.h
+  GEN      src/libostree/ostree-enumtypes.h
+  GEN      src/libostree/ostree-enumtypes.c
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/ostree-01/build'
+Making all in .
+make[2]: Entering directory '/var/tmp/hokuto/ostree-01/build'
+mkdir -p src/ostree/
+  GEN      src/ostree/parse-datetime.c
+src/ostree/parse-datetime.y:302.1-12: warning: POSIX Yacc does not support %pure-parser [-Wyacc]
+  302 | %pure-parser
+      | ^~~~~~~~~~~~
+src/ostree/parse-datetime.y:302.1-12: warning: deprecated directive: ‘%pure-parser’, use ‘%define api.pure’ [-Wdeprecated]
+  302 | %pure-parser
+      | ^~~~~~~~~~~~
+      | %define api.pure
+src/ostree/parse-datetime.y:307.1-7: warning: POSIX Yacc does not support %expect [-Wyacc]
+  307 | %expect 31
+      | ^~~~~~~
+  CC       src/ostree/ostree-main.o
+  CC       src/ostree/ostree-ot-builtin-admin.o
+  CC       src/ostree/ostree-ot-builtin-cat.o
+  CC       src/ostree/ostree-ot-builtin-config.o
+  CC       src/ostree/ostree-ot-builtin-checkout.o
+  CC       src/ostree/ostree-ot-builtin-checksum.o
+  CC       src/ostree/ostree-ot-builtin-commit.o
+  CC       src/ostree/ostree-ot-builtin-create-usb.o
+  CC       src/ostree/ostree-ot-builtin-diff.o
+src/ostree/parse-datetime.y: warning: fix-its can be applied.  Rerun with option '--update'. [-Wother]
+  CC       src/ostree/ostree-ot-builtin-export.o
+  CC       src/ostree/ostree-ot-builtin-find-remotes.o
+  CC       src/ostree/ostree-ot-builtin-fsck.o
+  CC       src/ostree/ostree-ot-builtin-init.o
+  CC       src/ostree/ostree-ot-builtin-pull-local.o
+  CC       src/ostree/ostree-ot-builtin-log.o
+  CC       src/ostree/ostree-ot-builtin-ls.o
+  CC       src/ostree/ostree-ot-builtin-prune.o
+  CC       src/ostree/ostree-ot-builtin-refs.o
+  CC       src/ostree/ostree-ot-builtin-remote.o
+  CC       src/ostree/ostree-ot-builtin-reset.o
+  CC       src/ostree/ostree-ot-builtin-rev-parse.o
+  CC       src/ostree/ostree-ot-builtin-sign.o
+  CC       src/ostree/ostree-ot-builtin-summary.o
+  CC       src/ostree/ostree-ot-builtin-show.o
+  CC       src/ostree/ostree-ot-builtin-static-delta.o
+  CC       src/ostree/ostree-ot-main.o
+  CC       src/ostree/ostree-ot-dump.o
+  CC       src/ostree/ostree-ot-editor.o
+  CC       src/ostree/ostree-ot-builtin-gpg-sign.o
+  CC       src/ostree/ostree-ot-admin-builtin-init-fs.o
+  CC       src/ostree/ostree-ot-admin-builtin-diff.o
+  CC       src/ostree/ostree-ot-admin-builtin-deploy.o
+  CC       src/ostree/ostree-ot-admin-builtin-finalize-staged.o
+  CC       src/ostree/ostree-ot-admin-builtin-lock-finalization.o
+  CC       src/ostree/ostree-ot-admin-builtin-boot-complete.o
+  CC       src/ostree/ostree-ot-admin-builtin-undeploy.o
+  CC       src/ostree/ostree-ot-admin-builtin-set-default.o
+  CC       src/ostree/ostree-ot-admin-builtin-instutil.o
+  CC       src/ostree/ostree-ot-admin-builtin-kargs.o
+  CC       src/ostree/ostree-ot-admin-builtin-cleanup.o
+  CC       src/ostree/ostree-ot-admin-builtin-os-init.o
+  CC       src/ostree/ostree-ot-admin-builtin-set-origin.o
+  CC       src/ostree/ostree-ot-admin-builtin-status.o
+  CC       src/ostree/ostree-ot-admin-builtin-switch.o
+  CC       src/ostree/ostree-ot-admin-builtin-pin.o
+  CC       src/ostree/ostree-ot-admin-builtin-post-copy.o
+  CC       src/ostree/ostree-ot-admin-builtin-impl-prepare-soft-reboot.o
+  CC       src/ostree/ostree-ot-admin-builtin-prepare-soft-reboot.o
+  CC       src/ostree/ostree-ot-admin-builtin-upgrade.o
+  CC       src/ostree/ostree-ot-admin-builtin-unlock.o
+  CC       src/ostree/ostree-ot-admin-builtin-state-overlay.o
+  CC       src/ostree/ostree-ot-admin-instutil-builtin-selinux-ensure-labeled.o
+  CC       src/ostree/ostree-ot-admin-instutil-builtin-set-kargs.o
+  CC       src/ostree/ostree-ot-admin-instutil-builtin-grub2-generate.o
+  CC       src/ostree/ostree-ot-admin-functions.o
+  CC       src/ostree/ostree-ot-admin-kargs-builtin-edit-in-place.o
+  CC       src/ostree/ostree-ot-remote-builtin-add.o
+  CC       src/ostree/ostree-ot-remote-builtin-delete.o
+  CC       src/ostree/ostree-ot-remote-builtin-list.o
+  CC       src/ostree/ostree-ot-remote-builtin-show-url.o
+  CC       src/ostree/ostree-ot-remote-builtin-refs.o
+  CC       src/ostree/ostree-ot-remote-builtin-summary.o
+  CC       src/ostree/ostree-ot-remote-builtin-gpg-import.o
+  CC       src/ostree/ostree-ot-remote-builtin-gpg-list-keys.o
+  CC       src/ostree/ostree-ot-remote-builtin-add-cookie.o
+  CC       src/ostree/ostree-ot-remote-builtin-delete-cookie.o
+  CC       src/ostree/ostree-ot-remote-builtin-list-cookies.o
+  CC       src/ostree/ostree-ot-remote-cookie-util.o
+  CC       src/ostree/ostree-ot-builtin-pull.o
+  CC       src/ostree/ostree-parse-datetime.o
+  CC       libglnx/la-glnx-backport-testutils.lo
+  CC       libglnx/la-glnx-backports.lo
+  CC       libglnx/la-glnx-local-alloc.lo
+[01m[Ksrc/ostree/parse-datetime.c:[m[K In function ‘[01m[Kyyparse[m[K’:
+[01m[Ksrc/ostree/parse-datetime.c:1348:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kyynerrs[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+ 1348 |     int [01;35m[Kyynerrs[m[K = 0;
+      |         [01;35m[K^~~~~~~[m[K
+  CC       libglnx/la-glnx-errors.lo
+  CC       libglnx/la-glnx-console.lo
+  CC       libglnx/la-glnx-dirfd.lo
+  CC       libglnx/la-glnx-fdio.lo
+  CC       libglnx/la-glnx-lockfile.lo
+  CC       libglnx/la-glnx-xattrs.lo
+  CC       libglnx/la-glnx-shutil.lo
+  CC       src/libotutil/libotutil_la-ot-checksum-utils.lo
+  CC       src/libotutil/libotutil_la-ot-checksum-instream.lo
+  CC       src/libotutil/libotutil_la-ot-fs-utils.lo
+  CC       src/libotutil/libotutil_la-ot-keyfile-utils.lo
+  CC       src/libotutil/libotutil_la-ot-opt-utils.lo
+  CC       src/libotutil/libotutil_la-ot-unix-utils.lo
+  CC       src/libotutil/libotutil_la-ot-variant-utils.lo
+  CC       src/libotutil/libotutil_la-ot-variant-builder.lo
+  CC       src/libotutil/libotutil_la-ot-gio-utils.lo
+  CC       src/libotutil/libotutil_la-ot-tool-util.lo
+  CC       src/libotutil/libotutil_la-ul-jsonwrt.lo
+  CC       src/libotutil/libotutil_la-ot-gpg-utils.lo
+  CC       src/libotutil/libotutil_la-zbase32.lo
+  CC       src/libostree/libostree_1_la-ostree-async-progress.lo
+  CC       src/libostree/libostree_1_la-ostree-cmd-private.lo
+  CC       src/libostree/libostree_1_la-ostree-core.lo
+  CC       src/libostree/libostree_1_la-ostree-date-utils.lo
+  CC       src/libostree/libostree_1_la-ostree-dummy-enumtypes.lo
+  CC       src/libostree/libostree_1_la-ostree-checksum-input-stream.lo
+  CC       src/libostree/libostree_1_la-ostree-chain-input-stream.lo
+  CC       src/libostree/libostree_1_la-ostree-content-writer.lo
+  CC       src/libostree/libostree_1_la-ostree-lzma-common.lo
+  CC       src/libostree/libostree_1_la-ostree-lzma-compressor.lo
+  CC       src/libostree/libostree_1_la-ostree-lzma-decompressor.lo
+  CC       src/libostree/libostree_1_la-ostree-rollsum.lo
+  CC       src/libostree/libostree_1_la-ostree-varint.lo
+  CC       src/libostree/libostree_1_la-ostree-linuxfsutil.lo
+  CC       src/libostree/libostree_1_la-ostree-diff.lo
+  CC       src/libostree/libostree_1_la-ostree-mutable-tree.lo
+  CC       src/libostree/libostree_1_la-ostree-ref.lo
+  CC       src/libostree/libostree_1_la-ostree-remote.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-os.lo
+  CC       src/libostree/libostree_1_la-ostree-repo.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-checkout.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-commit.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-composefs.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-pull.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-pull-verify.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-libarchive.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-prune.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-refs.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-verity.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-traverse.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-file.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-file-enumerator.lo
+  CC       src/libostree/libostree_1_la-ostree-sepolicy.lo
+  CC       src/libostree/libostree_1_la-ostree-sysroot.lo
+  CC       src/libostree/libostree_1_la-ostree-sysroot-cleanup.lo
+  CC       src/libostree/libostree_1_la-ostree-sysroot-deploy.lo
+  CC       src/libostree/libostree_1_la-ostree-sysroot-upgrader.lo
+  CC       src/libostree/libostree_1_la-ostree-soft-reboot.lo
+  CC       src/libostree/libostree_1_la-ostree-impl-system-generator.lo
+[01m[Ksrc/libostree/ostree-sepolicy.c:258:1:[m[K [01;35m[Kwarning: [m[K'[01m[K_ostree_sepolicy_null_log[m[K' defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+  258 | [01;35m[K_ostree_sepolicy_null_log[m[K (int type, const char *fmt, ...)
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  CC       src/libostree/libostree_1_la-ostree-bootconfig-parser.lo
+  CC       src/libostree/libostree_1_la-ostree-deployment.lo
+  CC       src/libostree/libostree_1_la-ostree-bootloader.lo
+  CC       src/libostree/libostree_1_la-ostree-bootloader-aboot.lo
+  CC       src/libostree/libostree_1_la-ostree-bootloader-grub2.lo
+  CC       src/libostree/libostree_1_la-ostree-bootloader-zipl.lo
+  CC       src/libostree/libostree_1_la-ostree-bootloader-syslinux.lo
+  CC       src/libostree/libostree_1_la-ostree-bootloader-uboot.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-static-delta-core.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-static-delta-processing.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-static-delta-compilation.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-static-delta-compilation-analysis.lo
+  CC       src/libostree/libostree_1_la-ostree-bloom.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-finder.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-finder-avahi.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-finder-config.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-finder-mount.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-finder-override.lo
+  CC       src/libostree/libostree_1_la-ostree-kernel-args.lo
+  CC       src/libostree/libostree_1_la-ostree-libarchive-input-stream.lo
+  CC       src/libostree/libostree_1_la-ostree-tls-cert-interaction.lo
+  CC       src/libostree/libostree_1_la-ostree-repo-finder-avahi-parser.lo
+  CC       src/libostree/libostree_1_la-ostree-gpg-verifier.lo
+  CC       src/libostree/libostree_1_la-ostree-gpg-verify-result.lo
+  CC       src/libostree/libostree_1_la-ostree-fetcher-util.lo
+  CC       src/libostree/libostree_1_la-ostree-fetcher-uri.lo
+  CC       src/libostree/libostree_1_la-ostree-metalink.lo
+  CC       src/libostree/libostree_1_la-ostree-fetcher-curl.lo
+  CC       src/libostree/libostree_1_la-ostree-sign.lo
+  CC       src/libostree/libostree_1_la-ostree-sign-dummy.lo
+  CC       src/libostree/libostree_1_la-ostree-sign-ed25519.lo
+  CC       src/libostree/libostree_1_la-ostree-sign-spki.lo
+  CC       src/libostree/libostree_1_la-ostree-blob-reader.lo
+  CC       src/libostree/libostree_1_la-ostree-blob-reader-base64.lo
+  CC       src/libostree/libostree_1_la-ostree-blob-reader-raw.lo
+  CC       src/libostree/libostree_1_la-ostree-blob-reader-pem.lo
+  CC       src/libostree/libostree_1_la-ostree-enumtypes.lo
+  CC       src/libotcore/libotcore_la-otcore-ed25519-verify.lo
+[01m[Ksrc/libostree/ostree-fetcher-curl.c:[m[K In function '[01m[Kinitiate_next_curl_request[m[K':
+[01m[Ksrc/libostree/ostree-fetcher-curl.c:935:3:[m[K [01;35m[Kwarning: [m[K'[01m[KCURLOPT_PROTOCOLS[m[K' is deprecated: since 7.85.0. Use CURLOPT_PROTOCOLS_STR [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  935 |   [01;35m[Krc[m[K = curl_easy_setopt (req->easy, CURLOPT_PROTOCOLS,
+      |   [01;35m[K^~[m[K
+In file included from [01m[Ksrc/libostree/ostree-fetcher-curl.c:23[m[K:
+[01m[K/usr/include/curl/curl.h:1790:3:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1790 |   [01;36m[KCURLOPTDEPRECATED[m[K(CURLOPT_PROTOCOLS, CURLOPTTYPE_LONG, 181,
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+  CC       src/libotcore/libotcore_la-otcore-prepare-root.lo
+[01m[Ksrc/libostree/ostree-fetcher-curl.c:979:3:[m[K [01;35m[Kwarning: [m[K'[01m[KCURLOPT_PROGRESSFUNCTION[m[K' is deprecated: since 7.32.0. Use CURLOPT_XFERINFOFUNCTION [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  979 |   [01;35m[Krc[m[K = curl_easy_setopt (req->easy, CURLOPT_PROGRESSFUNCTION, prog_cb);
+      |   [01;35m[K^~[m[K
+[01m[K/usr/include/curl/curl.h:1337:3:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1337 |   [01;36m[KCURLOPTDEPRECATED[m[K(CURLOPT_PROGRESSFUNCTION, CURLOPTTYPE_FUNCTIONPOINT, 56,
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+  CC       src/libotcore/libotcore_la-otcore-spki-verify.lo
+  CC       bsdiff/libbsdiff_la-bsdiff.lo
+  CC       bsdiff/libbsdiff_la-bspatch.lo
+  CC       src/libostree/bupsplit.lo
+  CC       src/libostree/tests_test_rollsum_cli-ostree-rollsum.o
+  CC       tests/test_rollsum_cli-test-rollsum-cli.o
+  CC       tests/libostreetest_la-libostreetest.lo
+  CC       tests/libostreetest_la-test-mock-gio.lo
+  CC       tests/test_commit_sign_sh_ext-test-commit-sign-sh-ext.o
+  CC       src/switchroot/ostree_remount-ostree-remount.o
+  CC       src/switchroot/ostree_prepare_root-ostree-prepare-root.o
+  CC       src/switchroot/ostree_system_generator-ostree-system-generator.o
+  CCLD     libglnx.la
+  CCLD     libotutil.la
+  CCLD     libotcore.la
+  CCLD     libbsdiff.la
+  CCLD     libbupsplit.la
+  CCLD     ostree-prepare-root
+  CCLD     libostree-1.la
+  CCLD     ostree-remount
+[01m[Ksrc/libostree/ostree-fetcher-curl.c:[m[K In function '[01m[K_ostree_fetcher_init[m[K':
+[01m[Ksrc/libostree/ostree-fetcher-curl.c:255:8:[m[K [01;35m[Kwarning: [m[Kcall to '[01m[KWcurl_multi_setopt_err_long[m[K' declared with attribute warning: curl_multi_setopt expects a long argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wattribute-warning-Wattribute-warning]8;;[m[K]
+  255 |   rc = curl_multi_setopt (self->multi, CURLMOPT_MAX_TOTAL_CONNECTIONS, 8);
+      |        [01;35m[K^[m[K
+[01m[Ksrc/libostree/ostree-fetcher-curl.c:[m[K In function '[01m[Kinitiate_next_curl_request[m[K':
+[01m[Ksrc/libostree/ostree-fetcher-curl.c:985:8:[m[K [01;35m[Kwarning: [m[Kcall to '[01m[KWcurl_easy_setopt_err_long[m[K' declared with attribute warning: curl_easy_setopt expects a long argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wattribute-warning-Wattribute-warning]8;;[m[K]
+  985 |   rc = curl_easy_setopt (req->easy, CURLOPT_LOW_SPEED_LIMIT, req->fetcher->opt_low_speed_limit);
+      |        [01;35m[K^[m[K
+[01m[Ksrc/libostree/ostree-fetcher-curl.c:987:8:[m[K [01;35m[Kwarning: [m[Kcall to '[01m[KWcurl_easy_setopt_err_long[m[K' declared with attribute warning: curl_easy_setopt expects a long argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.1.0/gcc/Warning-Options.html#index-Wattribute-warning-Wattribute-warning]8;;[m[K]
+  987 |   rc = curl_easy_setopt (req->easy, CURLOPT_LOW_SPEED_TIME, req->fetcher->opt_low_speed_time);
+      |        [01;35m[K^[m[K
+  CCLD     ostree
+  CCLD     libostreetest.la
+  GISCAN   OSTree-1.0.gir
+  CCLD     ostree-system-generator
+  CCLD     tests/test-commit-sign-sh-ext
+  CCLD     tests/test-rollsum-cli
+src/libostree/ostree-repo.c:5830: Warning: OSTree: ostree_repo_verify_local_summary: unknown parameter 'keyringdir' in documentation comment, should be 'keyfiledir'
+  GICOMP   OSTree-1.0.gir
+make[2]: Leaving directory '/var/tmp/hokuto/ostree-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/ostree-01/build'
+make  install-recursive
+make[1]: Entering directory '/var/tmp/hokuto/ostree-01/build'
+Making install in .
+make[2]: Entering directory '/var/tmp/hokuto/ostree-01/build'
+make[3]: Entering directory '/var/tmp/hokuto/ostree-01/build'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/libexec/libostree'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/share/bash-completion/completions'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/lib/tmpfiles.d'
+ /usr/bin/install -c -m 644 bash/ostree '/var/tmp/hokuto/ostree-01/output/usr/share/bash-completion/completions'
+ /usr/bin/install -c src/boot/grub2/grub2-15_ostree '/var/tmp/hokuto/ostree-01/output/usr/libexec/libostree'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/share/ostree/trusted.gpg.d'
+ /usr/bin/install -c -m 644 src/boot/ostree-tmpfiles.conf '/var/tmp/hokuto/ostree-01/output/usr/lib/tmpfiles.d'
+ /usr/bin/install -c -m 644 src/libostree/README-gpg '/var/tmp/hokuto/ostree-01/output/usr/share/ostree/trusted.gpg.d'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/include/ostree-1'
+ /usr/bin/install -c -m 644 src/libostree/ostree.h src/libostree/ostree-async-progress.h src/libostree/ostree-autocleanups.h src/libostree/ostree-content-writer.h src/libostree/ostree-core.h src/libostree/ostree-dummy-enumtypes.h src/libostree/ostree-mutable-tree.h src/libostree/ostree-repo.h src/libostree/ostree-repo-os.h src/libostree/ostree-types.h src/libostree/ostree-repo-file.h src/libostree/ostree-diff.h src/libostree/ostree-gpg-verify-result.h src/libostree/ostree-sepolicy.h src/libostree/ostree-sysroot.h src/libostree/ostree-sysroot-upgrader.h src/libostree/ostree-deployment.h src/libostree/ostree-bootconfig-parser.h src/libostree/ostree-repo-deprecated.h src/libostree/ostree-ref.h src/libostree/ostree-remote.h src/libostree/ostree-repo-finder.h src/libostree/ostree-repo-finder-avahi.h src/libostree/ostree-repo-finder-config.h src/libostree/ostree-repo-finder-mount.h src/libostree/ostree-repo-finder-override.h src/libostree/ostree-kernel-args.h src/libostree/ostree-sign.h src/libostree/ostree-sign-ed25519.h src/libostree/ostree-blob-reader.h src/libostree/ostree-version.h '/var/tmp/hokuto/ostree-01/output/usr/include/ostree-1'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/lib/ostree'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/lib/systemd/system'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/lib/girepository-1.0'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libostree-1.la '/var/tmp/hokuto/ostree-01/output/usr/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/lib/ostree'
+ /usr/bin/install -c -m 644 src/boot/ostree-prepare-root.service src/boot/ostree-remount.service src/boot/ostree-boot-complete.service src/boot/ostree-finalize-staged.service src/boot/ostree-finalize-staged-hold.service src/boot/ostree-state-overlay@.service '/var/tmp/hokuto/ostree-01/output/usr/lib/systemd/system'
+ /usr/bin/install -c -m 644 src/libostree/ostree-1.pc '/var/tmp/hokuto/ostree-01/output/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/share/gir-1.0'
+ /usr/bin/install -c -m 644 OSTree-1.0.typelib '/var/tmp/hokuto/ostree-01/output/usr/lib/girepository-1.0'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c ostree-remount ostree-prepare-root '/var/tmp/hokuto/ostree-01/output/usr/lib/ostree'
+ /usr/bin/install -c -m 644 OSTree-1.0.gir '/var/tmp/hokuto/ostree-01/output/usr/share/gir-1.0'
+libtool: install: /usr/bin/install -c ostree-remount /var/tmp/hokuto/ostree-01/output/usr/lib/ostree/ostree-remount
+libtool: install: /usr/bin/install -c .libs/libostree-1.so.1.0.0 /var/tmp/hokuto/ostree-01/output/usr/lib/libostree-1.so.1.0.0
+libtool: install: (cd /var/tmp/hokuto/ostree-01/output/usr/lib && { ln -s -f libostree-1.so.1.0.0 libostree-1.so.1 || { rm -f libostree-1.so.1 && ln -s libostree-1.so.1.0.0 libostree-1.so.1; }; })
+libtool: install: /usr/bin/install -c ostree-prepare-root /var/tmp/hokuto/ostree-01/output/usr/lib/ostree/ostree-prepare-root
+libtool: install: (cd /var/tmp/hokuto/ostree-01/output/usr/lib && { ln -s -f libostree-1.so.1.0.0 libostree-1.so || { rm -f libostree-1.so && ln -s libostree-1.so.1.0.0 libostree-1.so; }; })
+libtool: install: /usr/bin/install -c .libs/libostree-1.lai /var/tmp/hokuto/ostree-01/output/usr/lib/libostree-1.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/lib/systemd/system-generators'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/ostree-01/output/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c ostree '/var/tmp/hokuto/ostree-01/output/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c ostree-system-generator '/var/tmp/hokuto/ostree-01/output/usr/lib/systemd/system-generators'
+libtool: [31mwarning[0m: [1m'libostree-1.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/ostree /var/tmp/hokuto/ostree-01/output/usr/bin/ostree
+libtool: [31mwarning[0m: [1m'libostree-1.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/ostree-system-generator /var/tmp/hokuto/ostree-01/output/usr/lib/systemd/system-generators/ostree-system-generator
+make  install-data-hook
+make[4]: Entering directory '/var/tmp/hokuto/ostree-01/build'
+mkdir -p /var/tmp/hokuto/ostree-01/output/etc/ostree/remotes.d
+mkdir -p /var/tmp/hokuto/ostree-01/output/etc/grub.d
+ln -sf /usr/libexec/libostree/grub2-15_ostree /var/tmp/hokuto/ostree-01/output/etc/grub.d/15_ostree
+make[4]: Leaving directory '/var/tmp/hokuto/ostree-01/build'
+make[3]: Leaving directory '/var/tmp/hokuto/ostree-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/ostree-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/ostree-01/build'
+
+Script done on 2026-08-07 12:01:17+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mostree[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mFri, 07 Aug 2026 05:01:17 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m12s[0m
