@@ -1,0 +1,778 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mspectacle[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mspectacle 6.7.4-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 10 Aug 2026 06:20:12 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mspectacle[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc kconfig kconfigwidgets kcoreaddons|sonic-frameworks-core-addons kcrash kdbusaddons kglobalaccel|sonic-frameworks-keybind kguiaddons|sonic-frameworks-gui-addons ki18n kio|sonic-frameworks-io kirigami|sonic-frameworks-quick-ui kjobwidgets knotifications kpipewire|sonic-pipewire kquickimageeditor|sonic-quick-image-editor kservice kstatusnotifieritem kwidgetsaddons kwindowsystem|sonic-frameworks-windowsystem kxmlgui layer-shell-qt libxcb opencv prison|sonic-frameworks-barcode purpose qt qt-declarative qt-imageformats qt-multimedia tesseract wayland xcb-util xcb-util-cursor xcb-util-image extra-cmake-modules|sonic-frameworks-cmake-modules kdoctools|sonic-frameworks-doctools plasma-wayland-protocols[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mspectacle[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 extra-cmake-modules-6.28.0-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 kconfig-6.28.0-1 kconfigwidgets-6.28.0-1 kcoreaddons-6.28.0-1 kcrash-6.28.0-1 kdbusaddons-6.28.0-1 kdoctools-6.28.0-2 kglobalaccel-6.28.0-1 kguiaddons-6.28.0-1 ki18n-6.28.0-1 kio-6.28.0-1 kirigami-6.28.0-1 kjobwidgets-6.28.0-1 knotifications-6.28.0-1 kpipewire-6.7.4-1 kquickimageeditor-0.6.2.1-1 kservice-6.28.0-1 kstatusnotifieritem-6.28.0-1 kwidgetsaddons-6.28.0-1 kwindowsystem-6.28.0-1 kxmlgui-6.28.0-1 layer-shell-qt-6.7.4-1 libtool-2.6.2-1 libxcb-1.17.0-1 m4-1.4.21-1 make-4.4.1-1 opencv-5.0.0-2 patch-2.8-1 pkgconf-3.0.5-1 plasma-wayland-protocols-1.21.0-1 prison-6.28.0-1 purpose-6.28.0-1 qt-6.11.1-1 qt-declarative-6.11.1-1 qt-imageformats-6.11.1-1 qt-multimedia-6.11.1-1 sed-4.10-1 tesseract-5.5.3-1 texinfo-7.3-1 wayland-1.26.0-1 which-2.25-1 xcb-util-0.4.1-1 xcb-util-cursor-0.1.6-1 xcb-util-image-0.4.1-1[0m
+
+Script started on 2026-08-10 13:20:12+07:00 [COMMAND="cd /var/tmp/hokuto/spectacle-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/spectacle-01/build/cargo' CC='cc' CFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/spectacle-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/spectacle-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='0' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/spectacle-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/spectacle-01/split' LDFLAGS='-fuse-ld=bfd -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/spectacle-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/spectacle-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/spectacle-01/build/.cache' /repo/kde/spectacle/build /var/tmp/hokuto/spectacle-01/output 6.7.4 spectacle" <not executed on terminal>]
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found Cups: /usr/lib/libcups.so (found version "2.4.19")
+-- Found Wayland_Client: /usr/lib/libwayland-client.so (found version "1.26.0")
+-- Found Wayland_Server: /usr/lib/libwayland-server.so (found version "1.26.0")
+-- Found Wayland_Cursor: /usr/lib/libwayland-cursor.so (found version "1.26.0")
+-- Found Wayland_Egl: /usr/lib/libwayland-egl.so (found version "18.1.0")
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so;/usr/lib/libwayland-cursor.so;/usr/lib/libwayland-egl.so (found version "1.26.0")
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.28.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.28.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.28.0")
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found KF6Notifications: /usr/lib64/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.28.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.28.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.28.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.28.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.28.0")
+-- Found KF6GlobalAccel: /usr/lib64/cmake/KF6GlobalAccel/KF6GlobalAccelConfig.cmake (found version "6.28.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.28.0")
+-- Found KF6GuiAddons: /usr/lib64/cmake/KF6GuiAddons/KF6GuiAddonsConfig.cmake (found version "6.28.0")
+-- Found KF6KirigamiPlatform: /usr/lib64/cmake/KF6KirigamiPlatform/KF6KirigamiPlatformConfig.cmake (found version "6.28.0")
+-- Found KF6StatusNotifierItem: /usr/lib64/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemConfig.cmake (found version "6.28.0")
+-- Found KF6Prison: /usr/lib64/cmake/KF6Prison/KF6PrisonConfig.cmake (found version "6.28.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.28.0")
+-- Found KF6: success (found suitable version "6.28.0", minimum required is "6.26.0") found components: CoreAddons WidgetsAddons DBusAddons Notifications Config I18n KIO WindowSystem GlobalAccel XmlGui GuiAddons KirigamiPlatform StatusNotifierItem Prison Crash
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so;/usr/lib/libwayland-cursor.so;/usr/lib/libwayland-egl.so (found version "1.26.0") found components: Client
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found OpenCV: /usr (found suitable version "5.0.0", minimum required is "5") found components: core imgproc
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.5")
+-- Found org.kde.kquickimageeditor-QMLModule: TRUE
+-- Checking for module 'tesseract'
+--   Found tesseract, version 5.5.3
+-- XCB: XFIXES requires XCB;RENDER;SHAPE
+-- XCB: XFIXES requires XCB;RENDER;SHAPE
+-- XCB: XFIXES requires XCB;RENDER;SHAPE
+-- XCB: IMAGE requires XCB;SHM
+-- Found XCB_XCB: /usr/lib/libxcb.so (found version "1.17.0")
+-- Found XCB_RENDER: /usr/lib/libxcb-render.so (found version "1.17.0")
+-- Found XCB_SHAPE: /usr/lib/libxcb-shape.so (found version "1.17.0")
+-- Found XCB_XFIXES: /usr/lib/libxcb-xfixes.so (found version "1.17.0")
+-- Found XCB_SHM: /usr/lib/libxcb-shm.so (found version "1.17.0")
+-- Found XCB_CURSOR: /usr/lib/libxcb-cursor.so (found version "0.1.6")
+-- Found XCB_IMAGE: /usr/lib/libxcb-image.so (found version "0.4.1")
+-- Found XCB_RANDR: /usr/lib/libxcb-randr.so (found version "1.17.0")
+-- Found XCB_UTIL: /usr/lib/libxcb-util.so (found version "0.4.1")
+-- Found XCB: /usr/lib/libxcb.so;/usr/lib/libxcb-render.so;/usr/lib/libxcb-shape.so;/usr/lib/libxcb-xfixes.so;/usr/lib/libxcb-shm.so;/usr/lib/libxcb-cursor.so;/usr/lib/libxcb-image.so;/usr/lib/libxcb-randr.so;/usr/lib/libxcb-util.so (found version "1.17.0") found components: XFIXES IMAGE UTIL CURSOR RANDR
+[33mCMake Warning (author) at /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:3565 (message):
+  Qt policy QTP0004 is not set: You need qmldir files for each extra
+  directory that contains .qml files for your module.  Check
+  https://doc.qt.io/qt-6/qt-cmake-policy-qtp0004.html for policy details.
+  Use the qt_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4013 (__qt_internal_setup_policy)
+  /usr/lib64/cmake/Qt6Qml/Qt6QmlMacros.cmake:4063 (qt6_target_qml_sources)
+  src/CMakeLists.txt:146 (qt_target_qml_sources)
+This warning is for project developers.  Use -Wno-author to suppress it.
+[0m
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6Concurrent (required version >= 6.10.0)
+ * OpenGL
+ * Qt6QuickControls2 (required version >= 6.10.0)
+ * Cups
+ * Qt6PrintSupport (required version >= 6.10.0)
+ * Qt6Test (required version >= 6.10.0)
+ * Qt6WaylandScannerTools (required version >= 6.11.1)
+ * Qt6WaylandClient (required version >= 6.10.0)
+ * Qt6Multimedia (required version >= 6.10.0)
+ * Qt6WidgetsTools (required version >= 6.11.1)
+ * Qt6Widgets (required version >= 6.9.0)
+ * Qt6DBusTools (required version >= 6.11.1)
+ * Qt6GuiTools (required version >= 6.11.1)
+ * org.kde.kquickimageeditor-QMLModule, QML module 'org.kde.kquickimageeditor' is a dependency.
+ * Qt6CoreTools (required version >= 6.11.1)
+ * Qt6Core (required version >= 6.8.0)
+ * Qt6Qml (required version >= 6.8.0)
+ * Qt6QmlTools (required version >= 6.11.1)
+ * Qt6QuickTools (required version >= 6.11.1)
+ * Qt6Quick (required version >= 6.8.0)
+ * KF6DocTools (required version >= 6.26.0), Tools to generate documentation
+ * KF6Purpose
+ * XCB, X protocol C-language Binding, <https://xcb.freedesktop.org/>
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6GuiPrivate (required version >= 6.10.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6Notifications (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6CoreAddons (required version >= 6.28.0)
+ * KF6Config (required version >= 6.28.0)
+ * KF6WidgetsAddons (required version >= 6.28.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6WindowSystem (required version >= 6.26.0)
+ * KF6GlobalAccel (required version >= 6.26.0)
+ * KF6XmlGui (required version >= 6.26.0)
+ * KF6GuiAddons (required version >= 6.26.0)
+ * KF6KirigamiPlatform (required version >= 6.26.0)
+ * KF6StatusNotifierItem (required version >= 6.26.0)
+ * KF6Prison (required version >= 6.26.0)
+ * KF6Crash (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Wayland, C library implementation of the Wayland protocol: a protocol for a compositor to talk to its clients, <https://wayland.freedesktop.org/>
+ * PlasmaWaylandProtocols
+ * LayerShellQt
+ * KPipeWire, Used to record pipewire streams into a file
+ * OpenCV (required version >= 5)
+ * Qt6
+ * KQuickImageEditor, Simple image editor for QtQuick applications, <https://invent.kde.org/libraries/kquickimageeditor/>
+   Add image editing capability to the screenshots
+ * PkgConfig
+
+-- The following OPTIONAL packages have not been found:
+
+ * WrapVulkanHeaders
+
+-- Configuring done (3.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /var/tmp/hokuto/spectacle-01/build/build
+[  2%] [1m[34mGenerating po/nl/docs/spectacle/spectacle.1[0m
+[  2%] [1m[34mGenerating po/es/docs/spectacle/index.cache.bz2[0m
+[  2%] [1m[34mGenerating po/it/docs/spectacle/index.cache.bz2[0m
+[  2%] [1m[34mGenerating po/de/docs/spectacle/index.cache.bz2[0m
+[  2%] [1m[34mGenerating po/es/docs/spectacle/spectacle.1[0m
+[  3%] [1m[34mGenerating po/it/docs/spectacle/spectacle.1[0m
+[  3%] [1m[34mGenerating po/ca/docs/spectacle/spectacle.1[0m
+[  3%] [1m[34mGenerating po/de/docs/spectacle/spectacle.1[0m
+[  3%] [1m[34mGenerating po/nl/docs/spectacle/index.cache.bz2[0m
+[  4%] [1m[34mGenerating po/ca/docs/spectacle/index.cache.bz2[0m
+Note: Writing spectacle.1
+Note: Writing spectacle.1
+Note: Writing spectacle.1
+Note: Writing spectacle.1
+Note: Writing spectacle.1
+[  4%] Built target po-it-docs-spectacle-spectacle-1
+[  4%] Built target po-nl-docs-spectacle-index-cache-bz2
+[  4%] Built target po-de-docs-spectacle-spectacle-1
+[  5%] [1m[34mGenerating po/pt/docs/spectacle/index.cache.bz2[0m
+[  5%] Built target po-de-docs-spectacle-index-cache-bz2
+[  5%] Built target po-es-docs-spectacle-spectacle-1
+[  6%] [1m[34mGenerating po/pt_BR/docs/spectacle/index.cache.bz2[0m
+[  6%] [1m[34mGenerating po/pt_BR/docs/spectacle/spectacle.1[0m
+[  6%] Built target po-ca-docs-spectacle-index-cache-bz2
+[  6%] Built target po-ca-docs-spectacle-spectacle-1
+[  6%] [1m[34mGenerating po/ru/docs/spectacle/index.cache.bz2[0m
+[  6%] Built target po-nl-docs-spectacle-spectacle-1
+[  6%] [1m[34mGenerating po/sl/docs/spectacle/index.cache.bz2[0m
+[  7%] [1m[34mGenerating po/sl/docs/spectacle/spectacle.1[0m
+[  7%] [1m[34mGenerating po/sv/docs/spectacle/index.cache.bz2[0m
+[  8%] [1m[34mGenerating po/sv/docs/spectacle/spectacle.1[0m
+[  8%] Built target po-it-docs-spectacle-index-cache-bz2
+[  8%] Built target po-es-docs-spectacle-index-cache-bz2
+[  8%] [1m[34mGenerating po/tr/docs/spectacle/index.cache.bz2[0m
+[  9%] [1m[34mGenerating po/tr/docs/spectacle/spectacle.1[0m
+I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/pt-BR.xml": No such file or directory
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+Note: Writing spectacle.1
+Note: Writing spectacle.1
+Note: Writing spectacle.1
+[  9%] Built target po-sv-docs-spectacle-index-cache-bz2
+[  9%] Built target po-pt-BR-docs-spectacle-index-cache-bz2
+[  9%] Built target po-sl-docs-spectacle-index-cache-bz2
+[  9%] Built target po-pt-BR-docs-spectacle-spectacle-1
+[  9%] Built target po-pt-docs-spectacle-index-cache-bz2
+Note: Writing spectacle.1
+[  9%] [1m[34mGenerating po/uk/docs/spectacle/spectacle.1[0m
+[  9%] [1m[34mGenerating po/uk/docs/spectacle/index.cache.bz2[0m
+[ 11%] [1m[34mRunning rcc for resource spectacle_icons[0m
+[ 11%] [1m[34mGenerating mo...[0m
+[ 11%] [1m[34mGenerating ts...[0m
+[ 11%] Built target po-sv-docs-spectacle-spectacle-1
+[ 11%] Built target tsfiles-8f4537422eba554c6e3666ca01b711b5
+[ 11%] Built target po-sl-docs-spectacle-spectacle-1
+[ 11%] [1m[34mPopulating .qmlls.ini file at /var/tmp/hokuto/spectacle-01/build/build/.qt/.qmlls.build.ini[0m
+[ 11%] Built target po-tr-docs-spectacle-spectacle-1
+[ 11%] Built target po-ru-docs-spectacle-index-cache-bz2
+[ 11%] Built target spectacle-24.02.0-video_format_autogen_timestamp_deps
+[ 11%] [1m[34mCopying spectacle qml sources into build dir[0m
+[ 13%] [1m[34mCopying spectacle qml resources into build dir[0m
+[ 13%] Built target spectacle-24.02.0-keep_old_save_location_autogen_timestamp_deps
+[ 13%] Built target spectacle-24.02.0-rename_settings_autogen_timestamp_deps
+[ 13%] Built target spectacle_copy_res
+[ 13%] Built target spectacle-24.02.0-keep_old_filename_templates_autogen_timestamp_deps
+[ 13%] Built target spectacle_copy_qml
+[ 14%] [1m[34mGenerating index.cache.bz2[0m
+[ 14%] Built target spectacle-24.02.0-change_placeholder_format_autogen_timestamp_deps
+[ 14%] Built target generate_qmlls_build_ini_file
+[ 14%] Built target spectacle_spectacle_icons
+[ 14%] Built target po-tr-docs-spectacle-index-cache-bz2
+[ 14%] [1m[34mGenerating spectacle.1[0m
+[ 14%] [1m[34mAutomatic MOC for target spectacle-24.02.0-video_format[0m
+[ 14%] [1m[34mAutomatic MOC for target spectacle-24.02.0-rename_settings[0m
+[ 14%] [1m[34mAutomatic MOC for target spectacle-24.02.0-keep_old_filename_templates[0m
+[ 14%] [1m[34mAutomatic MOC for target spectacle-24.02.0-keep_old_save_location[0m
+[ 14%] [1m[34mAutomatic MOC for target spectacle-24.02.0-change_placeholder_format[0m
+[ 14%] Built target pofiles-8f4537422eba554c6e3666ca01b711b5
+[ 14%] Built target spectacle-24.02.0-video_format_autogen
+[ 14%] Built target spectacle-24.02.0-change_placeholder_format_autogen
+[ 14%] Built target spectacle-24.02.0-keep_old_filename_templates_autogen
+[ 14%] Built target spectacle-24.02.0-keep_old_save_location_autogen
+[ 14%] Built target spectacle-24.02.0-rename_settings_autogen
+[ 15%] [1m[34mGenerating qwayland-zkde-screencast-unstable-v1.h[0m
+[ 15%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-video_format.dir/spectacle-24.02.0-video_format_autogen/mocs_compilation.cpp.o[0m
+[ 15%] [1m[34mGenerating settings.h, settings.cpp[0m
+[ 15%] [1m[34mGenerating qwayland-zkde-screencast-unstable-v1.cpp[0m
+[ 16%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-video_format.dir/spectacle-24.02.0-video_format.cpp.o[0m
+[ 17%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-change_placeholder_format.dir/spectacle-24.02.0-change_placeholder_format_autogen/mocs_compilation.cpp.o[0m
+[ 17%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-change_placeholder_format.dir/spectacle-24.02.0-change_placeholder_format.cpp.o[0m
+[ 17%] [1m[34mGenerating wayland-zkde-screencast-unstable-v1-client-protocol.h[0m
+[ 18%] [1m[34mGenerating wayland-zkde-screencast-unstable-v1-protocol.c[0m
+[ 18%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-keep_old_filename_templates.dir/spectacle-24.02.0-keep_old_filename_templates_autogen/mocs_compilation.cpp.o[0m
+[ 18%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-keep_old_filename_templates.dir/spectacle-24.02.0-keep_old_filename_templates.cpp.o[0m
+[ 18%] Built target spectacle_autogen_timestamp_deps
+Note: Writing spectacle.1
+[ 18%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-keep_old_save_location.dir/spectacle-24.02.0-keep_old_save_location_autogen/mocs_compilation.cpp.o[0m
+[ 18%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-rename_settings.dir/spectacle-24.02.0-rename_settings_autogen/mocs_compilation.cpp.o[0m
+[ 18%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-rename_settings.dir/spectacle-24.02.0-rename_settings.cpp.o[0m
+[ 18%] [32mBuilding CXX object kconf_update/CMakeFiles/spectacle-24.02.0-keep_old_save_location.dir/spectacle-24.02.0-keep_old_save_location.cpp.o[0m
+[ 18%] Built target po-uk-docs-spectacle-spectacle-1
+[ 19%] [1m[34mAutomatic MOC for target spectacle[0m
+[ 19%] Built target po-uk-docs-spectacle-index-cache-bz2
+Note: Writing spectacle.1
+[ 19%] Built target doc-spectacle-1
+[ 19%] Built target doc-index-cache-bz2
+[ 19%] Built target spectacle_autogen
+[ 20%] [1m[34mRunning rcc for resource qmake_org_kde_spectacle_private[0m
+[ 20%] [1m[34mRunning rcc for resource spectacle_raw_qml_0[0m
+[ 20%] [1m[34mGenerating ui_GeneralOptions.h[0m
+[ 20%] [1m[34mRunning AUTOMOC file extraction for target spectacle[0m
+[ 21%] [1m[34mGenerating .rcc/qmlcache/spectacle_qmlcache_loader.cpp[0m
+/var/tmp/hokuto/spectacle-01/build/src/Gui/SettingsDialog/GeneralOptions.ui: Warning: Tab-stop assignment: 'kcfg_showCaptureInstructions' is not a valid widget.
+[ 22%] [1m[34mGenerating ui_ImageSaveOptions.h[0m
+[ 22%] [1m[34mGenerating ui_VideoSaveOptions.h[0m
+[ 22%] [1m[34mRunning moc --collect-json for target spectacle[0m
+[ 22%] [1m[34mGenerating meta_types/qt6spectacle_metatypes.json[0m
+[ 23%] [1m[34mAutomatic QML type registration for target spectacle[0m
+[ 25%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/AnnotationEditor_qml.cpp[0m
+[ 25%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/AnnotationOptionsToolBarContents_qml.cpp[0m
+[ 25%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/AnimatedLoader_qml.cpp[0m
+[ 25%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/AcceptAction_qml.cpp[0m
+[ 26%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/AnnotationsToolBarContents_qml.cpp[0m
+[ 26%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/ButtonGrid_qml.cpp[0m
+[ 27%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/CancelAction_qml.cpp[0m
+[ 27%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/CaptureModeButtonsColumn_qml.cpp[0m
+[ 27%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/CaptureOptions_qml.cpp[0m
+[ 28%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/CaptureOverlay_qml.cpp[0m
+[ 29%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/CopyImageAction_qml.cpp[0m
+[ 29%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/CaptureSettingsColumn_qml.cpp[0m
+[ 29%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/CopyLocationAction_qml.cpp[0m
+[ 29%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/DashedOutline_qml.cpp[0m
+[ 30%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/DelaySpinBox_qml.cpp[0m
+[ 30%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/DialogPage_qml.cpp[0m
+[ 31%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/EditAction_qml.cpp[0m
+[ 31%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/EmptyPage_qml.cpp[0m
+[ 32%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/ExportMenuButton_qml.cpp[0m
+[ 32%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/FloatingBackground_qml.cpp[0m
+[ 32%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/FloatingToolBar_qml.cpp[0m
+[ 33%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/Handle_qml.cpp[0m
+[ 33%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/HelpMenuButton_qml.cpp[0m
+[ 34%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/InlineMessageList_qml.cpp[0m
+[ 34%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/Magnifier_qml.cpp[0m
+[ 34%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/NewScreenshotToolButton_qml.cpp[0m
+[ 35%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/OcrAction_qml.cpp[0m
+[ 35%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/OptionsMenuButton_qml.cpp[0m
+[ 36%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/Outline_qml.cpp[0m
+[ 36%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/QmlUtils_qml.cpp[0m
+[ 36%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/RecordAction_qml.cpp[0m
+[ 38%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/RecordOptions_qml.cpp[0m
+[ 39%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/RecordingModeButtonsColumn_qml.cpp[0m
+[ 39%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/RecordingModeMenuButton_qml.cpp[0m
+[ 40%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/RecordingSettingsColumn_qml.cpp[0m
+[ 40%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/RecordingView_qml.cpp[0m
+[ 40%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/SaveAction_qml.cpp[0m
+[ 40%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/SaveAsAction_qml.cpp[0m
+[ 41%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/ScreenshotModeMenuButton_qml.cpp[0m
+[ 41%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/ScreenshotView_qml.cpp[0m
+[ 42%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/ShortcutsTextBox_qml.cpp[0m
+[ 42%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/SizeLabel_qml.cpp[0m
+[ 42%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/TextContextMenuConnection_qml.cpp[0m
+[ 43%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/TtToolButton_qml.cpp[0m
+[ 43%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/UndoRedoGroup_qml.cpp[0m
+[ 44%] [1m[34mGenerating .rcc/qmlcache/spectacle_Gui/ViewerPage_qml.cpp[0m
+[ 45%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/spectacle_autogen/mocs_compilation.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/settings.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/spectacle_debug.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/spectacle_qmltyperegistrations.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.qt/rcc/qrc_qmake_org_kde_spectacle_private.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/CaptureModeModel.cpp.o[0m
+[ 48%] [1m[32mLinking CXX executable ../bin/spectacle-24.02.0-keep_old_save_location[0m
+[ 50%] Built target spectacle-24.02.0-keep_old_save_location
+[ 50%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/CommandLineOptions.cpp.o[0m
+[ 51%] [1m[32mLinking CXX executable ../bin/spectacle-24.02.0-keep_old_filename_templates[0m
+[ 52%] Built target spectacle-24.02.0-keep_old_filename_templates
+[ 53%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/ExportManager.cpp.o[0m
+[ 54%] [1m[32mLinking CXX executable ../bin/spectacle-24.02.0-change_placeholder_format[0m
+[ 54%] Built target spectacle-24.02.0-change_placeholder_format
+[ 54%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Geometry.cpp.o[0m
+[ 54%] [1m[32mLinking CXX executable ../bin/spectacle-24.02.0-video_format[0m
+[ 55%] Built target spectacle-24.02.0-video_format
+[ 55%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/OcrManager.cpp.o[0m
+[ 56%] [1m[32mLinking CXX executable ../bin/spectacle-24.02.0-rename_settings[0m
+[ 57%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/CaptureWindow.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/ExportMenu.cpp.o[0m
+[ 58%] Built target spectacle-24.02.0-rename_settings
+[ 59%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/HelpMenu.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/InlineMessageModel.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/OptionsMenu.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/RecordingModeMenu.cpp.o[0m
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/ExportManager.cpp:[m[K In member function ‘[01m[Kbool ExportManager::[01;32m[KlocalSave[m[K(const QUrl&, const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/ExportManager.cpp:484:20:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kvirtual bool QFile::[01;32m[Kopen[m[K(QIODeviceBase::OpenMode)[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-result-Wunused-result]8;;[m[K]
+  484 |     [01;35m[KoutputFile.open(QFile::WriteOnly)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qdir.h:11[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/QDir:1[m[K,
+                 from [01m[K/var/tmp/hokuto/spectacle-01/build/src/ExportManager.cpp:16[m[K:
+[01m[K/usr/include/qt6/QtCore/qfile.h:264:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  264 |     QFILE_MAYBE_NODISCARD bool [01;36m[Kopen[m[K(OpenMode flags) override;
+      |                                [01;36m[K^~~~[m[K
+[ 60%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/ScreenshotModeMenu.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/Selection.cpp.o[0m
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Gui/CaptureWindow.cpp:[m[K In constructor ‘[01m[KCaptureWindow::[01;32m[KCaptureWindow[m[K(Mode, QScreen*, QQmlEngine*, QWindow*)[m[K’:
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Gui/CaptureWindow.cpp:45:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KQt::MaximizeUsingFullscreenGeometryHint[m[K’ is deprecated: Use Qt::ExpandedClientAreaHint instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   45 |         Qt::[01;35m[KMaximizeUsingFullscreenGeometryHint[m[K // also use the areas where system UIs are
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/qarraydataops.h:11[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/qarraydatapointer.h:8[m[K,
+                 from [01m[K/usr/include/qt6/QtCore/qlist.h:9[m[K,
+                 from [01m[K/usr/include/qt6/QtQuick/qsgnode.h:7[m[K,
+                 from [01m[K/usr/include/qt6/QtQuick/qsgrendererinterface.h:7[m[K,
+                 from [01m[K/usr/include/qt6/QtQuick/qquickwindow.h:9[m[K,
+                 from [01m[K/usr/include/qt6/QtQuick/qquickview.h:8[m[K,
+                 from [01m[K/usr/include/qt6/QtQuick/QQuickView:1[m[K,
+                 from [01m[K/var/tmp/hokuto/spectacle-01/build/src/Gui/SpectacleWindow.h:9[m[K,
+                 from [01m[K/var/tmp/hokuto/spectacle-01/build/src/Gui/CaptureWindow.h:9[m[K,
+                 from [01m[K/var/tmp/hokuto/spectacle-01/build/src/Gui/CaptureWindow.cpp:8[m[K:
+[01m[K/usr/include/qt6/QtCore/qnamespace.h:248:9:[m[K [01;36m[Knote: [m[Kdeclared here
+  248 |         [01;36m[KMaximizeUsingFullscreenGeometryHint[m[K Q_DECL_ENUMERATOR_DEPRECATED_X(
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 61%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SelectionEditor.cpp.o[0m
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Gui/CaptureWindow.cpp:[m[K In member function ‘[01m[Kvoid CaptureWindow::[01;32m[KsetMode[m[K(Mode)[m[K’:
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Gui/CaptureWindow.cpp:124:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  124 | void CaptureWindow::setMode([01;35m[KCaptureWindow::Mode mode[m[K)
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[ 63%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/GeneralOptionsPage.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/ImageSaveOptionsPage.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/OcrLanguageSelector.cpp.o[0m
+[ 64%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/SettingsDialog.cpp.o[0m
+[ 64%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/ShortcutsOptionsPage.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/VideoFormatComboBox.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SettingsDialog/VideoSaveOptionsPage.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SmartSpinBox.cpp.o[0m
+[ 66%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SpectacleMenu.cpp.o[0m
+[ 66%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/SpectacleWindow.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/TextContextMenu.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Gui/ViewerWindow.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Main.cpp.o[0m
+[ 68%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/PlasmaVersion.cpp.o[0m
+[ 68%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Platforms/ImagePlatform.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Platforms/ImagePlatformKWin.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Platforms/PlatformLoader.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Platforms/PlatformNull.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Platforms/screencasting.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Platforms/VideoPlatform.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Platforms/VideoPlatformWayland.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/RecordingModeModel.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/ScreenShotEffect.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/ShortcutActions.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/SpectacleCore.cpp.o[0m
+[ 73%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/SpectacleDBusAdapter.cpp.o[0m
+[ 73%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/VideoFormatModel.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/Platforms/ImagePlatformXcb.cpp.o[0m
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/ScreenShotEffect.cpp:[m[K In static member function ‘[01m[Kstatic quint32 ScreenShotEffect::[01;32m[Kversion[m[K()[m[K’:
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/ScreenShotEffect.cpp:40:24:[m[K [01;35m[Kwarning: [m[Kenumerated and non-enumerated type in conditional expression [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+   40 |         s_version = [01;35m[Kok ? version : ScreenShotEffect::NullVersion[m[K;
+      |                     [01;35m[K~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 75%] [32mBuilding C object src/CMakeFiles/spectacle.dir/wayland-zkde-screencast-unstable-v1-protocol.c.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/qwayland-zkde-screencast-unstable-v1.cpp.o[0m
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/VideoPlatformWayland.cpp:[m[K In lambda function:
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/VideoPlatformWayland.cpp:254:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid PipeWireBaseEncodedStream::[01;32m[KsetNodeId[m[K(uint)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  254 |         [01;35m[Km_recorder->setNodeId(0)[m[K;
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/KPipeWire/pipewirerecord.h:12[m[K,
+                 from [01m[K/usr/include/KPipeWire/PipeWireRecord:1[m[K,
+                 from [01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/VideoPlatformWayland.h:10[m[K,
+                 from [01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/VideoPlatformWayland.cpp:7[m[K:
+[01m[K/usr/include/KPipeWire/pipewirebaseencodedstream.h:53:31:[m[K [01;36m[Knote: [m[Kdeclared here
+   53 |     KPIPEWIRE_DEPRECATED void [01;36m[KsetNodeId[m[K(uint nodeId);
+      |                               [01;36m[K^~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/VideoPlatformWayland.cpp:[m[K In lambda function:
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/VideoPlatformWayland.cpp:258:34:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid PipeWireBaseEncodedStream::[01;32m[KsetNodeId[m[K(uint)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  258 |             [01;35m[Km_recorder->setNodeId(stream->nodeId())[m[K;
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/KPipeWire/pipewirebaseencodedstream.h:53:31:[m[K [01;36m[Knote: [m[Kdeclared here
+   53 |     KPIPEWIRE_DEPRECATED void [01;36m[KsetNodeId[m[K(uint nodeId);
+      |                               [01;36m[K^~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/VideoPlatformWayland.cpp:[m[K In lambda function:
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/VideoPlatformWayland.cpp:319:31:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint PipeWireBaseEncodedStream::[01;32m[KnodeId[m[K() const[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  319 |         if ([01;35m[Km_recorder->nodeId()[m[K != 0) {
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/usr/include/KPipeWire/pipewirebaseencodedstream.h:54:31:[m[K [01;36m[Knote: [m[Kdeclared here
+   54 |     KPIPEWIRE_DEPRECATED uint [01;36m[KnodeId[m[K() const;
+      |                               [01;36m[K^~~~~~[m[K
+[ 76%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_qmlcache_loader.cpp.o[0m
+[ 76%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/AcceptAction_qml.cpp.o[0m
+[ 77%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/AnimatedLoader_qml.cpp.o[0m
+[ 77%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/AnnotationEditor_qml.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/AnnotationOptionsToolBarContents_qml.cpp.o[0m
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/ImagePlatformXcb.cpp:[m[K In member function ‘[01m[Kvoid ImagePlatformXcb::[01;32m[KgrabActiveWindow[m[K(bool, bool, bool)[m[K’:
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/ImagePlatformXcb.cpp:560:92:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KincludeShadow[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  560 | void ImagePlatformXcb::grabActiveWindow(bool includePointer, bool includeDecorations, [01;35m[Kbool includeShadow[m[K)
+      |                                                                                       [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/ImagePlatformXcb.cpp:[m[K In member function ‘[01m[Kvoid ImagePlatformXcb::[01;32m[KgrabWindowUnderCursor[m[K(bool, bool, bool)[m[K’:
+[01m[K/var/tmp/hokuto/spectacle-01/build/src/Platforms/ImagePlatformXcb.cpp:565:97:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KincludeShadow[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  565 | void ImagePlatformXcb::grabWindowUnderCursor(bool includePointer, bool includeDecorations, [01;35m[Kbool includeShadow[m[K)
+      |                                                                                            [01;35m[K~~~~~^~~~~~~~~~~~~[m[K
+[ 78%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/AnnotationsToolBarContents_qml.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/ButtonGrid_qml.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/CancelAction_qml.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/CaptureModeButtonsColumn_qml.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/CaptureOptions_qml.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/CaptureOverlay_qml.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/CaptureSettingsColumn_qml.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/CopyImageAction_qml.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/CopyLocationAction_qml.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/DashedOutline_qml.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/DelaySpinBox_qml.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/DialogPage_qml.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/EditAction_qml.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/EmptyPage_qml.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/ExportMenuButton_qml.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/FloatingBackground_qml.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/FloatingToolBar_qml.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/Handle_qml.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/HelpMenuButton_qml.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/InlineMessageList_qml.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/Magnifier_qml.cpp.o[0m
+[ 88%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/NewScreenshotToolButton_qml.cpp.o[0m
+[ 88%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/OcrAction_qml.cpp.o[0m
+[ 88%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/OptionsMenuButton_qml.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/Outline_qml.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/QmlUtils_qml.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/RecordAction_qml.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/RecordingModeButtonsColumn_qml.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/RecordingModeMenuButton_qml.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/RecordingSettingsColumn_qml.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/RecordingView_qml.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/SaveAction_qml.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/RecordOptions_qml.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/SaveAsAction_qml.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/ScreenshotModeMenuButton_qml.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/ScreenshotView_qml.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/ShortcutsTextBox_qml.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/SizeLabel_qml.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/TextContextMenuConnection_qml.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/TtToolButton_qml.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/UndoRedoGroup_qml.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.rcc/qmlcache/spectacle_Gui/ViewerPage_qml.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/.qt/rcc/qrc_spectacle_raw_qml_0.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/spectacle.dir/__/icons/.qt/rcc/qrc_spectacle_icons.cpp.o[0m
+[ 97%] [1m[32mLinking CXX executable ../bin/spectacle[0m
+[100%] Built target spectacle
+-- Install configuration: ""
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/bin/spectacle
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/lib/systemd/user/app-org.kde.spectacle.service
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/dbus-1/services/org.kde.spectacle.service
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/dbus-1/services/org.kde.Spectacle.service
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/dbus-1/interfaces/org.kde.Spectacle.xml
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/applications/org.kde.spectacle.desktop
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/kglobalaccel
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/knotifications6/spectacle.notifyrc
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/metainfo/org.kde.spectacle.appdata.xml
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/icons/hicolor/scalable/apps/spectacle.svg
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/kconf_update/spectacle.upd
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/lib64/kconf_update_bin/spectacle-24.02.0-video_format
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/lib64/kconf_update_bin/spectacle-24.02.0-keep_old_save_location
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/lib64/kconf_update_bin/spectacle-24.02.0-rename_settings
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/lib64/kconf_update_bin/spectacle-24.02.0-keep_old_filename_templates
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/lib64/kconf_update_bin/spectacle-24.02.0-change_placeholder_format
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/en/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/en/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/en/spectacle/Annotate.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/en/spectacle/ApplicationPreferences.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/en/spectacle/MainWindow.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/en/spectacle/SaveOptions.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/ca/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/ca/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/ca/spectacle/Annotate.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/ca/spectacle/ApplicationPreferences.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/ca/spectacle/MainWindow.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/ca/spectacle/SaveOptions.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/ca/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/de/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/de/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/de/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/es/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/es/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/es/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/it/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/it/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/it/spectacle/ApplicationPreferences.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/it/spectacle/MainWindow.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/it/spectacle/SaveOptions.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/it/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/nl/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/nl/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/nl/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/pt/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/pt/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/pt_BR/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/pt_BR/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/pt_BR/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/ru/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/ru/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/sl/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/sl/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/sl/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/sv/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/sv/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/sv/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/tr/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/tr/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/tr/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/uk/spectacle/index.cache.bz2
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/uk/spectacle/index.docbook
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/uk/spectacle/Annotate.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/uk/spectacle/ApplicationPreferences.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/uk/spectacle/MainWindow.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/doc/HTML/uk/spectacle/SaveOptions.png
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/man/uk/man1/spectacle.1
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/zh_CN/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ko/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/fi/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ca/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/nn/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/eo/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/is/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/az/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/nl/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/hsb/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ia/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/tr/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/lv/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sv/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/da/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/hu/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/lt/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sa/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ml/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ro/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/eu/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ru/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/nb/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/el/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pt_BR/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/et/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/es/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/fr/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sk/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/he/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr@latin/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pa/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/cs/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/it/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ar/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sr/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ta/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/gl/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ast/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ja/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/id/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/bg/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pl/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/en_GB/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/zh_TW/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/pt/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/hi/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ga/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ka/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/uk/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ie
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/ie/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/sl/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/locale/de/LC_MESSAGES/spectacle.mo
+-- Installing: /var/tmp/hokuto/spectacle-01/output/usr/share/qlogging-categories6/spectacle.categories
+
+Script done on 2026-08-10 13:21:00+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mspectacle[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 10 Aug 2026 06:21:01 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m48s[0m
