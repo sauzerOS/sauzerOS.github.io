@@ -1,0 +1,970 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlinux-tools[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlinux-tools 7.1.8-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 10 Aug 2026 05:17:21 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlinux-tools[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mclang elfutils git glib libcap libelf libnl libunwind llvm ncurses openssl pciutils perl python python-docutils python-setuptools readline slang systemd xmlto zlib-ng zstd[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlinux-tools[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 clang-22.1.8-1 diffutils-3.12-1 elfutils-0.195-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 git-2.55.0-1 glib-2.88.3-1 grep-3.12-1 gzip-1.14-1 libcap-2.78-1 libelf-0.195-1 libnl-3.12.0-1 libtool-2.6.2-1 libunwind-1.8.3-1 llvm-22.1.8-1 m4-1.4.21-1 make-4.4.1-1 ncurses-6.6-20260103-1 openssl-4.0.1-2 patch-2.8-1 pciutils-3.15.0-1 perl-5.44.0-1 pkgconf-3.0.5-1 python-3.14.7-1 python-docutils-0.23-1 python-setuptools-83.0.0-1 readline-8.3.3-1 sed-4.10-1 slang-2.3.3-1 systemd-261.2-1 texinfo-7.3-1 which-2.25-1 xmlto-0.0.29-1 zlib-ng-2.3.3-1 zstd-1.5.7-1[0m
+
+Script started on 2026-08-10 12:17:23+07:00 [COMMAND="cd /var/tmp/hokuto/linux-tools-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/linux-tools-01/build/cargo' CC='cc' CFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/linux-tools-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/linux-tools-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='0' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/linux-tools-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/linux-tools-01/split' LDFLAGS='-fuse-ld=bfd -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/linux-tools-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/linux-tools-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/linux-tools-01/build/.cache' /repo/sauzeros/extra/linux-tools/build /var/tmp/hokuto/linux-tools-01/output 7.1.8 linux-tools" <not executed on terminal>]
+:: cpupower
+/var/tmp/hokuto/linux-tools-01/build/tools/power/cpupower /var/tmp/hokuto/linux-tools-01/build
+  CC       lib/cpuidle.o
+  CC       lib/acpi_cppc.o
+  CC       lib/powercap.o
+  CC       utils/helpers/amd.o
+  CC       utils/helpers/msr.o
+  CC       utils/helpers/misc.o
+  CC       utils/helpers/cpuid.o
+  CC       lib/cpufreq.o
+  CC       lib/cpupower.o
+  CC       utils/helpers/sysfs.o
+  CC       utils/helpers/pci.o
+  CC       utils/helpers/bitmask.o
+  CC       utils/idle_monitor/nhm_idle.o
+  CC       utils/idle_monitor/snb_idle.o
+  CC       utils/idle_monitor/hsw_ext_idle.o
+  CC       utils/idle_monitor/amd_fam14h_idle.o
+  CC       utils/idle_monitor/cpuidle_sysfs.o
+  CC       utils/idle_monitor/mperf_monitor.o
+  CC       utils/idle_monitor/cpupower-monitor.o
+  CC       utils/idle_monitor/rapl_monitor.o
+  CC       utils/cpupower.o
+  CC       utils/cpufreq-info.o
+  CC       utils/cpufreq-set.o
+  CC       utils/cpupower-set.o
+  CC       utils/cpupower-info.o
+  CC       utils/cpuidle-info.o
+  CC       utils/cpuidle-set.o
+  CC       utils/powercap-info.o
+  MSGFMT   po/de.gmo
+  MSGFMT   po/fr.gmo
+  MSGFMT   po/it.gmo
+  MSGFMT   po/cs.gmo
+  MSGFMT   po/pt.gmo
+  MSGFMT   po/ka.gmo
+  MSGFMT   po/zh_CN.gmo
+  LD       libcpupower.so.1.0.1
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/power/cpupower/bench'
+  CC       main.o
+  CC       parse.o
+  CC       system.o
+  CC       benchmark.o
+  CC       cpufreq-bench
+  CC       cpupower
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/power/cpupower/bench'
+/usr/bin/install -c -d /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/lib
+/usr/bin/install -c -d /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/lib/systemd/system
+/usr/bin/install -c -m 644 -D man/cpupower.1 /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/man/man1/cpupower.1
+/usr/bin/install -c -d /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale
+cp -fpR ./libcpupower.so* /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/lib/
+sed 's|___CDIR___|/etc/default/|; s|___LDIR___|/usr/lib/systemd/scripts|' cpupower.service.in > '/var/tmp/hokuto/linux-tools-01/split/cpupower/usr/lib/systemd/system/cpupower.service'
+/usr/bin/install -c -m 644 -D man/cpupower-frequency-set.1 /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/man/man1/cpupower-frequency-set.1
+for HLANG in de fr it cs pt ka zh_CN; do \
+	echo '/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo'; \
+	/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo; \
+done;
+/usr/bin/install -c -m 644 -D man/cpupower-frequency-info.1 /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/man/man1/cpupower-frequency-info.1
+/usr/bin/install -c -m 644 -D man/cpupower-idle-set.1 /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/man/man1/cpupower-idle-set.1
+/usr/bin/install -c -m 644 -D man/cpupower-idle-info.1 /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/man/man1/cpupower-idle-info.1
+/usr/bin/install -c -d /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/include
+/usr/bin/install -c -m 644 -D man/cpupower-set.1 /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/man/man1/cpupower-set.1
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/power/cpupower/bench'
+make[1]: 'cpufreq-bench' is up to date.
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/power/cpupower/bench'
+/usr/bin/install -c -m 644 lib/cpufreq.h /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/include/cpufreq.h
+/usr/bin/install -c -m 644 -D man/cpupower-info.1 /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/man/man1/cpupower-info.1
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -m 644 lib/cpuidle.h /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/include/cpuidle.h
+chmod 644 '/var/tmp/hokuto/linux-tools-01/split/cpupower/usr/lib/systemd/system/cpupower.service'
+/usr/bin/install -c -m 644 -D man/cpupower-monitor.1 /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/man/man1/cpupower-monitor.1
+/usr/bin/install -c -m 644 lib/powercap.h /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/include/powercap.h
+/usr/bin/install -c -m 644 -D man/cpupower-powercap-info.1 /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/man/man1/cpupower-powercap-info.1
+/usr/bin/install -c -d /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/bin
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+make: Nothing to be done for 'install-man'.
+/usr/bin/install -c ./cpupower /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/bin
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -d /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/bash-completion/completions
+/usr/bin/install -c -m 644 cpupower-completion.sh '/var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/bash-completion/completions/cpupower'
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -d /var/tmp/hokuto/linux-tools-01/split/cpupower/etc/default/
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -m 644 cpupower-service.conf '/var/tmp/hokuto/linux-tools-01/split/cpupower/etc/default/'
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/power/cpupower/bench'
+mkdir -p /var/tmp/hokuto/linux-tools-01/split/cpupower//usr/bin
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c -d /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/lib/systemd/scripts
+mkdir -p /var/tmp/hokuto/linux-tools-01/split/cpupower//usr/bin
+mkdir -p /var/tmp/hokuto/linux-tools-01/split/cpupower//usr/share/doc/cpupower
+/usr/bin/install -c -m 644 -D ./po/$HLANG.gmo /var/tmp/hokuto/linux-tools-01/split/cpupower/usr/share/locale/$HLANG/LC_MESSAGES/cpupower.mo
+/usr/bin/install -c cpupower.sh '/var/tmp/hokuto/linux-tools-01/split/cpupower/usr/lib/systemd/scripts/cpupower'
+mkdir -p /var/tmp/hokuto/linux-tools-01/split/cpupower//etc/default/
+install -m 755 .//cpufreq-bench /var/tmp/hokuto/linux-tools-01/split/cpupower//usr/bin/cpufreq-bench
+install -m 755 cpufreq-bench_plot.sh /var/tmp/hokuto/linux-tools-01/split/cpupower//usr/bin/cpufreq-bench_plot.sh
+install -m 644 README-BENCH /var/tmp/hokuto/linux-tools-01/split/cpupower//usr/share/doc/cpupower/README-BENCH
+install -m 755 cpufreq-bench_script.sh /var/tmp/hokuto/linux-tools-01/split/cpupower//usr/share/doc/cpupower/cpufreq-bench_script.sh
+install -m 644 example.cfg /var/tmp/hokuto/linux-tools-01/split/cpupower//etc/default//cpufreq-bench.conf
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/power/cpupower/bench'
+/var/tmp/hokuto/linux-tools-01/build
+:: x86_energy_perf_policy
+/var/tmp/hokuto/linux-tools-01/build/tools/power/x86/x86_energy_perf_policy /var/tmp/hokuto/linux-tools-01/build
+gcc -march=native -mtune=native -O2 -pipe -fomit-frame-pointer -Wno-error=discarded-qualifiers -O2 -Wall -I../../../include -DMSRHEADER='"../../../../arch/x86/include/asm/msr-index.h"' -D_FORTIFY_SOURCE=2 x86_energy_perf_policy.c -o /var/tmp/hokuto/linux-tools-01/build/tools/power/x86/x86_energy_perf_policy/x86_energy_perf_policy -fuse-ld=bfd -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+/var/tmp/hokuto/linux-tools-01/build
+:: usbip
+/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip /var/tmp/hokuto/linux-tools-01/build
++ autoreconf -i -f -v
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: no obvious need to run autopoint
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: no need to run autopoint (confirmed)
+autoreconf: running: aclocal --force 
+autoreconf: running: /usr/bin/autoconf --force
+configure.ac:30: warning: The macro 'AC_HEADER_STDC' is obsolete.
+configure.ac:30: You should run autoupdate.
+./lib/autoconf/headers.m4:664: AC_HEADER_STDC is expanded from...
+configure.ac:30: the top level
+configure.ac:31: warning: whitespace-separated list contains macros;
+configure.ac:31: in a future version of Autoconf they will not be expanded
+configure.ac:31: note: 'dnl' is a macro
+./lib/autoconf/headers.m4:218: AC_CHECK_HEADERS is expanded from...
+configure.ac:31: the top level
+configure.ac:44: warning: whitespace-separated list contains macros;
+configure.ac:44: in a future version of Autoconf they will not be expanded
+configure.ac:44: note: 'dnl' is a macro
+./lib/autoconf/functions.m4:118: AC_CHECK_FUNCS is expanded from...
+configure.ac:44: the top level
+configure.ac:55: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:55: You should run autoupdate.
+./lib/autoconf/general.m4:2976: AC_TRY_LINK is expanded from...
+lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+./lib/autoconf/general.m4:1603: AC_ARG_WITH is expanded from...
+configure.ac:55: the top level
+configure.ac:55: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:55: You should run autoupdate.
+./lib/autoconf/general.m4:2976: AC_TRY_LINK is expanded from...
+lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+./lib/autoconf/general.m4:1603: AC_ARG_WITH is expanded from...
+configure.ac:55: the top level
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:16: installing './compile'
+configure.ac:16: installing './config.guess'
+configure.ac:16: installing './config.sub'
+configure.ac:15: installing './install-sh'
+configure.ac:15: installing './missing'
+libsrc/Makefile.am: installing './depcomp'
+autoreconf: './config.sub' is updated
+autoreconf: './config.guess' is updated
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C23 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking dependency style of cc... (cached) gcc3
+checking whether make sets $(MAKE)... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for egrep... (cached) /usr/bin/grep -E
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/socket.h... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking for int32_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint8_t... yes
+checking whether realloc (0, 0) returns nonnull... (cached) yes
+checking for memset... yes
+checking for mkdir... yes
+checking for regcomp... yes
+checking for socket... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for strstr... yes
+checking for strtoul... yes
+checking for libudev.h... yes
+checking for udev_new in -ludev... yes
+checking whether to use the libwrap (TCP wrappers) library... (default)
+checking for hosts_access in -lwrap... no
+checking whether to use fortify... default
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libsrc/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip'
+Making all in libsrc
+make[2]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/libsrc'
+  CC       libusbip_la-usbip_device_driver.lo
+  CC       libusbip_la-usbip_common.lo
+  CC       libusbip_la-usbip_host_common.lo
+  CC       libusbip_la-vhci_driver.lo
+  CC       libusbip_la-names.lo
+  CC       libusbip_la-usbip_host_driver.lo
+  CC       libusbip_la-sysfs_utils.lo
+  CCLD     libusbip.la
+make[2]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/libsrc'
+Making all in src
+make[2]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/src'
+  CC       usbip_network.o
+  CC       usbip_attach.o
+  CC       usbip_detach.o
+  CC       usbip.o
+  CC       usbip_list.o
+  CC       utils.o
+  CC       usbip_bind.o
+  CC       usbip_unbind.o
+  CC       usbip_port.o
+  CC       usbipd.o
+  CCLD     usbip
+  CCLD     usbipd
+make[2]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/src'
+make[2]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip'
+make[2]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip'
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip'
+Making install in libsrc
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/libsrc'
+make[2]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/libsrc'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/linux-tools-01/split/usbip/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libusbip.la '/var/tmp/hokuto/linux-tools-01/split/usbip/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libusbip.so.0.0.1 /var/tmp/hokuto/linux-tools-01/split/usbip/usr/lib/libusbip.so.0.0.1
+libtool: install: (cd /var/tmp/hokuto/linux-tools-01/split/usbip/usr/lib && { ln -s -f libusbip.so.0.0.1 libusbip.so.0 || { rm -f libusbip.so.0 && ln -s libusbip.so.0.0.1 libusbip.so.0; }; })
+libtool: install: (cd /var/tmp/hokuto/linux-tools-01/split/usbip/usr/lib && { ln -s -f libusbip.so.0.0.1 libusbip.so || { rm -f libusbip.so && ln -s libusbip.so.0.0.1 libusbip.so; }; })
+libtool: install: /usr/bin/install -c .libs/libusbip.lai /var/tmp/hokuto/linux-tools-01/split/usbip/usr/lib/libusbip.la
+libtool: install: /usr/bin/install -c .libs/libusbip.a /var/tmp/hokuto/linux-tools-01/split/usbip/usr/lib/libusbip.a
+libtool: install: chmod 644 /var/tmp/hokuto/linux-tools-01/split/usbip/usr/lib/libusbip.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/linux-tools-01/split/usbip/usr/lib/libusbip.a
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[2]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/libsrc'
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/libsrc'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/src'
+make[2]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/src'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/linux-tools-01/split/usbip/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c usbip usbipd '/var/tmp/hokuto/linux-tools-01/split/usbip/usr/bin'
+libtool: [31mwarning[0m: [1m'../libsrc/libusbip.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/usbip /var/tmp/hokuto/linux-tools-01/split/usbip/usr/bin/usbip
+libtool: [31mwarning[0m: [1m'../libsrc/libusbip.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/usbipd /var/tmp/hokuto/linux-tools-01/split/usbip/usr/bin/usbipd
+make[2]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/src'
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip/src'
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip'
+make[2]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/linux-tools-01/split/usbip/usr/include/usbip'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/linux-tools-01/split/usbip/usr/share/man/man8'
+ /usr/bin/install -c -m 644 libsrc/usbip_common.h libsrc/vhci_driver.h libsrc/usbip_host_driver.h libsrc/list.h libsrc/sysfs_utils.h libsrc/usbip_host_common.h '/var/tmp/hokuto/linux-tools-01/split/usbip/usr/include/usbip'
+ /usr/bin/install -c -m 644 doc/usbip.8 doc/usbipd.8 '/var/tmp/hokuto/linux-tools-01/split/usbip/usr/share/man/man8'
+make[2]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip'
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/usb/usbip'
+/var/tmp/hokuto/linux-tools-01/build
+:: tmon
+/var/tmp/hokuto/linux-tools-01/build/tools/thermal/tmon /var/tmp/hokuto/linux-tools-01/build
+cc -march=native -mtune=native -O2 -pipe -fomit-frame-pointer -Wno-error=discarded-qualifiers -O3 -Wall -Wshadow -W -Wformat -Wimplicit-function-declaration -Wimplicit-int -fstack-protector-strong -D VERSION=\"1.0\" -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600   -c -o tmon.o tmon.c
+cc -march=native -mtune=native -O2 -pipe -fomit-frame-pointer -Wno-error=discarded-qualifiers -O3 -Wall -Wshadow -W -Wformat -Wimplicit-function-declaration -Wimplicit-int -fstack-protector-strong -D VERSION=\"1.0\" -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600   -c -o tui.o tui.c
+[01m[Ktmon.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ktmon.c:233:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstrncpy[m[K’ specified bound 20 equals destination size [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-stringop-truncation-Wstringop-truncation]8;;[m[K]
+  233 |                         [01;35m[Kstrncpy(ctrl_cdev, optarg, CDEV_NAME_SIZE)[m[K;
+      |                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+cc -march=native -mtune=native -O2 -pipe -fomit-frame-pointer -Wno-error=discarded-qualifiers -O3 -Wall -Wshadow -W -Wformat -Wimplicit-function-declaration -Wimplicit-int -fstack-protector-strong -D VERSION=\"1.0\" -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600   -c -o sysfs.o sysfs.c
+cc -march=native -mtune=native -O2 -pipe -fomit-frame-pointer -Wno-error=discarded-qualifiers -O3 -Wall -Wshadow -W -Wformat -Wimplicit-function-declaration -Wimplicit-int -fstack-protector-strong -D VERSION=\"1.0\" -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600   -c -o pid.o pid.c
+cc -march=native -mtune=native -O2 -pipe -fomit-frame-pointer -Wno-error=discarded-qualifiers -O3 -Wall -Wshadow -W -Wformat -Wimplicit-function-declaration -Wimplicit-int -fstack-protector-strong -D VERSION=\"1.0\" -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -fuse-ld=bfd -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack tmon.o tui.o sysfs.o pid.o  -o tmon -lm -lpthread -lpanelw -fuse-ld=bfd -flto=20 -O1 -Wl,--sort-common -lncursesw
+install -m 755 -p -D "tmon" "/var/tmp/hokuto/linux-tools-01/split/tmon/usr/bin/tmon"
+/var/tmp/hokuto/linux-tools-01/build
+:: turbostat
+/var/tmp/hokuto/linux-tools-01/build/tools/power/x86/turbostat /var/tmp/hokuto/linux-tools-01/build
+gcc -march=native -mtune=native -O2 -pipe -fomit-frame-pointer -Wno-error=discarded-qualifiers -O2 -Wall -Wextra -I../../../include -DMSRHEADER='"../../../../arch/x86/include/asm/msr-index.h"' -DINTEL_FAMILY_HEADER='"../../../../arch/x86/include/asm/intel-family.h"' -DBUILD_BUG_HEADER='"../../../../include/linux/build_bug.h"' -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2 turbostat.c -o /var/tmp/hokuto/linux-tools-01/build/tools/power/x86/turbostat/turbostat -fuse-ld=bfd -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -lcap -lrt
+install -d /var/tmp/hokuto/linux-tools-01/split/turbostat/usr/bin
+install /var/tmp/hokuto/linux-tools-01/build/tools/power/x86/turbostat/turbostat /var/tmp/hokuto/linux-tools-01/split/turbostat/usr/bin/turbostat
+install -d /var/tmp/hokuto/linux-tools-01/split/turbostat/usr/share/man/man8
+install -m 644 turbostat.8 /var/tmp/hokuto/linux-tools-01/split/turbostat/usr/share/man/man8
+/var/tmp/hokuto/linux-tools-01/build
+:: hv
+/var/tmp/hokuto/linux-tools-01/build/tools/hv /var/tmp/hokuto/linux-tools-01/build
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+  CC      hv_fcopy_uio_daemon.o
+  CC      vmbus_bufring.o
+  CC      hv_vss_daemon.o
+  CC      hv_kvp_daemon.o
+  LD      hv_fcopy_uio_daemon-in.o
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+  LD      hv_vss_daemon-in.o
+  LINK    hv_fcopy_uio_daemon
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+  LINK    hv_vss_daemon
+  LD      hv_kvp_daemon-in.o
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+  LINK    hv_kvp_daemon
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+  CC      hv_kvp_daemon.o
+  CC      vmbus_bufring.o
+  CC      hv_vss_daemon.o
+  CC      hv_fcopy_uio_daemon.o
+  LD      hv_vss_daemon-in.o
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+  LINK    hv_vss_daemon
+  LD      hv_fcopy_uio_daemon-in.o
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+  LINK    hv_fcopy_uio_daemon
+  LD      hv_kvp_daemon-in.o
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/hv'
+  LINK    hv_kvp_daemon
+install -d -m 755 /var/tmp/hokuto/linux-tools-01/split/hv/usr/bin; \
+install -d -m 755 /var/tmp/hokuto/linux-tools-01/split/hv/usr/lib/hypervkvpd; \
+install -d -m 755 /var/tmp/hokuto/linux-tools-01/split/hv/var/lib; \
+for program in hv_kvp_daemon hv_vss_daemon hv_fcopy_uio_daemon; do \
+	install $program -m 755 /var/tmp/hokuto/linux-tools-01/split/hv/usr/bin;	\
+done; \
+install -m 755 lsvmbus /var/tmp/hokuto/linux-tools-01/split/hv/usr/bin; \
+for script in hv_get_dhcp_info.sh hv_get_dns_info.sh hv_set_ifconfig.sh; do \
+	install $script -m 755 /var/tmp/hokuto/linux-tools-01/split/hv/usr/lib/hypervkvpd/${script%.sh}; \
+done
+/var/tmp/hokuto/linux-tools-01/build
+:: bpf
+/var/tmp/hokuto/linux-tools-01/build/tools/bpf /var/tmp/hokuto/linux-tools-01/build
+make: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool'
+
+Auto-detecting system features:
+...                         clang-bpf-co-re: [ [32mon[m  ]
+...                                    llvm: [ [32mon[m  ]
+...                                  libcap: [ [32mon[m  ]
+...                                  libbfd: [ [32mon[m  ]
+
+  MKDIR   /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/lib/bpf'
+  GEN     /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/bpf_helper_defs.h
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/libbpf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/bpf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/nlattr.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/btf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/libbpf_utils.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/netlink.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/bpf_prog_linfo.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/libbpf_probes.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/hashmap.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/btf_dump.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/ringbuf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/strset.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/linker.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/gen_loader.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/relo_core.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/usdt.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/zip.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/elf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/features.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/btf_iter.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/btf_relocate.o
+  LD      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/staticobjs/libbpf-in.o
+  LINK    /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/libbpf.a
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/bpf.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/libbpf.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/btf.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/libbpf_common.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/libbpf_legacy.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/bpf_helpers.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/bpf_tracing.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/bpf_endian.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/bpf_core_read.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/skel_internal.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/libbpf_version.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/usdt.bpf.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/bpf_helper_defs.h
+  INSTALL libbpf_headers
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/lib/bpf'
+  MKDIR   /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/hashmap.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/nlattr.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/relo_core.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/libbpf/include/bpf/libbpf_internal.h
+  CC      btf.o
+  CC      btf_dumper.o
+  CC      cfg.o
+  CC      cgroup.o
+  CC      common.o
+  CC      feature.o
+  CC      gen.o
+  CC      iter.o
+  CC      jit_disasm.o
+  CC      json_writer.o
+  CC      link.o
+  CC      main.o
+  CC      map.o
+  CC      map_perf_ring.o
+  CC      net.o
+  CC      netlink_dumper.o
+  CC      perf.o
+  MKDIR   /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/hashmap.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/relo_core.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/libbpf_internal.h
+  MKDIR   /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/
+  MKDIR   /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/lib/bpf'
+  GEN     /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/bpf_helper_defs.h
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/libbpf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/bpf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/nlattr.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/btf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/libbpf_utils.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/netlink.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/bpf_prog_linfo.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/libbpf_probes.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/hashmap.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/btf_dump.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/ringbuf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/strset.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/linker.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/gen_loader.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/relo_core.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/usdt.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/zip.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/elf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/features.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/btf_iter.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/btf_relocate.o
+  LD      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/staticobjs/libbpf-in.o
+  LINK    /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/libbpf.a
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/bpf.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/libbpf.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/btf.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/libbpf_common.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/libbpf_legacy.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/bpf_helpers.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/bpf_tracing.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/bpf_endian.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/bpf_core_read.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/skel_internal.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/libbpf_version.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/usdt.bpf.h
+  INSTALL /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/libbpf/include/bpf/bpf_helper_defs.h
+  INSTALL libbpf_headers
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/lib/bpf'
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/main.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/common.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/json_writer.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/gen.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/btf.o
+  CC      /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/sign.o
+  LINK    /var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool/bootstrap/bpftool
+  GEN     vmlinux.h
+skipping /sys/kernel/btf/vmlinux (will be loaded as base)
+  CLANG   pid_iter.bpf.o
+  GEN     pid_iter.skel.h
+  CC      pids.o
+  CLANG   profiler.bpf.o
+  GEN     profiler.skel.h
+  CC      prog.o
+  CC      sign.o
+  CC      struct_ops.o
+  CC      token.o
+  CC      tracelog.o
+  CC      xlated_dumper.o
+  CC      disasm.o
+  LINK    bpftool
+  DESCEND Documentation
+  GEN     bpftool-btf.8
+  GEN     bpftool-cgroup.8
+  GEN     bpftool-feature.8
+  GEN     bpftool-gen.8
+  GEN     bpftool-iter.8
+  GEN     bpftool-link.8
+  GEN     bpftool-map.8
+  GEN     bpftool-net.8
+  GEN     bpftool-perf.8
+  GEN     bpftool-prog.8
+  GEN     bpftool.8
+  GEN     bpftool-struct_ops.8
+  GEN     bpftool-token.8
+make: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool'
+
+Auto-detecting system features:
+...                                  libbfd: [ [32mon[m  ]
+
+  CC      bpf_asm.o
+  BISON   bpf_exp.yacc.c
+  DESCEND bpftool
+  CC      bpf_jit_disasm.o
+  CC      bpf_dbg.o
+  CC      bpf_exp.yacc.o
+  FLEX    bpf_exp.lex.c
+  CC      bpf_exp.lex.o
+  LINK    bpf_jit_disasm
+  LINK    bpf_dbg
+
+Auto-detecting system features:
+...                         clang-bpf-co-re: [ [32mon[m  ]
+...                                    llvm: [ [32mon[m  ]
+...                                  libcap: [ [32mon[m  ]
+...                                  libbfd: [ [32mon[m  ]
+
+make[1]: Nothing to be done for 'all'.
+  LINK    bpf_asm
+  DESCEND bpftool
+
+Auto-detecting system features:
+...                         clang-bpf-co-re: [ [32mon[m  ]
+...                                    llvm: [ [32mon[m  ]
+...                                  libcap: [ [32mon[m  ]
+...                                  libbfd: [ [32mon[m  ]
+
+  INSTALL bpftool
+  INSTALL bpf_jit_disasm
+  INSTALL bpf_dbg
+  INSTALL bpf_asm
+make: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool'
+  DESCEND Documentation
+  INSTALL Documentation-man
+make: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/bpf/bpftool'
+/var/tmp/hokuto/linux-tools-01/build
+:: bootconfig
+/var/tmp/hokuto/linux-tools-01/build/tools/bootconfig /var/tmp/hokuto/linux-tools-01/build
+cc main.c /var/tmp/hokuto/linux-tools-01/build/lib/bootconfig.c -march=native -mtune=native -O2 -pipe -fomit-frame-pointer -Wno-error=discarded-qualifiers -Wall -g -I/var/tmp/hokuto/linux-tools-01/build/tools/bootconfig/include -fuse-ld=bfd -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o bootconfig
+./test-bootconfig.sh 
+Boot config test script
+Basic command test
+test case 1 (./bootconfig ./initrd-h2l8)... 
+Error: Config data is empty.
+		[OK]
+Delete command should success without bootconfig
+test case 2 (./bootconfig -d ./initrd-h2l8)... 
+		[OK]
+1+0 records in
+1+0 records out
+4096 bytes (4.1 kB, 4.0 KiB) copied, 6.2715e-05 s, 65.3 MB/s
+Apply command test
+test case 3 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Apply ./temp-XnVT.bconf to ./initrd-h2l8
+	Number of nodes: 2
+	Size: 13 bytes
+	Checksum: 1054
+		[OK]
+Show command test
+test case 4 (./bootconfig ./initrd-h2l8)... 
+key = "value";
+		[OK]
+File size check
+test case 5 (test 4132 -eq 4132)... 
+		[OK]
+Apply command repeat test
+test case 6 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Apply ./temp-XnVT.bconf to ./initrd-h2l8
+	Number of nodes: 2
+	Size: 13 bytes
+	Checksum: 1054
+		[OK]
+File size check
+test case 7 (test 4132 -eq 4132)... 
+		[OK]
+Delete command check
+test case 8 (./bootconfig -d ./initrd-h2l8)... 
+		[OK]
+File size check
+test case 9 (test 4096 -eq 4096)... 
+		[OK]
+No error messge while applying
+1+0 records in
+1+0 records out
+4096 bytes (4.1 kB, 4.0 KiB) copied, 5.0556e-05 s, 81.0 MB/s
+test case 10 (grep -i failed ./tempout-5OtW)... 
+		[OK]
+test case 11 (grep -i error ./tempout-5OtW)... 
+		[OK]
+Max node number check
+test case 12 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Apply ./temp-XnVT.bconf to ./initrd-h2l8
+	Number of nodes: 8192
+	Size: 32717 bytes
+	Checksum: 1925416
+		[OK]
+test case 13 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Parse Error: Too many nodes at 8193:1
+		[OK]
+Max filesize check
+32+0 records in
+32+0 records out
+24576 bytes (25 kB, 24 KiB) copied, 0.000107176 s, 229 MB/s
+test case 14 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Error: Config data is too big.
+		[OK]
+32764+0 records in
+32764+0 records out
+32764 bytes (33 kB, 32 KiB) copied, 0.0219043 s, 1.5 MB/s
+test case 15 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Apply ./temp-XnVT.bconf to ./initrd-h2l8
+	Number of nodes: 2
+	Size: 32767 bytes
+	Checksum: 2796273
+		[OK]
+Adding same-key values
+test case 16 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Apply ./temp-XnVT.bconf to ./initrd-h2l8
+	Number of nodes: 4
+	Size: 27 bytes
+	Checksum: 2023
+		[OK]
+test case 17 (grep -q bar ./tempout-5OtW)... 
+		[OK]
+test case 18 (grep -q baz ./tempout-5OtW)... 
+		[OK]
+test case 19 (grep -q qux ./tempout-5OtW)... 
+		[OK]
+Override same-key values
+test case 20 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Apply ./temp-XnVT.bconf to ./initrd-h2l8
+	Number of nodes: 3
+	Size: 27 bytes
+	Checksum: 2038
+		[OK]
+test case 21 (grep -q bar ./tempout-5OtW)... 
+		[OK]
+test case 22 (grep -q baz ./tempout-5OtW)... 
+		[OK]
+test case 23 (grep -q qux ./tempout-5OtW)... 
+		[OK]
+Double/single quotes test
+Apply ./temp-XnVT.bconf to ./initrd-h2l8
+	Number of nodes: 2
+	Size: 18 bytes
+	Checksum: 1322
+key = '"string"';
+test case 24 (grep '"string"' ./temp-XnVT.bconf)... 
+key = '"string"';
+		[OK]
+Repeat same-key tree
+test case 25 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Apply ./temp-XnVT.bconf to ./initrd-h2l8
+	Number of nodes: 3
+	Size: 21 bytes
+	Checksum: 1668
+		[OK]
+test case 26 (grep -q bar ./tempout-5OtW)... 
+		[OK]
+Remove/keep tailing spaces
+test case 27 (./bootconfig -a ./temp-XnVT.bconf ./initrd-h2l8)... 
+Apply ./temp-XnVT.bconf to ./initrd-h2l8
+	Number of nodes: 4
+	Size: 49 bytes
+	Checksum: 3535
+		[OK]
+test case 28 (grep -q val[[:space:]] ./tempout-5OtW)... 
+		[OK]
+test case 29 (grep -q val2[[:space:]] ./tempout-5OtW)... 
+		[OK]
+Showing correct line:column of no closing brace
+test case 30 (grep -q 1:1 ./tempout-5OtW)... 
+		[OK]
+=== expected failure cases ===
+test case 31 (./bootconfig -a samples/bad-array-after-comment.bconf ./initrd-h2l8)... 
+Parse Error: Invalid keyword at 3:2
+		[OK]
+test case 32 (./bootconfig -a samples/bad-array.bconf ./initrd-h2l8)... 
+Parse Error: No value delimiter at 2:16
+		[OK]
+test case 33 (./bootconfig -a samples/bad-array-in-next-line.bconf ./initrd-h2l8)... 
+Parse Error: Invalid keyword at 3:3
+		[OK]
+test case 34 (./bootconfig -a samples/bad-array-space-comment.bconf ./initrd-h2l8)... 
+Parse Error: Invalid keyword at 2:2
+		[OK]
+test case 35 (./bootconfig -a samples/bad-dotword.bconf ./initrd-h2l8)... 
+Parse Error: Invalid keyword at 3:3
+		[OK]
+test case 36 (./bootconfig -a samples/bad-empty.bconf ./initrd-h2l8)... 
+Parse Error: Empty config at 1:1
+		[OK]
+test case 37 (./bootconfig -a samples/bad-keyerror.bconf ./initrd-h2l8)... 
+Parse Error: Invalid keyword at 2:1
+		[OK]
+test case 38 (./bootconfig -a samples/bad-longkey.bconf ./initrd-h2l8)... 
+Parse Error: Too long key length at 1:1
+		[OK]
+test case 39 (./bootconfig -a samples/bad-manywords.bconf ./initrd-h2l8)... 
+Parse Error: Too many key words at 1:52
+		[OK]
+test case 40 (./bootconfig -a samples/bad-no-keyword.bconf ./initrd-h2l8)... 
+Parse Error: Invalid keyword at 2:1
+		[OK]
+test case 41 (./bootconfig -a samples/bad-non-closed-brace.bconf ./initrd-h2l8)... 
+Parse Error: Brace is not closed at 1:1
+		[OK]
+test case 42 (./bootconfig -a samples/bad-nonprintable.bconf ./initrd-h2l8)... 
+Parse Error: Non printable value at 2:8
+		[OK]
+test case 43 (./bootconfig -a samples/bad-over-max-brace.bconf ./initrd-h2l8)... 
+Parse Error: Exceed max depth of braces at 17:7
+		[OK]
+test case 44 (./bootconfig -a samples/bad-samekey.bconf ./initrd-h2l8)... 
+Parse Error: Value is redefined at 6:11
+		[OK]
+test case 45 (./bootconfig -a samples/bad-spaceword.bconf ./initrd-h2l8)... 
+Parse Error: Invalid keyword at 2:1
+		[OK]
+test case 46 (./bootconfig -a samples/bad-tree.bconf ./initrd-h2l8)... 
+Parse Error: Brace is not closed at 2:1
+		[OK]
+test case 47 (./bootconfig -a samples/bad-value.bconf ./initrd-h2l8)... 
+Parse Error: No closing quotes at 4:1
+		[OK]
+=== expected success cases ===
+test case 48 (./bootconfig -a samples/good-array-space-comment.bconf ./initrd-h2l8)... 
+Apply samples/good-array-space-comment.bconf to ./initrd-h2l8
+	Number of nodes: 4
+	Size: 64 bytes
+	Checksum: 4456
+		[OK]
+test case 49 (diff samples/exp-good-array-space-comment.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 50 (./bootconfig -a samples/good-comment-after-value.bconf ./initrd-h2l8)... 
+Apply samples/good-comment-after-value.bconf to ./initrd-h2l8
+	Number of nodes: 2
+	Size: 26 bytes
+	Checksum: 1959
+		[OK]
+test case 51 (diff samples/exp-good-comment-after-value.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 52 (./bootconfig -a samples/good-mixed-append.bconf ./initrd-h2l8)... 
+Apply samples/good-mixed-append.bconf to ./initrd-h2l8
+	Number of nodes: 6
+	Size: 43 bytes
+	Checksum: 3444
+		[OK]
+test case 53 (diff samples/exp-good-mixed-append.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 54 (./bootconfig -a samples/good-mixed-kv1.bconf ./initrd-h2l8)... 
+Apply samples/good-mixed-kv1.bconf to ./initrd-h2l8
+	Number of nodes: 4
+	Size: 66 bytes
+	Checksum: 5759
+		[OK]
+test case 55 (diff samples/exp-good-mixed-kv1.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 56 (./bootconfig -a samples/good-mixed-kv2.bconf ./initrd-h2l8)... 
+Apply samples/good-mixed-kv2.bconf to ./initrd-h2l8
+	Number of nodes: 4
+	Size: 66 bytes
+	Checksum: 5759
+		[OK]
+test case 57 (diff samples/exp-good-mixed-kv2.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 58 (./bootconfig -a samples/good-mixed-kv3.bconf ./initrd-h2l8)... 
+Apply samples/good-mixed-kv3.bconf to ./initrd-h2l8
+	Number of nodes: 5
+	Size: 81 bytes
+	Checksum: 6788
+		[OK]
+test case 59 (diff samples/exp-good-mixed-kv3.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 60 (./bootconfig -a samples/good-mixed-override.bconf ./initrd-h2l8)... 
+Apply samples/good-mixed-override.bconf to ./initrd-h2l8
+	Number of nodes: 4
+	Size: 77 bytes
+	Checksum: 6482
+		[OK]
+test case 61 (diff samples/exp-good-mixed-override.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 62 (./bootconfig -a samples/good-nested-brace.bconf ./initrd-h2l8)... 
+Apply samples/good-nested-brace.bconf to ./initrd-h2l8
+	Number of nodes: 16
+	Size: 138 bytes
+	Checksum: 11101
+		[OK]
+test case 63 (diff samples/exp-good-nested-brace.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 64 (./bootconfig -a samples/good-override.bconf ./initrd-h2l8)... 
+Apply samples/good-override.bconf to ./initrd-h2l8
+	Number of nodes: 9
+	Size: 99 bytes
+	Checksum: 7731
+		[OK]
+test case 65 (diff samples/exp-good-override.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 66 (./bootconfig -a samples/good-printables.bconf ./initrd-h2l8)... 
+Apply samples/good-printables.bconf to ./initrd-h2l8
+	Number of nodes: 2
+	Size: 108 bytes
+	Checksum: 8045
+		[OK]
+test case 67 (diff samples/exp-good-printables.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 68 (./bootconfig -a samples/good-simple.bconf ./initrd-h2l8)... 
+Apply samples/good-simple.bconf to ./initrd-h2l8
+	Number of nodes: 13
+	Size: 120 bytes
+	Checksum: 9036
+		[OK]
+test case 69 (diff samples/exp-good-simple.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 70 (./bootconfig -a samples/good-single.bconf ./initrd-h2l8)... 
+Apply samples/good-single.bconf to ./initrd-h2l8
+	Number of nodes: 7
+	Size: 60 bytes
+	Checksum: 4407
+		[OK]
+test case 71 (diff samples/exp-good-single.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 72 (./bootconfig -a samples/good-space-after-value.bconf ./initrd-h2l8)... 
+Apply samples/good-space-after-value.bconf to ./initrd-h2l8
+	Number of nodes: 2
+	Size: 18 bytes
+	Checksum: 1169
+		[OK]
+test case 73 (diff samples/exp-good-space-after-value.bconf ./temp-XnVT.bconf)... 
+		[OK]
+test case 74 (./bootconfig -a samples/good-tree.bconf ./initrd-h2l8)... 
+Apply samples/good-tree.bconf to ./initrd-h2l8
+	Number of nodes: 16
+	Size: 136 bytes
+	Checksum: 9171
+		[OK]
+test case 75 (diff samples/exp-good-tree.bconf ./temp-XnVT.bconf)... 
+		[OK]
+
+=== Summary ===
+# of Passed: 75
+# of Failed: 0
+
+All tests passed
+install bootconfig /var/tmp/hokuto/linux-tools-01/split/bootconfig/usr/bin
+/var/tmp/hokuto/linux-tools-01/build
+:: intel-speed-select
+/var/tmp/hokuto/linux-tools-01/build/tools/power/x86/intel-speed-select /var/tmp/hokuto/linux-tools-01/build
+mkdir -p include/linux 2>&1 || true
+mkdir -p include/linux 2>&1 || true
+ln -sf /var/tmp/hokuto/linux-tools-01/build/tools/power/x86/intel-speed-select/../../../../include/uapi/linux/isst_if.h include/linux/isst_if.h
+ln -sf /var/tmp/hokuto/linux-tools-01/build/tools/power/x86/intel-speed-select/../../../../include/uapi/linux/thermal.h include/linux/thermal.h
+make[1]: Entering directory '/var/tmp/hokuto/linux-tools-01/build/tools/power/x86/intel-speed-select'
+  CC      isst-display.o
+  CC      isst-daemon.o
+  CC      isst-config.o
+  CC      hfi-events.o
+  CC      isst-core.o
+  CC      isst-core-mbox.o
+  CC      isst-core-tpmi.o
+  LD      intel-speed-select-in.o
+make[1]: Leaving directory '/var/tmp/hokuto/linux-tools-01/build/tools/power/x86/intel-speed-select'
+  LINK    intel-speed-select
+install -d -m 755 /var/tmp/hokuto/linux-tools-01/split/intel-speed-select/usr/bin;		\
+for program in intel-speed-select; do		\
+	install $program /var/tmp/hokuto/linux-tools-01/split/intel-speed-select/usr/bin;	\
+done
+/var/tmp/hokuto/linux-tools-01/build
+:: kcpuid
+/var/tmp/hokuto/linux-tools-01/build/tools/arch/x86/kcpuid /var/tmp/hokuto/linux-tools-01/build
+cc -Wextra -O2 -Wall -I../../../include -o kcpuid kcpuid.c -fuse-ld=bfd -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+install -d  /var/tmp/hokuto/linux-tools-01/split/kcpuid/usr/bin /var/tmp/hokuto/linux-tools-01/split/kcpuid/usr/share/misc
+install -m 755 -p kcpuid /var/tmp/hokuto/linux-tools-01/split/kcpuid/usr/bin/kcpuid
+install -m 444 -p cpuid.csv /var/tmp/hokuto/linux-tools-01/split/kcpuid/usr/share/misc/cpuid.csv
+/var/tmp/hokuto/linux-tools-01/build
+
+Script done on 2026-08-10 12:18:10+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlinux-tools[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 10 Aug 2026 05:18:10 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m49s[0m
