@@ -1,0 +1,960 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibffi[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibffi 3.8.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mTue, 11 Aug 2026 01:07:21 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibffi[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibffi[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 lib32-gcc-libs-16.2.0-1 lib32-glibc-2.44-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.5-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-08-11 08:07:21+07:00 [COMMAND="cd /var/tmp/hokuto/libffi-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libffi-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libffi-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libffi-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libffi-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libffi-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libffi-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libffi-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libffi-01/build/.cache' /repo/sauzeros/core/libffi/build /var/tmp/hokuto/libffi-01/output 3.8.0 libffi" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+continue configure in default builddir "./x86_64-pc-linux-gnu"
+....exec /bin/sh .././configure "--srcdir=.." "--enable-builddir=x86_64-pc-linux-gnu" "linux
+gnu"
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for gsed... sed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking for c++ option to enable C++11 features... -std=gnu++11
+checking dependency style of c++ -std=gnu++11... gcc3
+checking dependency style of cc... gcc3
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... gcc-ranlib
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... c++ -std=gnu++11 -E
+checking for ld used by c++ -std=gnu++11... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for c++ -std=gnu++11 option to produce PIC... -fPIC -DPIC
+checking if c++ -std=gnu++11 PIC flag -fPIC -DPIC works... yes
+checking if c++ -std=gnu++11 static flag -static works... yes
+checking if c++ -std=gnu++11 supports -c -o file.o... yes
+checking if c++ -std=gnu++11 supports -c -o file.o... (cached) yes
+checking whether the c++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for readelf... readelf
+checking size of size_t... 8
+checking for C compiler vendor... gnu
+checking CFLAGS for most reasonable warnings... -Wall
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for sys/memfd.h... no
+checking for memfd_create... yes
+checking for memcpy... yes
+checking for alloca.h... yes
+checking size of double... (cached) 8
+checking size of long double... 16
+checking for __int128_t... yes
+checking whether byte ordering is bigendian... (cached) no
+checking assembler .cfi pseudo-op support... yes
+checking assembler supports pc related relocs... yes
+checking whether compiler supports pointer authentication... no
+checking for _ prefix in compiled symbols... no
+checking toolchain supports unwind section type... yes
+checking whether the C compiler accepts -fno-lto... yes
+checking whether .eh_frame section should be read-only... yes
+checking for __attribute__((visibility("hidden")))... yes
+checking for shared libgcc... yes
+configure: versioning on shared library symbols is gnu
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating include/Makefile
+config.status: creating include/ffi.h
+config.status: creating Makefile
+config.status: creating testsuite/Makefile
+config.status: creating man/Makefile
+config.status: creating doc/Makefile
+config.status: creating libffi.pc
+config.status: creating fficonfig.h
+config.status: executing buildir commands
+config.status: create top_srcdir/Makefile guessed from local Makefile
+config.status: build in x86_64-pc-linux-gnu (HOST=)
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing include commands
+config.status: executing src commands
+MAKE x86_64-pc-linux-gnu : 0 * all-all
+make[1]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make  all-recursive
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+Making all in include
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+Making all in testsuite
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+Making all in man
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+Making all in doc
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -DX86_64 -DGENERATE_LIBFFI_MAP \
+ -E -x assembler-with-cpp -o libffi.map ../libffi.map.in
+depbase=`echo src/prep_cif.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/prep_cif.lo -MD -MP -MF $depbase.Tpo -c -o src/prep_cif.lo ../src/prep_cif.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/types.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/types.lo -MD -MP -MF $depbase.Tpo -c -o src/types.lo ../src/types.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/raw_api.lo ../src/raw_api.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/java_raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/java_raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/java_raw_api.lo ../src/java_raw_api.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/closures.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/closures.lo -MD -MP -MF $depbase.Tpo -c -o src/closures.lo ../src/closures.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/tramp.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/tramp.lo -MD -MP -MF $depbase.Tpo -c -o src/tramp.lo ../src/tramp.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/x86/ffi64.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/x86/ffi64.lo -MD -MP -MF $depbase.Tpo -c -o src/x86/ffi64.lo ../src/x86/ffi64.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/x86/unix64.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src  '-I. -I../include -Iinclude -I../src' -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT src/x86/unix64.lo -MD -MP -MF $depbase.Tpo -c -o src/x86/unix64.lo ../src/x86/unix64.S &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/x86/ffiw64.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/x86/ffiw64.lo -MD -MP -MF $depbase.Tpo -c -o src/x86/ffiw64.lo ../src/x86/ffiw64.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/x86/win64.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile cc -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src  '-I. -I../include -Iinclude -I../src' -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT src/x86/win64.lo -MD -MP -MF $depbase.Tpo -c -o src/x86/win64.lo ../src/x86/win64.S &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/java_raw_api.lo -MD -MP -MF src/.deps/java_raw_api.Tpo -c ../src/java_raw_api.c  -fPIC -DPIC -o src/.libs/java_raw_api.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/tramp.lo -MD -MP -MF src/.deps/tramp.Tpo -c ../src/tramp.c  -fPIC -DPIC -o src/.libs/tramp.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/raw_api.lo -MD -MP -MF src/.deps/raw_api.Tpo -c ../src/raw_api.c  -fPIC -DPIC -o src/.libs/raw_api.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/closures.lo -MD -MP -MF src/.deps/closures.Tpo -c ../src/closures.c  -fPIC -DPIC -o src/.libs/closures.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/prep_cif.lo -MD -MP -MF src/.deps/prep_cif.Tpo -c ../src/prep_cif.c  -fPIC -DPIC -o src/.libs/prep_cif.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/types.lo -MD -MP -MF src/.deps/types.Tpo -c ../src/types.c  -fPIC -DPIC -o src/.libs/types.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/x86/ffi64.lo -MD -MP -MF src/x86/.deps/ffi64.Tpo -c ../src/x86/ffi64.c  -fPIC -DPIC -o src/x86/.libs/ffi64.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/x86/ffiw64.lo -MD -MP -MF src/x86/.deps/ffiw64.Tpo -c ../src/x86/ffiw64.c  -fPIC -DPIC -o src/x86/.libs/ffiw64.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src "-I. -I../include -Iinclude -I../src" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT src/x86/unix64.lo -MD -MP -MF src/x86/.deps/unix64.Tpo -c ../src/x86/unix64.S  -fPIC -DPIC -o src/x86/.libs/unix64.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src "-I. -I../include -Iinclude -I../src" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT src/x86/win64.lo -MD -MP -MF src/x86/.deps/win64.Tpo -c ../src/x86/win64.S  -fPIC -DPIC -o src/x86/.libs/win64.o
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/tramp.lo -MD -MP -MF src/.deps/tramp.Tpo -c ../src/tramp.c  -fPIC -DPIC -o src/tramp.o >/dev/null 2>&1
+[01m[K../src/java_raw_api.c:[m[K In function '[01m[Kffi_java_raw_call[m[K':
+[01m[K../src/java_raw_api.c:318:3:[m[K [01;35m[Kwarning: [m[K'[01m[Kffi_java_raw_to_ptrarray[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  318 |   [01;35m[Kffi_java_raw_to_ptrarray[m[K (cif, raw, avalue);
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../src/java_raw_api.c:77:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   77 | [01;36m[Kffi_java_raw_to_ptrarray[m[K (ffi_cif *cif, ffi_java_raw *raw, void **args)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../src/java_raw_api.c:[m[K In function '[01m[Kffi_java_translate_args[m[K':
+[01m[K../src/java_raw_api.c:329:3:[m[K [01;35m[Kwarning: [m[K'[01m[Kffi_java_raw_size[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  329 |   [01;35m[Kffi_java_raw[m[K *raw = (ffi_java_raw*)alloca (ffi_java_raw_size (cif));
+      |   [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K../src/java_raw_api.c:45:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   45 | [01;36m[Kffi_java_raw_size[m[K (ffi_cif *cif)
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K../src/java_raw_api.c:332:3:[m[K [01;35m[Kwarning: [m[K'[01m[Kffi_java_ptrarray_to_raw[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  332 |   [01;35m[Kffi_java_ptrarray_to_raw[m[K (cif, avalue, raw);
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../src/java_raw_api.c:158:1:[m[K [01;36m[Knote: [m[Kdeclared here
+  158 | [01;36m[Kffi_java_ptrarray_to_raw[m[K (ffi_cif *cif, void **args, ffi_java_raw *raw)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../src/java_raw_api.c:[m[K In function '[01m[Kffi_prep_java_raw_closure[m[K':
+[01m[K../src/java_raw_api.c:370:3:[m[K [01;35m[Kwarning: [m[K'[01m[Kffi_prep_java_raw_closure_loc[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  370 |   [01;35m[Kreturn[m[K ffi_prep_java_raw_closure_loc (cl, cif, fun, user_data, cl);
+      |   [01;35m[K^~~~~~[m[K
+[01m[K../src/java_raw_api.c:338:1:[m[K [01;36m[Knote: [m[Kdeclared here
+  338 | [01;36m[Kffi_prep_java_raw_closure_loc[m[K (ffi_java_raw_closure* cl,
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src "-I. -I../include -Iinclude -I../src" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT src/x86/win64.lo -MD -MP -MF src/x86/.deps/win64.Tpo -c ../src/x86/win64.S  -fPIC -DPIC -o src/x86/win64.o >/dev/null 2>&1
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src "-I. -I../include -Iinclude -I../src" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT src/x86/unix64.lo -MD -MP -MF src/x86/.deps/unix64.Tpo -c ../src/x86/unix64.S  -fPIC -DPIC -o src/x86/unix64.o >/dev/null 2>&1
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/types.lo -MD -MP -MF src/.deps/types.Tpo -c ../src/types.c  -fPIC -DPIC -o src/types.o >/dev/null 2>&1
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/java_raw_api.lo -MD -MP -MF src/.deps/java_raw_api.Tpo -c ../src/java_raw_api.c  -fPIC -DPIC -o src/java_raw_api.o >/dev/null 2>&1
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/raw_api.lo -MD -MP -MF src/.deps/raw_api.Tpo -c ../src/raw_api.c  -fPIC -DPIC -o src/raw_api.o >/dev/null 2>&1
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/prep_cif.lo -MD -MP -MF src/.deps/prep_cif.Tpo -c ../src/prep_cif.c  -fPIC -DPIC -o src/prep_cif.o >/dev/null 2>&1
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/x86/ffiw64.lo -MD -MP -MF src/x86/.deps/ffiw64.Tpo -c ../src/x86/ffiw64.c  -fPIC -DPIC -o src/x86/ffiw64.o >/dev/null 2>&1
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/x86/ffi64.lo -MD -MP -MF src/x86/.deps/ffi64.Tpo -c ../src/x86/ffi64.c  -fPIC -DPIC -o src/x86/ffi64.o >/dev/null 2>&1
+libtool: compile:  cc -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/closures.lo -MD -MP -MF src/.deps/closures.Tpo -c ../src/closures.c  -fPIC -DPIC -o src/closures.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=link cc  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libffi_convenience.la  src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo   src/x86/ffi64.lo src/x86/unix64.lo src/x86/ffiw64.lo src/x86/win64.lo 
+/bin/sh ./libtool  --tag=CC   --mode=link cc  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -no-undefined -version-info `grep -v '^#' ../libtool-version` -Wl,--version-script,libffi.map  -Xcompiler '-fuse-ld=bfd' -Xcompiler '-flto=10' '-O1' '-Wl,--sort-common' '-Wl,--as-needed' '-Wl,-z,relro' '-Wl,-z,now' '-Wl,-z,noexecstack'  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libffi.la -rpath /usr/lib/../lib src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo  src/x86/ffi64.lo src/x86/unix64.lo src/x86/ffiw64.lo src/x86/win64.lo 
+libtool: link: cc -shared  -fPIC -DPIC  src/.libs/prep_cif.o src/.libs/types.o src/.libs/raw_api.o src/.libs/java_raw_api.o src/.libs/closures.o src/.libs/tramp.o src/x86/.libs/ffi64.o src/x86/.libs/unix64.o src/x86/.libs/ffiw64.o src/x86/.libs/win64.o    -march=native -O2 -flto=10 -Wl,--version-script -Wl,libffi.map -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,noexecstack -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,noexecstack   -Wl,-soname -Wl,libffi.so.8 -o .libs/libffi.so.8.5.0
+libtool: link: gcc-ar cr .libs/libffi_convenience.a src/.libs/prep_cif.o src/.libs/types.o src/.libs/raw_api.o src/.libs/java_raw_api.o src/.libs/closures.o src/.libs/tramp.o src/x86/.libs/ffi64.o src/x86/.libs/unix64.o src/x86/.libs/ffiw64.o src/x86/.libs/win64.o 
+libtool: link: gcc-ranlib .libs/libffi_convenience.a
+libtool: link: ( cd ".libs" && rm -f "libffi_convenience.la" && ln -s "../libffi_convenience.la" "libffi_convenience.la" )
+libtool: link: (cd ".libs" && rm -f "libffi.so.8" && ln -s "libffi.so.8.5.0" "libffi.so.8")
+libtool: link: (cd ".libs" && rm -f "libffi.so" && ln -s "libffi.so.8.5.0" "libffi.so")
+libtool: link: gcc-ar cr .libs/libffi.a  src/prep_cif.o src/types.o src/raw_api.o src/java_raw_api.o src/closures.o src/tramp.o src/x86/ffi64.o src/x86/unix64.o src/x86/ffiw64.o src/x86/win64.o
+libtool: link: gcc-ranlib .libs/libffi.a
+libtool: link: ( cd ".libs" && rm -f "libffi.la" && ln -s "../libffi.la" "libffi.la" )
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make[1]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+MAKE x86_64-pc-linux-gnu : 0 * all-configured
+make[1]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make  all-recursive
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+Making all in include
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+Making all in testsuite
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+Making all in man
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+Making all in doc
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make[1]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+MAKE x86_64-pc-linux-gnu : 0 * install
+make[1]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+Making install in include
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/output/usr/include'
+ /usr/bin/install -c -m 644 ffi.h ffitarget.h '/var/tmp/hokuto/libffi-01/output/usr/include'
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+Making install in testsuite
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+Making install in man
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/output/usr/share/man/man3'
+ /usr/bin/install -c -m 644 ../../man/ffi.3 ../../man/ffi_call.3 ../../man/ffi_prep_cif.3 ../../man/ffi_prep_cif_var.3 '/var/tmp/hokuto/libffi-01/output/usr/share/man/man3'
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+Making install in doc
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/output/usr/share/info'
+ /usr/bin/install -c -m 644 ../../doc/libffi.info '/var/tmp/hokuto/libffi-01/output/usr/share/info'
+ install-info --info-dir='/var/tmp/hokuto/libffi-01/output/usr/share/info' '/var/tmp/hokuto/libffi-01/output/usr/share/info/libffi.info'
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/output/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/output/usr/lib/../lib'
+ /usr/bin/install -c -m 644 libffi.pc '/var/tmp/hokuto/libffi-01/output/usr/lib/pkgconfig'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libffi.la '/var/tmp/hokuto/libffi-01/output/usr/lib/../lib'
+libtool: install: /usr/bin/install -c .libs/libffi.so.8.5.0 /var/tmp/hokuto/libffi-01/output/usr/lib/../lib/libffi.so.8.5.0
+libtool: install: (cd /var/tmp/hokuto/libffi-01/output/usr/lib/../lib && { ln -s -f libffi.so.8.5.0 libffi.so.8 || { rm -f libffi.so.8 && ln -s libffi.so.8.5.0 libffi.so.8; }; })
+libtool: install: (cd /var/tmp/hokuto/libffi-01/output/usr/lib/../lib && { ln -s -f libffi.so.8.5.0 libffi.so || { rm -f libffi.so && ln -s libffi.so.8.5.0 libffi.so; }; })
+libtool: install: /usr/bin/install -c .libs/libffi.lai /var/tmp/hokuto/libffi-01/output/usr/lib/../lib/libffi.la
+libtool: install: /usr/bin/install -c .libs/libffi.a /var/tmp/hokuto/libffi-01/output/usr/lib/../lib/libffi.a
+libtool: install: chmod 644 /var/tmp/hokuto/libffi-01/output/usr/lib/../lib/libffi.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/libffi-01/output/usr/lib/../lib/libffi.a
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib/../lib'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+make[1]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+MAKE x86_64-pc-linux-gnu : 0 * distclean
+make[1]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+Making distclean in include
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "ffi.h" || rm -f ffi.h
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+test . = "../../include" || test -z "" || rm -f 
+test -z "ffitarget.h" || rm -f ffitarget.h
+rm -f Makefile
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/include'
+Making distclean in testsuite
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+test -z "*.exe core* *.log *.sum" || rm -f *.exe core* *.log *.sum
+rm -rf .libs _libs
+rm -f *.lo
+rm -f site.exp site.bak
+test -z "" || rm -f 
+l='libffi'; for tool in $l; do \
+  rm -f $tool.sum $tool.log; \
+done
+test . = "../../testsuite" || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/testsuite'
+Making distclean in man
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "../../man" || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/man'
+Making distclean in doc
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+test -z "libffi.dvi libffi.pdf libffi.ps libffi.html" \
+|| rm -rf libffi.dvi libffi.pdf libffi.ps libffi.html
+rm -rf .libs _libs
+rm -rf libffi.t2d libffi.t2p
+rm -f *.lo
+rm -f vti.tmp* ../../doc/version.texi.tmp*
+test -z "" || rm -f 
+test . = "../../doc" || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+rm -rf .libs _libs
+test -z "libffi_convenience.la" || rm -f libffi_convenience.la
+test -z "libffi.la" || rm -f libffi.la
+rm -f *.o
+rm -f *.lo
+rm -rf src/.libs src/_libs
+rm -f *.tab.c
+test -z "libffi.pc" || rm -f libffi.pc
+rm -f fficonfig.h stamp-h1
+rm -f libtool config.lt
+rm -rf src/aarch64/.libs src/aarch64/_libs
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf src/alpha/.libs src/alpha/_libs
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+rm -rf src/arc/.libs src/arc/_libs
+rm -rf src/arm/.libs src/arm/_libs
+rm -f src/*.o
+rm -rf src/avr32/.libs src/avr32/_libs
+rm -rf src/bfin/.libs src/bfin/_libs
+test . = ".." || test -z "" || rm -f 
+rm -rf src/cris/.libs src/cris/_libs
+rm -rf src/csky/.libs src/csky/_libs
+rm -rf src/frv/.libs src/frv/_libs
+rm -rf src/ia64/.libs src/ia64/_libs
+rm -rf src/kvx/.libs src/kvx/_libs
+rm -rf src/loongarch/.libs src/loongarch/_libs
+rm -f src/*.lo
+rm -f src/.deps/.dirstamp
+rm -rf src/m32r/.libs src/m32r/_libs
+rm -f src/.dirstamp
+rm -rf src/m68k/.libs src/m68k/_libs
+rm -f src/aarch64/.deps/.dirstamp
+rm -rf src/m88k/.libs src/m88k/_libs
+rm -f src/aarch64/.dirstamp
+rm -rf src/metag/.libs src/metag/_libs
+rm -f src/alpha/.deps/.dirstamp
+rm -rf src/microblaze/.libs src/microblaze/_libs
+rm -f src/alpha/.dirstamp
+rm -rf src/mips/.libs src/mips/_libs
+rm -f ./so_locations
+rm -f src/arc/.deps/.dirstamp
+rm -rf src/moxie/.libs src/moxie/_libs
+rm -f src/aarch64/*.o
+rm -f src/arc/.dirstamp
+rm -f ./so_locations
+rm -rf src/or1k/.libs src/or1k/_libs
+rm -rf src/pa/.libs src/pa/_libs
+rm -f src/arm/.deps/.dirstamp
+rm -rf src/powerpc/.libs src/powerpc/_libs
+rm -f src/arm/.dirstamp
+rm -rf src/riscv/.libs src/riscv/_libs
+rm -f src/avr32/.deps/.dirstamp
+rm -rf src/s390/.libs src/s390/_libs
+rm -f src/avr32/.dirstamp
+rm -rf src/sh/.libs src/sh/_libs
+rm -f src/bfin/.deps/.dirstamp
+rm -f src/aarch64/*.lo
+rm -rf src/sh64/.libs src/sh64/_libs
+rm -f src/bfin/.dirstamp
+rm -rf src/sparc/.libs src/sparc/_libs
+rm -f src/cris/.deps/.dirstamp
+rm -rf src/tile/.libs src/tile/_libs
+rm -f src/cris/.dirstamp
+rm -rf src/vax/.libs src/vax/_libs
+rm -f src/csky/.deps/.dirstamp
+rm -rf src/wasm/.libs src/wasm/_libs
+rm -f src/csky/.dirstamp
+rm -rf src/x86/.libs src/x86/_libs
+rm -f src/frv/.deps/.dirstamp
+rm -rf src/xtensa/.libs src/xtensa/_libs
+rm -f src/frv/.dirstamp
+rm -f src/alpha/*.o
+rm -f src/ia64/.deps/.dirstamp
+rm -f src/ia64/.dirstamp
+rm -f src/kvx/.deps/.dirstamp
+rm -f src/kvx/.dirstamp
+rm -f src/loongarch/.deps/.dirstamp
+rm -f src/alpha/*.lo
+rm -f src/loongarch/.dirstamp
+rm -f src/m32r/.deps/.dirstamp
+rm -f src/m32r/.dirstamp
+rm -f src/m68k/.deps/.dirstamp
+rm -f src/m68k/.dirstamp
+rm -f src/m88k/.deps/.dirstamp
+rm -f src/arc/*.o
+rm -f src/m88k/.dirstamp
+rm -f src/metag/.deps/.dirstamp
+rm -f src/metag/.dirstamp
+rm -f src/microblaze/.deps/.dirstamp
+rm -f src/microblaze/.dirstamp
+rm -f src/mips/.deps/.dirstamp
+rm -f src/arc/*.lo
+rm -f src/mips/.dirstamp
+rm -f src/moxie/.deps/.dirstamp
+rm -f src/moxie/.dirstamp
+rm -f src/or1k/.deps/.dirstamp
+rm -f src/or1k/.dirstamp
+rm -f src/pa/.deps/.dirstamp
+rm -f src/pa/.dirstamp
+rm -f src/arm/*.o
+rm -f src/powerpc/.deps/.dirstamp
+rm -f src/powerpc/.dirstamp
+rm -f src/riscv/.deps/.dirstamp
+rm -f src/riscv/.dirstamp
+rm -f src/s390/.deps/.dirstamp
+rm -f src/s390/.dirstamp
+rm -f src/arm/*.lo
+rm -f src/sh/.deps/.dirstamp
+rm -f src/sh/.dirstamp
+rm -f src/sh64/.deps/.dirstamp
+rm -f src/sh64/.dirstamp
+rm -f src/sparc/.deps/.dirstamp
+rm -f src/sparc/.dirstamp
+rm -f src/tile/.deps/.dirstamp
+rm -f src/avr32/*.o
+rm -f src/tile/.dirstamp
+rm -f src/vax/.deps/.dirstamp
+rm -f src/vax/.dirstamp
+rm -f src/wasm/.deps/.dirstamp
+rm -f src/wasm/.dirstamp
+rm -f src/x86/.deps/.dirstamp
+rm -f src/avr32/*.lo
+rm -f src/x86/.dirstamp
+rm -f src/xtensa/.deps/.dirstamp
+rm -f src/xtensa/.dirstamp
+test -z "local.exp" || rm -f local.exp
+rm -f src/bfin/*.o
+rm -f src/bfin/*.lo
+rm -f src/cris/*.o
+rm -f src/cris/*.lo
+rm -f src/csky/*.o
+rm -f src/csky/*.lo
+rm -f src/frv/*.o
+rm -f src/frv/*.lo
+rm -f src/ia64/*.o
+rm -f src/ia64/*.lo
+rm -f src/kvx/*.o
+rm -f src/kvx/*.lo
+rm -f src/loongarch/*.o
+rm -f src/loongarch/*.lo
+rm -f src/m32r/*.o
+rm -f src/m32r/*.lo
+rm -f src/m68k/*.o
+rm -f src/m68k/*.lo
+rm -f src/m88k/*.o
+rm -f src/m88k/*.lo
+rm -f src/metag/*.o
+rm -f src/metag/*.lo
+rm -f src/microblaze/*.o
+rm -f src/microblaze/*.lo
+rm -f src/mips/*.o
+rm -f src/mips/*.lo
+rm -f src/moxie/*.o
+rm -f src/moxie/*.lo
+rm -f src/or1k/*.o
+rm -f src/or1k/*.lo
+rm -f src/pa/*.o
+rm -f src/pa/*.lo
+rm -f src/powerpc/*.o
+rm -f src/powerpc/*.lo
+rm -f src/riscv/*.o
+rm -f src/riscv/*.lo
+rm -f src/s390/*.o
+rm -f src/s390/*.lo
+rm -f src/sh/*.o
+rm -f src/sh/*.lo
+rm -f src/sh64/*.o
+rm -f src/sh64/*.lo
+rm -f src/sparc/*.o
+rm -f src/sparc/*.lo
+rm -f src/tile/*.o
+rm -f src/tile/*.lo
+rm -f src/vax/*.o
+rm -f src/vax/*.lo
+rm -f src/wasm/*.o
+rm -f src/wasm/*.lo
+rm -f src/x86/*.o
+rm -f src/x86/*.lo
+rm -f src/xtensa/*.o
+rm -f src/xtensa/*.lo
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f src/.deps/closures.Plo
+rm -f src/.deps/debug.Plo
+rm -f src/.deps/java_raw_api.Plo
+rm -f src/.deps/prep_cif.Plo
+rm -f src/.deps/raw_api.Plo
+rm -f src/.deps/tramp.Plo
+rm -f src/.deps/types.Plo
+rm -f src/aarch64/.deps/ffi.Plo
+rm -f src/aarch64/.deps/sysv.Plo
+rm -f src/aarch64/.deps/win64_armasm.Plo
+rm -f src/alpha/.deps/ffi.Plo
+rm -f src/alpha/.deps/osf.Plo
+rm -f src/arc/.deps/arcompact.Plo
+rm -f src/arc/.deps/ffi.Plo
+rm -f src/arm/.deps/ffi.Plo
+rm -f src/arm/.deps/sysv.Plo
+rm -f src/arm/.deps/sysv_msvc_arm32.Plo
+rm -f src/avr32/.deps/ffi.Plo
+rm -f src/avr32/.deps/sysv.Plo
+rm -f src/bfin/.deps/ffi.Plo
+rm -f src/bfin/.deps/sysv.Plo
+rm -f src/cris/.deps/ffi.Plo
+rm -f src/cris/.deps/sysv.Plo
+rm -f src/csky/.deps/ffi.Plo
+rm -f src/csky/.deps/sysv.Plo
+rm -f src/frv/.deps/eabi.Plo
+rm -f src/frv/.deps/ffi.Plo
+rm -f src/ia64/.deps/ffi.Plo
+rm -f src/ia64/.deps/unix.Plo
+rm -f src/kvx/.deps/ffi.Plo
+rm -f src/kvx/.deps/sysv.Plo
+rm -f src/loongarch/.deps/ffi.Plo
+rm -f src/loongarch/.deps/sysv.Plo
+rm -f src/m32r/.deps/ffi.Plo
+rm -f src/m32r/.deps/sysv.Plo
+rm -f src/m68k/.deps/ffi.Plo
+rm -f src/m68k/.deps/sysv.Plo
+rm -f src/m88k/.deps/ffi.Plo
+rm -f src/m88k/.deps/obsd.Plo
+rm -f src/metag/.deps/ffi.Plo
+rm -f src/metag/.deps/sysv.Plo
+rm -f src/microblaze/.deps/ffi.Plo
+rm -f src/microblaze/.deps/sysv.Plo
+rm -f src/mips/.deps/ffi.Plo
+rm -f src/mips/.deps/n32.Plo
+rm -f src/mips/.deps/o32.Plo
+rm -f src/moxie/.deps/eabi.Plo
+rm -f src/moxie/.deps/ffi.Plo
+rm -f src/or1k/.deps/ffi.Plo
+rm -f src/or1k/.deps/sysv.Plo
+rm -f src/pa/.deps/ffi.Plo
+rm -f src/pa/.deps/hpux32.Plo
+rm -f src/pa/.deps/hpux64.Plo
+rm -f src/pa/.deps/linux.Plo
+rm -f src/powerpc/.deps/aix.Plo
+rm -f src/powerpc/.deps/aix_closure.Plo
+rm -f src/powerpc/.deps/darwin.Plo
+rm -f src/powerpc/.deps/darwin_closure.Plo
+rm -f src/powerpc/.deps/ffi.Plo
+rm -f src/powerpc/.deps/ffi_darwin.Plo
+rm -f src/powerpc/.deps/ffi_linux64.Plo
+rm -f src/powerpc/.deps/ffi_sysv.Plo
+rm -f src/powerpc/.deps/linux64.Plo
+rm -f src/powerpc/.deps/linux64_closure.Plo
+rm -f src/powerpc/.deps/ppc_closure.Plo
+rm -f src/powerpc/.deps/sysv.Plo
+rm -f src/riscv/.deps/ffi.Plo
+rm -f src/riscv/.deps/sysv.Plo
+rm -f src/s390/.deps/ffi.Plo
+rm -f src/s390/.deps/sysv.Plo
+rm -f src/sh/.deps/ffi.Plo
+rm -f src/sh/.deps/sysv.Plo
+rm -f src/sh64/.deps/ffi.Plo
+rm -f src/sh64/.deps/sysv.Plo
+rm -f src/sparc/.deps/ffi.Plo
+rm -f src/sparc/.deps/ffi64.Plo
+rm -f src/sparc/.deps/v8.Plo
+rm -f src/sparc/.deps/v9.Plo
+rm -f src/tile/.deps/ffi.Plo
+rm -f src/tile/.deps/tile.Plo
+rm -f src/vax/.deps/elfbsd.Plo
+rm -f src/vax/.deps/ffi.Plo
+rm -f src/wasm/.deps/ffi.Plo
+rm -f src/x86/.deps/ffi.Plo
+rm -f src/x86/.deps/ffi64.Plo
+rm -f src/x86/.deps/ffiw64.Plo
+rm -f src/x86/.deps/sysv.Plo
+rm -f src/x86/.deps/sysv_intel.Plo
+rm -f src/x86/.deps/unix64.Plo
+rm -f src/x86/.deps/win64.Plo
+rm -f src/x86/.deps/win64_intel.Plo
+rm -f src/xtensa/.deps/ffi.Plo
+rm -f src/xtensa/.deps/sysv.Plo
+rm -f Makefile
+make[1]: Leaving directory '/var/tmp/hokuto/libffi-01/build/x86_64-pc-linux-gnu'
+MAKE x86_64-pc-linux-gnu : 1 * distclean (all local builds)
+# rm -r x86_64-pc-linux-gnu
+# (sleep 3)
+rm -r x86_64-pc-linux-gnu
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnux32
+checking host system type... i686-pc-linux-gnu
+checking target system type... i686-pc-linux-gnu
+continue configure in default builddir "./i686-pc-linux-gnu"
+....exec /bin/sh .././configure "--srcdir=.." "--enable-builddir=i686-pc-linux-gnu" "linux
+gnu"
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnux32
+checking host system type... i686-pc-linux-gnu
+checking target system type... i686-pc-linux-gnu
+checking for gsed... sed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for i686-pc-linux-gnu-strip... no
+checking for strip... strip
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for i686-pc-linux-gnu-gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to enable C11 features... none needed
+checking whether gcc -m32 understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc -m32... gcc3
+checking whether the compiler supports GNU C++... yes
+checking whether g++ -m32 accepts -g... yes
+checking for g++ -m32 option to enable C++11 features... -std=gnu++11
+checking dependency style of g++ -m32 -std=gnu++11... gcc3
+checking dependency style of gcc -m32... gcc3
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc -m32... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnux32 file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnux32 file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for i686-pc-linux-gnu-file... no
+checking for file... file
+checking for i686-pc-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for i686-pc-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for i686-pc-linux-gnu-ar... gcc-ar
+checking for archiver @FILE support... @
+checking for i686-pc-linux-gnu-strip... strip
+checking for i686-pc-linux-gnu-ranlib... gcc-ranlib
+checking command to parse gcc-nm output from gcc -m32 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for i686-pc-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -m32 supports -fno-rtti -fno-exceptions... no
+checking for gcc -m32 option to produce PIC... -fPIC -DPIC
+checking if gcc -m32 PIC flag -fPIC -DPIC works... yes
+checking if gcc -m32 static flag -static works... no
+checking if gcc -m32 supports -c -o file.o... yes
+checking if gcc -m32 supports -c -o file.o... (cached) yes
+checking whether the gcc -m32 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -m32 -std=gnu++11 -E
+checking for ld used by g++ -m32 -std=gnu++11... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ -m32 -std=gnu++11 linker (/usr/bin/ld) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ -m32 -std=gnu++11 option to produce PIC... -fPIC -DPIC
+checking if g++ -m32 -std=gnu++11 PIC flag -fPIC -DPIC works... yes
+checking if g++ -m32 -std=gnu++11 static flag -static works... no
+checking if g++ -m32 -std=gnu++11 supports -c -o file.o... yes
+checking if g++ -m32 -std=gnu++11 supports -c -o file.o... (cached) yes
+checking whether the g++ -m32 -std=gnu++11 linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for i686-pc-linux-gnu-readelf... no
+checking for i686-pc-linux-gnu-greadelf... no
+checking for readelf... readelf
+checking size of size_t... 4
+checking for C compiler vendor... gnu
+checking CFLAGS for most reasonable warnings... -Wall
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for sys/memfd.h... no
+checking for memfd_create... yes
+checking for memcpy... yes
+checking for alloca.h... yes
+checking size of double... (cached) 8
+checking size of long double... 12
+checking for __int128_t... no
+checking whether byte ordering is bigendian... (cached) no
+checking assembler .cfi pseudo-op support... yes
+checking assembler supports pc related relocs... yes
+checking whether compiler supports pointer authentication... no
+checking for _ prefix in compiled symbols... no
+checking whether the C compiler accepts -fno-lto... yes
+checking whether .eh_frame section should be read-only... yes
+checking for __attribute__((visibility("hidden")))... yes
+checking for shared libgcc... yes
+configure: versioning on shared library symbols is gnu
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating include/Makefile
+config.status: creating include/ffi.h
+config.status: creating Makefile
+config.status: creating testsuite/Makefile
+config.status: creating man/Makefile
+config.status: creating doc/Makefile
+config.status: creating libffi.pc
+config.status: creating fficonfig.h
+config.status: executing buildir commands
+config.status: create top_srcdir/Makefile guessed from local Makefile
+config.status: build in i686-pc-linux-gnu (HOST=)
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing include commands
+config.status: executing src commands
+MAKE x86_64-pc-linux-gnux32 : 0 * all-all
+make[1]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make  all-recursive
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+Making all in include
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/include'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/include'
+Making all in testsuite
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/testsuite'
+Making all in man
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/man'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/man'
+Making all in doc
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/doc'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/doc'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+gcc -m32 -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -DX86 -DGENERATE_LIBFFI_MAP \
+ -E -x assembler-with-cpp -o libffi.map ../libffi.map.in
+depbase=`echo src/prep_cif.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -m32 -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/prep_cif.lo -MD -MP -MF $depbase.Tpo -c -o src/prep_cif.lo ../src/prep_cif.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/types.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -m32 -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/types.lo -MD -MP -MF $depbase.Tpo -c -o src/types.lo ../src/types.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -m32 -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/raw_api.lo ../src/raw_api.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/java_raw_api.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -m32 -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/java_raw_api.lo -MD -MP -MF $depbase.Tpo -c -o src/java_raw_api.lo ../src/java_raw_api.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/closures.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -m32 -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/closures.lo -MD -MP -MF $depbase.Tpo -c -o src/closures.lo ../src/closures.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/tramp.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -m32 -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/tramp.lo -MD -MP -MF $depbase.Tpo -c -o src/tramp.lo ../src/tramp.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/x86/ffi.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -m32 -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src   -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/x86/ffi.lo -MD -MP -MF $depbase.Tpo -c -o src/x86/ffi.lo ../src/x86/ffi.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo src/x86/sysv.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -m32 -DHAVE_CONFIG_H -I. -I..  -I. -I../include -Iinclude -I../src  '-I. -I../include -Iinclude -I../src' -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT src/x86/sysv.lo -MD -MP -MF $depbase.Tpo -c -o src/x86/sysv.lo ../src/x86/sysv.S &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -m32 -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/closures.lo -MD -MP -MF src/.deps/closures.Tpo -c ../src/closures.c  -fPIC -DPIC -o src/.libs/closures.o
+libtool: compile:  gcc -m32 -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/tramp.lo -MD -MP -MF src/.deps/tramp.Tpo -c ../src/tramp.c  -fPIC -DPIC -o src/.libs/tramp.o
+libtool: compile:  gcc -m32 -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/prep_cif.lo -MD -MP -MF src/.deps/prep_cif.Tpo -c ../src/prep_cif.c  -fPIC -DPIC -o src/.libs/prep_cif.o
+libtool: compile:  gcc -m32 -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/java_raw_api.lo -MD -MP -MF src/.deps/java_raw_api.Tpo -c ../src/java_raw_api.c  -fPIC -DPIC -o src/.libs/java_raw_api.o
+libtool: compile:  gcc -m32 -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/types.lo -MD -MP -MF src/.deps/types.Tpo -c ../src/types.c  -fPIC -DPIC -o src/.libs/types.o
+libtool: compile:  gcc -m32 -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/x86/ffi.lo -MD -MP -MF src/x86/.deps/ffi.Tpo -c ../src/x86/ffi.c  -fPIC -DPIC -o src/x86/.libs/ffi.o
+libtool: compile:  gcc -m32 -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -MT src/raw_api.lo -MD -MP -MF src/.deps/raw_api.Tpo -c ../src/raw_api.c  -fPIC -DPIC -o src/.libs/raw_api.o
+libtool: compile:  gcc -m32 -DHAVE_CONFIG_H -I. -I.. -I. -I../include -Iinclude -I../src "-I. -I../include -Iinclude -I../src" -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -MT src/x86/sysv.lo -MD -MP -MF src/x86/.deps/sysv.Tpo -c ../src/x86/sysv.S  -fPIC -DPIC -o src/x86/.libs/sysv.o
+/bin/sh ./libtool  --tag=CC   --mode=link gcc -m32  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libffi_convenience.la  src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo   src/x86/ffi.lo src/x86/sysv.lo 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc -m32  -Wall -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -fexceptions -no-undefined -version-info `grep -v '^#' ../libtool-version` -Wl,--version-script,libffi.map  -Xcompiler '-fuse-ld=bfd' -Xcompiler '-flto=10' '-O1' '-Wl,--sort-common' '-Wl,--as-needed' '-Wl,-z,relro' '-Wl,-z,now' '-Wl,-z,noexecstack'  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libffi.la -rpath /usr/lib32/../lib32 src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo src/tramp.lo  src/x86/ffi.lo src/x86/sysv.lo 
+libtool: link: gcc -m32 -shared  -fPIC -DPIC  src/.libs/prep_cif.o src/.libs/types.o src/.libs/raw_api.o src/.libs/java_raw_api.o src/.libs/closures.o src/.libs/tramp.o src/x86/.libs/ffi.o src/x86/.libs/sysv.o    -m32 -march=native -O2 -flto=10 -Wl,--version-script -Wl,libffi.map -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,noexecstack -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,-z -Wl,noexecstack   -Wl,-soname -Wl,libffi.so.8 -o .libs/libffi.so.8.5.0
+libtool: link: gcc-ar cr .libs/libffi_convenience.a src/.libs/prep_cif.o src/.libs/types.o src/.libs/raw_api.o src/.libs/java_raw_api.o src/.libs/closures.o src/.libs/tramp.o src/x86/.libs/ffi.o src/x86/.libs/sysv.o 
+libtool: link: gcc-ranlib .libs/libffi_convenience.a
+libtool: link: ( cd ".libs" && rm -f "libffi_convenience.la" && ln -s "../libffi_convenience.la" "libffi_convenience.la" )
+libtool: link: (cd ".libs" && rm -f "libffi.so.8" && ln -s "libffi.so.8.5.0" "libffi.so.8")
+libtool: link: (cd ".libs" && rm -f "libffi.so" && ln -s "libffi.so.8.5.0" "libffi.so")
+libtool: link: ( cd ".libs" && rm -f "libffi.la" && ln -s "../libffi.la" "libffi.la" )
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make[1]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+MAKE x86_64-pc-linux-gnux32 : 0 * all-configured
+make[1]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make  all-recursive
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+Making all in include
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/include'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/include'
+Making all in testsuite
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/testsuite'
+Making all in man
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/man'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/man'
+Making all in doc
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/doc'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/doc'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make[1]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+MAKE x86_64-pc-linux-gnux32 : 0 * install
+make[1]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+Making install in include
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/include'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/include'
+ /usr/bin/install -c -m 644 ffi.h ffitarget.h '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/include'
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/include'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/include'
+Making install in testsuite
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/testsuite'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/testsuite'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/testsuite'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/testsuite'
+Making install in man
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/man'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/man'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/share/man/man3'
+ /usr/bin/install -c -m 644 ../../man/ffi.3 ../../man/ffi_call.3 ../../man/ffi_prep_cif.3 ../../man/ffi_prep_cif_var.3 '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/share/man/man3'
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/man'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/man'
+Making install in doc
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/doc'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/share/info'
+ /usr/bin/install -c -m 644 ../../doc/libffi.info '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/share/info'
+ install-info --info-dir='/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/share/info' '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/share/info/libffi.info'
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/doc'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make[3]: Entering directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/lib32/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/lib32/../lib32'
+ /usr/bin/install -c -m 644 libffi.pc '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/lib32/pkgconfig'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libffi.la '/var/tmp/hokuto/libffi-01/build/DESTDIR/usr/lib32/../lib32'
+libtool: install: /usr/bin/install -c .libs/libffi.so.8.5.0 /var/tmp/hokuto/libffi-01/build/DESTDIR/usr/lib32/../lib32/libffi.so.8.5.0
+libtool: install: (cd /var/tmp/hokuto/libffi-01/build/DESTDIR/usr/lib32/../lib32 && { ln -s -f libffi.so.8.5.0 libffi.so.8 || { rm -f libffi.so.8 && ln -s libffi.so.8.5.0 libffi.so.8; }; })
+libtool: install: (cd /var/tmp/hokuto/libffi-01/build/DESTDIR/usr/lib32/../lib32 && { ln -s -f libffi.so.8.5.0 libffi.so || { rm -f libffi.so && ln -s libffi.so.8.5.0 libffi.so; }; })
+libtool: install: /usr/bin/install -c .libs/libffi.lai /var/tmp/hokuto/libffi-01/build/DESTDIR/usr/lib32/../lib32/libffi.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib32/../lib32'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make[2]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+make[1]: Leaving directory '/var/tmp/hokuto/libffi-01/build/i686-pc-linux-gnu'
+'DESTDIR/usr/lib32/libffi.la' -> '/var/tmp/hokuto/libffi-01/split/lib32-libffi/usr/lib32/libffi.la'
+'DESTDIR/usr/lib32/libffi.so' -> '/var/tmp/hokuto/libffi-01/split/lib32-libffi/usr/lib32/libffi.so'
+'DESTDIR/usr/lib32/libffi.so.8' -> '/var/tmp/hokuto/libffi-01/split/lib32-libffi/usr/lib32/libffi.so.8'
+'DESTDIR/usr/lib32/libffi.so.8.5.0' -> '/var/tmp/hokuto/libffi-01/split/lib32-libffi/usr/lib32/libffi.so.8.5.0'
+'DESTDIR/usr/lib32/pkgconfig' -> '/var/tmp/hokuto/libffi-01/split/lib32-libffi/usr/lib32/pkgconfig'
+'DESTDIR/usr/lib32/pkgconfig/libffi.pc' -> '/var/tmp/hokuto/libffi-01/split/lib32-libffi/usr/lib32/pkgconfig/libffi.pc'
+
+Script done on 2026-08-11 08:07:34+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibffi[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mTue, 11 Aug 2026 01:07:34 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m12s[0m
