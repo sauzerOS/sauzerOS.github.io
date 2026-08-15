@@ -1,0 +1,287 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mexfatprogs[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mexfatprogs 1.4.3-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 15 Aug 2026 03:42:52 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mexfatprogs[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mexfatprogs[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.5-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-08-15 10:42:52+07:00 [COMMAND="cd /var/tmp/hokuto/exfatprogs-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/exfatprogs-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/exfatprogs-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/exfatprogs-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/exfatprogs-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/exfatprogs-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/exfatprogs-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/exfatprogs-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/exfatprogs-01/build/.cache' /repo/sauzeros/extra/exfatprogs/build /var/tmp/hokuto/exfatprogs-01/output 1.4.3 exfatprogs" <not executed on terminal>]
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: no obvious need to run autopoint
+autoreconf: running: aclocal -I m4
+aclocal: warning: couldn't open directory 'm4': No such file or directory
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: creating directory build-aux
+autoreconf: running: libtoolize --copy
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build-aux'.
+libtoolize: copying file 'build-aux/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: no need to run autopoint (confirmed)
+autoreconf: running: aclocal -I m4
+autoreconf: running: /usr/bin/autoconf
+autoreconf: running: /usr/bin/autoheader
+autoreconf: running: automake --add-missing --copy --no-force
+configure.ac:20: installing 'build-aux/compile'
+configure.ac:22: installing 'build-aux/config.guess'
+configure.ac:22: installing 'build-aux/config.sub'
+configure.ac:17: installing 'build-aux/install-sh'
+configure.ac:17: installing 'build-aux/missing'
+dosattr/Makefile.am: installing 'build-aux/depcomp'
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking how to create a pax tar archive... gnutar
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for cc option to support large files... none needed
+checking whether byte ordering is bigendian... (cached) no
+checking for fts.h... yes
+checking for fts_open in -lfts... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for blkid >= 2.20... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating mkfs/Makefile
+config.status: creating fsck/Makefile
+config.status: creating tune/Makefile
+config.status: creating label/Makefile
+config.status: creating dump/Makefile
+config.status: creating exfat2img/Makefile
+config.status: creating upcase/Makefile
+config.status: creating dosattr/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build'
+Making all in lib
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/lib'
+  CC       exfat_dir.o
+  CC       utils.o
+  CC       libexfat.o
+  CC       exfat_fs.o
+  AR       libexfat.a
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/lib'
+Making all in mkfs
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/mkfs'
+  CC       crc.o
+  CC       mkfs.o
+  CC       upcase.o
+  CCLD     mkfs.exfat
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/mkfs'
+Making all in fsck
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/fsck'
+  CC       fsck.o
+  CC       repair.o
+  CCLD     fsck.exfat
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/fsck'
+Making all in tune
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/tune'
+  CC       tune.o
+  CCLD     tune.exfat
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/tune'
+Making all in label
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/label'
+  CC       label.o
+  CCLD     exfatlabel
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/label'
+Making all in dump
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/dump'
+  CC       dump.o
+  CCLD     dump.exfat
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/dump'
+Making all in exfat2img
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/exfat2img'
+  CC       exfat2img.o
+  CCLD     exfat2img
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/exfat2img'
+Making all in upcase
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/upcase'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/upcase'
+Making all in dosattr
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/dosattr'
+  CC       lsdosattr.o
+  CC       chdosattr.o
+  CCLD     chdosattr
+  CCLD     lsdosattr
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/dosattr'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build'
+Making install in lib
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/lib'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/lib'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/lib'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/lib'
+Making install in mkfs
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/mkfs'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/mkfs'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c mkfs.exfat '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+libtool: install: /usr/bin/install -c mkfs.exfat /var/tmp/hokuto/exfatprogs-01/output/usr/bin/mkfs.exfat
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/mkfs'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/mkfs'
+Making install in fsck
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/fsck'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/fsck'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fsck.exfat '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+libtool: install: /usr/bin/install -c fsck.exfat /var/tmp/hokuto/exfatprogs-01/output/usr/bin/fsck.exfat
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/fsck'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/fsck'
+Making install in tune
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/tune'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/tune'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c tune.exfat '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+libtool: install: /usr/bin/install -c tune.exfat /var/tmp/hokuto/exfatprogs-01/output/usr/bin/tune.exfat
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/tune'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/tune'
+Making install in label
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/label'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/label'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c exfatlabel '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+libtool: install: /usr/bin/install -c exfatlabel /var/tmp/hokuto/exfatprogs-01/output/usr/bin/exfatlabel
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/label'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/label'
+Making install in dump
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/dump'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/dump'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c dump.exfat '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+libtool: install: /usr/bin/install -c dump.exfat /var/tmp/hokuto/exfatprogs-01/output/usr/bin/dump.exfat
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/dump'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/dump'
+Making install in exfat2img
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/exfat2img'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/exfat2img'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c exfat2img '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+libtool: install: /usr/bin/install -c exfat2img /var/tmp/hokuto/exfatprogs-01/output/usr/bin/exfat2img
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/exfat2img'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/exfat2img'
+Making install in upcase
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/upcase'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/upcase'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/lib/exfatprogs'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/share/doc/exfatprogs'
+ /usr/bin/install -c -m 644 ../upcase/upcase-mandatory.txt ../upcase/upcase-null.txt ../upcase/upcase-recommended.txt '/var/tmp/hokuto/exfatprogs-01/output/usr/share/doc/exfatprogs'
+ /usr/bin/install -c exfat-uctbl2bin.sh '/var/tmp/hokuto/exfatprogs-01/output/usr/lib/exfatprogs'
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/upcase'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/upcase'
+Making install in dosattr
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/dosattr'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build/dosattr'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c lsdosattr chdosattr '/var/tmp/hokuto/exfatprogs-01/output/usr/bin'
+libtool: install: /usr/bin/install -c lsdosattr /var/tmp/hokuto/exfatprogs-01/output/usr/bin/lsdosattr
+libtool: install: /usr/bin/install -c chdosattr /var/tmp/hokuto/exfatprogs-01/output/usr/bin/chdosattr
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/dosattr'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build/dosattr'
+make[1]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/exfatprogs-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/share/man/man1'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/exfatprogs-01/output/usr/share/man/man8'
+ /usr/bin/install -c -m 644 manpages/fsck.exfat.8 manpages/tune.exfat.8 manpages/mkfs.exfat.8 manpages/exfatlabel.8 manpages/dump.exfat.8 manpages/exfat2img.8 '/var/tmp/hokuto/exfatprogs-01/output/usr/share/man/man8'
+ /usr/bin/install -c -m 644 manpages/lsdosattr.1 manpages/chdosattr.1 '/var/tmp/hokuto/exfatprogs-01/output/usr/share/man/man1'
+make[2]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/exfatprogs-01/build'
+
+Script done on 2026-08-15 10:43:03+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mexfatprogs[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 15 Aug 2026 03:43:03 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m11s[0m
