@@ -1,0 +1,733 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mqpdf[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mqpdf 12.4.1-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mFri, 28 Aug 2026 10:14:01 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mqpdf[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc gnutls libgcc libjpeg-turbo libstdc++ openssl zlib-ng cmake[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mqpdf[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 cmake-4.4.3-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 gnutls-3.8.13-1 grep-3.12-1 gzip-1.14-1 libgcc-16.2.0-1 libjpeg-turbo-3.2.0-1 libstdc++-16.2.0-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 openssl-4.0.2-1 patch-2.8-1 pkgconf-3.0.6-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1 zlib-ng-2.3.3-1[0m
+
+Script started on 2026-08-28 17:14:01+07:00 [COMMAND="cd /var/tmp/hokuto/qpdf-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/qpdf-01/build/cargo' CC='cc' CFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/qpdf-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/qpdf-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='0' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/qpdf-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/qpdf-01/split' LDFLAGS='-fuse-ld=bfd -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/qpdf-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/qpdf-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/qpdf-01/build/.cache' /repo/sauzeros/extra/qpdf/build /var/tmp/hokuto/qpdf-01/output 12.4.1 qpdf" <not executed on terminal>]
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test ATOMIC_WORKED0
+-- Performing Test ATOMIC_WORKED0 - Success
+-- Performing Test flag_wall
+-- Performing Test flag_wall - Success
+-- Using -Wall: YES
+-- Performing Test flag_conversion
+-- Performing Test flag_conversion - Success
+-- Using -Wconversion: YES
+-- Performing Test flag_sign-conversion
+-- Performing Test flag_sign-conversion - Success
+-- Using -Wsign-conversion: YES
+-- Performing Test flag_shadow_local
+-- Performing Test flag_shadow_local - Success
+-- Using -Wshadow=local: YES
+-- Performing Test flag_old-style-cast
+-- Performing Test flag_old-style-cast - Success
+-- Using -Wold-style-cast: YES
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.6")
+-- Checking for module 'zlib'
+--   Found zlib, version 1.3.1.zlib-ng
+-- Checking for module 'libjpeg'
+--   Found libjpeg, version 3.2.0
+-- Checking for module 'openssl>=1.1.0'
+--   Found openssl, version 4.0.2
+-- Checking for module 'gnutls'
+--   Found gnutls, version 3.8.13
+-- 
+-- *** Crypto Summary ***
+--   GNU TLS crypto enabled: ON
+--   OpenSSL crypto enabled: ON
+--   Native crypto enabled: OFF
+--   Default crypto: gnutls
+-- 
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for localtime_r
+-- Looking for localtime_r - found
+-- Looking for random
+-- Looking for random - found
+-- Performing Test HAVE_EXTERN_LONG_TIMEZONE
+-- Performing Test HAVE_EXTERN_LONG_TIMEZONE - Success
+-- Performing Test HAVE_EXTERN_TM_GMTOFF
+-- Performing Test HAVE_EXTERN_TM_GMTOFF - Success
+-- Performing Test LFS_WITHOUT_MACROS
+-- Performing Test LFS_WITHOUT_MACROS - Success
+-- Performing Test LFS_WITH_MACROS
+-- Performing Test LFS_WITH_MACROS - Success
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for fseeko64
+-- Looking for fseeko64 - not found
+-- Performing Test HAVE_MALLOC_INFO
+-- Performing Test HAVE_MALLOC_INFO - Success
+-- Performing Test HAVE_OPEN_MEMSTREAM
+-- Performing Test HAVE_OPEN_MEMSTREAM - Success
+-- Performing Test HAVE_LD_SCRIPT
+-- Performing Test HAVE_LD_SCRIPT - Success
+-- 
+-- *** Summary ***
+--   qpdf version: 12.4.1
+--   build type: Release
+--   build shared libraries: ON
+--   build static libraries: OFF
+--   build manual: OFF
+--   compiler warnings are errors: OFF
+--   QTC test coverage: OFF
+--   include future changes: OFF
+--   system: Linux
+-- 
+-- *** Options Summary ***
+--   COMPILE_OPTIONS: -Wall;-Wconversion;-Wsign-conversion;-Wshadow=local;$<$<COMPILE_LANGUAGE:CXX>:-Wold-style-cast>
+--   COMPILE_DEFINITIONS: libqpdf_EXPORTS
+--   INCLUDE_DIRECTORIES: /usr/include;$<BUILD_INTERFACE:/var/tmp/hokuto/qpdf-01/build/include>;$<INSTALL_INTERFACE:include>;/var/tmp/hokuto/qpdf-01/build/libqpdf;/var/tmp/hokuto/qpdf-01/build/build/libqpdf
+--   INTERFACE_INCLUDE_DIRECTORIES: $<BUILD_INTERFACE:/var/tmp/hokuto/qpdf-01/build/include>;$<INSTALL_INTERFACE:include>
+--   LINK_OPTIONS: -Wl,--version-script=/var/tmp/hokuto/qpdf-01/build/build/libqpdf/libqpdf.map
+--   LINK_LIBRARIES: z;jpeg;ssl;crypto;gnutls
+--   LINK_DIRECTORIES: /usr/lib
+-- 
+-- See above for crypto summary.
+-- 
+-- Configuring done (2.0s)
+-- Generating done (0.3s)
+-- Build files have been written to: /var/tmp/hokuto/qpdf-01/build/build
+[  0%] [1m[34mGenerating qpdf_corpus/76ffdaa81112d47c22a55f753112318d8c490856[0m
+[  1%] [1m[34mGenerating qpdf_corpus/d1fa7453cefae0e47cb447431c384a0483e324e8[0m
+[  1%] [1m[34mGenerating qpdf_corpus/3def07fa5f196a455313062d945ce227c033b0bb[0m
+[  1%] [1m[34mGenerating qpdf_corpus/b4ba8afb4ef868fc71f9f95a36f6dbdab36d89d4[0m
+[  1%] [1m[34mGenerating qpdf_corpus/ce644a49d01a4653c68548a7fbc7b9b8f7eb3e89[0m
+[  1%] [1m[34mGenerating qpdf_corpus/6bcc949a9aa87479ddd9866415ea99aa543fe7c4[0m
+[  2%] [1m[34mGenerating qpdf_corpus/2d56b7ecc40adb52c34b144fa48ace3932344d3a[0m
+[  2%] [1m[34mGenerating qpdf_corpus/078719298eb735cf020a348517cf701486bcc3bd[0m
+[  2%] [32mBuilding CXX object fuzz/CMakeFiles/standalone_fuzzer.dir/standalone_fuzz_target_runner.cc.o[0m
+[  3%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/BitWriter.cc.o[0m
+[  3%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Buffer.cc.o[0m
+[  3%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/BitStream.cc.o[0m
+[  3%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/BufferInputSource.cc.o[0m
+[  4%] [1m[34mGenerating qpdf_corpus/f693ee2da9b0d9dfd58088db043f768efa2a6da5[0m
+[  4%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/ClosedFileInputSource.cc.o[0m
+[  5%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/ContentNormalizer.cc.o[0m
+[  5%] [1m[34mGenerating qpdf_corpus/baaaccc64ed05296059830afbb65b70db409b597[0m
+[  5%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/CryptoRandomDataProvider.cc.o[0m
+[  5%] [1m[34mGenerating qpdf_corpus/e0309568600327139d044120943fcee6ec34f54f[0m
+[  5%] [1m[34mGenerating qpdf_corpus/cb0213b403893e87587b81834847508f1780dd49[0m
+[  5%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/FileInputSource.cc.o[0m
+[  6%] [1m[34mGenerating qpdf_corpus/88002e251a304f91ca07e2dd0bf13e964ef0eb52[0m
+[  6%] [1m[34mGenerating qpdf_corpus/b110a7fc8357ae1e79213b99c8a25cfdf428f057[0m
+[  7%] [1m[34mGenerating qpdf_corpus/e85a36ce23be7a1d197369c212bafa39b4cec45c[0m
+[  7%] [1m[34mGenerating qpdf_corpus/882b55b4766d1559c03cb824ec3cd117a19a6324[0m
+[  7%] [1m[34mGenerating qpdf_corpus/ea7427b87b4fba45d530e41b41aa8dd961f19596[0m
+[  7%] [1m[34mGenerating qpdf_corpus/912aab2852875edcab9af8f7abf886d1f74a1d23[0m
+[  7%] [1m[34mGenerating qpdf_corpus/55b61333059e2f2e271f0b548367e2931e7a7836[0m
+[  7%] [1m[34mGenerating qpdf_corpus/465fca7be9b67e971027f9ab43ba67aa9d0b3501[0m
+[  7%] [1m[34mGenerating qpdf_corpus/2cc5d71a487a4b5cce773902fc8411ba5ece9eb4[0m
+[  7%] [1m[34mGenerating qpdf_corpus/a2776b678d51489a6078b882b8810767a5b81c19[0m
+[  7%] [1m[34mGenerating qpdf_corpus/72c8deb222c97dd69afe16655eacd824a9f646ca[0m
+[  7%] [1m[34mGenerating qpdf_corpus/c60c359142540de1dbb7ae76f9491537ef552a0a[0m
+[  7%] [1m[34mGenerating qpdf_corpus/a0156fe45e757da2d67fac4211788bd51f68b5f3[0m
+[  7%] [1m[34mGenerating qpdf_corpus/d96615ba4a72cf3c1636fa1d6c16ed4822f72db3[0m
+[  7%] [1m[34mGenerating qpdf_corpus/21dffc2bf33717986a43a86a45001a8836cabae2[0m
+[  8%] [1m[34mGenerating qpdf_corpus/154ef76bc0444207318bf0dc4b4a430007db387b[0m
+[  8%] [1m[34mGenerating qpdf_corpus/ec8845e430b31afd38f3b41d001f7ad03713c46b[0m
+[  8%] [1m[34mGenerating qpdf_corpus/d74b668e383308204568075f22d80006fc2b7fd0[0m
+[  8%] [1m[34mGenerating qpdf_corpus/98936f93306e3575686c549feb7169e08ad7a0a6[0m
+[  8%] [1m[34mGenerating qpdf_corpus/2f4dd624970cdcf8cb00efee491074062227b1ec[0m
+[  9%] [1m[34mGenerating qpdf_corpus/662d709029351b1773e19f61af160df14dace132[0m
+[  9%] [1m[34mGenerating qpdf_corpus/96f7ce36add0f6156e2b9a7213da9f5ba0e70d98[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/a3fdc49102ea6e4531630e9859454cc99468f640[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/6c40dc64ce375d880a68974fb15bb25cc7162354[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/ccb75feb2a3ade7012b8999b6a87c6081a8c99b9[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/824f6d27f1d67e7eb2605f3137e1107661784611[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/f871f14e1231df6df85c765ae82e1bdb4c1402ed[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/0ce62116363811a1888a82253169fd2fa99cafb2[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/8d4367a1d2e3c4143e67635e2953d27dcef7354a[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/aed71f8b1e5070e4c990715ceaa1fa97afa9293e[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/475e7e14812c28594e562d70050806ad090e93a2[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/79ea56950a1b519b40a4cddbd84bf74812bc41d6[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/844536136a677a62b7bfd08067a05a85af01defe[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/a266221b1ff2dda57f0e500dfc367214f51a2797[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/90003dcfedf51bba494d9dabfdd0c1754f2e143d[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/380f5d7305855d772927dff9b0ea0d0024ff8824[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/62c3aa613a08cabaf40a64a85aa26946cadac14e[0m
+[ 10%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/InputSource.cc.o[0m
+[ 10%] [1m[34mGenerating qpdf_corpus/61fb76fc1d6dd2361370f8b2bf5324aec3cd7cd3[0m
+[ 11%] [1m[34mGenerating qpdf_corpus/617585cf1703dc62a5f98f87090503a8aa45ab65[0m
+[ 11%] [1m[34mGenerating qpdf_corpus/5802a6d7b50d292431a2b898637244589f4adfd8[0m
+[ 11%] [1m[34mGenerating qpdf_corpus/6499deef625ebcd225daf6231d0a74b7d2bf28ac[0m
+[ 12%] [1m[34mGenerating qpdf_corpus/0d0ca9e51361ddf6cd57442cb53ff2706b8439ed[0m
+[ 13%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/InsecureRandomDataProvider.cc.o[0m
+[ 13%] [1m[34mGenerating qpdf_corpus/9688893a1f893846b5f1c8f12243bd1771217cd0[0m
+[ 13%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/JSON.cc.o[0m
+[ 14%] [1m[32mLinking CXX static library libstandalone_fuzzer.a[0m
+[ 14%] [1m[34mGenerating qpdf_corpus/97dc791b215191dba708fa4056871ad1caba000b[0m
+[ 14%] [1m[34mGenerating qpdf_corpus/ab5da4eadccc2c23eeec389fd9a708d33c813af4[0m
+[ 14%] [1m[34mGenerating qpdf_corpus/88ba7a7c3ede61b05d4fcecbad4211388170acc0[0m
+[ 14%] [1m[34mGenerating qpdf_corpus/a96777ed6bfd8153ec15538d807da72b82f8b035[0m
+[ 15%] [1m[34mGenerating qpdf_corpus/96b29867cfa3cdb431e6d85b55e57cae885f8b95[0m
+[ 16%] [1m[34mGenerating qpdf_corpus/bc5569e8cfceb5168ddbdcea818fdacd04db6610[0m
+[ 16%] [1m[34mGenerating qpdf_corpus/357cc40712379fb687c1c58ce52524a81f3bc717[0m
+[ 16%] [1m[34mGenerating qpdf_corpus/430173464f1d1834efba5f201e51616163375935[0m
+[ 16%] Built target standalone_fuzzer
+[ 16%] [1m[34mGenerating qpdf_corpus/e84fc48ab8ca83ed1e0f64b489cccccb771a29d9[0m
+[ 16%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/JSONHandler.cc.o[0m
+[ 16%] [1m[34mGenerating qpdf_corpus/f00fe0360bf6384fc97d337338ed2e01a4e6ac7c[0m
+[ 17%] [1m[34mGenerating qpdf_corpus/3a867df4b9ddac17f471ea9bd9d9d31ddd3ca964[0m
+[ 18%] [1m[34mGenerating qpdf_corpus/9e09761de193c4daf82c1c6fc3c6fd72d0cae90d[0m
+[ 18%] [1m[34mGenerating qpdf_corpus/10b3d03fc7ebd02c6f5377ec3f10454f50d86664[0m
+[ 19%] [1m[34mGenerating qpdf_corpus/5bab4b2b6380cbcc425732c463bb0e87e18be58d[0m
+[ 19%] [1m[34mGenerating qpdf_corpus/11becc8bd67bc29f30b944c9c08ecf0e7b62d9c4[0m
+[ 19%] [1m[34mGenerating qpdf_corpus/5da4833dc79c4f30164636285616273c0bd51add[0m
+[ 19%] [1m[34mGenerating qpdf_corpus/13573d1bc800ce8085952a2b29e57839ff48e1d6[0m
+[ 20%] [1m[34mGenerating qpdf_corpus/1fba5ae6db781304a31a60e8a6054af7fbe62762[0m
+[ 21%] [1m[34mGenerating qpdf_corpus/da39a3ee5e6b4b0d3255bfef95601890afd80709[0m
+[ 21%] [1m[34mGenerating qpdf_corpus/6bd2a6b8956ad1dd8b30837f859e847c24a70a50[0m
+[ 22%] [1m[34mGenerating qpdf_corpus/ac6d3db9f867bccce02e7dd5d3aa9ac2e2dfa5e6[0m
+[ 22%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/MD5.cc.o[0m
+[ 23%] [1m[34mGenerating qpdf_corpus/6c71be764f7c61119afbf805788565b8417de5fc[0m
+[ 23%] [1m[34mGenerating qpdf_corpus/f1688e27ccad5268cc449711452878a5a6c047b1[0m
+[ 24%] [1m[34mGenerating qpdf_corpus/7e67af6524cb3a0af6beda0d975af3baf94347b2[0m
+[ 24%] [1m[34mGenerating qpdf_corpus/81ff24aab4ff440a51f00c9ee995e7ae8f104cb7[0m
+[ 25%] [1m[34mGenerating qpdf_corpus/ed60ac8b0583e792379d8b94d3a8a90afa8e2023[0m
+[ 25%] [1m[34mGenerating qpdf_corpus/b265e22223b8b81228afce6f4fd59af799045bff[0m
+[ 25%] [1m[34mGenerating qpdf_corpus/c586e22bd95cffd00e14699a12d9bfbe0c5ecf5b[0m
+[ 26%] [1m[34mGenerating qpdf_corpus/08a5daa0cc3bd33d23f4f7c0175a29dc1e4d8358[0m
+[ 26%] [1m[34mGenerating qpdf_corpus/1ee1d3a39e6994191a52514fc8699e4539b78103[0m
+[ 26%] [1m[34mGenerating qpdf_corpus/2895401e54f0a200de3fb5a634c31da897c3b15d[0m
+[ 27%] [1m[34mGenerating qpdf_corpus/caf53348a6ee5bf204097b18ab2ba3c93bf89309[0m
+[ 27%] [1m[34mGenerating qpdf_corpus/0afc2faea97f92e466b5dc5a9c1061d953ae216d[0m
+[ 27%] [1m[34mGenerating qpdf_corpus/6025045f72b8a61cde2e3c34663bc1d656302d30[0m
+[ 28%] [1m[34mGenerating qpdf_corpus/b1bf4799eacf9447516e0f14e9df3d453f486882[0m
+[ 28%] [1m[34mGenerating qpdf_corpus/e097d2ec88711f265e56c7bbac077cf975a58de6[0m
+[ 28%] [1m[34mGenerating qpdf_corpus/1b77e9dbffccbfc9f493612b9d010a7216270d8f[0m
+[ 28%] [1m[34mGenerating qpdf_corpus/1ad4b888b3616ee9c51dbe05476d68ce4d78c431[0m
+[ 28%] [1m[34mGenerating qpdf_corpus/f58a87d14278569f6bac884bcfe161b8f79fea3f[0m
+[ 28%] [1m[34mGenerating qpdf_corpus/3fb3e6fef4bdcf3a1f4080ce93b976ceaa5c8f1c[0m
+[ 29%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/NNTree.cc.o[0m
+[ 29%] [1m[34mGenerating qpdf_corpus/f8301ccc888c82b68b30da6cf749b29b27256184[0m
+[ 29%] [1m[34mGenerating qpdf_corpus/4119a86951046a82f780f8c3113fd1c582c41824[0m
+[ 29%] [1m[34mGenerating qpdf_corpus/54bf6bfbf1630d68ac5397a12edc1df778bc307a[0m
+[ 30%] [1m[34mGenerating qpdf_corpus/8fee6cf1070d66dc136dee438a0e01c920656f84[0m
+[ 30%] [1m[34mGenerating qpdf_corpus/af96a81af6ea6c50aaa4cde8c0ce5f2c478ee6ae[0m
+[ 30%] [1m[34mGenerating qpdf_corpus/d653e8837304edd8f8ca7214714249e8dad8dbac[0m
+[ 31%] [1m[34mGenerating qpdf_corpus/42c3234389c2b02f4df15f0198a2f997b2b9a024[0m
+[ 31%] [1m[34mGenerating qpdf_corpus/5cbf91f16609c1ddca00a2de281d877e14666404[0m
+[ 31%] [1m[34mGenerating qpdf_corpus/bf637a1b4e86bbb3d90c0611c59a05a080716926[0m
+[ 31%] [1m[34mGenerating qpdf_corpus/a7be83a69610271e2abf83ceddcacfdddbeba3b9[0m
+[ 31%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/OffsetInputSource.cc.o[0m
+[ 31%] [1m[34mGenerating qpdf_corpus/00e94f605d2a772ee873e63de82309531c6b0436[0m
+[ 31%] [1m[34mGenerating qpdf_corpus/0af3b3bb7ae50dc38d5fd8d63da1829d184b0e59[0m
+[ 31%] [1m[34mGenerating qpdf_corpus/ec65a1f70e8a5523209488a0aa2c8468d9696a24[0m
+[ 32%] [1m[34mGenerating qpdf_corpus/495cbd893054104d14da09028c02a6b31c62468f[0m
+[ 32%] Built target qpdf_corpus
+[ 32%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/PDFVersion.cc.o[0m
+[ 32%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pipeline.cc.o[0m
+[ 33%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_AES_PDF.cc.o[0m
+[ 33%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_ASCII85Decoder.cc.o[0m
+[ 33%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_ASCIIHexDecoder.cc.o[0m
+[ 33%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_Base64.cc.o[0m
+[ 34%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_Buffer.cc.o[0m
+[ 34%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_Concatenate.cc.o[0m
+[ 34%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_Count.cc.o[0m
+[ 34%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_DCT.cc.o[0m
+[ 35%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_Discard.cc.o[0m
+[ 35%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_Flate.cc.o[0m
+[ 35%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_Function.cc.o[0m
+[ 35%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_LZWDecoder.cc.o[0m
+[ 36%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_OStream.cc.o[0m
+[ 36%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_PNGFilter.cc.o[0m
+[ 36%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_QPDFTokenizer.cc.o[0m
+[ 36%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_RC4.cc.o[0m
+[ 37%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_RunLength.cc.o[0m
+[ 37%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_SHA2.cc.o[0m
+[ 37%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_StdioFile.cc.o[0m
+[ 37%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_String.cc.o[0m
+[ 38%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/Pl_TIFFPredictor.cc.o[0m
+[ 38%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF.cc.o[0m
+[ 38%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFAcroFormDocumentHelper.cc.o[0m
+[ 38%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFAnnotationObjectHelper.cc.o[0m
+[ 39%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFArgParser.cc.o[0m
+[ 39%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFCryptoProvider.cc.o[0m
+[ 39%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFDocumentHelper.cc.o[0m
+[ 39%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFEFStreamObjectHelper.cc.o[0m
+[ 40%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFEmbeddedFileDocumentHelper.cc.o[0m
+[ 40%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFExc.cc.o[0m
+[ 40%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFFileSpecObjectHelper.cc.o[0m
+[ 40%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFFormFieldObjectHelper.cc.o[0m
+[ 41%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFJob.cc.o[0m
+[ 41%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFJob_argv.cc.o[0m
+[ 41%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFJob_config.cc.o[0m
+[ 41%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFJob_json.cc.o[0m
+[ 42%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFLogger.cc.o[0m
+[ 42%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFMatrix.cc.o[0m
+[ 42%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFObject.cc.o[0m
+[ 42%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFObjectHandle.cc.o[0m
+[ 43%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFObjectHelper.cc.o[0m
+[ 43%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFOutlineDocumentHelper.cc.o[0m
+[ 43%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFOutlineObjectHelper.cc.o[0m
+[ 43%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFPageLabelDocumentHelper.cc.o[0m
+[ 44%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFPageObjectHelper.cc.o[0m
+[ 44%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFParser.cc.o[0m
+[ 44%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFStreamFilter.cc.o[0m
+[ 44%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFSystemError.cc.o[0m
+[ 45%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFTokenizer.cc.o[0m
+[ 45%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFUsage.cc.o[0m
+[ 45%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFWriter.cc.o[0m
+[ 45%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF_Array.cc.o[0m
+[ 46%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF_Dictionary.cc.o[0m
+[ 46%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF_Stream.cc.o[0m
+[ 46%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF_String.cc.o[0m
+[ 46%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF_encryption.cc.o[0m
+[ 47%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF_json.cc.o[0m
+[ 47%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF_linearization.cc.o[0m
+[ 47%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF_objects.cc.o[0m
+[ 47%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDF_pages.cc.o[0m
+[ 48%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QTC.cc.o[0m
+[ 48%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QUtil.cc.o[0m
+[ 48%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/RC4.cc.o[0m
+[ 48%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/ResourceFinder.cc.o[0m
+[ 49%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/SecureRandomDataProvider.cc.o[0m
+[ 49%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/SF_FlateLzwDecode.cc.o[0m
+[ 49%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/global.cc.o[0m
+[ 49%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/qpdf-c.cc.o[0m
+[ 50%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/qpdfjob-c.cc.o[0m
+[ 50%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/qpdflogger-c.cc.o[0m
+[ 50%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFCrypto_openssl.cc.o[0m
+[ 50%] [32mBuilding CXX object libqpdf/CMakeFiles/libqpdf_object.dir/QPDFCrypto_gnutls.cc.o[0m
+[ 50%] Built target libqpdf_object
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/arg_parser.dir/arg_parser.cc.o[0m
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/aes.dir/aes.cc.o[0m
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/ascii85.dir/ascii85.cc.o[0m
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/bits.dir/bits.cc.o[0m
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/closed_file_input_source.dir/closed_file_input_source.cc.o[0m
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/cxx11.dir/cxx11.cc.o[0m
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/concatenate.dir/concatenate.cc.o[0m
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/buffer.dir/buffer.cc.o[0m
+[ 50%] [1m[32mLinking CXX shared library libqpdf.so[0m
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/base64.dir/base64.cc.o[0m
+[ 50%] [1m[32mLinking CXX executable ascii85[0m
+[ 50%] Built target libqpdf
+[ 50%] [32mBuilding CXX object libtests/CMakeFiles/crypto_provider.dir/crypto_provider.cc.o[0m
+[ 51%] [1m[32mLinking CXX executable closed_file_input_source[0m
+[ 51%] [1m[32mLinking CXX executable base64[0m
+[ 51%] [1m[32mLinking CXX executable buffer[0m
+[ 51%] [1m[32mLinking CXX executable aes[0m
+[ 52%] [1m[32mLinking CXX executable bits[0m
+[ 52%] [1m[32mLinking CXX executable concatenate[0m
+[ 52%] Built target closed_file_input_source
+[ 52%] [32mBuilding CXX object libtests/CMakeFiles/dct_compress.dir/dct_compress.cc.o[0m
+[ 52%] Built target aes
+[ 52%] [32mBuilding CXX object libtests/CMakeFiles/dct_uncompress.dir/dct_uncompress.cc.o[0m
+[ 52%] Built target ascii85
+[ 52%] Built target base64
+[ 52%] [32mBuilding CXX object libtests/CMakeFiles/global.dir/global.cc.o[0m
+[ 52%] [32mBuilding CXX object libtests/CMakeFiles/flate.dir/flate.cc.o[0m
+[ 53%] [1m[32mLinking CXX executable crypto_provider[0m
+[ 53%] Built target buffer
+[ 54%] [32mBuilding CXX object libtests/CMakeFiles/hex.dir/hex.cc.o[0m
+[ 54%] Built target concatenate
+[ 55%] [32mBuilding CXX object libtests/CMakeFiles/input_source.dir/input_source.cc.o[0m
+[ 55%] Built target bits
+[ 55%] [32mBuilding CXX object libtests/CMakeFiles/json.dir/json.cc.o[0m
+[ 55%] Built target crypto_provider
+[ 55%] [32mBuilding CXX object libtests/CMakeFiles/json_handler.dir/json_handler.cc.o[0m
+[ 56%] [1m[32mLinking CXX executable dct_uncompress[0m
+[ 56%] [1m[32mLinking CXX executable hex[0m
+[ 56%] [1m[32mLinking CXX executable flate[0m
+[ 56%] [1m[32mLinking CXX executable input_source[0m
+[ 57%] [1m[32mLinking CXX executable dct_compress[0m
+[ 57%] Built target dct_uncompress
+[ 57%] Built target hex
+[ 59%] [32mBuilding CXX object libtests/CMakeFiles/logger.dir/logger.cc.o[0m
+[ 59%] [32mBuilding CXX object libtests/CMakeFiles/json_parse.dir/json_parse.cc.o[0m
+[ 59%] Built target input_source
+[ 60%] [32mBuilding CXX object libtests/CMakeFiles/lzw.dir/lzw.cc.o[0m
+[ 60%] Built target flate
+[ 61%] [32mBuilding CXX object libtests/CMakeFiles/main_from_wmain.dir/main_from_wmain.cc.o[0m
+[ 62%] [1m[32mLinking CXX executable arg_parser[0m
+[ 62%] Built target dct_compress
+[ 62%] [32mBuilding CXX object libtests/CMakeFiles/matrix.dir/matrix.cc.o[0m
+[ 62%] [1m[32mLinking CXX executable json_handler[0m
+[ 62%] [1m[32mLinking CXX executable main_from_wmain[0m
+[ 62%] Built target arg_parser
+[ 62%] [1m[32mLinking CXX executable lzw[0m
+[ 63%] [32mBuilding CXX object libtests/CMakeFiles/md5.dir/md5.cc.o[0m
+[ 63%] [1m[32mLinking CXX executable json[0m
+[ 63%] Built target json_handler
+[ 63%] [32mBuilding CXX object libtests/CMakeFiles/nntree.dir/nntree.cc.o[0m
+[ 63%] Built target main_from_wmain
+[ 63%] [1m[32mLinking CXX executable logger[0m
+[ 64%] [32mBuilding CXX object libtests/CMakeFiles/numrange.dir/numrange.cc.o[0m
+[ 64%] Built target lzw
+[ 65%] [32mBuilding CXX object libtests/CMakeFiles/objects.dir/objects.cc.o[0m
+[ 65%] [1m[32mLinking CXX executable matrix[0m
+[ 65%] Built target json
+[ 65%] [32mBuilding CXX object libtests/CMakeFiles/obj_table.dir/obj_table.cc.o[0m
+[ 65%] [1m[32mLinking CXX executable json_parse[0m
+[ 65%] [1m[32mLinking CXX executable md5[0m
+[ 65%] Built target matrix
+[ 65%] [32mBuilding CXX object libtests/CMakeFiles/pdf_version.dir/pdf_version.cc.o[0m
+[ 65%] Built target logger
+[ 66%] [32mBuilding CXX object libtests/CMakeFiles/pl_function.dir/pl_function.cc.o[0m
+[ 66%] Built target md5
+[ 67%] [32mBuilding CXX object libtests/CMakeFiles/pointer_holder.dir/pointer_holder.cc.o[0m
+[ 67%] Built target json_parse
+[ 67%] [32mBuilding CXX object libtests/CMakeFiles/predictors.dir/predictors.cc.o[0m
+[ 67%] [1m[32mLinking CXX executable pdf_version[0m
+[ 67%] Built target pdf_version
+[ 68%] [32mBuilding CXX object libtests/CMakeFiles/qintc.dir/qintc.cc.o[0m
+[ 68%] [1m[32mLinking CXX executable numrange[0m
+[ 68%] [1m[32mLinking CXX executable pl_function[0m
+[ 68%] [1m[32mLinking CXX executable obj_table[0m
+[ 68%] [1m[32mLinking CXX executable global[0m
+[ 68%] [1m[32mLinking CXX executable predictors[0m
+[ 68%] Built target numrange
+[ 68%] [1m[32mLinking CXX executable nntree[0m
+[ 68%] [32mBuilding CXX object libtests/CMakeFiles/qutil.dir/qutil.cc.o[0m
+[ 68%] Built target obj_table
+[ 68%] [32mBuilding CXX object libtests/CMakeFiles/random.dir/random.cc.o[0m
+[ 68%] Built target pl_function
+[ 68%] [32mBuilding CXX object libtests/CMakeFiles/rc4.dir/rc4.cc.o[0m
+[ 68%] Built target global
+[ 68%] [32mBuilding CXX object libtests/CMakeFiles/runlength.dir/runlength.cc.o[0m
+[ 68%] [1m[32mLinking CXX executable qintc[0m
+[ 68%] Built target nntree
+[ 68%] [32mBuilding CXX object libtests/CMakeFiles/sha2.dir/sha2.cc.o[0m
+[ 68%] Built target predictors
+[ 68%] [32mBuilding CXX object libtests/CMakeFiles/sparse_array.dir/sparse_array.cc.o[0m
+[ 69%] [1m[32mLinking CXX executable random[0m
+[ 70%] [1m[32mLinking CXX executable runlength[0m
+[ 70%] [1m[32mLinking CXX executable rc4[0m
+[ 70%] Built target qintc
+[ 70%] [32mBuilding CXX object libtests/CMakeFiles/util.dir/util.cc.o[0m
+[ 70%] Built target random
+[ 70%] [32mBuilding C object libtests/CMakeFiles/logger_c.dir/logger_c.c.o[0m
+[ 70%] [1m[32mLinking CXX executable logger_c[0m
+[ 71%] [1m[32mLinking CXX executable sha2[0m
+[ 71%] Built target rc4
+[ 71%] [32mBuilding CXX object examples/CMakeFiles/pdf-attach-file.dir/pdf-attach-file.cc.o[0m
+[ 71%] [1m[32mLinking CXX executable pointer_holder[0m
+[ 71%] Built target logger_c
+[ 72%] [32mBuilding CXX object examples/CMakeFiles/pdf-bookmarks.dir/pdf-bookmarks.cc.o[0m
+[ 72%] Built target sha2
+[ 73%] [32mBuilding CXX object examples/CMakeFiles/pdf-count-strings.dir/pdf-count-strings.cc.o[0m
+[ 73%] Built target runlength
+[ 73%] [32mBuilding CXX object examples/CMakeFiles/pdf-create.dir/pdf-create.cc.o[0m
+[ 73%] Built target pointer_holder
+[ 74%] [32mBuilding CXX object examples/CMakeFiles/pdf-custom-filter.dir/pdf-custom-filter.cc.o[0m
+[ 74%] [1m[32mLinking CXX executable util[0m
+[ 74%] [1m[32mLinking CXX executable qutil[0m
+[ 74%] [1m[32mLinking CXX executable pdf-count-strings[0m
+[ 74%] [1m[32mLinking CXX executable pdf-attach-file[0m
+[ 74%] Built target pdf-count-strings
+[ 74%] [32mBuilding CXX object examples/CMakeFiles/pdf-double-page-size.dir/pdf-double-page-size.cc.o[0m
+[ 74%] Built target util
+[ 75%] [32mBuilding CXX object examples/CMakeFiles/pdf-filter-tokens.dir/pdf-filter-tokens.cc.o[0m
+[ 75%] Built target pdf-attach-file
+[ 75%] [32mBuilding CXX object examples/CMakeFiles/pdf-invert-images.dir/pdf-invert-images.cc.o[0m
+[ 75%] [1m[32mLinking CXX executable cxx11[0m
+[ 75%] Built target qutil
+[ 75%] [32mBuilding CXX object examples/CMakeFiles/pdf-mod-info.dir/pdf-mod-info.cc.o[0m
+[ 75%] [1m[32mLinking CXX executable objects[0m
+[ 75%] Built target cxx11
+[ 76%] [32mBuilding CXX object examples/CMakeFiles/pdf-name-number-tree.dir/pdf-name-number-tree.cc.o[0m
+[ 76%] [1m[32mLinking CXX executable pdf-create[0m
+[ 76%] Built target objects
+[ 76%] [32mBuilding CXX object examples/CMakeFiles/pdf-npages.dir/pdf-npages.cc.o[0m
+[ 76%] [1m[32mLinking CXX executable pdf-double-page-size[0m
+[ 76%] Built target pdf-create
+[ 77%] [32mBuilding CXX object examples/CMakeFiles/pdf-overlay-page.dir/pdf-overlay-page.cc.o[0m
+[ 77%] Built target pdf-double-page-size
+[ 77%] [32mBuilding CXX object examples/CMakeFiles/pdf-parse-content.dir/pdf-parse-content.cc.o[0m
+[ 77%] [1m[32mLinking CXX executable pdf-bookmarks[0m
+[ 77%] Built target pdf-bookmarks
+[ 78%] [32mBuilding CXX object examples/CMakeFiles/pdf-set-form-values.dir/pdf-set-form-values.cc.o[0m
+[ 78%] [1m[32mLinking CXX executable pdf-mod-info[0m
+[ 78%] [1m[32mLinking CXX executable sparse_array[0m
+[ 78%] [1m[32mLinking CXX executable pdf-npages[0m
+[ 78%] Built target pdf-npages
+[ 78%] [32mBuilding CXX object examples/CMakeFiles/pdf-split-pages.dir/pdf-split-pages.cc.o[0m
+[ 78%] Built target sparse_array
+[ 78%] [32mBuilding CXX object examples/CMakeFiles/qpdf-job.dir/qpdf-job.cc.o[0m
+[ 78%] Built target pdf-mod-info
+[ 78%] [32mBuilding CXX object examples/CMakeFiles/qpdfjob-remove-annotations.dir/qpdfjob-remove-annotations.cc.o[0m
+[ 78%] [1m[32mLinking CXX executable pdf-name-number-tree[0m
+[ 78%] [1m[32mLinking CXX executable pdf-overlay-page[0m
+[ 78%] [1m[32mLinking CXX executable pdf-parse-content[0m
+[ 78%] [1m[32mLinking CXX executable pdf-invert-images[0m
+[ 78%] Built target pdf-overlay-page
+[ 78%] [32mBuilding CXX object examples/CMakeFiles/qpdfjob-save-attachment.dir/qpdfjob-save-attachment.cc.o[0m
+[ 78%] Built target pdf-parse-content
+[ 78%] [32mBuilding C object examples/CMakeFiles/pdf-c-objects.dir/pdf-c-objects.c.o[0m
+[ 78%] Built target pdf-invert-images
+[ 79%] [32mBuilding C object examples/CMakeFiles/pdf-linearize.dir/pdf-linearize.c.o[0m
+[ 79%] [1m[32mLinking CXX executable pdf-c-objects[0m
+[ 79%] Built target pdf-name-number-tree
+[ 79%] [32mBuilding C object examples/CMakeFiles/qpdfjob-c.dir/qpdfjob-c.c.o[0m
+[ 79%] [1m[32mLinking CXX executable pdf-linearize[0m
+[ 79%] [1m[32mLinking CXX executable pdf-custom-filter[0m
+[ 79%] Built target pdf-c-objects
+[ 80%] [1m[32mLinking CXX executable qpdfjob-c[0m
+[ 79%] [32mBuilding C object examples/CMakeFiles/qpdfjob-c-save-attachment.dir/qpdfjob-c-save-attachment.c.o[0m
+[ 80%] [1m[32mLinking CXX executable pdf-set-form-values[0m
+[ 80%] [1m[32mLinking CXX executable qpdfjob-c-save-attachment[0m
+[ 80%] Built target pdf-linearize
+[ 80%] [32mBuilding CXX object examples/CMakeFiles/extend-c-api.dir/extend-c-api-impl.cc.o[0m
+[ 80%] Built target pdf-set-form-values
+[ 80%] [32mBuilding CXX object zlib-flate/CMakeFiles/zlib-flate.dir/zlib-flate.cc.o[0m
+[ 80%] Built target qpdfjob-c-save-attachment
+[ 80%] [32mBuilding C object examples/CMakeFiles/extend-c-api.dir/extend-c-api.c.o[0m
+[ 80%] [32mBuilding CXX object fuzz/CMakeFiles/qpdf_fuzzer.dir/qpdf_fuzzer.cc.o[0m
+[ 80%] [1m[32mLinking CXX executable qpdf-job[0m
+[ 80%] Built target qpdfjob-c
+[ 80%] [1m[32mLinking CXX executable qpdfjob-remove-annotations[0m
+[ 80%] [32mBuilding CXX object fuzz/CMakeFiles/qpdf_crypt_fuzzer.dir/qpdf_crypt_fuzzer.cc.o[0m
+[ 80%] Built target pdf-custom-filter
+[ 80%] [32mBuilding CXX object fuzz/CMakeFiles/qpdf_crypt_insecure_fuzzer.dir/qpdf_crypt_insecure_fuzzer.cc.o[0m
+[ 80%] Built target qpdf-job
+[ 80%] [32mBuilding CXX object fuzz/CMakeFiles/qpdf_lin_fuzzer.dir/qpdf_lin_fuzzer.cc.o[0m
+[ 80%] [1m[32mLinking CXX executable pdf-split-pages[0m
+[ 80%] Built target qpdfjob-remove-annotations
+[ 80%] [32mBuilding CXX object fuzz/CMakeFiles/qpdf_pages_fuzzer.dir/qpdf_pages_fuzzer.cc.o[0m
+[ 81%] [1m[32mLinking CXX executable qpdfjob-save-attachment[0m
+[ 81%] Built target pdf-split-pages
+[ 81%] [32mBuilding CXX object fuzz/CMakeFiles/qpdf_outlines_fuzzer.dir/qpdf_outlines_fuzzer.cc.o[0m
+[ 81%] [1m[32mLinking CXX executable pdf-filter-tokens[0m
+[ 81%] Built target qpdfjob-save-attachment
+[ 81%] [32mBuilding CXX object fuzz/CMakeFiles/ascii85_fuzzer.dir/ascii85_fuzzer.cc.o[0m
+[ 81%] Built target pdf-filter-tokens
+[ 81%] [32mBuilding CXX object fuzz/CMakeFiles/dct_fuzzer.dir/dct_fuzzer.cc.o[0m
+[ 82%] [1m[32mLinking CXX executable zlib-flate[0m
+[ 83%] [1m[32mLinking CXX executable qpdf_fuzzer[0m
+[ 83%] Built target zlib-flate
+[ 84%] [32mBuilding CXX object fuzz/CMakeFiles/flate_fuzzer.dir/flate_fuzzer.cc.o[0m
+[ 85%] [1m[32mLinking CXX executable ascii85_fuzzer[0m
+[ 85%] [1m[32mLinking CXX executable qpdf_lin_fuzzer[0m
+[ 85%] Built target qpdf_fuzzer
+[ 85%] [32mBuilding CXX object fuzz/CMakeFiles/hex_fuzzer.dir/hex_fuzzer.cc.o[0m
+[ 85%] [1m[32mLinking CXX executable dct_fuzzer[0m
+[ 85%] [1m[32mLinking CXX executable extend-c-api[0m
+[ 86%] [1m[32mLinking CXX executable qpdf_outlines_fuzzer[0m
+[ 86%] Built target qpdf_lin_fuzzer
+[ 87%] [32mBuilding CXX object fuzz/CMakeFiles/json_fuzzer.dir/json_fuzzer.cc.o[0m
+[ 87%] Built target ascii85_fuzzer
+[ 87%] [32mBuilding CXX object fuzz/CMakeFiles/lzw_fuzzer.dir/lzw_fuzzer.cc.o[0m
+[ 87%] Built target extend-c-api
+[ 87%] [32mBuilding CXX object fuzz/CMakeFiles/pngpredictor_fuzzer.dir/pngpredictor_fuzzer.cc.o[0m
+[ 88%] [1m[32mLinking CXX executable qpdf_crypt_fuzzer[0m
+[ 88%] [1m[32mLinking CXX executable flate_fuzzer[0m
+[ 88%] [1m[32mLinking CXX executable qpdf_crypt_insecure_fuzzer[0m
+[ 88%] [1m[32mLinking CXX executable hex_fuzzer[0m
+[ 88%] Built target dct_fuzzer
+[ 88%] [32mBuilding CXX object fuzz/CMakeFiles/runlength_fuzzer.dir/runlength_fuzzer.cc.o[0m
+[ 88%] Built target qpdf_outlines_fuzzer
+[ 88%] [32mBuilding CXX object fuzz/CMakeFiles/tiffpredictor_fuzzer.dir/tiffpredictor_fuzzer.cc.o[0m
+[ 88%] [1m[32mLinking CXX executable lzw_fuzzer[0m
+[ 88%] [1m[32mLinking CXX executable qpdf_pages_fuzzer[0m
+[ 88%] [1m[32mLinking CXX executable pngpredictor_fuzzer[0m
+[ 88%] Built target qpdf_crypt_insecure_fuzzer
+[ 89%] [32mBuilding CXX object compare-for-test/CMakeFiles/qpdf-test-compare.dir/qpdf-test-compare.cc.o[0m
+[ 89%] Built target hex_fuzzer
+[ 89%] [32mBuilding CXX object qpdf/CMakeFiles/qpdf.dir/qpdf.cc.o[0m
+[ 89%] Built target qpdf_crypt_fuzzer
+[ 89%] Built target flate_fuzzer
+[ 89%] [1m[32mLinking CXX executable json_fuzzer[0m
+[ 90%] [32mBuilding CXX object qpdf/CMakeFiles/fix-qdf.dir/fix-qdf.cc.o[0m
+[ 91%] [32mBuilding CXX object qpdf/CMakeFiles/pdf_from_scratch.dir/pdf_from_scratch.cc.o[0m
+[ 92%] [1m[32mLinking CXX executable tiffpredictor_fuzzer[0m
+[ 92%] [1m[32mLinking CXX executable runlength_fuzzer[0m
+[ 92%] Built target qpdf_pages_fuzzer
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_char_sign.dir/test_char_sign.cc.o[0m
+[ 92%] [1m[32mLinking CXX executable test_char_sign[0m
+[ 92%] Built target lzw_fuzzer
+[ 92%] Built target pngpredictor_fuzzer
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_completion.dir/test_completion.cc.o[0m
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_driver.dir/test_driver.cc.o[0m
+[ 92%] Built target test_char_sign
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_large_file.dir/test_large_file.cc.o[0m
+[ 92%] Built target json_fuzzer
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_many_nulls.dir/test_many_nulls.cc.o[0m
+[ 92%] Built target tiffpredictor_fuzzer
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_parsedoffset.dir/test_parsedoffset.cc.o[0m
+[ 92%] Built target runlength_fuzzer
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_pdf_doc_encoding.dir/test_pdf_doc_encoding.cc.o[0m
+[ 92%] [1m[32mLinking CXX executable pdf_from_scratch[0m
+[ 92%] [1m[32mLinking CXX executable test_many_nulls[0m
+[ 92%] [1m[32mLinking CXX executable qpdf-test-compare[0m
+[ 92%] Built target pdf_from_scratch
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_pdf_unicode.dir/test_pdf_unicode.cc.o[0m
+[ 92%] Built target test_many_nulls
+[ 92%] [1m[32mLinking CXX executable qpdf[0m
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_renumber.dir/test_renumber.cc.o[0m
+[ 92%] [1m[32mLinking CXX executable test_pdf_doc_encoding[0m
+[ 92%] Built target qpdf-test-compare
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_shell_glob.dir/test_shell_glob.cc.o[0m
+[ 92%] Built target qpdf
+[ 92%] Built target test_pdf_doc_encoding
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_tokenizer.dir/test_tokenizer.cc.o[0m
+[ 92%] [32mBuilding CXX object qpdf/CMakeFiles/test_unicode_filenames.dir/test_unicode_filenames.cc.o[0m
+[ 93%] [1m[32mLinking CXX executable test_large_file[0m
+[ 93%] Built target test_large_file
+[ 93%] [32mBuilding CXX object qpdf/CMakeFiles/test_xref.dir/test_xref.cc.o[0m
+[ 94%] [1m[32mLinking CXX executable test_shell_glob[0m
+[ 94%] Built target test_shell_glob
+[ 95%] [32mBuilding C object qpdf/CMakeFiles/qpdf-ctest.dir/qpdf-ctest.c.o[0m
+[ 96%] [1m[32mLinking CXX executable test_unicode_filenames[0m
+[ 96%] Built target test_unicode_filenames
+[ 96%] [32mBuilding C object qpdf/CMakeFiles/qpdfjob-ctest.dir/qpdfjob-ctest.c.o[0m
+[ 96%] [1m[32mLinking CXX executable qpdf-ctest[0m
+[ 96%] [1m[32mLinking CXX executable test_renumber[0m
+[ 97%] [1m[32mLinking CXX executable qpdfjob-ctest[0m
+[ 97%] [1m[32mLinking CXX executable test_xref[0m
+[ 98%] [1m[32mLinking CXX executable test_parsedoffset[0m
+[100%] [1m[32mLinking CXX executable test_completion[0m
+[100%] [1m[32mLinking CXX executable test_pdf_unicode[0m
+[100%] Built target qpdf-ctest
+[100%] Built target test_renumber
+[100%] Built target test_xref
+[100%] Built target test_completion
+[100%] Built target qpdfjob-ctest
+[100%] Built target test_parsedoffset
+[100%] Built target test_pdf_unicode
+[100%] [1m[32mLinking CXX executable test_tokenizer[0m
+[100%] Built target test_tokenizer
+[100%] [1m[32mLinking CXX executable fix-qdf[0m
+[100%] Built target fix-qdf
+[100%] [1m[32mLinking CXX executable test_driver[0m
+[100%] Built target test_driver
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_Flate.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFCryptoProvider.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_Function.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QTC.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/InputSource.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFAcroFormDocumentHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFOutlineObjectHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFObjectHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/BufferInputSource.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Constants.h
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/auto_job_c_copy_att.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QIntC.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/auto_job_c_global.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/ObjectHandle.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFCryptoImpl.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_Buffer.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFEmbeddedFileDocumentHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFPageObjectHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFEFStreamObjectHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFLogger.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFPageLabelDocumentHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_OStream.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/auto_job_c_limits.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFMatrix.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFObject.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_DCT.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/global.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFPageDocumentHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFAnnotationObjectHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_QPDFTokenizer.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFWriter.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/auto_job_c_uo.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/qpdfjob-c.h
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFXRefEntry.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/auto_job_c_pages.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFUsage.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFNumberTreeObjectHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/auto_job_c_att.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFStreamFilter.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFFileSpecObjectHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFTokenizer.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFFormFieldObjectHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/FileInputSource.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFDocumentHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFJob.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Types.h
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Buffer.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFObjGen.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_RunLength.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/PointerHolder.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_String.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/auto_job_c_set_page_labels.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_StdioFile.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/RandomDataProvider.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pipeline.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/ClosedFileInputSource.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/auto_job_c_enc.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/DLL.h
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QUtil.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/qpdflogger-c.h
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/PDFVersion.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_Discard.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFNameTreeObjectHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFExc.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/JSON.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFSystemError.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/qpdf-c.h
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_Count.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFObjectHandle.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDF.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/QPDFOutlineDocumentHelper.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/Pl_Concatenate.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/include/qpdf/auto_job_c_main.hh
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/lib64/libqpdf.so.30.4.1
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/lib64/libqpdf.so.30
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/lib64/libqpdf.so
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/lib64/pkgconfig/libqpdf.pc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/lib64/cmake/qpdf/libqpdfTargets.cmake
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/lib64/cmake/qpdf/libqpdfTargets-release.cmake
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/lib64/cmake/qpdf/qpdfConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/lib64/cmake/qpdf/qpdfConfig.cmake
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/bin/qpdf
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/qpdf-01/output/usr/bin/qpdf" to ""
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/bin/fix-qdf
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/qpdf-01/output/usr/bin/fix-qdf" to ""
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/extend-c-api-impl.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/extend-c-api.c
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/extend-c-api.h
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-attach-file.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-bookmarks.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-c-objects.c
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-count-strings.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-create.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-custom-filter.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-double-page-size.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-filter-tokens.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-invert-images.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-linearize.c
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-mod-info.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-name-number-tree.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-npages.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-overlay-page.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-parse-content.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-set-form-values.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/pdf-split-pages.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/qpdf-job.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/qpdfjob-c-save-attachment.c
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/qpdfjob-c.c
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/qpdfjob-remove-annotations.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/examples/qpdfjob-save-attachment.cc
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/bin/zlib-flate
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/qpdf-01/output/usr/bin/zlib-flate" to ""
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/doc/qpdf/README-doc.txt
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/man/man1/qpdf.1
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/man/man1/fix-qdf.1
+-- Installing: /var/tmp/hokuto/qpdf-01/output/usr/share/man/man1/zlib-flate.1
+
+Script done on 2026-08-28 17:14:38+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mqpdf[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mFri, 28 Aug 2026 10:14:39 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m37s[0m
