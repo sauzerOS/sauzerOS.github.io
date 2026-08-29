@@ -1,0 +1,637 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mimlib2[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mimlib2 1.12.7-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 29 Aug 2026 18:59:38 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mimlib2[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mbzip2 freetype giflib libjpeg-turbo libpng libtiff libxext xz highway libheif libjxl librsvg libwebp openjpeg[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mimlib2[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 bzip2-1.0.8-2 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 freetype-2.14.3-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 giflib-6.1.3-1 grep-3.12-1 gzip-1.14-1 highway-1.4.0-1 libheif-1.23.2-1 libjpeg-turbo-3.2.0-1 libjxl-0.12.0-1 libpng-1.6.58-1 librsvg-2.62.3-1 libtiff-4.7.2-1 libtool-2.6.2-1 libwebp-1.6.0-2 libxext-1.3.7-1 m4-1.4.21-1 make-4.4.1-1 openjpeg-2.5.4-1 patch-2.8-1 pkgconf-3.0.6-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1 xz-5.8.3-1[0m
+
+Script started on 2026-08-30 01:59:38+07:00 [COMMAND="cd /var/tmp/hokuto/imlib2-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/imlib2-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/imlib2-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/imlib2-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/imlib2-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/imlib2-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/imlib2-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/imlib2-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/imlib2-01/build/.cache' /repo/sauzeros/extra/imlib2/build /var/tmp/hokuto/imlib2-01/output 1.12.7 imlib2" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking whether byte ordering is bigendian... (cached) no
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking dependency style of cc... (cached) gcc3
+checking dependency style of cc... gcc3
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking for c++ option to enable C++11 features... -std=gnu++11
+checking dependency style of c++ -std=gnu++11... gcc3
+checking for an ANSI C-conforming const... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... c++ -std=gnu++11 -E
+checking for ld used by c++ -std=gnu++11... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for c++ -std=gnu++11 option to produce PIC... -fPIC -DPIC
+checking if c++ -std=gnu++11 PIC flag -fPIC -DPIC works... yes
+checking if c++ -std=gnu++11 static flag -static works... yes
+checking if c++ -std=gnu++11 supports -c -o file.o... yes
+checking if c++ -std=gnu++11 supports -c -o file.o... (cached) yes
+checking whether the c++ -std=gnu++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for zlib... yes
+checking whether to enable x86 mmx support... no
+checking whether to enable amd64 asm support... yes
+checking for freetype2... yes
+checking how to run the C preprocessor... cc -E
+checking for X... libraries , headers 
+checking for gethostbyname... yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking whether to enable X11 MIT-SHM FD-passing support... auto
+checking for x11-xcb xcb xcb-shm >= 1.9... yes
+checking for dlopen in -ldl... yes
+checking for clock_gettime... yes
+checking whether to enable AVIF support... auto
+checking for libavif... no
+configure: WARNING: *** AVIF support will not be built (auto not found) ***
+checking whether to enable GIF support... auto
+checking for DGifOpenFileName in -lgif... yes
+checking for gif_lib.h... yes
+checking whether to enable HEIF support... auto
+checking for libheif... yes
+checking whether to enable JPEG support... auto
+checking for libjpeg... yes
+checking whether to enable J2K support... auto
+checking for libopenjp2... yes
+checking whether to enable JXL support... auto
+checking for libjxl libjxl_threads... yes
+checking whether to enable PNG support... auto
+checking for libpng... yes
+checking whether to enable PS support... auto
+checking for libspectre... yes
+checking whether to enable RAW support... auto
+checking for libraw... no
+configure: WARNING: *** RAW support will not be built (auto not found) ***
+checking whether to enable SVG support... auto
+checking for librsvg-2.0 >= 2.46... yes
+checking whether to enable TIFF support... auto
+checking for libtiff-4... yes
+checking whether to enable WEBP support... auto
+checking for libwebpdemux... yes
+checking whether to enable Y4M support... auto
+checking for libyuv... no
+checking for J420ToARGB in -lyuv... no
+configure: WARNING: *** Y4M support will not be built (auto not found) ***
+checking whether to enable BZ2 support... auto
+checking for bzip2... yes
+checking whether to enable LZMA support... auto
+checking for liblzma... yes
+checking whether to enable ZLIB support... auto
+checking for zlib... yes
+checking whether to enable ID3 support... auto
+checking for id3tag... no
+configure: WARNING: *** ID3 support will not be built (auto not found) ***
+checking for simple visibility declarations... yes
+checking for struct stat.st_mtim.tv_nsec... yes
+checking for struct stat.st_mtimespec.tv_nsec... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating imlib2.pc
+config.status: creating src/Makefile
+config.status: creating src/lib/Makefile
+config.status: creating src/lib/Imlib2.h
+config.status: creating src/bin/Makefile
+config.status: creating src/modules/Makefile
+config.status: creating src/modules/filters/Makefile
+config.status: creating src/modules/loaders/Makefile
+config.status: creating test/Makefile
+config.status: creating data/Makefile
+config.status: creating data/fonts/Makefile
+config.status: creating data/images/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/Doxyfile
+config.status: creating doc/imlib2_intro.dox
+config.status: creating README
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+
+------------------------------------------------------------------------
+imlib2 1.12.7
+------------------------------------------------------------------------
+
+Configuration Options Summary:
+
+Image loaders:
+ Regular image loaders
+  AVIF....................: no
+  GIF.....................: yes
+  HEIF....................: yes
+  JPEG....................: yes
+  J2K.....................: yes
+  JXL.....................: yes
+  PNG.....................: yes
+  PS......................: yes
+  RAW.....................: no
+  SVG.....................: yes
+  TIFF....................: yes
+  WEBP....................: yes
+  Y4M.....................: no
+ Decompressors
+  BZIP2...................: yes
+  LZMA(XZ)................: yes
+  ZLIB....................: yes
+ Containers
+  ID3.....................: no
+
+Build for X11.............: yes
+Use X MIT-SHM FD-passing..: yes
+
+Use X86 MMX for speed.....: no
+Use AMD64 for speed.......: yes
+
+Include filters...........: yes
+Include text functions....: yes
+Use uscaler...............: yes
+Use visibility hiding.....: yes
+Use struct packing........: no
+Enable RTLD_LOCAL support.: yes
+
+Build demo programs.......: yes
+
+Installation path.........: /usr
+
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/imlib2-01/build'
+Making all in src
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src'
+Making all in lib
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/lib'
+  CC       api.lo
+  CC       api_obsolete.lo
+  CC       asm_c.lo
+  CC       color_helpers.lo
+  CC       blend.lo
+  CC       debug.lo
+  CC       colormod.lo
+  CC       draw_ellipse.lo
+  CC       draw_line.lo
+  CC       draw_polygon.lo
+  CC       draw_rectangle.lo
+  CC       file.lo
+  CC       grad.lo
+  CC       image_tags.lo
+  CC       image.lo
+  CC       loaders.lo
+  CC       modules.lo
+  CC       object.lo
+  CC       rgbadraw.lo
+  CC       rotate.lo
+  CC       scale.lo
+  CC       span.lo
+  CC       strutils.lo
+  CC       updates.lo
+  CC       api_filter.lo
+  CC       dynamic_filters.lo
+  CC       filter.lo
+  CC       script.lo
+  CC       api_text.lo
+  CC       font_draw.lo
+  CC       font_load.lo
+  CC       font_main.lo
+  CC       font_query.lo
+  CC       api_x11.lo
+  CC       x11_color.lo
+  CC       x11_context.lo
+  CC       x11_grab.lo
+  CC       x11_pixmap.lo
+  CC       x11_rgba.lo
+  CC       x11_rend.lo
+  CC       x11_ximage.lo
+  CPPAS    amd64_blend.lo
+  CPPAS    amd64_blend_cmod.lo
+  CCLD     libImlib2.la
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/lib'
+Making all in modules
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+Making all in loaders
+make[4]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules/loaders'
+  CC       loader_ani.lo
+  CC       loader_argb.lo
+  CC       loader_ff.lo
+  CC       loader_bmp.lo
+  CC       loader_ico.lo
+  CC       loader_lbm.lo
+  CC       loader_pnm.lo
+  CC       loader_qoi.lo
+  CC       loader_xbm.lo
+  CC       loader_tga.lo
+  CC       loader_gif.lo
+  CC       loader_xpm.lo
+  CC       heif_la-loader_heif.lo
+  CC       heif_la-ldrs_util.lo
+  CC       jpeg_la-loader_jpeg.lo
+  CC       jpeg_la-ldrs_util.lo
+  CC       jpeg_la-exif.lo
+  CC       j2k_la-loader_j2k.lo
+  CC       jxl_la-loader_jxl.lo
+  CC       jxl_la-ldrs_util.lo
+  CC       png_la-loader_png.lo
+  CC       png_la-ldrs_util.lo
+  CC       ps_la-loader_ps.lo
+  CC       svg_la-loader_svg.lo
+  CC       tiff_la-loader_tiff.lo
+  CC       tiff_la-ldrs_util.lo
+  CC       webp_la-loader_webp.lo
+  CC       webp_la-ldrs_util.lo
+  CC       bz2_la-loader_bz2.lo
+  CC       bz2_la-decompress_load.lo
+  CC       lzma_la-loader_lzma.lo
+  CC       lzma_la-decompress_load.lo
+  CC       zlib_la-decompress_load.lo
+  CC       zlib_la-loader_zlib.lo
+  CCLD     ani.la
+  CCLD     argb.la
+  CCLD     bmp.la
+  CCLD     ff.la
+  CCLD     ico.la
+  CCLD     lbm.la
+  CCLD     pnm.la
+  CCLD     qoi.la
+  CCLD     tga.la
+  CCLD     xbm.la
+  CCLD     xpm.la
+  CCLD     gif.la
+  CCLD     heif.la
+  CCLD     jpeg.la
+  CCLD     jxl.la
+  CCLD     j2k.la
+  CCLD     png.la
+  CCLD     ps.la
+  CCLD     svg.la
+  CCLD     tiff.la
+  CCLD     webp.la
+  CCLD     bz2.la
+  CCLD     lzma.la
+  CCLD     zlib.la
+make[4]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules/loaders'
+Making all in filters
+make[4]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules/filters'
+  CC       filter_colormod.lo
+  CC       filter_bumpmap.lo
+  CC       filter_test.lo
+  CCLD     bumpmap.la
+  CCLD     colormod.la
+  CCLD     testfilter.la
+make[4]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules/filters'
+make[4]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+Making all in bin
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/bin'
+  CC       imlib2_conv.o
+  CC       prog_util.o
+  CC       imlib2_load-prog_util.o
+  CC       prog_x11.o
+  CC       imlib2_show.o
+  CC       imlib2_test.o
+  CC       imlib2_poly.o
+  CC       imlib2_colorspace.o
+  CC       imlib2_view-imlib2_view.o
+  CC       imlib2_view-prog_x11.o
+  CC       imlib2_grab.o
+  CC       imlib2_bumpmap.o
+  CCLD     imlib2_conv
+  CC       imlib2_load-imlib2_load.o
+  CCLD     imlib2_colorspace
+  CCLD     imlib2_test
+  CCLD     imlib2_grab
+  CCLD     imlib2_bumpmap
+  CCLD     imlib2_poly
+  CCLD     imlib2_load
+  CCLD     imlib2_view
+  CCLD     imlib2_show
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/bin'
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src'
+Making all in data
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data'
+Making all in fonts
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data/fonts'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data/fonts'
+Making all in images
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data/images'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data/images'
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data'
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/imlib2-01/build'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src'
+Making install in lib
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/lib'
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imlib2-01/output/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imlib2-01/output/usr/lib'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libImlib2.la '/var/tmp/hokuto/imlib2-01/output/usr/lib'
+ /usr/bin/install -c -m 644 Imlib2.h Imlib2_Loader.h '/var/tmp/hokuto/imlib2-01/output/usr/include'
+libtool: install: /usr/bin/install -c .libs/libImlib2.so.1.12.7 /var/tmp/hokuto/imlib2-01/output/usr/lib/libImlib2.so.1.12.7
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/output/usr/lib && { ln -s -f libImlib2.so.1.12.7 libImlib2.so.1 || { rm -f libImlib2.so.1 && ln -s libImlib2.so.1.12.7 libImlib2.so.1; }; })
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/output/usr/lib && { ln -s -f libImlib2.so.1.12.7 libImlib2.so || { rm -f libImlib2.so && ln -s libImlib2.so.1.12.7 libImlib2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libImlib2.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/libImlib2.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/lib'
+Making install in modules
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+Making install in loaders
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules/loaders'
+make[4]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules/loaders'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders'
+ /bin/sh ../../../libtool --tag=disable-static  --mode=install /usr/bin/install -c   ani.la argb.la bmp.la ff.la ico.la lbm.la pnm.la qoi.la tga.la xbm.la xpm.la gif.la heif.la jpeg.la j2k.la jxl.la png.la ps.la svg.la tiff.la webp.la bz2.la lzma.la zlib.la '/var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders'
+libtool: [31mwarning[0m: [1mrelinking 'ani.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o ani.la -rpath /usr/lib/imlib2/loaders loader_ani.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/ani.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/ani.so
+libtool: install: /usr/bin/install -c .libs/ani.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/ani.la
+libtool: [31mwarning[0m: [1mrelinking 'argb.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o argb.la -rpath /usr/lib/imlib2/loaders loader_argb.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/argb.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/argb.so
+libtool: install: /usr/bin/install -c .libs/argb.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/argb.la
+libtool: [31mwarning[0m: [1mrelinking 'bmp.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o bmp.la -rpath /usr/lib/imlib2/loaders loader_bmp.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/bmp.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/bmp.so
+libtool: install: /usr/bin/install -c .libs/bmp.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/bmp.la
+libtool: [31mwarning[0m: [1mrelinking 'ff.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o ff.la -rpath /usr/lib/imlib2/loaders loader_ff.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/ff.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/ff.so
+libtool: install: /usr/bin/install -c .libs/ff.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/ff.la
+libtool: [31mwarning[0m: [1mrelinking 'ico.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o ico.la -rpath /usr/lib/imlib2/loaders loader_ico.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/ico.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/ico.so
+libtool: install: /usr/bin/install -c .libs/ico.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/ico.la
+libtool: [31mwarning[0m: [1mrelinking 'lbm.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o lbm.la -rpath /usr/lib/imlib2/loaders loader_lbm.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/lbm.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/lbm.so
+libtool: install: /usr/bin/install -c .libs/lbm.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/lbm.la
+libtool: [31mwarning[0m: [1mrelinking 'pnm.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o pnm.la -rpath /usr/lib/imlib2/loaders loader_pnm.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/pnm.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/pnm.so
+libtool: install: /usr/bin/install -c .libs/pnm.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/pnm.la
+libtool: [31mwarning[0m: [1mrelinking 'qoi.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o qoi.la -rpath /usr/lib/imlib2/loaders loader_qoi.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/qoi.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/qoi.so
+libtool: install: /usr/bin/install -c .libs/qoi.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/qoi.la
+libtool: [31mwarning[0m: [1mrelinking 'tga.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o tga.la -rpath /usr/lib/imlib2/loaders loader_tga.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/tga.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/tga.so
+libtool: install: /usr/bin/install -c .libs/tga.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/tga.la
+libtool: [31mwarning[0m: [1mrelinking 'xbm.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o xbm.la -rpath /usr/lib/imlib2/loaders loader_xbm.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/xbm.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/xbm.so
+libtool: install: /usr/bin/install -c .libs/xbm.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/xbm.la
+libtool: [31mwarning[0m: [1mrelinking 'xpm.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o xpm.la -rpath /usr/lib/imlib2/loaders loader_xpm.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/xpm.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/xpm.so
+libtool: install: /usr/bin/install -c .libs/xpm.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/xpm.la
+libtool: [31mwarning[0m: [1mrelinking 'gif.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o gif.la -rpath /usr/lib/imlib2/loaders loader_gif.lo ../../../src/lib/libImlib2.la -lgif -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/gif.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/gif.so
+libtool: install: /usr/bin/install -c .libs/gif.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/gif.la
+libtool: [31mwarning[0m: [1mrelinking 'heif.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o heif.la -rpath /usr/lib/imlib2/loaders heif_la-loader_heif.lo heif_la-ldrs_util.lo ../../../src/lib/libImlib2.la -L/usr/lib64 -lheif -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/heif.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/heif.so
+libtool: install: /usr/bin/install -c .libs/heif.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/heif.la
+libtool: [31mwarning[0m: [1mrelinking 'jpeg.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o jpeg.la -rpath /usr/lib/imlib2/loaders jpeg_la-loader_jpeg.lo jpeg_la-exif.lo jpeg_la-ldrs_util.lo ../../../src/lib/libImlib2.la -ljpeg -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/jpeg.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/jpeg.so
+libtool: install: /usr/bin/install -c .libs/jpeg.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/jpeg.la
+libtool: [31mwarning[0m: [1mrelinking 'j2k.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o j2k.la -rpath /usr/lib/imlib2/loaders j2k_la-loader_j2k.lo ../../../src/lib/libImlib2.la -L/usr/lib64 -lopenjp2 -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/j2k.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/j2k.so
+libtool: install: /usr/bin/install -c .libs/j2k.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/j2k.la
+libtool: [31mwarning[0m: [1mrelinking 'jxl.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o jxl.la -rpath /usr/lib/imlib2/loaders jxl_la-loader_jxl.lo jxl_la-ldrs_util.lo ../../../src/lib/libImlib2.la -L/usr/lib64 -ljxl -ljxl_threads -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/jxl.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/jxl.so
+libtool: install: /usr/bin/install -c .libs/jxl.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/jxl.la
+libtool: [31mwarning[0m: [1mrelinking 'png.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o png.la -rpath /usr/lib/imlib2/loaders png_la-loader_png.lo png_la-ldrs_util.lo ../../../src/lib/libImlib2.la -L/usr/lib64 -lpng16 -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/png.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/png.so
+libtool: install: /usr/bin/install -c .libs/png.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/png.la
+libtool: [31mwarning[0m: [1mrelinking 'ps.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o ps.la -rpath /usr/lib/imlib2/loaders ps_la-loader_ps.lo ../../../src/lib/libImlib2.la -lspectre -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/ps.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/ps.so
+libtool: install: /usr/bin/install -c .libs/ps.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/ps.la
+libtool: [31mwarning[0m: [1mrelinking 'svg.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o svg.la -rpath /usr/lib/imlib2/loaders svg_la-loader_svg.lo ../../../src/lib/libImlib2.la -lrsvg-2 -lgdk_pixbuf-2.0 -lgio-2.0 -lcairo -lgobject-2.0 -lglib-2.0 -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/svg.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/svg.so
+libtool: install: /usr/bin/install -c .libs/svg.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/svg.la
+libtool: [31mwarning[0m: [1mrelinking 'tiff.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o tiff.la -rpath /usr/lib/imlib2/loaders tiff_la-loader_tiff.lo tiff_la-ldrs_util.lo ../../../src/lib/libImlib2.la -L/usr/lib64 -ltiff -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/tiff.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/tiff.so
+libtool: install: /usr/bin/install -c .libs/tiff.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/tiff.la
+libtool: [31mwarning[0m: [1mrelinking 'webp.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o webp.la -rpath /usr/lib/imlib2/loaders webp_la-loader_webp.lo webp_la-ldrs_util.lo ../../../src/lib/libImlib2.la -lwebpdemux -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/webp.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/webp.so
+libtool: install: /usr/bin/install -c .libs/webp.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/webp.la
+libtool: [31mwarning[0m: [1mrelinking 'bz2.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o bz2.la -rpath /usr/lib/imlib2/loaders bz2_la-loader_bz2.lo bz2_la-decompress_load.lo ../../../src/lib/libImlib2.la -lbz2 -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/bz2.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/bz2.so
+libtool: install: /usr/bin/install -c .libs/bz2.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/bz2.la
+libtool: [31mwarning[0m: [1mrelinking 'lzma.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o lzma.la -rpath /usr/lib/imlib2/loaders lzma_la-loader_lzma.lo lzma_la-decompress_load.lo ../../../src/lib/libImlib2.la -llzma -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/lzma.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/lzma.so
+libtool: install: /usr/bin/install -c .libs/lzma.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/lzma.la
+libtool: [31mwarning[0m: [1mrelinking 'zlib.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/loaders; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o zlib.la -rpath /usr/lib/imlib2/loaders zlib_la-loader_zlib.lo zlib_la-decompress_load.lo ../../../src/lib/libImlib2.la -lz -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/zlib.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/zlib.so
+libtool: install: /usr/bin/install -c .libs/zlib.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/loaders/zlib.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib/imlib2/loaders'[0m
+make[4]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules/loaders'
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules/loaders'
+Making install in filters
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules/filters'
+make[4]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules/filters'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/filters'
+ /bin/sh ../../../libtool --tag=disable-static  --mode=install /usr/bin/install -c   testfilter.la bumpmap.la colormod.la '/var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/filters'
+libtool: [31mwarning[0m: [1mrelinking 'testfilter.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/filters; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o testfilter.la -rpath /usr/lib/imlib2/filters filter_test.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/testfilter.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/filters/testfilter.so
+libtool: install: /usr/bin/install -c .libs/testfilter.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/filters/testfilter.la
+libtool: [31mwarning[0m: [1mrelinking 'bumpmap.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/filters; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o bumpmap.la -rpath /usr/lib/imlib2/filters filter_bumpmap.lo ../../../src/lib/libImlib2.la -lm -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/bumpmap.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/filters/bumpmap.so
+libtool: install: /usr/bin/install -c .libs/bumpmap.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/filters/bumpmap.la
+libtool: [31mwarning[0m: [1mrelinking 'colormod.la'[0m
+libtool: install: (cd /var/tmp/hokuto/imlib2-01/build/src/modules/filters; /bin/sh "/var/tmp/hokuto/imlib2-01/build/libtool"  --silent --tag CC --tag disable-static --mode=relink cc -W -Wall -Wcast-align -Wpointer-arith -Wshadow -Wwrite-strings -Wno-unused-parameter -Wmissing-prototypes -Wmissing-declarations -Wstrict-prototypes -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -module -avoid-version -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o colormod.la -rpath /usr/lib/imlib2/filters filter_colormod.lo ../../../src/lib/libImlib2.la -inst-prefix-dir /var/tmp/hokuto/imlib2-01/output)
+libtool: install: /usr/bin/install -c .libs/colormod.soT /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/filters/colormod.so
+libtool: install: /usr/bin/install -c .libs/colormod.lai /var/tmp/hokuto/imlib2-01/output/usr/lib/imlib2/filters/colormod.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib/imlib2/filters'[0m
+make[4]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules/filters'
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules/filters'
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+make[4]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/modules'
+Making install in bin
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/bin'
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src/bin'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imlib2-01/output/usr/bin'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c imlib2_conv imlib2_load imlib2_show imlib2_test imlib2_poly imlib2_colorspace imlib2_view imlib2_grab imlib2_bumpmap '/var/tmp/hokuto/imlib2-01/output/usr/bin'
+libtool: [31mwarning[0m: [1m'../../src/lib/libImlib2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/imlib2_conv /var/tmp/hokuto/imlib2-01/output/usr/bin/imlib2_conv
+libtool: [31mwarning[0m: [1m'../../src/lib/libImlib2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/imlib2_load /var/tmp/hokuto/imlib2-01/output/usr/bin/imlib2_load
+libtool: [31mwarning[0m: [1m'../../src/lib/libImlib2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/imlib2_show /var/tmp/hokuto/imlib2-01/output/usr/bin/imlib2_show
+libtool: [31mwarning[0m: [1m'../../src/lib/libImlib2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/imlib2_test /var/tmp/hokuto/imlib2-01/output/usr/bin/imlib2_test
+libtool: [31mwarning[0m: [1m'../../src/lib/libImlib2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/imlib2_poly /var/tmp/hokuto/imlib2-01/output/usr/bin/imlib2_poly
+libtool: [31mwarning[0m: [1m'../../src/lib/libImlib2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/imlib2_colorspace /var/tmp/hokuto/imlib2-01/output/usr/bin/imlib2_colorspace
+libtool: [31mwarning[0m: [1m'../../src/lib/libImlib2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/imlib2_view /var/tmp/hokuto/imlib2-01/output/usr/bin/imlib2_view
+libtool: [31mwarning[0m: [1m'../../src/lib/libImlib2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/imlib2_grab /var/tmp/hokuto/imlib2-01/output/usr/bin/imlib2_grab
+libtool: [31mwarning[0m: [1m'../../src/lib/libImlib2.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/imlib2_bumpmap /var/tmp/hokuto/imlib2-01/output/usr/bin/imlib2_bumpmap
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/bin'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src/bin'
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src'
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/src'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/src'
+Making install in data
+make[1]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data'
+Making install in fonts
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data/fonts'
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data/fonts'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imlib2-01/output/usr/share/imlib2/data/fonts'
+ /usr/bin/install -c -m 644 cinema.ttf grunge.ttf morpheus.ttf notepad.ttf '/var/tmp/hokuto/imlib2-01/output/usr/share/imlib2/data/fonts'
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data/fonts'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data/fonts'
+Making install in images
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data/images'
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data/images'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imlib2-01/output/usr/share/imlib2/data/images'
+ /usr/bin/install -c -m 644 audio.png bg.png bulb.png cal.png calc.png folder.png globe.png imlib2.png lock.png mail.png menu.png mush.png paper.png sh1.png sh2.png sh3.png stop.png tnt.png '/var/tmp/hokuto/imlib2-01/output/usr/share/imlib2/data/images'
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data/images'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data/images'
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data'
+make[3]: Entering directory '/var/tmp/hokuto/imlib2-01/build/data'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imlib2-01/output/usr/share/imlib2'
+ /usr/bin/install -c -m 644 rgb.txt '/var/tmp/hokuto/imlib2-01/output/usr/share/imlib2'
+make[3]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data'
+make[1]: Leaving directory '/var/tmp/hokuto/imlib2-01/build/data'
+make[1]: Entering directory '/var/tmp/hokuto/imlib2-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/imlib2-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/imlib2-01/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 imlib2.pc '/var/tmp/hokuto/imlib2-01/output/usr/lib/pkgconfig'
+make[2]: Leaving directory '/var/tmp/hokuto/imlib2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/imlib2-01/build'
+
+Script done on 2026-08-30 02:00:14+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mimlib2[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 29 Aug 2026 19:00:16 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m38s[0m
