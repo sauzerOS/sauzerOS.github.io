@@ -1,0 +1,1683 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mzmusic[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mzmusic 1.3.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 29 Aug 2026 19:00:43 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mzmusic[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19malsa-lib libsndfile mpg123 cmake[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mzmusic[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19malsa-lib-1.2.16.1-1 autoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 cmake-4.4.3-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 grep-3.12-1 gzip-1.14-1 libsndfile-1.2.2-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 mpg123-1.33.7-1 patch-2.8-1 pkgconf-3.0.6-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-08-30 02:00:45+07:00 [COMMAND="cd /var/tmp/hokuto/zmusic-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/zmusic-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/zmusic-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/zmusic-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/zmusic-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/zmusic-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/zmusic-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/zmusic-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/zmusic-01/build/.cache' /repo/sauzeros/extra/zmusic/build /var/tmp/hokuto/zmusic-01/output 1.3.0 zmusic" <not executed on terminal>]
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test COMPILER_SUPPORTS_CXX14
+-- Performing Test COMPILER_SUPPORTS_CXX14 - Success
+[0m== Your C++ compiler supports C++14, YMFM emulators will be ENABLED[0m
+-- Performing Test HAVE_NO_ARRAY_BOUNDS
+-- Performing Test HAVE_NO_ARRAY_BOUNDS - Success
+-- Performing Test __LIBGME_SWITCH_FALLTHROUGH_WARNINGS
+-- Performing Test __LIBGME_SWITCH_FALLTHROUGH_WARNINGS - Success
+[0mVGM/GYM: Nuked OPN2 emulator will be used[0m
+-- Looking for alloca.h
+-- Looking for alloca.h - found
+-- Looking for itoa
+-- Looking for itoa - not found
+-- Performing Test DUMB_CAN_USE_SSE
+-- Performing Test DUMB_CAN_USE_SSE - Success
+-- Looking for stricmp
+-- Looking for stricmp - not found
+-- Looking for strnicmp
+-- Looking for strnicmp - not found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.6")
+-- Checking for one of the modules 'glib-2.0'
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found ALSA: /usr/lib/libasound.so (found version "1.2.16.1")
+-- Configuring done (2.7s)
+-- Generating done (0.2s)
+-- Build files have been written to: /var/tmp/hokuto/zmusic-01/build/build
+[  1%] [32mBuilding C object thirdparty/miniz/CMakeFiles/miniz.dir/miniz.c.o[0m
+[  1%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/unload.c.o[0m
+[  1%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/adlmidi_midiplay.cpp.o[0m
+[  1%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/opnmidi_load.cpp.o[0m
+[  2%] [32mBuilding CXX object thirdparty/timidity/CMakeFiles/timidity.dir/common.cpp.o[0m
+[  3%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/fft4g.cpp.o[0m
+[  2%] [32mBuilding CXX object thirdparty/wildmidi/CMakeFiles/wildmidi.dir/file_io.cpp.o[0m
+[  3%] [32mBuilding CXX object thirdparty/oplsynth/CMakeFiles/oplsynth.dir/fmopl.cpp.o[0m
+[  3%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/virtual.c.o[0m
+[  3%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/utils/fluid_conv.c.o[0m
+[  3%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/rendsig.c.o[0m
+[  4%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/rendduh.c.o[0m
+[  4%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/format.c.o[0m
+[  4%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/register.c.o[0m
+[  4%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/period.c.o[0m
+[  4%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/readduh.c.o[0m
+[  4%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/utils/fluid_hash.c.o[0m
+[  4%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/rawsig.c.o[0m
+[  5%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/makeduh.c.o[0m
+[  5%] [32mBuilding CXX object thirdparty/timidity/CMakeFiles/timidity.dir/instrum.cpp.o[0m
+[  6%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/player.c.o[0m
+[  6%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/loadduh.c.o[0m
+[  6%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/reverb.cpp.o[0m
+[  7%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/utils/fluid_list.c.o[0m
+[  7%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/dumbfile.c.o[0m
+[  7%] [32mBuilding CXX object thirdparty/oplsynth/CMakeFiles/oplsynth.dir/musicblock.cpp.o[0m
+[  7%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/duhtag.c.o[0m
+[  7%] [32mBuilding CXX object thirdparty/oplsynth/CMakeFiles/oplsynth.dir/nukedopl3.cpp.o[0m
+[  7%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/duhlen.c.o[0m
+[  8%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/core/atexit.c.o[0m
+[  8%] Built target miniz
+[  8%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/read_event.c.o[0m
+[  9%] [32mBuilding CXX object thirdparty/oplsynth/CMakeFiles/oplsynth.dir/opl_mus_player.cpp.o[0m
+[  9%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/stdfile.c.o[0m
+[  9%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/utils/fluid_ringbuffer.c.o[0m
+[  9%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/silence.c.o[0m
+[ 10%] [32mBuilding CXX object thirdparty/wildmidi/CMakeFiles/wildmidi.dir/gus_pat.cpp.o[0m
+[ 10%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/sampbuf.c.o[0m
+[ 11%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/riff.c.o[0m
+[ 11%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/resample.c.o[0m
+[ 11%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/dataio.c.o[0m
+[ 11%] [32mBuilding CXX object thirdparty/wildmidi/CMakeFiles/wildmidi.dir/reverb.cpp.o[0m
+[ 11%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/misc.c.o[0m
+[ 11%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/utils/fluid_settings.c.o[0m
+[ 11%] [32mBuilding CXX object thirdparty/oplsynth/CMakeFiles/oplsynth.dir/OPL3.cpp.o[0m
+[ 11%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/mkstemp.c.o[0m
+[ 12%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/md5.c.o[0m
+[ 12%] [32mBuilding CXX object thirdparty/timidity/CMakeFiles/timidity.dir/instrum_dls.cpp.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/oplsynth/OPL3.cpp:[m[K In member function ‘[01m[Kdouble JavaOPL3::EnvelopeGenerator::[01;32m[KgetEnvelope[m[K(JavaOPL3::OPL3*, int, int)[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/oplsynth/OPL3.cpp:1478:39:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+ 1478 |                                 [01;35m[Kstage = DECAY[m[K;
+      |                                 [01;35m[K~~~~~~^~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/oplsynth/OPL3.cpp:1480:17:[m[K [01;36m[Knote: [m[Khere
+ 1480 |                 [01;36m[Kcase[m[K DECAY:
+      |                 [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/oplsynth/OPL3.cpp:1487:39:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wimplicit-fallthrough-Wimplicit-fallthrough=]8;;[m[K]
+ 1487 |                                 [01;35m[Kstage = SUSTAIN[m[K;
+      |                                 [01;35m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/oplsynth/OPL3.cpp:1488:17:[m[K [01;36m[Knote: [m[Khere
+ 1488 |                 [01;36m[Kcase[m[K SUSTAIN:
+      |                 [01;36m[K^~~~[m[K
+[ 12%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/lfo.c.o[0m
+[ 12%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/scan.c.o[0m
+[ 12%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/control.c.o[0m
+[ 12%] [32mBuilding CXX object thirdparty/oplsynth/CMakeFiles/oplsynth.dir/oplio.cpp.o[0m
+[ 13%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/far_extras.c.o[0m
+[ 13%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/adlmidi_opl3.cpp.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/wildmidi/gus_pat.cpp:[m[K In member function ‘[01m[KWildMidi::_sample* WildMidi::Instruments::[01;32m[Kload_gus_pat[m[K(const char*)[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/wildmidi/gus_pat.cpp:1004:32:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ksamples_f[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+ 1004 |                         double [01;35m[Ksamples_f[m[K = 0.0;
+      |                                [01;35m[K^~~~~~~~~[m[K
+[ 13%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/utils/fluid_sys.c.o[0m
+[ 13%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/med_extras.c.o[0m
+[ 13%] [32mBuilding CXX object thirdparty/timidity/CMakeFiles/timidity.dir/instrum_font.cpp.o[0m
+[ 13%] [32mBuilding CXX object thirdparty/oplsynth/CMakeFiles/oplsynth.dir/dosbox/opl.cpp.o[0m
+[ 13%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/filter.c.o[0m
+[ 13%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/sfloader/fluid_defsfont.c.o[0m
+[ 13%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/effects.c.o[0m
+[ 13%] [32mBuilding CXX object thirdparty/wildmidi/CMakeFiles/wildmidi.dir/wildmidi_lib.cpp.o[0m
+[ 13%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/memfile.c.o[0m
+[ 14%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/mixer.c.o[0m
+[ 14%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/clickrem.c.o[0m
+[ 15%] [32mBuilding CXX object thirdparty/timidity/CMakeFiles/timidity.dir/instrum_sf2.cpp.o[0m
+[ 15%] Built target oplsynth
+[ 16%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/opnmidi_private.cpp.o[0m
+[ 16%] [32mBuilding CXX object thirdparty/wildmidi/CMakeFiles/wildmidi.dir/wm_error.cpp.o[0m
+[ 16%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/barray.c.o[0m
+[ 17%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/sfloader/fluid_sfont.c.o[0m
+[ 18%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/xmeffect.c.o[0m
+[ 18%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/mix_all.c.o[0m
+[ 18%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readxm2.c.o[0m
+[ 18%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/sfloader/fluid_sffile.c.o[0m
+[ 18%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readxm.c.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/dumb/src/it/readxm.c:[m[K In function ‘[01m[Kit_xm_load_sigdata[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/dumb/src/it/readxm.c:1009:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+ 1009 |     [01;35m[Kif[m[K (sigdata->n_orders == 0)
+      |     [01;35m[K^~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/dumb/src/it/readxm.c:1014:9:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+ 1014 |         [01;36m[Ki[m[K = header_size - 4 - 2 * 8; /* Maximum number of orders expected */
+      |         [01;36m[K^[m[K
+[ 18%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readstm2.c.o[0m
+[ 18%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/adlmidi_private.cpp.o[0m
+[ 19%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readstm.c.o[0m
+[ 19%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/reads3m2.c.o[0m
+[ 19%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/sfloader/fluid_samplecache.c.o[0m
+[ 19%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/common.cpp.o[0m
+[ 19%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/reads3m.c.o[0m
+[ 20%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Blip_Buffer.cpp.o[0m
+[ 20%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/load_helpers.c.o[0m
+[ 20%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readriff.c.o[0m
+[ 20%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readptm.c.o[0m
+[ 20%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_adsr_env.c.o[0m
+[ 21%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readpsm.c.o[0m
+[ 21%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/load.c.o[0m
+[ 21%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Classic_Emu.cpp.o[0m
+[ 21%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/hio.c.o[0m
+[ 21%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/opnmidi.cpp.o[0m
+[ 21%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Data_Reader.cpp.o[0m
+[ 22%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_chorus.c.o[0m
+[ 22%] [32mBuilding CXX object thirdparty/timidity/CMakeFiles/timidity.dir/mix.cpp.o[0m
+[ 22%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readoldpsm.c.o[0m
+[ 23%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/hmn_extras.c.o[0m
+[ 23%] Built target wildmidi
+[ 23%] [32mBuilding CXX object thirdparty/timidity/CMakeFiles/timidity.dir/playmidi.cpp.o[0m
+[ 23%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readokt2.c.o[0m
+[ 23%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/extras.c.o[0m
+[ 23%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readokt.c.o[0m
+[ 23%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/configfile.cpp.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/game-music-emu/gme/Data_Reader.cpp:310:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst char*[01;32m[K get_gzip_eof[m[K(const char*, long int*)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+  310 | static const char* [01;35m[Kget_gzip_eof[m[K( const char* path, long* eof )
+      |                    [01;35m[K^~~~~~~~~~~~[m[K
+[ 24%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readmtm.c.o[0m
+[ 24%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/smix.c.o[0m
+[ 24%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_iir_filter.c.o[0m
+[ 24%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Dual_Resampler.cpp.o[0m
+[ 24%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/filetype.c.o[0m
+[ 25%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Effects_Buffer.cpp.o[0m
+[ 26%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/memio.c.o[0m
+[ 26%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/tempfile.c.o[0m
+[ 26%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readmod2.c.o[0m
+[ 26%] [32mBuilding CXX object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_iir_filter_impl.cpp.o[0m
+[ 27%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/effect.cpp.o[0m
+[ 27%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/filter.cpp.o[0m
+[ 27%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readmod.c.o[0m
+[ 27%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/mix_paula.c.o[0m
+[ 27%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/flow.c.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/dumb/src/it/readmod.c:[m[K In function ‘[01m[Kit_mod_load_sigdata[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/dumb/src/it/readmod.c:291:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  291 |     [01;35m[Kif[m[K ( dumbfile_seek(f, 0, DFS_SEEK_SET) )
+      |     [01;35m[K^~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/dumb/src/it/readmod.c:294:9:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  294 |         [01;36m[Ksigdata[m[K = malloc(sizeof(*sigdata));
+      |         [01;36m[K^~~~~~~[m[K
+[ 27%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/rng.c.o[0m
+[ 27%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readdsmf.c.o[0m
+[ 28%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/win32.c.o[0m
+[ 28%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/common.c.o[0m
+[ 28%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/iff.c.o[0m
+[ 28%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readasy.c.o[0m
+[ 28%] [32mBuilding CXX object thirdparty/timidity/CMakeFiles/timidity.dir/resample.cpp.o[0m
+[ 28%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/opnmidi_midiplay.cpp.o[0m
+[ 28%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/adlmidi.cpp.o[0m
+[ 29%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readamf2.c.o[0m
+[ 29%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/freq.cpp.o[0m
+[ 29%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/itsex.c.o[0m
+[ 29%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readamf.c.o[0m
+[ 29%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readam.c.o[0m
+[ 30%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/lzw.c.o[0m
+[ 30%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/voltable.c.o[0m
+[ 30%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/read6692.c.o[0m
+[ 30%] [32mBuilding CXX object thirdparty/timidity/CMakeFiles/timidity.dir/timidity.cpp.o[0m
+[ 30%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/sample.c.o[0m
+[ 31%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/read669.c.o[0m
+[ 31%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_lfo.c.o[0m
+[ 31%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/ptmeffect.c.o[0m
+[ 31%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Fir_Resampler.cpp.o[0m
+[ 31%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/vorbis.c.o[0m
+[ 31%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadxm2.c.o[0m
+[ 31%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadxm.c.o[0m
+[ 31%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_rvoice.c.o[0m
+[ 31%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Gme_File.cpp.o[0m
+[ 31%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/gme.cpp.o[0m
+[ 32%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadstm2.c.o[0m
+[ 32%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/xm_load.c.o[0m
+[ 32%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadstm.c.o[0m
+[ 33%] [32mBuilding CXX object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_rvoice_dsp.cpp.o[0m
+[ 33%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loads3m2.c.o[0m
+[ 33%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/instrum.cpp.o[0m
+[ 33%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/opnmidi_opn2.cpp.o[0m
+[ 33%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loads3m.c.o[0m
+[ 34%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/mod_load.c.o[0m
+[ 34%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadriff2.c.o[0m
+[ 35%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadriff.c.o[0m
+[ 35%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/M3u_Playlist.cpp.o[0m
+[ 35%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadptm2.c.o[0m
+[ 35%] Built target timidity
+[ 35%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/s3m_load.c.o[0m
+[ 35%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_rvoice_event.c.o[0m
+[ 35%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadptm.c.o[0m
+[ 36%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Multi_Buffer.cpp.o[0m
+[ 36%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadpsm2.c.o[0m
+[ 36%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/stm_load.c.o[0m
+[ 36%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Music_Emu.cpp.o[0m
+[ 37%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadpsm.c.o[0m
+[ 37%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadoldpsm2.c.o[0m
+[ 37%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadoldpsm.c.o[0m
+[ 38%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/adlmidi_load.cpp.o[0m
+[ 39%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/np2/fmgen_fmgen.cpp.o[0m
+[ 39%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadokt2.c.o[0m
+[ 39%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/669_load.c.o[0m
+[ 39%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadokt.c.o[0m
+[ 40%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/far_load.c.o[0m
+[ 41%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadmtm2.c.o[0m
+[ 41%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadmtm.c.o[0m
+[ 41%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/mtm_load.c.o[0m
+[ 41%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/mblock.cpp.o[0m
+[ 41%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadmod2.c.o[0m
+[ 41%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Ay_Apu.cpp.o[0m
+[ 41%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/inst_db.cpp.o[0m
+[ 41%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadmod.c.o[0m
+[ 41%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/ptm_load.c.o[0m
+[ 42%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadasy2.c.o[0m
+[ 42%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Ym2612_Nuked.cpp.o[0m
+[ 42%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/okt_load.c.o[0m
+[ 42%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadasy.c.o[0m
+[ 42%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_rvoice_mixer.c.o[0m
+[ 43%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Sms_Apu.cpp.o[0m
+[ 43%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/ult_load.c.o[0m
+[ 43%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/rvoice/fluid_rev.c.o[0m
+[ 43%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadamf2.c.o[0m
+[ 43%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Ay_Cpu.cpp.o[0m
+[ 43%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadamf.c.o[0m
+[ 44%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/mix.cpp.o[0m
+[ 44%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/load6692.c.o[0m
+[ 45%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/load669.c.o[0m
+[ 46%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/mdl_load.c.o[0m
+[ 46%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Ay_Emu.cpp.o[0m
+[ 46%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/itunload.c.o[0m
+[ 46%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/playmidi.cpp.o[0m
+[ 46%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/it_load.c.o[0m
+[ 46%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/itrender.c.o[0m
+[ 46%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/stx_load.c.o[0m
+[ 46%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/itread2.c.o[0m
+[ 47%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/synth/fluid_chan.c.o[0m
+[ 47%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/pt3_load.c.o[0m
+[ 47%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Gb_Apu.cpp.o[0m
+[ 47%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/quantity.cpp.o[0m
+[ 47%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/opal_opl3.cpp.o[0m
+[ 47%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Gb_Cpu.cpp.o[0m
+[ 47%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/opal/opal.c.o[0m
+[ 48%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/sfx_load.c.o[0m
+[ 49%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/itread.c.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/dumb/src/it/itread.c:[m[K In function ‘[01m[K_dumb_it_read_sample_data_adpcm4[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/dumb/src/it/itread.c:624:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  624 |     [01;35m[Kif[m[K (dumbfile_getnc((char *)compression_table, 16, f) != 16)
+      |     [01;35m[K^~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/dumb/src/it/itread.c:626:9:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  626 |         [01;36m[Kptr[m[K = (signed char *) sample->data;
+      |         [01;36m[K^~~[m[K
+[ 50%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Gb_Oscs.cpp.o[0m
+[ 50%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/flt_load.c.o[0m
+[ 51%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/dosbox/dbopl.cpp.o[0m
+[ 51%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/synth/fluid_event.c.o[0m
+[ 51%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/itorder.c.o[0m
+[ 51%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Gbs_Emu.cpp.o[0m
+[ 51%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/np2/fmgen_opna.cpp.o[0m
+[ 51%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/readmidic.cpp.o[0m
+[ 51%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/st_load.c.o[0m
+[ 51%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/itmisc.c.o[0m
+[ 51%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/emod_load.c.o[0m
+[ 51%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/itload2.c.o[0m
+[ 51%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Gym_Emu.cpp.o[0m
+[ 51%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/nuked_opl3_v174.cpp.o[0m
+[ 52%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/imf_load.c.o[0m
+[ 52%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/synth/fluid_gen.c.o[0m
+[ 53%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/itload.c.o[0m
+[ 53%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readany.c.o[0m
+[ 53%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Hes_Apu.cpp.o[0m
+[ 53%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/digi_load.c.o[0m
+[ 53%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/synth/fluid_mod.c.o[0m
+[ 54%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/recache.cpp.o[0m
+[ 55%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Hes_Cpu.cpp.o[0m
+[ 55%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadany2.c.o[0m
+[ 55%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/fnk_load.c.o[0m
+[ 55%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/loadany.c.o[0m
+[ 55%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/it/readany2.c.o[0m
+[ 55%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/ice_load.c.o[0m
+[ 55%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Hes_Emu.cpp.o[0m
+[ 55%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/synth/fluid_synth.c.o[0m
+[ 56%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/resampler.c.o[0m
+[ 56%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/liq_load.c.o[0m
+[ 56%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/np2/fmgen_fmtimer.cpp.o[0m
+[ 57%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/ims_load.c.o[0m
+[ 57%] [32mBuilding C object thirdparty/dumb/CMakeFiles/dumb.dir/src/helpers/lpc.c.o[0m
+[ 57%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/masi_load.c.o[0m
+[ 57%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/np2/fmgen_file.cpp.o[0m
+[ 57%] Built target dumb
+[ 57%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/masi16_load.c.o[0m
+[ 58%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/synth/fluid_synth_monopoly.c.o[0m
+[ 58%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/resample.cpp.o[0m
+[ 58%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/amf_load.c.o[0m
+[ 58%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/sbkconv.cpp.o[0m
+[ 59%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/stim_load.c.o[0m
+[ 59%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Kss_Cpu.cpp.o[0m
+[ 59%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/java_opl3.cpp.o[0m
+[ 59%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/mmd_common.c.o[0m
+[ 59%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/mmd1_load.c.o[0m
+[ 59%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Kss_Emu.cpp.o[0m
+[ 59%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Kss_Scc_Apu.cpp.o[0m
+[ 59%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/mmd3_load.c.o[0m
+[ 59%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/np2/fmgen_psg.cpp.o[0m
+[ 59%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/synth/fluid_tuning.c.o[0m
+[ 59%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/dosbox_opl3.cpp.o[0m
+[ 59%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/rtm_load.c.o[0m
+[ 60%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nes_Apu.cpp.o[0m
+[ 61%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/mame_opn2.cpp.o[0m
+[ 61%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/sffile.cpp.o[0m
+[ 61%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/synth/fluid_voice.c.o[0m
+[ 61%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/midi/fluid_midi.c.o[0m
+[ 62%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/dt_load.c.o[0m
+[ 62%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nes_Cpu.cpp.o[0m
+[ 62%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/sfitem.cpp.o[0m
+[ 62%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/no_load.c.o[0m
+[ 63%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/smplfile.cpp.o[0m
+[ 63%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/arch_load.c.o[0m
+[ 63%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/sym_load.c.o[0m
+[ 63%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/nuked_opl3.cpp.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/fluidsynth/src/midi/fluid_midi.c:[m[K In function ‘[01m[Kfluid_player_set_bpm[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/fluidsynth/src/midi/fluid_midi.c:2578:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kfluid_player_set_midi_tempo[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+ 2578 |     [01;35m[Kreturn[m[K fluid_player_set_midi_tempo(player, 60000000L / bpm);
+      |     [01;35m[K^~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/fluidsynth/src/midi/fluid_midi.c:2555:5:[m[K [01;36m[Knote: [m[Kdeclared here
+ 2555 | int [01;36m[Kfluid_player_set_midi_tempo[m[K(fluid_player_t *player, int tempo)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 63%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nes_Fme7_Apu.cpp.o[0m
+[ 63%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nes_Namco_Apu.cpp.o[0m
+[ 63%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/gens_opn2.cpp.o[0m
+[ 64%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/med2_load.c.o[0m
+[ 65%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/midi/fluid_midi_router.c.o[0m
+[ 66%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/nuked/nukedopl3_174.c.o[0m
+[ 66%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/med3_load.c.o[0m
+[ 66%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/med4_load.c.o[0m
+[ 66%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/mame_opna.cpp.o[0m
+[ 67%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nes_Oscs.cpp.o[0m
+[ 67%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/midi/fluid_seqbind.c.o[0m
+[ 67%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nes_Vrc6_Apu.cpp.o[0m
+[ 67%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/sndfont.cpp.o[0m
+[ 67%] [32mBuilding CXX object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/midi/fluid_seqbind_notes.cpp.o[0m
+[ 67%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/midi/fluid_seq.c.o[0m
+[ 67%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nes_Fds_Apu.cpp.o[0m
+[ 67%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/dbm_load.c.o[0m
+[ 67%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/umx_load.c.o[0m
+[ 67%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nes_Vrc7_Apu.cpp.o[0m
+[ 67%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/nuked/nukedopl3.c.o[0m
+[ 68%] [32mBuilding C object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/ext/emu2413.c.o[0m
+[ 68%] [32mBuilding C object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/ext/panning.c.o[0m
+[ 69%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/gdm_load.c.o[0m
+[ 69%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ym3812_lle.cpp.o[0m
+[ 70%] [32mBuilding CXX object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/midi/fluid_seq_queue.cpp.o[0m
+[ 70%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/np2_opna.cpp.o[0m
+[ 70%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/pw_load.c.o[0m
+[ 70%] [32mBuilding CXX object thirdparty/timidityplus/CMakeFiles/timidityplus.dir/tables.cpp.o[0m
+[ 70%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ym3812_lle/nopl2.c.o[0m
+[ 70%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/gal5_load.c.o[0m
+[ 70%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/drivers/fluid_adriver.c.o[0m
+[ 71%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ym3812_lle/nuked_fmopl2.c.o[0m
+[ 71%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nsf_Emu.cpp.o[0m
+[ 71%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Nsfe_Emu.cpp.o[0m
+[ 71%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/gal4_load.c.o[0m
+[ 71%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Sap_Apu.cpp.o[0m
+[ 72%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Sap_Cpu.cpp.o[0m
+[ 73%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/mfp_load.c.o[0m
+[ 73%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Sap_Emu.cpp.o[0m
+[ 74%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/mamefm/ymdeltat.cpp.o[0m
+[ 74%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/mamefm/resampler.cpp.o[0m
+[ 74%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/drivers/fluid_mdriver.c.o[0m
+[ 74%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymf262_lle.cpp.o[0m
+[ 74%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/asylum_load.c.o[0m
+[ 74%] Built target timidityplus
+[ 74%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/muse_load.c.o[0m
+[ 74%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Snes_Spc.cpp.o[0m
+[ 74%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/bindings/fluid_filerenderer.c.o[0m
+[ 74%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/hmn_load.c.o[0m
+[ 74%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Spc_Cpu.cpp.o[0m
+[ 74%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymf262_lle/nopl3.c.o[0m
+[ 74%] [32mBuilding C object thirdparty/fluidsynth/src/CMakeFiles/fluidsynth.dir/bindings/fluid_ladspa.c.o[0m
+[ 74%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/mamefm/fm.cpp.o[0m
+[ 75%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/chip_load.c.o[0m
+[ 75%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/mgt_load.c.o[0m
+[ 75%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/nuked_opn2.cpp.o[0m
+[ 75%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/abk_load.c.o[0m
+[ 75%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/gens/Ym2612.cpp.o[0m
+[ 75%] Built target fluidsynth
+[ 75%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/coco_load.c.o[0m
+[ 75%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymf262_lle/nuked_fmopl3.c.o[0m
+[ 76%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Spc_Dsp.cpp.o[0m
+[ 76%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Spc_Emu.cpp.o[0m
+[ 76%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Spc_Filter.cpp.o[0m
+[ 77%] [32mBuilding C object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/nuked/ym3438.c.o[0m
+[ 77%] [32mBuilding C object thirdparty/libxmp/CMakeFiles/libxmp.dir/src/loaders/xmf_load.c.o[0m
+[ 77%] [32mBuilding C object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/mamefm/emu2149.c.o[0m
+[ 77%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/esfmu_opl3.cpp.o[0m
+[ 77%] Built target libxmp
+[ 77%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Vgm_Emu.cpp.o[0m
+[ 77%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Vgm_Emu_Impl.cpp.o[0m
+[ 77%] [32mBuilding C object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/mame/mame_ym2612fm.c.o[0m
+[ 77%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/ym2612_lle.cpp.o[0m
+[ 78%] [32mBuilding CXX object thirdparty/game-music-emu/gme/CMakeFiles/gme.dir/Ym2413_Emu.cpp.o[0m
+[ 79%] [32mBuilding C object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/nuked_lle/nopn2.c.o[0m
+[ 80%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/esfmu/esfm.c.o[0m
+[ 80%] [32mBuilding C object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/nuked_lle/fmopna_2612.c.o[0m
+[ 80%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/esfmu/esfm_registers.c.o[0m
+[ 80%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/mame_opl2.cpp.o[0m
+[ 80%] [32mBuilding C object thirdparty/adlmidi/CMakeFiles/adl.dir/wopl/wopl_file.c.o[0m
+[ 80%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/ymf276_lle.cpp.o[0m
+[ 80%] [32mBuilding C object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/nuked_lle/nopn2f.c.o[0m
+[ 81%] [32mBuilding C object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/nuked_lle/fmopn2.c.o[0m
+[ 82%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymfm_opl2.cpp.o[0m
+[ 82%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymfm_opl3.cpp.o[0m
+[ 82%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymfm/ymfm_adpcm.cpp.o[0m
+[ 82%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymfm/ymfm_misc.cpp.o[0m
+[ 82%] [32mBuilding C object thirdparty/opnmidi/CMakeFiles/opn.dir/wopn/wopn_file.c.o[0m
+[ 82%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/ymfm_opn2.cpp.o[0m
+[ 82%] Built target gme
+[ 82%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymfm/ymfm_opl.cpp.o[0m
+[ 83%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymfm/ymfm_pcm.cpp.o[0m
+[ 83%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/ymfm_opna.cpp.o[0m
+[ 84%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/loader/i_module.cpp.o[0m
+[ 84%] [32mBuilding CXX object thirdparty/adlmidi/CMakeFiles/adl.dir/chips/ymfm/ymfm_ssg.cpp.o[0m
+[ 84%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_base_mididevice.cpp.o[0m
+[ 84%] [32mBuilding CXX object thirdparty/opnmidi/CMakeFiles/opn.dir/chips/ymfm/ymfm_opn.cpp.o[0m
+[ 84%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_adlmidi_mididevice.cpp.o[0m
+[ 84%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_opl_mididevice.cpp.o[0m
+[ 85%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_opnmidi_mididevice.cpp.o[0m
+[ 85%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_timiditypp_mididevice.cpp.o[0m
+[ 85%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_fluidsynth_mididevice.cpp.o[0m
+[ 85%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_softsynth_mididevice.cpp.o[0m
+[ 85%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_timidity_mididevice.cpp.o[0m
+[ 85%] Built target opn
+[ 86%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_wildmidi_mididevice.cpp.o[0m
+[ 86%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_wavewriter_mididevice.cpp.o[0m
+[ 86%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/midisources/midisource.cpp.o[0m
+[ 86%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/midisources/midisource_mus.cpp.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:[m[K In constructor ‘[01m[KFluidSynthMIDIDevice::[01;32m[KFluidSynthMIDIDevice[m[K(int, std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:134:31:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint[01;32m[K fluid_synth_set_reverb[m[K(fluid_synth_t*, double, double, double, double)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  134 |         [01;35m[Kfluid_synth_set_reverb(FluidSynth, fluidConfig.fluid_reverb_roomsize, fluidConfig.fluid_reverb_damping,[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  135 | [01;35m[K                fluidConfig.fluid_reverb_width, fluidConfig.fluid_reverb_level)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth.h:98[m[K,
+                 from [01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:50[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:165:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  165 | FLUID_DEPRECATED FLUIDSYNTH_API int [01;36m[Kfluid_synth_set_reverb[m[K(fluid_synth_t *synth, double roomsize,
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:136:31:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint[01;32m[K fluid_synth_set_chorus[m[K(fluid_synth_t*, int, double, double, double, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  136 |         [01;35m[Kfluid_synth_set_chorus(FluidSynth, fluidConfig.fluid_chorus_voices, fluidConfig.fluid_chorus_level,[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  137 | [01;35m[K                fluidConfig.fluid_chorus_speed, fluidConfig.fluid_chorus_depth, fluidConfig.fluid_chorus_type)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:211:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  211 | FLUID_DEPRECATED FLUIDSYNTH_API int [01;36m[Kfluid_synth_set_chorus[m[K(fluid_synth_t *synth, int nr, double level,
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 86%] Built target adl
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:[m[K In member function ‘[01m[Kvirtual void FluidSynthMIDIDevice::[01;32m[KChangeSettingInt[m[K(const char*, int)[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:324:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid[01;32m[K fluid_synth_set_reverb_on[m[K(fluid_synth_t*, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  324 |                 [01;35m[Kfluid_synth_set_reverb_on(FluidSynth, value)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:162:38:[m[K [01;36m[Knote: [m[Kdeclared here
+  162 | FLUID_DEPRECATED FLUIDSYNTH_API void [01;36m[Kfluid_synth_set_reverb_on[m[K(fluid_synth_t *synth, int on);
+      |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:328:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid[01;32m[K fluid_synth_set_chorus_on[m[K(fluid_synth_t*, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  328 |                 [01;35m[Kfluid_synth_set_chorus_on(FluidSynth, value)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:208:38:[m[K [01;36m[Knote: [m[Kdeclared here
+  208 | FLUID_DEPRECATED FLUIDSYNTH_API void [01;36m[Kfluid_synth_set_chorus_on[m[K(fluid_synth_t *synth, int on);
+      |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:[m[K In member function ‘[01m[Kvirtual void FluidSynthMIDIDevice::[01;32m[KChangeSettingNum[m[K(const char*, double)[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:350:39:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint[01;32m[K fluid_synth_set_reverb[m[K(fluid_synth_t*, double, double, double, double)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  350 |                 [01;35m[Kfluid_synth_set_reverb(FluidSynth, fluidConfig.fluid_reverb_roomsize, fluidConfig.fluid_reverb_damping, fluidConfig.fluid_reverb_width, fluidConfig.fluid_reverb_level)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:165:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  165 | FLUID_DEPRECATED FLUIDSYNTH_API int [01;36m[Kfluid_synth_set_reverb[m[K(fluid_synth_t *synth, double roomsize,
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:354:39:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint[01;32m[K fluid_synth_set_chorus[m[K(fluid_synth_t*, int, double, double, double, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  354 |                 [01;35m[Kfluid_synth_set_chorus(FluidSynth, fluidConfig.fluid_chorus_voices, fluidConfig.fluid_chorus_level, fluidConfig.fluid_chorus_speed, fluidConfig.fluid_chorus_depth, fluidConfig.fluid_chorus_type)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:211:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  211 | FLUID_DEPRECATED FLUIDSYNTH_API int [01;36m[Kfluid_synth_set_chorus[m[K(fluid_synth_t *synth, int nr, double level,
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 87%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/midisources/midisource_smf.cpp.o[0m
+[ 87%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/midisources/midisource_hmi.cpp.o[0m
+[ 88%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/loader/i_module.cpp.o[0m
+[ 88%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_base_mididevice.cpp.o[0m
+[ 88%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_adlmidi_mididevice.cpp.o[0m
+[ 88%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/midisources/midisource_xmi.cpp.o[0m
+[ 88%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_opl_mididevice.cpp.o[0m
+[ 88%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_opnmidi_mididevice.cpp.o[0m
+[ 89%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_timiditypp_mididevice.cpp.o[0m
+[ 89%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/midisources/midisource_mids.cpp.o[0m
+[ 89%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_fluidsynth_mididevice.cpp.o[0m
+[ 89%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/streamsources/music_dumb.cpp.o[0m
+[ 90%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/streamsources/music_gme.cpp.o[0m
+[ 90%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_softsynth_mididevice.cpp.o[0m
+[ 90%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_timidity_mididevice.cpp.o[0m
+[ 91%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_wildmidi_mididevice.cpp.o[0m
+[ 91%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/streamsources/music_libsndfile.cpp.o[0m
+[ 91%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/streamsources/music_libxmp.cpp.o[0m
+[ 91%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/streamsources/music_opl.cpp.o[0m
+[ 92%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/streamsources/music_xa.cpp.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:[m[K In constructor ‘[01m[KFluidSynthMIDIDevice::[01;32m[KFluidSynthMIDIDevice[m[K(int, std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:134:31:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint[01;32m[K fluid_synth_set_reverb[m[K(fluid_synth_t*, double, double, double, double)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  134 |         [01;35m[Kfluid_synth_set_reverb(FluidSynth, fluidConfig.fluid_reverb_roomsize, fluidConfig.fluid_reverb_damping,[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  135 | [01;35m[K                fluidConfig.fluid_reverb_width, fluidConfig.fluid_reverb_level)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth.h:98[m[K,
+                 from [01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:50[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:165:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  165 | FLUID_DEPRECATED FLUIDSYNTH_API int [01;36m[Kfluid_synth_set_reverb[m[K(fluid_synth_t *synth, double roomsize,
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:136:31:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint[01;32m[K fluid_synth_set_chorus[m[K(fluid_synth_t*, int, double, double, double, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  136 |         [01;35m[Kfluid_synth_set_chorus(FluidSynth, fluidConfig.fluid_chorus_voices, fluidConfig.fluid_chorus_level,[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  137 | [01;35m[K                fluidConfig.fluid_chorus_speed, fluidConfig.fluid_chorus_depth, fluidConfig.fluid_chorus_type)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:211:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  211 | FLUID_DEPRECATED FLUIDSYNTH_API int [01;36m[Kfluid_synth_set_chorus[m[K(fluid_synth_t *synth, int nr, double level,
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:[m[K In member function ‘[01m[Kvirtual void FluidSynthMIDIDevice::[01;32m[KChangeSettingInt[m[K(const char*, int)[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:324:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid[01;32m[K fluid_synth_set_reverb_on[m[K(fluid_synth_t*, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  324 |                 [01;35m[Kfluid_synth_set_reverb_on(FluidSynth, value)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:162:38:[m[K [01;36m[Knote: [m[Kdeclared here
+  162 | FLUID_DEPRECATED FLUIDSYNTH_API void [01;36m[Kfluid_synth_set_reverb_on[m[K(fluid_synth_t *synth, int on);
+      |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:328:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid[01;32m[K fluid_synth_set_chorus_on[m[K(fluid_synth_t*, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  328 |                 [01;35m[Kfluid_synth_set_chorus_on(FluidSynth, value)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:208:38:[m[K [01;36m[Knote: [m[Kdeclared here
+  208 | FLUID_DEPRECATED FLUIDSYNTH_API void [01;36m[Kfluid_synth_set_chorus_on[m[K(fluid_synth_t *synth, int on);
+      |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:[m[K In member function ‘[01m[Kvirtual void FluidSynthMIDIDevice::[01;32m[KChangeSettingNum[m[K(const char*, double)[m[K’:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:350:39:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint[01;32m[K fluid_synth_set_reverb[m[K(fluid_synth_t*, double, double, double, double)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  350 |                 [01;35m[Kfluid_synth_set_reverb(FluidSynth, fluidConfig.fluid_reverb_roomsize, fluidConfig.fluid_reverb_damping, fluidConfig.fluid_reverb_width, fluidConfig.fluid_reverb_level)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:165:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  165 | FLUID_DEPRECATED FLUIDSYNTH_API int [01;36m[Kfluid_synth_set_reverb[m[K(fluid_synth_t *synth, double roomsize,
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/mididevices/music_fluidsynth_mididevice.cpp:354:39:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint[01;32m[K fluid_synth_set_chorus[m[K(fluid_synth_t*, int, double, double, double, int)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  354 |                 [01;35m[Kfluid_synth_set_chorus(FluidSynth, fluidConfig.fluid_chorus_voices, fluidConfig.fluid_chorus_level, fluidConfig.fluid_chorus_speed, fluidConfig.fluid_chorus_depth, fluidConfig.fluid_chorus_type)[m[K;
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/../include/../thirdparty/fluidsynth/include/fluidsynth/synth.h:211:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  211 | FLUID_DEPRECATED FLUIDSYNTH_API int [01;36m[Kfluid_synth_set_chorus[m[K(fluid_synth_t *synth, int nr, double level,
+      |                                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 92%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/musicformats/music_stream.cpp.o[0m
+[ 92%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/musicformats/music_midi.cpp.o[0m
+[ 92%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/musicformats/music_cd.cpp.o[0m
+[ 92%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_wavewriter_mididevice.cpp.o[0m
+[ 92%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/decoder/sounddecoder.cpp.o[0m
+[ 92%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/midisources/midisource.cpp.o[0m
+[ 92%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/midisources/midisource_mus.cpp.o[0m
+[ 93%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/decoder/sndfile_decoder.cpp.o[0m
+[ 93%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/midisources/midisource_smf.cpp.o[0m
+[ 94%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/midisources/midisource_hmi.cpp.o[0m
+[ 94%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/midisources/midisource_xmi.cpp.o[0m
+[ 94%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/decoder/mpg123_decoder.cpp.o[0m
+[ 94%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/midisources/midisource_mids.cpp.o[0m
+[ 94%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/streamsources/music_dumb.cpp.o[0m
+[ 94%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/zmusic/configuration.cpp.o[0m
+[ 94%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/zmusic/zmusic.cpp.o[0m
+[ 95%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/zmusic/critsec.cpp.o[0m
+[ 96%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/streamsources/music_gme.cpp.o[0m
+[ 96%] [32mBuilding C object source/CMakeFiles/zmusiclite.dir/loader/test.c.o[0m
+[ 96%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_alsa_mididevice.cpp.o[0m
+[ 96%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/streamsources/music_libsndfile.cpp.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/musicformats/music_midi.cpp:[m[K In lambda function:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/musicformats/music_midi.cpp:964:34:[m[K [01;35m[Kwarning: [m[Kimplicit capture of ‘[01m[Kthis[m[K’ via ‘[01m[K[=][m[K’ is deprecated in C++20 [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-Wdeprecated]8;;[m[K]
+  964 |         source->setTempoCallback([01;35m[K[[m[K=](int tempo) { return !!MIDI->SetTempo(tempo); } );
+      |                                  [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/musicformats/music_midi.cpp:964:34:[m[K [01;36m[Knote: [m[Kadd explicit ‘[01m[Kthis[m[K’ or ‘[01m[K*this[m[K’ capture
+[ 96%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/streamsources/music_libxmp.cpp.o[0m
+[ 96%] [32mBuilding CXX object source/CMakeFiles/zmusiclite.dir/mididevices/music_alsa_state.cpp.o[0m
+[ 96%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/streamsources/music_opl.cpp.o[0m
+[ 96%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/streamsources/music_xa.cpp.o[0m
+[ 97%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/musicformats/music_stream.cpp.o[0m
+[ 97%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/musicformats/music_midi.cpp.o[0m
+[ 97%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/musicformats/music_cd.cpp.o[0m
+[ 97%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/decoder/sounddecoder.cpp.o[0m
+[ 98%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/decoder/sndfile_decoder.cpp.o[0m
+[ 98%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/decoder/mpg123_decoder.cpp.o[0m
+[ 98%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/zmusic/configuration.cpp.o[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/musicformats/music_midi.cpp:[m[K In lambda function:
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/musicformats/music_midi.cpp:964:34:[m[K [01;35m[Kwarning: [m[Kimplicit capture of ‘[01m[Kthis[m[K’ via ‘[01m[K[=][m[K’ is deprecated in C++20 [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-Wdeprecated]8;;[m[K]
+  964 |         source->setTempoCallback([01;35m[K[[m[K=](int tempo) { return !!MIDI->SetTempo(tempo); } );
+      |                                  [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/source/musicformats/music_midi.cpp:964:34:[m[K [01;36m[Knote: [m[Kadd explicit ‘[01m[Kthis[m[K’ or ‘[01m[K*this[m[K’ capture
+[ 98%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/zmusic/zmusic.cpp.o[0m
+[ 99%] [1m[32mLinking CXX shared library libzmusiclite.so[0m
+[ 99%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/zmusic/critsec.cpp.o[0m
+[100%] [32mBuilding C object source/CMakeFiles/zmusic.dir/loader/test.c.o[0m
+[100%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_alsa_mididevice.cpp.o[0m
+[100%] [32mBuilding CXX object source/CMakeFiles/zmusic.dir/mididevices/music_alsa_state.cpp.o[0m
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:331:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:330:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:329:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:328:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:370:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:369:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:410:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:409:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:408:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:407:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:448:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:447:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+[100%] [1m[32mLinking CXX shared library libzmusic.so[0m
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3_174.h:59:8:[m[K [01;35m[Kwarning: [m[Ktype ‘[01m[Kstruct _opl3_slot[m[K’ violates the C++ One Definition Rule [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-odr-Wodr]8;;[m[K]
+   59 | struct _opl3_slot {
+      |        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3.h:57:8:[m[K [01;36m[Knote: [m[Ka different type is defined in another translation unit
+   57 | struct _opl3_slot {
+      |        [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3_174.h:66:12:[m[K [01;36m[Knote: [m[Kthe first difference of corresponding definitions is field ‘[01m[Keg_rout[m[K’
+   66 |     Bit16s eg_rout;
+      |            [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3.h:64:14:[m[K [01;36m[Knote: [m[Ka field of same name but different type is defined in another translation unit
+   64 |     uint16_t eg_rout;
+      |              [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3_174.h:59:8:[m[K [01;36m[Knote: [m[Ktype ‘[01m[KBit16s[m[K’ should match type ‘[01m[Kuint16_t[m[K’
+   59 | struct _opl3_slot {
+      |        [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3_174.h:93:8:[m[K [01;35m[Kwarning: [m[Ktype ‘[01m[Kstruct _opl3_channel[m[K’ violates the C++ One Definition Rule [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-odr-Wodr]8;;[m[K]
+   93 | struct _opl3_channel {
+      |        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3.h:95:8:[m[K [01;36m[Knote: [m[Ka different type is defined in another translation unit
+   95 | struct _opl3_channel {
+      |        [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3_174.h:106:12:[m[K [01;36m[Knote: [m[Kthe first difference of corresponding definitions is field ‘[01m[Kchl[m[K’
+  106 |     Bit16u chl, chr;
+      |            [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3.h:114:14:[m[K [01;36m[Knote: [m[Ka field with different name is defined in another translation unit
+  114 |     uint16_t chc, chd;
+      |              [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3_174.h:115:8:[m[K [01;35m[Kwarning: [m[Ktype ‘[01m[Kstruct _opl3_chip[m[K’ violates the C++ One Definition Rule [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-odr-Wodr]8;;[m[K]
+  115 | struct _opl3_chip {
+      |        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3.h:125:8:[m[K [01;36m[Knote: [m[Ka different type is defined in another translation unit
+  125 | struct _opl3_chip {
+      |        [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3_174.h:117:15:[m[K [01;36m[Knote: [m[Kthe first difference of corresponding definitions is field ‘[01m[Kchipslot[m[K’
+  117 |     opl3_slot chipslot[36];
+      |               [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/adlmidi/chips/nuked/nukedopl3.h:127:15:[m[K [01;36m[Knote: [m[Ka field with different name is defined in another translation unit
+  127 |     opl3_slot slot[36];
+      |               [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kemod_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/emod_load.c:248:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kemod_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/emod_load.c:247:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kemod_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/emod_load.c:246:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:748:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:747:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:746:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:745:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:744:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:799:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:798:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:797:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:500:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:499:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:498:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:497:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:496:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:495:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:494:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:493:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:492:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:491:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:490:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kpt3_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/pt3_load.c:176:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kpt3_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/pt3_load.c:175:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kpt3_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/pt3_load.c:174:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:553:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:552:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:551:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:550:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:549:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:548:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:547:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:881:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:880:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:879:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:878:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:877:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:876:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:875:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:874:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:873:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:387:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:386:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:385:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:384:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:383:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:382:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:381:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:380:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:331:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:330:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:329:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:328:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:370:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal5_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal5_load.c:369:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:410:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:409:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:408:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:407:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:448:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kgal4_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/gal4_load.c:447:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+[100%] Built target zmusiclite
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kemod_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/emod_load.c:248:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kemod_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/emod_load.c:247:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kemod_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/emod_load.c:246:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:748:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:747:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:746:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:745:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:744:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:799:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:798:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kmasi_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/masi_load.c:797:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:500:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:499:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:498:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:497:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:496:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:495:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:494:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:493:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:492:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:491:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Karch_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/arch_load.c:490:2[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kpt3_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/pt3_load.c:176:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kpt3_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/pt3_load.c:175:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kpt3_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/pt3_load.c:174:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:553:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:552:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:551:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:550:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:549:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:548:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdbm_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dbm_load.c:547:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:881:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:880:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:879:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:878:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:877:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:876:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:875:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:874:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kdt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/dt_load.c:873:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:387:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:386:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:385:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:384:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:383:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:382:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:381:9[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+In function ‘[01m[Klibxmp_iff_register[m[K’,
+    inlined from ‘[01m[Kokt_load[m[K’ at [01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/okt_load.c:380:8[m[K:
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:24:[m[K [01;35m[Kwarning: [m[Kiteration 2147483643 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  174 |         for (; i < 4; i++)
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/zmusic-01/build/thirdparty/libxmp/src/loaders/iff.c:174:18:[m[K [01;36m[Knote: [m[Kwithin this loop
+  174 |         for (; i < 4; i++)
+      |                  [01;36m[K^[m[K
+[100%] Built target zmusic
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/libzmusic.so.1.3.0
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/libzmusic.so.1
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/libzmusic.so
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/include/zmusic.h
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/libzmusiclite.so.1.3.0
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/libzmusiclite.so.1
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/libzmusiclite.so
+-- Up-to-date: /var/tmp/hokuto/zmusic-01/output/usr/include/zmusic.h
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/cmake/ZMusic/ZMusicFullTargets.cmake
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/cmake/ZMusic/ZMusicFullTargets-release.cmake
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/cmake/ZMusic/ZMusicLiteTargets.cmake
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/cmake/ZMusic/ZMusicLiteTargets-release.cmake
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/cmake/ZMusic/ZMusicConfig.cmake
+-- Installing: /var/tmp/hokuto/zmusic-01/output/usr/lib64/cmake/ZMusic/ZMusicConfigVersion.cmake
+
+Script done on 2026-08-30 02:02:02+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mzmusic[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 29 Aug 2026 19:02:02 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m1m18s[0m
