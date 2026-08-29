@@ -1,0 +1,662 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibcdio[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibcdio 2.4.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 29 Aug 2026 05:27:32 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibcdio[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc ncurses help2man[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibcdio[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 help2man-1.49.3-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 ncurses-6.6-20260103-1 patch-2.8-1 pkgconf-3.0.6-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-08-29 12:27:33+07:00 [COMMAND="cd /var/tmp/hokuto/libcdio-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libcdio-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libcdio-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libcdio-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libcdio-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libcdio-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libcdio-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libcdio-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libcdio-01/build/.cache' /repo/sauzeros/extra/libcdio/build /var/tmp/hokuto/libcdio-01/output 2.4.0 libcdio" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether build environment is sane... yes
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking dependency style of c++... gcc3
+checking for help2man... /usr/bin/help2man
+checking for genisoimage... no
+checking for mkisofs... no
+checking whether cc understands -Wall... yes
+checking whether cc understands -Wbad-function-cast... yes
+checking whether cc understands -Wcast-align... yes
+checking whether cc understands -Wchar-subscripts... yes
+checking whether cc understands -Wdeclaration-after-statement... yes
+checking whether cc understands -Wdisabled-optimization... yes
+checking whether cc understands -Wendif-labels... yes
+checking whether cc understands -Winline... yes
+checking whether cc understands -Wmissing-prototypes... yes
+checking whether cc understands -Wnested-externs... yes
+checking whether cc understands -Wno-sign-compare... yes
+checking whether cc understands -Wpointer-arith... yes
+checking whether cc understands -Wshadow... yes
+checking whether cc understands -Wstrict-prototypes... yes
+checking whether cc understands -Wundef... yes
+checking whether cc understands -Wunused... yes
+checking whether cc understands -Wwrite-strings... yes
+checking for perl... /usr/bin/perl
+checking for diff... /usr/bin/diff
+adding -w to diff in regression tests
+adding --unified to diff in regression tests
+checking for cc option to support large files... none needed
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for stdbool.h... yes
+checking for alloca.h... yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for glob.h... yes
+checking for limits.h... yes
+checking for pwd.h... yes
+checking for stdarg.h... yes
+checking for stdbool.h... (cached) yes
+checking for stdio.h... (cached) yes
+checking for sys/cdio.h... no
+checking for sys/param.h... yes
+checking for sys/time.h... yes
+checking for sys/timeb.h... yes
+checking for sys/utsname.h... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking for struct tm.tm_zone... yes
+checking for unistd.h... (cached) yes
+checking for getopt.h... yes
+checking whether byte ordering is bigendian... (cached) no
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether cc supports ISOC99 _Pragma()... yes
+checking for ntddcdrm.h... no
+checking for ddk/ntddcdrm.h... no
+checking for ntddscsi.h... no
+checking for ddk/ntddscsi.h... no
+checking for ddk/scsi.h... no
+checking for S_ISLNK() macro... yes
+checking for S_ISSOCK() macro... yes
+checking for struct timespec... yes
+checking how to create empty arrays... []
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... gcc-ranlib
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... c++ -E
+checking for ld used by c++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for c++ option to produce PIC... -fPIC -DPIC
+checking if c++ PIC flag -fPIC -DPIC works... yes
+checking if c++ static flag -static works... yes
+checking if c++ supports -c -o file.o... yes
+checking if c++ supports -c -o file.o... (cached) yes
+checking whether the c++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for cos in -lm... yes
+checking Checking what sed uses for extended regular expressions... -r
+checking for linux/version.h... yes
+checking for linux/major.h... yes
+checking for linux/cdrom.h... yes
+checking for struct cdrom_generic_command.timeout... yes
+checking extern long timezone variable... yes
+checking for chdir... yes
+checking for drand48... yes
+checking for fseeko... yes
+checking for fseeko64... yes
+checking for ftruncate... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for getpwuid... yes
+checking for gettimeofday... yes
+checking for lseek64... yes
+checking for lstat... yes
+checking for memcpy... yes
+checking for memset... yes
+checking for mkstemp... yes
+checking for rand... yes
+checking for seteuid... yes
+checking for setegid... yes
+checking for snprintf... yes
+checking for setenv... yes
+checking for strndup... yes
+checking for unsetenv... yes
+checking for tzset... yes
+checking for sleep... yes
+checking for _stati64... no
+checking for usleep... yes
+checking for vsnprintf... yes
+checking for readlink... yes
+checking for realpath... yes
+checking for gmtime_r... yes
+checking for localtime_r... yes
+checking for strtok_r... yes
+checking for timegm... yes
+checking for struct tm.tm_gmtoff... yes
+checking whether time.h defines daylight and timezone variables... yes
+checking whether time.h defines tzname variable... yes
+checking for ld... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for iconv... yes
+checking for working iconv... yes
+checking whether iconv is compatible with its POSIX signature... yes
+checking for nl_langinfo and CODESET... yes
+checking for libcddb >= 1.0.1... no
+configure: WARNING: new enough libcddb not found. CDDB access disabled. Get libcddb from http://libcddb.sourceforge.net
+checking for connect in -lsocket... no
+checking for gethostbyname... yes
+checking for ncurses.h... yes
+checking for ncurses... yes
+checking that generated files are newer than configure... done
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating example/Makefile
+config.status: creating include/Makefile
+config.status: creating include/cdio/Makefile
+config.status: creating include/cdio++/Makefile
+config.status: creating include/cdio/version.h
+config.status: creating doc/doxygen/Doxyfile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating lib/driver/Makefile
+config.status: creating lib/iso9660/Makefile
+config.status: creating lib/udf/Makefile
+config.status: creating libcdio.pc
+config.status: creating libiso9660.pc
+config.status: creating libudf.pc
+config.status: creating package/libcdio.spec
+config.status: creating src/Makefile
+config.status: creating test/check_common_fn
+config.status: creating test/data/Makefile
+config.status: creating test/driver/Makefile
+config.status: creating test/Makefile
+config.status: creating example/C++/Makefile
+config.status: creating example/C++/OO/Makefile
+config.status: creating lib/cdio++/Makefile
+config.status: creating libcdio++.pc
+config.status: creating libiso9660++.pc
+config.status: creating test/check_cue.sh
+config.status: creating test/check_iso.sh
+config.status: creating test/check_nrg.sh
+config.status: creating test/check_udf.sh
+config.status: creating test/check_iso_read.sh
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing checks commands
+configure:
+Using CD-ROM drivers : cdrdao, BIN/CUE, NRG, GNU/Linux
+Building cd-info     : yes
+Building cd-read     : yes
+Building cdda-player : yes
+Building iso-info    : yes
+Building iso-read    : yes
+Building C++ programs: yes
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/libcdio-01/build'
+Making all in doc
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/doc'
+Makefile:850: warning: ignoring prerequisites on suffix rule definition
+Makefile:847: warning: ignoring prerequisites on suffix rule definition
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/doc'
+Making all in include
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include'
+Making all in cdio
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+make  all-am
+make[4]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+make[4]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+Making all in cdio++
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include/cdio++'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include/cdio++'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include'
+Making all in lib
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib'
+Making all in driver
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/driver'
+  CC       _cdio_stream.lo
+  CC       abs_path.lo
+  CC       aix.lo
+  CC       _cdio_generic.lo
+  CC       _cdio_stdio.lo
+  CC       audio.lo
+  CC       cd_types.lo
+  CC       cdio.lo
+  CC       cdtext.lo
+  CC       device.lo
+  CC       disc.lo
+  CC       ds.lo
+  CC       gnu_linux.lo
+  CC       image_common.lo
+  CC       image/nrg.lo
+  CC       memory.lo
+  CC       logging.lo
+  CC       netbsd.lo
+  CC       read.lo
+  CC       osx.lo
+  CC       realpath.lo
+  CC       sector.lo
+[01m[Kgnu_linux.c:561:1:[m[K [01;35m[Kwarning: [m[K'[01m[Kget_mcn_linux[m[K' defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-function-Wunused-function]8;;[m[K]
+  561 | [01;35m[Kget_mcn_linux[m[K (const void *p_user_data) {
+      | [01;35m[K^~~~~~~~~~~~~[m[K
+  CC       solaris.lo
+  CC       track.lo
+  CC       utf8.lo
+  CC       util.lo
+  CC       FreeBSD/freebsd.lo
+  CC       FreeBSD/freebsd_cam.lo
+  CC       FreeBSD/freebsd_ioctl.lo
+  CC       image/bincue.lo
+  CC       image/cdrdao.lo
+  CC       mmc/mmc.lo
+  CC       mmc/mmc_hl_cmds.lo
+  CC       mmc/mmc_ll_cmds.lo
+  CC       mmc/mmc_util.lo
+  CC       MSWindows/aspi32.lo
+  CC       MSWindows/win32_ioctl.lo
+  CC       MSWindows/win32.lo
+  CCLD     libcdio.la
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/driver'
+Making all in iso9660
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/iso9660'
+  CC       rock.lo
+  CC       xa.lo
+  CC       iso9660.lo
+  CC       iso9660_fs.lo
+  CCLD     libiso9660.la
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/iso9660'
+Making all in udf
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/udf'
+  CC       udf_fs.lo
+  CC       udf_time.lo
+  CC       filemode.lo
+  CC       udf.lo
+  CC       udf_file.lo
+  CCLD     libudf.la
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/udf'
+Making all in cdio++
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/cdio++'
+  CXX      devices.lo
+  CXX      iso9660.lo
+  CXX      cdio.lo
+  CXXLD    libcdio++.la
+  CXXLD    libiso9660++.la
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/cdio++'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib'
+Making all in src
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/src'
+  CC       getopt.o
+  CC       getopt1.o
+  CC       cd-info.o
+  CC       cd-drive.o
+  CC       cddb.o
+  CC       util.o
+  CC       cd-read.o
+  CC       iso-info.o
+  CC       iso-read.o
+  CC       cdda-player.o
+  CC       mmc-tool.o
+[01m[Kcd-read.c:[m[K In function ‘[01m[Kprocess_suboption[m[K’:
+[01m[Kcd-read.c:165:5:[m[K [01;35m[Kwarning: [m[Kinitialization discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  165 |     [01;35m[Kbsearch[m[K(subopt, sublist, num, sizeof(subopt_entry_t),
+      |     [01;35m[K^~~~~~~[m[K
+  CCLD     cd-drive
+  CCLD     cd-read
+  CCLD     iso-read
+  CCLD     iso-info
+  CCLD     cd-info
+  CCLD     mmc-tool
+  CCLD     cdda-player
+/usr/bin/help2man --opt-include=./iso-read.help2man --no-info --libtool -o iso-read.1 ./iso-read
+/usr/bin/help2man --opt-include=./cd-read.help2man --no-info --libtool -o cd-read.1 ./cd-read
+/usr/bin/help2man --opt-include=./iso-info.help2man --no-info --libtool -o iso-info.1 ./iso-info
+/usr/bin/help2man --opt-include=./cd-drive.help2man --no-info --libtool -o cd-drive.1 ./cd-drive
+/usr/bin/help2man --opt-include=./cd-info.help2man --no-info --libtool -o cd-info.1 ./cd-info
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/src'
+Making all in test
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test'
+Making all in data
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test/data'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test/data'
+Making all in driver
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test/driver'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test/driver'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test'
+Making all in example
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/example'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/example'
+  CC       cdio-eject.o
+  CC       cdtext.o
+  CC       cdtext-raw.o
+  CC       audio.o
+  CC       device.o
+  CC       cdchange.o
+  CC       drives.o
+  CC       discid.o
+  CC       eject.o
+  CC       extract.o
+  CC       isofile.o
+  CC       isorr.o
+  CC       isofile2.o
+  CC       isofuzzy.o
+  CC       isolist.o
+  CC       isolsn.o
+  CC       logging.o
+  CC       mmc1.o
+  CC       mmc2.o
+  CC       mmc2a.o
+  CC       mmc3.o
+  CC       sample3.o
+  CC       tracks.o
+  CC       sample4.o
+  CC       udf1.o
+  CC       udf2.o
+  CC       udffile.o
+  CCLD     audio
+  CCLD     cdchange
+  CCLD     cdio-eject
+  CCLD     cdtext
+  CCLD     cdtext-raw
+  CCLD     device
+  CCLD     discid
+  CCLD     drives
+  CCLD     eject
+  CCLD     extract
+  CCLD     isofile
+  CCLD     isorr
+  CCLD     isofile2
+  CCLD     isofuzzy
+  CCLD     isolist
+  CCLD     isolsn
+  CCLD     logging
+  CCLD     mmc1
+  CCLD     mmc2
+  CCLD     mmc2a
+  CCLD     mmc3
+  CCLD     sample3
+  CCLD     sample4
+  CCLD     tracks
+  CCLD     udf1
+  CCLD     udf2
+  CCLD     udffile
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/example'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/example'
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libcdio-01/build'
+Making install in doc
+make[1]: Entering directory '/var/tmp/hokuto/libcdio-01/build/doc'
+Makefile:850: warning: ignoring prerequisites on suffix rule definition
+Makefile:847: warning: ignoring prerequisites on suffix rule definition
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/doc'
+Makefile:850: warning: ignoring prerequisites on suffix rule definition
+Makefile:847: warning: ignoring prerequisites on suffix rule definition
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/share/info'
+ /usr/bin/install -c -m 644 ./libcdio.info '/var/tmp/hokuto/libcdio-01/output/usr/share/info'
+ install-info --info-dir='/var/tmp/hokuto/libcdio-01/output/usr/share/info' '/var/tmp/hokuto/libcdio-01/output/usr/share/info/libcdio.info'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/doc'
+Making install in include
+make[1]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include'
+Making install in cdio
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+make  install-am
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+make[4]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/include/cdio'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/include/cdio'
+ /usr/bin/install -c -m 644 cdio_config.h '/var/tmp/hokuto/libcdio-01/output/usr/include/cdio'
+ /usr/bin/install -c -m 644 audio.h bytesex.h bytesex_asm.h cdio.h cd_types.h cdtext.h device.h disc.h ds.h dvd.h ecma_167.h iso9660.h logging.h memory.h mmc.h mmc_cmds.h mmc_hl_cmds.h mmc_ll_cmds.h mmc_util.h posix.h read.h rock.h sector.h track.h types.h udf.h udf_file.h udf_time.h utf8.h util.h version.h xa.h '/var/tmp/hokuto/libcdio-01/output/usr/include/cdio'
+make[4]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include/cdio'
+Making install in cdio++
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include/cdio++'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include/cdio++'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/include/cdio++'
+ /usr/bin/install -c -m 644 cdio.hpp cdtext.hpp device.hpp devices.hpp disc.hpp enum.hpp iso9660.hpp mmc.hpp read.hpp track.hpp '/var/tmp/hokuto/libcdio-01/output/usr/include/cdio++'
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include/cdio++'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include/cdio++'
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include'
+make[1]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/include'
+Making install in lib
+make[1]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib'
+Making install in driver
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/driver'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/driver'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/lib'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libcdio.la '/var/tmp/hokuto/libcdio-01/output/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libcdio.so.21.0.0 /var/tmp/hokuto/libcdio-01/output/usr/lib/libcdio.so.21.0.0
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libcdio.so.21.0.0 libcdio.so.21 || { rm -f libcdio.so.21 && ln -s libcdio.so.21.0.0 libcdio.so.21; }; })
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libcdio.so.21.0.0 libcdio.so || { rm -f libcdio.so && ln -s libcdio.so.21.0.0 libcdio.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcdio.lai /var/tmp/hokuto/libcdio-01/output/usr/lib/libcdio.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/driver'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/driver'
+Making install in iso9660
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/iso9660'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/iso9660'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/lib'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libiso9660.la '/var/tmp/hokuto/libcdio-01/output/usr/lib'
+libtool: [31mwarning[0m: [1mrelinking 'libiso9660.la'[0m
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/build/lib/iso9660; /bin/sh "/var/tmp/hokuto/libcdio-01/build/libtool"  --silent --tag CC --mode=relink cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -Wbad-function-cast -Wcast-align -Wchar-subscripts -Wdeclaration-after-statement -Wdisabled-optimization -Wendif-labels -Winline -Wmissing-prototypes -Wnested-externs -Wno-sign-compare -Wpointer-arith -Wshadow -Wstrict-prototypes -Wundef -Wunused -Wwrite-strings -version-info 13:0:0 -Wl,--version-script=libiso9660.la.ver -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libiso9660.la -rpath /usr/lib iso9660.lo iso9660_fs.lo rock.lo xa.lo ../../lib/driver/libcdio.la -lm -inst-prefix-dir /var/tmp/hokuto/libcdio-01/output)
+libtool: install: /usr/bin/install -c .libs/libiso9660.so.13.0.0T /var/tmp/hokuto/libcdio-01/output/usr/lib/libiso9660.so.13.0.0
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libiso9660.so.13.0.0 libiso9660.so.13 || { rm -f libiso9660.so.13 && ln -s libiso9660.so.13.0.0 libiso9660.so.13; }; })
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libiso9660.so.13.0.0 libiso9660.so || { rm -f libiso9660.so && ln -s libiso9660.so.13.0.0 libiso9660.so; }; })
+libtool: install: /usr/bin/install -c .libs/libiso9660.lai /var/tmp/hokuto/libcdio-01/output/usr/lib/libiso9660.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/iso9660'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/iso9660'
+Making install in udf
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/udf'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/udf'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/lib'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libudf.la '/var/tmp/hokuto/libcdio-01/output/usr/lib'
+libtool: [31mwarning[0m: [1mrelinking 'libudf.la'[0m
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/build/lib/udf; /bin/sh "/var/tmp/hokuto/libcdio-01/build/libtool"  --silent --tag CC --mode=relink cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -Wbad-function-cast -Wcast-align -Wchar-subscripts -Wdeclaration-after-statement -Wdisabled-optimization -Wendif-labels -Winline -Wmissing-prototypes -Wnested-externs -Wno-sign-compare -Wpointer-arith -Wshadow -Wstrict-prototypes -Wundef -Wunused -Wwrite-strings -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libudf.la -rpath /usr/lib udf.lo udf_file.lo udf_fs.lo udf_time.lo filemode.lo ../../lib/driver/libcdio.la -lm -inst-prefix-dir /var/tmp/hokuto/libcdio-01/output)
+libtool: install: /usr/bin/install -c .libs/libudf.so.0.0.0T /var/tmp/hokuto/libcdio-01/output/usr/lib/libudf.so.0.0.0
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libudf.so.0.0.0 libudf.so.0 || { rm -f libudf.so.0 && ln -s libudf.so.0.0.0 libudf.so.0; }; })
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libudf.so.0.0.0 libudf.so || { rm -f libudf.so && ln -s libudf.so.0.0.0 libudf.so; }; })
+libtool: install: /usr/bin/install -c .libs/libudf.lai /var/tmp/hokuto/libcdio-01/output/usr/lib/libudf.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/udf'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/udf'
+Making install in cdio++
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/cdio++'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib/cdio++'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/lib'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libiso9660++.la libcdio++.la '/var/tmp/hokuto/libcdio-01/output/usr/lib'
+libtool: [31mwarning[0m: [1mrelinking 'libiso9660++.la'[0m
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/build/lib/cdio++; /bin/sh "/var/tmp/hokuto/libcdio-01/build/libtool"  --silent --tag CXX --mode=relink c++ -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -version-info 1:0:0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libiso9660++.la -rpath /usr/lib iso9660.lo ../../lib/iso9660/libiso9660.la ../../lib/driver/libcdio.la -lm -inst-prefix-dir /var/tmp/hokuto/libcdio-01/output)
+libtool: install: /usr/bin/install -c .libs/libiso9660++.so.1.0.0T /var/tmp/hokuto/libcdio-01/output/usr/lib/libiso9660++.so.1.0.0
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libiso9660++.so.1.0.0 libiso9660++.so.1 || { rm -f libiso9660++.so.1 && ln -s libiso9660++.so.1.0.0 libiso9660++.so.1; }; })
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libiso9660++.so.1.0.0 libiso9660++.so || { rm -f libiso9660++.so && ln -s libiso9660++.so.1.0.0 libiso9660++.so; }; })
+libtool: install: /usr/bin/install -c .libs/libiso9660++.lai /var/tmp/hokuto/libcdio-01/output/usr/lib/libiso9660++.la
+libtool: [31mwarning[0m: [1mrelinking 'libcdio++.la'[0m
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/build/lib/cdio++; /bin/sh "/var/tmp/hokuto/libcdio-01/build/libtool"  --silent --tag CXX --mode=relink c++ -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -version-info 2:0:0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o libcdio++.la -rpath /usr/lib cdio.lo devices.lo ../../lib/driver/libcdio.la -lm -inst-prefix-dir /var/tmp/hokuto/libcdio-01/output)
+libtool: install: /usr/bin/install -c .libs/libcdio++.so.2.0.0T /var/tmp/hokuto/libcdio-01/output/usr/lib/libcdio++.so.2.0.0
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libcdio++.so.2.0.0 libcdio++.so.2 || { rm -f libcdio++.so.2 && ln -s libcdio++.so.2.0.0 libcdio++.so.2; }; })
+libtool: install: (cd /var/tmp/hokuto/libcdio-01/output/usr/lib && { ln -s -f libcdio++.so.2.0.0 libcdio++.so || { rm -f libcdio++.so && ln -s libcdio++.so.2.0.0 libcdio++.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcdio++.lai /var/tmp/hokuto/libcdio-01/output/usr/lib/libcdio++.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/cdio++'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib/cdio++'
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/lib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib'
+make[1]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/lib'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/libcdio-01/build/src'
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/src'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/share/man/man1'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c cd-drive cd-info cd-read iso-info iso-read cdda-player mmc-tool '/var/tmp/hokuto/libcdio-01/output/usr/bin'
+ /usr/bin/install -c -m 644 cd-drive.1 cd-info.1 cd-read.1 iso-read.1 iso-info.1 '/var/tmp/hokuto/libcdio-01/output/usr/share/man/man1'
+libtool: [31mwarning[0m: [1m'../lib/iso9660/libiso9660.la' has not been installed in '/usr/lib'[0m
+libtool: [31mwarning[0m: [1m'../lib/driver/libcdio.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/cd-drive /var/tmp/hokuto/libcdio-01/output/usr/bin/cd-drive
+libtool: [31mwarning[0m: [1m'../lib/iso9660/libiso9660.la' has not been installed in '/usr/lib'[0m
+libtool: [31mwarning[0m: [1m'../lib/driver/libcdio.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/cd-info /var/tmp/hokuto/libcdio-01/output/usr/bin/cd-info
+libtool: [31mwarning[0m: [1m'../lib/iso9660/libiso9660.la' has not been installed in '/usr/lib'[0m
+libtool: [31mwarning[0m: [1m'../lib/driver/libcdio.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/cd-read /var/tmp/hokuto/libcdio-01/output/usr/bin/cd-read
+libtool: [31mwarning[0m: [1m'../lib/udf/libudf.la' has not been installed in '/usr/lib'[0m
+libtool: [31mwarning[0m: [1m'../lib/iso9660/libiso9660.la' has not been installed in '/usr/lib'[0m
+libtool: [31mwarning[0m: [1m'../lib/driver/libcdio.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/iso-info /var/tmp/hokuto/libcdio-01/output/usr/bin/iso-info
+libtool: [31mwarning[0m: [1m'../lib/udf/libudf.la' has not been installed in '/usr/lib'[0m
+libtool: [31mwarning[0m: [1m'../lib/iso9660/libiso9660.la' has not been installed in '/usr/lib'[0m
+libtool: [31mwarning[0m: [1m'../lib/driver/libcdio.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/iso-read /var/tmp/hokuto/libcdio-01/output/usr/bin/iso-read
+libtool: [31mwarning[0m: [1m'../lib/driver/libcdio.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/cdda-player /var/tmp/hokuto/libcdio-01/output/usr/bin/cdda-player
+libtool: [31mwarning[0m: [1m'../lib/iso9660/libiso9660.la' has not been installed in '/usr/lib'[0m
+libtool: [31mwarning[0m: [1m'../lib/driver/libcdio.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/mmc-tool /var/tmp/hokuto/libcdio-01/output/usr/bin/mmc-tool
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/src'
+Making install in test
+make[1]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test'
+Making install in data
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test/data'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test/data'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test/data'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test/data'
+Making install in driver
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test/driver'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test/driver'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test/driver'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test/driver'
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/test'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test'
+make[1]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/test'
+Making install in example
+make[1]: Entering directory '/var/tmp/hokuto/libcdio-01/build/example'
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build/example'
+make[3]: Entering directory '/var/tmp/hokuto/libcdio-01/build/example'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/example'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/example'
+make[1]: Leaving directory '/var/tmp/hokuto/libcdio-01/build/example'
+make[1]: Entering directory '/var/tmp/hokuto/libcdio-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/libcdio-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libcdio-01/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libcdio.pc libiso9660.pc libudf.pc libcdio++.pc libiso9660++.pc '/var/tmp/hokuto/libcdio-01/output/usr/lib/pkgconfig'
+make[2]: Leaving directory '/var/tmp/hokuto/libcdio-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libcdio-01/build'
+
+Script done on 2026-08-29 12:27:47+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibcdio[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 29 Aug 2026 05:27:47 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m14s[0m
