@@ -1,0 +1,283 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibnftnl[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibnftnl 1.3.2-2[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 02 Sep 2026 05:18:13 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibnftnl[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mlibmnl[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibnftnl[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 grep-3.12-1 gzip-1.14-1 libmnl-1.0.5-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.6-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-02 12:18:13+07:00 [COMMAND="cd /var/tmp/hokuto/libnftnl-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libnftnl-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libnftnl-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libnftnl-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libnftnl-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libnftnl-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libnftnl-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libnftnl-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libnftnl-01/build/.cache' /repo/sauzeros/extra/libnftnl/build /var/tmp/hokuto/libnftnl-01/output 1.3.2 libnftnl" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking the archiver (gcc-ar) interface... ar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking how to create a pax tar archive... gnutar
+checking dependency style of cc... gcc3
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libmnl >= 1.0.4... yes
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether compiler accepts -fvisibility=hidden... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating include/Makefile
+config.status: creating include/libnftnl/Makefile
+config.status: creating include/linux/Makefile
+config.status: creating include/linux/netfilter/Makefile
+config.status: creating examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating libnftnl.pc
+config.status: creating doxygen.cfg
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/libnftnl-01/build'
+Making all in src
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/src'
+  CC       flowtable.lo
+  CC       common.lo
+  CC       gen.lo
+  CC       utils.lo
+  CC       trace.lo
+  CC       batch.lo
+  CC       table.lo
+  CC       chain.lo
+  CC       object.lo
+  CC       rule.lo
+  CC       set.lo
+  CC       set_elem.lo
+  CC       str_array.lo
+  CC       ruleset.lo
+  CC       udata.lo
+  CC       expr.lo
+  CC       expr_ops.lo
+  CC       expr/bitwise.lo
+  CC       expr/byteorder.lo
+  CC       expr/cmp.lo
+  CC       expr/range.lo
+  CC       expr/connlimit.lo
+  CC       expr/counter.lo
+  CC       expr/ct.lo
+  CC       expr/data_reg.lo
+  CC       expr/dup.lo
+  CC       expr/exthdr.lo
+  CC       expr/flow_offload.lo
+  CC       expr/fib.lo
+  CC       expr/fwd.lo
+  CC       expr/last.lo
+  CC       expr/limit.lo
+  CC       expr/lookup.lo
+  CC       expr/log.lo
+  CC       expr/dynset.lo
+  CC       expr/immediate.lo
+  CC       expr/inner.lo
+  CC       expr/match.lo
+  CC       expr/numgen.lo
+  CC       expr/meta.lo
+  CC       expr/nat.lo
+  CC       expr/tproxy.lo
+  CC       expr/objref.lo
+  CC       expr/payload.lo
+  CC       expr/queue.lo
+  CC       expr/quota.lo
+  CC       expr/reject.lo
+  CC       expr/rt.lo
+  CC       expr/target.lo
+  CC       expr/tunnel.lo
+  CC       expr/masq.lo
+  CC       expr/redir.lo
+  CC       expr/hash.lo
+  CC       expr/socket.lo
+  CC       expr/synproxy.lo
+  CC       expr/osf.lo
+  CC       expr/xfrm.lo
+  CC       obj/counter.lo
+  CC       obj/ct_helper.lo
+  CC       obj/quota.lo
+  CC       obj/tunnel.lo
+  CC       obj/limit.lo
+  CC       obj/synproxy.lo
+  CC       obj/ct_timeout.lo
+  CC       obj/secmark.lo
+  CC       obj/ct_expect.lo
+  CC       obj/connlimit.lo
+  CCLD     libnftnl.la
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/src'
+Making all in include
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include'
+Making all in libnftnl
+make[3]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/libnftnl'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/libnftnl'
+Making all in linux
+make[3]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+Making all in netfilter
+make[4]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/linux/netfilter'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/linux/netfilter'
+make[4]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+make[3]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+make[3]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include'
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include'
+Making all in examples
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/examples'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/examples'
+Making all in tests
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/tests'
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/src'
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/src'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libnftnl-01/output/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libnftnl.la '/var/tmp/hokuto/libnftnl-01/output/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libnftnl.so.11.8.0 /var/tmp/hokuto/libnftnl-01/output/usr/lib/libnftnl.so.11.8.0
+libtool: install: (cd /var/tmp/hokuto/libnftnl-01/output/usr/lib && { ln -s -f libnftnl.so.11.8.0 libnftnl.so.11 || { rm -f libnftnl.so.11 && ln -s libnftnl.so.11.8.0 libnftnl.so.11; }; })
+libtool: install: (cd /var/tmp/hokuto/libnftnl-01/output/usr/lib && { ln -s -f libnftnl.so.11.8.0 libnftnl.so || { rm -f libnftnl.so && ln -s libnftnl.so.11.8.0 libnftnl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libnftnl.lai /var/tmp/hokuto/libnftnl-01/output/usr/lib/libnftnl.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/src'
+Making install in include
+make[1]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include'
+Making install in libnftnl
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/libnftnl'
+make[3]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/libnftnl'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libnftnl-01/output/usr/include/libnftnl'
+ /usr/bin/install -c -m 644 batch.h table.h trace.h chain.h object.h rule.h expr.h set.h flowtable.h ruleset.h common.h udata.h gen.h '/var/tmp/hokuto/libnftnl-01/output/usr/include/libnftnl'
+make[3]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/libnftnl'
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/libnftnl'
+Making install in linux
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+Making install in netfilter
+make[3]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/linux/netfilter'
+make[4]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/linux/netfilter'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/linux/netfilter'
+make[3]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/linux/netfilter'
+make[3]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+make[4]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+make[3]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include/linux'
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include'
+make[3]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include'
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include'
+make[1]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/include'
+Making install in examples
+make[1]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/examples'
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/examples'
+make[1]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/examples'
+Making install in tests
+make[1]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/tests'
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build/tests'
+make[1]: Entering directory '/var/tmp/hokuto/libnftnl-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/libnftnl-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libnftnl-01/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libnftnl.pc '/var/tmp/hokuto/libnftnl-01/output/usr/lib/pkgconfig'
+make[2]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libnftnl-01/build'
+
+Script done on 2026-09-02 12:18:17+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibnftnl[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 02 Sep 2026 05:18:17 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m3s[0m
