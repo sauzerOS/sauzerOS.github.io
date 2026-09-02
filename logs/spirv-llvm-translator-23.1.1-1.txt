@@ -1,0 +1,216 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mspirv-llvm-translator[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mspirv-llvm-translator 23.1.1-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 02 Sep 2026 05:05:20 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mspirv-llvm-translator[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc libstdc++ llvm-libs spirv-tools cmake llvm lib32-llvm-libs lib32-llvm lib32-spirv-tools[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mspirv-llvm-translator[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 cmake-4.4.3-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 lib32-gcc-libs-16.2.0-1 lib32-glibc-2.44-1 lib32-llvm-23.1.0-1 lib32-llvm-libs-23.1.0-1 lib32-spirv-tools-1.4.350.1-1 libstdc++-16.2.0-1 libtool-2.6.2-1 llvm-23.1.0-1 llvm-libs-23.1.0-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.6-1 sed-4.10-1 spirv-tools-1.4.350.1-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-02 12:05:20+07:00 [COMMAND="cd /var/tmp/hokuto/spirv-llvm-translator-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/spirv-llvm-translator-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/spirv-llvm-translator-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/spirv-llvm-translator-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/spirv-llvm-translator-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/spirv-llvm-translator-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/spirv-llvm-translator-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/spirv-llvm-translator-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/spirv-llvm-translator-01/build/.cache' /repo/sauzeros/extra/spirv-llvm-translator/build /var/tmp/hokuto/spirv-llvm-translator-01/output 23.1.1 spirv-llvm-translator" <not executed on terminal>]
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.6")
+-- SPIR-V Headers location is not specified. Will try to download
+          spirv.hpp from https://github.com/KhronosGroup/SPIRV-Headers into
+          /var/tmp/hokuto/spirv-llvm-translator-01/build/build/SPIRV-Headers
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/libffi.so
+-- Looking for histedit.h
+-- Looking for histedit.h - found
+-- Found LibEdit: /usr/include (found version "2.11")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found LibXml2: /usr/lib/libxml2.so (found version "2.15.3")
+-- Linker detection: GNU ld
+-- Performing Test LLVM_USES_LIBSTDCXX
+-- Performing Test LLVM_USES_LIBSTDCXX - Success
+-- Performing Test LLVM_DEFAULT_TO_GLIBCXX_USE_CXX11_ABI
+-- Performing Test LLVM_DEFAULT_TO_GLIBCXX_USE_CXX11_ABI - Success
+-- Performing Test C_SUPPORTS_FPIC
+-- Performing Test C_SUPPORTS_FPIC - Success
+-- Performing Test CXX_SUPPORTS_FPIC
+-- Performing Test CXX_SUPPORTS_FPIC - Success
+-- Building with -fPIC
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG - Success
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG - Success
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL - Success
+[33mCMake Warning (policy) at /usr/lib64/cmake/llvm/HandleLLVMOptions.cmake:945 (CHECK_C_SOURCE_COMPILES):
+  Policy CMP0219 is not set: Macro invocations preserve backslashes in
+  arguments.  Run "cmake --help-policy CMP0219" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Command "CHECK_C_SOURCE_COMPILES" called with arguments containing
+  backslashes.
+
+  Since the policy is not set, backslashes in the arguments:
+
+   "// \\\n//\nint main(void) {return 0;}"
+
+  will be interpreted as escape sequences for compatibility.
+
+  Set the policy to NEW to instead pass
+
+   "// \\\\\\n//\\nint main(void) {return 0;}"
+
+  so that argument parsing will preserve the original values.
+Call Stack (most recent call first):
+  CMakeLists.txt:100 (include)
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+[0m
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP - Failed
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG - Success
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS - Failed
+[0mPrecompiled headers are disabled by default with GCC. Pass -DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF to override.[0m
+-- Precompiled headers disabled.
+-- Looking for os_signpost_interval_begin
+-- Looking for os_signpost_interval_begin - not found
+-- Looking for flock
+-- Looking for flock - found
+-- Found LLVM: 23.1.0
+-- Checking for one of the modules 'SPIRV-Tools'
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS - Success
+-- Configuring done (4.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /var/tmp/hokuto/spirv-llvm-translator-01/build/build
+[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/FunctionDescriptor.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/Mangler.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ManglingUtils.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ParameterType.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLTypeToSPIRV.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLUtil.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/VectorComputeUtil.cpp.o[K[1/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ManglingUtils.cpp.o[K[1/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVBuiltinHelper.cpp.o[K[2/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/FunctionDescriptor.cpp.o[K[2/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerBitCastToNonStandardType.cpp.o[K[3/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ParameterType.cpp.o[K[3/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerBool.cpp.o[K[4/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/Mangler.cpp.o[K[4/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerConstExpr.cpp.o[K[5/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/VectorComputeUtil.cpp.o[K[5/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerMemmove.cpp.o[K[6/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLTypeToSPIRV.cpp.o[K[6/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerOCLBlocks.cpp.o[K[7/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerBool.cpp.o[K[7/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerLLVMIntrinsic.cpp.o[K[8/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o[K[8/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVReader.cpp.o[K[9/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerBitCastToNonStandardType.cpp.o[K[9/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVRegularizeLLVM.cpp.o[K[10/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerConstExpr.cpp.o[K[10/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToLLVMDbgTran.cpp.o[K[11/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLUtil.cpp.o[K[11/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL.cpp.o[K[12/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o[K[12/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL12.cpp.o[K[13/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o[K[13/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL20.cpp.o[K[14/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerLLVMIntrinsic.cpp.o[K[14/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVTypeScavenger.cpp.o[K[15/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVBuiltinHelper.cpp.o[K[15/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVUtil.cpp.o[K[16/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerOCLBlocks.cpp.o[K[16/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVWriter.cpp.o[K[17/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVRegularizeLLVM.cpp.o[K[17/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVWriterPass.cpp.o[K[18/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToLLVMDbgTran.cpp.o[K[18/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/PassPlugin.cpp.o[K[19/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL12.cpp.o[K[19/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/PreprocessMetadata.cpp.o[K[20/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL.cpp.o[K[20/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVBasicBlock.cpp.o[K[21/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVWriterPass.cpp.o[K[21/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVDebug.cpp.o[K[22/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL20.cpp.o[K[22/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVDecorate.cpp.o[K[23/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVTypeScavenger.cpp.o[K[23/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVEntry.cpp.o[K[24/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVDebug.cpp.o[K[24/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVFunction.cpp.o[K[25/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerMemmove.cpp.o[K[25/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVInstruction.cpp.o[K[26/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVDecorate.cpp.o[K[26/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVModule.cpp.o[K[27/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVReader.cpp.o[K[27/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVStream.cpp.o[K[28/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVBasicBlock.cpp.o[K[28/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVType.cpp.o[K[29/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/PreprocessMetadata.cpp.o[K[29/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVValue.cpp.o[K[30/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVFunction.cpp.o[K[30/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVError.cpp.o[K[31/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/PassPlugin.cpp.o[K[31/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVFnVar.cpp.o[K[32/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVError.cpp.o[K[32/45] Building CXX object tools/llvm-spirv/CMakeFiles/llvm-spirv.dir/llvm-spirv.cpp.o[K[33/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVType.cpp.o[K[34/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVEntry.cpp.o[K[35/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVUtil.cpp.o[K[36/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVInstruction.cpp.o[K[37/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVStream.cpp.o[K[38/45] Building CXX object tools/llvm-spirv/CMakeFiles/llvm-spirv.dir/llvm-spirv.cpp.o[K[39/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVValue.cpp.o[K[40/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVModule.cpp.o[K[41/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVFnVar.cpp.o[K[42/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVWriter.cpp.o[K[42/45] Linking CXX shared library lib/SPIRV/libLLVMSPIRVLib.so.23.1[K[43/45] Linking CXX shared library lib/SPIRV/libLLVMSPIRVLib.so.23.1[K[43/45] Creating library symlink lib/SPIRV/libLLVMSPIRVLib.so[K[44/45] Creating library symlink lib/SPIRV/libLLVMSPIRVLib.so[K[44/45] Linking CXX executable tools/llvm-spirv/llvm-spirv[K[45/45] Linking CXX executable tools/llvm-spirv/llvm-spirv[K
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/output/usr/include/LLVMSPIRVLib/LLVMSPIRVLib.h
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/output/usr/include/LLVMSPIRVLib/LLVMSPIRVOpts.h
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/output/usr/include/LLVMSPIRVLib/LLVMSPIRVExtensions.inc
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/output/usr/lib/pkgconfig/LLVMSPIRVLib.pc
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/output/usr/lib/libLLVMSPIRVLib.so.23.1
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/spirv-llvm-translator-01/output/usr/lib/libLLVMSPIRVLib.so.23.1" to ""
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/output/usr/lib/libLLVMSPIRVLib.so
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/output/usr/bin/llvm-spirv
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/spirv-llvm-translator-01/output/usr/bin/llvm-spirv" to ""
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.6")
+-- SPIR-V Headers location is not specified. Will try to download
+          spirv.hpp from https://github.com/KhronosGroup/SPIRV-Headers into
+          /var/tmp/hokuto/spirv-llvm-translator-01/build/build/SPIRV-Headers
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib32/libffi.so
+-- Found ZLIB: /usr/lib32/libz.a (found version "1.3.1")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found LibXml2: /usr/lib32/libxml2.so (found version "2.15.3")
+-- Linker detection: GNU ld
+-- Performing Test LLVM_USES_LIBSTDCXX
+-- Performing Test LLVM_USES_LIBSTDCXX - Success
+-- Performing Test LLVM_DEFAULT_TO_GLIBCXX_USE_CXX11_ABI
+-- Performing Test LLVM_DEFAULT_TO_GLIBCXX_USE_CXX11_ABI - Success
+-- Performing Test C_SUPPORTS_FPIC
+-- Performing Test C_SUPPORTS_FPIC - Success
+-- Performing Test CXX_SUPPORTS_FPIC
+-- Performing Test CXX_SUPPORTS_FPIC - Success
+-- Building with -fPIC
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG - Success
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG - Success
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL - Success
+[33mCMake Warning (policy) at /usr/lib32/cmake/llvm/HandleLLVMOptions.cmake:945 (CHECK_C_SOURCE_COMPILES):
+  Policy CMP0219 is not set: Macro invocations preserve backslashes in
+  arguments.  Run "cmake --help-policy CMP0219" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Command "CHECK_C_SOURCE_COMPILES" called with arguments containing
+  backslashes.
+
+  Since the policy is not set, backslashes in the arguments:
+
+   "// \\\n//\nint main(void) {return 0;}"
+
+  will be interpreted as escape sequences for compatibility.
+
+  Set the policy to NEW to instead pass
+
+   "// \\\\\\n//\\nint main(void) {return 0;}"
+
+  so that argument parsing will preserve the original values.
+Call Stack (most recent call first):
+  CMakeLists.txt:100 (include)
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+[0m
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP - Failed
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSUPPORTED_FLAG - Success
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS - Failed
+[0mPrecompiled headers are disabled by default with GCC. Pass -DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF to override.[0m
+-- Precompiled headers disabled.
+-- Looking for os_signpost_interval_begin
+-- Looking for os_signpost_interval_begin - not found
+-- Looking for flock
+-- Looking for flock - found
+-- Found LLVM: 23.1.0
+-- Checking for one of the modules 'SPIRV-Tools'
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS
+-- Performing Test LLVM_LINKER_SUPPORTS_B_SYMBOLIC_FUNCTIONS - Success
+-- Configuring done (4.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /var/tmp/hokuto/spirv-llvm-translator-01/build/build
+[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/FunctionDescriptor.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/Mangler.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ManglingUtils.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ParameterType.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLTypeToSPIRV.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLUtil.cpp.o[K[0/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/VectorComputeUtil.cpp.o[K[1/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ManglingUtils.cpp.o[K[1/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVBuiltinHelper.cpp.o[K[2/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/FunctionDescriptor.cpp.o[K[2/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerBitCastToNonStandardType.cpp.o[K[3/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/ParameterType.cpp.o[K[3/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerBool.cpp.o[K[4/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/Mangler/Mangler.cpp.o[K[4/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerConstExpr.cpp.o[K[5/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMSPIRVOpts.cpp.o[K[5/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerMemmove.cpp.o[K[6/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerBool.cpp.o[K[6/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerOCLBlocks.cpp.o[K[7/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLTypeToSPIRV.cpp.o[K[7/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerLLVMIntrinsic.cpp.o[K[8/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerBitCastToNonStandardType.cpp.o[K[8/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVReader.cpp.o[K[9/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerConstExpr.cpp.o[K[9/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVRegularizeLLVM.cpp.o[K[10/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVBuiltinHelper.cpp.o[K[10/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToLLVMDbgTran.cpp.o[K[11/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/VectorComputeUtil.cpp.o[K[11/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL.cpp.o[K[12/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLUtil.cpp.o[K[12/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL12.cpp.o[K[13/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/OCLToSPIRV.cpp.o[K[13/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL20.cpp.o[K[14/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerLLVMIntrinsic.cpp.o[K[14/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVTypeScavenger.cpp.o[K[15/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerOCLBlocks.cpp.o[K[15/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVUtil.cpp.o[K[16/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVLowerMemmove.cpp.o[K[16/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVWriter.cpp.o[K[17/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVRegularizeLLVM.cpp.o[K[17/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVWriterPass.cpp.o[K[18/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL12.cpp.o[K[18/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/PassPlugin.cpp.o[K[19/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToLLVMDbgTran.cpp.o[K[19/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/PreprocessMetadata.cpp.o[K[20/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVWriterPass.cpp.o[K[20/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVBasicBlock.cpp.o[K[21/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/LLVMToSPIRVDbgTran.cpp.o[K[21/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVDebug.cpp.o[K[22/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL20.cpp.o[K[22/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVDecorate.cpp.o[K[23/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVTypeScavenger.cpp.o[K[23/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVEntry.cpp.o[K[24/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVDebug.cpp.o[K[24/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVFunction.cpp.o[K[25/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVToOCL.cpp.o[K[25/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVInstruction.cpp.o[K[26/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVDecorate.cpp.o[K[26/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVModule.cpp.o[K[27/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVReader.cpp.o[K[27/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVStream.cpp.o[K[28/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/PreprocessMetadata.cpp.o[K[28/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVType.cpp.o[K[29/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVUtil.cpp.o[K[29/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVValue.cpp.o[K[30/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVFunction.cpp.o[K[30/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVError.cpp.o[K[31/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVBasicBlock.cpp.o[K[31/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVFnVar.cpp.o[K[32/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/PassPlugin.cpp.o[K[32/45] Building CXX object tools/llvm-spirv/CMakeFiles/llvm-spirv.dir/llvm-spirv.cpp.o[K[33/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVError.cpp.o[K[34/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVEntry.cpp.o[K[35/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVType.cpp.o[K[36/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVValue.cpp.o[K[37/45] Building CXX object tools/llvm-spirv/CMakeFiles/llvm-spirv.dir/llvm-spirv.cpp.o[K[38/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVFnVar.cpp.o[K[39/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVStream.cpp.o[K[40/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVModule.cpp.o[K[41/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/SPIRVWriter.cpp.o[K[42/45] Building CXX object lib/SPIRV/CMakeFiles/LLVMSPIRVLib.dir/libSPIRV/SPIRVInstruction.cpp.o[K[42/45] Linking CXX shared library lib/SPIRV/libLLVMSPIRVLib.so.23.1[K[43/45] Linking CXX shared library lib/SPIRV/libLLVMSPIRVLib.so.23.1[K[43/45] Creating library symlink lib/SPIRV/libLLVMSPIRVLib.so[K[44/45] Creating library symlink lib/SPIRV/libLLVMSPIRVLib.so[K[44/45] Linking CXX executable tools/llvm-spirv/llvm-spirv[K[45/45] Linking CXX executable tools/llvm-spirv/llvm-spirv[K
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/build/DESTDIR/usr/include/LLVMSPIRVLib/LLVMSPIRVLib.h
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/build/DESTDIR/usr/include/LLVMSPIRVLib/LLVMSPIRVOpts.h
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/build/DESTDIR/usr/include/LLVMSPIRVLib/LLVMSPIRVExtensions.inc
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/build/DESTDIR/usr/lib32/pkgconfig/LLVMSPIRVLib.pc
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/build/DESTDIR/usr/lib32/libLLVMSPIRVLib.so.23.1
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/spirv-llvm-translator-01/build/DESTDIR/usr/lib32/libLLVMSPIRVLib.so.23.1" to ""
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/build/DESTDIR/usr/lib32/libLLVMSPIRVLib.so
+-- Installing: /var/tmp/hokuto/spirv-llvm-translator-01/build/DESTDIR/usr/bin/llvm-spirv
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/spirv-llvm-translator-01/build/DESTDIR/usr/bin/llvm-spirv" to ""
+'DESTDIR/usr/lib32/libLLVMSPIRVLib.so' -> '/var/tmp/hokuto/spirv-llvm-translator-01/split/lib32-spirv-llvm-translator/usr/lib32/libLLVMSPIRVLib.so'
+'DESTDIR/usr/lib32/libLLVMSPIRVLib.so.23.1' -> '/var/tmp/hokuto/spirv-llvm-translator-01/split/lib32-spirv-llvm-translator/usr/lib32/libLLVMSPIRVLib.so.23.1'
+'DESTDIR/usr/lib32/pkgconfig' -> '/var/tmp/hokuto/spirv-llvm-translator-01/split/lib32-spirv-llvm-translator/usr/lib32/pkgconfig'
+'DESTDIR/usr/lib32/pkgconfig/LLVMSPIRVLib.pc' -> '/var/tmp/hokuto/spirv-llvm-translator-01/split/lib32-spirv-llvm-translator/usr/lib32/pkgconfig/LLVMSPIRVLib.pc'
+
+Script done on 2026-09-02 12:06:25+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mspirv-llvm-translator[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 02 Sep 2026 05:06:25 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m1m4s[0m
