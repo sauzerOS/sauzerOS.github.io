@@ -1,0 +1,87 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mmujs[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mmujs 1.3.10-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 02 Sep 2026 05:01:22 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mmujs[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc readline python[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mmujs[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.6-1 python-3.14.7-1 readline-8.3.3-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-02 12:01:22+07:00 [COMMAND="cd /var/tmp/hokuto/mujs-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/mujs-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/mujs-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/mujs-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/mujs-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/mujs-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/mujs-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/mujs-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/mujs-01/build/.cache' /repo/sauzeros/extra/mujs/build /var/tmp/hokuto/mujs-01/output 1.3.10 mujs" <not executed on terminal>]
+echo > build/release/mujs.pc Name: mujs
+cc -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -O3 -c -o build/release/libmujs.o one.c
+cc -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -O3 -fPIC -shared -o build/release/libmujs.so one.c -lm
+echo >> build/release/mujs.pc Description: MuJS embeddable Javascript interpreter
+echo >> build/release/mujs.pc Version: build
+echo >> build/release/mujs.pc Cflags: -I/usr/include
+echo >> build/release/mujs.pc Libs: -L/usr/lib -lmujs
+echo >> build/release/mujs.pc Libs.private: -lm
+In file included from [01m[Kone.c:20[m[K:
+[01m[Kjsrun.c:[m[K In function ‘[01m[KjsR_run[m[K’:
+[01m[Kjsrun.c:1579:22:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KVT[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+ 1579 |         const char **[01;35m[KVT[m[K = F->vartab ? F->vartab - 1 : NULL;
+      |                      [01;35m[K^~[m[K
+In file included from [01m[Kone.c:20[m[K:
+[01m[Kjsrun.c:[m[K In function ‘[01m[KjsR_run[m[K’:
+[01m[Kjsrun.c:1579:22:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KVT[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+ 1579 |         const char **[01;35m[KVT[m[K = F->vartab ? F->vartab - 1 : NULL;
+      |                      [01;35m[K^~[m[K
+In file included from [01m[Kone.c:23[m[K:
+[01m[Kjsvalue.c:[m[K In function ‘[01m[Kjs_newuserdatax[m[K’:
+[01m[Kjsvalue.c:541:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kprototype[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  541 |         js_Object *[01;35m[Kprototype[m[K = NULL;
+      |                    [01;35m[K^~~~~~~~~[m[K
+In file included from [01m[Kone.c:22[m[K:
+[01m[Kjsstring.c:[m[K In function ‘[01m[KSp_substring_imp[m[K’:
+[01m[Kjsstring.c:230:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Khead[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  230 |         const char *[01;35m[Khead[m[K, *tail;
+      |                     [01;35m[K^~~~[m[K
+[01m[Kjsstring.c:232:13:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ki[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  232 |         int [01;35m[Ki[m[K, k, head_len, tail_len;
+      |             [01;35m[K^[m[K
+[01m[Kjsstring.c:227:55:[m[K [01;35m[Kwarning: [m[Kargument ‘[01m[Ks[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  227 | static void Sp_substring_imp(js_State *J, [01;35m[Kconst char *s[m[K, int a, int n)
+      |                                           [01;35m[K~~~~~~~~~~~~^[m[K
+In file included from [01m[Kone.c:22[m[K:
+[01m[Kjsstring.c:[m[K In function ‘[01m[KSp_substring_imp[m[K’:
+[01m[Kjsstring.c:230:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Khead[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  230 |         const char *[01;35m[Khead[m[K, *tail;
+      |                     [01;35m[K^~~~[m[K
+[01m[Kjsstring.c:230:28:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktail[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  230 |         const char *head, *[01;35m[Ktail[m[K;
+      |                            [01;35m[K^~~~[m[K
+[01m[Kjsstring.c:232:13:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ki[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  232 |         int [01;35m[Ki[m[K, k, head_len, tail_len;
+      |             [01;35m[K^[m[K
+[01m[Kjsstring.c:232:16:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kk[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  232 |         int i, [01;35m[Kk[m[K, head_len, tail_len;
+      |                [01;35m[K^[m[K
+[01m[Kjsstring.c:227:55:[m[K [01;35m[Kwarning: [m[Kargument ‘[01m[Ks[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  227 | static void Sp_substring_imp(js_State *J, [01;35m[Kconst char *s[m[K, int a, int n)
+      |                                           [01;35m[K~~~~~~~~~~~~^[m[K
+In file included from [01m[Kone.c:23[m[K:
+[01m[Kjsvalue.c:[m[K In function ‘[01m[Kjs_newuserdatax[m[K’:
+[01m[Kjsvalue.c:541:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kprototype[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  541 |         js_Object *[01;35m[Kprototype[m[K = NULL;
+      |                    [01;35m[K^~~~~~~~~[m[K
+In file included from [01m[Kone.c:19[m[K:
+[01m[Kjsrepr.c:[m[K In function ‘[01m[Kjs_tryrepr[m[K’:
+[01m[Kjsrepr.c:275:58:[m[K [01;35m[Kwarning: [m[Kargument ‘[01m[Kerror[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  275 | const char *js_tryrepr(js_State *J, int idx, [01;35m[Kconst char *error[m[K)
+      |                                              [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[Kone.c:19[m[K:
+[01m[Kjsrepr.c:[m[K In function ‘[01m[Kjs_tryrepr[m[K’:
+[01m[Kjsrepr.c:275:58:[m[K [01;35m[Kwarning: [m[Kargument ‘[01m[Kerror[m[K’ might be clobbered by ‘[01m[Klongjmp[m[K’ or ‘[01m[Kvfork[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wclobbered-Wclobbered]8;;[m[K]
+  275 | const char *js_tryrepr(js_State *J, int idx, [01;35m[Kconst char *error[m[K)
+      |                                              [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+gcc-ar cr build/release/libmujs.a build/release/libmujs.o
+cc -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -O3 -o build/release/mujs main.c build/release/libmujs.o -lm -DHAVE_READLINE -lreadline
+cc -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -O3 -o build/release/mujs-pp pp.c build/release/libmujs.o -lm
+install -d /var/tmp/hokuto/mujs-01/output/usr/include
+install -d /var/tmp/hokuto/mujs-01/output/usr/lib
+install -d /var/tmp/hokuto/mujs-01/output/usr/lib/pkgconfig
+install -d /var/tmp/hokuto/mujs-01/output/usr/bin
+install -m 644 mujs.h /var/tmp/hokuto/mujs-01/output/usr/include
+install -m 644 build/release/mujs.pc /var/tmp/hokuto/mujs-01/output/usr/lib/pkgconfig
+install -m 755 build/release/mujs /var/tmp/hokuto/mujs-01/output/usr/bin
+install -m 755 build/release/mujs-pp /var/tmp/hokuto/mujs-01/output/usr/bin
+install -m 755 build/release/libmujs.so /var/tmp/hokuto/mujs-01/output/usr/lib
+
+Script done on 2026-09-02 12:01:28+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mmujs[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 02 Sep 2026 05:01:28 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m6s[0m
