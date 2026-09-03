@@ -1,0 +1,414 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mwireplumber[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mwireplumber 0.5.17-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mThu, 03 Sep 2026 04:05:30 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mwireplumber[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc glib libgcc libpipewire lua pipewire systemd-libs gobject-introspection meson systemd[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mwireplumber[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glib-2.88.3-1 glibc-2.44-1 gobject-introspection-1.86.0-1 grep-3.12-1 gzip-1.14-1 libgcc-16.2.0-1 libpipewire-1.6.8-2 libtool-2.6.2-1 lua-5.5.1-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-1 patch-2.8-1 pipewire-1.6.8-2 pkgconf-3.0.6-1 sed-4.10-1 systemd-261.2-1 systemd-libs-261.2-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-03 11:05:30+07:00 [COMMAND="cd /var/tmp/hokuto/wireplumber-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/wireplumber-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/wireplumber-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/wireplumber-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/wireplumber-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/wireplumber-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/wireplumber-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/wireplumber-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/wireplumber-01/build/.cache' /repo/sauzeros/extra/wireplumber/build /var/tmp/hokuto/wireplumber-01/output 0.5.17 wireplumber" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build -D elogind=disabled -D doc=disabled -D tests=false -D dbus-tests=false -D system-lua=true
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/wireplumber-01/build[0m
+Build dir: [1m/var/tmp/hokuto/wireplumber-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mwireplumber[0m
+Project version: [1m0.5.17[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Checking if "[1mcheck short_name[0m" compiles: [1;32mYES[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.6[0m
+Run-time dependency [1mglib-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mgobject-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mgmodule-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mgio-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mgio-unix-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mlibspa-0.2[0m found: [1;32mYES[0m [36m0.2[0m
+Run-time dependency [1mlibpipewire-0.3[0m found: [1;32mYES[0m [36m1.6.8[0m
+Library [1mm[0m found: [1;32mYES[0m
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Run-time dependency [1mintl[0m found: [1;32mYES[0m
+Run-time dependency [1mlua-5.5[0m found: [1;32mYES[0m [36m5.5.1[0m
+Run-time dependency [1msystemd[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1mlibsystemd[0m found: [1;32mYES[0m [36m261[0m
+Dependency [1mlibelogind[0m for [1mhost[0m machine skipped: feature [1melogind[0m disabled
+Compiler for C supports arguments -fvisibility=hidden: [1;32mYES[0m 
+Compiler for C supports arguments -Wsuggest-attribute=format: [1;32mYES[0m 
+Compiler for C supports arguments -Wsign-compare: [1;32mYES[0m 
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C supports arguments -Wpointer-sign: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat: [1;32mYES[0m 
+Compiler for C supports arguments -Wformat-security: [1;32mYES[0m 
+Compiler for C supports arguments -Wimplicit-fallthrough: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-braces: [1;32mYES[0m 
+Compiler for C supports arguments -Wtype-limits: [1;32mYES[0m 
+Compiler for C supports arguments -Wvariadic-macros: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-missing-field-initializers: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-parameter: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-pedantic: [1;32mYES[0m 
+Compiler for C supports arguments -Wold-style-declaration: [1;32mYES[0m 
+Compiler for C supports arguments -Wunused-result: [1;32mYES[0m 
+Checking if "[1mSPA_AUDIO_MAX_CHANNELS override[0m" with dependency libspa-0.2 compiles: [1;32mYES[0m 
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Configuring [1mwpversion.h[0m using configuration
+Configuring [1mwpbuildbasedirs.h[0m using configuration
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.6[0m
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/gdbus-codegen[0m found: [1;32mYES[0m (/usr/bin/gdbus-codegen)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.6[0m
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-compile-resources[0m found: [1;32mYES[0m (/usr/bin/glib-compile-resources)
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-compile-resources[0m found: [1;32mYES[0m (/usr/bin/glib-compile-resources)
+Has header "[1msys/vfs.h[0m" : [1;32mYES[0m 
+Configuring [1mwireplumber.service[0m using configuration
+Configuring [1mwireplumber@.service[0m using configuration
+Program python3 found: [1;32mYES[0m (/usr/bin/python3)
+Program [1mspa-json-dump[0m found: [1;32mYES[0m (/usr/bin/spa-json-dump)
+Program [1mmsgfmt[0m found: [1;32mYES[0m (/usr/bin/msgfmt)
+Program [1mmsginit[0m found: [1;32mYES[0m (/usr/bin/msginit)
+Program [1mmsgmerge[0m found: [1;32mYES[0m (/usr/bin/msgmerge)
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Program python3 found: [1;31mNO[0m (disabled by: [1mdoc[0m )
+Program python3 (lxml) found: [1;32mYES[0m (/usr/bin/python3) modules: lxml
+Program [1mdoxygen[0m found: [1;31mNO[0m
+Program [1msphinx-build[0m skipped: feature [1mdoc[0m disabled
+Program [1mg-ir-scanner[0m found: [1;32mYES[0m (/usr/bin/g-ir-scanner)
+Configuring [1mwp-uninstalled.sh.in[0m using configuration
+Build targets in project: [1m94[0m
+
+wireplumber [36m0.5.17[0m
+
+    Lua version                    : 5.5.1 (system)
+    systemd conf data              : [1;32mYES[0m
+    libsystemd                     : [1;32mYES[0m
+    libelogind                     : [1;31mNO[0m
+    SPA_AUDIO_MAX_CHANNELS         : 128
+
+  [1mFor documentation[0m
+    Python 3 Sphinx related modules: [1;31mNO[0m
+    Doxygen                        : [1;31mNO[0m
+    sphinx-build                   : [1;31mNO[0m
+
+  [1mFor introspection[0m
+    Python 3 lxml module           : [1;32mYES[0m
+    Doxygen                        : [1;31mNO[0m
+    g-ir-scanner                   : [1;32mYES[0m
+
+  [1mUser defined options[0m
+    b_ndebug                       : true
+    b_pie                          : true
+    buildtype                      : plain
+    dbus-tests                     : false
+    doc                            : disabled
+    elogind                        : disabled
+    libexecdir                     : lib
+    prefix                         : /usr
+    python.bytecompile             : 1
+    sbindir                        : bin
+    system-lua                     : true
+    tests                          : false
+    wrap_mode                      : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/wireplumber-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/wireplumber-01/build/build'
+[0/174] Generating GObject enum file lib/wp/wpenums.c (wrapped by meson because command contains newlines, to capture output)[K[0/174] Generating GObject enum file lib/wp/wpenums.h (wrapped by meson because command contains newlines, to capture output)[K[0/174] Generating modules/module-lua-scripting/wplua/wplua-resources_c with a custom command[K[0/174] Generating modules/module-lua-scripting/wplua/wplua-resources_h with a custom command[K[0/174] Generating GObject enum file modules/dbus-connection-enums.c (wrapped by meson because command contains newlines, to capture output)[K[0/174] Generating GObject enum file modules/dbus-connection-enums.h (wrapped by meson because command contains newlines, to capture output)[K[0/174] Generating gdbus source modules/module-reserve-device/reserve-device-interface.c[K[0/174] Generating gdbus header modules/module-reserve-device/reserve-device-interface.h[K[0/174] Generating GObject enum file modules/module-reserve-device/reserve-device-enums.c (wrapped by meson because command contains newlines, to capture output)[K[0/174] Generating GObject enum file modules/module-reserve-device/reserve-device-enums.h (wrapped by meson because command contains newlines, to capture output)[K[1/174] Generating modules/module-lua-scripting/wplua/wplua-resources_c with a custom command[K[1/174] Generating modules/module-lua-scripting/api/m-lua-scripting-resources_c with a custom command[K[2/174] Generating modules/module-lua-scripting/wplua/wplua-resources_h with a custom command[K[2/174] Generating modules/module-lua-scripting/api/m-lua-scripting-resources_h with a custom command[K[3/174] Generating modules/module-lua-scripting/api/m-lua-scripting-resources_c with a custom command[K[3/174] Generating po/conf.pot with a custom command (wrapped by meson to capture output)[K[4/174] Generating modules/module-lua-scripting/api/m-lua-scripting-resources_h with a custom command[K[4/174] Building translation po/af/LC_MESSAGES/wireplumber-af.mo[K[5/174] Building translation po/af/LC_MESSAGES/wireplumber-af.mo[K[5/174] Building translation po/as/LC_MESSAGES/wireplumber-as.mo[K[6/174] Building translation po/as/LC_MESSAGES/wireplumber-as.mo[K[6/174] Building translation po/be/LC_MESSAGES/wireplumber-be.mo[K[7/174] Building translation po/be/LC_MESSAGES/wireplumber-be.mo[K[7/174] Building translation po/bg/LC_MESSAGES/wireplumber-bg.mo[K[8/174] Building translation po/bg/LC_MESSAGES/wireplumber-bg.mo[K[8/174] Building translation po/bn_IN/LC_MESSAGES/wireplumber-bn_IN.mo[K[9/174] Building translation po/bn_IN/LC_MESSAGES/wireplumber-bn_IN.mo[K[9/174] Building translation po/ca/LC_MESSAGES/wireplumber-ca.mo[K[10/174] Building translation po/ca/LC_MESSAGES/wireplumber-ca.mo[K[10/174] Building translation po/cs/LC_MESSAGES/wireplumber-cs.mo[K[11/174] Building translation po/cs/LC_MESSAGES/wireplumber-cs.mo[K[11/174] Building translation po/da/LC_MESSAGES/wireplumber-da.mo[K[12/174] Building translation po/da/LC_MESSAGES/wireplumber-da.mo[K[12/174] Building translation po/de/LC_MESSAGES/wireplumber-de.mo[K[13/174] Building translation po/de/LC_MESSAGES/wireplumber-de.mo[K[13/174] Building translation po/de_CH/LC_MESSAGES/wireplumber-de_CH.mo[K[14/174] Building translation po/de_CH/LC_MESSAGES/wireplumber-de_CH.mo[K[14/174] Building translation po/el/LC_MESSAGES/wireplumber-el.mo[K[15/174] Building translation po/el/LC_MESSAGES/wireplumber-el.mo[K[15/174] Building translation po/eo/LC_MESSAGES/wireplumber-eo.mo[K[16/174] Building translation po/eo/LC_MESSAGES/wireplumber-eo.mo[K[16/174] Building translation po/es/LC_MESSAGES/wireplumber-es.mo[K[17/174] Generating gdbus header modules/module-reserve-device/reserve-device-interface.h[K[17/174] Building translation po/fa/LC_MESSAGES/wireplumber-fa.mo[K[18/174] Building translation po/es/LC_MESSAGES/wireplumber-es.mo[K[18/174] Building translation po/fi/LC_MESSAGES/wireplumber-fi.mo[K[19/174] Generating gdbus source modules/module-reserve-device/reserve-device-interface.c[K[19/174] Building translation po/fr/LC_MESSAGES/wireplumber-fr.mo[K[20/174] Building translation po/fa/LC_MESSAGES/wireplumber-fa.mo[K[20/174] Building translation po/gl/LC_MESSAGES/wireplumber-gl.mo[K[21/174] Building translation po/fi/LC_MESSAGES/wireplumber-fi.mo[K[21/174] Building translation po/gu/LC_MESSAGES/wireplumber-gu.mo[K[22/174] Building translation po/fr/LC_MESSAGES/wireplumber-fr.mo[K[22/174] Building translation po/he/LC_MESSAGES/wireplumber-he.mo[K[23/174] Building translation po/gl/LC_MESSAGES/wireplumber-gl.mo[K[23/174] Building translation po/hi/LC_MESSAGES/wireplumber-hi.mo[K[24/174] Building translation po/he/LC_MESSAGES/wireplumber-he.mo[K[24/174] Building translation po/hr/LC_MESSAGES/wireplumber-hr.mo[K[25/174] Building translation po/gu/LC_MESSAGES/wireplumber-gu.mo[K[25/174] Building translation po/hu/LC_MESSAGES/wireplumber-hu.mo[K[26/174] Building translation po/hi/LC_MESSAGES/wireplumber-hi.mo[K[26/174] Building translation po/id/LC_MESSAGES/wireplumber-id.mo[K[27/174] Building translation po/hr/LC_MESSAGES/wireplumber-hr.mo[K[27/174] Building translation po/it/LC_MESSAGES/wireplumber-it.mo[K[28/174] Building translation po/hu/LC_MESSAGES/wireplumber-hu.mo[K[28/174] Building translation po/ja/LC_MESSAGES/wireplumber-ja.mo[K[29/174] Building translation po/it/LC_MESSAGES/wireplumber-it.mo[K[29/174] Building translation po/ka/LC_MESSAGES/wireplumber-ka.mo[K[30/174] Building translation po/id/LC_MESSAGES/wireplumber-id.mo[K[30/174] Building translation po/kk/LC_MESSAGES/wireplumber-kk.mo[K[31/174] Generating GObject enum file modules/dbus-connection-enums.c (wrapped by meson because command contains newlines, to capture output)[K[31/174] Building translation po/kn/LC_MESSAGES/wireplumber-kn.mo[K[32/174] Building translation po/ja/LC_MESSAGES/wireplumber-ja.mo[K[32/174] Building translation po/ko/LC_MESSAGES/wireplumber-ko.mo[K[33/174] Building translation po/ka/LC_MESSAGES/wireplumber-ka.mo[K[33/174] Building translation po/lt/LC_MESSAGES/wireplumber-lt.mo[K[34/174] Building translation po/kk/LC_MESSAGES/wireplumber-kk.mo[K[34/174] Building translation po/ml/LC_MESSAGES/wireplumber-ml.mo[K[35/174] Building translation po/kn/LC_MESSAGES/wireplumber-kn.mo[K[35/174] Building translation po/mr/LC_MESSAGES/wireplumber-mr.mo[K[36/174] Building translation po/ko/LC_MESSAGES/wireplumber-ko.mo[K[36/174] Building translation po/my/LC_MESSAGES/wireplumber-my.mo[K[37/174] Generating GObject enum file lib/wp/wpenums.c (wrapped by meson because command contains newlines, to capture output)[K
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_CONFIG |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_CONFIG_HOME |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_CONFIG_DIRS |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_SYSCONFDIR |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_DIRS |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_DATADIR |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_DATA |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_HOME |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_DIRS |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_DATADIR |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_MODULE |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_LIBDIR |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_MODULE |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_INTEREST_MATCH_GTYPE |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_PW_GLOBAL_PROPERTIES |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_PW_PROPERTIES |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_G_PROPERTIES)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "(WP_PROXY_FEATURE_BOUND | WP_PIPEWIRE_OBJECT_FEATURE_INFO)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "(WP_PIPEWIRE_OBJECT_FEATURES_MINIMAL |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PROPS |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_FORMAT |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PROFILE |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PORT_CONFIG |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_ROUTE)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+
+[37/174] Building translation po/nl/LC_MESSAGES/wireplumber-nl.mo[K[38/174] Generating GObject enum file modules/dbus-connection-enums.h (wrapped by meson because command contains newlines, to capture output)[K[38/174] Building translation po/nn/LC_MESSAGES/wireplumber-nn.mo[K[39/174] Building translation po/ml/LC_MESSAGES/wireplumber-ml.mo[K[39/174] Building translation po/oc/LC_MESSAGES/wireplumber-oc.mo[K[40/174] Building translation po/nn/LC_MESSAGES/wireplumber-nn.mo[K[40/174] Building translation po/or/LC_MESSAGES/wireplumber-or.mo[K[41/174] Building translation po/lt/LC_MESSAGES/wireplumber-lt.mo[K[41/174] Building translation po/pa/LC_MESSAGES/wireplumber-pa.mo[K[42/174] Building translation po/mr/LC_MESSAGES/wireplumber-mr.mo[K[42/174] Building translation po/pl/LC_MESSAGES/wireplumber-pl.mo[K[43/174] Building translation po/nl/LC_MESSAGES/wireplumber-nl.mo[K[43/174] Building translation po/pt/LC_MESSAGES/wireplumber-pt.mo[K[44/174] Generating GObject enum file modules/module-reserve-device/reserve-device-enums.h (wrapped by meson because command contains newlines, to capture output)[K[44/174] Building translation po/pt_BR/LC_MESSAGES/wireplumber-pt_BR.mo[K[45/174] Building translation po/my/LC_MESSAGES/wireplumber-my.mo[K[45/174] Building translation po/ro/LC_MESSAGES/wireplumber-ro.mo[K[46/174] Building translation po/oc/LC_MESSAGES/wireplumber-oc.mo[K[46/174] Building translation po/ru/LC_MESSAGES/wireplumber-ru.mo[K[47/174] Building translation po/or/LC_MESSAGES/wireplumber-or.mo[K[47/174] Building translation po/si/LC_MESSAGES/wireplumber-si.mo[K[48/174] Generating GObject enum file modules/module-reserve-device/reserve-device-enums.c (wrapped by meson because command contains newlines, to capture output)[K[48/174] Building translation po/sk/LC_MESSAGES/wireplumber-sk.mo[K[49/174] Building translation po/ro/LC_MESSAGES/wireplumber-ro.mo[K[49/174] Building translation po/sl/LC_MESSAGES/wireplumber-sl.mo[K[50/174] Building translation po/si/LC_MESSAGES/wireplumber-si.mo[K[50/174] Building translation po/sr/LC_MESSAGES/wireplumber-sr.mo[K[51/174] Building translation po/pa/LC_MESSAGES/wireplumber-pa.mo[K[51/174] Building translation po/sr@latin/LC_MESSAGES/wireplumber-sr@latin.mo[K[52/174] Building translation po/pl/LC_MESSAGES/wireplumber-pl.mo[K[52/174] Building translation po/sv/LC_MESSAGES/wireplumber-sv.mo[K[53/174] Building translation po/pt/LC_MESSAGES/wireplumber-pt.mo[K[53/174] Building translation po/ta/LC_MESSAGES/wireplumber-ta.mo[K[54/174] Building translation po/ru/LC_MESSAGES/wireplumber-ru.mo[K[54/174] Building translation po/te/LC_MESSAGES/wireplumber-te.mo[K[55/174] Generating GObject enum file lib/wp/wpenums.h (wrapped by meson because command contains newlines, to capture output)[K
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_CONFIG |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_CONFIG_HOME |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_CONFIG_DIRS |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_SYSCONFDIR |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_DIRS |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_DATADIR |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_DATA |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_HOME |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_XDG_DATA_DIRS |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_DATADIR |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_BASE_DIRS_ENV_MODULE |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_BUILD_LIBDIR |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_MODULE |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "WP_BASE_DIRS_FLAG_SUBDIR_WIREPLUMBER)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/base-dirs.h
+WARNING: Failed to parse "(WP_INTEREST_MATCH_GTYPE |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_PW_GLOBAL_PROPERTIES |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_PW_PROPERTIES |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "WP_INTEREST_MATCH_G_PROPERTIES)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/object-interest.h
+WARNING: Failed to parse "(WP_PROXY_FEATURE_BOUND | WP_PIPEWIRE_OBJECT_FEATURE_INFO)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "(WP_PIPEWIRE_OBJECT_FEATURES_MINIMAL |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PROPS |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_FORMAT |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PROFILE |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_PORT_CONFIG |" in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+WARNING: Failed to parse "WP_PIPEWIRE_OBJECT_FEATURE_PARAM_ROUTE)," in /var/tmp/hokuto/wireplumber-01/build/build/../lib/wp/proxy.h
+
+[55/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/meson-generated_.._wpenums.c.o[K[56/174] Building translation po/pt_BR/LC_MESSAGES/wireplumber-pt_BR.mo[K[56/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/base-dirs.c.o[K[57/174] Building translation po/sk/LC_MESSAGES/wireplumber-sk.mo[K[57/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/client.c.o[K[58/174] Building translation po/sr/LC_MESSAGES/wireplumber-sr.mo[K[58/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/dynamic-rules.c.o[K[59/174] Building translation po/sl/LC_MESSAGES/wireplumber-sl.mo[K[59/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/component-loader.c.o[K[60/174] Building translation po/sv/LC_MESSAGES/wireplumber-sv.mo[K[60/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/conf.c.o[K[61/174] Building translation po/ta/LC_MESSAGES/wireplumber-ta.mo[K[61/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/core.c.o[K[62/174] Building translation po/te/LC_MESSAGES/wireplumber-te.mo[K[62/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/device.c.o[K[63/174] Building translation po/sr@latin/LC_MESSAGES/wireplumber-sr@latin.mo[K[63/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/error.c.o[K[64/174] Generating po/conf.pot with a custom command (wrapped by meson to capture output)[K[64/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/event.c.o[K[65/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/error.c.o[K[65/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/event-dispatcher.c.o[K[66/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/event.c.o[K[66/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/event-hook.c.o[K[67/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/meson-generated_.._wpenums.c.o[K[67/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/factory.c.o[K[68/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/base-dirs.c.o[K[68/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/global-proxy.c.o[K[69/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/client.c.o[K[69/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/iterator.c.o[K[70/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/conf.c.o[K[70/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/json-utils.c.o[K[71/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/component-loader.c.o[K[71/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/link.c.o[K[72/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/event-hook.c.o[K[72/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/log.c.o[K[73/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/dynamic-rules.c.o[K[73/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/metadata.c.o[K[74/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/core.c.o[K[74/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/settings.c.o[K[75/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/event-dispatcher.c.o[K[75/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/module.c.o[K[76/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/device.c.o[K[76/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/node.c.o[K[77/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/factory.c.o[K[77/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/object.c.o[K[78/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/global-proxy.c.o[K[78/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/object-interest.c.o[K[79/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/json-utils.c.o[K[79/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/object-manager.c.o[K[80/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/iterator.c.o[K[80/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/permission-manager.c.o[K[81/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/link.c.o[K[81/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/plugin.c.o[K[82/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/object.c.o[K[82/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/port.c.o[K[83/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/settings.c.o[K[83/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/proc-utils.c.o[K[84/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/module.c.o[K[84/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/properties.c.o[K[85/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/object-manager.c.o[K[85/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/proxy.c.o[K[86/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/metadata.c.o[K[86/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/proxy-interfaces.c.o[K[87/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/node.c.o[K[87/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/session-item.c.o[K[88/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/plugin.c.o[K[88/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/si-factory.c.o[K[89/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/log.c.o[K[89/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/si-interfaces.c.o[K[90/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/object-interest.c.o[K[90/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/spa-json.c.o[K[91/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/permission-manager.c.o[K[91/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/spa-pod.c.o[K[92/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/proc-utils.c.o[K[92/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/spa-type.c.o[K[93/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/port.c.o[K[93/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/state.c.o[K[94/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/proxy-interfaces.c.o[K[94/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/transition.c.o[K[95/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/proxy.c.o[K[95/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/wp.c.o[K[96/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/session-item.c.o[K[96/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/private_client-context.c.o[K[97/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/si-interfaces.c.o[K[97/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/private_pipewire-object-mixin.c.o[K[98/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/properties.c.o[K[98/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/private_internal-comp-loader.c.o[K[99/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/si-factory.c.o[K[99/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/private_registry.c.o[K[100/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/transition.c.o[K[100/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/meson-generated_.._wplua-resources.c.o[K[101/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/spa-type.c.o[K[101/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/boxed.c.o[K[102/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/private_client-context.c.o[K[102/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/closure.c.o[K[103/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/state.c.o[K[103/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/object.c.o[K[104/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/spa-json.c.o[K[104/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/userdata.c.o[K[105/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/meson-generated_.._wplua-resources.c.o[K[105/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/value.c.o[K[106/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/wp.c.o[K[106/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/wplua.c.o[K[107/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/private_internal-comp-loader.c.o[K[107/174] Compiling C object modules/libwireplumber-module-settings.so.p/module-settings.c.o[K[108/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/private_registry.c.o[K[108/174] Compiling C object modules/libwireplumber-module-dbus-connection.so.p/meson-generated_.._dbus-connection-enums.c.o[K[109/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/boxed.c.o[K[109/174] Compiling C object modules/libwireplumber-module-dbus-connection.so.p/module-dbus-connection.c.o[K[110/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/private_pipewire-object-mixin.c.o[K[110/174] Compiling C object modules/libwireplumber-module-default-nodes-api.so.p/module-default-nodes-api.c.o[K[111/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/closure.c.o[K[111/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/meson-generated_.._module-reserve-device_reserve-device-interface.c.o[K[112/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/userdata.c.o[K[112/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/meson-generated_.._module-reserve-device_reserve-device-enums.c.o[K[113/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/object.c.o[K[113/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/module-reserve-device_plugin.c.o[K[114/174] Compiling C object modules/libwireplumber-module-dbus-connection.so.p/meson-generated_.._dbus-connection-enums.c.o[K[114/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/module-reserve-device_reserve-device.c.o[K[115/174] Compiling C object lib/wp/libwireplumber-0.5.so.0.517.0.p/spa-pod.c.o[K[115/174] Linking target lib/wp/libwireplumber-0.5.so.0.517.0[K[116/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/value.c.o[K[116/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/module-reserve-device_transitions.c.o[K[117/174] Compiling C object modules/libwireplumber-module-settings.so.p/module-settings.c.o[K[117/174] Compiling C object modules/libwireplumber-module-portal-permissionstore.so.p/module-portal-permissionstore.c.o[K[118/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/meson-generated_.._module-reserve-device_reserve-device-enums.c.o[K[118/174] Compiling C object modules/libwireplumber-module-notifications-api.so.p/module-notifications-api.c.o[K[119/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/meson-generated_.._module-reserve-device_reserve-device-interface.c.o[K[119/174] Compiling C object modules/libwireplumber-module-si-audio-adapter.so.p/module-si-audio-adapter.c.o[K[120/174] Compiling C object modules/module-lua-scripting/wplua/libwplua-0.5.a.p/wplua.c.o[K[120/174] Compiling C object modules/libwireplumber-module-si-node.so.p/module-si-node.c.o[K[121/174] Compiling C object modules/libwireplumber-module-dbus-connection.so.p/module-dbus-connection.c.o[K[121/174] Compiling C object modules/libwireplumber-module-si-standard-link.so.p/module-si-standard-link.c.o[K[122/174] Compiling C object modules/libwireplumber-module-default-nodes-api.so.p/module-default-nodes-api.c.o[K[122/174] Linking static target modules/module-lua-scripting/wplua/libwplua-0.5.a[K[123/174] Linking static target modules/module-lua-scripting/wplua/libwplua-0.5.a[K[123/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/meson-generated_.._module-lua-scripting_api_m-lua-scripting-resources.c.o[K[124/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/module-reserve-device_plugin.c.o[K[124/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_module.c.o[K[125/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/module-reserve-device_transitions.c.o[K[125/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_script.c.o[K[126/174] Compiling C object modules/libwireplumber-module-si-node.so.p/module-si-node.c.o[K[126/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_api_pod.c.o[K[127/174] Compiling C object modules/libwireplumber-module-notifications-api.so.p/module-notifications-api.c.o[K[127/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_api_json.c.o[K[128/174] Compiling C object modules/libwireplumber-module-reserve-device.so.p/module-reserve-device_reserve-device.c.o[K[128/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_api_api.c.o[K[129/174] Compiling C object modules/libwireplumber-module-portal-permissionstore.so.p/module-portal-permissionstore.c.o[K[129/174] Compiling C object modules/libwireplumber-module-mixer-api.so.p/module-mixer-api.c.o[K[130/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/meson-generated_.._module-lua-scripting_api_m-lua-scripting-resources.c.o[K[130/174] Compiling C object modules/libwireplumber-module-file-monitor-api.so.p/module-file-monitor-api.c.o[K[131/174] Compiling C object modules/libwireplumber-module-si-standard-link.so.p/module-si-standard-link.c.o[K[131/174] Compiling C object modules/libwireplumber-module-log-settings.so.p/module-log-settings.c.o[K[132/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_api_json.c.o[K[132/174] Compiling C object modules/libwireplumber-module-logind.so.p/module-logind.c.o[K[133/174] Compiling C object modules/libwireplumber-module-si-audio-adapter.so.p/module-si-audio-adapter.c.o[K[133/174] Compiling C object modules/libwireplumber-module-standard-event-source.so.p/module-standard-event-source.c.o[K[134/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_module.c.o[K[134/174] Compiling C object modules/libwireplumber-module-mpris.so.p/module-mpris.c.o[K[135/174] Compiling C object modules/libwireplumber-module-file-monitor-api.so.p/module-file-monitor-api.c.o[K[135/174] Compiling C object modules/libwireplumber-module-modem-manager.so.p/module-modem-manager.c.o[K[136/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_script.c.o[K[136/174] Compiling C object src/tools/wpctl.p/wpctl.c.o[K[137/174] Compiling C object modules/libwireplumber-module-mixer-api.so.p/module-mixer-api.c.o[K[137/174] Compiling C object src/tools/wpexec.p/wpexec.c.o[K[138/174] Compiling C object modules/libwireplumber-module-logind.so.p/module-logind.c.o[K[138/174] Compiling C object src/wireplumber.p/main.c.o[K[139/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_api_pod.c.o[K[139/174] Building translation po/tr/LC_MESSAGES/wireplumber-tr.mo[K[140/174] Building translation po/tr/LC_MESSAGES/wireplumber-tr.mo[K[140/174] Building translation po/uk/LC_MESSAGES/wireplumber-uk.mo[K[141/174] Compiling C object modules/libwireplumber-module-log-settings.so.p/module-log-settings.c.o[K[141/174] Building translation po/zh_CN/LC_MESSAGES/wireplumber-zh_CN.mo[K[142/174] Building translation po/uk/LC_MESSAGES/wireplumber-uk.mo[K[142/174] Building translation po/zh_TW/LC_MESSAGES/wireplumber-zh_TW.mo[K[143/174] Building translation po/zh_CN/LC_MESSAGES/wireplumber-zh_CN.mo[K[143/174] Generating wp-uninstalled with a custom command[K[144/174] Generating wp-uninstalled with a custom command[K[145/174] Building translation po/zh_TW/LC_MESSAGES/wireplumber-zh_TW.mo[K[146/174] Compiling C object modules/libwireplumber-module-lua-scripting.so.p/module-lua-scripting_api_api.c.o[K[147/174] Compiling C object modules/libwireplumber-module-standard-event-source.so.p/module-standard-event-source.c.o[K[148/174] Compiling C object modules/libwireplumber-module-modem-manager.so.p/module-modem-manager.c.o[K[149/174] Compiling C object src/wireplumber.p/main.c.o[K[150/174] Compiling C object src/tools/wpexec.p/wpexec.c.o[K[151/174] Compiling C object modules/libwireplumber-module-mpris.so.p/module-mpris.c.o[K[152/174] Compiling C object src/tools/wpctl.p/wpctl.c.o[K[153/174] Linking target lib/wp/libwireplumber-0.5.so.0.517.0[K[153/174] Generating symbol file lib/wp/libwireplumber-0.5.so.0.517.0.p/libwireplumber-0.5.so.0.517.0.symbols[K[154/174] Generating symbol file lib/wp/libwireplumber-0.5.so.0.517.0.p/libwireplumber-0.5.so.0.517.0.symbols[K[154/174] Linking target modules/libwireplumber-module-settings.so[K[154/174] Linking target modules/libwireplumber-module-dbus-connection.so[K[154/174] Linking target modules/libwireplumber-module-default-nodes-api.so[K[154/174] Linking target modules/libwireplumber-module-reserve-device.so[K[154/174] Linking target modules/libwireplumber-module-portal-permissionstore.so[K[154/174] Linking target modules/libwireplumber-module-notifications-api.so[K[154/174] Linking target modules/libwireplumber-module-si-audio-adapter.so[K[154/174] Linking target modules/libwireplumber-module-si-node.so[K[154/174] Linking target modules/libwireplumber-module-si-standard-link.so[K[154/174] Linking target modules/libwireplumber-module-lua-scripting.so[K[155/174] Linking target modules/libwireplumber-module-notifications-api.so[K[155/174] Linking target modules/libwireplumber-module-mixer-api.so[K[156/174] Linking target modules/libwireplumber-module-si-node.so[K[156/174] Linking target modules/libwireplumber-module-file-monitor-api.so[K[157/174] Linking target modules/libwireplumber-module-dbus-connection.so[K[157/174] Linking target modules/libwireplumber-module-log-settings.so[K[158/174] Linking target modules/libwireplumber-module-portal-permissionstore.so[K[158/174] Linking target modules/libwireplumber-module-logind.so[K[159/174] Linking target modules/libwireplumber-module-default-nodes-api.so[K[159/174] Linking target modules/libwireplumber-module-standard-event-source.so[K[160/174] Linking target modules/libwireplumber-module-settings.so[K[160/174] Linking target modules/libwireplumber-module-mpris.so[K[161/174] Linking target modules/libwireplumber-module-log-settings.so[K[161/174] Linking target modules/libwireplumber-module-modem-manager.so[K[162/174] Linking target modules/libwireplumber-module-si-standard-link.so[K[162/174] Linking target src/tools/wpctl[K[163/174] Linking target modules/libwireplumber-module-logind.so[K[163/174] Linking target src/tools/wpexec[K[164/174] Linking target modules/libwireplumber-module-file-monitor-api.so[K[164/174] Linking target src/wireplumber[K[165/174] Linking target modules/libwireplumber-module-standard-event-source.so[K[166/174] Linking target modules/libwireplumber-module-modem-manager.so[K[167/174] Linking target modules/libwireplumber-module-mixer-api.so[K[168/174] Linking target src/wireplumber[K[169/174] Linking target src/tools/wpexec[K[170/174] Linking target modules/libwireplumber-module-reserve-device.so[K[171/174] Linking target modules/libwireplumber-module-mpris.so[K[172/174] Linking target modules/libwireplumber-module-si-audio-adapter.so[K[173/174] Linking target src/tools/wpctl[K[174/174] Linking target modules/libwireplumber-module-lua-scripting.so[K
+ninja: Entering directory `/var/tmp/hokuto/wireplumber-01/build/build'
+ninja: no work to do.
+Installing subdir /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d/alsa-vm.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/wireplumber.conf.d
+Installing subdir /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/access.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/alsa.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/bluetooth.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/device.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/filter-graph.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/libcamera.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/linking.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/log.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/media-role-nodes.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/profile.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/smart-equalizer.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/stream.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf.d.examples/v4l2.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/doc/wireplumber/examples/wireplumber.conf.d
+Installing subdir /var/tmp/hokuto/wireplumber-01/build/src/scripts to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/fallback-sink.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/metadata.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/session-services.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/sm-objects.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/client/apply-access.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/client
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/client/find-config-access.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/client
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/client/find-default-access.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/client
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/client/find-flatpak-access.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/client
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/client/find-portal-access.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/client
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/client/find-snap-access.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/client
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/client/select-access.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/client
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/default-nodes/apply-default-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/default-nodes
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/default-nodes/find-best-default-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/default-nodes
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/default-nodes/find-selected-default-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/default-nodes
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/default-nodes/rescan.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/default-nodes
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/default-nodes/state-default-nodes.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/default-nodes
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/apply-profile.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/apply-routes.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/automute-alsa-routes.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/autoswitch-bluetooth-profile.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/find-best-profile.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/find-best-routes.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/find-preferred-profile.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/find-voice-call-profile.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/select-profile.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/select-routes.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/state-profile.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/device/state-routes.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/device
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/lib/audio-group-utils.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/lib
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/lib/common-utils.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/lib
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/lib/device-info-cache.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/lib
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/lib/filter-utils.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/lib
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/lib/linking-utils.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/lib
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/lib/monitor-utils.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/lib
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/lib/node-utils.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/lib
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/find-audio-group-target.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/find-best-target.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/find-default-target.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/find-defined-target.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/find-filter-target.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/find-media-role-sink-target.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/find-media-role-target.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/get-filter-from-target.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/link-target.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/mpris-pause.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/prepare-link.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/rescan-media-role-links.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/rescan-on-linkable.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/linking/rescan.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/linking
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/alsa-midi.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/alsa.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez-midi.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/create-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/create-loopback-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/create-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/create-offload-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/create-set-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/enumerate-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/name-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/name-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/remove-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/bluez/remove-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/bluez
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/libcamera/create-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/libcamera
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/libcamera/create-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/libcamera
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/libcamera/enumerate-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/libcamera
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/libcamera/name-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/libcamera
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/libcamera/name-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/libcamera
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/v4l2/create-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/v4l2
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/v4l2/create-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/v4l2
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/v4l2/enumerate-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/v4l2
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/v4l2/name-device.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/v4l2
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/monitors/v4l2/name-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/monitors/v4l2
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/node/audio-group.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/node
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/node/create-item.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/node
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/node/filter-graph.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/node
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/node/find-media-role-default-volume.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/node
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/node/software-dsp.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/node
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/node/state-stream.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/node
+Installing /var/tmp/hokuto/wireplumber-01/build/src/scripts/node/suspend-node.lua to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber/scripts/node
+Installing lib/wp/wpenums.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing lib/wp/libwireplumber-0.5.so.0.517.0 to /var/tmp/hokuto/wireplumber-01/output/usr/lib
+Installing modules/libwireplumber-module-settings.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-dbus-connection.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-default-nodes-api.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-reserve-device.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-portal-permissionstore.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-notifications-api.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-si-audio-adapter.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-si-node.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-si-standard-link.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-lua-scripting.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-mixer-api.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-file-monitor-api.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-log-settings.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-logind.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-standard-event-source.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-mpris.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing modules/libwireplumber-module-modem-manager.so to /var/tmp/hokuto/wireplumber-01/output/usr/lib/wireplumber-0.5
+Installing src/tools/wpctl to /var/tmp/hokuto/wireplumber-01/output/usr/bin
+Installing src/tools/wpexec to /var/tmp/hokuto/wireplumber-01/output/usr/bin
+Installing src/wireplumber to /var/tmp/hokuto/wireplumber-01/output/usr/bin
+Installing po/af/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/af/LC_MESSAGES
+Installing po/as/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/as/LC_MESSAGES
+Installing po/be/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/be/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/bg/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/ca/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/de/LC_MESSAGES
+Installing po/de_CH/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/de_CH/LC_MESSAGES
+Installing po/el/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/el/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/es/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/fr/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/kk/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/ko/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/lt/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/ml/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/mr/LC_MESSAGES
+Installing po/my/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/my/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/ru/LC_MESSAGES
+Installing po/si/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/si/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/sl/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/te/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/uk/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/wireplumber.mo to /var/tmp/hokuto/wireplumber-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/base-dirs.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/client.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/dynamic-rules.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/component-loader.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/conf.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/core.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/defs.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/device.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/error.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/event.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/event-dispatcher.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/event-hook.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/global-proxy.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/iterator.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/json-utils.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/link.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/log.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/metadata.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/settings.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/module.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/node.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/object.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/object-interest.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/object-manager.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/permission-manager.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/plugin.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/port.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/proc-utils.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/properties.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/proxy.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/proxy-interfaces.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/session-item.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/si-factory.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/si-interfaces.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/spa-json.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/spa-pod.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/spa-type.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/state.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/transition.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/wp.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/lib/wp/factory.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/build/lib/wp/wpversion.h to /var/tmp/hokuto/wireplumber-01/output/usr/include/wireplumber-0.5/wp
+Installing /var/tmp/hokuto/wireplumber-01/build/build/meson-private/wireplumber-0.5.pc to /var/tmp/hokuto/wireplumber-01/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/wireplumber-01/build/src/tools/shell-completion/wpctl.bash to /var/tmp/hokuto/wireplumber-01/output/usr/share/bash-completion/completions
+Installing /var/tmp/hokuto/wireplumber-01/build/src/tools/shell-completion/wpctl.zsh to /var/tmp/hokuto/wireplumber-01/output/usr/share/zsh/site-functions
+Installing /var/tmp/hokuto/wireplumber-01/build/src/config/wireplumber.conf to /var/tmp/hokuto/wireplumber-01/output/usr/share/wireplumber
+Installing /var/tmp/hokuto/wireplumber-01/build/build/src/systemd/user/wireplumber.service to /var/tmp/hokuto/wireplumber-01/output/usr/lib/systemd/user
+Installing /var/tmp/hokuto/wireplumber-01/build/build/src/systemd/user/wireplumber@.service to /var/tmp/hokuto/wireplumber-01/output/usr/lib/systemd/user
+Installing symlink pointing to libwireplumber-0.5.so.0.517.0 to /var/tmp/hokuto/wireplumber-01/output/usr/lib/libwireplumber-0.5.so.0
+Installing symlink pointing to libwireplumber-0.5.so.0 to /var/tmp/hokuto/wireplumber-01/output/usr/lib/libwireplumber-0.5.so
+
+Script done on 2026-09-03 11:05:43+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mwireplumber[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mThu, 03 Sep 2026 04:05:44 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m14s[0m
