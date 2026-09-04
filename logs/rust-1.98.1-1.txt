@@ -1,0 +1,1439 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mrust[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mrust 1.98.1-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mFri, 04 Sep 2026 05:30:56 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mrust[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mbash clang curl gcc glibc libgcc libstdc++ sqlite lld llvm-libs openssl sqlite zlib-ng cmake git libffi llvm perl python[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mrust[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 bash-5.3.p15-1 binutils-2.46.1-1 bison-3.8.2-1 clang-22.1.8-1 cmake-4.4.3-1 curl-8.22.0-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 git-2.55.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 lib32-gcc-libs-16.2.0-1 lib32-glibc-2.44-1 libffi-3.8.0-1 libgcc-16.2.0-1 libstdc++-16.2.0-1 libtool-2.6.2-1 lld-22.1.8-1 llvm-22.1.8-1 llvm-libs-22.1.8-1 m4-1.4.21-1 make-4.4.1-1 openssl-4.0.2-1 patch-2.8-1 perl-5.44.0-1 pkgconf-3.0.6-1 python-3.14.7-1 sed-4.10-1 sqlite-3.53.4-1 texinfo-7.3-1 which-2.25-1 zlib-ng-2.3.3-1[0m
+
+Script started on 2026-09-04 12:31:13+07:00 [COMMAND="cd /var/tmpdir/hokuto/rust-01/build && AR='gcc-ar' CARGO_HOME='/var/tmpdir/hokuto/rust-01/build/cargo' CC='cc' CFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -mtune=native -O2 -pipe -fomit-frame-pointer' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmpdir/hokuto/rust-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmpdir/hokuto/rust-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='0' HOKUTO_OUTPUT_DIR='/var/tmpdir/hokuto/rust-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmpdir/hokuto/rust-01/split' LDFLAGS='-fuse-ld=bfd -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmpdir/hokuto/rust-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmpdir/hokuto/rust-01/build=.' TMPDIR='/var/tmpdir/hokuto' XDG_CACHE_HOME='/var/tmpdir/hokuto/rust-01/build/.cache' /repo/sauzeros/extra/rust/build /var/tmpdir/hokuto/rust-01/output 1.98.1 rust" <not executed on terminal>]
+patching file compiler/rustc_target/src/target_features.rs
+Hunk #1 succeeded at 416 (offset -7 lines).
+patching file library/std_detect/src/detect/arch/x86.rs
+patching file library/std_detect/src/detect/os/x86.rs
+patching file library/std_detect/tests/x86-specific.rs
+patching file tests/ui/check-cfg/target_feature.stderr
+Hunk #1 succeeded at 27 (offset -1 lines).
+==> Starting x.py build
+==> Stage0 date detected: 2026-07-16
+==> Found local rust-std-1.97.1-x86_64-unknown-linux-gnu.tar.xz, copying to build/cache/2026-07-16
+==> Found local cargo-1.97.1-x86_64-unknown-linux-gnu.tar.xz, copying to build/cache/2026-07-16
+==> Found local rustc-1.97.1-x86_64-unknown-linux-gnu.tar.xz, copying to build/cache/2026-07-16
+extracting /var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/build/cache/2026-07-16/rust-std-1.97.1-x86_64-unknown-linux-gnu.tar.xz
+extracting /var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/build/cache/2026-07-16/rustc-1.97.1-x86_64-unknown-linux-gnu.tar.xz
+extracting /var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/build/cache/2026-07-16/cargo-1.97.1-x86_64-unknown-linux-gnu.tar.xz
+Building bootstrap
+[1m[92m   Compiling[0m memchr v2.7.6
+[1m[92m   Compiling[0m libc v0.2.186
+[1m[92m   Compiling[0m proc-macro2 v1.0.89
+[1m[92m   Compiling[0m typenum v1.17.0
+[1m[92m   Compiling[0m unicode-ident v1.0.13
+[1m[92m   Compiling[0m version_check v0.9.5
+[1m[92m   Compiling[0m shlex v1.3.0
+[1m[92m   Compiling[0m crossbeam-utils v0.8.20
+[1m[92m   Compiling[0m cfg-if v1.0.0
+[1m[92m   Compiling[0m regex-syntax v0.8.5
+[1m[92m   Compiling[0m serde v1.0.215
+[1m[92m   Compiling[0m pkg-config v0.3.31
+[1m[92m   Compiling[0m cc v1.2.28
+[1m[92m   Compiling[0m rustix v1.1.4
+[1m[92m   Compiling[0m generic-array v0.14.7
+[1m[92m   Compiling[0m getrandom v0.3.2
+[1m[92m   Compiling[0m heck v0.5.0
+[1m[92m   Compiling[0m anstyle v1.0.10
+[1m[92m   Compiling[0m clap_lex v0.7.2
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.18
+[1m[92m   Compiling[0m quote v1.0.37
+[1m[92m   Compiling[0m aho-corasick v1.1.3
+[1m[92m   Compiling[0m clap_builder v4.5.20
+[1m[92m   Compiling[0m syn v2.0.87
+[1m[92m   Compiling[0m object v0.37.3
+[1m[92m   Compiling[0m linux-raw-sys v0.12.1
+[1m[92m   Compiling[0m same-file v1.0.6
+[1m[92m   Compiling[0m semver v1.0.23
+[1m[92m   Compiling[0m log v0.4.22
+[1m[92m   Compiling[0m serde_json v1.0.132
+[1m[92m   Compiling[0m bitflags v2.6.0
+[1m[92m   Compiling[0m walkdir v2.5.0
+[1m[92m   Compiling[0m filetime v0.2.27
+[1m[92m   Compiling[0m crypto-common v0.1.6
+[1m[92m   Compiling[0m block-buffer v0.10.4
+[1m[92m   Compiling[0m digest v0.10.7
+[1m[92m   Compiling[0m crossbeam-deque v0.8.5
+[1m[92m   Compiling[0m regex-automata v0.4.9
+[1m[92m   Compiling[0m fastrand v2.3.0
+[1m[92m   Compiling[0m bootstrap v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/bootstrap)
+[1m[92m   Compiling[0m once_cell v1.20.2
+[1m[92m   Compiling[0m itoa v1.0.11
+[1m[92m   Compiling[0m cpufeatures v0.2.15
+[1m[92m   Compiling[0m ryu v1.0.18
+[1m[92m   Compiling[0m sha2 v0.10.8
+[1m[92m   Compiling[0m tar v0.4.45
+[1m[92m   Compiling[0m lzma-sys v0.1.20
+[1m[92m   Compiling[0m cmake v0.1.54
+[1m[92m   Compiling[0m xz2 v0.1.7
+[1m[92m   Compiling[0m tempfile v3.27.0
+[1m[92m   Compiling[0m home v0.5.12
+[1m[92m   Compiling[0m termcolor v1.4.1
+[1m[92m   Compiling[0m build_helper v0.1.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/build_helper)
+[1m[92m   Compiling[0m clap_derive v4.5.18
+[1m[92m   Compiling[0m serde_derive v1.0.215
+[1m[92m   Compiling[0m toml v0.5.11
+[1m[92m   Compiling[0m bstr v1.10.0
+[1m[92m   Compiling[0m globset v0.4.15
+[1m[92m   Compiling[0m opener v0.8.4
+[1m[92m   Compiling[0m clap v4.5.20
+[1m[92m   Compiling[0m clap_complete v4.5.37
+[1m[92m   Compiling[0m ignore v0.4.23
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`dev` profile [unoptimized]]8;;\ target(s) in 10.22s
+fatal: not a git repository (or any of the parent directories): .git
+Building stage1 compiler artifacts (stage0 -> stage1, x86_64-unknown-linux-gnu)
+[1m[92m   Compiling[0m proc-macro2 v1.0.106
+[1m[92m   Compiling[0m unicode-ident v1.0.24
+[1m[92m   Compiling[0m quote v1.0.45
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m libc v0.2.183
+[1m[92m   Compiling[0m stable_deref_trait v1.2.1
+[1m[92m   Compiling[0m memchr v2.8.0
+[1m[92m   Compiling[0m shlex v1.3.0
+[1m[92m   Compiling[0m smallvec v1.15.1
+[1m[92m   Compiling[0m bitflags v2.10.0
+[1m[92m   Compiling[0m once_cell v1.21.3
+[1m[92m   Compiling[0m thiserror v2.0.17
+[1m[92m   Compiling[0m equivalent v1.0.2
+[1m[92m   Compiling[0m cc v1.2.16
+[1m[92m   Compiling[0m hashbrown v0.17.0
+[1m[92m   Compiling[0m getrandom v0.3.3
+[1m[92m   Compiling[0m version_check v0.9.5
+[1m[92m   Compiling[0m tracing-core v0.1.34
+[1m[92m   Compiling[0m parking_lot_core v0.9.12
+[1m[92m   Compiling[0m log v0.4.28
+[1m[92m   Compiling[0m typenum v1.20.0
+[1m[92m   Compiling[0m generic-array v0.14.7
+[1m[92m   Compiling[0m scopeguard v1.2.0
+[1m[92m   Compiling[0m lock_api v0.4.14
+[1m[92m   Compiling[0m itoa v1.0.15
+[1m[92m   Compiling[0m rustc-hash v2.1.1
+[1m[92m   Compiling[0m crossbeam-utils v0.8.21
+[1m[92m   Compiling[0m syn v2.0.117
+[1m[92m   Compiling[0m pin-project-lite v0.2.16
+[1m[92m   Compiling[0m type-map v0.5.1
+[1m[92m   Compiling[0m indexmap v2.14.0
+[1m[92m   Compiling[0m serde_core v1.0.228
+[1m[92m   Compiling[0m rustix v1.1.2
+[1m[92m   Compiling[0m rustc_macros v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_macros)
+[1m[92m   Compiling[0m rustc-stable-hash v0.1.2
+[1m[92m   Compiling[0m psm v0.1.26
+[1m[92m   Compiling[0m linux-raw-sys v0.11.0
+[1m[92m   Compiling[0m self_cell v1.2.1
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.18
+[1m[92m   Compiling[0m stacker v0.1.21
+[1m[92m   Compiling[0m rustc_hashes v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hashes)
+[1m[92m   Compiling[0m crypto-common v0.1.7
+[1m[92m   Compiling[0m block-buffer v0.10.4
+[1m[92m   Compiling[0m aho-corasick v1.1.4
+[1m[92m   Compiling[0m thin-vec v0.2.18
+[1m[92m   Compiling[0m digest v0.10.7
+[1m[92m   Compiling[0m proc-macro-hack v0.5.20+deprecated
+[1m[92m   Compiling[0m rustc-hash v1.1.0
+[1m[92m   Compiling[0m fastrand v2.3.0
+[1m[92m   Compiling[0m regex-syntax v0.8.8
+[1m[92m   Compiling[0m crossbeam-deque v0.8.6
+[1m[92m   Compiling[0m rustc_serialize v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_serialize)
+[1m[92m   Compiling[0m blake3 v1.8.2
+[1m[92m   Compiling[0m either v1.15.0
+[1m[92m   Compiling[0m unicode-width v0.2.2
+[1m[92m   Compiling[0m cpufeatures v0.2.17
+[1m[92m   Compiling[0m arrayvec v0.7.6
+[1m[92m   Compiling[0m serde v1.0.228
+[1m[92m   Compiling[0m rustc_thread_pool v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_thread_pool)
+[1m[92m   Compiling[0m perf-event-open-sys v3.0.0
+[1m[92m   Compiling[0m memmap2 v0.2.3
+[1m[92m   Compiling[0m jobserver v0.1.34
+[1m[92m   Compiling[0m parking_lot v0.12.5
+[1m[92m   Compiling[0m ena v0.14.3
+[1m[92m   Compiling[0m rustc_arena v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_arena)
+[1m[92m   Compiling[0m measureme v12.0.3
+[1m[92m   Compiling[0m elsa v1.11.2
+[1m[92m   Compiling[0m rustc_graphviz v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_graphviz)
+[1m[92m   Compiling[0m regex-automata v0.4.13
+[1m[92m   Compiling[0m constant_time_eq v0.3.1
+[1m[92m   Compiling[0m writeable v0.6.2
+[1m[92m   Compiling[0m arrayref v0.3.9
+[1m[92m   Compiling[0m sha1 v0.10.6
+[1m[92m   Compiling[0m tempfile v3.23.0
+[1m[92m   Compiling[0m sha2 v0.10.9
+[1m[92m   Compiling[0m md-5 v0.10.6
+[1m[92m   Compiling[0m scoped-tls v1.0.1
+[1m[92m   Compiling[0m serde_json v1.0.145
+[1m[92m   Compiling[0m litemap v0.8.1
+[1m[92m   Compiling[0m synstructure v0.13.2
+[1m[92m   Compiling[0m icu_locale_data v2.2.0
+[1m[92m   Compiling[0m ryu v1.0.20
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m rustc-literal-escaper v0.0.8
+[1m[92m   Compiling[0m ident_case v1.0.1
+[1m[92m   Compiling[0m strsim v0.11.1
+[1m[92m   Compiling[0m fnv v1.0.7
+[1m[92m   Compiling[0m zerocopy v0.8.27
+[1m[92m   Compiling[0m crc32fast v1.5.0
+[1m[92m   Compiling[0m darling_core v0.20.11
+[1m[92m   Compiling[0m rand_core v0.9.3
+[1m[92m   Compiling[0m anstyle v1.0.13
+[1m[92m   Compiling[0m utf8parse v0.2.2
+[1m[92m   Compiling[0m anstyle-parse v0.2.7
+[1m[92m   Compiling[0m colorchoice v1.0.4
+[1m[92m   Compiling[0m allocator-api2 v0.2.21
+[1m[92m   Compiling[0m is_terminal_polyfill v1.70.2
+[1m[92m   Compiling[0m foldhash v0.1.5
+[1m[92m   Compiling[0m anstyle-query v1.1.5
+[1m[92m   Compiling[0m annotate-snippets v0.12.16
+[1m[92m   Compiling[0m anstream v0.6.21
+[1m[92m   Compiling[0m displaydoc v0.2.5
+[1m[92m   Compiling[0m zerofrom-derive v0.1.6
+[1m[92m   Compiling[0m yoke-derive v0.8.2
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m unic-langid-impl v0.9.6
+[1m[92m   Compiling[0m zerovec-derive v0.11.3
+[1m[92m   Compiling[0m thiserror-impl v2.0.17
+[1m[92m   Compiling[0m zerofrom v0.1.6
+[1m[92m   Compiling[0m unic-langid v0.9.6
+[1m[92m   Compiling[0m yoke v0.8.2
+[1m[92m   Compiling[0m tracing-attributes v0.1.30
+[1m[92m   Compiling[0m intl-memoizer v0.5.3
+[1m[92m   Compiling[0m intl_pluralrules v7.0.2
+[1m[92m   Compiling[0m fluent-langneg v0.13.1
+[1m[92m   Compiling[0m rustc_index_macros v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_index_macros)
+[1m[92m   Compiling[0m serde_derive v1.0.228
+[1m[92m   Compiling[0m unic-langid-macros-impl v0.9.6
+[1m[92m   Compiling[0m derive-where v1.6.1
+[1m[92m   Compiling[0m fluent-syntax v0.12.0
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m fluent-bundle v0.16.0
+[1m[92m   Compiling[0m tracing v0.1.41
+[1m[92m   Compiling[0m darling_macro v0.20.11
+[1m[92m   Compiling[0m ppv-lite86 v0.2.21
+[1m[92m   Compiling[0m potential_utf v0.1.4
+[1m[92m   Compiling[0m darling v0.20.11
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m rand_chacha v0.9.0
+[1m[92m   Compiling[0m unic-langid-macros v0.9.6
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m derive_setters v0.1.8
+[1m[92m   Compiling[0m icu_list v2.2.0
+[1m[92m   Compiling[0m icu_locale v2.2.0
+[1m[92m   Compiling[0m hashbrown v0.15.5
+[1m[92m   Compiling[0m rustc_index v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_index)
+[1m[92m   Compiling[0m termize v0.2.1
+[1m[92m   Compiling[0m wasmparser v0.236.1
+[1m[92m   Compiling[0m rustc_error_codes v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_error_codes)
+[1m[92m   Compiling[0m rand v0.9.2
+[1m[92m   Compiling[0m rand_xoshiro v0.7.0
+[1m[92m   Compiling[0m rustc_data_structures v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_data_structures)
+[1m[92m   Compiling[0m rustc_baked_icu_data v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_baked_icu_data)
+[1m[92m   Compiling[0m ref-cast v1.0.25
+[1m[92m   Compiling[0m object v0.37.3
+[1m[92m   Compiling[0m ref-cast-impl v1.0.25
+[1m[92m   Compiling[0m serde_derive_internals v0.29.1
+[1m[92m   Compiling[0m unicode-properties v0.1.4
+[1m[92m   Compiling[0m rustc_lexer v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_lexer)
+[1m[92m   Compiling[0m dyn-clone v1.0.20
+[1m[92m   Compiling[0m rustc_fs_util v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_fs_util)
+[1m[92m   Compiling[0m serde_path_to_error v0.1.20
+[1m[92m   Compiling[0m itertools v0.15.0
+[1m[92m   Compiling[0m odht v0.3.1
+[1m[92m   Compiling[0m schemars_derive v1.1.0
+[1m[92m   Compiling[0m getopts v0.2.24
+[1m[92m   Compiling[0m rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+[1m[92m   Compiling[0m datafrog v2.0.1
+[1m[92m   Compiling[0m rustc_span v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_span)
+[1m[92m   Compiling[0m polonius-engine v0.13.0
+[1m[92m   Compiling[0m gsgdt v0.1.2
+[1m[92m   Compiling[0m tinyvec_macros v0.1.1
+[1m[92m   Compiling[0m tinyvec v1.10.0
+[1m[92m   Compiling[0m rustc_parse_format v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_parse_format)
+[1m[92m   Compiling[0m unicode-normalization v0.1.25
+[1m[92m   Compiling[0m schemars v1.1.0
+[1m[92m   Compiling[0m rustc_type_ir_macros v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_type_ir_macros)
+[1m[92m   Compiling[0m rustc_ast_ir v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast_ir)
+[1m[92m   Compiling[0m rustc_ast v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast)
+[1m[92m   Compiling[0m rustc_error_messages v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_error_messages)
+[1m[92m   Compiling[0m rustc_hir_id v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir_id)
+[1m[92m   Compiling[0m rustc_feature v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_feature)
+[1m[92m   Compiling[0m rustc_proc_macro v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_proc_macro)
+[1m[92m   Compiling[0m static_assertions v1.1.0
+[1m[92m   Compiling[0m twox-hash v1.6.3
+[1m[92m   Compiling[0m regex v1.12.2
+[1m[92m   Compiling[0m adler2 v2.0.1
+[1m[92m   Compiling[0m simd-adler32 v0.3.7
+[1m[92m   Compiling[0m miniz_oxide v0.8.9
+[1m[92m   Compiling[0m object v0.36.7
+[1m[92m   Compiling[0m rustc-demangle v0.1.27
+[1m[92m   Compiling[0m punycode v0.4.1
+[1m[92m   Compiling[0m flate2 v1.1.9
+[1m[92m   Compiling[0m ruzstd v0.7.3
+[1m[92m   Compiling[0m rustc_lint_defs v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_lint_defs)
+[1m[92m   Compiling[0m rustc_ast_pretty v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast_pretty)
+[1m[92m   Compiling[0m rustc_errors v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_errors)
+[1m[92m   Compiling[0m libloading v0.8.9
+[1m[92m   Compiling[0m fallible-iterator v0.3.0
+[1m[92m   Compiling[0m rustc_llvm v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_llvm)
+[1m[92m   Compiling[0m gimli v0.31.1
+[1m[92m   Compiling[0m unicode-script v0.5.7
+[1m[92m   Compiling[0m cfg_aliases v0.2.1
+[1m[92m   Compiling[0m leb128 v0.2.5
+[1m[92m   Compiling[0m rustc_abi v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_abi)
+[1m[92m   Compiling[0m pulldown-cmark v0.11.3
+[1m[92m   Compiling[0m find-msvc-tools v0.1.5
+[1m[92m   Compiling[0m lazy_static v1.5.0
+[1m[92m   Compiling[0m sharded-slab v0.1.7
+[1m[92m   Compiling[0m rustc_windows_rc v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_windows_rc)
+[1m[92m   Compiling[0m rustc_target v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_target)
+[1m[92m   Compiling[0m rustc_type_ir v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_type_ir)
+[1m[92m   Compiling[0m wasm-encoder v0.219.2
+[1m[92m   Compiling[0m unicode-security v0.1.2
+[1m[92m   Compiling[0m nix v0.30.1
+[1m[92m   Compiling[0m ar_archive_writer v0.5.2
+[1m[92m   Compiling[0m tracing-serde v0.2.0
+[1m[92m   Compiling[0m bstr v1.12.1
+[1m[92m   Compiling[0m matchers v0.2.0
+[1m[92m   Compiling[0m thread_local v1.1.9
+[1m[92m   Compiling[0m nu-ansi-term v0.50.3
+[1m[92m   Compiling[0m unicase v2.8.1
+[1m[92m   Compiling[0m pathdiff v0.2.3
+[1m[92m   Compiling[0m pulldown-cmark-escape v0.11.0
+[1m[92m   Compiling[0m tracing-subscriber v0.3.20
+[1m[92m   Compiling[0m rustc_next_trait_solver v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_next_trait_solver)
+[1m[92m   Compiling[0m tracing-log v0.2.0
+[1m[92m   Compiling[0m libloading v0.9.0
+[1m[92m   Compiling[0m rustc_hir v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir)
+[1m[92m   Compiling[0m thorin-dwp v0.9.0
+[1m[92m   Compiling[0m tracing-tree v0.3.1
+[1m[92m   Compiling[0m rustc_log v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_log)
+[1m[92m   Compiling[0m ctrlc v3.5.1
+[1m[92m   Compiling[0m rustc_driver v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_driver)
+[1m[92m   Compiling[0m jiff v0.2.16
+[1m[92m   Compiling[0m rustc-main v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc)
+[1m[92m   Compiling[0m rustc_session v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_session)
+[1m[92m   Compiling[0m rustc_hir_pretty v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir_pretty)
+[1m[92m   Compiling[0m rustc_middle v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_middle)
+[1m[92m   Compiling[0m rustc_parse v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_parse)
+[1m[92m   Compiling[0m rustc_attr_parsing v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_attr_parsing)
+[1m[92m   Compiling[0m rustc_ast_passes v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast_passes)
+[1m[92m   Compiling[0m rustc_infer v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_infer)
+[1m[92m   Compiling[0m rustc_transmute v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_transmute)
+[1m[92m   Compiling[0m rustc_expand v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_expand)
+[1m[92m   Compiling[0m rustc_symbol_mangling v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_symbol_mangling)
+[1m[92m   Compiling[0m rustc_mir_dataflow v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_mir_dataflow)
+[1m[92m   Compiling[0m rustc_incremental v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_incremental)
+[1m[92m   Compiling[0m rustc_pattern_analysis v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_pattern_analysis)
+[1m[92m   Compiling[0m rustc_trait_selection v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_trait_selection)
+[1m[92m   Compiling[0m rustc_metadata v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_metadata)
+[1m[92m   Compiling[0m rustc_ast_lowering v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast_lowering)
+[1m[92m   Compiling[0m rustc_builtin_macros v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_builtin_macros)
+[1m[92m   Compiling[0m rustc_public_bridge v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_public_bridge)
+[1m[92m   Compiling[0m rustc_resolve v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_resolve)
+[1m[92m   Compiling[0m rustc_query_impl v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_query_impl)
+[1m[92m   Compiling[0m rustc_monomorphize v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_monomorphize)
+[1m[92m   Compiling[0m rustc_ty_utils v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ty_utils)
+[1m[92m   Compiling[0m rustc_privacy v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_privacy)
+[1m[92m   Compiling[0m rustc_const_eval v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_const_eval)
+[1m[92m   Compiling[0m rustc_hir_analysis v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir_analysis)
+[1m[92m   Compiling[0m rustc_codegen_ssa v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_codegen_ssa)
+[1m[92m   Compiling[0m rustc_traits v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_traits)
+[1m[92m   Compiling[0m rustc_sanitizers v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_sanitizers)
+[1m[92m   Compiling[0m rustc_lint v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_lint)
+[1m[92m   Compiling[0m rustc_codegen_llvm v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_codegen_llvm)
+[1m[92m   Compiling[0m rustc_borrowck v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_borrowck)
+[1m[92m   Compiling[0m rustc_mir_transform v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_mir_transform)
+[1m[92m   Compiling[0m rustc_hir_typeck v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir_typeck)
+[1m[92m   Compiling[0m rustc_passes v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_passes)
+[1m[92m   Compiling[0m rustc_mir_build v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_mir_build)
+[1m[92m   Compiling[0m rustc_interface v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_interface)
+[1m[92m   Compiling[0m rustc_public v0.1.0-preview (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_public)
+[1m[92m   Compiling[0m rustc_driver_impl v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_driver_impl)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 2m 26s
+Creating a sysroot for stage1 compiler (use `rustup toolchain link 'name' build/host/stage1`)
+Building stage1 library artifacts (stage1 -> stage1, x86_64-unknown-linux-gnu)
+[1m[92m   Compiling[0m shlex v1.3.0
+[1m[92m   Compiling[0m core v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/core)
+[1m[92m   Compiling[0m libc v0.2.185
+[1m[92m   Compiling[0m object v0.37.3
+[1m[92m   Compiling[0m std v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/std)
+[1m[92m   Compiling[0m test v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/test)
+[1m[92m   Compiling[0m cc v1.2.0
+[1m[92m   Compiling[0m compiler_builtins v0.1.160 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/compiler-builtins/compiler-builtins)
+[1m[92m   Compiling[0m rustc-std-workspace-core v1.99.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/rustc-std-workspace-core)
+[1m[92m   Compiling[0m alloc v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/alloc)
+[1m[92m   Compiling[0m memchr v2.7.6
+[1m[92m   Compiling[0m adler2 v2.0.1
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m rustc-demangle v0.1.27
+[1m[92m   Compiling[0m panic_abort v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/panic_abort)
+[1m[92m   Compiling[0m rustc-literal-escaper v0.0.8
+[1m[92m   Compiling[0m unwind v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/unwind)
+[1m[92m   Compiling[0m rustc-std-workspace-alloc v1.99.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/rustc-std-workspace-alloc)
+[1m[92m   Compiling[0m panic_unwind v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/panic_unwind)
+[1m[92m   Compiling[0m gimli v0.32.3
+[1m[92m   Compiling[0m std_detect v0.1.5 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/std_detect)
+[1m[92m   Compiling[0m hashbrown v0.17.1
+[1m[92m   Compiling[0m miniz_oxide v0.8.9
+[1m[92m   Compiling[0m addr2line v0.25.1
+[1m[92m   Compiling[0m rustc-std-workspace-std v1.99.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/rustc-std-workspace-std)
+[1m[92m   Compiling[0m proc_macro v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/proc_macro)
+[1m[92m   Compiling[0m getopts v0.2.24
+[1m[92m   Compiling[0m sysroot v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/sysroot)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`dist` profile [optimized]]8;;\ target(s) in 38.12s
+Building stage2 compiler artifacts (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m   Compiling[0m proc-macro2 v1.0.106
+[1m[92m   Compiling[0m unicode-ident v1.0.24
+[1m[92m   Compiling[0m quote v1.0.45
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m libc v0.2.183
+[1m[92m   Compiling[0m stable_deref_trait v1.2.1
+[1m[92m   Compiling[0m memchr v2.8.0
+[1m[92m   Compiling[0m shlex v1.3.0
+[1m[92m   Compiling[0m smallvec v1.15.1
+[1m[92m   Compiling[0m thiserror v2.0.17
+[1m[92m   Compiling[0m once_cell v1.21.3
+[1m[92m   Compiling[0m bitflags v2.10.0
+[1m[92m   Compiling[0m equivalent v1.0.2
+[1m[92m   Compiling[0m cc v1.2.16
+[1m[92m   Compiling[0m version_check v0.9.5
+[1m[92m   Compiling[0m hashbrown v0.17.0
+[1m[92m   Compiling[0m getrandom v0.3.3
+[1m[92m   Compiling[0m parking_lot_core v0.9.12
+[1m[92m   Compiling[0m tracing-core v0.1.34
+[1m[92m   Compiling[0m log v0.4.28
+[1m[92m   Compiling[0m typenum v1.20.0
+[1m[92m   Compiling[0m scopeguard v1.2.0
+[1m[92m   Compiling[0m generic-array v0.14.7
+[1m[92m   Compiling[0m lock_api v0.4.14
+[1m[92m   Compiling[0m rustc-hash v2.1.1
+[1m[92m   Compiling[0m pin-project-lite v0.2.16
+[1m[92m   Compiling[0m crossbeam-utils v0.8.21
+[1m[92m   Compiling[0m itoa v1.0.15
+[1m[92m   Compiling[0m type-map v0.5.1
+[1m[92m   Compiling[0m serde_core v1.0.228
+[1m[92m   Compiling[0m syn v2.0.117
+[1m[92m   Compiling[0m indexmap v2.14.0
+[1m[92m   Compiling[0m rustix v1.1.2
+[1m[92m   Compiling[0m self_cell v1.2.1
+[1m[92m   Compiling[0m rustc-stable-hash v0.1.2
+[1m[92m   Compiling[0m rustc_macros v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_macros)
+[1m[92m   Compiling[0m linux-raw-sys v0.11.0
+[1m[92m   Compiling[0m psm v0.1.26
+[1m[92m   Compiling[0m stacker v0.1.21
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.18
+[1m[92m   Compiling[0m rustc_hashes v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hashes)
+[1m[92m   Compiling[0m block-buffer v0.10.4
+[1m[92m   Compiling[0m crypto-common v0.1.7
+[1m[92m   Compiling[0m aho-corasick v1.1.4
+[1m[92m   Compiling[0m digest v0.10.7
+[1m[92m   Compiling[0m parking_lot v0.12.5
+[1m[92m   Compiling[0m regex-syntax v0.8.8
+[1m[92m   Compiling[0m thin-vec v0.2.18
+[1m[92m   Compiling[0m proc-macro-hack v0.5.20+deprecated
+[1m[92m   Compiling[0m fastrand v2.3.0
+[1m[92m   Compiling[0m rustc-hash v1.1.0
+[1m[92m   Compiling[0m rustc_serialize v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_serialize)
+[1m[92m   Compiling[0m crossbeam-deque v0.8.6
+[1m[92m   Compiling[0m perf-event-open-sys v3.0.0
+[1m[92m   Compiling[0m memmap2 v0.2.3
+[1m[92m   Compiling[0m blake3 v1.8.2
+[1m[92m   Compiling[0m unicode-width v0.2.2
+[1m[92m   Compiling[0m arrayvec v0.7.6
+[1m[92m   Compiling[0m cpufeatures v0.2.17
+[1m[92m   Compiling[0m serde v1.0.228
+[1m[92m   Compiling[0m either v1.15.0
+[1m[92m   Compiling[0m rustc_thread_pool v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_thread_pool)
+[1m[92m   Compiling[0m measureme v12.0.3
+[1m[92m   Compiling[0m jobserver v0.1.34
+[1m[92m   Compiling[0m ena v0.14.3
+[1m[92m   Compiling[0m rustc_arena v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_arena)
+[1m[92m   Compiling[0m elsa v1.11.2
+[1m[92m   Compiling[0m writeable v0.6.2
+[1m[92m   Compiling[0m constant_time_eq v0.3.1
+[1m[92m   Compiling[0m arrayref v0.3.9
+[1m[92m   Compiling[0m rustc_graphviz v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_graphviz)
+[1m[92m   Compiling[0m sha1 v0.10.6
+[1m[92m   Compiling[0m sha2 v0.10.9
+[1m[92m   Compiling[0m md-5 v0.10.6
+[1m[92m   Compiling[0m scoped-tls v1.0.1
+[1m[92m   Compiling[0m litemap v0.8.1
+[1m[92m   Compiling[0m serde_json v1.0.145
+[1m[92m   Compiling[0m regex-automata v0.4.13
+[1m[92m   Compiling[0m ryu v1.0.20
+[1m[92m   Compiling[0m icu_locale_data v2.2.0
+[1m[92m   Compiling[0m rustc-literal-escaper v0.0.8
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m synstructure v0.13.2
+[1m[92m   Compiling[0m ident_case v1.0.1
+[1m[92m   Compiling[0m zerocopy v0.8.27
+[1m[92m   Compiling[0m tempfile v3.23.0
+[1m[92m   Compiling[0m fnv v1.0.7
+[1m[92m   Compiling[0m strsim v0.11.1
+[1m[92m   Compiling[0m crc32fast v1.5.0
+[1m[92m   Compiling[0m darling_core v0.20.11
+[1m[92m   Compiling[0m rand_core v0.9.3
+[1m[92m   Compiling[0m utf8parse v0.2.2
+[1m[92m   Compiling[0m anstyle v1.0.13
+[1m[92m   Compiling[0m anstyle-parse v0.2.7
+[1m[92m   Compiling[0m foldhash v0.1.5
+[1m[92m   Compiling[0m colorchoice v1.0.4
+[1m[92m   Compiling[0m anstyle-query v1.1.5
+[1m[92m   Compiling[0m is_terminal_polyfill v1.70.2
+[1m[92m   Compiling[0m allocator-api2 v0.2.21
+[1m[92m   Compiling[0m annotate-snippets v0.12.16
+[1m[92m   Compiling[0m anstream v0.6.21
+[1m[92m   Compiling[0m displaydoc v0.2.5
+[1m[92m   Compiling[0m zerofrom-derive v0.1.6
+[1m[92m   Compiling[0m yoke-derive v0.8.2
+[1m[92m   Compiling[0m zerovec-derive v0.11.3
+[1m[92m   Compiling[0m thiserror-impl v2.0.17
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m unic-langid-impl v0.9.6
+[1m[92m   Compiling[0m unic-langid v0.9.6
+[1m[92m   Compiling[0m tracing-attributes v0.1.30
+[1m[92m   Compiling[0m fluent-langneg v0.13.1
+[1m[92m   Compiling[0m zerofrom v0.1.6
+[1m[92m   Compiling[0m intl-memoizer v0.5.3
+[1m[92m   Compiling[0m yoke v0.8.2
+[1m[92m   Compiling[0m intl_pluralrules v7.0.2
+[1m[92m   Compiling[0m rustc_index_macros v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_index_macros)
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m serde_derive v1.0.228
+[1m[92m   Compiling[0m unic-langid-macros-impl v0.9.6
+[1m[92m   Compiling[0m fluent-syntax v0.12.0
+[1m[92m   Compiling[0m derive-where v1.6.1
+[1m[92m   Compiling[0m tracing v0.1.41
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m fluent-bundle v0.16.0
+[1m[92m   Compiling[0m ppv-lite86 v0.2.21
+[1m[92m   Compiling[0m hashbrown v0.15.5
+[1m[92m   Compiling[0m rand_chacha v0.9.0
+[1m[92m   Compiling[0m darling_macro v0.20.11
+[1m[92m   Compiling[0m darling v0.20.11
+[1m[92m   Compiling[0m derive_setters v0.1.8
+[1m[92m   Compiling[0m termize v0.2.1
+[1m[92m   Compiling[0m wasmparser v0.236.1
+[1m[92m   Compiling[0m rustc_error_codes v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_error_codes)
+[1m[92m   Compiling[0m rand v0.9.2
+[1m[92m   Compiling[0m rand_xoshiro v0.7.0
+[1m[92m   Compiling[0m ref-cast v1.0.25
+[1m[92m   Compiling[0m object v0.37.3
+[1m[92m   Compiling[0m ref-cast-impl v1.0.25
+[1m[92m   Compiling[0m serde_derive_internals v0.29.1
+[1m[92m   Compiling[0m unicode-properties v0.1.4
+[1m[92m   Compiling[0m rustc_lexer v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_lexer)
+[1m[92m   Compiling[0m dyn-clone v1.0.20
+[1m[92m   Compiling[0m potential_utf v0.1.4
+[1m[92m   Compiling[0m rustc_fs_util v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_fs_util)
+[1m[92m   Compiling[0m serde_path_to_error v0.1.20
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m unic-langid-macros v0.9.6
+[1m[92m   Compiling[0m itertools v0.15.0
+[1m[92m   Compiling[0m schemars_derive v1.1.0
+[1m[92m   Compiling[0m odht v0.3.1
+[1m[92m   Compiling[0m rustc_index v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_index)
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m getopts v0.2.24
+[1m[92m   Compiling[0m rustc_data_structures v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_data_structures)
+[1m[92m   Compiling[0m icu_locale v2.2.0
+[1m[92m   Compiling[0m icu_list v2.2.0
+[1m[92m   Compiling[0m rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+[1m[92m   Compiling[0m datafrog v2.0.1
+[1m[92m   Compiling[0m rustc_baked_icu_data v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_baked_icu_data)
+[1m[92m   Compiling[0m schemars v1.1.0
+[1m[92m   Compiling[0m rustc_span v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_span)
+[1m[92m   Compiling[0m gsgdt v0.1.2
+[1m[92m   Compiling[0m rustc_type_ir_macros v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_type_ir_macros)
+[1m[92m   Compiling[0m polonius-engine v0.13.0
+[1m[92m   Compiling[0m tinyvec_macros v0.1.1
+[1m[92m   Compiling[0m rustc_parse_format v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_parse_format)
+[1m[92m   Compiling[0m tinyvec v1.10.0
+[1m[92m   Compiling[0m rustc_proc_macro v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_proc_macro)
+[1m[92m   Compiling[0m unicode-normalization v0.1.25
+[1m[92m   Compiling[0m static_assertions v1.1.0
+[1m[92m   Compiling[0m twox-hash v1.6.3
+[1m[92m   Compiling[0m regex v1.12.2
+[1m[92m   Compiling[0m simd-adler32 v0.3.7
+[1m[92m   Compiling[0m rustc_ast_ir v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast_ir)
+[1m[92m   Compiling[0m rustc_hir_id v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir_id)
+[1m[92m   Compiling[0m rustc_ast v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast)
+[1m[92m   Compiling[0m rustc_error_messages v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_error_messages)
+[1m[92m   Compiling[0m rustc_feature v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_feature)
+[1m[92m   Compiling[0m adler2 v2.0.1
+[1m[92m   Compiling[0m miniz_oxide v0.8.9
+[1m[92m   Compiling[0m rustc-demangle v0.1.27
+[1m[92m   Compiling[0m punycode v0.4.1
+[1m[92m   Compiling[0m object v0.36.7
+[1m[92m   Compiling[0m ruzstd v0.7.3
+[1m[92m   Compiling[0m flate2 v1.1.9
+[1m[92m   Compiling[0m libloading v0.8.9
+[1m[92m   Compiling[0m fallible-iterator v0.3.0
+[1m[92m   Compiling[0m rustc_llvm v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_llvm)
+[1m[92m   Compiling[0m gimli v0.31.1
+[1m[92m   Compiling[0m cfg_aliases v0.2.1
+[1m[92m   Compiling[0m pulldown-cmark v0.11.3
+[1m[92m   Compiling[0m unicode-script v0.5.7
+[1m[92m   Compiling[0m leb128 v0.2.5
+[1m[92m   Compiling[0m lazy_static v1.5.0
+[1m[92m   Compiling[0m find-msvc-tools v0.1.5
+[1m[92m   Compiling[0m sharded-slab v0.1.7
+[1m[92m   Compiling[0m unicode-security v0.1.2
+[1m[92m   Compiling[0m rustc_windows_rc v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_windows_rc)
+[1m[92m   Compiling[0m wasm-encoder v0.219.2
+[1m[92m   Compiling[0m ar_archive_writer v0.5.2
+[1m[92m   Compiling[0m nix v0.30.1
+[1m[92m   Compiling[0m tracing-serde v0.2.0
+[1m[92m   Compiling[0m matchers v0.2.0
+[1m[92m   Compiling[0m bstr v1.12.1
+[1m[92m   Compiling[0m thread_local v1.1.9
+[1m[92m   Compiling[0m unicase v2.8.1
+[1m[92m   Compiling[0m pulldown-cmark-escape v0.11.0
+[1m[92m   Compiling[0m pathdiff v0.2.3
+[1m[92m   Compiling[0m nu-ansi-term v0.50.3
+[1m[92m   Compiling[0m tracing-log v0.2.0
+[1m[92m   Compiling[0m libloading v0.9.0
+[1m[92m   Compiling[0m tracing-subscriber v0.3.20
+[1m[92m   Compiling[0m rustc_driver v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_driver)
+[1m[92m   Compiling[0m jiff v0.2.16
+[1m[92m   Compiling[0m rustc-main v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc)
+[1m[92m   Compiling[0m ctrlc v3.5.1
+[1m[92m   Compiling[0m thorin-dwp v0.9.0
+[1m[92m   Compiling[0m tracing-tree v0.3.1
+[1m[92m   Compiling[0m rustc_lint_defs v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_lint_defs)
+[1m[92m   Compiling[0m rustc_errors v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_errors)
+[1m[92m   Compiling[0m rustc_ast_pretty v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast_pretty)
+[1m[92m   Compiling[0m rustc_log v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_log)
+[1m[92m   Compiling[0m rustc_abi v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_abi)
+[1m[92m   Compiling[0m rustc_target v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_target)
+[1m[92m   Compiling[0m rustc_type_ir v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_type_ir)
+[1m[92m   Compiling[0m rustc_hir v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir)
+[1m[92m   Compiling[0m rustc_session v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_session)
+[1m[92m   Compiling[0m rustc_hir_pretty v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir_pretty)
+[1m[92m   Compiling[0m rustc_next_trait_solver v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_next_trait_solver)
+[1m[92m   Compiling[0m rustc_middle v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_middle)
+[1m[92m   Compiling[0m rustc_parse v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_parse)
+[1m[92m   Compiling[0m rustc_attr_parsing v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_attr_parsing)
+[1m[92m   Compiling[0m rustc_ast_passes v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast_passes)
+[1m[92m   Compiling[0m rustc_transmute v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_transmute)
+[1m[92m   Compiling[0m rustc_infer v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_infer)
+[1m[92m   Compiling[0m rustc_expand v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_expand)
+[1m[92m   Compiling[0m rustc_symbol_mangling v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_symbol_mangling)
+[1m[92m   Compiling[0m rustc_mir_dataflow v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_mir_dataflow)
+[1m[92m   Compiling[0m rustc_incremental v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_incremental)
+[1m[92m   Compiling[0m rustc_ast_lowering v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ast_lowering)
+[1m[92m   Compiling[0m rustc_pattern_analysis v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_pattern_analysis)
+[1m[92m   Compiling[0m rustc_public_bridge v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_public_bridge)
+[1m[92m   Compiling[0m rustc_metadata v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_metadata)
+[1m[92m   Compiling[0m rustc_builtin_macros v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_builtin_macros)
+[1m[92m   Compiling[0m rustc_query_impl v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_query_impl)
+[1m[92m   Compiling[0m rustc_monomorphize v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_monomorphize)
+[1m[92m   Compiling[0m rustc_public v0.1.0-preview (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_public)
+[1m[92m   Compiling[0m rustc_trait_selection v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_trait_selection)
+[1m[92m   Compiling[0m rustc_resolve v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_resolve)
+[1m[92m   Compiling[0m rustc_ty_utils v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_ty_utils)
+[1m[92m   Compiling[0m rustc_privacy v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_privacy)
+[1m[92m   Compiling[0m rustc_lint v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_lint)
+[1m[92m   Compiling[0m rustc_const_eval v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_const_eval)
+[1m[92m   Compiling[0m rustc_sanitizers v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_sanitizers)
+[1m[92m   Compiling[0m rustc_hir_analysis v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir_analysis)
+[1m[92m   Compiling[0m rustc_codegen_ssa v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_codegen_ssa)
+[1m[92m   Compiling[0m rustc_traits v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_traits)
+[1m[92m   Compiling[0m rustc_mir_transform v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_mir_transform)
+[1m[92m   Compiling[0m rustc_borrowck v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_borrowck)
+[1m[92m   Compiling[0m rustc_codegen_llvm v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_codegen_llvm)
+[1m[92m   Compiling[0m rustc_passes v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_passes)
+[1m[92m   Compiling[0m rustc_hir_typeck v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_hir_typeck)
+[1m[92m   Compiling[0m rustc_mir_build v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_mir_build)
+[1m[92m   Compiling[0m rustc_interface v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_interface)
+[1m[92m   Compiling[0m rustc_driver_impl v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/compiler/rustc_driver_impl)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 4m 42s
+Creating a sysroot for stage2 compiler (use `rustup toolchain link 'name' build/host/stage2`)
+Uplifting library (stage1 -> stage2)
+Building stage1 library artifacts (stage1:x86_64-unknown-linux-gnu -> stage1:i686-unknown-linux-gnu)
+[1m[92m   Compiling[0m compiler_builtins v0.1.160 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/compiler-builtins/compiler-builtins)
+[1m[92m   Compiling[0m core v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/core)
+[1m[92m   Compiling[0m libc v0.2.185
+[1m[92m   Compiling[0m object v0.37.3
+[1m[92m   Compiling[0m std v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/std)
+[1m[92m   Compiling[0m test v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/test)
+[1m[92m   Compiling[0m rustc-std-workspace-core v1.99.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/rustc-std-workspace-core)
+[1m[92m   Compiling[0m alloc v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/alloc)
+[1m[92m   Compiling[0m memchr v2.7.6
+[1m[92m   Compiling[0m adler2 v2.0.1
+[1m[92m   Compiling[0m panic_abort v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/panic_abort)
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m rustc-demangle v0.1.27
+[1m[92m   Compiling[0m rustc-literal-escaper v0.0.8
+[1m[92m   Compiling[0m unwind v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/unwind)
+[1m[92m   Compiling[0m rustc-std-workspace-alloc v1.99.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/rustc-std-workspace-alloc)
+[1m[92m   Compiling[0m panic_unwind v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/panic_unwind)
+[1m[92m   Compiling[0m gimli v0.32.3
+[1m[92m   Compiling[0m miniz_oxide v0.8.9
+[1m[92m   Compiling[0m hashbrown v0.17.1
+[1m[92m   Compiling[0m std_detect v0.1.5 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/std_detect)
+[1m[92m   Compiling[0m addr2line v0.25.1
+[1m[92m   Compiling[0m rustc-std-workspace-std v1.99.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/rustc-std-workspace-std)
+[1m[92m   Compiling[0m proc_macro v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/proc_macro)
+[1m[92m   Compiling[0m getopts v0.2.24
+[1m[92m   Compiling[0m sysroot v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/library/sysroot)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`dist` profile [optimized]]8;;\ target(s) in 34.05s
+Uplifting library (stage1:x86_64-unknown-linux-gnu -> stage2:i686-unknown-linux-gnu)
+Building stage2 cargo (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m   Compiling[0m proc-macro2 v1.0.106
+[1m[92m   Compiling[0m unicode-ident v1.0.24
+[1m[92m   Compiling[0m quote v1.0.46
+[1m[92m   Compiling[0m libc v0.2.186
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m memchr v2.8.2
+[1m[92m   Compiling[0m regex-syntax v0.8.11
+[1m[92m   Compiling[0m typenum v1.20.1
+[1m[92m   Compiling[0m smallvec v1.15.2
+[1m[92m   Compiling[0m serde_core v1.0.228
+[1m[92m   Compiling[0m thiserror v2.0.18
+[1m[92m   Compiling[0m version_check v0.9.5
+[1m[92m   Compiling[0m zeroize v1.9.0
+[1m[92m   Compiling[0m stable_deref_trait v1.2.1
+[1m[92m   Compiling[0m subtle v2.6.1
+[1m[92m   Compiling[0m bitflags v2.13.0
+[1m[92m   Compiling[0m once_cell v1.21.4
+[1m[92m   Compiling[0m crossbeam-utils v0.8.21
+[1m[92m   Compiling[0m generic-array v0.14.9
+[1m[92m   Compiling[0m const-oid v0.9.6
+[1m[92m   Compiling[0m gix-trace v0.1.20
+[1m[92m   Compiling[0m parking_lot_core v0.9.12
+[1m[92m   Compiling[0m fastrand v2.4.1
+[1m[92m   Compiling[0m tinyvec_macros v0.1.1
+[1m[92m   Compiling[0m tinyvec v1.11.0
+[1m[92m   Compiling[0m syn v2.0.118
+[1m[92m   Compiling[0m scopeguard v1.2.0
+[1m[92m   Compiling[0m lock_api v0.4.14
+[1m[92m   Compiling[0m aho-corasick v1.1.4
+[1m[92m   Compiling[0m unicode-normalization v0.1.25
+[1m[92m   Compiling[0m same-file v1.0.6
+[1m[92m   Compiling[0m bytes v1.12.0
+[1m[92m   Compiling[0m walkdir v2.5.0
+[1m[92m   Compiling[0m block-buffer v0.10.4
+[1m[92m   Compiling[0m crypto-common v0.1.6
+[1m[92m   Compiling[0m crc32fast v1.5.0
+[1m[92m   Compiling[0m digest v0.10.7
+[1m[92m   Compiling[0m zlib-rs v0.6.4
+[1m[92m   Compiling[0m find-msvc-tools v0.1.9
+[1m[92m   Compiling[0m shlex v2.0.1
+[1m[92m   Compiling[0m parking_lot v0.12.5
+[1m[92m   Compiling[0m crossbeam-channel v0.5.15
+[1m[92m   Compiling[0m itoa v1.0.18
+[1m[92m   Compiling[0m foldhash v0.2.0
+[1m[92m   Compiling[0m prodash v31.0.0
+[1m[92m   Compiling[0m allocator-api2 v0.2.21
+[1m[92m   Compiling[0m jobserver v0.1.34
+[1m[92m   Compiling[0m equivalent v1.0.2
+[1m[92m   Compiling[0m heapless v0.8.0
+[1m[92m   Compiling[0m cc v1.2.65
+[1m[92m   Compiling[0m cpufeatures v0.2.17
+[1m[92m   Compiling[0m byteorder v1.5.0
+[1m[92m   Compiling[0m hashbrown v0.17.1
+[1m[92m   Compiling[0m pkg-config v0.3.33
+[1m[92m   Compiling[0m rustix v1.1.4
+[1m[92m   Compiling[0m hash32 v0.3.1
+[1m[92m   Compiling[0m linux-raw-sys v0.12.1
+[1m[92m   Compiling[0m sha1 v0.10.6
+[1m[92m   Compiling[0m jiff v0.2.31
+[1m[92m   Compiling[0m sha1-checked v0.10.0
+[1m[92m   Compiling[0m regex-automata v0.4.14
+[1m[92m   Compiling[0m faster-hex v0.10.0
+[1m[92m   Compiling[0m vcpkg v0.2.15
+[1m[92m   Compiling[0m getrandom v0.4.3
+[1m[92m   Compiling[0m rand_core v0.10.1
+[1m[92m   Compiling[0m synstructure v0.13.2
+[1m[92m   Compiling[0m memmap2 v0.9.11
+[1m[92m   Compiling[0m hashbrown v0.14.5
+[1m[92m   Compiling[0m openssl-sys v0.9.117
+[1m[92m   Compiling[0m libz-sys v1.1.29
+[1m[92m   Compiling[0m nonempty v0.12.0
+[1m[92m   Compiling[0m percent-encoding v2.3.2
+[1m[92m   Compiling[0m getrandom v0.2.17
+[1m[92m   Compiling[0m libnghttp2-sys v0.1.13+1.68.1
+[1m[92m   Compiling[0m rand_core v0.6.4
+[1m[92m   Compiling[0m litemap v0.8.2
+[1m[92m   Compiling[0m dashmap v6.2.1
+[1m[92m   Compiling[0m unicode-bom v2.0.3
+[1m[92m   Compiling[0m writeable v0.6.3
+[1m[92m   Compiling[0m icu_normalizer_data v2.2.0
+[1m[92m   Compiling[0m icu_properties_data v2.2.0
+[1m[92m   Compiling[0m base64ct v1.8.3
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m static_assertions v1.1.0
+[1m[92m   Compiling[0m zmij v1.0.21
+[1m[92m   Compiling[0m serde v1.0.228
+[1m[92m   Compiling[0m kstring v2.0.2
+[1m[92m   Compiling[0m tempfile v3.27.0
+[1m[92m   Compiling[0m pem-rfc7468 v0.7.0
+[1m[92m   Compiling[0m thiserror-impl v2.0.18
+[1m[92m   Compiling[0m zerofrom-derive v0.1.7
+[1m[92m   Compiling[0m yoke-derive v0.8.2
+[1m[92m   Compiling[0m zerovec-derive v0.11.3
+[1m[92m   Compiling[0m displaydoc v0.2.6
+[1m[92m   Compiling[0m serde_derive v1.0.228
+[1m[92m   Compiling[0m bstr v1.12.3
+[1m[92m   Compiling[0m curl-sys v0.4.90+curl-8.21.0
+[1m[92m   Compiling[0m zerofrom v0.1.8
+[1m[92m   Compiling[0m gix-sec v0.14.1
+[1m[92m   Compiling[0m shell-words v1.1.1
+[1m[92m   Compiling[0m log v0.4.33
+[1m[92m   Compiling[0m serde_json v1.0.150
+[1m[92m   Compiling[0m yoke v0.8.3
+[1m[92m   Compiling[0m der v0.7.10
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m filetime v0.2.29
+[1m[92m   Compiling[0m libssh2-sys v0.3.2
+[1m[92m   Compiling[0m hmac v0.12.1
+[1m[92m   Compiling[0m hybrid-array v0.4.13
+[1m[92m   Compiling[0m pin-project-lite v0.2.17
+[1m[92m   Compiling[0m gix-validate v0.11.2
+[1m[92m   Compiling[0m gix-utils v0.3.3
+[1m[92m   Compiling[0m gix-path v0.12.1
+[1m[92m   Compiling[0m gix-error v0.2.4
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m gix-date v0.15.5
+[1m[92m   Compiling[0m gix-chunk v0.7.2
+[1m[92m   Compiling[0m gix-features v0.48.1
+[1m[92m   Compiling[0m gix-hash v0.25.1
+[1m[92m   Compiling[0m gix-actor v0.41.1
+[1m[92m   Compiling[0m gix-fs v0.21.2
+[1m[92m   Compiling[0m gix-hashtable v0.15.2
+[1m[92m   Compiling[0m gix-quote v0.7.2
+[1m[92m   Compiling[0m gix-object v0.62.0
+[1m[92m   Compiling[0m gix-tempfile v23.0.2
+[1m[92m   Compiling[0m gix-commitgraph v0.37.1
+[1m[92m   Compiling[0m gix-glob v0.26.1
+[1m[92m   Compiling[0m gix-config-value v0.18.1
+[1m[92m   Compiling[0m gix-lock v23.0.1
+[1m[92m   Compiling[0m potential_utf v0.1.5
+[1m[92m   Compiling[0m gix-revwalk v0.33.0
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m gix-attributes v0.33.2
+[1m[92m   Compiling[0m gix-command v0.9.1
+[1m[92m   Compiling[0m gix-ref v0.65.0
+[1m[92m   Compiling[0m icu_properties v2.2.0
+[1m[92m   Compiling[0m icu_normalizer v2.2.0
+[1m[92m   Compiling[0m spki v0.7.3
+[1m[92m   Compiling[0m pkcs8 v0.10.2
+[1m[92m   Compiling[0m gix-traverse v0.59.0
+[1m[92m   Compiling[0m gix-bitmap v0.3.2
+[1m[92m   Compiling[0m gix-packetline v0.21.5
+[1m[92m   Compiling[0m ff v0.13.1
+[1m[92m   Compiling[0m anstyle v1.0.14
+[1m[92m   Compiling[0m cmov v0.5.4
+[1m[92m   Compiling[0m fnv v1.0.7
+[1m[92m   Compiling[0m idna_adapter v1.2.2
+[1m[92m   Compiling[0m anyhow v1.0.103
+[1m[92m   Compiling[0m autocfg v1.5.1
+[1m[92m   Compiling[0m base16ct v0.2.0
+[1m[92m   Compiling[0m utf8parse v0.2.2
+[1m[92m   Compiling[0m openssl-probe v0.1.6
+[1m[92m   Compiling[0m curl v0.4.50
+[1m[92m   Compiling[0m cpufeatures v0.3.0
+[1m[92m   Compiling[0m anstyle-parse v1.0.0
+[1m[92m   Compiling[0m sec1 v0.7.3
+[1m[92m   Compiling[0m ctutils v0.4.2
+[1m[92m   Compiling[0m idna v1.1.0
+[1m[92m   Compiling[0m gix-index v0.53.0
+[1m[92m   Compiling[0m group v0.13.0
+[1m[92m   Compiling[0m gix-pathspec v0.18.1
+[1m[92m   Compiling[0m gix-ignore v0.21.1
+[1m[92m   Compiling[0m gix-url v0.36.1
+[1m[92m   Compiling[0m num-traits v0.2.19
+[1m[92m   Compiling[0m block-buffer v0.12.1
+[1m[92m   Compiling[0m crypto-common v0.2.2
+[1m[92m   Compiling[0m hkdf v0.12.4
+[1m[92m   Compiling[0m crypto-bigint v0.5.5
+[1m[92m   Compiling[0m form_urlencoded v1.2.2
+[1m[92m   Compiling[0m libgit2-sys v0.18.5+1.9.4
+[1m[92m   Compiling[0m socket2 v0.6.4
+[1m[92m   Compiling[0m tracing-core v0.1.36
+[1m[92m   Compiling[0m is_terminal_polyfill v1.70.2
+[1m[92m   Compiling[0m anstyle-query v1.1.5
+[1m[92m   Compiling[0m colorchoice v1.0.5
+[1m[92m   Compiling[0m const-oid v0.10.2
+[1m[92m   Compiling[0m rustversion v1.0.22
+[1m[92m   Compiling[0m typeid v1.0.3
+[1m[92m   Compiling[0m anstream v1.0.0
+[1m[92m   Compiling[0m gix-worktree v0.54.0
+[1m[92m   Compiling[0m url v2.5.8
+[1m[92m   Compiling[0m gix-prompt v0.15.1
+[1m[92m   Compiling[0m elliptic-curve v0.13.8
+[1m[92m   Compiling[0m digest v0.11.3
+[1m[92m   Compiling[0m gix-revision v0.47.0
+[1m[92m   Compiling[0m tracing-attributes v0.1.31
+[1m[92m   Compiling[0m deranged v0.5.8
+[1m[92m   Compiling[0m hashbrown v0.16.1
+[1m[92m   Compiling[0m encoding_rs v0.8.35
+[1m[92m   Compiling[0m futures-sink v0.3.32
+[1m[92m   Compiling[0m num-conv v0.2.2
+[1m[92m   Compiling[0m futures-core v0.3.32
+[1m[92m   Compiling[0m powerfmt v0.2.0
+[1m[92m   Compiling[0m winnow v1.0.3
+[1m[92m   Compiling[0m erased-serde v0.4.10
+[1m[92m   Compiling[0m cfg_aliases v0.2.1
+[1m[92m   Compiling[0m time-core v0.1.9
+[1m[92m   Compiling[0m nix v0.31.3
+[1m[92m   Compiling[0m futures-channel v0.3.32
+[1m[92m   Compiling[0m clru v0.6.3
+[1m[92m   Compiling[0m gix-refspec v0.43.0
+[1m[92m   Compiling[0m gix-credentials v0.38.1
+[1m[92m   Compiling[0m tracing v0.1.44
+[1m[92m   Compiling[0m gix-discover v0.53.0
+[1m[92m   Compiling[0m gix-filter v0.32.0
+[1m[92m   Compiling[0m gix-imara-diff v0.2.3
+[1m[92m   Compiling[0m toml_parser v1.1.2+spec-1.1.0
+[1m[92m   Compiling[0m rfc6979 v0.4.0
+[1m[92m   Compiling[0m futures-macro v0.3.32
+[1m[92m   Compiling[0m terminal_size v0.4.4
+[1m[92m   Compiling[0m signature v2.2.0
+[1m[92m   Compiling[0m libsqlite3-sys v0.38.1
+[1m[92m   Compiling[0m indexmap v2.14.0
+[1m[92m   Compiling[0m serde_spanned v1.1.1
+[1m[92m   Compiling[0m toml_datetime v1.1.1+spec-1.1.0
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.18
+[1m[92m   Compiling[0m time v0.3.52
+[1m[92m   Compiling[0m slab v0.4.12
+[1m[92m   Compiling[0m strsim v0.11.1
+[1m[92m   Compiling[0m base64 v0.22.1
+[1m[92m   Compiling[0m toml_writer v1.1.1+spec-1.1.0
+[1m[92m   Compiling[0m minimal-lexical v0.2.1
+[1m[92m   Compiling[0m futures-io v0.3.32
+[1m[92m   Compiling[0m clap_lex v1.1.0
+[1m[92m   Compiling[0m futures-task v0.3.32
+[1m[92m   Compiling[0m portable-atomic v1.13.1
+[1m[92m   Compiling[0m lazy_static v1.5.0
+[1m[92m   Compiling[0m clap_builder v4.6.0
+[1m[92m   Compiling[0m sharded-slab v0.1.7
+[1m[92m   Compiling[0m gix-transport v0.57.2
+[1m[92m   Compiling[0m futures-util v0.3.32
+[1m[92m   Compiling[0m crossbeam-deque v0.8.6
+[1m[92m   Compiling[0m ecdsa v0.16.9
+[1m[92m   Compiling[0m gix-diff v0.65.0
+[1m[92m   Compiling[0m ordered-float v2.10.1
+[1m[92m   Compiling[0m nom v7.1.3
+[1m[92m   Compiling[0m gix-dir v0.27.0
+[1m[92m   Compiling[0m arc-swap v1.9.2
+[1m[92m   Compiling[0m gix-pack v0.72.0
+[1m[92m   Compiling[0m tar v0.4.46
+[1m[92m   Compiling[0m primeorder v0.13.6
+[1m[92m   Compiling[0m flate2 v1.1.9
+[1m[92m   Compiling[0m tracing-log v0.2.0
+[1m[92m   Compiling[0m gix-config v0.58.0
+[1m[92m   Compiling[0m gix-negotiate v0.33.0
+[1m[92m   Compiling[0m gix-shallow v0.12.1
+[1m[92m   Compiling[0m globset v0.4.18
+[1m[92m   Compiling[0m matchers v0.2.0
+[1m[92m   Compiling[0m maybe-async v0.2.11
+[1m[92m   Compiling[0m blake3 v1.8.5
+[1m[92m   Compiling[0m sha2 v0.10.9
+[1m[92m   Compiling[0m bitmaps v2.1.0
+[1m[92m   Compiling[0m im-rc v15.1.0
+[1m[92m   Compiling[0m thread_local v1.1.9
+[1m[92m   Compiling[0m fiat-crypto v0.3.0
+[1m[92m   Compiling[0m nu-ansi-term v0.50.3
+[1m[92m   Compiling[0m unicode-width v0.2.2
+[1m[92m   Compiling[0m tracing-subscriber v0.3.23
+[1m[92m   Compiling[0m gix-submodule v0.32.0
+[1m[92m   Compiling[0m annotate-snippets v0.12.16
+[1m[92m   Compiling[0m sized-chunks v0.6.5
+[1m[92m   Compiling[0m cargo-credential v0.4.10 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/cargo/credential/cargo-credential)
+[1m[92m   Compiling[0m gix-protocol v0.63.0
+[1m[92m   Compiling[0m p384 v0.13.1
+[1m[92m   Compiling[0m ignore v0.4.26
+[1m[92m   Compiling[0m gix-odb v0.82.0
+[1m[92m   Compiling[0m cargo v0.99.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/cargo)
+[1m[92m   Compiling[0m futures-executor v0.3.32
+[1m[92m   Compiling[0m clap v4.6.1
+[1m[92m   Compiling[0m color-print-proc-macro v0.3.7
+[1m[92m   Compiling[0m serde-untagged v0.1.9
+[1m[92m   Compiling[0m gix-status v0.32.0
+[1m[92m   Compiling[0m serde-value v0.7.0
+[1m[92m   Compiling[0m toml v1.1.2+spec-1.1.0
+[1m[92m   Compiling[0m sha2 v0.11.0
+[1m[92m   Compiling[0m chacha20 v0.10.1
+[1m[92m   Compiling[0m regex v1.12.4
+[1m[92m   Compiling[0m rand_xoshiro v0.6.0
+[1m[92m   Compiling[0m anstyle-hyperlink v1.0.2
+[1m[92m   Compiling[0m ed25519-compact v2.3.1
+[1m[92m   Compiling[0m hashlink v0.12.0
+[1m[92m   Compiling[0m semver v1.0.28
+[1m[92m   Compiling[0m http v1.4.2
+[1m[92m   Compiling[0m libloading v0.9.0
+[1m[92m   Compiling[0m shell-escape v0.1.5
+[1m[92m   Compiling[0m ct-codecs v1.1.7
+[1m[92m   Compiling[0m arrayref v0.3.9
+[1m[92m   Compiling[0m supports-unicode v3.0.0
+[1m[92m   Compiling[0m fallible-streaming-iterator v0.1.9
+[1m[92m   Compiling[0m hex v0.4.3
+[1m[92m   Compiling[0m arrayvec v0.7.7
+[1m[92m   Compiling[0m shlex v1.3.0
+[1m[92m   Compiling[0m is_executable v1.0.6
+[1m[92m   Compiling[0m fallible-iterator v0.3.0
+[1m[92m   Compiling[0m either v1.16.0
+[1m[92m   Compiling[0m supports-hyperlinks v3.2.0
+[1m[92m   Compiling[0m anstyle-progress v0.1.0
+[1m[92m   Compiling[0m constant_time_eq v0.4.2
+[1m[92m   Compiling[0m cargo-util-terminal v0.1.1 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/cargo/crates/cargo-util-terminal)
+[1m[92m   Compiling[0m rusqlite v0.40.1
+[1m[92m   Compiling[0m itertools v0.15.0
+[1m[92m   Compiling[0m cargo-util-schemas v0.14.2 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/cargo/crates/cargo-util-schemas)
+[1m[92m   Compiling[0m clap_complete v4.6.6
+[1m[92m   Compiling[0m crates-io v0.41.1 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/cargo/crates/crates-io)
+[1m[92m   Compiling[0m cargo-util v0.2.31 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/cargo/crates/cargo-util)
+[1m[92m   Compiling[0m cargo-credential-libsecret v0.5.9 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/cargo/credential/cargo-credential-libsecret)
+[1m[92m   Compiling[0m orion v0.17.15
+[1m[92m   Compiling[0m rand v0.10.1
+[1m[92m   Compiling[0m gix v0.85.0
+[1m[92m   Compiling[0m color-print v0.3.7
+[1m[92m   Compiling[0m os_info v3.15.0
+[1m[92m   Compiling[0m tracing-chrome v0.7.2
+[1m[92m   Compiling[0m futures v0.3.32
+[1m[92m   Compiling[0m toml_edit v0.25.12+spec-1.1.0
+[1m[92m   Compiling[0m sha1 v0.11.0
+[1m[92m   Compiling[0m hmac v0.13.0
+[1m[92m   Compiling[0m rustfix v0.9.7 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/cargo/crates/rustfix)
+[1m[92m   Compiling[0m opener v0.8.5
+[1m[92m   Compiling[0m async-trait v0.1.89
+[1m[92m   Compiling[0m serde_ignored v0.1.14
+[1m[92m   Compiling[0m pasetors v0.7.8
+[1m[92m   Compiling[0m cargo-platform v0.3.3 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/cargo/crates/cargo-platform)
+[1m[92m   Compiling[0m http-auth v0.1.10
+[1m[92m   Compiling[0m futures-timer v3.0.4
+[1m[92m   Compiling[0m pathdiff v0.2.3
+[1m[92m   Compiling[0m glob v0.3.3
+[1m[92m   Compiling[0m heck v0.5.0
+[1m[92m   Compiling[0m home v0.5.12
+[1m[92m   Compiling[0m rustc-stable-hash v0.1.2
+[1m[92m   Compiling[0m unicase v2.9.0
+[1m[92m   Compiling[0m rustc-hash v2.1.2
+[1m[92m   Compiling[0m git2 v0.21.0
+[1m[92m   Compiling[0m git2-curl v0.22.0
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 1m 48s
+Building stage2 rustdoc_tool_binary (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m   Compiling[0m proc-macro2 v1.0.106
+[1m[92m   Compiling[0m serde_core v1.0.228
+[1m[92m   Compiling[0m unicode-ident v1.0.24
+[1m[92m   Compiling[0m quote v1.0.45
+[1m[92m   Compiling[0m libc v0.2.183
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m version_check v0.9.5
+[1m[92m   Compiling[0m shlex v1.3.0
+[1m[92m   Compiling[0m serde v1.0.228
+[1m[92m   Compiling[0m typenum v1.20.0
+[1m[92m   Compiling[0m memchr v2.8.0
+[1m[92m   Compiling[0m once_cell v1.21.3
+[1m[92m   Compiling[0m cc v1.2.16
+[1m[92m   Compiling[0m regex-syntax v0.8.8
+[1m[92m   Compiling[0m generic-array v0.14.7
+[1m[92m   Compiling[0m parking_lot_core v0.9.12
+[1m[92m   Compiling[0m tracing-core v0.1.34
+[1m[92m   Compiling[0m syn v2.0.117
+[1m[92m   Compiling[0m aho-corasick v1.1.4
+[1m[92m   Compiling[0m winnow v1.0.0
+[1m[92m   Compiling[0m smallvec v1.15.1
+[1m[92m   Compiling[0m scopeguard v1.2.0
+[1m[92m   Compiling[0m crypto-common v0.1.7
+[1m[92m   Compiling[0m block-buffer v0.10.4
+[1m[92m   Compiling[0m rustc-hash v2.1.1
+[1m[92m   Compiling[0m psm v0.1.26
+[1m[92m   Compiling[0m digest v0.10.7
+[1m[92m   Compiling[0m stacker v0.1.21
+[1m[92m   Compiling[0m lock_api v0.4.14
+[1m[92m   Compiling[0m rustix v1.1.2
+[1m[92m   Compiling[0m cpufeatures v0.2.17
+[1m[92m   Compiling[0m getrandom v0.3.3
+[1m[92m   Compiling[0m lazy_static v1.5.0
+[1m[92m   Compiling[0m glob v0.3.3
+[1m[92m   Compiling[0m pin-project-lite v0.2.16
+[1m[92m   Compiling[0m sharded-slab v0.1.7
+[1m[92m   Compiling[0m parking_lot v0.12.5
+[1m[92m   Compiling[0m sha2 v0.10.9
+[1m[92m   Compiling[0m thread_local v1.1.9
+[1m[92m   Compiling[0m linux-raw-sys v0.11.0
+[1m[92m   Compiling[0m minifier v0.3.6
+[1m[92m   Compiling[0m itoa v1.0.15
+[1m[92m   Compiling[0m log v0.4.28
+[1m[92m   Compiling[0m serde_json v1.0.145
+[1m[92m   Compiling[0m bitflags v2.10.0
+[1m[92m   Compiling[0m nu-ansi-term v0.50.3
+[1m[92m   Compiling[0m tracing-log v0.2.0
+[1m[92m   Compiling[0m num_cpus v1.17.0
+[1m[92m   Compiling[0m rustdoc v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/librustdoc)
+[1m[92m   Compiling[0m fastrand v2.3.0
+[1m[92m   Compiling[0m regex-automata v0.4.13
+[1m[92m   Compiling[0m ryu v1.0.20
+[1m[92m   Compiling[0m equivalent v1.0.2
+[1m[92m   Compiling[0m hashbrown v0.17.0
+[1m[92m   Compiling[0m either v1.15.0
+[1m[92m   Compiling[0m basic-toml v0.1.10
+[1m[92m   Compiling[0m itertools v0.15.0
+[1m[92m   Compiling[0m indexmap v2.14.0
+[1m[92m   Compiling[0m threadpool v1.8.1
+[1m[92m   Compiling[0m tempfile v3.23.0
+[1m[92m   Compiling[0m stringdex v0.0.6
+[1m[92m   Compiling[0m base64 v0.21.7
+[1m[92m   Compiling[0m arrayvec v0.7.6
+[1m[92m   Compiling[0m pulldown-cmark-escape v0.11.0
+[1m[92m   Compiling[0m unicode-segmentation v1.12.0
+[1m[92m   Compiling[0m serde_derive v1.0.228
+[1m[92m   Compiling[0m tracing-attributes v0.1.30
+[1m[92m   Compiling[0m tracing v0.1.41
+[1m[92m   Compiling[0m matchers v0.2.0
+[1m[92m   Compiling[0m regex v1.12.2
+[1m[92m   Compiling[0m tracing-subscriber v0.3.20
+[1m[92m   Compiling[0m askama_parser v0.16.0
+[1m[92m   Compiling[0m rustdoc-json-types v0.1.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/rustdoc-json-types)
+[1m[92m   Compiling[0m tracing-tree v0.3.1
+[1m[92m   Compiling[0m askama_derive v0.16.0
+[1m[92m   Compiling[0m askama_macros v0.16.0
+[1m[92m   Compiling[0m askama v0.16.0
+[1m[92m   Compiling[0m rustdoc-tool v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/rustdoc)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 45.58s
+Building stage2 clippy-driver (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m   Compiling[0m serde_core v1.0.228
+[1m[92m   Compiling[0m stable_deref_trait v1.2.1
+[1m[92m   Compiling[0m smallvec v1.15.1
+[1m[92m   Compiling[0m litemap v0.8.1
+[1m[92m   Compiling[0m writeable v0.6.2
+[1m[92m   Compiling[0m icu_properties_data v2.2.0
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m icu_normalizer_data v2.2.0
+[1m[92m   Compiling[0m syn v2.0.117
+[1m[92m   Compiling[0m indexmap v2.14.0
+[1m[92m   Compiling[0m rustc_apfloat v0.2.3+llvm-462a31f5a5ab
+[1m[92m   Compiling[0m bitflags v2.10.0
+[1m[92m   Compiling[0m winnow v0.5.40
+[1m[92m   Compiling[0m thiserror v2.0.17
+[1m[92m   Compiling[0m serde_json v1.0.145
+[1m[92m   Compiling[0m camino v1.2.1
+[1m[92m   Compiling[0m itertools v0.12.1
+[1m[92m   Compiling[0m tinyvec_macros v0.1.1
+[1m[92m   Compiling[0m percent-encoding v2.3.2
+[1m[92m   Compiling[0m memchr v2.8.0
+[1m[92m   Compiling[0m minimal-lexical v0.2.1
+[1m[92m   Compiling[0m winnow v1.0.0
+[1m[92m   Compiling[0m form_urlencoded v1.2.2
+[1m[92m   Compiling[0m tinyvec v1.10.0
+[1m[92m   Compiling[0m winnow v0.7.13
+[1m[92m   Compiling[0m nom v7.1.3
+[1m[92m   Compiling[0m toml_datetime v0.7.3
+[1m[92m   Compiling[0m rustc_tools_util v0.4.2 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/clippy/rustc_tools_util)
+[1m[92m   Compiling[0m toml_parser v1.1.0+spec-1.1.0
+[1m[92m   Compiling[0m utf8parse v0.2.2
+[1m[92m   Compiling[0m serde_spanned v1.1.0
+[1m[92m   Compiling[0m anstyle-parse v0.2.7
+[1m[92m   Compiling[0m clippy v0.1.98 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/clippy)
+[1m[92m   Compiling[0m unicode-normalization v0.1.25
+[1m[92m   Compiling[0m unicode-script v0.5.7
+[1m[92m   Compiling[0m colorchoice v1.0.4
+[1m[92m   Compiling[0m anstyle v1.0.13
+[1m[92m   Compiling[0m is_terminal_polyfill v1.70.2
+[1m[92m   Compiling[0m quine-mc_cluskey v0.2.4
+[1m[92m   Compiling[0m anstyle-query v1.1.5
+[1m[92m   Compiling[0m declare_clippy_lint v0.1.98 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/clippy/declare_clippy_lint)
+[1m[92m   Compiling[0m anstream v0.6.21
+[1m[92m   Compiling[0m termize v0.2.1
+[1m[92m   Compiling[0m toml v0.9.8
+[1m[92m   Compiling[0m semver v1.0.27
+[1m[92m   Compiling[0m synstructure v0.13.2
+[1m[92m   Compiling[0m zerovec-derive v0.11.3
+[1m[92m   Compiling[0m displaydoc v0.2.5
+[1m[92m   Compiling[0m serde_derive v1.0.228
+[1m[92m   Compiling[0m thiserror-impl v2.0.17
+[1m[92m   Compiling[0m color-print-proc-macro v0.3.7
+[1m[92m   Compiling[0m zerofrom-derive v0.1.6
+[1m[92m   Compiling[0m yoke-derive v0.8.2
+[1m[92m   Compiling[0m color-print v0.3.7
+[1m[92m   Compiling[0m zerofrom v0.1.6
+[1m[92m   Compiling[0m yoke v0.8.2
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m potential_utf v0.1.4
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m serde v1.0.228
+[1m[92m   Compiling[0m toml_datetime v0.6.11
+[1m[92m   Compiling[0m serde_spanned v0.6.9
+[1m[92m   Compiling[0m clippy_utils v0.1.98 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/clippy/clippy_utils)
+[1m[92m   Compiling[0m cargo-platform v0.3.1
+[1m[92m   Compiling[0m toml_edit v0.19.15
+[1m[92m   Compiling[0m cargo_metadata v0.23.1
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m icu_normalizer v2.2.0
+[1m[92m   Compiling[0m icu_properties v2.2.0
+[1m[92m   Compiling[0m toml v0.7.8
+[1m[92m   Compiling[0m idna_adapter v1.2.1
+[1m[92m   Compiling[0m idna v1.1.0
+[1m[92m   Compiling[0m url v2.5.7
+[1m[92m   Compiling[0m clippy_config v0.1.98 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/clippy/clippy_config)
+[1m[92m   Compiling[0m clippy_lints v0.1.98 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/clippy/clippy_lints)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 58.87s
+Building stage2 rustfmt (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m   Compiling[0m serde_core v1.0.228
+[1m[92m   Compiling[0m memchr v2.8.0
+[1m[92m   Compiling[0m crossbeam-utils v0.8.21
+[1m[92m   Compiling[0m anstyle-parse v1.0.0
+[1m[92m   Compiling[0m syn v2.0.117
+[1m[92m   Compiling[0m thiserror v1.0.69
+[1m[92m   Compiling[0m strsim v0.11.1
+[1m[92m   Compiling[0m heck v0.5.0
+[1m[92m   Compiling[0m clap_lex v1.1.0
+[1m[92m   Compiling[0m anyhow v1.0.102
+[1m[92m   Compiling[0m anstream v1.0.0
+[1m[92m   Compiling[0m option-ext v0.2.0
+[1m[92m   Compiling[0m same-file v1.0.6
+[1m[92m   Compiling[0m unicode-width v0.2.2
+[1m[92m   Compiling[0m tracing v0.1.41
+[1m[92m   Compiling[0m dirs-sys v0.5.0
+[1m[92m   Compiling[0m walkdir v2.5.0
+[1m[92m   Compiling[0m clap_builder v4.6.0
+[1m[92m   Compiling[0m toml_writer v1.1.0+spec-1.1.0
+[1m[92m   Compiling[0m rustfmt-nightly v1.9.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/rustfmt)
+[1m[92m   Compiling[0m dirs v6.0.0
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.18
+[1m[92m   Compiling[0m annotate-snippets v0.11.5
+[1m[92m   Compiling[0m getopts v0.2.24
+[1m[92m   Compiling[0m unicode-width v0.1.14
+[1m[92m   Compiling[0m bytecount v0.6.9
+[1m[92m   Compiling[0m aho-corasick v1.1.4
+[1m[92m   Compiling[0m bstr v1.12.1
+[1m[92m   Compiling[0m crossbeam-deque v0.8.6
+[1m[92m   Compiling[0m term v1.2.1
+[1m[92m   Compiling[0m unicode-properties v0.1.4
+[1m[92m   Compiling[0m diff v0.1.13
+[1m[92m   Compiling[0m toml_datetime v0.7.3
+[1m[92m   Compiling[0m camino v1.2.1
+[1m[92m   Compiling[0m semver v1.0.27
+[1m[92m   Compiling[0m serde_json v1.0.145
+[1m[92m   Compiling[0m serde_spanned v1.1.0
+[1m[92m   Compiling[0m toml v0.9.8
+[1m[92m   Compiling[0m regex-automata v0.4.13
+[1m[92m   Compiling[0m serde_derive v1.0.228
+[1m[92m   Compiling[0m clap_derive v4.6.1
+[1m[92m   Compiling[0m thiserror-impl v1.0.69
+[1m[92m   Compiling[0m rustfmt-config_proc_macro v0.3.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/rustfmt/config_proc_macro)
+[1m[92m   Compiling[0m clap v4.6.1
+[1m[92m   Compiling[0m clap-cargo v0.12.0
+[1m[92m   Compiling[0m serde v1.0.228
+[1m[92m   Compiling[0m cargo-platform v0.1.9
+[1m[92m   Compiling[0m cargo_metadata v0.18.1
+[1m[92m   Compiling[0m globset v0.4.18
+[1m[92m   Compiling[0m matchers v0.2.0
+[1m[92m   Compiling[0m regex v1.12.2
+[1m[92m   Compiling[0m tracing-subscriber v0.3.20
+[1m[92m   Compiling[0m ignore v0.4.25
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 31.09s
+Build completed successfully in 0:12:44
+==> Installing to /var/tmpdir/hokuto/rust-01/output
+Building bootstrap
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`dev` profile [unoptimized]]8;;\ target(s) in 0.31s
+fatal: not a git repository (or any of the parent directories): .git
+Building stage1 compiler artifacts (stage0 -> stage1, x86_64-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 0.41s
+Creating a sysroot for stage1 compiler (use `rustup toolchain link 'name' build/host/stage1`)
+Building stage1 library artifacts (stage1 -> stage1, x86_64-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`dist` profile [optimized]]8;;\ target(s) in 0.37s
+Building stage1 rust-installer (stage0 -> stage1, x86_64-unknown-linux-gnu)
+[1m[92m   Compiling[0m proc-macro2 v1.0.106
+[1m[92m   Compiling[0m libc v0.2.183
+[1m[92m   Compiling[0m crossbeam-utils v0.8.21
+[1m[92m   Compiling[0m unicode-ident v1.0.24
+[1m[92m   Compiling[0m shlex v1.3.0
+[1m[92m   Compiling[0m quote v1.0.45
+[1m[92m   Compiling[0m pkg-config v0.3.32
+[1m[92m   Compiling[0m rustix v1.1.2
+[1m[92m   Compiling[0m utf8parse v0.2.2
+[1m[92m   Compiling[0m anstyle v1.0.13
+[1m[92m   Compiling[0m linux-raw-sys v0.11.0
+[1m[92m   Compiling[0m anstyle-parse v1.0.0
+[1m[92m   Compiling[0m cc v1.2.16
+[1m[92m   Compiling[0m bitflags v2.10.0
+[1m[92m   Compiling[0m anstyle-query v1.1.5
+[1m[92m   Compiling[0m rayon-core v1.13.0
+[1m[92m   Compiling[0m colorchoice v1.0.4
+[1m[92m   Compiling[0m is_terminal_polyfill v1.70.2
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m anstream v1.0.0
+[1m[92m   Compiling[0m clap_lex v1.1.0
+[1m[92m   Compiling[0m heck v0.5.0
+[1m[92m   Compiling[0m strsim v0.11.1
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.18
+[1m[92m   Compiling[0m anyhow v1.0.102
+[1m[92m   Compiling[0m clap_builder v4.6.0
+[1m[92m   Compiling[0m either v1.15.0
+[1m[92m   Compiling[0m same-file v1.0.6
+[1m[92m   Compiling[0m crossbeam-deque v0.8.6
+[1m[92m   Compiling[0m syn v2.0.117
+[1m[92m   Compiling[0m zlib-rs v0.6.3
+[1m[92m   Compiling[0m walkdir v2.5.0
+[1m[92m   Compiling[0m filetime v0.2.27
+[1m[92m   Compiling[0m rayon v1.11.0
+[1m[92m   Compiling[0m lzma-sys v0.1.20
+[1m[92m   Compiling[0m xattr v1.6.1
+[1m[92m   Compiling[0m tar v0.4.45
+[1m[92m   Compiling[0m clap_derive v4.6.1
+[1m[92m   Compiling[0m flate2 v1.1.9
+[1m[92m   Compiling[0m clap v4.6.1
+[1m[92m   Compiling[0m xz2 v0.1.7
+[1m[92m   Compiling[0m installer v0.0.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/rust-installer)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 9.52s
+Dist rust-std-1.98.1-x86_64-unknown-linux-gnu
+	finished in 0.008 seconds
+Installing stage2 std (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /var/tmpdir/hokuto/rust-01/output/usr/lib/rustlib/uninstall.sh
+install: installing component 'rust-std-x86_64-unknown-linux-gnu'
+
+    rust std installed.
+
+Building stage1 library artifacts (stage1:x86_64-unknown-linux-gnu -> stage1:i686-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`dist` profile [optimized]]8;;\ target(s) in 0.33s
+Dist rust-std-1.98.1-i686-unknown-linux-gnu
+	finished in 0.008 seconds
+Installing stage2 std (stage1:x86_64-unknown-linux-gnu -> stage2:i686-unknown-linux-gnu)
+install: creating uninstall script at /var/tmpdir/hokuto/rust-01/output/usr/lib/rustlib/uninstall.sh
+install: installing component 'rust-std-i686-unknown-linux-gnu'
+
+    rust std installed.
+
+Building stage2 compiler artifacts (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 0.47s
+Creating a sysroot for stage2 compiler (use `rustup toolchain link 'name' build/host/stage2`)
+Building stage2 rustdoc_tool_binary (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 0.54s
+generate-copyright
+Building stage1 generate-copyright (stage0 -> stage1, x86_64-unknown-linux-gnu)
+[1m[92m   Compiling[0m serde_core v1.0.228
+[1m[92m   Compiling[0m stable_deref_trait v1.2.1
+[1m[92m   Compiling[0m serde v1.0.228
+[1m[92m   Compiling[0m writeable v0.6.2
+[1m[92m   Compiling[0m litemap v0.8.1
+[1m[92m   Compiling[0m icu_properties_data v2.2.0
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m icu_normalizer_data v2.2.0
+[1m[92m   Compiling[0m syn v2.0.117
+[1m[92m   Compiling[0m autocfg v1.5.0
+[1m[92m   Compiling[0m typeid v1.0.3
+[1m[92m   Compiling[0m smallvec v1.15.1
+[1m[92m   Compiling[0m memchr v2.8.0
+[1m[92m   Compiling[0m erased-serde v0.4.9
+[1m[92m   Compiling[0m equivalent v1.0.2
+[1m[92m   Compiling[0m percent-encoding v2.3.2
+[1m[92m   Compiling[0m hashbrown v0.17.0
+[1m[92m   Compiling[0m num-traits v0.2.19
+[1m[92m   Compiling[0m winnow v0.7.13
+[1m[92m   Compiling[0m thiserror v2.0.17
+[1m[92m   Compiling[0m toml_write v0.1.2
+[1m[92m   Compiling[0m rustc-hash v2.1.1
+[1m[92m   Compiling[0m form_urlencoded v1.2.2
+[1m[92m   Compiling[0m winnow v1.0.0
+[1m[92m   Compiling[0m glob v0.3.3
+[1m[92m   Compiling[0m itoa v1.0.15
+[1m[92m   Compiling[0m camino v1.2.1
+[1m[92m   Compiling[0m serde_json v1.0.145
+[1m[92m   Compiling[0m unicode-xid v0.2.6
+[1m[92m   Compiling[0m indexmap v2.14.0
+[1m[92m   Compiling[0m ryu v1.0.20
+[1m[92m   Compiling[0m thiserror v1.0.69
+[1m[92m   Compiling[0m ordered-float v2.10.1
+[1m[92m   Compiling[0m semver v1.0.27
+[1m[92m   Compiling[0m serde-untagged v0.1.9
+[1m[92m   Compiling[0m synstructure v0.13.2
+[1m[92m   Compiling[0m basic-toml v0.1.10
+[1m[92m   Compiling[0m serde_derive v1.0.228
+[1m[92m   Compiling[0m zerovec-derive v0.11.3
+[1m[92m   Compiling[0m displaydoc v0.2.5
+[1m[92m   Compiling[0m thiserror-impl v2.0.17
+[1m[92m   Compiling[0m thiserror-impl v1.0.69
+[1m[92m   Compiling[0m zerofrom-derive v0.1.6
+[1m[92m   Compiling[0m yoke-derive v0.8.2
+[1m[92m   Compiling[0m zerofrom v0.1.6
+[1m[92m   Compiling[0m yoke v0.8.2
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m askama_parser v0.16.0
+[1m[92m   Compiling[0m toml_datetime v0.6.11
+[1m[92m   Compiling[0m serde_spanned v0.6.9
+[1m[92m   Compiling[0m serde-value v0.7.0
+[1m[92m   Compiling[0m cargo-platform v0.2.0
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m potential_utf v0.1.4
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m toml_edit v0.22.27
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m icu_normalizer v2.2.0
+[1m[92m   Compiling[0m icu_properties v2.2.0
+[1m[92m   Compiling[0m toml v0.8.23
+[1m[92m   Compiling[0m idna_adapter v1.2.1
+[1m[92m   Compiling[0m idna v1.1.0
+[1m[92m   Compiling[0m url v2.5.7
+[1m[92m   Compiling[0m askama_derive v0.16.0
+[1m[92m   Compiling[0m cargo-util-schemas v0.8.2
+[1m[92m   Compiling[0m askama_macros v0.16.0
+[1m[92m   Compiling[0m askama v0.16.0
+[1m[92m   Compiling[0m cargo_metadata v0.21.0
+[1m[92m   Compiling[0m generate-copyright v0.1.0 (/var/tmpdir/hokuto/rust-01/build/rustc-1.98.1-src/src/tools/generate-copyright)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 10.12s
+Dist rustc-1.98.1-x86_64-unknown-linux-gnu
+	finished in 0.023 seconds
+Installing stage2 rustc (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /var/tmpdir/hokuto/rust-01/output/usr/lib/rustlib/uninstall.sh
+install: installing component 'rustc'
+
+    rustc installed.
+
+Building stage2 cargo (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 0.63s
+Dist cargo-1.98.1-x86_64-unknown-linux-gnu
+	finished in 0.004 seconds
+Installing stage2 cargo (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /var/tmpdir/hokuto/rust-01/output/usr/lib/rustlib/uninstall.sh
+install: installing component 'cargo'
+
+    cargo installed.
+
+Building stage2 rustfmt (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 0.56s
+Building stage2 cargo-fmt (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 0.56s
+Dist rustfmt-1.98.1-x86_64-unknown-linux-gnu
+	finished in 0.002 seconds
+Installing stage2 rustfmt (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /var/tmpdir/hokuto/rust-01/output/usr/lib/rustlib/uninstall.sh
+install: installing component 'rustfmt-preview'
+
+    rustfmt installed.
+
+Building stage2 clippy-driver (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 0.57s
+Building stage2 cargo-clippy (stage1 -> stage2, x86_64-unknown-linux-gnu)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 0.48s
+Dist clippy-1.98.1-x86_64-unknown-linux-gnu
+	finished in 0.002 seconds
+Installing stage2 clippy (stage1 -> stage2, x86_64-unknown-linux-gnu)
+install: creating uninstall script at /var/tmpdir/hokuto/rust-01/output/usr/lib/rustlib/uninstall.sh
+install: installing component 'clippy-preview'
+
+    clippy installed.
+
+Skipping LlvmTools (x86_64-unknown-linux-gnu): external LLVM
+skipping llvm-tools (x86_64-unknown-linux-gnu): external LLVM
+Build completed successfully in 0:00:36
+renamed '/var/tmpdir/hokuto/rust-01/output/usr/lib/rustlib/i686-unknown-linux-gnu' -> '/var/tmpdir/hokuto/rust-01/split/lib32-rust-libs/usr/lib/rustlib/i686-unknown-linux-gnu'
+mkdir: created directory 'usr/lib32'
+'usr/lib32/libstd-3379ab41e4ef0a24.so' -> '../lib/rustlib/i686-unknown-linux-gnu/lib/libstd-3379ab41e4ef0a24.so'
+
+Script done on 2026-09-04 12:44:34+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mrust[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mFri, 04 Sep 2026 05:44:34 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m13m38s[0m
