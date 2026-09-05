@@ -1,0 +1,1330 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mswig[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mswig 4.5.1-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 05 Sep 2026 06:26:07 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mswig[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mpcre2 zlib-ng[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mswig[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pcre2-10.48-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1 zlib-ng-2.3.3-1[0m
+
+Script started on 2026-09-05 13:26:07+07:00 [COMMAND="cd /var/tmp/hokuto/swig-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/swig-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/swig-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/swig-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/swig-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/swig-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/swig-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/swig-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/swig-01/build/.cache' /repo/sauzeros/core/swig/build /var/tmp/hokuto/swig-01/output 4.5.1 swig" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking CC to use for compiling... cc
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking for c++ option to enable C++11 features... -std=gnu++11
+checking dependency style of c++ -std=gnu++11... gcc3
+checking CXX to use for compiling... c++ -std=gnu++11
+checking maximum warning verbosity option... -Wall -W -pedantic for C++ -Wall -W -pedantic for C
+checking CFLAGS to compile SWIG executable... -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic
+checking CXXFLAGS to compile SWIG executable... -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether to enable PCRE2 support... yes
+checking whether to use local PCRE2... no
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for pcre2-config... /usr/bin/pcre2-config
+checking whether to enable ccache-swig... yes
+
+Checking packages required for SWIG developers.
+Note : None of the following packages are required for users to compile and install SWIG from the distributed tarball
+
+checking for bison... bison
+
+Checking for installed target languages and other information in order to compile and run
+the examples and test-suite invoked by 'make check'.
+Note : None of the following packages are required for users to compile and install SWIG from the distributed tarball
+
+checking for boostlib >=  (102000)... configure: We could not detect the boost libraries (version  or higher). If you have a staged boost library (still not installed) please specify $BOOST_ROOT in your environment and do not give a PATH to --with-boost option.  If you are sure you have boost installed, then check your version number looking in <boost/version.hpp>. See http://randspringer.de/boost for more documentation.
+checking SO... .so
+checking LDSHARED... $(CC) -shared
+checking CXXSHARED... $(CC) -shared
+checking TRYLINKINGWITHCXX... CXXSHARED= $(CXX) -shared 
+checking CCSHARED... -fPIC
+checking RPATH... -Xlinker -rpath $(exec_prefix)/lib -Xlinker -rpath .
+checking LINKFORSHARED... -Xlinker -export-dynamic
+checking CFLAGS to use for testing (PLATCFLAGS)... 
+checking whether to attempt to enable C++11 and later C++ standards testing... yes
+checking whether c++ -std=gnu++11 supports C++20 features with -std=c++20... yes
+checking whether C++11 to C++20 testing is enabled... yes
+checking CXXFLAGS to use for testing (PLATCXXFLAGS)... -std=c++20
+checking if compiler supports pre-compiled headers... yes
+checking for dlopen in -ldl... yes
+checking for shl_load in -ldld... no
+checking for main in -lieee... no
+checking for pkg-config... /usr/bin/pkg-config
+checking for android... no
+checking for adb... no
+checking for ant... no
+checking for ndk-build... no
+checking for mono-csc... no
+checking for gmcs... no
+checking for mcs... no
+checking for cscc... no
+checking for dmd... no
+checking for ldmd2... no
+checking for ldc2... no
+checking for gdmd... no
+checking for go... go
+checking whether go version is too old... no
+checking for gccgo... no
+checking for guile-config... no
+checking for java JDK... no (JAVA_HOME is not defined)
+checking for java... no
+checking for kaffe... no
+checking for guavac... no
+checking for javac... no
+checking for java include file jni.h... not found
+checking for node... no
+checking for nodejs... no
+checking for JavaScriptCore/Webkit... not found
+checking for V8 Javascript v8.h... not found
+checking for lua5.4... no
+checking for lua5.3... no
+checking for lua5.2... no
+checking for lua5.1... no
+checking for lua... /usr/bin/lua
+checking Lua version... Lua 5.5.x
+checking whether Lua dynamic loading is enabled... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for lua.h... yes
+checking for library containing lua_close... -llua
+checking for ocamlc... no
+checking for camlp4... no
+checking for ocamldlgen... no
+checking for ocamlfind... no
+checking for ocamlmktop... no
+checking for octave-cli... no
+checking for perl... perl
+checking for Perl5 header files... /usr/lib/perl5/5.44.0/core_perl/CORE
+checking for Perl5 library... perl
+checking for Perl5 ccflags... -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2
+checking for Perl5 ccdlflags... -Wl,-E -Wl,-rpath,/usr/lib/perl5/5.44.0/core_perl/CORE
+checking for Perl5 cccdlflags... -fPIC
+checking for Perl5 ldflags...  -fstack-protector-strong -L/usr/local/lib
+checking for Perl5 Test::More module... found
+checking for php8.3... no
+checking for php8.2... no
+checking for php8.1... no
+checking for php8.0... no
+checking for php... no
+checking for python... python
+checking for python major version number... 3
+checking for Python 2.x os.name... posix
+checking for Python 2.x path separator... /
+checking for python3... python3
+checking for python3-config... python3-config
+checking for python3 major version number... 3
+checking for Python 3.x os.name... posix
+checking for Python 3.x path separator... /
+checking for Python 3.x prefix... /usr
+checking for Python 3.x exec-prefix... /usr
+checking for Python 3.x version... string
+checking for Python 3.x lib dir... lib
+checking for Python 3.x header files... -I/usr/include/python3.14 -I/usr/include/python3.14
+checking for Python 3.x library directory... /usr/lib
+checking for Python 3.x library... -lstring
+checking for python 3.x three digit version... 314
+checking for pycodestyle... no
+checking for abi3audit... no
+checking for R... no
+checking for ruby... no
+checking for Ruby header files... could not figure out how to run ruby
+checking for scilab... no
+checking for Tcl configuration... no
+checking for Tcl header files... checking how to run the C preprocessor... cc -E
+not found
+checking for Tcl library... not found
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating Examples/Makefile
+config.status: creating Examples/test-suite/errors/Makefile
+config.status: creating Examples/test-suite/c/Makefile
+config.status: creating Examples/test-suite/csharp/Makefile
+config.status: creating Examples/test-suite/d/Makefile
+config.status: creating Examples/test-suite/go/Makefile
+config.status: creating Examples/test-suite/guile/Makefile
+config.status: creating Examples/test-suite/java/Makefile
+config.status: creating Examples/test-suite/javascript/Makefile
+config.status: creating Examples/test-suite/lua/Makefile
+config.status: creating Examples/test-suite/ocaml/Makefile
+config.status: creating Examples/test-suite/octave/Makefile
+config.status: creating Examples/test-suite/perl5/Makefile
+config.status: creating Examples/test-suite/php/Makefile
+config.status: creating Examples/test-suite/python/Makefile
+config.status: creating Examples/test-suite/r/Makefile
+config.status: creating Examples/test-suite/ruby/Makefile
+config.status: creating Examples/test-suite/scilab/Makefile
+config.status: creating Examples/test-suite/tcl/Makefile
+config.status: creating Source/Makefile
+config.status: creating Tools/javascript/Makefile
+config.status: creating preinst-swig
+config.status: creating CCache/ccache_swig_config.h
+config.status: creating Source/Include/swigconfig.h
+config.status: executing depfiles commands
+config.status: executing Examples commands
+=== configuring in CCache (/var/tmp/hokuto/swig-01/build/CCache)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  'CC=cc' 'CFLAGS=-march=native -O2 -pipe -fomit-frame-pointer -flto=10' 'LDFLAGS=-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' 'CXX=c++' 'CXXFLAGS=-march=native -O2 -pipe -fomit-frame-pointer -flto=10' --cache-file=/dev/null --srcdir=.
+configure: loading site script /usr/share/config.site
+configure: Configuring ccache
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking how to run the C preprocessor... cc -E
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for ctype.h... yes
+checking for strings.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for pwd.h... yes
+checking for sys/time.h... yes
+checking for realpath... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for vasprintf... yes
+checking for asprintf... yes
+checking for mkstemp... yes
+checking for gethostname... yes
+checking for getpwuid... yes
+checking for utimes... yes
+checking for compar_fn_t in stdlib.h... yes
+checking for C99 vsnprintf... yes
+checking for zlib.h... yes
+checking for gzdopen in -lz... yes
+configure: creating ./config.status
+config.status: creating config_win32.h
+config.status: creating Makefile
+config.status: creating config.h
+
+The SWIG test-suite and examples are configured for the following languages:
+c go lua perl5 python 
+
+test -z "1" || make -C CCache
+make[1]: Entering directory '/var/tmp/hokuto/swig-01/build/Source'
+make  all-am
+make[1]: Entering directory '/var/tmp/hokuto/swig-01/build/CCache'
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o ccache.o ccache.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o mdfour.o mdfour.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o hash.o hash.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o execute.o execute.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o util.o util.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o args.o args.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o stats.o stats.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o cleanup.o cleanup.c
+make[2]: Entering directory '/var/tmp/hokuto/swig-01/build/Source'
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o snprintf.o snprintf.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I.   -c -o unify.o unify.c
+depbase=`echo CParse/cscanner.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT CParse/cscanner.o -MD -MP -MF $depbase.Tpo -c -o CParse/cscanner.o CParse/cscanner.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CParse/parser.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT CParse/parser.o -MD -MP -MF $depbase.Tpo -c -o CParse/parser.o CParse/parser.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo CParse/templ.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT CParse/templ.o -MD -MP -MF $depbase.Tpo -c -o CParse/templ.o CParse/templ.c &&\
+mv -f $depbase.Tpo $depbase.Po
+[01m[Kutil.c:[m[K In function ‘[01m[Kstr_basename[m[K’:
+[01m[Kutil.c:600:19:[m[K [01;35m[Kwarning: [m[Kinitialization discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  600 |         char *p = [01;35m[Kstrrchr[m[K(s, '/');
+      |                   [01;35m[K^~~~~~~[m[K
+depbase=`echo CParse/util.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT CParse/util.o -MD -MP -MF $depbase.Tpo -c -o CParse/util.o CParse/util.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/base.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT DOH/base.o -MD -MP -MF $depbase.Tpo -c -o DOH/base.o DOH/base.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/file.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT DOH/file.o -MD -MP -MF $depbase.Tpo -c -o DOH/file.o DOH/file.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/fio.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT DOH/fio.o -MD -MP -MF $depbase.Tpo -c -o DOH/fio.o DOH/fio.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/hash.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT DOH/hash.o -MD -MP -MF $depbase.Tpo -c -o DOH/hash.o DOH/hash.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/list.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT DOH/list.o -MD -MP -MF $depbase.Tpo -c -o DOH/list.o DOH/list.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/memory.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT DOH/memory.o -MD -MP -MF $depbase.Tpo -c -o DOH/memory.o DOH/memory.c &&\
+mv -f $depbase.Tpo $depbase.Po
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -I. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o ccache-swig ccache.o mdfour.o hash.o execute.o util.o args.o stats.o cleanup.o snprintf.o unify.o -lz 
+depbase=`echo DOH/string.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT DOH/string.o -MD -MP -MF $depbase.Tpo -c -o DOH/string.o DOH/string.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo DOH/void.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT DOH/void.o -MD -MP -MF $depbase.Tpo -c -o DOH/void.o DOH/void.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Doxygen/csharpdoc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Doxygen/csharpdoc.o -MD -MP -MF $depbase.Tpo -c -o Doxygen/csharpdoc.o Doxygen/csharpdoc.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Doxygen/doxyentity.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Doxygen/doxyentity.o -MD -MP -MF $depbase.Tpo -c -o Doxygen/doxyentity.o Doxygen/doxyentity.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Doxygen/doxyparser.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Doxygen/doxyparser.o -MD -MP -MF $depbase.Tpo -c -o Doxygen/doxyparser.o Doxygen/doxyparser.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Doxygen/doxytranslator.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Doxygen/doxytranslator.o -MD -MP -MF $depbase.Tpo -c -o Doxygen/doxytranslator.o Doxygen/doxytranslator.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Doxygen/javadoc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Doxygen/javadoc.o -MD -MP -MF $depbase.Tpo -c -o Doxygen/javadoc.o Doxygen/javadoc.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Doxygen/pydoc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Doxygen/pydoc.o -MD -MP -MF $depbase.Tpo -c -o Doxygen/pydoc.o Doxygen/pydoc.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/allocate.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/allocate.o -MD -MP -MF $depbase.Tpo -c -o Modules/allocate.o Modules/allocate.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/contract.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/contract.o -MD -MP -MF $depbase.Tpo -c -o Modules/contract.o Modules/contract.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/c.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/c.o -MD -MP -MF $depbase.Tpo -c -o Modules/c.o Modules/c.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/csharp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/csharp.o -MD -MP -MF $depbase.Tpo -c -o Modules/csharp.o Modules/csharp.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/d.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/d.o -MD -MP -MF $depbase.Tpo -c -o Modules/d.o Modules/d.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/directors.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/directors.o -MD -MP -MF $depbase.Tpo -c -o Modules/directors.o Modules/directors.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/emit.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/emit.o -MD -MP -MF $depbase.Tpo -c -o Modules/emit.o Modules/emit.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/go.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/go.o -MD -MP -MF $depbase.Tpo -c -o Modules/go.o Modules/go.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/guile.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/guile.o -MD -MP -MF $depbase.Tpo -c -o Modules/guile.o Modules/guile.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/interface.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/interface.o -MD -MP -MF $depbase.Tpo -c -o Modules/interface.o Modules/interface.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/java.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/java.o -MD -MP -MF $depbase.Tpo -c -o Modules/java.o Modules/java.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/javascript.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/javascript.o -MD -MP -MF $depbase.Tpo -c -o Modules/javascript.o Modules/javascript.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/lang.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/lang.o -MD -MP -MF $depbase.Tpo -c -o Modules/lang.o Modules/lang.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/lua.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/lua.o -MD -MP -MF $depbase.Tpo -c -o Modules/lua.o Modules/lua.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/main.o -MD -MP -MF $depbase.Tpo -c -o Modules/main.o Modules/main.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/nested.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/nested.o -MD -MP -MF $depbase.Tpo -c -o Modules/nested.o Modules/nested.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/ocaml.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/ocaml.o -MD -MP -MF $depbase.Tpo -c -o Modules/ocaml.o Modules/ocaml.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+make[1]: Leaving directory '/var/tmp/hokuto/swig-01/build/CCache'
+depbase=`echo Modules/octave.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/octave.o -MD -MP -MF $depbase.Tpo -c -o Modules/octave.o Modules/octave.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/overload.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/overload.o -MD -MP -MF $depbase.Tpo -c -o Modules/overload.o Modules/overload.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/perl5.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/perl5.o -MD -MP -MF $depbase.Tpo -c -o Modules/perl5.o Modules/perl5.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/php.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/php.o -MD -MP -MF $depbase.Tpo -c -o Modules/php.o Modules/php.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/python.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/python.o -MD -MP -MF $depbase.Tpo -c -o Modules/python.o Modules/python.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/r.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/r.o -MD -MP -MF $depbase.Tpo -c -o Modules/r.o Modules/r.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/ruby.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/ruby.o -MD -MP -MF $depbase.Tpo -c -o Modules/ruby.o Modules/ruby.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/scilab.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/scilab.o -MD -MP -MF $depbase.Tpo -c -o Modules/scilab.o Modules/scilab.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/swigmain.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/swigmain.o -MD -MP -MF $depbase.Tpo -c -o Modules/swigmain.o Modules/swigmain.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/tcl8.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/tcl8.o -MD -MP -MF $depbase.Tpo -c -o Modules/tcl8.o Modules/tcl8.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/typepass.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/typepass.o -MD -MP -MF $depbase.Tpo -c -o Modules/typepass.o Modules/typepass.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/utils.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/utils.o -MD -MP -MF $depbase.Tpo -c -o Modules/utils.o Modules/utils.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Modules/xml.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+c++ -std=gnu++11 -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Modules/xml.o -MD -MP -MF $depbase.Tpo -c -o Modules/xml.o Modules/xml.cxx &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Preprocessor/cpp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Preprocessor/cpp.o -MD -MP -MF $depbase.Tpo -c -o Preprocessor/cpp.o Preprocessor/cpp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Preprocessor/expr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Preprocessor/expr.o -MD -MP -MF $depbase.Tpo -c -o Preprocessor/expr.o Preprocessor/expr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/cwrap.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/cwrap.o -MD -MP -MF $depbase.Tpo -c -o Swig/cwrap.o Swig/cwrap.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/deprecate.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/deprecate.o -MD -MP -MF $depbase.Tpo -c -o Swig/deprecate.o Swig/deprecate.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/error.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/error.o -MD -MP -MF $depbase.Tpo -c -o Swig/error.o Swig/error.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/extend.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/extend.o -MD -MP -MF $depbase.Tpo -c -o Swig/extend.o Swig/extend.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/fragment.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/fragment.o -MD -MP -MF $depbase.Tpo -c -o Swig/fragment.o Swig/fragment.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/getopt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/getopt.o -MD -MP -MF $depbase.Tpo -c -o Swig/getopt.o Swig/getopt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/include.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/include.o -MD -MP -MF $depbase.Tpo -c -o Swig/include.o Swig/include.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/misc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/misc.o -MD -MP -MF $depbase.Tpo -c -o Swig/misc.o Swig/misc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/naming.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/naming.o -MD -MP -MF $depbase.Tpo -c -o Swig/naming.o Swig/naming.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/parms.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/parms.o -MD -MP -MF $depbase.Tpo -c -o Swig/parms.o Swig/parms.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/scanner.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/scanner.o -MD -MP -MF $depbase.Tpo -c -o Swig/scanner.o Swig/scanner.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/stype.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/stype.o -MD -MP -MF $depbase.Tpo -c -o Swig/stype.o Swig/stype.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/symbol.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/symbol.o -MD -MP -MF $depbase.Tpo -c -o Swig/symbol.o Swig/symbol.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/tree.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/tree.o -MD -MP -MF $depbase.Tpo -c -o Swig/tree.o Swig/tree.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/typemap.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/typemap.o -MD -MP -MF $depbase.Tpo -c -o Swig/typemap.o Swig/typemap.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/typeobj.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/typeobj.o -MD -MP -MF $depbase.Tpo -c -o Swig/typeobj.o Swig/typeobj.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/typesys.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/typesys.o -MD -MP -MF $depbase.Tpo -c -o Swig/typesys.o Swig/typesys.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Swig/wrapfunc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+cc -DHAVE_CONFIG_H   -I../Source/Include -I../Source/CParse -I../Source/Include -I../Source/DOH -I../Source/CParse -I../Source/Doxygen -I../Source/Preprocessor -I../Source/Swig -I../Source/Modules   -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic -MT Swig/wrapfunc.o -MD -MP -MF $depbase.Tpo -c -o Swig/wrapfunc.o Swig/wrapfunc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+c++ -std=gnu++11  -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -Wall -W -pedantic  -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o eswig CParse/cscanner.o CParse/parser.o CParse/templ.o CParse/util.o DOH/base.o DOH/file.o DOH/fio.o DOH/hash.o DOH/list.o DOH/memory.o DOH/string.o DOH/void.o Doxygen/csharpdoc.o Doxygen/doxyentity.o Doxygen/doxyparser.o Doxygen/doxytranslator.o Doxygen/javadoc.o Doxygen/pydoc.o Modules/allocate.o Modules/contract.o Modules/c.o Modules/csharp.o Modules/d.o Modules/directors.o Modules/emit.o Modules/go.o Modules/guile.o Modules/interface.o Modules/java.o Modules/javascript.o Modules/lang.o Modules/lua.o Modules/main.o Modules/nested.o Modules/ocaml.o Modules/octave.o Modules/overload.o Modules/perl5.o Modules/php.o Modules/python.o Modules/r.o Modules/ruby.o Modules/scilab.o Modules/swigmain.o Modules/tcl8.o Modules/typepass.o Modules/utils.o Modules/xml.o Preprocessor/cpp.o Preprocessor/expr.o Swig/cwrap.o Swig/deprecate.o Swig/error.o Swig/extend.o Swig/fragment.o Swig/getopt.o Swig/include.o Swig/misc.o Swig/naming.o Swig/parms.o Swig/scanner.o Swig/stype.o Swig/symbol.o Swig/tree.o Swig/typemap.o Swig/typeobj.o Swig/typesys.o Swig/wrapfunc.o  -ldl  -lpcre2-8
+cp -f ../Source/eswig ../swig
+make[2]: Leaving directory '/var/tmp/hokuto/swig-01/build/Source'
+make[1]: Leaving directory '/var/tmp/hokuto/swig-01/build/Source'
+Installing the SWIG library
+Installing SWIG executable
+make[1]: Entering directory '/var/tmp/hokuto/swig-01/build/CCache'
+Installing ccache-swig
+Installing /var/tmp/hokuto/swig-01/output/usr/bin/ccache-swig
+/usr/bin/install -c -d /var/tmp/hokuto/swig-01/output/usr/bin
+/usr/bin/install -c -m 755 ccache-swig /var/tmp/hokuto/swig-01/output/usr/bin/ccache-swig
+make[1]: Leaving directory '/var/tmp/hokuto/swig-01/build/CCache'
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/attribute.i
+Installing /var/tmp/hokuto/swig-01/output/usr/bin/swig
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/carrays.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/constraints.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/cpointer.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/cstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/cwstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/intrusive_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/inttypes.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/math.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/stdint.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swigarch.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swigrun.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/wchar.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/windows.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/allkw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/director_common.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/director_guard.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/runtime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swigcompat.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swigerrors.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swigfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swiginit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swiglabels.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swigrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swig.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swigwarnings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/swigwarn.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/unique_ptr.swg
+Installing language specific files for typemaps
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/attribute.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/carrays.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/cdata_begin.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/cdata_end.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/cmalloc.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/cpointer.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/cstrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/cstring.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/cwstring.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/enumint.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/exception.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/factory.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/fragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/implicit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/inoutlist.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/misctypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/primtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/ptrtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/std_except.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/std_strings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/std_string.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/std_string_view.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/std_wstring.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/strings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/string.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/swigmacros.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/swigmove.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/swigobject.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/swigtypemaps.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/swigtype.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/typemaps.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/valtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/void.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/typemaps/wstring.swg
+Installing language specific files for tcl
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/attribute.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/carrays.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/cpointer.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/cstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/cwstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_string_view.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/std_wstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclinterp.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclresult.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclsh.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/wish.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tcl8.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclapi.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclerrors.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclincludes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclinit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclkw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclmacros.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclopers.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclprimtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclstrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tcltypemaps.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tcluserdir.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/tcl/tclwstrings.swg
+Installing language specific files for perl5
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/attribute.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/carrays.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/cpointer.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/cstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlmain.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/reference.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_string_view.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perl5.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlerrors.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlhead.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlinit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlkw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlmacros.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlopers.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlprimtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perlstrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perltypemaps.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/perluserdir.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/Makefile.pl
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/perl5/noembed.h
+Installing language specific files for python
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/attribute.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/boost_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/carrays.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/ccomplex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/cpointer.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/cstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/cwstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/embed.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/file.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/implicit.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyabc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pybuffer.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_alloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_array.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_basic_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_char_traits.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_container.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_filesystem.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_ios.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_iostream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_multimap.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_multiset.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_sstream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_streambuf.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_string_view.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_unordered_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_unordered_multimap.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_unordered_multiset.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_unordered_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_vectora.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_wios.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_wiostream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_wsstream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_wstreambuf.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/std_wstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/wchar.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/builtin.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/director_py_mutex.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyapi.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pybackward.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyclasses.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pycomplex.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pycontainer.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pydocs.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyerrors.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyhead.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyinit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyiterators.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pymacros.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyopers.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyprimtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pystdcommon.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pystrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pythonkw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/python.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pythreads.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pytypemaps.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pyuserdir.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/python/pywstrings.swg
+Installing language specific files for guile
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/cplusplus.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/guile.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/guilemain.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/interpreter.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/list-vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/pointer-in-out.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/ports.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/swigrun.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/guile_scm_run.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/guile_scm.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/guile/common.scm
+Installing language specific files for java
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/arrays_java.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/boost_intrusive_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/boost_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_array.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_string_view.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_unordered_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_unordered_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/std_wstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/swiginterface.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/various.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/enumsimple.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/enums.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/enumtypesafe.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/enumtypeunsafe.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/javahead.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/javakw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/java/java.swg
+Installing language specific files for ruby
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/attribute.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/boost_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/carrays.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/cpointer.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/cstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/embed.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/file.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/progargcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_alloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_array.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_basic_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_char_traits.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_container.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_functors.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_ios.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_iostream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_multimap.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_multiset.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_queue.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_sstream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_stack.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_streambuf.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_string_view.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_unordered_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_unordered_multimap.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_unordered_multiset.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_unordered_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_vectora.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/std_wstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/timeval.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyapi.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyautodoc.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyclasses.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubycomplex.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubycontainer_extended.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubycontainer.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubydef.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyerrors.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyhead.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyinit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyiterators.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubykw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubymacros.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyopers.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyprimtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubystdautodoc.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubystdcommon_forward.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubystdcommon.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubystdfunctors.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubystrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/ruby.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubytracking.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubytypemaps.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubyuserdir.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/rubywstrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/Makefile.swig
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ruby/extconf.rb
+Installing language specific files for php
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/const.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/phpinterfaces.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/phppointers.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/std_string_view.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/utils.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/phpinit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/phpkw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/phprun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/php/php.swg
+Installing language specific files for ocaml
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/carray.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/cstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/ocaml.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/std_complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/typecheck.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/class.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/ocamlkw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/ocamlrundec.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/ocamlrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/ocaml.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/preamble.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/typeregister.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/swigp4.ml
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/swig.mli
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/ocaml/swig.ml
+Installing language specific files for octave
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/attribute.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/boost_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/carrays.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/implicit.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_alloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_basic_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_char_traits.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_container.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/std_wstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octave.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octcomplex.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octcontainer.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octiterators.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octopers.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octprimtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octstdcommon.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octtypemaps.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octuserdir.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/octave/octheaders.hpp
+Installing language specific files for csharp
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/arrays_csharp.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/boost_intrusive_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/boost_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_array.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_string_view.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_unordered_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_unordered_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/std_wstring.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/swiginterface.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/swigtype_inout.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/wchar.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/csharphead.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/csharpkw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/csharp.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/enumsimple.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/enums.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/csharp/enumtypesafe.swg
+Installing language specific files for lua
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/carrays.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/lua_fnptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/_std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_string_view.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/wchar.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/luakw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/luarun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/luaruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/lua.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/lua/luatypemaps.swg
+Installing language specific files for r
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/boost_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_alloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_container.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/rcontainer.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/rfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/rkw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/ropers.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/rrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/rstdcommon.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/r.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/rtype.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/r/srun.swg
+Installing language specific files for c
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/boost_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/std_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/std_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/cexcept.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/cheader.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/clabels.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/c/c.swg
+Installing language specific files for go
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/std_array.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/gokw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/goruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/gostring.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/go/go.swg
+Installing language specific files for d
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/boost_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/carrays.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/cdata.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/cpointer.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/dclassgen.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/ddirectives.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/denums.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/dexception.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/dhead.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/director.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/dkw.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/dmemberfunctionpointers.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/doperators.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/dprimitives.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/dstrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/d.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/dswigtype.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/dvoid.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/d/wrapperloader.swg
+Installing language specific files for javascript
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/javascriptkw.swg
+Installing language specific files for javascript/jsc
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/arrays_javascript.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/ccomplex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascriptcode.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascriptcomplex.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascriptfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascripthelpers.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascriptinit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascriptprimtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascriptrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascriptruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascriptstrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascript.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/jsc/javascripttypemaps.swg
+Installing language specific files for javascript/v8
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/arrays_javascript.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/ccomplex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascriptcode.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascriptcomplex.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascriptfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascripthelpers.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascriptinit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascriptprimtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascriptrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascriptruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascriptstrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascript.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/v8/javascripttypemaps.swg
+Installing language specific files for javascript/napi
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/arrays_javascript.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/ccomplex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/factory.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/nodejs_buffer.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_auto_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_complex.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_unique_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascriptcode.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascriptcomplex.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascriptfragments.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascriptinit.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascriptprimtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascriptrun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascriptruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascriptstrings.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascript.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/javascript/napi/javascripttypemaps.swg
+Installing language specific files for scilab
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/argcargv.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/boost_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/carrays.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/cmalloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/cpointer.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/exception.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/matrix.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_alloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_basic_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_char_traits.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_container.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_multiset.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_shared_ptr.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/stl.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/swigmove.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciarray.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scibool.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scichar.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scicontainer.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scidouble.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scienum.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciexception.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scifloat.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciint.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciiterators.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scilab.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scilist.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scilonglong.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scilong.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scimacros.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scimatrixbool.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scimatrixchar.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scimatrixdouble.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scimatrixint.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scimisctypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scipointer.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciprimtypes.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scirun.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciruntime.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scisequencebool.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scisequencedouble.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scisequencefloat.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scisequenceint.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scisequencepointer.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scisequencestring.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scisequence.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scishort.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scisignedchar.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scistdcommon.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/scitypemaps.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciunsignedchar.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciunsignedint.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciunsignedlong.swg
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/scilab/sciunsignedshort.swg
+Installing language specific files for xml
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/xml/typemaps.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/xml/xml.swg
+Installing language specific files for std
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_alloc.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_array.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_basic_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_char_traits.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_common.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_container.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/_std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_deque.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_except.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_ios.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_iostream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_list.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_multimap.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_multiset.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_pair.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_queue.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_sstream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_stack.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_streambuf.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_string.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_unordered_map.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_unordered_multimap.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_unordered_multiset.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_unordered_set.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_vectora.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_vector.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_wios.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_wiostream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_wsstream.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_wstreambuf.i
+Installing /var/tmp/hokuto/swig-01/output/usr/share/swig/4.4.1/std/std_wstring.i
+Installation complete
+
+Script done on 2026-09-05 15:57:44+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mswig[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 05 Sep 2026 08:57:44 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m19s[0m
