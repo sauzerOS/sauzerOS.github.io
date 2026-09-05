@@ -1,0 +1,437 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxml2[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibxml2 2.15.4-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 05 Sep 2026 03:04:03 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxml2[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc icu readline zlib-ng meson lib32-icu lib32-readline lib32-zlib-ng[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxml2[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 icu-78.3-1 lib32-gcc-libs-16.2.0-1 lib32-glibc-2.44-1 lib32-icu-78.3-1 lib32-readline-8.3.3-1 lib32-zlib-ng-2.3.3-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-1 patch-2.8-1 pkgconf-3.0.6-1 readline-8.3.3-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1 zlib-ng-2.3.3-1[0m
+
+Script started on 2026-09-05 10:04:03+07:00 [COMMAND="cd /var/tmp/hokuto/libxml2-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libxml2-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libxml2-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libxml2-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libxml2-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libxml2-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libxml2-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libxml2-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libxml2-01/build/.cache' /repo/sauzeros/core/libxml2/build /var/tmp/hokuto/libxml2-01/output 2.15.4 libxml2" <not executed on terminal>]
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/libxml2-01/build[0m
+Build dir: [1m/var/tmp/hokuto/libxml2-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mlibxml2[0m
+Project version: [1m2.15.4[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Compiler for C supports arguments -D_XOPEN_SOURCE=600: [1;32mYES[0m 
+Compiler for C supports arguments -Wshadow: [1;32mYES[0m 
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m 
+Compiler for C supports arguments -Wcast-align: [1;32mYES[0m 
+Compiler for C supports arguments -Wwrite-strings: [1;32mYES[0m 
+Compiler for C supports arguments -Wstrict-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m 
+Compiler for C supports arguments -Wmissing-variable-declarations: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-long-long: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-format-extra-args: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-array-bounds: [1;32mYES[0m 
+Compiler for C supports arguments -Wshadow: [1;32mYES[0m [1;34m(cached)[0m
+Compiler for C supports arguments -Wpointer-arith: [1;32mYES[0m [1;34m(cached)[0m
+Compiler for C supports arguments -Wcast-align: [1;32mYES[0m [1;34m(cached)[0m
+Compiler for C supports arguments -Wwrite-strings: [1;32mYES[0m [1;34m(cached)[0m
+Compiler for C supports arguments -Wstrict-prototypes: [1;32mYES[0m [1;34m(cached)[0m
+Compiler for C supports arguments -Wmissing-prototypes: [1;32mYES[0m [1;34m(cached)[0m
+Compiler for C supports arguments -Wno-long-long: [1;32mYES[0m [1;34m(cached)[0m
+Compiler for C supports arguments -Wno-format-extra-args: [1;32mYES[0m [1;34m(cached)[0m
+Compiler for C supports arguments -Wno-array-bounds: [1;32mYES[0m [1;34m(cached)[0m
+Has header "[1mstdint.h[0m" : [1;32mYES[0m 
+Header "[1msys/random.h[0m" has symbol "[1mgetentropy[0m" : [1;32mYES[0m 
+Header "[1mglob.h[0m" has symbol "[1mglob[0m" : [1;32mYES[0m 
+Header "[1msys/mman.h[0m" has symbol "[1mmmap[0m" : [1;32mYES[0m 
+Library [1mm[0m found: [1;32mYES[0m
+Compiler for C supports function attribute destructor: [1;32mYES[0m 
+Run-time dependency [1mdl[0m found: [1;32mYES[0m
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.6[0m
+Run-time dependency [1mreadline[0m found: [1;32mYES[0m [36m8.3[0m
+Run-time dependency [1mhistory[0m found: [1;32mYES[0m [36m8.3[0m
+Run-time dependency [1mzlib[0m found: [1;32mYES[0m [36m1.3.1.zlib-ng[0m
+Dependency [1mzlib[0m for [1mhost[0m machine found: [1;32mYES[0m [36m1.3.1.zlib-ng[0m [1;34m(cached)[0m
+Run-time dependency [1micu-uc[0m found: [1;32mYES[0m [36m78.3[0m
+Compiler for C supports arguments : [1;31mNO[0m 
+Run-time dependency [1miconv[0m found: [1;32mYES[0m
+Configuring [1mxmlversion.h[0m using configuration
+Configuring [1mconfig.h[0m using configuration
+Program [1msh[0m found: [1;32mYES[0m (/usr/bin/sh)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.6[0m
+Configuring [1mlibxml2-config.cmake[0m using configuration
+Build targets in project: [1m30[0m
+
+libxml2 [36m2.15.4[0m
+
+  [1mConfiguration Options Summary:[0m
+    OS          : linux
+    c14n        : true
+    catalog     : true
+    debug       : true
+    docs        : false
+    history     : true
+    html        : true
+    http        : false
+    iconv       : true
+    icu         : true
+    iso8859x    : true
+    legacy      : true
+    modules     : true
+    output      : true
+    pattern     : true
+    push        : true
+    python      : false
+    reader      : true
+    readline    : true
+    regexps     : true
+    relaxng     : true
+    sax1        : true
+    schemas     : true
+    schematron  : true
+    threads     : true
+    thread-alloc: false
+    tls         : false
+    valid       : true
+    writer      : true
+    xinclude    : true
+    xpath       : true
+    xptr        : true
+    zlib        : true
+
+  [1mUser defined options[0m
+    docs        : disabled
+    history     : enabled
+    icu         : enabled
+    legacy      : enabled
+    prefix      : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/libxml2-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/libxml2-01/build/build'
+[0/48] Compiling C object libxml2.so.16.1.4.p/buf.c.o[K[0/48] Compiling C object libxml2.so.16.1.4.p/chvalid.c.o[K[0/48] Compiling C object libxml2.so.16.1.4.p/dict.c.o[K[0/48] Compiling C object libxml2.so.16.1.4.p/entities.c.o[K[0/48] Compiling C object libxml2.so.16.1.4.p/encoding.c.o[K[0/48] Compiling C object libxml2.so.16.1.4.p/error.c.o[K[0/48] Compiling C object libxml2.so.16.1.4.p/globals.c.o[K[0/48] Compiling C object libxml2.so.16.1.4.p/hash.c.o[K[0/48] Compiling C object libxml2.so.16.1.4.p/list.c.o[K[0/48] Compiling C object libxml2.so.16.1.4.p/parser.c.o[K[1/48] Compiling C object libxml2.so.16.1.4.p/chvalid.c.o[K[1/48] Compiling C object libxml2.so.16.1.4.p/parserInternals.c.o[K[2/48] Compiling C object libxml2.so.16.1.4.p/list.c.o[K[2/48] Compiling C object libxml2.so.16.1.4.p/SAX2.c.o[K[3/48] Compiling C object libxml2.so.16.1.4.p/globals.c.o[K[3/48] Compiling C object libxml2.so.16.1.4.p/threads.c.o[K[4/48] Compiling C object libxml2.so.16.1.4.p/entities.c.o[K[4/48] Compiling C object libxml2.so.16.1.4.p/tree.c.o[K[5/48] Compiling C object libxml2.so.16.1.4.p/hash.c.o[K[5/48] Compiling C object libxml2.so.16.1.4.p/uri.c.o[K[6/48] Compiling C object libxml2.so.16.1.4.p/error.c.o[K[6/48] Compiling C object libxml2.so.16.1.4.p/valid.c.o[K[7/48] Compiling C object libxml2.so.16.1.4.p/dict.c.o[K[7/48] Compiling C object libxml2.so.16.1.4.p/xmlIO.c.o[K[8/48] Compiling C object libxml2.so.16.1.4.p/buf.c.o[K[8/48] Compiling C object libxml2.so.16.1.4.p/xmlmemory.c.o[K[9/48] Compiling C object libxml2.so.16.1.4.p/threads.c.o[K[9/48] Compiling C object libxml2.so.16.1.4.p/xmlstring.c.o[K[10/48] Compiling C object libxml2.so.16.1.4.p/xmlmemory.c.o[K[10/48] Compiling C object libxml2.so.16.1.4.p/c14n.c.o[K[11/48] Compiling C object libxml2.so.16.1.4.p/SAX2.c.o[K[11/48] Compiling C object libxml2.so.16.1.4.p/catalog.c.o[K[12/48] Compiling C object libxml2.so.16.1.4.p/encoding.c.o[K[12/48] Compiling C object libxml2.so.16.1.4.p/debugXML.c.o[K[13/48] Compiling C object libxml2.so.16.1.4.p/xmlIO.c.o[K[13/48] Compiling C object libxml2.so.16.1.4.p/HTMLparser.c.o[K[14/48] Compiling C object libxml2.so.16.1.4.p/xmlstring.c.o[K[14/48] Compiling C object libxml2.so.16.1.4.p/HTMLtree.c.o[K[15/48] Compiling C object libxml2.so.16.1.4.p/c14n.c.o[K[15/48] Compiling C object libxml2.so.16.1.4.p/xmlmodule.c.o[K[16/48] Compiling C object libxml2.so.16.1.4.p/uri.c.o[K[16/48] Compiling C object libxml2.so.16.1.4.p/xmlsave.c.o[K[17/48] Compiling C object libxml2.so.16.1.4.p/parserInternals.c.o[K[17/48] Compiling C object libxml2.so.16.1.4.p/pattern.c.o[K[18/48] Compiling C object libxml2.so.16.1.4.p/debugXML.c.o[K[18/48] Compiling C object libxml2.so.16.1.4.p/xmlreader.c.o[K[19/48] Compiling C object libxml2.so.16.1.4.p/xmlmodule.c.o[K[19/48] Compiling C object libxml2.so.16.1.4.p/xmlregexp.c.o[K[20/48] Compiling C object libxml2.so.16.1.4.p/HTMLtree.c.o[K[20/48] Compiling C object libxml2.so.16.1.4.p/relaxng.c.o[K[21/48] Compiling C object libxml2.so.16.1.4.p/xmlsave.c.o[K[21/48] Compiling C object libxml2.so.16.1.4.p/xmlschemas.c.o[K[22/48] Compiling C object libxml2.so.16.1.4.p/pattern.c.o[K[22/48] Compiling C object libxml2.so.16.1.4.p/xmlschemastypes.c.o[K[23/48] Compiling C object libxml2.so.16.1.4.p/catalog.c.o[K[23/48] Compiling C object libxml2.so.16.1.4.p/schematron.c.o[K[24/48] Compiling C object libxml2.so.16.1.4.p/tree.c.o[K[24/48] Compiling C object libxml2.so.16.1.4.p/xmlwriter.c.o[K[25/48] Compiling C object libxml2.so.16.1.4.p/valid.c.o[K[25/48] Compiling C object libxml2.so.16.1.4.p/xinclude.c.o[K[26/48] Compiling C object libxml2.so.16.1.4.p/HTMLparser.c.o[K[26/48] Compiling C object libxml2.so.16.1.4.p/xpath.c.o[K[27/48] Compiling C object libxml2.so.16.1.4.p/xinclude.c.o[K[27/48] Compiling C object libxml2.so.16.1.4.p/xlink.c.o[K[28/48] Compiling C object libxml2.so.16.1.4.p/xmlregexp.c.o[K[28/48] Compiling C object libxml2.so.16.1.4.p/xpointer.c.o[K[29/48] Compiling C object libxml2.so.16.1.4.p/xmlwriter.c.o[K[29/48] Compiling C object xmllint.p/xmllint.c.o[K[30/48] Compiling C object libxml2.so.16.1.4.p/parser.c.o[K[30/48] Compiling C object xmllint.p/shell.c.o[K[31/48] Compiling C object libxml2.so.16.1.4.p/schematron.c.o[K[31/48] Compiling C object xmllint.p/lintmain.c.o[K[32/48] Compiling C object libxml2.so.16.1.4.p/xlink.c.o[K[32/48] Compiling C object xmlcatalog.p/xmlcatalog.c.o[K[33/48] Compiling C object libxml2.so.16.1.4.p/xpointer.c.o[K[33/48] Compiling C object testdso.so.p/testdso.c.o[K[34/48] Compiling C object xmllint.p/lintmain.c.o[K[35/48] Compiling C object libxml2.so.16.1.4.p/xmlreader.c.o[K[36/48] Compiling C object testdso.so.p/testdso.c.o[K[36/48] Linking target testdso.so[K[37/48] Compiling C object libxml2.so.16.1.4.p/xmlschemastypes.c.o[K[38/48] Compiling C object xmlcatalog.p/xmlcatalog.c.o[K[39/48] Linking target testdso.so[K[40/48] Compiling C object xmllint.p/shell.c.o[K[41/48] Compiling C object libxml2.so.16.1.4.p/relaxng.c.o[K[42/48] Compiling C object xmllint.p/xmllint.c.o[K[43/48] Compiling C object libxml2.so.16.1.4.p/xpath.c.o[K[44/48] Compiling C object libxml2.so.16.1.4.p/xmlschemas.c.o[K[44/48] Linking target libxml2.so.16.1.4[K[45/48] Linking target libxml2.so.16.1.4[K[45/48] Generating symbol file libxml2.so.16.1.4.p/libxml2.so.16.1.4.symbols[K[46/48] Generating symbol file libxml2.so.16.1.4.p/libxml2.so.16.1.4.symbols[K[46/48] Linking target xmllint[K[46/48] Linking target xmlcatalog[K[47/48] Linking target xmlcatalog[K[48/48] Linking target xmllint[K
+ninja: Entering directory `/var/tmp/hokuto/libxml2-01/build/build'
+ninja: no work to do.
+Installing libxml2.so.16.1.4 to /var/tmp/hokuto/libxml2-01/output/usr/lib
+Installing xmllint to /var/tmp/hokuto/libxml2-01/output/usr/bin
+Installing xmlcatalog to /var/tmp/hokuto/libxml2-01/output/usr/bin
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/HTMLparser.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/HTMLtree.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/SAX.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/SAX2.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/c14n.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/catalog.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/chvalid.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/debugXML.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/dict.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/encoding.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/entities.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/globals.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/hash.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/list.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/nanoftp.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/nanohttp.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/parser.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/parserInternals.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/pattern.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/relaxng.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/schemasInternals.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/schematron.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/threads.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/tree.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/uri.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/valid.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xinclude.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xlink.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlIO.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlautomata.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlerror.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlexports.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlmemory.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlmodule.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlreader.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlregexp.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlsave.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlschemas.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlschemastypes.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlstring.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlunicode.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xmlwriter.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xpath.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xpathInternals.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/include/libxml/xpointer.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/build/include/libxml/xmlversion.h to /var/tmp/hokuto/libxml2-01/output/usr/include/libxml2/libxml
+Installing /var/tmp/hokuto/libxml2-01/build/build/meson-private/libxml-2.0.pc to /var/tmp/hokuto/libxml2-01/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/libxml2-01/build/build/libxml2-config.cmake to /var/tmp/hokuto/libxml2-01/output/usr/lib/cmake/libxml2
+Installing /var/tmp/hokuto/libxml2-01/build/xml2-config-meson to /var/tmp/hokuto/libxml2-01/output/usr/bin
+Installing symlink pointing to libxml2.so.16.1.4 to /var/tmp/hokuto/libxml2-01/output/usr/lib/libxml2.so.16
+Installing symlink pointing to libxml2.so.16 to /var/tmp/hokuto/libxml2-01/output/usr/lib/libxml2.so
+configure: loading site script /usr/share/config.site
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for i686-pc-linux-gnu-strip... no
+checking for strip... strip
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking for i686-pc-linux-gnu-gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to enable C11 features... none needed
+checking whether gcc -m32 understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc -m32... gcc3
+checking whether ln -s works... yes
+checking for i686-pc-linux-gnu-pkg-config... /usr/bin/i686-pc-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc -m32... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for i686-pc-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for i686-pc-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for i686-pc-linux-gnu-ranlib... gcc-ranlib
+checking for i686-pc-linux-gnu-ar... gcc-ar
+checking for archiver @FILE support... @
+checking for i686-pc-linux-gnu-strip... strip
+checking command to parse gcc-nm output from gcc -m32 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for i686-pc-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -m32 supports -fno-rtti -fno-exceptions... no
+checking for gcc -m32 option to produce PIC... -fPIC -DPIC
+checking if gcc -m32 PIC flag -fPIC -DPIC works... yes
+checking if gcc -m32 static flag -static works... no
+checking if gcc -m32 supports -c -o file.o... yes
+checking if gcc -m32 supports -c -o file.o... (cached) yes
+checking whether the gcc -m32 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for cos in -lm... yes
+checking for __attribute__((destructor))... yes
+checking for stdint.h... (cached) yes
+checking for gcc -m32 options needed to detect all undeclared functions... none needed
+checking whether getentropy is declared... yes
+checking whether glob is declared... yes
+checking whether mmap is declared... yes
+checking for library containing dlopen... none required
+checking for pthread.h... yes
+checking for library containing pthread_create... none required
+checking for readline... yes
+checking for history... yes
+checking for libiconv... none required
+Enabling ICU support
+checking for icu-uc... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/libxml/Makefile
+config.status: creating include/private/Makefile
+config.status: creating doc/Makefile
+config.status: creating example/Makefile
+config.status: creating fuzz/Makefile
+config.status: creating python/Makefile
+config.status: creating python/tests/Makefile
+config.status: creating include/libxml/xmlversion.h
+config.status: creating libxml-2.0.pc
+config.status: creating libxml2-config.cmake
+config.status: creating python/setup.py
+config.status: creating xml2-config
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/libxml2-01/build'
+Making all in include
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include'
+Making all in libxml
+make[3]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include/libxml'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include/libxml'
+Making all in private
+make[3]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include/private'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include/private'
+make[3]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include'
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include'
+Making all in .
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build'
+  CC       xmllint-lintmain.o
+  CC       libxml2_la-buf.lo
+  CC       libxml2_la-chvalid.lo
+  CC       xmllint-xmllint.o
+  CC       libxml2_la-dict.lo
+  CC       xmllint-shell.o
+  CC       libxml2_la-encoding.lo
+  CC       libxml2_la-error.lo
+  CC       libxml2_la-entities.lo
+  CC       libxml2_la-globals.lo
+  CC       libxml2_la-hash.lo
+  CC       libxml2_la-list.lo
+  CC       libxml2_la-parser.lo
+  CC       libxml2_la-parserInternals.lo
+  CC       libxml2_la-SAX2.lo
+  CC       libxml2_la-threads.lo
+  CC       libxml2_la-tree.lo
+  CC       libxml2_la-uri.lo
+  CC       libxml2_la-valid.lo
+  CC       libxml2_la-xmlIO.lo
+  CC       libxml2_la-xmlmemory.lo
+  CC       libxml2_la-xmlstring.lo
+  CC       libxml2_la-c14n.lo
+  CC       libxml2_la-catalog.lo
+  CC       libxml2_la-debugXML.lo
+  CC       libxml2_la-HTMLparser.lo
+  CC       libxml2_la-HTMLtree.lo
+  CC       libxml2_la-xmlmodule.lo
+  CC       libxml2_la-xmlsave.lo
+  CC       libxml2_la-pattern.lo
+  CC       libxml2_la-xmlreader.lo
+  CC       libxml2_la-xmlregexp.lo
+  CC       libxml2_la-relaxng.lo
+  CC       libxml2_la-xmlschemas.lo
+  CC       libxml2_la-xmlschemastypes.lo
+  CC       libxml2_la-xmlwriter.lo
+  CC       libxml2_la-xinclude.lo
+  CC       libxml2_la-xpath.lo
+  CC       libxml2_la-xlink.lo
+  CC       libxml2_la-xpointer.lo
+  CC       xmlcatalog-xmlcatalog.o
+  CCLD     libxml2.la
+  CCLD     xmllint
+  CCLD     xmlcatalog
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build'
+Making all in example
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build/example'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/example'
+Making all in fuzz
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build/fuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/fuzz'
+make[1]: Leaving directory '/var/tmp/hokuto/libxml2-01/build'
+Making install in include
+make[1]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include'
+Making install in libxml
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include/libxml'
+make[3]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include/libxml'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/include/libxml2/libxml'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 xmlversion.h '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 SAX.h entities.h encoding.h parser.h parserInternals.h xmlerror.h HTMLparser.h HTMLtree.h debugXML.h tree.h list.h hash.h xpath.h xpathInternals.h xpointer.h xinclude.h xmlIO.h xmlmemory.h nanohttp.h nanoftp.h uri.h valid.h xlink.h catalog.h threads.h globals.h c14n.h xmlautomata.h xmlregexp.h xmlmodule.h xmlschemas.h schemasInternals.h xmlschemastypes.h xmlstring.h xmlunicode.h xmlreader.h relaxng.h dict.h SAX2.h xmlexports.h '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 xmlwriter.h chvalid.h pattern.h xmlsave.h schematron.h '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/include/libxml2/libxml'
+make[3]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include/libxml'
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include/libxml'
+Making install in private
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include/private'
+make[3]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include/private'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include/private'
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include/private'
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include'
+make[3]: Entering directory '/var/tmp/hokuto/libxml2-01/build/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include'
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include'
+make[1]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/include'
+Making install in .
+make[1]: Entering directory '/var/tmp/hokuto/libxml2-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32/cmake/libxml2'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/bin'
+ /usr/bin/install -c -m 644 libxml2-config.cmake '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32/cmake/libxml2'
+ /usr/bin/install -c -m 644 libxml-2.0.pc '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32'
+ /usr/bin/install -c xml2-config '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/bin'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libxml2.la '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/libxml2.so.16.1.4 /var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32/libxml2.so.16.1.4
+libtool: install: (cd /var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32 && { ln -s -f libxml2.so.16.1.4 libxml2.so.16 || { rm -f libxml2.so.16 && ln -s libxml2.so.16.1.4 libxml2.so.16; }; })
+libtool: install: (cd /var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32 && { ln -s -f libxml2.so.16.1.4 libxml2.so || { rm -f libxml2.so && ln -s libxml2.so.16.1.4 libxml2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxml2.lai /var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/lib32/libxml2.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib32'[0m
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c xmllint xmlcatalog '/var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/bin'
+libtool: [31mwarning[0m: [1m'libxml2.la' has not been installed in '/usr/lib32'[0m
+libtool: install: /usr/bin/install -c .libs/xmllint /var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/bin/xmllint
+libtool: [31mwarning[0m: [1m'libxml2.la' has not been installed in '/usr/lib32'[0m
+libtool: install: /usr/bin/install -c .libs/xmlcatalog /var/tmp/hokuto/libxml2-01/build/DESTDIR/usr/bin/xmlcatalog
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libxml2-01/build'
+Making install in example
+make[1]: Entering directory '/var/tmp/hokuto/libxml2-01/build/example'
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build/example'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/example'
+make[1]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/example'
+Making install in fuzz
+make[1]: Entering directory '/var/tmp/hokuto/libxml2-01/build/fuzz'
+make[2]: Entering directory '/var/tmp/hokuto/libxml2-01/build/fuzz'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/fuzz'
+make[1]: Leaving directory '/var/tmp/hokuto/libxml2-01/build/fuzz'
+removed 'DESTDIR/usr/lib32/libxml2.la'
+'DESTDIR/usr/lib32/cmake' -> '/var/tmp/hokuto/libxml2-01/split/lib32-libxml2/usr/lib32/cmake'
+'DESTDIR/usr/lib32/cmake/libxml2' -> '/var/tmp/hokuto/libxml2-01/split/lib32-libxml2/usr/lib32/cmake/libxml2'
+'DESTDIR/usr/lib32/cmake/libxml2/libxml2-config.cmake' -> '/var/tmp/hokuto/libxml2-01/split/lib32-libxml2/usr/lib32/cmake/libxml2/libxml2-config.cmake'
+'DESTDIR/usr/lib32/libxml2.so' -> '/var/tmp/hokuto/libxml2-01/split/lib32-libxml2/usr/lib32/libxml2.so'
+'DESTDIR/usr/lib32/libxml2.so.16' -> '/var/tmp/hokuto/libxml2-01/split/lib32-libxml2/usr/lib32/libxml2.so.16'
+'DESTDIR/usr/lib32/libxml2.so.16.1.4' -> '/var/tmp/hokuto/libxml2-01/split/lib32-libxml2/usr/lib32/libxml2.so.16.1.4'
+'DESTDIR/usr/lib32/pkgconfig' -> '/var/tmp/hokuto/libxml2-01/split/lib32-libxml2/usr/lib32/pkgconfig'
+'DESTDIR/usr/lib32/pkgconfig/libxml-2.0.pc' -> '/var/tmp/hokuto/libxml2-01/split/lib32-libxml2/usr/lib32/pkgconfig/libxml-2.0.pc'
+
+Script done on 2026-09-05 10:04:17+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxml2[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 05 Sep 2026 03:04:18 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m14s[0m
