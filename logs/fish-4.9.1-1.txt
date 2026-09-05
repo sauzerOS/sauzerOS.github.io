@@ -1,0 +1,242 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfish[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mfish 4.9.1-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 05 Sep 2026 06:24:00 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfish[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc libgcc pcre2 cmake jq llvm rust|rustup[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfish[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 cmake-4.4.3-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 jq-1.8.2-1 libgcc-16.2.0-1 libtool-2.6.2-1 llvm-22.1.8-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pcre2-10.48-1 pkgconf-3.0.7-1 rust-1.98.1-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-05 13:24:00+07:00 [COMMAND="cd /var/tmp/hokuto/fish-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/fish-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/fish-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/fish-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/fish-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/fish-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/fish-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/fish-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/fish-01/build/.cache' /repo/sauzeros/extra/fish/build /var/tmp/hokuto/fish-01/output 4.9.1 fish" <not executed on terminal>]
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is Clang 22.1.8
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Trying to use PCRE2 from the system
+-- Found Rust: /usr/bin/rustc
+-- The following features have been enabled:
+
+ * Translation, message localization (requires gettext)
+
+-- The following REQUIRED packages have been found:
+
+ * Rust
+
+-- The following features have been disabled:
+
+ * Documentation, user manual and documentation
+
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /var/tmp/hokuto/fish-01/build/build
+[100%] [1m[34mGenerating fish.pc[0m
+[100%] Built target build_fish_pc
+[1m[92m    Updating[0m crates.io index
+[1m[92m    Updating[0m git repository `https://github.com/danielrainer/fluent-rs`
+[1m[92m    Updating[0m git repository `https://codeberg.org/danielrainer/fluent-ftl-tools`
+[1m[92m    Updating[0m git repository `https://github.com/fish-shell/rust-pcre2`
+[1m[92m Downloading[0m crates ...
+[1m[92m  Downloaded[0m cfg-if v1.0.4
+[1m[92m  Downloaded[0m assert_matches v1.5.0
+[1m[92m  Downloaded[0m cfg_aliases v0.2.1
+[1m[92m  Downloaded[0m autocfg v1.5.1
+[1m[92m  Downloaded[0m block-buffer v0.10.4
+[1m[92m  Downloaded[0m bitflags v2.11.1
+[1m[92m  Downloaded[0m allocator-api2 v0.2.21
+[1m[92m  Downloaded[0m rand_core v0.10.1
+[1m[92m  Downloaded[0m phf_shared v0.13.1
+[1m[92m  Downloaded[0m rustc_version v0.4.1
+[1m[92m  Downloaded[0m zerofrom v0.1.8
+[1m[92m  Downloaded[0m rsconf v0.3.0
+[1m[92m  Downloaded[0m strum_macros v0.28.0
+[1m[92m  Downloaded[0m semver v1.0.28
+[1m[92m  Downloaded[0m quote v1.0.45
+[1m[92m  Downloaded[0m smallvec v1.15.1
+[1m[92m  Downloaded[0m heck v0.5.0
+[1m[92m  Downloaded[0m unic-langid v0.9.6
+[1m[92m  Downloaded[0m xterm-color v1.0.2
+[1m[92m  Downloaded[0m cpufeatures v0.3.0
+[1m[92m  Downloaded[0m intl_pluralrules v7.0.2
+[1m[92m  Downloaded[0m phf_generator v0.13.1
+[1m[92m  Downloaded[0m foldhash v0.2.0
+[1m[92m  Downloaded[0m option-ext v0.2.0
+[1m[92m  Downloaded[0m macro_rules_attribute v0.2.2
+[1m[92m  Downloaded[0m fluent-langneg v0.13.1
+[1m[92m  Downloaded[0m dirs-sys v0.5.0
+[1m[92m  Downloaded[0m type-map v0.5.1
+[1m[92m  Downloaded[0m dirs v6.0.0
+[1m[92m  Downloaded[0m rust-embed-utils v8.11.0
+[1m[92m  Downloaded[0m siphasher v1.0.3
+[1m[92m  Downloaded[0m version_check v0.9.5
+[1m[92m  Downloaded[0m cpufeatures v0.2.17
+[1m[92m  Downloaded[0m phf_codegen v0.13.1
+[1m[92m  Downloaded[0m rust-embed-impl v8.11.0
+[1m[92m  Downloaded[0m rustc-hash v2.1.2
+[1m[92m  Downloaded[0m macro_rules_attribute-proc_macro v0.2.2
+[1m[92m  Downloaded[0m lru v0.18.0
+[1m[92m  Downloaded[0m thiserror v2.0.18
+[1m[92m  Downloaded[0m crypto-common v0.1.7
+[1m[92m  Downloaded[0m displaydoc v0.2.6
+[1m[92m  Downloaded[0m same-file v1.0.6
+[1m[92m  Downloaded[0m digest v0.10.7
+[1m[92m  Downloaded[0m find-msvc-tools v0.1.9
+[1m[92m  Downloaded[0m generic-array v0.14.7
+[1m[92m  Downloaded[0m paste v1.0.15
+[1m[92m  Downloaded[0m walkdir v2.5.0
+[1m[92m  Downloaded[0m either v1.16.0
+[1m[92m  Downloaded[0m equivalent v1.0.2
+[1m[92m  Downloaded[0m self_cell v1.2.2
+[1m[92m  Downloaded[0m shlex v2.0.1
+[1m[92m  Downloaded[0m globset v0.4.18
+[1m[92m  Downloaded[0m phf v0.13.1
+[1m[92m  Downloaded[0m pkg-config v0.3.33
+[1m[92m  Downloaded[0m fastrand v2.4.1
+[1m[92m  Downloaded[0m cc v1.2.63
+[1m[92m  Downloaded[0m num-traits v0.2.19
+[1m[92m  Downloaded[0m serde_derive v1.0.228
+[1m[92m  Downloaded[0m sha2 v0.10.9
+[1m[92m  Downloaded[0m thiserror-impl v2.0.18
+[1m[92m  Downloaded[0m jobserver v0.1.34
+[1m[92m  Downloaded[0m tinystr v0.8.3
+[1m[92m  Downloaded[0m getrandom v0.4.2
+[1m[92m  Downloaded[0m once_cell v1.21.4
+[1m[92m  Downloaded[0m shellexpand v3.1.2
+[1m[92m  Downloaded[0m chacha20 v0.10.0
+[1m[92m  Downloaded[0m serde_core v1.0.228
+[1m[92m  Downloaded[0m unicode-ident v1.0.24
+[1m[92m  Downloaded[0m log v0.4.30
+[1m[92m  Downloaded[0m proc-macro2 v1.0.106
+[1m[92m  Downloaded[0m serde v1.0.228
+[1m[92m  Downloaded[0m aho-corasick v1.1.4
+[1m[92m  Downloaded[0m widestring v1.2.1
+[1m[92m  Downloaded[0m typenum v1.20.1
+[1m[92m  Downloaded[0m rand v0.10.1
+[1m[92m  Downloaded[0m unic-langid-impl v0.9.6
+[1m[92m  Downloaded[0m memchr v2.8.1
+[1m[92m  Downloaded[0m unicode-segmentation v1.13.2
+[1m[92m  Downloaded[0m zerovec v0.11.6
+[1m[92m  Downloaded[0m itertools v0.14.0
+[1m[92m  Downloaded[0m hashbrown v0.17.1
+[1m[92m  Downloaded[0m bstr v1.12.1
+[1m[92m  Downloaded[0m unicode-width v0.2.2
+[1m[92m  Downloaded[0m syn v2.0.117
+[1m[92m  Downloaded[0m regex-syntax v0.8.10
+[1m[92m  Downloaded[0m nix v0.31.3
+[1m[92m  Downloaded[0m regex-automata v0.4.14
+[1m[92m  Downloaded[0m libc v0.2.186
+[1m[92m  Downloaded[0m rust-embed v8.11.0
+[1m[92m   Compiling[0m libc v0.2.186
+[1m[92m   Compiling[0m find-msvc-tools v0.1.9
+[1m[92m   Compiling[0m shlex v2.0.1
+[1m[92m   Compiling[0m rsconf v0.3.0
+[1m[92m   Compiling[0m proc-macro2 v1.0.106
+[1m[92m   Compiling[0m unicode-ident v1.0.24
+[1m[92m   Compiling[0m quote v1.0.45
+[1m[92m   Compiling[0m version_check v0.9.5
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m memchr v2.8.1
+[1m[92m   Compiling[0m widestring v1.2.1
+[1m[92m   Compiling[0m cfg_aliases v0.2.1
+[1m[92m   Compiling[0m typenum v1.20.1
+[1m[92m   Compiling[0m unicode-width v0.2.2
+[1m[92m   Compiling[0m nix v0.31.3
+[1m[92m   Compiling[0m generic-array v0.14.7
+[1m[92m   Compiling[0m bitflags v2.11.1
+[1m[92m   Compiling[0m siphasher v1.0.3
+[1m[92m   Compiling[0m phf_shared v0.13.1
+[1m[92m   Compiling[0m syn v2.0.117
+[1m[92m   Compiling[0m cc v1.2.63
+[1m[92m   Compiling[0m option-ext v0.2.0
+[1m[92m   Compiling[0m fastrand v2.4.1
+[1m[92m   Compiling[0m regex-syntax v0.8.10
+[1m[92m   Compiling[0m thiserror v2.0.18
+[1m[92m   Compiling[0m block-buffer v0.10.4
+[1m[92m   Compiling[0m crypto-common v0.1.7
+[1m[92m   Compiling[0m aho-corasick v1.1.4
+[1m[92m   Compiling[0m fish-gettext-mo-file-parser v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/gettext-mo-file-parser)
+[1m[92m   Compiling[0m digest v0.10.7
+[1m[92m   Compiling[0m bstr v1.12.1
+[1m[92m   Compiling[0m phf_generator v0.13.1
+[1m[92m   Compiling[0m rand_core v0.10.1
+[1m[92m   Compiling[0m jobserver v0.1.34
+[1m[92m   Compiling[0m dirs-sys v0.5.0
+[1m[92m   Compiling[0m rustc-hash v2.1.2
+[1m[92m   Compiling[0m cpufeatures v0.2.17
+[1m[92m   Compiling[0m same-file v1.0.6
+[1m[92m   Compiling[0m log v0.4.30
+[1m[92m   Compiling[0m regex-automata v0.4.14
+[1m[92m   Compiling[0m getrandom v0.4.2
+[1m[92m   Compiling[0m fish-widestring v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/widestring)
+[1m[92m   Compiling[0m fish-feature-flags v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/feature-flags)
+[1m[92m   Compiling[0m fish-build-helper v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/build-helper)
+[1m[92m   Compiling[0m displaydoc v0.2.6
+[1m[92m   Compiling[0m thiserror-impl v2.0.18
+[1m[92m   Compiling[0m fish-localization v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/localization)
+[1m[92m   Compiling[0m walkdir v2.5.0
+[1m[92m   Compiling[0m dirs v6.0.0
+[1m[92m   Compiling[0m fish-common v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/common)
+[1m[92m   Compiling[0m fish-fallback v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/fallback)
+[1m[92m   Compiling[0m sha2 v0.10.9
+[1m[92m   Compiling[0m type-map v0.5.1
+[1m[92m   Compiling[0m phf_codegen v0.13.1
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m cpufeatures v0.3.0
+[1m[92m   Compiling[0m pkg-config v0.3.33
+[1m[92m   Compiling[0m unic-langid-impl v0.9.6
+[1m[92m   Compiling[0m unic-langid v0.9.6
+[1m[92m   Compiling[0m globset v0.4.18
+[1m[92m   Compiling[0m intl_pluralrules v7.0.2
+[1m[92m   Compiling[0m fluent-syntax v0.12.0 (https://github.com/danielrainer/fluent-rs?rev=cf712bced280b217b6307edabc2089b3e57204ab#cf712bce)
+[1m[92m   Compiling[0m pcre2-sys v0.2.9 (https://github.com/fish-shell/rust-pcre2?tag=0.2.9-utf32#85b7afba)
+[1m[92m   Compiling[0m intl-memoizer v0.5.3 (https://github.com/danielrainer/fluent-rs?rev=cf712bced280b217b6307edabc2089b3e57204ab#cf712bce)
+[1m[92m   Compiling[0m rust-embed-utils v8.11.0
+[1m[92m   Compiling[0m fluent-langneg v0.13.1
+[1m[92m   Compiling[0m chacha20 v0.10.0
+[1m[92m   Compiling[0m fish-gettext-maps v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/gettext-maps)
+[1m[92m   Compiling[0m shellexpand v3.1.2
+[1m[92m   Compiling[0m fish-wcstringutil v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/wcstringutil)
+[1m[92m   Compiling[0m paste v1.0.15
+[1m[92m   Compiling[0m fish-widecharwidth v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/widecharwidth)
+[1m[92m   Compiling[0m autocfg v1.5.1
+[1m[92m   Compiling[0m semver v1.0.28
+[1m[92m   Compiling[0m smallvec v1.15.1
+[1m[92m   Compiling[0m self_cell v1.2.2
+[1m[92m   Compiling[0m rust-embed-impl v8.11.0
+[1m[92m   Compiling[0m rand v0.10.1
+[1m[92m   Compiling[0m fluent-bundle v0.16.0 (https://github.com/danielrainer/fluent-rs?rev=cf712bced280b217b6307edabc2089b3e57204ab#cf712bce)
+[1m[92m   Compiling[0m rustc_version v0.4.1
+[1m[92m   Compiling[0m num-traits v0.2.19
+[1m[92m   Compiling[0m fish-fluent v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/fluent)
+[1m[92m   Compiling[0m phf v0.13.1
+[1m[92m   Compiling[0m assert_matches v1.5.0
+[1m[92m   Compiling[0m allocator-api2 v0.2.21
+[1m[92m   Compiling[0m foldhash v0.2.0
+[1m[92m   Compiling[0m equivalent v1.0.2
+[1m[92m   Compiling[0m fluent v0.17.0 (https://github.com/danielrainer/fluent-rs?rev=cf712bced280b217b6307edabc2089b3e57204ab#cf712bce)
+[1m[92m   Compiling[0m fish v4.9.1 (/var/tmp/hokuto/fish-01/build)
+[1m[92m   Compiling[0m either v1.16.0
+[1m[92m   Compiling[0m heck v0.5.0
+[1m[92m   Compiling[0m hashbrown v0.17.1
+[1m[92m   Compiling[0m unicode-segmentation v1.13.2
+[1m[92m   Compiling[0m macro_rules_attribute-proc_macro v0.2.2
+[1m[92m   Compiling[0m strum_macros v0.28.0
+[1m[92m   Compiling[0m itertools v0.14.0
+[1m[92m   Compiling[0m fish-wgetopt v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/wgetopt)
+[1m[92m   Compiling[0m macro_rules_attribute v0.2.2
+[1m[92m   Compiling[0m pcre2 v0.2.9 (https://github.com/fish-shell/rust-pcre2?tag=0.2.9-utf32#85b7afba)
+[1m[92m   Compiling[0m fish-printf v0.2.1 (/var/tmp/hokuto/fish-01/build/crates/printf)
+[1m[92m   Compiling[0m fish-util v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/util)
+[1m[92m   Compiling[0m lru v0.18.0
+[1m[92m   Compiling[0m fish-tempfile v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/tempfile)
+[1m[92m   Compiling[0m fish-color v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/color)
+[1m[92m   Compiling[0m once_cell v1.21.4
+[1m[92m   Compiling[0m xterm-color v1.0.2
+[1m[92m   Compiling[0m fish-gettext v0.0.0 (/var/tmp/hokuto/fish-01/build/crates/gettext)
+[1m[92m   Compiling[0m rust-embed v8.11.0
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 1m 47s
+[100%] Built target fish
+[100%] Built target fish_indent
+[100%] Built target fish_key_reader
+-- Install configuration: "Release"
+
+Script done on 2026-09-05 13:25:48+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfish[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 05 Sep 2026 06:25:49 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m1m48s[0m
