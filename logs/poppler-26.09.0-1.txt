@@ -1,0 +1,1061 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpoppler[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mpoppler 26.09.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 07 Sep 2026 15:01:29 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpoppler[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mfontconfig gobject-introspection gpgmepp lcms2 openjpeg glib qt boost cmake[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpoppler[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 boost-1.92.0-1 cmake-4.4.3-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 fontconfig-2.18.3-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glib-2.88.3-1 gobject-introspection-1.86.0-1 gpgmepp-2.2.0-1 grep-3.12-1 gzip-1.14-1 lcms2-2.19.1-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 openjpeg-2.5.4-1 patch-2.8-1 pkgconf-3.0.7-1 qt-6.11.2-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-07 22:01:29+07:00 [COMMAND="cd /var/tmp/hokuto/poppler-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/poppler-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/poppler-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/poppler-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/poppler-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/poppler-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/poppler-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/poppler-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/poppler-01/build/.cache' /repo/sauzeros/extra/poppler/build /var/tmp/hokuto/poppler-01/output 26.09.0 poppler" <not executed on terminal>]
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test GCC_HAS_AS_NEEDED
+-- Performing Test GCC_HAS_AS_NEEDED - Success
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Checking _FILE_OFFSET_BITS for large files
+-- Checking _FILE_OFFSET_BITS for large files - not needed
+[33mCMake Warning at CMakeLists.txt:102 (message):
+
+
+   No test data found in $testdatadir.
+   You will not be able to run 'make test' successfully.
+
+
+
+   The test data is not included in the source packages
+   and is also not part of the main git repository. Instead,
+   you can checkout the test data from its own git
+   repository with:
+
+
+
+     git clone git://git.freedesktop.org/git/poppler/test
+
+
+
+   You should checkout the test data as a sibling of your
+   poppler source folder or specify the location of your
+   checkout with -DTESTDATADIR=/path/to/checkoutdir/test.
+    
+
+[0m
+-- Found Freetype: /usr/lib/libfreetype.so (found suitable version "2.14.3", minimum required is "2.13")
+-- Found Fontconfig: /usr/lib/libfontconfig.so (found suitable version "2.18.3", minimum required is "2.15")
+-- Checking for module 'nss>=3.98'
+--   Found nss, version 3.128.0
+-- Found NSS3: nss3;nssutil3;smime3;ssl3;softokn3;plds4;plc4;nspr4 (Required is at least version "3.98")
+-- Found LibGpgError: /usr/lib/libgpg-error.so (found suitable version "1.61", minimum required is "1.47")
+-- Found Gpgme: /usr/lib/libgpgme.so (found suitable version "2.2.0", minimum required is "2.2.0")
+-- Found TIFF: /usr/lib64/cmake/tiff (found suitable version "4.7.2", minimum required is "4.5")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Found PNG: /usr/lib/libpng.so (found version "1.6.58")
+-- Found JPEG: /usr/lib/libjpeg.so (found version "80")
+-- Performing Test HAVE_JPEG_MEM_SRC
+-- Performing Test HAVE_JPEG_MEM_SRC - Success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Checking for module 'cairo>=1.18.0'
+--   Found cairo, version 1.18.4
+-- Found Cairo: /usr/lib/libcairo.so (Required is at least version "1.18.0")
+-- Checking for modules 'glib-2.0>=2.80;gobject-2.0>=2.80;gio-2.0>=2.80'
+--   Found glib-2.0, version 2.88.3
+--   Found gobject-2.0, version 2.88.3
+--   Found gio-2.0, version 2.88.3
+-- Found GLIB: gio-2.0;gobject-2.0;glib-2.0
+-- Checking for module 'gobject-introspection-1.0'
+--   Found gobject-introspection-1.0, version 1.86.0
+-- Checking for modules 'gtk+-3.0>=3.24;gdk-pixbuf-2.0>=2.42'
+--   Found gtk+-3.0, version 3.24.52
+--   Found gdk-pixbuf-2.0, version 2.44.7
+-- Found GTK: gtk-3;gdk-3;pangocairo-1.0;cairo-gobject;atk-1.0;pango-1.0;cairo;harfbuzz;gdk_pixbuf-2.0;gio-2.0;gobject-2.0;glib-2.0;z
+-- Performing Test Iconv_IS_BUILT_IN
+-- Performing Test Iconv_IS_BUILT_IN - Success
+-- Found Iconv: built in to C library
+-- Performing Test ICONV_SECOND_ARGUMENT_IS_CONST
+-- Performing Test ICONV_SECOND_ARGUMENT_IS_CONST - Failed
+-- Checking for module 'lcms2'
+--   Found lcms2, version 2.19
+-- Found lcms version 2.19, /usr/lib/liblcms2.so
+-- Found CURL: /usr/lib/libcurl.so (found suitable version "8.22.0", minimum required is "8.5")
+-- Checking for module 'poppler-data'
+--   Package 'poppler-data' not found
+-- Looking for fseek64
+-- Looking for fseek64 - not found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for pread64
+-- Looking for pread64 - found
+-- Looking for lseek64
+-- Looking for lseek64 - found
+-- Looking for gmtime_r
+-- Looking for gmtime_r - found
+-- Looking for timegm
+-- Looking for timegm - found
+-- Looking for localtime_r
+-- Looking for localtime_r - found
+-- Looking for strtok_r
+-- Looking for strtok_r - found
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Performing Test SUPPORT_VERSION_SCRIPT
+-- Performing Test SUPPORT_VERSION_SCRIPT - Success
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found Intl: built in to C library
+-- Looking for explicit_bzero
+-- Looking for explicit_bzero - found
+-- Looking for CAIRO_HAS_PNG_FUNCTIONS
+-- Looking for CAIRO_HAS_PNG_FUNCTIONS - found
+-- Looking for CAIRO_HAS_PDF_SURFACE
+-- Looking for CAIRO_HAS_PDF_SURFACE - found
+-- Looking for CAIRO_HAS_PS_SURFACE
+-- Looking for CAIRO_HAS_PS_SURFACE - found
+-- Looking for CAIRO_HAS_SVG_SURFACE
+-- Looking for CAIRO_HAS_SVG_SURFACE - found
+[0mBuilding Poppler with support for:[0m
+[0m  font configuration:   fontconfig[0m
+[0m  font subsetting:      yes[0m
+[0m  use boost (Splash):   yes[0m
+[0m  cairo output:         yes[0m
+[0m  qt5 wrapper:          no[0m
+[0m  qt6 wrapper:          yes[0m
+[0m  glib wrapper:         yes[0m
+[0m    introspection:      yes[0m
+[0m    gtk-doc:            no[0m
+[0m  cpp wrapper:          yes[0m
+[0m  use libjpeg:          yes[0m
+[0m  use libpng:           yes[0m
+[0m  use libtiff:          yes[0m
+[0m  use zlib uncompress:  no[0m
+[0m  use nss3:             yes[0m
+[0m  use gpg:              yes[0m
+[0m    default signature backend:          NSS[0m
+[0m    enable pgp signatures in gpg backend by default:                                no[0m
+[0m  use curl:             yes[0m
+[0m  use libopenjpeg2:     yes[0m
+[0m  use lcms2:            yes[0m
+[0m  command line utils:   yes[0m
+[0m  fuzz target:          no[0m
+[0m  test data dir:        /var/tmp/hokuto/poppler-01/build/testfiles[0m
+-- Configuring done (3.8s)
+-- Generating done (0.3s)
+-- Build files have been written to: /var/tmp/hokuto/poppler-01/build/build
+[  0%] [1m[34mGenerating pdfsig.gmo[0m
+[  0%] [1m[34mGenerating pdfsig.pot.new[0m
+[  0%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/GooTimer.cc.o[0m
+[  1%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/JpegWriter.cc.o[0m
+[  1%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/ImgWriter.cc.o[0m
+[  1%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/NetPBMWriter.cc.o[0m
+[  1%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/GooString.cc.o[0m
+[  1%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/TiffWriter.cc.o[0m
+[  1%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/PNGWriter.cc.o[0m
+[  1%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/ft_utils.cc.o[0m
+[  1%] Built target pofiles_1
+[  2%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/gbase64.cc.o[0m
+[  2%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/gbasename.cc.o[0m
+[  2%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/gfile.cc.o[0m
+[  2%] Built target update_pot_pdfsig
+[  2%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/glibc_strtok_r.cc.o[0m
+[  2%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/glibc.cc.o[0m
+[  2%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/gstrtod.cc.o[0m
+[  2%] [32mBuilding CXX object CMakeFiles/poppler.dir/goo/grandom.cc.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/poppler.dir/fofi/FoFiBase.cc.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/poppler.dir/fofi/FoFiEncodings.cc.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/poppler.dir/fofi/FoFiTrueType.cc.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/poppler.dir/fofi/FoFiType1.cc.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/poppler.dir/fofi/FoFiType1C.cc.o[0m
+[  3%] [32mBuilding CXX object CMakeFiles/poppler.dir/fofi/FoFiIdentifier.cc.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Annot.cc.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/AnnotStampImageHelper.cc.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Array.cc.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/CachedFile.cc.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Catalog.cc.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/CharCodeToUnicode.cc.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/CMap.cc.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/CryptoSignBackend.cc.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/DateInfo.cc.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Decrypt.cc.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Dict.cc.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Error.cc.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/FDPDFDocBuilder.cc.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/FILECacheLoader.cc.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/FileSpec.cc.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/FlateEncoder.cc.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/FontEncodingTables.cc.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Form.cc.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/FontInfo.cc.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Function.cc.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Gfx.cc.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/GfxFont.cc.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/GfxState.cc.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/GlobalParams.cc.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Hints.cc.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/ImageEmbeddingUtils.cc.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/JArithmeticDecoder.cc.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/JBIG2Stream.cc.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/JSInfo.cc.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Lexer.cc.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Link.cc.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Linearization.cc.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/LocalPDFDocBuilder.cc.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/MarkedContentOutputDev.cc.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/NameToCharCode.cc.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Object.cc.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/OptionalContent.cc.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Outline.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/OutputDev.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Page.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/PageTransition.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Parser.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/PDFDoc.cc.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/PDFDocBuilder.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/PDFDocEncoding.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/PDFDocFactory.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/ProfileData.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/PreScanOutputDev.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/PSTokenizer.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/SignatureInfo.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Stream.cc.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/StructTreeRoot.cc.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/StructElement.cc.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/UnicodeMap.cc.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/UnicodeMapFuncs.cc.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/UnicodeTypeTable.cc.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/UTF.cc.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/XRef.cc.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/PSOutputDev.cc.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/TextOutputDev.cc.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/PageLabelInfo.cc.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/SecurityHandler.cc.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Sound.cc.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/ViewerPreferences.cc.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Movie.cc.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/Rendition.cc.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/CertificateInfo.cc.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/BBoxOutputDev.cc.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/SplashOutputDev.cc.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/Splash.cc.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashBitmap.cc.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashClip.cc.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashFTFont.cc.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashFTFontEngine.cc.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashFTFontFile.cc.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashFont.cc.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashFontEngine.cc.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashFontFile.cc.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashFontFileID.cc.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashPath.cc.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashPattern.cc.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashScreen.cc.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashState.cc.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashXPath.cc.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/poppler.dir/splash/SplashXPathScanner.cc.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/DCTStream.cc.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/CurlCachedFile.cc.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/CurlPDFDocBuilder.cc.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/NSSCryptoSignBackend.cc.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/GPGMECryptoSignBackend.cc.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/JPEG2000Stream.cc.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/poppler.dir/poppler/FontSubsetter.cc.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/CourierWidths.pregenerated.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/CourierBoldWidths.pregenerated.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/CourierBoldObliqueWidths.pregenerated.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/CourierObliqueWidths.pregenerated.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/HelveticaWidths.pregenerated.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/HelveticaBoldWidths.pregenerated.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/HelveticaBoldObliqueWidths.pregenerated.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/HelveticaObliqueWidths.pregenerated.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/SymbolWidths.pregenerated.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/TimesBoldWidths.pregenerated.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/TimesBoldItalicWidths.pregenerated.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/TimesItalicWidths.pregenerated.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/TimesRomanWidths.pregenerated.c.o[0m
+[ 25%] [32mBuilding C object CMakeFiles/poppler.dir/poppler/ZapfDingbatsWidths.pregenerated.c.o[0m
+[ 25%] [1m[32mLinking CXX shared library libpoppler.so[0m
+In member function ‘[01m[K__ct [m[K’,
+    inlined from ‘[01m[Kconstruct_at[m[K’ at [01m[K/usr/include/c++/16.2.0/bits/stl_construct.h:110:9[m[K,
+    inlined from ‘[01m[Kconstruct[m[K’ at [01m[K/usr/include/c++/16.2.0/bits/alloc_traits.h:716:21[m[K,
+    inlined from ‘[01m[K_M_realloc_append[m[K’ at [01m[K/usr/include/c++/16.2.0/bits/vector.tcc:594:26[m[K,
+    inlined from ‘[01m[Kpush_back[m[K’ at [01m[K/usr/include/c++/16.2.0/bits/stl_vector.h:1417:21[m[K,
+    inlined from ‘[01m[K__ct [m[K’ at [01m[K/var/tmp/hokuto/poppler-01/build/poppler/Link.cc:808:32[m[K,
+    inlined from ‘[01m[Kmake_unique[m[K’ at [01m[K/usr/include/c++/16.2.0/bits/unique_ptr.h:1105:30[m[K,
+    inlined from ‘[01m[KparseAction[m[K’ at [01m[K/var/tmp/hokuto/poppler-01/build/poppler/Link.cc:134:48[m[K:
+[01m[K/var/tmp/hokuto/poppler-01/build/poppler/Link.h:446:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KMEM <unsigned int> [(struct StateList *)&stList][m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+  446 |     struct StateList
+      |            [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/poppler-01/build/poppler/Link.cc:[m[K In function ‘[01m[KparseAction[m[K’:
+[01m[K/var/tmp/hokuto/poppler-01/build/poppler/Link.cc:777:19:[m[K [01;36m[Knote: [m[K‘[01m[KMEM <unsigned int> [(struct StateList *)&stList][m[K’ was declared here
+  777 |         StateList stList;
+      |                   [01;36m[K^[m[K
+[ 25%] Built target poppler
+[ 26%] [1m[34mGenerating poppler-enums.h[0m
+[ 26%] [32mBuilding CXX object utils/CMakeFiles/utils_common_lib.dir/parseargs.cc.o[0m
+[ 26%] [32mBuilding CXX object test/CMakeFiles/perf-test.dir/perf-test.cc.o[0m
+[ 26%] [32mBuilding CXX object test/CMakeFiles/pdf-fullrewrite.dir/pdf-fullrewrite.cc.o[0m
+[ 26%] [32mBuilding CXX object test/CMakeFiles/pdf-signing-nss.dir/pdf-signing-nss.cc.o[0m
+[ 26%] [32mBuilding CXX object test/CMakeFiles/image-embedding.dir/image-embedding.cc.o[0m
+[ 26%] [32mBuilding CXX object test/CMakeFiles/cairo-thread-test.dir/cairo-thread-test.cc.o[0m
+[ 26%] [32mBuilding CXX object test/CMakeFiles/fontsubsetting-basic-test.dir/font-subsetting/fontsubsetting-basic-test.cc.o[0m
+[ 26%] [32mBuilding CXX object test/CMakeFiles/pdf-inspector.dir/pdf-inspector.cc.o[0m
+[ 26%] [32mBuilding CXX object test/CMakeFiles/pdf-validate-signature.dir/pdf-validate-signature.cc.o[0m
+[ 26%] [1m[34mGenerating poppler-enums.c[0m
+[ 26%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-action.cc.o[0m
+[ 26%] [32mBuilding CXX object utils/CMakeFiles/utils_common_lib.dir/Win32Console.cc.o[0m
+[ 27%] [1m[32mLinking CXX static library libutils_common_lib.a[0m
+[ 27%] Built target utils_common_lib
+[ 27%] [32mBuilding CXX object test/CMakeFiles/cairo-thread-test.dir/__/poppler/CairoFontEngine.cc.o[0m
+[ 27%] [32mBuilding CXX object test/CMakeFiles/image-embedding.dir/__/utils/parseargs.cc.o[0m
+[ 29%] [32mBuilding CXX object test/CMakeFiles/pdf-fullrewrite.dir/__/utils/parseargs.cc.o[0m
+[ 29%] [1m[32mLinking CXX executable image-embedding[0m
+[ 29%] [1m[32mLinking CXX executable pdf-validate-signature[0m
+[ 29%] [1m[32mLinking CXX executable pdf-signing-nss[0m
+[ 29%] Built target pdf-validate-signature
+[ 29%] [32mBuilding CXX object test/CMakeFiles/cairo-thread-test.dir/__/poppler/CairoOutputDev.cc.o[0m
+[ 29%] Built target image-embedding
+[ 29%] [32mBuilding CXX object test/CMakeFiles/pdf-inspector.dir/__/poppler/CairoFontEngine.cc.o[0m
+[ 29%] [1m[32mLinking CXX executable fontsubsetting-basic-test[0m
+[ 29%] Built target pdf-signing-nss
+[ 29%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-date.cc.o[0m
+[ 29%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-document.cc.o[0m
+[ 29%] [1m[32mLinking CXX executable pdf-fullrewrite[0m
+[ 29%] [1m[32mLinking CXX executable perf-test[0m
+[ 29%] Built target fontsubsetting-basic-test
+[ 29%] [32mBuilding CXX object test/CMakeFiles/cairo-thread-test.dir/__/poppler/CairoRescaleBox.cc.o[0m
+[ 29%] [32mBuilding CXX object test/CMakeFiles/pdf-inspector.dir/__/poppler/CairoOutputDev.cc.o[0m
+[ 29%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-page.cc.o[0m
+[ 29%] Built target perf-test
+[ 29%] [32mBuilding CXX object test/CMakeFiles/pdf-inspector.dir/__/poppler/CairoRescaleBox.cc.o[0m
+[ 29%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-attachment.cc.o[0m
+[ 29%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-form-field.cc.o[0m
+[ 29%] Built target pdf-fullrewrite
+[ 29%] Built target poppler-qt6_autogen_timestamp_deps
+[ 30%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-annot.cc.o[0m
+[ 30%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-layer.cc.o[0m
+[ 30%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-movie.cc.o[0m
+[ 30%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-destination.cpp.o[0m
+[ 30%] [1m[32mLinking CXX executable cairo-thread-test[0m
+[ 30%] [32mBuilding CXX object utils/CMakeFiles/pdftoppm.dir/pdftoppm.cc.o[0m
+[ 31%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-document.cpp.o[0m
+[ 31%] [32mBuilding CXX object utils/CMakeFiles/pdftoppm.dir/sanitychecks.cc.o[0m
+[ 32%] [1m[32mLinking CXX executable pdf-inspector[0m
+[ 32%] [32mBuilding CXX object utils/CMakeFiles/pdftocairo.dir/pdftocairo.cc.o[0m
+[ 32%] [32mBuilding CXX object utils/CMakeFiles/pdftocairo.dir/pdftocairo-win32.cc.o[0m
+[ 34%] [32mBuilding CXX object utils/CMakeFiles/pdfdetach.dir/pdfdetach.cc.o[0m
+[ 34%] Built target cairo-thread-test
+[ 34%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-embedded-file.cpp.o[0m
+[ 34%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-media.cc.o[0m
+[ 34%] [1m[32mLinking CXX executable pdftoppm[0m
+[ 34%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler.cc.o[0m
+[ 34%] [32mBuilding CXX object utils/CMakeFiles/pdftocairo.dir/__/poppler/CairoFontEngine.cc.o[0m
+[ 34%] Built target pdf-inspector
+[ 34%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-font.cpp.o[0m
+[ 34%] Built target pdftoppm
+[ 35%] [32mBuilding CXX object utils/CMakeFiles/pdftocairo.dir/__/poppler/CairoOutputDev.cc.o[0m
+[ 35%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-global.cpp.o[0m
+[ 35%] [1m[32mLinking CXX executable pdfdetach[0m
+[ 35%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-cached-file-loader.cc.o[0m
+[ 35%] Built target pdfdetach
+[ 36%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-input-stream.cc.o[0m
+[ 36%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/poppler-structure-element.cc.o[0m
+[ 36%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-image.cpp.o[0m
+[ 36%] [32mBuilding CXX object utils/CMakeFiles/pdfattach.dir/pdfattach.cc.o[0m
+[ 36%] [32mBuilding CXX object utils/CMakeFiles/pdftocairo.dir/__/poppler/CairoRescaleBox.cc.o[0m
+[ 36%] [32mBuilding CXX object utils/CMakeFiles/pdffonts.dir/pdffonts.cc.o[0m
+[ 36%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-page.cpp.o[0m
+[ 36%] [32mBuilding C object glib/CMakeFiles/poppler-glib.dir/poppler-enums.c.o[0m
+[ 37%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-page-renderer.cpp.o[0m
+[ 39%] [32mBuilding CXX object utils/CMakeFiles/pdfimages.dir/pdfimages.cc.o[0m
+[ 39%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-page-transition.cpp.o[0m
+[ 39%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/__/poppler/CairoFontEngine.cc.o[0m
+[ 39%] [32mBuilding CXX object utils/CMakeFiles/pdfinfo.dir/pdfinfo.cc.o[0m
+[ 39%] [1m[32mLinking CXX executable pdfattach[0m
+[ 39%] [32mBuilding CXX object utils/CMakeFiles/pdfimages.dir/ImageOutputDev.cc.o[0m
+[ 39%] [1m[32mLinking CXX executable pdffonts[0m
+[ 39%] Built target pdfattach
+[ 39%] [32mBuilding CXX object utils/CMakeFiles/pdfinfo.dir/printencodings.cc.o[0m
+[ 39%] Built target pdffonts
+[ 39%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-private.cpp.o[0m
+[ 39%] [32mBuilding CXX object utils/CMakeFiles/pdfsig.dir/pdfsig.cc.o[0m
+[ 39%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/__/poppler/CairoOutputDev.cc.o[0m
+[ 39%] [1m[32mLinking CXX executable pdftocairo[0m
+[ 39%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-rectangle.cpp.o[0m
+[ 39%] [1m[32mLinking CXX executable pdfimages[0m
+[ 39%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-toc.cpp.o[0m
+[ 40%] [32mBuilding CXX object utils/CMakeFiles/pdftops.dir/pdftops.cc.o[0m
+[ 40%] [32mBuilding CXX object cpp/CMakeFiles/poppler-cpp.dir/poppler-version.cpp.o[0m
+[ 40%] [32mBuilding CXX object glib/CMakeFiles/poppler-glib.dir/__/poppler/CairoRescaleBox.cc.o[0m
+[ 40%] Built target pdfimages
+[ 40%] [32mBuilding CXX object utils/CMakeFiles/pdftotext.dir/pdftotext.cc.o[0m
+[ 40%] [32mBuilding CXX object utils/CMakeFiles/pdftotext.dir/printencodings.cc.o[0m
+[ 40%] [32mBuilding CXX object utils/CMakeFiles/pdftops.dir/sanitychecks.cc.o[0m
+[ 40%] [32mBuilding CXX object utils/CMakeFiles/pdftohtml.dir/InMemoryFile.cc.o[0m
+[ 40%] [32mBuilding CXX object utils/CMakeFiles/pdftohtml.dir/pdftohtml.cc.o[0m
+[ 41%] [1m[32mLinking CXX shared library libpoppler-cpp.so[0m
+[ 43%] [32mBuilding CXX object utils/CMakeFiles/pdfseparate.dir/pdfseparate.cc.o[0m
+[ 43%] [1m[32mLinking CXX executable pdfinfo[0m
+[ 43%] Built target pdftocairo
+[ 43%] [32mBuilding CXX object utils/CMakeFiles/pdfunite.dir/pdfunite.cc.o[0m
+[ 43%] [1m[32mLinking CXX executable pdftops[0m
+[ 43%] Built target poppler-cpp
+[ 43%] Built target pdftops
+[ 43%] [32mBuilding CXX object utils/CMakeFiles/pdftohtml.dir/HtmlFonts.cc.o[0m
+[ 44%] [32mBuilding CXX object utils/CMakeFiles/pdftohtml.dir/HtmlLinks.cc.o[0m
+[ 44%] [32mBuilding CXX object utils/CMakeFiles/pdftohtml.dir/HtmlOutputDev.cc.o[0m
+[ 44%] [1m[32mLinking CXX executable pdftotext[0m
+[ 45%] [1m[32mLinking CXX shared library libpoppler-glib.so[0m
+[ 46%] [1m[34mAutomatic MOC for target poppler-qt6[0m
+[ 46%] [32mBuilding CXX object cpp/tests/CMakeFiles/poppler-dump.dir/poppler-dump.cpp.o[0m
+[ 46%] Built target pdfinfo
+[ 46%] [32mBuilding CXX object cpp/tests/CMakeFiles/poppler-dump.dir/__/__/utils/parseargs.cc.o[0m
+[ 46%] [1m[32mLinking CXX executable pdfseparate[0m
+[ 46%] Built target poppler-qt6_autogen
+[ 46%] [32mBuilding CXX object cpp/tests/CMakeFiles/poppler-render.dir/poppler-render.cpp.o[0m
+[ 46%] Built target pdftotext
+[ 46%] [32mBuilding CXX object cpp/tests/CMakeFiles/poppler-render.dir/__/__/utils/parseargs.cc.o[0m
+[ 46%] Built target pdfseparate
+[ 48%] [32mBuilding CXX object cpp/tests/CMakeFiles/poppler-alpha-bg-test.dir/poppler-alpha-bg-test.cpp.o[0m
+[ 48%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 48%] [1m[32mLinking CXX executable pdfsig[0m
+[ 49%] [1m[32mLinking CXX executable pdfunite[0m
+[ 49%] [1m[32mLinking CXX executable poppler-dump[0m
+[ 50%] [1m[32mLinking CXX executable poppler-render[0m
+[ 50%] [1m[32mLinking CXX executable poppler-alpha-bg-test[0m
+[ 50%] Built target poppler-render
+[ 50%] Built target poppler-alpha-bg-test
+[ 50%] Built target poppler-dump
+[ 51%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-annotation.cc.o[0m
+[ 51%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-document.cc.o[0m
+[ 51%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-embeddedfile.cc.o[0m
+[ 51%] Built target pdfsig
+[ 51%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-fontinfo.cc.o[0m
+[ 51%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-form.cc.o[0m
+[ 51%] Built target pdfunite
+[ 51%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-link.cc.o[0m
+[ 51%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-link-extractor.cc.o[0m
+[ 51%] [1m[32mLinking CXX executable pdftohtml[0m
+[ 51%] Built target poppler-glib
+[ 51%] [1m[34mGenerating Poppler-0.18.gir[0m
+[ 51%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/main.c.o[0m
+[ 51%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/find.c.o[0m
+[ 51%] Built target pdftohtml
+[ 51%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/fonts.c.o[0m
+g-ir-scanner: link: cc -o /var/tmp/hokuto/poppler-01/build/build/glib/tmp-introspectb91ejay4/Poppler-0.18 -march=native -O2 -pipe -fomit-frame-pointer -flto=10 /var/tmp/hokuto/poppler-01/build/build/glib/tmp-introspectb91ejay4/Poppler-0.18.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/var/tmp/hokuto/poppler-01/build/build -Wl,-rpath,/var/tmp/hokuto/poppler-01/build/build -L/var/tmp/hokuto/poppler-01/build/build/glib -Wl,-rpath,/var/tmp/hokuto/poppler-01/build/build/glib -lpoppler-glib -lpoppler -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack
+[ 53%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-movie.cc.o[0m
+[ 53%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/forms.c.o[0m
+[ 53%] [1m[34mGenerating Poppler-0.18.typelib[0m
+[ 53%] [32mBuilding CXX object glib/demo/CMakeFiles/poppler-glib-demo.dir/info.cc.o[0m
+[ 53%] Built target gir-typelibs
+[ 53%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/images.c.o[0m
+[ 53%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-optcontent.cc.o[0m
+[ 54%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/links.c.o[0m
+[ 54%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/outline.c.o[0m
+[ 54%] [32mBuilding C object glib/tests/CMakeFiles/poppler-check-text.dir/check_text.c.o[0m
+[ 54%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-page.cc.o[0m
+[ 54%] [1m[32mLinking C executable poppler-check-text[0m
+[ 54%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/page.c.o[0m
+[ 54%] [32mBuilding C object glib/tests/CMakeFiles/poppler-check-bb.dir/check_bb.c.o[0m
+[ 54%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/print.c.o[0m
+[ 54%] [1m[32mLinking C executable poppler-check-bb[0m
+[ 54%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/render.c.o[0m
+[ 54%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/text.c.o[0m
+[ 54%] Built target poppler-check-text
+[ 54%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-base-converter.cc.o[0m
+[ 55%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/transitions.c.o[0m
+[ 55%] Built target poppler-check-bb
+[ 55%] [32mBuilding C object glib/tests/CMakeFiles/pdfdrawbb.dir/pdfdrawbb.c.o[0m
+[ 55%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/utils.c.o[0m
+[ 55%] [1m[32mLinking C executable pdfdrawbb[0m
+[ 55%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-pdf-converter.cc.o[0m
+[ 56%] [32mBuilding CXX object test/CMakeFiles/gtk-test.dir/gtk-test.cc.o[0m
+[ 56%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/annots.c.o[0m
+[ 56%] Built target pdfdrawbb
+[ 56%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/attachments.c.o[0m
+[ 56%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/layers.c.o[0m
+[ 56%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-private.cc.o[0m
+[ 56%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/selections.c.o[0m
+[ 58%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/taggedstruct.c.o[0m
+[ 59%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-ps-converter.cc.o[0m
+[ 59%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-qiodeviceinstream.cc.o[0m
+[ 59%] [32mBuilding C object glib/demo/CMakeFiles/poppler-glib-demo.dir/signature.c.o[0m
+[ 59%] [1m[32mLinking CXX executable poppler-glib-demo[0m
+[ 59%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-qiodeviceoutstream.cc.o[0m
+[ 59%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-sound.cc.o[0m
+[ 59%] [1m[32mLinking CXX executable gtk-test[0m
+[ 59%] Built target poppler-glib-demo
+[ 59%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-textbox.cc.o[0m
+[ 59%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-page-transition.cc.o[0m
+[ 59%] Built target gtk-test
+[ 60%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-media.cc.o[0m
+[ 60%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-outline.cc.o[0m
+[ 60%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/QPainterOutputDev.cc.o[0m
+[ 60%] [32mBuilding CXX object qt6/src/CMakeFiles/poppler-qt6.dir/poppler-version.cpp.o[0m
+[ 60%] [1m[32mLinking CXX shared library libpoppler-qt6.so[0m
+[ 60%] Built target poppler-qt6
+[ 60%] Built target test-render-to-file-qt6_autogen_timestamp_deps
+[ 60%] Built target poppler-qt6-forms_autogen_timestamp_deps
+[ 60%] Built target test-poppler-qt6_autogen_timestamp_deps
+[ 60%] Built target poppler-qt6-attachments_autogen_timestamp_deps
+[ 60%] Built target stress-poppler-dir-qt6_autogen_timestamp_deps
+[ 60%] Built target test-password-qt6_autogen_timestamp_deps
+[ 60%] Built target poppler-qt6-fonts_autogen_timestamp_deps
+[ 60%] Built target stress-threads-qt6_autogen_timestamp_deps
+[ 60%] Built target stress-poppler-qt6_autogen_timestamp_deps
+[ 60%] Built target poppler-qt6-texts_autogen_timestamp_deps
+[ 60%] Built target check_qt6_fonts_autogen_timestamp_deps
+[ 60%] Built target check_qt6_attachments_autogen_timestamp_deps
+[ 60%] Built target check_qt6_dateConversion_autogen_timestamp_deps
+[ 60%] Built target check_qt6_links_autogen_timestamp_deps
+[ 60%] Built target check_qt6_optcontent_autogen_timestamp_deps
+[ 60%] Built target check_qt6_annotations_autogen_timestamp_deps
+[ 60%] Built target check_qt6_metadata_autogen_timestamp_deps
+[ 60%] Built target check_qt6_pagelayout_autogen_timestamp_deps
+[ 60%] Built target poppler-qt6-page-labels_autogen_timestamp_deps
+[ 60%] Built target check_qt6_forms_autogen_timestamp_deps
+[ 60%] Built target check_qt6_password_autogen_timestamp_deps
+[ 60%] Built target check_qt6_pagemode_autogen_timestamp_deps
+[ 60%] Built target check_qt6_permissions_autogen_timestamp_deps
+[ 60%] Built target check_qt6_internal_outline_autogen_timestamp_deps
+[ 60%] Built target check_qt6_actualtext_autogen_timestamp_deps
+[ 60%] Built target check_qt6_search_autogen_timestamp_deps
+[ 60%] Built target check_qt6_lexer_autogen_timestamp_deps
+[ 60%] Built target check_qt6_object_autogen_timestamp_deps
+[ 60%] Built target check_qt6_goostring_autogen_timestamp_deps
+[ 60%] Built target check_qt6_stroke_opacity_autogen_timestamp_deps
+[ 60%] Built target check_qt6_outline_autogen_timestamp_deps
+[ 60%] Built target check_qt6_utf_conversion_autogen_timestamp_deps
+[ 60%] Built target check_qt6_utf8document_autogen_timestamp_deps
+[ 60%] Built target check_qt6_signature_basics_autogen_timestamp_deps
+[ 60%] Built target check_qt6_distinguished_name_parser_autogen_timestamp_deps
+[ 60%] Built target check_qt6_signature_basics_pgp_autogen_timestamp_deps
+[ 60%] Built target check_qt6_cidfontswidthsbuilder_autogen_timestamp_deps
+[ 60%] Built target check_qt6_untrusted_signature_autogen_timestamp_deps
+[ 60%] Built target check_qt6_endoflines_autogen_timestamp_deps
+[ 60%] Built target check_qt6_overprint_autogen_timestamp_deps
+[ 60%] Built target check_create_pgp_signature1_autogen_timestamp_deps
+[ 60%] Built target check_qt6_signature_cross_validation_autogen_timestamp_deps
+[ 60%] Built target check_qt6_pagelabelinfo_autogen_timestamp_deps
+[ 60%] Built target check_qt6_strings_autogen_timestamp_deps
+[ 60%] Built target poppler_qt6viewer_autogen_timestamp_deps
+[ 60%] Built target check_qt6_untrusted_signature_keylist_autogen_timestamp_deps
+[ 62%] [1m[34mAutomatic MOC for target test-password-qt6[0m
+[ 62%] [1m[34mAutomatic MOC for target poppler-qt6-forms[0m
+[ 62%] [1m[34mAutomatic MOC for target test-render-to-file-qt6[0m
+[ 62%] [1m[34mAutomatic MOC for target test-poppler-qt6[0m
+[ 62%] [1m[34mAutomatic MOC for target stress-poppler-qt6[0m
+[ 62%] [1m[34mAutomatic MOC for target poppler-qt6-fonts[0m
+[ 62%] [1m[34mAutomatic MOC for target stress-poppler-dir-qt6[0m
+[ 62%] [1m[34mAutomatic MOC for target poppler-qt6-attachments[0m
+[ 62%] [1m[34mAutomatic MOC for target stress-threads-qt6[0m
+[ 62%] [1m[34mAutomatic MOC for target poppler-qt6-texts[0m
+[ 62%] Built target poppler-qt6-attachments_autogen
+[ 62%] Built target poppler-qt6-fonts_autogen
+[ 62%] Built target poppler-qt6-texts_autogen
+[ 62%] Built target stress-poppler-dir-qt6_autogen
+[ 62%] Built target poppler-qt6-forms_autogen
+[ 62%] Built target stress-poppler-qt6_autogen
+[ 62%] Built target test-render-to-file-qt6_autogen
+[ 62%] [1m[34mAutomatic MOC for target check_qt6_attachments[0m
+[ 62%] [1m[34mAutomatic MOC for target poppler-qt6-page-labels[0m
+[ 62%] [1m[34mAutomatic MOC for target check_qt6_fonts[0m
+[ 62%] [1m[34mAutomatic MOC for target check_qt6_links[0m
+[ 62%] [1m[34mAutomatic MOC for target check_qt6_dateConversion[0m
+[ 62%] [1m[34mAutomatic MOC for target check_qt6_annotations[0m
+[ 62%] [1m[34mAutomatic MOC for target check_qt6_metadata[0m
+[ 62%] Built target poppler-qt6-page-labels_autogen
+[ 62%] [1m[34mAutomatic MOC for target check_qt6_optcontent[0m
+[ 62%] Built target stress-threads-qt6_autogen
+[ 63%] [1m[34mAutomatic MOC for target check_qt6_forms[0m
+[ 63%] Built target test-poppler-qt6_autogen
+[ 63%] Built target test-password-qt6_autogen
+[ 64%] [1m[34mAutomatic MOC for target check_qt6_pagelayout[0m
+[ 64%] [1m[34mAutomatic MOC for target check_qt6_pagemode[0m
+[ 64%] Built target check_qt6_dateConversion_autogen
+[ 64%] Built target check_qt6_annotations_autogen
+[ 64%] Built target check_qt6_fonts_autogen
+[ 64%] Built target check_qt6_links_autogen
+[ 64%] [1m[34mAutomatic MOC for target check_qt6_password[0m
+[ 64%] [1m[34mAutomatic MOC for target check_qt6_permissions[0m
+[ 64%] [1m[34mAutomatic MOC for target check_qt6_search[0m
+[ 65%] [1m[34mAutomatic MOC for target check_qt6_actualtext[0m
+[ 65%] Built target check_qt6_optcontent_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_lexer[0m
+[ 67%] Built target check_qt6_attachments_autogen
+[ 67%] Built target check_qt6_metadata_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_internal_outline[0m
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_goostring[0m
+[ 67%] Built target check_qt6_pagemode_autogen
+[ 67%] Built target check_qt6_pagelayout_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_object[0m
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_stroke_opacity[0m
+[ 67%] Built target check_qt6_password_autogen
+[ 67%] Built target check_qt6_search_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_utf_conversion[0m
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_outline[0m
+[ 67%] Built target check_qt6_actualtext_autogen
+[ 67%] Built target check_qt6_lexer_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_signature_basics[0m
+[ 67%] Built target check_qt6_forms_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_signature_basics_pgp[0m
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_utf8document[0m
+[ 67%] Built target check_qt6_permissions_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_distinguished_name_parser[0m
+[ 67%] Built target check_qt6_internal_outline_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_cidfontswidthsbuilder[0m
+[ 67%] Built target check_qt6_stroke_opacity_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_overprint[0m
+[ 67%] Built target check_qt6_object_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_endoflines[0m
+[ 67%] Built target check_qt6_goostring_autogen
+[ 67%] [1m[34mAutomatic MOC for target check_qt6_untrusted_signature[0m
+[ 67%] Built target check_qt6_outline_autogen
+[ 68%] [1m[34mAutomatic MOC for target check_qt6_untrusted_signature_keylist[0m
+[ 68%] Built target check_qt6_utf_conversion_autogen
+[ 68%] Built target check_qt6_distinguished_name_parser_autogen
+[ 68%] [1m[34mAutomatic MOC for target check_qt6_signature_cross_validation[0m
+[ 68%] [1m[34mAutomatic MOC for target check_create_pgp_signature1[0m
+[ 68%] Built target check_qt6_signature_basics_autogen
+[ 68%] [1m[34mAutomatic MOC for target check_qt6_pagelabelinfo[0m
+[ 68%] Built target check_qt6_cidfontswidthsbuilder_autogen
+[ 69%] [1m[34mAutomatic MOC for target check_qt6_strings[0m
+[ 69%] Built target check_qt6_signature_basics_pgp_autogen
+[ 69%] Built target check_qt6_utf8document_autogen
+[ 69%] [1m[34mAutomatic MOC for target poppler_qt6viewer[0m
+[ 69%] [32mBuilding CXX object qt6/tests/CMakeFiles/test-poppler-qt6.dir/test-poppler-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 69%] [32mBuilding CXX object qt6/tests/CMakeFiles/test-poppler-qt6.dir/test-poppler-qt6.cpp.o[0m
+[ 69%] Built target check_qt6_overprint_autogen
+[ 69%] Built target check_qt6_untrusted_signature_autogen
+[ 69%] [32mBuilding CXX object qt6/tests/CMakeFiles/test-password-qt6.dir/test-password-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 69%] [32mBuilding CXX object qt6/tests/CMakeFiles/test-render-to-file-qt6.dir/test-render-to-file-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 69%] Built target check_qt6_untrusted_signature_keylist_autogen
+[ 70%] [32mBuilding CXX object qt6/tests/CMakeFiles/test-render-to-file-qt6.dir/test-render-to-file.cpp.o[0m
+[ 70%] [32mBuilding CXX object qt6/tests/CMakeFiles/test-password-qt6.dir/test-password-qt6.cpp.o[0m
+[ 70%] Built target check_qt6_endoflines_autogen
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-forms.dir/poppler-qt6-forms_autogen/mocs_compilation.cpp.o[0m
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-fonts.dir/poppler-qt6-fonts_autogen/mocs_compilation.cpp.o[0m
+[ 72%] Built target check_qt6_signature_cross_validation_autogen
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-forms.dir/poppler-forms.cpp.o[0m
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-fonts.dir/poppler-fonts.cpp.o[0m
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-attachments.dir/poppler-qt6-attachments_autogen/mocs_compilation.cpp.o[0m
+[ 72%] Built target check_create_pgp_signature1_autogen
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-attachments.dir/poppler-attachments.cpp.o[0m
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/stress-poppler-qt6.dir/stress-poppler-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/stress-poppler-qt6.dir/stress-poppler-qt6.cpp.o[0m
+[ 72%] Built target check_qt6_pagelabelinfo_autogen
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/stress-poppler-dir-qt6.dir/stress-poppler-dir-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/stress-poppler-dir-qt6.dir/stress-poppler-dir.cpp.o[0m
+[ 72%] Built target check_qt6_strings_autogen
+[ 72%] [32mBuilding CXX object qt6/tests/CMakeFiles/stress-threads-qt6.dir/stress-threads-qt6_autogen/mocs_compilation.cpp.o[0m
+[ 73%] [32mBuilding CXX object qt6/tests/CMakeFiles/stress-threads-qt6.dir/stress-threads-qt6.cpp.o[0m
+[ 73%] Built target poppler_qt6viewer_autogen
+[ 73%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-texts.dir/poppler-qt6-texts_autogen/mocs_compilation.cpp.o[0m
+[ 73%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-texts.dir/poppler-texts.cpp.o[0m
+[ 73%] [1m[32mLinking CXX executable poppler-qt6-fonts[0m
+[ 73%] [1m[32mLinking CXX executable poppler-qt6-forms[0m
+[ 73%] [1m[32mLinking CXX executable test-render-to-file-qt6[0m
+[ 74%] [1m[32mLinking CXX executable poppler-qt6-attachments[0m
+[ 74%] [1m[32mLinking CXX executable test-password-qt6[0m
+[ 75%] [1m[32mLinking CXX executable stress-poppler-dir-qt6[0m
+[ 75%] Built target poppler-qt6-fonts
+[ 75%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-page-labels.dir/poppler-qt6-page-labels_autogen/mocs_compilation.cpp.o[0m
+[ 75%] [32mBuilding CXX object qt6/tests/CMakeFiles/poppler-qt6-page-labels.dir/poppler-page-labels.cpp.o[0m
+[ 75%] Built target poppler-qt6-attachments
+[ 75%] [1m[32mLinking CXX executable test-poppler-qt6[0m
+[ 75%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_attachments.dir/check_qt6_attachments_autogen/mocs_compilation.cpp.o[0m
+[ 75%] Built target test-render-to-file-qt6
+[ 77%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_dateConversion.dir/check_qt6_dateConversion_autogen/mocs_compilation.cpp.o[0m
+[ 78%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_attachments.dir/check_attachments.cpp.o[0m
+[ 78%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_dateConversion.dir/check_dateConversion.cpp.o[0m
+[ 78%] [1m[32mLinking CXX executable poppler-qt6-texts[0m
+[ 78%] Built target stress-poppler-dir-qt6
+[ 79%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_fonts.dir/check_qt6_fonts_autogen/mocs_compilation.cpp.o[0m
+[ 79%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_fonts.dir/check_fonts.cpp.o[0m
+[ 79%] Built target poppler-qt6-texts
+[ 79%] Built target test-password-qt6
+[ 79%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_links.dir/check_qt6_links_autogen/mocs_compilation.cpp.o[0m
+[ 79%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_links.dir/check_links.cpp.o[0m
+[ 79%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_annotations.dir/check_qt6_annotations_autogen/mocs_compilation.cpp.o[0m
+[ 79%] Built target poppler-qt6-forms
+[ 79%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_annotations.dir/check_annotations.cpp.o[0m
+[ 79%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_metadata.dir/check_qt6_metadata_autogen/mocs_compilation.cpp.o[0m
+[ 79%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_metadata.dir/check_metadata.cpp.o[0m
+[ 79%] Built target test-poppler-qt6
+[ 81%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_optcontent.dir/check_qt6_optcontent_autogen/mocs_compilation.cpp.o[0m
+[ 81%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_optcontent.dir/check_optcontent.cpp.o[0m
+[ 81%] [1m[32mLinking CXX executable stress-threads-qt6[0m
+[ 81%] Built target stress-threads-qt6
+[ 81%] [1m[32mLinking CXX executable stress-poppler-qt6[0m
+[ 81%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_forms.dir/check_qt6_forms_autogen/mocs_compilation.cpp.o[0m
+[ 81%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_forms.dir/check_forms.cpp.o[0m
+[ 82%] [1m[32mLinking CXX executable poppler-qt6-page-labels[0m
+[ 82%] [1m[32mLinking CXX executable check_qt6_dateConversion[0m
+[ 82%] Built target stress-poppler-qt6
+[ 82%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_pagelayout.dir/check_qt6_pagelayout_autogen/mocs_compilation.cpp.o[0m
+[ 82%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_pagelayout.dir/check_pagelayout.cpp.o[0m
+[ 82%] [1m[32mLinking CXX executable check_qt6_attachments[0m
+[ 82%] Built target poppler-qt6-page-labels
+[ 82%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_pagemode.dir/check_qt6_pagemode_autogen/mocs_compilation.cpp.o[0m
+[ 82%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_pagemode.dir/check_pagemode.cpp.o[0m
+[ 82%] Built target check_qt6_dateConversion
+[ 82%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_password.dir/check_qt6_password_autogen/mocs_compilation.cpp.o[0m
+[ 83%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_password.dir/check_password.cpp.o[0m
+[ 83%] [1m[32mLinking CXX executable check_qt6_fonts[0m
+[ 83%] [1m[32mLinking CXX executable check_qt6_links[0m
+[ 84%] [1m[32mLinking CXX executable check_qt6_metadata[0m
+[ 84%] Built target check_qt6_attachments
+[ 84%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_permissions.dir/check_qt6_permissions_autogen/mocs_compilation.cpp.o[0m
+[ 84%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_permissions.dir/check_permissions.cpp.o[0m
+[ 84%] Built target check_qt6_links
+[ 86%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_search.dir/check_qt6_search_autogen/mocs_compilation.cpp.o[0m
+[ 86%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_search.dir/check_search.cpp.o[0m
+[ 86%] Built target check_qt6_fonts
+[ 86%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_actualtext.dir/check_qt6_actualtext_autogen/mocs_compilation.cpp.o[0m
+[ 86%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_actualtext.dir/check_actualtext.cpp.o[0m
+[ 86%] Built target check_qt6_metadata
+[ 86%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_lexer.dir/check_qt6_lexer_autogen/mocs_compilation.cpp.o[0m
+[ 86%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_lexer.dir/check_lexer.cpp.o[0m
+[ 86%] [1m[32mLinking CXX executable check_qt6_optcontent[0m
+[ 86%] [1m[32mLinking CXX executable check_qt6_annotations[0m
+[ 86%] Built target check_qt6_optcontent
+[ 86%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_internal_outline.dir/check_qt6_internal_outline_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_internal_outline.dir/check_internal_outline.cpp.o[0m
+[ 87%] Built target check_qt6_annotations
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_goostring.dir/check_qt6_goostring_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_goostring.dir/check_goostring.cpp.o[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_forms[0m
+[ 87%] Built target check_qt6_forms
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_object.dir/check_qt6_object_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_object.dir/check_object.cpp.o[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_permissions[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_password[0m
+[ 87%] Built target check_qt6_permissions
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_stroke_opacity.dir/check_qt6_stroke_opacity_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_stroke_opacity.dir/check_stroke_opacity.cpp.o[0m
+[ 87%] Built target check_qt6_password
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_utf_conversion.dir/check_qt6_utf_conversion_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_utf_conversion.dir/check_utf_conversion.cpp.o[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_search[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_actualtext[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_lexer[0m
+[ 87%] Built target check_qt6_actualtext
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_outline.dir/check_qt6_outline_autogen/mocs_compilation.cpp.o[0m
+[ 87%] Built target check_qt6_search
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_outline.dir/check_outline.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_signature_basics.dir/check_qt6_signature_basics_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_signature_basics.dir/check_signature_basics.cpp.o[0m
+[ 87%] Built target check_qt6_lexer
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_signature_basics_pgp.dir/check_qt6_signature_basics_pgp_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_signature_basics_pgp.dir/check_signature_basics_pgp.cpp.o[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_pagelayout[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_pagemode[0m
+[ 87%] Built target check_qt6_pagelayout
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_utf8document.dir/check_qt6_utf8document_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_utf8document.dir/check_utf8document.cpp.o[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_internal_outline[0m
+[ 87%] Built target check_qt6_pagemode
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_distinguished_name_parser.dir/check_qt6_distinguished_name_parser_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_distinguished_name_parser.dir/check_distinguished_name_parser.cpp.o[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_object[0m
+[ 87%] Built target check_qt6_internal_outline
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_cidfontswidthsbuilder.dir/check_qt6_cidfontswidthsbuilder_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_cidfontswidthsbuilder.dir/check_cidfontswidthsbuilder.cpp.o[0m
+[ 87%] Built target check_qt6_object
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_overprint.dir/check_qt6_overprint_autogen/mocs_compilation.cpp.o[0m
+[ 87%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_overprint.dir/check_overprint.cpp.o[0m
+[ 87%] [1m[32mLinking CXX executable check_qt6_stroke_opacity[0m
+[ 88%] [1m[32mLinking CXX executable check_qt6_outline[0m
+[ 89%] [1m[32mLinking CXX executable check_qt6_utf_conversion[0m
+[ 89%] Built target check_qt6_outline
+[ 89%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_endoflines.dir/check_qt6_endoflines_autogen/mocs_compilation.cpp.o[0m
+[ 89%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_endoflines.dir/check_endoflines.cpp.o[0m
+[ 89%] [1m[32mLinking CXX executable check_qt6_goostring[0m
+[ 89%] Built target check_qt6_stroke_opacity
+[ 89%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_untrusted_signature.dir/check_qt6_untrusted_signature_autogen/mocs_compilation.cpp.o[0m
+[ 91%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_untrusted_signature.dir/check_untrusted_signature.cpp.o[0m
+[ 91%] Built target check_qt6_utf_conversion
+[ 91%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_untrusted_signature_keylist.dir/check_qt6_untrusted_signature_keylist_autogen/mocs_compilation.cpp.o[0m
+[ 91%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_untrusted_signature_keylist.dir/check_untrusted_signature_keylist.cpp.o[0m
+[ 91%] Built target check_qt6_goostring
+[ 91%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_create_pgp_signature1.dir/check_create_pgp_signature1_autogen/mocs_compilation.cpp.o[0m
+[ 92%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_create_pgp_signature1.dir/check_create_pgp_signature1.cpp.o[0m
+[ 93%] [1m[32mLinking CXX executable check_qt6_signature_basics[0m
+[ 93%] [1m[32mLinking CXX executable check_qt6_signature_basics_pgp[0m
+[ 94%] [1m[32mLinking CXX executable check_qt6_distinguished_name_parser[0m
+[ 94%] Built target check_qt6_signature_basics
+[ 96%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_signature_cross_validation.dir/check_qt6_signature_cross_validation_autogen/mocs_compilation.cpp.o[0m
+[ 96%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_signature_cross_validation.dir/check_signature_cross_validation.cpp.o[0m
+[ 96%] [1m[32mLinking CXX executable check_qt6_utf8document[0m
+[ 96%] Built target check_qt6_signature_basics_pgp
+[ 96%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_pagelabelinfo.dir/check_qt6_pagelabelinfo_autogen/mocs_compilation.cpp.o[0m
+[ 97%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_pagelabelinfo.dir/check_pagelabelinfo.cpp.o[0m
+[ 97%] [1m[32mLinking CXX executable check_qt6_overprint[0m
+[ 97%] [1m[32mLinking CXX executable check_qt6_cidfontswidthsbuilder[0m
+[ 97%] Built target check_qt6_utf8document
+[ 97%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_strings.dir/check_qt6_strings_autogen/mocs_compilation.cpp.o[0m
+[ 97%] [32mBuilding CXX object qt6/tests/CMakeFiles/check_qt6_strings.dir/check_strings.cpp.o[0m
+[ 97%] Built target check_qt6_overprint
+[ 97%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/poppler_qt6viewer_autogen/mocs_compilation.cpp.o[0m
+[ 97%] Built target check_qt6_cidfontswidthsbuilder
+[ 97%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/abstractinfodock.cpp.o[0m
+[ 97%] Built target check_qt6_distinguished_name_parser
+[ 97%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/documentobserver.cpp.o[0m
+[ 97%] [1m[32mLinking CXX executable check_qt6_untrusted_signature[0m
+[ 97%] [1m[32mLinking CXX executable check_create_pgp_signature1[0m
+[ 97%] Built target check_qt6_untrusted_signature
+[ 97%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/embeddedfiles.cpp.o[0m
+[ 97%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/fonts.cpp.o[0m
+[ 98%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/info.cpp.o[0m
+[ 98%] [1m[32mLinking CXX executable check_qt6_untrusted_signature_keylist[0m
+[ 98%] Built target check_create_pgp_signature1
+[ 98%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/main_viewer.cpp.o[0m
+[ 98%] [1m[32mLinking CXX executable check_qt6_endoflines[0m
+[ 98%] Built target check_qt6_untrusted_signature_keylist
+[ 98%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/metadata.cpp.o[0m
+[ 98%] [1m[32mLinking CXX executable check_qt6_pagelabelinfo[0m
+[ 98%] Built target check_qt6_endoflines
+[ 98%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/navigationtoolbar.cpp.o[0m
+[ 98%] [1m[32mLinking CXX executable check_qt6_signature_cross_validation[0m
+[ 98%] Built target check_qt6_pagelabelinfo
+[ 98%] [1m[32mLinking CXX executable check_qt6_strings[0m
+[ 98%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/optcontent.cpp.o[0m
+[ 98%] Built target check_qt6_signature_cross_validation
+[ 98%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/pageview.cpp.o[0m
+[ 98%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/permissions.cpp.o[0m
+[ 98%] Built target check_qt6_strings
+[100%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/thumbnails.cpp.o[0m
+[100%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/toc.cpp.o[0m
+[100%] [32mBuilding CXX object qt6/demos/CMakeFiles/poppler_qt6viewer.dir/viewer.cpp.o[0m
+[100%] [1m[32mLinking CXX executable poppler_qt6viewer[0m
+[100%] Built target poppler_qt6viewer
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler.so.164.0.0
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler.so.164
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler.so
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler.so.164.0.0
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler.so.164
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler.so
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Annot.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/AnnotStampImageHelper.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Array.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/CachedFile.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Catalog.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/CryptoSignBackend.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/DateInfo.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Dict.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Error.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/FILECacheLoader.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/FileSpec.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/FontInfo.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Form.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Function.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Gfx.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/GfxFont.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/GfxState.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/GfxState_helpers.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/GlobalParams.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/HashAlgorithm.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/JSInfo.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Lexer.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Link.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/MarkedContentOutputDev.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Movie.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Object.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/OptionalContent.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Outline.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/OutputDev.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Page.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/PageTransition.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Parser.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/PDFDoc.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/PDFDocBuilder.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/PDFDocEncoding.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/PDFDocFactory.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/PDFRectangle.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/PopplerCache.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/ProfileData.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Rendition.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Ref.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/CertificateInfo.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/SignatureInfo.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Stream-CCITT.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Stream.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/StructElement.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/StructTreeRoot.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/UnicodeMap.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/UnicodeMapFuncs.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/UnicodeMapTables.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/UnicodeTypeTable.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/UnicodeCClassTables.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/UnicodeCompTables.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/UnicodeDecompTables.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/ViewerPreferences.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/XRef.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/CharTypes.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/ErrorCodes.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/NameToUnicodeTable.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/PSOutputDev.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/TextOutputDev.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/BBoxOutputDev.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/UTF.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/Sound.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/SplashOutputDev.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/CurlCachedFile.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/CurlPDFDocBuilder.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/JPEG2000Stream.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/poppler_private_export.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/poppler-config.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/fofi/FoFiBase.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/fofi/FoFiEncodings.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/fofi/FoFiTrueType.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/fofi/FoFiType1C.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/fofi/FoFiIdentifier.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/GooTimer.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/GooString.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/gmem.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/gfile.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/ImgWriter.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/GooCheckedOps.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/GooLikely.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/gstrtod.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/grandom.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/PNGWriter.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/TiffWriter.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/goo/JpegWriter.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/Splash.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashBitmap.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashClip.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashErrorCodes.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashFont.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashFontEngine.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashFontFile.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashFontFileID.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashGlyphBitmap.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashMath.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashPath.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashPattern.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/splash/SplashTypes.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdftoppm
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdftoppm" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdftoppm.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdftocairo
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdftocairo" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdftocairo.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdfdetach
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdfdetach" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdfdetach.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdfattach
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdfattach" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdfattach.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdffonts
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdffonts" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdffonts.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdfimages
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdfimages" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdfimages.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdfinfo
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdfinfo" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdfinfo.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/locale/ca/LC_MESSAGES/pdfsig.mo
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdfsig
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdfsig" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdfsig.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdftops
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdftops" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdftops.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdftotext
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdftotext" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdftotext.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdftohtml
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdftohtml" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdftohtml.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdfseparate
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdfseparate" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdfseparate.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/bin/pdfunite
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/bin/pdfunite" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/man/man1/pdfunite.1
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-glib.so.8.31.0
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-glib.so.8
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-glib.so.8.31.0" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-glib.so
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-glib.so.8.31.0
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-glib.so.8
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-glib.so
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-action.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-date.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-document.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-page.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-attachment.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-form-field.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-annot.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-layer.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-movie.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-media.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-structure-element.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-enums.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-features.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/glib/poppler-macros.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/share/gir-1.0/Poppler-0.18.gir
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/girepository-1.0/Poppler-0.18.typelib
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-qt6.so.3.12.0
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-qt6.so.3
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-qt6.so.3.12.0" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-qt6.so
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-qt6.so.3.12.0
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-qt6.so.3
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-qt6.so
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-qt6.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-link.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-annotation.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-form.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-optcontent.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-page-transition.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-media.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-converter.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-export.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/qt6/poppler-version.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-cpp.so.3.1.0
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-cpp.so.3
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-cpp.so.3.1.0" to ""
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-cpp.so
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-cpp.so.3.1.0
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-cpp.so.3
+-- Up-to-date: /var/tmp/hokuto/poppler-01/output/usr/lib64/libpoppler-cpp.so
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-destination.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-document.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-embedded-file.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-font.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-font-private.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-global.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-image.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-page.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-page-renderer.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-page-transition.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-rectangle.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-toc.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler_cpp_export.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/include/poppler/cpp/poppler-version.h
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/pkgconfig/poppler.pc
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/pkgconfig/poppler-qt6.pc
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/pkgconfig/poppler-glib.pc
+-- Installing: /var/tmp/hokuto/poppler-01/output/usr/lib64/pkgconfig/poppler-cpp.pc
+
+Script done on 2026-09-07 22:02:57+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpoppler[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 07 Sep 2026 15:02:58 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m1m29s[0m
