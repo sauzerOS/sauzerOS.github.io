@@ -1,0 +1,510 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mksystemstats[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mksystemstats 6.7.5-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 09 Sep 2026 05:20:40 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mksystemstats[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc kcoreaddons|sonic-frameworks-core-addons kcrash ki18n kio|sonic-frameworks-io libksysguard|sonic-system-monitor-library lm-sensors qt solid extra-cmake-modules|sonic-frameworks-cmake-modules libnl networkmanager-qt|sonic-frameworks-networkmanager[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mksystemstats[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 extra-cmake-modules-6.29.0-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 kcoreaddons-6.29.0-1 kcrash-6.29.0-1 ki18n-6.29.0-1 kio-6.29.0-1 libksysguard-6.7.4-1 libnl-3.12.0-1 libtool-2.6.2-1 lm-sensors-3.6.2-1 m4-1.4.21-1 make-4.4.1-1 networkmanager-qt-6.29.0-1 patch-2.8-1 pkgconf-3.0.7-1 qt-6.11.2-1 sed-4.10-1 solid-6.29.0-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-09 12:20:40+07:00 [COMMAND="cd /var/tmp/hokuto/ksystemstats-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/ksystemstats-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/ksystemstats-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/ksystemstats-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/ksystemstats-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/ksystemstats-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/ksystemstats-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/ksystemstats-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/ksystemstats-01/build/.cache' /repo/kde/ksystemstats/build /var/tmp/hokuto/ksystemstats-01/output 6.7.5 ksystemstats" <not executed on terminal>]
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:18 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.29.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.29.0")
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.29.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.29.0")
+-- Found KF6: success (found suitable version "6.29.0", minimum required is "6.26.0") found components: CoreAddons Solid KIO Crash
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Checking for one of the modules 'libnm>=1.4.0'
+-- Checking for one of the modules 'gio-2.0'
+-- Found Sensors: /usr/include
+-- Checking for modules 'libnl-3.0;libnl-route-3.0'
+--   Found libnl-3.0, version 3.12.0
+--   Found libnl-route-3.0, version 3.12.0
+-- Found NL: /usr/lib/libnl-3.so
+-- Found Libcap: /usr/bin/setcap
+-- Found UDev: /usr/include (found version "261")
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6Test (required version >= 6.10.0)
+ * OpenGL
+ * Qt6WidgetsTools (required version >= 6.11.2)
+ * Qt6GuiTools (required version >= 6.11.2)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6CoreTools (required version >= 6.11.2)
+ * Qt6DBusTools (required version >= 6.11.2)
+ * Libcap, Capabilities are a measure to limit the omnipotence of the superuser., <https://sites.google.com/site/fullycapable/>
+   Needed for setting CAP_PERFMON of Intel GPU helper.
+
+-- The following RECOMMENDED packages have been found:
+
+ * UDev, API for enumerating and introspecting local devices (part of systemd), <https://www.freedesktop.org/wiki/Software/systemd/>
+   UDev is used for finding graphics cards.
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6 (required version >= 6.10.0)
+ * KF6CoreAddons (required version >= 6.29.0)
+ * KF6Solid (required version >= 6.29.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6Crash (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Qt6Core (required version >= 6.9.0)
+ * Gettext
+ * KSysGuard (required version >= 6.7.0)
+ * KF6NetworkManagerQt (required version >= 6.26.0)
+ * Sensors, <https://github.com/lm-sensors/lm-sensors>
+   Used for reading hardware sensors that aren't covered by other plugins.
+ * NL, <https://github.com/thom311/libnl/>
+   Used for gathering socket info via the sock_diag netlink subsystem and for the network plugin when NetworkManagerQt is not available.
+
+-- The following OPTIONAL packages have not been found:
+
+ * WrapVulkanHeaders
+
+-- Configuring done (2.5s)
+-- Generating done (0.1s)
+[33mCMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/ksystemstats-01/build/build
+[  1%] Built target ksystemstats_core_autogen_timestamp_deps
+[  1%] [1m[34mGenerating ts...[0m
+[  0%] Built target ksystemstats_plugin_osinfo_autogen_timestamp_deps
+[  1%] Built target ksystemstats_plugin_memory_autogen_timestamp_deps
+[  1%] Built target ksystemstats_plugin_network_autogen_timestamp_deps
+[  1%] Built target ksystemstats_plugin_power_autogen_timestamp_deps
+[  1%] Built target ksystemstats_plugin_cpu_autogen_timestamp_deps
+[  2%] [1m[34mGenerating mo...[0m
+[  2%] Built target ksystemstats_plugin_disk_autogen_timestamp_deps
+[  2%] Built target ksystemstats_plugin_pressure_autogen_timestamp_deps
+[  2%] Built target tsfiles-a53d6636280cf2b79e33d5562787dc98
+[  2%] Built target ksystemstats_plugin_lmsensors_autogen_timestamp_deps
+[  3%] [1m[34mAutomatic MOC for target ksystemstats_plugin_osinfo[0m
+[  3%] Built target kstatsviewer_autogen_timestamp_deps
+[  3%] Built target ksystemstats_intel_helper_autogen_timestamp_deps
+[  4%] [1m[34mAutomatic MOC for target ksystemstats_plugin_network[0m
+[  4%] Built target ksystemstats_plugin_gpu_autogen_timestamp_deps
+[  5%] [1m[34mAutomatic MOC for target ksystemstats_core[0m
+[  6%] [1m[34mAutomatic MOC for target ksystemstats_plugin_disk[0m
+[  7%] [1m[34mAutomatic MOC for target ksystemstats_plugin_power[0m
+[  8%] [1m[34mAutomatic MOC for target ksystemstats_plugin_cpu[0m
+[  9%] [1m[34mAutomatic MOC for target ksystemstats_plugin_pressure[0m
+[ 10%] [1m[34mAutomatic MOC for target ksystemstats_plugin_memory[0m
+[ 11%] [1m[34mAutomatic MOC for target ksystemstats_intel_helper[0m
+[ 11%] Built target ksystemstats_intel_helper_autogen
+[ 11%] Built target pofiles-a53d6636280cf2b79e33d5562787dc98
+[ 12%] [1m[34mAutomatic MOC for target ksystemstats_plugin_lmsensors[0m
+[ 13%] [1m[34mAutomatic MOC for target kstatsviewer[0m
+[ 13%] Built target ksystemstats_plugin_power_autogen
+[ 13%] Built target ksystemstats_plugin_pressure_autogen
+[ 13%] Built target ksystemstats_plugin_cpu_autogen
+[ 14%] [1m[34mAutomatic MOC for target ksystemstats_plugin_gpu[0m
+[ 15%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_intel_helper.dir/ksystemstats_intel_helper_autogen/mocs_compilation.cpp.o[0m
+[ 15%] Built target ksystemstats_core_autogen
+[ 15%] Built target ksystemstats_plugin_memory_autogen
+[ 16%] [32mBuilding CXX object plugins/power/CMakeFiles/ksystemstats_plugin_power.dir/ksystemstats_plugin_power_autogen/mocs_compilation.cpp.o[0m
+[ 17%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_intel_helper.dir/IntelHelper.cpp.o[0m
+[ 17%] Built target ksystemstats_plugin_disk_autogen
+[ 18%] [32mBuilding CXX object plugins/power/CMakeFiles/ksystemstats_plugin_power.dir/power.cpp.o[0m
+[ 18%] Built target ksystemstats_plugin_network_autogen
+[ 19%] [32mBuilding CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/ksystemstats_plugin_cpu_autogen/mocs_compilation.cpp.o[0m
+[ 20%] [1m[34mGenerating ksystemstats1adaptor.cpp, ksystemstats1adaptor.h[0m
+[ 21%] [32mBuilding CXX object plugins/pressure/CMakeFiles/ksystemstats_plugin_pressure.dir/ksystemstats_plugin_pressure_autogen/mocs_compilation.cpp.o[0m
+[ 21%] Built target ksystemstats_plugin_osinfo_autogen
+[ 22%] [32mBuilding CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/cpu.cpp.o[0m
+[ 23%] [32mBuilding CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/cpuplugin.cpp.o[0m
+[ 24%] [1m[34mGenerating moc_ksystemstats1adaptor.cpp[0m
+[ 25%] [32mBuilding CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/ksystemstats_plugin_network_autogen/mocs_compilation.cpp.o[0m
+[ 26%] [32mBuilding CXX object plugins/pressure/CMakeFiles/ksystemstats_plugin_pressure.dir/pressure.cpp.o[0m
+[ 27%] [32mBuilding CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkPlugin.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/CMakeFiles/ksystemstats_core.dir/ksystemstats_core_autogen/mocs_compilation.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/CMakeFiles/ksystemstats_core.dir/client.cpp.o[0m
+[ 29%] Built target ksystemstats_plugin_lmsensors_autogen
+[ 30%] [32mBuilding CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkDevice.cpp.o[0m
+[ 30%] Built target kstatsviewer_autogen
+[ 31%] [32mBuilding CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/loadaverages.cpp.o[0m
+[ 31%] Built target ksystemstats_plugin_gpu_autogen
+[ 32%] [32mBuilding CXX object plugins/disks/CMakeFiles/ksystemstats_plugin_disk.dir/ksystemstats_plugin_disk_autogen/mocs_compilation.cpp.o[0m
+[ 33%] [32mBuilding CXX object plugins/disks/CMakeFiles/ksystemstats_plugin_disk.dir/disks.cpp.o[0m
+[ 34%] [1m[32mLinking CXX executable ../../bin/ksystemstats_intel_helper[0m
+[ 35%] Built target ksystemstats_intel_helper
+[ 36%] [32mBuilding CXX object plugins/pressure/CMakeFiles/ksystemstats_plugin_pressure.dir/pressure_logging.cpp.o[0m
+[ 37%] [32mBuilding CXX object src/CMakeFiles/ksystemstats_core.dir/ksystemstats1adaptor.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/CMakeFiles/ksystemstats_core.dir/daemon.cpp.o[0m
+[ 39%] [32mBuilding CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/ksystemstats_plugin_memory_autogen/mocs_compilation.cpp.o[0m
+[ 40%] [32mBuilding CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/usagecomputer.cpp.o[0m
+[ 41%] [32mBuilding CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/memory.cpp.o[0m
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/disks/disks.cpp:[m[K In member function ‘[01m[Kvirtual void DisksPlugin::[01;32m[Kupdate[m[K()[m[K’:
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/disks/disks.cpp:363:19:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kvirtual bool QFile::[01;32m[Kopen[m[K(QIODeviceBase::OpenMode)[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-result-Wunused-result]8;;[m[K]
+  363 |     [01;35m[Kdiskstats.open(QIODevice::ReadOnly | QIODevice::Text)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QFile:1[m[K,
+                 from [01m[K/usr/include/KF6/KIOCore/kio/global.h:12[m[K,
+                 from [01m[K/usr/include/KF6/KIOCore/kio/simplejob.h:13[m[K,
+                 from [01m[K/usr/include/KF6/KIOCore/kio/filesystemfreespacejob.h:14[m[K,
+                 from [01m[K/usr/include/KF6/KIOCore/KIO/FileSystemFreeSpaceJob:1[m[K,
+                 from [01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/disks/disks.cpp:17[m[K:
+[01m[K/usr/include/qt6/QtCore/qfile.h:264:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  264 |     QFILE_MAYBE_NODISCARD bool [01;36m[Kopen[m[K(OpenMode flags) override;
+      |                                [01;36m[K^~~~[m[K
+[ 42%] [32mBuilding CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkBackend.cpp.o[0m
+[ 43%] [32mBuilding CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/linuxcpu.cpp.o[0m
+[ 44%] [1m[32mLinking CXX shared module ../../bin/ksystemstats_plugin_disk.so[0m
+[ 45%] [32mBuilding CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/AllDevicesObject.cpp.o[0m
+[ 46%] [32mBuilding CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/backend.cpp.o[0m
+[ 47%] Built target ksystemstats_plugin_disk
+[ 48%] [32mBuilding CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/linuxcpuplugin.cpp.o[0m
+[ 49%] [32mBuilding CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/NetworkManagerBackend.cpp.o[0m
+[ 50%] [1m[32mLinking CXX shared module ../../bin/ksystemstats_plugin_power.so[0m
+[ 51%] [32mBuilding CXX object plugins/cpu/CMakeFiles/ksystemstats_plugin_cpu.dir/debug.cpp.o[0m
+[ 52%] [1m[32mLinking CXX shared module ../../bin/ksystemstats_plugin_pressure.so[0m
+[ 53%] [32mBuilding CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/RtNetlinkBackend.cpp.o[0m
+[ 54%] Built target ksystemstats_plugin_power
+[ 55%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/ksystemstats_plugin_gpu_autogen/mocs_compilation.cpp.o[0m
+[ 56%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/GpuPlugin.cpp.o[0m
+[ 57%] Built target ksystemstats_plugin_pressure
+[ 58%] [32mBuilding CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/linuxbackend.cpp.o[0m
+[ 59%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/GpuBackend.cpp.o[0m
+[ 60%] [32mBuilding CXX object plugins/network/CMakeFiles/ksystemstats_plugin_network.dir/debug.cpp.o[0m
+[ 61%] [32mBuilding CXX object plugins/lmsensors/CMakeFiles/ksystemstats_plugin_lmsensors.dir/ksystemstats_plugin_lmsensors_autogen/mocs_compilation.cpp.o[0m
+[ 62%] [32mBuilding CXX object plugins/lmsensors/CMakeFiles/ksystemstats_plugin_lmsensors.dir/lmsensors.cpp.o[0m
+[ 63%] [1m[32mLinking CXX static library ../lib/libksystemstats_core.a[0m
+[ 64%] Built target ksystemstats_core
+[ 65%] [32mBuilding CXX object plugins/memory/CMakeFiles/ksystemstats_plugin_memory.dir/debug.cpp.o[0m
+[ 66%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/GpuDevice.cpp.o[0m
+[ 67%] [32mBuilding CXX object tools/kstatsviewer/CMakeFiles/kstatsviewer.dir/kstatsviewer_autogen/mocs_compilation.cpp.o[0m
+[ 68%] [32mBuilding CXX object tools/kstatsviewer/CMakeFiles/kstatsviewer.dir/main.cpp.o[0m
+[ 69%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/AllGpus.cpp.o[0m
+[ 69%] Built target ksystemstats_autogen_timestamp_deps
+[ 70%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxAmdGpu.cpp.o[0m
+[ 71%] [32mBuilding CXX object plugins/osinfo/CMakeFiles/ksystemstats_plugin_osinfo.dir/ksystemstats_plugin_osinfo_autogen/mocs_compilation.cpp.o[0m
+[ 72%] [1m[32mLinking CXX shared module ../../bin/ksystemstats_plugin_network.so[0m
+[ 73%] [32mBuilding CXX object plugins/osinfo/CMakeFiles/ksystemstats_plugin_osinfo.dir/osinfo.cpp.o[0m
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/cpu/linuxcpuplugin.cpp:[m[K In constructor ‘[01m[KLinuxCpuPluginPrivate::[01;32m[KLinuxCpuPluginPrivate[m[K(CpuPlugin*, const QString&)[m[K’:
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/cpu/linuxcpuplugin.cpp:83:17:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kvirtual bool QFile::[01;32m[Kopen[m[K(QIODeviceBase::OpenMode)[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-result-Wunused-result]8;;[m[K]
+   83 |     [01;35m[Kcpuinfo.open(QIODevice::ReadOnly)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QFile:1[m[K,
+                 from [01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/cpu/linuxcpuplugin.cpp:9[m[K:
+[01m[K/usr/include/qt6/QtCore/qfile.h:264:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  264 |     QFILE_MAYBE_NODISCARD bool [01;36m[Kopen[m[K(OpenMode flags) override;
+      |                                [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/cpu/linuxcpuplugin.cpp:[m[K In member function ‘[01m[Kvirtual void LinuxCpuPluginPrivate::[01;32m[Kupdate[m[K()[m[K’:
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/cpu/linuxcpuplugin.cpp:163:14:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kvirtual bool QFile::[01;32m[Kopen[m[K(QIODeviceBase::OpenMode)[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-result-Wunused-result]8;;[m[K]
+  163 |     [01;35m[Kstat.open(QIODevice::ReadOnly)[m[K;
+      |     [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/qt6/QtCore/qfile.h:264:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  264 |     QFILE_MAYBE_NODISCARD bool [01;36m[Kopen[m[K(OpenMode flags) override;
+      |                                [01;36m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/cpu/linuxcpuplugin.cpp:[m[K In member function ‘[01m[Kvoid LinuxCpuPluginPrivate::[01;32m[KaddSensorsAmd[m[K(const sensors_chip_name*)[m[K’:
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/cpu/linuxcpuplugin.cpp:250:29:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Ktccd[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  250 |     sensors_feature const * [01;35m[Ktccd[m[K[8] = {nullptr};
+      |                             [01;35m[K^~~~[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:[m[K In member function ‘[01m[Kvirtual void LinuxMemoryBackend::[01;32m[Kupdate[m[K()[m[K’:
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:27:17:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kvirtual bool QFile::[01;32m[Kopen[m[K(QIODeviceBase::OpenMode)[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-result-Wunused-result]8;;[m[K]
+   27 |     [01;35m[Kmeminfo.open(QIODevice::ReadOnly)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QFile:1[m[K,
+                 from [01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:13[m[K:
+[01m[K/usr/include/qt6/QtCore/qfile.h:264:32:[m[K [01;36m[Knote: [m[Kdeclared here
+  264 |     QFILE_MAYBE_NODISCARD bool [01;36m[Kopen[m[K(OpenMode flags) override;
+      |                                [01;36m[K^~~~[m[K
+[ 74%] [1m[32mLinking CXX shared module ../../bin/ksystemstats_plugin_lmsensors.so[0m
+[ 75%] [1m[32mLinking CXX shared module ../../bin/ksystemstats_plugin_memory.so[0m
+[ 76%] [32mBuilding CXX object plugins/osinfo/CMakeFiles/ksystemstats_plugin_osinfo.dir/debug.cpp.o[0m
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:[m[K In member function ‘[01m[Kupdate[m[K’:
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:60:35:[m[K [01;35m[Kwarning: [m[K‘[01m[Ktotal[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   60 |     m_application->setValue(total - free - cache - buffer - slab);
+      |                                   [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:32:24:[m[K [01;36m[Knote: [m[K‘[01m[Ktotal[m[K’ was declared here
+   32 |     unsigned long long total, free, available, buffer, cache, slab, swapTotal, swapFree;
+      |                        [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:60:35:[m[K [01;35m[Kwarning: [m[K‘[01m[Kfree[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   60 |     m_application->setValue(total - free - cache - buffer - slab);
+      |                                   [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:32:31:[m[K [01;36m[Knote: [m[K‘[01m[Kfree[m[K’ was declared here
+   32 |     unsigned long long total, free, available, buffer, cache, slab, swapTotal, swapFree;
+      |                               [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:59:22:[m[K [01;35m[Kwarning: [m[K‘[01m[Kavailable[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   59 |     m_free->setValue(available);
+      |                      [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:32:37:[m[K [01;36m[Knote: [m[K‘[01m[Kavailable[m[K’ was declared here
+   32 |     unsigned long long total, free, available, buffer, cache, slab, swapTotal, swapFree;
+      |                                     [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:62:24:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbuffer[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   62 |     m_buffer->setValue(buffer);
+      |                        [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:32:48:[m[K [01;36m[Knote: [m[K‘[01m[Kbuffer[m[K’ was declared here
+   32 |     unsigned long long total, free, available, buffer, cache, slab, swapTotal, swapFree;
+      |                                                [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:61:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcache[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   61 |     m_cache->setValue(cache + slab);
+      |                             [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:32:56:[m[K [01;36m[Knote: [m[K‘[01m[Kcache[m[K’ was declared here
+   32 |     unsigned long long total, free, available, buffer, cache, slab, swapTotal, swapFree;
+      |                                                        [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:61:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kslab[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   61 |     m_cache->setValue(cache + slab);
+      |                             [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:32:63:[m[K [01;36m[Knote: [m[K‘[01m[Kslab[m[K’ was declared here
+   32 |     unsigned long long total, free, available, buffer, cache, slab, swapTotal, swapFree;
+      |                                                               [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:64:36:[m[K [01;35m[Kwarning: [m[K‘[01m[KswapTotal[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   64 |     m_swapUsed->setValue(swapTotal - swapFree);
+      |                                    [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:32:69:[m[K [01;36m[Knote: [m[K‘[01m[KswapTotal[m[K’ was declared here
+   32 |     unsigned long long total, free, available, buffer, cache, slab, swapTotal, swapFree;
+      |                                                                     [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:65:26:[m[K [01;35m[Kwarning: [m[K‘[01m[KswapFree[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   65 |     m_swapFree->setValue(swapFree);
+      |                          [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/memory/linuxbackend.cpp:32:80:[m[K [01;36m[Knote: [m[K‘[01m[KswapFree[m[K’ was declared here
+   32 |     unsigned long long total, free, available, buffer, cache, slab, swapTotal, swapFree;
+      |                                                                                [01;36m[K^[m[K
+[ 77%] Built target ksystemstats_plugin_memory
+[ 78%] [1m[34mAutomatic MOC for target ksystemstats[0m
+[ 79%] Built target ksystemstats_plugin_lmsensors
+[ 80%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxIntelGpu.cpp.o[0m
+[ 80%] Built target ksystemstats_autogen
+[ 81%] [32mBuilding CXX object src/CMakeFiles/ksystemstats.dir/ksystemstats_autogen/mocs_compilation.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/ksystemstats.dir/main.cpp.o[0m
+[ 83%] Built target ksystemstats_plugin_network
+[ 84%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxNvidiaGpu.cpp.o[0m
+[ 85%] [1m[32mLinking CXX shared module ../../bin/ksystemstats_plugin_cpu.so[0m
+[ 86%] [32mBuilding CXX object src/CMakeFiles/ksystemstats.dir/debug.cpp.o[0m
+[ 87%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/LinuxBackend.cpp.o[0m
+[ 88%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/NvidiaGpu.cpp.o[0m
+[ 89%] [1m[32mLinking CXX shared module ../../bin/ksystemstats_plugin_osinfo.so[0m
+[ 90%] Built target ksystemstats_plugin_cpu
+[ 91%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/NvidiaSmiProcess.cpp.o[0m
+[ 92%] [32mBuilding CXX object plugins/gpu/CMakeFiles/ksystemstats_plugin_gpu.dir/debug.cpp.o[0m
+[ 93%] Built target ksystemstats_plugin_osinfo
+[ 94%] [1m[32mLinking CXX executable ../bin/ksystemstats[0m
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/gpu/NvidiaSmiProcess.cpp:[m[K In member function ‘[01m[Kstd::vector<NvidiaSmiProcess::GpuQueryResult> NvidiaSmiProcess::[01;32m[Kquery[m[K()[m[K’:
+[01m[K/var/tmp/hokuto/ksystemstats-01/build/plugins/gpu/NvidiaSmiProcess.cpp:44:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KgpuCounter[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+   44 |     int [01;35m[KgpuCounter[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~[m[K
+[ 95%] Built target ksystemstats
+[ 96%] [1m[32mLinking CXX shared module ../../bin/ksystemstats_plugin_gpu.so[0m
+[ 97%] [1m[32mLinking CXX executable ../../bin/kstatsviewer[0m
+[ 98%] Built target ksystemstats_plugin_gpu
+[100%] Built target kstatsviewer
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/bin/ksystemstats
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/dbus-1/services/org.kde.ksystemstats1.service
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/systemd/user/plasma-ksystemstats.service
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/qt6/plugins/ksystemstats/ksystemstats_plugin_osinfo.so
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/qt6/plugins/ksystemstats/ksystemstats_plugin_network.so
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/qt6/plugins/ksystemstats/ksystemstats_plugin_power.so
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/qt6/plugins/ksystemstats/ksystemstats_plugin_disk.so
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/qt6/plugins/ksystemstats/ksystemstats_plugin_cpu.so
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/qt6/plugins/ksystemstats/ksystemstats_plugin_memory.so
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/qt6/plugins/ksystemstats/ksystemstats_plugin_pressure.so
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/libexec/ksystemstats_intel_helper
+unable to set CAP_SETFCAP effective capability: Operation not permitted
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/qt6/plugins/ksystemstats/ksystemstats_plugin_gpu.so
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/lib/qt6/plugins/ksystemstats/ksystemstats_plugin_lmsensors.so
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/bin/kstatsviewer
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/cs/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/eu/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/hu/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/uk/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ar/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pl/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/it/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/es/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pt_BR/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/az/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/eo/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sa/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/da/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sv/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/fr/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ko/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/id/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/en_GB/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/nn/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/gl/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/zh_TW/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sk/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pa/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/vi/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ja/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ta/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ru/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/he/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/is/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ka/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/nl/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ia/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/hi/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/lt/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/fi/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/et/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/pt/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ro/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ca/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ast/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/tr/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/bg/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/sl/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/de/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/ga/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/locale/zh_CN/LC_MESSAGES/ksystemstats_plugins.mo
+-- Installing: /var/tmp/hokuto/ksystemstats-01/output/usr/share/qlogging-categories6/ksystemstats.categories
+
+Script done on 2026-09-09 12:20:59+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mksystemstats[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 09 Sep 2026 05:20:59 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m19s[0m
