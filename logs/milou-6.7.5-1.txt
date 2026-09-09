@@ -1,0 +1,404 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mmilou[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mmilou 6.7.5-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 09 Sep 2026 05:37:44 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mmilou[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc kconfig kcoreaddons|sonic-frameworks-core-addons kirigami|sonic-frameworks-quick-ui krunner|sonic-frameworks-runner ksvg libplasma|sonic-interface-libraries qt qt-declarative extra-cmake-modules|sonic-frameworks-cmake-modules kdoctools|sonic-frameworks-doctools[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mmilou[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 extra-cmake-modules-6.29.0-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 kconfig-6.29.0-1 kcoreaddons-6.29.0-1 kdoctools-6.29.0-1 kirigami-6.29.0-1 krunner-6.29.0-1 ksvg-6.29.0-1 libplasma-6.7.4-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 qt-6.11.2-1 qt-declarative-6.11.2-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-09 12:37:44+07:00 [COMMAND="cd /var/tmp/hokuto/milou-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/milou-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/milou-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/milou-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/milou-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/milou-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/milou-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/milou-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/milou-01/build/.cache' /repo/kde/milou/build /var/tmp/hokuto/milou-01/output 6.7.5 milou" <not executed on terminal>]
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:19 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.29.0")
+-- Found KF6Runner: /usr/lib64/cmake/KF6Runner/KF6RunnerConfig.cmake (found version "6.29.0")
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found KF6Svg: /usr/lib64/cmake/KF6Svg/KF6SvgConfig.cmake (found version "6.29.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.29.0")
+-- Found KF6: success (found suitable version "6.29.0", minimum required is "6.26.0") found components: I18n Runner Svg Config
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.11.2)
+ * Qt6WidgetsTools (required version >= 6.11.2)
+ * Qt6Widgets (required version >= 6.10.0)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6QuickTools (required version >= 6.11.2)
+ * Qt6CoreTools (required version >= 6.11.2)
+ * Qt6GuiTools (required version >= 6.11.2)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6Runner (required version >= 6.26.0)
+ * KF6Svg (required version >= 6.26.0)
+ * KF6Config (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Qt6Core (required version >= 6.9.0)
+ * Qt6Qml (required version >= 6.9.0)
+ * Qt6Quick (required version >= 6.9.0)
+ * Plasma (required version >= 6.7.0)
+ * Qt6
+
+-- The following OPTIONAL packages have not been found:
+
+ * WrapVulkanHeaders
+
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+[33mCMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/milou-01/build/build
+[  3%] [1m[34mGenerating ts...[0m
+[  3%] [1m[34mCopying milou qml resources into build dir[0m
+[  5%] [1m[34mCopying org.kde.milou qml resources into build dir[0m
+[  7%] [1m[34mPopulating .qmlls.ini file at /var/tmp/hokuto/milou-01/build/build/.qt/.qmlls.build.ini[0m
+[  9%] [1m[34mCopying milou qml sources into build dir[0m
+[ 11%] [1m[34mCopying org.kde.milou qml sources into build dir[0m
+[ 13%] [1m[34mGenerating mo...[0m
+[ 13%] Built target milou_copy_res
+[ 13%] Built target tsfiles-201fd8716bcba1c9a6b36a023700e7b4
+[ 13%] Built target org.kde.milou_copy_qml
+[ 13%] Built target org.kde.milou_copy_res
+[ 13%] Built target milou_copy_qml
+[ 13%] Built target generate_qmlls_build_ini_file
+[ 13%] Built target milou_autogen_timestamp_deps
+[ 13%] Built target org.kde.milou_autogen_timestamp_deps
+[ 15%] [1m[34mAutomatic MOC for target org.kde.milou[0m
+[ 17%] [1m[34mAutomatic MOC for target milou[0m
+[ 17%] Built target pofiles-201fd8716bcba1c9a6b36a023700e7b4
+[ 17%] Built target org.kde.milou_autogen
+[ 21%] [1m[34mRunning rcc for resource qmake_plasma_applet_org_kde_milou[0m
+[ 21%] [1m[34mRunning rcc for resource org_kde_milou_raw_qml_0[0m
+[ 23%] [1m[34mGenerating .rcc/qmlcache/org.kde.milou_qmlcache_loader.cpp[0m
+[ 25%] [1m[34mRunning AUTOMOC file extraction for target org.kde.milou[0m
+[ 27%] [1m[34mRunning moc --collect-json for target org.kde.milou[0m
+[ 27%] Built target milou_autogen
+[ 31%] [1m[34mRunning rcc for resource milou_raw_qml_0[0m
+[ 31%] [1m[34mRunning rcc for resource qmake_org_kde_milou[0m
+[ 33%] [1m[34mGenerating .rcc/qmlcache/milou_qmlcache_loader.cpp[0m
+[ 35%] [1m[34mRunning AUTOMOC file extraction for target milou[0m
+[ 37%] [1m[34mGenerating meta_types/qt6org.kde.milou_metatypes.json[0m
+[ 39%] [1m[34mRunning moc --collect-json for target milou[0m
+[ 41%] [1m[34mAutomatic QML type registration for target org.kde.milou[0m
+[ 43%] [1m[34mGenerating meta_types/qt6milou_metatypes.json[0m
+[ 45%] [1m[34mAutomatic QML type registration for target milou[0m
+[ 49%] [1m[34mGenerating .rcc/qmlcache/org.kde.milou_globals_js.cpp[0m
+[ 49%] [1m[34mGenerating .rcc/qmlcache/org.kde.milou_main_qml.cpp[0m
+[ 50%] [1m[34mGenerating .rcc/qmlcache/org.kde.milou_SearchField_qml.cpp[0m
+[ 52%] [1m[34mGenerating .rcc/qmlcache/milou_ResultsView_qml.cpp[0m
+[ 54%] [1m[34mGenerating .rcc/qmlcache/milou_ResultDelegate_qml.cpp[0m
+[ 56%] [32mBuilding CXX object plasmoid/CMakeFiles/org.kde.milou.dir/org.kde.milou_autogen/mocs_compilation.cpp.o[0m
+[ 58%] [32mBuilding CXX object plasmoid/CMakeFiles/org.kde.milou.dir/.rcc/qmlcache/org.kde.milou_main_qml.cpp.o[0m
+[ 60%] [32mBuilding CXX object plasmoid/CMakeFiles/org.kde.milou.dir/.rcc/qmlcache/org.kde.milou_qmlcache_loader.cpp.o[0m
+[ 62%] [32mBuilding CXX object plasmoid/CMakeFiles/org.kde.milou.dir/.rcc/qmlcache/org.kde.milou_SearchField_qml.cpp.o[0m
+[ 64%] [32mBuilding CXX object plasmoid/CMakeFiles/org.kde.milou.dir/.qt/rcc/qrc_qmake_plasma_applet_org_kde_milou.cpp.o[0m
+[ 66%] [32mBuilding CXX object plasmoid/CMakeFiles/org.kde.milou.dir/org.kde.milou.cpp.o[0m
+[ 68%] [32mBuilding CXX object plasmoid/CMakeFiles/org.kde.milou.dir/.qt/rcc/qrc_org_kde_milou_raw_qml_0.cpp.o[0m
+[ 70%] [32mBuilding CXX object plasmoid/CMakeFiles/org.kde.milou.dir/.rcc/qmlcache/org.kde.milou_globals_js.cpp.o[0m
+[ 72%] [32mBuilding CXX object plasmoid/CMakeFiles/org.kde.milou.dir/org.kde.milou_qmltyperegistrations.cpp.o[0m
+[ 74%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/milou_org_kde_milouPlugin.cpp.o[0m
+[ 76%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/milou_qmltyperegistrations.cpp.o[0m
+[ 80%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/.qt/rcc/qrc_qmake_org_kde_milou.cpp.o[0m
+[ 80%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/milou_autogen/mocs_compilation.cpp.o[0m
+[ 82%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/resultsmodel.cpp.o[0m
+[ 84%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/mousehelper.cpp.o[0m
+[ 86%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/.rcc/qmlcache/milou_qmlcache_loader.cpp.o[0m
+[ 88%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/.rcc/qmlcache/milou_ResultDelegate_qml.cpp.o[0m
+[ 90%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/.rcc/qmlcache/milou_ResultsView_qml.cpp.o[0m
+[ 92%] [32mBuilding CXX object lib/CMakeFiles/milou.dir/.qt/rcc/qrc_milou_raw_qml_0.cpp.o[0m
+[ 94%] [1m[32mLinking CXX shared library ../bin/plasma/applets/org.kde.milou.so[0m
+[ 96%] [1m[32mLinking CXX shared module ../bin/org/kde/milou/libmilou.so[0m
+[ 98%] Built target org.kde.milou
+[100%] Built target milou
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/lib/qt6/qml/org/kde/milou/libmilou.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/milou-01/output/usr/lib/qt6/qml/org/kde/milou/libmilou.so" to "$ORIGIN/../../../../lib64"
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/lib/qt6/qml/org/kde/milou/qmldir
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/lib/qt6/qml/org/kde/milou/milou.qmltypes
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/lib/qt6/qml/org/kde/milou/ResultDelegate.qml
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/lib/qt6/qml/org/kde/milou/ResultsView.qml
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/lib/qt6/qml/org/kde/milou/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/lib/qt6/plugins/plasma/applets/org.kde.milou.so
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/cs/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/cs/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/eu/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/eu/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/hu/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/hu/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/uk/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/uk/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ar/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ar/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pl/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pl/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nb/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nb/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/it/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/it/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/es/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/es/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pt_BR/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pt_BR/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/eo/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/eo/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sa/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sa/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/da/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/da/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ml/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ml/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sv/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sv/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/fr/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/fr/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@latin/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@latin/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/tg/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ko/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ko/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/id/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/id/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/en_GB/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/en_GB/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nn/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nn/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/gl/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/bs/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/bs/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/zh_TW/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/zh_TW/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sk/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sk/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pa/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pa/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nds/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nds/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ja/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ja/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ta/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ta/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ru/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ru/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/he/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/he/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ka/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ka/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nl/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/nl/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ia/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ia/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/hi/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/hi/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/lt/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/lt/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/fi/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/fi/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/et/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/et/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/el/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/el/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/lv/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/lv/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pt/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/pt/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ro/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ro/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ca/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ca/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ast/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ast/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/tr/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/tr/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/bg/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/bg/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sl/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/sl/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/de/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/de/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ga/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/ga/LC_MESSAGES/milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/zh_CN/LC_MESSAGES/plasma_applet_org.kde.milou.mo
+-- Installing: /var/tmp/hokuto/milou-01/output/usr/share/locale/zh_CN/LC_MESSAGES/milou.mo
+
+Script done on 2026-09-09 12:37:53+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mmilou[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 09 Sep 2026 05:37:53 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m9s[0m
