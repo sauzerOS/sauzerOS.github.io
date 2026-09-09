@@ -1,0 +1,781 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-keyboard[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mplasma-keyboard 6.7.5-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 09 Sep 2026 05:44:32 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-keyboard[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc kcmutils kconfig kcoreaddons|sonic-frameworks-core-addons kcrash ki18n kirigami|sonic-frameworks-quick-ui kirigami-addons|sonic-frameworks-quick-ui-addons kitemmodels libplasma|sonic-interface-libraries libxkbcommon qt qt-declarative qt-virtualkeyboard wayland extra-cmake-modules|sonic-frameworks-cmake-modules qt-wayland wayland-protocols[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-keyboard[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 extra-cmake-modules-6.29.0-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 kcmutils-6.29.0-1 kconfig-6.29.0-1 kcoreaddons-6.29.0-1 kcrash-6.29.0-1 ki18n-6.29.0-1 kirigami-6.29.0-1 kirigami-addons-1.13.1-1 kitemmodels-6.29.0-1 libplasma-6.7.4-1 libtool-2.6.2-1 libxkbcommon-1.13.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 qt-6.11.2-1 qt-declarative-6.11.2-1 qt-virtualkeyboard-6.11.2-1 qt-wayland-6.11.2-1 sed-4.10-1 texinfo-7.3-1 wayland-1.26.0-1 wayland-protocols-1.49-1 which-2.25-1[0m
+
+Script started on 2026-09-09 12:44:32+07:00 [COMMAND="cd /var/tmp/hokuto/plasma-keyboard-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/plasma-keyboard-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/plasma-keyboard-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/plasma-keyboard-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/plasma-keyboard-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/plasma-keyboard-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/plasma-keyboard-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/plasma-keyboard-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/plasma-keyboard-01/build/.cache' /repo/kde/plasma-keyboard/build /var/tmp/hokuto/plasma-keyboard-01/output 6.7.5 plasma-keyboard" <not executed on terminal>]
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found Wayland_Client: /usr/lib/libwayland-client.so (found version "1.26.0")
+-- Found Wayland_Server: /usr/lib/libwayland-server.so (found version "1.26.0")
+-- Found Wayland_Cursor: /usr/lib/libwayland-cursor.so (found version "1.26.0")
+-- Found Wayland_Egl: /usr/lib/libwayland-egl.so (found version "18.1.0")
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so;/usr/lib/libwayland-cursor.so;/usr/lib/libwayland-egl.so (found version "1.26.0")
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.29.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.29.0")
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.29.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.29.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.29.0")
+-- Found KF6: success (found suitable version "6.29.0", minimum required is "6.26.0") found components: CoreAddons I18n KCMUtils Config Crash
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Checking for module 'xkbcommon'
+--   Found xkbcommon, version 1.13.2
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so;/usr/lib/libwayland-cursor.so;/usr/lib/libwayland-egl.so (found suitable version "1.26.0", minimum required is "1.2") found components: Client
+-- Found QtWaylandScanner: /usr/lib/qt6/qtwaylandscanner
+-- Found WaylandProtocols: /usr/share/wayland-protocols (found suitable version "1.49", minimum required is "1.19")
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so;/usr/lib/libwayland-cursor.so;/usr/lib/libwayland-egl.so (found suitable version "1.26.0", minimum required is "1.15")
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.11.2)
+ * Qt6VirtualKeyboard (required version >= 6.10.0)
+ * Qt6WaylandClient (required version >= 6.10.0)
+ * Qt6WidgetsTools (required version >= 6.11.2)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6QuickTools (required version >= 6.11.2)
+ * Qt6CoreTools (required version >= 6.11.2)
+ * Qt6GuiTools (required version >= 6.11.2)
+ * Qt6Test (required version >= 6.10.0)
+ * Qt6WaylandScannerTools (required version >= 6.11.2)
+ * Qt6WaylandCompositor (required version >= 6.10.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6GuiPrivate (required version >= 6.10.0)
+ * Qt6WaylandClientPrivate (required version >= 6.10.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6Config (required version >= 6.26.0)
+ * KF6Crash (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Qt6Core (required version >= 6.9.0)
+ * Qt6Qml (required version >= 6.9.0)
+ * Qt6Gui (required version >= 6.9.0)
+ * PlasmaQuick (required version >= 6.7.0)
+ * QtWaylandScanner, Executable that converts XML protocol files to C++ code, <https://qt.io/>
+ * WaylandProtocols (required version >= 1.19), Specifications of extended Wayland protocols, <https://wayland.freedesktop.org/>
+ * WaylandScanner, Executable that converts XML protocol files to C code, <https://wayland.freedesktop.org/>
+ * PkgConfig
+ * Wayland (required version >= 1.15), C library implementation of the Wayland protocol: a protocol for a compositor to talk to its clients, <https://wayland.freedesktop.org/>
+ * Qt6 (required version >= 6.10.0)
+
+-- The following OPTIONAL packages have not been found:
+
+ * WrapVulkanHeaders
+
+-- Configuring done (2.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /var/tmp/hokuto/plasma-keyboard-01/build/build
+[  1%] [1m[34mCopying plasma-keyboard qml sources into build dir[0m
+[  3%] [1m[34mGenerating ts...[0m
+[  3%] [1m[34mCopying keyboardlib qml resources into build dir[0m
+[  4%] [1m[34mPopulating .qmlls.ini file at /var/tmp/hokuto/plasma-keyboard-01/build/build/.qt/.qmlls.build.ini[0m
+[  5%] [1m[34mGenerating mo...[0m
+[  5%] [1m[34mCopying plasma-keyboard qml resources into build dir[0m
+[  6%] [1m[34mCopying breezestyle qml resources into build dir[0m
+[  6%] [1m[34mCopying breezestyle qml sources into build dir[0m
+[  7%] [1m[34mCopying keyboardlib qml sources into build dir[0m
+[  7%] Built target kcm_plasmakeyboard-kcm-desktop-gen
+[  7%] Built target keyboardlib_copy_res
+[  7%] Built target plasma-keyboard_copy_res
+[  7%] Built target breezestyle_copy_res
+[  7%] Built target keyboardlib_copy_qml
+[  7%] Built target plasma-keyboard_copy_qml
+[  7%] Built target breezestyle_copy_qml
+[  7%] Built target tsfiles-536ed0331d2e5e71ea5986d6db6f1567
+[  7%] [1m[34mGenerating qwayland-server-input-method-unstable-v1.cpp[0m
+[  8%] [1m[34mGenerating qwayland-server-input-method-unstable-v1.h[0m
+[  8%] [1m[34mGenerating qwayland-server-wayland.cpp[0m
+[ 10%] [1m[34mGenerating wayland-input-method-unstable-v1-server-protocol.h[0m
+[ 10%] [1m[34mGenerating wayland-input-method-unstable-v1-protocol.c[0m
+[ 11%] [1m[34mGenerating qwayland-server-wayland.h[0m
+[ 12%] [1m[34mGenerating wayland-wayland-protocol.c[0m
+[ 12%] [1m[34mGenerating plasmakeyboardsettings.h, plasmakeyboardsettings.cpp[0m
+[ 12%] Built target generate_qmlls_build_ini_file
+[ 12%] [1m[34mGenerating wayland-wayland-server-protocol.h[0m
+[ 12%] Built target kcm_plasmakeyboard_autogen_timestamp_deps
+[ 12%] [1m[34mGenerating plasmakeyboardsettings.h, plasmakeyboardsettings.cpp[0m
+[ 12%] Built target mockinputmethodcompositor_autogen_timestamp_deps
+[ 12%] Built target breezestyle_autogen_timestamp_deps
+[ 12%] Built target keyboardlib_autogen_timestamp_deps
+[ 13%] [1m[34mAutomatic MOC for target kcm_plasmakeyboard[0m
+[ 13%] Built target plasma-keyboard_autogen_timestamp_deps
+[ 14%] [1m[34mAutomatic MOC for target mockinputmethodcompositor[0m
+[ 15%] [1m[34mAutomatic MOC for target breezestyle[0m
+[ 15%] [1m[34mAutomatic MOC for target keyboardlib[0m
+[ 15%] Built target pofiles-536ed0331d2e5e71ea5986d6db6f1567
+[ 16%] [1m[34mAutomatic MOC for target plasma-keyboard[0m
+[ 16%] Built target breezestyle_autogen
+[ 17%] [1m[34mRunning rcc for resource qmake_QtQuick_VirtualKeyboard_Styles_Breeze[0m
+[ 18%] [1m[34mRunning rcc for resource breezestyle_raw_qml_0[0m
+[ 20%] [1m[34mRunning AUTOMOC file extraction for target breezestyle[0m
+[ 20%] [1m[34mGenerating .rcc/qmlcache/breezestyle_qmlcache_loader.cpp[0m
+AutoMoc: /var/tmp/hokuto/plasma-keyboard-01/build/src/inputlisteneritem.h:27:1: warning: Property declaration engine has neither an associated QProperty<> member, nor a READ accessor function nor an associated MEMBER variable. The property will be invalid.
+[ 21%] [1m[34mRunning moc --collect-json for target breezestyle[0m
+[ 21%] [1m[34mGenerating meta_types/qt6breezestyle_metatypes.json[0m
+[ 21%] Built target keyboardlib_autogen
+[ 21%] [1m[34mAutomatic QML type registration for target breezestyle[0m
+[ 22%] [1m[34mRunning rcc for resource qmake_org_kde_plasma_keyboard_lib[0m
+[ 22%] [1m[34mGenerating .rcc/qmlcache/keyboardlib_qmlcache_loader.cpp[0m
+[ 22%] [1m[34mRunning AUTOMOC file extraction for target keyboardlib[0m
+[ 22%] [1m[34mRunning rcc for resource keyboardlib_raw_qml_0[0m
+[ 23%] [1m[34mRunning moc --collect-json for target keyboardlib[0m
+[ 23%] Built target mockinputmethodcompositor_autogen
+[ 24%] [1m[34mGenerating meta_types/qt6keyboardlib_metatypes.json[0m
+[ 25%] [1m[34mAutomatic QML type registration for target keyboardlib[0m
+[ 26%] [32mBuilding CXX object autotests/CMakeFiles/mockinputmethodcompositor.dir/mockinputmethodcompositor.cpp.o[0m
+[ 27%] [32mBuilding C object autotests/CMakeFiles/mockinputmethodcompositor.dir/wayland-input-method-unstable-v1-protocol.c.o[0m
+[ 27%] [32mBuilding CXX object autotests/CMakeFiles/mockinputmethodcompositor.dir/qwayland-server-input-method-unstable-v1.cpp.o[0m
+[ 28%] [32mBuilding C object autotests/CMakeFiles/mockinputmethodcompositor.dir/wayland-wayland-protocol.c.o[0m
+[ 28%] [32mBuilding CXX object autotests/CMakeFiles/mockinputmethodcompositor.dir/qwayland-server-wayland.cpp.o[0m
+[ 28%] [32mBuilding CXX object autotests/CMakeFiles/mockinputmethodcompositor.dir/mockinputmethodcompositor_autogen/mocs_compilation.cpp.o[0m
+[ 30%] [1m[34mGenerating .rcc/qmlcache/breezestyle_breeze_style_qml.cpp[0m
+[ 30%] Built target kcm_plasmakeyboard_autogen
+[ 31%] [1m[34mGenerating .rcc/qmlcache/keyboardlib_BreezeKeyPanel_qml.cpp[0m
+[ 31%] [1m[34mGenerating .rcc/qmlcache/keyboardlib_BreezeConstants_qml.cpp[0m
+[ 31%] [1m[34mGenerating qrc_kcm_plasmakeyboard.cpp[0m
+[ 33%] [32mBuilding CXX object kcm/CMakeFiles/kcm_plasmakeyboard.dir/kcm_plasmakeyboard_autogen/mocs_compilation.cpp.o[0m
+[ 33%] [32mBuilding CXX object kcm/CMakeFiles/kcm_plasmakeyboard.dir/qrc_kcm_plasmakeyboard.cpp.o[0m
+[ 34%] [1m[34mGenerating .rcc/qmlcache/keyboardlib_BreezePopup_qml.cpp[0m
+[ 34%] [32mBuilding CXX object kcm/CMakeFiles/kcm_plasmakeyboard.dir/plasmakeyboardsettings.cpp.o[0m
+[ 35%] [32mBuilding CXX object kcm/CMakeFiles/kcm_plasmakeyboard.dir/plasmakeyboardkcm.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/qmlplugin/CMakeFiles/keyboardlib.dir/keyboardlib_org_kde_plasma_keyboard_libPlugin.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/qmlplugin/CMakeFiles/keyboardlib.dir/keyboardlib_autogen/mocs_compilation.cpp.o[0m
+[ 37%] [32mBuilding CXX object src/qmlplugin/CMakeFiles/keyboardlib.dir/keyboardlib_qmltyperegistrations.cpp.o[0m
+[ 37%] Built target plasma-keyboard_autogen
+[ 37%] [32mBuilding CXX object src/qmlplugin/CMakeFiles/keyboardlib.dir/.qt/rcc/qrc_qmake_org_kde_plasma_keyboard_lib.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/qmlplugin/CMakeFiles/keyboardlib.dir/.rcc/qmlcache/keyboardlib_qmlcache_loader.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/styles/CMakeFiles/breezestyle.dir/breezestyle_autogen/mocs_compilation.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/styles/CMakeFiles/breezestyle.dir/breezestyle_QtQuick_VirtualKeyboard_Styles_BreezePlugin.cpp.o[0m
+[ 41%] [1m[34mGenerating wayland-wayland-client-protocol.h[0m
+[ 42%] [1m[34mRunning AUTOMOC file extraction for target plasma-keyboard[0m
+[ 43%] [1m[34mRunning rcc for resource plasma-keyboard_raw_qml_0[0m
+[ 43%] [1m[34mRunning rcc for resource qmake_org_kde_plasma_keyboard[0m
+[ 44%] [1m[34mGenerating .rcc/qmlcache/plasma-keyboard_qmlcache_loader.cpp[0m
+[ 45%] [1m[34mGenerating hapticinterface.cpp, hapticinterface.h[0m
+[ 45%] [1m[34mAutomatic RCC for overlay/diacritics.qrc[0m
+[ 46%] [1m[34mGenerating qwayland-input-method-unstable-v1.h[0m
+[ 47%] [1m[34mGenerating qwayland-text-input-unstable-v1.h[0m
+[ 47%] [1m[34mGenerating qwayland-wayland.h[0m
+[ 48%] [1m[34mGenerating wayland-input-method-unstable-v1-client-protocol.h[0m
+[ 50%] [1m[34mGenerating wayland-text-input-unstable-v1-client-protocol.h[0m
+[ 51%] [1m[34mGenerating wayland-wayland-protocol.c[0m
+[ 51%] [1m[34mRunning moc --collect-json for target plasma-keyboard[0m
+[ 52%] [1m[34mGenerating qwayland-input-method-unstable-v1.cpp[0m
+[ 53%] [1m[34mGenerating qwayland-text-input-unstable-v1.cpp[0m
+[ 54%] [1m[34mGenerating qwayland-wayland.cpp[0m
+[ 54%] [1m[34mGenerating wayland-input-method-unstable-v1-protocol.c[0m
+[ 54%] [1m[34mGenerating wayland-text-input-unstable-v1-protocol.c[0m
+[ 54%] [1m[34mGenerating meta_types/qt6plasma-keyboard_metatypes.json[0m
+[ 54%] [1m[34mGenerating moc_hapticinterface.cpp[0m
+[ 55%] [1m[34mAutomatic QML type registration for target plasma-keyboard[0m
+[ 55%] [1m[34mGenerating .rcc/qmlcache/plasma-keyboard_qml_DiacriticsOverlay_qml.cpp[0m
+[ 56%] [1m[34mGenerating .rcc/qmlcache/plasma-keyboard_qml_LanguagePopupDelegate_qml.cpp[0m
+[ 56%] [1m[34mGenerating .rcc/qmlcache/plasma-keyboard_qml_LanguagePopup_qml.cpp[0m
+[ 57%] [1m[34mGenerating .rcc/qmlcache/plasma-keyboard_qml_OverlayWindow_qml.cpp[0m
+[ 57%] [32mBuilding CXX object src/styles/CMakeFiles/breezestyle.dir/breezestyle_qmltyperegistrations.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/qmlplugin/CMakeFiles/keyboardlib.dir/.rcc/qmlcache/keyboardlib_BreezeKeyPanel_qml.cpp.o[0m
+[ 58%] [1m[34mGenerating .rcc/qmlcache/plasma-keyboard_qml_main_qml.cpp[0m
+[ 60%] [32mBuilding CXX object src/styles/CMakeFiles/breezestyle.dir/.qt/rcc/qrc_qmake_QtQuick_VirtualKeyboard_Styles_Breeze.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/qmlplugin/CMakeFiles/keyboardlib.dir/.rcc/qmlcache/keyboardlib_BreezeConstants_qml.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/plasma-keyboard_autogen/mocs_compilation.cpp.o[0m
+[ 62%] [32mBuilding C object src/CMakeFiles/plasma-keyboard.dir/wayland-input-method-unstable-v1-protocol.c.o[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/qwayland-input-method-unstable-v1.cpp.o[0m
+[ 64%] [32mBuilding C object src/CMakeFiles/plasma-keyboard.dir/wayland-text-input-unstable-v1-protocol.c.o[0m
+[ 64%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/qwayland-text-input-unstable-v1.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/qmlplugin/CMakeFiles/keyboardlib.dir/.rcc/qmlcache/keyboardlib_BreezePopup_qml.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/qmlplugin/CMakeFiles/keyboardlib.dir/.qt/rcc/qrc_keyboardlib_raw_qml_0.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/styles/CMakeFiles/breezestyle.dir/.rcc/qmlcache/breezestyle_qmlcache_loader.cpp.o[0m
+[ 66%] [32mBuilding CXX object src/styles/CMakeFiles/breezestyle.dir/.rcc/qmlcache/breezestyle_breeze_style_qml.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/styles/CMakeFiles/breezestyle.dir/.qt/rcc/qrc_breezestyle_raw_qml_0.cpp.o[0m
+[ 68%] [32mBuilding C object src/CMakeFiles/plasma-keyboard.dir/wayland-wayland-protocol.c.o[0m
+[ 68%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/qwayland-wayland.cpp.o[0m
+[ 68%] [1m[32mLinking CXX shared module ../bin/plasma/kcms/systemsettings/kcm_plasmakeyboard.so[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/main.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/inputpanelintegration.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/inputlisteneritem.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/inputmethod.cpp.o[0m
+[ 73%] [1m[32mLinking CXX shared module ../../bin/org/kde/plasma/keyboard/lib/libkeyboardlib.so[0m
+[ 73%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/inputpanelwindow.cpp.o[0m
+[ 74%] Built target kcm_plasmakeyboard
+[ 75%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/inputplugin.cpp.o[0m
+[ 76%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/qwaylandinputpanelshellintegration.cpp.o[0m
+[ 76%] [1m[32mLinking CXX shared module ../../bin/QtQuick/VirtualKeyboard/Styles/Breeze/libbreezestyle.so[0m
+[ 77%] Built target keyboardlib
+[ 77%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/qwaylandinputpanelsurface.cpp.o[0m
+[01m[K/var/tmp/hokuto/plasma-keyboard-01/build/src/inputmethod.cpp:[m[K In member function ‘[01m[Kvirtual void InputMethodContext::[01;32m[Kzwp_input_method_context_v1_invoke_action[m[K(uint32_t, uint32_t)[m[K’:
+[01m[K/var/tmp/hokuto/plasma-keyboard-01/build/src/inputmethod.cpp:89:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbutton[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   89 | void InputMethodContext::zwp_input_method_context_v1_invoke_action([01;35m[Kuint32_t button[m[K, uint32_t index)
+      |                                                                    [01;35m[K~~~~~~~~~^~~~~~[m[K
+[01m[K/var/tmp/hokuto/plasma-keyboard-01/build/src/inputmethod.cpp:89:94:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kindex[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   89 | void InputMethodContext::zwp_input_method_context_v1_invoke_action(uint32_t button, [01;35m[Kuint32_t index[m[K)
+      |                                                                                     [01;35m[K~~~~~~~~~^~~~~[m[K
+[ 78%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/overlay/overlaycontroller.cpp.o[0m
+[ 80%] [1m[32mLinking CXX executable ../bin/mockinputmethodcompositor[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/overlay/candidatemodel.cpp.o[0m
+[ 80%] Built target breezestyle
+[ 81%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/overlay/overlaytrigger.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/overlay/longpresstrigger.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/overlay/diacriticsdataloader.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/overlay/prefixquerytrigger.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/overlay/textexpansiontrigger.cpp.o[0m
+[ 88%] Built target mockinputmethodcompositor
+[ 90%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/vibration.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/hapticinterface.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/logging.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/plasma-keyboard_qmltyperegistrations.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/.qt/rcc/qrc_qmake_org_kde_plasma_keyboard.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/.rcc/qmlcache/plasma-keyboard_qmlcache_loader.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/.rcc/qmlcache/plasma-keyboard_qml_main_qml.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/.rcc/qmlcache/plasma-keyboard_qml_LanguagePopup_qml.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/.rcc/qmlcache/plasma-keyboard_qml_LanguagePopupDelegate_qml.cpp.o[0m
+[ 95%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/.rcc/qmlcache/plasma-keyboard_qml_DiacriticsOverlay_qml.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/.rcc/qmlcache/plasma-keyboard_qml_OverlayWindow_qml.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/.qt/rcc/qrc_plasma-keyboard_raw_qml_0.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/plasmakeyboardsettings.cpp.o[0m
+[ 97%] [32mBuilding CXX object src/CMakeFiles/plasma-keyboard.dir/plasma-keyboard_autogen/M3KPMFXE7J/qrc_diacritics.cpp.o[0m
+[ 98%] [1m[32mLinking CXX executable ../bin/plasma-keyboard[0m
+[100%] Built target plasma-keyboard
+-- Install configuration: ""
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_plasmakeyboard.so
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/applications/kcm_plasmakeyboard.desktop
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/bin/plasma-keyboard
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/applications/org.kde.plasma.keyboard.desktop
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/QtQuick/VirtualKeyboard/Styles/Breeze/libbreezestyle.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/QtQuick/VirtualKeyboard/Styles/Breeze/libbreezestyle.so" to "$ORIGIN/../../../../../lib64"
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/QtQuick/VirtualKeyboard/Styles/Breeze/qmldir
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/QtQuick/VirtualKeyboard/Styles/Breeze/breezestyle.qmltypes
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/QtQuick/VirtualKeyboard/Styles/Breeze/style.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/QtQuick/VirtualKeyboard/Styles/Breeze/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/org/kde/plasma/keyboard/lib/libkeyboardlib.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/org/kde/plasma/keyboard/lib/libkeyboardlib.so" to "$ORIGIN/../../../../../../lib64"
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/org/kde/plasma/keyboard/lib/qmldir
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/org/kde/plasma/keyboard/lib/keyboardlib.qmltypes
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/org/kde/plasma/keyboard/lib/BreezeKeyPanel.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/org/kde/plasma/keyboard/lib/BreezeConstants.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/org/kde/plasma/keyboard/lib/BreezePopup.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/lib/qt6/qml/org/kde/plasma/keyboard/lib/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_MX
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_MX/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_MX/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_MX/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_MX/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_MX/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_MX/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ko_KR
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ko_KR/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ko_KR/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ko_KR/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ko_KR/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ko_KR/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ko_KR/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/de_DE
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/de_DE/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/de_DE/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/de_DE/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/de_DE/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/de_DE/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/de_DE/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fallback/dialpad.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fallback/numbers.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fallback/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fallback/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fallback/digits.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fallback/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_BR
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_BR/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_BR/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_BR/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_BR/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_BR/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_BR/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hr_HR
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hr_HR/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hr_HR/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hr_HR/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hr_HR/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hr_HR/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hr_HR/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sk_SK
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sk_SK/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sk_SK/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sk_SK/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sk_SK/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sk_SK/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sk_SK/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fi_FI
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fi_FI/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fi_FI/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fi_FI/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fi_FI/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fi_FI/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fi_FI/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/bg_BG
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/bg_BG/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/bg_BG/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/bg_BG/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/bg_BG/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/bg_BG/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/bg_BG/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/th_TH
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/th_TH/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/th_TH/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/th_TH/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/th_TH/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/th_TH/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/th_TH/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/th_TH/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sv_SE
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sv_SE/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sv_SE/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sv_SE/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sv_SE/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sv_SE/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sv_SE/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_FR
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_FR/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_FR/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_FR/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_FR/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_FR/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_FR/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_CA
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_CA/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_CA/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_CA/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_CA/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_CA/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fr_CA/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/lv_LV
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/lv_LV/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/lv_LV/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/lv_LV/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/lv_LV/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/lv_LV/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/lv_LV/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_GB
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_GB/main.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_GB/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_GB/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_GB/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_GB/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_GB/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hi_IN
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hi_IN/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hi_IN/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hi_IN/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hi_IN/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hi_IN/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hi_IN/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sr_SP
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sr_SP/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sr_SP/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sr_SP/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sr_SP/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sr_SP/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sr_SP/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/da_DK
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/da_DK/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/da_DK/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/da_DK/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/da_DK/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/da_DK/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/da_DK/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ru_RU
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ru_RU/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ru_RU/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ru_RU/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ru_RU/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ru_RU/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ru_RU/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_TW
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_TW/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_TW/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_TW/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_TW/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_TW/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_TW/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_PT
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_PT/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_PT/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_PT/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_PT/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_PT/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pt_PT/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sl_SI
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sl_SI/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sl_SI/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sl_SI/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sl_SI/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sl_SI/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sl_SI/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/it_IT
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/it_IT/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/it_IT/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/it_IT/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/it_IT/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/it_IT/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/it_IT/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/id_ID
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/id_ID/main.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/id_ID/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/id_ID/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/id_ID/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/id_ID/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/id_ID/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ro_RO
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ro_RO/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ro_RO/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ro_RO/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ro_RO/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ro_RO/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ro_RO/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fa_FA
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fa_FA/numbers.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fa_FA/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fa_FA/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fa_FA/digits.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fa_FA/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/fa_FA/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pl_PL
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pl_PL/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pl_PL/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pl_PL/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pl_PL/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pl_PL/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/pl_PL/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nb_NO
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nb_NO/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nb_NO/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nb_NO/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nb_NO/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nb_NO/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nb_NO/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/vi_VN
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/vi_VN/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/vi_VN/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/vi_VN/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/vi_VN/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/vi_VN/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/vi_VN/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nl_NL
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nl_NL/main.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nl_NL/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nl_NL/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nl_NL/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nl_NL/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/nl_NL/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/tr_TR
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/tr_TR/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/tr_TR/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/tr_TR/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/tr_TR/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/tr_TR/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/tr_TR/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sq_AL
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sq_AL/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sq_AL/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sq_AL/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sq_AL/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sq_AL/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/sq_AL/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/el_GR
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/el_GR/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/el_GR/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/el_GR/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/el_GR/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/el_GR/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/el_GR/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_ES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_ES/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_ES/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_ES/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_ES/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_ES/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/es_ES/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/uk_UA
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/uk_UA/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/uk_UA/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/uk_UA/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/uk_UA/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/uk_UA/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/uk_UA/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ja_JP
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ja_JP/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ja_JP/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ja_JP/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ja_JP/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ja_JP/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ja_JP/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/et_EE
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/et_EE/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/et_EE/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/et_EE/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/et_EE/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/et_EE/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/et_EE/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hu_HU
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hu_HU/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hu_HU/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hu_HU/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hu_HU/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hu_HU/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/hu_HU/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ms_MY
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ms_MY/main.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ms_MY/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ms_MY/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ms_MY/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ms_MY/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ms_MY/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_US
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_US/main.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_US/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_US/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_US/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_US/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/en_US/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ar_AR
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ar_AR/numbers.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ar_AR/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ar_AR/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ar_AR/digits.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ar_AR/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/ar_AR/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/cs_CZ
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/cs_CZ/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/cs_CZ/handwriting.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/cs_CZ/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/cs_CZ/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/cs_CZ/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/cs_CZ/symbols.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/he_IL
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/he_IL/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/he_IL/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/he_IL/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/he_IL/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/he_IL/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/he_IL/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_CN
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_CN/symbols.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_CN/main.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_CN/digits.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_CN/handwriting.qml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_CN/dialpad.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/layouts/zh_CN/numbers.fallback
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/pl_PL.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/en_GB.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/fr_FR.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/sl_SI.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/da_DK.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/pt_BR.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/hr_HR.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/sk_SK.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/ro_RO.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/is_IS.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/base.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/hu_HU.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/it_IT.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/sv_SE.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/tr_TR.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/nb_NO.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/es_ES.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/nl_NL.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/de_DE.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/fi_FI.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/cs_CZ.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/plasma/keyboard/diacritics/pt_PT.json
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/metainfo/org.kde.plasma.keyboard.metainfo.xml
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/cs/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/cs/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/eu/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/eu/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/hu/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/hu/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/uk/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/uk/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ar/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ar/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/pl/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/pl/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nb/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nb/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/it/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/it/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/es/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/es/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/pt_BR/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sv/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sv/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/fr/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/fr/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ko/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ko/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nn/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nn/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/zh_TW/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sk/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sk/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ja/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ru/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ru/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/he/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/he/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/is/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/is/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ka/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ka/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nl/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/nl/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ia/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ia/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/lt/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/lt/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/fi/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/fi/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/lv/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/lv/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ro/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ro/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ca/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ca/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/tr/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/tr/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/bg/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/bg/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sl/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/sl/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/de/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/de/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ga/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/ga/LC_MESSAGES/kcm_plasmakeyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/zh_CN/LC_MESSAGES/plasma-keyboard.mo
+-- Installing: /var/tmp/hokuto/plasma-keyboard-01/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_plasmakeyboard.mo
+
+Script done on 2026-09-09 12:44:53+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-keyboard[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 09 Sep 2026 05:44:53 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m21s[0m
