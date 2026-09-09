@@ -1,0 +1,93 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfuse3[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mfuse3 3.18.3-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 09 Sep 2026 12:23:02 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfuse3[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mmeson[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfuse3[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-09 19:23:02+07:00 [COMMAND="cd /var/tmp/hokuto/fuse3-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/fuse3-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/fuse3-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/fuse3-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/fuse3-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/fuse3-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/fuse3-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/fuse3-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/fuse3-01/build/.cache' /repo/sauzeros/core/fuse3/build /var/tmp/hokuto/fuse3-01/output 3.18.3 fuse3" <not executed on terminal>]
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/fuse3-01/build[0m
+Build dir: [1m/var/tmp/hokuto/fuse3-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mlibfuse3[0m
+Project version: [1m3.18.3[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Checking for function "[1mfork[0m" : [1;32mYES[0m 
+Checking for function "[1mfstatat[0m" : [1;32mYES[0m 
+Checking for function "[1mopenat[0m" : [1;32mYES[0m 
+Checking for function "[1mreadlinkat[0m" : [1;32mYES[0m 
+Checking for function "[1mpipe2[0m" : [1;32mYES[0m 
+Checking for function "[1msplice[0m" : [1;32mYES[0m 
+Checking for function "[1mvmsplice[0m" : [1;32mYES[0m 
+Checking for function "[1mposix_fallocate[0m" : [1;32mYES[0m 
+Checking for function "[1mfdatasync[0m" : [1;32mYES[0m 
+Checking for function "[1mutimensat[0m" : [1;32mYES[0m 
+Checking for function "[1mcopy_file_range[0m" : [1;32mYES[0m 
+Checking for function "[1mfallocate[0m" : [1;32mYES[0m 
+Checking for function "[1mfspacectl[0m" : [1;31mNO[0m 
+Checking if "[1mpthread_setname_np check[0m" links: [1;32mYES[0m 
+Checking if "[1mclose_range check[0m" links: [1;32mYES[0m 
+Checking if "[1mlistmount check[0m" links: [1;32mYES[0m 
+Has header "[1msys/xattr.h[0m" : [1;32mYES[0m 
+Has header "[1mlinux/limits.h[0m" : [1;32mYES[0m 
+Checking for function "[1msetxattr[0m" : [1;32mYES[0m 
+Checking for function "[1miconv[0m" : [1;32mYES[0m 
+Checking for function "[1mbacktrace[0m" : [1;32mYES[0m 
+Checking for function "[1mstatx[0m" : [1;32mYES[0m 
+Checking whether type "[1mstruct stat[0m" has member "[1mst_atim[0m" : [1;32mYES[0m 
+Checking whether type "[1mstruct stat[0m" has member "[1mst_atimespec[0m" : [1;31mNO[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Run-time dependency [1mliburing[0m found: [1;32mYES[0m [36m2.15[0m
+Did not find CMake 'cmake'
+Found CMake: [1;31mNO[0m
+Run-time dependency [1mnuma[0m found: [1;31mNO[0m  (tried pkg-config and cmake)
+[1mMessage:[0m Compiler warns about unused result even when casting to void
+[1mMessage:[0m Enabling versioned libc symbols
+[1mMessage:[0m Compiler supports symver attribute
+Configuring [1mfuse_config.h[0m using configuration
+Configuring [1mlibfuse_config.h[0m using configuration
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Library [1miconv[0m found: [1;31mNO[0m
+Library [1mdl[0m found: [1;32mYES[0m
+Library [1mrt[0m found: [1;32mYES[0m
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+example/meson.build:38: [1;33mWARNING:[0m add_languages is missing native:, assuming languages are wanted for both host and build.
+C++ compiler for the host machine: [1mc++[0m (gcc 16.2.0 "c++ (GCC) 16.2.0")
+C++ linker for the host machine: [1mc++[0m ld.bfd 2.46.1
+Program [1mrun-tests.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fuse3-01/build/test/run-tests.py)
+Build targets in project: [1m32[0m
+
+libfuse3 [36m3.18.3[0m
+
+  [1mUser defined options[0m
+    buildtype: release
+    prefix   : /usr
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/fuse3-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/fuse3-01/build/build'
+[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse.c.o[K[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_loop.c.o[K[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_loop_mt.c.o[K[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_lowlevel.c.o[K[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_opt.c.o[K[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_signals.c.o[K[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/buffer.c.o[K[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/cuse_lowlevel.c.o[K[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/helper.c.o[K[0/83] Compiling C object lib/libfuse3.so.3.18.3.p/modules_subdir.c.o[K[1/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_loop.c.o[K[1/83] Compiling C object lib/libfuse3.so.3.18.3.p/mount_util.c.o[K[2/83] Compiling C object lib/libfuse3.so.3.18.3.p/helper.c.o[K[2/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_log.c.o[K[3/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_signals.c.o[K[3/83] Compiling C object lib/libfuse3.so.3.18.3.p/compat.c.o[K[4/83] Compiling C object lib/libfuse3.so.3.18.3.p/buffer.c.o[K[4/83] Compiling C object lib/libfuse3.so.3.18.3.p/util.c.o[K[5/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_opt.c.o[K[5/83] Compiling C object lib/libfuse3.so.3.18.3.p/mount.c.o[K[6/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_log.c.o[K[6/83] Compiling C object lib/libfuse3.so.3.18.3.p/modules_iconv.c.o[K[7/83] Compiling C object lib/libfuse3.so.3.18.3.p/cuse_lowlevel.c.o[K[7/83] Compiling C object util/fusermount3.p/fusermount.c.o[K[8/83] Compiling C object lib/libfuse3.so.3.18.3.p/modules_subdir.c.o[K[8/83] Compiling C object util/fusermount3.p/.._lib_mount_util.c.o[K[9/83] Compiling C object lib/libfuse3.so.3.18.3.p/compat.c.o[K[9/83] Compiling C object util/fusermount3.p/.._lib_fuse_log.c.o[K[10/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_loop_mt.c.o[K[10/83] Compiling C object util/fusermount3.p/.._lib_util.c.o[K[11/83] Compiling C object lib/libfuse3.so.3.18.3.p/mount_util.c.o[K[11/83] Compiling C object util/mount.fuse3.p/mount.fuse.c.o[K[12/83] Compiling C object lib/libfuse3.so.3.18.3.p/util.c.o[K[12/83] Compiling C object example/passthrough.p/passthrough.c.o[K[13/83] Compiling C object util/fusermount3.p/.._lib_fuse_log.c.o[K[13/83] Compiling C object example/passthrough_fh.p/passthrough_fh.c.o[K[14/83] Compiling C object lib/libfuse3.so.3.18.3.p/modules_iconv.c.o[K[14/83] Compiling C object example/hello.p/hello.c.o[K[15/83] Compiling C object lib/libfuse3.so.3.18.3.p/mount.c.o[K[15/83] Compiling C object example/hello_ll.p/hello_ll.c.o[K[16/83] Compiling C object util/fusermount3.p/.._lib_mount_util.c.o[K[16/83] Compiling C object example/printcap.p/printcap.c.o[K[17/83] Compiling C object util/fusermount3.p/.._lib_util.c.o[K[17/83] Compiling C object example/ioctl_client.p/ioctl_client.c.o[K[18/83] Compiling C object util/mount.fuse3.p/mount.fuse.c.o[K[18/83] Compiling C object example/poll_client.p/poll_client.c.o[K[19/83] Compiling C object example/passthrough_fh.p/passthrough_fh.c.o[K[19/83] Compiling C object example/ioctl.p/ioctl.c.o[K[20/83] Compiling C object example/printcap.p/printcap.c.o[K[20/83] Compiling C object example/cuse.p/cuse.c.o[K[21/83] Compiling C object example/ioctl_client.p/ioctl_client.c.o[K[21/83] Compiling C object example/cuse_client.p/cuse_client.c.o[K[22/83] Compiling C object example/passthrough.p/passthrough.c.o[K[22/83] Compiling C object example/passthrough_ll.p/passthrough_ll.c.o[K[23/83] Compiling C object example/hello.p/hello.c.o[K[23/83] Compiling C object example/null.p/null.c.o[K[24/83] Compiling C object example/hello_ll.p/hello_ll.c.o[K[24/83] Compiling C object example/notify_inval_inode.p/notify_inval_inode.c.o[K[25/83] Compiling C object util/fusermount3.p/fusermount.c.o[K[25/83] Compiling C object example/invalidate_path.p/invalidate_path.c.o[K[26/83] Compiling C object example/poll_client.p/poll_client.c.o[K[26/83] Compiling C object example/notify_store_retrieve.p/notify_store_retrieve.c.o[K[27/83] Compiling C object example/ioctl.p/ioctl.c.o[K[27/83] Compiling C object example/notify_inval_entry.p/notify_inval_entry.c.o[K[28/83] Compiling C object example/cuse.p/cuse.c.o[K[28/83] Compiling C object example/poll.p/poll.c.o[K[29/83] Compiling C object example/cuse_client.p/cuse_client.c.o[K[29/83] Compiling C++ object example/passthrough_hp.p/passthrough_hp.cc.o[K[30/83] Compiling C object example/null.p/null.c.o[K[30/83] Compiling C++ object example/memfs_ll.p/memfs_ll.cc.o[K[31/83] Compiling C object example/notify_inval_inode.p/notify_inval_inode.c.o[K[31/83] Compiling C object test/test_write_cache.p/test_write_cache.c.o[K[32/83] Compiling C object example/invalidate_path.p/invalidate_path.c.o[K[32/83] Compiling C object test/test_setattr.p/test_setattr.c.o[K[33/83] Compiling C object example/poll.p/poll.c.o[K[33/83] Compiling C object test/test_api_30.p/test_api_30.c.o[K[34/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse_lowlevel.c.o[K[34/83] Compiling C object test/hello.p/hello.c.o[K[35/83] Compiling C object example/notify_inval_entry.p/notify_inval_entry.c.o[K[35/83] Compiling C object test/test_syscalls.p/test_syscalls.c.o[K[36/83] Compiling C object test/hello.p/hello.c.o[K[36/83] Compiling C object test/readdir_inode.p/readdir_inode.c.o[K[37/83] Compiling C object test/test_write_cache.p/test_write_cache.c.o[K[37/83] Compiling C object test/release_unlink_race.p/release_unlink_race.c.o[K[38/83] Compiling C object example/notify_store_retrieve.p/notify_store_retrieve.c.o[K[38/83] Compiling C object test/test_want_conversion.p/test_want_conversion.c.o[K[39/83] Compiling C object test/test_api_30.p/test_api_30.c.o[K[39/83] Compiling C object test/test_signals.p/test_signals.c.o[K[40/83] Compiling C object example/passthrough_ll.p/passthrough_ll.c.o[K[40/83] Compiling C object test/test_abi.p/test_abi.c.o[K[41/83] Compiling C object test/readdir_inode.p/readdir_inode.c.o[K[41/83] Linking target util/fusermount3[K[42/83] Compiling C object test/release_unlink_race.p/release_unlink_race.c.o[K[42/83] Linking target test/readdir_inode[K[43/83] Compiling C object test/test_abi.p/test_abi.c.o[K[44/83] Compiling C object test/test_setattr.p/test_setattr.c.o[K[45/83] Compiling C object test/test_signals.p/test_signals.c.o[K[46/83] Compiling C object lib/libfuse3.so.3.18.3.p/fuse.c.o[K[46/83] Linking target lib/libfuse3.so.3.18.3[K[47/83] Compiling C object test/test_want_conversion.p/test_want_conversion.c.o[K[48/83] Compiling C object test/test_syscalls.p/test_syscalls.c.o[K[48/83] Linking target test/test_syscalls[K[49/83] Linking target test/readdir_inode[K[50/83] Linking target util/fusermount3[K[51/83] Linking target test/test_syscalls[K[52/83] Compiling C++ object example/memfs_ll.p/memfs_ll.cc.o[K[53/83] Linking target lib/libfuse3.so.3.18.3[K[53/83] Generating symbol file lib/libfuse3.so.3.18.3.p/libfuse3.so.3.18.3.symbols[K[54/83] Generating symbol file lib/libfuse3.so.3.18.3.p/libfuse3.so.3.18.3.symbols[K[54/83] Linking target util/mount.fuse3[K[54/83] Linking target example/passthrough[K[54/83] Linking target example/passthrough_fh[K[54/83] Linking target example/hello[K[54/83] Linking target example/hello_ll[K[54/83] Linking target example/printcap[K[54/83] Linking target example/ioctl_client[K[54/83] Linking target example/poll_client[K[54/83] Linking target example/ioctl[K[55/83] Linking target example/ioctl_client[K[55/83] Linking target example/cuse[K[56/83] Linking target example/poll_client[K[56/83] Linking target example/cuse_client[K[57/83] Linking target example/hello[K[57/83] Linking target example/passthrough_ll[K[58/83] Linking target example/printcap[K[58/83] Linking target example/null[K[59/83] Linking target example/hello_ll[K[59/83] Linking target example/notify_inval_inode[K[60/83] Linking target example/ioctl[K[60/83] Linking target example/invalidate_path[K[61/83] Linking target example/passthrough[K[61/83] Linking target example/notify_store_retrieve[K[62/83] Linking target example/passthrough_fh[K[62/83] Linking target example/notify_inval_entry[K[63/83] Linking target example/cuse_client[K[63/83] Linking target example/poll[K[64/83] Linking target example/cuse[K[64/83] Linking target example/memfs_ll[K[65/83] Linking target example/null[K[65/83] Linking target test/test_write_cache[K[66/83] Linking target util/mount.fuse3[K[66/83] Linking target test/test_setattr[K[67/83] Linking target example/notify_inval_inode[K[67/83] Linking target test/test_api_30[K[68/83] Linking target example/invalidate_path[K[68/83] Linking target test/hello[K[69/83] Linking target example/poll[K[69/83] Linking target test/release_unlink_race[K[70/83] Linking target example/notify_inval_entry[K[70/83] Linking target test/test_want_conversion[K[71/83] Linking target example/notify_store_retrieve[K[71/83] Linking target test/test_signals[K[72/83] Linking target test/test_write_cache[K[72/83] Linking target test/test_abi[K[73/83] Linking target test/test_setattr[K[74/83] Linking target test/test_api_30[K[75/83] Linking target test/hello[K[76/83] Linking target test/release_unlink_race[K[77/83] Linking target test/test_abi[K[78/83] Linking target test/test_want_conversion[K[79/83] Linking target test/test_signals[K[80/83] Linking target example/passthrough_ll[K[81/83] Compiling C++ object example/passthrough_hp.p/passthrough_hp.cc.o[K[81/83] Linking target example/passthrough_hp[K[82/83] Linking target example/memfs_ll[K[83/83] Linking target example/passthrough_hp[K
+ninja: Entering directory `/var/tmp/hokuto/fuse3-01/build/build'
+ninja: no work to do.
+Installing lib/libfuse3.so.3.18.3 to /var/tmp/hokuto/fuse3-01/output/usr/lib
+Installing util/fusermount3 to /var/tmp/hokuto/fuse3-01/output/usr/bin
+Installing util/mount.fuse3 to /var/tmp/hokuto/fuse3-01/output/usr/sbin
+Installing /var/tmp/hokuto/fuse3-01/build/include/fuse.h to /var/tmp/hokuto/fuse3-01/output/usr/include/fuse3
+Installing /var/tmp/hokuto/fuse3-01/build/include/fuse_common.h to /var/tmp/hokuto/fuse3-01/output/usr/include/fuse3
+Installing /var/tmp/hokuto/fuse3-01/build/include/fuse_lowlevel.h to /var/tmp/hokuto/fuse3-01/output/usr/include/fuse3
+Installing /var/tmp/hokuto/fuse3-01/build/include/fuse_opt.h to /var/tmp/hokuto/fuse3-01/output/usr/include/fuse3
+Installing /var/tmp/hokuto/fuse3-01/build/include/cuse_lowlevel.h to /var/tmp/hokuto/fuse3-01/output/usr/include/fuse3
+Installing /var/tmp/hokuto/fuse3-01/build/include/fuse_log.h to /var/tmp/hokuto/fuse3-01/output/usr/include/fuse3
+Installing /var/tmp/hokuto/fuse3-01/build/doc/fusermount3.1 to /var/tmp/hokuto/fuse3-01/output/usr/share/man/man1
+Installing /var/tmp/hokuto/fuse3-01/build/doc/mount.fuse3.8 to /var/tmp/hokuto/fuse3-01/output/usr/share/man/man8
+Installing /var/tmp/hokuto/fuse3-01/build/build/libfuse_config.h to /var/tmp/hokuto/fuse3-01/output/usr/include/fuse3
+Installing /var/tmp/hokuto/fuse3-01/build/build/meson-private/fuse3.pc to /var/tmp/hokuto/fuse3-01/output/usr/lib/pkgconfig
+Installing symlink pointing to libfuse3.so.3.18.3 to /var/tmp/hokuto/fuse3-01/output/usr/lib/libfuse3.so.4
+Installing symlink pointing to libfuse3.so.4 to /var/tmp/hokuto/fuse3-01/output/usr/lib/libfuse3.so
+
+Script done on 2026-09-09 19:23:10+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfuse3[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 09 Sep 2026 12:23:10 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m8s[0m
