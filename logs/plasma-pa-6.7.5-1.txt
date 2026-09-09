@@ -1,0 +1,547 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-pa[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mplasma-pa 6.7.5-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 09 Sep 2026 05:46:39 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-pa[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglib glibc kcmutils kconfig kcoreaddons|sonic-frameworks-core-addons kdbusaddons kdeclarative kglobalaccel|sonic-frameworks-keybind ki18n kirigami|sonic-frameworks-quick-ui kirigami-addons|sonic-frameworks-quick-ui-addons kitemmodels kstatusnotifieritem ksvg libcanberra libplasma|sonic-interface-libraries libpulse plasma-workspace|sonic-workspace pulseaudio-qt|sonic-pulseaudio-library qt qt-declarative extra-cmake-modules|sonic-frameworks-cmake-modules kdoctools|sonic-frameworks-doctools[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-pa[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 extra-cmake-modules-6.29.0-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glib-2.88.3-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 kcmutils-6.29.0-1 kconfig-6.29.0-1 kcoreaddons-6.29.0-1 kdbusaddons-6.29.0-1 kdeclarative-6.29.0-1 kdoctools-6.29.0-1 kglobalaccel-6.29.0-1 ki18n-6.29.0-1 kirigami-6.29.0-1 kirigami-addons-1.13.1-1 kitemmodels-6.29.0-1 kstatusnotifieritem-6.29.0-1 ksvg-6.29.0-1 libcanberra-0.30-2 libplasma-6.7.4-1 libpulse-17.0-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 plasma-workspace-6.7.4-1 pulseaudio-qt-1.8.1-1 qt-6.11.2-1 qt-declarative-6.11.2-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-09 12:46:39+07:00 [COMMAND="cd /var/tmp/hokuto/plasma-pa-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/plasma-pa-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/plasma-pa-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/plasma-pa-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/plasma-pa-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/plasma-pa-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/plasma-pa-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/plasma-pa-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/plasma-pa-01/build/.cache' /repo/kde/plasma-pa/build /var/tmp/hokuto/plasma-pa-01/output 6.7.5 plasma-pa" <not executed on terminal>]
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:23 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.29.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.29.0")
+-- Found KF6Declarative: /usr/lib64/cmake/KF6Declarative/KF6DeclarativeConfig.cmake (found version "6.29.0")
+-- Found KF6GlobalAccel: /usr/lib64/cmake/KF6GlobalAccel/KF6GlobalAccelConfig.cmake (found version "6.29.0")
+-- Found KF6StatusNotifierItem: /usr/lib64/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemConfig.cmake (found version "6.29.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.29.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.29.0")
+-- Found KF6Svg: /usr/lib64/cmake/KF6Svg/KF6SvgConfig.cmake (found version "6.29.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.29.0")
+-- Found KF6: success (found suitable version "6.29.0", minimum required is "6.26.0") found components: Config CoreAddons Declarative GlobalAccel StatusNotifierItem I18n KCMUtils Svg DBusAddons
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found Canberra: /usr/lib/libcanberra.so (found version "0.30")
+-- Checking for module 'libpulse'
+--   Found libpulse, version 17.0
+-- Checking for module 'libpulse-mainloop-glib'
+--   Found libpulse-mainloop-glib, version 17.0
+-- Checking for module 'gio-2.0'
+--   Found gio-2.0, version 2.88.3
+-- Found CanberraPulse: /usr/lib/libcanberra-0.30/libcanberra-pulse.so
+-- Found SoundThemeFreedesktop: /usr/share/sounds/freedesktop/index.theme
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- Could NOT find KirigamiAddons (missing: KirigamiAddons_DIR)
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following RUNTIME packages have been found:
+
+ * CanberraPulse, Pulseaudio backend for libcanberra
+   Required for volume feedback sounds
+ * SoundThemeFreedesktop, The standard freedesktop sound theme, <https://www.freedesktop.org/wiki/Specifications/sound-theme-spec/>
+   Required for volume feedback sounds
+ * KF6Kirigami (required version >= 6.26.0), A QtQuick based components set
+   Required at runtime the KCM
+ * KF6ItemModels, Set of item models extending the Qt model-view framework
+   Required at runtime for the KCM and applet
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.11.2)
+ * Qt6WidgetsTools (required version >= 6.11.2)
+ * Qt6Widgets (required version >= 6.9.0)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6QuickTools (required version >= 6.11.2)
+ * Qt6GuiTools (required version >= 6.11.2)
+ * Qt6CoreTools (required version >= 6.11.2)
+ * Qt6Test (required version >= 6.10.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * KF6Config (required version >= 6.29.0)
+ * KF6Declarative (required version >= 6.26.0)
+ * KF6GlobalAccel (required version >= 6.26.0)
+ * KF6StatusNotifierItem (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6Svg (required version >= 6.26.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Qt6Qml (required version >= 6.9.0)
+ * Qt6Quick (required version >= 6.9.0)
+ * Qt6Gui (required version >= 6.9.0)
+ * Plasma (required version >= 6.7.0)
+ * Qt6Core (required version >= 6.7.0)
+ * KF6PulseAudioQt (required version >= 1.6.0)
+ * Canberra, Event sound library, <https://0pointer.de/lennart/projects/libcanberra>
+ * Qt6
+
+-- The following RUNTIME packages have not been found:
+
+ * KirigamiAddons, Extra controls for Kirigami applications
+   Required at runtime for the KCM
+
+-- The following OPTIONAL packages have not been found:
+
+ * WrapVulkanHeaders
+
+-- Configuring done (3.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: /var/tmp/hokuto/plasma-pa-01/build/build
+[  1%] [1m[34mCopying org.kde.plasma.volume qml resources into build dir[0m
+[  1%] [1m[34mPopulating .qmlls.ini file at /var/tmp/hokuto/plasma-pa-01/build/build/.qt/.qmlls.build.ini[0m
+[  2%] [1m[34mGenerating ts...[0m
+[  3%] [1m[34mGenerating mo...[0m
+[  4%] [1m[34mCopying plasma-volume-declarative qml sources into build dir[0m
+[  4%] [1m[34mCopying plasma-volume-declarative qml resources into build dir[0m
+[  5%] [1m[34mCopying org.kde.plasma.volume qml sources into build dir[0m
+[  6%] [1m[34mGenerating globalconfig.h, globalconfig.cpp[0m
+[  6%] Built target org.kde.plasma.volume_copy_res
+[  6%] Built target kcm_pulseaudio-kcm-desktop-gen
+[  6%] Built target plasma-volume-declarative_copy_res
+[  6%] Built target plasma-volume-declarative_copy_qml
+[  6%] Built target org.kde.plasma.volume_copy_qml
+[  6%] Built target tsfiles-ac43a778c4d693f7e01ecafcdd2fae3d
+[  6%] Built target plasma-volume_autogen_timestamp_deps
+[  6%] Built target kcm_pulseaudio_autogen_timestamp_deps
+[  6%] Built target generate_qmlls_build_ini_file
+[  6%] [1m[34mAutomatic MOC for target plasma-volume[0m
+[  7%] [1m[34mAutomatic MOC for target kcm_pulseaudio[0m
+[  7%] Built target org.kde.plasma.volume_autogen_timestamp_deps
+[  9%] Built target plasma-volume-declarative_autogen_timestamp_deps
+[ 10%] [1m[34mAutomatic MOC for target org.kde.plasma.volume[0m
+[ 11%] [1m[34mAutomatic MOC for target plasma-volume-declarative[0m
+[ 11%] Built target pofiles-ac43a778c4d693f7e01ecafcdd2fae3d
+[ 11%] Built target kcm_pulseaudio_autogen
+[ 12%] [1m[34mGenerating qrc_kcm_pulseaudio.cpp[0m
+[ 12%] Built target org.kde.plasma.volume_autogen
+[ 12%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_pulseaudio.dir/kcm_pulseaudio_autogen/mocs_compilation.cpp.o[0m
+[ 13%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_pulseaudio.dir/module.cpp.o[0m
+[ 14%] [32mBuilding CXX object src/kcm/CMakeFiles/kcm_pulseaudio.dir/qrc_kcm_pulseaudio.cpp.o[0m
+[ 15%] [1m[34mRunning AUTOMOC file extraction for target org.kde.plasma.volume[0m
+[ 17%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_qmlcache_loader.cpp[0m
+[ 19%] [1m[34mRunning rcc for resource qmake_plasma_applet_org_kde_plasma_volume[0m
+[ 17%] [1m[34mRunning rcc for resource org_kde_plasma_volume_raw_res_1[0m
+[ 18%] [1m[34mRunning rcc for resource org_kde_plasma_volume_raw_qml_0[0m
+[ 20%] [1m[34mRunning moc --collect-json for target org.kde.plasma.volume[0m
+[ 21%] [1m[34mGenerating meta_types/qt6org.kde.plasma.volume_metatypes.json[0m
+[ 21%] [1m[34mAutomatic QML type registration for target org.kde.plasma.volume[0m
+[ 22%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_DeviceListItem_qml.cpp[0m
+[ 22%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_MicrophoneTestView_qml.cpp[0m
+[ 22%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_KDEDProxy_qml.cpp[0m
+[ 23%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_ListItemBase_qml.cpp[0m
+[ 25%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_HorizontalStackView_qml.cpp[0m
+[ 26%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_StreamListItem_qml.cpp[0m
+[ 27%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_SmallToolButton_qml.cpp[0m
+[ 27%] Built target plasma-volume_autogen
+[ 28%] [1m[34mGenerating osdservice.cpp, osdservice.h[0m
+AutoMoc: /var/tmp/hokuto/plasma-pa-01/build/src/qml/dbusinterface.h:37:1: warning: Class DBusInterface implements the interface QQmlParserStatus but does not list it in Q_INTERFACES. qobject_cast to QQmlParserStatus will not work!
+[ 29%] [1m[34mGenerating moc_osdservice.cpp[0m
+[ 29%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_VolumeSlider_qml.cpp[0m
+[ 30%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/plasma-volume_autogen/mocs_compilation.cpp.o[0m
+[ 31%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.volume_main_qml.cpp[0m
+[ 32%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/modulemanager.cpp.o[0m
+[ 32%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/volumemonitor.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/canberracontext.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/speakertest.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/gsettingsitem.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/soundthemeconfig.cpp.o[0m
+[ 36%] Built target plasma-volume-declarative_autogen
+[ 37%] [1m[34mRunning AUTOMOC file extraction for target plasma-volume-declarative[0m
+[ 38%] [1m[34mRunning rcc for resource plasma-volume-declarative_raw_qml_0[0m
+[ 39%] [1m[34mRunning rcc for resource qmake_org_kde_plasma_private_volume[0m
+[ 40%] [1m[34mGenerating .rcc/qmlcache/plasma-volume-declarative_qmlcache_loader.cpp[0m
+[ 42%] [1m[34mGenerating org.freedesktop.DBus.Properties.cpp, org.freedesktop.DBus.Properties.h[0m
+[ 42%] [1m[34mRunning moc --collect-json for target plasma-volume-declarative[0m
+[ 42%] [1m[34mGenerating meta_types/qt6plasma-volume-declarative_metatypes.json[0m
+[ 42%] [1m[34mGenerating moc_org.freedesktop.DBus.Properties.cpp[0m
+[ 43%] [1m[34mAutomatic QML type registration for target plasma-volume-declarative[0m
+[ 43%] [1m[34mGenerating .rcc/qmlcache/plasma-volume-declarative_qml_PulseObjectFilterModel_qml.cpp[0m
+[ 43%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/org.kde.plasma.volume_autogen/mocs_compilation.cpp.o[0m
+[ 44%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/org.kde.plasma.volume_qmltyperegistrations.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/plasma-volume-declarative_autogen/mocs_compilation.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/volumefeedback.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/plasma-volume-declarative_qmltyperegistrations.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/audioicon.cpp.o[0m
+[ 48%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.qt/rcc/qrc_qmake_plasma_applet_org_kde_plasma_volume.cpp.o[0m
+[ 48%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_qmlcache_loader.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/preferreddevice.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/.qt/rcc/qrc_qmake_org_kde_plasma_private_volume.cpp.o[0m
+[ 51%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_DeviceListItem_qml.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/devicerenamemodel.cpp.o[0m
+[ 52%] [1m[32mLinking CXX shared module ../../bin/plasma/kcms/systemsettings/kcm_pulseaudio.so[0m
+[ 53%] Built target kcm_pulseaudio
+[ 54%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/modulemanager.cpp.o[0m
+[ 55%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_HorizontalStackView_qml.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/volumemonitor.cpp.o[0m
+[ 56%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_SmallToolButton_qml.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/devicerenamesaver.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/canberracontext.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/percentvalidator.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/speakertest.cpp.o[0m
+[ 60%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_StreamListItem_qml.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/microphonetest.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/debug.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/osdservice.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/gsettingsitem.cpp.o[0m
+[ 64%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_VolumeSlider_qml.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/CMakeFiles/plasma-volume.dir/globalconfig.cpp.o[0m
+[01m[K/var/tmp/hokuto/plasma-pa-01/build/src/microphonetest.cpp:[m[K In lambda function:
+[01m[K/var/tmp/hokuto/plasma-pa-01/build/src/microphonetest.cpp:173:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksuccess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  173 |         [](pa_stream *s, [01;35m[Kint success[m[K, void *userdata) {
+      |                          [01;35m[K~~~~^~~~~~~[m[K
+[01m[K/var/tmp/hokuto/plasma-pa-01/build/src/microphonetest.cpp:[m[K In static member function ‘[01m[Kstatic void MicrophoneTest::[01;32m[Kstream_write_callback[m[K(pa_stream*, size_t, void*)[m[K’:
+[01m[K/var/tmp/hokuto/plasma-pa-01/build/src/microphonetest.cpp:342:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kqsizetype[m[K’ {aka ‘[01m[Klong long int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-sign-compare-Wsign-compare]8;;[m[K]
+  342 |     if ([01;35m[Kself->m_playbackOffset >= self->m_recordedData.size()[m[K) {
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 65%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_main_qml.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/soundthemeconfig.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/volumefeedback.cpp.o[0m
+[ 68%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/audioicon.cpp.o[0m
+[ 69%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_ListItemBase_qml.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/preferreddevice.cpp.o[0m
+[ 71%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_MicrophoneTestView_qml.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/devicerenamemodel.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/devicerenamesaver.cpp.o[0m
+[ 73%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.rcc/qmlcache/org.kde.plasma.volume_KDEDProxy_qml.cpp.o[0m
+[ 73%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.qt/rcc/qrc_org_kde_plasma_volume_raw_qml_0.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/percentvalidator.cpp.o[0m
+[ 76%] [1m[32mLinking CXX shared library ../bin/libplasma-volume.so[0m
+[ 77%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/.qt/rcc/qrc_org_kde_plasma_volume_raw_res_1.cpp.o[0m
+[ 78%] [32mBuilding CXX object applet/CMakeFiles/org.kde.plasma.volume.dir/org.kde.plasma.volume.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/microphonetest.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/debug.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/org.freedesktop.DBus.Properties.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/listitemmenu.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/plugin.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/microphoneindicator.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/globalservice.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/qml/dbusinterface.cpp.o[0m
+[ 85%] Built target plasma-volume
+[ 86%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/.rcc/qmlcache/plasma-volume-declarative_qmlcache_loader.cpp.o[0m
+[01m[K/var/tmp/hokuto/plasma-pa-01/build/src/microphonetest.cpp:[m[K In lambda function:
+[01m[K/var/tmp/hokuto/plasma-pa-01/build/src/microphonetest.cpp:173:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksuccess[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  173 |         [](pa_stream *s, [01;35m[Kint success[m[K, void *userdata) {
+      |                          [01;35m[K~~~~^~~~~~~[m[K
+[01m[K/var/tmp/hokuto/plasma-pa-01/build/src/microphonetest.cpp:[m[K In static member function ‘[01m[Kstatic void MicrophoneTest::[01;32m[Kstream_write_callback[m[K(pa_stream*, size_t, void*)[m[K’:
+[01m[K/var/tmp/hokuto/plasma-pa-01/build/src/microphonetest.cpp:342:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kqsizetype[m[K’ {aka ‘[01m[Klong long int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-sign-compare-Wsign-compare]8;;[m[K]
+  342 |     if ([01;35m[Kself->m_playbackOffset >= self->m_recordedData.size()[m[K) {
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 87%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/.rcc/qmlcache/plasma-volume-declarative_qml_PulseObjectFilterModel_qml.cpp.o[0m
+[ 87%] [1m[32mLinking CXX shared library ../bin/plasma/applets/org.kde.plasma.volume.so[0m
+[ 87%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/.qt/rcc/qrc_plasma-volume-declarative_raw_qml_0.cpp.o[0m
+[ 88%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/osdservice.cpp.o[0m
+[ 88%] Built target audioshortcutsservice_autogen_timestamp_deps
+[ 89%] [1m[34mAutomatic MOC for target audioshortcutsservice[0m
+[ 90%] [32mBuilding CXX object src/CMakeFiles/plasma-volume-declarative.dir/globalconfig.cpp.o[0m
+[ 90%] Built target audioshortcutsservice_autogen
+[ 92%] [32mBuilding CXX object src/kded/CMakeFiles/audioshortcutsservice.dir/audioshortcutsservice_autogen/mocs_compilation.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/kded/CMakeFiles/audioshortcutsservice.dir/audioshortcutsservice.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/kded/CMakeFiles/audioshortcutsservice.dir/mutedmicrophonereminder.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/kded/CMakeFiles/audioshortcutsservice.dir/KDBusPropertiesChangedAdaptor.cpp.o[0m
+[ 95%] Built target org.kde.plasma.volume
+[ 95%] [1m[32mLinking CXX shared module ../bin/org/kde/plasma/private/volume/libplasma-volume-declarative.so[0m
+[ 98%] Built target plasma-volume-declarative
+[ 98%] [1m[32mLinking CXX shared module ../../bin/kf6/kded/audioshortcutsservice.so[0m
+[100%] Built target audioshortcutsservice
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.volume.so
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/qml/org/kde/plasma/private/volume/libplasma-volume-declarative.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/qml/org/kde/plasma/private/volume/libplasma-volume-declarative.so" to "$ORIGIN/../../../../../../lib64"
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/qml/org/kde/plasma/private/volume/qmldir
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/qml/org/kde/plasma/private/volume/plasma-volume-declarative.qmltypes
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/qml/org/kde/plasma/private/volume/PulseObjectFilterModel.qml
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/qml/org/kde/plasma/private/volume/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib64/libplasma-volume.so.6.7.5
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib64/libplasma-volume.so.6
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_pulseaudio.so
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/applications/kcm_pulseaudio.desktop
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/plugins/kf6/kded/audioshortcutsservice.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/plasma-pa-01/output/usr/lib/qt6/plugins/kf6/kded/audioshortcutsservice.so" to ""
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/qlogging-categories6/plasmapa.categories
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/cs/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/cs/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/eu/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/eu/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hu/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hu/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/uk/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/uk/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ar/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ar/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pl/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pl/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nb/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nb/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/it/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/it/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/es/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/es/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pt_BR/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/az/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/az/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/eo/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/eo/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sa/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sa/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/da/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/da/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ml/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ml/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sv/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sv/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/fr/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/fr/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@latin/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@latin/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hsb/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ko/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ko/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/id/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/id/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/en_GB/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nn/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nn/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/gl/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/zh_TW/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sk/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sk/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pa/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pa/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ja/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ja/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ta/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ta/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ru/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ru/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/he/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/he/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/is/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/is/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ka/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ka/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nl/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/nl/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ia/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ia/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hi/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/hi/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/lt/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/lt/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/fi/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/fi/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/et/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/et/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/el/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/el/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/lv/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/lv/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pt/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/pt/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ro/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ro/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ca/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ca/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ast/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ast/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/tr/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/tr/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/bg/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/bg/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sl/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/sl/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/de/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/de/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ga/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/ga/LC_MESSAGES/kcm_pulseaudio.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/zh_CN/LC_MESSAGES/plasma_applet_org.kde.plasma.volume.mo
+-- Installing: /var/tmp/hokuto/plasma-pa-01/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_pulseaudio.mo
+
+Script done on 2026-09-09 12:47:08+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-pa[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 09 Sep 2026 05:47:08 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m29s[0m
