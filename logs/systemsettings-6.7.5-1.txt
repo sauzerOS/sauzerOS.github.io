@@ -1,0 +1,583 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19msystemsettings[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19msystemsettings 6.7.5-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 09 Sep 2026 06:01:28 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19msystemsettings[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc kauth|sonic-frameworks-auth kcmutils kcolorscheme|sonic-frameworks-color-scheme kconfig kconfigwidgets|sonic-frameworks-settings-ui kcoreaddons|sonic-frameworks-core-addons kcrash kdbusaddons ki18n kio|sonic-frameworks-io kirigami|sonic-frameworks-quick-ui kitemmodels kitemviews kjobwidgets krunner|sonic-frameworks-runner kservice kwidgetsaddons kwindowsystem|sonic-frameworks-windowsystem kxmlgui plasma-activities|sonic-activities qt qt-declarative extra-cmake-modules|sonic-frameworks-cmake-modules kdoctools|sonic-frameworks-doctools[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19msystemsettings[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 extra-cmake-modules-6.29.0-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 kauth-6.29.0-1 kcmutils-6.29.0-1 kcolorscheme-6.29.0-1 kconfig-6.29.0-1 kconfigwidgets-6.29.0-1 kcoreaddons-6.29.0-1 kcrash-6.29.0-1 kdbusaddons-6.29.0-1 kdoctools-6.29.0-1 ki18n-6.29.0-1 kio-6.29.0-1 kirigami-6.29.0-1 kitemmodels-6.29.0-1 kitemviews-6.29.0-1 kjobwidgets-6.29.0-1 krunner-6.29.0-1 kservice-6.29.0-1 kwidgetsaddons-6.29.0-1 kwindowsystem-6.29.0-1 kxmlgui-6.29.0-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 plasma-activities-6.7.4-1 qt-6.11.2-1 qt-declarative-6.11.2-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-09 13:01:28+07:00 [COMMAND="cd /var/tmp/hokuto/systemsettings-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/systemsettings-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/systemsettings-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/systemsettings-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/systemsettings-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/systemsettings-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/systemsettings-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/systemsettings-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/systemsettings-01/build/.cache' /repo/kde/systemsettings/build /var/tmp/hokuto/systemsettings-01/output 6.7.5 systemsettings" <not executed on terminal>]
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:17 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found KF6Auth: /usr/lib64/cmake/KF6Auth/KF6AuthConfig.cmake (found version "6.29.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.29.0")
+-- Found KF6ItemViews: /usr/lib64/cmake/KF6ItemViews/KF6ItemViewsConfig.cmake (found version "6.29.0")
+-- Found KF6ItemModels: /usr/lib64/cmake/KF6ItemModels/KF6ItemModelsConfig.cmake (found version "6.29.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.29.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.29.0")
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.29.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.29.0")
+-- Found KF6IconThemes: /usr/lib64/cmake/KF6IconThemes/KF6IconThemesConfig.cmake (found version "6.29.0")
+-- Found KF6WidgetsAddons: /usr/lib64/cmake/KF6WidgetsAddons/KF6WidgetsAddonsConfig.cmake (found version "6.29.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.29.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.29.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.29.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.29.0")
+-- Found KF6GuiAddons: /usr/lib64/cmake/KF6GuiAddons/KF6GuiAddonsConfig.cmake (found version "6.29.0")
+-- Found KF6Kirigami: /usr/lib64/cmake/KF6Kirigami/KF6KirigamiConfig.cmake (found version "6.29.0")
+-- Found KF6JobWidgets: /usr/lib64/cmake/KF6JobWidgets/KF6JobWidgetsConfig.cmake (found version "6.29.0")
+-- Found KF6Runner: /usr/lib64/cmake/KF6Runner/KF6RunnerConfig.cmake (found version "6.29.0")
+-- Found KF6ColorScheme: /usr/lib64/cmake/KF6ColorScheme/KF6ColorSchemeConfig.cmake (found version "6.29.0")
+-- Found KF6DocTools: /usr/lib64/cmake/KF6DocTools/KF6DocToolsConfig.cmake (found version "6.29.0")
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6QuickWidgets (required version >= 6.10.0)
+ * Qt6CoreTools (required version >= 6.11.2)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * KF6Auth (required version >= 6.26.0)
+ * KF6Crash (required version >= 6.26.0)
+ * KF6ItemModels (required version >= 6.26.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6ItemViews (required version >= 6.29.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6Service (required version >= 6.26.0)
+ * KF6IconThemes (required version >= 6.26.0)
+ * KF6WidgetsAddons (required version >= 6.26.0)
+ * KF6WindowSystem (required version >= 6.26.0)
+ * KF6XmlGui (required version >= 6.26.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6Config (required version >= 6.26.0)
+ * KF6GuiAddons (required version >= 6.26.0)
+ * KF6Kirigami (required version >= 6.26.0)
+ * KF6JobWidgets (required version >= 6.26.0)
+ * Qt6 (required version >= 6.9.0)
+ * KF6Runner (required version >= 6.26.0)
+ * KF6ColorScheme (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Qt6Core (required version >= 6.10.0)
+ * PlasmaActivities (required version >= 6.7.0)
+
+-- Configuring done (3.0s)
+-- Generating done (0.1s)
+[33mCMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/systemsettings-01/build/build
+[  1%] [1m[34mGenerating po/de/docs/systemsettings/index.cache.bz2[0m
+[  2%] Built target systemsettings_debug_autogen_timestamp_deps
+[  2%] [1m[34mGenerating po/pt_BR/docs/systemsettings/index.cache.bz2[0m
+[  4%] [1m[34mGenerating po/id/docs/systemsettings/index.cache.bz2[0m
+[  5%] [1m[34mGenerating po/pt/docs/systemsettings/index.cache.bz2[0m
+[  7%] [1m[34mGenerating po/it/docs/systemsettings/index.cache.bz2[0m
+[  8%] [1m[34mGenerating po/es/docs/systemsettings/index.cache.bz2[0m
+[ 10%] [1m[34mGenerating po/fr/docs/systemsettings/index.cache.bz2[0m
+[ 12%] [1m[34mGenerating po/nl/docs/systemsettings/index.cache.bz2[0m
+[ 12%] [1m[34mGenerating po/ca/docs/systemsettings/index.cache.bz2[0m
+[ 14%] [1m[34mGenerating po/ru/docs/systemsettings/index.cache.bz2[0m
+I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/pt-BR.xml": No such file or directory
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+[ 14%] Built target po-es-docs-systemsettings-index-cache-bz2
+[ 14%] Built target po-pt-docs-systemsettings-index-cache-bz2
+[ 14%] Built target po-ru-docs-systemsettings-index-cache-bz2
+[ 15%] [1m[34mGenerating po/sl/docs/systemsettings/index.cache.bz2[0m
+[ 15%] Built target po-ca-docs-systemsettings-index-cache-bz2
+[ 15%] Built target po-de-docs-systemsettings-index-cache-bz2
+[ 17%] [1m[34mGenerating po/sv/docs/systemsettings/index.cache.bz2[0m
+[ 17%] Built target po-pt-BR-docs-systemsettings-index-cache-bz2
+[ 18%] [1m[34mGenerating po/uk/docs/systemsettings/index.cache.bz2[0m
+[ 18%] Built target po-id-docs-systemsettings-index-cache-bz2
+[ 20%] [1m[34mGenerating po/tr/docs/systemsettings/index.cache.bz2[0m
+[ 21%] [1m[34mGenerating mo...[0m
+[ 22%] [1m[34mGenerating ts...[0m
+[ 24%] [1m[34mCopying systemsettings qml resources into build dir[0m
+[ 24%] Built target tsfiles-5cb308c85a3b8481b73dc6939bbe57bf
+[ 24%] Built target po-it-docs-systemsettings-index-cache-bz2
+[ 24%] Built target systemsettings_copy_res
+[ 25%] [1m[34mCopying systemsettings qml sources into build dir[0m
+[ 27%] [1m[34mPopulating .qmlls.ini file at /var/tmp/hokuto/systemsettings-01/build/build/.qt/.qmlls.build.ini[0m
+[ 28%] [1m[34mGenerating index.cache.bz2[0m
+[ 28%] Built target systemsettings_copy_qml
+[ 28%] Built target po-nl-docs-systemsettings-index-cache-bz2
+[ 30%] [1m[34mAutomatic MOC for target systemsettings_debug[0m
+[ 30%] Built target po-fr-docs-systemsettings-index-cache-bz2
+[ 30%] Built target generate_qmlls_build_ini_file
+[ 30%] Built target systemsettings_debug_autogen
+[ 30%] Built target pofiles-5cb308c85a3b8481b73dc6939bbe57bf
+[ 31%] [32mBuilding CXX object CMakeFiles/systemsettings_debug.dir/systemsettings_app_debug.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/systemsettings_debug.dir/systemsettings_debug_autogen/mocs_compilation.cpp.o[0m
+[ 32%] Built target po-tr-docs-systemsettings-index-cache-bz2
+[ 32%] Built target po-uk-docs-systemsettings-index-cache-bz2
+[ 32%] Built target po-sl-docs-systemsettings-index-cache-bz2
+[ 32%] Built target po-sv-docs-systemsettings-index-cache-bz2
+[ 32%] Built target doc-index-cache-bz2
+[ 34%] [1m[32mLinking CXX static library lib/libsystemsettings_debug.a[0m
+[ 35%] Built target systemsettings_debug
+[ 35%] Built target krunner_systemsettings_autogen_timestamp_deps
+[ 35%] Built target systemsettings_autogen_timestamp_deps
+[ 38%] [1m[34mAutomatic MOC for target krunner_systemsettings[0m
+[ 38%] [1m[34mAutomatic MOC for target systemsettings[0m
+[ 38%] Built target krunner_systemsettings_autogen
+[ 38%] Built target systemsettings_autogen
+[ 40%] [32mBuilding CXX object runner/CMakeFiles/krunner_systemsettings.dir/systemsettingsrunner.cpp.o[0m
+[ 41%] [32mBuilding CXX object runner/CMakeFiles/krunner_systemsettings.dir/krunner_systemsettings_autogen/mocs_compilation.cpp.o[0m
+[ 42%] [1m[34mRunning rcc for resource qmake_org_kde_systemsettings[0m
+[ 44%] [1m[34mRunning rcc for resource systemsettings_raw_qml_0[0m
+[ 45%] [1m[34mRunning rcc for resource systemsettings_raw_res_1[0m
+[ 47%] [1m[34mGenerating .rcc/qmlcache/systemsettings_qmlcache_loader.cpp[0m
+[ 48%] [1m[34mRunning AUTOMOC file extraction for target systemsettings[0m
+[ 50%] [1m[34mGenerating ui_externalModule.h[0m
+/var/tmp/hokuto/systemsettings-01/build/app/externalModule.ui: Warning: The name 'horizontalSpacer' (QSpacerItem) is already in use, defaulting to 'horizontalSpacer1'.
+/var/tmp/hokuto/systemsettings-01/build/app/externalModule.ui: Warning: The name 'verticalSpacer' (QSpacerItem) is already in use, defaulting to 'verticalSpacer1'.
+[ 51%] [1m[34mRunning moc --collect-json for target systemsettings[0m
+[ 52%] [1m[34mGenerating meta_types/qt6systemsettings_metatypes.json[0m
+[ 54%] [1m[34mAutomatic QML type registration for target systemsettings[0m
+[ 58%] [1m[34mGenerating .rcc/qmlcache/systemsettings_qml_IntroPage_qml.cpp[0m
+[ 58%] [1m[34mGenerating .rcc/qmlcache/systemsettings_qml_HamburgerMenuButton_qml.cpp[0m
+[ 58%] [1m[34mGenerating .rcc/qmlcache/systemsettings_qml_CategoryItem_qml.cpp[0m
+[ 60%] [1m[34mGenerating .rcc/qmlcache/systemsettings_qml_Main_qml.cpp[0m
+[ 61%] [1m[34mGenerating .rcc/qmlcache/systemsettings_qml_SubCategoryPage_qml.cpp[0m
+[ 62%] [1m[34mGenerating .rcc/qmlcache/systemsettings_qml_CategoriesPage_qml.cpp[0m
+[ 64%] [1m[34mGenerating .rcc/qmlcache/systemsettings_qml_SideBarItem_qml.cpp[0m
+[ 65%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/systemsettings_qmltyperegistrations.cpp.o[0m
+[ 67%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.qt/rcc/qrc_qmake_org_kde_systemsettings.cpp.o[0m
+[ 68%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/ExternalAppModule.cpp.o[0m
+[ 70%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/systemsettings_autogen/mocs_compilation.cpp.o[0m
+[ 71%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/SidebarMode.cpp.o[0m
+[ 72%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/main.cpp.o[0m
+[ 74%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/SettingsBase.cpp.o[0m
+[ 75%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/MenuModel.cpp.o[0m
+[ 77%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/MenuItem.cpp.o[0m
+[ 80%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/MenuProxyModel.cpp.o[0m
+[ 80%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/ModuleView.cpp.o[0m
+[01m[K/var/tmp/hokuto/systemsettings-01/build/app/MenuProxyModel.cpp:[m[K In member function ‘[01m[Kvoid MenuProxyModel::[01;32m[KsetShowIrrelevantModules[m[K(bool)[m[K’:
+[01m[K/var/tmp/hokuto/systemsettings-01/build/app/MenuProxyModel.cpp:116:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid QSortFilterProxyModel::[01;32m[KinvalidateRowsFilter[m[K()[m[K’ is deprecated: Use begin/endFilterChange(QSortFilterProxyModel::Direction::Rows) instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  116 |     [01;35m[KinvalidateRowsFilter()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/qt6/QtCore/QSortFilterProxyModel:1[m[K,
+                 from [01m[K/usr/include/KF6/KItemViews/kcategorizedsortfilterproxymodel.h:12[m[K,
+                 from [01m[K/usr/include/KF6/KItemViews/KCategorizedSortFilterProxyModel:1[m[K,
+                 from [01m[K/var/tmp/hokuto/systemsettings-01/build/app/MenuProxyModel.h:11[m[K,
+                 from [01m[K/var/tmp/hokuto/systemsettings-01/build/app/MenuProxyModel.cpp:8[m[K:
+[01m[K/usr/include/qt6/QtCore/qsortfilterproxymodel.h:130:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  130 |     void [01;36m[KinvalidateRowsFilter[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[ 81%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.rcc/qmlcache/systemsettings_qmlcache_loader.cpp.o[0m
+[ 82%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.rcc/qmlcache/systemsettings_qml_CategoriesPage_qml.cpp.o[0m
+[ 84%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.rcc/qmlcache/systemsettings_qml_CategoryItem_qml.cpp.o[0m
+[ 85%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.rcc/qmlcache/systemsettings_qml_HamburgerMenuButton_qml.cpp.o[0m
+[ 87%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.rcc/qmlcache/systemsettings_qml_IntroPage_qml.cpp.o[0m
+[ 88%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.rcc/qmlcache/systemsettings_qml_Main_qml.cpp.o[0m
+[ 90%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.rcc/qmlcache/systemsettings_qml_SideBarItem_qml.cpp.o[0m
+[ 91%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.rcc/qmlcache/systemsettings_qml_SubCategoryPage_qml.cpp.o[0m
+[ 92%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.qt/rcc/qrc_systemsettings_raw_qml_0.cpp.o[0m
+[ 94%] [1m[32mLinking CXX shared module ../bin/kf6/krunner/krunner_systemsettings.so[0m
+[ 95%] [32mBuilding CXX object app/CMakeFiles/systemsettings.dir/.qt/rcc/qrc_systemsettings_raw_res_1.cpp.o[0m
+[ 97%] Built target krunner_systemsettings
+[ 98%] [1m[32mLinking CXX executable ../bin/systemsettings[0m
+[100%] Built target systemsettings
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/bin/systemsettings
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/applications/kdesystemsettings.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/applications/systemsettings.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/kglobalaccel
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/metainfo/org.kde.systemsettings.metainfo.xml
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/zsh/site-functions/_systemsettings
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-root-category.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-network.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-network-networksettings.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-hardware-input.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-hardware-input-pointing-devices.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-hardware-keyboard.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-hardware-input-touchscreen.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-hardware-multimedia.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-hardware-display.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-hardware.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-hardware-removable-storage.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-appearance.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-appearance-themes.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-appearance-font.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-applications.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-applications-defaults.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-workspace-windowmanagement.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-personalization.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-workspace.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-workspace-search.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-security-privacy.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-applications-permissions.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-regionalsettings.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-system-administration.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/systemsettings/categories/settings-workspace-session.desktop
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/en/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/en/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/ca/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/ca/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/de/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/de/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/es/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/es/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/fr/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/fr/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/id/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/id/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/it/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/it/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/nl/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/nl/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/pt/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/pt/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/pt_BR/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/pt_BR/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/ru/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/ru/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/sl/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/sl/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/sv/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/sv/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/tr/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/tr/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/uk/systemsettings/index.cache.bz2
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/doc/HTML/uk/systemsettings/index.docbook
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/lib/qt6/plugins/kf6/krunner/krunner_systemsettings.so
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/qlogging-categories6/systemsettings.categories
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/cs/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/eu/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hu/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/uk/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sq
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sq/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ar/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pl/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nb/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/it/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/es/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ug/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pt_BR/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/az/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/km/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/eo/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sa/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/da/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ie
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ie/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ie/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/be/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/se/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ml/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sv/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fr/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/csb
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/csb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/csb/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr@latin/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/tg/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/my
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/my/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/my/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fa
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fa/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/th/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/gu
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/gu/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hsb/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ko/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/oc
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/oc/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/be@latin
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/be@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/be@latin/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/id/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/en_GB/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nn/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/kk/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/te
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/te/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/te/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/bn_IN
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/bn_IN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/bn_IN/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fy
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fy/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hne
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hne/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ne
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ne/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/gl/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/bs/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/zh_TW/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sk/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pa/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/mk
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/mk/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nds/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/vi/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ja/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hr/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ta/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ru/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/mai
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/mai/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/si
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/si/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/si/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ku
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ku/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/he/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/is/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ka/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/nl/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/or
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/or/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/or/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ia/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/hi/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/lt/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/fi/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/et/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/el/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/lv/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ms/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/pt/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ro/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ca/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ast/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/tr/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/bg/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/sl/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/wa
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/wa/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/mr/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/de/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/ga/LC_MESSAGES/systemsettings.mo
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/systemsettings-01/output/usr/share/locale/zh_CN/LC_MESSAGES/systemsettings.mo
+
+Script done on 2026-09-09 13:01:44+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19msystemsettings[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 09 Sep 2026 06:01:44 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m15s[0m
