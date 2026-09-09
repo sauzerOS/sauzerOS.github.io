@@ -1,0 +1,612 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mkscreenlocker[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mkscreenlocker 6.7.5-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 09 Sep 2026 05:19:59 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mkscreenlocker[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc kcmutils kconfig kcoreaddons|sonic-frameworks-core-addons kcrash kdeclarative kglobalaccel|sonic-frameworks-keybind ki18n kidletime|sonic-frameworks-idle-tracker kio|sonic-frameworks-io kirigami|sonic-frameworks-quick-ui knotifications kpackage ksvg kwindowsystem|sonic-frameworks-windowsystem kxmlgui layer-shell-qt libkscreen|sonic-screen-library libplasma|sonic-interface-libraries libx11 libxcb libxi pam qt qt-declarative wayland xcb-util-keysyms extra-cmake-modules|sonic-frameworks-cmake-modules kdoctools|sonic-frameworks-doctools[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mkscreenlocker[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 extra-cmake-modules-6.29.0-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 kcmutils-6.29.0-1 kconfig-6.29.0-1 kcoreaddons-6.29.0-1 kcrash-6.29.0-1 kdeclarative-6.29.0-1 kdoctools-6.29.0-1 kglobalaccel-6.29.0-1 ki18n-6.29.0-1 kidletime-6.29.0-1 kio-6.29.0-1 kirigami-6.29.0-1 knotifications-6.29.0-1 kpackage-6.29.0-1 ksvg-6.29.0-1 kwindowsystem-6.29.0-1 kxmlgui-6.29.0-1 layer-shell-qt-6.7.4-1 libkscreen-6.7.4-1 libplasma-6.7.4-1 libtool-2.6.2-1 libx11-1.8.13-1 libxcb-1.17.0-1 libxi-1.8.3-1 m4-1.4.21-1 make-4.4.1-1 pam-1.7.2-1 patch-2.8-1 pkgconf-3.0.7-1 qt-6.11.2-1 qt-declarative-6.11.2-1 sed-4.10-1 texinfo-7.3-1 wayland-1.26.0-1 which-2.25-1 xcb-util-keysyms-0.4.1-1[0m
+
+Script started on 2026-09-09 12:19:59+07:00 [COMMAND="cd /var/tmp/hokuto/kscreenlocker-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/kscreenlocker-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/kscreenlocker-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/kscreenlocker-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/kscreenlocker-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/kscreenlocker-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/kscreenlocker-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/kscreenlocker-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/kscreenlocker-01/build/.cache' /repo/kde/kscreenlocker/build /var/tmp/hokuto/kscreenlocker-01/output 6.7.5 kscreenlocker" <not executed on terminal>]
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:18 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Looking for sys/prctl.h
+-- Looking for sys/prctl.h - found
+-- Looking for PR_SET_DUMPABLE
+-- Looking for PR_SET_DUMPABLE - found
+-- Looking for sys/procctl.h
+-- Looking for sys/procctl.h - not found
+-- Looking for PROC_TRACE_CTL
+-- Looking for PROC_TRACE_CTL - not found
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.29.0")
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.29.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.29.0")
+-- Found KF6GlobalAccel: /usr/lib64/cmake/KF6GlobalAccel/KF6GlobalAccelConfig.cmake (found version "6.29.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.29.0")
+-- Found KF6IdleTime: /usr/lib64/cmake/KF6IdleTime/KF6IdleTimeConfig.cmake (found version "6.29.0")
+-- Found KF6Notifications: /usr/lib64/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.29.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.29.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.29.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.29.0")
+-- Found KF6Svg: /usr/lib64/cmake/KF6Svg/KF6SvgConfig.cmake (found version "6.29.0")
+-- Found KF6: success (found suitable version "6.29.0", minimum required is "6.26.0") found components: Crash KCMUtils KIO GlobalAccel I18n IdleTime Notifications Solid WindowSystem XmlGui Svg
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found XCB_XCB: /usr/lib/libxcb.so (found version "1.17.0")
+-- Found XCB_KEYSYMS: /usr/lib/libxcb-keysyms.so (found version "0.4.1")
+-- Found XCB_UTIL: /usr/lib/libxcb-util.so (found version "0.4.1")
+-- Found XCB_XTEST: /usr/lib/libxcb-xtest.so (found version "1.17.0")
+-- Found XCB: /usr/lib/libxcb.so;/usr/lib/libxcb-keysyms.so;/usr/lib/libxcb-util.so;/usr/lib/libxcb-xtest.so (found version "1.17.0") found components: XCB KEYSYMS UTIL XTEST
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found Wayland_Client: /usr/lib/libwayland-client.so (found version "1.26.0")
+-- Found Wayland_Server: /usr/lib/libwayland-server.so (found version "1.26.0")
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so (found suitable version "1.26.0", minimum required is "1.3") found components: Client Server
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found loginctl: /usr/bin/loginctl
+-- Performing Test PAM_MESSAGE_CONST
+-- Performing Test PAM_MESSAGE_CONST - Success
+-- Found PAM: /usr/lib/libpam.so;/usr/lib/libdl.a
+-- The PAM service used by KScreenLocker will be "kde"
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following features have been enabled:
+
+ * prctl/procctl tracing control, Required for disallowing ptrace on greeter and kcheckpass process
+ * XInput, Required for grabbing XInput2 devices in the screen locker
+ * Unlock broken screenlocker, Needed for emergency unlock in case that the greeter is broken. In case your distribution does not provide loginctl or consolekit please contact plasma-devel@kde.org to discuss alternatives.
+
+-- The following RUNTIME packages have been found:
+
+ * loginctl, Send control commands to the login manager, <https://www.freedesktop.org/software/systemd/man/loginctl.html>
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6Test (required version >= 6.10.0)
+ * Qt6WidgetsTools (required version >= 6.11.2)
+ * Qt6Widgets (required version >= 6.9.0)
+ * Qt6DBusTools (required version >= 6.11.2)
+ * Qt6DBus (required version >= 6.9.0)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6QuickTools (required version >= 6.11.2)
+ * WaylandScanner, Executable that converts XML protocol files to C code, <https://wayland.freedesktop.org/>
+ * Qt6GuiTools (required version >= 6.11.2)
+ * Qt6CoreTools (required version >= 6.11.2)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6 (required version >= 6.10.0)
+ * Qt6GuiPrivate
+ * KF6Crash (required version >= 6.26.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6GlobalAccel (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6IdleTime (required version >= 6.26.0)
+ * KF6Notifications (required version >= 6.26.0)
+ * KF6Solid (required version >= 6.26.0)
+ * KF6XmlGui (required version >= 6.26.0)
+ * KF6Svg (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Qt6Quick (required version >= 6.9.0)
+ * PlasmaQuick (required version >= 6.7.0)
+ * X11, X11 libraries, <https://www.x.org>
+   Required for building the X11 based workspace
+ * XCB, X protocol C-language Binding, <https://xcb.freedesktop.org/>
+ * Wayland (required version >= 1.3), C library implementation of the Wayland protocol: a protocol for a compositor to talk to its clients, <https://wayland.freedesktop.org/>
+   Required for building screenlocker
+ * LayerShellQt
+ * KF6Screen
+ * PAM, PAM Libraries, <https://www.kernel.org/pub/linux/libs/pam/>
+   Required for screen unlocking
+
+-- The following OPTIONAL packages have not been found:
+
+ * WrapVulkanHeaders
+
+-- Configuring done (3.5s)
+-- Generating done (0.1s)
+[33mCMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/kscreenlocker-01/build/build
+[  1%] Built target kscreenlocker_authenticator_autogen_timestamp_deps
+[  1%] [1m[34mGenerating ts...[0m
+[  2%] [1m[34mGenerating mo...[0m
+[  4%] [1m[34mGenerating kscreensaversettingsbase.h, kscreensaversettingsbase.cpp[0m
+[  4%] Built target kcm_screenlocker-kcm-desktop-gen
+[  5%] [1m[34mAutomatic MOC for target kscreenlocker_authenticator[0m
+[  5%] Built target tsfiles-c756aa93729decde07ff8152a415a867
+[  5%] Built target settings_autogen_timestamp_deps
+[  7%] [1m[34mAutomatic MOC for target settings[0m
+[  7%] Built target pofiles-c756aa93729decde07ff8152a415a867
+[  7%] Built target kscreenlocker_authenticator_autogen
+[  8%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_authenticator.dir/pamauthenticators.cpp.o[0m
+[  9%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_authenticator.dir/pamauthenticator.cpp.o[0m
+[ 11%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_authenticator.dir/kscreenlocker_greet_logging.cpp.o[0m
+[ 12%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_authenticator.dir/kscreenlocker_authenticator_autogen/mocs_compilation.cpp.o[0m
+[ 12%] Built target settings_autogen
+[ 15%] [32mBuilding CXX object settings/CMakeFiles/settings.dir/shell_integration.cpp.o[0m
+[ 15%] [32mBuilding CXX object settings/CMakeFiles/settings.dir/kscreensaversettings.cpp.o[0m
+[ 16%] [32mBuilding CXX object settings/CMakeFiles/settings.dir/appearancesettings.cpp.o[0m
+[ 18%] [32mBuilding CXX object settings/CMakeFiles/settings.dir/settings_autogen/mocs_compilation.cpp.o[0m
+[ 19%] [32mBuilding CXX object settings/CMakeFiles/settings.dir/kscreensaversettingsbase.cpp.o[0m
+[ 21%] [32mBuilding CXX object settings/CMakeFiles/settings.dir/wallpaper_integration.cpp.o[0m
+[ 22%] Built target kscreenlocker_authenticator
+[ 23%] [1m[32mLinking CXX static library ../lib/libsettings.a[0m
+[ 26%] Built target settings
+[ 26%] Built target kcm_screenlocker_autogen_timestamp_deps
+[ 26%] Built target KScreenLocker_autogen_timestamp_deps
+[ 26%] Built target kscreenlocker_greet_autogen_timestamp_deps
+[ 28%] [1m[34mAutomatic MOC for target kcm_screenlocker[0m
+[ 29%] [1m[34mAutomatic MOC for target KScreenLocker[0m
+[ 30%] [1m[34mAutomatic MOC for target kscreenlocker_greet[0m
+AutoMoc warning
+---------------
+"SRC:/kcm/kscreenlockerdata.cpp"
+includes the moc file "kscreenlockerdata.moc", but does not contain a Q_OBJECT, Q_GADGET, Q_NAMESPACE, Q_NAMESPACE_EXPORT, Q_GADGET_EXPORT, Q_ENUM_NS, K_PLUGIN_FACTORY, K_PLUGIN_CLASS, K_PLUGIN_FACTORY_WITH_JSON or K_PLUGIN_CLASS_WITH_JSON macro.
+
+[ 30%] Built target kscreenlocker_greet_autogen
+[ 30%] Built target KScreenLocker_autogen
+[ 33%] [1m[34mGenerating qrc_fallbacktheme.cpp[0m
+[ 33%] [1m[34mGenerating wayland-ksld-client-protocol.h[0m
+[ 40%] [1m[34mGenerating kscreensaveradaptor.cpp, kscreensaveradaptor.h[0m
+[ 40%] [1m[34mGenerating screensaveradaptor.cpp, screensaveradaptor.h[0m
+[ 40%] [1m[34mGenerating wayland-ksld-server-protocol.h[0m
+[ 40%] [1m[34mGenerating wayland-ksld-client-protocol.h[0m
+[ 40%] [1m[34mGenerating powerdevilpolicyagent.cpp, powerdevilpolicyagent.h[0m
+/var/tmp/hokuto/kscreenlocker-01/build/protocols/ksld.xml:10: warning: since version not increasing
+
+/var/tmp/hokuto/kscreenlocker-01/build/protocols/ksld.xml:10: warning: since version not increasing
+
+/var/tmp/hokuto/kscreenlocker-01/build/protocols/ksld.xml:10: warning: since version not increasing
+
+AutoMoc: /var/tmp/hokuto/kscreenlocker-01/build/kcm/kscreenlockerdata.cpp: note: No relevant classes found. No output generated.
+[ 43%] [1m[34mGenerating wayland-ksld-protocol.c[0m
+[ 43%] [1m[34mGenerating wayland-ksld-protocol.c[0m
+/var/tmp/hokuto/kscreenlocker-01/build/protocols/ksld.xml:10: warning: since version not increasing
+
+/var/tmp/hokuto/kscreenlocker-01/build/protocols/ksld.xml:10: warning: since version not increasing
+
+[ 46%] [1m[34mGenerating moc_powerdevilpolicyagent.cpp[0m
+[ 46%] [1m[34mGenerating moc_screensaveradaptor.cpp[0m
+[ 47%] [1m[34mGenerating moc_kscreensaveradaptor.cpp[0m
+[ 52%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/main.cpp.o[0m
+[ 52%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/greeterapp.cpp.o[0m
+[ 53%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/kscreenlocker_logging.cpp.o[0m
+[ 54%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/kscreenlocker_greet_autogen/mocs_compilation.cpp.o[0m
+[ 54%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/noaccessnetworkaccessmanagerfactory.cpp.o[0m
+[ 56%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/qrc_fallbacktheme.cpp.o[0m
+[ 57%] [32mBuilding C object greeter/CMakeFiles/kscreenlocker_greet.dir/wayland-ksld-protocol.c.o[0m
+[ 59%] [32mBuilding CXX object greeter/CMakeFiles/kscreenlocker_greet.dir/__/logind.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/KScreenLocker_autogen/mocs_compilation.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/abstractlocker.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/ksldapp.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/interface.cpp.o[0m
+[ 64%] Built target kcm_screenlocker_autogen
+[ 66%] [1m[34mGenerating screenlocker_interface.cpp, screenlocker_interface.h[0m
+[ 67%] [1m[34mGenerating qrc_kcm_screenlocker.cpp[0m
+[ 69%] [1m[34mGenerating moc_screenlocker_interface.cpp[0m
+[ 70%] [32mBuilding CXX object kcm/CMakeFiles/kcm_screenlocker.dir/kcm_screenlocker_autogen/mocs_compilation.cpp.o[0m
+[ 71%] [32mBuilding CXX object kcm/CMakeFiles/kcm_screenlocker.dir/kcm.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/globalaccel.cpp.o[0m
+[ 74%] [32mBuilding CXX object kcm/CMakeFiles/kcm_screenlocker.dir/kscreenlockerdata.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/x11locker.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/waylandlocker.cpp.o[0m
+[ 78%] [32mBuilding CXX object kcm/CMakeFiles/kcm_screenlocker.dir/screenlocker_interface.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/logind.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/waylandserver.cpp.o[0m
+[01m[K/var/tmp/hokuto/kscreenlocker-01/build/greeter/main.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/var/tmp/hokuto/kscreenlocker-01/build/greeter/main.cpp:67:39:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstatic void LayerShellQt::Shell::[01;32m[KuseLayerShell[m[K()[m[K’ is deprecated: Since 6.6. Calling useLayerShell is not needed since Qt 6.5 [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   67 |     [01;35m[KLayerShellQt::Shell::useLayerShell()[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/LayerShellQt/Shell:1[m[K,
+                 from [01m[K/var/tmp/hokuto/kscreenlocker-01/build/greeter/main.cpp:31[m[K:
+[01m[K/usr/include/LayerShellQt/shell.h:25:17:[m[K [01;36m[Knote: [m[Kdeclared here
+   25 |     static void [01;36m[KuseLayerShell[m[K();
+      |                 [01;36m[K^~~~~~~~~~~~~[m[K
+[ 83%] [32mBuilding CXX object kcm/CMakeFiles/kcm_screenlocker.dir/qrc_kcm_screenlocker.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/powermanagement_inhibition.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/kscreenlocker_logging.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/screensaveradaptor.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/kscreensaveradaptor.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/KScreenLocker.dir/powerdevilpolicyagent.cpp.o[0m
+[01m[K/var/tmp/hokuto/kscreenlocker-01/build/waylandserver.cpp:[m[K In static member function ‘[01m[Kstatic void ScreenLocker::WaylandServer::[01;32m[Kbind[m[K(wl_client*, void*, uint32_t, uint32_t)[m[K’:
+[01m[K/var/tmp/hokuto/kscreenlocker-01/build/waylandserver.cpp:142:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Korg_kde_ksld_interface::suspendSystem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+  142 |     [01;35m[K}[m[K;
+      |     [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/kscreenlocker-01/build/waylandserver.cpp:142:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Korg_kde_ksld_interface::hibernateSystem[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[ 91%] [32mBuilding C object CMakeFiles/KScreenLocker.dir/wayland-ksld-protocol.c.o[0m
+[ 92%] [1m[32mLinking CXX executable ../bin/kscreenlocker_greet[0m
+[ 94%] [1m[32mLinking CXX shared module ../bin/plasma/kcms/systemsettings/kcm_screenlocker.so[0m
+[ 95%] Built target kcm_screenlocker
+[ 97%] Built target kscreenlocker_greet
+[ 98%] [1m[32mLinking CXX shared library bin/libKScreenLocker.so[0m
+[100%] Built target KScreenLocker
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/libexec/kscreenlocker_greet
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/ksmserver/screenlocker/org.kde.passworddialog
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/ksmserver/screenlocker/org.kde.passworddialog/metadata.desktop
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_screenlocker.so
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/applications/kcm_screenlocker.desktop
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/lib64/cmake/ScreenSaverDBusInterface/ScreenSaverDBusInterfaceConfig.cmake
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/lib64/libKScreenLocker.so.6.7.5
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/lib64/libKScreenLocker.so.6
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/lib64/libKScreenLocker.so
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/lib64/cmake/KScreenLocker/KScreenLockerTargets.cmake
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/lib64/cmake/KScreenLocker/KScreenLockerTargets-release.cmake
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/include/KScreenLocker/KScreenLocker/kscreenlocker_export.h
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/include/KScreenLocker/KScreenLocker/KsldApp
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/include/KScreenLocker/KScreenLocker/ksldapp.h
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/lib64/cmake/KScreenLocker/KScreenLockerConfig.cmake
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/lib64/cmake/KScreenLocker/KScreenLockerConfigVersion.cmake
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/qlogging-categories6/kscreenlocker.categories
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/knotifications6/ksmserver.notifyrc
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/dbus-1/interfaces/kf6_org.freedesktop.ScreenSaver.xml
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/dbus-1/interfaces/org.kde.screensaver.xml
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/cs/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/cs/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/cs/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eu/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eu/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eu/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hu/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hu/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hu/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/uk/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/uk/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/uk/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ar/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ar/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ar/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pl/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pl/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pl/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nb/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nb/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nb/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/it/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/it/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/it/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/es/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/es/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/es/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ug/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ug/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt_BR/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt_BR/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/az/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/az/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/az/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eo/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eo/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/eo/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sa/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sa/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sa/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/da/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/da/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/da/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ml/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ml/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ml/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sv/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sv/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sv/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fr/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fr/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fr/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@latin/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@latin/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@latin/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/tg/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/tg/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ko/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ko/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ko/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/id/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/id/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/id/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/en_GB/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/en_GB/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nn/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nn/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nn/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/kk/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/kk/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/gl/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/gl/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/gl/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bs/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bs/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bs/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_TW/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_TW/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sk/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sk/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sk/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pa/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pa/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pa/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nds/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nds/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nds/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ja/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ja/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ja/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ta/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ta/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ta/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ru/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ru/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ru/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/he/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/he/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/he/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/is/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/is/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/is/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ka/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ka/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ka/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nl/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nl/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/nl/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ia/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ia/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ia/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hi/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hi/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/hi/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lt/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lt/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lt/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fi/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fi/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/fi/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/et/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/et/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/et/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/el/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/el/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/el/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lv/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lv/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/lv/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/pt/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ro/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ro/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ro/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ca/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ast/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ast/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ast/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/tr/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/tr/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/tr/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bg/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bg/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/bg/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sl/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sl/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/sl/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/wa
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/wa/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/wa/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/mr/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/mr/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/de/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/de/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/de/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ga/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ga/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/ga/LC_MESSAGES/kscreenlocker_greet.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_screenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_CN/LC_MESSAGES/kscreenlocker.mo
+-- Installing: /var/tmp/hokuto/kscreenlocker-01/output/usr/share/locale/zh_CN/LC_MESSAGES/kscreenlocker_greet.mo
+
+Script done on 2026-09-09 12:20:20+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mkscreenlocker[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 09 Sep 2026 05:20:20 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m20s[0m
