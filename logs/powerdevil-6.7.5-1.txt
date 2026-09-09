@@ -1,0 +1,1309 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpowerdevil[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mpowerdevil 6.7.5-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 09 Sep 2026 05:57:58 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpowerdevil[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc kauth|sonic-frameworks-auth kcmutils kconfig kcoreaddons|sonic-frameworks-core-addons kcrash kdbusaddons kglobalaccel|sonic-frameworks-keybind ki18n kidletime|sonic-frameworks-idle-tracker kirigami|sonic-frameworks-quick-ui kitemmodels knotifications kpackage kservice kxmlgui libkscreen|sonic-screen-library libplasma|sonic-interface-libraries libxcb plasma-activities|sonic-activities plasma-workspace|sonic-workspace qcoro qt qt-declarative solid systemd-libs wayland extra-cmake-modules|sonic-frameworks-cmake-modules kdoctools|sonic-frameworks-doctools plasma-wayland-protocols[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpowerdevil[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 extra-cmake-modules-6.29.0-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 kauth-6.29.0-1 kcmutils-6.29.0-1 kconfig-6.29.0-1 kcoreaddons-6.29.0-1 kcrash-6.29.0-1 kdbusaddons-6.29.0-1 kdoctools-6.29.0-1 kglobalaccel-6.29.0-1 ki18n-6.29.0-1 kidletime-6.29.0-1 kirigami-6.29.0-1 kitemmodels-6.29.0-1 knotifications-6.29.0-1 kpackage-6.29.0-1 kservice-6.29.0-1 kxmlgui-6.29.0-1 libkscreen-6.7.4-1 libplasma-6.7.4-1 libtool-2.6.2-1 libxcb-1.17.0-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 plasma-activities-6.7.4-1 plasma-wayland-protocols-1.21.0-1 plasma-workspace-6.7.4-1 qcoro-0.13.0-1 qt-6.11.2-1 qt-declarative-6.11.2-1 sed-4.10-1 solid-6.29.0-1 systemd-libs-261.2-1 texinfo-7.3-1 wayland-1.26.0-1 which-2.25-1[0m
+
+Script started on 2026-09-09 12:57:58+07:00 [COMMAND="cd /var/tmp/hokuto/powerdevil-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/powerdevil-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/powerdevil-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/powerdevil-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/powerdevil-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/powerdevil-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/powerdevil-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/powerdevil-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/powerdevil-01/build/.cache' /repo/kde/powerdevil/build /var/tmp/hokuto/powerdevil-01/output 6.7.5 powerdevil" <not executed on terminal>]
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:22 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+-- Found KF6Auth: /usr/lib64/cmake/KF6Auth/KF6AuthConfig.cmake (found version "6.29.0")
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.29.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.29.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.29.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.29.0")
+-- Found KF6IdleTime: /usr/lib64/cmake/KF6IdleTime/KF6IdleTimeConfig.cmake (found version "6.29.0")
+-- Found KF6ItemModels: /usr/lib64/cmake/KF6ItemModels/KF6ItemModelsConfig.cmake (found version "6.29.0")
+-- Found KF6GlobalAccel: /usr/lib64/cmake/KF6GlobalAccel/KF6GlobalAccelConfig.cmake (found version "6.29.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.29.0")
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found OpenMP_C: -fopenmp (found version "5.2")
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- Found KF6Kirigami: /usr/lib64/cmake/KF6Kirigami/KF6KirigamiConfig.cmake (found version "6.29.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.29.0")
+-- Found KF6Notifications: /usr/lib64/cmake/KF6Notifications/KF6NotificationsConfig.cmake (found version "6.29.0")
+-- Found KF6Runner: /usr/lib64/cmake/KF6Runner/KF6RunnerConfig.cmake (found version "6.29.0")
+-- Found KF6Solid: /usr/lib64/cmake/KF6Solid/KF6SolidConfig.cmake (found version "6.29.0")
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.29.0")
+-- Found KF6XmlGui: /usr/lib64/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.29.0")
+-- Found KF6: success (found suitable version "6.29.0", minimum required is "6.26.0") found components: Auth Config Crash DBusAddons I18n IdleTime ItemModels GlobalAccel KIO Kirigami KCMUtils Notifications Runner Solid WindowSystem XmlGui
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found UDev: /usr/include (found version "261")
+-- Found XCB_XCB: /usr/lib/libxcb.so (found version "1.17.0")
+-- Found XCB_DPMS: /usr/lib/libxcb-dpms.so (found version "1.17.0")
+-- Found XCB_RANDR: /usr/lib/libxcb-randr.so (found version "1.17.0")
+-- Found XCB: /usr/lib/libxcb.so;/usr/lib/libxcb-dpms.so;/usr/lib/libxcb-randr.so (found version "1.17.0") found components: XCB RANDR DPMS
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Could NOT find DDCUtil (missing: LIBDDCUTIL_LIBRARY LIBDDCUTIL_INCLUDE_DIR) 
+-- Found Wayland_Client: /usr/lib/libwayland-client.so (found version "1.26.0")
+-- Found Wayland_Server: /usr/lib/libwayland-server.so (found version "1.26.0")
+-- Found Wayland_Cursor: /usr/lib/libwayland-cursor.so (found version "1.26.0")
+-- Found Wayland_Egl: /usr/lib/libwayland-egl.so (found version "18.1.0")
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so;/usr/lib/libwayland-cursor.so;/usr/lib/libwayland-egl.so (found version "1.26.0")
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found Wayland: /usr/lib/libwayland-client.so;/usr/lib/libwayland-server.so;/usr/lib/libwayland-cursor.so;/usr/lib/libwayland-egl.so (found version "1.26.0") found components: Client
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.11.2)
+ * Qt6WidgetsTools (required version >= 6.11.2)
+ * Qt6Widgets (required version >= 6.9.0)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6QuickTools (required version >= 6.11.2)
+ * Qt6CoreTools (required version >= 6.11.2)
+ * Qt6GuiTools (required version >= 6.11.2)
+ * KF6DocTools (required version >= 6.26.0), Tools to generate documentation
+ * Qt6WaylandScannerTools (required version >= 6.11.2)
+ * Qt6WaylandClient
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6GuiPrivate
+ * QCoro6Core
+ * QCoro6DBus
+ * QCoro6
+ * KF6Auth (required version >= 6.26.0)
+ * KF6Crash (required version >= 6.26.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6IdleTime (required version >= 6.26.0)
+ * KF6ItemModels (required version >= 6.26.0)
+ * KF6GlobalAccel (required version >= 6.26.0)
+ * KF6Config (required version >= 6.29.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6Kirigami (required version >= 6.26.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6Notifications (required version >= 6.26.0)
+ * KF6Runner (required version >= 6.26.0)
+ * KF6Solid (required version >= 6.26.0)
+ * KF6XmlGui (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Qt6Qml (required version >= 6.9.0)
+ * Plasma (required version >= 6.7.0)
+ * Qt6Core (required version >= 6.10.0)
+ * PlasmaActivities (required version >= 6.7.0)
+ * KF6Screen
+ * LibKWorkspace (required version >= 6.7.0)
+ * UDev, API for enumerating and introspecting local devices (part of systemd), <https://www.freedesktop.org/wiki/Software/systemd/>
+ * XCB, X protocol C-language Binding, <https://xcb.freedesktop.org/>
+ * PlasmaWaylandProtocols (required version >= 1.20)
+ * Wayland, C library implementation of the Wayland protocol: a protocol for a compositor to talk to its clients, <https://wayland.freedesktop.org/>
+ * Qt6
+
+-- The following OPTIONAL packages have not been found:
+
+ * WrapVulkanHeaders
+ * DDCUtil
+
+-- Configuring done (3.9s)
+-- Generating done (0.2s)
+[33mCMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/powerdevil-01/build/build
+[  1%] [1m[34mGenerating po/et/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  1%] [1m[34mGenerating po/fr/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  1%] [1m[34mGenerating po/de/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  1%] [1m[34mGenerating po/pt_BR/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  2%] [1m[34mGenerating po/nl/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  2%] [1m[34mGenerating po/es/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  2%] [1m[34mGenerating po/it/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  2%] [1m[34mGenerating po/pt/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  2%] [1m[34mGenerating po/id/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  2%] [1m[34mGenerating po/ca/docs/kcontrol/powerdevil/index.cache.bz2[0m
+I/O warning : failed to load "/usr/share/kf6/kdoctools/customization/xsl/pt-BR.xml": No such file or directory
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+[  2%] Built target po-fr-docs-kcontrol-powerdevil-index-cache-bz2
+No "pt_br" localization of "footer-doc-comment" exists; using "en".
+No "pt_br" localization of "footer-doc-feedback" exists; using "en".
+No "pt_br" localization of "footer-doc-teamname" exists; using "en".
+[  2%] Built target po-de-docs-kcontrol-powerdevil-index-cache-bz2
+[  2%] Built target po-es-docs-kcontrol-powerdevil-index-cache-bz2
+[  3%] [1m[34mGenerating po/ru/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  3%] Built target po-id-docs-kcontrol-powerdevil-index-cache-bz2
+[  3%] [1m[34mGenerating po/sv/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  3%] [1m[34mGenerating po/tr/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  3%] Built target po-pt-docs-kcontrol-powerdevil-index-cache-bz2
+[  3%] [1m[34mGenerating po/uk/docs/kcontrol/powerdevil/index.cache.bz2[0m
+[  3%] Built target po-pt-BR-docs-kcontrol-powerdevil-index-cache-bz2
+[  4%] [1m[34mGenerating mo...[0m
+[  4%] [1m[34mGenerating ts...[0m
+[  4%] Built target po-ca-docs-kcontrol-powerdevil-index-cache-bz2
+[  4%] Built target tsfiles-f26f4a55fecd4ee334b2e8e259b4f1d1
+[  4%] Built target po-it-docs-kcontrol-powerdevil-index-cache-bz2
+[  4%] [1m[34mCopying batterymonitorplugin qml resources into build dir[0m
+[  4%] Built target po-nl-docs-kcontrol-powerdevil-index-cache-bz2
+[  4%] [1m[34mPopulating .qmlls.ini file at /var/tmp/hokuto/powerdevil-01/build/build/.qt/.qmlls.build.ini[0m
+[  4%] [1m[34mCopying batterymonitorplugin qml sources into build dir[0m
+[  4%] [1m[34mCopying org.kde.plasma.battery qml sources into build dir[0m
+[  4%] Built target batterymonitorplugin_copy_res
+[  4%] Built target batterymonitorplugin_copy_qml
+[  4%] Built target po-et-docs-kcontrol-powerdevil-index-cache-bz2
+[  4%] Built target org.kde.plasma.battery_copy_qml
+[  4%] [1m[34mCopying org.kde.plasma.battery qml resources into build dir[0m
+[  4%] [1m[34mCopying brightnesscontrolplugin qml resources into build dir[0m
+[  4%] [1m[34mCopying brightnesscontrolplugin qml sources into build dir[0m
+[  4%] [1m[34mCopying org.kde.plasma.brightness qml sources into build dir[0m
+[  4%] Built target brightnesscontrolplugin_copy_res
+[  4%] Built target generate_qmlls_build_ini_file
+[  4%] Built target org.kde.plasma.battery_copy_res
+[  4%] Built target brightnesscontrolplugin_copy_qml
+[  4%] Built target org.kde.plasma.brightness_copy_qml
+[  4%] Built target powerdevil_log_static_autogen_timestamp_deps
+[  4%] Built target chargethresholdhelper_autogen_timestamp_deps
+[  4%] [1m[34mCopying org.kde.plasma.brightness qml resources into build dir[0m
+[  5%] [1m[34mGenerating org.kde.powerdevil.chargethresholdhelper.policy[0m
+[  5%] Built target backlighthelper_autogen_timestamp_deps
+[  5%] [1m[34mactions for org.kde.powerdevil.chargethresholdhelper[0m
+[  5%] Built target discretegpuhelper_autogen_timestamp_deps
+[  5%] [1m[34mGenerating org.kde.powerdevil.discretegpuhelper.policy[0m
+[  5%] Built target org.kde.plasma.brightness_copy_res
+[  5%] Built target org.kde.powerdevil.chargethresholdhelper.policy-customtarget
+[  5%] [1m[34mGenerating org.kde.powerdevil.backlighthelper.policy[0m
+[  6%] [1m[34mGenerating org.kde.powerdevil.wakeupsourcehelper.policy[0m
+[  6%] [1m[34mactions for org.kde.powerdevil.discretegpuhelper[0m
+[  6%] Built target org.kde.powerdevil.discretegpuhelper.policy-customtarget
+[  6%] Built target wakeupsourcehelper_autogen_timestamp_deps
+[  6%] Built target kcm_powerdevilprofilesconfig-kcm-desktop-gen
+[  6%] [1m[34mactions for org.kde.powerdevil.wakeupsourcehelper[0m
+[  7%] [1m[34mactions for org.kde.powerdevil.backlighthelper[0m
+[  7%] Built target org.kde.powerdevil.wakeupsourcehelper.policy-customtarget
+[  7%] Built target org.kde.powerdevil.backlighthelper.policy-customtarget
+[  7%] [1m[34mGenerating index.cache.bz2[0m
+[  7%] Built target kcm_mobile_power-kcm-desktop-gen
+[  7%] Built target krunner_powerdevil_autogen_timestamp_deps
+[  7%] Built target po-sv-docs-kcontrol-powerdevil-index-cache-bz2
+[  7%] Built target po-ru-docs-kcontrol-powerdevil-index-cache-bz2
+[  7%] Built target batterymonitorplugin_autogen_timestamp_deps
+[  8%] [1m[34mGenerating brightness_kdeglobalssettings.h, brightness_kdeglobalssettings.cpp[0m
+[  8%] Built target po-tr-docs-kcontrol-powerdevil-index-cache-bz2
+[  8%] [1m[34mAutomatic MOC for target powerdevil_log_static[0m
+[  8%] [1m[34mAutomatic MOC for target discretegpuhelper[0m
+[  8%] [1m[34mAutomatic MOC for target chargethresholdhelper[0m
+[  9%] Built target po-uk-docs-kcontrol-powerdevil-index-cache-bz2
+[  9%] [1m[34mAutomatic MOC for target wakeupsourcehelper[0m
+[  9%] [1m[34mAutomatic MOC for target backlighthelper[0m
+[  9%] Built target brightnesscontrolplugin_autogen_timestamp_deps
+[  9%] [1m[34mAutomatic MOC for target krunner_powerdevil[0m
+[  9%] [1m[34mAutomatic MOC for target batterymonitorplugin[0m
+[  9%] [1m[34mAutomatic MOC for target brightnesscontrolplugin[0m
+[  9%] Built target powerdevil_log_static_autogen
+[ 10%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil_log_static.dir/powerdevil_log_static_autogen/mocs_compilation.cpp.o[0m
+[ 10%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil_log_static.dir/powerdevil_debug.cpp.o[0m
+[ 10%] Built target doc-kcm-index-cache-bz2
+[ 10%] Built target discretegpuhelper_autogen
+[ 10%] Built target chargethresholdhelper_autogen
+[ 10%] [32mBuilding CXX object daemon/CMakeFiles/discretegpuhelper.dir/discretegpuhelper.cpp.o[0m
+[ 10%] [32mBuilding CXX object daemon/CMakeFiles/discretegpuhelper.dir/discretegpuhelper_autogen/mocs_compilation.cpp.o[0m
+[ 10%] Built target backlighthelper_autogen
+[ 10%] [32mBuilding CXX object daemon/CMakeFiles/discretegpuhelper.dir/powerdevil_debug.cpp.o[0m
+[ 10%] [32mBuilding CXX object daemon/CMakeFiles/chargethresholdhelper.dir/chargethresholdhelper_autogen/mocs_compilation.cpp.o[0m
+[ 10%] [32mBuilding CXX object daemon/CMakeFiles/backlighthelper.dir/backlighthelper_autogen/mocs_compilation.cpp.o[0m
+[ 10%] [32mBuilding CXX object daemon/CMakeFiles/chargethresholdhelper.dir/powerdevil_debug.cpp.o[0m
+AutoMoc: /var/tmp/hokuto/powerdevil-01/build/applets/brightness/plugin/keyboardbrightnesscontrol.h:24:1: warning: Property declaration isSilent has neither an associated QProperty<> member, nor a READ accessor function nor an associated MEMBER variable. The property will be invalid.
+[ 12%] [32mBuilding CXX object daemon/CMakeFiles/backlighthelper.dir/powerdevil_debug.cpp.o[0m
+[ 12%] Built target krunner_powerdevil_autogen
+[ 12%] [32mBuilding CXX object daemon/CMakeFiles/backlighthelper.dir/controllers/backlighthelper_linux.cpp.o[0m
+[ 12%] Built target wakeupsourcehelper_autogen
+[ 12%] Built target batterymonitorplugin_autogen
+[ 13%] [32mBuilding CXX object daemon/CMakeFiles/chargethresholdhelper.dir/chargethresholdhelper_linux.cpp.o[0m
+[ 13%] [32mBuilding CXX object runners/powerdevil/CMakeFiles/krunner_powerdevil.dir/krunner_powerdevil_autogen/mocs_compilation.cpp.o[0m
+[ 13%] Built target pofiles-f26f4a55fecd4ee334b2e8e259b4f1d1
+[ 13%] [32mBuilding CXX object runners/powerdevil/CMakeFiles/krunner_powerdevil.dir/PowerDevilRunner.cpp.o[0m
+[ 13%] [32mBuilding CXX object daemon/CMakeFiles/wakeupsourcehelper.dir/wakeupsourcehelper_autogen/mocs_compilation.cpp.o[0m
+[ 14%] [32mBuilding CXX object daemon/CMakeFiles/wakeupsourcehelper.dir/wakeupsourcehelper.cpp.o[0m
+[ 14%] Built target brightnesscontrolplugin_autogen
+[ 15%] [1m[34mRunning AUTOMOC file extraction for target batterymonitorplugin[0m
+[ 15%] [1m[34mRunning rcc for resource qmake_org_kde_plasma_private_batterymonitor[0m
+[ 16%] [1m[34mRunning moc --collect-json for target batterymonitorplugin[0m
+[ 16%] [1m[34mGenerating meta_types/qt6batterymonitorplugin_metatypes.json[0m
+[ 16%] [1m[34mAutomatic QML type registration for target batterymonitorplugin[0m
+[ 16%] [32mBuilding CXX object applets/batterymonitor/plugin/CMakeFiles/batterymonitorplugin.dir/batterymonitorplugin_autogen/mocs_compilation.cpp.o[0m
+[ 17%] [32mBuilding CXX object applets/batterymonitor/plugin/CMakeFiles/batterymonitorplugin.dir/batterymonitorplugin_org_kde_plasma_private_batterymonitorPlugin.cpp.o[0m
+[ 17%] [32mBuilding CXX object applets/batterymonitor/plugin/CMakeFiles/batterymonitorplugin.dir/batterymonitorplugin_qmltyperegistrations.cpp.o[0m
+[ 17%] [32mBuilding CXX object daemon/CMakeFiles/wakeupsourcehelper.dir/powerdevil_debug.cpp.o[0m
+[ 17%] [32mBuilding CXX object applets/batterymonitor/plugin/CMakeFiles/batterymonitorplugin.dir/.qt/rcc/qrc_qmake_org_kde_plasma_private_batterymonitor.cpp.o[0m
+[ 17%] [32mBuilding CXX object applets/batterymonitor/plugin/CMakeFiles/batterymonitorplugin.dir/powerprofilescontrol.cpp.o[0m
+[ 18%] [32mBuilding CXX object applets/batterymonitor/plugin/CMakeFiles/batterymonitorplugin.dir/inhibitioncontrol.cpp.o[0m
+[ 18%] [1m[34mRunning AUTOMOC file extraction for target brightnesscontrolplugin[0m
+[ 19%] [1m[34mRunning rcc for resource qmake_org_kde_plasma_private_brightnesscontrolplugin[0m
+[ 19%] [1m[34mRunning moc --collect-json for target brightnesscontrolplugin[0m
+[ 20%] [1m[34mGenerating meta_types/qt6brightnesscontrolplugin_metatypes.json[0m
+[ 20%] [1m[34mAutomatic QML type registration for target brightnesscontrolplugin[0m
+[ 20%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/brightnesscontrolplugin_autogen/mocs_compilation.cpp.o[0m
+[ 20%] [1m[32mLinking CXX executable ../bin/chargethresholdhelper[0m
+[ 21%] [1m[32mLinking CXX shared module ../../bin/kf6/krunner/krunner_powerdevil.so[0m
+[ 21%] Built target chargethresholdhelper
+[ 21%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/brightnesscontrolplugin_org_kde_plasma_private_brightnesscontrolpluginPlugin.cpp.o[0m
+[ 21%] [1m[32mLinking CXX static library ../lib/libpowerdevil_log_static.a[0m
+[ 21%] Built target powerdevil_log_static
+[ 21%] [32mBuilding CXX object applets/batterymonitor/plugin/CMakeFiles/batterymonitorplugin.dir/applicationdata_p.cpp.o[0m
+[ 23%] Built target krunner_powerdevil
+[ 23%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/brightnesscontrolplugin_qmltyperegistrations.cpp.o[0m
+[ 24%] [1m[32mLinking CXX executable ../bin/discretegpuhelper[0m
+[ 24%] [1m[32mLinking CXX executable ../bin/wakeupsourcehelper[0m
+[ 24%] Built target wakeupsourcehelper
+[ 24%] [32mBuilding CXX object applets/batterymonitor/plugin/CMakeFiles/batterymonitorplugin.dir/inhibitmonitor_p.cpp.o[0m
+[ 24%] [1m[32mLinking CXX executable ../bin/backlighthelper[0m
+[ 25%] Built target discretegpuhelper
+[ 26%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/.qt/rcc/qrc_qmake_org_kde_plasma_private_brightnesscontrolplugin.cpp.o[0m
+[ 26%] [32mBuilding CXX object applets/batterymonitor/plugin/CMakeFiles/batterymonitorplugin.dir/batterymonitor_debug.cpp.o[0m
+[ 26%] [1m[34mGenerating PowerDevilActivitySettings.h, PowerDevilActivitySettings.cpp[0m
+[ 26%] [1m[34mGenerating PowerDevilGlobalSettings.h, PowerDevilGlobalSettings.cpp[0m
+[ 27%] [1m[34mGenerating PowerDevilProfileSettings.h, PowerDevilProfileSettings.cpp[0m
+[ 27%] [1m[34mGenerating qwayland-kde-external-brightness-v1.cpp[0m
+[ 27%] [1m[34mGenerating qwayland-kde-external-brightness-v1.h[0m
+[ 27%] [1m[34mGenerating wayland-kde-external-brightness-v1-client-protocol.h[0m
+[ 28%] [1m[34mGenerating wayland-kde-external-brightness-v1-protocol.c[0m
+[ 28%] Built target powerdevilcore_autogen_timestamp_deps
+[ 28%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/darkmodecontrol.cpp.o[0m
+[ 29%] [1m[34mAutomatic MOC for target powerdevilcore[0m
+[ 29%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/nightlightinhibitor.cpp.o[0m
+[ 29%] Built target backlighthelper
+[ 30%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/screenbrightnesscontrol.cpp.o[0m
+[ 30%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/screenbrightnessdisplaymodel.cpp.o[0m
+[ 30%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/keyboardbrightnesscontrol.cpp.o[0m
+AutoMoc: /var/tmp/hokuto/powerdevil-01/build/daemon/controllers/ddcutildetector.cpp: note: No relevant classes found. No output generated.
+[ 30%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/keyboardcolorcontrol.cpp.o[0m
+[ 30%] Built target powerdevilcore_autogen
+[ 31%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/brightness_kdeglobalssettings.cpp.o[0m
+[ 31%] [1m[34mGenerating screenbrightnessadaptor.cpp, screenbrightnessadaptor.h[0m
+[ 31%] [1m[34mGenerating screenbrightnessdisplayadaptor.cpp, screenbrightnessdisplayadaptor.h[0m
+[ 31%] [1m[34mGenerating screenlocker_interface.cpp, screenlocker_interface.h[0m
+[ 31%] [1m[34mGenerating upower_interface.cpp, upower_interface.h[0m
+/var/tmp/hokuto/powerdevil-01/build/daemon/dbus/org.freedesktop.UPower.xml:142:8: warning: Unknown element 'doc' while checking for signal arguments
+/var/tmp/hokuto/powerdevil-01/build/daemon/dbus/org.freedesktop.UPower.xml:158:8: warning: Unknown element 'doc' while checking for signal arguments
+[ 31%] [1m[34mGenerating upower_kbdbacklight_interface.cpp, upower_kbdbacklight_interface.h[0m
+/var/tmp/hokuto/powerdevil-01/build/daemon/dbus/org.freedesktop.UPower.KbdBacklight.xml:90:8: warning: Unknown element 'doc' while checking for signal arguments
+/var/tmp/hokuto/powerdevil-01/build/daemon/dbus/org.freedesktop.UPower.KbdBacklight.xml:117:8: warning: Unknown element 'doc' while checking for signal arguments
+[ 32%] [1m[34mGenerating moc_screenbrightnessadaptor.cpp[0m
+[ 32%] [1m[34mGenerating moc_screenbrightnessdisplayadaptor.cpp[0m
+[ 32%] [1m[34mGenerating moc_screenlocker_interface.cpp[0m
+[ 34%] [1m[34mGenerating moc_upower_interface.cpp[0m
+[ 34%] [1m[34mGenerating moc_upower_kbdbacklight_interface.cpp[0m
+[ 34%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilcore_autogen/mocs_compilation.cpp.o[0m
+[ 34%] [32mBuilding CXX object applets/brightness/plugin/CMakeFiles/brightnesscontrolplugin.dir/brightnesscontrolplugin_debug.cpp.o[0m
+[ 34%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevil_debug.cpp.o[0m
+[ 35%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilaction.cpp.o[0m
+[ 35%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilcore.cpp.o[0m
+[ 35%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilenums.cpp.o[0m
+[ 35%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilmigrateconfig.cpp.o[0m
+[ 36%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilpolicyagent.cpp.o[0m
+[ 37%] [1m[32mLinking CXX shared module ../../../bin/org/kde/plasma/private/batterymonitor/libbatterymonitorplugin.so[0m
+[ 37%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilbrightnesslogic.cpp.o[0m
+[ 37%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilscreenbrightnessagent.cpp.o[0m
+[ 37%] [1m[32mLinking CXX shared module ../../../bin/org/kde/plasma/private/brightnesscontrolplugin/libbrightnesscontrolplugin.so[0m
+[ 37%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilscreenbrightnesslogic.cpp.o[0m
+[ 37%] Built target batterymonitorplugin
+[ 38%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilkeyboardbrightnesslogic.cpp.o[0m
+[ 38%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilpowermanagement.cpp.o[0m
+[ 38%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/powerdevilsettingsdefaults.cpp.o[0m
+[ 38%] Built target org.kde.plasma.battery_autogen_timestamp_deps
+[ 39%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/brightnessosdwidget.cpp.o[0m
+[ 39%] Built target brightnesscontrolplugin
+[ 39%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/kwinkscreenhelpereffect.cpp.o[0m
+[ 39%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/upowerdevice.cpp.o[0m
+[ 40%] [1m[34mAutomatic MOC for target org.kde.plasma.battery[0m
+[ 40%] Built target org.kde.plasma.battery_autogen
+[ 40%] Built target org.kde.plasma.brightness_autogen_timestamp_deps
+[ 40%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/lidcontroller.cpp.o[0m
+[ 40%] [1m[34mRunning AUTOMOC file extraction for target org.kde.plasma.battery[0m
+[ 40%] [1m[34mRunning rcc for resource org_kde_plasma_battery_raw_qml_0[0m
+[ 41%] [1m[34mRunning rcc for resource org_kde_plasma_battery_raw_res_1[0m
+[ 41%] [1m[34mRunning rcc for resource qmake_plasma_applet_org_kde_plasma_battery[0m
+[ 41%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.battery_qmlcache_loader.cpp[0m
+[ 41%] [1m[34mRunning moc --collect-json for target org.kde.plasma.battery[0m
+[ 41%] [1m[34mGenerating meta_types/qt6org.kde.plasma.battery_metatypes.json[0m
+[ 42%] [1m[34mAutomatic QML type registration for target org.kde.plasma.battery[0m
+[ 42%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.battery_BatteryItem_qml.cpp[0m
+[ 43%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.battery_CompactRepresentation_qml.cpp[0m
+[ 43%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.battery_InhibitionHint_qml.cpp[0m
+[ 45%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/batterycontroller.cpp.o[0m
+[ 46%] [1m[34mAutomatic MOC for target org.kde.plasma.brightness[0m
+[ 46%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.battery_InhibitionItem_qml.cpp[0m
+[ 46%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/suspendcontroller.cpp.o[0m
+[ 46%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.battery_PopupDialog_qml.cpp[0m
+[ 46%] Built target org.kde.plasma.brightness_autogen
+[ 46%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.battery_PowerProfileItem_qml.cpp[0m
+[ 46%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/keyboardbrightnesscontroller.cpp.o[0m
+[ 46%] [1m[34mRunning AUTOMOC file extraction for target org.kde.plasma.brightness[0m
+[ 47%] [1m[34mRunning rcc for resource org_kde_plasma_brightness_raw_qml_0[0m
+[ 48%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.battery_main_qml.cpp[0m
+[ 48%] [1m[34mRunning rcc for resource qmake_plasma_applet_org_kde_plasma_brightness[0m
+[ 49%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.brightness_qmlcache_loader.cpp[0m
+[ 49%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/screenbrightnesscontroller.cpp.o[0m
+[ 49%] [1m[34mRunning moc --collect-json for target org.kde.plasma.brightness[0m
+[ 50%] [1m[34mGenerating meta_types/qt6org.kde.plasma.brightness_metatypes.json[0m
+[ 50%] [1m[34mAutomatic QML type registration for target org.kde.plasma.brightness[0m
+[ 50%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.brightness_BrightnessItem_qml.cpp[0m
+[ 51%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/org.kde.plasma.battery_autogen/mocs_compilation.cpp.o[0m
+[ 51%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/org.kde.plasma.battery_qmltyperegistrations.cpp.o[0m
+[ 51%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.brightness_CompactRepresentation_qml.cpp[0m
+[ 52%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/displaybrightness.cpp.o[0m
+[ 52%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.brightness_DarkModeItem_qml.cpp[0m
+[ 53%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.brightness_KeyboardColorItem_qml.cpp[0m
+[ 53%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.brightness_NightLightItem_qml.cpp[0m
+[ 53%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.brightness_PopupDialog_qml.cpp[0m
+[ 53%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.qt/rcc/qrc_qmake_plasma_applet_org_kde_plasma_battery.cpp.o[0m
+[ 53%] [1m[34mGenerating .rcc/qmlcache/org.kde.plasma.brightness_main_qml.cpp[0m
+[ 53%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.rcc/qmlcache/org.kde.plasma.battery_qmlcache_loader.cpp.o[0m
+[ 53%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/org.kde.plasma.brightness_autogen/mocs_compilation.cpp.o[0m
+[ 53%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/org.kde.plasma.brightness_qmltyperegistrations.cpp.o[0m
+[ 53%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/backlightbrightness.cpp.o[0m
+[ 53%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.qt/rcc/qrc_qmake_plasma_applet_org_kde_plasma_brightness.cpp.o[0m
+[ 53%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/ddcutildetector.cpp.o[0m
+[ 54%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.rcc/qmlcache/org.kde.plasma.brightness_qmlcache_loader.cpp.o[0m
+[ 54%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.rcc/qmlcache/org.kde.plasma.brightness_BrightnessItem_qml.cpp.o[0m
+[ 54%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/ddcutildisplay.cpp.o[0m
+[ 54%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.rcc/qmlcache/org.kde.plasma.brightness_CompactRepresentation_qml.cpp.o[0m
+[ 56%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.rcc/qmlcache/org.kde.plasma.battery_BatteryItem_qml.cpp.o[0m
+[ 57%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/udevqtclient.cpp.o[0m
+[ 57%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/udevqtdevice.cpp.o[0m
+[ 57%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.rcc/qmlcache/org.kde.plasma.brightness_DarkModeItem_qml.cpp.o[0m
+[ 57%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.rcc/qmlcache/org.kde.plasma.battery_CompactRepresentation_qml.cpp.o[0m
+[ 58%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.rcc/qmlcache/org.kde.plasma.brightness_KeyboardColorItem_qml.cpp.o[0m
+[01m[K/var/tmp/hokuto/powerdevil-01/build/daemon/controllers/ddcutildisplay.cpp:[m[K In member function ‘[01m[Kvirtual void DDCutilDisplay::[01;32m[KsetBrightness[m[K(int, bool)[m[K’:
+[01m[K/var/tmp/hokuto/powerdevil-01/build/daemon/controllers/ddcutildisplay.cpp:195:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvalue[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  195 | void DDCutilDisplay::setBrightness([01;35m[Kint value[m[K, bool allowAnimations)
+      |                                    [01;35m[K~~~~^~~~~[m[K
+[01m[K/var/tmp/hokuto/powerdevil-01/build/daemon/controllers/ddcutildisplay.cpp:195:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KallowAnimations[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  195 | void DDCutilDisplay::setBrightness(int value, [01;35m[Kbool allowAnimations[m[K)
+      |                                               [01;35m[K~~~~~^~~~~~~~~~~~~~~[m[K
+[01m[K/var/tmp/hokuto/powerdevil-01/build/daemon/controllers/ddcutildisplay.cpp:[m[K In member function ‘[01m[Kvoid BrightnessWorker::[01;32m[KddcSetBrightness[m[K(int, DDCutilDisplay*)[m[K’:
+[01m[K/var/tmp/hokuto/powerdevil-01/build/daemon/controllers/ddcutildisplay.cpp:229:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvalue[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  229 | void BrightnessWorker::ddcSetBrightness([01;35m[Kint value[m[K, DDCutilDisplay *display)
+      |                                         [01;35m[K~~~~^~~~~[m[K
+[01m[K/var/tmp/hokuto/powerdevil-01/build/daemon/controllers/ddcutildisplay.cpp:229:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdisplay[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  229 | void BrightnessWorker::ddcSetBrightness(int value, [01;35m[KDDCutilDisplay *display[m[K)
+      |                                                    [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[ 58%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.rcc/qmlcache/org.kde.plasma.battery_InhibitionHint_qml.cpp.o[0m
+[ 58%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/kwinbrightness.cpp.o[0m
+[ 58%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.rcc/qmlcache/org.kde.plasma.brightness_main_qml.cpp.o[0m
+[ 58%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.rcc/qmlcache/org.kde.plasma.brightness_NightLightItem_qml.cpp.o[0m
+[ 59%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.rcc/qmlcache/org.kde.plasma.battery_InhibitionItem_qml.cpp.o[0m
+[ 59%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.rcc/qmlcache/org.kde.plasma.brightness_PopupDialog_qml.cpp.o[0m
+[ 60%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/controllers/externalbrightnesscontrol.cpp.o[0m
+[ 61%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/.qt/rcc/qrc_org_kde_plasma_brightness_raw_qml_0.cpp.o[0m
+[ 61%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.rcc/qmlcache/org.kde.plasma.battery_main_qml.cpp.o[0m
+[ 61%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.rcc/qmlcache/org.kde.plasma.battery_PopupDialog_qml.cpp.o[0m
+[ 61%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/PowerDevilGlobalSettings.cpp.o[0m
+[ 61%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/PowerDevilProfileSettings.cpp.o[0m
+[01m[K/var/tmp/hokuto/powerdevil-01/build/daemon/controllers/kwinbrightness.cpp:[m[K In member function ‘[01m[Kvirtual void KWinDisplayBrightness::[01;32m[KsetBrightness[m[K(int, bool)[m[K’:
+[01m[K/var/tmp/hokuto/powerdevil-01/build/daemon/controllers/kwinbrightness.cpp:167:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KallowAnimations[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  167 | void KWinDisplayBrightness::setBrightness(int brightness, [01;35m[Kbool allowAnimations[m[K)
+      |                                                           [01;35m[K~~~~~^~~~~~~~~~~~~~~[m[K
+[ 61%] [32mBuilding CXX object applets/brightness/CMakeFiles/org.kde.plasma.brightness.dir/org.kde.plasma.brightness.cpp.o[0m
+[ 61%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.rcc/qmlcache/org.kde.plasma.battery_PowerProfileItem_qml.cpp.o[0m
+[ 62%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.qt/rcc/qrc_org_kde_plasma_battery_raw_qml_0.cpp.o[0m
+[ 62%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/.qt/rcc/qrc_org_kde_plasma_battery_raw_res_1.cpp.o[0m
+[ 62%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/PowerDevilActivitySettings.cpp.o[0m
+[ 63%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/screenlocker_interface.cpp.o[0m
+[ 63%] [32mBuilding CXX object applets/batterymonitor/CMakeFiles/org.kde.plasma.battery.dir/org.kde.plasma.battery.cpp.o[0m
+[ 63%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/upower_interface.cpp.o[0m
+[ 63%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/upower_kbdbacklight_interface.cpp.o[0m
+[ 63%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/screenbrightnessadaptor.cpp.o[0m
+[ 64%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/screenbrightnessdisplayadaptor.cpp.o[0m
+[ 64%] [1m[32mLinking CXX shared library ../../bin/plasma/applets/org.kde.plasma.brightness.so[0m
+[ 64%] [32mBuilding C object daemon/CMakeFiles/powerdevilcore.dir/wayland-kde-external-brightness-v1-protocol.c.o[0m
+[ 64%] [32mBuilding CXX object daemon/CMakeFiles/powerdevilcore.dir/qwayland-kde-external-brightness-v1.cpp.o[0m
+[ 64%] [1m[32mLinking CXX shared library ../../bin/plasma/applets/org.kde.plasma.battery.so[0m
+[ 64%] Built target org.kde.plasma.brightness
+[ 64%] Built target org.kde.plasma.battery
+[ 64%] [1m[32mLinking CXX shared library ../bin/libpowerdevilcore.so[0m
+[ 68%] Built target powerdevilcore
+[ 68%] Built target powerdevil_brightnesscontrolaction_autogen_timestamp_deps
+[ 68%] Built target powerdevil_dimdisplayaction_autogen_timestamp_deps
+[ 68%] Built target powerdevil_keyboardbrightnesscontrolaction_autogen_timestamp_deps
+[ 68%] Built target powerdevil_runscriptaction_autogen_timestamp_deps
+[ 68%] Built target powerdevil_dpmsaction_autogen_timestamp_deps
+[ 68%] Built target powerdevil_autogen_timestamp_deps
+[ 68%] Built target powerdevil_handlebuttoneventsaction_autogen_timestamp_deps
+[ 68%] Built target powerdevil_screenbrightnesscontrolaction_autogen_timestamp_deps
+[ 68%] Built target powerdevil_suspendsessionaction_autogen_timestamp_deps
+[ 68%] Built target powerdevil_powerprofileaction_autogen_timestamp_deps
+[ 68%] [1m[34mAutomatic MOC for target powerdevil_keyboardbrightnesscontrolaction[0m
+[ 68%] [1m[34mAutomatic MOC for target powerdevil_dimdisplayaction[0m
+[ 69%] [1m[34mAutomatic MOC for target powerdevil_runscriptaction[0m
+[ 69%] Built target kcm_powerdevilprofilesconfig_autogen_timestamp_deps
+[ 69%] Built target kcm_mobile_power_autogen_timestamp_deps
+[ 69%] [1m[34mAutomatic MOC for target powerdevil_handlebuttoneventsaction[0m
+[ 69%] [1m[34mAutomatic MOC for target powerdevil_brightnesscontrolaction[0m
+[ 69%] [1m[34mAutomatic MOC for target powerdevil_dpmsaction[0m
+[ 70%] [1m[34mAutomatic MOC for target powerdevil[0m
+[ 70%] [1m[34mAutomatic MOC for target powerdevil_screenbrightnesscontrolaction[0m
+[ 70%] [1m[34mAutomatic MOC for target powerdevil_powerprofileaction[0m
+[ 70%] [1m[34mAutomatic MOC for target powerdevil_suspendsessionaction[0m
+[ 70%] Built target powerdevil_handlebuttoneventsaction_autogen
+[ 70%] [1m[34mAutomatic MOC for target kcm_powerdevilprofilesconfig[0m
+[ 70%] Built target powerdevil_runscriptaction_autogen
+[ 70%] [1m[34mAutomatic MOC for target kcm_mobile_power[0m
+[ 70%] Built target powerdevil_brightnesscontrolaction_autogen
+[ 70%] Built target powerdevil_suspendsessionaction_autogen
+[ 71%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_runscriptaction.dir/powerdevil_runscriptaction_autogen/mocs_compilation.cpp.o[0m
+[ 71%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_runscriptaction.dir/runscript.cpp.o[0m
+[ 71%] [1m[34mGenerating handlebuttoneventsadaptor.cpp, handlebuttoneventsadaptor.h[0m
+[ 71%] Built target powerdevil_keyboardbrightnesscontrolaction_autogen
+[ 71%] [1m[34mGenerating brightnesscontroladaptor.cpp, brightnesscontroladaptor.h[0m
+[ 72%] [1m[34mGenerating moc_handlebuttoneventsadaptor.cpp[0m
+[ 72%] Built target powerdevil_screenbrightnesscontrolaction_autogen
+[ 72%] Built target powerdevil_dimdisplayaction_autogen
+[ 72%] [1m[34mGenerating keyboardbrightnesscontroladaptor.cpp, keyboardbrightnesscontroladaptor.h[0m
+[ 72%] [1m[34mGenerating moc_brightnesscontroladaptor.cpp[0m
+[ 72%] [1m[34mGenerating suspendsessionadaptor.cpp, suspendsessionadaptor.h[0m
+[ 73%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_handlebuttoneventsaction.dir/powerdevil_handlebuttoneventsaction_autogen/mocs_compilation.cpp.o[0m
+[ 73%] [1m[34mGenerating moc_suspendsessionadaptor.cpp[0m
+[ 73%] [1m[34mGenerating moc_keyboardbrightnesscontroladaptor.cpp[0m
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_brightnesscontrolaction.dir/powerdevil_brightnesscontrolaction_autogen/mocs_compilation.cpp.o[0m
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_handlebuttoneventsaction.dir/powerdevilhandlebuttonevents_plugin.cpp.o[0m
+[ 74%] Built target powerdevil_autogen
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_brightnesscontrolaction.dir/brightnesscontrol.cpp.o[0m
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_keyboardbrightnesscontrolaction.dir/powerdevil_keyboardbrightnesscontrolaction_autogen/mocs_compilation.cpp.o[0m
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_suspendsessionaction.dir/powerdevil_suspendsessionaction_autogen/mocs_compilation.cpp.o[0m
+[ 74%] Built target powerdevil_dpmsaction_autogen
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_suspendsessionaction.dir/suspendsession.cpp.o[0m
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_keyboardbrightnesscontrolaction.dir/keyboardbrightnesscontrol.cpp.o[0m
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_brightnesscontrolaction.dir/brightnesscontroladaptor.cpp.o[0m
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_screenbrightnesscontrolaction.dir/powerdevil_screenbrightnesscontrolaction_autogen/mocs_compilation.cpp.o[0m
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_screenbrightnesscontrolaction.dir/screenbrightnesscontrol.cpp.o[0m
+[ 74%] Built target powerdevil_powerprofileaction_autogen
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_handlebuttoneventsaction.dir/handlebuttonevents.cpp.o[0m
+[ 74%] Built target kcm_mobile_power_autogen
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_handlebuttoneventsaction.dir/handlebuttoneventsadaptor.cpp.o[0m
+[ 74%] Built target kcm_powerdevilprofilesconfig_autogen
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_suspendsessionaction.dir/suspendsessionadaptor.cpp.o[0m
+[ 74%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_dimdisplayaction.dir/powerdevil_dimdisplayaction_autogen/mocs_compilation.cpp.o[0m
+[ 75%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_dimdisplayaction.dir/dimdisplay.cpp.o[0m
+[ 75%] [1m[32mLinking CXX shared module ../../../bin/powerdevil/action/powerdevil_runscriptaction.so[0m
+[ 75%] Built target powerdevil_runscriptaction
+[ 76%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_dpmsaction.dir/powerdevil_dpmsaction_autogen/mocs_compilation.cpp.o[0m
+[ 76%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_dpmsaction.dir/dpms.cpp.o[0m
+[ 76%] [1m[34mGenerating properties_interface.cpp, properties_interface.h[0m
+[ 78%] [1m[32mLinking CXX shared module ../../../bin/powerdevil/action/powerdevil_screenbrightnesscontrolaction.so[0m
+[ 78%] [1m[34mGenerating power_profiles_interface.cpp, power_profiles_interface.h[0m
+[ 78%] [1m[34mGenerating powerprofileadaptor.cpp, powerprofileadaptor.h[0m
+[ 78%] [1m[34mGenerating moc_properties_interface.cpp[0m
+[ 79%] [1m[34mGenerating moc_power_profiles_interface.cpp[0m
+[ 80%] [1m[34mGenerating moc_powerprofileadaptor.cpp[0m
+[ 80%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_powerprofileaction.dir/powerdevil_powerprofileaction_autogen/mocs_compilation.cpp.o[0m
+[ 80%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_keyboardbrightnesscontrolaction.dir/keyboardbrightnesscontroladaptor.cpp.o[0m
+[ 80%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_powerprofileaction.dir/powerprofile.cpp.o[0m
+[ 81%] [1m[34mGenerating qrc_kcm_powerdevilprofilesconfig.cpp[0m
+[ 81%] [32mBuilding CXX object kcm/CMakeFiles/kcm_powerdevilprofilesconfig.dir/kcm_powerdevilprofilesconfig_autogen/mocs_compilation.cpp.o[0m
+[ 82%] [32mBuilding CXX object kcm/CMakeFiles/kcm_powerdevilprofilesconfig.dir/qrc_kcm_powerdevilprofilesconfig.cpp.o[0m
+[ 82%] [32mBuilding CXX object kcm/CMakeFiles/kcm_powerdevilprofilesconfig.dir/PowerKCM.cpp.o[0m
+[ 82%] [32mBuilding CXX object kcm/CMakeFiles/kcm_powerdevilprofilesconfig.dir/ExternalServiceSettings.cpp.o[0m
+[ 82%] Built target powerdevil_screenbrightnesscontrolaction
+[ 83%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_powerprofileaction.dir/powerprofileadaptor.cpp.o[0m
+[ 84%] [1m[32mLinking CXX shared module ../../../bin/powerdevil/action/powerdevil_brightnesscontrolaction.so[0m
+[ 84%] Built target powerdevil_brightnesscontrolaction
+[ 84%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_powerprofileaction.dir/properties_interface.cpp.o[0m
+[ 84%] [32mBuilding CXX object kcm/CMakeFiles/kcm_powerdevilprofilesconfig.dir/PowerButtonActionModel.cpp.o[0m
+[ 85%] [1m[32mLinking CXX shared module ../../../bin/powerdevil/action/powerdevil_suspendsessionaction.so[0m
+[ 86%] [1m[32mLinking CXX shared module ../../../bin/powerdevil/action/powerdevil_handlebuttoneventsaction.so[0m
+[ 86%] [1m[32mLinking CXX shared module ../../../bin/powerdevil/action/powerdevil_dpmsaction.so[0m
+[ 87%] [1m[32mLinking CXX shared module ../../../bin/powerdevil/action/powerdevil_keyboardbrightnesscontrolaction.so[0m
+[ 89%] Built target powerdevil_suspendsessionaction
+[ 89%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_powerprofileaction.dir/power_profiles_interface.cpp.o[0m
+[ 89%] [1m[32mLinking CXX shared module ../../../bin/powerdevil/action/powerdevil_dimdisplayaction.so[0m
+[ 89%] Built target powerdevil_dpmsaction
+[ 89%] [1m[34mGenerating qrc_kcm_mobile_power.cpp[0m
+[ 89%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_powerprofileaction.dir/handlebuttonevents.cpp.o[0m
+[ 90%] [32mBuilding CXX object kcm_mobile/CMakeFiles/kcm_mobile_power.dir/kcm_mobile_power_autogen/mocs_compilation.cpp.o[0m
+[ 91%] Built target powerdevil_keyboardbrightnesscontrolaction
+[ 92%] [1m[34mGenerating powermanagementpolicyagentadaptor.cpp, powermanagementpolicyagentadaptor.h[0m
+[ 92%] [1m[34mGenerating powermanagementadaptor.cpp, powermanagementadaptor.h[0m
+[ 92%] [1m[34mGenerating powermanagementfdoadaptor.cpp, powermanagementfdoadaptor.h[0m
+[ 93%] [1m[34mGenerating powermanagementinhibitadaptor.cpp, powermanagementinhibitadaptor.h[0m
+[ 93%] [1m[34mGenerating moc_powermanagementpolicyagentadaptor.cpp[0m
+[ 93%] [1m[34mGenerating moc_powermanagementadaptor.cpp[0m
+[ 93%] [1m[34mGenerating moc_powermanagementfdoadaptor.cpp[0m
+[ 93%] [1m[34mGenerating moc_powermanagementinhibitadaptor.cpp[0m
+[ 93%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil.dir/powerdevil_autogen/mocs_compilation.cpp.o[0m
+[ 94%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil.dir/powerdevil_debug.cpp.o[0m
+[ 94%] Built target powerdevil_handlebuttoneventsaction
+[ 94%] [32mBuilding CXX object kcm_mobile/CMakeFiles/kcm_mobile_power.dir/qrc_kcm_mobile_power.cpp.o[0m
+[ 94%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil.dir/powerdevilapp.cpp.o[0m
+[ 95%] [32mBuilding CXX object kcm/CMakeFiles/kcm_powerdevilprofilesconfig.dir/PowerProfileModel.cpp.o[0m
+[ 95%] [32mBuilding CXX object kcm_mobile/CMakeFiles/kcm_mobile_power.dir/mobilepower.cpp.o[0m
+[ 95%] Built target powerdevil_dimdisplayaction
+[ 95%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil.dir/powerdevilfdoconnector.cpp.o[0m
+[ 95%] [32mBuilding CXX object kcm/CMakeFiles/kcm_powerdevilprofilesconfig.dir/SleepModeModel.cpp.o[0m
+[ 95%] [32mBuilding CXX object kcm_mobile/CMakeFiles/kcm_mobile_power.dir/batterymodel.cpp.o[0m
+[ 95%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil.dir/powermanagementadaptor.cpp.o[0m
+[ 96%] [32mBuilding CXX object daemon/actions/bundled/CMakeFiles/powerdevil_powerprofileaction.dir/handlebuttoneventsadaptor.cpp.o[0m
+[ 97%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil.dir/powermanagementpolicyagentadaptor.cpp.o[0m
+[ 98%] [32mBuilding CXX object kcm_mobile/CMakeFiles/kcm_mobile_power.dir/statisticsprovider.cpp.o[0m
+[ 98%] [32mBuilding CXX object kcm_mobile/CMakeFiles/kcm_mobile_power.dir/PowerProfileModel.cpp.o[0m
+[ 98%] [1m[32mLinking CXX shared module ../bin/plasma/kcms/systemsettings/kcm_powerdevilprofilesconfig.so[0m
+[ 98%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil.dir/powermanagementfdoadaptor.cpp.o[0m
+[ 98%] [32mBuilding CXX object daemon/CMakeFiles/powerdevil.dir/powermanagementinhibitadaptor.cpp.o[0m
+[ 98%] Built target kcm_powerdevilprofilesconfig
+[ 98%] [1m[32mLinking CXX shared module ../bin/plasma/kcms/systemsettings/kcm_mobile_power.so[0m
+[ 98%] Built target kcm_mobile_power
+[ 98%] [1m[32mLinking CXX shared module ../../../bin/powerdevil/action/powerdevil_powerprofileaction.so[0m
+[ 98%] [1m[32mLinking CXX executable ../bin/org_kde_powerdevil[0m
+[100%] Built target powerdevil_powerprofileaction
+[100%] Built target powerdevil
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/batterymonitor/libbatterymonitorplugin.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/batterymonitor/libbatterymonitorplugin.so" to "$ORIGIN/../../../../../../lib64"
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/batterymonitor/qmldir
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/batterymonitor/batterymonitorplugin.qmltypes
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/batterymonitor/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/qlogging-categories6/batterymonitor.categories
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.battery.so
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/brightnesscontrolplugin/libbrightnesscontrolplugin.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/brightnesscontrolplugin/libbrightnesscontrolplugin.so" to "$ORIGIN/../../../../../../lib64"
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/brightnesscontrolplugin/qmldir
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/brightnesscontrolplugin/brightnesscontrolplugin.qmltypes
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/qml/org/kde/plasma/private/brightnesscontrolplugin/kde-qmlmodule.version
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/qlogging-categories6/brightness.categories
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.brightness.so
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_brightnesscontrolaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_brightnesscontrolaction.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_screenbrightnesscontrolaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_screenbrightnesscontrolaction.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_keyboardbrightnesscontrolaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_keyboardbrightnesscontrolaction.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_dimdisplayaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_dimdisplayaction.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_runscriptaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_runscriptaction.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_suspendsessionaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_suspendsessionaction.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_dpmsaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_dpmsaction.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_powerprofileaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_powerprofileaction.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_handlebuttoneventsaction.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/powerdevil/action/powerdevil_handlebuttoneventsaction.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/libexec/kf6/kauth/chargethresholdhelper
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/dbus-1/system.d/org.kde.powerdevil.chargethresholdhelper.conf
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/dbus-1/system-services/org.kde.powerdevil.chargethresholdhelper.service
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/polkit-1/actions/org.kde.powerdevil.chargethresholdhelper.policy
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/libexec/kf6/kauth/discretegpuhelper
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/dbus-1/system.d/org.kde.powerdevil.discretegpuhelper.conf
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/dbus-1/system-services/org.kde.powerdevil.discretegpuhelper.service
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/polkit-1/actions/org.kde.powerdevil.discretegpuhelper.policy
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/libexec/kf6/kauth/backlighthelper
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/dbus-1/system.d/org.kde.powerdevil.backlighthelper.conf
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/dbus-1/system-services/org.kde.powerdevil.backlighthelper.service
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/polkit-1/actions/org.kde.powerdevil.backlighthelper.policy
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/libexec/kf6/kauth/wakeupsourcehelper
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/dbus-1/system.d/org.kde.powerdevil.wakeupsourcehelper.conf
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/dbus-1/system-services/org.kde.powerdevil.wakeupsourcehelper.service
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/polkit-1/actions/org.kde.powerdevil.wakeupsourcehelper.policy
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/libexec/org_kde_powerdevil
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/libexec/org_kde_powerdevil" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/etc/xdg/autostart/powerdevil.desktop
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib64/libpowerdevilcore.so.6.7.5
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib64/libpowerdevilcore.so.2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib64/libpowerdevilcore.so
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/systemd/user/plasma-powerdevil.service
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_powerdevilprofilesconfig.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_powerdevilprofilesconfig.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/applications/kcm_powerdevilprofilesconfig.desktop
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_mobile_power.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_mobile_power.so" to ""
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/applications/kcm_mobile_power.desktop
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/en/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/en/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/en/kcontrol/powerdevil/activity.png
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/en/kcontrol/powerdevil/advanced.png
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/en/kcontrol/powerdevil/energy.png
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/ca/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/ca/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/de/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/de/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/es/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/es/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/et/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/et/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/fr/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/fr/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/id/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/id/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/it/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/it/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/nl/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/nl/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/pt/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/pt/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/pt_BR/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/pt_BR/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/ru/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/ru/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/ru/kcontrol/powerdevil/activity.png
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/ru/kcontrol/powerdevil/advanced.png
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/ru/kcontrol/powerdevil/energy.png
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/sv/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/sv/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/tr/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/tr/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/uk/kcontrol/powerdevil/index.cache.bz2
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/uk/kcontrol/powerdevil/index.docbook
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/uk/kcontrol/powerdevil/activity.png
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/uk/kcontrol/powerdevil/advanced.png
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/doc/HTML/uk/kcontrol/powerdevil/energy.png
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/lib/qt6/plugins/kf6/krunner/krunner_powerdevil.so
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/qlogging-categories6/powerdevil.categories
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/knotifications6/powerdevil.notifyrc
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/cs/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/cs/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/cs/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/cs/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/cs/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/cs/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eu/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eu/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eu/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eu/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eu/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eu/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hu/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hu/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hu/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hu/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hu/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hu/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/uk/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/uk/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/uk/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/uk/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/uk/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/uk/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sq
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sq/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sq/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sq/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sq/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ar/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ar/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ar/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ar/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ar/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ar/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pl/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pl/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pl/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pl/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pl/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pl/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nb
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nb/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nb/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nb/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nb/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nb/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/it/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/it/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/it/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/it/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/it/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/it/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/es/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/es/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/es/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/es/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/es/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/es/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ug
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ug/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ug/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ug/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ug/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ug/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt_BR/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt_BR/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt_BR/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt_BR/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt_BR/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/az/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/az/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/az/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/az/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/az/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/az/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/km
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/km/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/km/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/km/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/km/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/km/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eo/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eo/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eo/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eo/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eo/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/eo/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sa/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sa/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sa/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sa/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sa/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sa/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/da/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/da/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/da/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/da/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/da/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/se
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/se/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/se/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ml/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ml/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ml/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ml/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sv/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sv/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sv/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sv/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sv/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sv/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fr/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fr/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fr/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fr/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fr/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fr/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/csb
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/csb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/csb/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/csb/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@latin/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@latin/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@latin/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@latin/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tg/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tg/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tg/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tg/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fa
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fa/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/th
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/th/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/th/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/th/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/th/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/th/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gu
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gu/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gu/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gu/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gu/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hsb
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hsb/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hsb/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hsb/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hsb/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ko/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ko/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ko/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ko/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ko/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ko/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/oc
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/oc/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/oc/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be@latin
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be@latin/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/be@latin/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/id/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/id/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/id/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/id/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/id/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/en_GB/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/en_GB/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/en_GB/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/en_GB/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/en_GB/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nn/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nn/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nn/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nn/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nn/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nn/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kk
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kk/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kk/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kk/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kk/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/te
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/te/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/te/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/te/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/te/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bn_IN
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bn_IN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bn_IN/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bn_IN/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fy
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fy/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fy/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fy/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fy/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hne
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hne/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bn
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bn/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ne
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ne/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ne/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gl/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gl/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gl/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/gl/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bs
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bs/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bs/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bs/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bs/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_TW/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_TW/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_TW/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_TW/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_TW/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sk/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sk/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sk/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sk/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sk/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sk/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/as
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/as/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/as/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pa/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pa/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pa/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pa/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pa/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pa/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mk
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mk/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mk/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nds
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nds/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nds/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nds/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nds/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nds/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/vi
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/vi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/vi/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/vi/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/vi/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ja/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ja/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ja/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ja/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ja/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ja/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hr
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hr/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hr/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hr/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hr/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ta
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ta/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ta/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ta/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ta/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ta/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ta/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ta/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ru/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ru/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ru/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ru/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ru/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ru/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mai
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mai/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mai/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mai/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mai/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/si
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/si/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/si/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/si/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/si/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ku
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ku/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ku/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ku/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ku/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tok
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tok/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tok/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tok/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/he/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/he/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/he/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/he/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/he/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/he/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/is/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/is/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/is/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/is/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/is/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/is/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ka/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ka/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ka/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ka/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ka/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ka/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nl/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nl/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nl/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nl/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nl/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/nl/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/or
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/or/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/or/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/or/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/or/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ia/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ia/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ia/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ia/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ia/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ia/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hi/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hi/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hi/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hi/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hi/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/hi/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lt/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lt/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lt/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lt/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lt/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lt/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fi/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fi/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fi/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fi/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fi/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/fi/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/et/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/et/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/et/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/et/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/el/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/el/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/el/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/el/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kn
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kn/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/kn/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lv/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lv/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lv/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lv/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lv/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/lv/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ms
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ms/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ms/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ms/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ms/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ms/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/pt/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ro/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ro/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ro/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ro/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ro/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ro/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ca/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ast/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ast/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ast/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ast/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ast/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ast/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tr/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tr/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tr/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tr/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tr/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/tr/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bg/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bg/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bg/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bg/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bg/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/bg/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sl/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sl/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sl/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sl/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sl/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/sl/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/wa
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/wa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/wa/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/wa/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/wa/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/wa/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mr
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mr/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mr/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mr/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/mr/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/de/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/de/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/de/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/de/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/de/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/de/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ga/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ga/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ga/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ga/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ga/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/ga/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_mobile_power.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_CN/LC_MESSAGES/powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_CN/LC_MESSAGES/plasma_runner_powerdevil.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_CN/LC_MESSAGES/plasma_applet_org.kde.plasma.battery.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_CN/LC_MESSAGES/plasma_applet_org.kde.plasma.brightness.mo
+-- Installing: /var/tmp/hokuto/powerdevil-01/output/usr/share/locale/zh_CN/LC_MESSAGES/kcm_powerdevilprofilesconfig.mo
+
+Script done on 2026-09-09 12:58:56+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpowerdevil[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 09 Sep 2026 05:58:57 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m59s[0m
