@@ -1,0 +1,386 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-vault[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mplasma-vault 6.7.5-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mWed, 09 Sep 2026 05:47:50 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-vault[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mfuse3 glibc gocryptfs kconfig kcoreaddons|sonic-frameworks-core-addons kdbusaddons ki18n kio|sonic-frameworks-io kirigami|sonic-frameworks-quick-ui kitemmodels kservice kwidgetsaddons libksysguard|sonic-system-monitor-library libplasma|sonic-interface-libraries networkmanager-qt|sonic-frameworks-networkmanager plasma-activities|sonic-activities plasma-workspace|sonic-workspace qt qt-declarative extra-cmake-modules|sonic-frameworks-cmake-modules[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-vault[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 extra-cmake-modules-6.29.0-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 fuse3-3.18.2-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 gocryptfs-2.6.1-1 grep-3.12-1 gzip-1.14-1 kconfig-6.29.0-1 kcoreaddons-6.29.0-1 kdbusaddons-6.29.0-1 ki18n-6.29.0-1 kio-6.29.0-1 kirigami-6.29.0-1 kitemmodels-6.29.0-1 kservice-6.29.0-1 kwidgetsaddons-6.29.0-1 libksysguard-6.7.4-1 libplasma-6.7.4-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 networkmanager-qt-6.29.0-1 patch-2.8-1 pkgconf-3.0.7-1 plasma-activities-6.7.4-1 plasma-workspace-6.7.4-1 qt-6.11.2-1 qt-declarative-6.11.2-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-09 12:47:50+07:00 [COMMAND="cd /var/tmp/hokuto/plasma-vault-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/plasma-vault-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/plasma-vault-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/plasma-vault-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/plasma-vault-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/plasma-vault-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/plasma-vault-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/plasma-vault-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/plasma-vault-01/build/.cache' /repo/kde/plasma-vault/build /var/tmp/hokuto/plasma-vault-01/output 6.7.5 plasma-vault" <not executed on terminal>]
+The no-dev option is deprecated.  Use -Wno-author instead.
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- 
+
+[33mCMake Warning at /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:169 (message):
+  KDE_INSTALL_LIBEXECDIR got its value from CMAKE_INSTALL_LIBEXECDIR.  In
+  most cases this is unintended, check if you included GNUInstallDirs before
+  KDEInstallDirs.  Some third party modules include GNUInstallDirs too so eg.
+  find_package(Qt6 ...) is equivalent to include(GNUInstallDirs).  If you set
+  CMAKE_INSTALL_LIBEXECDIR deliberately before including KDEInstallDirs its
+  recommended to use KDE_INSTALL_LIBEXECDIR instead to suppress this message.
+Call Stack (most recent call first):
+  /usr/share/ECM/kde-modules/KDEInstallDirsCommon.cmake:270 (_define_relative)
+  /usr/share/ECM/kde-modules/KDEInstallDirs6.cmake:203 (include)
+  /usr/share/ECM/kde-modules/KDEInstallDirs.cmake:17 (include)
+  CMakeLists.txt:40 (include)
+
+[0m
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.14 (found version "3.14.7") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.29.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.29.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.29.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.29.0")
+-- Found KF6ItemModels: /usr/lib64/cmake/KF6ItemModels/KF6ItemModelsConfig.cmake (found version "6.29.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.29.0")
+-- Found KF6Service: /usr/lib64/cmake/KF6Service/KF6ServiceConfig.cmake (found version "6.29.0")
+-- Found KF6: success (found suitable version "6.29.0", minimum required is "6.26.0") found components: Config CoreAddons DBusAddons I18n ItemModels KIO Service
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Checking for one of the modules 'libnm>=1.4.0'
+-- Checking for one of the modules 'gio-2.0'
+-- Found Gocryptfs: /usr/bin/gocryptfs
+-- The following RUNTIME packages have been found:
+
+ * Gocryptfs, Encrypted filesystem backend written in Go, <https://nuetzlich.net/gocryptfs/>
+   Required at runtime to create and unlock Vaults
+
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6DBusTools (required version >= 6.11.2)
+ * Qt6DBus (required version >= 6.9.0)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6QuickTools (required version >= 6.11.2)
+ * PkgConfig
+ * KF6NetworkManagerQt (required version >= 6.26.0)
+ * Qt6CoreTools (required version >= 6.11.2)
+ * Qt6GuiTools (required version >= 6.11.2)
+ * Qt6WidgetsTools (required version >= 6.11.2)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0), Extra CMake Modules., <https://projects.kde.org/projects/kdesupport/extra-cmake-modules>
+ * Qt6 (required version >= 6.10.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6ItemModels (required version >= 6.26.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6Service (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Qt6Quick (required version >= 6.9.0)
+ * Plasma (required version >= 6.7.0)
+ * Qt6Core (required version >= 6.10.0)
+ * PlasmaActivities (required version >= 6.7.0)
+ * Qt6Widgets (required version >= 6.10.0)
+ * KF6Config (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KSysGuard
+
+-- The following OPTIONAL packages have not been found:
+
+ * WrapVulkanHeaders
+
+-- Configuring done (2.6s)
+-- Generating done (0.0s)
+[33mCMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    BUILD_QT5
+
+[0m
+-- Build files have been written to: /var/tmp/hokuto/plasma-vault-01/build/build
+[  0%] Built target org.kde.plasma.vault_autogen_timestamp_deps
+[  0%] Built target kded_plasmavault_autogen_timestamp_deps
+[  0%] Built target plasmavaultfileitemaction_autogen_timestamp_deps
+[  3%] [1m[34mGenerating mo...[0m
+[  3%] [1m[34mGenerating ts...[0m
+[  5%] [1m[34mAutomatic MOC for target kded_plasmavault[0m
+[  6%] [1m[34mAutomatic MOC for target plasmavaultfileitemaction[0m
+[  6%] Built target tsfiles-85fe5daf900023a28a897c62f5f66924
+[  8%] [1m[34mAutomatic MOC for target org.kde.plasma.vault[0m
+[  8%] Built target pofiles-85fe5daf900023a28a897c62f5f66924
+[  8%] Built target plasmavaultfileitemaction_autogen
+[  8%] Built target org.kde.plasma.vault_autogen
+[ 10%] [1m[34mGenerating plasmavault_interface.cpp, plasmavault_interface.h[0m
+[ 11%] [32mBuilding CXX object fileitemplugin/CMakeFiles/plasmavaultfileitemaction.dir/plasmavaultfileitemaction_autogen/mocs_compilation.cpp.o[0m
+[ 13%] [32mBuilding CXX object fileitemplugin/CMakeFiles/plasmavaultfileitemaction.dir/plasmavaultfileitemaction.cpp.o[0m
+[ 15%] [1m[34mGenerating moc_plasmavault_interface.cpp[0m
+[ 16%] [32mBuilding CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/org.kde.plasma.vault_autogen/mocs_compilation.cpp.o[0m
+[ 18%] [32mBuilding CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/vaultapplet.cpp.o[0m
+[ 21%] [32mBuilding CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/plasmavault_interface.cpp.o[0m
+[ 21%] [32mBuilding CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/__/common/vaultinfo.cpp.o[0m
+[ 23%] [32mBuilding CXX object plasma/CMakeFiles/org.kde.plasma.vault.dir/vaultsmodel.cpp.o[0m
+[ 23%] Built target kded_plasmavault_autogen
+[ 25%] [1m[34mGenerating ui_backendchooserwidget.h[0m
+[ 26%] [1m[34mGenerating ui_activitieslinkingwidget.h[0m
+[ 28%] [1m[34mGenerating ui_vaultimportingwizard.h[0m
+[ 30%] [1m[34mGenerating ui_directorychooserwidget.h[0m
+[ 31%] [1m[34mGenerating ui_cryfscypherchooserwidget.h[0m
+[ 33%] [1m[34mGenerating ui_directorypairchooserwidget.h[0m
+[ 35%] [1m[34mGenerating ui_mountdialog.h[0m
+[ 36%] [1m[34mGenerating ui_noticewidget.h[0m
+[ 38%] [1m[34mGenerating ui_namechooserwidget.h[0m
+[ 40%] [1m[34mGenerating ui_offlineonlywidget.h[0m
+[ 41%] [1m[34mGenerating ui_passwordchooserwidget.h[0m
+[ 43%] [1m[34mGenerating ui_vaultconfigurationdialog.h[0m
+[ 45%] [1m[34mGenerating ui_vaultdeletionwidget.h[0m
+[ 46%] [1m[34mGenerating ui_vaultcreationwizard.h[0m
+[ 48%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/backends/cryfs/cryfsbackend.cpp.o[0m
+[ 50%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/kded_plasmavault_autogen/mocs_compilation.cpp.o[0m
+[ 51%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/backends/gocryptfs/gocryptfsbackend.cpp.o[0m
+[ 55%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/backends/encfs/encfsbackend.cpp.o[0m
+[ 55%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/backend_p.cpp.o[0m
+[ 56%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/commandresult.cpp.o[0m
+[ 58%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/fusebackend_p.cpp.o[0m
+[ 60%] [1m[32mLinking CXX shared module ../bin/kf6/kfileitemaction/plasmavaultfileitemaction.so[0m
+[ 61%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/types.cpp.o[0m
+[ 63%] Built target plasmavaultfileitemaction
+[ 65%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/engine/vault.cpp.o[0m
+[ 66%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/service.cpp.o[0m
+[ 68%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/activitieslinkingwidget.cpp.o[0m
+[ 70%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/backendchooserwidget.cpp.o[0m
+[ 71%] [1m[32mLinking CXX shared module ../bin/org.kde.plasma.vault.so[0m
+[ 73%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/cryfscypherchooserwidget.cpp.o[0m
+[ 75%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/dialogdsl.cpp.o[0m
+[ 76%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/directorychooserwidget.cpp.o[0m
+[ 78%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/directorypairchooserwidget.cpp.o[0m
+[ 80%] Built target org.kde.plasma.vault
+[ 81%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/mountdialog.cpp.o[0m
+[ 83%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/namechooserwidget.cpp.o[0m
+[ 85%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/noticewidget.cpp.o[0m
+[ 86%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/offlineonlywidget.cpp.o[0m
+[ 88%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/passwordchooserwidget.cpp.o[0m
+[ 90%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/vaultconfigurationdialog.cpp.o[0m
+[ 91%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/vaultcreationwizard.cpp.o[0m
+[ 93%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/vaultdeletionwidget.cpp.o[0m
+[ 95%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/ui/vaultimportingwizard.cpp.o[0m
+[ 96%] [32mBuilding CXX object kded/CMakeFiles/kded_plasmavault.dir/__/common/vaultinfo.cpp.o[0m
+[ 98%] [1m[32mLinking CXX shared module ../bin/plasmavault.so[0m
+[01m[K/var/tmp/hokuto/plasma-vault-01/build/kded/engine/backends/cryfs/cryfsbackend.cpp:33:12:[m[K [01;35m[Kwarning: [m[Ktype ‘[01m[KPlasmaVault::ExitCode[m[K’ violates the C++ One Definition Rule [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-odr-Wodr]8;;[m[K]
+   33 | enum class ExitCode : int {
+      |            [01;35m[K^[m[K
+[01m[K/var/tmp/hokuto/plasma-vault-01/build/kded/engine/backends/gocryptfs/gocryptfsbackend.cpp:32:12:[m[K [01;36m[Knote: [m[Kan enum with different value name is defined in another translation unit
+   32 | enum class ExitCode : int {
+      |            [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/plasma-vault-01/build/kded/engine/backends/cryfs/cryfsbackend.cpp:37:5:[m[K [01;36m[Knote: [m[Kname ‘[01m[KUnspecifiedError[m[K’ differs from name ‘[01m[KNonEmptyCipherDir[m[K’ defined in another translation unit
+   37 |     UnspecifiedError = 1,
+      |     [01;36m[K^[m[K
+[01m[K/var/tmp/hokuto/plasma-vault-01/build/kded/engine/backends/gocryptfs/gocryptfsbackend.cpp:36:5:[m[K [01;36m[Knote: [m[Kmismatching definition
+   36 |     NonEmptyCipherDir = 6,
+      |     [01;36m[K^[m[K
+[100%] Built target kded_plasmavault
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/cs
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/cs/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/cs/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/eu
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/eu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/eu/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/hu
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/hu/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/hu/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/uk
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/uk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/uk/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ar
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ar/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ar/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pl
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pl/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/it
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/it/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/it/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/es
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/es/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/es/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pt_BR
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pt_BR/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/az
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/az/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/az/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/eo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/eo/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/eo/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr@ijekavian
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr@ijekavian/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sa
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sa/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/da
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/da/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/da/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/be
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/be/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/be/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ml
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ml/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ml/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sv
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sv/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/fr
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/fr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/fr/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr@latin
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr@latin/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/tg
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/tg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/tg/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ko
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ko/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ko/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/id
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/id/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/id/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/en_GB
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/en_GB/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/en_GB/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/nn
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/nn/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/nn/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/gl
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/gl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/gl/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/zh_TW
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/zh_TW/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ca@valencia
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ca@valencia/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sk
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sk/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sk/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pa
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pa/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pa/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ja
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ja/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ja/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ru
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ru/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ru/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/he
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/he/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/he/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/is
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/is/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/is/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ka
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ka/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ka/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/nl
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/nl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/nl/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ia
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ia/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ia/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/hi
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/hi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/hi/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/lt
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/lt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/lt/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/fi
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/fi/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/fi/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/et
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/et/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/et/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/el
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/el/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/el/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/lv
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/lv/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/lv/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr@ijekavianlatin
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sr@ijekavianlatin/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pt
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pt/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/pt/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ro
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ro/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ro/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ca
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ca/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ca/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ast
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ast/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ast/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/tr
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/tr/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/tr/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/bg
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/bg/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/bg/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sl
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sl/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/sl/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/de
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/de/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/de/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ga
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ga/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/ga/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/zh_CN
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/locale/zh_CN/LC_MESSAGES/plasmavault-kde.mo
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/lib/qt6/plugins/kf6/kded/plasmavault.so
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/lib/qt6/plugins/plasma/applets/org.kde.plasma.vault.so
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/plasma/plasmoids/org.kde.plasma.vault
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/plasma/plasmoids/org.kde.plasma.vault/contents
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/ui
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/ui/main.qml
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/plasma/plasmoids/org.kde.plasma.vault/contents/ui/VaultItem.qml
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/share/plasma/plasmoids/org.kde.plasma.vault/metadata.json
+-- Installing: /var/tmp/hokuto/plasma-vault-01/output/usr/lib/qt6/plugins/kf6/kfileitemaction/plasmavaultfileitemaction.so
+
+Script done on 2026-09-09 12:48:07+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mplasma-vault[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mWed, 09 Sep 2026 05:48:07 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m17s[0m
