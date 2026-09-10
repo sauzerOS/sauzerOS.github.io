@@ -1,0 +1,1336 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibrsvg[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibrsvg 2.63.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mThu, 10 Sep 2026 05:06:52 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibrsvg[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mcairo dav1d fontconfig freetype gdk-pixbuf glib glibc harfbuzz libxml2 libgcc pango cargo-c gobject-introspection llvm meson rust vala lib32-cairo lib32-fontconfig lib32-freetype lib32-gdk-pixbuf lib32-glib lib32-harfbuzz lib32-libxml2 lib32-pango lib32-rust-libs[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibrsvg[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 cairo-1.18.4-1 cargo-c-0.10.25-1 dav1d-1.5.4-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 fontconfig-2.18.3-1 freetype-2.14.3-1 gawk-5.4.1-1 gcc-16.2.0-1 gdk-pixbuf-2.44.7-1 gettext-1.0-1 glib-2.88.3-1 glibc-2.44-1 gobject-introspection-1.86.0-1 grep-3.12-1 gzip-1.14-1 harfbuzz-14.4.0-1 lib32-cairo-1.18.4-1 lib32-fontconfig-2.18.3-1 lib32-freetype-2.14.3-1 lib32-gcc-libs-16.2.0-1 lib32-gdk-pixbuf-2.44.7-1 lib32-glib-2.88.3-1 lib32-glibc-2.44-1 lib32-harfbuzz-14.4.0-1 lib32-libxml2-2.15.4-1 lib32-pango-1.58.2-1 lib32-rust-libs-1.98.1-1 libgcc-16.2.0-1 libtool-2.6.2-1 libxml2-2.15.4-1 llvm-22.1.8-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-1 pango-1.58.2-1 patch-2.8-1 pkgconf-3.0.7-1 rust-1.98.1-1 sed-4.10-1 texinfo-7.3-1 vala-0.56.19-1 which-2.25-1[0m
+
+Script started on 2026-09-10 12:06:53+07:00 [COMMAND="cd /var/tmp/hokuto/librsvg-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/librsvg-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/librsvg-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/librsvg-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/librsvg-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/librsvg-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/librsvg-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/librsvg-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/librsvg-01/build/.cache' /repo/sauzeros/extra/librsvg/build /var/tmp/hokuto/librsvg-01/output 2.63.0 librsvg" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build -D pixbuf-loader=disabled
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/librsvg-01/build[0m
+Build dir: [1m/var/tmp/hokuto/librsvg-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mlibrsvg[0m
+Project version: [1m2.63.0[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Program [1mcargo[0m found: [1;32mYES[0m [36m1.98.1[0m [36m1.98.1[0m (/usr/bin/cargo)
+Program [1mmeson/cargo_wrapper.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/librsvg-01/build/meson/cargo_wrapper.py)
+Program [1mcargo-cbuild[0m found: [1;32mYES[0m [36m0.10.25[0m [36m0.10.25[0m (/usr/bin/cargo-cbuild)
+Program [1mrustc[0m found: [1;32mYES[0m [36m1.98.1[0m [36m1.98.1[0m (/usr/bin/rustc)
+Program [1mmeson/makedef.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/librsvg-01/build/meson/makedef.py)
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Run-time dependency [1mcairo[0m found: [1;32mYES[0m [36m1.18.4[0m
+Run-time dependency [1mcairo-gobject[0m found: [1;32mYES[0m [36m1.18.4[0m
+Run-time dependency [1mcairo-png[0m found: [1;32mYES[0m [36m1.18.4[0m
+Run-time dependency [1mdav1d[0m found: [1;32mYES[0m [36m1.5.4[0m
+Run-time dependency [1mfreetype2[0m found: [1;32mYES[0m [36m26.6.20[0m
+Run-time dependency [1mgdk-pixbuf-2.0[0m found: [1;32mYES[0m [36m2.44.7[0m
+Run-time dependency [1mgio-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mglib-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mharfbuzz[0m found: [1;32mYES[0m [36m14.4.0[0m
+Run-time dependency [1mlibxml-2.0[0m found: [1;32mYES[0m [36m2.15.4[0m
+Run-time dependency [1mpango[0m found: [1;32mYES[0m [36m1.58.2[0m
+Run-time dependency [1mpangocairo[0m found: [1;32mYES[0m [36m1.58.2[0m
+Run-time dependency [1mpangoft2[0m found: [1;32mYES[0m [36m1.58.2[0m
+Run-time dependency [1mgmodule-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Program [1mrst2man rst2man.py[0m found: [1;31mNO[0m
+Program [1mgi-docgen[0m found: [1;31mNO[0m
+Run-time dependency [1mgobject-introspection-1.0[0m found: [1;32mYES[0m [36m1.86.0[0m
+Run-time dependency [1mvapigen[0m found: [1;32mYES[0m [36m0.56.19[0m
+Run-time dependency [1mappleframeworks[0m found: [1;31mNO[0m  (tried framework)
+Library [1mm[0m found: [1;32mYES[0m
+Fetching value of define "[1m_MSC_VER[0m" : (undefined) 
+Program [1mmeson/query-rustc.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/librsvg-01/build/meson/query-rustc.py)
+Library [1mrt[0m found: [1;32mYES[0m
+Library [1mdl[0m found: [1;32mYES[0m
+Library [1mpthread[0m found: [1;32mYES[0m
+Library [1mc[0m found: [1;32mYES[0m
+Library [1mgcc_s[0m found: [1;32mYES[0m
+Library [1mm[0m found: [1;32mYES[0m
+Library [1mutil[0m found: [1;32mYES[0m
+Program [1mpkg-config[0m found: [1;32mYES[0m (/usr/bin/pkg-config)
+Checking if define "[1m__MINGW32__[0m" exists: [1;31mNO[0m 
+Configuring [1mrsvg-features.h[0m using configuration
+Configuring [1mrsvg-version.h[0m using configuration
+Program [1mllvm-nm[0m found: [1;32mYES[0m (/usr/bin/llvm-nm)
+Configuring [1mlibrsvg-2.0.def[0m with command
+Compiler for C supports link arguments -Wl,-dead_strip: [1;31mNO[0m 
+Compiler for C supports link arguments -Wl,--gc-sections: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: [1;32mYES[0m 
+Compiler for C supports function attribute unused: [1;32mYES[0m 
+Configuring [1m_rsvg_dummy.c[0m with command
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Dependency [1mgobject-introspection-1.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m1.86.0[0m [1;34m(cached)[0m
+Dependency [1mgobject-introspection-1.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m1.86.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/g-ir-scanner[0m found: [1;32mYES[0m (/usr/bin/g-ir-scanner)
+Dependency [1mgobject-introspection-1.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m1.86.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/g-ir-compiler[0m found: [1;32mYES[0m (/usr/bin/g-ir-compiler)
+Program [1mvapigen[0m found: [1;32mYES[0m (/usr/bin/vapigen)
+Build targets in project: [1m8[0m
+
+librsvg [36m2.63.0[0m
+
+  [1mUser defined options[0m
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    pixbuf-loader     : disabled
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/librsvg-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/librsvg-01/build/build'
+[0/12] Generating rsvg/librsvg-2 with a custom command (wrapped by meson to set env)[K
+command: ['/usr/bin/cargo', 'cbuild', '--locked', '--prefix', '/usr', '--libdir', '/usr/lib', '--library-type', 'staticlib', '--manifest-path', '/var/tmp/hokuto/librsvg-01/build/Cargo.toml', '--target-dir', '/var/tmp/hokuto/librsvg-01/build/build/target', '--release', '--features', 'avif,pixbuf', '-p', 'librsvg-c'], env: {}
+[1m[33mwarning[0m: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /var/tmp/hokuto/librsvg-01/build/fuzz/Cargo.toml
+workspace: /var/tmp/hokuto/librsvg-01/build/Cargo.toml
+[1m[92m    Updating[0m crates.io index
+[1m[92m Downloading[0m crates ...
+[1m[92m  Downloaded[0m gdk-pixbuf-sys v0.22.0
+[1m[92m  Downloaded[0m adler2 v2.0.1
+[1m[92m  Downloaded[0m futures-macro v0.3.34
+[1m[92m  Downloaded[0m futures-io v0.3.34
+[1m[92m  Downloaded[0m phf_codegen v0.13.1
+[1m[92m  Downloaded[0m rustc_version v0.4.1
+[1m[92m  Downloaded[0m precomputed-hash v0.1.1
+[1m[92m  Downloaded[0m lazy_static v1.5.0
+[1m[92m  Downloaded[0m rawpointer v0.2.1
+[1m[92m  Downloaded[0m heck v0.5.0
+[1m[92m  Downloaded[0m pangocairo v0.22.8
+[1m[92m  Downloaded[0m nalgebra-macros v0.3.0
+[1m[92m  Downloaded[0m phf_shared v0.13.1
+[1m[92m  Downloaded[0m futures-task v0.3.34
+[1m[92m  Downloaded[0m gdk-pixbuf v0.22.0
+[1m[92m  Downloaded[0m string_cache_codegen v0.6.1
+[1m[92m  Downloaded[0m rctree v0.6.0
+[1m[92m  Downloaded[0m siphasher v1.0.3
+[1m[92m  Downloaded[0m stable_deref_trait v1.2.1
+[1m[92m  Downloaded[0m itoa v1.0.18
+[1m[92m  Downloaded[0m tinyvec_macros v0.1.1
+[1m[92m  Downloaded[0m quick-error v2.0.1
+[1m[92m  Downloaded[0m idna_adapter v1.2.2
+[1m[92m  Downloaded[0m rustc-hash v2.1.3
+[1m[92m  Downloaded[0m phf_generator v0.13.1
+[1m[92m  Downloaded[0m simd-adler32 v0.3.10
+[1m[92m  Downloaded[0m static_assertions v1.1.0
+[1m[92m  Downloaded[0m string_cache v0.9.0
+[1m[92m  Downloaded[0m string_cache v0.10.0
+[1m[92m  Downloaded[0m slab v0.4.12
+[1m[92m  Downloaded[0m zerofrom v0.1.8
+[1m[92m  Downloaded[0m zerofrom-derive v0.1.7
+[1m[92m  Downloaded[0m bitreader v0.3.11
+[1m[92m  Downloaded[0m byte-slice-cast v1.2.3
+[1m[92m  Downloaded[0m utf8_iter v1.0.4
+[1m[92m  Downloaded[0m approx v0.5.1
+[1m[92m  Downloaded[0m potential_utf v0.1.5
+[1m[92m  Downloaded[0m pangocairo-sys v0.22.0
+[1m[92m  Downloaded[0m new_debug_unreachable v1.0.6
+[1m[92m  Downloaded[0m version_check v0.9.5
+[1m[92m  Downloaded[0m version-compare v0.2.1
+[1m[92m  Downloaded[0m yoke-derive v0.8.2
+[1m[92m  Downloaded[0m cairo-sys-rs v0.22.0
+[1m[92m  Downloaded[0m mutants v0.0.4
+[1m[92m  Downloaded[0m synstructure v0.13.2
+[1m[92m  Downloaded[0m target-lexicon v0.13.5
+[1m[92m  Downloaded[0m system-deps v7.0.8
+[1m[92m  Downloaded[0m smallvec v1.15.2
+[1m[92m  Downloaded[0m dtoa-short v0.3.5
+[1m[92m  Downloaded[0m percent-encoding v2.3.2
+[1m[92m  Downloaded[0m scopeguard v1.2.0
+[1m[92m  Downloaded[0m serde_spanned v1.1.1
+[1m[92m  Downloaded[0m cfg-if v1.0.4
+[1m[92m  Downloaded[0m futures-core v0.3.34
+[1m[92m  Downloaded[0m cssparser-macros v0.7.0
+[1m[92m  Downloaded[0m byteorder-lite v0.1.0
+[1m[92m  Downloaded[0m color_quant v1.1.0
+[1m[92m  Downloaded[0m equivalent v1.0.2
+[1m[92m  Downloaded[0m form_urlencoded v1.2.2
+[1m[92m  Downloaded[0m cast v0.3.0
+[1m[92m  Downloaded[0m dav1d-sys v0.8.3
+[1m[92m  Downloaded[0m float-cmp v0.10.0
+[1m[92m  Downloaded[0m toml_datetime v1.1.1+spec-1.1.0
+[1m[92m  Downloaded[0m tinystr v0.8.3
+[1m[92m  Downloaded[0m toml_writer v1.1.2+spec-1.1.0
+[1m[92m  Downloaded[0m av-data v0.4.4
+[1m[92m  Downloaded[0m writeable v0.6.3
+[1m[92m  Downloaded[0m zerovec-derive v0.11.3
+[1m[92m  Downloaded[0m zune-core v0.5.3
+[1m[92m  Downloaded[0m tendril v0.5.1
+[1m[92m  Downloaded[0m toml_parser v1.1.3+spec-1.1.0
+[1m[92m  Downloaded[0m byteorder v1.5.0
+[1m[92m  Downloaded[0m crossbeam-deque v0.8.7
+[1m[92m  Downloaded[0m cssparser-color v0.5.0
+[1m[92m  Downloaded[0m data-url v0.3.2
+[1m[92m  Downloaded[0m dav1d v0.11.1
+[1m[92m  Downloaded[0m displaydoc v0.2.7
+[1m[92m  Downloaded[0m fastrand v2.5.0
+[1m[92m  Downloaded[0m dtoa v1.0.11
+[1m[92m  Downloaded[0m futures-executor v0.3.34
+[1m[92m  Downloaded[0m fdeflate v0.3.7
+[1m[92m  Downloaded[0m web_atoms v0.2.6
+[1m[92m  Downloaded[0m yoke v0.8.3
+[1m[92m  Downloaded[0m tinyvec v1.12.0
+[1m[92m  Downloaded[0m autocfg v1.5.1
+[1m[92m  Downloaded[0m xml5ever v0.39.0
+[1m[92m  Downloaded[0m crossbeam-utils v0.8.22
+[1m[92m  Downloaded[0m either v1.17.0
+[1m[92m  Downloaded[0m crc32fast v1.5.0
+[1m[92m  Downloaded[0m futures-channel v0.3.34
+[1m[92m  Downloaded[0m unicode-ident v1.0.24
+[1m[92m  Downloaded[0m bitflags v2.13.1
+[1m[92m  Downloaded[0m weezl v0.1.12
+[1m[92m  Downloaded[0m ahash v0.8.12
+[1m[92m  Downloaded[0m toml v1.1.4+spec-1.1.0
+[1m[92m  Downloaded[0m cfg-expr v0.20.8
+[1m[92m  Downloaded[0m bytemuck v1.25.2
+[1m[92m  Downloaded[0m crossbeam-epoch v0.9.20
+[1m[92m  Downloaded[0m cssparser v0.37.0
+[1m[92m  Downloaded[0m zerotrie v0.2.4
+[1m[92m  Downloaded[0m url v2.5.8
+[1m[92m  Downloaded[0m bytes v1.12.1
+[1m[92m  Downloaded[0m cairo-rs v0.22.0
+[1m[92m  Downloaded[0m derive_more v2.1.1
+[1m[92m  Downloaded[0m fallible_collections v0.4.9
+[1m[92m  Downloaded[0m flate2 v1.1.9
+[1m[92m  Downloaded[0m zune-jpeg v0.5.15
+[1m[92m  Downloaded[0m derive_more-impl v2.1.1
+[1m[92m  Downloaded[0m typenum v1.20.1
+[1m[92m  Downloaded[0m zerovec v0.11.6
+[1m[92m  Downloaded[0m wide v1.6.1
+[1m[92m  Downloaded[0m winnow v1.0.4
+[1m[92m  Downloaded[0m aho-corasick v1.1.5
+[1m[92m  Downloaded[0m syn v2.0.119
+[1m[92m  Downloaded[0m zerocopy v0.8.56
+[1m[92m  Downloaded[0m syn v3.0.3
+[1m[92m  Downloaded[0m num-complex v0.4.6
+[1m[92m  Downloaded[0m servo_arc v0.4.3
+[1m[92m  Downloaded[0m gobject-sys v0.22.6
+[1m[92m  Downloaded[0m encoding_rs v0.8.35
+[1m[92m  Downloaded[0m num-rational v0.4.2
+[1m[92m  Downloaded[0m markup5ever v0.39.0
+[1m[92m  Downloaded[0m phf_shared v0.14.0
+[1m[92m  Downloaded[0m pin-project-lite v0.2.17
+[1m[92m  Downloaded[0m locale_config v0.3.0
+[1m[92m  Downloaded[0m num-derive v0.4.2
+[1m[92m  Downloaded[0m rgb v0.8.53
+[1m[92m  Downloaded[0m pango-sys v0.22.0
+[1m[92m  Downloaded[0m phf v0.13.1
+[1m[92m  Downloaded[0m phf_macros v0.13.1
+[1m[92m  Downloaded[0m num-integer v0.1.46
+[1m[92m  Downloaded[0m gif v0.14.2
+[1m[92m  Downloaded[0m parking_lot_core v0.9.12
+[1m[92m  Downloaded[0m pkg-config v0.3.33
+[1m[92m  Downloaded[0m litemap v0.8.2
+[1m[92m  Downloaded[0m semver v1.0.28
+[1m[92m  Downloaded[0m lock_api v0.4.14
+[1m[92m  Downloaded[0m quote v1.0.47
+[1m[92m  Downloaded[0m parking_lot v0.12.5
+[1m[92m  Downloaded[0m once_cell v1.21.4
+[1m[92m  Downloaded[0m log v0.4.33
+[1m[92m  Downloaded[0m icu_provider v2.2.0
+[1m[92m  Downloaded[0m matrixmultiply v0.3.11
+[1m[92m  Downloaded[0m proc-macro2 v1.0.107
+[1m[92m  Downloaded[0m language-tags v0.3.2
+[1m[92m  Downloaded[0m num-traits v0.2.19
+[1m[92m  Downloaded[0m simba v0.10.2
+[1m[92m  Downloaded[0m icu_properties v2.2.0
+[1m[92m  Downloaded[0m pango v0.22.8
+[1m[92m  Downloaded[0m serde_core v1.0.229
+[1m[92m  Downloaded[0m gio-sys v0.22.8
+[1m[92m  Downloaded[0m glib-sys v0.22.8
+[1m[92m  Downloaded[0m selectors v0.40.0
+[1m[92m  Downloaded[0m miniz_oxide v0.8.9
+[1m[92m  Downloaded[0m image-webp v0.2.4
+[1m[92m  Downloaded[0m rayon-core v1.13.0
+[1m[92m  Downloaded[0m icu_normalizer_data v2.2.0
+[1m[92m  Downloaded[0m icu_collections v2.2.0
+[1m[92m  Downloaded[0m icu_normalizer v2.2.0
+[1m[92m  Downloaded[0m mp4parse v0.17.0
+[1m[92m  Downloaded[0m glib-macros v0.22.6
+[1m[92m  Downloaded[0m serde v1.0.229
+[1m[92m  Downloaded[0m hashbrown v0.13.2
+[1m[92m  Downloaded[0m icu_locale_core v2.2.0
+[1m[92m  Downloaded[0m memchr v2.8.3
+[1m[92m  Downloaded[0m num-bigint v0.4.8
+[1m[92m  Downloaded[0m safe_arch v1.1.0
+[1m[92m  Downloaded[0m indexmap v2.14.0
+[1m[92m  Downloaded[0m png v0.18.1
+[1m[92m  Downloaded[0m futures-util v0.3.34
+[1m[92m  Downloaded[0m hashbrown v0.17.1
+[1m[92m  Downloaded[0m itertools v0.15.0
+[1m[92m  Downloaded[0m idna v1.1.0
+[1m[92m  Downloaded[0m rayon v1.12.0
+[1m[92m  Downloaded[0m regex v1.13.1
+[1m[92m  Downloaded[0m icu_properties_data v2.2.0
+[1m[92m  Downloaded[0m moxcms v0.8.1
+[1m[92m  Downloaded[0m gio v0.22.8
+[1m[92m  Downloaded[0m image v0.25.10
+[1m[92m  Downloaded[0m glib v0.22.8
+[1m[92m  Downloaded[0m regex-syntax v0.8.11
+[1m[92m  Downloaded[0m nalgebra v0.35.0
+[1m[92m  Downloaded[0m regex-automata v0.4.18
+[1m[92m  Downloaded[0m glam v0.31.1
+[1m[92m  Downloaded[0m glam v0.30.10
+[1m[92m  Downloaded[0m glam v0.32.1
+[1m[92m  Downloaded[0m libc v0.2.189
+[1m[92m  Downloaded[0m glam v0.33.3
+[1m[92m  Downloaded[0m pxfm v0.1.30
+[1m[92m   Compiling[0m proc-macro2 v1.0.107
+[1m[92m   Compiling[0m quote v1.0.47
+[1m[92m   Compiling[0m unicode-ident v1.0.24
+[1m[92m   Compiling[0m target-lexicon v0.13.5
+[1m[92m   Compiling[0m winnow v1.0.4
+[1m[92m   Compiling[0m serde_spanned v1.1.1
+[1m[92m   Compiling[0m smallvec v1.15.2
+[1m[92m   Compiling[0m toml_datetime v1.1.1+spec-1.1.0
+[1m[92m   Compiling[0m heck v0.5.0
+[1m[92m   Compiling[0m pkg-config v0.3.33
+[1m[92m   Compiling[0m version-compare v0.2.1
+[1m[92m   Compiling[0m libc v0.2.189
+[1m[92m   Compiling[0m autocfg v1.5.1
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m siphasher v1.0.3
+[1m[92m   Compiling[0m stable_deref_trait v1.2.1
+[1m[92m   Compiling[0m fastrand v2.5.0
+[1m[92m   Compiling[0m memchr v2.8.3
+[1m[92m   Compiling[0m bitflags v2.13.1
+[1m[92m   Compiling[0m futures-core v0.3.34
+[1m[92m   Compiling[0m slab v0.4.12
+[1m[92m   Compiling[0m parking_lot_core v0.9.12
+[1m[92m   Compiling[0m pin-project-lite v0.2.17
+[1m[92m   Compiling[0m futures-task v0.3.34
+[1m[92m   Compiling[0m phf_shared v0.13.1
+[1m[92m   Compiling[0m version_check v0.9.5
+[1m[92m   Compiling[0m zerocopy v0.8.56
+[1m[92m   Compiling[0m litemap v0.8.2
+[1m[92m   Compiling[0m writeable v0.6.3
+[1m[92m   Compiling[0m new_debug_unreachable v1.0.6
+[1m[92m   Compiling[0m scopeguard v1.2.0
+[1m[92m   Compiling[0m futures-channel v0.3.34
+[1m[92m   Compiling[0m icu_properties_data v2.2.0
+[1m[92m   Compiling[0m lock_api v0.4.14
+[1m[92m   Compiling[0m precomputed-hash v0.1.1
+[1m[92m   Compiling[0m crossbeam-utils v0.8.22
+[1m[92m   Compiling[0m bytemuck v1.25.2
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m toml_parser v1.1.3+spec-1.1.0
+[1m[92m   Compiling[0m phf_generator v0.13.1
+[1m[92m   Compiling[0m icu_normalizer_data v2.2.0
+[1m[92m   Compiling[0m log v0.4.33
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.20
+[1m[92m   Compiling[0m ahash v0.8.12
+[1m[92m   Compiling[0m num-traits v0.2.19
+[1m[92m   Compiling[0m phf_codegen v0.13.1
+[1m[92m   Compiling[0m simd-adler32 v0.3.10
+[1m[92m   Compiling[0m once_cell v1.21.4
+[1m[92m   Compiling[0m crc32fast v1.5.0
+[1m[92m   Compiling[0m adler2 v2.0.1
+[1m[92m   Compiling[0m crossbeam-deque v0.8.7
+[1m[92m   Compiling[0m serde_core v1.0.229
+[1m[92m   Compiling[0m futures-io v0.3.34
+[1m[92m   Compiling[0m dtoa v1.0.11
+[1m[92m   Compiling[0m miniz_oxide v0.8.9
+[1m[92m   Compiling[0m aho-corasick v1.1.5
+[1m[92m   Compiling[0m safe_arch v1.1.0
+[1m[92m   Compiling[0m matrixmultiply v0.3.11
+[1m[92m   Compiling[0m rayon-core v1.13.0
+[1m[92m   Compiling[0m bytes v1.12.1
+[1m[92m   Compiling[0m dtoa-short v0.3.5
+[1m[92m   Compiling[0m cfg-expr v0.20.8
+[1m[92m   Compiling[0m static_assertions v1.1.0
+[1m[92m   Compiling[0m regex-syntax v0.8.11
+[1m[92m   Compiling[0m byte-slice-cast v1.2.3
+[1m[92m   Compiling[0m itoa v1.0.18
+[1m[92m   Compiling[0m toml v1.1.4+spec-1.1.0
+[1m[92m   Compiling[0m serde v1.0.229
+[1m[92m   Compiling[0m syn v2.0.119
+[1m[92m   Compiling[0m syn v3.0.3
+[1m[92m   Compiling[0m string_cache_codegen v0.6.1
+[1m[92m   Compiling[0m flate2 v1.1.9
+[1m[92m   Compiling[0m system-deps v7.0.8
+[1m[92m   Compiling[0m wide v1.6.1
+[1m[92m   Compiling[0m num-integer v0.1.46
+[1m[92m   Compiling[0m approx v0.5.1
+[1m[92m   Compiling[0m num-complex v0.4.6
+[1m[92m   Compiling[0m fdeflate v0.3.7
+[1m[92m   Compiling[0m web_atoms v0.2.6
+[1m[92m   Compiling[0m selectors v0.40.0
+[1m[92m   Compiling[0m parking_lot v0.12.5
+[1m[92m   Compiling[0m num-bigint v0.4.8
+[1m[92m   Compiling[0m tendril v0.5.1
+[1m[92m   Compiling[0m bitreader v0.3.11
+[1m[92m   Compiling[0m either v1.17.0
+[1m[92m   Compiling[0m string_cache v0.9.0
+[1m[92m   Compiling[0m color_quant v1.1.0
+[1m[92m   Compiling[0m rawpointer v0.2.1
+[1m[92m   Compiling[0m zune-core v0.5.3
+[1m[92m   Compiling[0m quick-error v2.0.1
+[1m[92m   Compiling[0m glib-sys v0.22.8
+[1m[92m   Compiling[0m gobject-sys v0.22.6
+[1m[92m   Compiling[0m gio-sys v0.22.8
+[1m[92m   Compiling[0m pango-sys v0.22.0
+[1m[92m   Compiling[0m cairo-sys-rs v0.22.0
+[1m[92m   Compiling[0m dav1d-sys v0.8.3
+[1m[92m   Compiling[0m pangocairo-sys v0.22.0
+[1m[92m   Compiling[0m gdk-pixbuf-sys v0.22.0
+[1m[92m   Compiling[0m percent-encoding v2.3.2
+[1m[92m   Compiling[0m weezl v0.1.12
+[1m[92m   Compiling[0m pxfm v0.1.30
+[1m[92m   Compiling[0m byteorder v1.5.0
+[1m[92m   Compiling[0m byteorder-lite v0.1.0
+[1m[92m   Compiling[0m form_urlencoded v1.2.2
+[1m[92m   Compiling[0m zune-jpeg v0.5.15
+[1m[92m   Compiling[0m regex-automata v0.4.18
+[1m[92m   Compiling[0m gif v0.14.2
+[1m[92m   Compiling[0m librsvg v2.63.0 (/var/tmp/hokuto/librsvg-01/build/rsvg)
+[1m[92m   Compiling[0m image-webp v0.2.4
+[1m[92m   Compiling[0m png v0.18.1
+[1m[92m   Compiling[0m num-rational v0.4.2
+[1m[92m   Compiling[0m phf_shared v0.14.0
+[1m[92m   Compiling[0m servo_arc v0.4.3
+[1m[92m   Compiling[0m synstructure v0.13.2
+[1m[92m   Compiling[0m lazy_static v1.5.0
+[1m[92m   Compiling[0m tinyvec_macros v0.1.1
+[1m[92m   Compiling[0m typenum v1.20.1
+[1m[92m   Compiling[0m regex v1.13.1
+[1m[92m   Compiling[0m moxcms v0.8.1
+[1m[92m   Compiling[0m rustc-hash v2.1.3
+[1m[92m   Compiling[0m string_cache v0.10.0
+[1m[92m   Compiling[0m displaydoc v0.2.7
+[1m[92m   Compiling[0m futures-macro v0.3.34
+[1m[92m   Compiling[0m tinyvec v1.12.0
+[1m[92m   Compiling[0m rayon v1.12.0
+[1m[92m   Compiling[0m hashbrown v0.13.2
+[1m[92m   Compiling[0m itertools v0.15.0
+[1m[92m   Compiling[0m float-cmp v0.10.0
+[1m[92m   Compiling[0m rgb v0.8.53
+[1m[92m   Compiling[0m encoding_rs v0.8.35
+[1m[92m   Compiling[0m mutants v0.0.4
+[1m[92m   Compiling[0m locale_config v0.3.0
+[1m[92m   Compiling[0m futures-util v0.3.34
+[1m[92m   Compiling[0m language-tags v0.3.2
+[1m[92m   Compiling[0m fallible_collections v0.4.9
+[1m[92m   Compiling[0m rctree v0.6.0
+[1m[92m   Compiling[0m librsvg-c v2.63.0 (/var/tmp/hokuto/librsvg-01/build/librsvg-c)
+[1m[92m   Compiling[0m cast v0.3.0
+[1m[92m   Compiling[0m mp4parse v0.17.0
+[1m[92m   Compiling[0m data-url v0.3.2
+[1m[92m   Compiling[0m zerofrom-derive v0.1.7
+[1m[92m   Compiling[0m yoke-derive v0.8.2
+[1m[92m   Compiling[0m zerovec-derive v0.11.3
+[1m[92m   Compiling[0m phf_macros v0.13.1
+[1m[92m   Compiling[0m glib-macros v0.22.6
+[1m[92m   Compiling[0m cssparser-macros v0.7.0
+[1m[92m   Compiling[0m num-derive v0.4.2
+[1m[92m   Compiling[0m derive_more-impl v2.1.1
+[1m[92m   Compiling[0m nalgebra-macros v0.3.0
+[1m[92m   Compiling[0m zerofrom v0.1.8
+[1m[92m   Compiling[0m yoke v0.8.3
+[1m[92m   Compiling[0m phf v0.13.1
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m simba v0.10.2
+[1m[92m   Compiling[0m futures-executor v0.3.34
+[1m[92m   Compiling[0m av-data v0.4.4
+[1m[92m   Compiling[0m cssparser v0.37.0
+[1m[92m   Compiling[0m derive_more v2.1.1
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m potential_utf v0.1.5
+[1m[92m   Compiling[0m markup5ever v0.39.0
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m dav1d v0.11.1
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m cssparser-color v0.5.0
+[1m[92m   Compiling[0m image v0.25.10
+[1m[92m   Compiling[0m xml5ever v0.39.0
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m glib v0.22.8
+[1m[92m   Compiling[0m icu_normalizer v2.2.0
+[1m[92m   Compiling[0m icu_properties v2.2.0
+[1m[92m   Compiling[0m idna_adapter v1.2.2
+[1m[92m   Compiling[0m idna v1.1.0
+[1m[92m   Compiling[0m url v2.5.8
+[1m[92m   Compiling[0m nalgebra v0.35.0
+[1m[92m   Compiling[0m gio v0.22.8
+[1m[92m   Compiling[0m cairo-rs v0.22.0
+[1m[92m   Compiling[0m pango v0.22.8
+[1m[92m   Compiling[0m gdk-pixbuf v0.22.0
+[1m[92m   Compiling[0m pangocairo v0.22.8
+[1m[92mnote[0m[1m: link against the following native artifacts when linking against this static library. The order and any duplication can be significant on some platforms[0m
+
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 47.69s
+[1m[92m    Building[0m pkg-config files
+[3/12] Compiling C object librsvg-c/tests-c/api.p/api.c.o[K[4/12] Generating rsvg/librsvg-2.0.ver with a custom command (wrapped by meson to capture output)[K[5/12] Generating rsvg/librsvg-2.0.ver with a custom command (wrapped by meson to capture output)[K[5/12] Linking target rsvg/librsvg-2.so.2.63.0[K[6/12] Linking target rsvg/librsvg-2.so.2.63.0[K[6/12] Generating symbol file rsvg/librsvg-2.so.2.63.0.p/librsvg-2.so.2.63.0.symbols[K[6/12] Generating rsvg/Rsvg-2.0.gir with a custom command (wrapped by meson to set env)[K[6/12] Generating rsvg_convert/rsvg-convert with a custom command (wrapped by meson to set env)[K
+command: ['/usr/bin/cargo', 'build', '--locked', '--bin', 'rsvg-convert', '--manifest-path', '/var/tmp/hokuto/librsvg-01/build/Cargo.toml', '--target-dir', '/var/tmp/hokuto/librsvg-01/build/build/target', '--release', '--features', 'avif', '-p', 'rsvg_convert'], env: {}
+[1m[33mwarning[0m: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /var/tmp/hokuto/librsvg-01/build/fuzz/Cargo.toml
+workspace: /var/tmp/hokuto/librsvg-01/build/Cargo.toml
+[1m[92m Downloading[0m crates ...
+[1m[92m  Downloaded[0m anstyle-query v1.1.5
+[1m[92m  Downloaded[0m gio-unix v0.22.8
+[1m[92m  Downloaded[0m anstream v1.0.0
+[1m[92m  Downloaded[0m utf8parse v0.2.2
+[1m[92m  Downloaded[0m colorchoice v1.0.5
+[1m[92m  Downloaded[0m dlib v0.5.3
+[1m[92m  Downloaded[0m strsim v0.11.1
+[1m[92m  Downloaded[0m anstyle-parse v1.0.0
+[1m[92m  Downloaded[0m clap_builder v4.6.6
+[1m[92m  Downloaded[0m clap_derive v4.6.4
+[1m[92m  Downloaded[0m gio-unix-sys v0.22.0
+[1m[92m  Downloaded[0m is_terminal_polyfill v1.70.2
+[1m[92m  Downloaded[0m libloading v0.8.9
+[1m[92m  Downloaded[0m anstyle v1.0.14
+[1m[92m  Downloaded[0m clap_lex v1.1.0
+[1m[92m  Downloaded[0m yeslogic-fontconfig-sys v6.0.1
+[1m[92m  Downloaded[0m iana-time-zone v0.1.65
+[1m[92m  Downloaded[0m clap v4.6.6
+[1m[92m  Downloaded[0m clap_complete v4.6.9
+[1m[92m  Downloaded[0m chrono v0.4.45
+[1m[92m   Compiling[0m proc-macro2 v1.0.107
+[1m[92m   Compiling[0m unicode-ident v1.0.24
+[1m[92m   Compiling[0m quote v1.0.47
+[1m[92m   Compiling[0m heck v0.5.0
+[1m[92m   Compiling[0m target-lexicon v0.13.5
+[1m[92m   Compiling[0m winnow v1.0.4
+[1m[92m   Compiling[0m toml_datetime v1.1.1+spec-1.1.0
+[1m[92m   Compiling[0m serde_spanned v1.1.1
+[1m[92m   Compiling[0m smallvec v1.15.2
+[1m[92m   Compiling[0m pkg-config v0.3.33
+[1m[92m   Compiling[0m version-compare v0.2.1
+[1m[92m   Compiling[0m libc v0.2.189
+[1m[92m   Compiling[0m autocfg v1.5.1
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m siphasher v1.0.3
+[1m[92m   Compiling[0m stable_deref_trait v1.2.1
+[1m[92m   Compiling[0m fastrand v2.5.0
+[1m[92m   Compiling[0m memchr v2.8.3
+[1m[92m   Compiling[0m bitflags v2.13.1
+[1m[92m   Compiling[0m futures-core v0.3.34
+[1m[92m   Compiling[0m slab v0.4.12
+[1m[92m   Compiling[0m pin-project-lite v0.2.17
+[1m[92m   Compiling[0m parking_lot_core v0.9.12
+[1m[92m   Compiling[0m futures-task v0.3.34
+[1m[92m   Compiling[0m phf_shared v0.13.1
+[1m[92m   Compiling[0m version_check v0.9.5
+[1m[92m   Compiling[0m zerocopy v0.8.56
+[1m[92m   Compiling[0m litemap v0.8.2
+[1m[92m   Compiling[0m scopeguard v1.2.0
+[1m[92m   Compiling[0m writeable v0.6.3
+[1m[92m   Compiling[0m new_debug_unreachable v1.0.6
+[1m[92m   Compiling[0m futures-channel v0.3.34
+[1m[92m   Compiling[0m lock_api v0.4.14
+[1m[92m   Compiling[0m bytemuck v1.25.2
+[1m[92m   Compiling[0m crossbeam-utils v0.8.22
+[1m[92m   Compiling[0m precomputed-hash v0.1.1
+[1m[92m   Compiling[0m icu_normalizer_data v2.2.0
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m toml_parser v1.1.3+spec-1.1.0
+[1m[92m   Compiling[0m phf_generator v0.13.1
+[1m[92m   Compiling[0m icu_properties_data v2.2.0
+[1m[92m   Compiling[0m num-traits v0.2.19
+[1m[92m   Compiling[0m simd-adler32 v0.3.10
+[1m[92m   Compiling[0m once_cell v1.21.4
+[1m[92m   Compiling[0m log v0.4.33
+[1m[92m   Compiling[0m crc32fast v1.5.0
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.20
+[1m[92m   Compiling[0m phf_codegen v0.13.1
+[1m[92m   Compiling[0m ahash v0.8.12
+[1m[92m   Compiling[0m futures-io v0.3.34
+[1m[92m   Compiling[0m serde_core v1.0.229
+[1m[92m   Compiling[0m adler2 v2.0.1
+[1m[92m   Compiling[0m crossbeam-deque v0.8.7
+[1m[92m   Compiling[0m dtoa v1.0.11
+[1m[92m   Compiling[0m miniz_oxide v0.8.9
+[1m[92m   Compiling[0m safe_arch v1.1.0
+[1m[92m   Compiling[0m aho-corasick v1.1.5
+[1m[92m   Compiling[0m matrixmultiply v0.3.11
+[1m[92m   Compiling[0m regex-syntax v0.8.11
+[1m[92m   Compiling[0m serde v1.0.229
+[1m[92m   Compiling[0m cfg-expr v0.20.8
+[1m[92m   Compiling[0m dtoa-short v0.3.5
+[1m[92m   Compiling[0m toml v1.1.4+spec-1.1.0
+[1m[92m   Compiling[0m byte-slice-cast v1.2.3
+[1m[92m   Compiling[0m rayon-core v1.13.0
+[1m[92m   Compiling[0m utf8parse v0.2.2
+[1m[92m   Compiling[0m syn v2.0.119
+[1m[92m   Compiling[0m syn v3.0.3
+[1m[92m   Compiling[0m string_cache_codegen v0.6.1
+[1m[92m   Compiling[0m itoa v1.0.18
+[1m[92m   Compiling[0m bytes v1.12.1
+[1m[92m   Compiling[0m static_assertions v1.1.0
+[1m[92m   Compiling[0m anstyle-parse v1.0.0
+[1m[92m   Compiling[0m system-deps v7.0.8
+[1m[92m   Compiling[0m flate2 v1.1.9
+[1m[92m   Compiling[0m web_atoms v0.2.6
+[1m[92m   Compiling[0m selectors v0.40.0
+[1m[92m   Compiling[0m fdeflate v0.3.7
+[1m[92m   Compiling[0m num-integer v0.1.46
+[1m[92m   Compiling[0m approx v0.5.1
+[1m[92m   Compiling[0m num-complex v0.4.6
+[1m[92m   Compiling[0m tendril v0.5.1
+[1m[92m   Compiling[0m wide v1.6.1
+[1m[92m   Compiling[0m parking_lot v0.12.5
+[1m[92m   Compiling[0m num-bigint v0.4.8
+[1m[92m   Compiling[0m bitreader v0.3.11
+[1m[92m   Compiling[0m quick-error v2.0.1
+[1m[92m   Compiling[0m rawpointer v0.2.1
+[1m[92m   Compiling[0m weezl v0.1.12
+[1m[92m   Compiling[0m string_cache v0.9.0
+[1m[92m   Compiling[0m percent-encoding v2.3.2
+[1m[92m   Compiling[0m either v1.17.0
+[1m[92m   Compiling[0m glib-sys v0.22.8
+[1m[92m   Compiling[0m gobject-sys v0.22.6
+[1m[92m   Compiling[0m gio-sys v0.22.8
+[1m[92m   Compiling[0m pango-sys v0.22.0
+[1m[92m   Compiling[0m cairo-sys-rs v0.22.0
+[1m[92m   Compiling[0m dav1d-sys v0.8.3
+[1m[92m   Compiling[0m pangocairo-sys v0.22.0
+[1m[92m   Compiling[0m byteorder-lite v0.1.0
+[1m[92m   Compiling[0m anstyle v1.0.14
+[1m[92m   Compiling[0m color_quant v1.1.0
+[1m[92m   Compiling[0m byteorder v1.5.0
+[1m[92m   Compiling[0m zune-core v0.5.3
+[1m[92m   Compiling[0m anstyle-query v1.1.5
+[1m[92m   Compiling[0m colorchoice v1.0.5
+[1m[92m   Compiling[0m regex-automata v0.4.18
+[1m[92m   Compiling[0m pxfm v0.1.30
+[1m[92m   Compiling[0m is_terminal_polyfill v1.70.2
+[1m[92m   Compiling[0m anstream v1.0.0
+[1m[92m   Compiling[0m zune-jpeg v0.5.15
+[1m[92m   Compiling[0m gif v0.14.2
+[1m[92m   Compiling[0m image-webp v0.2.4
+[1m[92m   Compiling[0m num-rational v0.4.2
+[1m[92m   Compiling[0m form_urlencoded v1.2.2
+[1m[92m   Compiling[0m gio-unix-sys v0.22.0
+[1m[92m   Compiling[0m librsvg v2.63.0 (/var/tmp/hokuto/librsvg-01/build/rsvg)
+[1m[92m   Compiling[0m png v0.18.1
+[1m[92m   Compiling[0m phf_shared v0.14.0
+[1m[92m   Compiling[0m servo_arc v0.4.3
+[1m[92m   Compiling[0m rustc-hash v2.1.3
+[1m[92m   Compiling[0m lazy_static v1.5.0
+[1m[92m   Compiling[0m typenum v1.20.1
+[1m[92m   Compiling[0m synstructure v0.13.2
+[1m[92m   Compiling[0m tinyvec_macros v0.1.1
+[1m[92m   Compiling[0m hashbrown v0.13.2
+[1m[92m   Compiling[0m strsim v0.11.1
+[1m[92m   Compiling[0m clap_lex v1.1.0
+[1m[92m   Compiling[0m displaydoc v0.2.7
+[1m[92m   Compiling[0m futures-macro v0.3.34
+[1m[92m   Compiling[0m regex v1.13.1
+[1m[92m   Compiling[0m clap_builder v4.6.6
+[1m[92m   Compiling[0m fallible_collections v0.4.9
+[1m[92m   Compiling[0m mp4parse v0.17.0
+[1m[92m   Compiling[0m moxcms v0.8.1
+[1m[92m   Compiling[0m clap_derive v4.6.4
+[1m[92m   Compiling[0m tinyvec v1.12.0
+[1m[92m   Compiling[0m rayon v1.12.0
+[1m[92m   Compiling[0m locale_config v0.3.0
+[1m[92m   Compiling[0m string_cache v0.10.0
+[1m[92m   Compiling[0m futures-util v0.3.34
+[1m[92m   Compiling[0m itertools v0.15.0
+[1m[92m   Compiling[0m float-cmp v0.10.0
+[1m[92m   Compiling[0m rgb v0.8.53
+[1m[92m   Compiling[0m zerofrom-derive v0.1.7
+[1m[92m   Compiling[0m yoke-derive v0.8.2
+[1m[92m   Compiling[0m zerovec-derive v0.11.3
+[1m[92m   Compiling[0m phf_macros v0.13.1
+[1m[92m   Compiling[0m glib-macros v0.22.6
+[1m[92m   Compiling[0m num-derive v0.4.2
+[1m[92m   Compiling[0m cssparser-macros v0.7.0
+[1m[92m   Compiling[0m derive_more-impl v2.1.1
+[1m[92m   Compiling[0m nalgebra-macros v0.3.0
+[1m[92m   Compiling[0m librsvg-c v2.63.0 (/var/tmp/hokuto/librsvg-01/build/librsvg-c)
+[1m[92m   Compiling[0m encoding_rs v0.8.35
+[1m[92m   Compiling[0m language-tags v0.3.2
+[1m[92m   Compiling[0m phf v0.13.1
+[1m[92m   Compiling[0m mutants v0.0.4
+[1m[92m   Compiling[0m futures-executor v0.3.34
+[1m[92m   Compiling[0m zerofrom v0.1.8
+[1m[92m   Compiling[0m cssparser v0.37.0
+[1m[92m   Compiling[0m yoke v0.8.3
+[1m[92m   Compiling[0m rctree v0.6.0
+[1m[92m   Compiling[0m data-url v0.3.2
+[1m[92m   Compiling[0m cast v0.3.0
+[1m[92m   Compiling[0m clap v4.6.6
+[1m[92m   Compiling[0m av-data v0.4.4
+[1m[92m   Compiling[0m rsvg_convert v2.63.0 (/var/tmp/hokuto/librsvg-01/build/rsvg_convert)
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m iana-time-zone v0.1.65
+[1m[92m   Compiling[0m derive_more v2.1.1
+[1m[92m   Compiling[0m dav1d v0.11.1
+[1m[92m   Compiling[0m chrono v0.4.45
+[1m[92m   Compiling[0m clap_complete v4.6.9
+[1m[92m   Compiling[0m markup5ever v0.39.0
+[1m[92m   Compiling[0m cssparser-color v0.5.0
+[1m[92m   Compiling[0m xml5ever v0.39.0
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m potential_utf v0.1.5
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m simba v0.10.2
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m image v0.25.10
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m glib v0.22.8
+[1m[92m   Compiling[0m icu_properties v2.2.0
+[1m[92m   Compiling[0m icu_normalizer v2.2.0
+[1m[92m   Compiling[0m idna_adapter v1.2.2
+[1m[92m   Compiling[0m idna v1.1.0
+[1m[92m   Compiling[0m url v2.5.8
+[1m[92m   Compiling[0m nalgebra v0.35.0
+[1m[92m   Compiling[0m gio v0.22.8
+[1m[92m   Compiling[0m cairo-rs v0.22.0
+[1m[92m   Compiling[0m pango v0.22.8
+[1m[92m   Compiling[0m gio-unix v0.22.8
+[1m[92m   Compiling[0m pangocairo v0.22.8
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 44.77s
+[11/12] Generating rsvg/Rsvg-2.0.typelib with a custom command (wrapped by meson to set env)[K
+ninja: Entering directory `/var/tmp/hokuto/librsvg-01/build/build'
+ninja: no work to do.
+Installing rsvg/librsvg-2.so.2.63.0 to /var/tmp/hokuto/librsvg-01/output/usr/lib
+Installing rsvg/Rsvg-2.0.gir to /var/tmp/hokuto/librsvg-01/output/usr/share/gir-1.0
+Installing rsvg/Rsvg-2.0.typelib to /var/tmp/hokuto/librsvg-01/output/usr/lib/girepository-1.0
+Installing rsvg_convert/rsvg-convert to /var/tmp/hokuto/librsvg-01/output/usr/bin
+Installing librsvg-2.0.vapi to /var/tmp/hokuto/librsvg-01/output/usr/share/vala/vapi
+Installing /var/tmp/hokuto/librsvg-01/build/include/librsvg/rsvg.h to /var/tmp/hokuto/librsvg-01/output/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/include/librsvg/rsvg-cairo.h to /var/tmp/hokuto/librsvg-01/output/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/include/librsvg/rsvg-pixbuf.h to /var/tmp/hokuto/librsvg-01/output/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/build/include/librsvg/rsvg-features.h to /var/tmp/hokuto/librsvg-01/output/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/build/include/librsvg/rsvg-version.h to /var/tmp/hokuto/librsvg-01/output/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/build/meson-private/librsvg-2.0.pc to /var/tmp/hokuto/librsvg-01/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/librsvg-01/build/build/meson-private/librsvg-2.0.deps to /var/tmp/hokuto/librsvg-01/output/usr/share/vala/vapi
+Installing symlink pointing to librsvg-2.so.2.63.0 to /var/tmp/hokuto/librsvg-01/output/usr/lib/librsvg-2.so.2
+Installing symlink pointing to librsvg-2.so.2 to /var/tmp/hokuto/librsvg-01/output/usr/lib/librsvg-2.so
++ exec meson setup --prefix /usr --libexecdir lib32 --sbindir bin --buildtype plain --wrap-mode nodownload --cross-file lib32 -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build -D avif=disabled -D docs=disabled -D introspection=disabled -D pixbuf-loader=enabled -D triplet=i686-unknown-linux-gnu -D vala=disabled
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/librsvg-01/build[0m
+Build dir: [1m/var/tmp/hokuto/librsvg-01/build/build[0m
+Build type: [1mcross build[0m
+Project name: [1mlibrsvg[0m
+Project version: [1m2.63.0[0m
+C compiler for the host machine: [1mgcc -m32[0m (gcc 16.2.0 "gcc (GCC) 16.2.0")
+C linker for the host machine: [1mgcc -m32[0m ld.bfd 2.46.1
+C compiler for the build machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the build machine: [1mcc[0m ld.bfd 2.46.1
+Build machine cpu family: [1mx86_64[0m
+Build machine cpu: [1mx86_64[0m
+Host machine cpu family: [1mx86[0m
+Host machine cpu: [1mi686[0m
+Target machine cpu family: [1mx86[0m
+Target machine cpu: [1mi686[0m
+Program [1mcargo[0m found: [1;32mYES[0m [36m1.98.1[0m [36m1.98.1[0m (/usr/bin/cargo)
+Program [1mmeson/cargo_wrapper.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/librsvg-01/build/meson/cargo_wrapper.py)
+Program [1mcargo-cbuild[0m found: [1;32mYES[0m [36m0.10.25[0m [36m0.10.25[0m (/usr/bin/cargo-cbuild)
+Program [1mrustc[0m found: [1;32mYES[0m [36m1.98.1[0m [36m1.98.1[0m (/usr/bin/rustc)
+Program [1mmeson/makedef.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/librsvg-01/build/meson/makedef.py)
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/i686-pc-linux-gnu-pkg-config)[0m [1;34m3.0.7[0m
+Run-time dependency [1mcairo[0m found: [1;32mYES[0m [36m1.18.4[0m
+Run-time dependency [1mcairo-gobject[0m found: [1;32mYES[0m [36m1.18.4[0m
+Run-time dependency [1mcairo-png[0m found: [1;32mYES[0m [36m1.18.4[0m
+Dependency [1mdav1d[0m for [1mhost[0m machine skipped: feature [1mavif[0m disabled
+Run-time dependency [1mfreetype2[0m found: [1;32mYES[0m [36m26.6.20[0m
+Run-time dependency [1mgdk-pixbuf-2.0[0m found: [1;32mYES[0m [36m2.44.7[0m
+Run-time dependency [1mgio-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mglib-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mharfbuzz[0m found: [1;32mYES[0m [36m14.4.0[0m
+Run-time dependency [1mlibxml-2.0[0m found: [1;32mYES[0m [36m2.15.4[0m
+Run-time dependency [1mpango[0m found: [1;32mYES[0m [36m1.58.2[0m
+Run-time dependency [1mpangocairo[0m found: [1;32mYES[0m [36m1.58.2[0m
+Run-time dependency [1mpangoft2[0m found: [1;32mYES[0m [36m1.58.2[0m
+Run-time dependency [1mgmodule-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Program [1mrst2man rst2man.py[0m skipped: feature [1mdocs[0m disabled
+Program [1mgi-docgen[0m found: [1;31mNO[0m
+Dependency [1mgobject-introspection-1.0[0m for [1mhost[0m machine skipped: feature [1mintrospection[0m disabled
+Dependency [1mvapigen[0m for [1mhost[0m machine skipped: feature [1mvala[0m disabled
+Run-time dependency [1mappleframeworks[0m found: [1;31mNO[0m  (tried framework)
+Library [1mm[0m found: [1;32mYES[0m
+Fetching value of define "[1m_MSC_VER[0m" : (undefined) 
+Program [1mmeson/query-rustc.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/librsvg-01/build/meson/query-rustc.py)
+Library [1mutil[0m found: [1;32mYES[0m
+Library [1mgcc_s[0m found: [1;32mYES[0m
+Library [1mrt[0m found: [1;32mYES[0m
+Library [1mc[0m found: [1;32mYES[0m
+Library [1mpthread[0m found: [1;32mYES[0m
+Library [1mdl[0m found: [1;32mYES[0m
+Library [1mm[0m found: [1;32mYES[0m
+Program [1mi686-pc-linux-gnu-pkg-config[0m found: [1;32mYES[0m
+Checking if define "[1m__MINGW32__[0m" exists: [1;31mNO[0m 
+Configuring [1mrsvg-features.h[0m using configuration
+Configuring [1mrsvg-version.h[0m using configuration
+Program [1mllvm-nm[0m found: [1;32mYES[0m (/usr/bin/llvm-nm)
+Configuring [1mlibrsvg-2.0.def[0m with command
+Compiler for C supports link arguments -Wl,-dead_strip: [1;31mNO[0m 
+Compiler for C supports link arguments -Wl,--gc-sections: [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: [1;32mYES[0m 
+Compiler for C supports function attribute unused: [1;32mYES[0m 
+Configuring [1m_rsvg_dummy.c[0m with command
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/i686-pc-linux-gnu-pkg-config)[0m [1;34m3.0.7[0m
+Configuring [1mlibrsvg.thumbnailer[0m using configuration
+Program [1m/usr/bin/gdk-pixbuf-query-loaders[0m found: [1;32mYES[0m (/usr/bin/gdk-pixbuf-query-loaders)
+Program [1mmeson_install.py[0m found: [1;32mYES[0m (/usr/bin/python /var/tmp/hokuto/librsvg-01/build/gdk-pixbuf-loader/meson_install.py)
+Build targets in project: [1m6[0m
+
+librsvg [36m2.63.0[0m
+
+  [1mUser defined options[0m
+    Cross files       : lib32
+    avif              : disabled
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    docs              : disabled
+    introspection     : disabled
+    libexecdir        : lib32
+    pixbuf-loader     : enabled
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    triplet           : i686-unknown-linux-gnu
+    vala              : disabled
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/librsvg-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/librsvg-01/build/build'
+[0/10] Generating rsvg/librsvg-2 with a custom command (wrapped by meson to set env)[K
+command: ['/usr/bin/cargo', 'cbuild', '--locked', '--prefix', '/usr', '--libdir', '/usr/lib32', '--library-type', 'staticlib', '--manifest-path', '/var/tmp/hokuto/librsvg-01/build/Cargo.toml', '--target-dir', '/var/tmp/hokuto/librsvg-01/build/build/target', '--release', '--target', 'i686-unknown-linux-gnu', '--features', 'pixbuf', '-p', 'librsvg-c'], env: {}
+[1m[33mwarning[0m: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /var/tmp/hokuto/librsvg-01/build/fuzz/Cargo.toml
+workspace: /var/tmp/hokuto/librsvg-01/build/Cargo.toml
+[1m[92m   Compiling[0m proc-macro2 v1.0.107
+[1m[92m   Compiling[0m quote v1.0.47
+[1m[92m   Compiling[0m unicode-ident v1.0.24
+[1m[92m   Compiling[0m target-lexicon v0.13.5
+[1m[92m   Compiling[0m winnow v1.0.4
+[1m[92m   Compiling[0m smallvec v1.15.2
+[1m[92m   Compiling[0m heck v0.5.0
+[1m[92m   Compiling[0m toml_datetime v1.1.1+spec-1.1.0
+[1m[92m   Compiling[0m serde_spanned v1.1.1
+[1m[92m   Compiling[0m version-compare v0.2.1
+[1m[92m   Compiling[0m pkg-config v0.3.33
+[1m[92m   Compiling[0m libc v0.2.189
+[1m[92m   Compiling[0m siphasher v1.0.3
+[1m[92m   Compiling[0m autocfg v1.5.1
+[1m[92m   Compiling[0m stable_deref_trait v1.2.1
+[1m[92m   Compiling[0m fastrand v2.5.0
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m memchr v2.8.3
+[1m[92m   Compiling[0m futures-core v0.3.34
+[1m[92m   Compiling[0m bitflags v2.13.1
+[1m[92m   Compiling[0m futures-task v0.3.34
+[1m[92m   Compiling[0m slab v0.4.12
+[1m[92m   Compiling[0m pin-project-lite v0.2.17
+[1m[92m   Compiling[0m phf_shared v0.13.1
+[1m[92m   Compiling[0m parking_lot_core v0.9.12
+[1m[92m   Compiling[0m writeable v0.6.3
+[1m[92m   Compiling[0m litemap v0.8.2
+[1m[92m   Compiling[0m new_debug_unreachable v1.0.6
+[1m[92m   Compiling[0m scopeguard v1.2.0
+[1m[92m   Compiling[0m futures-channel v0.3.34
+[1m[92m   Compiling[0m precomputed-hash v0.1.1
+[1m[92m   Compiling[0m bytemuck v1.25.2
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m crossbeam-utils v0.8.22
+[1m[92m   Compiling[0m icu_properties_data v2.2.0
+[1m[92m   Compiling[0m icu_normalizer_data v2.2.0
+[1m[92m   Compiling[0m lock_api v0.4.14
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.20
+[1m[92m   Compiling[0m toml_parser v1.1.3+spec-1.1.0
+[1m[92m   Compiling[0m simd-adler32 v0.3.10
+[1m[92m   Compiling[0m crc32fast v1.5.0
+[1m[92m   Compiling[0m num-traits v0.2.19
+[1m[92m   Compiling[0m futures-io v0.3.34
+[1m[92m   Compiling[0m dtoa v1.0.11
+[1m[92m   Compiling[0m phf_generator v0.13.1
+[1m[92m   Compiling[0m crossbeam-deque v0.8.7
+[1m[92m   Compiling[0m adler2 v2.0.1
+[1m[92m   Compiling[0m serde_core v1.0.229
+[1m[92m   Compiling[0m safe_arch v1.1.0
+[1m[92m   Compiling[0m phf_codegen v0.13.1
+[1m[92m   Compiling[0m dtoa-short v0.3.5
+[1m[92m   Compiling[0m miniz_oxide v0.8.9
+[1m[92m   Compiling[0m aho-corasick v1.1.5
+[1m[92m   Compiling[0m matrixmultiply v0.3.11
+[1m[92m   Compiling[0m log v0.4.33
+[1m[92m   Compiling[0m serde v1.0.229
+[1m[92m   Compiling[0m itoa v1.0.18
+[1m[92m   Compiling[0m regex-syntax v0.8.11
+[1m[92m   Compiling[0m rayon-core v1.13.0
+[1m[92m   Compiling[0m selectors v0.40.0
+[1m[92m   Compiling[0m cfg-expr v0.20.8
+[1m[92m   Compiling[0m fdeflate v0.3.7
+[1m[92m   Compiling[0m toml v1.1.4+spec-1.1.0
+[1m[92m   Compiling[0m tendril v0.5.1
+[1m[92m   Compiling[0m rawpointer v0.2.1
+[1m[92m   Compiling[0m pxfm v0.1.30
+[1m[92m   Compiling[0m color_quant v1.1.0
+[1m[92m   Compiling[0m syn v2.0.119
+[1m[92m   Compiling[0m syn v3.0.3
+[1m[92m   Compiling[0m string_cache_codegen v0.6.1
+[1m[92m   Compiling[0m system-deps v7.0.8
+[1m[92m   Compiling[0m flate2 v1.1.9
+[1m[92m   Compiling[0m zune-core v0.5.3
+[1m[92m   Compiling[0m num-integer v0.1.46
+[1m[92m   Compiling[0m web_atoms v0.2.6
+[1m[92m   Compiling[0m num-complex v0.4.6
+[1m[92m   Compiling[0m approx v0.5.1
+[1m[92m   Compiling[0m wide v1.6.1
+[1m[92m   Compiling[0m quick-error v2.0.1
+[1m[92m   Compiling[0m either v1.17.0
+[1m[92m   Compiling[0m byteorder-lite v0.1.0
+[1m[92m   Compiling[0m parking_lot v0.12.5
+[1m[92m   Compiling[0m weezl v0.1.12
+[1m[92m   Compiling[0m percent-encoding v2.3.2
+[1m[92m   Compiling[0m num-rational v0.4.2
+[1m[92m   Compiling[0m image-webp v0.2.4
+[1m[92m   Compiling[0m form_urlencoded v1.2.2
+[1m[92m   Compiling[0m string_cache v0.9.0
+[1m[92m   Compiling[0m png v0.18.1
+[1m[92m   Compiling[0m glib-sys v0.22.8
+[1m[92m   Compiling[0m gobject-sys v0.22.6
+[1m[92m   Compiling[0m gio-sys v0.22.8
+[1m[92m   Compiling[0m cairo-sys-rs v0.22.0
+[1m[92m   Compiling[0m pango-sys v0.22.0
+[1m[92m   Compiling[0m pangocairo-sys v0.22.0
+[1m[92m   Compiling[0m gdk-pixbuf-sys v0.22.0
+[1m[92m   Compiling[0m gif v0.14.2
+[1m[92m   Compiling[0m librsvg v2.63.0 (/var/tmp/hokuto/librsvg-01/build/rsvg)
+[1m[92m   Compiling[0m zune-jpeg v0.5.15
+[1m[92m   Compiling[0m regex-automata v0.4.18
+[1m[92m   Compiling[0m phf_shared v0.14.0
+[1m[92m   Compiling[0m servo_arc v0.4.3
+[1m[92m   Compiling[0m moxcms v0.8.1
+[1m[92m   Compiling[0m tinyvec_macros v0.1.1
+[1m[92m   Compiling[0m rustc-hash v2.1.3
+[1m[92m   Compiling[0m typenum v1.20.1
+[1m[92m   Compiling[0m lazy_static v1.5.0
+[1m[92m   Compiling[0m tinyvec v1.12.0
+[1m[92m   Compiling[0m rayon v1.12.0
+[1m[92m   Compiling[0m string_cache v0.10.0
+[1m[92m   Compiling[0m itertools v0.15.0
+[1m[92m   Compiling[0m float-cmp v0.10.0
+[1m[92m   Compiling[0m rgb v0.8.53
+[1m[92m   Compiling[0m encoding_rs v0.8.35
+[1m[92m   Compiling[0m rctree v0.6.0
+[1m[92m   Compiling[0m language-tags v0.3.2
+[1m[92m   Compiling[0m mutants v0.0.4
+[1m[92m   Compiling[0m synstructure v0.13.2
+[1m[92m   Compiling[0m cast v0.3.0
+[1m[92m   Compiling[0m data-url v0.3.2
+[1m[92m   Compiling[0m displaydoc v0.2.7
+[1m[92m   Compiling[0m futures-macro v0.3.34
+[1m[92m   Compiling[0m regex v1.13.1
+[1m[92m   Compiling[0m futures-util v0.3.34
+[1m[92m   Compiling[0m librsvg-c v2.63.0 (/var/tmp/hokuto/librsvg-01/build/librsvg-c)
+[1m[92m   Compiling[0m zerofrom-derive v0.1.7
+[1m[92m   Compiling[0m yoke-derive v0.8.2
+[1m[92m   Compiling[0m zerovec-derive v0.11.3
+[1m[92m   Compiling[0m phf_macros v0.13.1
+[1m[92m   Compiling[0m glib-macros v0.22.6
+[1m[92m   Compiling[0m cssparser-macros v0.7.0
+[1m[92m   Compiling[0m derive_more-impl v2.1.1
+[1m[92m   Compiling[0m nalgebra-macros v0.3.0
+[1m[92m   Compiling[0m phf v0.13.1
+[1m[92m   Compiling[0m image v0.25.10
+[1m[92m   Compiling[0m zerofrom v0.1.8
+[1m[92m   Compiling[0m cssparser v0.37.0
+[1m[92m   Compiling[0m yoke v0.8.3
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m locale_config v0.3.0
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m futures-executor v0.3.34
+[1m[92m   Compiling[0m derive_more v2.1.1
+[1m[92m   Compiling[0m markup5ever v0.39.0
+[1m[92m   Compiling[0m simba v0.10.2
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m potential_utf v0.1.5
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m xml5ever v0.39.0
+[1m[92m   Compiling[0m cssparser-color v0.5.0
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m glib v0.22.8
+[1m[92m   Compiling[0m icu_properties v2.2.0
+[1m[92m   Compiling[0m icu_normalizer v2.2.0
+[1m[92m   Compiling[0m idna_adapter v1.2.2
+[1m[92m   Compiling[0m idna v1.1.0
+[1m[92m   Compiling[0m url v2.5.8
+[1m[92m   Compiling[0m nalgebra v0.35.0
+[1m[92m   Compiling[0m gio v0.22.8
+[1m[92m   Compiling[0m cairo-rs v0.22.0
+[1m[92m   Compiling[0m pango v0.22.8
+[1m[92m   Compiling[0m gdk-pixbuf v0.22.0
+[1m[92m   Compiling[0m pangocairo v0.22.8
+[1m[92mnote[0m[1m: link against the following native artifacts when linking against this static library. The order and any duplication can be significant on some platforms[0m
+
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 39.98s
+[1m[92m    Building[0m pkg-config files
+[3/10] Compiling C object librsvg-c/tests-c/api.p/api.c.o[K[4/10] Generating rsvg/librsvg-2.0.ver with a custom command (wrapped by meson to capture output)[K[5/10] Generating rsvg/librsvg-2.0.ver with a custom command (wrapped by meson to capture output)[K[5/10] Linking target rsvg/librsvg-2.so.2.63.0[K[6/10] Linking target rsvg/librsvg-2.so.2.63.0[K[6/10] Generating symbol file rsvg/librsvg-2.so.2.63.0.p/librsvg-2.so.2.63.0.symbols[K[6/10] Generating rsvg_convert/rsvg-convert with a custom command (wrapped by meson to set env)[K
+command: ['/usr/bin/cargo', 'build', '--locked', '--bin', 'rsvg-convert', '--manifest-path', '/var/tmp/hokuto/librsvg-01/build/Cargo.toml', '--target-dir', '/var/tmp/hokuto/librsvg-01/build/build/target', '--release', '--target', 'i686-unknown-linux-gnu', '-p', 'rsvg_convert'], env: {}
+[1m[33mwarning[0m: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /var/tmp/hokuto/librsvg-01/build/fuzz/Cargo.toml
+workspace: /var/tmp/hokuto/librsvg-01/build/Cargo.toml
+[1m[92m   Compiling[0m smallvec v1.15.2
+[1m[92m   Compiling[0m stable_deref_trait v1.2.1
+[1m[92m   Compiling[0m cfg-if v1.0.4
+[1m[92m   Compiling[0m siphasher v1.0.3
+[1m[92m   Compiling[0m memchr v2.8.3
+[1m[92m   Compiling[0m futures-core v0.3.34
+[1m[92m   Compiling[0m bitflags v2.13.1
+[1m[92m   Compiling[0m pin-project-lite v0.2.17
+[1m[92m   Compiling[0m futures-task v0.3.34
+[1m[92m   Compiling[0m slab v0.4.12
+[1m[92m   Compiling[0m new_debug_unreachable v1.0.6
+[1m[92m   Compiling[0m litemap v0.8.2
+[1m[92m   Compiling[0m libc v0.2.189
+[1m[92m   Compiling[0m scopeguard v1.2.0
+[1m[92m   Compiling[0m num-traits v0.2.19
+[1m[92m   Compiling[0m writeable v0.6.3
+[1m[92m   Compiling[0m zerofrom v0.1.8
+[1m[92m   Compiling[0m utf8_iter v1.0.4
+[1m[92m   Compiling[0m bytemuck v1.25.2
+[1m[92m   Compiling[0m precomputed-hash v0.1.1
+[1m[92m   Compiling[0m cairo-sys-rs v0.22.0
+[1m[92m   Compiling[0m simd-adler32 v0.3.10
+[1m[92m   Compiling[0m icu_normalizer_data v2.2.0
+[1m[92m   Compiling[0m lock_api v0.4.14
+[1m[92m   Compiling[0m icu_properties_data v2.2.0
+[1m[92m   Compiling[0m crossbeam-utils v0.8.22
+[1m[92m   Compiling[0m yoke v0.8.3
+[1m[92m   Compiling[0m futures-channel v0.3.34
+[1m[92m   Compiling[0m futures-io v0.3.34
+[1m[92m   Compiling[0m phf_shared v0.13.1
+[1m[92m   Compiling[0m dtoa v1.0.11
+[1m[92m   Compiling[0m adler2 v2.0.1
+[1m[92m   Compiling[0m futures-util v0.3.34
+[1m[92m   Compiling[0m crc32fast v1.5.0
+[1m[92m   Compiling[0m itoa v1.0.18
+[1m[92m   Compiling[0m zerovec v0.11.6
+[1m[92m   Compiling[0m zerotrie v0.2.4
+[1m[92m   Compiling[0m dtoa-short v0.3.5
+[1m[92m   Compiling[0m safe_arch v1.1.0
+[1m[92m   Compiling[0m miniz_oxide v0.8.9
+[1m[92m   Compiling[0m log v0.4.33
+[1m[92m   Compiling[0m regex-syntax v0.8.11
+[1m[92m   Compiling[0m utf8parse v0.2.2
+[1m[92m   Compiling[0m serde_core v1.0.229
+[1m[92m   Compiling[0m fdeflate v0.3.7
+[1m[92m   Compiling[0m tendril v0.5.1
+[1m[92m   Compiling[0m anstyle-parse v1.0.0
+[1m[92m   Compiling[0m rawpointer v0.2.1
+[1m[92m   Compiling[0m aho-corasick v1.1.5
+[1m[92m   Compiling[0m quick-error v2.0.1
+[1m[92m   Compiling[0m color_quant v1.1.0
+[1m[92m   Compiling[0m weezl v0.1.12
+[1m[92m   Compiling[0m phf v0.13.1
+[1m[92m   Compiling[0m either v1.17.0
+[1m[92m   Compiling[0m crossbeam-epoch v0.9.20
+[1m[92m   Compiling[0m percent-encoding v2.3.2
+[1m[92m   Compiling[0m cssparser v0.37.0
+[1m[92m   Compiling[0m is_terminal_polyfill v1.70.2
+[1m[92m   Compiling[0m colorchoice v1.0.5
+[1m[92m   Compiling[0m anstyle-query v1.1.5
+[1m[92m   Compiling[0m byteorder-lite v0.1.0
+[1m[92m   Compiling[0m pxfm v0.1.30
+[1m[92m   Compiling[0m anstyle v1.0.14
+[1m[92m   Compiling[0m flate2 v1.1.9
+[1m[92m   Compiling[0m zune-core v0.5.3
+[1m[92m   Compiling[0m approx v0.5.1
+[1m[92m   Compiling[0m num-complex v0.4.6
+[1m[92m   Compiling[0m crossbeam-deque v0.8.7
+[1m[92m   Compiling[0m tinystr v0.8.3
+[1m[92m   Compiling[0m potential_utf v0.1.5
+[1m[92m   Compiling[0m wide v1.6.1
+[1m[92m   Compiling[0m num-integer v0.1.46
+[1m[92m   Compiling[0m icu_collections v2.2.0
+[1m[92m   Compiling[0m image-webp v0.2.4
+[1m[92m   Compiling[0m rayon-core v1.13.0
+[1m[92m   Compiling[0m icu_locale_core v2.2.0
+[1m[92m   Compiling[0m zune-jpeg v0.5.15
+[1m[92m   Compiling[0m glib-sys v0.22.8
+[1m[92m   Compiling[0m parking_lot_core v0.9.12
+[1m[92m   Compiling[0m num-rational v0.4.2
+[1m[92m   Compiling[0m png v0.18.1
+[1m[92m   Compiling[0m anstream v1.0.0
+[1m[92m   Compiling[0m gobject-sys v0.22.6
+[1m[92m   Compiling[0m parking_lot v0.12.5
+[1m[92m   Compiling[0m gio-sys v0.22.8
+[1m[92m   Compiling[0m string_cache v0.9.0
+[1m[92m   Compiling[0m pango-sys v0.22.0
+[1m[92m   Compiling[0m web_atoms v0.2.6
+[1m[92m   Compiling[0m gif v0.14.2
+[1m[92m   Compiling[0m form_urlencoded v1.2.2
+[1m[92m   Compiling[0m matrixmultiply v0.3.11
+[1m[92m   Compiling[0m pangocairo-sys v0.22.0
+[1m[92m   Compiling[0m futures-executor v0.3.34
+[1m[92m   Compiling[0m icu_provider v2.2.0
+[1m[92m   Compiling[0m regex-automata v0.4.18
+[1m[92m   Compiling[0m derive_more v2.1.1
+[1m[92m   Compiling[0m phf_shared v0.14.0
+[1m[92m   Compiling[0m servo_arc v0.4.3
+[1m[92m   Compiling[0m glib v0.22.8
+[1m[92m   Compiling[0m icu_normalizer v2.2.0
+[1m[92m   Compiling[0m icu_properties v2.2.0
+[1m[92m   Compiling[0m markup5ever v0.39.0
+[1m[92m   Compiling[0m gio-unix-sys v0.22.0
+[1m[92m   Compiling[0m typenum v1.20.1
+[1m[92m   Compiling[0m rustc-hash v2.1.3
+[1m[92m   Compiling[0m tinyvec_macros v0.1.1
+[1m[92m   Compiling[0m lazy_static v1.5.0
+[1m[92m   Compiling[0m strsim v0.11.1
+[1m[92m   Compiling[0m clap_lex v1.1.0
+[1m[92m   Compiling[0m tinyvec v1.12.0
+[1m[92m   Compiling[0m xml5ever v0.39.0
+[1m[92m   Compiling[0m serde v1.0.229
+[1m[92m   Compiling[0m moxcms v0.8.1
+[1m[92m   Compiling[0m clap_builder v4.6.6
+[1m[92m   Compiling[0m selectors v0.40.0
+[1m[92m   Compiling[0m idna_adapter v1.2.2
+[1m[92m   Compiling[0m idna v1.1.0
+[1m[92m   Compiling[0m string_cache v0.10.0
+[1m[92m   Compiling[0m librsvg-c v2.63.0 (/var/tmp/hokuto/librsvg-01/build/librsvg-c)
+[1m[92m   Compiling[0m rayon v1.12.0
+[1m[92m   Compiling[0m cssparser-color v0.5.0
+[1m[92m   Compiling[0m float-cmp v0.10.0
+[1m[92m   Compiling[0m url v2.5.8
+[1m[92m   Compiling[0m itertools v0.15.0
+[1m[92m   Compiling[0m rgb v0.8.53
+[1m[92m   Compiling[0m encoding_rs v0.8.35
+[1m[92m   Compiling[0m clap_derive v4.6.4
+[1m[92m   Compiling[0m language-tags v0.3.2
+[1m[92m   Compiling[0m cast v0.3.0
+[1m[92m   Compiling[0m data-url v0.3.2
+[1m[92m   Compiling[0m rctree v0.6.0
+[1m[92m   Compiling[0m rsvg_convert v2.63.0 (/var/tmp/hokuto/librsvg-01/build/rsvg_convert)
+[1m[92m   Compiling[0m iana-time-zone v0.1.65
+[1m[92m   Compiling[0m regex v1.13.1
+[1m[92m   Compiling[0m chrono v0.4.45
+[1m[92m   Compiling[0m locale_config v0.3.0
+[1m[92m   Compiling[0m clap v4.6.6
+[1m[92m   Compiling[0m clap_complete v4.6.9
+[1m[92m   Compiling[0m image v0.25.10
+[1m[92m   Compiling[0m simba v0.10.2
+[1m[92m   Compiling[0m nalgebra v0.35.0
+[1m[92m   Compiling[0m gio v0.22.8
+[1m[92m   Compiling[0m cairo-rs v0.22.0
+[1m[92m   Compiling[0m pango v0.22.8
+[1m[92m   Compiling[0m gio-unix v0.22.8
+[1m[92m   Compiling[0m pangocairo v0.22.8
+[1m[92m   Compiling[0m librsvg v2.63.0 (/var/tmp/hokuto/librsvg-01/build/rsvg)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 37.88s
+[8/10] Linking target librsvg-c/tests-c/api[K[9/10] Generating gdk-pixbuf-loader/pixbufloader-svg with a custom command (wrapped by meson to set env)[K
+command: ['/usr/bin/cargo', 'build', '--locked', '--manifest-path', '/var/tmp/hokuto/librsvg-01/build/Cargo.toml', '--target-dir', '/var/tmp/hokuto/librsvg-01/build/build/target', '--release', '--target', 'i686-unknown-linux-gnu', '-p', 'pixbufloader-svg'], env: {}
+[1m[33mwarning[0m: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /var/tmp/hokuto/librsvg-01/build/fuzz/Cargo.toml
+workspace: /var/tmp/hokuto/librsvg-01/build/Cargo.toml
+[1m[92m   Compiling[0m pixbufloader-svg v0.0.1 (/var/tmp/hokuto/librsvg-01/build/gdk-pixbuf-loader)
+[1m[92m   Compiling[0m syn v2.0.119
+[1m[92m   Compiling[0m gdk-pixbuf-sys v0.22.0
+[1m[92m   Compiling[0m glib-macros v0.22.6
+[1m[92m   Compiling[0m glib v0.22.8
+[1m[92m   Compiling[0m gio v0.22.8
+[1m[92m   Compiling[0m gdk-pixbuf v0.22.0
+[1m[33mwarning[E0133][0m[1m: dereference of raw pointer is unsafe and requires unsafe block[0m
+  [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:67:9
+   [1m[94m|[0m
+[1m[94m67[0m [1m[94m|[0m         *error = null_mut();
+   [1m[94m|[0m         [1m[33m^^^^^^[0m [1m[33mdereference of raw pointer[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+[1m[92mnote[0m: an unsafe function restricts its caller, but its body is safe by default
+  [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:59:1
+   [1m[94m|[0m
+[1m[94m59[0m [1m[94m|[0m [1m[92m/[0m unsafe extern "C" fn begin_load(
+[1m[94m60[0m [1m[94m|[0m [1m[92m|[0m     size_func: GdkPixbufModuleSizeFunc,
+[1m[94m61[0m [1m[94m|[0m [1m[92m|[0m     prep_func: GdkPixbufModulePreparedFunc,
+[1m[94m62[0m [1m[94m|[0m [1m[92m|[0m     update_func: GdkPixbufModuleUpdatedFunc,
+[1m[94m63[0m [1m[94m|[0m [1m[92m|[0m     user_data: gpointer,
+[1m[94m64[0m [1m[94m|[0m [1m[92m|[0m     error: *mut *mut GError,
+[1m[94m65[0m [1m[94m|[0m [1m[92m|[0m ) -> gpointer {
+   [1m[94m|[0m [1m[92m|_____________^[0m
+   [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+   [1m[94m= [0m[1mnote[0m: `#[warn(unsafe_op_in_unsafe_fn)]` (part of `#[warn(rust_2024_compatibility)]`) on by default
+
+[1m[33mwarning[E0133][0m[1m: dereference of raw pointer is unsafe and requires unsafe block[0m
+  [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:89:9
+   [1m[94m|[0m
+[1m[94m89[0m [1m[94m|[0m         *error = null_mut();
+   [1m[94m|[0m         [1m[33m^^^^^^[0m [1m[33mdereference of raw pointer[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+[1m[92mnote[0m: an unsafe function restricts its caller, but its body is safe by default
+  [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:82:1
+   [1m[94m|[0m
+[1m[94m82[0m [1m[94m|[0m [1m[92m/[0m unsafe extern "C" fn load_increment(
+[1m[94m83[0m [1m[94m|[0m [1m[92m|[0m     user_data: gpointer,
+[1m[94m84[0m [1m[94m|[0m [1m[92m|[0m     buffer: *const u8,
+[1m[94m85[0m [1m[94m|[0m [1m[92m|[0m     size: c_uint,
+[1m[94m86[0m [1m[94m|[0m [1m[92m|[0m     error: *mut *mut GError,
+[1m[94m87[0m [1m[94m|[0m [1m[92m|[0m ) -> gboolean {
+   [1m[94m|[0m [1m[92m|_____________^[0m
+   [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: call to unsafe function `std::slice::from_raw_parts` is unsafe and requires unsafe block[0m
+  [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:94:16
+   [1m[94m|[0m
+[1m[94m94[0m [1m[94m|[0m     let data = std::slice::from_raw_parts(buffer, size as usize);
+   [1m[94m|[0m                [1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[33mcall to unsafe function[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: consult the function's documentation for information on how to avoid undefined behavior
+   [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: dereference of raw pointer is unsafe and requires unsafe block[0m
+  [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:95:5
+   [1m[94m|[0m
+[1m[94m95[0m [1m[94m|[0m     (*ctx).stream.add_bytes(&Bytes::from(data));
+   [1m[94m|[0m     [1m[33m^^^^^^[0m [1m[33mdereference of raw pointer[0m
+   [1m[94m|[0m
+   [1m[94m= [0m[1mnote[0m: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+   [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: call to unsafe function `std::boxed::Box::<T>::from_raw` is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:100:15
+    [1m[94m|[0m
+[1m[94m100[0m [1m[94m|[0m     let ctx = Box::from_raw(user_data as *mut SvgContext);
+    [1m[94m|[0m               [1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[33mcall to unsafe function[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: consult the function's documentation for information on how to avoid undefined behavior
+[1m[92mnote[0m: an unsafe function restricts its caller, but its body is safe by default
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:99:1
+    [1m[94m|[0m
+[1m[94m 99[0m [1m[94m|[0m unsafe extern "C" fn stop_load(user_data: gpointer, error: *mut *mut GError) -> gboolean {
+    [1m[94m|[0m [1m[92m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: dereference of raw pointer is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:102:9
+    [1m[94m|[0m
+[1m[94m102[0m [1m[94m|[0m         *error = null_mut();
+    [1m[94m|[0m         [1m[33m^^^^^^[0m [1m[33mdereference of raw pointer[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: call to unsafe function `rsvg_handle_new_from_stream_sync` is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:108:26
+    [1m[94m|[0m
+[1m[94m108[0m [1m[94m|[0m           let raw_handle = rsvg_handle_new_from_stream_sync(
+    [1m[94m|[0m [1m[33m __________________________^[0m
+[1m[94m109[0m [1m[94m|[0m [1m[33m|[0m             ctx.stream.upcast_ref::<gio::InputStream>().to_glib_none().0,
+[1m[94m110[0m [1m[94m|[0m [1m[33m|[0m             null_mut(), // base_file
+[1m[94m111[0m [1m[94m|[0m [1m[33m|[0m             0,
+[1m[94m112[0m [1m[94m|[0m [1m[33m|[0m             null_mut(), // cancellable
+[1m[94m113[0m [1m[94m|[0m [1m[33m|[0m             &mut local_error,
+[1m[94m114[0m [1m[94m|[0m [1m[33m|[0m         );
+    [1m[94m|[0m [1m[33m|_________^[0m [1m[33mcall to unsafe function[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: consult the function's documentation for information on how to avoid undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: dereference of raw pointer is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:117:17
+    [1m[94m|[0m
+[1m[94m117[0m [1m[94m|[0m                 *error = local_error;
+    [1m[94m|[0m                 [1m[33m^^^^^^[0m [1m[33mdereference of raw pointer[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: call to unsafe function `glib::translate::FromGlibPtrFull::from_glib_full` is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:122:9
+    [1m[94m|[0m
+[1m[94m122[0m [1m[94m|[0m         glib::Object::from_glib_full(raw_handle)
+    [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[33mcall to unsafe function[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: consult the function's documentation for information on how to avoid undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: call to unsafe function `rsvg_handle_set_size_callback` is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:125:5
+    [1m[94m|[0m
+[1m[94m125[0m [1m[94m|[0m     rsvg_handle_set_size_callback(handle.as_ptr(), ctx.size_func, ctx.user_data, None);
+    [1m[94m|[0m     [1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[33mcall to unsafe function[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: consult the function's documentation for information on how to avoid undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: call to unsafe function `rsvg_handle_get_pixbuf_and_error` is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:128:17
+    [1m[94m|[0m
+[1m[94m128[0m [1m[94m|[0m         let p = rsvg_handle_get_pixbuf_and_error(handle.as_ptr(), &mut local_error);
+    [1m[94m|[0m                 [1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[33mcall to unsafe function[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: consult the function's documentation for information on how to avoid undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: dereference of raw pointer is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:131:17
+    [1m[94m|[0m
+[1m[94m131[0m [1m[94m|[0m                 *error = local_error;
+    [1m[94m|[0m                 [1m[33m^^^^^^[0m [1m[33mdereference of raw pointer[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: raw pointers may be null, dangling or unaligned; they can violate aliasing rules and cause data races: all of these are undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: call to unsafe function `glib::translate::FromGlibPtrFull::from_glib_full` is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:136:9
+    [1m[94m|[0m
+[1m[94m136[0m [1m[94m|[0m         gdk_pixbuf::Pixbuf::from_glib_full(p)
+    [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[33mcall to unsafe function[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: consult the function's documentation for information on how to avoid undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: call to unsafe function is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:143:9
+    [1m[94m|[0m
+[1m[94m143[0m [1m[94m|[0m         prep_func(pixbuf.to_glib_none().0, null_mut(), ctx.user_data);
+    [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[33mcall to unsafe function[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: consult the function's documentation for information on how to avoid undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1m[33mwarning[E0133][0m[1m: call to unsafe function is unsafe and requires unsafe block[0m
+   [1m[94m--> [0mgdk-pixbuf-loader/src/lib.rs:146:9
+    [1m[94m|[0m
+[1m[94m146[0m [1m[94m|[0m         update_func(pixbuf.to_glib_none().0, 0, 0, w, h, ctx.user_data);
+    [1m[94m|[0m         [1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [1m[33mcall to unsafe function[0m
+    [1m[94m|[0m
+    [1m[94m= [0m[1mnote[0m: consult the function's documentation for information on how to avoid undefined behavior
+    [1m[94m= [0m[1mnote[0m: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+
+[1mFor more information about this error, try `rustc --explain E0133`.[0m
+[1m[33mwarning[0m: `pixbufloader-svg` (lib) generated 15 warnings (run `cargo fix --lib -p pixbufloader-svg` to apply 3 suggestions)
+[1m[92m    Finished[0m ]8;;https://doc.rust-lang.org/cargo/reference/profiles.html#default-profiles\`release` profile [optimized]]8;;\ target(s) in 20.58s
+ninja: Entering directory `/var/tmp/hokuto/librsvg-01/build/build'
+ninja: no work to do.
+Installing rsvg/librsvg-2.so.2.63.0 to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/lib32
+Installing rsvg_convert/rsvg-convert to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/bin
+Installing gdk-pixbuf-loader/libpixbufloader_svg.so to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders
+Installing /var/tmp/hokuto/librsvg-01/build/include/librsvg/rsvg.h to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/include/librsvg/rsvg-cairo.h to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/include/librsvg/rsvg-pixbuf.h to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/build/include/librsvg/rsvg-features.h to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/build/include/librsvg/rsvg-version.h to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/include/librsvg-2.0/librsvg
+Installing /var/tmp/hokuto/librsvg-01/build/build/meson-private/librsvg-2.0.pc to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/lib32/pkgconfig
+Installing /var/tmp/hokuto/librsvg-01/build/build/gdk-pixbuf-loader/librsvg.thumbnailer to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/share/thumbnailers
+Installing symlink pointing to librsvg-2.so.2.63.0 to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/lib32/librsvg-2.so.2
+Installing symlink pointing to librsvg-2.so.2 to /var/tmp/hokuto/librsvg-01/split/lib32-librsvg/usr/lib32/librsvg-2.so
+Running custom install script '/usr/bin/python /var/tmp/hokuto/librsvg-01/build/gdk-pixbuf-loader/meson_install.py --moduledir /usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders --queryloaders /usr/bin/gdk-pixbuf-query-loaders --cache-file /usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders.cache'
+*** Note: Please run gdk-pixbuf-queryloaders manually against the newly-built gdkpixbuf-svg loader
+
+Script done on 2026-09-10 12:10:11+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibrsvg[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mThu, 10 Sep 2026 05:10:11 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m3m19s[0m
