@@ -1,0 +1,163 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mupower[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mupower 1.91.4-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mFri, 11 Sep 2026 05:05:52 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mupower[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglib glibc libgcc libgudev libimobiledevice libplist polkit gobject-introspection docbook-xsl meson systemd usbmuxd[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mupower[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 docbook-xsl-1.79.2-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glib-2.88.3-1 glibc-2.44-1 gobject-introspection-1.86.0-1 grep-3.12-1 gzip-1.14-1 libgcc-16.2.0-1 libgudev-238-1 libimobiledevice-1.4.0-1 libplist-2.7.0-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-1 patch-2.8-1 pkgconf-3.0.7-1 polkit-127-1 sed-4.10-1 systemd-261.2-1 texinfo-7.3-1 usbmuxd-1.1.1-1 which-2.25-1[0m
+
+Script started on 2026-09-11 12:05:52+07:00 [COMMAND="cd /var/tmp/hokuto/upower-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/upower-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/upower-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/upower-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/upower-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/upower-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/upower-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/upower-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/upower-01/build/.cache' /repo/sauzeros/extra/upower/build /var/tmp/hokuto/upower-01/output 1.91.4 upower" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build -D gtk-doc=false
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/upower-01/build[0m
+Build dir: [1m/var/tmp/hokuto/upower-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mupower[0m
+Project version: [1m1.91.4[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Compiler for C supports arguments -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_76: [1;32mYES[0m 
+Compiler for C supports arguments -DGLIB_VERSION_MAX_ALLOWED=GLIB_VERSION_2_76: [1;32mYES[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Run-time dependency [1mglib-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mgobject-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mgio-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Run-time dependency [1mgio-unix-2.0[0m found: [1;32mYES[0m [36m2.88.3[0m
+Library [1mm[0m found: [1;32mYES[0m
+Run-time dependency [1mpolkit-gobject-1[0m found: [1;32mYES[0m [36m127[0m
+Program [1mxsltproc[0m found: [1;32mYES[0m (/usr/bin/xsltproc)
+Run-time dependency [1mgobject-introspection-1.0[0m found: [1;32mYES[0m [36m1.86.0[0m
+Run-time dependency [1mgudev-1.0[0m found: [1;32mYES[0m [36m238[0m
+Run-time dependency [1mlibimobiledevice-1.0[0m found: [1;32mYES[0m [36m1.4.0[0m
+Run-time dependency [1mlibplist-2.0[0m found: [1;32mYES[0m [36m2.7.0[0m
+Run-time dependency [1mudev[0m found: [1;32mYES[0m [36m261[0m
+Dependency [1mudev[0m for [1mhost[0m machine found: [1;32mYES[0m [36m261[0m [1;34m(cached)[0m
+Run-time dependency [1msystemd[0m found: [1;32mYES[0m [36m261[0m
+Configuring [1mconfig.h[0m using configuration
+Program [1mmsgfmt[0m found: [1;32mYES[0m (/usr/bin/msgfmt)
+Program [1mmsginit[0m found: [1;32mYES[0m (/usr/bin/msginit)
+Program [1mmsgmerge[0m found: [1;32mYES[0m (/usr/bin/msgmerge)
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/gdbus-codegen[0m found: [1;32mYES[0m (/usr/bin/gdbus-codegen)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/gdbus-codegen[0m found: [1;32mYES[0m (/usr/bin/gdbus-codegen)
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.88.3[0m [1;34m(cached)[0m
+Program [1m/usr/bin/gdbus-codegen[0m found: [1;32mYES[0m (/usr/bin/gdbus-codegen)
+Configuring [1mup-version.h[0m using configuration
+Dependency [1mgobject-introspection-1.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m1.86.0[0m [1;34m(cached)[0m
+Dependency [1mgobject-introspection-1.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m1.86.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/g-ir-scanner[0m found: [1;32mYES[0m (/usr/bin/g-ir-scanner)
+Dependency [1mgobject-introspection-1.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m1.86.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/g-ir-compiler[0m found: [1;32mYES[0m (/usr/bin/g-ir-compiler)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Configuring [1morg.freedesktop.UPower.service[0m using configuration
+Configuring [1morg.freedesktop.UPower.conf[0m using configuration
+Configuring [1mupower.service[0m using configuration
+Program [1mpython3[0m found: [1;32mYES[0m (/usr/bin/python3)
+Program [1mlinux/unittest_inspector.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/upower-01/build/src/linux/unittest_inspector.py)
+Configuring [1mupower-integration.test[0m using configuration
+Configuring [1mversion.xml[0m using configuration
+[1mMessage:[0m 
+UPower 1.91.4
+System Paths
+  prefix:         /usr
+  libdir:         lib
+  libexecdir:     /usr/lib
+  bindir:         /usr/bin
+  sbindir:        /usr/bin
+  datadir:        /usr/share
+  sysconfdir:     /etc
+  localstatedir:  /var
+  historydir:     /var/lib/upower
+
+Features
+  Backend:                  linux
+  libimobiledevice support: true
+  Building api docs:        false
+  Building man pages:       true
+
+Build targets in project: [1m34[0m
+
+upower [36m1.91.4[0m
+
+  [1mUser defined options[0m
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    gtk-doc           : false
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/upower-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/upower-01/build/build'
+[0/60] Generating gdbus source dbus/up-daemon-generated.c[K[0/60] Generating gdbus header dbus/up-daemon-generated.h[K[0/60] Generating gdbus source dbus/up-device-generated.c[K[0/60] Generating gdbus header dbus/up-device-generated.h[K[0/60] Generating gdbus source dbus/up-kbd-backlight-generated.c[K[0/60] Generating gdbus header dbus/up-kbd-backlight-generated.h[K[0/60] Compiling C object tools/upower.p/up-tool.c.o[K[0/60] Building translation po/fr/LC_MESSAGES/upower-fr.mo[K[0/60] Building translation po/it/LC_MESSAGES/upower-it.mo[K[0/60] Building translation po/ka/LC_MESSAGES/upower-ka.mo[K[1/60] Building translation po/ka/LC_MESSAGES/upower-ka.mo[K[1/60] Building translation po/sv/LC_MESSAGES/upower-sv.mo[K[2/60] Building translation po/it/LC_MESSAGES/upower-it.mo[K[2/60] Building translation po/pl/LC_MESSAGES/upower-pl.mo[K[3/60] Building translation po/fr/LC_MESSAGES/upower-fr.mo[K[3/60] Generating doc/man/upower.1 with a custom command[K[4/60] Building translation po/sv/LC_MESSAGES/upower-sv.mo[K[4/60] Generating doc/man/upowerd.8 with a custom command[K[5/60] Building translation po/pl/LC_MESSAGES/upower-pl.mo[K[5/60] Generating doc/man/UPower.7 with a custom command[K[6/60] Generating gdbus header dbus/up-device-generated.h[K[6/60] Merging translations for policy/org.freedesktop.upower.policy[K[7/60] Generating gdbus source dbus/up-kbd-backlight-generated.c[K[8/60] Generating gdbus source dbus/up-device-generated.c[K[9/60] Generating gdbus header dbus/up-kbd-backlight-generated.h[K[10/60] Generating doc/man/upowerd.8 with a custom command[K
+Note: Writing upowerd.8
+[11/60] Generating doc/man/upower.1 with a custom command[K
+Note: Writing upower.1
+[12/60] Compiling C object tools/upower.p/up-tool.c.o[K[13/60] Generating gdbus header dbus/up-daemon-generated.h[K[13/60] Compiling C object dbus/liblibupower-dbus.a.p/meson-generated_.._up-device-generated.c.o[K[13/60] Compiling C object dbus/liblibupower-dbus.a.p/meson-generated_.._up-kbd-backlight-generated.c.o[K[13/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-types.c.o[K[13/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-client.c.o[K[13/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-stats-item.c.o[K[13/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-history-item.c.o[K[13/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-device.c.o[K[14/60] Generating gdbus source dbus/up-daemon-generated.c[K[14/60] Compiling C object dbus/liblibupower-dbus.a.p/meson-generated_.._up-daemon-generated.c.o[K[15/60] Generating doc/man/UPower.7 with a custom command[K
+Note: Writing UPower.7
+[15/60] Compiling C object src/dummy/libupshared.a.p/up-backend.c.o[K[16/60] Merging translations for policy/org.freedesktop.upower.policy[K[16/60] Compiling C object src/dummy/libupshared.a.p/up-native.c.o[K[17/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-types.c.o[K[17/60] Compiling C object src/linux/libupshared.a.p/up-device-supply.c.o[K[18/60] Compiling C object src/dummy/libupshared.a.p/up-native.c.o[K[18/60] Compiling C object src/linux/libupshared.a.p/up-device-supply-battery.c.o[K[19/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-stats-item.c.o[K[19/60] Compiling C object src/linux/libupshared.a.p/up-device-hid.c.o[K[20/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-history-item.c.o[K[20/60] Compiling C object src/linux/libupshared.a.p/up-device-wup.c.o[K[21/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-client.c.o[K[21/60] Compiling C object src/linux/libupshared.a.p/up-device-bluez.c.o[K[22/60] Compiling C object libupower-glib/libupower-glib.so.3.1.2.p/up-device.c.o[K[22/60] Compiling C object src/linux/libupshared.a.p/up-kbd-backlight-led.c.o[K[23/60] Compiling C object dbus/liblibupower-dbus.a.p/meson-generated_.._up-kbd-backlight-generated.c.o[K[23/60] Compiling C object src/linux/libupshared.a.p/up-input.c.o[K[24/60] Compiling C object src/linux/libupshared.a.p/up-device-supply.c.o[K[24/60] Compiling C object src/linux/libupshared.a.p/up-backend.c.o[K[25/60] Compiling C object dbus/liblibupower-dbus.a.p/meson-generated_.._up-device-generated.c.o[K[25/60] Compiling C object src/linux/libupshared.a.p/up-native.c.o[K[26/60] Compiling C object src/dummy/libupshared.a.p/up-backend.c.o[K[26/60] Compiling C object src/linux/libupshared.a.p/up-enumerator-udev.c.o[K[27/60] Compiling C object src/linux/libupshared.a.p/up-device-hid.c.o[K[27/60] Compiling C object src/linux/libupshared.a.p/up-device-idevice.c.o[K[28/60] Compiling C object src/linux/libupshared.a.p/up-input.c.o[K[28/60] Compiling C object src/libupowerd-private.a.p/up-config.c.o[K[29/60] Compiling C object src/linux/libupshared.a.p/up-device-supply-battery.c.o[K[29/60] Compiling C object src/libupowerd-private.a.p/up-daemon.c.o[K[30/60] Compiling C object src/linux/libupshared.a.p/up-device-bluez.c.o[K[30/60] Compiling C object src/libupowerd-private.a.p/up-device.c.o[K[31/60] Compiling C object src/linux/libupshared.a.p/up-kbd-backlight-led.c.o[K[31/60] Compiling C object src/libupowerd-private.a.p/up-device-battery.c.o[K[32/60] Compiling C object dbus/liblibupower-dbus.a.p/meson-generated_.._up-daemon-generated.c.o[K[32/60] Linking static target dbus/liblibupower-dbus.a[K[33/60] Linking static target dbus/liblibupower-dbus.a[K[33/60] Linking target libupower-glib/libupower-glib.so.3.1.2[K[34/60] Compiling C object src/linux/libupshared.a.p/up-device-wup.c.o[K[34/60] Compiling C object src/libupowerd-private.a.p/up-device-list.c.o[K[35/60] Compiling C object src/libupowerd-private.a.p/up-config.c.o[K[35/60] Compiling C object src/libupowerd-private.a.p/up-enumerator.c.o[K[36/60] Compiling C object src/linux/libupshared.a.p/up-device-idevice.c.o[K[36/60] Compiling C object src/libupowerd-private.a.p/up-device-kbd-backlight.c.o[K[37/60] Compiling C object src/linux/libupshared.a.p/up-backend.c.o[K[37/60] Compiling C object src/libupowerd-private.a.p/up-history.c.o[K[38/60] Compiling C object src/linux/libupshared.a.p/up-enumerator-udev.c.o[K[38/60] Compiling C object src/libupowerd-private.a.p/up-common.c.o[K[39/60] Compiling C object src/libupowerd-private.a.p/up-device.c.o[K[39/60] Compiling C object src/libupowerd-private.a.p/up-polkit.c.o[K[40/60] Compiling C object src/libupowerd-private.a.p/up-daemon.c.o[K[40/60] Linking static target src/dummy/libupshared.a[K[41/60] Compiling C object src/libupowerd-private.a.p/up-device-battery.c.o[K[41/60] Compiling C object src/upowerd.p/up-main.c.o[K[42/60] Linking static target src/dummy/libupshared.a[K[42/60] Compiling C object src/up_self_test.p/up-self-test.c.o[K[43/60] Compiling C object src/libupowerd-private.a.p/up-common.c.o[K[44/60] Compiling C object src/linux/libupshared.a.p/up-native.c.o[K[44/60] Linking static target src/linux/libupshared.a[K[45/60] Linking static target src/linux/libupshared.a[K[46/60] Compiling C object src/libupowerd-private.a.p/up-polkit.c.o[K[47/60] Compiling C object src/upowerd.p/up-main.c.o[K[48/60] Compiling C object src/libupowerd-private.a.p/up-history.c.o[K[49/60] Compiling C object src/up_self_test.p/up-self-test.c.o[K[50/60] Compiling C object src/libupowerd-private.a.p/up-enumerator.c.o[K[51/60] Compiling C object src/libupowerd-private.a.p/up-device-list.c.o[K[52/60] Compiling C object src/libupowerd-private.a.p/up-device-kbd-backlight.c.o[K[52/60] Linking static target src/libupowerd-private.a[K[53/60] Linking static target src/libupowerd-private.a[K[54/60] Linking target libupower-glib/libupower-glib.so.3.1.2[K[54/60] Generating symbol file libupower-glib/libupower-glib.so.3.1.2.p/libupower-glib.so.3.1.2.symbols[K[54/60] Generating libupower-glib/UPowerGlib-1.0.gir with a custom command (wrapped by meson to set env)[K[55/60] Generating symbol file libupower-glib/libupower-glib.so.3.1.2.p/libupower-glib.so.3.1.2.symbols[K[55/60] Linking target src/upowerd[K[55/60] Linking target src/up_self_test[K[55/60] Linking target tools/upower[K[56/60] Linking target tools/upower[K[57/60] Linking target src/up_self_test[K[58/60] Linking target src/upowerd[K[59/60] Generating libupower-glib/UPowerGlib-1.0.gir with a custom command (wrapped by meson to set env)[K[59/60] Generating libupower-glib/UPowerGlib-1.0.typelib with a custom command[K[60/60] Generating libupower-glib/UPowerGlib-1.0.typelib with a custom command[K
+ninja: Entering directory `/var/tmp/hokuto/upower-01/build/build'
+ninja: no work to do.
+Installing subdir /var/tmp/hokuto/upower-01/build/src/linux/tests to /var/tmp/hokuto/upower-01/output/usr/lib/upower/tests
+Installing /var/tmp/hokuto/upower-01/build/src/linux/tests/wacom-bluetooth-active.device to /var/tmp/hokuto/upower-01/output/usr/lib/upower/tests
+Installing /var/tmp/hokuto/upower-01/build/src/linux/tests/logitech-g903.device to /var/tmp/hokuto/upower-01/output/usr/lib/upower/tests
+Installing /var/tmp/hokuto/upower-01/build/src/linux/tests/usb-headset.device to /var/tmp/hokuto/upower-01/output/usr/lib/upower/tests
+Installing /var/tmp/hokuto/upower-01/build/src/linux/tests/wacom-pen-digitiser.device to /var/tmp/hokuto/upower-01/output/usr/lib/upower/tests
+Installing /var/tmp/hokuto/upower-01/build/src/linux/tests/wacom-dongle-active.device to /var/tmp/hokuto/upower-01/output/usr/lib/upower/tests
+Installing /var/tmp/hokuto/upower-01/build/src/linux/tests/steelseries-headset.device to /var/tmp/hokuto/upower-01/output/usr/lib/upower/tests
+Installing /var/tmp/hokuto/upower-01/build/src/linux/tests/wacom-dongle-waiting.device to /var/tmp/hokuto/upower-01/output/usr/lib/upower/tests
+Installing po/fr/LC_MESSAGES/upower.mo to /var/tmp/hokuto/upower-01/output/usr/share/locale/fr/LC_MESSAGES
+Installing po/it/LC_MESSAGES/upower.mo to /var/tmp/hokuto/upower-01/output/usr/share/locale/it/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/upower.mo to /var/tmp/hokuto/upower-01/output/usr/share/locale/ka/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/upower.mo to /var/tmp/hokuto/upower-01/output/usr/share/locale/sv/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/upower.mo to /var/tmp/hokuto/upower-01/output/usr/share/locale/pl/LC_MESSAGES
+Installing libupower-glib/libupower-glib.so.3.1.2 to /var/tmp/hokuto/upower-01/output/usr/lib
+Installing libupower-glib/UPowerGlib-1.0.gir to /var/tmp/hokuto/upower-01/output/usr/share/gir-1.0
+Installing libupower-glib/UPowerGlib-1.0.typelib to /var/tmp/hokuto/upower-01/output/usr/lib/girepository-1.0
+Installing src/upowerd to /var/tmp/hokuto/upower-01/output/usr/lib
+Installing tools/upower to /var/tmp/hokuto/upower-01/output/usr/bin
+Installing doc/man/upower.1 to /var/tmp/hokuto/upower-01/output/usr/share/man/man1
+Installing doc/man/upowerd.8 to /var/tmp/hokuto/upower-01/output/usr/share/man/man8
+Installing doc/man/UPower.7 to /var/tmp/hokuto/upower-01/output/usr/share/man/man7
+Installing policy/org.freedesktop.upower.policy to /var/tmp/hokuto/upower-01/output/usr/share/polkit-1/actions
+Installing /var/tmp/hokuto/upower-01/build/libupower-glib/upower.h to /var/tmp/hokuto/upower-01/output/usr/include/libupower-glib
+Installing /var/tmp/hokuto/upower-01/build/libupower-glib/up-autocleanups.h to /var/tmp/hokuto/upower-01/output/usr/include/libupower-glib
+Installing /var/tmp/hokuto/upower-01/build/libupower-glib/up-types.h to /var/tmp/hokuto/upower-01/output/usr/include/libupower-glib
+Installing /var/tmp/hokuto/upower-01/build/libupower-glib/up-device.h to /var/tmp/hokuto/upower-01/output/usr/include/libupower-glib
+Installing /var/tmp/hokuto/upower-01/build/libupower-glib/up-stats-item.h to /var/tmp/hokuto/upower-01/output/usr/include/libupower-glib
+Installing /var/tmp/hokuto/upower-01/build/libupower-glib/up-history-item.h to /var/tmp/hokuto/upower-01/output/usr/include/libupower-glib
+Installing /var/tmp/hokuto/upower-01/build/libupower-glib/up-client.h to /var/tmp/hokuto/upower-01/output/usr/include/libupower-glib
+Installing /var/tmp/hokuto/upower-01/build/build/libupower-glib/up-version.h to /var/tmp/hokuto/upower-01/output/usr/include/libupower-glib
+Installing new directory /var/tmp/hokuto/upower-01/output/var/lib/upower
+Installing /var/tmp/hokuto/upower-01/build/etc/UPower.conf.d/README.md to /var/tmp/hokuto/upower-01/output/etc/UPower/UPower.conf.d
+Installing /var/tmp/hokuto/upower-01/build/etc/UPower.conf to /var/tmp/hokuto/upower-01/output/etc/UPower
+Installing /var/tmp/hokuto/upower-01/build/rules/60-upower-battery.rules to /var/tmp/hokuto/upower-01/output/usr/lib/udev/rules.d
+Installing /var/tmp/hokuto/upower-01/build/rules/95-upower-wup.rules to /var/tmp/hokuto/upower-01/output/usr/lib/udev/rules.d
+Installing /var/tmp/hokuto/upower-01/build/rules/95-upower-hid.rules to /var/tmp/hokuto/upower-01/output/usr/lib/udev/rules.d
+Installing /var/tmp/hokuto/upower-01/build/rules/95-upower-hid.hwdb to /var/tmp/hokuto/upower-01/output/usr/lib/udev/hwdb.d
+Installing /var/tmp/hokuto/upower-01/build/rules/60-upower-battery.hwdb to /var/tmp/hokuto/upower-01/output/usr/lib/udev/hwdb.d
+Installing /var/tmp/hokuto/upower-01/build/dbus/org.freedesktop.UPower.xml to /var/tmp/hokuto/upower-01/output/usr/share/dbus-1/interfaces
+Installing /var/tmp/hokuto/upower-01/build/dbus/org.freedesktop.UPower.Device.xml to /var/tmp/hokuto/upower-01/output/usr/share/dbus-1/interfaces
+Installing /var/tmp/hokuto/upower-01/build/dbus/org.freedesktop.UPower.KbdBacklight.xml to /var/tmp/hokuto/upower-01/output/usr/share/dbus-1/interfaces
+Installing /var/tmp/hokuto/upower-01/build/build/src/org.freedesktop.UPower.service to /var/tmp/hokuto/upower-01/output/usr/share/dbus-1/system-services
+Installing /var/tmp/hokuto/upower-01/build/build/src/org.freedesktop.UPower.conf to /var/tmp/hokuto/upower-01/output/usr/share/dbus-1/system.d
+Installing /var/tmp/hokuto/upower-01/build/build/src/upower.service to /var/tmp/hokuto/upower-01/output/usr/lib/systemd/system
+Installing /var/tmp/hokuto/upower-01/build/src/linux/integration-test.py to /var/tmp/hokuto/upower-01/output/usr/lib/upower
+Installing /var/tmp/hokuto/upower-01/build/src/linux/output_checker.py to /var/tmp/hokuto/upower-01/output/usr/lib/upower
+Installing /var/tmp/hokuto/upower-01/build/build/src/upower-integration.test to /var/tmp/hokuto/upower-01/output/usr/share/installed-tests/upower
+Installing /var/tmp/hokuto/upower-01/build/data/zsh-completion/_upower to /var/tmp/hokuto/upower-01/output/usr/share/zsh/site-functions
+Installing /var/tmp/hokuto/upower-01/build/policy/org.freedesktop.upower.rules to /var/tmp/hokuto/upower-01/output/usr/share/polkit-1/rules.d
+Installing /var/tmp/hokuto/upower-01/build/build/meson-private/upower-glib.pc to /var/tmp/hokuto/upower-01/output/usr/lib/pkgconfig
+Installing symlink pointing to libupower-glib.so.3.1.2 to /var/tmp/hokuto/upower-01/output/usr/lib/libupower-glib.so.3
+Installing symlink pointing to libupower-glib.so.3 to /var/tmp/hokuto/upower-01/output/usr/lib/libupower-glib.so
+
+Script done on 2026-09-11 12:05:57+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mupower[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mFri, 11 Sep 2026 05:05:57 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m4s[0m
