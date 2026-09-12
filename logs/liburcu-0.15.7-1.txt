@@ -1,0 +1,1002 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mliburcu[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mliburcu 0.15.7-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 12 Sep 2026 09:33:35 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mliburcu[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mliburcu[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.18.1-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-12 16:33:35+07:00 [COMMAND="cd /var/tmp/hokuto/liburcu-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/liburcu-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/liburcu-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/liburcu-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/liburcu-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/liburcu-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/liburcu-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/liburcu-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/liburcu-01/build/.cache' /repo/sauzeros/extra/liburcu/build /var/tmp/hokuto/liburcu-01/output 0.15.7 liburcu" <not executed on terminal>]
++ '[' '!' -d config ']'
++ mkdir config
++ autoreconf -vi -W all,error
+autoreconf: export WARNINGS=all,error
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: no obvious need to run autopoint
+autoreconf: running: aclocal -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'config'.
+libtoolize: copying file 'config/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: no need to run autopoint (confirmed)
+autoreconf: running: aclocal -I m4
+autoreconf: running: /usr/bin/autoconf
+autoreconf: running: /usr/bin/autoheader
+autoreconf: running: automake --add-missing --copy --no-force
+configure.ac:63: installing 'config/compile'
+configure.ac:34: installing 'config/config.guess'
+configure.ac:34: installing 'config/config.sub'
+configure.ac:42: installing 'config/install-sh'
+configure.ac:42: installing 'config/missing'
+src/Makefile.am: installing 'config/depcomp'
+parallel-tests: installing 'config/test-driver'
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/param.h... yes
+checking for vfork.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for cc option to support large files... none needed
+checking whether cc supports atomic builtins... yes
+checking whether the compiler supports GNU C++... yes
+checking whether c++ accepts -g... yes
+checking dependency style of c++... gcc3
+checking whether c++ supports C++11 features with -std=c++11... yes
+checking for __attribute__... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... /usr/bin/grep -E
+checking whether cc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for inline... inline
+checking for typeof syntax and keyword spelling... typeof
+checking for int32_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uint8_t... yes
+checking whether C compiler accepts -Wall... yes
+checking whether C compiler accepts -Wextra... yes
+checking whether C compiler accepts -Wmissing-prototypes... yes
+checking whether C compiler accepts -Wmissing-declarations... yes
+checking whether C compiler accepts -Wnull-dereference... yes
+checking whether C compiler accepts -Wundef... yes
+checking whether C compiler accepts -Wshadow... yes
+checking whether C compiler accepts -Wjump-misses-init... yes
+checking whether C compiler accepts -Wsuggest-attribute=format... yes
+checking whether C compiler accepts -Wtautological-constant-out-of-range-compare... no
+checking whether C compiler accepts -Wnested-externs... yes
+checking whether C compiler accepts -Wwrite-strings... yes
+checking whether C compiler accepts -Wformat=2... yes
+checking whether C compiler accepts -Wstrict-aliasing... yes
+checking whether C compiler accepts -Wmissing-noreturn... yes
+checking whether C compiler accepts -Winit-self... yes
+checking whether C compiler accepts -Wduplicated-cond... yes
+checking whether C compiler accepts -Wduplicated-branches... yes
+checking whether C compiler accepts -Wlogical-op... yes
+checking whether C compiler accepts -Wno-null-dereference... yes
+checking whether C++ compiler accepts -Wall... yes
+checking whether C++ compiler accepts -Wextra... yes
+checking whether C++ compiler accepts -Wmissing-prototypes... no
+checking whether C++ compiler accepts -Wmissing-declarations... yes
+checking whether C++ compiler accepts -Wnull-dereference... yes
+checking whether C++ compiler accepts -Wundef... yes
+checking whether C++ compiler accepts -Wshadow... yes
+checking whether C++ compiler accepts -Wjump-misses-init... no
+checking whether C++ compiler accepts -Wsuggest-attribute=format... yes
+checking whether C++ compiler accepts -Wtautological-constant-out-of-range-compare... no
+checking whether C++ compiler accepts -Wnested-externs... no
+checking whether C++ compiler accepts -Wwrite-strings... yes
+checking whether C++ compiler accepts -Wformat=2... yes
+checking whether C++ compiler accepts -Wstrict-aliasing... yes
+checking whether C++ compiler accepts -Wmissing-noreturn... yes
+checking whether C++ compiler accepts -Winit-self... yes
+checking whether C++ compiler accepts -Wduplicated-cond... yes
+checking whether C++ compiler accepts -Wduplicated-branches... yes
+checking whether C++ compiler accepts -Wlogical-op... yes
+checking whether C++ compiler accepts -Wno-null-dereference... yes
+checking for _Bool... yes
+checking for stdbool.h that conforms to C99 or later... yes
+checking for limits.h... yes
+checking for stddef.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/time.h... yes
+checking for gawk... (cached) gawk
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking whether make sets $(MAKE)... (cached) yes
+checking for nproc... nproc
+checking for getconf... getconf
+checking for time... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... c++ -std=c++11 -E
+checking for ld used by c++ -std=c++11... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the c++ -std=c++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for c++ -std=c++11 option to produce PIC... -fPIC -DPIC
+checking if c++ -std=c++11 PIC flag -fPIC -DPIC works... yes
+checking if c++ -std=c++11 static flag -static works... yes
+checking if c++ -std=c++11 supports -c -o file.o... yes
+checking if c++ -std=c++11 supports -c -o file.o... (cached) yes
+checking whether the c++ -std=c++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for getpagesize... yes
+checking for fork... yes
+checking for vfork... yes
+checking for working mmap... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for atexit... yes
+checking for getcpuid... no
+checking for gettid... yes
+checking for gettimeofday... yes
+checking for memeset... no
+checking for memset... yes
+checking for munmap... yes
+checking for rand_r... yes
+checking for sched_getcpu... yes
+checking for sched_setaffinity... yes
+checking for strerror... yes
+checking for strtoul... yes
+checking for sysconf... yes
+checking for library containing clock_gettime... none required
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/examples/Makefile
+config.status: creating extras/Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/common/Makefile
+config.status: creating tests/unit/Makefile
+config.status: creating tests/benchmark/Makefile
+config.status: creating tests/regression/Makefile
+config.status: creating tests/utils/Makefile
+config.status: creating src/liburcu.pc
+config.status: creating src/liburcu-bp.pc
+config.status: creating src/liburcu-cds.pc
+config.status: creating src/liburcu-qsbr.pc
+config.status: creating src/liburcu-mb.pc
+config.status: creating src/liburcu-memb.pc
+config.status: creating tests/utils/env.sh
+config.status: creating include/config.h
+config.status: creating include/urcu/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+checking for tput... /usr/bin/tput
+
+[1m[34mUserspace-RCU 0.15.7(B[m
+
+[1m[36mFeatures(B[m
+  Target architecture(B[m:                [1mx86_64(B[m
+  SMP support(B[m:                        [1m[1m[32myes(B[m(B[m
+  Thread Local Storage (TLS)(B[m:         [1mcompiler TLS(B[m
+  clock_gettime()(B[m:                    [1m[1m[32myes(B[m(B[m
+  Require membarrier(B[m:                 [1m[1m[31mno(B[m(B[m
+  Internal debugging(B[m:                 [1m[1m[31mno(B[m(B[m
+  Lock-free HT iterator debugging(B[m:    [1m[1m[31mno(B[m(B[m
+  Multi-flavor support(B[m:               [1m[1m[32myes(B[m(B[m
+  Use compiler atomic builtins(B[m:       [1m[1m[31mno(B[m(B[m
+  Emit legacy memory barriers(B[m:        [1m[1m[32myes(B[m(B[m
+
+[1m[36mInstall directories(B[m
+  Binaries(B[m:                           [1m/usr/bin(B[m
+  Libraries(B[m:                          [1m/usr/lib(B[m
+Making all in include
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/include'
+make  all-am
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/include'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/include'
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/include'
+Making all in src
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/src'
+  CC       wfstack.lo
+  CC       compat_arch.lo
+  CC       compat_futex.lo
+  CC       wfqueue.lo
+  CC       liburcu_la-urcu.lo
+  CC       wfcqueue.lo
+  CC       liburcu_la-urcu-pointer.lo
+  CC       liburcu_la-compat_arch.lo
+  CC       liburcu_qsbr_la-urcu-qsbr.lo
+  CC       liburcu_la-compat_futex.lo
+  CC       liburcu_qsbr_la-urcu-pointer.lo
+  CC       liburcu_qsbr_la-compat_arch.lo
+  CC       liburcu_qsbr_la-compat_futex.lo
+  CC       liburcu_mb_la-urcu.lo
+  CC       liburcu_mb_la-urcu-pointer.lo
+  CC       liburcu_mb_la-compat_arch.lo
+  CC       liburcu_mb_la-compat_futex.lo
+  CC       urcu-bp.lo
+  CC       urcu-pointer.lo
+  CC       liburcu_memb_la-urcu.lo
+  CC       liburcu_memb_la-urcu-pointer.lo
+  CC       liburcu_memb_la-compat_arch.lo
+  CC       liburcu_memb_la-compat_futex.lo
+  CC       rculfqueue.lo
+  CC       rculfstack.lo
+  CC       lfstack.lo
+  CC       workqueue.lo
+  CC       rculfhash.lo
+  CC       rculfhash-mm-order.lo
+  CC       rculfhash-mm-chunk.lo
+  CC       rculfhash-mm-mmap.lo
+  CCLD     liburcu-common.la
+  CCLD     liburcu-qsbr.la
+  CCLD     liburcu-mb.la
+  CCLD     liburcu-bp.la
+  CCLD     liburcu-memb.la
+  CCLD     liburcu.la
+  CCLD     liburcu-cds.la
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/src'
+Making all in doc
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc'
+Making all in examples
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+  CC       cds_hlist_add_head_rcu.o
+  CCLD     cds_hlist_add_head_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+  CC       cds_hlist_del_rcu.o
+  CCLD     cds_hlist_del_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+  CC       cds_hlist_for_each_rcu.o
+  CCLD     cds_hlist_for_each_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+  CC       cds_hlist_for_each_entry_rcu.o
+  CCLD     cds_hlist_for_each_entry_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+  CC       cds_list_add_rcu.o
+  CCLD     cds_list_add_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+  CC       cds_list_add_tail_rcu.o
+  CCLD     cds_list_add_tail_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+  CC       cds_list_del_rcu.o
+  CCLD     cds_list_del_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+  CC       cds_list_for_each_rcu.o
+  CCLD     cds_list_for_each_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+  CC       cds_list_for_each_entry_rcu.o
+  CCLD     cds_list_for_each_entry_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+  CC       cds_list_replace_rcu.o
+  CCLD     cds_list_replace_rcu
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+  CC       qsbr.o
+  CCLD     qsbr
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+  CC       mb.o
+  CCLD     mb
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+  CC       membarrier.o
+  CCLD     membarrier
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+  CC       bp.o
+  CCLD     bp
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+  CC       cds_wfcq_enqueue.o
+  CCLD     cds_wfcq_enqueue
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+  CC       cds_wfcq_dequeue.o
+  CCLD     cds_wfcq_dequeue
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+  CC       cds_wfcq_splice.o
+  CCLD     cds_wfcq_splice
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+  CC       cds_lfq_enqueue.o
+  CCLD     cds_lfq_enqueue
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+  CC       cds_lfq_dequeue.o
+  CCLD     cds_lfq_dequeue
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+  CC       cds_wfs_push.o
+  CCLD     cds_wfs_push
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+  CC       cds_wfs_pop.o
+  CCLD     cds_wfs_pop
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+  CC       cds_wfs_pop_all_blocking.o
+  CCLD     cds_wfs_pop_all_blocking
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+  CC       cds_lfs_push.o
+  CCLD     cds_lfs_push
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+  CC       cds_lfs_pop_blocking.o
+  CCLD     cds_lfs_pop_blocking
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+  CC       cds_lfs_pop_all_blocking.o
+  CCLD     cds_lfs_pop_all_blocking
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+  CC       cds_lfht_add.o
+  CCLD     cds_lfht_add
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+  CC       cds_lfht_add_unique.o
+  CCLD     cds_lfht_add_unique
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+  CC       cds_lfht_add_replace.o
+  CCLD     cds_lfht_add_replace
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+  CC       cds_lfht_del.o
+  CCLD     cds_lfht_del
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+  CC       cds_lfht_destroy.o
+  CCLD     cds_lfht_destroy
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+  CC       cds_lfht_lookup.o
+  CCLD     cds_lfht_lookup
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+  CC       cds_lfht_for_each_entry_duplicate.o
+  CCLD     cds_lfht_for_each_entry_duplicate
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc'
+Making all in tests
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests'
+Making all in utils
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/utils'
+  CC       tap.o
+  AR       libtap.a
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/utils'
+Making all in common
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/common'
+  CC       debug-yield.lo
+  CCLD     libdebug-yield.la
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/common'
+Making all in unit
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/unit'
+  CC       get_max_cpuid_from_sysfs.o
+  CXX      get_max_cpuid_from_sysfs_cxx.o
+  CC       test_arch.o
+  CC       get_cpu_mask_from_sysfs.o
+  CXX      get_cpu_mask_from_sysfs_cxx.o
+  CXX      test_arch_cxx.o
+  CC       test_get_max_cpuid_from_mask.o
+  CXX      test_get_max_cpuid_from_mask_cxx.o
+  CXX      test_get_possible_cpus_array_len_cxx.o
+  CC       test_get_possible_cpus_array_len.o
+  CC       test_uatomic.o
+  CXX      test_uatomic_cxx.o
+  CC       test_urcu_multiflavor.o
+  CC       test_urcu_multiflavor-memb.o
+  CC       test_urcu_multiflavor-mb.o
+  CC       test_urcu_multiflavor-qsbr.o
+  CXX      test_urcu_multiflavor_cxx.o
+  CC       test_urcu_multiflavor-bp.o
+  CXX      test_urcu_multiflavor-memb_cxx.o
+  CXX      test_urcu_multiflavor-mb_cxx.o
+  CXX      test_urcu_multiflavor-qsbr_cxx.o
+  CXX      test_urcu_multiflavor-bp_cxx.o
+  CC       test_urcu_multiflavor_dynlink-test_urcu_multiflavor.o
+  CC       test_urcu_multiflavor_dynlink-test_urcu_multiflavor-memb.o
+  CC       test_urcu_multiflavor_dynlink-test_urcu_multiflavor-mb.o
+  CC       test_urcu_multiflavor_dynlink-test_urcu_multiflavor-qsbr.o
+  CC       test_urcu_multiflavor_dynlink-test_urcu_multiflavor-bp.o
+  CXX      test_urcu_multiflavor_dynlink_cxx-test_urcu_multiflavor_cxx.o
+  CXX      test_urcu_multiflavor_dynlink_cxx-test_urcu_multiflavor-memb_cxx.o
+  CXX      test_urcu_multiflavor_dynlink_cxx-test_urcu_multiflavor-mb_cxx.o
+  CXX      test_urcu_multiflavor_dynlink_cxx-test_urcu_multiflavor-qsbr_cxx.o
+  CXX      test_urcu_multiflavor_dynlink_cxx-test_urcu_multiflavor-bp_cxx.o
+  CC       test_urcu_multiflavor_single_unit.o
+  CXX      test_urcu_multiflavor_single_unit_cxx.o
+  CC       test_urcu_multiflavor_single_unit_dynlink-test_urcu_multiflavor_single_unit.o
+  CXX      test_urcu_multiflavor_single_unit_dynlink_cxx-test_urcu_multiflavor_single_unit_cxx.o
+  CC       test_build.o
+  CXX      test_build_cxx.o
+  CC       test_build_dynlink-test_build.o
+  CXX      test_build_dynlink_cxx-test_build_cxx.o
+  CCLD     get_cpu_mask_from_sysfs
+  CXXLD    get_cpu_mask_from_sysfs_cxx
+  CCLD     get_max_cpuid_from_sysfs
+  CXXLD    get_max_cpuid_from_sysfs_cxx
+  CCLD     test_arch
+  CXXLD    test_arch_cxx
+  CCLD     test_get_max_cpuid_from_mask
+  CXXLD    test_get_max_cpuid_from_mask_cxx
+  CCLD     test_get_possible_cpus_array_len
+  CXXLD    test_get_possible_cpus_array_len_cxx
+  CCLD     test_uatomic
+  CXXLD    test_uatomic_cxx
+  CCLD     test_urcu_multiflavor
+  CXXLD    test_urcu_multiflavor_cxx
+  CCLD     test_urcu_multiflavor_dynlink
+  CXXLD    test_urcu_multiflavor_dynlink_cxx
+  CCLD     test_urcu_multiflavor_single_unit
+  CXXLD    test_urcu_multiflavor_single_unit_cxx
+  CCLD     test_urcu_multiflavor_single_unit_dynlink
+  CXXLD    test_urcu_multiflavor_single_unit_dynlink_cxx
+  CCLD     test_build
+  CXXLD    test_build_cxx
+  CCLD     test_build_dynlink
+  CXXLD    test_build_dynlink_cxx
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/unit'
+Making all in benchmark
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/benchmark'
+  CC       test_urcu_dynamic_link-test_urcu.o
+  CC       test_urcu_dynamic_link-common-states.o
+  CC       test_urcu_timing.o
+  CC       test_urcu.o
+  CC       test_rwlock_timing.o
+  CC       common-states.o
+  CC       test_rwlock.o
+  CC       test_perthreadlock_timing.o
+  CC       test_urcu_yield-test_urcu.o
+  CC       test_perthreadlock.o
+  CC       test_urcu_yield-common-states.o
+  CC       test_urcu_mb-test_urcu.o
+  CC       test_urcu_mb-common-states.o
+  CC       test_urcu_qsbr_timing.o
+  CC       test_urcu_qsbr.o
+  CC       test_mutex.o
+  CC       test_urcu_gc.o
+  CC       test_looplen.o
+  CC       test_urcu_lgc-test_urcu_gc.o
+  CC       test_urcu_lgc-common-states.o
+  CC       test_urcu_mb_gc-test_urcu_gc.o
+  CC       test_urcu_mb_gc-common-states.o
+  CC       test_urcu_qsbr_gc.o
+  CC       test_urcu_qsbr_lgc-test_urcu_qsbr_gc.o
+  CC       test_urcu_qsbr_lgc-common-states.o
+  CC       test_urcu_mb_lgc-test_urcu_gc.o
+  CC       test_urcu_mb_lgc-common-states.o
+  CC       test_urcu_qsbr_dynamic_link-test_urcu_qsbr.o
+  CC       test_urcu_qsbr_dynamic_link-common-states.o
+  CC       test_urcu_defer.o
+  CC       test_urcu_assign.o
+  CC       test_urcu_assign_dynamic_link-test_urcu_assign.o
+  CC       test_urcu_assign_dynamic_link-common-states.o
+  CC       test_urcu_bp.o
+  CC       test_urcu_bp_dynamic_link-test_urcu_bp.o
+  CC       test_urcu_bp_dynamic_link-common-states.o
+  CC       test_cycles_per_loop.o
+  CC       test_urcu_lfq.o
+  CC       test_urcu_wfq.o
+  CC       test_urcu_wfs.o
+  CC       test_urcu_lfs.o
+  CC       test_urcu_lfs_rcu.o
+  CC       test_urcu_wfcq.o
+  CC       test_urcu_wfq_dynlink-test_urcu_wfq.o
+  CC       test_urcu_wfq_dynlink-common-states.o
+  CC       test_urcu_wfs_dynlink-common-states.o
+  CC       test_urcu_wfs_dynlink-test_urcu_wfs.o
+  CC       test_urcu_wfcq_dynlink-test_urcu_wfcq.o
+  CC       test_urcu_wfcq_dynlink-common-states.o
+  CC       test_urcu_lfq_dynlink-test_urcu_lfq.o
+  CC       test_urcu_lfq_dynlink-common-states.o
+  CC       test_urcu_lfs_dynlink-test_urcu_lfs.o
+  CC       test_urcu_lfs_dynlink-common-states.o
+  CC       test_urcu_hash-test_urcu_hash.o
+  CC       test_urcu_hash-test_urcu_hash_rw.o
+  CC       test_urcu_hash-test_urcu_hash_unique.o
+  CC       test_urcu_lfs_rcu_dynlink-test_urcu_lfs_rcu.o
+  CC       test_urcu_hash-common-states.o
+  CC       test_urcu_lfs_rcu_dynlink-common-states.o
+  CC       test_barrier.o
+  CC       test_uatomic.o
+  CCLD     test_urcu
+  CCLD     test_urcu_dynamic_link
+  CCLD     test_urcu_timing
+  CCLD     test_rwlock_timing
+  CCLD     test_rwlock
+  CCLD     test_perthreadlock_timing
+  CCLD     test_perthreadlock
+  CCLD     test_urcu_yield
+  CCLD     test_urcu_mb
+  CCLD     test_urcu_qsbr_timing
+  CCLD     test_urcu_qsbr
+  CCLD     test_mutex
+  CCLD     test_looplen
+  CCLD     test_urcu_gc
+  CCLD     test_urcu_lgc
+  CCLD     test_urcu_mb_gc
+  CCLD     test_urcu_qsbr_gc
+  CCLD     test_urcu_qsbr_lgc
+  CCLD     test_urcu_mb_lgc
+  CCLD     test_urcu_qsbr_dynamic_link
+  CCLD     test_urcu_defer
+  CCLD     test_urcu_assign
+  CCLD     test_urcu_assign_dynamic_link
+  CCLD     test_urcu_bp
+  CCLD     test_urcu_bp_dynamic_link
+  CCLD     test_cycles_per_loop
+  CCLD     test_urcu_lfq
+  CCLD     test_urcu_wfq
+  CCLD     test_urcu_lfs
+  CCLD     test_urcu_wfs
+  CCLD     test_urcu_lfs_rcu
+  CCLD     test_urcu_wfcq
+  CCLD     test_urcu_wfq_dynlink
+  CCLD     test_urcu_wfs_dynlink
+  CCLD     test_urcu_wfcq_dynlink
+  CCLD     test_urcu_lfq_dynlink
+  CCLD     test_urcu_lfs_dynlink
+  CCLD     test_urcu_hash
+  CCLD     test_urcu_lfs_rcu_dynlink
+  CCLD     test_uatomic
+  CCLD     test_barrier
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/benchmark'
+Making all in regression
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/regression'
+  CC       test_urcu_fork.o
+  CXX      test_urcu_fork_cxx.o
+  CC       rcutorture_urcu_membarrier-urcutorture.o
+  CXX      rcutorture_urcu_membarrier_cxx-urcutorture_cxx.o
+  CC       rcutorture_urcu_mb-urcutorture.o
+  CC       rcutorture_urcu_bp-urcutorture.o
+  CXX      rcutorture_urcu_mb_cxx-urcutorture_cxx.o
+  CXX      rcutorture_urcu_bp_cxx-urcutorture_cxx.o
+  CC       rcutorture_urcu_qsbr-urcutorture.o
+  CXX      rcutorture_urcu_qsbr_cxx-urcutorture_cxx.o
+  CCLD     test_urcu_fork.tap
+  CCLD     rcutorture_urcu_bp
+  CCLD     rcutorture_urcu_mb
+  CXXLD    test_urcu_fork_cxx.tap
+  CCLD     rcutorture_urcu_qsbr
+  CCLD     rcutorture_urcu_membarrier
+  CXXLD    rcutorture_urcu_qsbr_cxx
+  CXXLD    rcutorture_urcu_bp_cxx
+  CXXLD    rcutorture_urcu_membarrier_cxx
+  CXXLD    rcutorture_urcu_mb_cxx
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/regression'
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests'
+Making all in extras
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/extras'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/extras'
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build'
+Making install in include
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/include'
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/include'
+ /usr/bin/install -c -m 644 urcu-qsbr.h urcu-bp.h urcu-call-rcu.h urcu-defer.h urcu-flavor.h urcu.h urcu-pointer.h '/var/tmp/hokuto/liburcu-01/output/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu/static'
+ /usr/bin/install -c -m 644  urcu/static/lfstack.h urcu/static/pointer.h urcu/static/rculfqueue.h urcu/static/rculfstack.h urcu/static/urcu-bp.h urcu/static/urcu-common.h urcu/static/urcu.h urcu/static/urcu-mb.h urcu/static/urcu-memb.h urcu/static/urcu-qsbr.h urcu/static/wfcqueue.h urcu/static/wfqueue.h urcu/static/wfstack.h '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu/static'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu/map'
+ /usr/bin/install -c -m 644  urcu/map/clear.h urcu/map/urcu-bp.h urcu/map/urcu.h urcu/map/urcu-mb.h urcu/map/urcu-memb.h urcu/map/urcu-qsbr.h '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu/map'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu'
+ /usr/bin/install -c -m 644  urcu/config.h '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu/arch'
+ /usr/bin/install -c -m 644  urcu/arch/aarch64.h urcu/arch/alpha.h urcu/arch/arm.h urcu/arch/gcc.h urcu/arch/generic.h urcu/arch/hppa.h urcu/arch/ia64.h urcu/arch/loongarch.h urcu/arch/m68k.h urcu/arch/mips.h urcu/arch/nios2.h urcu/arch/ppc.h urcu/arch/riscv.h urcu/arch/s390.h urcu/arch/sparc64.h urcu/arch/tile.h urcu/arch/x86.h '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu/arch'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu/uatomic'
+ /usr/bin/install -c -m 644  urcu/uatomic/aarch64.h urcu/uatomic/alpha.h urcu/uatomic/api.h urcu/uatomic/arm.h urcu/uatomic/builtins.h urcu/uatomic/builtins-generic.h urcu/uatomic/builtins-x86.h urcu/uatomic/gcc.h urcu/uatomic/generic.h urcu/uatomic/hppa.h urcu/uatomic/ia64.h urcu/uatomic/loongarch.h urcu/uatomic/m68k.h urcu/uatomic/mips.h urcu/uatomic/nios2.h urcu/uatomic/ppc.h urcu/uatomic/riscv.h urcu/uatomic/s390.h urcu/uatomic/sparc64.h urcu/uatomic/tile.h urcu/uatomic/uassert.h urcu/uatomic/x86.h '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu/uatomic'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu'
+ /usr/bin/install -c -m 644  urcu/annotate.h urcu/arch.h urcu/assert.h urcu/call-rcu.h urcu/cds.h urcu/compiler.h urcu/debug.h urcu/defer.h urcu/flavor.h urcu/futex.h urcu/hlist.h urcu/lfstack.h urcu/list.h urcu/pointer.h urcu/rcuhlist.h urcu/rculfhash.h urcu/rculfqueue.h urcu/rculfstack.h urcu/rculist.h urcu/ref.h urcu/syscall-compat.h urcu/system.h urcu/tls-compat.h urcu/uatomic_arch.h urcu/uatomic.h urcu/urcu-bp.h urcu/urcu-futex.h urcu/urcu.h urcu/urcu-mb.h urcu/urcu-memb.h urcu/urcu-qsbr.h urcu/urcu_ref.h urcu/wfcqueue.h urcu/wfqueue.h urcu/wfstack.h urcu/urcu-poll.h '/var/tmp/hokuto/liburcu-01/output/usr/include/urcu'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/include'
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/include'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/src'
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/src'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/lib/pkgconfig'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   liburcu-common.la liburcu.la liburcu-qsbr.la liburcu-mb.la liburcu-bp.la liburcu-memb.la liburcu-cds.la '/var/tmp/hokuto/liburcu-01/output/usr/lib'
+ /usr/bin/install -c -m 644 liburcu-cds.pc liburcu.pc liburcu-bp.pc liburcu-qsbr.pc liburcu-mb.pc liburcu-memb.pc '/var/tmp/hokuto/liburcu-01/output/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/liburcu-common.so.8.2.0 /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-common.so.8.2.0
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-common.so.8.2.0 liburcu-common.so.8 || { rm -f liburcu-common.so.8 && ln -s liburcu-common.so.8.2.0 liburcu-common.so.8; }; })
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-common.so.8.2.0 liburcu-common.so || { rm -f liburcu-common.so && ln -s liburcu-common.so.8.2.0 liburcu-common.so; }; })
+libtool: install: /usr/bin/install -c .libs/liburcu-common.lai /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-common.la
+libtool: [31mwarning[0m: [1mrelinking 'liburcu.la'[0m
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/build/src; /bin/sh "/var/tmp/hokuto/liburcu-01/build/libtool"  --silent --tag CC --mode=relink cc -DRCU_MEMBARRIER -Wall -Wextra -Wmissing-prototypes -Wmissing-declarations -Wnull-dereference -Wundef -Wshadow -Wjump-misses-init -Wsuggest-attribute=format -Wnested-externs -Wwrite-strings -Wformat=2 -Wstrict-aliasing -Wmissing-noreturn -Winit-self -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wno-null-dereference -pthread -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -version-info 10:0:2 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o liburcu.la -rpath /usr/lib liburcu_la-urcu.lo liburcu_la-urcu-pointer.lo liburcu_la-compat_arch.lo liburcu_la-compat_futex.lo liburcu-common.la -inst-prefix-dir /var/tmp/hokuto/liburcu-01/output)
+libtool: install: /usr/bin/install -c .libs/liburcu.so.8.2.0T /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu.so.8.2.0
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu.so.8.2.0 liburcu.so.8 || { rm -f liburcu.so.8 && ln -s liburcu.so.8.2.0 liburcu.so.8; }; })
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu.so.8.2.0 liburcu.so || { rm -f liburcu.so && ln -s liburcu.so.8.2.0 liburcu.so; }; })
+libtool: install: /usr/bin/install -c .libs/liburcu.lai /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu.la
+libtool: [31mwarning[0m: [1mrelinking 'liburcu-qsbr.la'[0m
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/build/src; /bin/sh "/var/tmp/hokuto/liburcu-01/build/libtool"  --silent --tag CC --mode=relink cc -DRCU_QSBR -Wall -Wextra -Wmissing-prototypes -Wmissing-declarations -Wnull-dereference -Wundef -Wshadow -Wjump-misses-init -Wsuggest-attribute=format -Wnested-externs -Wwrite-strings -Wformat=2 -Wstrict-aliasing -Wmissing-noreturn -Winit-self -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wno-null-dereference -pthread -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -version-info 10:0:2 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o liburcu-qsbr.la -rpath /usr/lib liburcu_qsbr_la-urcu-qsbr.lo liburcu_qsbr_la-urcu-pointer.lo liburcu_qsbr_la-compat_arch.lo liburcu_qsbr_la-compat_futex.lo liburcu-common.la -inst-prefix-dir /var/tmp/hokuto/liburcu-01/output)
+libtool: install: /usr/bin/install -c .libs/liburcu-qsbr.so.8.2.0T /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-qsbr.so.8.2.0
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-qsbr.so.8.2.0 liburcu-qsbr.so.8 || { rm -f liburcu-qsbr.so.8 && ln -s liburcu-qsbr.so.8.2.0 liburcu-qsbr.so.8; }; })
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-qsbr.so.8.2.0 liburcu-qsbr.so || { rm -f liburcu-qsbr.so && ln -s liburcu-qsbr.so.8.2.0 liburcu-qsbr.so; }; })
+libtool: install: /usr/bin/install -c .libs/liburcu-qsbr.lai /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-qsbr.la
+libtool: [31mwarning[0m: [1mrelinking 'liburcu-mb.la'[0m
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/build/src; /bin/sh "/var/tmp/hokuto/liburcu-01/build/libtool"  --silent --tag CC --mode=relink cc -DRCU_MB -Wall -Wextra -Wmissing-prototypes -Wmissing-declarations -Wnull-dereference -Wundef -Wshadow -Wjump-misses-init -Wsuggest-attribute=format -Wnested-externs -Wwrite-strings -Wformat=2 -Wstrict-aliasing -Wmissing-noreturn -Winit-self -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wno-null-dereference -pthread -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -version-info 10:0:2 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o liburcu-mb.la -rpath /usr/lib liburcu_mb_la-urcu.lo liburcu_mb_la-urcu-pointer.lo liburcu_mb_la-compat_arch.lo liburcu_mb_la-compat_futex.lo liburcu-common.la -inst-prefix-dir /var/tmp/hokuto/liburcu-01/output)
+libtool: install: /usr/bin/install -c .libs/liburcu-mb.so.8.2.0T /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-mb.so.8.2.0
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-mb.so.8.2.0 liburcu-mb.so.8 || { rm -f liburcu-mb.so.8 && ln -s liburcu-mb.so.8.2.0 liburcu-mb.so.8; }; })
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-mb.so.8.2.0 liburcu-mb.so || { rm -f liburcu-mb.so && ln -s liburcu-mb.so.8.2.0 liburcu-mb.so; }; })
+libtool: install: /usr/bin/install -c .libs/liburcu-mb.lai /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-mb.la
+libtool: [31mwarning[0m: [1mrelinking 'liburcu-bp.la'[0m
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/build/src; /bin/sh "/var/tmp/hokuto/liburcu-01/build/libtool"  --silent --tag CC --mode=relink cc -Wall -Wextra -Wmissing-prototypes -Wmissing-declarations -Wnull-dereference -Wundef -Wshadow -Wjump-misses-init -Wsuggest-attribute=format -Wnested-externs -Wwrite-strings -Wformat=2 -Wstrict-aliasing -Wmissing-noreturn -Winit-self -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wno-null-dereference -pthread -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -version-info 10:0:2 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o liburcu-bp.la -rpath /usr/lib urcu-bp.lo urcu-pointer.lo compat_arch.lo compat_futex.lo liburcu-common.la -inst-prefix-dir /var/tmp/hokuto/liburcu-01/output)
+libtool: install: /usr/bin/install -c .libs/liburcu-bp.so.8.2.0T /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-bp.so.8.2.0
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-bp.so.8.2.0 liburcu-bp.so.8 || { rm -f liburcu-bp.so.8 && ln -s liburcu-bp.so.8.2.0 liburcu-bp.so.8; }; })
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-bp.so.8.2.0 liburcu-bp.so || { rm -f liburcu-bp.so && ln -s liburcu-bp.so.8.2.0 liburcu-bp.so; }; })
+libtool: install: /usr/bin/install -c .libs/liburcu-bp.lai /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-bp.la
+libtool: [31mwarning[0m: [1mrelinking 'liburcu-memb.la'[0m
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/build/src; /bin/sh "/var/tmp/hokuto/liburcu-01/build/libtool"  --silent --tag CC --mode=relink cc -DRCU_MEMBARRIER -Wall -Wextra -Wmissing-prototypes -Wmissing-declarations -Wnull-dereference -Wundef -Wshadow -Wjump-misses-init -Wsuggest-attribute=format -Wnested-externs -Wwrite-strings -Wformat=2 -Wstrict-aliasing -Wmissing-noreturn -Winit-self -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wno-null-dereference -pthread -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -version-info 10:0:2 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o liburcu-memb.la -rpath /usr/lib liburcu_memb_la-urcu.lo liburcu_memb_la-urcu-pointer.lo liburcu_memb_la-compat_arch.lo liburcu_memb_la-compat_futex.lo liburcu-common.la -inst-prefix-dir /var/tmp/hokuto/liburcu-01/output)
+libtool: install: /usr/bin/install -c .libs/liburcu-memb.so.8.2.0T /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-memb.so.8.2.0
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-memb.so.8.2.0 liburcu-memb.so.8 || { rm -f liburcu-memb.so.8 && ln -s liburcu-memb.so.8.2.0 liburcu-memb.so.8; }; })
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-memb.so.8.2.0 liburcu-memb.so || { rm -f liburcu-memb.so && ln -s liburcu-memb.so.8.2.0 liburcu-memb.so; }; })
+libtool: install: /usr/bin/install -c .libs/liburcu-memb.lai /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-memb.la
+libtool: [31mwarning[0m: [1mrelinking 'liburcu-cds.la'[0m
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/build/src; /bin/sh "/var/tmp/hokuto/liburcu-01/build/libtool"  --silent --tag CC --mode=relink cc -Wall -Wextra -Wmissing-prototypes -Wmissing-declarations -Wnull-dereference -Wundef -Wshadow -Wjump-misses-init -Wsuggest-attribute=format -Wnested-externs -Wwrite-strings -Wformat=2 -Wstrict-aliasing -Wmissing-noreturn -Winit-self -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wno-null-dereference -pthread -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -version-info 10:0:2 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -o liburcu-cds.la -rpath /usr/lib rculfqueue.lo rculfstack.lo lfstack.lo workqueue.lo rculfhash.lo rculfhash-mm-order.lo rculfhash-mm-chunk.lo rculfhash-mm-mmap.lo compat_arch.lo compat_futex.lo liburcu-common.la -inst-prefix-dir /var/tmp/hokuto/liburcu-01/output)
+libtool: install: /usr/bin/install -c .libs/liburcu-cds.so.8.2.0T /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-cds.so.8.2.0
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-cds.so.8.2.0 liburcu-cds.so.8 || { rm -f liburcu-cds.so.8 && ln -s liburcu-cds.so.8.2.0 liburcu-cds.so.8; }; })
+libtool: install: (cd /var/tmp/hokuto/liburcu-01/output/usr/lib && { ln -s -f liburcu-cds.so.8.2.0 liburcu-cds.so || { rm -f liburcu-cds.so && ln -s liburcu-cds.so.8.2.0 liburcu-cds.so; }; })
+libtool: install: /usr/bin/install -c .libs/liburcu-cds.lai /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-cds.la
+libtool: install: /usr/bin/install -c .libs/liburcu-common.a /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-common.a
+libtool: install: chmod 644 /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-common.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-common.a
+libtool: install: /usr/bin/install -c .libs/liburcu.a /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu.a
+libtool: install: chmod 644 /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu.a
+libtool: install: /usr/bin/install -c .libs/liburcu-qsbr.a /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-qsbr.a
+libtool: install: chmod 644 /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-qsbr.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-qsbr.a
+libtool: install: /usr/bin/install -c .libs/liburcu-mb.a /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-mb.a
+libtool: install: chmod 644 /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-mb.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-mb.a
+libtool: install: /usr/bin/install -c .libs/liburcu-bp.a /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-bp.a
+libtool: install: chmod 644 /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-bp.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-bp.a
+libtool: install: /usr/bin/install -c .libs/liburcu-memb.a /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-memb.a
+libtool: install: chmod 644 /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-memb.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-memb.a
+libtool: install: /usr/bin/install -c .libs/liburcu-cds.a /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-cds.a
+libtool: install: chmod 644 /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-cds.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/liburcu-01/output/usr/lib/liburcu-cds.a
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/src'
+Making install in doc
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc'
+Making install in examples
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/hlist'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/list'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/urcu-flavors'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfcqueue'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfqueue'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/wfstack'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/lfstack'
+make[4]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[4]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples/rculfhash'
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/hlist'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/list'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/lfstack'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/rculfhash'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/rculfqueue'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/wfcqueue'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/urcu-flavors'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/wfstack'
+ /usr/bin/install -c -m 644 hlist/Makefile hlist/Makefile.cds_hlist_add_head_rcu hlist/Makefile.cds_hlist_del_rcu hlist/Makefile.cds_hlist_for_each_rcu hlist/Makefile.cds_hlist_for_each_entry_rcu hlist/cds_hlist_add_head_rcu.c hlist/cds_hlist_del_rcu.c hlist/cds_hlist_for_each_rcu.c hlist/cds_hlist_for_each_entry_rcu.c '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/hlist'
+ /usr/bin/install -c -m 644 lfstack/Makefile lfstack/Makefile.cds_lfs_push lfstack/Makefile.cds_lfs_pop_blocking lfstack/Makefile.cds_lfs_pop_all_blocking lfstack/cds_lfs_push.c lfstack/cds_lfs_pop_blocking.c lfstack/cds_lfs_pop_all_blocking.c '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/lfstack'
+ /usr/bin/install -c -m 644 rculfqueue/Makefile rculfqueue/Makefile.cds_lfq_enqueue rculfqueue/Makefile.cds_lfq_dequeue rculfqueue/cds_lfq_enqueue.c rculfqueue/cds_lfq_dequeue.c '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/rculfqueue'
+ /usr/bin/install -c -m 644 rculfhash/Makefile rculfhash/jhash.h rculfhash/Makefile.cds_lfht_add rculfhash/Makefile.cds_lfht_add_unique rculfhash/Makefile.cds_lfht_add_replace rculfhash/Makefile.cds_lfht_del rculfhash/Makefile.cds_lfht_destroy rculfhash/Makefile.cds_lfht_lookup rculfhash/Makefile.cds_lfht_for_each_entry_duplicate rculfhash/cds_lfht_add.c rculfhash/cds_lfht_add_unique.c rculfhash/cds_lfht_add_replace.c rculfhash/cds_lfht_del.c rculfhash/cds_lfht_destroy.c rculfhash/cds_lfht_lookup.c rculfhash/cds_lfht_for_each_entry_duplicate.c '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/rculfhash'
+ /usr/bin/install -c -m 644 list/Makefile list/Makefile.cds_list_add_rcu list/Makefile.cds_list_add_tail_rcu list/Makefile.cds_list_del_rcu list/Makefile.cds_list_for_each_rcu list/Makefile.cds_list_for_each_entry_rcu list/Makefile.cds_list_replace_rcu list/cds_list_add_rcu.c list/cds_list_add_tail_rcu.c list/cds_list_del_rcu.c list/cds_list_for_each_rcu.c list/cds_list_for_each_entry_rcu.c list/cds_list_replace_rcu.c '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/list'
+ /usr/bin/install -c -m 644 wfcqueue/Makefile wfcqueue/Makefile.cds_wfcq_enqueue wfcqueue/Makefile.cds_wfcq_dequeue wfcqueue/Makefile.cds_wfcq_splice wfcqueue/cds_wfcq_enqueue.c wfcqueue/cds_wfcq_dequeue.c wfcqueue/cds_wfcq_splice.c '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/wfcqueue'
+ /usr/bin/install -c -m 644 dist-files/Makefile Makefile.examples.template '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples'
+ /usr/bin/install -c -m 644 wfstack/Makefile wfstack/Makefile.cds_wfs_push wfstack/Makefile.cds_wfs_pop wfstack/Makefile.cds_wfs_pop_all_blocking wfstack/cds_wfs_push.c wfstack/cds_wfs_pop.c wfstack/cds_wfs_pop_all_blocking.c '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/wfstack'
+ /usr/bin/install -c -m 644 urcu-flavors/Makefile urcu-flavors/Makefile.qsbr urcu-flavors/Makefile.mb urcu-flavors/Makefile.membarrier urcu-flavors/Makefile.bp urcu-flavors/qsbr.c urcu-flavors/mb.c urcu-flavors/membarrier.c urcu-flavors/bp.c '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu/examples/urcu-flavors'
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc/examples'
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu'
+ /usr/bin/install -c -m 644 rcu-api.md cds-api.md solaris-build.md uatomic-api.md '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu'
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/doc'
+Making install in tests
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests'
+Making install in utils
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/utils'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/utils'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/utils'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/utils'
+Making install in common
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/common'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/common'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/common'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/common'
+Making install in unit
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/unit'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/unit'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/unit'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/unit'
+Making install in benchmark
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/benchmark'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/benchmark'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/benchmark'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/benchmark'
+Making install in regression
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/regression'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests/regression'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/regression'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests/regression'
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests'
+make[3]: Entering directory '/var/tmp/hokuto/liburcu-01/build/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/tests'
+Making install in extras
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build/extras'
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build/extras'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/extras'
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build/extras'
+make[1]: Entering directory '/var/tmp/hokuto/liburcu-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/liburcu-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu'
+ /usr/bin/install -c -m 644 LICENSE.md README.md '/var/tmp/hokuto/liburcu-01/output/usr/share/doc/userspace-rcu'
+make[2]: Leaving directory '/var/tmp/hokuto/liburcu-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/liburcu-01/build'
+
+Script done on 2026-09-12 16:33:56+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mliburcu[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 12 Sep 2026 09:33:57 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m21s[0m
