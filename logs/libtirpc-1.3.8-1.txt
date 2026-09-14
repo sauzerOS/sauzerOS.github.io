@@ -1,0 +1,589 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibtirpc[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibtirpc 1.3.8-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 14 Sep 2026 02:12:21 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibtirpc[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibtirpc[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 lib32-gcc-libs-16.2.0-1 lib32-glibc-2.44-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-14 09:12:21+07:00 [COMMAND="cd /var/tmp/hokuto/libtirpc-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libtirpc-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libtirpc-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libtirpc-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libtirpc-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libtirpc-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libtirpc-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libtirpc-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libtirpc-01/build/.cache' /repo/sauzeros/core/libtirpc/build /var/tmp/hokuto/libtirpc-01/output 1.3.8 libtirpc" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for gssapi/gssapi.h... yes
+checking if version scripts are supported... yes
+checking build system type... x86_64-pc-linux-gnu
+checking for SOL_IP... yes
+checking for SOL_IPV6... yes
+checking for IPPROTO_IP... yes
+checking for IPPROTO_IPV6... yes
+checking for IPV6_PKTINFO... checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for libintl.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... yes
+checking for sys/socket.h... yes
+checking for sys/time.h... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking for features.h... yes
+checking for gssapi/gssapi_ext.h... yes
+checking for endian.h... yes
+checking for machine/endian.h... no
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking whether cc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for getpeereid... no
+checking for getrpcbyname... yes
+checking for getrpcbynumber... yes
+checking for setrpcent... yes
+checking for endrpcent... yes
+checking for getrpcent... yes
+checking for struct rpcent... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating doc/Makefile
+config.status: creating src/libtirpc.map
+config.status: creating libtirpc.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure:
+libtirpc configuration summary:
+  GSS-API support: no
+  DES crypto support: no
+  RPC database support: no
+  Symbol versioning: yes
+
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build'
+Making all in src
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Makefile:1535: warning: overriding recipe for target 'libtirpc.map'
+Makefile:539: warning: ignoring old recipe for target 'libtirpc.map'
+make  all-am
+make[3]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Makefile:1535: warning: overriding recipe for target 'libtirpc.map'
+Makefile:539: warning: ignoring old recipe for target 'libtirpc.map'
+  CC       libtirpc_la-auth_unix.lo
+  CC       libtirpc_la-authunix_prot.lo
+  CC       libtirpc_la-binddynport.lo
+  CC       libtirpc_la-bindresvport.lo
+  CC       libtirpc_la-auth_none.lo
+  CC       libtirpc_la-clnt_bcast.lo
+  CC       libtirpc_la-clnt_dg.lo
+  CC       libtirpc_la-clnt_generic.lo
+  CC       libtirpc_la-clnt_perror.lo
+  CC       libtirpc_la-clnt_raw.lo
+  CC       libtirpc_la-clnt_simple.lo
+  CC       libtirpc_la-rpc_dtablesize.lo
+  CC       libtirpc_la-clnt_vc.lo
+  CC       libtirpc_la-getnetconfig.lo
+  CC       libtirpc_la-getnetpath.lo
+  CC       libtirpc_la-getrpcport.lo
+  CC       libtirpc_la-mt_misc.lo
+  CC       libtirpc_la-pmap_clnt.lo
+  CC       libtirpc_la-pmap_getmaps.lo
+  CC       libtirpc_la-pmap_getport.lo
+  CC       libtirpc_la-pmap_prot.lo
+  CC       libtirpc_la-pmap_prot2.lo
+  CC       libtirpc_la-pmap_rmt.lo
+  CC       libtirpc_la-rpc_prot.lo
+  CC       libtirpc_la-rpc_commondata.lo
+  CC       libtirpc_la-rpc_callmsg.lo
+  CC       libtirpc_la-rpc_generic.lo
+  CC       libtirpc_la-rpc_soc.lo
+  CC       libtirpc_la-rpcb_clnt.lo
+  CC       libtirpc_la-rpcb_prot.lo
+  CC       libtirpc_la-rpcb_st_xdr.lo
+  CC       libtirpc_la-svc.lo
+  CC       libtirpc_la-svc_auth.lo
+  CC       libtirpc_la-svc_dg.lo
+  CC       libtirpc_la-svc_auth_unix.lo
+  CC       libtirpc_la-svc_auth_none.lo
+  CC       libtirpc_la-svc_generic.lo
+  CC       libtirpc_la-svc_raw.lo
+  CC       libtirpc_la-svc_run.lo
+  CC       libtirpc_la-svc_simple.lo
+  CC       libtirpc_la-svc_vc.lo
+  CC       libtirpc_la-getpeereid.lo
+  CC       libtirpc_la-auth_time.lo
+  CC       libtirpc_la-debug.lo
+  CC       libtirpc_la-xdr.lo
+  CC       libtirpc_la-xdr_rec.lo
+  CC       libtirpc_la-xdr_array.lo
+  CC       libtirpc_la-xdr_float.lo
+  CC       libtirpc_la-xdr_mem.lo
+  CC       libtirpc_la-xdr_reference.lo
+  CC       libtirpc_la-xdr_stdio.lo
+  CC       libtirpc_la-xdr_sizeof.lo
+  CC       libtirpc_la-key_call.lo
+  CC       libtirpc_la-key_prot_xdr.lo
+  CC       libtirpc_la-getpublickey.lo
+  CC       libtirpc_la-netname.lo
+  CC       libtirpc_la-netnamer.lo
+  CC       libtirpc_la-rpcdname.lo
+  CC       libtirpc_la-rtime.lo
+  CCLD     libtirpc.la
+make[3]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Making all in man
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/man'
+Making all in doc
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build'
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Makefile:1535: warning: overriding recipe for target 'libtirpc.map'
+Makefile:539: warning: ignoring old recipe for target 'libtirpc.map'
+make  install-am
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Makefile:1535: warning: overriding recipe for target 'libtirpc.map'
+Makefile:539: warning: ignoring old recipe for target 'libtirpc.map'
+make[3]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Makefile:1535: warning: overriding recipe for target 'libtirpc.map'
+Makefile:539: warning: ignoring old recipe for target 'libtirpc.map'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/output/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libtirpc.la '/var/tmp/hokuto/libtirpc-01/output/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libtirpc.so.3.0.0 /var/tmp/hokuto/libtirpc-01/output/usr/lib/libtirpc.so.3.0.0
+libtool: install: (cd /var/tmp/hokuto/libtirpc-01/output/usr/lib && { ln -s -f libtirpc.so.3.0.0 libtirpc.so.3 || { rm -f libtirpc.so.3 && ln -s libtirpc.so.3.0.0 libtirpc.so.3; }; })
+libtool: install: (cd /var/tmp/hokuto/libtirpc-01/output/usr/lib && { ln -s -f libtirpc.so.3.0.0 libtirpc.so || { rm -f libtirpc.so && ln -s libtirpc.so.3.0.0 libtirpc.so; }; })
+libtool: install: /usr/bin/install -c .libs/libtirpc.lai /var/tmp/hokuto/libtirpc-01/output/usr/lib/libtirpc.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Making install in man
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/man'
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/output/usr/share/man/man5'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/output/usr/share/man/man3'
+ /usr/bin/install -c -m 644 netconfig.5 '/var/tmp/hokuto/libtirpc-01/output/usr/share/man/man5'
+ /usr/bin/install -c -m 644 getrpcent.3t getrpcport.3t getnetconfig.3t getnetpath.3t bindresvport.3t rpc.3t rpc_xdr.3t des_crypt.3t rpc_soc.3t rpc_secure.3t rtime.3t rpc_clnt_auth.3t rpc_clnt_calls.3t rpc_clnt_create.3t rpcbind.3t rpc_svc_calls.3t rpc_svc_create.3t rpc_svc_err.3t rpc_svc_reg.3t '/var/tmp/hokuto/libtirpc-01/output/usr/share/man/man3'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/man'
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/man'
+Making install in doc
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/output/etc'
+ /usr/bin/install -c -m 644 netconfig bindresvport.blacklist '/var/tmp/hokuto/libtirpc-01/output/etc'
+make  install-exec-hook
+make[3]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[3]: Nothing to be done for 'install-exec-hook'.
+make[3]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/output/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/output/usr/include'
+ /usr/bin/install -c -m 644 libtirpc.pc '/var/tmp/hokuto/libtirpc-01/output/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/output/usr/include/tirpc/rpcsvc'
+ /usr/bin/install -c -m 644  tirpc/rpcsvc/crypt.x tirpc/rpcsvc/crypt.h '/var/tmp/hokuto/libtirpc-01/output/usr/include/tirpc/rpcsvc'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/output/usr/include/tirpc'
+ /usr/bin/install -c -m 644  tirpc/netconfig.h '/var/tmp/hokuto/libtirpc-01/output/usr/include/tirpc'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/output/usr/include/tirpc/rpc'
+ /usr/bin/install -c -m 644  tirpc/rpc/xdr.h tirpc/rpc/types.h tirpc/rpc/svc_soc.h tirpc/rpc/svc.h tirpc/rpc/svc_dg.h tirpc/rpc/svc_auth.h tirpc/rpc/svc_mt.h tirpc/rpc/rpc_msg.h tirpc/rpc/rpc.h tirpc/rpc/rpcent.h tirpc/rpc/rpc_com.h tirpc/rpc/rpcb_prot.x tirpc/rpc/rpcb_prot.h tirpc/rpc/rpcb_clnt.h tirpc/rpc/raw.h tirpc/rpc/pmap_rmt.h tirpc/rpc/pmap_prot.h tirpc/rpc/pmap_clnt.h tirpc/rpc/nettype.h tirpc/rpc/key_prot.h tirpc/rpc/des.h tirpc/rpc/des_crypt.h tirpc/rpc/clnt_stat.h tirpc/rpc/clnt_soc.h tirpc/rpc/clnt.h tirpc/rpc/auth_unix.h tirpc/rpc/auth_des.h tirpc/rpc/auth.h '/var/tmp/hokuto/libtirpc-01/output/usr/include/tirpc/rpc'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build'
+Making clean in src
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Makefile:1535: warning: overriding recipe for target 'libtirpc.map'
+Makefile:539: warning: ignoring old recipe for target 'libtirpc.map'
+rm -f  cscope.* libtirpc.map *~
+rm -f  libtirpc.la
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f ./so_locations
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Making clean in man
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/man'
+rm -f  cscope.* *~
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/man'
+Making clean in doc
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+rm -f  cscope.* *~
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build'
+rm -f  cscope.* *~
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build'
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for gssapi/gssapi.h... yes
+checking if version scripts are supported... yes
+checking build system type... x86_64-pc-linux-gnu
+checking for SOL_IP... yes
+checking for SOL_IPV6... yes
+checking for IPPROTO_IP... yes
+checking for IPPROTO_IPV6... yes
+checking for IPV6_PKTINFO... checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... no
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_i386) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for libintl.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... yes
+checking for sys/socket.h... yes
+checking for sys/time.h... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking for features.h... yes
+checking for gssapi/gssapi_ext.h... yes
+checking for endian.h... yes
+checking for machine/endian.h... no
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking whether cc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for getpeereid... no
+checking for getrpcbyname... yes
+checking for getrpcbynumber... yes
+checking for setrpcent... yes
+checking for endrpcent... yes
+checking for getrpcent... yes
+checking for struct rpcent... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating doc/Makefile
+config.status: creating src/libtirpc.map
+config.status: creating libtirpc.pc
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure:
+libtirpc configuration summary:
+  GSS-API support: no
+  DES crypto support: no
+  RPC database support: no
+  Symbol versioning: yes
+
+Making install in src
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Makefile:1535: warning: overriding recipe for target 'libtirpc.map'
+Makefile:539: warning: ignoring old recipe for target 'libtirpc.map'
+make  install-am
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Makefile:1535: warning: overriding recipe for target 'libtirpc.map'
+Makefile:539: warning: ignoring old recipe for target 'libtirpc.map'
+  CC       libtirpc_la-authunix_prot.lo
+  CC       libtirpc_la-auth_none.lo
+  CC       libtirpc_la-binddynport.lo
+  CC       libtirpc_la-bindresvport.lo
+  CC       libtirpc_la-auth_unix.lo
+  CC       libtirpc_la-clnt_bcast.lo
+  CC       libtirpc_la-clnt_generic.lo
+  CC       libtirpc_la-clnt_dg.lo
+  CC       libtirpc_la-clnt_perror.lo
+  CC       libtirpc_la-clnt_raw.lo
+  CC       libtirpc_la-clnt_simple.lo
+  CC       libtirpc_la-clnt_vc.lo
+  CC       libtirpc_la-rpc_dtablesize.lo
+  CC       libtirpc_la-getnetconfig.lo
+  CC       libtirpc_la-getnetpath.lo
+  CC       libtirpc_la-getrpcport.lo
+  CC       libtirpc_la-mt_misc.lo
+  CC       libtirpc_la-pmap_clnt.lo
+  CC       libtirpc_la-pmap_getmaps.lo
+  CC       libtirpc_la-pmap_getport.lo
+  CC       libtirpc_la-pmap_prot.lo
+  CC       libtirpc_la-pmap_prot2.lo
+  CC       libtirpc_la-pmap_rmt.lo
+  CC       libtirpc_la-rpc_prot.lo
+  CC       libtirpc_la-rpc_commondata.lo
+  CC       libtirpc_la-rpc_callmsg.lo
+  CC       libtirpc_la-rpc_generic.lo
+  CC       libtirpc_la-rpc_soc.lo
+  CC       libtirpc_la-rpcb_clnt.lo
+  CC       libtirpc_la-rpcb_prot.lo
+  CC       libtirpc_la-rpcb_st_xdr.lo
+  CC       libtirpc_la-svc.lo
+  CC       libtirpc_la-svc_auth.lo
+  CC       libtirpc_la-svc_dg.lo
+  CC       libtirpc_la-svc_auth_unix.lo
+  CC       libtirpc_la-svc_auth_none.lo
+  CC       libtirpc_la-svc_generic.lo
+  CC       libtirpc_la-svc_raw.lo
+  CC       libtirpc_la-svc_run.lo
+  CC       libtirpc_la-svc_simple.lo
+  CC       libtirpc_la-svc_vc.lo
+  CC       libtirpc_la-getpeereid.lo
+  CC       libtirpc_la-auth_time.lo
+  CC       libtirpc_la-debug.lo
+  CC       libtirpc_la-xdr.lo
+  CC       libtirpc_la-xdr_rec.lo
+  CC       libtirpc_la-xdr_array.lo
+  CC       libtirpc_la-xdr_float.lo
+  CC       libtirpc_la-xdr_mem.lo
+  CC       libtirpc_la-xdr_reference.lo
+  CC       libtirpc_la-xdr_stdio.lo
+  CC       libtirpc_la-xdr_sizeof.lo
+  CC       libtirpc_la-key_call.lo
+  CC       libtirpc_la-key_prot_xdr.lo
+  CC       libtirpc_la-getpublickey.lo
+  CC       libtirpc_la-netname.lo
+  CC       libtirpc_la-netnamer.lo
+  CC       libtirpc_la-rpcdname.lo
+  CC       libtirpc_la-rtime.lo
+  CCLD     libtirpc.la
+make[3]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Makefile:1535: warning: overriding recipe for target 'libtirpc.map'
+Makefile:539: warning: ignoring old recipe for target 'libtirpc.map'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libtirpc.la '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32'
+libtool: install: /usr/bin/install -c .libs/libtirpc.so.3.0.0 /var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32/libtirpc.so.3.0.0
+libtool: install: (cd /var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32 && { ln -s -f libtirpc.so.3.0.0 libtirpc.so.3 || { rm -f libtirpc.so.3 && ln -s libtirpc.so.3.0.0 libtirpc.so.3; }; })
+libtool: install: (cd /var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32 && { ln -s -f libtirpc.so.3.0.0 libtirpc.so || { rm -f libtirpc.so && ln -s libtirpc.so.3.0.0 libtirpc.so; }; })
+libtool: install: /usr/bin/install -c .libs/libtirpc.lai /var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32/libtirpc.la
+libtool: install: /usr/bin/install -c .libs/libtirpc.a /var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32/libtirpc.a
+libtool: install: chmod 644 /var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32/libtirpc.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32/libtirpc.a
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib32'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/src'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/src'
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/src'
+Making install in man
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/man'
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/share/man/man5'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/share/man/man3'
+ /usr/bin/install -c -m 644 netconfig.5 '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/share/man/man5'
+ /usr/bin/install -c -m 644 getrpcent.3t getrpcport.3t getnetconfig.3t getnetpath.3t bindresvport.3t rpc.3t rpc_xdr.3t des_crypt.3t rpc_soc.3t rpc_secure.3t rtime.3t rpc_clnt_auth.3t rpc_clnt_calls.3t rpc_clnt_create.3t rpcbind.3t rpc_svc_calls.3t rpc_svc_create.3t rpc_svc_err.3t rpc_svc_reg.3t '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/share/man/man3'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/man'
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/man'
+Making install in doc
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/etc'
+ /usr/bin/install -c -m 644 netconfig bindresvport.blacklist '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/etc'
+make  install-exec-hook
+make[3]: Entering directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[3]: Nothing to be done for 'install-exec-hook'.
+make[3]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build/doc'
+make[1]: Entering directory '/var/tmp/hokuto/libtirpc-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/libtirpc-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32/pkgconfig'
+ /usr/bin/install -c -m 644 libtirpc.pc '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/lib32/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/include/tirpc/rpcsvc'
+ /usr/bin/install -c -m 644  tirpc/rpcsvc/crypt.x tirpc/rpcsvc/crypt.h '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/include/tirpc/rpcsvc'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/include/tirpc'
+ /usr/bin/install -c -m 644  tirpc/netconfig.h '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/include/tirpc'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/include/tirpc/rpc'
+ /usr/bin/install -c -m 644  tirpc/rpc/xdr.h tirpc/rpc/types.h tirpc/rpc/svc_soc.h tirpc/rpc/svc.h tirpc/rpc/svc_dg.h tirpc/rpc/svc_auth.h tirpc/rpc/svc_mt.h tirpc/rpc/rpc_msg.h tirpc/rpc/rpc.h tirpc/rpc/rpcent.h tirpc/rpc/rpc_com.h tirpc/rpc/rpcb_prot.x tirpc/rpc/rpcb_prot.h tirpc/rpc/rpcb_clnt.h tirpc/rpc/raw.h tirpc/rpc/pmap_rmt.h tirpc/rpc/pmap_prot.h tirpc/rpc/pmap_clnt.h tirpc/rpc/nettype.h tirpc/rpc/key_prot.h tirpc/rpc/des.h tirpc/rpc/des_crypt.h tirpc/rpc/clnt_stat.h tirpc/rpc/clnt_soc.h tirpc/rpc/clnt.h tirpc/rpc/auth_unix.h tirpc/rpc/auth_des.h tirpc/rpc/auth.h '/var/tmp/hokuto/libtirpc-01/build/DESTDIR/usr/include/tirpc/rpc'
+make[2]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libtirpc-01/build'
+'DESTDIR/usr/lib32/libtirpc.a' -> '/var/tmp/hokuto/libtirpc-01/split/lib32-libtirpc/usr/lib32/libtirpc.a'
+'DESTDIR/usr/lib32/libtirpc.la' -> '/var/tmp/hokuto/libtirpc-01/split/lib32-libtirpc/usr/lib32/libtirpc.la'
+'DESTDIR/usr/lib32/libtirpc.so' -> '/var/tmp/hokuto/libtirpc-01/split/lib32-libtirpc/usr/lib32/libtirpc.so'
+'DESTDIR/usr/lib32/libtirpc.so.3' -> '/var/tmp/hokuto/libtirpc-01/split/lib32-libtirpc/usr/lib32/libtirpc.so.3'
+'DESTDIR/usr/lib32/libtirpc.so.3.0.0' -> '/var/tmp/hokuto/libtirpc-01/split/lib32-libtirpc/usr/lib32/libtirpc.so.3.0.0'
+'DESTDIR/usr/lib32/pkgconfig' -> '/var/tmp/hokuto/libtirpc-01/split/lib32-libtirpc/usr/lib32/pkgconfig'
+'DESTDIR/usr/lib32/pkgconfig/libtirpc.pc' -> '/var/tmp/hokuto/libtirpc-01/split/lib32-libtirpc/usr/lib32/pkgconfig/libtirpc.pc'
+
+Script done on 2026-09-14 09:12:31+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibtirpc[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 14 Sep 2026 02:12:31 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m9s[0m
