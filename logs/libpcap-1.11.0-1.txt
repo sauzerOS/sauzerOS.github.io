@@ -1,0 +1,529 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibpcap[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibpcap 1.11.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 14 Sep 2026 02:11:32 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibpcap[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mbash dbus glibc libnl bluez-libs lib32-dbus lib32-libnl[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibpcap[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 bash-5.3.p15-1 binutils-2.46.1-1 bison-3.8.2-1 bluez-libs-5.87-1 dbus-1.16.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 lib32-dbus-1.16.2-1 lib32-gcc-libs-16.2.0-1 lib32-glibc-2.44-1 lib32-libnl-3.12.0-1 libnl-3.12.0-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-14 09:11:33+07:00 [COMMAND="cd /var/tmp/hokuto/libpcap-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libpcap-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libpcap-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libpcap-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libpcap-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libpcap-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libpcap-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libpcap-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libpcap-01/build/.cache' /repo/sauzeros/extra/libpcap/build /var/tmp/hokuto/libpcap-01/output 1.11.0 libpcap" <not executed on terminal>]
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: no obvious need to run autopoint
+autoreconf: configure.ac: not using aclocal
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: no need to run autopoint (confirmed)
+autoreconf: running: /usr/bin/autoconf --force
+configure.ac:114: warning: The macro 'AC_PROG_CC_C99' is obsolete.
+configure.ac:114: You should run autoupdate.
+./lib/autoconf/c.m4:1788: AC_PROG_CC_C99 is expanded from...
+configure.ac:114: the top level
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: configure.ac: not using Automake
+autoreconf: './install-sh' is updated
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking for cc option to support large files... none needed
+checking for declarations of fseeko and ftello... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking size of void *... 8
+checking size of time_t... 8
+checking whether the compiler supports the -fvisibility=hidden option... yes
+checking for strerror_r... yes
+checking whether strerror_r is GNU-style... yes
+checking whether snprintf is suitable... yes
+checking for vasprintf... yes
+checking for asprintf... yes
+checking for strlcat... yes
+checking for strlcpy... yes
+checking for strtok_r... yes
+checking for getaddrinfo... yes
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking whether getnetbyname_r is declared... yes
+checking for the Linux getnetbyname_r()... yes
+checking whether getprotobyname_r is declared... yes
+checking for the Linux getprotobyname_r()... yes
+checking for ether_hostton... yes
+checking whether ether_hostton is declared... no
+checking whether ether_hostton is declared... yes
+checking if features.h defines __GLIBC__... yes
+checking for pthread.h... yes
+checking for pthread_create... yes
+checking whether to enable the instrument functions code... no
+checking if --disable-protochain option is specified... enabled
+checking packet capture type... linux
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.17.0... yes
+checking for brew... no
+checking for libnl-genl-3.0 with pkg-config... found
+checking whether SKF_AD_VLAN_TAG_PRESENT is declared... yes
+checking for __atomic_load_n... yes
+checking for __atomic_store_n... yes
+checking for getifaddrs... yes
+checking for ifaddrs.h... yes
+checking for linux/net_tstamp.h... yes
+checking for socklen_t... yes
+checking for dagapi.h... no
+checking for snf.h... no
+checking whether to enable remote packet capture... no
+checking whether to build optimizer debugging code... no
+checking whether to build parser debugging code... no
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for capable lex... yes
+checking for bison... bison
+checking for ranlib... gcc-ranlib
+checking for ar... gcc-ar
+checking whether ln -s works... yes
+checking whether the compiler implements __builtin_bswap16()... yes
+checking whether the compiler implements __builtin_bswap32()... yes
+checking whether the compiler implements __builtin_bswap64()... yes
+checking whether the compiler implements __builtin_ctz()... yes
+checking for struct sockaddr.sa_len... no
+checking for Linux usbmon USB sniffing support... yes
+checking for linux/compiler.h... no
+checking for linux/usbdevice_fs.h... yes
+checking for struct usbdevfs_ctrltransfer.bRequestType... yes
+checking whether we can compile the netfilter support... yes
+checking whether we can compile the netmap support... no
+checking for bluetooth/bluetooth.h... yes
+configure: Bluetooth sniffing is supported
+checking for struct sockaddr_hci.hci_channel... yes
+checking if HCI_CHANNEL_MONITOR is defined... yes
+checking for dbus-1 with pkg-config... found
+checking whether the D-Bus library defines dbus_connection_read_write... yes
+checking for libibverbs with pkg-config... not found
+checking for ibv_get_device_list in -libverbs... no
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating grammar.y
+config.status: creating pcap-filter.manmisc
+config.status: creating pcap-linktype.manmisc
+config.status: creating pcap-tstamp.manmisc
+config.status: creating pcap-savefile.manfile
+config.status: creating pcap.3pcap
+config.status: creating pcap_compile.3pcap
+config.status: creating pcap_datalink.3pcap
+config.status: creating pcap_dump_open.3pcap
+config.status: creating pcap_get_tstamp_precision.3pcap
+config.status: creating pcap_list_datalinks.3pcap
+config.status: creating pcap_list_tstamp_types.3pcap
+config.status: creating pcap_open_dead.3pcap
+config.status: creating pcap_open_offline.3pcap
+config.status: creating pcap_set_immediate_mode.3pcap
+config.status: creating pcap_set_tstamp_precision.3pcap
+config.status: creating pcap_set_tstamp_type.3pcap
+config.status: creating rpcapd/Makefile
+config.status: creating rpcapd/rpcapd.manadmin
+config.status: creating rpcapd/rpcapd-config.manfile
+config.status: creating testprogs/Makefile
+config.status: creating config.h
+config.status: executing .devel commands
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-linux.o pcap-linux.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o fad-getad.o fad-getad.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-usb-linux.o pcap-usb-linux.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-netfilter-linux.o pcap-netfilter-linux.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-bt-linux.o pcap-bt-linux.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-bt-monitor-linux.o pcap-bt-monitor-linux.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-dbus.o pcap-dbus.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap.o pcap.c
+bison -p pcap_ -o grammar.c -d grammar.y
+flex -P pcap_ --header-file=scanner.h --nounput -o scanner.c scanner.l
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o optimize.o optimize.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o nametoaddr.o nametoaddr.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o etherent.o etherent.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o fmtutils.o fmtutils.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-util.o pcap-util.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-new.o pcap-new.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o savefile.o savefile.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o sf-pcap.o sf-pcap.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o sf-pcapng.o sf-pcapng.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-common.o pcap-common.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o bpf_image.o bpf_image.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o bpf_filter.o bpf_filter.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o bpf_dump.o bpf_dump.c
+./config.status --file=libpcap.pc.tmp:./libpcap.pc.in
+./config.status --file=pcap-config.tmp:./pcap-config.in
+config.status: creating libpcap.pc.tmp
+mv libpcap.pc.tmp libpcap.pc
+config.status: creating pcap-config.tmp
+mv pcap-config.tmp pcap-config
+chmod a+x pcap-config
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c grammar.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c ./gencode.c
+cc -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c scanner.c
+gcc-ar rc libpcap.a pcap-linux.o fad-getad.o pcap-usb-linux.o pcap-netfilter-linux.o pcap-bt-linux.o pcap-bt-monitor-linux.o pcap-dbus.o pcap.o gencode.o optimize.o nametoaddr.o etherent.o fmtutils.o pcap-util.o pcap-new.o savefile.o sf-pcap.o sf-pcapng.o pcap-common.o bpf_image.o bpf_filter.o bpf_dump.o scanner.o grammar.o  
+VER=`cat ./VERSION`; \
+MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ./VERSION`; \
+cc -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -shared -Wl,-soname,libpcap.so.$MAJOR_VER \
+    -o libpcap.so.$VER pcap-linux.o fad-getad.o pcap-usb-linux.o pcap-netfilter-linux.o pcap-bt-linux.o pcap-bt-monitor-linux.o pcap-dbus.o pcap.o gencode.o optimize.o nametoaddr.o etherent.o fmtutils.o pcap-util.o pcap-new.o savefile.o sf-pcap.o sf-pcapng.o pcap-common.o bpf_image.o bpf_filter.o bpf_dump.o scanner.o grammar.o   -lnl-genl-3 -lnl-3  -ldbus-1 
+gcc-ranlib libpcap.a
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/lib ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/lib; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/lib)
+VER=`cat ./VERSION`; \
+MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ./VERSION`; \
+cc -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -shared -Wl,-soname,libpcap.so.$MAJOR_VER \
+    -o libpcap.so.$VER pcap-linux.o fad-getad.o pcap-usb-linux.o pcap-netfilter-linux.o pcap-bt-linux.o pcap-bt-monitor-linux.o pcap-dbus.o pcap.o gencode.o optimize.o nametoaddr.o etherent.o fmtutils.o pcap-util.o pcap-new.o savefile.o sf-pcap.o sf-pcapng.o pcap-common.o bpf_image.o bpf_filter.o bpf_dump.o scanner.o grammar.o   -lnl-genl-3 -lnl-3  -ldbus-1 
+/usr/bin/install -c -m 644 libpcap.a /var/tmp/hokuto/libpcap-01/output/usr/lib/libpcap.a
+gcc-ranlib /var/tmp/hokuto/libpcap-01/output/usr/lib/libpcap.a
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/lib ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/lib; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/lib)
+VER=`cat ./VERSION`; \
+MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ./VERSION`; \
+/usr/bin/install -c libpcap.so.$VER /var/tmp/hokuto/libpcap-01/output/usr/lib/libpcap.so.$VER; \
+ln -sf libpcap.so.$VER /var/tmp/hokuto/libpcap-01/output/usr/lib/libpcap.so.$MAJOR_VER; \
+ln -sf libpcap.so.$MAJOR_VER /var/tmp/hokuto/libpcap-01/output/usr/lib/libpcap.so
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/lib ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/lib; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/lib)
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/include ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/include; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/include)
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/include/pcap ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/include/pcap; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/include/pcap)
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/share/man/man1 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/share/man/man1; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/share/man/man1)
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/share/man/man3 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/share/man/man3; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/share/man/man3)
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/share/man/man5 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/share/man/man5; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/share/man/man5)
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/share/man/man7 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/share/man/man7; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/share/man/man7)
+for i in pcap.h pcap-bpf.h pcap-namedb.h pcap/bluetooth.h pcap/bpf.h pcap/can_socketcan.h pcap/compiler-tests.h pcap/dlt.h pcap/funcattrs.h pcap/ipnet.h pcap/namedb.h pcap/nflog.h pcap/pcap-inttypes.h pcap/pcap.h pcap/sll.h pcap/socket.h pcap/usb.h pcap/vlan.h; do \
+	/usr/bin/install -c -m 644 ./$i \
+	    /var/tmp/hokuto/libpcap-01/output/usr/include/$i; done
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/bin ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/bin; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/bin)
+/usr/bin/install -c pcap-config /var/tmp/hokuto/libpcap-01/output/usr/bin/pcap-config
+[ -d /var/tmp/hokuto/libpcap-01/output/usr/lib/pkgconfig ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/output/usr/lib/pkgconfig; chmod 755 /var/tmp/hokuto/libpcap-01/output/usr/lib/pkgconfig)
+/usr/bin/install -c -m 644 libpcap.pc /var/tmp/hokuto/libpcap-01/output/usr/lib/pkgconfig/libpcap.pc
+for i in pcap-config.1; do \
+	/usr/bin/install -c -m 644 ./$i \
+	    /var/tmp/hokuto/libpcap-01/output/usr/share/man/man1/$i; done
+for i in pcap_activate.3pcap pcap_breakloop.3pcap pcap_can_set_rfmon.3pcap pcap_close.3pcap pcap_create.3pcap pcap_datalink_name_to_val.3pcap pcap_datalink_val_to_name.3pcap pcap_dump.3pcap pcap_dump_close.3pcap pcap_dump_file.3pcap pcap_dump_flush.3pcap pcap_dump_ftell.3pcap pcap_file.3pcap pcap_fileno.3pcap pcap_findalldevs.3pcap pcap_freecode.3pcap pcap_get_required_select_timeout.3pcap pcap_get_selectable_fd.3pcap pcap_geterr.3pcap pcap_init.3pcap pcap_inject.3pcap pcap_is_swapped.3pcap pcap_lib_version.3pcap pcap_lookupdev.3pcap pcap_lookupnet.3pcap pcap_loop.3pcap pcap_major_version.3pcap pcap_next_ex.3pcap pcap_offline_filter.3pcap pcap_open_live.3pcap pcap_set_buffer_size.3pcap pcap_set_datalink.3pcap pcap_set_promisc.3pcap pcap_set_protocol_linux.3pcap pcap_set_rfmon.3pcap pcap_set_snaplen.3pcap pcap_set_timeout.3pcap pcap_setdirection.3pcap pcap_setfilter.3pcap pcap_setnonblock.3pcap pcap_snapshot.3pcap pcap_stats.3pcap pcap_statustostr.3pcap pcap_strerror.3pcap pcap_tstamp_type_name_to_val.3pcap pcap_tstamp_type_val_to_name.3pcap; do \
+	/usr/bin/install -c -m 644 ./$i \
+	    /var/tmp/hokuto/libpcap-01/output/usr/share/man/man3/$i; done
+for i in pcap.3pcap pcap_compile.3pcap pcap_datalink.3pcap pcap_dump_open.3pcap pcap_get_tstamp_precision.3pcap pcap_list_datalinks.3pcap pcap_list_tstamp_types.3pcap pcap_open_dead.3pcap pcap_open_offline.3pcap pcap_set_immediate_mode.3pcap pcap_set_tstamp_precision.3pcap pcap_set_tstamp_type.3pcap; do \
+	/usr/bin/install -c -m 644 $i \
+	    /var/tmp/hokuto/libpcap-01/output/usr/share/man/man3/$i; done
+(cd /var/tmp/hokuto/libpcap-01/output/usr/share/man/man3 && \
+rm -f pcap_datalink_val_to_description.3pcap && \
+ln -s pcap_datalink_val_to_name.3pcap \
+	 pcap_datalink_val_to_description.3pcap && \
+rm -f pcap_datalink_val_to_description_or_dlt.3pcap && \
+ln -s pcap_datalink_val_to_name.3pcap \
+	 pcap_datalink_val_to_description_or_dlt.3pcap && \
+rm -f pcap_dump_fopen.3pcap && \
+ln -s pcap_dump_open.3pcap pcap_dump_fopen.3pcap && \
+rm -f pcap_freealldevs.3pcap && \
+ln -s pcap_findalldevs.3pcap pcap_freealldevs.3pcap && \
+rm -f pcap_perror.3pcap && \
+ln -s pcap_geterr.3pcap pcap_perror.3pcap && \
+rm -f pcap_sendpacket.3pcap && \
+ln -s pcap_inject.3pcap pcap_sendpacket.3pcap && \
+rm -f pcap_free_datalinks.3pcap && \
+ln -s pcap_list_datalinks.3pcap pcap_free_datalinks.3pcap && \
+rm -f pcap_free_tstamp_types.3pcap && \
+ln -s pcap_list_tstamp_types.3pcap pcap_free_tstamp_types.3pcap && \
+rm -f pcap_dispatch.3pcap && \
+ln -s pcap_loop.3pcap pcap_dispatch.3pcap && \
+rm -f pcap_minor_version.3pcap && \
+ln -s pcap_major_version.3pcap pcap_minor_version.3pcap && \
+rm -f pcap_next.3pcap && \
+ln -s pcap_next_ex.3pcap pcap_next.3pcap && \
+rm -f pcap_open_dead_with_tstamp_precision.3pcap && \
+ln -s pcap_open_dead.3pcap \
+	 pcap_open_dead_with_tstamp_precision.3pcap && \
+rm -f pcap_open_offline_with_tstamp_precision.3pcap && \
+ln -s pcap_open_offline.3pcap pcap_open_offline_with_tstamp_precision.3pcap && \
+rm -f pcap_fopen_offline.3pcap && \
+ln -s pcap_open_offline.3pcap pcap_fopen_offline.3pcap && \
+rm -f pcap_fopen_offline_with_tstamp_precision.3pcap && \
+ln -s pcap_open_offline.3pcap pcap_fopen_offline_with_tstamp_precision.3pcap && \
+rm -f pcap_tstamp_type_val_to_description.3pcap && \
+ln -s pcap_tstamp_type_val_to_name.3pcap pcap_tstamp_type_val_to_description.3pcap && \
+rm -f pcap_getnonblock.3pcap && \
+ln -s pcap_setnonblock.3pcap pcap_getnonblock.3pcap)
+for i in pcap-savefile.manfile.in; do \
+	/usr/bin/install -c -m 644 `echo $i | sed 's/.manfile.in/.manfile/'` \
+	    /var/tmp/hokuto/libpcap-01/output/usr/share/man/man5/`echo $i | sed 's/.manfile.in/.5/'`; done
+for i in pcap-filter.manmisc.in pcap-linktype.manmisc.in pcap-tstamp.manmisc.in; do \
+	/usr/bin/install -c -m 644 `echo $i | sed 's/.manmisc.in/.manmisc/'` \
+	    /var/tmp/hokuto/libpcap-01/output/usr/share/man/man7/`echo $i | sed 's/.manmisc.in/.7/'`; done
+configure: WARNING: unrecognized options: --enable-ipv6
+configure: loading site script /usr/share/config.site
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc -m32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc -m32 accepts -g... yes
+checking for gcc -m32 option to enable C11 features... none needed
+checking for  option for large files... -D_FILE_OFFSET_BITS=64
+checking for declarations of fseeko and ftello... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking size of void *... 4
+checking size of time_t... 4
+checking whether the compiler supports the -fvisibility=hidden option... yes
+checking for strerror_r... yes
+checking whether strerror_r is GNU-style... yes
+checking whether snprintf is suitable... yes
+checking for vasprintf... yes
+checking for asprintf... yes
+checking for strlcat... yes
+checking for strlcpy... yes
+checking for strtok_r... yes
+checking for getaddrinfo... yes
+checking for gcc -m32 options needed to detect all undeclared functions... none needed
+checking whether getnetbyname_r is declared... yes
+checking for the Linux getnetbyname_r()... yes
+checking whether getprotobyname_r is declared... yes
+checking for the Linux getprotobyname_r()... yes
+checking for ether_hostton... yes
+checking whether ether_hostton is declared... no
+checking whether ether_hostton is declared... yes
+checking if features.h defines __GLIBC__... yes
+checking for pthread.h... yes
+checking for pthread_create... yes
+checking whether to enable the instrument functions code... no
+checking if --disable-protochain option is specified... enabled
+checking packet capture type... linux
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.17.0... yes
+checking for brew... no
+checking for libnl-genl-3.0 with pkg-config... found
+checking whether SKF_AD_VLAN_TAG_PRESENT is declared... yes
+checking for __atomic_load_n... yes
+checking for __atomic_store_n... yes
+checking for getifaddrs... yes
+checking for ifaddrs.h... yes
+checking for linux/net_tstamp.h... yes
+checking for socklen_t... yes
+checking for dagapi.h... no
+checking for snf.h... no
+checking whether to enable remote packet capture... no
+checking whether to build optimizer debugging code... no
+checking whether to build parser debugging code... no
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking for capable lex... yes
+checking for bison... bison
+checking for ranlib... gcc-ranlib
+checking for ar... gcc-ar
+checking whether ln -s works... yes
+checking whether the compiler implements __builtin_bswap16()... yes
+checking whether the compiler implements __builtin_bswap32()... yes
+checking whether the compiler implements __builtin_bswap64()... yes
+checking whether the compiler implements __builtin_ctz()... yes
+checking for struct sockaddr.sa_len... no
+checking for Linux usbmon USB sniffing support... yes
+checking for linux/compiler.h... no
+checking for linux/usbdevice_fs.h... yes
+checking for struct usbdevfs_ctrltransfer.bRequestType... yes
+checking whether we can compile the netfilter support... yes
+checking whether we can compile the netmap support... no
+checking for bluetooth/bluetooth.h... yes
+configure: Bluetooth sniffing is supported
+checking for struct sockaddr_hci.hci_channel... yes
+checking if HCI_CHANNEL_MONITOR is defined... yes
+checking for dbus-1 with pkg-config... found
+checking whether the D-Bus library defines dbus_connection_read_write... yes
+checking for libibverbs with pkg-config... not found
+checking for ibv_get_device_list in -libverbs... no
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating grammar.y
+config.status: creating pcap-filter.manmisc
+config.status: creating pcap-linktype.manmisc
+config.status: creating pcap-tstamp.manmisc
+config.status: creating pcap-savefile.manfile
+config.status: creating pcap.3pcap
+config.status: creating pcap_compile.3pcap
+config.status: creating pcap_datalink.3pcap
+config.status: creating pcap_dump_open.3pcap
+config.status: creating pcap_get_tstamp_precision.3pcap
+config.status: creating pcap_list_datalinks.3pcap
+config.status: creating pcap_list_tstamp_types.3pcap
+config.status: creating pcap_open_dead.3pcap
+config.status: creating pcap_open_offline.3pcap
+config.status: creating pcap_set_immediate_mode.3pcap
+config.status: creating pcap_set_tstamp_precision.3pcap
+config.status: creating pcap_set_tstamp_type.3pcap
+config.status: creating rpcapd/Makefile
+config.status: creating rpcapd/rpcapd.manadmin
+config.status: creating rpcapd/rpcapd-config.manfile
+config.status: creating testprogs/Makefile
+config.status: creating config.h
+config.status: executing .devel commands
+configure: WARNING: unrecognized options: --enable-ipv6
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-linux.o pcap-linux.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o fad-getad.o fad-getad.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-usb-linux.o pcap-usb-linux.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-netfilter-linux.o pcap-netfilter-linux.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-bt-linux.o pcap-bt-linux.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-bt-monitor-linux.o pcap-bt-monitor-linux.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-dbus.o pcap-dbus.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap.o pcap.c
+bison -p pcap_ -o grammar.c -d grammar.y
+flex -P pcap_ --header-file=scanner.h --nounput -o scanner.c scanner.l
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o optimize.o optimize.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o nametoaddr.o nametoaddr.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o etherent.o etherent.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o fmtutils.o fmtutils.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-util.o pcap-util.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-new.o pcap-new.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o savefile.o savefile.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o sf-pcap.o sf-pcap.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o sf-pcapng.o sf-pcapng.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o pcap-common.o pcap-common.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o bpf_image.o bpf_image.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o bpf_filter.o bpf_filter.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c -o bpf_dump.o bpf_dump.c
+./config.status --file=libpcap.pc.tmp:./libpcap.pc.in
+./config.status --file=pcap-config.tmp:./pcap-config.in
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c grammar.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c ./gencode.c
+gcc -m32 -fvisibility=hidden -march=native -O2 -pipe -fomit-frame-pointer -flto=10  -fpic -I.  -I/usr/include/libnl3 -I/usr/include/dbus-1.0 -I/usr/lib32/dbus-1.0/include -DBUILDING_PCAP -Dpcap_EXPORTS -DHAVE_CONFIG_H  -march=native -O2 -pipe -fomit-frame-pointer -flto=10    -c scanner.c
+config.status: creating libpcap.pc.tmp
+mv libpcap.pc.tmp libpcap.pc
+config.status: creating pcap-config.tmp
+mv pcap-config.tmp pcap-config
+chmod a+x pcap-config
+gcc-ar rc libpcap.a pcap-linux.o fad-getad.o pcap-usb-linux.o pcap-netfilter-linux.o pcap-bt-linux.o pcap-bt-monitor-linux.o pcap-dbus.o pcap.o gencode.o optimize.o nametoaddr.o etherent.o fmtutils.o pcap-util.o pcap-new.o savefile.o sf-pcap.o sf-pcapng.o pcap-common.o bpf_image.o bpf_filter.o bpf_dump.o scanner.o grammar.o  
+VER=`cat ./VERSION`; \
+MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ./VERSION`; \
+gcc -m32 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -shared -Wl,-soname,libpcap.so.$MAJOR_VER \
+    -o libpcap.so.$VER pcap-linux.o fad-getad.o pcap-usb-linux.o pcap-netfilter-linux.o pcap-bt-linux.o pcap-bt-monitor-linux.o pcap-dbus.o pcap.o gencode.o optimize.o nametoaddr.o etherent.o fmtutils.o pcap-util.o pcap-new.o savefile.o sf-pcap.o sf-pcapng.o pcap-common.o bpf_image.o bpf_filter.o bpf_dump.o scanner.o grammar.o   -L/usr/lib32 -lnl-genl-3 -lnl-3  -L/usr/lib32 -ldbus-1 
+gcc-ranlib libpcap.a
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32)
+VER=`cat ./VERSION`; \
+MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ./VERSION`; \
+gcc -m32 -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack  -shared -Wl,-soname,libpcap.so.$MAJOR_VER \
+    -o libpcap.so.$VER pcap-linux.o fad-getad.o pcap-usb-linux.o pcap-netfilter-linux.o pcap-bt-linux.o pcap-bt-monitor-linux.o pcap-dbus.o pcap.o gencode.o optimize.o nametoaddr.o etherent.o fmtutils.o pcap-util.o pcap-new.o savefile.o sf-pcap.o sf-pcapng.o pcap-common.o bpf_image.o bpf_filter.o bpf_dump.o scanner.o grammar.o   -L/usr/lib32 -lnl-genl-3 -lnl-3  -L/usr/lib32 -ldbus-1 
+/usr/bin/install -c -m 644 libpcap.a /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32/libpcap.a
+gcc-ranlib /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32/libpcap.a
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32)
+VER=`cat ./VERSION`; \
+MAJOR_VER=`sed 's/\([0-9][0-9]*\)\..*/\1/' ./VERSION`; \
+/usr/bin/install -c libpcap.so.$VER /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32/libpcap.so.$VER; \
+ln -sf libpcap.so.$VER /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32/libpcap.so.$MAJOR_VER; \
+ln -sf libpcap.so.$MAJOR_VER /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32/libpcap.so
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32)
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/include ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/include; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/include)
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/include/pcap ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/include/pcap; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/include/pcap)
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man1 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man1; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man1)
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man3 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man3; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man3)
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man5 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man5; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man5)
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man7 ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man7; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man7)
+for i in pcap.h pcap-bpf.h pcap-namedb.h pcap/bluetooth.h pcap/bpf.h pcap/can_socketcan.h pcap/compiler-tests.h pcap/dlt.h pcap/funcattrs.h pcap/ipnet.h pcap/namedb.h pcap/nflog.h pcap/pcap-inttypes.h pcap/pcap.h pcap/sll.h pcap/socket.h pcap/usb.h pcap/vlan.h; do \
+	/usr/bin/install -c -m 644 ./$i \
+	    /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/include/$i; done
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/bin ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/bin; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/bin)
+/usr/bin/install -c pcap-config /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/bin/pcap-config
+[ -d /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32/pkgconfig ] || \
+    (mkdir -p /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32/pkgconfig; chmod 755 /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32/pkgconfig)
+/usr/bin/install -c -m 644 libpcap.pc /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/lib32/pkgconfig/libpcap.pc
+for i in pcap-config.1; do \
+	/usr/bin/install -c -m 644 ./$i \
+	    /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man1/$i; done
+for i in pcap_activate.3pcap pcap_breakloop.3pcap pcap_can_set_rfmon.3pcap pcap_close.3pcap pcap_create.3pcap pcap_datalink_name_to_val.3pcap pcap_datalink_val_to_name.3pcap pcap_dump.3pcap pcap_dump_close.3pcap pcap_dump_file.3pcap pcap_dump_flush.3pcap pcap_dump_ftell.3pcap pcap_file.3pcap pcap_fileno.3pcap pcap_findalldevs.3pcap pcap_freecode.3pcap pcap_get_required_select_timeout.3pcap pcap_get_selectable_fd.3pcap pcap_geterr.3pcap pcap_init.3pcap pcap_inject.3pcap pcap_is_swapped.3pcap pcap_lib_version.3pcap pcap_lookupdev.3pcap pcap_lookupnet.3pcap pcap_loop.3pcap pcap_major_version.3pcap pcap_next_ex.3pcap pcap_offline_filter.3pcap pcap_open_live.3pcap pcap_set_buffer_size.3pcap pcap_set_datalink.3pcap pcap_set_promisc.3pcap pcap_set_protocol_linux.3pcap pcap_set_rfmon.3pcap pcap_set_snaplen.3pcap pcap_set_timeout.3pcap pcap_setdirection.3pcap pcap_setfilter.3pcap pcap_setnonblock.3pcap pcap_snapshot.3pcap pcap_stats.3pcap pcap_statustostr.3pcap pcap_strerror.3pcap pcap_tstamp_type_name_to_val.3pcap pcap_tstamp_type_val_to_name.3pcap; do \
+	/usr/bin/install -c -m 644 ./$i \
+	    /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man3/$i; done
+for i in pcap.3pcap pcap_compile.3pcap pcap_datalink.3pcap pcap_dump_open.3pcap pcap_get_tstamp_precision.3pcap pcap_list_datalinks.3pcap pcap_list_tstamp_types.3pcap pcap_open_dead.3pcap pcap_open_offline.3pcap pcap_set_immediate_mode.3pcap pcap_set_tstamp_precision.3pcap pcap_set_tstamp_type.3pcap; do \
+	/usr/bin/install -c -m 644 $i \
+	    /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man3/$i; done
+(cd /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man3 && \
+rm -f pcap_datalink_val_to_description.3pcap && \
+ln -s pcap_datalink_val_to_name.3pcap \
+	 pcap_datalink_val_to_description.3pcap && \
+rm -f pcap_datalink_val_to_description_or_dlt.3pcap && \
+ln -s pcap_datalink_val_to_name.3pcap \
+	 pcap_datalink_val_to_description_or_dlt.3pcap && \
+rm -f pcap_dump_fopen.3pcap && \
+ln -s pcap_dump_open.3pcap pcap_dump_fopen.3pcap && \
+rm -f pcap_freealldevs.3pcap && \
+ln -s pcap_findalldevs.3pcap pcap_freealldevs.3pcap && \
+rm -f pcap_perror.3pcap && \
+ln -s pcap_geterr.3pcap pcap_perror.3pcap && \
+rm -f pcap_sendpacket.3pcap && \
+ln -s pcap_inject.3pcap pcap_sendpacket.3pcap && \
+rm -f pcap_free_datalinks.3pcap && \
+ln -s pcap_list_datalinks.3pcap pcap_free_datalinks.3pcap && \
+rm -f pcap_free_tstamp_types.3pcap && \
+ln -s pcap_list_tstamp_types.3pcap pcap_free_tstamp_types.3pcap && \
+rm -f pcap_dispatch.3pcap && \
+ln -s pcap_loop.3pcap pcap_dispatch.3pcap && \
+rm -f pcap_minor_version.3pcap && \
+ln -s pcap_major_version.3pcap pcap_minor_version.3pcap && \
+rm -f pcap_next.3pcap && \
+ln -s pcap_next_ex.3pcap pcap_next.3pcap && \
+rm -f pcap_open_dead_with_tstamp_precision.3pcap && \
+ln -s pcap_open_dead.3pcap \
+	 pcap_open_dead_with_tstamp_precision.3pcap && \
+rm -f pcap_open_offline_with_tstamp_precision.3pcap && \
+ln -s pcap_open_offline.3pcap pcap_open_offline_with_tstamp_precision.3pcap && \
+rm -f pcap_fopen_offline.3pcap && \
+ln -s pcap_open_offline.3pcap pcap_fopen_offline.3pcap && \
+rm -f pcap_fopen_offline_with_tstamp_precision.3pcap && \
+ln -s pcap_open_offline.3pcap pcap_fopen_offline_with_tstamp_precision.3pcap && \
+rm -f pcap_tstamp_type_val_to_description.3pcap && \
+ln -s pcap_tstamp_type_val_to_name.3pcap pcap_tstamp_type_val_to_description.3pcap && \
+rm -f pcap_getnonblock.3pcap && \
+ln -s pcap_setnonblock.3pcap pcap_getnonblock.3pcap)
+for i in pcap-savefile.manfile.in; do \
+	/usr/bin/install -c -m 644 `echo $i | sed 's/.manfile.in/.manfile/'` \
+	    /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man5/`echo $i | sed 's/.manfile.in/.5/'`; done
+for i in pcap-filter.manmisc.in pcap-linktype.manmisc.in pcap-tstamp.manmisc.in; do \
+	/usr/bin/install -c -m 644 `echo $i | sed 's/.manmisc.in/.manmisc/'` \
+	    /var/tmp/hokuto/libpcap-01/split/lib32-libpcap/usr/share/man/man7/`echo $i | sed 's/.manmisc.in/.7/'`; done
+
+Script done on 2026-09-14 09:11:46+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibpcap[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 14 Sep 2026 02:11:46 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m14s[0m
