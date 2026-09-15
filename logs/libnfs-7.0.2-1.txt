@@ -1,0 +1,319 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibnfs[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibnfs 7.0.2-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mTue, 15 Sep 2026 17:14:13 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibnfs[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mgnutls krb5 cmake[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibnfs[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 cmake-4.4.3-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 gnutls-3.8.13-1 grep-3.12-1 gzip-1.14-1 krb5-1.22.2-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-16 00:14:13+07:00 [COMMAND="cd /var/tmp/hokuto/libnfs-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libnfs-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libnfs-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libnfs-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libnfs-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libnfs-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libnfs-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libnfs-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libnfs-01/build/.cache' /repo/sauzeros/extra/libnfs/build /var/tmp/hokuto/libnfs-01/output 7.0.2 libnfs" <not executed on terminal>]
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- libnfs 17.2.0, library libnfs.so.17.0.2 (soname libnfs.so.17)
+-- Looking for arpa/inet.h
+-- Looking for arpa/inet.h - found
+-- Looking for dispatch/dispatch.h
+-- Looking for dispatch/dispatch.h - not found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - found
+-- Looking for fuse.h
+-- Looking for fuse.h - not found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for netdb.h
+-- Looking for netdb.h - found
+-- Looking for netinet/in.h
+-- Looking for netinet/in.h - found
+-- Looking for netinet/tcp.h
+-- Looking for netinet/tcp.h - found
+-- Looking for sys/eventfd.h
+-- Looking for sys/eventfd.h - found
+-- Looking for sys/socket.h
+-- Looking for sys/socket.h - found
+-- Looking for include files sys/socket.h, net/if.h
+-- Looking for include files sys/socket.h, net/if.h - found
+-- Looking for poll.h
+-- Looking for poll.h - found
+-- Looking for pwd.h
+-- Looking for pwd.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for stdatomic.h
+-- Looking for stdatomic.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for sys/filio.h
+-- Looking for sys/filio.h - not found
+-- Looking for sys/ioctl.h
+-- Looking for sys/ioctl.h - found
+-- Looking for sys/statvfs.h
+-- Looking for sys/statvfs.h - found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for sys/sysmacros.h
+-- Looking for sys/sysmacros.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for sys/uio.h
+-- Looking for sys/uio.h - found
+-- Looking for sys/vfs.h
+-- Looking for sys/vfs.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for utime.h
+-- Looking for utime.h - found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for sys/utsname.h
+-- Looking for sys/utsname.h - found
+-- Performing Test HAVE_SOCKADDR_LEN
+-- Performing Test HAVE_SOCKADDR_LEN - Failed
+-- Performing Test HAVE_SOCKADDR_STORAGE
+-- Performing Test HAVE_SOCKADDR_STORAGE - Success
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC - Success
+-- Performing Test HAVE_SO_BINDTODEVICE
+-- Performing Test HAVE_SO_BINDTODEVICE - Success
+-- Performing Test HAVE_TALLOC_TEVENT
+-- Performing Test HAVE_TALLOC_TEVENT - Failed
+-- Performing Test HAVE_CLOCK_GETTIME
+-- Performing Test HAVE_CLOCK_GETTIME - Success
+-- Performing Test NO_LFS_REQUIRED
+-- Performing Test NO_LFS_REQUIRED - Success
+-- Performing Test HAVE_GNUTLS_TRANSPORT_IS_KTLS_ENABLED
+-- Performing Test HAVE_GNUTLS_TRANSPORT_IS_KTLS_ENABLED - Success
+-- Performing Test HAVE_PTHREAD
+-- Performing Test HAVE_PTHREAD - Success
+-- Looking for makedev
+-- Looking for makedev - not found
+-- Looking for makedev
+-- Looking for makedev - found
+-- Looking for pthread_threadid_np
+-- Looking for pthread_threadid_np - not found
+-- Performing Test C_ACCEPTS_WALL
+-- Performing Test C_ACCEPTS_WALL - Success
+-- Found GnuTLS: /usr/lib/libgnutls.so (found suitable version "3.8.13", minimum required is "3.4.6")
+-- Looking for gnutls/gnutls.h
+-- Looking for gnutls/gnutls.h - found
+-- Looking for linux/tls.h
+-- Looking for linux/tls.h - found
+-- Performing Test HAVE_KTLS
+-- Performing Test HAVE_KTLS - Success
+-- Using /usr/lib/libgnutls.so
+-- Configuring done (4.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /var/tmp/hokuto/libnfs-01/build/build
+[  5%] [32mBuilding C object nfs/CMakeFiles/nfs_nfs.dir/libnfs-raw-nfs.c.o[0m
+[  5%] [32mBuilding C object nlm/CMakeFiles/nfs_nlm.dir/libnfs-raw-nlm.c.o[0m
+[ 11%] [32mBuilding C object mount/CMakeFiles/nfs_mount.dir/libnfs-raw-mount.c.o[0m
+[ 11%] [32mBuilding C object mount/CMakeFiles/nfs_mount.dir/mount.c.o[0m
+[ 16%] [32mBuilding C object nsm/CMakeFiles/nfs_nsm.dir/libnfs-raw-nsm.c.o[0m
+[ 16%] [32mBuilding C object nfs4/CMakeFiles/nfs_nfs4.dir/libnfs-raw-nfs4.c.o[0m
+[ 19%] [32mBuilding C object rquota/CMakeFiles/nfs_rquota.dir/libnfs-raw-rquota.c.o[0m
+[ 22%] [32mBuilding C object nfs4/CMakeFiles/nfs_nfs4.dir/nfs4.c.o[0m
+[ 25%] [32mBuilding C object tls/CMakeFiles/nfs_tls.dir/handshake.c.o[0m
+[ 27%] [32mBuilding C object portmap/CMakeFiles/nfs_portmap.dir/libnfs-raw-portmap.c.o[0m
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_fhandle3[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:41:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+   41 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_dirpath[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:52:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+   52 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_name[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:63:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+   63 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_mountstat3[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:74:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+   74 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_mountlist[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:85:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+   85 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_mountbody[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:96:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+   96 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_groups[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:111:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  111 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_groupnode[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:122:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  122 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_exports[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:135:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  135 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_exportnode[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:146:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  146 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_mountres3_ok[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:161:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  161 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_mountres3[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:175:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  175 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_mountstat1[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:194:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  194 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_fhandle1[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:205:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  205 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_mountres1_ok[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:216:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  216 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_mountres1[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:227:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  227 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT1MNTargs[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:246:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  246 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT1MNTres[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:257:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  257 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT1DUMPres[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:268:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  268 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT1DUMPres_ptr[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:279:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  279 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT1UMNTargs[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:290:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  290 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT1EXPORTres[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:301:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  301 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT1EXPORTres_ptr[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:312:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  312 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT3MNTargs[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:323:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  323 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT3MNTres[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:334:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  334 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT3DUMPres[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:345:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  345 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT3DUMPres_ptr[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:356:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  356 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT3UMNTargs[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:367:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  367 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT3EXPORTres[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:378:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  378 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:[m[K In function ‘[01m[Kzdr_MOUNT3EXPORTres_ptr[m[K’:
+[01m[K/var/tmp/hokuto/libnfs-01/build/mount/libnfs-raw-mount.c:389:27:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbuf[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-but-set-variable-Wunused-but-set-variable=]8;;[m[K]
+  389 |         register int32_t *[01;35m[Kbuf[m[K;
+      |                           [01;35m[K^~~[m[K
+[ 30%] [32mBuilding C object nsm/CMakeFiles/nfs_nsm.dir/nsm.c.o[0m
+[ 33%] [32mBuilding C object rquota/CMakeFiles/nfs_rquota.dir/rquota.c.o[0m
+[ 36%] [32mBuilding C object tls/CMakeFiles/nfs_tls.dir/ktls.c.o[0m
+[ 38%] [32mBuilding C object nlm/CMakeFiles/nfs_nlm.dir/nlm.c.o[0m
+[ 38%] Built target nfs_mount
+[ 41%] [32mBuilding C object portmap/CMakeFiles/nfs_portmap.dir/portmap.c.o[0m
+[ 44%] [32mBuilding C object nfs/CMakeFiles/nfs_nfs.dir/nfs.c.o[0m
+[ 47%] [32mBuilding C object nfs/CMakeFiles/nfs_nfs.dir/nfsacl.c.o[0m
+[ 47%] Built target nfs_nsm
+[ 47%] Built target nfs_nlm
+[01m[K/var/tmp/hokuto/libnfs-01/build/tls/ktls.c:153:35:[m[K [01;35m[Kwarning: [m[Kbackslash and newline separated by space
+  153 |         GENERATE_TLS_INFO(CIPHER) \
+[ 47%] Built target nfs_portmap
+[ 47%] Built target nfs_rquota
+[ 47%] Built target nfs_tls
+[ 47%] Built target nfs_nfs
+[ 47%] Built target nfs_nfs4
+[ 52%] [32mBuilding C object lib/CMakeFiles/nfs.dir/libnfs.c.o[0m
+[ 52%] [32mBuilding C object lib/CMakeFiles/nfs.dir/libnfs-sync.c.o[0m
+[ 55%] [32mBuilding C object lib/CMakeFiles/nfs.dir/libnfs-zdr.c.o[0m
+[ 58%] [32mBuilding C object lib/CMakeFiles/nfs.dir/krb5-wrapper.c.o[0m
+[ 61%] [32mBuilding C object lib/CMakeFiles/nfs.dir/multithreading.c.o[0m
+[ 63%] [32mBuilding C object lib/CMakeFiles/nfs.dir/nfs_v3.c.o[0m
+[ 66%] [32mBuilding C object lib/CMakeFiles/nfs.dir/nfs_v4.c.o[0m
+[ 69%] [32mBuilding C object lib/CMakeFiles/nfs.dir/init.c.o[0m
+[ 72%] [32mBuilding C object lib/CMakeFiles/nfs.dir/socket.c.o[0m
+[ 75%] [32mBuilding C object lib/CMakeFiles/nfs.dir/pdu.c.o[0m
+[ 77%] [1m[32mLinking C shared library libnfs.so[0m
+[ 77%] Built target nfs
+[ 83%] [32mBuilding C object utils/CMakeFiles/nfs-stat.dir/nfs-stat.c.o[0m
+[ 83%] [32mBuilding C object utils/CMakeFiles/nfs-cp.dir/nfs-cp.c.o[0m
+[ 88%] [32mBuilding C object utils/CMakeFiles/nfs-ls.dir/nfs-ls.c.o[0m
+[ 88%] [32mBuilding C object utils/CMakeFiles/nfs-cat.dir/nfs-cat.c.o[0m
+[ 91%] [1m[32mLinking C executable nfs-stat[0m
+[ 94%] [1m[32mLinking C executable nfs-cp[0m
+[ 97%] [1m[32mLinking C executable nfs-cat[0m
+[100%] [1m[32mLinking C executable nfs-ls[0m
+[100%] Built target nfs-stat
+[100%] Built target nfs-cat
+[100%] Built target nfs-cp
+[100%] Built target nfs-ls
+-- Install configuration: ""
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/lib64/libnfs.so.17.0.2
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/lib64/libnfs.so.17
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/lib64/libnfs.so
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/share/man/man1/nfs-cat.1
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/share/man/man1/nfs-cp.1
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/share/man/man1/nfs-ls.1
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/bin/nfs-cat
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libnfs-01/output/usr/bin/nfs-cat" to ""
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/bin/nfs-ls
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libnfs-01/output/usr/bin/nfs-ls" to ""
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/bin/nfs-cp
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libnfs-01/output/usr/bin/nfs-cp" to ""
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/bin/nfs-stat
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/libnfs-01/output/usr/bin/nfs-stat" to ""
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/lib64/cmake/libnfs/libnfs-config.cmake
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/lib64/cmake/libnfs/libnfs-config-noconfig.cmake
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/lib64/cmake/libnfs/FindNFS.cmake
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/lib64/cmake/libnfs/libnfs-config-version.cmake
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/lib64/pkgconfig/libnfs.pc
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs-zdr.h
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs-raw.h
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs.h
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs-raw-mount.h
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs-raw-nfs.h
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs-raw-nfs4.h
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs-raw-nlm.h
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs-raw-nsm.h
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs-raw-portmap.h
+-- Installing: /var/tmp/hokuto/libnfs-01/output/usr/include/nfsc/libnfs-raw-rquota.h
+
+Script done on 2026-09-16 00:14:20+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibnfs[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mTue, 15 Sep 2026 17:14:20 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m6s[0m
