@@ -1,0 +1,869 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgcr[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mgcr 4.4.1-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mTue, 15 Sep 2026 17:12:32 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgcr[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglib glibc gnutls libsecret openssh p11-kit systemd-libs gobject-introspection gtk meson systemd vala[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgcr[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glib-2.90.0-1 glibc-2.44-1 gnutls-3.8.13-1 gobject-introspection-1.86.0-1 grep-3.12-1 gtk-4.24.0-1 gzip-1.14-1 libsecret-0.21.8.2-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-1 openssh-10.5p1-1 p11-kit-0.26.5-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 systemd-261.3-1 systemd-libs-261.3-1 texinfo-7.3-1 vala-0.56.19-1 which-2.25-1[0m
+
+Script started on 2026-09-16 00:12:32+07:00 [COMMAND="cd /var/tmp/hokuto/gcr-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/gcr-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/gcr-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/gcr-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/gcr-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/gcr-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/gcr-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/gcr-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/gcr-01/build/.cache' /repo/sauzeros/extra/gcr/build /var/tmp/hokuto/gcr-01/output 4.4.1 gcr" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build -D gtk_doc=false
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/gcr-01/build[0m
+Build dir: [1m/var/tmp/hokuto/gcr-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mgcr[0m
+Project version: [1m4.4.1[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Run-time dependency [1mglib-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgmodule-no-export-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgthread-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgobject-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgio-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgio-unix-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Program [1mgpg[0m found: [1;32mYES[0m (/usr/bin/gpg)
+Run-time dependency [1mlibgcrypt[0m found: [1;32mYES[0m [36m1.12.4[0m
+Run-time dependency [1mp11-kit-1[0m found: [1;32mYES[0m [36m0.26.5[0m
+Run-time dependency [1mlibsecret-1[0m found: [1;32mYES[0m [36m0.21.8.2[0m
+Program [1mssh-add[0m found: [1;32mYES[0m (/usr/bin/ssh-add)
+Program [1mssh-agent[0m found: [1;32mYES[0m (/usr/bin/ssh-agent)
+Run-time dependency [1mlibsystemd[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1msystemd[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1mgtk4[0m found: [1;32mYES[0m [36m4.24.0[0m
+Has header "[1mlocale.h[0m" : [1;32mYES[0m 
+Checking for function "[1mtimegm[0m" : [1;32mYES[0m 
+Checking for function "[1mmlock[0m" : [1;32mYES[0m 
+Configuring [1mconfig.h[0m using configuration
+Program [1mmsgfmt[0m found: [1;32mYES[0m (/usr/bin/msgfmt)
+Program [1mmsginit[0m found: [1;32mYES[0m (/usr/bin/msginit)
+Program [1mmsgmerge[0m found: [1;32mYES[0m (/usr/bin/msgmerge)
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Configuring [1mgck-version.h[0m using configuration
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-genmarshal[0m found: [1;32mYES[0m (/usr/bin/glib-genmarshal)
+Compiler for C supports link arguments -Wl,--version-script,/var/tmp/hokuto/gcr-01/build/gck/libgck.map: [1;32mYES[0m 
+Run-time dependency [1mgobject-introspection-1.0[0m found: [1;32mYES[0m [36m1.86.0[0m
+Dependency [1mgobject-introspection-1.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m1.86.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/g-ir-scanner[0m found: [1;32mYES[0m (/usr/bin/g-ir-scanner)
+Dependency [1mgobject-introspection-1.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m1.86.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/g-ir-compiler[0m found: [1;32mYES[0m (/usr/bin/g-ir-compiler)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Program [1mvapigen[0m found: [1;32mYES[0m (/usr/bin/vapigen)
+Configuring [1mgcr-version.h[0m using configuration
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-genmarshal[0m found: [1;32mYES[0m (/usr/bin/glib-genmarshal)
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/gdbus-codegen[0m found: [1;32mYES[0m (/usr/bin/gdbus-codegen)
+Program [1mgcr-mkoids[0m found: [1;32mYES[0m (/bin/sh /var/tmp/hokuto/gcr-01/build/gcr/gcr-mkoids)
+Compiler for C supports link arguments -Wl,--version-script,/var/tmp/hokuto/gcr-01/build/gcr/libgcr.map: [1;32mYES[0m 
+Program [1mvapigen[0m found: [1;32mYES[0m (/usr/bin/vapigen)
+Configuring [1mgcr-ssh-agent.service[0m using configuration
+Program [1msystemctl[0m found: [1;32mYES[0m (/usr/bin/systemctl)
+Configuring [1mgcr-ssh-agent.socket[0m using configuration
+Build targets in project: [1m169[0m
+
+gcr [36m4.4.1[0m
+
+  [1mUser defined options[0m
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    gtk_doc           : false
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/gcr-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/gcr-01/build/build'
+[0/337] Generating glib marshaller header gck/gck-marshal_h[K[0/337] Compiling C object egg/libegg.a.p/egg-armor.c.o[K[0/337] Compiling C object egg/libegg.a.p/egg-asn1x.c.o[K[0/337] Compiling C object egg/libegg.a.p/egg-asn1-defs.c.o[K[0/337] Compiling C object egg/libegg.a.p/egg-buffer.c.o[K[0/337] Compiling C object egg/libegg.a.p/egg-decimal.c.o[K[0/337] Compiling C object egg/libegg.a.p/egg-dh.c.o[K[0/337] Compiling C object egg/libegg.a.p/egg-dn.c.o[K[0/337] Compiling C object egg/libegg.a.p/egg-file-tracker.c.o[K[0/337] Compiling C object egg/libegg.a.p/egg-hex.c.o[K[1/337] Compiling C object egg/libegg.a.p/egg-asn1-defs.c.o[K[1/337] Compiling C object egg/libegg.a.p/egg-oid.c.o[K[2/337] Compiling C object egg/libegg.a.p/egg-buffer.c.o[K[2/337] Compiling C object egg/libegg.a.p/egg-padding.c.o[K[3/337] Generating glib marshaller header gck/gck-marshal_h[K[3/337] Compiling C object egg/libegg.a.p/egg-secure-memory.c.o[K[4/337] Compiling C object egg/libegg.a.p/egg-dh.c.o[K[4/337] Compiling C object egg/libegg.a.p/egg-testing.c.o[K[5/337] Compiling C object egg/libegg.a.p/egg-decimal.c.o[K[5/337] Compiling C object egg/libegg.a.p/egg-crypto-libgcrypt.c.o[K[6/337] Compiling C object egg/libegg.a.p/egg-hex.c.o[K[6/337] Compiling C object egg/libegg.a.p/egg-dh-libgcrypt.c.o[K[7/337] Compiling C object egg/libegg.a.p/egg-file-tracker.c.o[K
+[01m[K../egg/egg-file-tracker.c:[m[K In function ‘[01m[Kupdate_directory[m[K’:
+[01m[K../egg/egg-file-tracker.c:171:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_pattern_match_string[m[K’ is deprecated: Use 'g_pattern_spec_match_string' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  171 |                 [01;35m[Kif[m[K (self->include && !g_pattern_match_string (self->include, filename))
+      |                 [01;35m[K^~[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib.h:68[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib-object.h:24[m[K,
+                 from [01m[K../egg/egg-file-tracker.h:26[m[K,
+                 from [01m[K../egg/egg-file-tracker.c:25[m[K:
+[01m[K/usr/include/glib-2.0/glib/gpattern.h:57:15:[m[K [01;36m[Knote: [m[Kdeclared here
+   57 | gboolean      [01;36m[Kg_pattern_match_string[m[K   (GPatternSpec *pspec,
+      |               [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../egg/egg-file-tracker.c:173:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_pattern_match_string[m[K’ is deprecated: Use 'g_pattern_spec_match_string' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  173 |                 [01;35m[Kif[m[K (self->exclude && g_pattern_match_string (self->exclude, filename))
+      |                 [01;35m[K^~[m[K
+[01m[K/usr/include/glib-2.0/glib/gpattern.h:57:15:[m[K [01;36m[Knote: [m[Kdeclared here
+   57 | gboolean      [01;36m[Kg_pattern_match_string[m[K   (GPatternSpec *pspec,
+      |               [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[7/337] Compiling C object egg/libegg.a.p/egg-fips-libgcrypt.c.o[K[8/337] Compiling C object egg/libegg.a.p/egg-dn.c.o[K[8/337] Compiling C object egg/libegg.a.p/egg-hkdf-libgcrypt.c.o[K[9/337] Compiling C object egg/libegg.a.p/egg-armor.c.o[K[9/337] Compiling C object egg/libegg.a.p/egg-libgcrypt.c.o[K[10/337] Compiling C object egg/libegg.a.p/egg-fips-libgcrypt.c.o[K[10/337] Compiling C object egg/libegg.a.p/egg-openssl.c.o[K[11/337] Compiling C object egg/libegg.a.p/egg-oid.c.o[K[11/337] Compiling C object egg/libegg.a.p/egg-symkey.c.o[K[12/337] Compiling C object egg/libegg.a.p/egg-secure-memory.c.o[K
+[01m[K../egg/egg-secure-memory.c:273:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kpool_valid[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  273 | [01;35m[Kpool_valid[m[K (void* item)
+      | [01;35m[K^~~~~~~~~~[m[K
+[12/337] Generating GObject enum file gck/gck-enum-types.c (wrapped by meson because command contains newlines, to capture output)[K[13/337] Compiling C object egg/libegg.a.p/egg-testing.c.o[K[13/337] Generating GObject enum file gck/gck-enum-types.h (wrapped by meson because command contains newlines, to capture output)[K[14/337] Compiling C object egg/libegg.a.p/egg-crypto-libgcrypt.c.o[K[14/337] Generating glib marshaller source gck/gck-marshal_c[K[15/337] Compiling C object egg/libegg.a.p/egg-dh-libgcrypt.c.o[K[15/337] Generating glib marshaller header gcr/gcr-marshal_h[K[16/337] Compiling C object egg/libegg.a.p/egg-padding.c.o[K[16/337] Generating GObject enum file gcr/gcr-enum-types.c (wrapped by meson because command contains newlines, to capture output)[K[17/337] Compiling C object egg/libegg.a.p/egg-hkdf-libgcrypt.c.o[K[17/337] Generating GObject enum file gcr/gcr-enum-types.h (wrapped by meson because command contains newlines, to capture output)[K[18/337] Compiling C object egg/libegg.a.p/egg-openssl.c.o[K[18/337] Generating gdbus source gcr/gcr-dbus-generated.c[K[19/337] Generating glib marshaller source gck/gck-marshal_c[K[19/337] Generating gdbus header gcr/gcr-dbus-generated.h[K[20/337] Generating glib marshaller header gcr/gcr-marshal_h[K[20/337] Generating glib marshaller source gcr/gcr-marshal_c[K[21/337] Compiling C object egg/libegg.a.p/egg-libgcrypt.c.o[K
+[01m[K../egg/egg-libgcrypt.c:[m[K In function ‘[01m[Kegg_libgcrypt_initialize[m[K’:
+[01m[K../egg/egg-libgcrypt.c:71:25:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgcry_set_log_handler[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+   71 |                         [01;35m[Kgcry_set_log_handler[m[K (log_handler, NULL);
+      |                         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K../egg/egg-libgcrypt.c:27[m[K:
+[01m[K/usr/include/gcrypt.h:2119:6:[m[K [01;36m[Knote: [m[Kdeclared here
+ 2119 | void [01;36m[Kgcry_set_log_handler[m[K (gcry_handler_log_t f,
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[21/337] Generating gcr/gcr-oids with a custom command[K[22/337] Generating glib marshaller source gcr/gcr-marshal_c[K[22/337] Compiling C object egg/libegg-test.a.p/egg-testing.c.o[K[23/337] Generating GObject enum file gck/gck-enum-types.c (wrapped by meson because command contains newlines, to capture output)[K[23/337] Compiling C object egg/libegg-test.a.p/mock-interaction.c.o[K[24/337] Generating GObject enum file gck/gck-enum-types.h (wrapped by meson because command contains newlines, to capture output)[K[24/337] Compiling C object gck/libgck-2.so.2.4.1.p/meson-generated_.._gck-enum-types.c.o[K[25/337] Generating gdbus source gcr/gcr-dbus-generated.c[K[25/337] Compiling C object gck/libgck-2.so.2.4.1.p/meson-generated_.._gck-marshal.c.o[K[26/337] Generating gdbus header gcr/gcr-dbus-generated.h[K[26/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-attributes.c.o[K[27/337] Compiling C object egg/libegg.a.p/egg-symkey.c.o[K[27/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-dump.c.o[K[28/337] Compiling C object egg/libegg.a.p/egg-asn1x.c.o[K
+[01m[K../egg/egg-asn1x.c:[m[K In function ‘[01m[Kegg_asn1x_take_bits_as_raw[m[K’:
+[01m[K../egg/egg-asn1x.c:3535:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klen[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable=[m[K]
+ 3535 |         gsize [01;35m[Klen[m[K;
+      |               [01;35m[K^~~[m[K
+[28/337] Linking static target egg/libegg.a[K[29/337] Linking static target egg/libegg.a[K[29/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-enumerator.c.o[K[30/337] Generating GObject enum file gcr/gcr-enum-types.h (wrapped by meson because command contains newlines, to capture output)[K[30/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-misc.c.o[K[31/337] Compiling C object gck/libgck-2.so.2.4.1.p/meson-generated_.._gck-marshal.c.o[K[31/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-module.c.o[K[32/337] Compiling C object egg/libegg-test.a.p/egg-testing.c.o[K[32/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-modules.c.o[K[33/337] Generating GObject enum file gcr/gcr-enum-types.c (wrapped by meson because command contains newlines, to capture output)[K[33/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-object.c.o[K[34/337] Compiling C object egg/libegg-test.a.p/mock-interaction.c.o[K[34/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-object-cache.c.o[K[35/337] Generating gcr/gcr-oids with a custom command[K[35/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-password.c.o[K[36/337] Compiling C object gck/libgck-2.so.2.4.1.p/meson-generated_.._gck-enum-types.c.o[K[36/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-session.c.o[K[37/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-dump.c.o[K[37/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-slot.c.o[K[38/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-misc.c.o[K[38/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-uri.c.o[K[39/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-modules.c.o[K[39/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-call.c.o[K[40/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-module.c.o[K[40/337] Compiling C object gck/libgck-testable.so.p/meson-generated_.._gck-enum-types.c.o[K[41/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-attributes.c.o[K[41/337] Compiling C object gck/libgck-testable.so.p/meson-generated_.._gck-marshal.c.o[K[42/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-password.c.o[K[42/337] Compiling C object gck/libgck-testable.so.p/gck-attributes.c.o[K[43/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-uri.c.o[K[43/337] Compiling C object gck/libgck-testable.so.p/gck-dump.c.o[K[44/337] Compiling C object gck/libgck-testable.so.p/meson-generated_.._gck-marshal.c.o[K[44/337] Compiling C object gck/libgck-testable.so.p/gck-enumerator.c.o[K[45/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-slot.c.o[K[45/337] Compiling C object gck/libgck-testable.so.p/gck-misc.c.o[K[46/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-enumerator.c.o[K[46/337] Compiling C object gck/libgck-testable.so.p/gck-module.c.o[K[47/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-call.c.o[K[47/337] Compiling C object gck/libgck-testable.so.p/gck-modules.c.o[K[48/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-object-cache.c.o[K[48/337] Compiling C object gck/libgck-testable.so.p/gck-object.c.o[K[49/337] Compiling C object gck/libgck-testable.so.p/meson-generated_.._gck-enum-types.c.o[K[49/337] Compiling C object gck/libgck-testable.so.p/gck-object-cache.c.o[K[50/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-object.c.o[K[50/337] Compiling C object gck/libgck-testable.so.p/gck-password.c.o[K[51/337] Compiling C object gck/libgck-testable.so.p/gck-dump.c.o[K[51/337] Compiling C object gck/libgck-testable.so.p/gck-session.c.o[K[52/337] Compiling C object gck/libgck-testable.so.p/gck-misc.c.o[K[52/337] Compiling C object gck/libgck-testable.so.p/gck-slot.c.o[K[53/337] Compiling C object gck/libgck-2.so.2.4.1.p/gck-session.c.o[K[53/337] Compiling C object gck/libgck-testable.so.p/gck-uri.c.o[K[54/337] Compiling C object gck/libgck-testable.so.p/gck-enumerator.c.o[K[54/337] Compiling C object gck/libgck-testable.so.p/gck-call.c.o[K[55/337] Compiling C object gck/libgck-testable.so.p/gck-attributes.c.o[K[55/337] Linking target gck/libgck-2.so.2.4.1[K[56/337] Compiling C object gck/libgck-testable.so.p/gck-module.c.o[K[56/337] Compiling C object gck/libgck-test.so.p/gck-mock.c.o[K[57/337] Compiling C object gck/libgck-testable.so.p/gck-object-cache.c.o[K[57/337] Compiling C object gck/libgck-test.so.p/gck-test.c.o[K[58/337] Compiling C object gck/libgck-testable.so.p/gck-object.c.o[K[58/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/meson-generated_.._gcr-enum-types.c.o[K[59/337] Compiling C object gck/libgck-testable.so.p/gck-password.c.o[K[59/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/meson-generated_.._gcr-marshal.c.o[K[60/337] Compiling C object gck/libgck-testable.so.p/gck-modules.c.o[K[60/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/meson-generated_.._gcr-dbus-generated.c.o[K[61/337] Compiling C object gck/libgck-testable.so.p/gck-uri.c.o[K[61/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/meson-generated_.._gcr-oids.c.o[K[62/337] Compiling C object gck/libgck-testable.so.p/gck-call.c.o[K[62/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-callback-output-stream.c.o[K[63/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/meson-generated_.._gcr-marshal.c.o[K[63/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-gnupg-importer.c.o[K[64/337] Compiling C object gck/libgck-test.so.p/gck-test.c.o[K[64/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-gnupg-process.c.o[K[65/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/meson-generated_.._gcr-enum-types.c.o[K[65/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-gnupg-records.c.o[K[66/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/meson-generated_.._gcr-oids.c.o[K[66/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-key-mechanisms.c.o[K[67/337] Compiling C object gck/libgck-test.so.p/gck-mock.c.o[K[67/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-openpgp.c.o[K[68/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-callback-output-stream.c.o[K[68/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-openssh.c.o[K[69/337] Compiling C object gck/libgck-testable.so.p/gck-slot.c.o[K[69/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-pkcs11-importer.c.o[K[70/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-key-mechanisms.c.o[K[70/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-record.c.o[K[71/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-gnupg-process.c.o[K[71/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-subject-public-key.c.o[K[72/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-gnupg-records.c.o[K[72/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-util.c.o[K[73/337] Compiling C object gck/libgck-testable.so.p/gck-session.c.o[K[73/337] Linking target gck/libgck-testable.so[K[74/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-util.c.o[K[74/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-parser-libgcrypt.c.o[K[75/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-gnupg-importer.c.o[K[75/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate.c.o[K[76/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/meson-generated_.._gcr-dbus-generated.c.o[K[76/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-chain.c.o[K[77/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-pkcs11-importer.c.o[K[77/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension.c.o[K[78/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-openpgp.c.o[K[78/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-authority-info-access.c.o[K[79/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-record.c.o[K
+[01m[K../gcr/gcr-record.c:[m[K In function ‘[01m[Kc_colons_unescape[m[K’:
+[01m[K../gcr/gcr-record.c:294:45:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  294 |                                         pos [01;35m[K=[m[K strchr (HEXC_LOWER, g_ascii_tolower (*p));
+      |                                             [01;35m[K^[m[K
+[01m[K../gcr/gcr-record.c:[m[K In function ‘[01m[Kstrnsplit[m[K’:
+[01m[K../gcr/gcr-record.c:791:5:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  791 |   s [01;35m[K=[m[K memchr (remainder, delimiter, end - remainder);
+      |     [01;35m[K^[m[K
+[01m[K../gcr/gcr-record.c:803:13:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  803 |           s [01;35m[K=[m[K memchr (remainder, delimiter, end - remainder);
+      |             [01;35m[K^[m[K
+[79/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-authority-key-identifier.c.o[K[80/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-openssh.c.o[K[80/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-basic-constraints.c.o[K[81/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-subject-public-key.c.o[K[81/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-certificate-policies.c.o[K[82/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-parser-libgcrypt.c.o[K[82/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-crl-distribution-points.c.o[K[83/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension.c.o[K[83/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-extended-key-usage.c.o[K[84/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-authority-key-identifier.c.o[K[84/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-key-usage.c.o[K[85/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-basic-constraints.c.o[K[85/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-list.c.o[K[86/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-authority-info-access.c.o[K[86/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-subject-alt-name.c.o[K[87/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-certificate-policies.c.o[K[87/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-subject-key-identifier.c.o[K[88/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-chain.c.o[K
+[01m[K../gcr/gcr-certificate-chain.c:[m[K In function ‘[01m[Kperform_build_chain[m[K’:
+[01m[K../gcr/gcr-certificate-chain.c:234:15:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klength[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable=[m[K]
+  234 |         guint [01;35m[Klength[m[K;
+      |               [01;35m[K^~~~~~[m[K
+[88/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extensions-common.c.o[K[89/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-extended-key-usage.c.o[K[89/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-field.c.o[K[90/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-crl-distribution-points.c.o[K[90/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-request.c.o[K[91/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate.c.o[K[91/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-section.c.o[K[92/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-subject-alt-name.c.o[K[92/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-fingerprint.c.o[K[93/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-key-usage.c.o[K[93/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-importer.c.o[K[94/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-list.c.o[K[94/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-import-interaction.c.o[K[95/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-section.c.o[K[95/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-library.c.o[K[96/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extension-subject-key-identifier.c.o[K[96/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-mock-prompter.c.o[K[97/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-field.c.o[K[97/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-parser.c.o[K[98/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-request.c.o[K[98/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-pkcs11-certificate.c.o[K[99/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-certificate-extensions-common.c.o[K[99/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-prompt.c.o[K[100/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-importer.c.o[K[100/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-secret-exchange.c.o[K[101/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-fingerprint.c.o[K[101/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-secure-memory.c.o[K[102/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-import-interaction.c.o[K[102/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-simple-certificate.c.o[K[103/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-pkcs11-certificate.c.o[K[103/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-ssh-askpass.c.o[K[104/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-secure-memory.c.o[K[104/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-subject-public-key-info.c.o[K[105/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-library.c.o[K[105/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-system-prompt.c.o[K[106/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-mock-prompter.c.o[K
+[01m[K../gcr/gcr-mock-prompter.c:[m[K In function ‘[01m[Kon_timeout_complete[m[K’:
+[01m[K../gcr/gcr-mock-prompter.c:387:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  387 |         [01;35m[Kg_simple_async_result_complete[m[K (res);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/glib-2.0/gio/gio.h:143[m[K,
+                 from [01m[K../gck/gck.h:28[m[K,
+                 from [01m[K../gcr/gcr-types.h:40[m[K,
+                 from [01m[K../gcr/gcr-prompt.h:29[m[K,
+                 from [01m[K../gcr/gcr-system-prompter.h:29[m[K,
+                 from [01m[K../gcr/gcr-mock-prompter.h:29[m[K,
+                 from [01m[K../gcr/gcr-mock-prompter.c:24[m[K:
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:101:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  101 | void                [01;36m[Kg_simple_async_result_complete[m[K         (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:[m[K In function ‘[01m[Kon_timeout_complete_and_close[m[K’:
+[01m[K../gcr/gcr-mock-prompter.c:396:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  396 |         [01;35m[Kg_simple_async_result_complete[m[K (res);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:101:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  101 | void                [01;36m[Kg_simple_async_result_complete[m[K         (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:[m[K In function ‘[01m[Kgcr_mock_prompt_confirm_async[m[K’:
+[01m[K../gcr/gcr-mock-prompter.c:428:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_new[m[K’ is deprecated: Use 'g_task_new' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  428 |         [01;35m[Kres[m[K = g_simple_async_result_new (G_OBJECT (prompt), callback, user_data,
+      |         [01;35m[K^~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:48:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   48 | GSimpleAsyncResult *[01;36m[Kg_simple_async_result_new[m[K              (GObject                 *source_object,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:433:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gboolean[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  433 |                 [01;35m[Kg_simple_async_result_set_op_res_gboolean[m[K (res, FALSE);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:85:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   85 | void                [01;36m[Kg_simple_async_result_set_op_res_gboolean[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:437:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gboolean[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  437 |                 [01;35m[Kg_simple_async_result_set_op_res_gboolean[m[K (res, FALSE);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:85:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   85 | void                [01;36m[Kg_simple_async_result_set_op_res_gboolean[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:441:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gboolean[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  441 |                 [01;35m[Kg_simple_async_result_set_op_res_gboolean[m[K (res, FALSE);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:85:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   85 | void                [01;36m[Kg_simple_async_result_set_op_res_gboolean[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:445:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gboolean[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  445 |                 [01;35m[Kg_simple_async_result_set_op_res_gboolean[m[K (res, response->proceed);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:85:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   85 | void                [01;36m[Kg_simple_async_result_set_op_res_gboolean[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:[m[K In function ‘[01m[Kgcr_mock_prompt_confirm_finish[m[K’:
+[01m[K../gcr/gcr-mock-prompter.c:466:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_is_valid[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  466 |         [01;35m[Kg_return_val_if_fail[m[K (g_simple_async_result_is_valid (result, G_OBJECT (prompt),
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:132:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  132 | gboolean            [01;36m[Kg_simple_async_result_is_valid[m[K         (GAsyncResult            *result,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:469:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_get_op_res_gboolean[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  469 |         [01;35m[Kreturn[m[K g_simple_async_result_get_op_res_gboolean (G_SIMPLE_ASYNC_RESULT (result)) ?
+      |         [01;35m[K^~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:88:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   88 | gboolean            [01;36m[Kg_simple_async_result_get_op_res_gboolean[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:[m[K In function ‘[01m[Kgcr_mock_prompt_password_async[m[K’:
+[01m[K../gcr/gcr-mock-prompter.c:507:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_new[m[K’ is deprecated: Use 'g_task_new' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  507 |         [01;35m[Kres[m[K = g_simple_async_result_new (G_OBJECT (prompt), callback, user_data,
+      |         [01;35m[K^~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:48:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   48 | GSimpleAsyncResult *[01;36m[Kg_simple_async_result_new[m[K              (GObject                 *source_object,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:512:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  512 |                 [01;35m[Kg_simple_async_result_set_op_res_gpointer[m[K (res, NULL, NULL);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:72:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 | void                [01;36m[Kg_simple_async_result_set_op_res_gpointer[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:515:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  515 |                 [01;35m[Kg_simple_async_result_set_op_res_gpointer[m[K (res, NULL, NULL);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:72:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 | void                [01;36m[Kg_simple_async_result_set_op_res_gpointer[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:520:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  520 |                 [01;35m[Kg_simple_async_result_set_op_res_gpointer[m[K (res, NULL, NULL);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:72:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 | void                [01;36m[Kg_simple_async_result_set_op_res_gpointer[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:524:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  524 |                 [01;35m[Kg_simple_async_result_set_op_res_gpointer[m[K (res, NULL, NULL);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:72:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 | void                [01;36m[Kg_simple_async_result_set_op_res_gpointer[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:529:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  529 |                 [01;35m[Kg_simple_async_result_set_op_res_gpointer[m[K (res, response->password, g_free);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:72:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 | void                [01;36m[Kg_simple_async_result_set_op_res_gpointer[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:[m[K In function ‘[01m[Kgcr_mock_prompt_password_finish[m[K’:
+[01m[K../gcr/gcr-mock-prompter.c:553:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_is_valid[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  553 |         [01;35m[Kg_return_val_if_fail[m[K (g_simple_async_result_is_valid (result, G_OBJECT (prompt),
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:132:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  132 | gboolean            [01;36m[Kg_simple_async_result_is_valid[m[K         (GAsyncResult            *result,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-mock-prompter.c:556:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_get_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  556 |         [01;35m[Kreturn[m[K g_simple_async_result_get_op_res_gpointer (G_SIMPLE_ASYNC_RESULT (result));
+      |         [01;35m[K^~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:76:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   76 | gpointer            [01;36m[Kg_simple_async_result_get_op_res_gpointer[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[106/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-system-prompter.c.o[K[107/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-secret-exchange.c.o[K[107/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-trust.c.o[K[108/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-prompt.c.o[K[108/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-interaction.c.o[K[109/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-ssh-askpass.c.o[K[109/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-preload.c.o[K[110/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-simple-certificate.c.o[K[110/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-process.c.o[K[111/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-subject-public-key-info.c.o[K[111/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-service.c.o[K[112/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-system-prompt.c.o[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kon_prompter_stop_prompting[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:436:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  436 |                 [01;35m[Kg_simple_async_result_complete[m[K (async);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/glib-2.0/gio/gio.h:143[m[K,
+                 from [01m[K../gcr/gcr-internal.h:26[m[K,
+                 from [01m[K../gcr/gcr-system-prompt.c:25[m[K:
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:101:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  101 | void                [01;36m[Kg_simple_async_result_complete[m[K         (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kperform_close[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:460:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_get_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  460 |                 [01;35m[Kclosure[m[K = g_simple_async_result_get_op_res_gpointer (res);
+      |                 [01;35m[K^~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:76:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   76 | gpointer            [01;36m[Kg_simple_async_result_get_op_res_gpointer[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:462:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete_in_idle[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  462 |                 [01;35m[Kg_simple_async_result_complete_in_idle[m[K (res);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:103:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  103 | void                [01;36m[Kg_simple_async_result_complete_in_idle[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:497:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete_in_idle[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  497 |                 [01;35m[Kg_simple_async_result_complete_in_idle[m[K (async);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:103:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  103 | void                [01;36m[Kg_simple_async_result_complete_in_idle[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kprompt_method_ready[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:665:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  665 |         [01;35m[Kg_simple_async_result_complete[m[K (res);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:101:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  101 | void                [01;36m[Kg_simple_async_result_complete[m[K         (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kon_prompter_vanished[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:791:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_get_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  791 |         [01;35m[KCallClosure[m[K *call = g_simple_async_result_get_op_res_gpointer (user_data);
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:76:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   76 | gpointer            [01;36m[Kg_simple_async_result_get_op_res_gpointer[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kon_bus_connected[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:810:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_get_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  810 |         [01;35m[KCallClosure[m[K *closure = g_simple_async_result_get_op_res_gpointer (res);
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:76:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   76 | gpointer            [01;36m[Kg_simple_async_result_get_op_res_gpointer[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:840:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_take_error[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  840 |                 [01;35m[Kg_simple_async_result_take_error[m[K (res, error);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:113:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 | void                [01;36m[Kg_simple_async_result_take_error[m[K       (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:841:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  841 |                 [01;35m[Kg_simple_async_result_complete[m[K (res);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:101:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  101 | void                [01;36m[Kg_simple_async_result_complete[m[K         (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kon_prompter_begin_prompting[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:874:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_take_error[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  874 |                 [01;35m[Kg_simple_async_result_take_error[m[K (res, error);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:113:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 | void                [01;36m[Kg_simple_async_result_take_error[m[K       (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:875:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  875 |                 [01;35m[Kg_simple_async_result_complete[m[K (res);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:101:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  101 | void                [01;36m[Kg_simple_async_result_complete[m[K         (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kon_call_timeout[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:886:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_get_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  886 |         [01;35m[KCallClosure[m[K *closure = g_simple_async_result_get_op_res_gpointer (res);
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:76:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   76 | gpointer            [01;36m[Kg_simple_async_result_get_op_res_gpointer[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:896:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_error[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  896 |         [01;35m[Kg_simple_async_result_set_error[m[K (res, GCR_SYSTEM_PROMPT_ERROR,
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:119:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  119 | void                [01;36m[Kg_simple_async_result_set_error[m[K        (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:899:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  899 |         [01;35m[Kg_simple_async_result_complete[m[K (res);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:101:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  101 | void                [01;36m[Kg_simple_async_result_complete[m[K         (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kon_call_cancelled[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:910:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_get_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  910 |         [01;35m[KCallClosure[m[K *call = g_simple_async_result_get_op_res_gpointer (async);
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:76:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   76 | gpointer            [01;36m[Kg_simple_async_result_get_op_res_gpointer[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:917:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_error[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  917 |         [01;35m[Kg_simple_async_result_set_error[m[K (async, G_IO_ERROR, G_IO_ERROR_CANCELLED,
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:119:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  119 | void                [01;36m[Kg_simple_async_result_set_error[m[K        (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kperform_init_async[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:931:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_get_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  931 |         [01;35m[KCallClosure[m[K *closure = g_simple_async_result_get_op_res_gpointer (res);
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:76:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   76 | gpointer            [01;36m[Kg_simple_async_result_get_op_res_gpointer[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kgcr_system_prompt_real_init_async[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:992:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_new[m[K’ is deprecated: Use 'g_task_new' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  992 |         [01;35m[Kres[m[K = g_simple_async_result_new (G_OBJECT (self), callback, user_data,
+      |         [01;35m[K^~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:48:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   48 | GSimpleAsyncResult *[01;36m[Kg_simple_async_result_new[m[K              (GObject                 *source_object,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:998:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  998 |         [01;35m[Kg_simple_async_result_set_op_res_gpointer[m[K (res, closure, call_closure_free);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:72:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 | void                [01;36m[Kg_simple_async_result_set_op_res_gpointer[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kgcr_system_prompt_real_init_finish[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:1013:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_is_valid[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1013 |         [01;35m[Kg_return_val_if_fail[m[K (g_simple_async_result_is_valid (result, G_OBJECT (self),
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:132:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  132 | gboolean            [01;36m[Kg_simple_async_result_is_valid[m[K         (GAsyncResult            *result,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:1016:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_propagate_error[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1016 |         [01;35m[Kif[m[K (g_simple_async_result_propagate_error (G_SIMPLE_ASYNC_RESULT (result), error))
+      |         [01;35m[K^~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:116:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  116 | gboolean            [01;36m[Kg_simple_async_result_propagate_error[m[K  (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kon_perform_prompt_complete[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:1128:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_get_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1128 |         [01;35m[KCallClosure[m[K *call = g_simple_async_result_get_op_res_gpointer (res);
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:76:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   76 | gpointer            [01;36m[Kg_simple_async_result_get_op_res_gpointer[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:1135:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_take_error[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1135 |                 [01;35m[Kg_simple_async_result_take_error[m[K (res, error);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:113:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 | void                [01;36m[Kg_simple_async_result_take_error[m[K       (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:1136:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1136 |                 [01;35m[Kg_simple_async_result_complete[m[K (res);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:101:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  101 | void                [01;36m[Kg_simple_async_result_complete[m[K         (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kperform_prompt_async[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:1173:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_new[m[K’ is deprecated: Use 'g_task_new' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1173 |         [01;35m[Kres[m[K = g_simple_async_result_new (G_OBJECT (self), callback, user_data, source_tag);
+      |         [01;35m[K^~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:48:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   48 | GSimpleAsyncResult *[01;36m[Kg_simple_async_result_new[m[K              (GObject                 *source_object,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:1175:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1175 |         [01;35m[Kg_simple_async_result_set_op_res_gpointer[m[K (res, closure, call_closure_free);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:72:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 | void                [01;36m[Kg_simple_async_result_set_op_res_gpointer[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:1180:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_complete_in_idle[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1180 |                 [01;35m[Kg_simple_async_result_complete_in_idle[m[K (res);
+      |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:103:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  103 | void                [01;36m[Kg_simple_async_result_complete_in_idle[m[K (GSimpleAsyncResult      *simple);
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kgcr_system_prompt_password_finish[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:1266:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_is_valid[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1266 |         [01;35m[Kg_return_val_if_fail[m[K (g_simple_async_result_is_valid (result, G_OBJECT (self),
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:132:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  132 | gboolean            [01;36m[Kg_simple_async_result_is_valid[m[K         (GAsyncResult            *result,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:1270:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_propagate_error[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1270 |         [01;35m[Kif[m[K (g_simple_async_result_propagate_error (res, error))
+      |         [01;35m[K^~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:116:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  116 | gboolean            [01;36m[Kg_simple_async_result_propagate_error[m[K  (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kgcr_system_prompt_confirm_finish[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:1300:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_is_valid[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1300 |         [01;35m[Kg_return_val_if_fail[m[K (g_simple_async_result_is_valid (result, G_OBJECT (self),
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:132:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  132 | gboolean            [01;36m[Kg_simple_async_result_is_valid[m[K         (GAsyncResult            *result,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:1304:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_propagate_error[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1304 |         [01;35m[Kif[m[K (g_simple_async_result_propagate_error (res, error))
+      |         [01;35m[K^~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:116:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  116 | gboolean            [01;36m[Kg_simple_async_result_propagate_error[m[K  (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kgcr_system_prompt_close_async[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:1581:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_new[m[K’ is deprecated: Use 'g_task_new' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1581 |         [01;35m[Kres[m[K = g_simple_async_result_new (NULL, callback, user_data,
+      |         [01;35m[K^~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:48:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   48 | GSimpleAsyncResult *[01;36m[Kg_simple_async_result_new[m[K              (GObject                 *source_object,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:1587:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_set_op_res_gpointer[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1587 |         [01;35m[Kg_simple_async_result_set_op_res_gpointer[m[K (res, closure, call_closure_free);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:72:21:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 | void                [01;36m[Kg_simple_async_result_set_op_res_gpointer[m[K (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:[m[K In function ‘[01m[Kgcr_system_prompt_close_finish[m[K’:
+[01m[K../gcr/gcr-system-prompt.c:1615:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_is_valid[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1615 |         [01;35m[Kg_return_val_if_fail[m[K (g_simple_async_result_is_valid (result, NULL,
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:132:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  132 | gboolean            [01;36m[Kg_simple_async_result_is_valid[m[K         (GAsyncResult            *result,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gcr/gcr-system-prompt.c:1618:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_simple_async_result_propagate_error[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1618 |         [01;35m[Kif[m[K (g_simple_async_result_propagate_error (G_SIMPLE_ASYNC_RESULT (result), error))
+      |         [01;35m[K^~[m[K
+[01m[K/usr/include/glib-2.0/gio/gsimpleasyncresult.h:116:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  116 | gboolean            [01;36m[Kg_simple_async_result_propagate_error[m[K  (GSimpleAsyncResult      *simple,
+      |                     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[112/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-util.c.o[K[113/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-system-prompter.c.o[K[113/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-test.c.o[K[114/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-preload.c.o[K[114/337] Linking static target egg/libegg-test.a[K[115/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-parser.c.o[K
+[01m[K../gcr/gcr-parser.c:[m[K In function ‘[01m[Kparser_format_lookup[m[K’:
+[01m[K../gcr/gcr-parser.c:1487:16:[m[K [01;35m[Kwarning: [m[Kreturn discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+ 1487 |         return [01;35m[Kbsearch[m[K (&format_id, parser_formats, G_N_ELEMENTS (parser_formats),
+      |                [01;35m[K^~~~~~~[m[K
+[115/337] Compiling C object egg/egg-asn1.p/test-asn1.c.o[K[116/337] Linking static target egg/libegg-test.a[K[116/337] Compiling C object egg/egg-asn1x.p/test-asn1x.c.o[K[117/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-process.c.o[K
+[01m[K../gcr/gcr-ssh-agent-process.c:[m[K In function ‘[01m[Kon_child_watch[m[K’:
+[01m[K../gcr/gcr-ssh-agent-process.c:150:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_spawn_check_exit_status[m[K’ is deprecated: Use 'g_spawn_check_wait_status' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  150 |         [01;35m[Kif[m[K (!g_spawn_check_exit_status (status, &error)) {
+      |         [01;35m[K^~[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib.h:84[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib-object.h:24[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/gioenums.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/giotypes.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/gio.h:28[m[K,
+                 from [01m[K../gcr/gcr-ssh-agent-process.h:27[m[K,
+                 from [01m[K../gcr/gcr-ssh-agent-process.c:26[m[K:
+[01m[K/usr/include/glib-2.0/glib/gspawn.h:309:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  309 | gboolean [01;36m[Kg_spawn_check_exit_status[m[K (gint      wait_status,
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[117/337] Compiling C object egg/egg-dn.p/test-dn.c.o[K[118/337] Compiling C object gcr/libgcr-4.so.4.4.1.p/gcr-trust.c.o[K
+In file included from [01m[K../gcr/gcr-trust.c:30[m[K:
+[01m[K../gck/pkcs11n.h:132:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_SERVER_AUTH[m[K’ redefined
+  132 | #define [01;35m[KCKA_TRUST_SERVER_AUTH[m[K           (CKA_TRUST +  8)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K../gck/gck.h:30[m[K,
+                 from [01m[K../gcr/gcr-types.h:40[m[K,
+                 from [01m[K../gcr/gcr-trust.c:24[m[K:
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:581:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  581 | #define [01;36m[KCKA_TRUST_SERVER_AUTH[m[K                   (0x62CUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:133:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_CLIENT_AUTH[m[K’ redefined
+  133 | #define [01;35m[KCKA_TRUST_CLIENT_AUTH[m[K           (CKA_TRUST +  9)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:582:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  582 | #define [01;36m[KCKA_TRUST_CLIENT_AUTH[m[K                   (0x62DUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:134:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_CODE_SIGNING[m[K’ redefined
+  134 | #define [01;35m[KCKA_TRUST_CODE_SIGNING[m[K          (CKA_TRUST + 10)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:583:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  583 | #define [01;36m[KCKA_TRUST_CODE_SIGNING[m[K                  (0x62EUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:135:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_EMAIL_PROTECTION[m[K’ redefined
+  135 | #define [01;35m[KCKA_TRUST_EMAIL_PROTECTION[m[K      (CKA_TRUST + 11)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:584:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  584 | #define [01;36m[KCKA_TRUST_EMAIL_PROTECTION[m[K              (0x62FUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:139:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_TIME_STAMPING[m[K’ redefined
+  139 | #define [01;35m[KCKA_TRUST_TIME_STAMPING[m[K         (CKA_TRUST + 15)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:586:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  586 | #define [01;36m[KCKA_TRUST_TIME_STAMPING[m[K                 (0x631UL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[118/337] Compiling C object egg/egg-decimal.p/test-decimal.c.o[K[119/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-interaction.c.o[K[119/337] Compiling C object egg/egg-hex.p/test-hex.c.o[K[120/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-util.c.o[K[120/337] Compiling C object egg/egg-hkdf.p/test-hkdf.c.o[K[121/337] Compiling C object egg/egg-dn.p/test-dn.c.o[K[121/337] Compiling C object egg/egg-oid.p/test-oid.c.o[K[122/337] Compiling C object egg/egg-decimal.p/test-decimal.c.o[K[122/337] Compiling C object egg/egg-secmem.p/test-secmem.c.o[K[123/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-service.c.o[K
+[01m[K../gcr/gcr-ssh-agent-service.c:[m[K In function ‘[01m[Kensure_key[m[K’:
+[01m[K../gcr/gcr-ssh-agent-service.c:285:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_spawn_check_exit_status[m[K’ is deprecated: Use 'g_spawn_check_wait_status' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  285 |         [01;35m[K}[m[K else if (!g_spawn_check_exit_status (status, &error)) {
+      |         [01;35m[K^[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib.h:84[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib-object.h:24[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/gioenums.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/giotypes.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/gio.h:28[m[K,
+                 from [01m[K../gcr/gcr-ssh-agent-service.h:27[m[K,
+                 from [01m[K../gcr/gcr-ssh-agent-service.c:26[m[K:
+[01m[K/usr/include/glib-2.0/glib/gspawn.h:309:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  309 | gboolean [01;36m[Kg_spawn_check_exit_status[m[K (gint      wait_status,
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[123/337] Compiling C object egg/egg-padding.p/test-padding.c.o[K[124/337] Compiling C object egg/egg-asn1x.p/test-asn1x.c.o[K[124/337] Compiling C object egg/egg-armor.p/test-armor.c.o[K[125/337] Compiling C object gcr/libgcr-ssh-agent-test.a.p/gcr-ssh-agent-test.c.o[K[125/337] Compiling C object egg/egg-dh.p/test-dh.c.o[K[126/337] Compiling C object egg/egg-hex.p/test-hex.c.o[K[126/337] Compiling C object egg/egg-symkey.p/test-symkey.c.o[K[127/337] Compiling C object egg/egg-oid.p/test-oid.c.o[K[127/337] Compiling C object egg/egg-openssl.p/test-openssl.c.o[K[128/337] Compiling C object egg/egg-hkdf.p/test-hkdf.c.o[K[128/337] Compiling C object gck/libmock-test-module.so.p/mock-test-module.c.o[K[129/337] Compiling C object egg/egg-secmem.p/test-secmem.c.o[K[129/337] Compiling C object gck/test-gck-attributes.p/test-gck-attributes.c.o[K[130/337] Compiling C object egg/egg-padding.p/test-padding.c.o[K[130/337] Compiling C object gck/test-gck-module.p/test-gck-module.c.o[K[131/337] Compiling C object egg/egg-asn1.p/test-asn1.c.o[K[131/337] Compiling C object gck/test-gck-slot.p/test-gck-slot.c.o[K[132/337] Compiling C object egg/egg-armor.p/test-armor.c.o[K[132/337] Compiling C object gck/test-gck-session.p/test-gck-session.c.o[K[133/337] Compiling C object egg/egg-dh.p/test-dh.c.o[K[133/337] Compiling C object gck/test-gck-object.p/test-gck-object.c.o[K[134/337] Compiling C object egg/egg-openssl.p/test-openssl.c.o[K[134/337] Compiling C object gck/test-gck-crypto.p/test-gck-crypto.c.o[K[135/337] Compiling C object gck/libmock-test-module.so.p/mock-test-module.c.o[K[135/337] Compiling C object gck/test-gck-uri.p/test-gck-uri.c.o[K[136/337] Compiling C object egg/egg-symkey.p/test-symkey.c.o[K[136/337] Compiling C object gck/test-gck-enumerator.p/test-gck-enumerator.c.o[K[137/337] Compiling C object gck/test-gck-slot.p/test-gck-slot.c.o[K[137/337] Compiling C object gck/test-gck-modules.p/test-gck-modules.c.o[K[138/337] Compiling C object gck/test-gck-module.p/test-gck-module.c.o[K[138/337] Compiling C object gcr/gcr4-ssh-askpass.p/gcr-ssh-askpass.c.o[K[139/337] Compiling C object gck/test-gck-session.p/test-gck-session.c.o[K[139/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-interaction.c.o[K[140/337] Compiling C object gck/test-gck-crypto.p/test-gck-crypto.c.o[K[140/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-preload.c.o[K[141/337] Compiling C object gck/test-gck-object.p/test-gck-object.c.o[K[141/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-process.c.o[K[142/337] Compiling C object gck/test-gck-attributes.p/test-gck-attributes.c.o[K[142/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-service.c.o[K[143/337] Compiling C object gck/test-gck-modules.p/test-gck-modules.c.o[K[143/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-util.c.o[K[144/337] Compiling C object gcr/gcr4-ssh-askpass.p/gcr-ssh-askpass.c.o[K[144/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent.c.o[K[145/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-interaction.c.o[K[145/337] Linking static target gcr/libgcr-ssh-agent-test.a[K[146/337] Compiling C object gck/test-gck-uri.p/test-gck-uri.c.o[K[146/337] Compiling C object gcr/test-ssh-agent-preload.p/test-ssh-agent-preload.c.o[K[147/337] Linking static target gcr/libgcr-ssh-agent-test.a[K[147/337] Compiling C object gcr/test-ssh-agent-process.p/test-ssh-agent-process.c.o[K[148/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-preload.c.o[K[148/337] Compiling C object gcr/test-ssh-agent-service.p/test-ssh-agent-service.c.o[K[149/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-process.c.o[K
+[01m[K../gcr/gcr-ssh-agent-process.c:[m[K In function ‘[01m[Kon_child_watch[m[K’:
+[01m[K../gcr/gcr-ssh-agent-process.c:150:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_spawn_check_exit_status[m[K’ is deprecated: Use 'g_spawn_check_wait_status' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  150 |         [01;35m[Kif[m[K (!g_spawn_check_exit_status (status, &error)) {
+      |         [01;35m[K^~[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib.h:84[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib-object.h:24[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/gioenums.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/giotypes.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/gio.h:28[m[K,
+                 from [01m[K../gcr/gcr-ssh-agent-process.h:27[m[K,
+                 from [01m[K../gcr/gcr-ssh-agent-process.c:26[m[K:
+[01m[K/usr/include/glib-2.0/glib/gspawn.h:309:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  309 | gboolean [01;36m[Kg_spawn_check_exit_status[m[K (gint      wait_status,
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[149/337] Compiling C object gcr/test-ssh-agent-util.p/test-ssh-agent-util.c.o[K[150/337] Compiling C object gcr/test-ssh-agent-preload.p/test-ssh-agent-preload.c.o[K[150/337] Compiling C object gcr/test-util.p/test-util.c.o[K[151/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-util.c.o[K[151/337] Compiling C object gcr/test-secret-exchange.p/test-secret-exchange.c.o[K[152/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent-service.c.o[K
+[01m[K../gcr/gcr-ssh-agent-service.c:[m[K In function ‘[01m[Kensure_key[m[K’:
+[01m[K../gcr/gcr-ssh-agent-service.c:285:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_spawn_check_exit_status[m[K’ is deprecated: Use 'g_spawn_check_wait_status' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  285 |         [01;35m[K}[m[K else if (!g_spawn_check_exit_status (status, &error)) {
+      |         [01;35m[K^[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib.h:84[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib-object.h:24[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/gioenums.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/giotypes.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/gio.h:28[m[K,
+                 from [01m[K../gcr/gcr-ssh-agent-service.h:27[m[K,
+                 from [01m[K../gcr/gcr-ssh-agent-service.c:26[m[K:
+[01m[K/usr/include/glib-2.0/glib/gspawn.h:309:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  309 | gboolean [01;36m[Kg_spawn_check_exit_status[m[K (gint      wait_status,
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[152/337] Compiling C object gcr/test-simple-certificate.p/test-simple-certificate.c.o[K[153/337] Compiling C object gck/test-gck-enumerator.p/test-gck-enumerator.c.o[K[153/337] Compiling C object gcr/test-certificate.p/test-certificate.c.o[K[154/337] Compiling C object gcr/gcr-ssh-agent.p/gcr-ssh-agent.c.o[K[154/337] Compiling C object gcr/test-certificate-chain.p/test-certificate-chain.c.o[K[155/337] Compiling C object gcr/test-ssh-agent-process.p/test-ssh-agent-process.c.o[K[155/337] Compiling C object gcr/test-subject-public-key.p/test-subject-public-key.c.o[K[156/337] Compiling C object gcr/test-ssh-agent-util.p/test-ssh-agent-util.c.o[K[156/337] Compiling C object gcr/test-fingerprint.p/test-fingerprint.c.o[K[157/337] Compiling C object gcr/test-ssh-agent-service.p/test-ssh-agent-service.c.o[K[157/337] Compiling C object gcr/test-pkcs11-certificate.p/test-pkcs11-certificate.c.o[K[158/337] Compiling C object gcr/test-secret-exchange.p/test-secret-exchange.c.o[K[158/337] Compiling C object gcr/test-openpgp.p/test-openpgp.c.o[K[159/337] Compiling C object gcr/test-simple-certificate.p/test-simple-certificate.c.o[K[159/337] Compiling C object gcr/test-openssh.p/test-openssh.c.o[K[160/337] Compiling C object gcr/test-util.p/test-util.c.o[K[160/337] Compiling C object gcr/test-secure-memory.p/test-secure-memory.c.o[K[161/337] Compiling C object gcr/test-certificate-chain.p/test-certificate-chain.c.o[K[161/337] Compiling C object gcr/test-trust.p/test-trust.c.o[K[162/337] Compiling C object gcr/test-fingerprint.p/test-fingerprint.c.o[K
+In file included from [01m[K../gcr/test-fingerprint.c:30[m[K:
+[01m[K../gck/pkcs11n.h:132:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_SERVER_AUTH[m[K’ redefined
+  132 | #define [01;35m[KCKA_TRUST_SERVER_AUTH[m[K           (CKA_TRUST +  8)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K../gck/gck.h:30[m[K,
+                 from [01m[K../gcr/gcr-types.h:40[m[K,
+                 from [01m[K../gcr/gcr.h:33[m[K,
+                 from [01m[K../gcr/test-fingerprint.c:25[m[K:
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:581:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  581 | #define [01;36m[KCKA_TRUST_SERVER_AUTH[m[K                   (0x62CUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:133:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_CLIENT_AUTH[m[K’ redefined
+  133 | #define [01;35m[KCKA_TRUST_CLIENT_AUTH[m[K           (CKA_TRUST +  9)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:582:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  582 | #define [01;36m[KCKA_TRUST_CLIENT_AUTH[m[K                   (0x62DUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:134:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_CODE_SIGNING[m[K’ redefined
+  134 | #define [01;35m[KCKA_TRUST_CODE_SIGNING[m[K          (CKA_TRUST + 10)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:583:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  583 | #define [01;36m[KCKA_TRUST_CODE_SIGNING[m[K                  (0x62EUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:135:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_EMAIL_PROTECTION[m[K’ redefined
+  135 | #define [01;35m[KCKA_TRUST_EMAIL_PROTECTION[m[K      (CKA_TRUST + 11)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:584:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  584 | #define [01;36m[KCKA_TRUST_EMAIL_PROTECTION[m[K              (0x62FUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:139:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_TIME_STAMPING[m[K’ redefined
+  139 | #define [01;35m[KCKA_TRUST_TIME_STAMPING[m[K         (CKA_TRUST + 15)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:586:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  586 | #define [01;36m[KCKA_TRUST_TIME_STAMPING[m[K                 (0x631UL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[162/337] Compiling C object gcr/test-parser.p/test-parser.c.o[K[163/337] Compiling C object gcr/test-pkcs11-certificate.p/test-pkcs11-certificate.c.o[K
+In file included from [01m[K../gcr/test-pkcs11-certificate.c:34[m[K:
+[01m[K../gck/pkcs11n.h:132:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_SERVER_AUTH[m[K’ redefined
+  132 | #define [01;35m[KCKA_TRUST_SERVER_AUTH[m[K           (CKA_TRUST +  8)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K../gck/gck.h:30[m[K,
+                 from [01m[K../gcr/gcr-types.h:40[m[K,
+                 from [01m[K../gcr/gcr.h:33[m[K,
+                 from [01m[K../gcr/test-pkcs11-certificate.c:27[m[K:
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:581:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  581 | #define [01;36m[KCKA_TRUST_SERVER_AUTH[m[K                   (0x62CUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:133:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_CLIENT_AUTH[m[K’ redefined
+  133 | #define [01;35m[KCKA_TRUST_CLIENT_AUTH[m[K           (CKA_TRUST +  9)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:582:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  582 | #define [01;36m[KCKA_TRUST_CLIENT_AUTH[m[K                   (0x62DUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:134:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_CODE_SIGNING[m[K’ redefined
+  134 | #define [01;35m[KCKA_TRUST_CODE_SIGNING[m[K          (CKA_TRUST + 10)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:583:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  583 | #define [01;36m[KCKA_TRUST_CODE_SIGNING[m[K                  (0x62EUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:135:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_EMAIL_PROTECTION[m[K’ redefined
+  135 | #define [01;35m[KCKA_TRUST_EMAIL_PROTECTION[m[K      (CKA_TRUST + 11)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:584:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  584 | #define [01;36m[KCKA_TRUST_EMAIL_PROTECTION[m[K              (0x62FUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:139:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_TIME_STAMPING[m[K’ redefined
+  139 | #define [01;35m[KCKA_TRUST_TIME_STAMPING[m[K         (CKA_TRUST + 15)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:586:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  586 | #define [01;36m[KCKA_TRUST_TIME_STAMPING[m[K                 (0x631UL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[163/337] Compiling C object gcr/test-record.p/test-record.c.o[K[164/337] Compiling C object gcr/test-secure-memory.p/test-secure-memory.c.o[K[164/337] Compiling C object gcr/test-gnupg-process.p/test-gnupg-process.c.o[K[165/337] Compiling C object gcr/test-certificate.p/test-certificate.c.o[K[165/337] Compiling C object gcr/test-system-prompt.p/test-system-prompt.c.o[K[166/337] Compiling C object gcr/test-openssh.p/test-openssh.c.o[K[166/337] Compiling C object gcr/test-ssh-askpass.p/test-ssh-askpass.c.o[K[167/337] Compiling C object gcr/test-openpgp.p/test-openpgp.c.o[K[167/337] Compiling C object gcr/frob-certificate-request.p/frob-certificate-request.c.o[K[168/337] Linking target gck/libgck-2.so.2.4.1[K[168/337] Generating symbol file gck/libgck-2.so.2.4.1.p/libgck-2.so.2.4.1.symbols[K[169/337] Compiling C object gcr/test-trust.p/test-trust.c.o[K
+In file included from [01m[K../gcr/test-trust.c:30[m[K:
+[01m[K../gck/pkcs11n.h:132:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_SERVER_AUTH[m[K’ redefined
+  132 | #define [01;35m[KCKA_TRUST_SERVER_AUTH[m[K           (CKA_TRUST +  8)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K../gck/gck.h:30[m[K,
+                 from [01m[K../gcr/gcr-types.h:40[m[K,
+                 from [01m[K../gcr/gcr.h:33[m[K,
+                 from [01m[K../gcr/test-trust.c:24[m[K:
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:581:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  581 | #define [01;36m[KCKA_TRUST_SERVER_AUTH[m[K                   (0x62CUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:133:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_CLIENT_AUTH[m[K’ redefined
+  133 | #define [01;35m[KCKA_TRUST_CLIENT_AUTH[m[K           (CKA_TRUST +  9)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:582:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  582 | #define [01;36m[KCKA_TRUST_CLIENT_AUTH[m[K                   (0x62DUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:134:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_CODE_SIGNING[m[K’ redefined
+  134 | #define [01;35m[KCKA_TRUST_CODE_SIGNING[m[K          (CKA_TRUST + 10)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:583:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  583 | #define [01;36m[KCKA_TRUST_CODE_SIGNING[m[K                  (0x62EUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:135:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_EMAIL_PROTECTION[m[K’ redefined
+  135 | #define [01;35m[KCKA_TRUST_EMAIL_PROTECTION[m[K      (CKA_TRUST + 11)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:584:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  584 | #define [01;36m[KCKA_TRUST_EMAIL_PROTECTION[m[K              (0x62FUL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../gck/pkcs11n.h:139:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KCKA_TRUST_TIME_STAMPING[m[K’ redefined
+  139 | #define [01;35m[KCKA_TRUST_TIME_STAMPING[m[K         (CKA_TRUST + 15)
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/p11-kit-1/p11-kit/pkcs11.h:586:9:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+  586 | #define [01;36m[KCKA_TRUST_TIME_STAMPING[m[K                 (0x631UL)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[169/337] Generating gck/Gck-2.gir with a custom command (wrapped by meson to set env)[K[170/337] Compiling C object gcr/test-subject-public-key.p/test-subject-public-key.c.o[K[170/337] Compiling C object gcr/frob-certificate-request.p/console-interaction.c.o[K[171/337] Compiling C object gcr/test-parser.p/test-parser.c.o[K[171/337] Compiling C object gcr/frob-openpgp.p/frob-openpgp.c.o[K[172/337] Compiling C object gcr/test-record.p/test-record.c.o[K[172/337] Compiling C object gcr/frob-parser.p/frob-parser.c.o[K[173/337] Compiling C object gcr/test-gnupg-process.p/test-gnupg-process.c.o[K[173/337] Compiling C object tools/viewer/gcr-viewer-gtk4.p/gcr-certificate-widget.c.o[K[174/337] Compiling C object gcr/frob-certificate-request.p/frob-certificate-request.c.o[K[174/337] Compiling C object tools/viewer/gcr-viewer-gtk4.p/gcr-section.c.o[K[175/337] Compiling C object gcr/test-ssh-askpass.p/test-ssh-askpass.c.o[K
+[01m[K../gcr/test-ssh-askpass.c:[m[K In function ‘[01m[Ktest_ssh_keygen[m[K’:
+[01m[K../gcr/test-ssh-askpass.c:102:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_spawn_check_exit_status[m[K’ is deprecated: Use 'g_spawn_check_wait_status' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+  102 |         [01;35m[Kg_spawn_check_exit_status[m[K (status, &error);
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib.h:84[m[K,
+                 from [01m[K../gcr/gcr.h:29[m[K,
+                 from [01m[K../gcr/test-ssh-askpass.c:24[m[K:
+[01m[K/usr/include/glib-2.0/glib/gspawn.h:309:10:[m[K [01;36m[Knote: [m[Kdeclared here
+  309 | gboolean [01;36m[Kg_spawn_check_exit_status[m[K (gint      wait_status,
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[175/337] Compiling C object tools/viewer/gcr-viewer-gtk4.p/viewer.c.o[K[176/337] Generating symbol file gck/libgck-2.so.2.4.1.p/libgck-2.so.2.4.1.symbols[K[176/337] Linking target gcr/libgcr-4.so.4.4.1[K[177/337] Compiling C object gcr/test-system-prompt.p/test-system-prompt.c.o[K[177/337] Building translation po/ab/LC_MESSAGES/gcr-4-ab.mo[K[178/337] Building translation po/ab/LC_MESSAGES/gcr-4-ab.mo[K[178/337] Building translation po/af/LC_MESSAGES/gcr-4-af.mo[K[179/337] Building translation po/af/LC_MESSAGES/gcr-4-af.mo[K[179/337] Building translation po/ar/LC_MESSAGES/gcr-4-ar.mo[K[180/337] Building translation po/ar/LC_MESSAGES/gcr-4-ar.mo[K[180/337] Building translation po/as/LC_MESSAGES/gcr-4-as.mo[K[181/337] Building translation po/as/LC_MESSAGES/gcr-4-as.mo[K[181/337] Building translation po/ast/LC_MESSAGES/gcr-4-ast.mo[K[182/337] Building translation po/ast/LC_MESSAGES/gcr-4-ast.mo[K[182/337] Building translation po/az/LC_MESSAGES/gcr-4-az.mo[K[183/337] Building translation po/az/LC_MESSAGES/gcr-4-az.mo[K[183/337] Building translation po/be/LC_MESSAGES/gcr-4-be.mo[K[184/337] Compiling C object gcr/frob-openpgp.p/frob-openpgp.c.o[K[184/337] Building translation po/be@latin/LC_MESSAGES/gcr-4-be@latin.mo[K[185/337] Building translation po/be@latin/LC_MESSAGES/gcr-4-be@latin.mo[K[185/337] Building translation po/bg/LC_MESSAGES/gcr-4-bg.mo[K[186/337] Building translation po/be/LC_MESSAGES/gcr-4-be.mo[K[186/337] Building translation po/bn/LC_MESSAGES/gcr-4-bn.mo[K[187/337] Building translation po/bg/LC_MESSAGES/gcr-4-bg.mo[K[187/337] Building translation po/bn_IN/LC_MESSAGES/gcr-4-bn_IN.mo[K[188/337] Building translation po/bn/LC_MESSAGES/gcr-4-bn.mo[K[188/337] Building translation po/bs/LC_MESSAGES/gcr-4-bs.mo[K[189/337] Building translation po/bn_IN/LC_MESSAGES/gcr-4-bn_IN.mo[K[189/337] Building translation po/ca/LC_MESSAGES/gcr-4-ca.mo[K[190/337] Building translation po/bs/LC_MESSAGES/gcr-4-bs.mo[K[190/337] Building translation po/ca@valencia/LC_MESSAGES/gcr-4-ca@valencia.mo[K[191/337] Building translation po/ca/LC_MESSAGES/gcr-4-ca.mo[K[191/337] Building translation po/ckb/LC_MESSAGES/gcr-4-ckb.mo[K[192/337] Building translation po/ca@valencia/LC_MESSAGES/gcr-4-ca@valencia.mo[K[192/337] Building translation po/cs/LC_MESSAGES/gcr-4-cs.mo[K[193/337] Building translation po/cs/LC_MESSAGES/gcr-4-cs.mo[K[193/337] Building translation po/cy/LC_MESSAGES/gcr-4-cy.mo[K[194/337] Building translation po/ckb/LC_MESSAGES/gcr-4-ckb.mo[K[194/337] Building translation po/da/LC_MESSAGES/gcr-4-da.mo[K[195/337] Building translation po/cy/LC_MESSAGES/gcr-4-cy.mo[K[195/337] Building translation po/de/LC_MESSAGES/gcr-4-de.mo[K[196/337] Building translation po/da/LC_MESSAGES/gcr-4-da.mo[K[196/337] Building translation po/dz/LC_MESSAGES/gcr-4-dz.mo[K[197/337] Building translation po/dz/LC_MESSAGES/gcr-4-dz.mo[K[197/337] Building translation po/el/LC_MESSAGES/gcr-4-el.mo[K[198/337] Building translation po/de/LC_MESSAGES/gcr-4-de.mo[K[198/337] Building translation po/en_CA/LC_MESSAGES/gcr-4-en_CA.mo[K[199/337] Building translation po/en_CA/LC_MESSAGES/gcr-4-en_CA.mo[K[199/337] Building translation po/en_GB/LC_MESSAGES/gcr-4-en_GB.mo[K[200/337] Building translation po/el/LC_MESSAGES/gcr-4-el.mo[K[200/337] Building translation po/en@shaw/LC_MESSAGES/gcr-4-en@shaw.mo[K[201/337] Compiling C object gcr/frob-certificate-request.p/console-interaction.c.o[K[201/337] Building translation po/eo/LC_MESSAGES/gcr-4-eo.mo[K[202/337] Building translation po/en@shaw/LC_MESSAGES/gcr-4-en@shaw.mo[K[202/337] Building translation po/es/LC_MESSAGES/gcr-4-es.mo[K[203/337] Building translation po/en_GB/LC_MESSAGES/gcr-4-en_GB.mo[K[203/337] Building translation po/et/LC_MESSAGES/gcr-4-et.mo[K[204/337] Building translation po/et/LC_MESSAGES/gcr-4-et.mo[K[204/337] Building translation po/eu/LC_MESSAGES/gcr-4-eu.mo[K[205/337] Building translation po/es/LC_MESSAGES/gcr-4-es.mo[K[205/337] Building translation po/fa/LC_MESSAGES/gcr-4-fa.mo[K[206/337] Building translation po/eo/LC_MESSAGES/gcr-4-eo.mo[K[206/337] Building translation po/fi/LC_MESSAGES/gcr-4-fi.mo[K[207/337] Building translation po/eu/LC_MESSAGES/gcr-4-eu.mo[K[207/337] Building translation po/fr/LC_MESSAGES/gcr-4-fr.mo[K[208/337] Building translation po/fi/LC_MESSAGES/gcr-4-fi.mo[K[208/337] Building translation po/fur/LC_MESSAGES/gcr-4-fur.mo[K[209/337] Building translation po/fa/LC_MESSAGES/gcr-4-fa.mo[K[209/337] Building translation po/ga/LC_MESSAGES/gcr-4-ga.mo[K[210/337] Building translation po/fr/LC_MESSAGES/gcr-4-fr.mo[K[210/337] Building translation po/gl/LC_MESSAGES/gcr-4-gl.mo[K[211/337] Building translation po/fur/LC_MESSAGES/gcr-4-fur.mo[K[211/337] Building translation po/gu/LC_MESSAGES/gcr-4-gu.mo[K[212/337] Building translation po/ga/LC_MESSAGES/gcr-4-ga.mo[K[212/337] Building translation po/he/LC_MESSAGES/gcr-4-he.mo[K[213/337] Building translation po/gl/LC_MESSAGES/gcr-4-gl.mo[K[213/337] Building translation po/hi/LC_MESSAGES/gcr-4-hi.mo[K[214/337] Building translation po/gu/LC_MESSAGES/gcr-4-gu.mo[K[214/337] Building translation po/hr/LC_MESSAGES/gcr-4-hr.mo[K[215/337] Building translation po/he/LC_MESSAGES/gcr-4-he.mo[K[215/337] Building translation po/hu/LC_MESSAGES/gcr-4-hu.mo[K[216/337] Compiling C object gcr/frob-parser.p/frob-parser.c.o[K[216/337] Building translation po/id/LC_MESSAGES/gcr-4-id.mo[K[217/337] Building translation po/hr/LC_MESSAGES/gcr-4-hr.mo[K[217/337] Building translation po/ie/LC_MESSAGES/gcr-4-ie.mo[K[218/337] Building translation po/hi/LC_MESSAGES/gcr-4-hi.mo[K[218/337] Building translation po/is/LC_MESSAGES/gcr-4-is.mo[K[219/337] Building translation po/hu/LC_MESSAGES/gcr-4-hu.mo[K[219/337] Building translation po/it/LC_MESSAGES/gcr-4-it.mo[K[220/337] Building translation po/ie/LC_MESSAGES/gcr-4-ie.mo[K[220/337] Building translation po/ja/LC_MESSAGES/gcr-4-ja.mo[K[221/337] Building translation po/id/LC_MESSAGES/gcr-4-id.mo[K[221/337] Building translation po/ka/LC_MESSAGES/gcr-4-ka.mo[K[222/337] Building translation po/is/LC_MESSAGES/gcr-4-is.mo[K[222/337] Building translation po/kab/LC_MESSAGES/gcr-4-kab.mo[K[223/337] Building translation po/ja/LC_MESSAGES/gcr-4-ja.mo[K[223/337] Building translation po/kk/LC_MESSAGES/gcr-4-kk.mo[K[224/337] Building translation po/it/LC_MESSAGES/gcr-4-it.mo[K[224/337] Building translation po/kn/LC_MESSAGES/gcr-4-kn.mo[K[225/337] Building translation po/kab/LC_MESSAGES/gcr-4-kab.mo[K[225/337] Building translation po/ko/LC_MESSAGES/gcr-4-ko.mo[K[226/337] Building translation po/ka/LC_MESSAGES/gcr-4-ka.mo[K[226/337] Building translation po/lo/LC_MESSAGES/gcr-4-lo.mo[K[227/337] Building translation po/ko/LC_MESSAGES/gcr-4-ko.mo[K[227/337] Building translation po/lt/LC_MESSAGES/gcr-4-lt.mo[K[228/337] Building translation po/kk/LC_MESSAGES/gcr-4-kk.mo[K[228/337] Building translation po/lv/LC_MESSAGES/gcr-4-lv.mo[K[229/337] Building translation po/kn/LC_MESSAGES/gcr-4-kn.mo[K[229/337] Building translation po/mai/LC_MESSAGES/gcr-4-mai.mo[K[230/337] Building translation po/lo/LC_MESSAGES/gcr-4-lo.mo[K[230/337] Building translation po/mg/LC_MESSAGES/gcr-4-mg.mo[K[231/337] Building translation po/lt/LC_MESSAGES/gcr-4-lt.mo[K[231/337] Building translation po/mk/LC_MESSAGES/gcr-4-mk.mo[K[232/337] Building translation po/lv/LC_MESSAGES/gcr-4-lv.mo[K[232/337] Building translation po/ml/LC_MESSAGES/gcr-4-ml.mo[K[233/337] Building translation po/mai/LC_MESSAGES/gcr-4-mai.mo[K[233/337] Building translation po/mn/LC_MESSAGES/gcr-4-mn.mo[K[234/337] Building translation po/mg/LC_MESSAGES/gcr-4-mg.mo[K[234/337] Building translation po/mr/LC_MESSAGES/gcr-4-mr.mo[K[235/337] Building translation po/mk/LC_MESSAGES/gcr-4-mk.mo[K[235/337] Building translation po/ms/LC_MESSAGES/gcr-4-ms.mo[K[236/337] Building translation po/ml/LC_MESSAGES/gcr-4-ml.mo[K[236/337] Building translation po/nb/LC_MESSAGES/gcr-4-nb.mo[K[237/337] Building translation po/mn/LC_MESSAGES/gcr-4-mn.mo[K[237/337] Building translation po/ne/LC_MESSAGES/gcr-4-ne.mo[K[238/337] Building translation po/nb/LC_MESSAGES/gcr-4-nb.mo[K[238/337] Building translation po/nl/LC_MESSAGES/gcr-4-nl.mo[K[239/337] Building translation po/mr/LC_MESSAGES/gcr-4-mr.mo[K[239/337] Building translation po/nn/LC_MESSAGES/gcr-4-nn.mo[K[240/337] Building translation po/ms/LC_MESSAGES/gcr-4-ms.mo[K[240/337] Building translation po/oc/LC_MESSAGES/gcr-4-oc.mo[K[241/337] Building translation po/ne/LC_MESSAGES/gcr-4-ne.mo[K[241/337] Building translation po/or/LC_MESSAGES/gcr-4-or.mo[K[242/337] Building translation po/oc/LC_MESSAGES/gcr-4-oc.mo[K[242/337] Building translation po/pa/LC_MESSAGES/gcr-4-pa.mo[K[243/337] Building translation po/nl/LC_MESSAGES/gcr-4-nl.mo[K[243/337] Building translation po/pl/LC_MESSAGES/gcr-4-pl.mo[K[244/337] Building translation po/nn/LC_MESSAGES/gcr-4-nn.mo[K[244/337] Building translation po/pt/LC_MESSAGES/gcr-4-pt.mo[K[245/337] Building translation po/or/LC_MESSAGES/gcr-4-or.mo[K[245/337] Building translation po/pt_BR/LC_MESSAGES/gcr-4-pt_BR.mo[K[246/337] Building translation po/pl/LC_MESSAGES/gcr-4-pl.mo[K[246/337] Building translation po/ro/LC_MESSAGES/gcr-4-ro.mo[K[247/337] Building translation po/pa/LC_MESSAGES/gcr-4-pa.mo[K[247/337] Building translation po/ru/LC_MESSAGES/gcr-4-ru.mo[K[248/337] Building translation po/pt/LC_MESSAGES/gcr-4-pt.mo[K[248/337] Building translation po/rw/LC_MESSAGES/gcr-4-rw.mo[K[249/337] Building translation po/pt_BR/LC_MESSAGES/gcr-4-pt_BR.mo[K[249/337] Building translation po/si/LC_MESSAGES/gcr-4-si.mo[K[250/337] Building translation po/rw/LC_MESSAGES/gcr-4-rw.mo[K[250/337] Building translation po/sk/LC_MESSAGES/gcr-4-sk.mo[K[251/337] Building translation po/ro/LC_MESSAGES/gcr-4-ro.mo[K[251/337] Building translation po/sl/LC_MESSAGES/gcr-4-sl.mo[K[252/337] Building translation po/ru/LC_MESSAGES/gcr-4-ru.mo[K[252/337] Building translation po/sq/LC_MESSAGES/gcr-4-sq.mo[K[253/337] Building translation po/si/LC_MESSAGES/gcr-4-si.mo[K[253/337] Building translation po/sr/LC_MESSAGES/gcr-4-sr.mo[K[254/337] Building translation po/sq/LC_MESSAGES/gcr-4-sq.mo[K[254/337] Building translation po/sr@latin/LC_MESSAGES/gcr-4-sr@latin.mo[K[255/337] Building translation po/sk/LC_MESSAGES/gcr-4-sk.mo[K[255/337] Building translation po/sv/LC_MESSAGES/gcr-4-sv.mo[K[256/337] Building translation po/sl/LC_MESSAGES/gcr-4-sl.mo[K[256/337] Building translation po/ta/LC_MESSAGES/gcr-4-ta.mo[K[257/337] Building translation po/sr/LC_MESSAGES/gcr-4-sr.mo[K[257/337] Building translation po/te/LC_MESSAGES/gcr-4-te.mo[K[258/337] Building translation po/ta/LC_MESSAGES/gcr-4-ta.mo[K[258/337] Building translation po/tg/LC_MESSAGES/gcr-4-tg.mo[K[259/337] Building translation po/sr@latin/LC_MESSAGES/gcr-4-sr@latin.mo[K[259/337] Building translation po/th/LC_MESSAGES/gcr-4-th.mo[K[260/337] Building translation po/sv/LC_MESSAGES/gcr-4-sv.mo[K[260/337] Building translation po/tr/LC_MESSAGES/gcr-4-tr.mo[K[261/337] Building translation po/te/LC_MESSAGES/gcr-4-te.mo[K[261/337] Building translation po/ug/LC_MESSAGES/gcr-4-ug.mo[K[262/337] Building translation po/tg/LC_MESSAGES/gcr-4-tg.mo[K[262/337] Building translation po/uk/LC_MESSAGES/gcr-4-uk.mo[K[263/337] Building translation po/th/LC_MESSAGES/gcr-4-th.mo[K[263/337] Building translation po/uz/LC_MESSAGES/gcr-4-uz.mo[K[264/337] Building translation po/tr/LC_MESSAGES/gcr-4-tr.mo[K[264/337] Building translation po/vi/LC_MESSAGES/gcr-4-vi.mo[K[265/337] Building translation po/ug/LC_MESSAGES/gcr-4-ug.mo[K[265/337] Building translation po/xh/LC_MESSAGES/gcr-4-xh.mo[K[266/337] Building translation po/uz/LC_MESSAGES/gcr-4-uz.mo[K[266/337] Building translation po/zh_CN/LC_MESSAGES/gcr-4-zh_CN.mo[K[267/337] Building translation po/uk/LC_MESSAGES/gcr-4-uk.mo[K[267/337] Building translation po/zh_HK/LC_MESSAGES/gcr-4-zh_HK.mo[K[268/337] Building translation po/vi/LC_MESSAGES/gcr-4-vi.mo[K[268/337] Building translation po/zh_TW/LC_MESSAGES/gcr-4-zh_TW.mo[K[269/337] Building translation po/xh/LC_MESSAGES/gcr-4-xh.mo[K[269/337] Linking target egg/egg-asn1[K[270/337] Building translation po/zh_CN/LC_MESSAGES/gcr-4-zh_CN.mo[K[270/337] Linking target egg/egg-asn1x[K[271/337] Building translation po/zh_HK/LC_MESSAGES/gcr-4-zh_HK.mo[K[271/337] Linking target egg/egg-dn[K[272/337] Building translation po/zh_TW/LC_MESSAGES/gcr-4-zh_TW.mo[K[272/337] Linking target egg/egg-decimal[K[273/337] Compiling C object tools/viewer/gcr-viewer-gtk4.p/gcr-certificate-widget.c.o[K[273/337] Linking target egg/egg-hex[K[274/337] Compiling C object tools/viewer/gcr-viewer-gtk4.p/viewer.c.o[K[274/337] Linking target egg/egg-hkdf[K[275/337] Compiling C object tools/viewer/gcr-viewer-gtk4.p/gcr-section.c.o[K[275/337] Linking target egg/egg-oid[K[276/337] Linking target egg/egg-decimal[K[276/337] Linking target egg/egg-secmem[K[277/337] Linking target egg/egg-hex[K[277/337] Linking target egg/egg-padding[K[278/337] Linking target egg/egg-oid[K[278/337] Linking target egg/egg-armor[K[279/337] Linking target gck/libgck-testable.so[K[279/337] Generating symbol file gck/libgck-testable.so.p/libgck-testable.so.symbols[K[280/337] Linking target egg/egg-hkdf[K[280/337] Linking target egg/egg-dh[K[281/337] Generating symbol file gck/libgck-testable.so.p/libgck-testable.so.symbols[K[281/337] Linking target gck/libgck-test.so[K[282/337] Linking target egg/egg-secmem[K[282/337] Linking target egg/egg-symkey[K[283/337] Linking target egg/egg-padding[K[283/337] Linking target egg/egg-openssl[K[284/337] Linking target egg/egg-armor[K[284/337] Linking target gcr/gcr4-ssh-askpass[K[285/337] Linking target egg/egg-dh[K[286/337] Linking target gcr/gcr4-ssh-askpass[K[287/337] Linking target gck/libgck-test.so[K[287/337] Generating symbol file gck/libgck-test.so.p/libgck-test.so.symbols[K[288/337] Generating gck/Gck-2.gir with a custom command (wrapped by meson to set env)[K[288/337] Generating gck/gck-2.vapi with a custom command[K[288/337] Generating gck/Gck-2.typelib with a custom command[K[289/337] Generating symbol file gck/libgck-test.so.p/libgck-test.so.symbols[K[289/337] Linking target gck/libmock-test-module.so[K[289/337] Linking target gck/test-gck-attributes[K[290/337] Linking target egg/egg-openssl[K[290/337] Linking target gck/test-gck-module[K[291/337] Linking target gck/libmock-test-module.so[K[291/337] Linking target gck/test-gck-slot[K[292/337] Generating gck/gck-2.vapi with a custom command[K[292/337] Linking target gck/test-gck-session[K[293/337] Generating gck/Gck-2.typelib with a custom command[K[293/337] Linking target gck/test-gck-object[K[294/337] Linking target gck/test-gck-module[K[294/337] Linking target gck/test-gck-crypto[K[295/337] Linking target gck/test-gck-slot[K[295/337] Linking target gck/test-gck-uri[K[296/337] Linking target gck/test-gck-session[K[296/337] Linking target gck/test-gck-enumerator[K[297/337] Linking target egg/egg-dn[K[297/337] Linking target gck/test-gck-modules[K[298/337] Linking target egg/egg-asn1x[K[299/337] Linking target gck/test-gck-object[K[300/337] Linking target gck/test-gck-uri[K[301/337] Linking target gck/test-gck-crypto[K[302/337] Linking target gck/test-gck-attributes[K[303/337] Linking target gck/test-gck-modules[K[304/337] Linking target gck/test-gck-enumerator[K[305/337] Linking target gcr/libgcr-4.so.4.4.1[K[305/337] Generating symbol file gcr/libgcr-4.so.4.4.1.p/libgcr-4.so.4.4.1.symbols[K[305/337] Generating gcr/Gcr-4.gir with a custom command (wrapped by meson to set env)[K[306/337] Linking target egg/egg-asn1[K[307/337] Linking target egg/egg-symkey[K[308/337] Generating symbol file gcr/libgcr-4.so.4.4.1.p/libgcr-4.so.4.4.1.symbols[K[308/337] Linking target gcr/gcr-ssh-agent[K[308/337] Linking target gcr/test-ssh-agent-preload[K[308/337] Linking target gcr/test-ssh-agent-process[K[308/337] Linking target gcr/test-ssh-agent-service[K[308/337] Linking target gcr/test-ssh-agent-util[K[308/337] Linking target gcr/test-util[K[308/337] Linking target gcr/test-secret-exchange[K[308/337] Linking target gcr/test-simple-certificate[K[308/337] Linking target gcr/test-certificate[K[309/337] Linking target gcr/test-secret-exchange[K[309/337] Linking target gcr/test-certificate-chain[K[310/337] Linking target gcr/test-simple-certificate[K[310/337] Linking target gcr/test-subject-public-key[K[311/337] Linking target gcr/test-util[K[311/337] Linking target gcr/test-fingerprint[K[312/337] Linking target gcr/test-ssh-agent-util[K[312/337] Linking target gcr/test-pkcs11-certificate[K[313/337] Linking target gcr/test-ssh-agent-preload[K[313/337] Linking target gcr/test-openpgp[K[314/337] Linking target gcr/test-certificate[K[314/337] Linking target gcr/test-openssh[K[315/337] Linking target gcr/test-certificate-chain[K[315/337] Linking target gcr/test-secure-memory[K[316/337] Linking target gcr/test-openssh[K[316/337] Linking target gcr/test-trust[K[317/337] Linking target gcr/test-secure-memory[K[317/337] Linking target gcr/test-parser[K[318/337] Linking target gcr/test-openpgp[K[318/337] Linking target gcr/test-record[K[319/337] Linking target gcr/test-ssh-agent-process[K[319/337] Linking target gcr/test-gnupg-process[K[320/337] Linking target gcr/test-trust[K[320/337] Linking target gcr/test-system-prompt[K[321/337] Generating gcr/Gcr-4.gir with a custom command (wrapped by meson to set env)[K[321/337] Generating gcr/Gcr-4.typelib with a custom command[K[322/337] Linking target gcr/test-record[K[322/337] Generating gcr/gcr-4.vapi with a custom command[K[323/337] Linking target gcr/test-parser[K[323/337] Linking target gcr/test-ssh-askpass[K[324/337] Linking target gcr/test-ssh-agent-service[K[324/337] Linking target gcr/frob-certificate-request[K[325/337] Generating gcr/Gcr-4.typelib with a custom command[K[325/337] Linking target gcr/frob-openpgp[K[326/337] Linking target gcr/test-subject-public-key[K[326/337] Linking target gcr/frob-parser[K[327/337] Generating gcr/gcr-4.vapi with a custom command[K[327/337] Linking target tools/viewer/gcr-viewer-gtk4[K[328/337] Linking target gcr/gcr-ssh-agent[K[329/337] Linking target gcr/test-ssh-askpass[K[330/337] Linking target gcr/frob-certificate-request[K[331/337] Linking target gcr/test-pkcs11-certificate[K[332/337] Linking target gcr/frob-parser[K[333/337] Linking target gcr/test-fingerprint[K[334/337] Linking target gcr/test-system-prompt[K[335/337] Linking target gcr/frob-openpgp[K[336/337] Linking target gcr/test-gnupg-process[K[337/337] Linking target tools/viewer/gcr-viewer-gtk4[K
+ninja: Entering directory `/var/tmp/hokuto/gcr-01/build/build'
+ninja: no work to do.
+Installing po/ab/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ab/LC_MESSAGES
+Installing po/af/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/af/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ar/LC_MESSAGES
+Installing po/as/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/as/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ast/LC_MESSAGES
+Installing po/az/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/az/LC_MESSAGES
+Installing po/be/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/be/LC_MESSAGES
+Installing po/be@latin/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/be@latin/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/bg/LC_MESSAGES
+Installing po/bn/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/bn/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/bs/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/bs/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/ckb/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ckb/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/cs/LC_MESSAGES
+Installing po/cy/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/cy/LC_MESSAGES
+Installing po/da/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/de/LC_MESSAGES
+Installing po/dz/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/dz/LC_MESSAGES
+Installing po/el/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/el/LC_MESSAGES
+Installing po/en_CA/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/en_CA/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/en@shaw/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/en@shaw/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/fur/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ga/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/id/LC_MESSAGES
+Installing po/ie/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ie/LC_MESSAGES
+Installing po/is/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/is/LC_MESSAGES
+Installing po/it/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ka/LC_MESSAGES
+Installing po/kab/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/kab/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/kk/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ko/LC_MESSAGES
+Installing po/lo/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/lo/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/lv/LC_MESSAGES
+Installing po/mai/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/mai/LC_MESSAGES
+Installing po/mg/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/mg/LC_MESSAGES
+Installing po/mk/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/mk/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ml/LC_MESSAGES
+Installing po/mn/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/mn/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/mr/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/nb/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ru/LC_MESSAGES
+Installing po/rw/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/rw/LC_MESSAGES
+Installing po/si/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/si/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/te/LC_MESSAGES
+Installing po/tg/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/tg/LC_MESSAGES
+Installing po/th/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/tr/LC_MESSAGES
+Installing po/ug/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/ug/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/uk/LC_MESSAGES
+Installing po/uz/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/uz/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/vi/LC_MESSAGES
+Installing po/xh/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/xh/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/gcr-4.mo to /var/tmp/hokuto/gcr-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+Installing gck/gck-enum-types.h to /var/tmp/hokuto/gcr-01/output/usr/include/gck-2/gck
+Installing gck/libgck-2.so.2.4.1 to /var/tmp/hokuto/gcr-01/output/usr/lib
+Installing gck/Gck-2.gir to /var/tmp/hokuto/gcr-01/output/usr/share/gir-1.0
+Installing gck/Gck-2.typelib to /var/tmp/hokuto/gcr-01/output/usr/lib/girepository-1.0
+Installing gck/gck-2.vapi to /var/tmp/hokuto/gcr-01/output/usr/share/vala/vapi
+Installing gcr/gcr-enum-types.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing gcr/libgcr-4.so.4.4.1 to /var/tmp/hokuto/gcr-01/output/usr/lib
+Installing gcr/Gcr-4.gir to /var/tmp/hokuto/gcr-01/output/usr/share/gir-1.0
+Installing gcr/Gcr-4.typelib to /var/tmp/hokuto/gcr-01/output/usr/lib/girepository-1.0
+Installing gcr/gcr-4.vapi to /var/tmp/hokuto/gcr-01/output/usr/share/vala/vapi
+Installing gcr/gcr4-ssh-askpass to /var/tmp/hokuto/gcr-01/output/usr/lib
+Installing gcr/gcr-ssh-agent to /var/tmp/hokuto/gcr-01/output/usr/lib
+Installing tools/viewer/gcr-viewer-gtk4 to /var/tmp/hokuto/gcr-01/output/usr/bin
+Installing /var/tmp/hokuto/gcr-01/build/gck/gck.h to /var/tmp/hokuto/gcr-01/output/usr/include/gck-2/gck
+Installing /var/tmp/hokuto/gcr-01/build/build/gck/gck-version.h to /var/tmp/hokuto/gcr-01/output/usr/include/gck-2/gck
+Installing /var/tmp/hokuto/gcr-01/build/gck/pkcs11n.h to /var/tmp/hokuto/gcr-01/output/usr/include/gck-2/gck
+Installing /var/tmp/hokuto/gcr-01/build/gck/pkcs11x.h to /var/tmp/hokuto/gcr-01/output/usr/include/gck-2/gck
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-certificate.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-certificate-chain.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-certificate-extension.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-certificate-extensions.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-certificate-extension-list.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-certificate-field.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-certificate-request.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-certificate-section.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-fingerprint.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-importer.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-import-interaction.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-library.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-mock-prompter.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-parser.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-pkcs11-certificate.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-prompt.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-secret-exchange.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-secure-memory.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-simple-certificate.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-ssh-askpass.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-subject-public-key-info.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-system-prompt.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-system-prompter.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-trust.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-types.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/gcr/gcr-unlock-options.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/build/gcr/gcr-version.h to /var/tmp/hokuto/gcr-01/output/usr/include/gcr-4/gcr
+Installing /var/tmp/hokuto/gcr-01/build/build/meson-private/gck-2.deps to /var/tmp/hokuto/gcr-01/output/usr/share/vala/vapi
+Installing /var/tmp/hokuto/gcr-01/build/build/meson-private/gck-2.pc to /var/tmp/hokuto/gcr-01/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/gcr-01/build/build/meson-private/gcr-4.deps to /var/tmp/hokuto/gcr-01/output/usr/share/vala/vapi
+Installing /var/tmp/hokuto/gcr-01/build/build/meson-private/gcr-4.pc to /var/tmp/hokuto/gcr-01/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/gcr-01/build/build/gcr/gcr-ssh-agent.service to /var/tmp/hokuto/gcr-01/output/usr/lib/systemd/user
+Installing /var/tmp/hokuto/gcr-01/build/build/gcr/gcr-ssh-agent.socket to /var/tmp/hokuto/gcr-01/output/usr/lib/systemd/user
+Installing symlink pointing to libgck-2.so.2.4.1 to /var/tmp/hokuto/gcr-01/output/usr/lib/libgck-2.so.2
+Installing symlink pointing to libgck-2.so.2 to /var/tmp/hokuto/gcr-01/output/usr/lib/libgck-2.so
+Installing symlink pointing to libgcr-4.so.4.4.1 to /var/tmp/hokuto/gcr-01/output/usr/lib/libgcr-4.so.4
+Installing symlink pointing to libgcr-4.so.4 to /var/tmp/hokuto/gcr-01/output/usr/lib/libgcr-4.so
+
+Script done on 2026-09-16 00:12:39+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgcr[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mTue, 15 Sep 2026 17:12:39 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m7s[0m
