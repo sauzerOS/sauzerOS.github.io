@@ -1,0 +1,327 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mtftp-hpa[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mtftp-hpa 6.1-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mThu, 17 Sep 2026 10:58:15 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mtftp-hpa[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc readline[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mtftp-hpa[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 readline-8.3.3-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-17 17:58:15+07:00 [COMMAND="cd /var/tmp/hokuto/tftp-hpa-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/tftp-hpa-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/tftp-hpa-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/tftp-hpa-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/tftp-hpa-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/tftp-hpa-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/tftp-hpa-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/tftp-hpa-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/tftp-hpa-01/build/.cache' /repo/sauzeros/extra/tftp-hpa/build /var/tmp/hokuto/tftp-hpa-01/output 6.1 tftp-hpa" <not executed on terminal>]
++ recheck=false
++ AUTOCONF=autoconf
++ AUTOMAKE=automake
++ ACLOCAL=aclocal
++ AUTOHEADER=autoheader
++ mkdir -p autoconf autoconf/helpers config
+++ automake --print-libdir
++ autolib=/usr/share/automake-1.19
++ test '!' x/usr/share/automake-1.19 = x
++ for prg in install-sh compile config.guess config.sub
++ test -f /usr/share/automake-1.19/install-sh
++ set -e
++ test -f autoconf/helpers/install-sh
++ test 1 -ne 0
++ cp -f /usr/share/automake-1.19/install-sh autoconf/helpers
++ for prg in install-sh compile config.guess config.sub
++ test -f /usr/share/automake-1.19/compile
++ set -e
++ test -f autoconf/helpers/compile
++ test 1 -ne 0
++ cp -f /usr/share/automake-1.19/compile autoconf/helpers
++ for prg in install-sh compile config.guess config.sub
++ test -f /usr/share/automake-1.19/config.guess
++ set -e
++ test -f autoconf/helpers/config.guess
++ test 1 -ne 0
++ cp -f /usr/share/automake-1.19/config.guess autoconf/helpers
++ for prg in install-sh compile config.guess config.sub
++ test -f /usr/share/automake-1.19/config.sub
++ set -e
++ test -f autoconf/helpers/config.sub
++ test 1 -ne 0
++ cp -f /usr/share/automake-1.19/config.sub autoconf/helpers
++ mv -f autoconf/aclocal.m4 autoconf/aclocal.m4.old
+mv: cannot stat 'autoconf/aclocal.m4': No such file or directory
++ mkdir -p autoconf/m4.old autoconf/m4
++ mv -f autoconf/m4/pa_add_cflags.m4 autoconf/m4/pa_add_flags.m4 autoconf/m4/pa_add_headers.m4 autoconf/m4/pa_add_langflags.m4 autoconf/m4/pa_add_ldflags.m4 autoconf/m4/pa_arg_bool.m4 autoconf/m4/pa_arg_disabled.m4 autoconf/m4/pa_arg_enabled.m4 autoconf/m4/pa_check_bad_stdc_inline.m4 autoconf/m4/pa_check_inttypes_h_sane.m4 autoconf/m4/pa_cross_compile.m4 autoconf/m4/pa_csym.m4 autoconf/m4/pa_c_typeof.m4 autoconf/m4/pa_depend.m4 autoconf/m4/pa_find_flags.m4 autoconf/m4/pa_flags_langlist.m4 autoconf/m4/pa_lang_flagvar.m4 autoconf/m4/pa_lang_foreach.m4 autoconf/m4/pa_lang_seen_list.m4 autoconf/m4/pa_lang_seen_set.m4 autoconf/m4/pa_option_debug.m4 autoconf/m4/pa_option_gc.m4 autoconf/m4/pa_option_lto.m4 autoconf/m4/pa_option_profiling.m4 autoconf/m4/pa_option_sanitizer.m4 autoconf/m4/pa_prog_cc.m4 autoconf/m4/pa_pthread.m4 autoconf/m4/pa_search_libs_and_add.m4 autoconf/m4/pa_shsym.m4 autoconf/m4/pa_sigsetjmp.m4 autoconf/m4/pa_sym.m4 autoconf/m4.old/
+++ pwd
++ ACLOCAL_PATH=/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old
++ export ACLOCAL_PATH
++ aclocal --install --output=autoconf/aclocal.m4 -I autoconf/m4
+aclocal: installing 'autoconf/m4/pa_add_cflags.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_add_cflags.m4'
+aclocal: installing 'autoconf/m4/pa_add_flags.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_add_flags.m4'
+aclocal: installing 'autoconf/m4/pa_add_headers.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_add_headers.m4'
+aclocal: installing 'autoconf/m4/pa_add_langflags.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_add_langflags.m4'
+aclocal: installing 'autoconf/m4/pa_add_ldflags.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_add_ldflags.m4'
+aclocal: installing 'autoconf/m4/pa_arg_bool.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_arg_bool.m4'
+aclocal: installing 'autoconf/m4/pa_arg_disabled.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_arg_disabled.m4'
+aclocal: installing 'autoconf/m4/pa_arg_enabled.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_arg_enabled.m4'
+aclocal: installing 'autoconf/m4/pa_c_typeof.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_c_typeof.m4'
+aclocal: installing 'autoconf/m4/pa_check_bad_stdc_inline.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_check_bad_stdc_inline.m4'
+aclocal: installing 'autoconf/m4/pa_check_inttypes_h_sane.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_check_inttypes_h_sane.m4'
+aclocal: installing 'autoconf/m4/pa_cross_compile.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_cross_compile.m4'
+aclocal: installing 'autoconf/m4/pa_csym.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_csym.m4'
+aclocal: installing 'autoconf/m4/pa_depend.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_depend.m4'
+aclocal: installing 'autoconf/m4/pa_find_flags.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_find_flags.m4'
+aclocal: installing 'autoconf/m4/pa_flags_langlist.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_flags_langlist.m4'
+aclocal: installing 'autoconf/m4/pa_lang_flagvar.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_lang_flagvar.m4'
+aclocal: installing 'autoconf/m4/pa_lang_foreach.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_lang_foreach.m4'
+aclocal: installing 'autoconf/m4/pa_lang_seen_list.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_lang_seen_list.m4'
+aclocal: installing 'autoconf/m4/pa_lang_seen_set.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_lang_seen_set.m4'
+aclocal: installing 'autoconf/m4/pa_option_debug.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_option_debug.m4'
+aclocal: installing 'autoconf/m4/pa_option_gc.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_option_gc.m4'
+aclocal: installing 'autoconf/m4/pa_option_lto.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_option_lto.m4'
+aclocal: installing 'autoconf/m4/pa_option_profiling.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_option_profiling.m4'
+aclocal: installing 'autoconf/m4/pa_option_sanitizer.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_option_sanitizer.m4'
+aclocal: installing 'autoconf/m4/pa_prog_cc.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_prog_cc.m4'
+aclocal: installing 'autoconf/m4/pa_pthread.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_pthread.m4'
+aclocal: installing 'autoconf/m4/pa_search_libs_and_add.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_search_libs_and_add.m4'
+aclocal: installing 'autoconf/m4/pa_shsym.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_shsym.m4'
+aclocal: installing 'autoconf/m4/pa_sigsetjmp.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_sigsetjmp.m4'
+aclocal: installing 'autoconf/m4/pa_sym.m4' from '/var/tmp/hokuto/tftp-hpa-01/build/autoconf/m4.old/pa_sym.m4'
++ test '!' -f autoconf/aclocal.m4
++ rm -rf autoconf/m4.old
++ autoheader -B autoconf
++ autoconf -B autoconf
++ echo '#!/bin/sh'
++ autoconf -B autoconf -t 'AC_CONFIG_HEADERS:rm -f $*' -t 'AC_CONFIG_FILES:rm -f $*'
++ echo 'rm -f config.log config.status'
++ echo 'rm -rf autom4te.cache'
++ chmod +x autoconf/clean.sh
++ sh autoconf/clean.sh
++ rm -f configure~
+++ which perl
++ '[' -n /usr/bin/perl -a -f autoconf/unconfig.pl ']'
++ false
+configure: WARNING: unrecognized options: --without-tcpwrappers
+configure: loading site script /usr/share/config.site
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for grp.h... yes
+checking for libgen.h... yes
+checking for locale.h... yes
+checking for paths.h... yes
+checking for poll.h... yes
+checking for setjmp.h... yes
+checking for stdbool.h... yes
+checking for stdnoreturn.h... yes
+checking for sysexits.h... yes
+checking for sys/filio.h... no
+checking for sys/ioctl.h... yes
+checking for sys/select.h... yes
+checking for sys/time.h... yes
+checking for machine/param.h... no
+checking for windows.h... no
+checking for winsock2.h... no
+checking for winsock.h... no
+checking for fcntl.h... yes
+checking for arpa/inet.h... yes
+checking for sys/socket.h... yes
+checking for sys/file.h... yes
+checking for netinet/in.h... yes
+checking for sys/uio.h... yes
+checking for netdb.h... yes
+checking for wctype.h... yes
+checking for pthread.h... yes
+checking for regex.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking whether cc accepts -g3... yes
+checking whether cc accepts -ggdb... yes
+checking whether cc accepts -Werror=unknown-warning-option... no
+checking whether cc accepts -fwrapv... yes
+checking whether cc accepts -ftrivial-auto-var-init=zero... yes
+checking whether cc accepts -U__STRICT_ANSI__... yes
+checking whether cc accepts -fno-common... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for C/C++ restrict keyword... __restrict__
+checking for library containing strerror... none required
+checking if inttypes.h is sane... yes
+checking for _Bool... yes
+checking for bool... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking for size_t... yes
+checking for intmax_t... yes
+checking for long long... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for socklen_t... yes
+checking for library containing socket... none required
+checking for poll... yes
+checking for ppoll... yes
+checking for fcntl... yes
+checking for flock... yes
+checking for setsid... yes
+checking for recvmsg... yes
+checking for ftruncate... yes
+checking for setresuid... yes
+checking for setreuid... yes
+checking for setresgid... yes
+checking for setregid... yes
+checking for initgroups... yes
+checking for setgroups... yes
+checking for sighandler_t... no
+checking for sigset_t... yes
+checking for strtoumax... yes
+checking for strtoull... yes
+checking for fread_unlocked... yes
+checking for fwrite_unlocked... yes
+checking for getc_unlocked... yes
+checking for putc_unlocked... yes
+checking for ferror_unlocked... yes
+checking for feof_unlocked... yes
+checking for fileno_unlocked... yes
+checking for fflush_unlocked... yes
+checking for struct timespec... yes
+checking for library containing clock_gettime... none required
+checking for clock_gettime... yes
+checking for struct msghdr.msg_control... yes
+checking for struct in_pktinfo.ipi_addr... yes
+checking for struct addrinfo.ai_addr... yes
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking whether O_NONBLOCK is declared... yes
+checking whether O_NDELAY is declared... yes
+checking whether O_BINARY is declared... no
+checking whether O_TEXT is declared... no
+checking whether F_SETLK is declared... yes
+checking whether LOCK_SH is declared... yes
+checking whether LOCK_EX is declared... yes
+checking for mbrtowc... yes
+checking for towlower... yes
+checking for sigsetjmp... yes
+checking whether cc accepts -pthread... yes
+checking for library containing pthread_create... none required
+checking that POSIX threads work... yes
+checking for pthread_sigmask... yes
+checking for library containing getopt_long... none required
+checking for library containing getaddrinfo... none required
+checking for library containing freeaddrinfo... none required
+checking for library containing gai_strerror... none required
+checking for library containing inet_ntop... none required
+checking for library containing inet_aton... none required
+checking for library containing daemon... none required
+checking for library containing dup2... none required
+checking whether IPPORT_TFTP is declared... yes
+checking for library containing regcomp... none required
+checking for readline/readline.h... yes
+checking for library containing tputs... no
+checking for library containing readline... -lreadline
+checking for readline/history.h... yes
+checking for struct sockaddr_in6.sin6_addr... yes
+checking for IPv6 support... yes
+checking for struct in6_pktinfo.ipi6_addr... yes
+checking whether ln -s works... yes
+checking for ranlib... gcc-ranlib
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether cc accepts -Wl,--as-needed... yes
+checking whether cc accepts -ffunction-sections... yes
+checking whether cc accepts -fdata-sections... yes
+checking whether cc accepts -Wl,--gc-sections... yes
+checking whether cc accepts -W... yes
+checking whether cc accepts -Wall... yes
+checking whether cc accepts -Wpointer-arith... yes
+checking whether cc accepts -Wbad-function-cast... yes
+checking whether cc accepts -Wcast-equal... no
+checking whether cc accepts -Wstrict-prototypes... yes
+checking whether cc accepts -Wmissing-prototypes... yes
+checking whether cc accepts -Wmissing-declarations... yes
+checking whether cc accepts -Wnested-externs... yes
+checking whether cc accepts -Winline... yes
+checking whether cc accepts -Wwrite-strings... yes
+checking whether cc accepts -Wundef... yes
+checking whether cc accepts -Wshadow... yes
+checking whether cc accepts -Wsign-compare... yes
+checking whether cc accepts -fno-strict-aliasing... yes
+checking if cc supports C99 external inlines... yes
+checking if cc supports typeof... typeof
+checking whether cc accepts -MMD -MF file.dep... yes
+configure: creating ./config.status
+config.status: creating config/MCONFIG
+config.status: creating config/config.h
+configure: WARNING: unrecognized options: --without-tcpwrappers
+: Generated by side effect
+echo \#define VERSION \"tftp-hpa `cat version`\" > version.h
+make -C  lib
+make -C  common
+make[1]: Entering directory '/var/tmp/hokuto/tftp-hpa-01/build/common'
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF tftpsubs.o.dep -I.. -c tftpsubs.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF tftp-xfer.o.dep -I.. -c tftp-xfer.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF tftp-io.o.dep -I.. -c tftp-io.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF signal.o.dep -I.. -c signal.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF xalloc.o.dep -I.. -c xalloc.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF progname.o.dep -I.. -c progname.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF pollset.o.dep -I.. -c pollset.c
+make[1]: Entering directory '/var/tmp/hokuto/tftp-hpa-01/build/lib'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/var/tmp/hokuto/tftp-hpa-01/build/lib'
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF clock.o.dep -I.. -c clock.c
+rm -f libcommon.a
+gcc-ar cq libcommon.a tftpsubs.o tftp-xfer.o tftp-io.o signal.o xalloc.o progname.o pollset.o clock.o
+gcc-ranlib libcommon.a
+make[1]: Leaving directory '/var/tmp/hokuto/tftp-hpa-01/build/common'
+make -C  tftp
+make -C  tftpd
+make[1]: Entering directory '/var/tmp/hokuto/tftp-hpa-01/build/tftp'
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF tftp.o.dep -I.. -c tftp.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF main.o.dep -I.. -c main.c
+make[1]: Entering directory '/var/tmp/hokuto/tftp-hpa-01/build/tftpd'
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF tftpd.o.dep -I.. -c tftpd.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF recvfrom.o.dep -I.. -c recvfrom.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF misc.o.dep -I.. -c misc.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF path.o.dep -I.. -c path.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF listen.o.dep -I.. -c listen.c
+sed -e 's/@@VERSION@@/6.1/g' < tftp.1.in > tftp.1
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF strlist.o.dep -I.. -c strlist.c
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF remap.o.dep -I.. -c remap.c
+sed -e 's/@@VERSION@@/6.1/g' < tftpd.8.in > tftpd.8
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF tftpd.dep -I.. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -Wl,--as-needed -Wl,--gc-sections -o tftpd tftpd.o recvfrom.o misc.o path.o listen.o strlist.o remap.o  ../common/libcommon.a  
+cc -march=native -O2 -pipe -fomit-frame-pointer -flto=10 -g3 -ggdb -fwrapv -ftrivial-auto-var-init=zero -U__STRICT_ANSI__ -fno-common -pthread -ffunction-sections -fdata-sections -W -Wall -Wpointer-arith -Wbad-function-cast -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Winline -Wwrite-strings -Wundef -Wshadow -Wsign-compare -fno-strict-aliasing -MMD -MF tftp.dep -I.. -fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack -Wl,--as-needed -Wl,--gc-sections -o tftp tftp.o main.o ../common/libcommon.a -lreadline  
+make[1]: Leaving directory '/var/tmp/hokuto/tftp-hpa-01/build/tftp'
+make[1]: Leaving directory '/var/tmp/hokuto/tftp-hpa-01/build/tftpd'
+: Generated by side effect
+make -C  lib install
+make -C  common install
+make -C  tftp install
+make -C  tftpd install
+make[1]: Entering directory '/var/tmp/hokuto/tftp-hpa-01/build/tftp'
+mkdir -p /var/tmp/hokuto/tftp-hpa-01/output/usr/bin /var/tmp/hokuto/tftp-hpa-01/output/usr/share/man/man1
+/usr/bin/install -c tftp /var/tmp/hokuto/tftp-hpa-01/output/usr/bin
+make[1]: Entering directory '/var/tmp/hokuto/tftp-hpa-01/build/lib'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/var/tmp/hokuto/tftp-hpa-01/build/lib'
+make[1]: Entering directory '/var/tmp/hokuto/tftp-hpa-01/build/tftpd'
+mkdir -p /var/tmp/hokuto/tftp-hpa-01/output/usr/bin /var/tmp/hokuto/tftp-hpa-01/output/usr/share/man/man8
+make[1]: Entering directory '/var/tmp/hokuto/tftp-hpa-01/build/common'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/var/tmp/hokuto/tftp-hpa-01/build/common'
+/usr/bin/install -c tftpd /var/tmp/hokuto/tftp-hpa-01/output/usr/bin/in.tftpd
+/usr/bin/install -c -m 644    tftp.1   /var/tmp/hokuto/tftp-hpa-01/output/usr/share/man/man1
+/usr/bin/install -c -m 644    tftpd.8 /var/tmp/hokuto/tftp-hpa-01/output/usr/share/man/man8/in.tftpd.8
+make[1]: Leaving directory '/var/tmp/hokuto/tftp-hpa-01/build/tftp'
+cd /var/tmp/hokuto/tftp-hpa-01/output/usr/share/man/man8 && ln -s -f in.tftpd.8 tftpd.8
+make[1]: Leaving directory '/var/tmp/hokuto/tftp-hpa-01/build/tftpd'
+
+Script done on 2026-09-17 17:58:25+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mtftp-hpa[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mThu, 17 Sep 2026 10:58:25 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m10s[0m
