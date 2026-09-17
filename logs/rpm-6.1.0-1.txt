@@ -1,0 +1,809 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mrpm[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mrpm 6.1.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mThu, 17 Sep 2026 10:56:59 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mrpm[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19melfutils file libarchive libcap lua popt cmake scdoc[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mrpm[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 cmake-4.4.3-1 diffutils-3.12-1 elfutils-0.196-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-1 gettext-1.0-1 grep-3.12-1 gzip-1.14-1 libarchive-3.8.9-1 libcap-2.78-1 libtool-2.6.2-1 lua-5.5.1-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 popt-1.19-1 scdoc-1.11.5-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-17 17:56:59+07:00 [COMMAND="cd /var/tmp/hokuto/rpm-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/rpm-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/rpm-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/rpm-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/rpm-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/rpm-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/rpm-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/rpm-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/rpm-01/build/.cache' /repo/sauzeros/extra/rpm/build /var/tmp/hokuto/rpm-01/output 6.1.0 rpm" <not executed on terminal>]
+-- The C compiler identification is GNU 16.2.0
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Found Lua: /usr/lib/liblua5.5.so;/usr/lib/libm.so (found suitable version "5.5.1", minimum required is "5.2")
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Found BZip2: /usr/lib/libbz2.so (found version "1.0.8")
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Performing Test Iconv_IS_BUILT_IN
+-- Performing Test Iconv_IS_BUILT_IN - Success
+-- Found Iconv: built in to C library
+-- Checking for module 'popt'
+--   Found popt, version 1.19
+-- Checking for module 'readline'
+--   Found readline, version 8.3
+-- Checking for module 'libzstd>=1.3.8'
+--   Found libzstd, version 1.5.7
+-- Checking for module 'libelf'
+--   Found libelf, version 0.196
+-- Checking for module 'libdw'
+--   Found libdw, version 0.196
+-- Checking for module 'liblzma>=5.2.0'
+--   Found liblzma, version 5.8.4
+-- Checking for module 'libarchive'
+--   Found libarchive, version 3.8.9
+-- Found OpenMP_C: -fopenmp (found suitable version "5.2", minimum required is "4.5")
+-- Found OpenMP_CXX: -fopenmp (found suitable version "5.2", minimum required is "4.5")
+-- Found OpenMP: TRUE (found suitable version "5.2", minimum required is "4.5")
+-- Found Intl: built in to C library
+-- Looking for _nl_msg_cat_cntr
+-- Looking for _nl_msg_cat_cntr - found
+-- Checking for module 'sqlite3>=3.22'
+--   Found sqlite3, version 3.53.4
+-- Found Python3: /usr/bin/python3.14 (found suitable version "3.14.7", minimum required is "3.10") found components: Interpreter Development Development.Module Development.Embed
+-- Checking for module 'libcap'
+--   Found libcap, version 2.78
+-- Checking for module 'libacl'
+--   Found libacl, version 2.4.0
+-- Looking for stpcpy
+-- Looking for stpcpy - found
+-- Looking for stpncpy
+-- Looking for stpncpy - found
+-- Looking for putenv
+-- Looking for putenv - found
+-- Looking for mempcpy
+-- Looking for mempcpy - found
+-- Looking for fdatasync
+-- Looking for fdatasync - found
+-- Looking for lutimes
+-- Looking for lutimes - found
+-- Looking for mergesort
+-- Looking for mergesort - not found
+-- Looking for getauxval
+-- Looking for getauxval - found
+-- Looking for setprogname
+-- Looking for setprogname - not found
+-- Looking for __progname
+-- Looking for __progname - found
+-- Looking for syncfs
+-- Looking for syncfs - found
+-- Looking for sched_getaffinity
+-- Looking for sched_getaffinity - found
+-- Looking for unshare
+-- Looking for unshare - found
+-- Looking for secure_getenv
+-- Looking for secure_getenv - found
+-- Looking for __secure_getenv
+-- Looking for __secure_getenv - not found
+-- Looking for mremap
+-- Looking for mremap - found
+-- Looking for strchrnul
+-- Looking for strchrnul - found
+-- Looking for close_range
+-- Looking for close_range - found
+-- Looking for mkstemp
+-- Looking for mkstemp - found
+-- Looking for getcwd
+-- Looking for getcwd - found
+-- Looking for basename
+-- Looking for basename - found
+-- Looking for dirname
+-- Looking for dirname - found
+-- Looking for realpath
+-- Looking for realpath - found
+-- Looking for setenv
+-- Looking for setenv - found
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for regcomp
+-- Looking for regcomp - found
+-- Looking for utimes
+-- Looking for utimes - found
+-- Looking for getline
+-- Looking for getline - found
+-- Looking for localtime_r
+-- Looking for localtime_r - found
+-- Looking for statvfs
+-- Looking for statvfs - found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for openat
+-- Looking for openat - found
+-- Looking for mkdirat
+-- Looking for mkdirat - found
+-- Looking for fstatat
+-- Looking for fstatat - found
+-- Looking for linkat
+-- Looking for linkat - found
+-- Looking for symlinkat
+-- Looking for symlinkat - found
+-- Looking for mkfifoat
+-- Looking for mkfifoat - found
+-- Looking for mknodat
+-- Looking for mknodat - found
+-- Looking for unlinkat
+-- Looking for unlinkat - found
+-- Looking for renameat
+-- Looking for renameat - found
+-- Looking for utimensat
+-- Looking for utimensat - found
+-- Looking for fchmodat
+-- Looking for fchmodat - found
+-- Looking for fchownat
+-- Looking for fchownat - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for getopt.h
+-- Looking for getopt.h - found
+-- Looking for sys/utsname.h
+-- Looking for sys/utsname.h - found
+-- Looking for sys/systemcfg.h
+-- Looking for sys/systemcfg.h - not found
+-- Looking for sys/param.h
+-- Looking for sys/param.h - found
+-- Looking for sys/auxv.h
+-- Looking for sys/auxv.h - found
+-- Looking for dwelf_elf_begin in dw
+-- Looking for dwelf_elf_begin in dw - found
+-- Looking for GLOB_ONLYDIR
+-- Looking for GLOB_ONLYDIR - found
+-- Looking for major
+-- Looking for major - found
+[0mINFO using C.UTF-8 as default locale[0m
+-- Performing Test compiler-supports-fno-strict-overflow
+-- Performing Test compiler-supports-fno-strict-overflow - Success
+-- Performing Test compiler-supports-fno-delete-null-pointer-checks
+-- Performing Test compiler-supports-fno-delete-null-pointer-checks - Success
+-- Performing Test compiler-supports-fhardened
+-- Performing Test compiler-supports-fhardened - Success
+-- Checking for module 'libgcrypt'
+--   Found libgcrypt, version 1.12.4
+-- Found Gettext: /usr/bin/msgmerge (found version "1.0")
+-- Configuring done (7.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /var/tmp/hokuto/rpm-01/build/builddir
+[  1%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/argv.cc.o[0m
+[  1%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/digest.cc.o[0m
+[  1%] [1m[34mGenerating ar.gmo[0m
+[  1%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/base64.cc.o[0m
+[  2%] [1m[34mGenerating br.gmo[0m
+[  2%] [1m[34mGenerating elfdeps.1[0m
+[  2%] [32mBuilding C object misc/CMakeFiles/libmisc.dir/fts.c.o[0m
+[  2%] Built target rpmverify
+[  2%] Built target rpm2cpio
+[  2%] Built target rpmquery
+[  2%] [1m[34mGenerating gendiff.1[0m
+[  2%] [1m[34mGenerating ca.gmo[0m
+[  2%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/expression.cc.o[0m
+[  2%] [1m[34mGenerating cmn.gmo[0m
+[  3%] [1m[34mGenerating rpm2cpio.1[0m
+[  3%] [1m[34mGenerating rpm2archive.1[0m
+[  3%] [1m[34mGenerating rpmuncompress.1[0m
+[  4%] [1m[34mGenerating rpm.8[0m
+[  5%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/macro.cc.o[0m
+[  5%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmhook.cc.o[0m
+[  6%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmio.cc.o[0m
+[  6%] [1m[34mGenerating rpmbuild.1[0m
+[  6%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmlog.cc.o[0m
+[  7%] [1m[34mGenerating cs.gmo[0m
+[  8%] [1m[34mGenerating rpmdb.8[0m
+[  8%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmmalloc.cc.o[0m
+[  8%] Built target libmisc
+[  8%] [1m[34mGenerating rpmkeys.8[0m
+[  8%] [1m[34mGenerating da.gmo[0m
+[  9%] [1m[34mGenerating rpmsign.1[0m
+[ 10%] [1m[34mGenerating rpmspec.1[0m
+[ 11%] [1m[34mGenerating de.gmo[0m
+[ 11%] [1m[34mGenerating rpmdeps.1[0m
+[ 12%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rgetopt.cc.o[0m
+[ 13%] [1m[34mGenerating rpmgraph.1[0m
+[ 13%] [1m[34mGenerating rpmlua.1[0m
+[ 14%] [1m[34mGenerating rpm-common.8[0m
+[ 14%] [1m[34mGenerating el.gmo[0m
+[ 14%] [1m[34mGenerating rpmsort.1[0m
+[ 15%] [1m[34mGenerating rpm-macrofile.5[0m
+[ 15%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmpgp.cc.o[0m
+[ 15%] [1m[34mGenerating rpm-config.5[0m
+[ 15%] [1m[34mGenerating eo.gmo[0m
+[ 16%] [1m[34mGenerating rpm-rpmrc.5[0m
+[ 17%] [1m[34mGenerating rpm-setup-autosign.1[0m
+[ 17%] [1m[34mGenerating rpm-payloadflags.7[0m
+[ 17%] [1m[34mGenerating rpmbuild-config.5[0m
+[ 18%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmsq.cc.o[0m
+[ 19%] [1m[34mGenerating es.gmo[0m
+[ 19%] [1m[34mGenerating rpm-queryformat.7[0m
+[ 19%] [1m[34mGenerating rpm-macros.7[0m
+[ 19%] [1m[34mGenerating rpm-lua.7[0m
+[ 20%] [1m[34mGenerating rpm-manifest.5[0m
+[ 20%] [1m[34mGenerating fi.gmo[0m
+[ 21%] [1m[34mGenerating fr.gmo[0m
+[ 21%] [1m[34mGenerating rpm-version.7[0m
+[ 22%] [1m[34mGenerating rpm-dependency-generators.7[0m
+[ 22%] [1m[34mGenerating gu.gmo[0m
+[ 22%] [1m[34mGenerating rpm-scriptlets.7[0m
+[ 22%] [1m[34mGenerating rpm-design.7[0m
+[ 22%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmsw.cc.o[0m
+[ 22%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/url.cc.o[0m
+[ 22%] [1m[34mGenerating rpm-sysusers.7[0m
+[ 22%] [1m[34mGenerating rpm-plugins.8[0m
+[ 22%] [1m[34mGenerating rpm-plugin-prioreset.8[0m
+[ 22%] [1m[34mGenerating he.gmo[0m
+[ 23%] [1m[34mGenerating rpm-plugin-syslog.8[0m
+[ 24%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmvercmp.cc.o[0m
+[ 24%] [1m[34mGenerating rpm-plugin-audit.8[0m
+[ 25%] [1m[34mGenerating rpm-plugin-dbus-announce.8[0m
+[ 25%] [1m[34mGenerating rpm-plugin-systemd-inhibit.8[0m
+[ 25%] [1m[34mGenerating rpm-plugin-fapolicyd.8[0m
+[ 26%] [1m[34mGenerating id.gmo[0m
+[ 26%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmver.cc.o[0m
+[ 27%] [1m[34mGenerating rpm-plugin-ima.8[0m
+[ 27%] [1m[34mGenerating rpm-plugin-selinux.8[0m
+[ 28%] [1m[34mGenerating rpm-plugin-unshare.8[0m
+[ 28%] Built target man
+[ 28%] [1m[34mGenerating ie.gmo[0m
+[ 29%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmstring.cc.o[0m
+[ 30%] [1m[34mGenerating is.gmo[0m
+[ 30%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmfileutil.cc.o[0m
+[ 30%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmglob.cc.o[0m
+[ 30%] [1m[34mGenerating it.gmo[0m
+[ 30%] [1m[34mGenerating ja.gmo[0m
+[ 31%] [1m[34mGenerating ka.gmo[0m
+[ 31%] [1m[34mGenerating ko.gmo[0m
+[ 32%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmkeyring.cc.o[0m
+[ 32%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmstrpool.cc.o[0m
+[ 33%] [1m[34mGenerating ms.gmo[0m
+[ 33%] [1m[34mGenerating nb.gmo[0m
+[ 33%] [1m[34mGenerating nl.gmo[0m
+[ 34%] [1m[34mGenerating pa.gmo[0m
+[ 34%] [1m[34mGenerating pl.gmo[0m
+[ 35%] [1m[34mGenerating pt.gmo[0m
+[ 35%] [1m[34mGenerating pt_BR.gmo[0m
+[ 35%] [1m[34mGenerating ru.gmo[0m
+[ 36%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmlua.cc.o[0m
+[ 36%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/lposix.cc.o[0m
+[ 36%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/progname.cc.o[0m
+[ 37%] [1m[34mGenerating si.gmo[0m
+[ 38%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/rpmpgp_dummy.cc.o[0m
+[ 38%] [1m[34mGenerating sk.gmo[0m
+[ 39%] [1m[34mGenerating sl.gmo[0m
+[ 39%] [32mBuilding CXX object rpmio/CMakeFiles/librpmio.dir/digest_libgcrypt.cc.o[0m
+[ 39%] [1m[34mGenerating sr.gmo[0m
+[ 39%] [1m[34mGenerating sr@latin.gmo[0m
+[ 40%] [1m[34mGenerating sv.gmo[0m
+[ 40%] [1m[34mGenerating te.gmo[0m
+[ 41%] [1m[34mGenerating tr.gmo[0m
+[ 41%] [1m[34mGenerating uk.gmo[0m
+[ 41%] [1m[34mGenerating vi.gmo[0m
+[ 42%] [1m[34mGenerating zh_CN.gmo[0m
+[ 42%] [1m[34mGenerating zh_TW.gmo[0m
+[ 42%] Built target translations_1
+[ 43%] [1m[32mLinking CXX shared library librpmio.so[0m
+[ 43%] Built target librpmio
+[ 44%] [1m[34mGenerating tagtbl.inc[0m
+[ 45%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/backend/dummydb.cc.o[0m
+[ 45%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/headerutil.cc.o[0m
+[ 46%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/header.cc.o[0m
+[ 47%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/keystore.cc.o[0m
+[ 47%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/fprint.cc.o[0m
+[ 47%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/headerfmt.cc.o[0m
+[ 47%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmdb.cc.o[0m
+[ 47%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/backend/dbi.cc.o[0m
+[ 47%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/backend/dbiset.cc.o[0m
+[ 48%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/tagname.cc.o[0m
+[ 48%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmtd.cc.o[0m
+[ 49%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/cpio.cc.o[0m
+[ 49%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/depends.cc.o[0m
+[ 49%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/order.cc.o[0m
+[ 50%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/formats.cc.o[0m
+[ 50%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/tagexts.cc.o[0m
+[ 51%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/fsm.cc.o[0m
+[ 51%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/manifest.cc.o[0m
+[ 51%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/package.cc.o[0m
+[ 52%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/poptALL.cc.o[0m
+[ 52%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/poptI.cc.o[0m
+[ 53%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/poptQV.cc.o[0m
+[ 53%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/psm.cc.o[0m
+[ 53%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/query.cc.o[0m
+[ 54%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmal.cc.o[0m
+[ 54%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmchecksig.cc.o[0m
+[ 55%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmds.cc.o[0m
+[ 55%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmfi.cc.o[0m
+[ 55%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmgi.cc.o[0m
+[ 56%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpminstall.cc.o[0m
+[ 56%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmlead.cc.o[0m
+[ 57%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmps.cc.o[0m
+[ 57%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmprob.cc.o[0m
+[01m[K/var/tmp/hokuto/rpm-01/build/lib/psm.cc:[m[K In function ‘[01m[KrpmRC[01;32m[K markReplacedFiles[m[K(rpmpsm)[m[K’:
+[01m[K/var/tmp/hokuto/rpm-01/build/lib/psm.cc:99:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kix[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+   99 |             int [01;35m[Kix[m[K = rpmtdSetIndex(&secStates, sfi->otherFileNum);
+      |                 [01;35m[K^~[m[K
+[ 57%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmrc.cc.o[0m
+[ 58%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmte.cc.o[0m
+[ 58%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmts.cc.o[0m
+[ 59%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmfs.cc.o[0m
+[ 59%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/signature.cc.o[0m
+[ 59%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/transaction.cc.o[0m
+[ 60%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/verify.cc.o[0m
+[ 60%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmlock.cc.o[0m
+[ 61%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/relocation.cc.o[0m
+[ 61%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmscript.cc.o[0m
+[ 61%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmchroot.cc.o[0m
+[ 62%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmplugins.cc.o[0m
+[ 62%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmug.cc.o[0m
+[ 63%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmtriggers.cc.o[0m
+[ 63%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/rpmvs.cc.o[0m
+[ 63%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/backend/sqlite.cc.o[0m
+[ 64%] [32mBuilding CXX object lib/CMakeFiles/librpm.dir/backend/ndb/glue.cc.o[0m
+[ 64%] [32mBuilding C object lib/CMakeFiles/librpm.dir/backend/ndb/rpmpkg.c.o[0m
+[ 65%] [32mBuilding C object lib/CMakeFiles/librpm.dir/backend/ndb/rpmidx.c.o[0m
+[ 65%] [32mBuilding C object lib/CMakeFiles/librpm.dir/backend/ndb/rpmxdb.c.o[0m
+[ 65%] [1m[32mLinking CXX shared library librpm.so[0m
+[ 65%] Built target librpm
+[ 65%] [32mBuilding CXX object tools/CMakeFiles/rpm.dir/rpm.cc.o[0m
+[ 65%] [32mBuilding CXX object tools/CMakeFiles/cliutils.dir/cliutils.cc.o[0m
+[ 65%] [32mBuilding CXX object tools/CMakeFiles/rpmkeys.dir/rpmkeys.cc.o[0m
+[ 66%] [32mBuilding CXX object tools/CMakeFiles/rpmdb.dir/rpmdb.cc.o[0m
+[ 67%] [32mBuilding CXX object tools/CMakeFiles/rpmlua.dir/rpmlua.cc.o[0m
+[ 68%] [32mBuilding CXX object tools/CMakeFiles/rpmsort.dir/rpmsort.cc.o[0m
+[ 69%] [32mBuilding CXX object tools/CMakeFiles/rpmgraph.dir/rpmgraph.cc.o[0m
+[ 70%] [32mBuilding CXX object tools/CMakeFiles/rpmdump.dir/rpmdump.cc.o[0m
+[ 70%] [32mBuilding CXX object sign/CMakeFiles/librpmsign.dir/rpmgensig.cc.o[0m
+[ 71%] [32mBuilding CXX object tools/CMakeFiles/rpmuncompress.dir/rpmuncompress.cc.o[0m
+[ 71%] Built target cliutils
+[ 72%] [32mBuilding CXX object tools/CMakeFiles/rpmkeys.dir/cliutils.cc.o[0m
+[ 72%] [32mBuilding CXX object tools/CMakeFiles/rpmdb.dir/cliutils.cc.o[0m
+[ 73%] [32mBuilding CXX object tools/CMakeFiles/rpm.dir/cliutils.cc.o[0m
+[ 74%] [32mBuilding CXX object tools/CMakeFiles/elfdeps.dir/elfdeps.cc.o[0m
+[ 74%] [1m[32mLinking CXX executable rpmsort[0m
+[ 74%] [1m[32mLinking CXX executable rpmgraph[0m
+[ 74%] [1m[32mLinking CXX executable rpmdump[0m
+[ 74%] [1m[32mLinking CXX executable rpmlua[0m
+[ 74%] [1m[32mLinking CXX executable rpm[0m
+[ 75%] [1m[32mLinking CXX executable rpmkeys[0m
+[ 75%] [1m[32mLinking CXX executable rpmdb[0m
+[ 75%] Built target rpmsort
+[ 76%] [32mBuilding CXX object tools/CMakeFiles/rpm2archive.dir/rpm2archive.cc.o[0m
+[ 76%] Built target rpmlua
+[ 76%] Built target rpmdump
+[ 76%] [32mBuilding C object plugins/CMakeFiles/prioreset.dir/prioreset.c.o[0m
+[ 76%] Built target rpmgraph
+[ 76%] [32mBuilding C object plugins/CMakeFiles/syslog.dir/syslog.c.o[0m
+[ 77%] [32mBuilding C object plugins/CMakeFiles/unshare.dir/unshare.c.o[0m
+[ 78%] [1m[32mLinking C shared module prioreset.so[0m
+[ 78%] [1m[32mLinking CXX executable rpm2archive[0m
+[ 79%] [1m[32mLinking C shared module syslog.so[0m
+[ 79%] [1m[32mLinking C shared module unshare.so[0m
+[ 79%] Built target prioreset
+[ 79%] Built target rpmdb
+[ 79%] Built target rpmkeys
+[ 79%] Built target rpm
+[ 79%] Built target syslog
+[ 79%] Built target unshare
+[ 80%] [1m[32mLinking CXX shared library librpmsign.so[0m
+[ 80%] Built target rpm2archive
+[ 80%] [1m[32mLinking CXX executable rpmuncompress[0m
+[ 80%] Built target librpmsign
+[ 80%] [32mBuilding CXX object tools/CMakeFiles/rpmsign.dir/rpmsign.cc.o[0m
+[ 80%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/files.cc.o[0m
+[ 81%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/pack.cc.o[0m
+[ 81%] [32mBuilding CXX object tools/CMakeFiles/rpmsign.dir/cliutils.cc.o[0m
+[ 83%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/misc.cc.o[0m
+[ 83%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parseChangelog.cc.o[0m
+[ 83%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parseSimpleScript.cc.o[0m
+[ 84%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/build.cc.o[0m
+[ 84%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parseDescription.cc.o[0m
+[ 84%] [1m[32mLinking CXX executable rpmsign[0m
+[ 84%] [1m[32mLinking CXX executable elfdeps[0m
+[ 84%] Built target rpmsign
+[ 85%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parseFiles.cc.o[0m
+[ 85%] Built target rpmuncompress
+[ 85%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parsePreamble.cc.o[0m
+[ 85%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parsePrep.cc.o[0m
+[ 86%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parseReqs.cc.o[0m
+[ 86%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parseScript.cc.o[0m
+[ 87%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parseSpec.cc.o[0m
+[ 87%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parseList.cc.o[0m
+[ 87%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/reqprov.cc.o[0m
+[ 87%] Built target elfdeps
+[ 88%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/rpmfc.cc.o[0m
+[ 88%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/spec.cc.o[0m
+[ 89%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/parsePolicies.cc.o[0m
+[ 89%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/policies.cc.o[0m
+[ 89%] [32mBuilding CXX object build/CMakeFiles/librpmbuild.dir/speclua.cc.o[0m
+[ 90%] [1m[32mLinking CXX shared library librpmbuild.so[0m
+[ 90%] Built target librpmbuild
+[ 90%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmmodule.c.o[0m
+[ 90%] [32mBuilding CXX object tools/CMakeFiles/rpmdeps.dir/rpmdeps.cc.o[0m
+[ 90%] [32mBuilding CXX object tools/CMakeFiles/rpmspec.dir/rpmspec.cc.o[0m
+[ 90%] [32mBuilding C object python/CMakeFiles/_rpm.dir/header-py.c.o[0m
+[ 91%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmarchive-py.c.o[0m
+[ 91%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmds-py.c.o[0m
+[ 91%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmfiles-py.c.o[0m
+[ 92%] [32mBuilding CXX object tools/CMakeFiles/rpmspec.dir/cliutils.cc.o[0m
+[ 93%] [32mBuilding CXX object tools/CMakeFiles/rpmbuild.dir/rpmbuild.cc.o[0m
+[ 94%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmfd-py.c.o[0m
+[ 94%] [1m[32mLinking CXX executable rpmdeps[0m
+[ 94%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmkeyring-py.c.o[0m
+[ 94%] [1m[32mLinking CXX executable rpmspec[0m
+[ 95%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmmi-py.c.o[0m
+[ 95%] [32mBuilding CXX object tools/CMakeFiles/rpmbuild.dir/cliutils.cc.o[0m
+[ 95%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmii-py.c.o[0m
+[ 96%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmps-py.c.o[0m
+[ 96%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmmacro-py.c.o[0m
+[ 96%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmstrpool-py.c.o[0m
+[ 97%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmtd-py.c.o[0m
+[ 97%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmte-py.c.o[0m
+[ 98%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmts-py.c.o[0m
+[ 98%] [1m[32mLinking CXX executable rpmbuild[0m
+[ 98%] [32mBuilding C object python/CMakeFiles/_rpm.dir/rpmver-py.c.o[0m
+[ 98%] [32mBuilding C object python/CMakeFiles/_rpm.dir/spec-py.c.o[0m
+[ 98%] Built target rpmdeps
+[100%] [1m[32mLinking C shared module _rpm.so[0m
+[100%] Built target rpmspec
+[100%] Built target rpmbuild
+[100%] Built target _rpm
+-- Install configuration: "Release"
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/about.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/arch_dependencies.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/autosetup.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/boolean_dependencies.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/buildprocess.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/buildsystem.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/conditionalbuilds.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/dependencies.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/dependency_generators.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/devel_documentation.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/dynamic_specs.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/file_triggers.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/format_header.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/format_lead.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/format_v3.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/format_v4.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/format_v6.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/index.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/large_files.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/lua.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/macros.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/more_dependencies.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/philosophy.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/plugins.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/queryformat.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/relocatable.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/scriptlet_expansion.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/signatures_digests.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/spec.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/tags.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/triggers.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/tsort.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/users_and_groups.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/elfdeps.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/gendiff.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpm2cpio.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpm2archive.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpmuncompress.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man8/rpm.8
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpmbuild.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man8/rpmdb.8
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man8/rpmkeys.8
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpmsign.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpmspec.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpmdeps.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpmgraph.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpmlua.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man8/rpm-common.8
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpmsort.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man5/rpm-macrofile.5
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man5/rpm-config.5
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man5/rpm-rpmrc.5
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man1/rpm-setup-autosign.1
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man7/rpm-payloadflags.7
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man5/rpmbuild-config.5
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man7/rpm-queryformat.7
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man7/rpm-macros.7
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man7/rpm-lua.7
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man5/rpm-manifest.5
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man7/rpm-version.7
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man7/rpm-dependency-generators.7
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man7/rpm-scriptlets.7
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man7/rpm-design.7
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man7/rpm-sysusers.7
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man8/rpm-plugins.8
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man8/rpm-plugin-prioreset.8
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man8/rpm-plugin-syslog.8
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/man/man8/rpm-plugin-unshare.8
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/argv.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmbase64.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmcrypto.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmfileutil.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmio.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmkeyring.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmlog.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmmacro.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmpgp.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmsq.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmstring.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmstrpool.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmsw.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmurl.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmutil.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmver.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/header.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmarchive.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmcallback.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmcli.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmdb.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmds.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmfi.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmfiles.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmlib.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmprob.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmps.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmtag.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmtd.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmte.h
+-- Up-to-date: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmte.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmts.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmtypes.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmplugin.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmbuild.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmspec.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmfc.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/include/rpm/rpmsign.h
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpmio.so.10.8.0
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpmio.so.10
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpmio.so
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpm.so.10.8.0
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpm.so.10
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib64/librpm.so.10.8.0" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpm.so
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpmbuild.so.10.8.0
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpmbuild.so.10
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib64/librpmbuild.so.10.8.0" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpmbuild.so
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpmsign.so.10.8.0
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpmsign.so.10
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib64/librpmsign.so.10.8.0" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/librpmsign.so
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmsort
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpmsort" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/elfdeps
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib/rpm/elfdeps" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpm2archive
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpm2archive" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmverify
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmquery
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpm2cpio
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpm
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpm" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmdb
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpmdb" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmkeys
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpmkeys" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmsign
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpmsign" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmbuild
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpmbuild" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmspec
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpmspec" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmlua
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpmlua" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmgraph
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpmgraph" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpmuncompress
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/bin/rpmuncompress" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpmdeps
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpmdeps" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpmdump
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpmdump" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/ar/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/br/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/ca/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/cmn/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/cs/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/da/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/de/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/el/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/eo/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/es/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/fi/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/fr/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/gu/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/he/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/id/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/ie/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/is/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/it/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/ja/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/ka/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/ko/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/ms/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/nb/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/nl/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/pa/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/pl/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/pt/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/pt_BR/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/ru/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/si/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/sk/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/sl/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/sr/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/sr@latin/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/sv/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/te/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/tr/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/uk/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/vi/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/zh_CN/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/locale/zh_TW/LC_MESSAGES/rpm.mo
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/python3.14/site-packages/rpm/_rpm.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib/python3.14/site-packages/rpm/_rpm.so" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/python3.14/site-packages/rpm/transaction.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/python3.14/site-packages/rpm/__init__.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples/rpm-qi.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples/fnlookup.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples/rpm-i.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples/rpmunpack.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples/rpm-q.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples/rpm-qa.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples/rpm-e.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples/srpmspec.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/examples/rpmls.py
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/python3.14/site-packages/rpm-6.1.0-py3.14.egg-info
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/rpm-plugins/prioreset.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib64/rpm-plugins/prioreset.so" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/macros.d/macros.transaction_prioreset
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/rpm-plugins/syslog.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib64/rpm-plugins/syslog.so" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/macros.d/macros.transaction_syslog
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/rpm-plugins/unshare.so
+-- Set non-toolchain portion of runtime path of "/var/tmp/hokuto/rpm-01/output/usr/lib64/rpm-plugins/unshare.so" to ""
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/macros.d/macros.transaction_unshare
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/debuginfo.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/desktop.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/elf.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/font.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/metainfo.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/pkgconfig.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/ocaml.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/rpm_macro.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/rpm_lua.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/script.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/sysusers.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fileattrs/usergroup.attr
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/gendiff
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/bin/rpm-setup-autosign
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/brp-compress
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/brp-strip
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/brp-strip-comment-note
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/brp-strip-static-archive
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/brp-remove-la-files
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/check-files
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/check-prereqs
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/check-buildroot
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/check-rpaths
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/check-rpaths-worker
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/find-lang.sh
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/find-requires
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/find-provides
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/pkgconfigdeps.sh
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/ocamldeps.sh
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/fontconfig.prov
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/script.req
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpm_macros_provides.sh
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpmdb_dump
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpmdb_load
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpm2cpio.sh
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/tgpg
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/sysusers.sh
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpm.daily
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpm.log
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpm.supp
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/noarch-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/athlon-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/geode-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/pentium4-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/pentium3-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/i686-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/i586-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/i486-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/i386-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/x86_64-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/x86_64_v2-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/x86_64_v3-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/x86_64_v4-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/amd64-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ia32e-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/alpha-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/alphaev5-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/alphaev56-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/alphapca56-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/alphaev6-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/alphaev67-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sparc64-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sparc64v-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sparc-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sparcv8-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sparcv9-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sparcv9v-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/mips-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/mipsel-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppc-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppc8260-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppc8560-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppc32dy4-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppciseries-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppcpseries-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/m68k-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ia64-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/mips64-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/mips64el-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv3l-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv4b-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv4l-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv5tl-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv5tel-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv5tejl-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv6l-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv6hl-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv7l-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv7hl-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv7hnl-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv8l-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/armv8hl-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/s390-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/s390x-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppc64-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppc64le-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppc64pseries-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppc64iseries-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/ppc64p7-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sh-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sh3-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sh4-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/sh4a-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/aarch64-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/mipsr6-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/mipsr6el-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/mips64r6-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/mips64r6el-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/riscv64-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/loongarch64-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/e2k-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/e2kv4-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/e2k1cp-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/e2k8c-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/e2kv5-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/e2k8c2-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/e2kv6-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/e2k16c-linux/macros
+Created /var/tmp/hokuto/rpm-01/output//usr/lib/rpm/platform/e2k2c3-linux/macros
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/macros
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpmrc
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/rpmpopt-6.1.0
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/pkgconfig/rpm.pc
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/lua
+-- Up-to-date: /var/tmp/hokuto/rpm-01/output/usr/lib/rpm/macros.d
+-- Installing: /var/tmp/hokuto/rpm-01/output/etc/rpm
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/CONTRIBUTING.md
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/COPYING
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/CREDITS
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/INSTALL
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/share/doc/rpm/README
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/cmake/rpm/rpm-config.cmake
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/cmake/rpm/rpm-config-version.cmake
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/cmake/rpm/rpm-targets.cmake
+-- Installing: /var/tmp/hokuto/rpm-01/output/usr/lib64/cmake/rpm/rpm-targets-release.cmake
+
+Script done on 2026-09-17 17:57:18+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mrpm[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mThu, 17 Sep 2026 10:57:19 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m20s[0m
