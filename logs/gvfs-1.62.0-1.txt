@@ -1,0 +1,360 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgvfs[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mgvfs 1.62.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mThu, 17 Sep 2026 10:18:25 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgvfs[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mdconf fuse3 gcr glib glibc gsettings-desktop-schemas libarchive libcdio libcdio-paranoia libgcc libgcrypt libgudev libsecret libsoup polkit procps-ng systemd systemd-libs udisks2 dbus libimobiledevice libmtp libnfs libxml2 meson openssh python smbclient[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgvfs[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 dbus-1.16.2-1 dconf-0.40.0-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 fuse3-3.18.3-1 gawk-5.4.1-1 gcc-16.2.0-1 gcr-4.4.0.1-1 gettext-1.0-1 glib-2.90.0-1 glibc-2.44-1 grep-3.12-1 gsettings-desktop-schemas-50.1-1 gzip-1.14-1 libarchive-3.8.9-1 libcdio-2.4.0-1 libcdio-paranoia-10.2+2.0.2-2 libgcc-16.2.0-1 libgcrypt-1.12.4-1 libgudev-238-1 libimobiledevice-1.4.0-1 libmtp-1.1.23-1 libnfs-7.0.2-1 libsecret-0.21.8.2-1 libsoup-3.6.6-1 libtool-2.6.2-1 libxml2-2.15.4-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-1 openssh-10.5p1-1 patch-2.8-1 pkgconf-3.0.7-1 polkit-127-1 procps-ng-4.0.7-1 python-3.14.7-1 sed-4.10-1 smbclient-4.24.7-1 systemd-261.3-1 systemd-libs-261.3-1 texinfo-7.3-1 udisks2-2.11.2-1 which-2.25-1[0m
+
+Script started on 2026-09-17 17:18:25+07:00 [COMMAND="cd /var/tmp/hokuto/gvfs-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/gvfs-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/gvfs-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/gvfs-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/gvfs-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/gvfs-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/gvfs-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/gvfs-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/gvfs-01/build/.cache' /repo/sauzeros/extra/gvfs/build /var/tmp/hokuto/gvfs-01/output 1.62.0 gvfs" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build -D http=false -D fuse=true -D gphoto2=false -D afc=true -D bluray=false -D nfs=true -D mtp=true -D smb=true -D dnssd=false -D goa=false -D gcr=true -D keyring=false -D onedrive=false -D google=false
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/gvfs-01/build[0m
+Build dir: [1m/var/tmp/hokuto/gvfs-01/build/build[0m
+Build type: [1mnative build[0m
+[1;31mDEPRECATION:[0m Option "google" is deprecated
+Project name: [1mgvfs[0m
+Project version: [1m1.62.0[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Checking for function "[1msocketpair[0m" : [1;32mYES[0m 
+Library [1mutil[0m found: [1;32mYES[0m
+Has header "[1mutil.h[0m" with dependency -lutil: [1;31mNO[0m 
+Checking for function "[1mopenpty[0m" with dependency -lutil: [1;32mYES[0m 
+Checking for function "[1mlogin_tty[0m" with dependency -lutil: [1;32mYES[0m 
+Has header "[1msys/param.h[0m" : [1;32mYES[0m 
+Has header "[1msys/mount.h[0m" : [1;32mYES[0m 
+Has header "[1msys/statfs.h[0m" : [1;32mYES[0m 
+Has header "[1msys/statvfs.h[0m" : [1;32mYES[0m 
+Has header "[1msys/vfs.h[0m" : [1;32mYES[0m 
+Has header "[1mstropts.h[0m" : [1;31mNO[0m 
+Has header "[1msys/un.h[0m" : [1;32mYES[0m 
+Has header "[1mtermios.h[0m" : [1;32mYES[0m 
+Has header "[1mutmp.h[0m" : [1;32mYES[0m 
+Checking for function "[1mgetpt[0m" : [1;32mYES[0m 
+Checking for function "[1mgrantpt[0m" : [1;32mYES[0m 
+Checking for function "[1mposix_openpt[0m" : [1;32mYES[0m 
+Checking for function "[1mptsname[0m" : [1;32mYES[0m 
+Checking for function "[1mptsname_r[0m" : [1;32mYES[0m 
+Checking for function "[1munlockpt[0m" : [1;32mYES[0m 
+Checking for function "[1mstatfs[0m" : [1;32mYES[0m 
+Checking for function "[1mstatvfs[0m" : [1;32mYES[0m 
+Header "[1mlanginfo.h[0m" has symbol "[1m_NL_ADDRESS_LANG_TERM[0m" : [1;32mYES[0m 
+Header "[1mlanginfo.h[0m" has symbol "[1m_NL_ADDRESS_COUNTRY_AB3[0m" : [1;32mYES[0m 
+Header "[1msys/mkdev.h[0m" has symbol "[1mmajor[0m" : [1;31mNO[0m 
+Header "[1msys/sysmacros.h[0m" has symbol "[1mmajor[0m" : [1;32mYES[0m 
+Header "[1msys/sysmacros.h[0m" has symbol "[1mminor[0m" : [1;32mYES[0m 
+Header "[1msys/sysmacros.h[0m" has symbol "[1mmakedev[0m" : [1;32mYES[0m 
+Checking for type "[1mgid_t[0m" : [1;32mYES[0m 
+Checking for type "[1mpid_t[0m" : [1;32mYES[0m 
+Checking for type "[1msize_t[0m" : [1;32mYES[0m 
+Checking for type "[1muid_t[0m" : [1;32mYES[0m 
+Checking whether type "[1mstruct statfs[0m" has members [1m"f_bavail"[0m : [1;32mYES[0m 
+Checking whether type "[1mstruct statvfs[0m" has members [1m"f_basetype"[0m : [1;31mNO[0m 
+Checking whether type "[1mstruct stat[0m" has members [1m"st_atimensec"[0m : [1;31mNO[0m 
+Checking whether type "[1mstruct stat[0m" has members [1m"st_atim.tv_nsec"[0m : [1;32mYES[0m 
+Checking whether type "[1mstruct stat[0m" has members [1m"st_ctimensec"[0m : [1;31mNO[0m 
+Checking whether type "[1mstruct stat[0m" has members [1m"st_ctim.tv_nsec"[0m : [1;32mYES[0m 
+Checking whether type "[1mstruct stat[0m" has members [1m"st_mtimensec"[0m : [1;31mNO[0m 
+Checking whether type "[1mstruct stat[0m" has members [1m"st_mtim.tv_nsec"[0m : [1;32mYES[0m 
+Compiler for C supports link arguments -Wl,--version-script,/var/tmp/hokuto/gvfs-01/build/client/symbol.map: [1;32mYES[0m 
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Run-time dependency [1mgio-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgio-unix-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mglib-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgobject-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgsettings-desktop-schemas[0m found: [1;32mYES[0m [36m50.1[0m
+Run-time dependency [1mlibxml-2.0[0m found: [1;32mYES[0m [36m2.15.4[0m
+Run-time dependency [1mlibgcrypt[0m found: [1;32mYES[0m [36m1.12.4[0m
+Run-time dependency [1mdbus-1[0m found: [1;32mYES[0m [36m1.16.2[0m
+Run-time dependency [1msystemd[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1mgcr-4[0m found: [1;32mYES[0m [36m4.4.0.1[0m
+Run-time dependency [1mlibcap[0m found: [1;32mYES[0m [36m2.78[0m
+Run-time dependency [1mpolkit-gobject-1[0m found: [1;32mYES[0m [36m127[0m
+Run-time dependency [1mgudev-1.0[0m found: [1;32mYES[0m [36m238[0m
+Run-time dependency [1mfuse3[0m found: [1;32mYES[0m [36m3.18.3[0m
+Run-time dependency [1mudisks2[0m found: [1;32mYES[0m [36m2.11.2[0m
+Run-time dependency [1mlibsystemd[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1mlibimobiledevice-1.0[0m found: [1;32mYES[0m [36m1.4.0[0m
+Run-time dependency [1mlibplist-2.0[0m found: [1;32mYES[0m [36m2.7.0[0m
+Run-time dependency [1mlibusb-1.0[0m found: [1;32mYES[0m [36m1.0.30[0m
+Run-time dependency [1msmbclient[0m found: [1;32mYES[0m [36m0.8.1[0m
+Checking for function "[1msmbc_readdirplus2[0m" with dependency smbclient: [1;32mYES[0m 
+Run-time dependency [1mlibcdio_paranoia[0m found: [1;32mYES[0m [36m10.2+2.0.2[0m
+Has header "[1mcdio/paranoia/paranoia.h[0m" with dependency libcdio_paranoia: [1;32mYES[0m 
+Run-time dependency [1mlibmtp[0m found: [1;32mYES[0m [36m1.1.23[0m
+Run-time dependency [1mlibnfs[0m found: [1;32mYES[0m [36m17.2.0[0m
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/gdbus-codegen[0m found: [1;32mYES[0m (/usr/bin/gdbus-codegen)
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Configuring [1mgvfs-metadata.service[0m using configuration
+Configuring [1morg.gtk.vfs.Metadata.service[0m using configuration
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/gdbus-codegen[0m found: [1;32mYES[0m (/usr/bin/gdbus-codegen)
+Checking for function "[1mfuse_set_feature_flag[0m" with dependency fuse3: [1;32mYES[0m 
+Configuring [1mgvfs-daemon.service[0m using configuration
+Configuring [1morg.gtk.vfs.Daemon.service[0m using configuration
+Dependency [1mglib-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-mkenums[0m found: [1;32mYES[0m (/usr/bin/glib-mkenums)
+Configuring [1morg.gtk.vfs.file-operations.policy.in[0m using configuration
+Program [1mmsgfmt[0m found: [1;32mYES[0m (/usr/bin/msgfmt)
+Configuring [1morg.gtk.vfs.file-operations.rules[0m using configuration
+Configuring [1mlocaltest.mount[0m using configuration
+Configuring [1mftp.mount[0m using configuration
+Configuring [1mftps.mount[0m using configuration
+Configuring [1mftpis.mount[0m using configuration
+Configuring [1mtrash.mount[0m using configuration
+Configuring [1mrecent.mount[0m using configuration
+Configuring [1mcomputer.mount[0m using configuration
+Configuring [1mnetwork.mount[0m using configuration
+Configuring [1msftp.mount[0m using configuration
+Configuring [1msmb.mount[0m using configuration
+Configuring [1msmb-browse.mount[0m using configuration
+Configuring [1mcdda.mount[0m using configuration
+Configuring [1madmin.mount[0m using configuration
+Configuring [1mmtp.mount[0m using configuration
+Configuring [1mafc.mount[0m using configuration
+Configuring [1mnfs.mount[0m using configuration
+Configuring [1mwsdd.mount[0m using configuration
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/gdbus-codegen[0m found: [1;32mYES[0m (/usr/bin/gdbus-codegen)
+Configuring [1mgvfs-afc-volume-monitor.service[0m using configuration
+Configuring [1morg.gtk.vfs.AfcVolumeMonitor.service[0m using configuration
+Configuring [1mgvfs-mtp-volume-monitor.service[0m using configuration
+Configuring [1morg.gtk.vfs.MTPVolumeMonitor.service[0m using configuration
+Configuring [1mgvfs-udisks2-volume-monitor.service[0m using configuration
+Configuring [1morg.gtk.vfs.UDisks2VolumeMonitor.service[0m using configuration
+Program [1mmsginit[0m found: [1;32mYES[0m (/usr/bin/msginit)
+Program [1mmsgmerge[0m found: [1;32mYES[0m (/usr/bin/msgmerge)
+Program [1mxgettext[0m found: [1;32mYES[0m (/usr/bin/xgettext)
+Configuring [1mconfig.h[0m using configuration
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/glib-compile-schemas[0m found: [1;32mYES[0m (/usr/bin/glib-compile-schemas)
+Dependency [1mgio-2.0[0m for [1mhost[0m machine found: [1;32mYES[0m [36m2.90.0[0m [1;34m(cached)[0m
+Program [1m/usr/bin/gio-querymodules[0m found: [1;32mYES[0m (/usr/bin/gio-querymodules)
+Build targets in project: [1m123[0m
+
+gvfs [36m1.62.0[0m
+
+  [1mConfiguration[0m
+    busy_processes_command: lsof
+    systemduserunitdir    : /usr/lib/systemd/user
+    tmpfilesdir           : /usr/lib/tmpfiles.d
+    privileged_group      : wheel
+
+  [1mBackends[0m
+    admin                 : true
+    afc                   : true
+    afp                   : false
+    archive               : false
+    cdda                  : true
+    dnssd                 : false
+    goa                   : false
+    google                : false
+    gphoto2               : false
+    http                  : false
+    mtp                   : true
+    nfs                   : true
+    onedrive              : false
+    sftp                  : true
+    smb                   : true
+    udisks2               : true
+    wsdd                  : true
+
+  [1mDependencies[0m
+    bluray                : false
+    fuse                  : true
+    gcr                   : true
+    gcrypt                : true
+    gudev                 : true
+    keyring               : false
+    logind                : true
+    libusb                : true
+
+    devel_utils           : false
+    installed_tests       : false
+    man                   : false
+
+  [1mUser defined options[0m
+    afc                   : true
+    b_ndebug              : true
+    b_pie                 : true
+    bluray                : false
+    buildtype             : plain
+    dnssd                 : false
+    fuse                  : true
+    gcr                   : true
+    goa                   : false
+    google                : false
+    gphoto2               : false
+    http                  : false
+    keyring               : false
+    libexecdir            : lib
+    mtp                   : true
+    nfs                   : true
+    onedrive              : false
+    prefix                : /usr
+    python.bytecompile    : 1
+    sbindir               : bin
+    smb                   : true
+    wrap_mode             : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/gvfs-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/gvfs-01/build/build'
+[0/286] Generating gdbus source common/gvfsdbus.c[K[0/286] Generating gdbus header common/gvfsdbus.h[K[0/286] Generating gdbus source metadata/metadata-dbus.c[K[0/286] Generating gdbus header metadata/metadata-dbus.h[K[0/286] Generating gdbus source monitor/proxy/gvfsvolumemonitordbus.c[K[0/286] Generating gdbus header monitor/proxy/gvfsvolumemonitordbus.h[K[0/286] Compiling C object common/libgvfscommon-monitor.a.p/gvfsmountinfo.c.o[K[0/286] Compiling C object common/libgvfscommon-gphoto2.a.p/gvfsgphoto2utils.c.o[K[0/286] Compiling C object daemon/trashlib/libtrash.a.p/dirwatch.c.o[K[0/286] Compiling C object daemon/trashlib/libtrash.a.p/trashdir.c.o[K[1/286] Compiling C object common/libgvfscommon-gphoto2.a.p/gvfsgphoto2utils.c.o[K[1/286] Compiling C object daemon/trashlib/libtrash.a.p/trashitem.c.o[K[2/286] Generating gdbus source metadata/metadata-dbus.c[K[2/286] Compiling C object daemon/trashlib/libtrash.a.p/trashwatcher.c.o[K[3/286] Generating gdbus source monitor/proxy/gvfsvolumemonitordbus.c[K[3/286] Compiling C object daemon/trashlib/libtrash.a.p/trashexpunge.c.o[K[4/286] Compiling C object daemon/trashlib/libtrash.a.p/trashdir.c.o[K[4/286] Linking static target common/libgvfscommon-gphoto2.a[K[5/286] Linking static target common/libgvfscommon-gphoto2.a[K[5/286] Compiling C object monitor/afc/gvfs-afc-volume-monitor.p/afcvolumemonitordaemon.c.o[K[6/286] Compiling C object common/libgvfscommon-monitor.a.p/gvfsmountinfo.c.o[K[6/286] Linking static target common/libgvfscommon-monitor.a[K[7/286] Compiling C object daemon/trashlib/libtrash.a.p/dirwatch.c.o[K[7/286] Compiling C object monitor/afc/gvfs-afc-volume-monitor.p/afcvolume.c.o[K[8/286] Linking static target common/libgvfscommon-monitor.a[K[8/286] Compiling C object monitor/afc/gvfs-afc-volume-monitor.p/afcvolumemonitor.c.o[K[9/286] Generating gdbus header monitor/proxy/gvfsvolumemonitordbus.h[K[9/286] Compiling C object monitor/proxy/libgvfsproxyvolumemonitordaemon-noin.a.p/meson-generated_.._gvfsvolumemonitordbus.c.o[K[10/286] Generating gdbus header metadata/metadata-dbus.h[K[10/286] Compiling C object monitor/proxy/libgvfsproxyvolumemonitordaemon-noin.a.p/gvfsproxyvolumemonitordaemon.c.o[K[11/286] Generating gdbus header common/gvfsdbus.h[K[11/286] Compiling C object common/libgvfscommon.so.p/gmountoperationdbus.c.o[K[12/286] Generating gdbus source common/gvfsdbus.c[K[12/286] Compiling C object common/libgvfscommon.so.p/meson-generated_.._gvfsdbus.c.o[K[13/286] Compiling C object daemon/trashlib/libtrash.a.p/trashwatcher.c.o[K[13/286] Compiling C object common/libgvfscommon.so.p/gmountsource.c.o[K[14/286] Compiling C object monitor/afc/gvfs-afc-volume-monitor.p/afcvolumemonitordaemon.c.o[K[14/286] Compiling C object common/libgvfscommon.so.p/gmountspec.c.o[K[15/286] Compiling C object daemon/trashlib/libtrash.a.p/trashexpunge.c.o[K[15/286] Compiling C object common/libgvfscommon.so.p/gmounttracker.c.o[K[16/286] Compiling C object daemon/trashlib/libtrash.a.p/trashitem.c.o[K[16/286] Compiling C object common/libgvfscommon.so.p/gvfsdaemonprotocol.c.o[K[17/286] Compiling C object monitor/afc/gvfs-afc-volume-monitor.p/afcvolumemonitor.c.o[K[17/286] Compiling C object common/libgvfscommon.so.p/gvfsfileinfo.c.o[K[18/286] Compiling C object common/libgvfscommon.so.p/gmountoperationdbus.c.o[K[18/286] Compiling C object common/libgvfscommon.so.p/gvfsicon.c.o[K[19/286] Compiling C object monitor/afc/gvfs-afc-volume-monitor.p/afcvolume.c.o[K[19/286] Compiling C object common/libgvfscommon.so.p/gvfsmonitorimpl.c.o[K[20/286] Compiling C object common/libgvfscommon.so.p/gmountspec.c.o[K[20/286] Compiling C object common/libgvfscommon.so.p/gvfsutils.c.o[K[21/286] Compiling C object common/libgvfscommon.so.p/gmounttracker.c.o[K[21/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsbackend.c.o[K[22/286] Compiling C object common/libgvfscommon.so.p/gmountsource.c.o[K[22/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfschannel.c.o[K[23/286] Compiling C object monitor/proxy/libgvfsproxyvolumemonitordaemon-noin.a.p/meson-generated_.._gvfsvolumemonitordbus.c.o[K[23/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsdaemon.c.o[K[24/286] Compiling C object common/libgvfscommon.so.p/gvfsutils.c.o[K[24/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsdaemonutils.c.o[K[25/286] Compiling C object monitor/proxy/libgvfsproxyvolumemonitordaemon-noin.a.p/gvfsproxyvolumemonitordaemon.c.o[K[25/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjob.c.o[K[26/286] Compiling C object common/libgvfscommon.so.p/gvfsdaemonprotocol.c.o[K[26/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobcloseread.c.o[K[27/286] Compiling C object common/libgvfscommon.so.p/gvfsfileinfo.c.o[K[27/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobclosewrite.c.o[K[28/286] Compiling C object common/libgvfscommon.so.p/gvfsicon.c.o[K[28/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobcopy.c.o[K[29/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfschannel.c.o[K[29/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobcreatemonitor.c.o[K[30/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsbackend.c.o[K[30/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobdbus.c.o[K[31/286] Compiling C object common/libgvfscommon.so.p/gvfsmonitorimpl.c.o[K[31/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobdelete.c.o[K[32/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsdaemon.c.o[K[32/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobenumerate.c.o[K[33/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsdaemonutils.c.o[K[33/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjoberror.c.o[K[34/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobcloseread.c.o[K[34/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmakedirectory.c.o[K[35/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobclosewrite.c.o[K[35/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmakesymlink.c.o[K[36/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjob.c.o[K[36/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmount.c.o[K[37/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobcreatemonitor.c.o[K[37/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmountmountable.c.o[K[38/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobdbus.c.o[K[38/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmove.c.o[K[39/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobcopy.c.o[K[39/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobopenforread.c.o[K[40/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjoberror.c.o[K[40/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobopenforwrite.c.o[K[41/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmountmountable.c.o[K[41/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobopeniconforread.c.o[K[42/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobdelete.c.o[K[42/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobpollmountable.c.o[K[43/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmakedirectory.c.o[K[43/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobprogress.c.o[K[44/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmakesymlink.c.o[K[44/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobpull.c.o[K[45/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobenumerate.c.o[K[45/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobpush.c.o[K[46/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobopenforread.c.o[K[46/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryattributes.c.o[K[47/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmount.c.o[K[47/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryfsinfo.c.o[K[48/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobmove.c.o[K[48/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryinfo.c.o[K[49/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobopenforwrite.c.o[K[49/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryinforead.c.o[K[50/286] Compiling C object common/libgvfscommon.so.p/meson-generated_.._gvfsdbus.c.o[K[50/286] Linking target common/libgvfscommon.so[K[51/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobopeniconforread.c.o[K[51/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryinfowrite.c.o[K[52/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobpollmountable.c.o[K[52/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobread.c.o[K[53/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobprogress.c.o[K[53/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobseekread.c.o[K[54/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobpush.c.o[K[54/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobseekwrite.c.o[K[55/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobpull.c.o[K[55/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobsetattribute.c.o[K[56/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryinforead.c.o[K[56/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobsetdisplayname.c.o[K[57/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryattributes.c.o[K[57/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobsource.c.o[K[58/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryinfo.c.o[K[58/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobstartmountable.c.o[K[59/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryinfowrite.c.o[K[59/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobstopmountable.c.o[K[60/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobqueryfsinfo.c.o[K[60/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobtrash.c.o[K[61/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobsetattribute.c.o[K[61/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobtruncate.c.o[K[62/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobsource.c.o[K[62/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobunmount.c.o[K[63/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobread.c.o[K[63/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobunmountmountable.c.o[K[64/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobseekwrite.c.o[K[64/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobwrite.c.o[K[65/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobstartmountable.c.o[K[65/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfskeyring.c.o[K[66/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobsetdisplayname.c.o[K[66/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsmonitor.c.o[K[67/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobseekread.c.o[K[67/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsreadchannel.c.o[K[68/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobstopmountable.c.o[K[68/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfswritechannel.c.o[K[69/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobtruncate.c.o[K[69/286] Compiling C object metadata/libmetadata.a.p/meson-generated_.._metadata-dbus.c.o[K[70/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobunmount.c.o[K[70/286] Compiling C object metadata/libmetadata.a.p/crc32.c.o[K[71/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobtrash.c.o[K[71/286] Compiling C object metadata/libmetadata.a.p/metabuilder.c.o[K[72/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobunmountmountable.c.o[K[72/286] Compiling C object metadata/libmetadata.a.p/metatree.c.o[K[73/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsjobwrite.c.o[K[73/286] Compiling C object metadata/gvfsd-metadata.p/meta-daemon.c.o[K[74/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfskeyring.c.o[K[74/286] Compiling C object client/libgvfsdbus.so.p/afpuri.c.o[K[75/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsreadchannel.c.o[K[75/286] Compiling C object client/libgvfsdbus.so.p/httpuri.c.o[K[76/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfswritechannel.c.o[K[76/286] Compiling C object client/libgvfsdbus.so.p/smburi.c.o[K[77/286] Compiling C object metadata/libmetadata.a.p/crc32.c.o[K[77/286] Compiling C object client/libgvfsdbus.so.p/gvfsuriutils.c.o[K[78/286] Compiling C object daemon/libgvfsdaemon.so.p/gvfsmonitor.c.o[K[78/286] Compiling C object client/libgvfsdbus.so.p/gdaemonmount.c.o[K[79/286] Compiling C object metadata/libmetadata.a.p/metabuilder.c.o[K[79/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfile.c.o[K[80/286] Compiling C object metadata/libmetadata.a.p/meson-generated_.._metadata-dbus.c.o[K[80/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfileenumerator.c.o[K[81/286] Compiling C object client/libgvfsdbus.so.p/gvfsuriutils.c.o[K[81/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfileinputstream.c.o[K[82/286] Compiling C object client/libgvfsdbus.so.p/httpuri.c.o[K[82/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfilemonitor.c.o[K[83/286] Compiling C object client/libgvfsdbus.so.p/afpuri.c.o[K[83/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfileoutputstream.c.o[K[84/286] Compiling C object client/libgvfsdbus.so.p/smburi.c.o[K[84/286] Compiling C object client/libgvfsdbus.so.p/gdaemonvfs.c.o[K[85/286] Compiling C object metadata/gvfsd-metadata.p/meta-daemon.c.o[K[85/286] Compiling C object client/libgvfsdbus.so.p/gdaemonvolumemonitor.c.o[K[86/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfilemonitor.c.o[K[86/286] Compiling C object client/libgvfsdbus.so.p/gvfsdaemondbus.c.o[K[87/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfileenumerator.c.o[K[87/286] Compiling C object client/libgvfsdbus.so.p/gvfsiconloadable.c.o[K[88/286] Compiling C object client/libgvfsdbus.so.p/gdaemonmount.c.o[K[88/286] Compiling C object client/libgvfsdbus.so.p/gvfsurimapper.c.o[K[89/286] Compiling C object metadata/libmetadata.a.p/metatree.c.o[K[89/286] Linking static target metadata/libmetadata.a[K[90/286] Linking static target metadata/libmetadata.a[K[90/286] Compiling C object client/gvfsd-fuse.p/gvfsfusedaemon.c.o[K[91/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfileoutputstream.c.o[K[91/286] Linking static target daemon/trashlib/libtrash.a[K[92/286] Compiling C object client/libgvfsdbus.so.p/gvfsdaemondbus.c.o[K[92/286] Compiling C object daemon/gvfsd.p/main.c.o[K[93/286] Linking static target daemon/trashlib/libtrash.a[K[93/286] Compiling C object daemon/gvfsd.p/mount.c.o[K[94/286] Compiling C object client/libgvfsdbus.so.p/gdaemonvolumemonitor.c.o[K[94/286] Compiling C object daemon/gvfsd-localtest.p/daemon-main.c.o[K[95/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfileinputstream.c.o[K[95/286] Compiling C object daemon/gvfsd-localtest.p/daemon-main-generic.c.o[K[96/286] Compiling C object client/libgvfsdbus.so.p/gvfsiconloadable.c.o[K[96/286] Compiling C object daemon/gvfsd-localtest.p/gvfsbackendlocaltest.c.o[K[97/286] Compiling C object client/libgvfsdbus.so.p/gdaemonfile.c.o[K[97/286] Compiling C object daemon/gvfsd-ftp.p/daemon-main.c.o[K[98/286] Compiling C object client/libgvfsdbus.so.p/gdaemonvfs.c.o[K[98/286] Compiling C object daemon/gvfsd-ftp.p/daemon-main-generic.c.o[K[99/286] Compiling C object client/libgvfsdbus.so.p/gvfsurimapper.c.o[K[99/286] Compiling C object daemon/gvfsd-ftp.p/gvfsbackendftp.c.o[K[100/286] Compiling C object daemon/gvfsd-localtest.p/daemon-main-generic.c.o[K[100/286] Compiling C object daemon/gvfsd-ftp.p/gvfsftpconnection.c.o[K[101/286] Compiling C object daemon/gvfsd-ftp.p/daemon-main-generic.c.o[K[101/286] Compiling C object daemon/gvfsd-ftp.p/gvfsftpdircache.c.o[K[102/286] Compiling C object daemon/gvfsd-localtest.p/daemon-main.c.o[K[102/286] Compiling C object daemon/gvfsd-ftp.p/gvfsftpfile.c.o[K[103/286] Compiling C object daemon/gvfsd.p/mount.c.o[K[103/286] Compiling C object daemon/gvfsd-ftp.p/gvfsftptask.c.o[K[104/286] Compiling C object daemon/gvfsd.p/main.c.o[K[104/286] Compiling C object daemon/gvfsd-ftp.p/ParseFTPList.c.o[K[105/286] Compiling C object daemon/gvfsd-localtest.p/gvfsbackendlocaltest.c.o[K[105/286] Compiling C object daemon/gvfsd-trash.p/daemon-main.c.o[K[106/286] Compiling C object daemon/gvfsd-ftp.p/daemon-main.c.o[K[106/286] Compiling C object daemon/gvfsd-trash.p/daemon-main-generic.c.o[K[107/286] Compiling C object daemon/gvfsd-ftp.p/gvfsbackendftp.c.o[K[107/286] Compiling C object daemon/gvfsd-trash.p/gvfsbackendtrash.c.o[K[108/286] Compiling C object client/gvfsd-fuse.p/gvfsfusedaemon.c.o[K[108/286] Compiling C object daemon/gvfsd-recent.p/daemon-main.c.o[K[109/286] Compiling C object daemon/gvfsd-ftp.p/gvfsftpconnection.c.o[K[109/286] Compiling C object daemon/gvfsd-recent.p/daemon-main-generic.c.o[K[110/286] Compiling C object daemon/gvfsd-ftp.p/gvfsftpfile.c.o[K[110/286] Compiling C object daemon/gvfsd-recent.p/gvfsbackendrecent.c.o[K[111/286] Compiling C object daemon/gvfsd-trash.p/daemon-main-generic.c.o[K[111/286] Compiling C object daemon/gvfsd-computer.p/daemon-main.c.o[K[112/286] Compiling C object daemon/gvfsd-recent.p/daemon-main-generic.c.o[K[112/286] Compiling C object daemon/gvfsd-computer.p/daemon-main-generic.c.o[K[113/286] Compiling C object daemon/gvfsd-ftp.p/gvfsftptask.c.o[K[113/286] Compiling C object daemon/gvfsd-computer.p/gvfsbackendcomputer.c.o[K[114/286] Compiling C object daemon/gvfsd-ftp.p/ParseFTPList.c.o[K[114/286] Compiling C object daemon/gvfsd-network.p/daemon-main.c.o[K[115/286] Compiling C object daemon/gvfsd-ftp.p/gvfsftpdircache.c.o[K[115/286] Compiling C object daemon/gvfsd-network.p/daemon-main-generic.c.o[K[116/286] Compiling C object daemon/gvfsd-trash.p/gvfsbackendtrash.c.o[K[116/286] Compiling C object daemon/gvfsd-network.p/gvfsbackendnetwork.c.o[K[117/286] Compiling C object daemon/gvfsd-trash.p/daemon-main.c.o[K[117/286] Compiling C object daemon/gvfsd-sftp.p/daemon-main.c.o[K[118/286] Compiling C object daemon/gvfsd-recent.p/daemon-main.c.o[K[118/286] Compiling C object daemon/gvfsd-sftp.p/daemon-main-generic.c.o[K[119/286] Compiling C object daemon/gvfsd-recent.p/gvfsbackendrecent.c.o[K[119/286] Compiling C object daemon/gvfsd-sftp.p/gvfsbackendsftp.c.o[K[120/286] Compiling C object daemon/gvfsd-computer.p/daemon-main-generic.c.o[K[120/286] Compiling C object daemon/gvfsd-sftp.p/pty_open.c.o[K[121/286] Compiling C object daemon/gvfsd-computer.p/daemon-main.c.o[K[121/286] Compiling C object daemon/gvfsd-smb.p/daemon-main.c.o[K[122/286] Compiling C object daemon/gvfsd-network.p/daemon-main.c.o[K[122/286] Compiling C object daemon/gvfsd-smb.p/daemon-main-generic.c.o[K[123/286] Compiling C object daemon/gvfsd-computer.p/gvfsbackendcomputer.c.o[K[123/286] Compiling C object daemon/gvfsd-smb.p/gvfsbackendsmb.c.o[K[124/286] Compiling C object daemon/gvfsd-network.p/daemon-main-generic.c.o[K[124/286] Compiling C object daemon/gvfsd-smb-browse.p/daemon-main.c.o[K[125/286] Compiling C object daemon/gvfsd-sftp.p/daemon-main.c.o[K[125/286] Compiling C object daemon/gvfsd-smb-browse.p/daemon-main-generic.c.o[K[126/286] Compiling C object daemon/gvfsd-sftp.p/daemon-main-generic.c.o[K[126/286] Compiling C object daemon/gvfsd-smb-browse.p/gvfsbackendsmb.c.o[K[127/286] Compiling C object daemon/gvfsd-sftp.p/pty_open.c.o[K[127/286] Compiling C object daemon/gvfsd-smb-browse.p/gvfsbackendsmbbrowse.c.o[K[128/286] Compiling C object daemon/gvfsd-network.p/gvfsbackendnetwork.c.o[K[128/286] Compiling C object daemon/gvfsd-cdda.p/daemon-main.c.o[K[129/286] Compiling C object daemon/gvfsd-smb.p/daemon-main.c.o[K[129/286] Compiling C object daemon/gvfsd-cdda.p/daemon-main-generic.c.o[K[130/286] Compiling C object daemon/gvfsd-smb.p/daemon-main-generic.c.o[K[130/286] Compiling C object daemon/gvfsd-cdda.p/gvfsbackendcdda.c.o[K[131/286] Compiling C object daemon/gvfsd-smb-browse.p/gvfsbackendsmbbrowse.c.o[K[131/286] Compiling C object daemon/gvfsd-admin.p/daemon-main.c.o[K[132/286] Compiling C object daemon/gvfsd-smb-browse.p/daemon-main.c.o[K[132/286] Compiling C object daemon/gvfsd-admin.p/daemon-main-generic.c.o[K[133/286] Compiling C object daemon/gvfsd-smb-browse.p/daemon-main-generic.c.o[K[133/286] Compiling C object daemon/gvfsd-admin.p/gvfsbackendadmin.c.o[K[134/286] Compiling C object daemon/gvfsd-cdda.p/daemon-main.c.o[K[134/286] Compiling C object daemon/gvfsd-mtp.p/daemon-main.c.o[K[135/286] Compiling C object daemon/gvfsd-sftp.p/gvfsbackendsftp.c.o[K[135/286] Compiling C object daemon/gvfsd-mtp.p/daemon-main-generic.c.o[K[136/286] Compiling C object daemon/gvfsd-smb.p/gvfsbackendsmb.c.o[K[136/286] Compiling C object daemon/gvfsd-mtp.p/gvfsbackendmtp.c.o[K[137/286] Compiling C object daemon/gvfsd-cdda.p/daemon-main-generic.c.o[K[137/286] Compiling C object daemon/gvfsd-afc.p/daemon-main.c.o[K[138/286] Compiling C object daemon/gvfsd-smb-browse.p/gvfsbackendsmb.c.o[K[138/286] Compiling C object daemon/gvfsd-afc.p/daemon-main-generic.c.o[K[139/286] Compiling C object daemon/gvfsd-admin.p/daemon-main-generic.c.o[K[139/286] Compiling C object daemon/gvfsd-afc.p/gvfsbackendafc.c.o[K[140/286] Compiling C object daemon/gvfsd-admin.p/daemon-main.c.o[K[140/286] Compiling C object daemon/gvfsd-nfs.p/daemon-main.c.o[K[141/286] Compiling C object daemon/gvfsd-mtp.p/daemon-main.c.o[K[141/286] Compiling C object daemon/gvfsd-nfs.p/daemon-main-generic.c.o[K[142/286] Compiling C object daemon/gvfsd-mtp.p/daemon-main-generic.c.o[K[142/286] Compiling C object daemon/gvfsd-nfs.p/gvfsbackendnfs.c.o[K[143/286] Linking target common/libgvfscommon.so[K[143/286] Generating symbol file common/libgvfscommon.so.p/libgvfscommon.so.symbols[K[144/286] Compiling C object daemon/gvfsd-cdda.p/gvfsbackendcdda.c.o[K[144/286] Compiling C object daemon/gvfsd-wsdd.p/daemon-main.c.o[K[145/286] Compiling C object daemon/gvfsd-admin.p/gvfsbackendadmin.c.o[K[145/286] Compiling C object daemon/gvfsd-wsdd.p/daemon-main-generic.c.o[K[146/286] Compiling C object daemon/gvfsd-afc.p/daemon-main-generic.c.o[K[146/286] Compiling C object daemon/gvfsd-wsdd.p/gvfswsdddevice.c.o[K[147/286] Compiling C object daemon/gvfsd-nfs.p/daemon-main-generic.c.o[K[147/286] Compiling C object daemon/gvfsd-wsdd.p/gvfswsddservice.c.o[K[148/286] Compiling C object daemon/gvfsd-nfs.p/daemon-main.c.o[K[148/286] Compiling C object daemon/gvfsd-wsdd.p/gvfswsddresolver.c.o[K[149/286] Compiling C object daemon/gvfsd-mtp.p/gvfsbackendmtp.c.o[K[149/286] Compiling C object daemon/gvfsd-wsdd.p/gvfsbackendwsdd.c.o[K[150/286] Compiling C object daemon/gvfsd-afc.p/daemon-main.c.o[K[150/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/meson-generated_.._gvfsvolumemonitordbus.c.o[K[151/286] Generating symbol file common/libgvfscommon.so.p/libgvfscommon.so.symbols[K[151/286] Linking target daemon/libgvfsdaemon.so[K[152/286] Compiling C object daemon/gvfsd-wsdd.p/gvfswsdddevice.c.o[K[152/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/remote-volume-monitor-module.c.o[K[153/286] Compiling C object daemon/gvfsd-wsdd.p/daemon-main-generic.c.o[K[153/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxydrive.c.o[K[154/286] Compiling C object daemon/gvfsd-wsdd.p/gvfswsddresolver.c.o[K[154/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxymount.c.o[K[155/286] Compiling C object daemon/gvfsd-wsdd.p/gvfswsddservice.c.o[K[155/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxymountoperation.c.o[K[156/286] Compiling C object daemon/gvfsd-afc.p/gvfsbackendafc.c.o[K[156/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxyshadowmount.c.o[K[157/286] Compiling C object daemon/gvfsd-wsdd.p/daemon-main.c.o[K[157/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxyvolume.c.o[K[158/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/remote-volume-monitor-module.c.o[K[158/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxyvolumemonitor.c.o[K[159/286] Compiling C object daemon/gvfsd-wsdd.p/gvfsbackendwsdd.c.o[K[159/286] Linking static target monitor/proxy/libgvfsproxyvolumemonitordaemon-noin.a[K[160/286] Linking static target monitor/proxy/libgvfsproxyvolumemonitordaemon-noin.a[K[160/286] Compiling C object monitor/mtp/gvfs-mtp-volume-monitor.p/mtp-volume-monitor-daemon.c.o[K[161/286] Compiling C object daemon/gvfsd-nfs.p/gvfsbackendnfs.c.o[K[161/286] Compiling C object monitor/mtp/gvfs-mtp-volume-monitor.p/gmtpvolume.c.o[K[162/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxydrive.c.o[K[162/286] Compiling C object monitor/mtp/gvfs-mtp-volume-monitor.p/gmtpvolumemonitor.c.o[K[163/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxymountoperation.c.o[K[163/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/udisks2volumemonitordaemon.c.o[K[164/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxyshadowmount.c.o[K[164/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2drive.c.o[K[165/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxymount.c.o[K[165/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2mount.c.o[K[166/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/meson-generated_.._gvfsvolumemonitordbus.c.o[K[166/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2utils.c.o[K[167/286] Compiling C object monitor/mtp/gvfs-mtp-volume-monitor.p/mtp-volume-monitor-daemon.c.o[K[167/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2volume.c.o[K[168/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxyvolumemonitor.c.o[K[168/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2volumemonitor.c.o[K[169/286] Compiling C object monitor/proxy/libgioremote-volume-monitor.so.p/gproxyvolume.c.o[K[169/286] Linking target metadata/gvfsd-metadata[K[170/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/udisks2volumemonitordaemon.c.o[K[170/286] Linking target client/libgvfsdbus.so[K[171/286] Compiling C object monitor/mtp/gvfs-mtp-volume-monitor.p/gmtpvolumemonitor.c.o[K[171/286] Linking target client/gvfsd-fuse[K[172/286] Compiling C object monitor/mtp/gvfs-mtp-volume-monitor.p/gmtpvolume.c.o[K[172/286] Generating GObject enum file daemon/org.gnome.system.gvfs.enums.xml (wrapped by meson to capture output)[K[173/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2drive.c.o[K[173/286] Merging translations for daemon/org.gtk.vfs.file-operations.policy[K[174/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2mount.c.o[K[174/286] Linking target monitor/proxy/libgioremote-volume-monitor.so[K[175/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2utils.c.o[K[175/286] Linking target monitor/afc/gvfs-afc-volume-monitor[K[176/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2volumemonitor.c.o[K[176/286] Linking target monitor/mtp/gvfs-mtp-volume-monitor[K[177/286] Generating GObject enum file daemon/org.gnome.system.gvfs.enums.xml (wrapped by meson to capture output)[K[177/286] Building translation po/ab/LC_MESSAGES/gvfs-ab.mo[K[178/286] Compiling C object monitor/udisks2/gvfs-udisks2-volume-monitor.p/gvfsudisks2volume.c.o[K[178/286] Linking target monitor/udisks2/gvfs-udisks2-volume-monitor[K[179/286] Building translation po/ab/LC_MESSAGES/gvfs-ab.mo[K[179/286] Building translation po/af/LC_MESSAGES/gvfs-af.mo[K[180/286] Building translation po/af/LC_MESSAGES/gvfs-af.mo[K[180/286] Building translation po/ar/LC_MESSAGES/gvfs-ar.mo[K[181/286] Building translation po/ar/LC_MESSAGES/gvfs-ar.mo[K[181/286] Building translation po/as/LC_MESSAGES/gvfs-as.mo[K[182/286] Building translation po/as/LC_MESSAGES/gvfs-as.mo[K[182/286] Building translation po/ast/LC_MESSAGES/gvfs-ast.mo[K[183/286] Building translation po/ast/LC_MESSAGES/gvfs-ast.mo[K[183/286] Building translation po/be/LC_MESSAGES/gvfs-be.mo[K[184/286] Building translation po/be/LC_MESSAGES/gvfs-be.mo[K[184/286] Building translation po/be@latin/LC_MESSAGES/gvfs-be@latin.mo[K[185/286] Building translation po/be@latin/LC_MESSAGES/gvfs-be@latin.mo[K[185/286] Building translation po/bg/LC_MESSAGES/gvfs-bg.mo[K[186/286] Building translation po/bg/LC_MESSAGES/gvfs-bg.mo[K[186/286] Building translation po/bn/LC_MESSAGES/gvfs-bn.mo[K[187/286] Building translation po/bn/LC_MESSAGES/gvfs-bn.mo[K[187/286] Building translation po/bn_IN/LC_MESSAGES/gvfs-bn_IN.mo[K[188/286] Building translation po/bn_IN/LC_MESSAGES/gvfs-bn_IN.mo[K[188/286] Building translation po/bs/LC_MESSAGES/gvfs-bs.mo[K[189/286] Building translation po/bs/LC_MESSAGES/gvfs-bs.mo[K[189/286] Building translation po/ca/LC_MESSAGES/gvfs-ca.mo[K[190/286] Building translation po/ca/LC_MESSAGES/gvfs-ca.mo[K[190/286] Building translation po/ca@valencia/LC_MESSAGES/gvfs-ca@valencia.mo[K[191/286] Building translation po/ca@valencia/LC_MESSAGES/gvfs-ca@valencia.mo[K[191/286] Building translation po/cs/LC_MESSAGES/gvfs-cs.mo[K[192/286] Building translation po/cs/LC_MESSAGES/gvfs-cs.mo[K[192/286] Building translation po/da/LC_MESSAGES/gvfs-da.mo[K[193/286] Building translation po/da/LC_MESSAGES/gvfs-da.mo[K[193/286] Building translation po/de/LC_MESSAGES/gvfs-de.mo[K[194/286] Building translation po/de/LC_MESSAGES/gvfs-de.mo[K[194/286] Building translation po/el/LC_MESSAGES/gvfs-el.mo[K[195/286] Building translation po/el/LC_MESSAGES/gvfs-el.mo[K[195/286] Building translation po/en_GB/LC_MESSAGES/gvfs-en_GB.mo[K[196/286] Building translation po/en_GB/LC_MESSAGES/gvfs-en_GB.mo[K[196/286] Building translation po/en@shaw/LC_MESSAGES/gvfs-en@shaw.mo[K[197/286] Building translation po/en@shaw/LC_MESSAGES/gvfs-en@shaw.mo[K[197/286] Building translation po/eo/LC_MESSAGES/gvfs-eo.mo[K[198/286] Building translation po/eo/LC_MESSAGES/gvfs-eo.mo[K[198/286] Building translation po/es/LC_MESSAGES/gvfs-es.mo[K[199/286] Building translation po/es/LC_MESSAGES/gvfs-es.mo[K[199/286] Building translation po/eu/LC_MESSAGES/gvfs-eu.mo[K[200/286] Building translation po/eu/LC_MESSAGES/gvfs-eu.mo[K[200/286] Building translation po/et/LC_MESSAGES/gvfs-et.mo[K[201/286] Building translation po/et/LC_MESSAGES/gvfs-et.mo[K[201/286] Building translation po/fa/LC_MESSAGES/gvfs-fa.mo[K[202/286] Building translation po/fa/LC_MESSAGES/gvfs-fa.mo[K[202/286] Building translation po/fi/LC_MESSAGES/gvfs-fi.mo[K[203/286] Building translation po/fi/LC_MESSAGES/gvfs-fi.mo[K[203/286] Building translation po/fr/LC_MESSAGES/gvfs-fr.mo[K[204/286] Linking target client/gvfsd-fuse[K[204/286] Building translation po/fur/LC_MESSAGES/gvfs-fur.mo[K[205/286] Building translation po/fr/LC_MESSAGES/gvfs-fr.mo[K[205/286] Building translation po/ga/LC_MESSAGES/gvfs-ga.mo[K[206/286] Building translation po/fur/LC_MESSAGES/gvfs-fur.mo[K[206/286] Building translation po/gl/LC_MESSAGES/gvfs-gl.mo[K[207/286] Building translation po/ga/LC_MESSAGES/gvfs-ga.mo[K[207/286] Building translation po/gu/LC_MESSAGES/gvfs-gu.mo[K[208/286] Building translation po/gl/LC_MESSAGES/gvfs-gl.mo[K[208/286] Building translation po/he/LC_MESSAGES/gvfs-he.mo[K[209/286] Building translation po/gu/LC_MESSAGES/gvfs-gu.mo[K[209/286] Building translation po/hr/LC_MESSAGES/gvfs-hr.mo[K[210/286] Building translation po/he/LC_MESSAGES/gvfs-he.mo[K[210/286] Building translation po/hu/LC_MESSAGES/gvfs-hu.mo[K[211/286] Building translation po/hu/LC_MESSAGES/gvfs-hu.mo[K[211/286] Building translation po/hi/LC_MESSAGES/gvfs-hi.mo[K[212/286] Building translation po/hr/LC_MESSAGES/gvfs-hr.mo[K[212/286] Building translation po/id/LC_MESSAGES/gvfs-id.mo[K[213/286] Merging translations for daemon/org.gtk.vfs.file-operations.policy[K[213/286] Building translation po/ie/LC_MESSAGES/gvfs-ie.mo[K[214/286] Building translation po/hi/LC_MESSAGES/gvfs-hi.mo[K[214/286] Building translation po/it/LC_MESSAGES/gvfs-it.mo[K[215/286] Building translation po/id/LC_MESSAGES/gvfs-id.mo[K[215/286] Building translation po/ja/LC_MESSAGES/gvfs-ja.mo[K[216/286] Building translation po/ie/LC_MESSAGES/gvfs-ie.mo[K[216/286] Building translation po/ka/LC_MESSAGES/gvfs-ka.mo[K[217/286] Building translation po/it/LC_MESSAGES/gvfs-it.mo[K[217/286] Building translation po/kab/LC_MESSAGES/gvfs-kab.mo[K[218/286] Building translation po/ja/LC_MESSAGES/gvfs-ja.mo[K[218/286] Building translation po/kk/LC_MESSAGES/gvfs-kk.mo[K[219/286] Building translation po/ka/LC_MESSAGES/gvfs-ka.mo[K[219/286] Building translation po/kn/LC_MESSAGES/gvfs-kn.mo[K[220/286] Building translation po/kab/LC_MESSAGES/gvfs-kab.mo[K[220/286] Building translation po/ko/LC_MESSAGES/gvfs-ko.mo[K[221/286] Building translation po/kk/LC_MESSAGES/gvfs-kk.mo[K[221/286] Building translation po/ku/LC_MESSAGES/gvfs-ku.mo[K[222/286] Building translation po/kn/LC_MESSAGES/gvfs-kn.mo[K[222/286] Building translation po/lo/LC_MESSAGES/gvfs-lo.mo[K[223/286] Building translation po/ku/LC_MESSAGES/gvfs-ku.mo[K[223/286] Building translation po/lt/LC_MESSAGES/gvfs-lt.mo[K[224/286] Building translation po/ko/LC_MESSAGES/gvfs-ko.mo[K[224/286] Building translation po/lv/LC_MESSAGES/gvfs-lv.mo[K[225/286] Building translation po/lo/LC_MESSAGES/gvfs-lo.mo[K[225/286] Building translation po/mai/LC_MESSAGES/gvfs-mai.mo[K[226/286] Building translation po/lt/LC_MESSAGES/gvfs-lt.mo[K[226/286] Building translation po/mk/LC_MESSAGES/gvfs-mk.mo[K[227/286] Building translation po/lv/LC_MESSAGES/gvfs-lv.mo[K[227/286] Building translation po/ml/LC_MESSAGES/gvfs-ml.mo[K[228/286] Building translation po/mai/LC_MESSAGES/gvfs-mai.mo[K[228/286] Building translation po/mr/LC_MESSAGES/gvfs-mr.mo[K[229/286] Linking target metadata/gvfsd-metadata[K[229/286] Building translation po/ms/LC_MESSAGES/gvfs-ms.mo[K[230/286] Building translation po/mk/LC_MESSAGES/gvfs-mk.mo[K[230/286] Building translation po/nb/LC_MESSAGES/gvfs-nb.mo[K[231/286] Building translation po/ml/LC_MESSAGES/gvfs-ml.mo[K[231/286] Building translation po/nds/LC_MESSAGES/gvfs-nds.mo[K[232/286] Building translation po/ms/LC_MESSAGES/gvfs-ms.mo[K[232/286] Building translation po/ne/LC_MESSAGES/gvfs-ne.mo[K[233/286] Building translation po/mr/LC_MESSAGES/gvfs-mr.mo[K[233/286] Building translation po/nl/LC_MESSAGES/gvfs-nl.mo[K[234/286] Building translation po/nb/LC_MESSAGES/gvfs-nb.mo[K[234/286] Building translation po/nn/LC_MESSAGES/gvfs-nn.mo[K[235/286] Building translation po/nds/LC_MESSAGES/gvfs-nds.mo[K[235/286] Building translation po/oc/LC_MESSAGES/gvfs-oc.mo[K[236/286] Building translation po/ne/LC_MESSAGES/gvfs-ne.mo[K[236/286] Building translation po/or/LC_MESSAGES/gvfs-or.mo[K[237/286] Building translation po/nl/LC_MESSAGES/gvfs-nl.mo[K[237/286] Building translation po/pa/LC_MESSAGES/gvfs-pa.mo[K[238/286] Building translation po/nn/LC_MESSAGES/gvfs-nn.mo[K[238/286] Building translation po/pl/LC_MESSAGES/gvfs-pl.mo[K[239/286] Building translation po/oc/LC_MESSAGES/gvfs-oc.mo[K[239/286] Building translation po/pt/LC_MESSAGES/gvfs-pt.mo[K[240/286] Building translation po/or/LC_MESSAGES/gvfs-or.mo[K[240/286] Building translation po/pt_BR/LC_MESSAGES/gvfs-pt_BR.mo[K[241/286] Building translation po/pl/LC_MESSAGES/gvfs-pl.mo[K[241/286] Building translation po/ro/LC_MESSAGES/gvfs-ro.mo[K[242/286] Building translation po/pa/LC_MESSAGES/gvfs-pa.mo[K[242/286] Building translation po/ru/LC_MESSAGES/gvfs-ru.mo[K[243/286] Building translation po/pt_BR/LC_MESSAGES/gvfs-pt_BR.mo[K[243/286] Building translation po/sk/LC_MESSAGES/gvfs-sk.mo[K[244/286] Building translation po/pt/LC_MESSAGES/gvfs-pt.mo[K[244/286] Building translation po/sl/LC_MESSAGES/gvfs-sl.mo[K[245/286] Building translation po/ro/LC_MESSAGES/gvfs-ro.mo[K[245/286] Building translation po/sq/LC_MESSAGES/gvfs-sq.mo[K[246/286] Building translation po/ru/LC_MESSAGES/gvfs-ru.mo[K[246/286] Building translation po/sr/LC_MESSAGES/gvfs-sr.mo[K[247/286] Building translation po/sq/LC_MESSAGES/gvfs-sq.mo[K[247/286] Building translation po/sr@latin/LC_MESSAGES/gvfs-sr@latin.mo[K[248/286] Building translation po/sk/LC_MESSAGES/gvfs-sk.mo[K[248/286] Building translation po/sv/LC_MESSAGES/gvfs-sv.mo[K[249/286] Building translation po/sl/LC_MESSAGES/gvfs-sl.mo[K[249/286] Building translation po/ta/LC_MESSAGES/gvfs-ta.mo[K[250/286] Building translation po/sr/LC_MESSAGES/gvfs-sr.mo[K[250/286] Building translation po/te/LC_MESSAGES/gvfs-te.mo[K[251/286] Building translation po/sv/LC_MESSAGES/gvfs-sv.mo[K[251/286] Building translation po/tg/LC_MESSAGES/gvfs-tg.mo[K[252/286] Building translation po/sr@latin/LC_MESSAGES/gvfs-sr@latin.mo[K[252/286] Building translation po/th/LC_MESSAGES/gvfs-th.mo[K[253/286] Building translation po/ta/LC_MESSAGES/gvfs-ta.mo[K[253/286] Building translation po/tr/LC_MESSAGES/gvfs-tr.mo[K[254/286] Building translation po/te/LC_MESSAGES/gvfs-te.mo[K[254/286] Building translation po/ug/LC_MESSAGES/gvfs-ug.mo[K[255/286] Building translation po/tg/LC_MESSAGES/gvfs-tg.mo[K[255/286] Building translation po/uk/LC_MESSAGES/gvfs-uk.mo[K[256/286] Building translation po/th/LC_MESSAGES/gvfs-th.mo[K[256/286] Building translation po/vi/LC_MESSAGES/gvfs-vi.mo[K[257/286] Building translation po/tr/LC_MESSAGES/gvfs-tr.mo[K[257/286] Building translation po/zh_CN/LC_MESSAGES/gvfs-zh_CN.mo[K[258/286] Building translation po/uk/LC_MESSAGES/gvfs-uk.mo[K[258/286] Building translation po/zh_HK/LC_MESSAGES/gvfs-zh_HK.mo[K[259/286] Building translation po/ug/LC_MESSAGES/gvfs-ug.mo[K[259/286] Building translation po/zh_TW/LC_MESSAGES/gvfs-zh_TW.mo[K[260/286] Building translation po/zh_CN/LC_MESSAGES/gvfs-zh_CN.mo[K[261/286] Building translation po/vi/LC_MESSAGES/gvfs-vi.mo[K[262/286] Building translation po/zh_TW/LC_MESSAGES/gvfs-zh_TW.mo[K[263/286] Building translation po/zh_HK/LC_MESSAGES/gvfs-zh_HK.mo[K[264/286] Linking target monitor/mtp/gvfs-mtp-volume-monitor[K[265/286] Linking target monitor/proxy/libgioremote-volume-monitor.so[K[266/286] Linking target monitor/afc/gvfs-afc-volume-monitor[K[267/286] Linking target daemon/libgvfsdaemon.so[K[267/286] Generating symbol file daemon/libgvfsdaemon.so.p/libgvfsdaemon.so.symbols[K[268/286] Generating symbol file daemon/libgvfsdaemon.so.p/libgvfsdaemon.so.symbols[K[268/286] Linking target daemon/gvfsd[K[268/286] Linking target daemon/gvfsd-localtest[K[268/286] Linking target daemon/gvfsd-ftp[K[268/286] Linking target daemon/gvfsd-trash[K[268/286] Linking target daemon/gvfsd-recent[K[268/286] Linking target daemon/gvfsd-computer[K[268/286] Linking target daemon/gvfsd-network[K[268/286] Linking target daemon/gvfsd-sftp[K[269/286] Linking target monitor/udisks2/gvfs-udisks2-volume-monitor[K[269/286] Linking target daemon/gvfsd-smb[K[270/286] Linking target client/libgvfsdbus.so[K[270/286] Linking target daemon/gvfsd-smb-browse[K[271/286] Linking target daemon/gvfsd-recent[K[271/286] Linking target daemon/gvfsd-cdda[K[272/286] Linking target daemon/gvfsd-localtest[K[272/286] Linking target daemon/gvfsd-admin[K[273/286] Linking target daemon/gvfsd[K[273/286] Linking target daemon/gvfsd-mtp[K[274/286] Linking target daemon/gvfsd-computer[K[274/286] Linking target daemon/gvfsd-afc[K[275/286] Linking target daemon/gvfsd-network[K[275/286] Linking target daemon/gvfsd-nfs[K[276/286] Linking target daemon/gvfsd-admin[K[276/286] Linking target daemon/gvfsd-wsdd[K[277/286] Linking target daemon/gvfsd-trash[K[278/286] Linking target daemon/gvfsd-cdda[K[279/286] Linking target daemon/gvfsd-smb-browse[K[280/286] Linking target daemon/gvfsd-afc[K[281/286] Linking target daemon/gvfsd-smb[K[282/286] Linking target daemon/gvfsd-wsdd[K[283/286] Linking target daemon/gvfsd-nfs[K[284/286] Linking target daemon/gvfsd-mtp[K[285/286] Linking target daemon/gvfsd-sftp[K[286/286] Linking target daemon/gvfsd-ftp[K
+ninja: Entering directory `/var/tmp/hokuto/gvfs-01/build/build'
+ninja: no work to do.
+Installing common/libgvfscommon.so to /var/tmp/hokuto/gvfs-01/output/usr/lib/gvfs
+Installing metadata/gvfsd-metadata to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing client/libgvfsdbus.so to /var/tmp/hokuto/gvfs-01/output/usr/lib/gio/modules
+Installing client/gvfsd-fuse to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/org.gnome.system.gvfs.enums.xml to /var/tmp/hokuto/gvfs-01/output/usr/share/glib-2.0/schemas
+Installing daemon/libgvfsdaemon.so to /var/tmp/hokuto/gvfs-01/output/usr/lib/gvfs
+Installing daemon/gvfsd to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/org.gtk.vfs.file-operations.policy to /var/tmp/hokuto/gvfs-01/output/usr/share/polkit-1/actions
+Installing daemon/gvfsd-localtest to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-ftp to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-trash to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-recent to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-computer to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-network to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-sftp to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-smb to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-smb-browse to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-cdda to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-admin to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-mtp to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-afc to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-nfs to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing daemon/gvfsd-wsdd to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing monitor/proxy/libgioremote-volume-monitor.so to /var/tmp/hokuto/gvfs-01/output/usr/lib/gio/modules
+Installing monitor/afc/gvfs-afc-volume-monitor to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing monitor/mtp/gvfs-mtp-volume-monitor to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing monitor/udisks2/gvfs-udisks2-volume-monitor to /var/tmp/hokuto/gvfs-01/output/usr/lib
+Installing po/ab/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ab/LC_MESSAGES
+Installing po/af/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/af/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ar/LC_MESSAGES
+Installing po/as/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/as/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ast/LC_MESSAGES
+Installing po/be/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/be/LC_MESSAGES
+Installing po/be@latin/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/be@latin/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/bg/LC_MESSAGES
+Installing po/bn/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/bn/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/bs/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/bs/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/en@shaw/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/en@shaw/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/es/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/eu/LC_MESSAGES
+Installing po/et/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/et/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/fur/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ga/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/he/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/hu/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/hi/LC_MESSAGES
+Installing po/id/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/id/LC_MESSAGES
+Installing po/ie/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ie/LC_MESSAGES
+Installing po/it/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ka/LC_MESSAGES
+Installing po/kab/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/kab/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/kk/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ko/LC_MESSAGES
+Installing po/ku/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ku/LC_MESSAGES
+Installing po/lo/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/lo/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/lv/LC_MESSAGES
+Installing po/mai/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/mai/LC_MESSAGES
+Installing po/mk/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/mk/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ml/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/mr/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/nb/LC_MESSAGES
+Installing po/nds/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/nds/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/te/LC_MESSAGES
+Installing po/tg/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/tg/LC_MESSAGES
+Installing po/th/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/tr/LC_MESSAGES
+Installing po/ug/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/ug/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/vi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/gvfs.mo to /var/tmp/hokuto/gvfs-01/output/usr/share/locale/zh_TW/LC_MESSAGES
+Installing /var/tmp/hokuto/gvfs-01/build/build/metadata/gvfs-metadata.service to /var/tmp/hokuto/gvfs-01/output/usr/lib/systemd/user
+Installing /var/tmp/hokuto/gvfs-01/build/build/metadata/org.gtk.vfs.Metadata.service to /var/tmp/hokuto/gvfs-01/output/usr/share/dbus-1/services
+Installing /var/tmp/hokuto/gvfs-01/build/client/gvfsd-fuse-tmpfiles.conf to /var/tmp/hokuto/gvfs-01/output/usr/lib/tmpfiles.d
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/gvfs-daemon.service to /var/tmp/hokuto/gvfs-01/output/usr/lib/systemd/user
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/org.gtk.vfs.Daemon.service to /var/tmp/hokuto/gvfs-01/output/usr/share/dbus-1/services
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/org.gtk.vfs.file-operations.rules to /var/tmp/hokuto/gvfs-01/output/usr/share/polkit-1/rules.d
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/localtest.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/ftp.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/ftps.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/ftpis.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/trash.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/recent.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/computer.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/network.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/sftp.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/smb.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/smb-browse.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/cdda.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/admin.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/mtp.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/afc.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/nfs.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/build/daemon/wsdd.mount to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/mounts
+Installing /var/tmp/hokuto/gvfs-01/build/daemon/org.gnome.system.smb.gschema.xml to /var/tmp/hokuto/gvfs-01/output/usr/share/glib-2.0/schemas
+Installing /var/tmp/hokuto/gvfs-01/build/daemon/org.gnome.system.wsdd.gschema.xml to /var/tmp/hokuto/gvfs-01/output/usr/share/glib-2.0/schemas
+Installing /var/tmp/hokuto/gvfs-01/build/daemon/gvfs-smb.convert to /var/tmp/hokuto/gvfs-01/output/usr/share/GConf/gsettings
+Installing /var/tmp/hokuto/gvfs-01/build/build/monitor/gvfs-afc-volume-monitor.service to /var/tmp/hokuto/gvfs-01/output/usr/lib/systemd/user
+Installing /var/tmp/hokuto/gvfs-01/build/monitor/afc/afc.monitor to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/remote-volume-monitors
+Installing /var/tmp/hokuto/gvfs-01/build/build/monitor/org.gtk.vfs.AfcVolumeMonitor.service to /var/tmp/hokuto/gvfs-01/output/usr/share/dbus-1/services
+Installing /var/tmp/hokuto/gvfs-01/build/build/monitor/gvfs-mtp-volume-monitor.service to /var/tmp/hokuto/gvfs-01/output/usr/lib/systemd/user
+Installing /var/tmp/hokuto/gvfs-01/build/monitor/mtp/mtp.monitor to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/remote-volume-monitors
+Installing /var/tmp/hokuto/gvfs-01/build/build/monitor/org.gtk.vfs.MTPVolumeMonitor.service to /var/tmp/hokuto/gvfs-01/output/usr/share/dbus-1/services
+Installing /var/tmp/hokuto/gvfs-01/build/build/monitor/gvfs-udisks2-volume-monitor.service to /var/tmp/hokuto/gvfs-01/output/usr/lib/systemd/user
+Installing /var/tmp/hokuto/gvfs-01/build/monitor/udisks2/udisks2.monitor to /var/tmp/hokuto/gvfs-01/output/usr/share/gvfs/remote-volume-monitors
+Installing /var/tmp/hokuto/gvfs-01/build/build/monitor/org.gtk.vfs.UDisks2VolumeMonitor.service to /var/tmp/hokuto/gvfs-01/output/usr/share/dbus-1/services
+Skipping custom install script because DESTDIR is set '/usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas'
+Skipping custom install script because DESTDIR is set '/usr/bin/gio-querymodules /usr/lib/gio/modules'
+renamed '/var/tmp/hokuto/gvfs-01/output/usr/lib/gvfs-afc-volume-monitor' -> '/var/tmp/hokuto/gvfs-01/split/gvfs-avc/usr/lib/gvfs-afc-volume-monitor'
+renamed '/var/tmp/hokuto/gvfs-01/output/usr/lib/gvfsd-afc' -> '/var/tmp/hokuto/gvfs-01/split/gvfs-avc/usr/lib/gvfsd-afc'
+renamed '/var/tmp/hokuto/gvfs-01/output' -> '/var/tmp/hokuto/gvfs-01/split/gvfs-avc/var/tmp/hokuto/gvfs-01/output'
+
+Script done on 2026-09-17 17:18:33+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgvfs[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mThu, 17 Sep 2026 10:18:34 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m8s[0m
