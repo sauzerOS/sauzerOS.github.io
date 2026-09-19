@@ -1,0 +1,387 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxfce4util[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibxfce4util 4.20.1-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSat, 19 Sep 2026 13:28:00 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxfce4util[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglib gobject-introspection vala xfce4-dev-tools[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxfce4util[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-2 gettext-1.0-1 glib-2.90.0-1 gobject-introspection-1.86.0-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 vala-0.56.19-1 which-2.25-1 xfce4-dev-tools-4.20.0-1[0m
+
+Script started on 2026-09-19 20:28:00+07:00 [COMMAND="cd /var/tmp/hokuto/libxfce4util-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libxfce4util-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libxfce4util-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libxfce4util-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libxfce4util-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libxfce4util-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libxfce4util-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libxfce4util-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libxfce4util-01/build/.cache' /repo/sauzeros/extra/libxfce4util/build /var/tmp/hokuto/libxfce4util-01/output 4.20.1 libxfce4util" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking dependency style of cc... (cached) gcc3
+checking for xdt-gen-visibility... /var/tmp/hokuto/libxfce4util-01/build/xdt-gen-visibility
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for err.h... yes
+checking for errno.h... yes
+checking for grp.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for pwd.h... yes
+checking for signal.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/utsname.h... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking for stdarg.h... yes
+checking for varargs.h... no
+checking for libintl.h... yes
+checking for gethostname... yes
+checking for getpwnam... yes
+checking for setlocale... yes
+checking whether NLS is requested... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by cc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking whether to use NLS... no
+checking for library containing bind_textdomain_codeset... none required
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gobject-2.0 >= 2.72.0... 2.90.0
+checking GOBJECT_CFLAGS... -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
+checking GOBJECT_LIBS... -lgobject-2.0 -lglib-2.0
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for glib-2.0 >= 2.72.0... 2.90.0
+checking GLIB_CFLAGS... -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
+checking GLIB_LIBS... -lglib-2.0
+configure: setting GLIB_VERSION_MAX_ALLOWED and GLIB_VERSION_MIN_REQUIRED according to 2.72.0
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gio-2.0 >= 2.72.0... 2.90.0
+checking GIO_CFLAGS... -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/uuid -I/usr/include/json-c -I/usr/include/blkid
+checking GIO_LIBS... -lgio-2.0 -lgobject-2.0 -lglib-2.0
+checking for gtk-doc... yes
+checking for gtkdoc-check... gtkdoc-check.test
+checking for gtkdoc-check... /usr/bin/gtkdoc-check
+checking for gtkdoc-rebase... /usr/bin/gtkdoc-rebase
+checking for gtkdoc-mkpdf... /usr/bin/gtkdoc-mkpdf
+checking whether to build gtk-doc documentation... no
+checking for glib-2.0 >= 2.10.0 gobject-2.0  >= 2.10.0... yes
+checking for gobject-introspection... yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for vapigen... yes
+checking whether to build with debugging support... minimum
+checking if cc supports -Wall... yes
+checking if cc supports -Wextra... yes
+checking if cc supports -Wno-missing-field-initializers... yes
+checking if cc supports -Wno-unused-parameter... yes
+checking if cc supports -Wmissing-declarations... yes
+checking if cc supports -Wmissing-noreturn... yes
+checking if cc supports -Wpointer-arith... yes
+checking if cc supports -Wcast-align... yes
+checking if cc supports -Wformat... yes
+checking if cc supports -Wformat-security... yes
+checking if cc supports -Wformat-y2k... yes
+checking if cc supports -Winit-self... yes
+checking if cc supports -Wmissing-include-dirs... yes
+checking if cc supports -Wundef... yes
+checking if cc supports -Wredundant-decls... yes
+checking if cc supports -Wshadow... yes
+checking if cc supports -Wnested-externs... yes
+checking if cc supports -Wold-style-definition... yes
+checking if cc supports -Wall... yes
+checking if cc supports -Wextra... yes
+checking if cc supports -Wno-missing-field-initializers... yes
+checking if cc supports -Wno-unused-parameter... yes
+checking if cc supports -Wmissing-declarations... yes
+checking if cc supports -Wmissing-noreturn... yes
+checking if cc supports -Wpointer-arith... yes
+checking if cc supports -Wcast-align... yes
+checking if cc supports -Wformat... yes
+checking if cc supports -Wformat-security... yes
+checking if cc supports -Wformat-y2k... yes
+checking if cc supports -Winit-self... yes
+checking if cc supports -Wmissing-include-dirs... yes
+checking if cc supports -Wundef... yes
+checking if cc supports -Wredundant-decls... yes
+checking if cc supports -Wshadow... yes
+checking whether /usr/bin/ld -m elf_x86_64 accepts --as-needed... yes
+checking whether /usr/bin/ld -m elf_x86_64 accepts -O1... yes
+checking if cc supports -Wall... yes
+checking if cc supports -Werror... yes
+checking if cc supports -Wno-unused-parameter... yes
+checking if cc supports -fvisibility=hidden... yes
+checking whether cc supports the GNUC visibility attribute... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating docs/Makefile
+config.status: creating docs/reference/Makefile
+config.status: creating libxfce4util/libxfce4util-1.0.pc
+config.status: creating libxfce4util/libxfce4util-config.h
+config.status: creating libxfce4util/Makefile
+config.status: creating po/Makefile.in
+config.status: creating xfce4-kiosk-query/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+
+Build Configuration:
+
+* Debug Support:  minimum
+* GNU Visibility: yes
+
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build'
+Making all in libxfce4util
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+make  all-am
+make[3]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+  CC       libxfce4util_la-libxfce4util-visibility.lo
+  CC       libxfce4util_la-xfce-gio-extensions.lo
+  CC       libxfce4util_la-xfce-i18n.lo
+  CC       libxfce4util_la-xfce-kiosk.lo
+  CC       libxfce4util_la-xfce-license.lo
+  CC       libxfce4util_la-xfce-miscutils.lo
+  CC       libxfce4util_la-libxfce4util-config.lo
+  CC       libxfce4util_la-libxfce4util-private.lo
+  CC       libxfce4util_la-xfce-consolekit.lo
+  CC       libxfce4util_la-xfce-fileutils.lo
+  CC       libxfce4util_la-xfce-posix-signal-handler.lo
+  CC       libxfce4util_la-xfce-rc.lo
+  CC       libxfce4util_la-xfce-rc-config.lo
+  CC       libxfce4util_la-xfce-rc-simple.lo
+  CC       libxfce4util_la-xfce-string.lo
+  CC       libxfce4util_la-xfce-resource.lo
+[01m[Kxfce-i18n.c:[m[K In function '[01m[Kxfce_localize_path_internal[m[K':
+[01m[Kxfce-i18n.c:120:13:[m[K [01;35m[Kwarning: [m[Kassignment discards '[01m[Kconst[m[K' qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  120 |           p [01;35m[K=[m[K strchr (lang, delim[n]);
+      |             [01;35m[K^[m[K
+  CC       libxfce4util_la-xfce-systemd.lo
+  CC       libxfce4util_la-xfce-utf8.lo
+  CCLD     libxfce4util.la
+/usr/bin/nm: .libs/libxfce4util_la-libxfce4util-visibility.o: no symbols
+  GISCAN   Libxfce4util-1.0.gir
+xfce-debug.h:46: Warning: Libxfce4util: symbol='DBG': Unknown namespace for symbol 'DBG'
+xfce-debug.h:73: Warning: Libxfce4util: symbol='TRACE': Unknown namespace for symbol 'TRACE'
+xfce-debug.h:98: Warning: Libxfce4util: symbol='TRACE': Unknown namespace for symbol 'TRACE'
+xfce-debug.h:106: Warning: Libxfce4util: symbol='DBG': Unknown namespace for symbol 'DBG'
+xfce-debug.h:109: Warning: Libxfce4util: symbol='TRACE': Unknown namespace for symbol 'TRACE'
+xfce-string.h:68: Warning: Libxfce4util: symbol='I_': Unknown namespace for symbol 'I_'
+  GICOMP   Libxfce4util-1.0.gir
+ VAPIGEN libxfce4util-1.0.vapi
+make[3]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+Making all in docs
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+Making all in reference
+make[3]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/docs/reference'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/docs/reference'
+make[3]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+Making all in po
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/po'
+Making all in xfce4-kiosk-query
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/xfce4-kiosk-query'
+  CC       xfce4_kiosk_query-main.o
+  CCLD     xfce4-kiosk-query
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/xfce4-kiosk-query'
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build'
+Making install in libxfce4util
+make[1]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+make  install-am
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+make[3]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfce4util-01/output/usr/include/xfce4/libxfce4util'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfce4util-01/output/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfce4util-01/output/usr/lib/girepository-1.0'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfce4util-01/output/usr/lib'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfce4util-01/output/usr/share/vala/vapi'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfce4util-01/output/usr/share/gir-1.0'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libxfce4util.la '/var/tmp/hokuto/libxfce4util-01/output/usr/lib'
+ /usr/bin/install -c -m 644 libxfce4util-1.0.pc '/var/tmp/hokuto/libxfce4util-01/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 Libxfce4util-1.0.typelib '/var/tmp/hokuto/libxfce4util-01/output/usr/lib/girepository-1.0'
+ /usr/bin/install -c -m 644 xfce-consolekit.h xfce-debug.h xfce-fileutils.h xfce-generics.h xfce-gio-extensions.h xfce-i18n.h xfce-kiosk.h xfce-license.h xfce-miscutils.h xfce-posix-signal-handler.h xfce-rc.h xfce-resource.h xfce-string.h xfce-systemd.h xfce-utf8.h libxfce4util.h libxfce4util-config.h '/var/tmp/hokuto/libxfce4util-01/output/usr/include/xfce4/libxfce4util'
+ /usr/bin/install -c -m 644 Libxfce4util-1.0.gir '/var/tmp/hokuto/libxfce4util-01/output/usr/share/gir-1.0'
+ /usr/bin/install -c -m 644 libxfce4util-1.0.vapi '/var/tmp/hokuto/libxfce4util-01/output/usr/share/vala/vapi'
+libtool: install: /usr/bin/install -c .libs/libxfce4util.so.7.0.0 /var/tmp/hokuto/libxfce4util-01/output/usr/lib/libxfce4util.so.7.0.0
+libtool: install: (cd /var/tmp/hokuto/libxfce4util-01/output/usr/lib && { ln -s -f libxfce4util.so.7.0.0 libxfce4util.so.7 || { rm -f libxfce4util.so.7 && ln -s libxfce4util.so.7.0.0 libxfce4util.so.7; }; })
+libtool: install: (cd /var/tmp/hokuto/libxfce4util-01/output/usr/lib && { ln -s -f libxfce4util.so.7.0.0 libxfce4util.so || { rm -f libxfce4util.so && ln -s libxfce4util.so.7.0.0 libxfce4util.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxfce4util.lai /var/tmp/hokuto/libxfce4util-01/output/usr/lib/libxfce4util.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[3]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/libxfce4util'
+Making install in docs
+make[1]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+Making install in reference
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/docs/reference'
+make[3]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/docs/reference'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/install -c -m 644 ./html/annotation-glossary.html
+ /usr/bin/install -c -m 644 ./html/api-index-full.html
+ /usr/bin/install -c -m 644 ./html/ch01.html
+ /usr/bin/install -c -m 644 ./html/home.png
+ /usr/bin/install -c -m 644 ./html/index.html
+ /usr/bin/install -c -m 644 ./html/left-insensitive.png
+ /usr/bin/install -c -m 644 ./html/left.png
+ /usr/bin/install -c -m 644 ./html/libxfce4util.devhelp2
+ /usr/bin/install -c -m 644 ./html/libxfce4util-File-Utilities.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-GIO-Extensions.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Internationalisation.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Miscellaneous-Utilities.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-POSIX-Signal-Handling.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Resource-Config-File-Support.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Resource-lookup-functions.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Software-Licenses.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Unicode-Support-Functions.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Version-Information.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Xfce-Generics.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Xfce-Kiosk-functions.html
+ /usr/bin/install -c -m 644 ./html/libxfce4util-Xfce-String-Functions.html
+ /usr/bin/install -c -m 644 ./html/object-tree.html
+ /usr/bin/install -c -m 644 ./html/right-insensitive.png
+ /usr/bin/install -c -m 644 ./html/right.png
+ /usr/bin/install -c -m 644 ./html/style.css
+ /usr/bin/install -c -m 644 ./html/up-insensitive.png
+ /usr/bin/install -c -m 644 ./html/up.png
+ /usr/bin/install -c -m 644 ./html/XfceConsolekit.html
+ /usr/bin/install -c -m 644 ./html/XfceSystemd.html
+make[3]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/docs/reference'
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/docs/reference'
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+make[3]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/docs'
+Making install in po
+make[1]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/po'
+if test "libxfce4util" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /var/tmp/hokuto/libxfce4util-01/output/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /var/tmp/hokuto/libxfce4util-01/output/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /var/tmp/hokuto/libxfce4util-01/output/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/po'
+Making install in xfce4-kiosk-query
+make[1]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/xfce4-kiosk-query'
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build/xfce4-kiosk-query'
+make[2]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libxfce4util-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c xfce4-kiosk-query '/var/tmp/hokuto/libxfce4util-01/output/usr/bin'
+libtool: [31mwarning[0m: [1m'../libxfce4util/libxfce4util.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/xfce4-kiosk-query /var/tmp/hokuto/libxfce4util-01/output/usr/bin/xfce4-kiosk-query
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/xfce4-kiosk-query'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build/xfce4-kiosk-query'
+make[1]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build'
+make[2]: Entering directory '/var/tmp/hokuto/libxfce4util-01/build'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/libxfce4util-01/build'
+
+Script done on 2026-09-19 20:28:05+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibxfce4util[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSat, 19 Sep 2026 13:28:05 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m4s[0m
