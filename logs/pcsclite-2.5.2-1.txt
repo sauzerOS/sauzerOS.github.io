@@ -1,0 +1,96 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpcsclite[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mpcsclite 2.5.2-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mSun, 20 Sep 2026 12:32:24 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpcsclite[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mpolkit systemd-libs meson systemd[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpcsclite[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-2 gettext-1.0-1 grep-3.12-1 gzip-1.14-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-2 patch-2.8-1 pkgconf-3.0.7-1 polkit-127-2 sed-4.10-1 systemd-261.3-2 systemd-libs-261.3-2 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-20 19:32:24+07:00 [COMMAND="cd /var/tmp/hokuto/pcsclite-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/pcsclite-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/pcsclite-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/pcsclite-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/pcsclite-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/pcsclite-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/pcsclite-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/pcsclite-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/pcsclite-01/build/.cache' /repo/sauzeros/extra/pcsclite/build /var/tmp/hokuto/pcsclite-01/output 2.5.2 pcsclite" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build -D libsystemd=true -D libudev=true -D polkit=true -D serial=true -D systemdunit=system
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/pcsclite-01/build[0m
+Build dir: [1m/var/tmp/hokuto/pcsclite-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mpcsc-lite[0m
+Project version: [1m2.5.2[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Checking for function "[1mgetrandom[0m" : [1;32mYES[0m 
+Checking for function "[1mgetopt_long[0m" : [1;32mYES[0m 
+Checking whether type "[1mstruct dirent[0m" has member "[1md_type[0m" : [1;32mYES[0m 
+Program [1mflex[0m found: [1;32mYES[0m (/usr/bin/flex)
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Run-time dependency [1mlibudev[0m found: [1;32mYES[0m [36m261[0m
+Checking for function "[1msecure_getenv[0m" : [1;32mYES[0m 
+Library [1mdl[0m found: [1;32mYES[0m
+Run-time dependency [1mpolkit-gobject-1[0m found: [1;32mYES[0m [36m127[0m
+Run-time dependency [1mlibsystemd[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1msystemd[0m found: [1;32mYES[0m [36m261[0m
+Checking for function "[1msocket[0m" : [1;32mYES[0m 
+Configuring [1mconfig.h[0m using configuration
+Configuring [1mpcsclite.h[0m using configuration
+Configuring [1mpcscd.h[0m using configuration
+Configuring [1mpcscd.socket[0m using configuration
+Configuring [1mpcscd.service[0m using configuration
+Configuring [1mpcscd.8[0m using configuration
+Configuring [1mreader.conf.5[0m using configuration
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Configuring [1mdoxygen.conf[0m using configuration
+Program [1mdoxygen[0m found: [1;31mNO[0m
+meson.build:377: [1;33mWARNING:[0m Documentation disabled without doxygen
+Build targets in project: [1m7[0m
+
+pcsc-lite [36m2.5.2[0m
+
+  [1mUser defined options[0m
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    libsystemd        : true
+    libudev           : true
+    polkit            : true
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    serial            : true
+    systemdunit       : system
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/pcsclite-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/pcsclite-01/build/build'
+[0/46] Compiling C object libpcsclite.so.1.p/src_error.c.o[K[0/46] Compiling C object libpcsclite.so.1.p/src_g_defines.c.o[K[0/46] Compiling C object libpcsclite.so.1.p/src_libredirect.c.o[K[0/46] Compiling C object libpcsclite.so.1.p/src_sys_unix.c.o[K[0/46] Generating 'pcscd.p/configfile.c'[K[0/46] Generating 'pcscd.p/tokenparser.c'[K[0/46] Compiling C object pcscd.p/src_atrhandler.c.o[K[0/46] Compiling C object pcscd.p/src_auth.c.o[K[0/46] Compiling C object pcscd.p/src_debuglog.c.o[K[0/46] Compiling C object pcscd.p/src_dyn_unix.c.o[K[1/46] Generating 'pcscd.p/configfile.c'[K[1/46] Compiling C object pcscd.p/meson-generated_configfile.c.o[K[2/46] Generating 'pcscd.p/tokenparser.c'[K[2/46] Compiling C object pcscd.p/meson-generated_tokenparser.c.o[K[3/46] Compiling C object libpcsclite.so.1.p/src_g_defines.c.o[K[3/46] Compiling C object pcscd.p/src_eventhandler.c.o[K[4/46] Compiling C object pcscd.p/src_atrhandler.c.o[K[4/46] Compiling C object pcscd.p/src_hotplug_generic.c.o[K[5/46] Compiling C object libpcsclite.so.1.p/src_error.c.o[K[5/46] Compiling C object pcscd.p/src_hotplug_libudev.c.o[K[6/46] Compiling C object libpcsclite.so.1.p/src_sys_unix.c.o[K[6/46] Compiling C object pcscd.p/src_hotplug_libusb.c.o[K[7/46] Compiling C object pcscd.p/src_hotplug_generic.c.o[K[7/46] Compiling C object pcscd.p/src_ifdwrapper.c.o[K[8/46] Compiling C object libpcsclite.so.1.p/src_libredirect.c.o[K[8/46] Linking target libpcsclite.so.1[K[9/46] Compiling C object pcscd.p/src_dyn_unix.c.o[K[9/46] Compiling C object pcscd.p/src_pcscdaemon.c.o[K[10/46] Compiling C object pcscd.p/src_hotplug_libusb.c.o[K[10/46] Compiling C object pcscd.p/src_prothandler.c.o[K[11/46] Compiling C object pcscd.p/src_eventhandler.c.o[K[11/46] Compiling C object pcscd.p/src_readerfactory.c.o[K[12/46] Compiling C object pcscd.p/src_debuglog.c.o[K[12/46] Compiling C object pcscd.p/src_simclist.c.o[K[13/46] Compiling C object pcscd.p/src_ifdwrapper.c.o[K[13/46] Compiling C object pcscd.p/src_sys_unix.c.o[K[14/46] Compiling C object pcscd.p/meson-generated_tokenparser.c.o[K[14/46] Compiling C object pcscd.p/src_utils.c.o[K[15/46] Compiling C object pcscd.p/meson-generated_configfile.c.o[K[15/46] Compiling C object pcscd.p/src_winscard.c.o[K[16/46] Compiling C object pcscd.p/src_prothandler.c.o[K[16/46] Compiling C object pcscd.p/src_winscard_msg.c.o[K[17/46] Compiling C object pcscd.p/src_pcscdaemon.c.o[K[17/46] Compiling C object pcscd.p/src_winscard_msg_srv.c.o[K[18/46] Compiling C object pcscd.p/src_sys_unix.c.o[K[18/46] Compiling C object pcscd.p/src_winscard_svc.c.o[K[19/46] Compiling C object pcscd.p/src_hotplug_libudev.c.o[K[19/46] Compiling C object libpcsclite_real.so.1.p/src_debug.c.o[K[20/46] Compiling C object pcscd.p/src_utils.c.o[K[20/46] Compiling C object libpcsclite_real.so.1.p/src_winscard_clnt.c.o[K[21/46] Compiling C object pcscd.p/src_winscard_msg_srv.c.o[K[21/46] Compiling C object libpcsclite_real.so.1.p/src_simclist.c.o[K[22/46] Compiling C object pcscd.p/src_winscard_msg.c.o[K[22/46] Compiling C object libpcsclite_real.so.1.p/src_sys_unix.c.o[K[23/46] Compiling C object pcscd.p/src_winscard.c.o[K[23/46] Compiling C object libpcsclite_real.so.1.p/src_utils.c.o[K[24/46] Compiling C object pcscd.p/src_auth.c.o[K[24/46] Compiling C object libpcsclite_real.so.1.p/src_winscard_msg.c.o[K[25/46] Compiling C object libpcsclite_real.so.1.p/src_debug.c.o[K[25/46] Compiling C object libpcscspy.so.0.p/src_spy_libpcscspy.c.o[K[26/46] Compiling C object libpcsclite_real.so.1.p/src_sys_unix.c.o[K[26/46] Compiling C object libpcscspy.so.0.p/src_sys_unix.c.o[K[27/46] Linking target libpcsclite.so.1[K[27/46] Generating symbol file libpcsclite.so.1.p/libpcsclite.so.1.symbols[K[28/46] Compiling C object pcscd.p/src_simclist.c.o[K[28/46] Compiling C object libpcsclite_fake.so.p/src_libfake.c.o[K[29/46] Compiling C object libpcsclite_real.so.1.p/src_winscard_msg.c.o[K[29/46] Compiling C object testpcsc.p/src_testpcsc.c.o[K[30/46] Compiling C object libpcsclite_real.so.1.p/src_utils.c.o[K[30/46] Compiling C object pcsc_demo.p/doc_example_pcsc_demo.c.o[K[31/46] Compiling C object pcscd.p/src_readerfactory.c.o[K[32/46] Compiling C object pcscd.p/src_winscard_svc.c.o[K[32/46] Linking target pcscd[K[33/46] Compiling C object libpcscspy.so.0.p/src_sys_unix.c.o[K[34/46] Compiling C object libpcsclite_real.so.1.p/src_winscard_clnt.c.o[K[35/46] Compiling C object libpcsclite_fake.so.p/src_libfake.c.o[K[35/46] Linking target libpcsclite_fake.so[K[36/46] Compiling C object testpcsc.p/src_testpcsc.c.o[K[37/46] Compiling C object pcsc_demo.p/doc_example_pcsc_demo.c.o[K[38/46] Compiling C object libpcscspy.so.0.p/src_spy_libpcscspy.c.o[K[38/46] Linking target libpcscspy.so.0[K[39/46] Compiling C object libpcsclite_real.so.1.p/src_simclist.c.o[K[39/46] Linking target libpcsclite_real.so.1[K[40/46] Linking target libpcsclite_fake.so[K[41/46] Generating symbol file libpcsclite.so.1.p/libpcsclite.so.1.symbols[K[41/46] Linking target testpcsc[K[41/46] Linking target pcsc_demo[K[42/46] Linking target testpcsc[K[43/46] Linking target pcsc_demo[K[44/46] Linking target libpcscspy.so.0[K[45/46] Linking target libpcsclite_real.so.1[K[46/46] Linking target pcscd[K
+ninja: Entering directory `/var/tmp/hokuto/pcsclite-01/build/build'
+ninja: no work to do.
+Installing pcscd to /var/tmp/hokuto/pcsclite-01/output/usr/bin
+Installing libpcsclite.so.1 to /var/tmp/hokuto/pcsclite-01/output/usr/lib
+Installing libpcsclite_real.so.1 to /var/tmp/hokuto/pcsclite-01/output/usr/lib
+Installing libpcscspy.so.0 to /var/tmp/hokuto/pcsclite-01/output/usr/lib
+Installing /var/tmp/hokuto/pcsclite-01/build/src/PCSC/debuglog.h to /var/tmp/hokuto/pcsclite-01/output/usr/include/PCSC
+Installing /var/tmp/hokuto/pcsclite-01/build/src/PCSC/ifdhandler.h to /var/tmp/hokuto/pcsclite-01/output/usr/include/PCSC
+Installing /var/tmp/hokuto/pcsclite-01/build/src/PCSC/reader.h to /var/tmp/hokuto/pcsclite-01/output/usr/include/PCSC
+Installing /var/tmp/hokuto/pcsclite-01/build/src/PCSC/winscard.h to /var/tmp/hokuto/pcsclite-01/output/usr/include/PCSC
+Installing /var/tmp/hokuto/pcsclite-01/build/src/PCSC/wintypes.h to /var/tmp/hokuto/pcsclite-01/output/usr/include/PCSC
+Installing /var/tmp/hokuto/pcsclite-01/build/src/spy/pcsc-spy to /var/tmp/hokuto/pcsclite-01/output/usr/bin
+Installing /var/tmp/hokuto/pcsclite-01/build/src/spy/setup_spy.sh to /var/tmp/hokuto/pcsclite-01/output/usr/share/doc/pcsc-lite
+Installing /var/tmp/hokuto/pcsclite-01/build/pcsc-spy.1 to /var/tmp/hokuto/pcsclite-01/output/usr/share/man/man1
+Installing /var/tmp/hokuto/pcsclite-01/build/doc/org.debian.pcsc-lite.policy to /var/tmp/hokuto/pcsclite-01/output/usr/share/polkit-1/actions
+Installing /var/tmp/hokuto/pcsclite-01/build/etc/fr.apdu.pcsclite.metainfo.xml to /var/tmp/hokuto/pcsclite-01/output/usr/share/metainfo
+Installing /var/tmp/hokuto/pcsclite-01/build/etc/pcscd to /var/tmp/hokuto/pcsclite-01/output/etc/default
+Installing /var/tmp/hokuto/pcsclite-01/build/build/pcsclite.h to /var/tmp/hokuto/pcsclite-01/output/usr/include/PCSC
+Installing /var/tmp/hokuto/pcsclite-01/build/build/pcscd.socket to /var/tmp/hokuto/pcsclite-01/output/usr/lib/systemd/system
+Installing /var/tmp/hokuto/pcsclite-01/build/build/pcscd.service to /var/tmp/hokuto/pcsclite-01/output/usr/lib/systemd/system
+Installing /var/tmp/hokuto/pcsclite-01/build/etc/pcscd-sysusers.conf to /var/tmp/hokuto/pcsclite-01/output/usr/lib/sysusers.d
+Installing /var/tmp/hokuto/pcsclite-01/build/build/pcscd.8 to /var/tmp/hokuto/pcsclite-01/output/usr/share/man/man8
+Installing /var/tmp/hokuto/pcsclite-01/build/build/reader.conf.5 to /var/tmp/hokuto/pcsclite-01/output/usr/share/man/man5
+Installing /var/tmp/hokuto/pcsclite-01/build/build/meson-private/libpcsclite.pc to /var/tmp/hokuto/pcsclite-01/output/usr/lib/pkgconfig
+Installing symlink pointing to libpcsclite.so.1 to /var/tmp/hokuto/pcsclite-01/output/usr/lib/libpcsclite.so
+Installing symlink pointing to libpcsclite_real.so.1 to /var/tmp/hokuto/pcsclite-01/output/usr/lib/libpcsclite_real.so
+Installing symlink pointing to libpcscspy.so.0 to /var/tmp/hokuto/pcsclite-01/output/usr/lib/libpcscspy.so
+
+Script done on 2026-09-20 19:32:27+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mpcsclite[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mSun, 20 Sep 2026 12:32:27 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m3s[0m
