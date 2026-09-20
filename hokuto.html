@@ -175,6 +175,10 @@
             $3: package name<br>
             $HOKUTO_ARCH: build arch (aarch64 or x86_64)<br>
             $HOKUTO_CROSS: (1 or 0) and $HOKUTO_CARCH (arm64)<br>
+            $HOKUTO_CROSS_SYSTEM: (1 or 0) set when building the cross-system toolchain (-cross=arm64,system)<br>
+            $CROSS_PREFIX: prefix the build should install into; /usr for native and plain cross builds,
+            /usr/&lt;triplet&gt; for cross-system builds. The usual idiom is
+            <code>PREFIX="${CROSS_PREFIX:-/usr}"</code><br>
             $HOKUTO_LTO: whether LTO is enabled for the current build (1 or 0)<br>
             $MULTILIB: (1 or 0)<br>
             $HOKUTO_ROOT: rootdir, usually / but can be set to another dir<br>
@@ -191,28 +195,64 @@
             <li><code>pkgname</code>: runtime/build dependency</li>
             <li><code>pkgname==17.*</code>: require any release from major version 17</li>
             <li><code>pkgname make</code>: build dependency</li>
+            <li><code>pkgname makeopt</code>: optional binary-only build dependency. Hokuto uses an installed package or
+              installs an available binary version for the build, but continues without it when no binary is available.
+              Packages installed only for the build are removed afterward</li>
             <li><code>pkgname optional</code>: package will be automatically rebuilt once the dependency is available
               (solves circular deps)</li>
             <li><code>pkgname runtime</code>: runtime only dependency</li>
             <li><code>pkgname suggest "comment"</code>: suggested optional dependency</li>
             <li><code>pkgname rebuild</code>: forces rebuild of package even if already installed, only enabled with
               -rebuilds build command flag</li>
-            <li><code>pkgname cross make</code>: cross (arm64) build dependency</li>
+            <li><code>pkgname cross</code>: cross (arm64) runtime dependency, e.g. <code>aarch64-zlib-ng cross</code> as
+              a dependency of <code>file</code> pulls in <code>aarch64-zlib-ng</code> whenever <code>aarch64-file</code>
+              is built/installed, and it stays a real (always-verified) dependency afterward, same as a plain
+              dependency line but scoped to cross builds</li>
+            <li><code>pkgname cross make</code>: cross (arm64) build-time-only dependency; only needed while building
+              the cross target, not required once it's installed (e.g. <code>aarch64-gcc cross make</code>)</li>
+            <li><strong>Prefixed vs bare cross dependencies.</strong> A cross dependency whose name carries the target
+              arch prefix (<code>aarch64-gcc cross make</code>, <code>aarch64-libelf cross make</code>) is a target
+              artifact, built for the target and installed into the sysroot. A cross dependency with a bare name
+              (<code>mercurial cross make</code>, <code>cmake cross make</code>) is a <em>host</em> tool the cross
+              build needs and is built/installed natively — use this when there is no sensible
+              <code>aarch64-*</code> counterpart. A cross dependency naming a different architecture
+              (<code>x86_64-gcc cross make</code> while targeting arm64) is ignored, so one depends file can list
+              several targets</li>
+            <li><code>pkgname crossnative</code>: like <code>cross</code>, but skipped when building the cross-system
+              toolchain itself (<code>-cross=arm64,system</code>)</li>
+            <li><code>pkgname crossnative make</code>: like <code>cross make</code>, but skipped when building the
+              cross-system toolchain itself</li>
+            <li><strong>Cross builds only honor cross dependencies.</strong> Under <code>-cross=&lt;arch&gt;</code>
+              (with or without <code>,system</code>) every dependency line that is neither tagged
+              <code>cross</code>/<code>crossnative</code> nor already carries the target arch prefix
+              (<code>aarch64-*</code>) is ignored, including plain <code>make</code> dependencies. Those lines
+              describe the native build of the package; a cross build must declare what it needs explicitly. So a
+              recipe that needs e.g. <code>pahole</code> for both builds lists it twice: <code>pahole make</code>
+              for native and <code>pahole cross make</code> for cross</li>
             <li><code>== <> => <= version</code> (eg <code>ffmpeg<=7.2.0</code>): dependency version constraints. hokuto
               can build older versions by fetching the package from the repo git history</li>
             <li><code>package1 | package2</code>: hokuto will prompt which dependency to use</li>
           </ul>
         </li>
+        <li><strong>equivalents</strong> (repository root): mutually exclusive, dependency-compatible package pairs,
+          one pair per line as <code>upstream-package replacement-package</code>. Either installed package satisfies an
+          unconstrained dependency on the other. Installing one replaces the other, and generated library dependencies
+          use an ordered <code>replacement | upstream</code> alternative for replacement packages. Version-constrained
+          dependencies remain exact. The relevant pair is embedded in built packages so replacement also works when
+          installing exclusively from a binary mirror</li>
         <li>
           <strong>options</strong>:
           <div class="options-list">
             <code>asroot</code>: build package as root<br>
             <code>binary</code>: binary package with bundled deps, ignored by automatic dependency resolver and built without base-devel<br>
             <code>clang</code>: sets flto=auto for clang builds<br>
+            <code>cross</code>: the recipe is prepared for cross builds. Only needed when that cannot be seen from
+            the recipe itself, e.g. an arch-independent package, or one that needs no changes at all<br>
             <code>cross-simple</code>: use the native host compiler instead of the cross-compiler<br>
             <code>devel</code>: install base-devel for a binary or nodevel package that explicitly requires build tools<br>
             <code>host-tool</code>: don't modify the PATH in the build env to include the cross-toolchain binaries<br>
             <code>interactive</code>: shows build output log and allows interactive scripts<br>
+            <code>nocross</code>: never cross build this package, whatever the recipe looks like<br>
             <code>nocrossopt</code>: don't enable CFLAGS_ARM64 for cross builds<br>
             <code>nodevel</code>: don't install base-devel packages for this build<br>
             <code>noram</code>: build in TMPDIR2<br>
@@ -232,6 +272,8 @@
             <li><code>${version}</code>: The raw version from the version file.</li>
             <li><code>${version-clean}</code>: Version with underscores (_) replaced by dots (.) (e.g., 1_2_3-1 →
               1.2.3-1).</li>
+            <li><code>${version-undertomid}</code>: Version with underscores (_) replaced by dashes (-) (e.g.,
+              6.1.2_1 → 6.1.2-1).</li>
             <li><code>${version_}</code>: Version with dots (.) replaced by underscores (_).</li>
             <li><code>${version-}</code>: Version with dots (.) replaced by dashes (-).</li>
             <li><code>${version-major}</code>: 1.2.3 -> 1</li>
@@ -247,6 +289,70 @@
         </li>
         <li><strong>version</strong>: version revision</li>
       </ul>
+    </div>
+
+    <div class="section">
+      <h3>Cross Build Support</h3>
+      <p>
+        Cross building a recipe that was never adapted for it rarely fails outright. Configure scripts fall back to
+        host defaults, the build picks up the host's headers and libraries, and the result looks like a package right
+        up until something links against it or it is installed on the target. Hokuto therefore refuses such a build
+        instead of producing one.
+      </p>
+      <p>A recipe counts as prepared for cross builds when any of these is true:</p>
+      <ul>
+        <li>its <code>options</code> file contains <code>cross</code></li>
+        <li>its <code>build</code> script branches on the cross environment, that is it mentions
+          <code>CROSS_PREFIX</code>, <code>HOKUTO_CROSS</code> or <code>CROSS_COMPILE</code> outside a comment</li>
+        <li>its <code>depends</code> file declares <code>cross</code> or <code>crossnative</code> dependencies</li>
+      </ul>
+      <p>
+        Both of the last two are needed because neither is sufficient on its own: low level packages such as
+        <code>brotli</code> and <code>gmp</code> handle <code>CROSS_PREFIX</code> but have too few dependencies for any
+        of them to be marked <code>cross</code>, while <code>shadow</code> and <code>linux-rpi4</code> carry cross
+        dependencies without naming hokuto's variables in their script.
+      </p>
+      <p>
+        <code>options</code> wins over what the recipe looks like, in both directions: <code>cross</code> marks a recipe
+        that needs no changes (an arch-independent or data-only package, for instance), and <code>nocross</code> holds
+        one back that would otherwise pass. The check applies to both <code>-cross=&lt;arch&gt;</code> and
+        <code>-cross=&lt;arch&gt;,system</code>, and not to plain build dependencies that are compiled natively during
+        a cross session.
+      </p>
+      <div class="env-vars">
+        <strong>To build an unprepared recipe anyway, while adapting it:</strong><br>
+        <code>HOKUTO_ALLOW_UNCONFIGURED_CROSS=1 hokuto build -cross=arm64 pkgname</code>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Binary Packages</h3>
+      <p>
+        A binary package is an ordinary <code>.tar.zst</code>, readable by <code>tar --zstd -xf</code> and any zstd
+        implementation. It is compressed as a series of independent zstd frames rather than one, which is what lets
+        hokuto decompress it on several cores when installing; a single frame can only ever be decoded by one.
+      </p>
+      <p>
+        The frame size is chosen from the size of the package so that it lands on about half the machine's cores,
+        clamped between 32 MiB and 256 MiB. Cutting the stream costs a little compression ratio, because matches can no
+        longer reach back across a frame boundary, and the clamps keep that in the region of a fraction of a percent
+        for large packages. A package small enough to fit in one frame is compressed exactly as it was before.
+      </p>
+      <p>
+        Installing unpacks into a staging directory and then moves the tree into place. When staging and the target
+        root are on the same filesystem, that move is done with hard links: mode, ownership, timestamps, xattrs and
+        ACLs come along with the inode, files hard linked to each other inside the package stay linked, and no file
+        content is copied a second time. Entries are created under a temporary name and renamed into place, so a
+        process already running from a file keeps the inode it started with. Directory symlinks in the root
+        (<code>/bin</code>, <code>/lib</code>, <code>/sbin</code> and friends) are written through, not replaced.
+        Hokuto falls back to rsync when the two are on different filesystems.
+      </p>
+      <div class="env-vars">
+        <strong>Overrides:</strong><br>
+        <code>HOKUTO_ZSTD_CHUNK_MB=N</code>: force a frame size in MiB; <code>0</code> packs single-frame archives the
+        way hokuto did before<br>
+        <code>HOKUTO_NO_HARDLINK_INSTALL=1</code>: place files with rsync instead of hard links
+      </div>
     </div>
 
     <div class="section">
