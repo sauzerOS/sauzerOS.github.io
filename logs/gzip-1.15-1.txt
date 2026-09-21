@@ -1,0 +1,468 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgzip[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mgzip 1.15-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 21 Sep 2026 04:47:26 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgzip[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mcoreutils glibc grep sed less[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgzip[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 coreutils-9.12-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-2 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 less-710-2 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-21 11:47:26+07:00 [COMMAND="cd /var/tmp/hokuto/gzip-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/gzip-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/gzip-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/gzip-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/gzip-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/gzip-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/gzip-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/gzip-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/gzip-01/build/.cache' /repo/sauzeros/core/gzip/build /var/tmp/hokuto/gzip-01/output 1.15 gzip" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking how to run the C preprocessor... cc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for less... less
+checking for more... more
+checking for nm... gcc-nm
+checking whether ln -s works... yes
+checking for a POSIX-compliant shell... /bin/sh
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for stdbool.h... yes
+checking for byteswap.h... yes
+checking for sys/socket.h... yes
+checking for dirent.h... yes
+checking for endian.h... yes
+checking for sys/endian.h... no
+checking for error.h... yes
+checking for stdio_ext.h... yes
+checking for getopt.h... yes
+checking for sys/process.h... no
+checking for sys/time.h... yes
+checking for limits.h... yes
+checking for sys/param.h... yes
+checking for stdbit.h... yes
+checking for stdckdint.h... yes
+checking for stdcountof.h... yes
+checking for utime.h... yes
+checking for sys/sdt.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for egrep -e... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... gcc-ar
+checking for cc option to support large files... none needed
+checking for cc option to support timestamps after 2038... none needed
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking whether malloc is ptrdiff_t safe... yes
+checking whether malloc, calloc set errno on failure... yes
+checking for _set_invalid_parameter_handler... no
+checking for fcntl... yes
+checking for symlink... yes
+checking for fpurge... no
+checking for fsync... yes
+checking for getdtablesize... yes
+checking for getexecname... no
+checking for gettimeofday... yes
+checking for lstat... yes
+checking for pthread_sigmask... yes
+checking for sigprocmask... yes
+checking for readlink... yes
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for siginterrupt... yes
+checking for vasprintf... yes
+checking for utimens... no
+checking for lutimens... no
+checking for chown... yes
+checking for fchmod... yes
+checking for fchown... yes
+checking for fdopendir... yes
+checking for openat... yes
+checking for opendir... yes
+checking for unlinkat... yes
+checking for inline... inline
+checking whether to enable CRC slice-by-8 algorithm... yes
+checking if pclmul intrinsic exists... yes
+checking for cc options to detect undeclared functions... none needed
+checking for cc options to ignore future-version functions... none needed
+checking whether byte ordering is bigendian... (cached) no
+checking if endian.h defines stdint types... no
+checking if endian.h defines functions and macros... yes
+checking for complete errno.h... yes
+checking for error... yes
+checking whether error_at_line is declared... yes
+checking for error_at_line... yes
+checking for working error function... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking whether ctype.h defines __header_inline... no
+checking whether fflush works on input streams... yes
+checking whether fclose works on input streams... yes
+checking for working fcntl.h... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether fdatasync is declared... yes
+checking whether fopen recognizes a trailing slash... yes
+checking whether stdin defaults to large file offsets... yes
+checking for off64_t... yes
+checking for blksize_t... yes
+checking for blkcnt_t... yes
+checking whether fseeko is declared... yes
+checking for fseeko... yes
+checking whether fflush works on input streams... (cached) yes
+checking whether stat file-mode macros are broken... no
+checking for C/C++ restrict keyword... __restrict__
+checking for nlink_t... yes
+checking whether ftello is declared... yes
+checking whether ungetc works on arbitrary bytes... yes
+checking for ftello... yes
+checking whether ftello works... yes
+checking whether getdtablesize is declared... yes
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking for working GNU getopt_long function... yes
+checking for glibc-compatible sys/cdefs.h... yes
+checking whether timespec_get is declared... yes
+checking for timespec_get... yes
+checking for struct timeval... yes
+checking for wide-enough struct timeval.tv_sec member... yes
+checking whether limits.h has WORD_BIT, BOOL_WIDTH etc.... yes
+checking whether limits.h has SSIZE_MAX... yes
+checking whether the compiler produces multi-arch binaries... no
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h works without ISO C predefines... yes
+checking whether stdint.h has UINTMAX_WIDTH etc.... yes
+checking whether INT32_MAX < INTMAX_MAX... yes
+checking whether INT64_MAX == LONG_MAX... yes
+checking whether UINT32_MAX < UINTMAX_MAX... yes
+checking whether UINT64_MAX == ULONG_MAX... yes
+checking whether lstat correctly handles trailing slash... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking whether malloc (0) returns nonnull... (cached) yes
+checking whether memeq is declared... no
+checking whether <limits.h> defines MIN and MAX... no
+checking whether <sys/param.h> defines MIN and MAX... yes
+checking for O_CLOEXEC... yes
+checking for promoted mode_t type... mode_t
+checking for sigset_t... yes
+checking whether realloc should abort upon undefined behaviour... no
+checking for uid_t... yes
+checking for gid_t... yes
+checking for volatile sig_atomic_t... yes
+checking for sighandler_t... yes
+checking whether stdc_rotate_left_uc is declared... no
+checking whether stdckdint.h can be included in C... yes
+checking checking for an ISO C23 compliant stdckdint.h in C... yes
+checking whether stdckdint.h can be included in C++... yes
+checking checking for an ISO C++26 compliant stdckdint.h in C++... no
+checking whether the C++ compiler has <stdcountof.h>... no
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking for unreachable in C... yes
+checking whether nullptr_t needs <stddef.h>... yes
+checking whether <stddef.h> is idempotent... guessing yes
+checking whether fcloseall is declared... yes
+checking whether getw is declared... yes
+checking whether putw is declared... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether ecvt is declared... yes
+checking whether fcvt is declared... yes
+checking whether gcvt is declared... yes
+checking whether MB_CUR_MAX is correct... no
+checking whether streq is declared... no
+checking whether strerror(0) succeeds... yes
+checking for struct timespec in <time.h>... yes
+checking for TIME_UTC in <time.h>... yes
+checking whether execvpe is declared... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking whether fileno_unlocked is declared... yes
+checking whether fputc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getc_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking whether the utimes function works... yes
+checking for C compiler option to allow warnings... -Wno-error
+checking for alignas and alignof... yes, keywords
+checking for alloca as a compiler built-in... yes
+checking for static_assert... yes, a keyword
+checking for bool, true, false... yes
+checking for working bswap_16, bswap_32, bswap_64... yes
+checking whether calloc (0, n) and calloc (n, 0) return nonnull... yes
+checking for library containing clock_gettime... none required
+checking for clock_getres... yes
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking for closedir... yes
+checking for dirfd... yes
+checking whether dirfd is declared... yes
+checking whether dirfd is a macro... no
+checking whether // is distinct from /... no
+checking whether dup2 works... yes
+checking whether fcntl handles F_DUPFD correctly... yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... needs runtime check
+checking for fdatasync... yes
+checking whether fflush works on input streams... (cached) yes
+checking for __fpurge... yes
+checking whether fpurge is declared... no
+checking for __freading... yes
+checking whether free is known to preserve errno... yes
+checking for fseeko... (cached) yes
+checking whether fflush works on input streams... (cached) yes
+checking for __fseterr... no
+checking for ftello... (cached) yes
+checking whether ftello works... (cached) yes
+checking whether getdtablesize works... yes
+checking for getprogname... no
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... yes
+checking whether __argv is declared... no
+checking for gettimeofday with POSIX signature... yes
+checking for C compiler flag to ignore unused libraries... -Wl,--as-needed
+checking whether lseek detects pipes... yes
+checking whether SEEK_DATA works but is incompatible with GNU... no
+checking whether open recognizes a trailing slash... yes
+checking for opendir... (cached) yes
+checking whether pthread_sigmask is a macro... no
+checking whether pthread_sigmask works without -lpthread... yes
+checking whether pthread_sigmask returns error numbers... yes
+checking for qsort_r... yes
+checking for qsort_r signature... GNU
+checking for raise... yes
+checking for readdir... yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... yes
+checking whether readlink truncates results correctly... yes
+checking whether realloc sets errno on failure... yes
+checking whether realloc (..., 0) returns nonnull... no
+checking for reallocarray... yes
+checking for struct sigaction.sa_sigaction... yes
+checking for ssize_t... yes
+checking whether stat handles trailing slashes on files... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for stpcpy... yes
+checking for working strerror function... yes
+checking whether time() works... guessing no
+checking for utime... yes
+checking whether utime handles trailing slashes on files... yes
+checking for futimes... yes
+checking for futimesat... yes
+checking for lutimes... yes
+checking for futimens... yes
+checking for utimensat... yes
+checking for variable-length arrays... yes
+checking for underline in external names... no
+checking for an assembler syntax supported by this package... no
+checking for off_t... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating tests/Makefile
+config.status: creating lib/config.h
+config.status: executing depfiles commands
+  GEN      version.c
+  GEN      version.h
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/gzip-01/build'
+Making all in lib
+make[2]: Entering directory '/var/tmp/hokuto/gzip-01/build/lib'
+  GEN      alloca.h
+  GEN      endian.h
+  GEN      dirent.h
+  GEN      error.h
+  GEN      fcntl.h
+  GEN      limits.h
+  GEN      inttypes.h
+  GEN      signal.h
+  GEN      stdbit.h
+  GEN      stdckdint.h
+  GEN      stdcountof.h
+  GEN      stddef.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      sys/stat.h
+  GEN      sys/time.h
+  GEN      sys/types.h
+  GEN      time.h
+  GEN      unistd.h
+  GEN      utime.h
+make  all-am
+make[3]: Entering directory '/var/tmp/hokuto/gzip-01/build/lib'
+  CC       libgzip_a-basename-lgpl.o
+  CC       libgzip_a-cloexec.o
+  CC       libgzip_a-c-ctype.o
+  CC       libgzip_a-cpu-supports.o
+  CC       libgzip_a-crc.o
+  CC       libgzip_a-dirname-lgpl.o
+  CC       libgzip_a-crc-x86_64-pclmul.o
+  CC       libgzip_a-stripslash.o
+  CC       libgzip_a-endian.o
+  CC       libgzip_a-exitfail.o
+  CC       libgzip_a-fcntl.o
+  CC       libgzip_a-fd-hook.o
+  CC       libgzip_a-fpurge.o
+  CC       libgzip_a-freading.o
+  CC       libgzip_a-fseterr.o
+  CC       libgzip_a-getprogname.o
+  CC       libgzip_a-gettime.o
+  CC       libgzip_a-ialloc.o
+  CC       libgzip_a-issymlink.o
+  CC       libgzip_a-malloca.o
+  CC       libgzip_a-memeq.o
+  CC       libgzip_a-quotearg.o
+  CC       libgzip_a-realloc.o
+  CC       libgzip_a-reallocarray.o
+  CC       libgzip_a-sig-handler.o
+  CC       libgzip_a-savedir.o
+  CC       libgzip_a-stat-time.o
+  CC       libgzip_a-stdc_memreverse8u.o
+  CC       libgzip_a-stdlib.o
+  CC       libgzip_a-stdopen.o
+  CC       libgzip_a-streq.o
+  CC       libgzip_a-strnul.o
+  CC       libgzip_a-time.o
+  CC       libgzip_a-timespec.o
+  CC       libgzip_a-unistd.o
+  CC       libgzip_a-utimens.o
+  CC       libgzip_a-xmalloc.o
+  CC       libgzip_a-xalloc-die.o
+  CC       libgzip_a-yesno.o
+  AR       libgzip.a
+make[3]: Leaving directory '/var/tmp/hokuto/gzip-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/gzip-01/build/lib'
+Making all in doc
+make[2]: Entering directory '/var/tmp/hokuto/gzip-01/build/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/gzip-01/build/doc'
+Making all in .
+make[2]: Entering directory '/var/tmp/hokuto/gzip-01/build'
+  CC       bits.o
+  CC       gzip.o
+  CC       deflate.o
+  CC       inflate.o
+  CC       trees.o
+  CC       unlzh.o
+  CC       unpack.o
+  CC       unlzw.o
+  CC       unzip.o
+  CC       util.o
+  CC       zip.o
+  CC       version.o
+  GEN      gunzip
+  GEN      gzexe
+  GEN      zcat
+  GEN      zcmp
+  GEN      zdiff
+  GEN      zegrep
+  GEN      zfgrep
+  GEN      zforce
+  GEN      zgrep
+  GEN      zless
+  GEN      zmore
+  GEN      znew
+  AR       libver.a
+  CCLD     gzip
+make[2]: Leaving directory '/var/tmp/hokuto/gzip-01/build'
+Making all in tests
+make[2]: Entering directory '/var/tmp/hokuto/gzip-01/build/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/gzip-01/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/gzip-01/build'
+make  install-recursive
+make[1]: Entering directory '/var/tmp/hokuto/gzip-01/build'
+Making install in lib
+make[2]: Entering directory '/var/tmp/hokuto/gzip-01/build/lib'
+make  install-am
+make[3]: Entering directory '/var/tmp/hokuto/gzip-01/build/lib'
+make[4]: Entering directory '/var/tmp/hokuto/gzip-01/build/lib'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/gzip-01/build/lib'
+make[3]: Leaving directory '/var/tmp/hokuto/gzip-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/gzip-01/build/lib'
+Making install in doc
+make[2]: Entering directory '/var/tmp/hokuto/gzip-01/build/doc'
+make[3]: Entering directory '/var/tmp/hokuto/gzip-01/build/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/gzip-01/output/usr/share/info'
+ /usr/bin/install -c -m 644 ./gzip.info '/var/tmp/hokuto/gzip-01/output/usr/share/info'
+ install-info --info-dir='/var/tmp/hokuto/gzip-01/output/usr/share/info' '/var/tmp/hokuto/gzip-01/output/usr/share/info/gzip.info'
+make[3]: Leaving directory '/var/tmp/hokuto/gzip-01/build/doc'
+make[2]: Leaving directory '/var/tmp/hokuto/gzip-01/build/doc'
+Making install in .
+make[2]: Entering directory '/var/tmp/hokuto/gzip-01/build'
+make[3]: Entering directory '/var/tmp/hokuto/gzip-01/build'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/gzip-01/output/usr/bin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/gzip-01/output/usr/bin'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/gzip-01/output/usr/share/man/man1'
+ /usr/bin/install -c gunzip gzexe zcat zcmp zdiff zegrep zfgrep zforce zgrep zless zmore znew '/var/tmp/hokuto/gzip-01/output/usr/bin'
+  /usr/bin/install -c gzip '/var/tmp/hokuto/gzip-01/output/usr/bin'
+ /usr/bin/install -c -m 644 gunzip.1 gzexe.1 gzip.1 zcat.1 zcmp.1 zdiff.1 zforce.1 zgrep.1 zless.1 zmore.1 znew.1 '/var/tmp/hokuto/gzip-01/output/usr/share/man/man1'
+make  install-exec-hook
+make[4]: Entering directory '/var/tmp/hokuto/gzip-01/build'
++ cd /var/tmp/hokuto/gzip-01/output/usr/bin
++ rm -f uncompress
++ case remove-installed-links in
++ cd /var/tmp/hokuto/gzip-01/output/usr/bin
++ rm -f uncompress
++ case install-exec-hook in
++ ln gunzip uncompress
+make[4]: Leaving directory '/var/tmp/hokuto/gzip-01/build'
+make[3]: Leaving directory '/var/tmp/hokuto/gzip-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/gzip-01/build'
+Making install in tests
+make[2]: Entering directory '/var/tmp/hokuto/gzip-01/build/tests'
+make[3]: Entering directory '/var/tmp/hokuto/gzip-01/build/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/gzip-01/build/tests'
+make[2]: Leaving directory '/var/tmp/hokuto/gzip-01/build/tests'
+make[1]: Leaving directory '/var/tmp/hokuto/gzip-01/build'
+
+Script done on 2026-09-21 11:47:41+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mgzip[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 21 Sep 2026 04:47:41 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m14s[0m
