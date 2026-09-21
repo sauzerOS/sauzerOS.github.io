@@ -1,0 +1,253 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfribidi[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mfribidi 1.0.17-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 21 Sep 2026 04:47:13 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfribidi[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc meson[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfribidi[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-2 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.14-1 lib32-gcc-libs-16.2.0-2 lib32-glibc-2.44-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-2 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-21 11:47:13+07:00 [COMMAND="cd /var/tmp/hokuto/fribidi-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/fribidi-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/fribidi-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/fribidi-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/fribidi-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/fribidi-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/fribidi-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/fribidi-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/fribidi-01/build/.cache' /repo/sauzeros/extra/fribidi/build /var/tmp/hokuto/fribidi-01/output 1.0.17 fribidi" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/fribidi-01/build[0m
+Build dir: [1m/var/tmp/hokuto/fribidi-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mfribidi[0m
+Project version: [1m1.0.17[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+Checking for function "[1mmemmove[0m" : [1;32mYES[0m 
+Checking for function "[1mmemset[0m" : [1;32mYES[0m 
+Checking for function "[1mstrdup[0m" : [1;32mYES[0m 
+Has header "[1mstdlib.h[0m" : [1;32mYES[0m 
+Has header "[1mstring.h[0m" : [1;32mYES[0m 
+Has header "[1mmemory.h[0m" : [1;32mYES[0m 
+Has header "[1mstrings.h[0m" : [1;32mYES[0m 
+Has header "[1msys/times.h[0m" : [1;32mYES[0m 
+Has header "[1mstrings.h[0m" : [1;32mYES[0m [1;34m(cached)[0m
+Configuring [1mconfig.h[0m using configuration
+Has header "[1mstdlib.h[0m" : [1;32mYES[0m [1;34m(cached)[0m
+Has header "[1mstring.h[0m" : [1;32mYES[0m [1;34m(cached)[0m
+Has header "[1mstrings.h[0m" : [1;32mYES[0m [1;34m(cached)[0m
+Checking for size of "[1mint[0m" : [1m4[0m 
+Configuring [1mfribidi-config.h[0m using configuration
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+[1mMessage:[0m Have pre-generated man pages: true
+Program [1mtest-runner.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fribidi-01/build/test/test-runner.py)
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+[1mMessage:[0m Have pre-generated man pages: true
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Build targets in project: [1m22[0m
+
+fribidi [36m1.0.17[0m
+
+  [1mUser defined options[0m
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/fribidi-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/fribidi-01/build/build'
+[0/65] Compiling C object gen.tab/gen-unicode-version.p/gen-unicode-version.c.o[K[1/65] Compiling C object gen.tab/gen-unicode-version.p/gen-unicode-version.c.o[K[1/65] Linking target gen.tab/gen-unicode-version[K[2/65] Linking target gen.tab/gen-unicode-version[K[2/65] Generating gen.tab/fribidi-unicode-version.h with a custom command (wrapped by meson to capture output)[K[3/65] Generating gen.tab/fribidi-unicode-version.h with a custom command (wrapped by meson to capture output)[K[3/65] Compiling C object gen.tab/gen-bidi-type-tab.p/gen-bidi-type-tab.c.o[K[3/65] Compiling C object gen.tab/gen-bidi-type-tab.p/packtab.c.o[K[3/65] Compiling C object gen.tab/gen-joining-type-tab.p/gen-joining-type-tab.c.o[K[3/65] Compiling C object gen.tab/gen-joining-type-tab.p/packtab.c.o[K[3/65] Compiling C object gen.tab/gen-arabic-shaping-tab.p/gen-arabic-shaping-tab.c.o[K[3/65] Compiling C object gen.tab/gen-arabic-shaping-tab.p/packtab.c.o[K[3/65] Compiling C object gen.tab/gen-mirroring-tab.p/gen-mirroring-tab.c.o[K[3/65] Compiling C object gen.tab/gen-mirroring-tab.p/packtab.c.o[K[3/65] Compiling C object gen.tab/gen-brackets-tab.p/gen-brackets-tab.c.o[K[3/65] Compiling C object gen.tab/gen-brackets-tab.p/packtab.c.o[K[4/65] Compiling C object gen.tab/gen-arabic-shaping-tab.p/gen-arabic-shaping-tab.c.o[K[4/65] Compiling C object gen.tab/gen-brackets-type-tab.p/gen-brackets-type-tab.c.o[K[5/65] Compiling C object gen.tab/gen-joining-type-tab.p/gen-joining-type-tab.c.o[K[5/65] Compiling C object gen.tab/gen-brackets-type-tab.p/packtab.c.o[K[6/65] Compiling C object gen.tab/gen-brackets-tab.p/gen-brackets-tab.c.o[K[6/65] Compiling C object bin/fribidi.p/fribidi-main.c.o[K[7/65] Compiling C object gen.tab/gen-bidi-type-tab.p/gen-bidi-type-tab.c.o[K[7/65] Compiling C object bin/fribidi.p/getopt.c.o[K[8/65] Compiling C object gen.tab/gen-mirroring-tab.p/gen-mirroring-tab.c.o[K[8/65] Compiling C object bin/fribidi.p/getopt1.c.o[K[9/65] Compiling C object gen.tab/gen-mirroring-tab.p/packtab.c.o[K[9/65] Linking target gen.tab/gen-mirroring-tab[K[10/65] Compiling C object gen.tab/gen-arabic-shaping-tab.p/packtab.c.o[K[10/65] Linking target gen.tab/gen-arabic-shaping-tab[K[11/65] Compiling C object gen.tab/gen-brackets-type-tab.p/gen-brackets-type-tab.c.o[K[11/65] Compiling C object bin/fribidi-benchmark.p/fribidi-benchmark.c.o[K[12/65] Compiling C object bin/fribidi.p/getopt1.c.o[K[12/65] Compiling C object bin/fribidi-benchmark.p/getopt.c.o[K[13/65] Compiling C object bin/fribidi.p/getopt.c.o[K[13/65] Compiling C object bin/fribidi-benchmark.p/getopt1.c.o[K[14/65] Compiling C object bin/fribidi.p/fribidi-main.c.o[K[14/65] Compiling C object bin/fribidi-bidi-types.p/fribidi-bidi-types.c.o[K[15/65] Compiling C object gen.tab/gen-bidi-type-tab.p/packtab.c.o[K[15/65] Linking target gen.tab/gen-bidi-type-tab[K[16/65] Compiling C object gen.tab/gen-joining-type-tab.p/packtab.c.o[K[16/65] Linking target gen.tab/gen-joining-type-tab[K[17/65] Compiling C object gen.tab/gen-brackets-type-tab.p/packtab.c.o[K[17/65] Linking target gen.tab/gen-brackets-type-tab[K[18/65] Compiling C object gen.tab/gen-brackets-tab.p/packtab.c.o[K[18/65] Linking target gen.tab/gen-brackets-tab[K[19/65] Compiling C object bin/fribidi-benchmark.p/getopt.c.o[K[19/65] Compiling C object bin/fribidi-caprtl2utf8.p/fribidi-caprtl2utf8.c.o[K[20/65] Compiling C object bin/fribidi-benchmark.p/getopt1.c.o[K[20/65] Compiling C object test/test-reorder-nsm.p/test-reorder-nsm.c.o[K[21/65] Compiling C object bin/fribidi-benchmark.p/fribidi-benchmark.c.o[K[21/65] Compiling C object test/unicode-conformance/BidiTest.p/BidiTest.c.o[K[22/65] Compiling C object bin/fribidi-bidi-types.p/fribidi-bidi-types.c.o[K[22/65] Compiling C object test/unicode-conformance/BidiCharacterTest.p/BidiCharacterTest.c.o[K[23/65] Compiling C object test/test-reorder-nsm.p/test-reorder-nsm.c.o[K[24/65] Compiling C object bin/fribidi-caprtl2utf8.p/fribidi-caprtl2utf8.c.o[K[25/65] Compiling C object test/unicode-conformance/BidiTest.p/BidiTest.c.o[K[26/65] Compiling C object test/unicode-conformance/BidiCharacterTest.p/BidiCharacterTest.c.o[K[27/65] Linking target gen.tab/gen-arabic-shaping-tab[K[27/65] Generating gen.tab/gen-arabic-shaping-tab with a custom command (wrapped by meson to capture output)[K[28/65] Linking target gen.tab/gen-mirroring-tab[K[28/65] Generating gen.tab/gen-mirroring-tab with a custom command (wrapped by meson to capture output)[K[29/65] Linking target gen.tab/gen-brackets-type-tab[K[29/65] Generating gen.tab/gen-brackets-type-tab with a custom command (wrapped by meson to capture output)[K[30/65] Linking target gen.tab/gen-bidi-type-tab[K[30/65] Generating gen.tab/gen-bidi-type-tab with a custom command (wrapped by meson to capture output)[K[31/65] Linking target gen.tab/gen-joining-type-tab[K[31/65] Generating gen.tab/gen-joining-type-tab with a custom command (wrapped by meson to capture output)[K[32/65] Linking target gen.tab/gen-brackets-tab[K[32/65] Generating gen.tab/gen-brackets-tab with a custom command (wrapped by meson to capture output)[K[33/65] Generating gen.tab/gen-arabic-shaping-tab with a custom command (wrapped by meson to capture output)[K[34/65] Generating gen.tab/gen-brackets-type-tab with a custom command (wrapped by meson to capture output)[K[35/65] Generating gen.tab/gen-brackets-tab with a custom command (wrapped by meson to capture output)[K
+Reading `../gen.tab/unidata/BidiBrackets.txt'
+
+[36/65] Generating gen.tab/gen-mirroring-tab with a custom command (wrapped by meson to capture output)[K[37/65] Generating gen.tab/gen-joining-type-tab with a custom command (wrapped by meson to capture output)[K[38/65] Generating gen.tab/gen-bidi-type-tab with a custom command (wrapped by meson to capture output)[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-arabic.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi-types.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cap-rtl.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1255.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1256.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-6.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-8.c.o[K[39/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-8.c.o[K[39/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-utf8.c.o[K[40/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1256.c.o[K[40/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-deprecated.c.o[K[41/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1255.c.o[K[41/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining.c.o[K[42/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-6.c.o[K[42/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining-types.c.o[K[43/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets.c.o[K[43/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-mirroring.c.o[K[44/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi.c.o[K[44/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-brackets.c.o[K[45/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cap-rtl.c.o[K[45/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-run.c.o[K[46/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-arabic.c.o[K[46/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-shape.c.o[K[47/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-deprecated.c.o[K[48/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining.c.o[K[49/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-utf8.c.o[K[50/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-mirroring.c.o[K[51/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-brackets.c.o[K[52/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-run.c.o[K[53/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-shape.c.o[K[54/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining-types.c.o[K[55/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi.c.o[K[56/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi-types.c.o[K[56/65] Linking target lib/libfribidi.so.0.4.0[K[57/65] Linking target lib/libfribidi.so.0.4.0[K
+../lib/fribidi.c: In function ‘fribidi_log2vis’:
+../lib/fribidi.c:249:7: warning: ‘memcpy’ specified bound between 18446744065119617024 and 18446744073709551612 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
+  249 |       memcpy (visual_str, str, len * sizeof (*visual_str));
+      |       ^
+[57/65] Generating symbol file lib/libfribidi.so.0.4.0.p/libfribidi.so.0.4.0.symbols[K[58/65] Generating symbol file lib/libfribidi.so.0.4.0.p/libfribidi.so.0.4.0.symbols[K[58/65] Linking target bin/fribidi[K[58/65] Linking target bin/fribidi-benchmark[K[58/65] Linking target bin/fribidi-bidi-types[K[58/65] Linking target bin/fribidi-caprtl2utf8[K[58/65] Linking target test/test-reorder-nsm[K[58/65] Linking target test/unicode-conformance/BidiTest[K[58/65] Linking target test/unicode-conformance/BidiCharacterTest[K[59/65] Linking target bin/fribidi-caprtl2utf8[K[60/65] Linking target bin/fribidi-bidi-types[K[61/65] Linking target test/test-reorder-nsm[K[62/65] Linking target bin/fribidi-benchmark[K[63/65] Linking target bin/fribidi[K[64/65] Linking target test/unicode-conformance/BidiCharacterTest[K[65/65] Linking target test/unicode-conformance/BidiTest[K
+ninja: Entering directory `/var/tmp/hokuto/fribidi-01/build/build'
+ninja: no work to do.
+Installing gen.tab/fribidi-unicode-version.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing lib/libfribidi.so.0.4.0 to /var/tmp/hokuto/fribidi-01/output/usr/lib
+Installing bin/fribidi to /var/tmp/hokuto/fribidi-01/output/usr/bin
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-arabic.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-begindecls.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-bidi.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-bidi-types.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-bidi-types-list.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-char-sets.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-char-sets-list.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-common.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-deprecated.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-enddecls.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-flags.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-joining.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-joining-types.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-joining-types-list.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-mirroring.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-brackets.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-shape.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-types.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-unicode.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/bin/fribidi.1 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man1
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_charset_to_unicode.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_debug_status.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bidi_type.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bidi_type_name.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bidi_types.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bracket.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bracket_types.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_joining_type.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_joining_type_name.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_joining_types.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_mirror_char.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_par_direction.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_par_embedding_levels.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_par_embedding_levels_ex.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_type.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_type_internal.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_join_arabic.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_log2vis.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_log2vis_get_embedding_levels.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_mirroring_status.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_parse_charset.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_remove_bidi_marks.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_reorder_line.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_reorder_nsm_status.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_set_debug.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_set_mirroring.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_set_reorder_nsm.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_shape.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_shape_arabic.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_shape_mirroring.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_unicode_to_charset.3 to /var/tmp/hokuto/fribidi-01/output/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/build/lib/fribidi-config.h to /var/tmp/hokuto/fribidi-01/output/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/build/meson-private/fribidi.pc to /var/tmp/hokuto/fribidi-01/output/usr/lib/pkgconfig
+Installing symlink pointing to libfribidi.so.0.4.0 to /var/tmp/hokuto/fribidi-01/output/usr/lib/libfribidi.so.0
+Installing symlink pointing to libfribidi.so.0 to /var/tmp/hokuto/fribidi-01/output/usr/lib/libfribidi.so
++ exec meson setup --prefix /usr --libexecdir lib32 --sbindir bin --buildtype plain --wrap-mode nodownload --cross-file lib32 -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/fribidi-01/build[0m
+Build dir: [1m/var/tmp/hokuto/fribidi-01/build/build[0m
+Build type: [1mcross build[0m
+Project name: [1mfribidi[0m
+Project version: [1m1.0.17[0m
+C compiler for the host machine: [1mgcc -m32[0m (gcc 16.2.0 "gcc (GCC) 16.2.0")
+C linker for the host machine: [1mgcc -m32[0m ld.bfd 2.46.1
+C compiler for the build machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the build machine: [1mcc[0m ld.bfd 2.46.1
+Build machine cpu family: [1mx86_64[0m
+Build machine cpu: [1mx86_64[0m
+Host machine cpu family: [1mx86[0m
+Host machine cpu: [1mi686[0m
+Target machine cpu family: [1mx86[0m
+Target machine cpu: [1mi686[0m
+Checking for function "[1mmemmove[0m" : [1;32mYES[0m 
+Checking for function "[1mmemset[0m" : [1;32mYES[0m 
+Checking for function "[1mstrdup[0m" : [1;32mYES[0m 
+Has header "[1mstdlib.h[0m" : [1;32mYES[0m 
+Has header "[1mstring.h[0m" : [1;32mYES[0m 
+Has header "[1mmemory.h[0m" : [1;32mYES[0m 
+Has header "[1mstrings.h[0m" : [1;32mYES[0m 
+Has header "[1msys/times.h[0m" : [1;32mYES[0m 
+Has header "[1mstrings.h[0m" : [1;32mYES[0m [1;34m(cached)[0m
+Configuring [1mconfig.h[0m using configuration
+Has header "[1mstdlib.h[0m" : [1;32mYES[0m [1;34m(cached)[0m
+Has header "[1mstring.h[0m" : [1;32mYES[0m [1;34m(cached)[0m
+Has header "[1mstrings.h[0m" : [1;32mYES[0m [1;34m(cached)[0m
+Checking for size of "[1mint[0m" : [1m4[0m 
+Configuring [1mfribidi-config.h[0m using configuration
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+[1mMessage:[0m Have pre-generated man pages: true
+Program [1mtest-runner.py[0m found: [1;32mYES[0m (/var/tmp/hokuto/fribidi-01/build/test/test-runner.py)
+Program python3 found: [1;32mYES[0m (/usr/bin/python)
+[1mMessage:[0m Have pre-generated man pages: true
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/i686-pc-linux-gnu-pkg-config)[0m [1;34m3.0.7[0m
+Build targets in project: [1m22[0m
+
+fribidi [36m1.0.17[0m
+
+  [1mUser defined options[0m
+    Cross files       : lib32
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib32
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/fribidi-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/fribidi-01/build/build'
+[0/65] Compiling C object gen.tab/gen-unicode-version.p/gen-unicode-version.c.o[K[1/65] Compiling C object gen.tab/gen-unicode-version.p/gen-unicode-version.c.o[K[1/65] Linking target gen.tab/gen-unicode-version[K[2/65] Linking target gen.tab/gen-unicode-version[K[2/65] Generating gen.tab/fribidi-unicode-version.h with a custom command (wrapped by meson to capture output)[K[3/65] Generating gen.tab/fribidi-unicode-version.h with a custom command (wrapped by meson to capture output)[K[3/65] Compiling C object gen.tab/gen-bidi-type-tab.p/gen-bidi-type-tab.c.o[K[3/65] Compiling C object gen.tab/gen-bidi-type-tab.p/packtab.c.o[K[3/65] Compiling C object gen.tab/gen-joining-type-tab.p/gen-joining-type-tab.c.o[K[3/65] Compiling C object gen.tab/gen-joining-type-tab.p/packtab.c.o[K[3/65] Compiling C object gen.tab/gen-arabic-shaping-tab.p/gen-arabic-shaping-tab.c.o[K[3/65] Compiling C object gen.tab/gen-arabic-shaping-tab.p/packtab.c.o[K[3/65] Compiling C object gen.tab/gen-mirroring-tab.p/gen-mirroring-tab.c.o[K[3/65] Compiling C object gen.tab/gen-mirroring-tab.p/packtab.c.o[K[3/65] Compiling C object gen.tab/gen-brackets-tab.p/gen-brackets-tab.c.o[K[3/65] Compiling C object gen.tab/gen-brackets-tab.p/packtab.c.o[K[4/65] Compiling C object gen.tab/gen-mirroring-tab.p/gen-mirroring-tab.c.o[K[4/65] Compiling C object gen.tab/gen-brackets-type-tab.p/gen-brackets-type-tab.c.o[K[5/65] Compiling C object gen.tab/gen-arabic-shaping-tab.p/gen-arabic-shaping-tab.c.o[K[5/65] Compiling C object gen.tab/gen-brackets-type-tab.p/packtab.c.o[K[6/65] Compiling C object gen.tab/gen-joining-type-tab.p/gen-joining-type-tab.c.o[K[6/65] Compiling C object bin/fribidi.p/fribidi-main.c.o[K[7/65] Compiling C object gen.tab/gen-bidi-type-tab.p/gen-bidi-type-tab.c.o[K[7/65] Compiling C object bin/fribidi.p/getopt.c.o[K[8/65] Compiling C object bin/fribidi.p/getopt.c.o[K[8/65] Compiling C object bin/fribidi.p/getopt1.c.o[K[9/65] Compiling C object gen.tab/gen-brackets-tab.p/gen-brackets-tab.c.o[K[9/65] Compiling C object bin/fribidi-benchmark.p/fribidi-benchmark.c.o[K[10/65] Compiling C object bin/fribidi.p/getopt1.c.o[K[10/65] Compiling C object bin/fribidi-benchmark.p/getopt.c.o[K[11/65] Compiling C object gen.tab/gen-mirroring-tab.p/packtab.c.o[K[11/65] Linking target gen.tab/gen-mirroring-tab[K[12/65] Compiling C object gen.tab/gen-arabic-shaping-tab.p/packtab.c.o[K[12/65] Linking target gen.tab/gen-arabic-shaping-tab[K[13/65] Compiling C object gen.tab/gen-joining-type-tab.p/packtab.c.o[K[13/65] Linking target gen.tab/gen-joining-type-tab[K[14/65] Compiling C object gen.tab/gen-brackets-type-tab.p/gen-brackets-type-tab.c.o[K[14/65] Compiling C object bin/fribidi-benchmark.p/getopt1.c.o[K[15/65] Compiling C object gen.tab/gen-bidi-type-tab.p/packtab.c.o[K[15/65] Linking target gen.tab/gen-bidi-type-tab[K[16/65] Compiling C object bin/fribidi.p/fribidi-main.c.o[K[16/65] Compiling C object bin/fribidi-bidi-types.p/fribidi-bidi-types.c.o[K[17/65] Compiling C object gen.tab/gen-brackets-tab.p/packtab.c.o[K[17/65] Linking target gen.tab/gen-brackets-tab[K[18/65] Compiling C object bin/fribidi-benchmark.p/getopt.c.o[K[18/65] Compiling C object bin/fribidi-caprtl2utf8.p/fribidi-caprtl2utf8.c.o[K[19/65] Linking target gen.tab/gen-mirroring-tab[K[19/65] Generating gen.tab/gen-mirroring-tab with a custom command (wrapped by meson to capture output)[K[20/65] Linking target gen.tab/gen-joining-type-tab[K[20/65] Generating gen.tab/gen-joining-type-tab with a custom command (wrapped by meson to capture output)[K[21/65] Compiling C object bin/fribidi-benchmark.p/getopt1.c.o[K[21/65] Compiling C object test/test-reorder-nsm.p/test-reorder-nsm.c.o[K[22/65] Compiling C object bin/fribidi-benchmark.p/fribidi-benchmark.c.o[K[22/65] Compiling C object test/unicode-conformance/BidiTest.p/BidiTest.c.o[K[23/65] Linking target gen.tab/gen-bidi-type-tab[K[23/65] Generating gen.tab/gen-bidi-type-tab with a custom command (wrapped by meson to capture output)[K[24/65] Compiling C object bin/fribidi-bidi-types.p/fribidi-bidi-types.c.o[K[24/65] Compiling C object test/unicode-conformance/BidiCharacterTest.p/BidiCharacterTest.c.o[K[25/65] Linking target gen.tab/gen-arabic-shaping-tab[K[25/65] Generating gen.tab/gen-arabic-shaping-tab with a custom command (wrapped by meson to capture output)[K[26/65] Linking target gen.tab/gen-brackets-tab[K[26/65] Generating gen.tab/gen-brackets-tab with a custom command (wrapped by meson to capture output)[K[27/65] Compiling C object bin/fribidi-caprtl2utf8.p/fribidi-caprtl2utf8.c.o[K[28/65] Compiling C object test/test-reorder-nsm.p/test-reorder-nsm.c.o[K[29/65] Compiling C object gen.tab/gen-brackets-type-tab.p/packtab.c.o[K[29/65] Linking target gen.tab/gen-brackets-type-tab[K[30/65] Compiling C object test/unicode-conformance/BidiTest.p/BidiTest.c.o[K[31/65] Linking target gen.tab/gen-brackets-type-tab[K[31/65] Generating gen.tab/gen-brackets-type-tab with a custom command (wrapped by meson to capture output)[K[32/65] Compiling C object test/unicode-conformance/BidiCharacterTest.p/BidiCharacterTest.c.o[K[33/65] Generating gen.tab/gen-brackets-tab with a custom command (wrapped by meson to capture output)[K
+Reading `../gen.tab/unidata/BidiBrackets.txt'
+
+[34/65] Generating gen.tab/gen-brackets-type-tab with a custom command (wrapped by meson to capture output)[K[35/65] Generating gen.tab/gen-arabic-shaping-tab with a custom command (wrapped by meson to capture output)[K[36/65] Generating gen.tab/gen-mirroring-tab with a custom command (wrapped by meson to capture output)[K[37/65] Generating gen.tab/gen-joining-type-tab with a custom command (wrapped by meson to capture output)[K[38/65] Generating gen.tab/gen-bidi-type-tab with a custom command (wrapped by meson to capture output)[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-arabic.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi-types.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cap-rtl.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1255.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1256.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-6.c.o[K[38/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-8.c.o[K[39/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets.c.o[K[39/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-utf8.c.o[K[40/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-6.c.o[K[40/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-deprecated.c.o[K[41/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-iso8859-8.c.o[K[41/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining.c.o[K[42/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-arabic.c.o[K[42/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining-types.c.o[K[43/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1255.c.o[K[43/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-mirroring.c.o[K[44/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cp1256.c.o[K[44/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-brackets.c.o[K[45/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi.c.o[K[45/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-run.c.o[K[46/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-cap-rtl.c.o[K[46/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-shape.c.o[K[47/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-deprecated.c.o[K[48/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-char-sets-utf8.c.o[K[49/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining.c.o[K[50/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-shape.c.o[K[51/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-brackets.c.o[K[52/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi-types.c.o[K[53/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-mirroring.c.o[K[54/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-bidi.c.o[K[55/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-joining-types.c.o[K[56/65] Compiling C object lib/libfribidi.so.0.4.0.p/fribidi-run.c.o[K[56/65] Linking target lib/libfribidi.so.0.4.0[K[57/65] Linking target lib/libfribidi.so.0.4.0[K[57/65] Generating symbol file lib/libfribidi.so.0.4.0.p/libfribidi.so.0.4.0.symbols[K[58/65] Generating symbol file lib/libfribidi.so.0.4.0.p/libfribidi.so.0.4.0.symbols[K[58/65] Linking target bin/fribidi[K[58/65] Linking target bin/fribidi-benchmark[K[58/65] Linking target bin/fribidi-bidi-types[K[58/65] Linking target bin/fribidi-caprtl2utf8[K[58/65] Linking target test/test-reorder-nsm[K[58/65] Linking target test/unicode-conformance/BidiTest[K[58/65] Linking target test/unicode-conformance/BidiCharacterTest[K[59/65] Linking target bin/fribidi-bidi-types[K[60/65] Linking target bin/fribidi-caprtl2utf8[K[61/65] Linking target test/test-reorder-nsm[K[62/65] Linking target bin/fribidi-benchmark[K[63/65] Linking target test/unicode-conformance/BidiCharacterTest[K[64/65] Linking target test/unicode-conformance/BidiTest[K[65/65] Linking target bin/fribidi[K
+ninja: Entering directory `/var/tmp/hokuto/fribidi-01/build/build'
+ninja: no work to do.
+Installing gen.tab/fribidi-unicode-version.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing lib/libfribidi.so.0.4.0 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/lib32
+Installing bin/fribidi to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/bin
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-arabic.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-begindecls.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-bidi.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-bidi-types.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-bidi-types-list.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-char-sets.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-char-sets-list.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-common.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-deprecated.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-enddecls.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-flags.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-joining.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-joining-types.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-joining-types-list.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-mirroring.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-brackets.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-shape.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-types.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi-unicode.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/lib/fribidi.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/bin/fribidi.1 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man1
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_charset_to_unicode.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_debug_status.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bidi_type.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bidi_type_name.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bidi_types.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bracket.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_bracket_types.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_joining_type.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_joining_type_name.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_joining_types.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_mirror_char.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_par_direction.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_par_embedding_levels.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_par_embedding_levels_ex.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_type.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_get_type_internal.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_join_arabic.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_log2vis.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_log2vis_get_embedding_levels.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_mirroring_status.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_parse_charset.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_remove_bidi_marks.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_reorder_line.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_reorder_nsm_status.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_set_debug.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_set_mirroring.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_set_reorder_nsm.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_shape.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_shape_arabic.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_shape_mirroring.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/doc/fribidi_unicode_to_charset.3 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/share/man/man3
+Installing /var/tmp/hokuto/fribidi-01/build/build/lib/fribidi-config.h to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/include/fribidi
+Installing /var/tmp/hokuto/fribidi-01/build/build/meson-private/fribidi.pc to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/lib32/pkgconfig
+Installing symlink pointing to libfribidi.so.0.4.0 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/lib32/libfribidi.so.0
+Installing symlink pointing to libfribidi.so.0 to /var/tmp/hokuto/fribidi-01/split/lib32-fribidi/usr/lib32/libfribidi.so
+
+Script done on 2026-09-21 11:47:20+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mfribidi[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 21 Sep 2026 04:47:20 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m6s[0m
