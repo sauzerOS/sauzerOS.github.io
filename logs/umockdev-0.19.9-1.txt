@@ -1,0 +1,778 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mumockdev[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mumockdev 0.19.9-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mMon, 21 Sep 2026 04:48:28 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mumockdev[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mlibpcap systemd gobject-introspection meson vala[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mumockdev[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-2 gettext-1.0-1 gobject-introspection-1.86.0-1 grep-3.12-1 gzip-1.14-1 libpcap-1.11.0-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 meson-1.12.0-2 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 systemd-261.3-2 texinfo-7.3-1 vala-0.56.19-1 which-2.25-1[0m
+
+Script started on 2026-09-21 11:48:28+07:00 [COMMAND="cd /var/tmp/hokuto/umockdev-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/umockdev-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/umockdev-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/umockdev-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/umockdev-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/umockdev-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/umockdev-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/umockdev-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/umockdev-01/build/.cache' /repo/sauzeros/extra/umockdev/build /var/tmp/hokuto/umockdev-01/output 0.19.9 umockdev" <not executed on terminal>]
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --wrap-mode nodownload -D b_pie=true -D b_ndebug=true -D python.bytecompile=1 build
+[1mThe Meson build system[0m
+Version: 1.12.0
+Source dir: [1m/var/tmp/hokuto/umockdev-01/build[0m
+Build dir: [1m/var/tmp/hokuto/umockdev-01/build/build[0m
+Build type: [1mnative build[0m
+Project name: [1mumockdev[0m
+Project version: [1m0.19.9[0m
+C compiler for the host machine: [1mcc[0m (gcc 16.2.0 "cc (GCC) 16.2.0")
+C linker for the host machine: [1mcc[0m ld.bfd 2.46.1
+Vala compiler for the host machine: [1mvalac[0m (valac 0.56.19)
+Host machine cpu family: [1mx86_64[0m
+Host machine cpu: [1mx86_64[0m
+meson.build:9: [1;33mWARNING:[0m Consider using the built-in option for language standard version instead of using "-std=gnu11".
+Program [1mg-ir-compiler[0m found: [1;32mYES[0m (/usr/bin/g-ir-compiler)
+Compiler for C supports arguments -Wno-error=discarded-qualifiers: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-error=pointer-to-int-cast: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-error=incompatible-pointer-types: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-error=pointer-sign: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-but-set-variable: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-function: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-label: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-value: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-unused-variable: [1;32mYES[0m 
+Checking for function "[1m__fxstatat[0m" : [1;31mNO[0m 
+Checking for function "[1mopenat64[0m" : [1;31mNO[0m 
+Checking for function "[1mopen_tree[0m" : [1;32mYES[0m 
+Library [1mdl[0m found: [1;32mYES[0m
+Library [1mlibselinux[0m found: [1;31mNO[0m
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Run-time dependency [1mglib-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgobject-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgio-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mgio-unix-2.0[0m found: [1;32mYES[0m [36m2.90.0[0m
+Run-time dependency [1mlibudev[0m found: [1;32mYES[0m [36m261[0m
+Run-time dependency [1mlibpcap[0m found: [1;32mYES[0m [36m1.11.0[0m
+Library [1mpthread[0m found: [1;32mYES[0m
+Run-time dependency [1mgudev-1.0[0m found: [1;32mYES[0m [36m238[0m
+Program [1mpython3[0m found: [1;32mYES[0m (/usr/bin/python3)
+Library [1mposix[0m found: [1;32mYES[0m
+Library [1mlinux[0m found: [1;32mYES[0m
+Library [1mlinux_fixes[0m found: [1;32mYES[0m
+Library [1mglibc[0m found: [1;32mYES[0m
+Library [1mudev[0m found: [1;32mYES[0m
+Library [1mutil[0m found: [1;32mYES[0m
+Library [1mconfig[0m found: [1;32mYES[0m
+Library [1mioctl[0m found: [1;32mYES[0m
+Library [1mselinux[0m found: [1;32mYES[0m
+Library [1massertions[0m found: [1;32mYES[0m
+Checking if "[1mioctl request parameter type is int[0m" compiles: [1;31mNO[0m 
+meson.build:161: [1;33mWARNING:[0m Project does not target a minimum version but uses feature deprecated since '1.11.0': passing more than one argument to install_dir. use the install_vala_* arguments instead
+Found pkg-config: [1;32mYES[0m [1m(/usr/bin/pkg-config)[0m [1;34m3.0.7[0m
+Configuring [1mconfig.h[0m using configuration
+Build targets in project: [1m15[0m
+[1;33mWARNING:[0m Deprecated features used:
+ * 1.11.0: {'passing more than one argument to install_dir'}
+
+umockdev [36m0.19.9[0m
+
+  [1mUser defined options[0m
+    b_ndebug          : true
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+[1;32mINFO:[0m autodetecting backend as ninja
+[1;32mINFO:[0m calculating backend command to run: /usr/bin/ninja -C /var/tmp/hokuto/umockdev-01/build/build
+ninja: Entering directory `/var/tmp/hokuto/umockdev-01/build/build'
+[0/58] Compiling Vala source ../src/umockdev-utils.vala[K[0/58] Compiling C object libumockdev-preload.so.0.0.0.p/src_libumockdev-preload.c.o[K[0/58] Compiling C object libumockdev-preload.so.0.0.0.p/src_debug.c.o[K[0/58] Compiling C object libumockdev-preload.so.0.0.0.p/src_utils.c.o[K[0/58] Compiling C object libumockdev-preload.so.0.0.0.p/src_ioctl_tree.c.o[K[0/58] Compiling C object chatter.p/tests_chatter.c.o[K[0/58] Compiling C object chatter-socket-stream.p/tests_chatter-socket-stream.c.o[K[0/58] Compiling C object readbyte.p/tests_readbyte.c.o[K[0/58] Compiling C object test-ioctl-tree.p/tests_test-ioctl-tree.c.o[K[0/58] Compiling C object test-ioctl-tree.p/src_ioctl_tree.c.o[K[1/58] Compiling C object libumockdev-preload.so.0.0.0.p/src_utils.c.o[K[1/58] Compiling C object test-ioctl-tree.p/src_utils.c.o[K[2/58] Compiling C object chatter.p/tests_chatter.c.o[K[2/58] Compiling C object test-ioctl-tree.p/src_debug.c.o[K[3/58] Compiling C object readbyte.p/tests_readbyte.c.o[K[3/58] Linking target chatter[K[4/58] Compiling C object libumockdev-preload.so.0.0.0.p/src_debug.c.o[K[4/58] Linking target readbyte[K[5/58] Compiling C object chatter-socket-stream.p/tests_chatter-socket-stream.c.o[K[5/58] Linking target chatter-socket-stream[K[6/58] Compiling C object test-ioctl-tree.p/src_utils.c.o[K[7/58] Compiling C object test-ioctl-tree.p/src_debug.c.o[K[8/58] Compiling C object libumockdev-preload.so.0.0.0.p/src_ioctl_tree.c.o[K[9/58] Compiling C object test-ioctl-tree.p/src_ioctl_tree.c.o[K[10/58] Linking target chatter[K[11/58] Linking target readbyte[K[12/58] Linking target chatter-socket-stream[K[13/58] Compiling Vala source ../src/umockdev-utils.vala[K[13/58] Compiling C object libumockdev-utils.a.p/meson-generated_src_umockdev-utils.c.o[K[13/58] Compiling Vala source ../src/uevent_sender.vapi ../src/ioctl_tree.vapi ../src/ioctl_termios.vapi ../src/umockdev.vala ../src/umockdev-ioctl.vala ../src/umockdev-pcap.vala ../src/umockdev-spi.vala umockdev-utils.vapi[K[13/58] Compiling Vala source ../src/ioctl_tree.vapi ../src/ioctl_termios.vapi ../src/umockdev-record.vala ../src/umockdev-ioctl.vala ../src/umockdev-pcap.vala ../src/umockdev-spi.vala umockdev-utils.vapi[K[13/58] Compiling C object umockdev-record.p/src_ioctl_tree.c.o[K[13/58] Compiling C object umockdev-record.p/src_ioctl_termios.c.o[K[13/58] Compiling C object umockdev-record.p/src_utils.c.o[K[13/58] Compiling C object umockdev-record.p/src_debug.c.o[K[14/58] Compiling C object test-ioctl-tree.p/tests_test-ioctl-tree.c.o[K[14/58] Linking target test-ioctl-tree[K[15/58] Compiling C object umockdev-record.p/src_ioctl_termios.c.o[K[16/58] Compiling C object umockdev-record.p/src_utils.c.o[K[17/58] Compiling C object umockdev-record.p/src_debug.c.o[K[18/58] Compiling C object libumockdev-preload.so.0.0.0.p/src_libumockdev-preload.c.o[K[18/58] Linking target libumockdev-preload.so.0.0.0[K[19/58] Compiling C object umockdev-record.p/src_ioctl_tree.c.o[K[20/58] Compiling C object libumockdev-utils.a.p/meson-generated_src_umockdev-utils.c.o[K[20/58] Linking static target libumockdev-utils.a[K[21/58] Linking static target libumockdev-utils.a[K[22/58] Compiling Vala source ../src/ioctl_tree.vapi ../src/ioctl_termios.vapi ../src/umockdev-record.vala ../src/umockdev-ioctl.vala ../src/umockdev-pcap.vala ../src/umockdev-spi.vala umockdev-utils.vapi[K[22/58] Compiling C object umockdev-record.p/meson-generated_src_umockdev-record.c.o[K[22/58] Compiling C object umockdev-record.p/meson-generated_src_umockdev-ioctl.c.o[K[22/58] Compiling C object umockdev-record.p/meson-generated_src_umockdev-pcap.c.o[K[22/58] Compiling C object umockdev-record.p/meson-generated_src_umockdev-spi.c.o[K[23/58] Compiling Vala source ../src/uevent_sender.vapi ../src/ioctl_tree.vapi ../src/ioctl_termios.vapi ../src/umockdev.vala ../src/umockdev-ioctl.vala ../src/umockdev-pcap.vala ../src/umockdev-spi.vala umockdev-utils.vapi[K[23/58] Compiling C object libumockdev.so.0.3.0.p/meson-generated_src_umockdev.c.o[K[23/58] Compiling C object libumockdev.so.0.3.0.p/meson-generated_src_umockdev-ioctl.c.o[K[23/58] Compiling C object libumockdev.so.0.3.0.p/meson-generated_src_umockdev-pcap.c.o[K[23/58] Compiling C object libumockdev.so.0.3.0.p/meson-generated_src_umockdev-spi.c.o[K[24/58] Linking target test-ioctl-tree[K[24/58] Compiling C object libumockdev.so.0.3.0.p/src_uevent_sender.c.o[K[25/58] Compiling C object umockdev-record.p/meson-generated_src_umockdev-record.c.o[K
+[01m[Kumockdev-record.p/src/umockdev-record.c:[m[K In function ‘[01m[Kall_devices[m[K’:
+[01m[Kumockdev-record.p/src/umockdev-record.c:353:16:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[K[01;32m[Kgchar **[m[K’ {aka [m[K‘[01m[K[01;32m[Kchar **[m[K’}[m[K from incompatible pointer type ‘[01m[K[01;34m[Kvoid **[m[K[m[K’ [[01;35m[K-Wincompatible-pointer-types[m[K]
+  353 |         result [01;35m[K=[m[K _tmp3_;
+      |                [01;35m[K^[m[K
+[25/58] Compiling C object libumockdev.so.0.3.0.p/src_ioctl_tree.c.o[K[26/58] Compiling C object libumockdev.so.0.3.0.p/src_uevent_sender.c.o[K[26/58] Compiling C object libumockdev.so.0.3.0.p/src_ioctl_termios.c.o[K[27/58] Compiling C object libumockdev.so.0.3.0.p/src_ioctl_termios.c.o[K[27/58] Compiling C object libumockdev.so.0.3.0.p/src_utils.c.o[K[28/58] Compiling C object libumockdev.so.0.3.0.p/src_utils.c.o[K[28/58] Compiling C object libumockdev.so.0.3.0.p/src_debug.c.o[K[29/58] Compiling C object libumockdev.so.0.3.0.p/src_debug.c.o[K[29/58] Compiling Vala source ../src/umockdev-run.vala umockdev-1.0.vapi umockdev-utils.vapi[K[30/58] Compiling C object libumockdev.so.0.3.0.p/src_ioctl_tree.c.o[K[30/58] Compiling Vala source ../src/ioctl_termios.vapi ../tests/test-umockdev-vala.vala umockdev-1.0.vapi umockdev-utils.vapi[K[31/58] Compiling C object libumockdev.so.0.3.0.p/meson-generated_src_umockdev-pcap.c.o[K
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:22[m[K:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:[m[K In function ‘[01m[Kumockdev_urb_info_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:235:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+  235 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_urb_info_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:[m[K In function ‘[01m[Kvala_g_array_remove_index[m[K’:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:323:16:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[K[01;32m[Kvoid **[m[K[m[K’ from incompatible pointer type ‘[01m[K[01;34m[Kgchar *[m[K’ {aka [m[K‘[01m[K[01;34m[Kchar *[m[K’}[m[K [[01;35m[K-Wincompatible-pointer-types[m[K]
+  323 |         _tmp0_ [01;35m[K=[m[K self->data;
+      |                [01;35m[K^[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:[m[K In function ‘[01m[Kumockdev_ioctl_usb_pcap_handler_next_reapable_urb[m[K’:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:698:24:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  698 |                 _tmp3_ [01;35m[K=[m[K pcap_next (_tmp2_, &self->priv->cur_hdr);
+      |                        [01;35m[K^[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:713:75:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kumockdev_pcap_uint64_val[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  713 |                 self->priv->last_pkt_time_ms = (umockdev_pcap_uint64_val ([01;34m[K&(*urb_hdr).ts_sec[m[K) * 1000) + ((*_tmp6_).ts_usec / 1000);
+      |                                                                           [01;34m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                                           [01;34m[K|[m[K
+      |                                                                           [01;34m[Kpcap_4_byte_aligned_int64 *[m[K
+In file included from [01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:34[m[K:
+[01m[K../src/pcap_usb.h:28:60:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst pcap_4_byte_aligned_uint64 *[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kpcap_4_byte_aligned_int64 *[m[K[m[K’
+   28 | umockdev_pcap_uint64_val([01;32m[Kconst pcap_4_byte_aligned_uint64 *value[m[K)
+      |                          [01;32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:736:40:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  736 |                                 _tmp9_ [01;35m[K=[m[K pcap_next (_tmp8_, &self->priv->cur_hdr);
+      |                                        [01;35m[K^[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:754:70:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kumockdev_pcap_uint64_val[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  754 |                         cur_pkt_time_ms = (umockdev_pcap_uint64_val ([01;34m[K&(*urb_hdr).ts_sec[m[K) * 1000) + ((*_tmp13_).ts_usec / 1000);
+      |                                                                      [01;34m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                                      [01;34m[K|[m[K
+      |                                                                      [01;34m[Kpcap_4_byte_aligned_int64 *[m[K
+[01m[K../src/pcap_usb.h:28:60:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst pcap_4_byte_aligned_uint64 *[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kpcap_4_byte_aligned_int64 *[m[K[m[K’
+   28 | umockdev_pcap_uint64_val([01;32m[Kconst pcap_4_byte_aligned_uint64 *value[m[K)
+      |                          [01;32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:1080:107:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kumockdev_pcap_uint64_val[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 1080 |                                                 self->priv->last_pkt_time_ms = (umockdev_pcap_uint64_val ([01;34m[K&(*urb_hdr).ts_sec[m[K) * 1000) + ((*_tmp91_).ts_usec / 1000);
+      |                                                                                                           [01;34m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                           [01;34m[K|[m[K
+      |                                                                                                           [01;34m[Kpcap_4_byte_aligned_int64 *[m[K
+[01m[K../src/pcap_usb.h:28:60:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst pcap_4_byte_aligned_uint64 *[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kpcap_4_byte_aligned_int64 *[m[K[m[K’
+   28 | umockdev_pcap_uint64_val([01;32m[Kconst pcap_4_byte_aligned_uint64 *value[m[K)
+      |                          [01;32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:1201:91:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kumockdev_pcap_uint64_val[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 1201 |                                 self->priv->last_pkt_time_ms = (umockdev_pcap_uint64_val ([01;34m[K&(*urb_hdr).ts_sec[m[K) * 1000) + ((*_tmp121_).ts_usec / 1000);
+      |                                                                                           [01;34m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                           [01;34m[K|[m[K
+      |                                                                                           [01;34m[Kpcap_4_byte_aligned_int64 *[m[K
+[01m[K../src/pcap_usb.h:28:60:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst pcap_4_byte_aligned_uint64 *[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kpcap_4_byte_aligned_int64 *[m[K[m[K’
+   28 | umockdev_pcap_uint64_val([01;32m[Kconst pcap_4_byte_aligned_uint64 *value[m[K)
+      |                          [01;32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:[m[K In function ‘[01m[Kumockdev_ioctl_usb_pcap_handler_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-pcap.c:1280:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1280 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_usb_pcap_handler_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[31/58] Compiling Vala source ../tests/test-umockdev-run.vala umockdev-1.0.vapi umockdev-utils.vapi[K[32/58] Compiling C object umockdev-record.p/meson-generated_src_umockdev-pcap.c.o[K
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[Kumockdev-record.p/src/umockdev-pcap.c:22[m[K:
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:[m[K In function ‘[01m[Kumockdev_urb_info_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:325:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+  325 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_urb_info_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:[m[K In function ‘[01m[Kvala_g_array_remove_index[m[K’:
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:413:16:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[K[01;32m[Kvoid **[m[K[m[K’ from incompatible pointer type ‘[01m[K[01;34m[Kgchar *[m[K’ {aka [m[K‘[01m[K[01;34m[Kchar *[m[K’}[m[K [[01;35m[K-Wincompatible-pointer-types[m[K]
+  413 |         _tmp0_ [01;35m[K=[m[K self->data;
+      |                [01;35m[K^[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:[m[K In function ‘[01m[Kumockdev_ioctl_usb_pcap_handler_next_reapable_urb[m[K’:
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:788:24:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  788 |                 _tmp3_ [01;35m[K=[m[K pcap_next (_tmp2_, &self->priv->cur_hdr);
+      |                        [01;35m[K^[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:803:75:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kumockdev_pcap_uint64_val[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  803 |                 self->priv->last_pkt_time_ms = (umockdev_pcap_uint64_val ([01;34m[K&(*urb_hdr).ts_sec[m[K) * 1000) + ((*_tmp6_).ts_usec / 1000);
+      |                                                                           [01;34m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                                           [01;34m[K|[m[K
+      |                                                                           [01;34m[Kpcap_4_byte_aligned_int64 *[m[K
+In file included from [01m[Kumockdev-record.p/src/umockdev-pcap.c:33[m[K:
+[01m[K../src/pcap_usb.h:28:60:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst pcap_4_byte_aligned_uint64 *[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kpcap_4_byte_aligned_int64 *[m[K[m[K’
+   28 | umockdev_pcap_uint64_val([01;32m[Kconst pcap_4_byte_aligned_uint64 *value[m[K)
+      |                          [01;32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:826:40:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  826 |                                 _tmp9_ [01;35m[K=[m[K pcap_next (_tmp8_, &self->priv->cur_hdr);
+      |                                        [01;35m[K^[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:844:70:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kumockdev_pcap_uint64_val[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  844 |                         cur_pkt_time_ms = (umockdev_pcap_uint64_val ([01;34m[K&(*urb_hdr).ts_sec[m[K) * 1000) + ((*_tmp13_).ts_usec / 1000);
+      |                                                                      [01;34m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                                      [01;34m[K|[m[K
+      |                                                                      [01;34m[Kpcap_4_byte_aligned_int64 *[m[K
+[01m[K../src/pcap_usb.h:28:60:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst pcap_4_byte_aligned_uint64 *[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kpcap_4_byte_aligned_int64 *[m[K[m[K’
+   28 | umockdev_pcap_uint64_val([01;32m[Kconst pcap_4_byte_aligned_uint64 *value[m[K)
+      |                          [01;32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:1170:107:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kumockdev_pcap_uint64_val[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 1170 |                                                 self->priv->last_pkt_time_ms = (umockdev_pcap_uint64_val ([01;34m[K&(*urb_hdr).ts_sec[m[K) * 1000) + ((*_tmp91_).ts_usec / 1000);
+      |                                                                                                           [01;34m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                           [01;34m[K|[m[K
+      |                                                                                                           [01;34m[Kpcap_4_byte_aligned_int64 *[m[K
+[01m[K../src/pcap_usb.h:28:60:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst pcap_4_byte_aligned_uint64 *[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kpcap_4_byte_aligned_int64 *[m[K[m[K’
+   28 | umockdev_pcap_uint64_val([01;32m[Kconst pcap_4_byte_aligned_uint64 *value[m[K)
+      |                          [01;32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:1291:91:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kumockdev_pcap_uint64_val[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 1291 |                                 self->priv->last_pkt_time_ms = (umockdev_pcap_uint64_val ([01;34m[K&(*urb_hdr).ts_sec[m[K) * 1000) + ((*_tmp121_).ts_usec / 1000);
+      |                                                                                           [01;34m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                           [01;34m[K|[m[K
+      |                                                                                           [01;34m[Kpcap_4_byte_aligned_int64 *[m[K
+[01m[K../src/pcap_usb.h:28:60:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst pcap_4_byte_aligned_uint64 *[m[K[m[K’ but argument is of type ‘[01m[K[01;34m[Kpcap_4_byte_aligned_int64 *[m[K[m[K’
+   28 | umockdev_pcap_uint64_val([01;32m[Kconst pcap_4_byte_aligned_uint64 *value[m[K)
+      |                          [01;32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:[m[K In function ‘[01m[Kumockdev_ioctl_usb_pcap_handler_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-pcap.c:1370:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1370 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_usb_pcap_handler_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[32/58] Compiling Vala source ../tests/test-umockdev-record.vala umockdev-1.0.vapi umockdev-utils.vapi[K[33/58] Compiling C object libumockdev.so.0.3.0.p/meson-generated_src_umockdev-spi.c.o[K
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[Klibumockdev.so.0.3.0.p/src/umockdev-spi.c:22[m[K:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-spi.c:[m[K In function ‘[01m[Kumockdev_transfer_chunk_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-spi.c:441:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+  441 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_transfer_chunk_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-spi.c:[m[K In function ‘[01m[Kumockdev_ioctl_spi_base_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-spi.c:659:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+  659 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_spi_base_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-spi.c:[m[K In function ‘[01m[Kumockdev_ioctl_spi_handler_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-spi.c:1431:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1431 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_spi_handler_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-spi.c:[m[K In function ‘[01m[Kumockdev_ioctl_spi_recorder_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-spi.c:1844:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1844 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_spi_recorder_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[33/58] Compiling C object test-umockdev.p/tests_test-umockdev.c.o[K[34/58] Compiling C object umockdev-record.p/meson-generated_src_umockdev-spi.c.o[K
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[Kumockdev-record.p/src/umockdev-spi.c:22[m[K:
+[01m[Kumockdev-record.p/src/umockdev-spi.c:[m[K In function ‘[01m[Kumockdev_transfer_chunk_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-spi.c:537:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+  537 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_transfer_chunk_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-spi.c:[m[K In function ‘[01m[Kumockdev_ioctl_spi_base_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-spi.c:755:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+  755 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_spi_base_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-spi.c:[m[K In function ‘[01m[Kumockdev_ioctl_spi_handler_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-spi.c:1527:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1527 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_spi_handler_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-spi.c:[m[K In function ‘[01m[Kumockdev_ioctl_spi_recorder_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-spi.c:1940:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1940 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_spi_recorder_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[34/58] Compiling C object test-umockdev-vala.p/src_ioctl_termios.c.o[K[35/58] Compiling C object test-umockdev-vala.p/src_ioctl_termios.c.o[K[36/58] Compiling C object umockdev-record.p/meson-generated_src_umockdev-ioctl.c.o[K
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib-object.h:24[m[K,
+                 from [01m[Kumockdev-record.p/src/umockdev-ioctl.c:102[m[K:
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_data_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:1825:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1825 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_data_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_client_class_init[m[K’:
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2765:97:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 2765 |         g_signal_new ("handle-ioctl", UMOCKDEV_TYPE_IOCTL_CLIENT, G_SIGNAL_RUN_LAST, (guint) 0, [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 0, NULL);
+      |                                                                                                 [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [01;34m[K|[m[K
+      |                                                                                                 [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+In file included from [01m[K/usr/include/glib-2.0/gobject/gobject.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:31[m[K:
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2743:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2743 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2766:96:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 2766 |         g_signal_new ("handle-read", UMOCKDEV_TYPE_IOCTL_CLIENT, G_SIGNAL_RUN_LAST, (guint) 0, [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 0, NULL);
+      |                                                                                                [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                [01;34m[K|[m[K
+      |                                                                                                [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2743:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2743 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2767:97:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 2767 |         g_signal_new ("handle-write", UMOCKDEV_TYPE_IOCTL_CLIENT, G_SIGNAL_RUN_LAST, (guint) 0, [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 0, NULL);
+      |                                                                                                 [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [01;34m[K|[m[K
+      |                                                                                                 [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2743:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2743 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_client_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2819:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 2819 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_client_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_start_listen_closure_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:3094:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 3094 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_start_listen_closure_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_base_unregister_all[m[K’:
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:3438:62:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kg_hash_table_foreach_remove[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 3438 |                         g_hash_table_foreach_remove (_tmp1_, [01;34m[K____lambda4__ghr_func[m[K, self);
+      |                                                              [01;34m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                              [01;34m[K|[m[K
+      |                                                              [01;34m[Kgboolean (*)(const void *, const void *, void *) {aka int (*)(const void *, const void *, void *)}[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib.h:52[m[K:
+[01m[K/usr/include/glib-2.0/glib/ghash.h:122:61:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGHRFunc[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(void *, void *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(const void *, const void *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(const void *, const void *, void *)[m[K’}[m[K
+  122 |                                             [01;32m[KGHRFunc         func[m[K,
+      |                                             [01;32m[K~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:3417:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K____lambda4__ghr_func[m[K[m[K’ declared here
+ 3417 | [01;34m[K____lambda4__ghr_func[m[K (gconstpointer key,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/ghash.h:42:21:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGHRFunc[m[K[m[K’ declared here
+   42 | typedef gboolean  (*[01;32m[KGHRFunc[m[K)  (gpointer  key,
+      |                     [01;32m[K^~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_base_class_init[m[K’:
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:3600:147:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 3600 |         g_signal_new ("handle-ioctl", UMOCKDEV_TYPE_IOCTL_BASE, G_SIGNAL_RUN_LAST, (guint) G_STRUCT_OFFSET(UMockdevIoctlBaseClass, handle_ioctl), [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 1, UMOCKDEV_TYPE_IOCTL_CLIENT, NULL);
+      |                                                                                                                                                   [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                   [01;34m[K|[m[K
+      |                                                                                                                                                   [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2743:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2743 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:3601:145:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 3601 |         g_signal_new ("handle-read", UMOCKDEV_TYPE_IOCTL_BASE, G_SIGNAL_RUN_LAST, (guint) G_STRUCT_OFFSET(UMockdevIoctlBaseClass, handle_read), [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 1, UMOCKDEV_TYPE_IOCTL_CLIENT, NULL);
+      |                                                                                                                                                 [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                 [01;34m[K|[m[K
+      |                                                                                                                                                 [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2743:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2743 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:3602:147:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 3602 |         g_signal_new ("handle-write", UMOCKDEV_TYPE_IOCTL_BASE, G_SIGNAL_RUN_LAST, (guint) G_STRUCT_OFFSET(UMockdevIoctlBaseClass, handle_write), [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 1, UMOCKDEV_TYPE_IOCTL_CLIENT, NULL);
+      |                                                                                                                                                   [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                   [01;34m[K|[m[K
+      |                                                                                                                                                   [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:2743:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2743 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_base_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:3637:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 3637 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_base_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_tree_handler_real_handle_ioctl[m[K’:
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:3729:14:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+ 3729 |         last [01;35m[K=[m[K _tmp5_;
+      |              [01;35m[K^[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_tree_handler_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:3945:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 3945 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_tree_handler_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_tree_recorder_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kumockdev-record.p/src/umockdev-ioctl.c:4326:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 4326 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_tree_recorder_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[36/58] Linking target umockdev-record[K[37/58] Compiling Vala source ../src/umockdev-run.vala umockdev-1.0.vapi umockdev-utils.vapi[K[37/58] Compiling C object umockdev-run.p/meson-generated_src_umockdev-run.c.o[K[38/58] Compiling Vala source ../tests/test-umockdev-run.vala umockdev-1.0.vapi umockdev-utils.vapi[K[38/58] Compiling C object test-umockdev-run.p/meson-generated_tests_test-umockdev-run.c.o[K[39/58] Compiling C object libumockdev.so.0.3.0.p/meson-generated_src_umockdev-ioctl.c.o[K
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib-object.h:24[m[K,
+                 from [01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:102[m[K:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_data_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:1697:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 1697 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_data_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_client_class_init[m[K’:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2637:97:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 2637 |         g_signal_new ("handle-ioctl", UMOCKDEV_TYPE_IOCTL_CLIENT, G_SIGNAL_RUN_LAST, (guint) 0, [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 0, NULL);
+      |                                                                                                 [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [01;34m[K|[m[K
+      |                                                                                                 [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+In file included from [01m[K/usr/include/glib-2.0/gobject/gobject.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gobject/gbinding.h:31[m[K:
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2615:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2615 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2638:96:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 2638 |         g_signal_new ("handle-read", UMOCKDEV_TYPE_IOCTL_CLIENT, G_SIGNAL_RUN_LAST, (guint) 0, [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 0, NULL);
+      |                                                                                                [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                [01;34m[K|[m[K
+      |                                                                                                [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2615:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2615 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2639:97:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 2639 |         g_signal_new ("handle-write", UMOCKDEV_TYPE_IOCTL_CLIENT, G_SIGNAL_RUN_LAST, (guint) 0, [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 0, NULL);
+      |                                                                                                 [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [01;34m[K|[m[K
+      |                                                                                                 [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2615:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2615 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_client_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2691:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 2691 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_client_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_start_listen_closure_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2966:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 2966 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_start_listen_closure_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_base_class_init[m[K’:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:3460:147:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 3460 |         g_signal_new ("handle-ioctl", UMOCKDEV_TYPE_IOCTL_BASE, G_SIGNAL_RUN_LAST, (guint) G_STRUCT_OFFSET(UMockdevIoctlBaseClass, handle_ioctl), [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 1, UMOCKDEV_TYPE_IOCTL_CLIENT, NULL);
+      |                                                                                                                                                   [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                   [01;34m[K|[m[K
+      |                                                                                                                                                   [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2615:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2615 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:3461:145:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 3461 |         g_signal_new ("handle-read", UMOCKDEV_TYPE_IOCTL_BASE, G_SIGNAL_RUN_LAST, (guint) G_STRUCT_OFFSET(UMockdevIoctlBaseClass, handle_read), [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 1, UMOCKDEV_TYPE_IOCTL_CLIENT, NULL);
+      |                                                                                                                                                 [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                 [01;34m[K|[m[K
+      |                                                                                                                                                 [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2615:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2615 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:3462:147:[m[K [01;35m[Kwarning: [m[Kpassing argument 5 of ‘[01m[Kg_signal_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 3462 |         g_signal_new ("handle-write", UMOCKDEV_TYPE_IOCTL_BASE, G_SIGNAL_RUN_LAST, (guint) G_STRUCT_OFFSET(UMockdevIoctlBaseClass, handle_write), [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K, NULL, NULL, G_TYPE_BOOLEAN, (guint) 1, UMOCKDEV_TYPE_IOCTL_CLIENT, NULL);
+      |                                                                                                                                                   [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                                                   [01;34m[K|[m[K
+      |                                                                                                                                                   [01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *) {aka int (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)}[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:339:66:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGSignalAccumulator[m[K’ {aka [m[K‘[01m[K[01;32m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, const struct _GValue *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgboolean (*)(GSignalInvocationHint *, GValue *, GValue *, void *)[m[K’ {aka [m[K‘[01m[K[01;34m[Kint (*)(struct _GSignalInvocationHint *, struct _GValue *, struct _GValue *, void *)[m[K’}[m[K
+  339 |                                              [01;32m[KGSignalAccumulator  accumulator[m[K,
+      |                                              [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2615:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K[m[K’ declared here
+ 2615 | [01;34m[K_umockdev_signal_accumulator_true_handled_gsignal_accumulator[m[K (GSignalInvocationHint* ihint,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/gobject/gsignal.h:103:20:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGSignalAccumulator[m[K[m[K’ declared here
+  103 | typedef gboolean (*[01;32m[KGSignalAccumulator[m[K)  (GSignalInvocationHint *ihint,
+      |                    [01;32m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_base_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:3497:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 3497 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_base_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_tree_handler_real_handle_ioctl[m[K’:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:3589:14:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+ 3589 |         last [01;35m[K=[m[K _tmp5_;
+      |              [01;35m[K^[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_tree_handler_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:3805:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 3805 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_tree_handler_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:[m[K In function ‘[01m[Kumockdev_ioctl_tree_recorder_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev-ioctl.c:4186:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 4186 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_ioctl_tree_recorder_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[40/58] Compiling Vala source ../tests/test-umockdev-record.vala umockdev-1.0.vapi umockdev-utils.vapi[K[40/58] Compiling C object test-umockdev-record.p/meson-generated_tests_test-umockdev-record.c.o[K[41/58] Compiling Vala source ../src/ioctl_termios.vapi ../tests/test-umockdev-vala.vala umockdev-1.0.vapi umockdev-utils.vapi[K[41/58] Compiling C object test-umockdev-vala.p/meson-generated_tests_test-umockdev-vala.c.o[K[42/58] Linking target libumockdev-preload.so.0.0.0[K[43/58] Compiling C object umockdev-run.p/meson-generated_src_umockdev-run.c.o[K[44/58] Compiling C object test-umockdev-run.p/meson-generated_tests_test-umockdev-run.c.o[K[45/58] Compiling C object test-umockdev.p/tests_test-umockdev.c.o[K[46/58] Compiling C object libumockdev.so.0.3.0.p/meson-generated_src_umockdev.c.o[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:[m[K In function ‘[01m[Kumockdev_testbed_finalize[m[K’:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:6743:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kg_hash_table_foreach[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 6743 |         g_hash_table_foreach (_tmp4_, [01;34m[K__umockdev_testbed___lambda5__gh_func[m[K, self);
+      |                                       [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                       [01;34m[K|[m[K
+      |                                       [01;34m[Kvoid (*)(const void *, const void *, void *)[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib.h:52[m[K,
+                 from [01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:46[m[K:
+[01m[K/usr/include/glib-2.0/glib/ghash.h:114:61:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[KGHFunc[m[K’ {aka [m[K‘[01m[K[01;32m[Kvoid (*)(void *, void *, void *)[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kvoid (*)(const void *, const void *, void *)[m[K[m[K’
+  114 |                                             [01;32m[KGHFunc          func[m[K,
+      |                                             [01;32m[K~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:657:1:[m[K [01;36m[Knote: [m[K‘[01m[K[01;34m[K__umockdev_testbed___lambda5__gh_func[m[K[m[K’ declared here
+  657 | [01;34m[K__umockdev_testbed___lambda5__gh_func[m[K (gconstpointer key,
+      | [01;34m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib/galloca.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:32[m[K:
+[01m[K/usr/include/glib-2.0/glib/gtypes.h:144:27:[m[K [01;36m[Knote: [m[K‘[01m[K[01;32m[KGHFunc[m[K[m[K’ declared here
+  144 | typedef void            (*[01;32m[KGHFunc[m[K)               (gpointer       key,
+      |                           [01;32m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K:
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:[m[K In function ‘[01m[Kumockdev_testbed_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:6791:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 6791 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_testbed_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:[m[K In function ‘[01m[Kumockdev_script_runner_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:8428:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 8428 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_script_runner_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:[m[K In function ‘[01m[Kumockdev_socket_server_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:9100:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 9100 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_socket_server_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:[m[K In function ‘[01m[Kumockdev_error_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Klibumockdev.so.0.3.0.p/src/umockdev.c:9177:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 9177 |         if ([01;36m[Kg_once_init_enter[m[K (&umockdev_error_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[46/58] Linking target libumockdev.so.0.3.0[K[47/58] Compiling C object test-umockdev-vala.p/meson-generated_tests_test-umockdev-vala.c.o[K
+[01m[Ktest-umockdev-vala.p/tests/test-umockdev-vala.c:[m[K In function ‘[01m[Kt_spidev_ioctl[m[K’:
+[01m[Ktest-umockdev-vala.p/tests/test-umockdev-vala.c:2308:14:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[K[01;32m[Kstruct spi_ioc_transfer *[m[K[m[K’ from incompatible pointer type ‘[01m[K[01;34m[Kguint8 *[m[K’ {aka [m[K‘[01m[K[01;34m[Kunsigned char *[m[K’}[m[K [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 2308 |         xfer [01;35m[K=[m[K _tmp21_;
+      |              [01;35m[K^[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib/gthread.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib/gasyncqueue.h:34[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:34[m[K,
+                 from [01m[Ktest-umockdev-vala.p/tests/test-umockdev-vala.c:26[m[K:
+[01m[Ktest-umockdev-vala.p/tests/test-umockdev-vala.c:[m[K In function ‘[01m[Kattribute_counter_thread_get_type[m[K’:
+[01m[K/usr/include/glib-2.0/glib/gatomic.h:131:5:[m[K [01;35m[Kwarning: [m[Kargument 2 of ‘[01m[K__atomic_load[m[K’ discards ‘[01m[Kvolatile[m[K’ qualifier [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  131 |     [01;35m[K__atomic_load[m[K (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST); \
+      |     [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/glib-2.0/glib/gthread.h:274:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_atomic_pointer_get[m[K’
+  274 |     (![01;36m[Kg_atomic_pointer_get[m[K (location) &&                             \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Ktest-umockdev-vala.p/tests/test-umockdev-vala.c:3194:13:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Kg_once_init_enter[m[K’
+ 3194 |         if ([01;36m[Kg_once_init_enter[m[K (&attribute_counter_thread_type_id__once)) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[Ktest-umockdev-vala.p/tests/test-umockdev-vala.c:[m[K In function ‘[01m[Kt_mt_uevent[m[K’:
+[01m[Ktest-umockdev-vala.p/tests/test-umockdev-vala.c:3539:37:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kg_udev_client_new[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+ 3539 |         _tmp4_ = g_udev_client_new ([01;34m[K_tmp3_[m[K);
+      |                                     [01;34m[K^~~~~~[m[K
+      |                                     [01;34m[K|[m[K
+      |                                     [01;34m[Kgchar ** {aka char **}[m[K
+In file included from [01m[K/usr/include/gudev-1.0/gudev/gudev.h:14[m[K,
+                 from [01m[Ktest-umockdev-vala.p/tests/test-umockdev-vala.c:29[m[K:
+[01m[K/usr/include/gudev-1.0/gudev/gudevclient.h:74:77:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[K[01;32m[Kconst gchar * const*[m[K’ {aka [m[K‘[01m[K[01;32m[Kconst char * const*[m[K’}[m[K but argument is of type ‘[01m[K[01;34m[Kgchar **[m[K’ {aka [m[K‘[01m[K[01;34m[Kchar **[m[K’}[m[K
+   74 | GUdevClient *g_udev_client_new                         ([01;32m[Kconst gchar* const *subsystems[m[K);
+      |                                                         [01;32m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[48/58] Compiling C object test-umockdev-record.p/meson-generated_tests_test-umockdev-record.c.o[K[49/58] Linking target umockdev-record[K
+In function ‘umockdev_start_listen_closure_ref’,
+    inlined from ‘umockdev_ioctl_base_register_path’ at umockdev-record.p/src/umockdev-ioctl.c:3393:2,
+    inlined from ‘record_ioctl’ at umockdev-record.p/src/umockdev-record.c:1579:2,
+    inlined from ‘_vala_main’ at umockdev-record.p/src/umockdev-record.c:1984:13,
+    inlined from ‘main’ at umockdev-record.p/src/umockdev-record.c:2122:9:
+umockdev-record.p/src/umockdev-ioctl.c:3107:9: warning: ‘__atomic_fetch_add_4’ writing 4 bytes into a region of size 0 overflows the destination [-Wstringop-overflow=]
+ 3107 |         g_atomic_int_inc (&self->ref_count);
+      |         ^
+In function ‘main’:
+lto1: note: destination object is likely at address zero
+[50/58] Linking target libumockdev.so.0.3.0[K
+In function ‘umockdev_start_listen_closure_ref’,
+    inlined from ‘umockdev_ioctl_base_register_path’ at libumockdev.so.0.3.0.p/src/umockdev-ioctl.c:3265:2:
+libumockdev.so.0.3.0.p/src/umockdev-ioctl.c:2979:9: warning: ‘__atomic_fetch_add_4’ writing 4 bytes into a region of size 0 overflows the destination [-Wstringop-overflow=]
+ 2979 |         g_atomic_int_inc (&self->ref_count);
+      |         ^
+In function ‘umockdev_ioctl_base_register_path’:
+lto1: note: destination object is likely at address zero
+[50/58] Generating symbol file libumockdev.so.0.3.0.p/libumockdev.so.0.3.0.symbols[K[50/58] Generating UMockdev-1.0 hacked gir with a custom command (wrapped by meson to capture output)[K[51/58] Generating UMockdev-1.0 hacked gir with a custom command (wrapped by meson to capture output)[K[51/58] Generating UMockdev-1.0 typelib with a custom command[K[52/58] Generating symbol file libumockdev.so.0.3.0.p/libumockdev.so.0.3.0.symbols[K[52/58] Linking target umockdev-run[K[52/58] Linking target test-umockdev[K[52/58] Linking target test-umockdev-vala[K[52/58] Linking target test-umockdev-run[K[52/58] Linking target test-umockdev-record[K[53/58] Generating UMockdev-1.0 typelib with a custom command[K[54/58] Linking target umockdev-run[K[55/58] Linking target test-umockdev-run[K[56/58] Linking target test-umockdev-record[K[57/58] Linking target test-umockdev[K[58/58] Linking target test-umockdev-vala[K
+ninja: Entering directory `/var/tmp/hokuto/umockdev-01/build/build'
+ninja: no work to do.
+Installing libumockdev-preload.so.0.0.0 to /var/tmp/hokuto/umockdev-01/output/usr/lib
+Installing libumockdev.so.0.3.0 to /var/tmp/hokuto/umockdev-01/output/usr/lib
+Installing umockdev.h to /var/tmp/hokuto/umockdev-01/output/usr/include/umockdev-1.0
+Installing umockdev-1.0.vapi to /var/tmp/hokuto/umockdev-01/output/usr/share/vala/vapi
+Installing UMockdev-1.0.gir to /var/tmp/hokuto/umockdev-01/output/usr/share/gir-1.0
+Installing UMockdev-1.0.typelib to /var/tmp/hokuto/umockdev-01/output/usr/lib/girepository-1.0
+Installing umockdev-run to /var/tmp/hokuto/umockdev-01/output/usr/bin
+Installing umockdev-record to /var/tmp/hokuto/umockdev-01/output/usr/bin
+Installing /var/tmp/hokuto/umockdev-01/build/build/meson-private/umockdev-1.0.pc to /var/tmp/hokuto/umockdev-01/output/usr/lib/pkgconfig
+Installing /var/tmp/hokuto/umockdev-01/build/src/umockdev-wrapper to /var/tmp/hokuto/umockdev-01/output/usr/bin
+Installing symlink pointing to libumockdev-preload.so.0.0.0 to /var/tmp/hokuto/umockdev-01/output/usr/lib/libumockdev-preload.so.0
+Installing symlink pointing to libumockdev-preload.so.0 to /var/tmp/hokuto/umockdev-01/output/usr/lib/libumockdev-preload.so
+Installing symlink pointing to libumockdev.so.0.3.0 to /var/tmp/hokuto/umockdev-01/output/usr/lib/libumockdev.so.0
+Installing symlink pointing to libumockdev.so.0 to /var/tmp/hokuto/umockdev-01/output/usr/lib/libumockdev.so
+
+Script done on 2026-09-21 11:48:33+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mumockdev[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mMon, 21 Sep 2026 04:48:33 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m4s[0m
