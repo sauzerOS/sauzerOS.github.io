@@ -1,0 +1,937 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mparted[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mparted 3.8-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mFri, 25 Sep 2026 04:10:02 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mparted[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mdevice-mapper util-linux-libs[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mparted[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 device-mapper-2.03.42-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-2 gettext-1.0-1 grep-3.12-1 gzip-1.15-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 util-linux-libs-2.42.4-1 which-2.25-1[0m
+
+Script started on 2026-09-25 11:10:02+07:00 [COMMAND="cd /var/tmp/hokuto/parted-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/parted-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/parted-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/parted-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/parted-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/parted-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/parted-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/parted-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/parted-01/build/.cache' /repo/sauzeros/extra/parted/build /var/tmp/hokuto/parted-01/output 3.8 parted" <not executed on terminal>]
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking dependency style of cc... gcc3
+checking for library containing strerror... none required
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) none needed
+checking whether cc understands -c and -o together... (cached) yes
+checking whether the compiler is clang... (cached) no
+checking for compiler option needed when checking for declarations... (cached) none
+checking dependency style of cc... (cached) gcc3
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for stdbool.h... yes
+checking for uchar.h... yes
+checking for sys/param.h... yes
+checking for sys/socket.h... yes
+checking for error.h... yes
+checking for stdio_ext.h... yes
+checking for getopt.h... yes
+checking for sys/process.h... no
+checking for threads.h... yes
+checking for limits.h... yes
+checking for crtdefs.h... no
+checking for wctype.h... yes
+checking for langinfo.h... yes
+checking for xlocale.h... no
+checking for pthread.h... yes
+checking for malloc.h... yes
+checking for sys/time.h... yes
+checking for stdckdint.h... yes
+checking for stdcountof.h... yes
+checking for sys/mman.h... yes
+checking for sys/random.h... yes
+checking for features.h... yes
+checking for blkid/blkid.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... gcc-ar
+checking for cc option to support large files... none needed
+checking for a usable (O_DIRECT-supporting) temporary dir... /home/dbz
+checking for cc option to support large files... (cached) none needed
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking for wint_t... yes
+checking whether wint_t is large enough... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking for btowc... yes
+checking for mbrtowc... yes
+checking for mbsinit... yes
+checking for canonicalize_file_name... yes
+checking for realpath... yes
+checking for lstat... yes
+checking for _set_invalid_parameter_handler... no
+checking for fcntl... yes
+checking for symlink... yes
+checking for fsync... yes
+checking for getdtablesize... yes
+checking for getexecname... no
+checking for iswcntrl... yes
+checking for mkstemp... yes
+checking for readlink... yes
+checking for isblank... yes
+checking for iswctype... yes
+checking for sleep... yes
+checking for vasprintf... yes
+checking for mprotect... yes
+checking for usleep... yes
+checking for wcrtomb... yes
+checking for nl_langinfo and CODESET... yes
+checking for a traditional french locale... none
+checking whether char8_t is correctly defined... yes
+checking whether char16_t is correctly defined... yes
+checking whether char32_t is correctly defined... yes
+checking whether the C++ compiler has <uchar.h>... yes
+checking for bit size of wchar_t... 32
+checking for mbstate_t... yes
+checking for a traditional japanese locale... none
+checking for an english Unicode locale... en_US.UTF-8
+checking for a transitional chinese locale... none
+checking whether mbrtowc handles incomplete characters... yes
+checking whether mbrtowc works as well as mbtowc... guessing yes
+checking for cc options needed to detect all undeclared functions... none needed
+checking whether mbrtoc32 is declared... yes
+checking for mbrtoc32... yes
+checking whether mbrtoc32 works as well as mbrtowc... guessing yes
+checking whether c32rtomb is declared... yes
+checking for c32rtomb... yes
+checking whether c32rtomb works as well as wcrtomb... guessing yes
+checking whether mbrtoc32 in the C locale is free of encoding errors... no
+checking whether mbrtoc32 in the C locale works like in an ISO-8859-1 locale... no
+checking whether malloc is ptrdiff_t safe... yes
+checking whether malloc, calloc set errno on failure... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether // is distinct from /... no
+checking whether realpath works... yes
+checking for faccessat... yes
+checking for getcwd... yes
+checking for complete errno.h... yes
+checking for error... yes
+checking whether error_at_line is declared... yes
+checking for error_at_line... yes
+checking for working error function... yes
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking whether ctype.h defines __header_inline... no
+checking for working fcntl.h... yes
+checking for pid_t... yes
+checking for mode_t... yes
+checking whether stat file-mode macros are broken... no
+checking for C/C++ restrict keyword... __restrict__
+checking for nlink_t... yes
+checking whether getdtablesize is declared... yes
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking for working GNU getopt_long function... yes
+checking for glibc-compatible sys/cdefs.h... yes
+checking for pthread.h... (cached) yes
+checking for pthread_kill in -lpthread... yes
+checking whether POSIX threads API is available... yes
+checking whether setlocale (LC_ALL, NULL) is thread-safe... yes
+checking whether setlocale (category, NULL) is thread-safe... yes
+checking whether limits.h has WORD_BIT, BOOL_WIDTH etc.... yes
+checking whether limits.h has SSIZE_MAX... yes
+checking whether the compiler produces multi-arch binaries... no
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h works without ISO C predefines... yes
+checking whether stdint.h has UINTMAX_WIDTH etc.... yes
+checking whether INT32_MAX < INTMAX_MAX... yes
+checking whether INT64_MAX == LONG_MAX... yes
+checking whether UINT32_MAX < UINTMAX_MAX... yes
+checking whether UINT64_MAX == ULONG_MAX... yes
+checking whether iswcntrl works... yes
+checking for towlower... yes
+checking for wctype_t... yes
+checking for wctrans_t... yes
+checking whether wctype supports the "blank" and "punct" character classes... yes
+checking whether langinfo.h defines CODESET... yes
+checking whether langinfo.h defines ALTMON_1... yes
+checking whether langinfo.h defines ABALTMON_1... no
+checking whether langinfo.h defines ERA... yes
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking for unreachable in C... yes
+checking whether nullptr_t needs <stddef.h>... yes
+checking whether <stddef.h> is idempotent... guessing yes
+checking whether locale.h defines locale_t... yes
+checking whether locale.h defines _locale_t... no
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether struct lconv is properly defined... yes
+checking whether imported symbols can be declared weak... yes
+checking for multithreading API to use... posix
+checking for off64_t... yes
+checking for blksize_t... yes
+checking for blkcnt_t... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking whether malloc (0) returns nonnull... (cached) yes
+checking for inline... inline
+checking whether memeq is declared... no
+checking whether <limits.h> defines MIN and MAX... no
+checking whether <sys/param.h> defines MIN and MAX... yes
+checking for O_CLOEXEC... yes
+checking for promoted mode_t type... mode_t
+checking for pthread_t... yes
+checking for pthread_spinlock_t... yes
+checking for pthread_spin_init... yes
+checking whether realloc should abort upon undefined behaviour... no
+checking whether alarm is declared... yes
+checking for ssize_t... yes
+checking for sched.h... yes
+checking for struct sched_param... yes
+checking whether stdckdint.h can be included in C... yes
+checking checking for an ISO C23 compliant stdckdint.h in C... yes
+checking whether stdckdint.h can be included in C++... yes
+checking checking for an ISO C++26 compliant stdckdint.h in C++... no
+checking whether the C++ compiler has <stdcountof.h>... no
+checking whether fcloseall is declared... yes
+checking whether getw is declared... yes
+checking whether putw is declared... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether ecvt is declared... yes
+checking whether fcvt is declared... yes
+checking whether gcvt is declared... yes
+checking whether MB_CUR_MAX is correct... yes
+checking whether strdup is declared... yes
+checking whether streq is declared... no
+checking whether strerror(0) succeeds... yes
+checking for MAP_ANONYMOUS... yes
+checking whether strncpy works... yes
+checking for struct timespec in <time.h>... yes
+checking for TIME_UTC in <time.h>... yes
+checking whether execvpe is declared... yes
+checking whether wcsdup is declared... yes
+checking for C compiler option to allow warnings... -Wno-error
+checking for alloca as a compiler built-in... yes
+checking whether to enable assertions... yes
+checking for static_assert... yes, a keyword
+checking for bool, true, false... yes
+checking whether btowc(0) is correct... yes
+checking whether btowc is consistent with mbrtowc in the C locale... no
+checking for __builtin_expect... yes
+checking whether c32rtomb return value is correct... yes
+checking whether calloc (0, n) and calloc (n, 0) return nonnull... yes
+checking for library containing clock_gettime... none required
+checking for clock_getres... yes
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking whether // is distinct from /... (cached) no
+checking whether dup2 works... yes
+checking whether fcntl handles F_DUPFD correctly... yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... needs runtime check
+checking for __fpending... yes
+checking whether __fpending is declared... yes
+checking whether free is known to preserve errno... yes
+checking for __fseterr... no
+checking whether getdtablesize works... yes
+checking for getprogname... no
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... yes
+checking whether __argv is declared... no
+checking for getrandom... yes
+checking whether getrandom is compatible with its GNU+BSD signature... yes
+checking for iswblank... yes
+checking whether iswblank is declared... yes
+checking whether iswdigit is ISO C compliant... yes
+checking whether iswpunct is consistent with ispunct... yes
+checking whether iswxdigit is ISO C compliant... yes
+checking for C compiler flag to ignore unused libraries... -Wl,--as-needed
+checking whether the compiler supports the __inline keyword... yes
+checking whether localeconv works... yes
+checking for pthread_rwlock_t... yes
+checking whether pthread_rwlock_rdlock prefers a writer to a reader... no
+checking whether lseek detects pipes... yes
+checking whether SEEK_DATA works but is incompatible with GNU... no
+checking whether mbrtoc32 works on empty input... yes
+checking whether mbrtoc32 in the C locale is free of encoding errors... (cached) no
+checking whether mbrtoc32 in the C locale works like in an ISO-8859-1 locale... (cached) no
+checking whether mbrtoc32 works in an UTF-8 locale... yes
+checking whether mbrtoc32 is regular... guessing no
+checking whether mbrtowc handles a NULL pwc argument... yes
+checking whether mbrtowc has a correct return value... yes
+checking whether mbrtowc returns 0 when parsing a NUL character... guessing yes
+checking whether mbrtowc stores incomplete characters... no
+checking whether mbrtowc works on empty input... yes
+checking whether the C locale is free of encoding errors... no
+checking whether mbrtowc recognizes invalid UTF-8... yes
+checking for mbtowc... yes
+checking for mempcpy... yes
+checking whether mkdir handles trailing slash... yes
+checking whether mkdir handles trailing dot... yes
+checking for working mkstemp... yes
+checking for nl_langinfo... yes
+checking whether open recognizes a trailing slash... yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... (cached) yes
+checking for PTHREAD_CREATE_DETACHED... yes
+checking for PTHREAD_MUTEX_RECURSIVE... yes
+checking for PTHREAD_MUTEX_ROBUST... yes
+checking for PTHREAD_PROCESS_SHARED... yes
+checking whether pthread_once works... yes
+checking for rawmemchr... yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... yes
+checking whether readlink truncates results correctly... yes
+checking whether realloc sets errno on failure... yes
+checking whether realloc (..., 0) returns nonnull... no
+checking for reallocarray... yes
+checking for working re_compile_pattern... yes
+checking for rpmatch... yes
+checking whether sleep is declared... yes
+checking for working sleep... yes
+checking for ssize_t... (cached) yes
+checking whether stat handles trailing slashes on files... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for struct stat.st_birthtimespec.tv_nsec... no
+checking for struct stat.st_birthtimensec... no
+checking for struct stat.st_birthtim.tv_nsec... no
+checking for va_copy... yes
+checking for working strerror function... yes
+checking for strtoll... yes
+checking whether strtoll works... yes
+checking for strtoull... yes
+checking whether strtoull works... yes
+checking whether unlink honors trailing slashes... yes
+checking whether unlink of a parent directory fails as it should... guessing yes
+checking for useconds_t... yes
+checking whether usleep allows large arguments... yes
+checking for variable-length arrays... yes
+checking whether wcrtomb works in the C locale... yes
+checking whether wcrtomb return value is correct... yes
+checking size of off_t... 8
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking whether NLS is requested... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking whether to use NLS... no
+checking for uuid_generate in -luuid... yes
+checking for dm_task_create in -ldevmapper... yes
+checking for library containing tgetent... -lncurses
+checking for readline in -lreadline... yes
+checking for rl_variable_value in -lreadline... yes
+checking for uuid/uuid.h... yes
+checking for getopt.h... (cached) yes
+checking for linux/ext2_fs.h... no
+checking for linux/unistd.h... yes
+checking for readline/readline.h... yes
+checking for readline/history.h... yes
+checking for termcap.h... yes
+checking for execinfo.h... yes
+checking for backtrace in -lc... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for check >= 0.9.3... no
+Unable to locate check version 0.9.3 or higher: not building
+checking for ld used by cc... (cached) /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... (cached) yes
+checking whether byte ordering is bigendian... (cached) no
+checking for inline... (cached) inline
+checking for an ANSI C-conforming const... yes
+checking for C/C++ restrict keyword... (cached) __restrict__
+checking for sigaction... yes
+checking for getuid... yes
+checking for rl_completion_matches... yes
+checking for canonicalize_file_name... (cached) yes
+checking for library containing blkid_probe_get_topology... -lblkid
+checking for blkid_probe_get_topology... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating include/Makefile
+config.status: creating include/parted/Makefile
+config.status: creating libparted/Makefile
+config.status: creating libparted/labels/Makefile
+config.status: creating libparted/fs/Makefile
+config.status: creating libparted/tests/Makefile
+config.status: creating libparted.pc
+config.status: creating libparted-fs-resize.pc
+config.status: creating parted/Makefile
+config.status: creating partprobe/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/C/Makefile
+config.status: creating doc/pt_BR/Makefile
+config.status: creating debug/Makefile
+config.status: creating debug/test/Makefile
+config.status: creating tests/Makefile
+config.status: creating po/Makefile.in
+config.status: creating lib/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+
+Type 'make' to compile parted.
+make  all-recursive
+make[1]: Entering directory '/var/tmp/hokuto/parted-01/build'
+Making all in po
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/po'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/po'
+Making all in lib
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/lib'
+  GEN      alloca.h
+  GEN      error.h
+  GEN      configmake.h
+  GEN      fcntl.h
+  GEN      malloc/scratch_buffer.gl.h
+  GEN      malloc/dynarray.gl.h
+  GEN      malloc/dynarray-skeleton.gl.h
+  GEN      langinfo.h
+  GEN      inttypes.h
+  GEN      limits.h
+  GEN      locale.h
+  GEN      pthread.h
+  GEN      sched.h
+  GEN      stdckdint.h
+  GEN      stdcountof.h
+  GEN      stddef.h
+  GEN      stdio.h
+  GEN      stdlib.h
+  GEN      string.h
+  GEN      sys/random.h
+  GEN      sys/stat.h
+  GEN      sys/types.h
+  GEN      time.h
+  GEN      unicase.h
+  GEN      uchar.h
+  GEN      unictype.h
+  GEN      unistd.h
+  GEN      uninorm.h
+  GEN      unitypes.h
+  GEN      wchar.h
+  GEN      wctype.h
+make  all-am
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/lib'
+  CC       libgnulib_la-basename-lgpl.lo
+  CC       libgnulib_la-argmatch.lo
+  CC       libgnulib_la-btoc32.lo
+  CC       libgnulib_la-c-ctype.lo
+  CC       libgnulib_la-btowc.lo
+  CC       libgnulib_la-c-strcasecmp.lo
+  CC       libgnulib_la-c-strncasecmp.lo
+  CC       libgnulib_la-c32_apply_type_test.lo
+  CC       libgnulib_la-c32_get_type_test.lo
+  CC       libgnulib_la-c32isalnum.lo
+  CC       libgnulib_la-c32isalpha.lo
+  CC       libgnulib_la-c32isblank.lo
+  CC       libgnulib_la-c32iscntrl.lo
+  CC       libgnulib_la-c32isdigit.lo
+  CC       libgnulib_la-c32isgraph.lo
+  CC       libgnulib_la-c32islower.lo
+  CC       libgnulib_la-c32isprint.lo
+  CC       libgnulib_la-c32ispunct.lo
+  CC       libgnulib_la-c32isspace.lo
+  CC       libgnulib_la-c32isupper.lo
+  CC       libgnulib_la-c32isxdigit.lo
+  CC       libgnulib_la-c32rtomb.lo
+  CC       libgnulib_la-c32tolower.lo
+  CC       libgnulib_la-c32toupper.lo
+  CC       libgnulib_la-cloexec.lo
+  CC       libgnulib_la-close-stream.lo
+  CC       libgnulib_la-closeout.lo
+  CC       libgnulib_la-dirname.lo
+  CC       libgnulib_la-basename.lo
+  CC       libgnulib_la-dirname-lgpl.lo
+  CC       libgnulib_la-stripslash.lo
+  CC       libgnulib_la-exitfail.lo
+  CC       libgnulib_la-fcntl.lo
+  CC       libgnulib_la-fd-hook.lo
+  CC       libgnulib_la-fseterr.lo
+  CC       libgnulib_la-getprogname.lo
+  CC       libgnulib_la-hard-locale.lo
+  CC       libgnulib_la-ialloc.lo
+  CC       libgnulib_la-issymlink.lo
+  CC       libgnulib_la-localcharset.lo
+  CC       libgnulib_la-localeinfo.lo
+  CC       libgnulib_la-long-options.lo
+  CC       libgnulib_la-malloca.lo
+  CC       libgnulib_la-mbrtoc32.lo
+  CC       libgnulib_la-mbrtowc.lo
+  CC       libgnulib_la-mbszero.lo
+  CC       libgnulib_la-memeq.lo
+  CC       libgnulib_la-nl_langinfo.lo
+  CC       glthread/libgnulib_la-once.lo
+  CC       libgnulib_la-progname.lo
+  CC       libgnulib_la-quotearg.lo
+  CC       libgnulib_la-realloc.lo
+  CC       libgnulib_la-reallocarray.lo
+  CC       libgnulib_la-safe-read.lo
+  CC       libgnulib_la-setlocale_null.lo
+  CC       libgnulib_la-setlocale_null-unlocked.lo
+  CC       libgnulib_la-stat-time.lo
+  CC       libgnulib_la-stdlib.lo
+  CC       libgnulib_la-streq.lo
+  CC       libgnulib_la-tempname.lo
+  CC       glthread/libgnulib_la-threadlib.lo
+  CC       libgnulib_la-unistd.lo
+  CC       libgnulib_la-version-etc.lo
+  CC       libgnulib_la-version-etc-fsf.lo
+  CC       libgnulib_la-wcrtomb.lo
+  CC       libgnulib_la-wctype-h.lo
+  CC       libgnulib_la-xmalloc.lo
+  CC       libgnulib_la-xalloc-die.lo
+  CC       libgnulib_la-xstrtol.lo
+  CC       libgnulib_la-xstrtoul.lo
+  CC       libgnulib_la-xstrtoll.lo
+  CC       libgnulib_la-xstrtoull.lo
+  CC       malloc/libgnulib_la-dynarray_at_failure.lo
+  CC       malloc/libgnulib_la-dynarray_emplace_enlarge.lo
+  CC       malloc/libgnulib_la-dynarray_finalize.lo
+  CC       malloc/libgnulib_la-dynarray_resize.lo
+  CC       malloc/libgnulib_la-dynarray_resize_clear.lo
+  CC       malloc/libgnulib_la-scratch_buffer_grow.lo
+  CC       malloc/libgnulib_la-scratch_buffer_grow_preserve.lo
+  CC       malloc/libgnulib_la-scratch_buffer_set_array_size.lo
+  CC       glthread/libgnulib_la-lock.lo
+  CC       unicase/libgnulib_la-tolower.lo
+  CC       unicase/libgnulib_la-toupper.lo
+  CC       unictype/libgnulib_la-ctype_alnum.lo
+  CC       unictype/libgnulib_la-ctype_alpha.lo
+  CC       unictype/libgnulib_la-ctype_blank.lo
+  CC       unictype/libgnulib_la-ctype_cntrl.lo
+  CC       unictype/libgnulib_la-ctype_digit.lo
+  CC       unictype/libgnulib_la-ctype_graph.lo
+  CC       unictype/libgnulib_la-ctype_lower.lo
+  CC       unictype/libgnulib_la-ctype_print.lo
+  CC       unictype/libgnulib_la-ctype_punct.lo
+  CC       unictype/libgnulib_la-ctype_space.lo
+  CC       unictype/libgnulib_la-ctype_upper.lo
+  CC       unictype/libgnulib_la-ctype_xdigit.lo
+  CCLD     libgnulib.la
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/lib'
+Making all in include
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/include'
+Making all in parted
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make  all-am
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/include'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/include'
+Making all in libparted
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted'
+Makefile:2076: target 'arch/.deps/linux.Plo' given more than once in the same rule
+Making all in labels
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+make  all-am
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+  CC       aix.lo
+  CC       bsd.lo
+  CC       atari.lo
+  CC       dos.lo
+  CC       dvh.lo
+  CC       efi_crc32.lo
+  CC       gpt.lo
+  CC       mac.lo
+  CC       loop.lo
+  CC       pc98.lo
+  CC       pt-tools.lo
+  CC       rdb.lo
+  CC       sun.lo
+  CCLD     liblabels.la
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+Making all in fs
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted/fs'
+  CC       r/filesys.lo
+  CC       r/fat/calc.lo
+  CC       r/fat/bootsector.lo
+  CC       r/fat/clstdup.lo
+  CC       r/fat/context.lo
+  CC       r/fat/count.lo
+  CC       r/fat/fatio.lo
+  CC       r/fat/fat.lo
+  CC       r/fat/resize.lo
+  CC       r/fat/table.lo
+  CC       r/fat/traverse.lo
+  CC       r/hfs/advfs.lo
+  CC       r/hfs/advfs_plus.lo
+  CC       r/hfs/cache.lo
+  CC       r/hfs/file.lo
+  CC       r/hfs/file_plus.lo
+  CC       r/hfs/hfs.lo
+  CC       r/hfs/journal.lo
+  CC       r/hfs/probe.lo
+  CC       r/hfs/reloc.lo
+  CC       r/hfs/reloc_plus.lo
+  CC       amiga/affs.lo
+  CC       amiga/amiga.lo
+  CC       amiga/apfs.lo
+  CC       amiga/asfs.lo
+  CC       amiga/a-interface.lo
+  CC       btrfs/btrfs.lo
+  CC       ext2/interface.lo
+  CC       exfat/exfat.lo
+  CC       fat/bootsector.lo
+  CC       fat/fat.lo
+  CC       f2fs/f2fs.lo
+  CC       hfs/hfs.lo
+  CC       hfs/probe.lo
+  CC       jfs/jfs.lo
+  CC       linux_swap/linux_swap.lo
+  CC       nilfs2/nilfs2.lo
+  CC       ntfs/ntfs.lo
+  CC       reiserfs/reiserfs.lo
+  CC       udf/udf.lo
+  CC       ufs/ufs.lo
+  CC       xfs/xfs.lo
+  CCLD     libparted-fs-resize.la
+  CCLD     libfs.la
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted/fs'
+Making all in .
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted'
+Makefile:2076: target 'arch/.deps/linux.Plo' given more than once in the same rule
+  CC       device.lo
+  CC       debug.lo
+  CC       architecture.lo
+  CC       exception.lo
+  CC       filesys.lo
+  CC       libparted.lo
+  CC       timer.lo
+  CC       unit.lo
+  CC       disk.lo
+  CC       cs/geom.lo
+  CC       cs/constraint.lo
+  CC       cs/natmath.lo
+  CC       arch/linux.lo
+[01m[Karch/linux.c:[m[K In function '[01m[K_device_open[m[K':
+[01m[Karch/linux.c:1724:40:[m[K [01;35m[Kwarning: [m[Kinitialization discards '[01m[Kconst[m[K' qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+ 1724 |                 char*   rw_error_msg = [01;35m[Kstrerror[m[K (errno);
+      |                                        [01;35m[K^~~~~~~~[m[K
+  CCLD     libparted.la
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted'
+Making all in parted
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/parted'
+  GEN      version.c
+  GEN      version.h
+make  all-am
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/parted'
+  CC       parted.o
+  CC       command.o
+  CC       strlist.o
+  CC       ui.o
+  CC       jsonwrt.o
+  CC       version.o
+  CC       table.o
+  AR       libver.a
+  CCLD     parted
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/parted'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/parted'
+Making all in partprobe
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/partprobe'
+  CC       partprobe.o
+  CCLD     partprobe
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/partprobe'
+Making all in doc
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/doc'
+Making all in C
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/doc/C'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc/C'
+Making all in pt_BR
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/doc/pt_BR'
+  GEN      all-local
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc/pt_BR'
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc'
+Making all in debug
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/debug'
+Making all in test
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/debug/test'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/debug/test'
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/debug'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/debug'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/debug'
+Making all in tests
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/tests'
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/parted-01/build'
+make  install-recursive
+make[1]: Entering directory '/var/tmp/hokuto/parted-01/build'
+Making install in po
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/po'
+if test "parted" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /var/tmp/hokuto/parted-01/output/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /var/tmp/hokuto/parted-01/output/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /var/tmp/hokuto/parted-01/output/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/po'
+Making install in lib
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/lib'
+make  install-am
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/lib'
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/lib'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/lib'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/lib'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/lib'
+Making install in include
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/include'
+Making install in parted
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make  install-am
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make[5]: Entering directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make[5]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parted-01/output/usr/include/parted'
+ /usr/bin/install -c -m 644 constraint.h debug.h device.h disk.h exception.h filesys.h geom.h natmath.h timer.h unit.h parted.h '/var/tmp/hokuto/parted-01/output/usr/include/parted'
+make[5]: Leaving directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/include/parted'
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/include'
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/include'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/include'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/include'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/include'
+Making install in libparted
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted'
+Makefile:2076: target 'arch/.deps/linux.Plo' given more than once in the same rule
+Making install in labels
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+make  install-am
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+make[5]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted/labels'
+Making install in fs
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted/fs'
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted/fs'
+make[4]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parted-01/output/usr/lib'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libparted-fs-resize.la '/var/tmp/hokuto/parted-01/output/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libparted-fs-resize.so.0.0.5 /var/tmp/hokuto/parted-01/output/usr/lib/libparted-fs-resize.so.0.0.5
+libtool: install: (cd /var/tmp/hokuto/parted-01/output/usr/lib && { ln -s -f libparted-fs-resize.so.0.0.5 libparted-fs-resize.so.0 || { rm -f libparted-fs-resize.so.0 && ln -s libparted-fs-resize.so.0.0.5 libparted-fs-resize.so.0; }; })
+libtool: install: (cd /var/tmp/hokuto/parted-01/output/usr/lib && { ln -s -f libparted-fs-resize.so.0.0.5 libparted-fs-resize.so || { rm -f libparted-fs-resize.so && ln -s libparted-fs-resize.so.0.0.5 libparted-fs-resize.so; }; })
+libtool: install: /usr/bin/install -c .libs/libparted-fs-resize.lai /var/tmp/hokuto/parted-01/output/usr/lib/libparted-fs-resize.la
+libtool: install: /usr/bin/install -c .libs/libparted-fs-resize.a /var/tmp/hokuto/parted-01/output/usr/lib/libparted-fs-resize.a
+libtool: install: chmod 644 /var/tmp/hokuto/parted-01/output/usr/lib/libparted-fs-resize.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/parted-01/output/usr/lib/libparted-fs-resize.a
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted/fs'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted/fs'
+Making install in .
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted'
+Makefile:2076: target 'arch/.deps/linux.Plo' given more than once in the same rule
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/libparted'
+Makefile:2076: target 'arch/.deps/linux.Plo' given more than once in the same rule
+make[4]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parted-01/output/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libparted.la '/var/tmp/hokuto/parted-01/output/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libparted.so.2.0.5 /var/tmp/hokuto/parted-01/output/usr/lib/libparted.so.2.0.5
+libtool: install: (cd /var/tmp/hokuto/parted-01/output/usr/lib && { ln -s -f libparted.so.2.0.5 libparted.so.2 || { rm -f libparted.so.2 && ln -s libparted.so.2.0.5 libparted.so.2; }; })
+libtool: install: (cd /var/tmp/hokuto/parted-01/output/usr/lib && { ln -s -f libparted.so.2.0.5 libparted.so || { rm -f libparted.so && ln -s libparted.so.2.0.5 libparted.so; }; })
+libtool: install: /usr/bin/install -c .libs/libparted.lai /var/tmp/hokuto/parted-01/output/usr/lib/libparted.la
+libtool: install: /usr/bin/install -c .libs/libparted.a /var/tmp/hokuto/parted-01/output/usr/lib/libparted.a
+libtool: install: chmod 644 /var/tmp/hokuto/parted-01/output/usr/lib/libparted.a
+libtool: install: gcc-ranlib /var/tmp/hokuto/parted-01/output/usr/lib/libparted.a
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/libparted'
+Making install in parted
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/parted'
+make  install-am
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/parted'
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/parted'
+make[4]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parted-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c parted '/var/tmp/hokuto/parted-01/output/usr/bin'
+libtool: [31mwarning[0m: [1m'../libparted/libparted.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/parted /var/tmp/hokuto/parted-01/output/usr/bin/parted
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/parted'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/parted'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/parted'
+Making install in partprobe
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/partprobe'
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/partprobe'
+make[3]: Nothing to be done for 'install-data-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parted-01/output/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c partprobe '/var/tmp/hokuto/parted-01/output/usr/bin'
+libtool: [31mwarning[0m: [1m'../libparted/libparted.la' has not been installed in '/usr/lib'[0m
+libtool: install: /usr/bin/install -c .libs/partprobe /var/tmp/hokuto/parted-01/output/usr/bin/partprobe
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/partprobe'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/partprobe'
+Making install in doc
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/doc'
+Making install in C
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/doc/C'
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/doc/C'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parted-01/output/usr/share/man/man8'
+ /usr/bin/install -c -m 644 parted.8 partprobe.8 '/var/tmp/hokuto/parted-01/output/usr/share/man/man8'
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc/C'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc/C'
+Making install in pt_BR
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/doc/pt_BR'
+  GEN      all-local
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/doc/pt_BR'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc/pt_BR'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc/pt_BR'
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/doc'
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/doc'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parted-01/output/usr/share/info'
+ /usr/bin/install -c -m 644 ./parted.info '/var/tmp/hokuto/parted-01/output/usr/share/info'
+ install-info --info-dir='/var/tmp/hokuto/parted-01/output/usr/share/info' '/var/tmp/hokuto/parted-01/output/usr/share/info/parted.info'
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/doc'
+Making install in debug
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/debug'
+Making install in test
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/debug/test'
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/debug/test'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/debug/test'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/debug/test'
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/debug'
+make[4]: Entering directory '/var/tmp/hokuto/parted-01/build/debug'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/var/tmp/hokuto/parted-01/build/debug'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/debug'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/debug'
+Making install in tests
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build/tests'
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build/tests'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build/tests'
+make[2]: Entering directory '/var/tmp/hokuto/parted-01/build'
+make[3]: Entering directory '/var/tmp/hokuto/parted-01/build'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/var/tmp/hokuto/parted-01/output/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libparted.pc libparted-fs-resize.pc '/var/tmp/hokuto/parted-01/output/usr/lib/pkgconfig'
+make[3]: Leaving directory '/var/tmp/hokuto/parted-01/build'
+make[2]: Leaving directory '/var/tmp/hokuto/parted-01/build'
+make[1]: Leaving directory '/var/tmp/hokuto/parted-01/build'
+
+Script done on 2026-09-25 11:10:27+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mparted[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mFri, 25 Sep 2026 04:10:27 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m25s[0m
