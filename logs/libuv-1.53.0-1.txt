@@ -1,0 +1,209 @@
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibuv[0m[38;2;25;118;210m: Building [0m[38;2;11;169;19mlibuv 1.53.0-1[0m[38;2;25;118;210m started [0m[38;2;11;169;19mFri, 25 Sep 2026 04:09:25 +0000[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibuv[0m[38;2;25;118;210m: Installing for build: [0m[38;2;11;169;19mglibc[0m
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibuv[0m[38;2;25;118;210m: Installed build dependencies: [0m[38;2;11;169;19mautoconf-2.73-1 automake-1.19-1 binutils-2.46.1-1 bison-3.8.2-1 diffutils-3.12-1 file-5.48-1 findutils-4.11.0-1 flex-2.6.4-1 gawk-5.4.1-1 gcc-16.2.0-2 gettext-1.0-1 glibc-2.44-1 grep-3.12-1 gzip-1.15-1 libtool-2.6.2-1 m4-1.4.21-1 make-4.4.1-1 patch-2.8-1 pkgconf-3.0.7-1 sed-4.10-1 texinfo-7.3-1 which-2.25-1[0m
+
+Script started on 2026-09-25 11:09:25+07:00 [COMMAND="cd /var/tmp/hokuto/libuv-01/build && AR='gcc-ar' CARGO_HOME='/var/tmp/hokuto/libuv-01/build/cargo' CC='cc' CFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' CMAKE_BUILD_PARALLEL_LEVEL='10' CONFIG_SITE='/usr/share/config.site' CPUFLAGS='' CROSS_PREFIX='/usr' CXX='c++' CXXFLAGS='-march=native -O2 -pipe -fomit-frame-pointer -flto=10' GNU_MIRROR='https://mirror.cyberbits.asia/gnu/' GOFLAGS='-trimpath -modcacherw' GOPATH='/var/tmp/hokuto/libuv-01/build/go' HOKUTO_ARCH='x86_64' HOKUTO_BUILD_DIR='/var/tmp/hokuto/libuv-01/build' HOKUTO_BUILD_PRIORITY='idle' HOKUTO_GENERIC='' HOKUTO_LTO='1' HOKUTO_OUTPUT_DIR='/var/tmp/hokuto/libuv-01/output' HOKUTO_REAL_USER='dbz' HOKUTO_ROOT='/' HOKUTO_SPLIT_DIR='/var/tmp/hokuto/libuv-01/split' LDFLAGS='-fuse-ld=bfd -flto=10 -O1 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack' MAKEFLAGS='-j10' MULTILIB='1' NM='gcc-nm' PATH='/var/tmp/hokuto/libuv-01/build/.hokuto-tools:/usr/local/bin:/opt/cuda/bin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/local/sbin' RANLIB='gcc-ranlib' RUSTFLAGS='-C target-cpu=native --remap-path-prefix=/var/tmp/hokuto/libuv-01/build=.' TMPDIR='/var/tmp/hokuto' XDG_CACHE_HOME='/var/tmp/hokuto/libuv-01/build/.cache' /repo/sauzeros/extra/libuv/build /var/tmp/hokuto/libuv-01/output 1.53.0 libuv" <not executed on terminal>]
++ libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
++ aclocal -I m4
++ autoconf
+configure.ac:45: warning: The macro 'AC_PROG_LIBTOOL' is obsolete.
+configure.ac:45: You should run autoupdate.
+m4/libtool.m4:100: AC_PROG_LIBTOOL is expanded from...
+configure.ac:45: the top level
+configure.ac:48: warning: $as_echo is obsolete; use AS_ECHO(["message"]) instead
+lib/m4sugar/m4sh.m4:961: _as_echo_var_prepare is expanded from...
+lib/m4sugar/m4sh.m4:951: as_echo is expanded from...
+lib/m4sugar/m4sh.m4:689: _AS_IF_ELSE is expanded from...
+lib/m4sugar/m4sh.m4:696: AS_IF is expanded from...
+./lib/autoconf/general.m4:2305: AC_CACHE_VAL is expanded from...
+./lib/autoconf/general.m4:2326: AC_CACHE_CHECK is expanded from...
+m4/ax_pthread.m4:88: AX_PTHREAD is expanded from...
+configure.ac:48: the top level
++ automake --add-missing --copy
+configure.ac:43: installing './ar-lib'
+configure.ac:26: installing './compile'
+configure.ac:23: installing './config.guess'
+configure.ac:23: installing './config.sub'
+configure.ac:21: installing './install-sh'
+configure.ac:21: installing './missing'
+Makefile.am: installing './depcomp'
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether cc accepts -g... yes
+checking for cc option to enable C23 features... none needed
+checking whether cc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of cc... gcc3
+checking for cc way to treat warnings as errors... -Werror
+checking if cc supports __attribute__(( visibility("default") ))... yes
+checking if cc supports -fvisibility=hidden flag... yes
+checking if cc supports -fno-strict-aliasing flag... yes
+checking if cc supports -fno-strict-aliasing flag... yes
+checking if cc supports -g flag... yes
+checking if cc supports -std=gnu11 flag... yes
+checking if cc supports -Wall flag... yes
+checking if cc supports -Wextra flag... yes
+checking if cc supports -Wno-long-long flag... yes
+checking if cc supports -Wno-unused-parameter flag... yes
+checking if cc supports -Wstrict-prototypes flag... yes
+checking the archiver (gcc-ar) interface... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... gcc-nm
+checking the name lister (gcc-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ranlib... gcc-ranlib
+checking for archiver @FILE support... @
+checking for strip... strip
+checking command to parse gcc-nm output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... yes
+checking which variant of shared library versioning to provide... (default) aix
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C preprocessor... cc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking whether cc is Clang... no
+checking whether pthreads work with -pthread... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for library containing dlopen... none required
+checking for library containing kstat_lookup... no
+checking for library containing gethostbyname... none required
+checking for library containing perfstat_cpu... no
+checking for library containing clock_gettime... none required
+checking for library containing sendfile... none required
+checking for library containing socket... none required
+checking for cc option to support large files... none needed
+checking for sys/ahafs_evProds.h... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libuv.pc
+config.status: executing depfiles commands
+config.status: executing libtool commands
+  CC       src/libuv_la-idna.lo
+  CC       src/libuv_la-strscpy.lo
+  CC       src/libuv_la-random.lo
+  CC       src/libuv_la-thread-common.lo
+  CC       src/libuv_la-threadpool.lo
+  CC       src/libuv_la-fs-poll.lo
+  CC       src/libuv_la-timer.lo
+  CC       src/libuv_la-uv-data-getter-setters.lo
+  CC       src/libuv_la-inet.lo
+  CC       src/libuv_la-uv-common.lo
+  CC       src/libuv_la-version.lo
+  CC       src/libuv_la-strtok.lo
+  CC       src/unix/libuv_la-async.lo
+  CC       src/unix/libuv_la-core.lo
+  CC       src/unix/libuv_la-dl.lo
+  CC       src/unix/libuv_la-fs.lo
+  CC       src/unix/libuv_la-getaddrinfo.lo
+  CC       src/unix/libuv_la-getnameinfo.lo
+  CC       src/unix/libuv_la-loop-watcher.lo
+  CC       src/unix/libuv_la-loop.lo
+  CC       src/unix/libuv_la-pipe.lo
+  CC       src/unix/libuv_la-poll.lo
+  CC       src/unix/libuv_la-process.lo
+  CC       src/unix/libuv_la-random-devurandom.lo
+  CC       src/unix/libuv_la-signal.lo
+  CC       src/unix/libuv_la-stream.lo
+  CC       src/unix/libuv_la-tcp.lo
+  CC       src/unix/libuv_la-thread.lo
+  CC       src/unix/libuv_la-tty.lo
+  CC       src/unix/libuv_la-udp.lo
+  CC       src/unix/libuv_la-linux.lo
+  CC       src/unix/libuv_la-procfs-exepath.lo
+  CC       src/unix/libuv_la-proctitle.lo
+  CC       src/unix/libuv_la-random-getrandom.lo
+  CC       src/unix/libuv_la-random-sysctl-linux.lo
+  CCLD     libuv.la
+make[1]: Entering directory '/var/tmp/hokuto/libuv-01/build'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libuv-01/output/usr/include'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libuv-01/output/usr/lib/pkgconfig'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libuv-01/output/usr/include/uv'
+ /usr/bin/mkdir -p '/var/tmp/hokuto/libuv-01/output/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libuv.la '/var/tmp/hokuto/libuv-01/output/usr/lib'
+ /usr/bin/install -c -m 644 include/uv.h '/var/tmp/hokuto/libuv-01/output/usr/include'
+ /usr/bin/install -c -m 644 include/uv/errno.h include/uv/threadpool.h include/uv/version.h include/uv/unix.h include/uv/linux.h '/var/tmp/hokuto/libuv-01/output/usr/include/uv'
+ /usr/bin/install -c -m 644 libuv.pc '/var/tmp/hokuto/libuv-01/output/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libuv.so.1.0.0 /var/tmp/hokuto/libuv-01/output/usr/lib/libuv.so.1.0.0
+libtool: install: (cd /var/tmp/hokuto/libuv-01/output/usr/lib && { ln -s -f libuv.so.1.0.0 libuv.so.1 || { rm -f libuv.so.1 && ln -s libuv.so.1.0.0 libuv.so.1; }; })
+libtool: install: (cd /var/tmp/hokuto/libuv-01/output/usr/lib && { ln -s -f libuv.so.1.0.0 libuv.so || { rm -f libuv.so && ln -s libuv.so.1.0.0 libuv.so; }; })
+libtool: install: /usr/bin/install -c .libs/libuv.lai /var/tmp/hokuto/libuv-01/output/usr/lib/libuv.la
+libtool: [31mwarning[0m: [1mremember to run 'libtool --finish /usr/lib'[0m
+make[1]: Leaving directory '/var/tmp/hokuto/libuv-01/build'
+
+Script done on 2026-09-25 11:09:32+07:00 [COMMAND_EXIT_CODE="0"]
+
+[38;2;255;235;59m>>> [0m[38;2;11;169;19mlibuv[0m[38;2;25;118;210m: Build [0m[38;2;11;169;19mcomplete[0m[38;2;25;118;210m at [0m[38;2;11;169;19mFri, 25 Sep 2026 04:09:32 +0000[0m[38;2;25;118;210m elapsed time [0m[38;2;11;169;19m7s[0m
