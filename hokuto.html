@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - Hokuto Package Managers</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      color: #586e75;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      display: flex;
+      line-height: 1.5;
+    }
+
+    nav {
+      width: 200px;
+      padding: 40px 20px;
+      border-right: 1px dashed #93a1a1;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 900px;
+    }
+
+    .menu-item {
+      display: block;
+      margin-bottom: 20px;
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      color: #dc322f;
+      text-decoration: underline;
+    }
+
+    .menu-item.active {
+      color: #cb4b16;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    h2,
+    h3 {
+      color: #268bd2;
+    }
+
+    .box {
+      border: 1px solid #93a1a1;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "* ";
+      color: #859900;
+    }
+
+    a {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: #eee8d5;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .env-vars,
+    .options-list {
+      background-color: #eee8d5;
+      padding: 15px;
+      border-left: 4px solid #b58900;
+      margin-top: 10px;
+    }
+
+    #pkg-table th {
+      color: #268bd2;
+    }
+
+    #pkg-table td {
+      vertical-align: top;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div style="font-weight: bold; margin-bottom: 30px; color: #b58900;">[ sauzerOS ]</div>
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="bootstrap.html" class="menu-item">Bootstrap</a>
+    <a href="hokuto.html" class="menu-item active">Hokuto</a>
+    <a href="packages.html" class="menu-item">Packages</a>
+    <a href="https://github.com/sauzerOS" class="menu-item">GitHub</a>
+  </nav>
+  <main>
+    <div class="box">
+      <h1>hokuto package manager</h1>
+    </div>
+
+    <div class="section">
+      <p>Package Manager written in Go with minimal optional external dependencies:</p>
+      <ul>
+        <li>b3sum</li>
+        <li>git</li>
+        <li>lzip</li>
+        <li>rsync</li>
+        <li>tar</li>
+        <li>wget</li>
+        <li>zstd</li>
+      </ul>
+      <p>The package manager is fully functional without any external dependencies (except for git checkouts) if
+        executed as root.</p>
+    </div>
+
+    <div class="section">
+      <h3>Usage</h3>
+      <p>
+        <code>hokuto help</code> for basic usage<br>
+        <code>hokuto function</code> for advanced options
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>Configuration Files</h3>
+      <p>Configuration files are stored in <code>/etc/hokuto/</code></p>
+      <ul>
+        <li><code>hokuto.conf</code>: global config file</li>
+        <li><code>hokuto.lock</code>: pin a package to specific version (pkgname version)</li>
+        <li><code>hokuto.pkgset</code>: pkgsets for batch updates (hokuto bump -set setname oldver newver)</li>
+        <li><code>hokuto.rebuild</code>: simple DKMS (triggerpackage package1 package2)</li>
+        <li><code>hokuto.update</code>: sets package build priority on updates (package1 package2 package3)</li>
+        <li><code>/etc/hokuto/keys/foo.key</code>: key used to sign packages (use hokuto settings to generate a new key)
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Package Structure</h3>
+      <ul>
+        <li>
+          <strong>build</strong>: bash file with build instructions
+          <div class="env-vars">
+            <strong>Available env variables in the script:</strong><br>
+            $1: build DESTDIR<br>
+            $2: package version<br>
+            $3: package name<br>
+            $HOKUTO_ARCH: build arch (aarch64 or x86_64)<br>
+            $HOKUTO_CROSS: (1 or 0) and $HOKUTO_CARCH (arm64)<br>
+            $HOKUTO_CROSS_SYSTEM: (1 or 0) set when building the cross-system toolchain (-cross=arm64,system)<br>
+            $CROSS_PREFIX: prefix the build should install into; /usr for native and plain cross builds,
+            /usr/&lt;triplet&gt; for cross-system builds. The usual idiom is
+            <code>PREFIX="${CROSS_PREFIX:-/usr}"</code><br>
+            $HOKUTO_LTO: whether LTO is enabled for the current build (1 or 0)<br>
+            $MULTILIB: (1 or 0)<br>
+            $HOKUTO_ROOT: rootdir, usually / but can be set to another dir<br>
+            $TMPDIR: current tmpdir<br>
+            $HOKUTO_BUILD_DIR: current build dir path<br>
+            $HOKUTO_REAL_USER: user that executed hokuto (allows installation in user home directory)
+            $HOKUTO_SPLIT_DIR: split dir output (split packages generation)
+          </div>
+        </li>
+        <li><strong>checksums</strong>: b3sums of source files</li>
+        <li>
+          <strong>depends{.supackage}</strong>: dependencies
+          <ul>
+            <li><code>pkgname</code>: runtime/build dependency</li>
+            <li><code>pkgname==17.*</code>: require any release from major version 17</li>
+            <li><code>pkgname make</code>: build dependency</li>
+            <li><code>pkgname makeopt</code>: optional binary-only build dependency. Hokuto uses an installed package or
+              installs an available binary version for the build, but continues without it when no binary is available.
+              Packages installed only for the build are removed afterward</li>
+            <li><code>pkgname optional</code>: package will be automatically rebuilt once the dependency is available
+              (solves circular deps)</li>
+            <li><code>pkgname runtime</code>: runtime only dependency</li>
+            <li><code>pkgname suggest "comment"</code>: suggested optional dependency</li>
+            <li><code>pkgname rebuild</code>: forces rebuild of package even if already installed, only enabled with
+              -rebuilds build command flag</li>
+            <li><code>pkgname cross</code>: cross (arm64) runtime dependency, e.g. <code>aarch64-zlib-ng cross</code> as
+              a dependency of <code>file</code> pulls in <code>aarch64-zlib-ng</code> whenever <code>aarch64-file</code>
+              is built/installed, and it stays a real (always-verified) dependency afterward, same as a plain
+              dependency line but scoped to cross builds</li>
+            <li><code>pkgname cross make</code>: cross (arm64) build-time-only dependency; only needed while building
+              the cross target, not required once it's installed (e.g. <code>aarch64-gcc cross make</code>)</li>
+            <li><strong>Prefixed vs bare cross dependencies.</strong> A cross dependency whose name carries the target
+              arch prefix (<code>aarch64-gcc cross make</code>, <code>aarch64-libelf cross make</code>) is a target
+              artifact, built for the target and installed into the sysroot. A cross dependency with a bare name
+              (<code>mercurial cross make</code>, <code>cmake cross make</code>) is a <em>host</em> tool the cross
+              build needs and is built/installed natively — use this when there is no sensible
+              <code>aarch64-*</code> counterpart. A cross dependency naming a different architecture
+              (<code>x86_64-gcc cross make</code> while targeting arm64) is ignored, so one depends file can list
+              several targets</li>
+            <li><code>pkgname crossnative</code>: like <code>cross</code>, but skipped when building the cross-system
+              toolchain itself (<code>-cross=arm64,system</code>)</li>
+            <li><code>pkgname crossnative make</code>: like <code>cross make</code>, but skipped when building the
+              cross-system toolchain itself</li>
+            <li><code>pkgname nocross</code>: runtime dependency of the native build only. It is not recorded in the
+              depends of a cross-built package, since a cross build usually enables a smaller feature set and the
+              target would otherwise demand packages it neither needs nor has</li>
+            <li><strong>Cross builds only honor cross dependencies.</strong> Under <code>-cross=&lt;arch&gt;</code>
+              (with or without <code>,system</code>) every dependency line that is neither tagged
+              <code>cross</code>/<code>crossnative</code> nor already carries the target arch prefix
+              (<code>aarch64-*</code>) is ignored, including plain <code>make</code> dependencies. Those lines
+              describe the native build of the package; a cross build must declare what it needs explicitly. So a
+              recipe that needs e.g. <code>pahole</code> for both builds lists it twice: <code>pahole make</code>
+              for native and <code>pahole cross make</code> for cross</li>
+            <li><code>== <> => <= version</code> (eg <code>ffmpeg<=7.2.0</code>): dependency version constraints. hokuto
+              can build older versions by fetching the package from the repo git history</li>
+            <li><code>package1 | package2</code>: hokuto will prompt which dependency to use</li>
+          </ul>
+        </li>
+        <li><strong>equivalents</strong> (repository root): mutually exclusive, dependency-compatible package pairs,
+          one pair per line as <code>upstream-package replacement-package</code>. Either installed package satisfies an
+          unconstrained dependency on the other. Installing one replaces the other, and generated library dependencies
+          use an ordered <code>replacement | upstream</code> alternative for replacement packages. Version-constrained
+          dependencies remain exact. The relevant pair is embedded in built packages so replacement also works when
+          installing exclusively from a binary mirror</li>
+        <li>
+          <strong>options</strong>:
+          <div class="options-list">
+            <code>asroot</code>: build package as root<br>
+            <code>binary</code>: binary package with bundled deps, ignored by automatic dependency resolver and built without base-devel<br>
+            <code>clang</code>: sets flto=auto for clang builds<br>
+            <code>cross</code>: the recipe is prepared for cross builds. Only needed when that cannot be seen from
+            the recipe itself, e.g. an arch-independent package, or one that needs no changes at all<br>
+            <code>cross-simple</code>: use the native host compiler instead of the cross-compiler<br>
+            <code>devel</code>: install base-devel for a binary or nodevel package that explicitly requires build tools<br>
+            <code>generic</code>: always build the generic variant with CFLAGS_GEN instead of the optimized flags, as
+            if <code>HOKUTO_GENERIC=1</code> were set<br>
+            <code>host-tool</code>: don't modify the PATH in the build env to include the cross-toolchain binaries<br>
+            <code>idle</code>: build with half of the CPU cores<br>
+            <code>interactive</code>: shows build output log and allows interactive scripts<br>
+            <code>kmod</code>: out-of-tree kernel module package, built and installed once per kernel (see Kernel
+            Module Packages)<br>
+            <code>multilib</code>: also install the 32-bit base-devel packages (<code>lib32-glibc</code>,
+            <code>lib32-gcc-libs</code>) for the build when multilib is enabled<br>
+            <code>nocross</code>: never cross build this package, whatever the recipe looks like<br>
+            <code>nocrossopt</code>: don't enable CFLAGS_ARM64 for cross builds<br>
+            <code>nodevel</code>: don't install base-devel packages for this build<br>
+            <code>noram</code>: build in TMPDIR2<br>
+            <code>nolto</code>: disable LTO<br>
+            <code>nostrip</code>: disable stripping<br>
+            <code>perlxs</code>: the package installs code compiled against the Perl API (XS modules or an embedded
+            interpreter). When <code>hokuto bump perl</code> changes the Perl API version (5.42 → 5.44), and on
+            <code>hokuto perl-rebuild</code>, these recipes get a revision bump so they are rebuilt. A build that stages
+            such objects without this option prints a warning<br>
+            <code>staticlibs</code>: keep static libraries<br>
+            <code>options.subpackage</code>: use <code>staticlibs</code>/<code>!staticlibs</code> or
+            <code>nostrip</code>/<code>!nostrip</code> to enable or disable overrides for a split package
+          </div>
+        </li>
+        <li><strong>files</strong>: local package files</li>
+        <li><strong>libdeps.ignore{.subpackage}</strong>: ignore dependency during auto dependency resolution</li>
+        <li><strong>post-install</strong>: bash script executed after package install</li>
+        <li>
+          <strong>.sources</strong>: source links with substitutions
+          <ul>
+            <li><code>${version}</code>: The raw version from the version file.</li>
+            <li><code>${version-clean}</code>: Version with underscores (_) replaced by dots (.) (e.g., 1_2_3-1 →
+              1.2.3-1).</li>
+            <li><code>${version-undertomid}</code>: Version with underscores (_) replaced by dashes (-) (e.g.,
+              6.1.2_1 → 6.1.2-1).</li>
+            <li><code>${version_}</code>: Version with dots (.) replaced by underscores (_).</li>
+            <li><code>${version-}</code>: Version with dots (.) replaced by dashes (-).</li>
+            <li><code>${version-major}</code>: 1.2.3 -> 1</li>
+            <li><code>${version-major-minor}</code>: 1.2.3 -> 1.2</li>
+            <li><code>${version-sqlite}</code>: custom substitution for sqlite download links</li>
+            <li><code>${version-glued}</code>: 1.2.3 -> 123</li>
+            <li><code>${version-glued-end}</code>: 1.2.3 -> 1.23</li>
+            <li><code>${version-last-only}</code>: 1.2.3.sdk102 -> sdk102</li>
+            <li><code>${pkgname}</code>: The name of the package.</li>
+          </ul>
+        </li>
+        <li><strong>sources</strong>: source links with substitutions replaced with actual links (for repology parsing)
+        </li>
+        <li><strong>version</strong>: version revision</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Kernel Module Packages</h3>
+      <p>
+        Kernel modules only load into the exact kernel release they were built for, and several kernels can be
+        installed side by side (<code>linux</code>, <code>linux-cachyos</code>). A recipe with <code>kmod</code> in its
+        <code>options</code> is therefore never built or installed under its own name but once per kernel, as an
+        instance named after the kernel package: <code>nvidia-open~linux</code>,
+        <code>nvidia-open~linux-cachyos</code>. Instances of different kernels are installed at the same time; config
+        files they both ship (e.g. <code>/etc/modprobe.d</code>) are shared without a conflict prompt.
+      </p>
+      <ul>
+        <li><code>hokuto install nvidia-open</code> / <code>hokuto build nvidia-open</code>: with one kernel installed
+          its instance is used; with several, hokuto asks which kernel(s). <code>-y</code> or a non-interactive run
+          takes all of them. An instance can also be named directly: <code>hokuto build nvidia-open~linux</code></li>
+        <li>For an instance build hokuto installs the kernel's headers package (<code>&lt;kernel&gt;-headers</code>) if
+          its build tree is missing, and sets <code>$HOKUTO_KERNEL_DIR</code> (the build tree,
+          <code>/usr/lib/modules/&lt;release&gt;/build</code>), <code>$HOKUTO_KERNEL_RELEASE</code> and
+          <code>$HOKUTO_KERNEL_PACKAGE</code>. The recipe must build against these, not <code>/usr/src/linux</code> or
+          the running kernel; a package that ships modules for any other release is rejected</li>
+        <li>The release is recorded in the package (<code>kernel_release</code>, <code>kernel_package</code> in
+          <code>pkginfo</code>). Installing refuses a binary built for a release other than the one its kernel has
+          installed now, e.g. a mirror build from before the last kernel update; rebuild the instance instead</li>
+        <li><code>hokuto.rebuild</code> keeps listing the plain name (<code>linux-cachyos nvidia-open</code>); the
+          rebuild runs for the instance of the kernel that triggered it</li>
+        <li>A module package installed before kernel tracking (plain <code>nvidia-open</code>) is migrated
+          automatically: <code>hokuto update</code> updates it as the instance for the kernel its files were built for
+          (or the only installed kernel) and removes the plain package once that instance is installed;
+          <code>hokuto install nvidia-open</code> offers to remove it</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Cross Build Support</h3>
+      <p>
+        Cross building a recipe that was never adapted for it rarely fails outright. Configure scripts fall back to
+        host defaults, the build picks up the host's headers and libraries, and the result looks like a package right
+        up until something links against it or it is installed on the target. Hokuto therefore refuses such a build
+        instead of producing one.
+      </p>
+      <p>A recipe counts as prepared for cross builds when any of these is true:</p>
+      <ul>
+        <li>its <code>options</code> file contains <code>cross</code></li>
+        <li>its <code>build</code> script branches on the cross environment, that is it mentions
+          <code>CROSS_PREFIX</code>, <code>HOKUTO_CROSS</code> or <code>CROSS_COMPILE</code> outside a comment</li>
+        <li>its <code>depends</code> file declares <code>cross</code> or <code>crossnative</code> dependencies</li>
+      </ul>
+      <p>
+        Both of the last two are needed because neither is sufficient on its own: low level packages such as
+        <code>brotli</code> and <code>gmp</code> handle <code>CROSS_PREFIX</code> but have too few dependencies for any
+        of them to be marked <code>cross</code>, while <code>shadow</code> and <code>linux-rpi4</code> carry cross
+        dependencies without naming hokuto's variables in their script.
+      </p>
+      <p>
+        <code>options</code> wins over what the recipe looks like, in both directions: <code>cross</code> marks a recipe
+        that needs no changes (an arch-independent or data-only package, for instance), and <code>nocross</code> holds
+        one back that would otherwise pass. The check applies to both <code>-cross=&lt;arch&gt;</code> and
+        <code>-cross=&lt;arch&gt;,system</code>, and not to plain build dependencies that are compiled natively during
+        a cross session.
+      </p>
+      <div class="env-vars">
+        <strong>To build an unprepared recipe anyway, while adapting it:</strong><br>
+        <code>HOKUTO_ALLOW_UNCONFIGURED_CROSS=1 hokuto build -cross=arm64 pkgname</code>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Binary Packages</h3>
+      <p>
+        A binary package is an ordinary <code>.tar.zst</code>, readable by <code>tar --zstd -xf</code> and any zstd
+        implementation. It is compressed as a series of independent zstd frames rather than one, which is what lets
+        hokuto decompress it on several cores when installing; a single frame can only ever be decoded by one.
+      </p>
+      <p>
+        The frame size is chosen from the size of the package so that it lands on about half the machine's cores,
+        clamped between 32 MiB and 256 MiB. Cutting the stream costs a little compression ratio, because matches can no
+        longer reach back across a frame boundary, and the clamps keep that in the region of a fraction of a percent
+        for large packages. A package small enough to fit in one frame is compressed exactly as it was before.
+      </p>
+      <p>
+        Installing unpacks into a staging directory and then moves the tree into place. When staging and the target
+        root are on the same filesystem, that move is done with hard links: mode, ownership, timestamps, xattrs and
+        ACLs come along with the inode, files hard linked to each other inside the package stay linked, and no file
+        content is copied a second time. Entries are created under a temporary name and renamed into place, so a
+        process already running from a file keeps the inode it started with. Directory symlinks in the root
+        (<code>/bin</code>, <code>/lib</code>, <code>/sbin</code> and friends) are written through, not replaced.
+        Hokuto falls back to rsync when the two are on different filesystems.
+      </p>
+      <div class="env-vars">
+        <strong>Overrides:</strong><br>
+        <code>HOKUTO_ZSTD_CHUNK_MB=N</code>: force a frame size in MiB; <code>0</code> packs single-frame archives the
+        way hokuto did before<br>
+        <code>HOKUTO_NO_HARDLINK_INSTALL=1</code>: place files with rsync instead of hard links
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Git Source Checkouts</h3>
+      <p>
+        Prefix a source URL with <code>git+</code> to have Hokuto check out a Git repository. Git sources are not
+        included in the <code>checksums</code> file. The checked-out repository is linked into the package source
+        directory and its contents are copied into the temporary build directory before the build script runs.
+      </p>
+
+      <div class="env-vars">
+        <strong>Source syntax:</strong><br>
+        <code>git+https://github.com/example/project</code> — default branch<br>
+        <code>git+https://github.com/example/project#2.3.0</code> — raw branch, tag, or revision<br>
+        <code>git+https://github.com/example/project#545a54...</code> — commit hash<br>
+        <code>git+https://github.com/example/project#branch=dev</code> — named branch<br>
+        <code>git+https://github.com/example/project#tag=v2.3.0</code> — named tag<br>
+        <code>git+https://github.com/example/project#branch=dev&amp;depth=1</code> — shallow branch checkout<br>
+        <code>git+https://github.com/example/project#tag=v2.3.0&amp;depth=1</code> — shallow tag checkout<br>
+        <code>git+https://github.com/example/project#depth=1</code> — shallow checkout of the default branch
+      </div>
+
+      <h3>Shared cache</h3>
+      <p>
+        Normal Git sources use a full bare mirror under
+        <code>/var/cache/hokuto/sources/_cache/git/</code>. Hokuto reuses that object store for packages which use the
+        same repository, updates it with the remote, and creates a shared working checkout under
+        <code>/var/cache/hokuto/sources/_cache/checkouts/</code>. Branch and tag selectors are resolved to their full
+        Git refs, while raw fragments continue to work as branches, tags, or commit revisions.
+      </p>
+      <p>
+        Each package receives a symbolic link such as
+        <code>/var/cache/hokuto/sources/pkgname/project</code> pointing to the matching shared checkout. Checkout cache
+        keys include the repository URL and selected ref, so different branches or tags do not overwrite one another.
+        Fetching and checkout updates are protected by locks, allowing parallel package operations to safely reuse the
+        same cache.
+      </p>
+
+      <h3>Shallow checkouts</h3>
+      <p>
+        Add <code>depth=N</code> to download only the requested number of commits. Shallow checkouts bypass the full
+        bare mirror and use a separate checkout keyed by repository URL, ref, and depth. Existing shallow branches are
+        refreshed with a depth-limited fetch, so updating a package does not automatically download the complete
+        history.
+      </p>
+      <ul>
+        <li><code>depth</code> must be a positive integer.</li>
+        <li>Shallow named refs must use <code>branch=</code> or <code>tag=</code>.</li>
+        <li>Arbitrary commit hashes cannot be combined with <code>depth</code>, because servers may refuse to fetch an
+          unadvertised commit into a shallow repository.</li>
+        <li>Shallow checkout support requires the system <code>git</code> client. Hokuto's internal Git fallback remains
+          available for normal, full-history sources only.</li>
+      </ul>
+
+      <p>
+        To give two checkouts of the same repository different names in the package source cache, use the source
+        filename override:
+        <code>git+https://github.com/example/project#branch=stable -&gt; project-stable</code>.
+      </p>
+    </div>
+  </main>
+</body>
+
+</html>

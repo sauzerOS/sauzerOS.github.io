@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - Build Log</title>
+  <style>
+    body {
+      background-color: #002b36;
+      color: #839496;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      padding: 20px;
+    }
+
+    #log-container {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      line-height: 1.2;
+    }
+
+    .header {
+      border-bottom: 1px solid #586e75;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back-link {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 id="log-title">Build Log</h1>
+    <a href="packages.html" class="back-link">← Back to Packages</a>
+  </div>
+  <div id="log-container">Loading log...</div>
+
+  <script type="module">
+    import { AnsiUp } from 'https://cdn.jsdelivr.net/npm/ansi_up@6.0.6/ansi_up.min.js';
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const logFile = urlParams.get('file');
+
+    if (logFile) {
+      document.getElementById('log-title').textContent = `Build Log: ${logFile.split('/').pop()}`;
+      
+      // Logs are stored gzip-compressed (.txt.gz); older ones are plain text.
+      // Look at the data rather than the name: a server that sends
+      // Content-Encoding: gzip has already decompressed it.
+      fetch(logFile)
+        .then(response => {
+          if (!response.ok) throw new Error('Log file not found');
+          return response.arrayBuffer();
+        })
+        .then(buffer => {
+          const bytes = new Uint8Array(buffer);
+          if (bytes[0] === 0x1f && bytes[1] === 0x8b) {
+            const stream = new Blob([buffer]).stream().pipeThrough(new DecompressionStream('gzip'));
+            return new Response(stream).text();
+          }
+          return new TextDecoder().decode(bytes);
+        })
+        .then(text => {
+          const ansi_up = new AnsiUp();
+          const html = ansi_up.ansi_to_html(text);
+          document.getElementById('log-container').innerHTML = html;
+        })
+        .catch(err => {
+          document.getElementById('log-container').textContent = 'Error: ' + err.message;
+          document.getElementById('log-container').style.color = '#dc322f';
+        });
+    } else {
+      document.getElementById('log-container').textContent = 'No log file specified.';
+    }
+  </script>
+</body>
+
+</html>

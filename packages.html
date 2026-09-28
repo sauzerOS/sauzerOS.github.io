@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - Packages</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      color: #586e75;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      display: flex;
+      line-height: 1.5;
+    }
+
+    nav {
+      width: 200px;
+      padding: 40px 20px;
+      border-right: 1px dashed #93a1a1;
+      min-height: 100vh;
+      box-sizing: border-box;
+      flex-shrink: 0;
+    }
+
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 1100px;
+      min-width: 0;
+    }
+
+    .menu-item {
+      display: block;
+      margin-bottom: 20px;
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      color: #dc322f;
+      text-decoration: underline;
+    }
+
+    .menu-item.active {
+      color: #cb4b16;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .box {
+      border: 1px solid #93a1a1;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    a {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: #eee8d5;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0 6px;
+    }
+
+    .controls input,
+    .controls select {
+      font: inherit;
+      color: #586e75;
+      background: #fdf6e3;
+      border: 1px solid #93a1a1;
+      padding: 6px 8px;
+    }
+
+    .controls input {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .controls input:focus,
+    .controls select:focus {
+      outline: 2px solid #268bd2;
+      outline-offset: -1px;
+    }
+
+    #summary {
+      font-size: 0.9rem;
+      color: #93a1a1;
+      margin-bottom: 10px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    #pkg-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #pkg-table th {
+      color: #268bd2;
+      text-align: left;
+      padding: 8px;
+      border-bottom: 2px solid #93a1a1;
+      white-space: nowrap;
+    }
+
+    #pkg-table td {
+      padding: 8px;
+      border-bottom: 1px dashed #93a1a1;
+      vertical-align: top;
+    }
+
+    .pkg-name {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: #2aa198;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .pkg-name:hover {
+      text-decoration: underline;
+    }
+
+    .pkg-name::before {
+      content: "+ ";
+      color: #93a1a1;
+    }
+
+    .pkg-name[aria-expanded="true"]::before {
+      content: "- ";
+    }
+
+    .repo {
+      color: #6c71c4;
+      white-space: nowrap;
+    }
+
+    .success { color: #859900; }
+    .failed { color: #dc322f; }
+    .outdated { color: #b58900; }
+    .none { color: #93a1a1; }
+
+    .details td {
+      background-color: #eee8d5;
+    }
+
+    .details dl {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 4px 16px;
+      margin: 0;
+    }
+
+    .details dt {
+      color: #268bd2;
+    }
+
+    .details dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .dep {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: #2aa198;
+      cursor: pointer;
+    }
+
+    .dep:hover {
+      text-decoration: underline;
+    }
+
+    .dep.missing {
+      color: #586e75;
+      cursor: default;
+      text-decoration: none;
+    }
+
+    .highlight td {
+      background-color: #eee8d5;
+    }
+
+    @media (max-width: 700px) {
+      body { display: block; }
+      nav { width: auto; min-height: 0; border-right: none; border-bottom: 1px dashed #93a1a1; padding: 16px; }
+      .menu-item { display: inline-block; margin: 0 14px 6px 0; }
+      main { padding: 16px; }
+      .col-desc { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div style="font-weight: bold; margin-bottom: 30px; color: #b58900;">[ sauzerOS ]</div>
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="bootstrap.html" class="menu-item">Bootstrap</a>
+    <a href="hokuto.html" class="menu-item">Hokuto</a>
+    <a href="packages.html" class="menu-item active">Packages</a>
+    <a href="https://github.com/sauzerOS" class="menu-item">GitHub</a>
+  </nav>
+  <main>
+    <div class="box">
+      <h1>Package Repository Index</h1>
+    </div>
+
+    <p>Every recipe in the <a href="https://github.com/sauzerOS/sauzeros">sauzeros</a>,
+      <a href="https://github.com/sauzerOS/kde">kde</a> and <a href="https://github.com/sauzerOS/cosmic">cosmic</a>
+      repositories, with the result of its last build. Click a package for details.</p>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search name, description or tag" aria-label="Search packages"
+        autocomplete="off">
+      <select id="repo-filter" aria-label="Repository">
+        <option value="">All repositories</option>
+      </select>
+      <select id="status-filter" aria-label="Build status">
+        <option value="">Any build status</option>
+        <option value="success">Built</option>
+        <option value="failed">Failed</option>
+        <option value="outdated">Outdated build</option>
+        <option value="none">Never built</option>
+      </select>
+    </div>
+    <div id="summary" aria-live="polite">Loading package data...</div>
+
+    <div class="table-wrap">
+      <table id="pkg-table">
+        <thead>
+          <tr>
+            <th>Package</th>
+            <th>Version</th>
+            <th>Repository</th>
+            <th class="col-desc">Description</th>
+            <th>Build</th>
+          </tr>
+        </thead>
+        <tbody id="pkg-body"></tbody>
+      </table>
+    </div>
+
+    <script>
+      const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+      }[c]));
+
+      const searchInput = document.getElementById("search");
+      const repoFilter = document.getElementById("repo-filter");
+      const statusFilter = document.getElementById("status-filter");
+      const summary = document.getElementById("summary");
+      const body = document.getElementById("pkg-body");
+
+      let packages = [];
+      const byName = new Map();
+
+      // Last build of each package, from packages.json (written by hokuto --index).
+      function buildState(pkg, builds) {
+        const build = builds.get(pkg.name);
+        if (!build) return { key: "none", label: "never built" };
+        const current = `${pkg.version}-${pkg.revision}`;
+        const logs = build.logs || (build.log ? [build.log] : []);
+        if (build.version !== current) {
+          return { key: "outdated", label: `outdated (${build.status} ${build.version})`, log: build.log, logs };
+        }
+        return { key: build.status === "success" ? "success" : "failed", label: build.status, log: build.log, logs };
+      }
+
+      function depButtons(list) {
+        if (!list || list.length === 0) return "-";
+        return list.map((entry) => entry.split(" | ").map((name) => {
+          const known = byName.has(name);
+          return `<button type="button" class="dep${known ? "" : " missing"}" ${known ? `data-pkg="${esc(name)}"` : "disabled"}>${esc(name)}</button>`;
+        }).join(" | ")).join(", ");
+      }
+
+      function detailsHTML(pkg) {
+        const recipe = `https://github.com/sauzerOS/${encodeURIComponent(pkg.repo)}/tree/master/${pkg.path.split("/").map(encodeURIComponent).join("/")}`;
+        const suggests = pkg.suggests.length
+          ? pkg.suggests.map((s) => depButtons([s.name]) + (s.text ? ` (${esc(s.text)})` : "")).join(", ")
+          : "-";
+        const rows = [
+          ["Description", esc(pkg.description) || "-"],
+          ["Upstream", pkg.url ? `<a href="${esc(pkg.url)}" rel="noopener">${esc(pkg.url)}</a>` : "-"],
+          ["Recipe", `<a href="${esc(recipe)}" rel="noopener">${esc(pkg.repo)}/${esc(pkg.path)}</a>`],
+          ["License", esc(pkg.license) || "-"],
+          ["Tags", pkg.tags.length ? pkg.tags.map(esc).join(", ") : "-"],
+          ["Depends", depButtons(pkg.depends)],
+          ["Build depends", depButtons(pkg.makedepends)],
+          ["Suggests", suggests],
+          ["Split packages", pkg.splits.length ? pkg.splits.map(esc).join(", ") : "-"],
+          ["Build logs", pkg.state.logs && pkg.state.logs.length
+            ? pkg.state.logs.map((l) => `<a href="log.html?file=${encodeURIComponent(l)}">${esc(l.split("/").pop().replace(/\.txt(\.gz)?$/, ""))}</a>`).join(", ")
+            : "-"],
+        ];
+        return `<dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`;
+      }
+
+      function toggleDetails(pkg, open = !pkg.detailsRow) {
+        const button = pkg.row.querySelector(".pkg-name");
+        if (open && !pkg.detailsRow) {
+          const tr = document.createElement("tr");
+          tr.className = "details";
+          tr.innerHTML = `<td colspan="5">${detailsHTML(pkg)}</td>`;
+          pkg.row.after(tr);
+          pkg.detailsRow = tr;
+        } else if (!open && pkg.detailsRow) {
+          pkg.detailsRow.remove();
+          pkg.detailsRow = null;
+        }
+        button.setAttribute("aria-expanded", String(!!pkg.detailsRow));
+      }
+
+      function showPackage(name) {
+        const pkg = byName.get(name);
+        if (!pkg) return;
+        if (pkg.row.hidden) {
+          searchInput.value = "";
+          repoFilter.value = "";
+          statusFilter.value = "";
+          applyFilters();
+        }
+        toggleDetails(pkg, true);
+        pkg.row.classList.add("highlight");
+        setTimeout(() => pkg.row.classList.remove("highlight"), 1500);
+        pkg.row.scrollIntoView({ block: "center" });
+        pkg.row.querySelector(".pkg-name").focus({ preventScroll: true });
+      }
+
+      function applyFilters() {
+        const terms = searchInput.value.toLowerCase().split(/\s+/).filter(Boolean);
+        const repo = repoFilter.value;
+        const status = statusFilter.value;
+        let shown = 0;
+        for (const pkg of packages) {
+          const visible = (!repo || pkg.repo === repo)
+            && (!status || pkg.state.key === status)
+            && terms.every((t) => pkg.haystack.includes(t));
+          pkg.row.hidden = !visible;
+          if (pkg.detailsRow) pkg.detailsRow.hidden = !visible;
+          if (visible) shown++;
+        }
+        const params = new URLSearchParams();
+        if (searchInput.value.trim()) params.set("q", searchInput.value.trim());
+        if (repo) params.set("repo", repo);
+        if (status) params.set("status", status);
+        const query = params.toString();
+        history.replaceState(null, "", query ? `?${query}` : location.pathname);
+        summary.textContent = `${shown} of ${packages.length} packages shown` + summary.dataset.suffix;
+      }
+
+      Promise.all([
+        fetch("repo.json").then((r) => { if (!r.ok) throw new Error("repo.json: " + r.status); return r.json(); }),
+        fetch("packages.json").then((r) => r.ok ? r.json() : []).catch(() => []),
+      ]).then(([index, buildList]) => {
+        const builds = new Map(buildList.map((b) => [b.pkgname, b]));
+        packages = index.packages;
+
+        const fragment = document.createDocumentFragment();
+        for (const pkg of packages) {
+          pkg.state = buildState(pkg, builds);
+          pkg.haystack = [pkg.name, pkg.description, ...pkg.tags, ...pkg.splits].join(" ").toLowerCase();
+          byName.set(pkg.name, pkg);
+          for (const split of pkg.splits) if (!byName.has(split)) byName.set(split, pkg);
+
+          const tr = document.createElement("tr");
+          const buildCell = pkg.state.log
+            ? `<a href="log.html?file=${encodeURIComponent(pkg.state.log)}" class="${pkg.state.key}">${esc(pkg.state.label)}</a>`
+            : `<span class="${pkg.state.key}">${esc(pkg.state.label)}</span>`;
+          tr.innerHTML = `
+            <td><button type="button" class="pkg-name" aria-expanded="false">${esc(pkg.name)}</button></td>
+            <td><code>${esc(pkg.version)}-${esc(pkg.revision)}</code></td>
+            <td class="repo">${esc(pkg.repo)}</td>
+            <td class="col-desc">${esc(pkg.description)}</td>
+            <td>${buildCell}</td>`;
+          tr.querySelector(".pkg-name").addEventListener("click", () => toggleDetails(pkg));
+          pkg.row = tr;
+          fragment.appendChild(tr);
+        }
+        body.appendChild(fragment);
+
+        for (const name of Object.keys(index.repos)) {
+          repoFilter.add(new Option(name, name));
+        }
+        const built = packages.filter((p) => p.state.key !== "none").length;
+        const generated = new Date(index.generated);
+        summary.dataset.suffix = ` · ${built} with build status · index generated ${isNaN(generated) ? index.generated : generated.toLocaleString()}`;
+
+        const params = new URLSearchParams(location.search);
+        searchInput.value = params.get("q") || "";
+        repoFilter.value = params.get("repo") || "";
+        statusFilter.value = params.get("status") || "";
+        applyFilters();
+      }).catch((err) => {
+        console.error("Error loading packages:", err);
+        summary.textContent = "Failed to load package data.";
+        summary.style.color = "#dc322f";
+      });
+
+      let debounce;
+      searchInput.addEventListener("input", () => {
+        clearTimeout(debounce);
+        debounce = setTimeout(applyFilters, 120);
+      });
+      repoFilter.addEventListener("change", applyFilters);
+      statusFilter.addEventListener("change", applyFilters);
+      body.addEventListener("click", (event) => {
+        const dep = event.target.closest(".dep[data-pkg]");
+        if (dep) showPackage(dep.dataset.pkg);
+      });
+    </script>
+  </main>
+</body>
+
+</html>

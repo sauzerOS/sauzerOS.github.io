@@ -1,0 +1,78 @@
+# Rebuilds repo.json, the package index behind packages.html, from the
+# sauzerOS recipe repositories. Only each recipe's version, metadata.json and
+# depends files are fetched (sparse, blob-filtered checkout without LFS), so
+# the large sauzeros repository costs a few MB.
+name: Package index
+
+on:
+  schedule:
+    - cron: "23 */2 * * *"
+  workflow_dispatch:
+  # hokuto pushes packages.json after each --index build, usually right after
+  # a bump, so refresh the index then too.
+  push:
+    branches: [master]
+    paths:
+      - packages.json
+      - scripts/gen_package_index.py
+      - .github/workflows/package-index.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: package-index
+  cancel-in-progress: false
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch recipe files
+        env:
+          GIT_LFS_SKIP_SMUDGE: "1"
+        run: |
+          set -eu
+          for repo in sauzeros kde cosmic; do
+            git clone --quiet --depth 1 --filter=blob:none --no-checkout \
+              "https://github.com/sauzerOS/$repo.git" "recipes/$repo"
+            git -C "recipes/$repo" sparse-checkout set --no-cone \
+              version metadata.json depends 'depends.*'
+            git -C "recipes/$repo" checkout --quiet
+          done
+
+      - name: Generate repo.json
+        run: |
+          python3 scripts/gen_package_index.py repo.json \
+            sauzeros=recipes/sauzeros kde=recipes/kde cosmic=recipes/cosmic
+
+      - name: Commit if the index changed
+        run: |
+          set -eu
+          # The timestamp alone is not a change worth a commit.
+          if git cat-file -e HEAD:repo.json 2>/dev/null && python3 - <<'EOF'
+          import json, subprocess, sys
+          old = json.loads(subprocess.run(["git", "show", "HEAD:repo.json"], capture_output=True, text=True, check=True).stdout)
+          new = json.load(open("repo.json"))
+          for d in (old, new):
+              d.pop("generated", None)
+          sys.exit(0 if old == new else 1)
+          EOF
+          then
+            echo "Package index unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add repo.json
+          git commit --quiet -m "Update package index"
+          # hokuto pushes build status to this repository at any time.
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --quiet && git push --quiet; then
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          exit 1

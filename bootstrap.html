@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - Bootstrap Process</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      color: #586e75;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      display: flex;
+      line-height: 1.5;
+    }
+
+    nav {
+      width: 200px;
+      padding: 40px 20px;
+      border-right: 1px dashed #93a1a1;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 900px;
+    }
+
+    .menu-item {
+      display: block;
+      margin-bottom: 20px;
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      color: #dc322f;
+      text-decoration: underline;
+    }
+
+    .menu-item.active {
+      color: #cb4b16;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    h2,
+    h3 {
+      color: #268bd2;
+    }
+
+    .box {
+      border: 1px solid #93a1a1;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "* ";
+      color: #859900;
+    }
+
+    a {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: #eee8d5;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    pre {
+      background-color: #eee8d5;
+      border: 1px solid #93a1a1;
+      border-radius: 3px;
+      color: #586e75;
+      overflow-x: auto;
+      padding: 12px;
+      white-space: pre;
+    }
+
+    pre code {
+      background: transparent;
+      border-radius: 0;
+      display: block;
+      font-weight: normal;
+      padding: 0;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div style="font-weight: bold; margin-bottom: 30px; color: #b58900;">[ sauzerOS ]</div>
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="bootstrap.html" class="menu-item active">Bootstrap</a>
+    <a href="hokuto.html" class="menu-item">Hokuto</a>
+    <a href="packages.html" class="menu-item">Packages</a>
+    <a href="https://github.com/sauzerOS" class="menu-item">GitHub</a>
+  </nav>
+  <main>
+    <div class="box">
+      <h1>Bootstrap Process</h1>
+    </div>
+
+    <div class="section">
+      <h3>Bootstrap process:</h3>
+      <p>Enter the bootstrap chroot, configure package signing, initialize repositories, then build the devel tools and base system:</p>
+      <pre><code>hk chroot /path-to-chroot
+hk settings # generate/set package signature key
+hk init-repos
+
+# build the devel-tools
+hk b --no-remote --no-devel bison
+hk b --no-remote --no-devel --no-deps zlib-ng
+hk b --no-remote --no-devel --no-deps ncurses
+hk b --no-remote --no-devel --no-deps bzip2 gdbm
+hk i --no-remote --no-deps lib32-ncurses
+hk b --no-remote --no-devel --no-deps readline
+hk b --no-remote --no-devel --no-deps perl
+hk b --no-remote --no-devel --no-deps openssl
+hk b --no-remote --no-devel --no-deps expat
+hk b --no-remote --no-devel --no-deps python
+pip install build flit_core installer
+hk b --no-remote --no-devel --no-deps python-build python-flit-core python-installer python-packaging python-pyproject-hooks python-setuptools
+hk alt discard-unmanaged # remove pip installs
+hk b --no-remote --no-devel --no-deps bash
+hk b --no-remote --no-devel --no-deps autoconf 
+hk b --no-remote --no-devel --no-deps automake
+hk b --no-remote --no-devel --no-deps attr
+hk b --no-remote --no-devel --no-deps acl
+hk b --no-remote --no-devel --no-deps gmp
+hk b --no-remote --no-devel --no-deps mpfr 
+hk b --no-remote --no-devel --no-deps mpc
+hk b --no-remote --no-devel --no-deps wget
+hk b --no-remote --no-devel --no-deps isl
+hk b --no-remote --no-devel --no-deps zstd tar
+hk b --no-remote --no-devel --no-deps gawk
+hk b --no-remote --no-devel --no-deps gcc
+hk i --no-remote --no-deps libgcc libstdc++
+hk b --no-remote --no-devel --no-deps binutils
+hk b --no-remote --no-devel --no-deps file findutils
+hk b --no-remote --no-devel --no-deps grep gzip make patch sed flex coreutils
+hk i --no-remote --no-deps lib32-gcc-libs
+hk b --no-remote --no-devel glibc
+locale-gen
+hk b --no-remote --no-devel --no-deps libtool
+hk b --no-remote --no-devel --no-deps gettext texinfo which
+hk b --no-remote --no-devel pkgconf
+hk b --no-remote python
+hk b --no-remote --no-deps gcc
+hk b --no-remote --no-deps nano file
+hk b --no-remote --no-deps zlib-ng
+hk i --no-remote --force lib32-zlib-ng
+hk b --no-remote --no-deps zstd
+hk b --no-remote --no-deps rsync
+hk b --no-remote --no-deps hokuto
+hk b --no-remote --no-deps elfutils
+hk b --no-remote meson
+hk i --no-remote lib32-openssl lib32-libxcrypt
+hk b --no-remote --no-deps pam
+hk b --no-remote --no-deps util-linux
+hk b --no-remote grep
+hk b --no-remote diffutils
+hk b --no-remote systemd
+hk b --no-remote util-linux
+rebuild packages that have not been rebuilt with optional deps
+hk r lib32-ncurses lib32-gcc-libs
+hk i sauzeros systemd
+passwd
+exit</code></pre>
+      <p>All the packages for a basic sauzerOS chroot have been built and the chroot can be re-entered with <code>systemd-nspawn -b -D /path-to-chroot</code>.</p>
+    </div>
+  </main>
+</body>
+
+</html>
