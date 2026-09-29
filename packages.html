@@ -250,6 +250,10 @@
         <option value="outdated">Outdated build</option>
         <option value="none">Never built</option>
       </select>
+      <select id="sort-order" aria-label="Sort order">
+        <option value="">Recently built first</option>
+        <option value="name">Name</option>
+      </select>
     </div>
     <div id="summary" aria-live="polite">Loading package data...</div>
 
@@ -276,6 +280,7 @@
       const searchInput = document.getElementById("search");
       const repoFilter = document.getElementById("repo-filter");
       const statusFilter = document.getElementById("status-filter");
+      const sortOrder = document.getElementById("sort-order");
       const summary = document.getElementById("summary");
       const body = document.getElementById("pkg-body");
 
@@ -285,13 +290,15 @@
       // Last build of each package, from packages.json (written by hokuto --index).
       function buildState(pkg, builds) {
         const build = builds.get(pkg.name);
-        if (!build) return { key: "none", label: "never built" };
+        if (!build) return { key: "none", label: "never built", built: 0 };
         const current = `${pkg.version}-${pkg.revision}`;
         const logs = build.logs || (build.log ? [build.log] : []);
+        // Recorded by hokuto since 2026-09; older entries have no date.
+        const built = Date.parse(build.built) || 0;
         if (build.version !== current) {
-          return { key: "outdated", label: `outdated (${build.status} ${build.version})`, log: build.log, logs };
+          return { key: "outdated", label: `outdated (${build.status} ${build.version})`, log: build.log, logs, built };
         }
-        return { key: build.status === "success" ? "success" : "failed", label: build.status, log: build.log, logs };
+        return { key: build.status === "success" ? "success" : "failed", label: build.status, log: build.log, logs, built };
       }
 
       function depButtons(list) {
@@ -316,6 +323,7 @@
           ["Depends", depButtons(pkg.depends)],
           ["Build depends", depButtons(pkg.makedepends)],
           ["Suggests", suggests],
+          ["Last build", pkg.state.built ? new Date(pkg.state.built).toLocaleString() : "-"],
           ["Split packages", pkg.splits.length ? pkg.splits.map(esc).join(", ") : "-"],
           ["Build logs", pkg.state.logs && pkg.state.logs.length
             ? pkg.state.logs.map((l) => `<a href="log.html?file=${encodeURIComponent(l)}">${esc(l.split("/").pop().replace(/\.txt(\.gz)?$/, ""))}</a>`).join(", ")
@@ -355,6 +363,20 @@
         pkg.row.querySelector(".pkg-name").focus({ preventScroll: true });
       }
 
+      // Most recent build first; undated and never-built packages follow by name.
+      const byRecent = (a, b) => b.state.built - a.state.built || a.name.localeCompare(b.name);
+      const byNameOrder = (a, b) => a.name.localeCompare(b.name);
+
+      function applySort() {
+        const sorted = [...packages].sort(sortOrder.value === "name" ? byNameOrder : byRecent);
+        const fragment = document.createDocumentFragment();
+        for (const pkg of sorted) {
+          fragment.appendChild(pkg.row);
+          if (pkg.detailsRow) fragment.appendChild(pkg.detailsRow);
+        }
+        body.appendChild(fragment);
+      }
+
       function applyFilters() {
         const terms = searchInput.value.toLowerCase().split(/\s+/).filter(Boolean);
         const repo = repoFilter.value;
@@ -372,6 +394,7 @@
         if (searchInput.value.trim()) params.set("q", searchInput.value.trim());
         if (repo) params.set("repo", repo);
         if (status) params.set("status", status);
+        if (sortOrder.value) params.set("sort", sortOrder.value);
         const query = params.toString();
         history.replaceState(null, "", query ? `?${query}` : location.pathname);
         summary.textContent = `${shown} of ${packages.length} packages shown` + summary.dataset.suffix;
@@ -392,9 +415,10 @@
           for (const split of pkg.splits) if (!byName.has(split)) byName.set(split, pkg);
 
           const tr = document.createElement("tr");
+          const when = pkg.state.built ? ` title="${esc(new Date(pkg.state.built).toLocaleString())}"` : "";
           const buildCell = pkg.state.log
-            ? `<a href="log.html?file=${encodeURIComponent(pkg.state.log)}" class="${pkg.state.key}">${esc(pkg.state.label)}</a>`
-            : `<span class="${pkg.state.key}">${esc(pkg.state.label)}</span>`;
+            ? `<a href="log.html?file=${encodeURIComponent(pkg.state.log)}" class="${pkg.state.key}"${when}>${esc(pkg.state.label)}</a>`
+            : `<span class="${pkg.state.key}"${when}>${esc(pkg.state.label)}</span>`;
           tr.innerHTML = `
             <td><button type="button" class="pkg-name" aria-expanded="false">${esc(pkg.name)}</button></td>
             <td><code>${esc(pkg.version)}-${esc(pkg.revision)}</code></td>
@@ -418,6 +442,8 @@
         searchInput.value = params.get("q") || "";
         repoFilter.value = params.get("repo") || "";
         statusFilter.value = params.get("status") || "";
+        sortOrder.value = params.get("sort") === "name" ? "name" : "";
+        applySort();
         applyFilters();
       }).catch((err) => {
         console.error("Error loading packages:", err);
@@ -432,6 +458,7 @@
       });
       repoFilter.addEventListener("change", applyFilters);
       statusFilter.addEventListener("change", applyFilters);
+      sortOrder.addEventListener("change", () => { applySort(); applyFilters(); });
       body.addEventListener("click", (event) => {
         const dep = event.target.closest(".dep[data-pkg]");
         if (dep) showPackage(dep.dataset.pkg);
