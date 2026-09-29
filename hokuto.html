@@ -368,6 +368,30 @@
         <strong>To build an unprepared recipe anyway, while adapting it:</strong><br>
         <code>HOKUTO_ALLOW_UNCONFIGURED_CROSS=1 hokuto build -cross=arm64 pkgname</code>
       </div>
+      <p>
+        Just as a native build installs any missing <code>base-devel</code> packages first, a cross build
+        (<code>-cross=arm64</code> or <code>-cross=arm64,system</code>) also installs the missing members of the
+        <code>aarch64-base-devel</code> metapackage, the cross toolchain. A toolchain package that the build itself
+        produces is not installed beforehand, so the toolchain can be built from scratch. <code>-no-devel</code>
+        skips both, and the <code>nodevel</code>/<code>binary</code> options apply as for native builds.
+      </p>
+      <p>
+        <code>hokuto cross-sync</code> keeps the aarch64 packages on the binary mirror in step with the recipes. It
+        compares the mirror index with the recipes' current versions, lists the packages that have no package of that
+        version on the mirror or in the local binary cache, and builds the ones picked from the list.
+      </p>
+      <ul>
+        <li><code>hokuto cross-sync</code>: native aarch64 packages. Only recipes that already have an aarch64 package
+          on the mirror are checked; they are built with <code>-cross=arm64</code></li>
+        <li><code>hokuto cross-sync -system</code>: the cross-system packages, the <code>aarch64-*</code> toolchain and
+          sysroot packages. Every <code>aarch64-*</code> package on the mirror is checked against its recipe
+          (<code>aarch64-gcc</code> against <code>gcc</code>) and built with <code>-cross=arm64,system</code>.
+          Packages whose recipe is gone are skipped. Nothing needs to be installed on the host or build container
+          for this, so the toolchain stays current without being kept installed</li>
+        <li><code>-i</code> builds at idle priority and <code>-jN</code> builds N packages in parallel, as with
+          <code>hokuto build</code>; <code>-no-install</code> skips the offer to install the built
+          <code>-system</code> packages on the build host (native aarch64 packages are never installed there)</li>
+      </ul>
     </div>
 
     <div class="section">
@@ -398,6 +422,40 @@
         way hokuto did before<br>
         <code>HOKUTO_NO_HARDLINK_INSTALL=1</code>: place files with rsync instead of hard links
       </div>
+    </div>
+
+    <div class="section">
+      <h3>Library ABI Rebuilds</h3>
+      <p>
+        Every package records the shared libraries it links against in its <code>libdeps</code> file
+        (<code>elf64:libfoo.so.3</code>). When an update removes a library that installed packages link against,
+        <code>hokuto install</code>/<code>update</code> offers to rebuild them. That only covers what is installed on
+        the machine, so the binary mirror index also records each package's libdeps, and <code>hokuto bump --auto
+        --build</code> checks what was published.
+      </p>
+      <ul>
+        <li>After the builds, each built package, split outputs included, is compared with its previous package on the
+          mirror. A shared library the new package no longer ships (<code>libfoo.so.3</code> gone,
+          <code>libfoo.so.4</code> new) is an ABI change; a library that only moved directory, or a new release that
+          keeps the soname, is not</li>
+        <li>The newest published package of every recipe linked against a removed library gets its revision bumped
+          (<code>1.0 1</code> becomes <code>1.0 2</code>). Split packages count for their recipe; the library's own
+          recipe, <code>binary</code> recipes and packages without a recipe are left out</li>
+        <li>The bumped <code>version</code> files are committed, one commit per repository with a message such as
+          <code>rebuild for libfoo (libfoo.so.3) ABI change</code>, and pushed like a version bump. A recipe whose
+          <code>version</code> file has uncommitted changes is skipped with a warning</li>
+        <li>At the end, bump names the libraries and the command that builds the bumped packages:
+          <code>hokuto update --build-missing-binaries</code>, which lists every recipe whose current version or
+          revision has no package yet, or <code>hokuto-builder rebuild</code> in the build container, which first
+          updates the container from the mirror so the rebuilds link against the new library, then builds and uploads.
+          <code>hokuto cross-sync</code> picks up the same revision bumps for aarch64</li>
+      </ul>
+      <p>
+        The libdeps in the index arrived with index metadata version 2. <code>hokuto upload</code> records them for
+        every package it uploads; <code>hokuto upload --reindex</code> fills them in for the packages already on the
+        mirror, reading local packages and downloading the others once. Until then, bump warns how many published
+        packages it could not check.
+      </p>
     </div>
 
     <div class="section">
