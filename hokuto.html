@@ -129,13 +129,10 @@
     <div class="section">
       <p>Package Manager written in Go with minimal optional external dependencies:</p>
       <ul>
-        <li>b3sum</li>
-        <li>git</li>
-        <li>lzip</li>
-        <li>rsync</li>
-        <li>tar</li>
-        <li>wget</li>
-        <li>zstd</li>
+        <li>git: recipe repositories and git sources</li>
+        <li>tar and zstd: creating and installing packages; built-in fallbacks cover them only when hokuto runs
+          as root</li>
+        <li>wget: fallback download client</li>
       </ul>
       <p>The package manager is fully functional without any external dependencies (except for git checkouts) if
         executed as root.</p>
@@ -277,6 +274,10 @@
             <code>nostrip</code>/<code>!nostrip</code> to enable or disable overrides for a split package
           </div>
         </li>
+        <li><strong>bump-follows</strong>: name of a package whose version this recipe shares (for example
+          <code>linux</code> in <code>linux-live</code>). <code>hokuto bump</code>, including auto-bump, bumps the
+          recipe to the same version in the same push whenever that package gets a new version; a revision-only bump
+          leaves it alone</li>
         <li><strong>files</strong>: local package files</li>
         <li><strong>libdeps.ignore{.subpackage}</strong>: ignore dependency during auto dependency resolution</li>
         <li><strong>post-install</strong>: bash script executed after package install</li>
@@ -300,6 +301,18 @@
           </ul>
         </li>
         <li><strong>sources</strong>: source links with substitutions replaced with actual links (for repology parsing)
+          <ul>
+            <li>Each line is a URL (or <code>files/...</code> for a local file), optionally followed by these, which
+              also apply in <code>.sources</code>:</li>
+            <li><code>-&gt; filename</code>: save the download under this name instead of the URL's basename.</li>
+            <li><code>subdir</code>: unpack or copy the source into this subdirectory of the build directory.</li>
+            <li><code>noextract</code>: copy the file into the build directory as is, without unpacking it.</li>
+            <li><code>nochecksum</code>: never verify this file or record it in <code>checksums</code>. For sources
+              whose upstream file changes without a version change, such as a GitHub <code>latest</code> release
+              asset, where a recorded checksum would only cause a mismatch prompt on every new download.
+              Example: <code>https://github.com/duckstation/chtdb/releases/download/latest/cheats.zip noextract
+              nochecksum</code></li>
+          </ul>
         </li>
         <li><strong>version</strong>: version revision</li>
       </ul>
