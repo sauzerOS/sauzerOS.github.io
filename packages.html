@@ -393,7 +393,7 @@
       function outputsHTML(outputs) {
         if (!outputs.length) return "-";
         const rows = outputs.map((o) => `<tr>
-            <td>${esc(o.name)}${o.version ? ` <code>${esc(o.version)}</code>` : ""}</td>
+            <td>${esc(o.name)}${o.version ? ` ${esc(o.version)}` : ""}</td>
             <td class="num">${formatSize(o.size)}</td>
             <td class="num">${formatSize(o.installed)}</td>
             <td>${o.manifest ? `<a href="log.html?kind=manifest&file=${encodeURIComponent(o.manifest)}">${o.files ? `${o.files} files` : "files"}</a>` : "-"}</td>
