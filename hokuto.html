@@ -269,6 +269,13 @@
             interpreter). When <code>hokuto bump perl</code> changes the Perl API version (5.42 → 5.44), and on
             <code>hokuto perl-rebuild</code>, these recipes get a revision bump so they are rebuilt. A build that stages
             such objects without this option prints a warning<br>
+            <code>python-rebuild</code>: the package installs files under a versioned <code>lib/python3.X</code>
+            directory or links <code>libpython3.X</code>, so a Python minor upgrade (3.14 → 3.15) needs it rebuilt.
+            After installing the new Python in the build container, <code>hokuto python-rebuild</code> test-builds
+            every such recipe (the Python build tools and meson first) without publishing anything and lists the ones
+            that fail; <code>hokuto python-rebuild bump "message"</code> then bumps their revisions and commits them
+            (no push). <code>hokuto python-rebuild list</code> shows them. A build that stages such files without
+            this option prints a warning<br>
             <code>staticlibs</code>: keep static libraries<br>
             <code>options.subpackage</code>: use <code>staticlibs</code>/<code>!staticlibs</code> or
             <code>nostrip</code>/<code>!nostrip</code> to enable or disable overrides for a split package
