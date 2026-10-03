@@ -27,7 +27,7 @@
     main {
       padding: 40px;
       flex: 1;
-      max-width: 1100px;
+      max-width: 1400px;
       min-width: 0;
     }
 
@@ -156,6 +156,10 @@
       content: "- ";
     }
 
+    .build-cell {
+      white-space: nowrap;
+    }
+
     .repo {
       color: #6c71c4;
       white-space: nowrap;
@@ -209,12 +213,48 @@
       background-color: #eee8d5;
     }
 
+    .arch-build {
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px dashed #93a1a1;
+    }
+
+    .arch-build h2 {
+      color: #6c71c4;
+      font-size: 1rem;
+      margin: 0 0 6px;
+    }
+
+    .outputs {
+      border-collapse: collapse;
+      margin: 2px 0;
+    }
+
+    #pkg-table .outputs th,
+    #pkg-table .outputs td {
+      padding: 2px 16px 2px 0;
+      text-align: left;
+      border: none;
+      background: none;
+    }
+
+    #pkg-table .outputs th {
+      color: #93a1a1;
+      font-weight: normal;
+    }
+
+    .outputs .num {
+      text-align: right;
+      white-space: nowrap;
+    }
+
     @media (max-width: 700px) {
       body { display: block; }
       nav { width: auto; min-height: 0; border-right: none; border-bottom: 1px dashed #93a1a1; padding: 16px; }
       .menu-item { display: inline-block; margin: 0 14px 6px 0; }
       main { padding: 16px; }
       .col-desc { display: none; }
+      .details dl { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -235,13 +275,18 @@
 
     <p>Every recipe in the <a href="https://github.com/sauzerOS/sauzeros">sauzeros</a>,
       <a href="https://github.com/sauzerOS/kde">kde</a> and <a href="https://github.com/sauzerOS/cosmic">cosmic</a>
-      repositories, with the result of its last build. Click a package for details.</p>
+      repositories, with the result of its last build on each architecture: the native x86_64 build and the arm64
+      build (cross compiled for arm64 systems). Click a package for details, packages and file lists.</p>
 
     <div class="controls">
       <input id="search" type="search" placeholder="Search name, description or tag" aria-label="Search packages"
         autocomplete="off">
       <select id="repo-filter" aria-label="Repository">
         <option value="">All repositories</option>
+      </select>
+      <select id="arch-filter" aria-label="Architecture for status and sorting">
+        <option value="x86_64">x86_64</option>
+        <option value="aarch64">arm64</option>
       </select>
       <select id="status-filter" aria-label="Build status">
         <option value="">Any build status</option>
@@ -265,7 +310,8 @@
             <th>Version</th>
             <th>Repository</th>
             <th class="col-desc">Description</th>
-            <th>Build</th>
+            <th>x86_64</th>
+            <th>arm64</th>
           </tr>
         </thead>
         <tbody id="pkg-body"></tbody>
@@ -279,6 +325,7 @@
 
       const searchInput = document.getElementById("search");
       const repoFilter = document.getElementById("repo-filter");
+      const archFilter = document.getElementById("arch-filter");
       const statusFilter = document.getElementById("status-filter");
       const sortOrder = document.getElementById("sort-order");
       const summary = document.getElementById("summary");
@@ -287,18 +334,86 @@
       let packages = [];
       const byName = new Map();
 
-      // Last build of each package, from packages.json (written by hokuto --index).
-      function buildState(pkg, builds) {
-        const build = builds.get(pkg.name);
-        if (!build) return { key: "none", label: "never built", built: 0 };
+      // packages.json (written by hokuto --index) keeps the last build of each
+      // package per architecture.
+      const ARCHES = [["x86_64", "x86_64"], ["aarch64", "arm64"]];
+
+      // Entries written before builds were kept per architecture are x86_64 builds.
+      function buildsOf(entry) {
+        if (entry.builds) return entry.builds;
+        return entry.version ? { x86_64: entry } : {};
+      }
+
+      function buildState(pkg, build) {
+        if (!build) return { key: "none", label: "never built", built: 0, logs: [], outputs: [] };
         const current = `${pkg.version}-${pkg.revision}`;
         const logs = build.logs || (build.log ? [build.log] : []);
         // Recorded by hokuto since 2026-09; older entries have no date.
         const built = Date.parse(build.built) || 0;
+        const common = { log: build.log, logs, built, version: build.version, buildtime: build.buildtime || 0, outputs: build.outputs || [] };
         if (build.version !== current) {
-          return { key: "outdated", label: `outdated (${build.status} ${build.version})`, log: build.log, logs, built };
+          return { key: "outdated", label: "outdated", detail: `outdated (${build.status} ${build.version})`, ...common };
         }
-        return { key: build.status === "success" ? "success" : "failed", label: build.status, log: build.log, logs, built };
+        return { key: build.status === "success" ? "success" : "failed", label: build.status, detail: build.status, ...common };
+      }
+
+      function formatSize(bytes) {
+        if (!bytes) return "-";
+        const units = ["B", "KiB", "MiB", "GiB"];
+        let value = bytes;
+        let unit = 0;
+        while (value >= 1024 && unit < units.length - 1) {
+          value /= 1024;
+          unit++;
+        }
+        return `${unit ? value.toFixed(1) : value} ${units[unit]}`;
+      }
+
+      function formatDuration(seconds) {
+        if (!seconds) return "-";
+        const h = Math.floor(seconds / 3600);
+        const m = Math.floor((seconds % 3600) / 60);
+        const s = seconds % 60;
+        return [h && `${h}h`, (h || m) && `${m}m`, `${s}s`].filter(Boolean).join(" ");
+      }
+
+      const logLink = (l) => `<a href="log.html?file=${encodeURIComponent(l)}">${esc(l.split("/").pop().replace(/\.txt(\.gz)?$/, ""))}</a>`;
+
+      // The table shows a short label; the title and the details say which
+      // build it was and when.
+      function statusCell(state, long = false) {
+        const tip = [state.detail, state.built && new Date(state.built).toLocaleString()].filter(Boolean).join(", ");
+        const title = tip ? ` title="${esc(tip)}"` : "";
+        const text = esc(long && state.detail ? state.detail : state.label);
+        return state.log
+          ? `<a href="log.html?file=${encodeURIComponent(state.log)}" class="${state.key}"${title}>${text}</a>`
+          : `<span class="${state.key}"${title}>${text}</span>`;
+      }
+
+      function outputsHTML(outputs) {
+        if (!outputs.length) return "-";
+        const rows = outputs.map((o) => `<tr>
+            <td>${esc(o.name)}${o.version ? ` <code>${esc(o.version)}</code>` : ""}</td>
+            <td class="num">${formatSize(o.size)}</td>
+            <td class="num">${formatSize(o.installed)}</td>
+            <td>${o.manifest ? `<a href="log.html?kind=manifest&file=${encodeURIComponent(o.manifest)}">${o.files ? `${o.files} files` : "files"}</a>` : "-"}</td>
+          </tr>`).join("");
+        return `<table class="outputs"><tr><th>package</th><th class="num">size</th><th class="num">installed</th><th>manifest</th></tr>${rows}</table>`;
+      }
+
+      function archBuildHTML(pkg, arch, label) {
+        const state = pkg.states[arch];
+        if (state.key === "none") {
+          return `<div class="arch-build"><h2>${label}</h2><span class="none">never built</span></div>`;
+        }
+        const rows = [
+          ["Status", statusCell(state, true)],
+          ["Built", state.built ? esc(new Date(state.built).toLocaleString()) : "-"],
+          ["Build time", formatDuration(state.buildtime)],
+          ["Packages", outputsHTML(state.outputs)],
+          ["Build logs", state.logs.length ? state.logs.map(logLink).join(", ") : "-"],
+        ];
+        return `<div class="arch-build"><h2>${label}</h2><dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl></div>`;
       }
 
       function depButtons(list) {
@@ -323,13 +438,10 @@
           ["Depends", depButtons(pkg.depends)],
           ["Build depends", depButtons(pkg.makedepends)],
           ["Suggests", suggests],
-          ["Last build", pkg.state.built ? new Date(pkg.state.built).toLocaleString() : "-"],
           ["Split packages", pkg.splits.length ? pkg.splits.map(esc).join(", ") : "-"],
-          ["Build logs", pkg.state.logs && pkg.state.logs.length
-            ? pkg.state.logs.map((l) => `<a href="log.html?file=${encodeURIComponent(l)}">${esc(l.split("/").pop().replace(/\.txt(\.gz)?$/, ""))}</a>`).join(", ")
-            : "-"],
         ];
-        return `<dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`;
+        return `<dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`
+          + ARCHES.map(([arch, label]) => archBuildHTML(pkg, arch, label)).join("");
       }
 
       function toggleDetails(pkg, open = !pkg.detailsRow) {
@@ -337,7 +449,7 @@
         if (open && !pkg.detailsRow) {
           const tr = document.createElement("tr");
           tr.className = "details";
-          tr.innerHTML = `<td colspan="5">${detailsHTML(pkg)}</td>`;
+          tr.innerHTML = `<td colspan="6">${detailsHTML(pkg)}</td>`;
           pkg.row.after(tr);
           pkg.detailsRow = tr;
         } else if (!open && pkg.detailsRow) {
@@ -354,6 +466,7 @@
           searchInput.value = "";
           repoFilter.value = "";
           statusFilter.value = "";
+          archFilter.value = "x86_64";
           applyFilters();
         }
         toggleDetails(pkg, true);
@@ -363,8 +476,9 @@
         pkg.row.querySelector(".pkg-name").focus({ preventScroll: true });
       }
 
-      // Most recent build first; undated and never-built packages follow by name.
-      const byRecent = (a, b) => b.state.built - a.state.built || a.name.localeCompare(b.name);
+      // Most recent build on the selected architecture first; undated and
+      // never-built packages follow by name.
+      const byRecent = (a, b) => b.states[archFilter.value].built - a.states[archFilter.value].built || a.name.localeCompare(b.name);
       const byNameOrder = (a, b) => a.name.localeCompare(b.name);
 
       function applySort() {
@@ -384,7 +498,7 @@
         let shown = 0;
         for (const pkg of packages) {
           const visible = (!repo || pkg.repo === repo)
-            && (!status || pkg.state.key === status)
+            && (!status || pkg.states[archFilter.value].key === status)
             && terms.every((t) => pkg.haystack.includes(t));
           pkg.row.hidden = !visible;
           if (pkg.detailsRow) pkg.detailsRow.hidden = !visible;
@@ -394,6 +508,7 @@
         if (searchInput.value.trim()) params.set("q", searchInput.value.trim());
         if (repo) params.set("repo", repo);
         if (status) params.set("status", status);
+        if (archFilter.value !== "x86_64") params.set("arch", archFilter.value);
         if (sortOrder.value) params.set("sort", sortOrder.value);
         const query = params.toString();
         history.replaceState(null, "", query ? `?${query}` : location.pathname);
@@ -404,27 +519,24 @@
         fetch("repo.json").then((r) => { if (!r.ok) throw new Error("repo.json: " + r.status); return r.json(); }),
         fetch("packages.json").then((r) => r.ok ? r.json() : []).catch(() => []),
       ]).then(([index, buildList]) => {
-        const builds = new Map(buildList.map((b) => [b.pkgname, b]));
+        const builds = new Map(buildList.map((b) => [b.pkgname, buildsOf(b)]));
         packages = index.packages;
 
         const fragment = document.createDocumentFragment();
         for (const pkg of packages) {
-          pkg.state = buildState(pkg, builds);
+          const pkgBuilds = builds.get(pkg.name) || {};
+          pkg.states = Object.fromEntries(ARCHES.map(([arch]) => [arch, buildState(pkg, pkgBuilds[arch])]));
           pkg.haystack = [pkg.name, pkg.description, ...pkg.tags, ...pkg.splits].join(" ").toLowerCase();
           byName.set(pkg.name, pkg);
           for (const split of pkg.splits) if (!byName.has(split)) byName.set(split, pkg);
 
           const tr = document.createElement("tr");
-          const when = pkg.state.built ? ` title="${esc(new Date(pkg.state.built).toLocaleString())}"` : "";
-          const buildCell = pkg.state.log
-            ? `<a href="log.html?file=${encodeURIComponent(pkg.state.log)}" class="${pkg.state.key}"${when}>${esc(pkg.state.label)}</a>`
-            : `<span class="${pkg.state.key}"${when}>${esc(pkg.state.label)}</span>`;
           tr.innerHTML = `
             <td><button type="button" class="pkg-name" aria-expanded="false">${esc(pkg.name)}</button></td>
             <td><code>${esc(pkg.version)}-${esc(pkg.revision)}</code></td>
             <td class="repo">${esc(pkg.repo)}</td>
             <td class="col-desc">${esc(pkg.description)}</td>
-            <td>${buildCell}</td>`;
+            ${ARCHES.map(([arch]) => `<td class="build-cell">${statusCell(pkg.states[arch])}</td>`).join("")}`;
           tr.querySelector(".pkg-name").addEventListener("click", () => toggleDetails(pkg));
           pkg.row = tr;
           fragment.appendChild(tr);
@@ -434,14 +546,15 @@
         for (const name of Object.keys(index.repos)) {
           repoFilter.add(new Option(name, name));
         }
-        const built = packages.filter((p) => p.state.key !== "none").length;
+        const builtOn = ARCHES.map(([arch, label]) => `${packages.filter((p) => p.states[arch].key !== "none").length} built for ${label}`).join(", ");
         const generated = new Date(index.generated);
-        summary.dataset.suffix = ` · ${built} with build status · index generated ${isNaN(generated) ? index.generated : generated.toLocaleString()}`;
+        summary.dataset.suffix = ` · ${builtOn} · index generated ${isNaN(generated) ? index.generated : generated.toLocaleString()}`;
 
         const params = new URLSearchParams(location.search);
         searchInput.value = params.get("q") || "";
         repoFilter.value = params.get("repo") || "";
         statusFilter.value = params.get("status") || "";
+        archFilter.value = params.get("arch") === "aarch64" ? "aarch64" : "x86_64";
         sortOrder.value = params.get("sort") === "name" ? "name" : "";
         applySort();
         applyFilters();
@@ -458,6 +571,7 @@
       });
       repoFilter.addEventListener("change", applyFilters);
       statusFilter.addEventListener("change", applyFilters);
+      archFilter.addEventListener("change", () => { applySort(); applyFilters(); });
       sortOrder.addEventListener("change", () => { applySort(); applyFilters(); });
       body.addEventListener("click", (event) => {
         const dep = event.target.closest(".dep[data-pkg]");

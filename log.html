@@ -51,7 +51,7 @@
     <h1 id="log-title">Build Log</h1>
     <a href="packages.html" class="back-link">← Back to Packages</a>
   </div>
-  <div id="log-container">Loading log...</div>
+  <div id="log-container">Loading...</div>
 
   <script type="module">
     import { AnsiUp } from 'https://cdn.jsdelivr.net/npm/ansi_up@6.0.6/ansi_up.min.js';
@@ -60,7 +60,14 @@
     const logFile = urlParams.get('file');
 
     if (logFile) {
-      document.getElementById('log-title').textContent = `Build Log: ${logFile.split('/').pop()}`;
+      // Manifests (manifests/<arch>/<package>.txt.gz) are shown here too.
+      const name = logFile.split('/').pop().replace(/\.txt(\.gz)?$/, '');
+      const isManifest = urlParams.get('kind') === 'manifest';
+      const label = isManifest
+        ? `Files of ${name} (${logFile.split('/')[1] === 'aarch64' ? 'arm64' : logFile.split('/')[1]})`
+        : `Build Log: ${name}`;
+      document.getElementById('log-title').textContent = label;
+      document.title = `sauzerOS - ${label}`;
       
       // Logs are stored gzip-compressed (.txt.gz); older ones are plain text.
       // Look at the data rather than the name: a server that sends
