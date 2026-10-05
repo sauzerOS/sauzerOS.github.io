@@ -199,6 +199,10 @@
               (solves circular deps)</li>
             <li><code>pkgname runtime</code>: runtime only dependency</li>
             <li><code>pkgname suggest "comment"</code>: suggested optional dependency</li>
+            <li><code>pkgname post-install</code>: needed only by the package's post-install script (e.g.
+              <code>gawk post-install</code> for a hook that runs awk, <code>dracut post-install</code> for a kernel).
+              Hokuto installs it just before the script runs if it is missing, and removes it again afterwards unless
+              another package needs it; it is neither a runtime nor a build dependency</li>
             <li><code>pkgname rebuild</code>: forces rebuild of package even if already installed, only enabled with
               -rebuilds build command flag</li>
             <li><code>pkgname cross</code>: cross (arm64) runtime dependency, e.g. <code>aarch64-zlib-ng cross</code> as
@@ -434,13 +438,14 @@
         content is copied a second time. Entries are created under a temporary name and renamed into place, so a
         process already running from a file keeps the inode it started with. Directory symlinks in the root
         (<code>/bin</code>, <code>/lib</code>, <code>/sbin</code> and friends) are written through, not replaced.
-        Hokuto falls back to rsync when the two are on different filesystems.
+        When the two are on different filesystems, hokuto copies the tree into place with its internal copy instead.
       </p>
       <div class="env-vars">
         <strong>Overrides:</strong><br>
         <code>HOKUTO_ZSTD_CHUNK_MB=N</code>: force a frame size in MiB; <code>0</code> packs single-frame archives the
         way hokuto did before<br>
-        <code>HOKUTO_NO_HARDLINK_INSTALL=1</code>: place files with rsync instead of hard links
+        <code>HOKUTO_NO_HARDLINK_INSTALL=1</code>: copy files into place instead of hard linking them (for a filesystem
+        that accepts hard links but misbehaves with them)
       </div>
     </div>
 
