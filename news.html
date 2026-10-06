@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - News</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      color: #586e75;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      display: flex;
+      line-height: 1.5;
+    }
+
+    nav {
+      width: 200px;
+      padding: 40px 20px;
+      border-right: 1px dashed #93a1a1;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 800px;
+    }
+
+    .menu-item {
+      display: block;
+      margin-bottom: 20px;
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      color: #dc322f;
+      text-decoration: underline;
+    }
+
+    .menu-item.active {
+      color: #cb4b16;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    h2,
+    h3 {
+      color: #268bd2;
+    }
+
+    .box {
+      border: 1px solid #93a1a1;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    a {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: #eee8d5;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    pre {
+      background-color: #eee8d5;
+      padding: 10px 12px;
+      overflow-x: auto;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "* ";
+      color: #859900;
+    }
+
+    /* One news item */
+    .news {
+      border-left: 3px solid #93a1a1;
+      padding: 2px 0 2px 16px;
+      margin-bottom: 32px;
+    }
+
+    .news h2 {
+      margin: 0 0 4px;
+      font-size: 1.15rem;
+    }
+
+    .news time {
+      display: block;
+      color: #b58900;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .news p {
+      margin: 0 0 10px;
+    }
+
+    @media (max-width: 700px) {
+      body { display: block; }
+      nav { width: auto; min-height: 0; border-right: none; border-bottom: 1px dashed #93a1a1; padding: 16px; }
+      .menu-item { display: inline-block; margin: 0 14px 6px 0; }
+      main { padding: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div style="font-weight: bold; margin-bottom: 30px; color: #b58900;">[ sauzerOS ]</div>
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="news.html" class="menu-item active">News</a>
+    <a href="bootstrap.html" class="menu-item">Bootstrap</a>
+    <a href="hokuto.html" class="menu-item">Hokuto</a>
+    <a href="packages.html" class="menu-item">Packages</a>
+    <a href="https://github.com/sauzerOS" class="menu-item">GitHub</a>
+  </nav>
+  <main>
+    <div class="box">
+      <h1>News</h1>
+    </div>
+
+    <!--
+      To add a news item, copy the block below, paste it right under this
+      comment (newest first) and fill it in. The date goes in twice: the
+      datetime attribute (YYYY-MM-DD) and the visible text.
+
+    <article class="news">
+      <h2>Title of the news</h2>
+      <time datetime="YYYY-MM-DD">YYYY-MM-DD</time>
+      <p>First paragraph.</p>
+      <p>More paragraphs, <code>commands</code>, <a href="https://example.org/">links</a>.</p>
+      <ul>
+        <li>an optional list</li>
+      </ul>
+      <pre>optional
+block of commands</pre>
+    </article>
+    -->
+
+    <article class="news">
+      <h2>Welcome to the sauzerOS news</h2>
+      <time datetime="2026-10-06">2026-10-06</time>
+      <p>
+        This page collects announcements about sauzerOS and
+        <a href="hokuto.html">hokuto</a>: notable updates, changes that need
+        manual steps, and new features.
+      </p>
+    </article>
+  </main>
+</body>
+
+</html>
