@@ -1,5 +1,70 @@
 [
   {
+    "started": "2026-10-08T16:38:58Z",
+    "duration": 228,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 189,
+        "packages": [
+          {
+            "name": "faugus-launcher",
+            "version": "2.4.3-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 5,
+            "log": "logs/faugus-launcher-2.4.3-1.txt.gz"
+          },
+          {
+            "name": "python-pydantic",
+            "version": "2.14.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 131,
+            "log": "logs/python-pydantic-2.14.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 7
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 31,
+        "packages": [
+          {
+            "name": "python-pydantic",
+            "version": "2.14.0-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 9,
+            "reason": "build failed: exit status 1",
+            "log": "logs/python-pydantic-2.14.0-1-aarch64.txt.gz"
+          },
+          {
+            "name": "hokuto",
+            "version": "0.4.36-3",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 11,
+            "log": "logs/hokuto-0.4.36-3-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s), skipped 5 time(s) while hokuto was running"
+  },
+  {
     "started": "2026-10-08T14:03:41Z",
     "duration": 9029,
     "steps": [
