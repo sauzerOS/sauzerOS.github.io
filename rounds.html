@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sauzerOS - Build rounds</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      color: #586e75;
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      display: flex;
+      line-height: 1.5;
+    }
+
+    nav {
+      width: 200px;
+      padding: 40px 20px;
+      border-right: 1px dashed #93a1a1;
+      min-height: 100vh;
+      box-sizing: border-box;
+      flex-shrink: 0;
+    }
+
+    main {
+      padding: 40px;
+      flex: 1;
+      max-width: 1400px;
+      min-width: 0;
+    }
+
+    .menu-item {
+      display: block;
+      margin-bottom: 20px;
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      color: #dc322f;
+      text-decoration: underline;
+    }
+
+    .menu-item.active {
+      color: #cb4b16;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #268bd2;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .box {
+      border: 1px solid #93a1a1;
+      padding: 5px 12px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    a {
+      color: #2aa198;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background-color: #eee8d5;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0 6px;
+    }
+
+    .controls input,
+    .controls select {
+      font: inherit;
+      color: #586e75;
+      background: #fdf6e3;
+      border: 1px solid #93a1a1;
+      padding: 6px 8px;
+    }
+
+    .controls input {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .controls input:focus,
+    .controls select:focus {
+      outline: 2px solid #268bd2;
+      outline-offset: -1px;
+    }
+
+    #summary {
+      font-size: 0.9rem;
+      color: #93a1a1;
+      margin-bottom: 10px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    #round-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #round-table th {
+      color: #268bd2;
+      text-align: left;
+      padding: 8px;
+      border-bottom: 2px solid #93a1a1;
+      white-space: nowrap;
+    }
+
+    #round-table td {
+      padding: 8px;
+      border-bottom: 1px dashed #93a1a1;
+      vertical-align: top;
+    }
+
+    .round-name {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: #2aa198;
+      cursor: pointer;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .round-name:hover {
+      text-decoration: underline;
+    }
+
+    .round-name::before {
+      content: "+ ";
+      color: #93a1a1;
+    }
+
+    .round-name[aria-expanded="true"]::before {
+      content: "- ";
+    }
+
+    .num {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .steps span {
+      white-space: nowrap;
+      margin-right: 12px;
+    }
+
+    .success, .ok { color: #859900; }
+    .failed { color: #dc322f; }
+    .none { color: #93a1a1; }
+
+    .details td {
+      background-color: #eee8d5;
+    }
+
+    .step {
+      margin-bottom: 12px;
+    }
+
+    .step + .step {
+      padding-top: 8px;
+      border-top: 1px dashed #93a1a1;
+    }
+
+    .step h2 {
+      color: #6c71c4;
+      font-size: 1rem;
+      margin: 0 0 6px;
+    }
+
+    .step h2 .meta {
+      color: #586e75;
+      font-weight: normal;
+    }
+
+    .builds {
+      border-collapse: collapse;
+      margin: 2px 0;
+    }
+
+    #round-table .builds th,
+    #round-table .builds td {
+      padding: 2px 16px 2px 0;
+      text-align: left;
+      border: none;
+      background: none;
+    }
+
+    #round-table .builds th {
+      color: #93a1a1;
+      font-weight: normal;
+    }
+
+    #round-table .builds .num {
+      text-align: right;
+    }
+
+    .reason {
+      overflow-wrap: anywhere;
+    }
+
+    .cleanup {
+      color: #93a1a1;
+    }
+
+    @media (max-width: 700px) {
+      body { display: block; }
+      nav { width: auto; min-height: 0; border-right: none; border-bottom: 1px dashed #93a1a1; padding: 16px; }
+      .menu-item { display: inline-block; margin: 0 14px 6px 0; }
+      main { padding: 16px; }
+      .col-steps { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div style="font-weight: bold; margin-bottom: 30px; color: #b58900;">[ sauzerOS ]</div>
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="news.html" class="menu-item">News</a>
+    <a href="bootstrap.html" class="menu-item">Bootstrap</a>
+    <a href="hokuto.html" class="menu-item">Hokuto</a>
+    <a href="packages.html" class="menu-item">Packages</a>
+    <a href="rounds.html" class="menu-item active">Build rounds</a>
+    <a href="https://github.com/sauzerOS" class="menu-item">GitHub</a>
+  </nav>
+  <main>
+    <div class="box">
+      <h1>Build Rounds</h1>
+    </div>
+
+    <p>The build server checks for new upstream versions every 15 minutes. Each round bumps and builds what changed,
+      rebuilds packages a library change requires, and builds the arm64 packages the mirror lacks. Rounds that found
+      nothing to do are not listed. Click a round for the packages it built and their logs; the
+      <a href="packages.html">package index</a> has each package's latest build.</p>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search package" aria-label="Search package" autocomplete="off">
+      <select id="status-filter" aria-label="Round result">
+        <option value="">All rounds</option>
+        <option value="failed">With failures</option>
+        <option value="built">With builds</option>
+      </select>
+    </div>
+    <div id="summary" aria-live="polite">Loading build rounds...</div>
+
+    <div class="table-wrap">
+      <table id="round-table">
+        <thead>
+          <tr>
+            <th>Round</th>
+            <th class="num">Duration</th>
+            <th class="num">Built</th>
+            <th class="num">Failed</th>
+            <th class="col-steps">Steps</th>
+          </tr>
+        </thead>
+        <tbody id="round-body"></tbody>
+      </table>
+    </div>
+
+    <script>
+      const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+      }[c]));
+
+      const searchInput = document.getElementById("search");
+      const statusFilter = document.getElementById("status-filter");
+      const summary = document.getElementById("summary");
+      const body = document.getElementById("round-body");
+
+      let rounds = [];
+
+      function formatDuration(seconds) {
+        if (!seconds) return "0s";
+        const h = Math.floor(seconds / 3600);
+        const m = Math.floor((seconds % 3600) / 60);
+        const s = seconds % 60;
+        return [h && `${h}h`, (h || m) && `${m}m`, `${s}s`].filter(Boolean).join(" ");
+      }
+
+      const archLabel = (arch) => (arch === "aarch64" ? "arm64" : arch);
+
+      // A step is labelled by its status; one that failed shows its exit code.
+      const stepStatus = (step) => step.status === "ok"
+        ? `<span class="ok">ok</span>`
+        : `<span class="failed">failed${step.exit ? ` (exit ${esc(step.exit)})` : ""}</span>`;
+
+      function buildsHTML(packages) {
+        if (!packages || packages.length === 0) return `<span class="none">nothing built</span>`;
+        const rows = packages.map((p) => {
+          const status = p.log
+            ? `<a href="log.html?file=${encodeURIComponent(p.log)}" class="${esc(p.status)}">${esc(p.status)}</a>`
+            : `<span class="${esc(p.status)}">${esc(p.status)}</span>`;
+          return `<tr>
+              <td><a href="packages.html?q=${encodeURIComponent(p.name)}">${esc(p.name)}</a></td>
+              <td><code>${esc(p.version)}</code></td>
+              <td>${esc(archLabel(p.arch))}</td>
+              <td>${status}</td>
+              <td class="num">${p.buildtime ? formatDuration(p.buildtime) : "-"}</td>
+              <td class="reason">${esc(p.reason)}</td>
+            </tr>`;
+        }).join("");
+        return `<table class="builds"><tr><th>package</th><th>version</th><th>arch</th><th>status</th><th class="num">time</th><th></th></tr>${rows}</table>`;
+      }
+
+      function detailsHTML(round) {
+        const steps = round.steps.map((step) => `<div class="step">
+            <h2>${esc(step.name)} <span class="meta">${stepStatus(step)} · ${formatDuration(step.duration)}</span></h2>
+            ${buildsHTML(step.packages)}
+          </div>`).join("");
+        const cleanup = round.cleanup ? `<div class="cleanup">tmpdir cleanup: ${esc(round.cleanup)}</div>` : "";
+        return steps + cleanup;
+      }
+
+      function toggleDetails(round, open = !round.detailsRow) {
+        const button = round.row.querySelector(".round-name");
+        if (open && !round.detailsRow) {
+          const tr = document.createElement("tr");
+          tr.className = "details";
+          tr.innerHTML = `<td colspan="5">${detailsHTML(round)}</td>`;
+          round.row.after(tr);
+          round.detailsRow = tr;
+        } else if (!open && round.detailsRow) {
+          round.detailsRow.remove();
+          round.detailsRow = null;
+        }
+        button.setAttribute("aria-expanded", String(!!round.detailsRow));
+      }
+
+      function applyFilters() {
+        const terms = searchInput.value.toLowerCase().split(/\s+/).filter(Boolean);
+        const status = statusFilter.value;
+        let shown = 0;
+        for (const round of rounds) {
+          const visible = (!status || (status === "failed" ? round.failedCount > 0 || round.stepFailed : round.builtCount > 0))
+            && terms.every((t) => round.haystack.includes(t));
+          round.row.hidden = !visible;
+          if (round.detailsRow) round.detailsRow.hidden = !visible;
+          if (visible) shown++;
+        }
+        const params = new URLSearchParams();
+        if (searchInput.value.trim()) params.set("q", searchInput.value.trim());
+        if (status) params.set("status", status);
+        const query = params.toString();
+        history.replaceState(null, "", query ? `?${query}` : location.pathname);
+        summary.textContent = `${shown} of ${rounds.length} rounds shown` + summary.dataset.suffix;
+      }
+
+      // rounds.json (written by hokuto-builder's service) lists the rounds
+      // newest first.
+      fetch("rounds.json")
+        .then((r) => (r.ok ? r.json() : []))
+        .catch(() => [])
+        .then((list) => {
+          rounds = list;
+          const fragment = document.createDocumentFragment();
+          for (const round of rounds) {
+            const packages = round.steps.flatMap((s) => s.packages || []);
+            round.builtCount = packages.filter((p) => p.status === "success").length;
+            round.failedCount = packages.length - round.builtCount;
+            round.stepFailed = round.steps.some((s) => s.status !== "ok");
+            round.haystack = packages.map((p) => p.name).join(" ").toLowerCase();
+
+            const started = new Date(round.started);
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td><button type="button" class="round-name" aria-expanded="false">${esc(isNaN(started) ? round.started : started.toLocaleString())}</button></td>
+              <td class="num">${formatDuration(round.duration)}</td>
+              <td class="num ${round.builtCount ? "success" : "none"}">${round.builtCount}</td>
+              <td class="num ${round.failedCount ? "failed" : "none"}">${round.failedCount}</td>
+              <td class="col-steps steps">${round.steps.map((s) => `<span>${esc(s.name)} ${stepStatus(s)}</span>`).join(" ")}</td>`;
+            tr.querySelector(".round-name").addEventListener("click", () => toggleDetails(round));
+            round.row = tr;
+            fragment.appendChild(tr);
+          }
+          body.appendChild(fragment);
+
+          const last = rounds.length ? new Date(rounds[0].started) : null;
+          summary.dataset.suffix = last ? ` · last round ${last.toLocaleString()}` : "";
+
+          const params = new URLSearchParams(location.search);
+          searchInput.value = params.get("q") || "";
+          statusFilter.value = ["failed", "built"].includes(params.get("status")) ? params.get("status") : "";
+          applyFilters();
+          if (rounds.length === 0) summary.textContent = "No build rounds recorded yet.";
+        });
+
+      let debounce;
+      searchInput.addEventListener("input", () => {
+        clearTimeout(debounce);
+        debounce = setTimeout(applyFilters, 120);
+      });
+      statusFilter.addEventListener("change", applyFilters);
+    </script>
+  </main>
+</body>
+
+</html>
