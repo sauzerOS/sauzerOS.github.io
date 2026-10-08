@@ -271,6 +271,9 @@
           <dd>global config file</dd>
           <dt><code>hokuto.lock</code></dt>
           <dd>pin a package to specific version (pkgname version)</dd>
+          <dt><code>hokuto.prefer</code></dt>
+          <dd>package to pick when a dependency offers alternatives and none is installed (one or more names per
+            line, e.g. xlibre)</dd>
           <dt><code>hokuto.pkgset</code></dt>
           <dd>pkgsets for batch updates (hokuto bump -set setname oldver newver)</dd>
           <dt><code>hokuto.rebuild</code></dt>
@@ -792,6 +795,128 @@
           filename override:
           <code>git+https://github.com/example/project#branch=stable -&gt; project-stable</code>.
         </p>
+      </div>
+    </details>
+    <details class="section">
+      <summary>Build Server (hokuto-builder)</summary>
+      <div class="content">
+        <p>
+          <code>hokuto-builder</code> (package <code>hokuto-tools</code>) runs hokuto in a systemd-nspawn container
+          instead of on the host. Build dependencies and base-devel are installed into the container, so building
+          packages for the mirror never changes the host system. The container uses the host's hokuto, recipes
+          (<code>/repo</code>), binary and source caches, build tmpdirs, signing key, mirror credentials and git
+          identity, so bumps are committed and pushed and packages are signed and uploaded as they would be on the
+          host. Commands run as the invoking user; <code>hokuto-builder</code> asks for sudo itself.
+        </p>
+        <p>
+          Builds run at idle CPU priority but use every core: the container only gets the CPU time the host's own
+          work leaves, so a long build does not slow the desktop. Its memory use is throttled above 75% of RAM.
+        </p>
+
+        <details class="sub">
+          <summary>Commands</summary>
+          <div class="content">
+            <dl class="defs">
+              <dt><code>hokuto-builder create</code></dt>
+              <dd>create the container (once); asks where to put it</dd>
+              <dt><code>hokuto-builder bump [-y] [-jN]</code></dt>
+              <dd>auto-bump outdated recipes from Repology, build them N at a time and upload them; -y bumps and
+                builds everything without asking</dd>
+              <dt><code>hokuto-builder build &lt;pkg...&gt;</code></dt>
+              <dd>build already bumped packages as bump does, then upload them (--no-upload skips the upload)</dd>
+              <dt><code>hokuto-builder rebuild [-y] [-jN]</code></dt>
+              <dd>build and upload the recipes ahead of the mirror, such as packages bump revision-bumped after a
+                library dropped a soname; -y builds those published before without asking</dd>
+              <dt><code>hokuto-builder cross-sync [-system] [-y] [-jN]</code></dt>
+              <dd>build the native arm64 packages (or with -system the aarch64-* cross-system packages) the mirror
+                lacks, then upload them; -y builds all of them</dd>
+              <dt><code>hokuto-builder cycle</code></dt>
+              <dd>one unattended round (see Unattended builds)</dd>
+              <dt><code>hokuto-builder run &lt;cmd...&gt;</code></dt>
+              <dd>run a command in the container</dd>
+              <dt><code>hokuto-builder shell</code></dt>
+              <dd>interactive shell in the container</dd>
+              <dt><code>hokuto-builder update</code></dt>
+              <dd>update the container's own packages</dd>
+              <dt><code>hokuto-builder destroy</code></dt>
+              <dd>delete the container</dd>
+              <dt><code>hokuto-builder --generic &lt;command&gt;</code></dt>
+              <dd>the same in a second container whose packages are all the generic variant, where hokuto builds
+                generic packages; create it with <code>hokuto-builder --generic create</code></dd>
+            </dl>
+            <p class="note">Only one hokuto-builder command runs at a time (both containers share the binary cache); a
+              second one waits for it. The build commands remove the packages they left installed in the container.</p>
+          </div>
+        </details>
+
+        <details class="sub">
+          <summary>Unattended builds</summary>
+          <div class="content">
+            <p>
+              <code>hokuto-builder.timer</code> keeps the mirror current without anyone at the keyboard. It runs
+              <code>hokuto-builder cycle</code> 2 minutes after it starts, then again 15 minutes after each round
+              ends, so rounds never overlap however long one takes:
+            </p>
+            <p><code>sudo systemctl enable --now hokuto-builder.timer</code></p>
+            <p>A round runs these steps, each on its own so one failing does not stop the others:</p>
+            <ul>
+              <li><code>bump -y</code>: bump and build what changed upstream</li>
+              <li><code>rebuild -y</code>: build what the bumps made necessary</li>
+              <li><code>--generic rebuild -y</code>: the same for the generic packages, when enabled</li>
+              <li><code>cross-sync -system -y</code> and <code>cross-sync -y</code>: the arm64 packages</li>
+              <li>remove what failed builds left in the build tmpdirs (skipped while any hokuto runs)</li>
+            </ul>
+            <p>
+              Each package's status and log are published to the <a href="packages.html">package index</a> (except
+              generic and cross-system builds, which it does not list). Rounds
+              that built or failed something are listed on <a href="rounds.html">Build rounds</a>, and every round in
+              <code>/var/log/hokuto-builder/runs.log</code>; the full output is in
+              <code>journalctl -u hokuto-builder</code>. A round stops before building anything, and the service
+              shows as failed, when a container it needs is missing or a setting is invalid; the timer retries every
+              15 minutes, so the next round after fixing it just works.
+            </p>
+          </div>
+        </details>
+
+        <details class="sub">
+          <summary>Configuration</summary>
+          <div class="content">
+            <p>Settings are in <code>/etc/hokuto-builder.conf</code>, one <code>KEY=value</code> per line:</p>
+            <dl class="defs">
+              <dt><code>ROOTFS</code>, <code>GENERIC_ROOTFS</code></dt>
+              <dd>where the containers are; saved by create</dd>
+              <dt><code>BUILD_USER</code></dt>
+              <dd>the user the service builds as; saved by create</dd>
+              <dt><code>CYCLE_GENERIC=0</code></dt>
+              <dd>set to 1 to have each round also run <code>--generic rebuild -y</code>; the generic container must
+                exist</dd>
+              <dt><code>CYCLE_JOBS=4</code></dt>
+              <dd>packages a round builds at once</dd>
+              <dt><code>CPU_WEIGHT=idle</code></dt>
+              <dd>the container's CPU priority (systemd CPUWeight=, 1-10000 or idle); empty removes the limit</dd>
+              <dt><code>MEMORY_HIGH=75%</code></dt>
+              <dd>where the container's memory is throttled (systemd MemoryHigh=, bytes or a percentage of RAM);
+                empty removes the limit</dd>
+            </dl>
+            <p>For example, to build the generic packages too:</p>
+            <p><code>echo CYCLE_GENERIC=1 | sudo tee -a /etc/hokuto-builder.conf</code></p>
+            <h4>Alternative dependencies</h4>
+            <p>
+              Unattended builds cannot answer which package should satisfy a dependency such as
+              <code>xlibre | xorg-server</code>. List the package to pick in <code>/etc/hokuto/hokuto.prefer</code>,
+              which the container copies from the host on every run: when none of the alternatives is installed, the
+              first one listed there is chosen without asking.
+            </p>
+            <p><code>echo xlibre | sudo tee -a /etc/hokuto/hokuto.prefer</code></p>
+            <h4>Skipped packages</h4>
+            <p>
+              Packages bump should leave alone are listed in <code>/var/db/hokuto/bump-ignore.json</code>, and
+              packages rebuild should skip in <code>/var/db/hokuto/build-ignore.json</code>
+              (<code>build-ignore-generic.json</code> for the generic container); a rebuild entry is dropped once the
+              recipe's version or revision changes.
+            </p>
+          </div>
+        </details>
       </div>
     </details>
   </main>
