@@ -10,6 +10,7 @@
       background-color: #fdf6e3;
       color: #586e75;
       font-family: "Courier New", Courier, monospace;
+      font-size: 15px;
       margin: 0;
       display: flex;
       line-height: 1.5;
@@ -22,6 +23,7 @@
       min-height: 100vh;
       box-sizing: border-box;
       flex-shrink: 0;
+      font-size: 16px;
     }
 
     main {
@@ -51,7 +53,7 @@
     h1 {
       color: #268bd2;
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     .box {
@@ -72,9 +74,12 @@
 
     code {
       background-color: #eee8d5;
-      padding: 2px 4px;
+      padding: 1px 4px;
       border-radius: 3px;
-      font-weight: bold;
+      /* The page's font, not the browser's default monospace one, which
+         is wider and stood out from the text around it. */
+      font-family: inherit;
+      font-size: 1em;
     }
 
     .controls {
@@ -116,7 +121,10 @@
 
     #round-table {
       width: 100%;
-      border-collapse: collapse;
+      /* Separate, not collapsed: Firefox drew only the ends of a row's
+         dashed border when the rows after it were filtered out. */
+      border-collapse: separate;
+      border-spacing: 0;
     }
 
     #round-table th {
@@ -165,6 +173,10 @@
     .steps span {
       white-space: nowrap;
       margin-right: 12px;
+    }
+
+    .nobr {
+      white-space: nowrap;
     }
 
     .success, .ok { color: #859900; }
@@ -286,6 +298,13 @@
         "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
       }[c]));
 
+      // Versions stay on one line; an unusually long one (a date and commit
+      // hash, 2.9.0.post0.48bd1af-1) may break after its dots instead of
+      // widening the table.
+      const versionHTML = (v) => v.length > 12
+        ? String(v).split(".").map(esc).join(".<wbr>")
+        : `<span class="nobr">${esc(v)}</span>`;
+
       const searchInput = document.getElementById("search");
       const statusFilter = document.getElementById("status-filter");
       const summary = document.getElementById("summary");
@@ -316,7 +335,7 @@
             : `<span class="${esc(p.status)}">${esc(p.status)}</span>`;
           return `<tr>
               <td><a href="packages.html?q=${encodeURIComponent(p.name)}">${esc(p.name)}</a></td>
-              <td><code>${esc(p.version)}</code></td>
+              <td>${versionHTML(p.version)}</td>
               <td>${esc(archLabel(p.arch))}</td>
               <td>${status}</td>
               <td class="num">${p.buildtime ? formatDuration(p.buildtime) : "-"}</td>

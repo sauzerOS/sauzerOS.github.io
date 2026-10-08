@@ -10,6 +10,7 @@
       background-color: #fdf6e3;
       color: #586e75;
       font-family: "Courier New", Courier, monospace;
+      font-size: 15px;
       margin: 0;
       display: flex;
       line-height: 1.5;
@@ -21,12 +22,15 @@
       border-right: 1px dashed #93a1a1;
       min-height: 100vh;
       box-sizing: border-box;
+      font-size: 16px;
+      flex-shrink: 0;
     }
 
     main {
       padding: 40px;
       flex: 1;
       max-width: 800px;
+      min-width: 0;
     }
 
     .menu-item {
@@ -49,7 +53,7 @@
     h1 {
       color: #268bd2;
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     h2,
@@ -93,9 +97,12 @@
 
     code {
       background-color: #eee8d5;
-      padding: 2px 4px;
+      padding: 1px 4px;
       border-radius: 3px;
-      font-weight: bold;
+      /* The page's font, not the browser's default monospace one, which
+         is wider and stood out from the text around it. */
+      font-family: inherit;
+      font-size: 1em;
     }
 
     .section {

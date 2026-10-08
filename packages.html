@@ -10,6 +10,7 @@
       background-color: #fdf6e3;
       color: #586e75;
       font-family: "Courier New", Courier, monospace;
+      font-size: 15px;
       margin: 0;
       display: flex;
       line-height: 1.5;
@@ -22,6 +23,7 @@
       min-height: 100vh;
       box-sizing: border-box;
       flex-shrink: 0;
+      font-size: 16px;
     }
 
     main {
@@ -51,7 +53,7 @@
     h1 {
       color: #268bd2;
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     .box {
@@ -72,9 +74,12 @@
 
     code {
       background-color: #eee8d5;
-      padding: 2px 4px;
+      padding: 1px 4px;
       border-radius: 3px;
-      font-weight: bold;
+      /* The page's font, not the browser's default monospace one, which
+         is wider and stood out from the text around it. */
+      font-family: inherit;
+      font-size: 1em;
     }
 
     .controls {
@@ -116,7 +121,10 @@
 
     #pkg-table {
       width: 100%;
-      border-collapse: collapse;
+      /* Separate, not collapsed: Firefox drew only the ends of a row's
+         dashed border when the rows after it were filtered out. */
+      border-collapse: separate;
+      border-spacing: 0;
     }
 
     #pkg-table th {
@@ -147,13 +155,14 @@
       text-decoration: underline;
     }
 
+    /* A no-break space keeps the marker with the name when it wraps. */
     .pkg-name::before {
-      content: "+ ";
+      content: "+\00a0";
       color: #93a1a1;
     }
 
     .pkg-name[aria-expanded="true"]::before {
-      content: "- ";
+      content: "-\00a0";
     }
 
     .build-cell {
@@ -162,6 +171,10 @@
 
     .repo {
       color: #6c71c4;
+      white-space: nowrap;
+    }
+
+    .nobr {
       white-space: nowrap;
     }
 
@@ -324,6 +337,18 @@
       const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
         "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
       }[c]));
+
+      // Lists such as (B6T/C2D/CCD/...) or (openvz,kvm,qemu,...) may break after
+      // their separators; as one 45-character word they widened the table past
+      // the page.
+      const descHTML = (d) => esc(d).replace(/([\/,])(?=\S)/g, "$1<wbr>");
+
+      // Versions stay on one line; an unusually long one (a date and commit
+      // hash, 2.9.0.post0.48bd1af-1) may break after its dots instead of
+      // widening the table.
+      const versionHTML = (v) => v.length > 12
+        ? String(v).split(".").map(esc).join(".<wbr>")
+        : `<span class="nobr">${esc(v)}</span>`;
 
       const searchInput = document.getElementById("search");
       const repoFilter = document.getElementById("repo-filter");
@@ -535,9 +560,9 @@
           const tr = document.createElement("tr");
           tr.innerHTML = `
             <td><button type="button" class="pkg-name" aria-expanded="false">${esc(pkg.name)}</button></td>
-            <td><code>${esc(pkg.version)}-${esc(pkg.revision)}</code></td>
+            <td>${versionHTML(`${pkg.version}-${pkg.revision}`)}</td>
             <td class="repo">${esc(pkg.repo)}</td>
-            <td class="col-desc">${esc(pkg.description)}</td>
+            <td class="col-desc">${descHTML(pkg.description)}</td>
             ${ARCHES.map(([arch]) => `<td class="build-cell">${statusCell(pkg.states[arch])}</td>`).join("")}`;
           tr.querySelector(".pkg-name").addEventListener("click", () => toggleDetails(pkg));
           pkg.row = tr;
