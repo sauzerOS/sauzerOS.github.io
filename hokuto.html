@@ -811,8 +811,9 @@
           host. Commands run as the invoking user; <code>hokuto-builder</code> asks for sudo itself.
         </p>
         <p>
-          Builds run at idle CPU priority but use every core: the container only gets the CPU time the host's own
-          work leaves, so a long build does not slow the desktop. Its memory use is throttled above 75% of RAM.
+          Builds run at idle CPU priority: the container only gets the CPU time the host's own work leaves. They are
+          also capped at 80% of the CPU threads, so the desktop and games always have cores to spare, and their memory
+          use is throttled above half the RAM, before the host's own memory is swapped out.
         </p>
 
         <details class="sub">
@@ -866,7 +867,8 @@
               <li><code>rebuild -y</code>: build what the bumps made necessary</li>
               <li><code>--generic rebuild -y</code>: the same for the generic packages, when enabled</li>
               <li><code>cross-sync -system -y</code> and <code>cross-sync -y</code>: the arm64 packages</li>
-              <li>remove what failed builds left in the build tmpdirs (skipped while any hokuto runs)</li>
+              <li>before each step and at the end, remove what failed builds left in the build tmpdirs, so
+                they cannot fill them for the next step (skipped while any hokuto runs)</li>
             </ul>
             <p>
               Each package's status and log are published to the <a href="packages.html">package index</a> (except
@@ -896,7 +898,10 @@
               <dd>packages a round builds at once</dd>
               <dt><code>CPU_WEIGHT=idle</code></dt>
               <dd>the container's CPU priority (systemd CPUWeight=, 1-10000 or idle); empty removes the limit</dd>
-              <dt><code>MEMORY_HIGH=75%</code></dt>
+              <dt><code>CPU_QUOTA</code></dt>
+              <dd>the container's CPU cap (systemd CPUQuota=, 100% per thread, so 1600% is 16 threads); unset, 80% of
+                the threads; empty removes the cap</dd>
+              <dt><code>MEMORY_HIGH=50%</code></dt>
               <dd>where the container's memory is throttled (systemd MemoryHigh=, bytes or a percentage of RAM);
                 empty removes the limit</dd>
             </dl>
