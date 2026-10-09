@@ -1,5 +1,44 @@
 [
   {
+    "started": "2026-10-09T12:09:08Z",
+    "duration": 422,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 46
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 85,
+        "packages": [
+          {
+            "name": "cosmic-greeter",
+            "version": "1.10.0-2",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 62,
+            "reason": "build script exited with code 101",
+            "log": "logs/cosmic-greeter-1.10.0-2.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 289
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 6 leftover item(s), skipped 1 time(s) while hokuto was running"
+  },
+  {
     "started": "2026-10-09T11:51:38Z",
     "duration": 147,
     "steps": [
