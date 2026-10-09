@@ -1,5 +1,124 @@
 [
   {
+    "started": "2026-10-09T13:59:45Z",
+    "duration": 416,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 223,
+        "packages": [
+          {
+            "name": "python-pycparser",
+            "version": "3.11-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 3,
+            "log": "logs/python-pycparser-3.11-1.txt.gz"
+          },
+          {
+            "name": "mutt",
+            "version": "2.4.3-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 24,
+            "log": "logs/mutt-2.4.3-1.txt.gz"
+          },
+          {
+            "name": "fltk",
+            "version": "1.4.5-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 174,
+            "log": "logs/fltk-1.4.5-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 71,
+        "packages": [
+          {
+            "name": "tigervnc",
+            "version": "1.16.2-2",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 43,
+            "log": "logs/tigervnc-1.16.2-2.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 16,
+        "packages": [
+          {
+            "name": "fltk",
+            "version": "1.4.5-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 8,
+            "reason": "build failed: exit status 2",
+            "log": "logs/fltk-1.4.5-1-aarch64.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 106,
+        "packages": [
+          {
+            "name": "python-pycparser",
+            "version": "3.11-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 3,
+            "log": "logs/python-pycparser-3.11-1-aarch64.txt.gz"
+          },
+          {
+            "name": "xorgxrdp",
+            "version": "git.51f60f5-2",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 25,
+            "log": "logs/xorgxrdp-git.51f60f5-2-aarch64.txt.gz"
+          },
+          {
+            "name": "xlibre",
+            "version": "25.2.2-7",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 33,
+            "log": "logs/xlibre-25.2.2-7-aarch64.txt.gz"
+          },
+          {
+            "name": "fltk",
+            "version": "1.4.5-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 34,
+            "reason": "build failed: exit status 2",
+            "log": "logs/fltk-1.4.5-1-aarch64.txt.gz"
+          },
+          {
+            "name": "tigervnc",
+            "version": "1.16.2-2",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 64,
+            "log": "logs/tigervnc-1.16.2-2-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 5 leftover item(s)"
+  },
+  {
     "started": "2026-10-09T13:28:28Z",
     "duration": 18,
     "steps": [
