@@ -1,5 +1,88 @@
 [
   {
+    "started": "2026-10-09T16:31:35Z",
+    "duration": 68,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 27,
+        "packages": [
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 14,
+            "reason": "build failed: exit status 1",
+            "log": "logs/xrdp-git.5da996f-2-aarch64.txt.gz"
+          },
+          {
+            "name": "aarch64-xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 31,
+        "packages": [
+          {
+            "name": "hokuto",
+            "version": "0.4.41-2",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 8,
+            "log": "logs/hokuto-0.4.41-2-aarch64.txt.gz"
+          },
+          {
+            "name": "xorgxrdp",
+            "version": "git.51f60f5-5",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 11,
+            "log": "logs/xorgxrdp-git.51f60f5-5-aarch64.txt.gz"
+          },
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 17,
+            "reason": "build failed: exit status 1",
+            "log": "logs/xrdp-git.5da996f-2-aarch64.txt.gz"
+          },
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 7 leftover item(s)"
+  },
+  {
     "started": "2026-10-09T16:06:32Z",
     "duration": 17,
     "steps": [
