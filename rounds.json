@@ -1,5 +1,114 @@
 [
   {
+    "started": "2026-10-09T16:54:25Z",
+    "duration": 164,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 80,
+        "packages": [
+          {
+            "name": "xorg-server",
+            "version": "21.1.25-5",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 62,
+            "log": "logs/xorg-server-21.1.25-5.txt.gz"
+          },
+          {
+            "name": "xlibre",
+            "version": "25.2.2-11",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 64,
+            "log": "logs/xlibre-25.2.2-11.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 44,
+        "packages": [
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 27,
+            "reason": "build failed: exit status 1",
+            "log": "logs/xrdp-git.5da996f-2-aarch64.txt.gz"
+          },
+          {
+            "name": "xlibre",
+            "version": "25.2.2-11",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 28,
+            "log": "logs/xlibre-25.2.2-11-aarch64.txt.gz"
+          },
+          {
+            "name": "xorg-server",
+            "version": "21.1.25-5",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 28,
+            "log": "logs/xorg-server-21.1.25-5-aarch64.txt.gz"
+          },
+          {
+            "name": "aarch64-xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 37,
+        "packages": [
+          {
+            "name": "xlibre",
+            "version": "25.2.2-11",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 20,
+            "log": "logs/xlibre-25.2.2-11-aarch64.txt.gz"
+          },
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 22,
+            "reason": "build failed: exit status 1",
+            "log": "logs/xrdp-git.5da996f-2-aarch64.txt.gz"
+          },
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 4 leftover item(s)"
+  },
+  {
     "started": "2026-10-09T16:37:18Z",
     "duration": 104,
     "steps": [
