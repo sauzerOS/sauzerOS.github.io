@@ -1,5 +1,43 @@
 [
   {
+    "started": "2026-10-09T07:17:38Z",
+    "duration": 194,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 191,
+        "packages": [
+          {
+            "name": "gstreamer",
+            "version": "1.28.8-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 135,
+            "reason": "failed to fetch sources: failed to clone git cache: exit status 128"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-10-09T06:55:28Z",
     "duration": 385,
     "steps": [
