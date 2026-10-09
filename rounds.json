@@ -1,5 +1,121 @@
 [
   {
+    "started": "2026-10-09T15:13:18Z",
+    "duration": 124,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 67,
+        "packages": [
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 2,
+            "reason": "source verification failed: failed to compute checksum for arch-config.diff: open /repo/sauzeros/extra/xrdp/files/arch-config.diff: no such file or directory"
+          },
+          {
+            "name": "xlibre",
+            "version": "25.2.2-8",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 38,
+            "log": "logs/xlibre-25.2.2-8.txt.gz"
+          },
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 36,
+        "packages": [
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 1,
+            "reason": "source verification failed: failed to compute checksum for arch-config.diff: open /repo/sauzeros/extra/xrdp/files/arch-config.diff: no such file or directory"
+          },
+          {
+            "name": "fltk",
+            "version": "1.4.5-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 17,
+            "log": "logs/fltk-1.4.5-1-aarch64.txt.gz"
+          },
+          {
+            "name": "xlibre",
+            "version": "25.2.2-8",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 19,
+            "log": "logs/xlibre-25.2.2-8-aarch64.txt.gz"
+          },
+          {
+            "name": "aarch64-xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 20,
+        "packages": [
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 1,
+            "reason": "source verification failed: failed to compute checksum for arch-config.diff: open /repo/sauzeros/extra/xrdp/files/arch-config.diff: no such file or directory"
+          },
+          {
+            "name": "hokuto",
+            "version": "0.4.39-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 8,
+            "log": "logs/hokuto-0.4.39-1-aarch64.txt.gz"
+          },
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 7 leftover item(s)"
+  },
+  {
     "started": "2026-10-09T14:21:45Z",
     "duration": 452,
     "steps": [
