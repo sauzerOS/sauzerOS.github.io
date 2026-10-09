@@ -1,5 +1,42 @@
 [
   {
+    "started": "2026-10-09T17:45:45Z",
+    "duration": 112,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 22
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 5
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 45,
+        "packages": [
+          {
+            "name": "xrdp",
+            "version": "git.5da996f-2",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 32,
+            "log": "logs/xrdp-git.5da996f-2-aarch64.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 33
+      }
+    ],
+    "cleanup": "removed 9 leftover item(s), kept 4 in use by a running build"
+  },
+  {
     "started": "2026-10-09T17:28:38Z",
     "duration": 121,
     "steps": [
