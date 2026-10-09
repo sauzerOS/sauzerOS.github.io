@@ -305,7 +305,10 @@
             dependency on the other. Installing one replaces the other, and generated library dependencies use an
             ordered <code>replacement | upstream</code> alternative for replacement packages. Version-constrained
             dependencies remain exact. The relevant pair is embedded in built packages so replacement also works when
-            installing exclusively from a binary mirror</dd>
+            installing exclusively from a binary mirror. Replacing a package also replaces the installed packages that
+            depend on it and are one side of a pair themselves: installing <code>xorg-server</code> over
+            <code>xlibre</code> installs <code>xf86-input-libinput</code> in place of
+            <code>xlibre-xf86-input-libinput</code></dd>
           <dt>options</dt>
           <dd>build options (see Option tags)</dd>
           <dt>bump-follows</dt>
