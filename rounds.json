@@ -1,5 +1,79 @@
 [
   {
+    "started": "2026-10-09T16:37:18Z",
+    "duration": 104,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 48,
+        "packages": [
+          {
+            "name": "xorg-server",
+            "version": "21.1.25-4",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 31,
+            "log": "logs/xorg-server-21.1.25-4.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 26,
+        "packages": [
+          {
+            "name": "xorg-server",
+            "version": "21.1.25-4",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 15,
+            "log": "logs/xorg-server-21.1.25-4-aarch64.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 29,
+        "packages": [
+          {
+            "name": "hokuto",
+            "version": "0.4.41-3",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 16,
+            "log": "logs/hokuto-0.4.41-3-aarch64.txt.gz"
+          },
+          {
+            "name": "xorg-server",
+            "version": "21.1.25-5",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 18,
+            "reason": "build failed: exit status 1"
+          },
+          {
+            "name": "xorg-server",
+            "version": "21.1.25-4",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-10-09T16:31:35Z",
     "duration": 68,
     "steps": [
