@@ -1,5 +1,82 @@
 [
   {
+    "started": "2026-10-09T14:21:45Z",
+    "duration": 452,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 392,
+        "packages": [
+          {
+            "name": "xlibre",
+            "version": "25.2.2-7",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 37,
+            "log": "logs/xlibre-25.2.2-7.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 33,
+        "packages": [
+          {
+            "name": "fltk",
+            "version": "1.4.5-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 19,
+            "reason": "build failed: exit status 2",
+            "log": "logs/fltk-1.4.5-1-aarch64.txt.gz"
+          },
+          {
+            "name": "xlibre",
+            "version": "25.2.2-7",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 22,
+            "log": "logs/xlibre-25.2.2-7-aarch64.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 26,
+        "packages": [
+          {
+            "name": "fltk",
+            "version": "1.4.5-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 13,
+            "reason": "build failed: exit status 2",
+            "log": "logs/fltk-1.4.5-1-aarch64.txt.gz"
+          },
+          {
+            "name": "xorgxrdp",
+            "version": "git.51f60f5-3",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 13,
+            "log": "logs/xorgxrdp-git.51f60f5-3-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 4 leftover item(s)"
+  },
+  {
     "started": "2026-10-09T13:59:45Z",
     "duration": 416,
     "steps": [
