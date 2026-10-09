@@ -835,6 +835,9 @@
                 lacks, then upload them; -y builds all of them</dd>
               <dt><code>hokuto-builder cycle</code></dt>
               <dd>one unattended round (see Unattended builds)</dd>
+              <dt><code>hokuto-builder blacklist [list | remove [-arch &lt;arch&gt;] &lt;pkg&gt;... | clear]</code></dt>
+              <dd>the packages unattended builds skip after their build failed (see Unattended builds); remove
+                retries them in the next round</dd>
               <dt><code>hokuto-builder run &lt;cmd...&gt;</code></dt>
               <dd>run a command in the container</dd>
               <dt><code>hokuto-builder shell</code></dt>
@@ -878,6 +881,14 @@
               <code>journalctl -u hokuto-builder</code>. A round stops before building anything, and the service
               shows as failed, when a container it needs is missing or a setting is invalid; the timer retries every
               15 minutes, so the next round after fixing it just works.
+            </p>
+            <p>
+              A package whose own build fails in a round is blacklisted for that architecture, so later rounds do not
+              build it again; a package that only failed because a dependency did is not. The entry ends by itself
+              when the recipe's version or revision changes, and <code>hokuto-builder blacklist remove &lt;pkg&gt;</code>
+              retries it sooner. The round that blacklists a package reports it, as it does a Repology project bump
+              could not match to a recipe: such a project needs a name mapping in hokuto's auto-bump
+              (<code>internal/hokuto/pkgdev.go</code>).
             </p>
           </div>
         </details>
