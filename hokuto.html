@@ -387,7 +387,9 @@
               <dt><code>pkgname runtime</code></dt>
               <dd>runtime only dependency</dd>
               <dt><code>pkgname suggest "comment"</code></dt>
-              <dd>suggested optional dependency</dd>
+              <dd>suggested optional dependency, offered after the package is installed. On an architecture whose
+                packages are cross built (aarch64), a suggestion is only offered when a package was published for it
+                or its recipe is prepared for cross builds</dd>
               <dt><code>pkgname post-install</code></dt>
               <dd>needed only by the package's post-install script (e.g. <code>gawk post-install</code> for a hook that
                 runs awk, <code>dracut post-install</code> for a kernel). Hokuto installs it just before the script runs
