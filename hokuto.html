@@ -632,6 +632,15 @@
           </div>
         </details>
         <p>
+          gobject-introspection cannot scan a library built for another architecture, so cross builds disable
+          introspection. A <code>-cross=&lt;arch&gt;</code> build of a recipe whose native build depends on
+          <code>gobject-introspection</code> then copies the typelibs, <code>.gir</code> files and Vala bindings that
+          its outputs lack from the published x86_64 package of the same name and version: both architectures are
+          LP64 with the same type sizes and alignment, which is all the typelib's layout data depends on. The x86_64
+          package has to be built first; without it the output goes without, with a warning. Cross-system
+          (<code>,system</code>) builds are not given any.
+        </p>
+        <p>
           Just as a native build installs any missing <code>base-devel</code> packages first, a cross build
           (<code>-cross=arm64</code> or <code>-cross=arm64,system</code>) also installs the missing members of the
           <code>aarch64-base-devel</code> metapackage, the cross toolchain. A toolchain package that the build itself
