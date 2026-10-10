@@ -491,13 +491,12 @@
                 <code>hokuto perl-rebuild</code>, these recipes get a revision bump so they are rebuilt. A build that
                 stages such objects without this option prints a warning</dd>
               <dt>python-rebuild</dt>
-              <dd>the package installs files under a versioned <code>lib/python3.X</code> directory or links
-                <code>libpython3.X</code>, so a Python minor upgrade (3.14 → 3.15) needs it rebuilt. After installing
-                the new Python in the build container, <code>hokuto python-rebuild</code> test-builds every such recipe
-                (the Python build tools and meson first) without publishing anything and lists the ones that fail;
-                <code>hokuto python-rebuild bump "message"</code> then bumps their revisions and commits them (no
-                push). <code>hokuto python-rebuild list</code> shows them. A build that stages such files without this
-                option prints a warning</dd>
+              <dd>the package installs files under a versioned <code>lib/python3.X</code> directory, an extension
+                module tagged for one CPython release (<code>*.cpython-314-*.so</code>) or links
+                <code>libpython3.X</code>, so a Python minor upgrade (3.14 → 3.15) needs it rebuilt. Packages
+                published linked against <code>libpython3.X</code> are rebuilt even without the option. See
+                Python upgrades under Unattended builds. A build that stages such files without this option prints a
+                warning</dd>
               <dt>staticlibs</dt>
               <dd>keep static libraries</dd>
             </dl>
@@ -856,6 +855,8 @@
               <dd>packages the build server never builds until they are removed from the list: bump still bumps them
                 but does not build them, and rebuild skips them; <code>-cross</code> entries are skipped by
                 cross-sync and cross-sync -system instead (see Unattended builds)</dd>
+              <dt><code>hokuto-builder python-rebuild [--status | --list | --check [-jN] | --confirm [--force] | --cancel]</code></dt>
+              <dd>a held Python minor upgrade (see Python upgrades under Unattended builds)</dd>
               <dt><code>hokuto-builder run &lt;cmd...&gt;</code></dt>
               <dd>run a command in the container</dd>
               <dt><code>hokuto-builder shell</code></dt>
@@ -918,6 +919,30 @@
               blacklist, with <code>-cross</code> or <code>-native</code> to limit them to one kind of entry.
               <code>hokuto nobuild</code> is the same command outside the container.
             </p>
+            <p><strong>Python upgrades.</strong>
+              A new Python minor release (3.14 → 3.15) changes the extension ABI and the
+              <code>site-packages</code> directory, so every package with Python modules or linked against
+              <code>libpython</code> has to be rebuilt, and how many of them build against the new release is only
+              known by trying. When a publishing build (<code>bump --build</code>, <code>hokuto-builder build</code>)
+              builds python with a new minor release, the build server therefore holds it: nothing is bumped, the new
+              python is not uploaded, rebuild and cross-sync leave python alone, and the build pages show a notice.
+            </p>
+            <ol>
+              <li><code>hokuto-builder python-rebuild --check [-jN]</code> builds and installs the new python and
+                builds every package that needs the rebuild against it, the Python build tools and meson first. It
+                runs in a throwaway overlay of the container, so nothing it installs stays, and nothing is uploaded.
+                It reports which packages fail and updates the notice.</li>
+              <li>Fix what failed and check again, or revert the python bump and drop the hold with
+                <code>--cancel</code>.</li>
+              <li><code>hokuto-builder python-rebuild --confirm</code>, once every package built, bumps their
+                revisions, commits and pushes them, and releases python. <code>--force</code> confirms without a
+                passed check.</li>
+              <li>The next <code>hokuto-builder rebuild</code> (or round) builds python and the bumped packages and
+                publishes them together; cross-sync then does the same for aarch64.</li>
+            </ol>
+            <p><code>--status</code> shows the held upgrade and the last check, <code>--list</code> the packages it
+              rebuilds: the recipes marked <code>python-rebuild</code> and those of the published packages linked
+              against the old <code>libpython</code>.</p>
           </div>
         </details>
 
