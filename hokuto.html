@@ -841,6 +841,10 @@
               <dt><code>hokuto-builder blacklist [list | remove [-arch &lt;arch&gt;] &lt;pkg&gt;... | clear]</code></dt>
               <dd>the packages unattended builds skip after their build failed (see Unattended builds); remove
                 retries them in the next round</dd>
+              <dt><code>hokuto-builder nobuild [list | [add] [-cross] &lt;pkg&gt;... | remove [-cross|-native] &lt;pkg&gt;... | clear [-cross|-native]]</code></dt>
+              <dd>packages the build server never builds until they are removed from the list: bump still bumps them
+                but does not build them, and rebuild skips them; <code>-cross</code> entries are skipped by
+                cross-sync and cross-sync -system instead (see Unattended builds)</dd>
               <dt><code>hokuto-builder run &lt;cmd...&gt;</code></dt>
               <dd>run a command in the container</dd>
               <dt><code>hokuto-builder shell</code></dt>
@@ -892,6 +896,16 @@
               retries it sooner. The round that blacklists a package reports it, as it does a Repology project bump
               could not match to a recipe: such a project needs a name mapping in hokuto's auto-bump
               (<code>internal/hokuto/pkgdev.go</code>).
+            </p>
+            <p>
+              The no-build list (<code>/var/db/hokuto/nobuild.json</code>, shared by both containers and the host) is
+              for packages that should not be built here at all, for instance ones too large for the build machine or
+              built elsewhere. Unlike blacklist entries, its entries never expire. <code>hokuto-builder nobuild
+              &lt;pkg&gt;</code> keeps a recipe from being built after a bump and from rebuild;
+              <code>hokuto-builder nobuild -cross &lt;pkg&gt;</code> keeps its aarch64 packages out of cross-sync
+              and cross-sync -system. <code>list</code>, <code>remove</code> and <code>clear</code> work as for the
+              blacklist, with <code>-cross</code> or <code>-native</code> to limit them to one kind of entry.
+              <code>hokuto nobuild</code> is the same command outside the container.
             </p>
           </div>
         </details>
