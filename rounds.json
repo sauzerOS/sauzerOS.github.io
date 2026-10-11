@@ -1,5 +1,77 @@
 [
   {
+    "started": "2026-10-11T18:22:19Z",
+    "duration": 150,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 85,
+        "packages": [
+          {
+            "name": "python-pyzstd",
+            "version": "0.20.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 3,
+            "log": "logs/python-pyzstd-0.20.0-1.txt.gz"
+          },
+          {
+            "name": "discord",
+            "version": "1.0.161-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 5,
+            "log": "logs/discord-1.0.161-1.txt.gz"
+          },
+          {
+            "name": "fdk-aac",
+            "version": "3.0.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 42,
+            "log": "logs/fdk-aac-3.0.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 28,
+        "packages": [
+          {
+            "name": "aarch64-fdk-aac",
+            "version": "3.0.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 26
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 31,
+        "packages": [
+          {
+            "name": "fdk-aac",
+            "version": "3.0.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 28,
+            "log": "logs/fdk-aac-3.0.0-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-10-11T16:55:49Z",
     "duration": 259,
     "steps": [
