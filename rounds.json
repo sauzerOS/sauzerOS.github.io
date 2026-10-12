@@ -1,5 +1,69 @@
 [
   {
+    "started": "2026-10-12T17:34:30Z",
+    "duration": 2056,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 2040,
+        "packages": [
+          {
+            "name": "freerdp",
+            "version": "3.32.2-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 21,
+            "reason": "build script exited with code 1",
+            "log": "logs/freerdp-3.32.2-1.txt.gz"
+          },
+          {
+            "name": "firefox",
+            "version": "158.0-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 1989,
+            "reason": "build script exited with code 2",
+            "log": "logs/firefox-158.0-1.txt.gz"
+          },
+          {
+            "name": "firefox",
+            "version": "158.0-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          },
+          {
+            "name": "freerdp",
+            "version": "3.32.2-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 4 leftover item(s)"
+  },
+  {
     "started": "2026-10-12T15:50:20Z",
     "duration": 5330,
     "steps": [
