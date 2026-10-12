@@ -1,5 +1,96 @@
 [
   {
+    "started": "2026-10-12T15:50:20Z",
+    "duration": 5330,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 2023,
+        "packages": [
+          {
+            "name": "freerdp",
+            "version": "3.32.2-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 19,
+            "reason": "build script exited with code 1",
+            "log": "logs/freerdp-3.32.2-1.txt.gz"
+          },
+          {
+            "name": "doggo",
+            "version": "1.4.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 32,
+            "log": "logs/doggo-1.4.1-1.txt.gz"
+          },
+          {
+            "name": "firefox",
+            "version": "158.0-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 1903,
+            "reason": "build script exited with code 2",
+            "log": "logs/firefox-158.0-1.txt.gz"
+          },
+          {
+            "name": "firefox",
+            "version": "158.0-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          },
+          {
+            "name": "freerdp",
+            "version": "3.32.2-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 3272,
+        "packages": [
+          {
+            "name": "firefox",
+            "version": "158.0-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 3227,
+            "reason": "build failed: exit status 2",
+            "log": "logs/firefox-158.0-1-aarch64.txt.gz"
+          },
+          {
+            "name": "firefox",
+            "version": "158.0-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 5 leftover item(s)"
+  },
+  {
     "started": "2026-10-12T14:17:13Z",
     "duration": 33,
     "steps": [
