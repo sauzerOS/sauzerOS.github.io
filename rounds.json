@@ -1,5 +1,61 @@
 [
   {
+    "started": "2026-10-14T09:40:27Z",
+    "duration": 150,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 61,
+        "packages": [
+          {
+            "name": "curl",
+            "version": "8.23.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 52,
+            "log": "logs/curl-8.23.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 15
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 37,
+        "packages": [
+          {
+            "name": "aarch64-curl",
+            "version": "8.23.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 33
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 37,
+        "packages": [
+          {
+            "name": "curl",
+            "version": "8.23.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 34,
+            "log": "logs/curl-8.23.0-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-10-14T04:24:16Z",
     "duration": 18570,
     "steps": [
