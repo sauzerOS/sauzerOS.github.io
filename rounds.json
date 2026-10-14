@@ -1,5 +1,70 @@
 [
   {
+    "started": "2026-10-14T17:22:14Z",
+    "duration": 520,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 117,
+        "packages": [
+          {
+            "name": "kwayland-integration",
+            "version": "6.8.0",
+            "arch": "-",
+            "status": "nomatch",
+            "buildtime": 0,
+            "reason": "Repology project kwayland-integration maps to kwayland-integration, which is no recipe or package set in sauzeros-kde: map it to the recipe in the auto-bump name switch (internal/hokuto/pkgdev.go)"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 265,
+        "packages": [
+          {
+            "name": "sonic-desktop-interface",
+            "version": "6.7.5.2-3",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 38,
+            "reason": "build script exited with code 2",
+            "log": "logs/sonic-desktop-interface-6.7.5.2-3.txt.gz"
+          },
+          {
+            "name": "plasma-desktop",
+            "version": "6.8.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 176,
+            "log": "logs/plasma-desktop-6.8.0-1.txt.gz"
+          },
+          {
+            "name": "sonic-desktop-interface",
+            "version": "6.7.5.2-3",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 132
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 4 leftover item(s)"
+  },
+  {
     "started": "2026-10-14T16:08:04Z",
     "duration": 3527,
     "steps": [
