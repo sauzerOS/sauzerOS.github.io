@@ -1,5 +1,134 @@
 [
   {
+    "started": "2026-10-15T06:00:27Z",
+    "duration": 1615,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 1450,
+        "packages": [
+          {
+            "name": "sonic-desktop-interface",
+            "version": "6.7.5.4-2",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 6,
+            "reason": "build script exited with code 1",
+            "log": "logs/sonic-desktop-interface-6.7.5.4-2.txt.gz"
+          },
+          {
+            "name": "nodejs",
+            "version": "26.12.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 1407,
+            "log": "logs/nodejs-26.12.0-1.txt.gz"
+          },
+          {
+            "name": "sonic-desktop-interface",
+            "version": "6.7.5.4-2",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 97,
+        "packages": [
+          {
+            "name": "aarch64-python-filelock",
+            "version": "4.2.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 5
+          },
+          {
+            "name": "aarch64-simdutf",
+            "version": "9.3.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 43
+          },
+          {
+            "name": "aarch64-imagemagick",
+            "version": "7.1.2-34-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 72
+          },
+          {
+            "name": "aarch64-vte3",
+            "version": "0.84.1-3",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 29
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 64,
+        "packages": [
+          {
+            "name": "python-filelock",
+            "version": "4.2.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 4,
+            "log": "logs/python-filelock-4.2.0-1-aarch64.txt.gz"
+          },
+          {
+            "name": "nodejs",
+            "version": "26.12.0-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 6,
+            "reason": "build failed: exit status 1",
+            "log": "logs/nodejs-26.12.0-1-aarch64.txt.gz"
+          },
+          {
+            "name": "vte3",
+            "version": "0.84.1-3",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 36,
+            "log": "logs/vte3-0.84.1-3-aarch64.txt.gz"
+          },
+          {
+            "name": "simdutf",
+            "version": "9.3.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 41,
+            "log": "logs/simdutf-9.3.0-1-aarch64.txt.gz"
+          },
+          {
+            "name": "nodejs",
+            "version": "26.12.0-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 6 leftover item(s)"
+  },
+  {
     "started": "2026-10-15T04:43:51Z",
     "duration": 1,
     "steps": [
