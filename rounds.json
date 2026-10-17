@@ -1,5 +1,91 @@
 [
   {
+    "started": "2026-10-17T16:54:30Z",
+    "duration": 158,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 129,
+        "packages": [
+          {
+            "name": "glibc",
+            "version": "2.44-2",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 104,
+            "reason": "build failed: exit status 2",
+            "log": "logs/glibc-2.44-2.txt.gz"
+          },
+          {
+            "name": "glibc",
+            "version": "2.44-2",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 7,
+        "packages": [
+          {
+            "name": "aarch64-glibc",
+            "version": "2.44-2",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 5,
+            "reason": "build failed: exit status 1"
+          },
+          {
+            "name": "aarch64-glibc",
+            "version": "2.44-2",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 9,
+        "packages": [
+          {
+            "name": "glibc",
+            "version": "2.44-2",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 6,
+            "reason": "build failed: exit status 1",
+            "log": "logs/glibc-2.44-2-aarch64.txt.gz"
+          },
+          {
+            "name": "glibc",
+            "version": "2.44-2",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 6 leftover item(s)"
+  },
+  {
     "started": "2026-10-17T13:18:44Z",
     "duration": 1233,
     "steps": [
