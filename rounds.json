@@ -1,5 +1,120 @@
 [
   {
+    "started": "2026-10-18T02:40:55Z",
+    "duration": 233,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 86,
+        "packages": [
+          {
+            "name": "python-chardet",
+            "version": "7.7.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 7,
+            "log": "logs/python-chardet-7.7.0-1.txt.gz"
+          },
+          {
+            "name": "libnotify",
+            "version": "0.8.9-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 9,
+            "log": "logs/libnotify-0.8.9-1.txt.gz"
+          },
+          {
+            "name": "python-platformdirs",
+            "version": "4.13.4-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 12,
+            "log": "logs/python-platformdirs-4.13.4-1.txt.gz"
+          },
+          {
+            "name": "simdutf",
+            "version": "9.3.2-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 37,
+            "log": "logs/simdutf-9.3.2-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 20
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 60,
+        "packages": [
+          {
+            "name": "aarch64-libnotify",
+            "version": "0.8.9-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 1,
+            "reason": "build failed: exit status 1"
+          },
+          {
+            "name": "aarch64-simdutf",
+            "version": "9.3.2-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 40
+          },
+          {
+            "name": "aarch64-libnotify",
+            "version": "0.8.9-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 63,
+        "packages": [
+          {
+            "name": "libnotify",
+            "version": "0.8.9-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 4,
+            "reason": "build failed: exit status 1",
+            "log": "logs/libnotify-0.8.9-1-aarch64.txt.gz"
+          },
+          {
+            "name": "simdutf",
+            "version": "9.3.2-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 43,
+            "log": "logs/simdutf-9.3.2-1-aarch64.txt.gz"
+          },
+          {
+            "name": "libnotify",
+            "version": "0.8.9-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 4 leftover item(s)"
+  },
+  {
     "started": "2026-10-17T18:44:00Z",
     "duration": 134,
     "steps": [
