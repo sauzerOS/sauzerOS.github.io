@@ -1,5 +1,62 @@
 [
   {
+    "started": "2026-10-20T16:01:21Z",
+    "duration": 524,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 256,
+        "packages": [
+          {
+            "name": "nss",
+            "version": "3.131.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 237,
+            "log": "logs/nss-3.131.1-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 20
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 111,
+        "packages": [
+          {
+            "name": "aarch64-nss",
+            "version": "3.131.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 105
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 137,
+        "packages": [
+          {
+            "name": "nss",
+            "version": "3.131.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 132,
+            "log": "logs/nss-3.131.1-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-10-20T15:45:53Z",
     "duration": 23,
     "steps": [
