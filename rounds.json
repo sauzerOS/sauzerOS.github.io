@@ -1,5 +1,60 @@
 [
   {
+    "started": "2026-10-21T17:47:04Z",
+    "duration": 882,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 870,
+        "packages": [
+          {
+            "name": "rusty-path-of-building",
+            "version": "0.3.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 443,
+            "log": "logs/rusty-path-of-building-0.3.1-1.txt.gz"
+          },
+          {
+            "name": "deno",
+            "version": "2.9.8-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 797,
+            "reason": "build failed: exit status 101",
+            "log": "logs/deno-2.9.8-1.txt.gz"
+          },
+          {
+            "name": "deno",
+            "version": "2.9.8-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 7
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 1
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-10-21T16:32:25Z",
     "duration": 3567,
     "steps": [
