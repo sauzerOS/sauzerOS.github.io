@@ -1,5 +1,55 @@
 [
   {
+    "started": "2026-10-22T08:05:17Z",
+    "duration": 111,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 7
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 50,
+        "packages": [
+          {
+            "name": "aarch64-python",
+            "version": "3.15.1-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 40,
+            "reason": "build failed: exit status 2"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 51,
+        "packages": [
+          {
+            "name": "aarch64-python",
+            "version": "3.15.1-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 42,
+            "reason": "build failed: exit status 2"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 4 leftover item(s), kept 5 in use by a running build"
+  },
+  {
     "started": "2026-10-22T07:48:17Z",
     "duration": 112,
     "steps": [
