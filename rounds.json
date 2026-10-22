@@ -1,5 +1,52 @@
 [
   {
+    "started": "2026-10-22T13:52:17Z",
+    "duration": 152,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 146,
+        "packages": [
+          {
+            "name": "pop-launcher",
+            "version": "1.11.0-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 121,
+            "reason": "build failed: exit status 101",
+            "log": "logs/pop-launcher-1.11.0-1.txt.gz"
+          },
+          {
+            "name": "pop-launcher",
+            "version": "1.11.0-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-10-22T12:32:03Z",
     "duration": 3908,
     "steps": [
