@@ -1,5 +1,65 @@
 [
   {
+    "started": "2026-10-22T06:39:04Z",
+    "duration": 171,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 60,
+        "packages": [
+          {
+            "name": "claude-code",
+            "version": "2.1.308-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 21,
+            "log": "logs/claude-code-2.1.308-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 7
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 50,
+        "packages": [
+          {
+            "name": "aarch64-python",
+            "version": "3.15.1-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 41,
+            "reason": "build failed: exit status 2"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 50,
+        "packages": [
+          {
+            "name": "aarch64-python",
+            "version": "3.15.1-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 41,
+            "reason": "build failed: exit status 2"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 4 leftover item(s), kept 5 in use by a running build"
+  },
+  {
     "started": "2026-10-22T05:32:17Z",
     "duration": 3097,
     "steps": [
