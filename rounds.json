@@ -1,5 +1,108 @@
 [
   {
+    "started": "2026-10-22T09:31:35Z",
+    "duration": 1135,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 1004,
+        "packages": [
+          {
+            "name": "python",
+            "version": "3.15.1-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 315,
+            "reason": "build failed: exit status 2",
+            "log": "logs/python-3.15.1-1.txt.gz"
+          },
+          {
+            "name": "rustup",
+            "version": "1.29.2-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 4,
+            "reason": "build failed: exit status 1",
+            "log": "logs/rustup-1.29.2-1.txt.gz"
+          },
+          {
+            "name": "deno",
+            "version": "2.9.8-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 653,
+            "log": "logs/deno-2.9.8-1.txt.gz"
+          },
+          {
+            "name": "python",
+            "version": "3.15.1-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          },
+          {
+            "name": "rustup",
+            "version": "1.29.2-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 61,
+        "packages": [
+          {
+            "name": "aarch64-python",
+            "version": "3.15.1-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 50,
+            "reason": "build failed: exit status 2"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 65,
+        "packages": [
+          {
+            "name": "python",
+            "version": "3.15.1-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 55,
+            "reason": "build failed: exit status 2",
+            "log": "logs/python-3.15.1-1-aarch64.txt.gz"
+          },
+          {
+            "name": "python",
+            "version": "3.15.1-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 8 leftover item(s)"
+  },
+  {
     "started": "2026-10-22T09:14:05Z",
     "duration": 132,
     "steps": [
