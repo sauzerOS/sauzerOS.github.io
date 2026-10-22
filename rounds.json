@@ -1,5 +1,69 @@
 [
   {
+    "started": "2026-10-22T16:40:46Z",
+    "duration": 490,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 459,
+        "packages": [
+          {
+            "name": "python-pycparser",
+            "version": "3.12-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 6,
+            "log": "logs/python-pycparser-3.12-1.txt.gz"
+          },
+          {
+            "name": "python-grpcio-tools",
+            "version": "1.84.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 97,
+            "log": "logs/python-grpcio-tools-1.84.1-1.txt.gz"
+          },
+          {
+            "name": "python-grpcio",
+            "version": "1.84.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 324,
+            "log": "logs/python-grpcio-1.84.1-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 12
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 17,
+        "packages": [
+          {
+            "name": "python-pycparser",
+            "version": "3.12-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 6,
+            "log": "logs/python-pycparser-3.12-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-10-22T14:28:25Z",
     "duration": 15,
     "steps": [
