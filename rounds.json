@@ -1,5 +1,60 @@
 [
   {
+    "started": "2026-10-22T10:35:27Z",
+    "duration": 156,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 139,
+        "packages": [
+          {
+            "name": "sonic-workspace",
+            "version": "6.7.5.4-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 8,
+            "reason": "build script exited with code 1",
+            "log": "logs/sonic-workspace-6.7.5.4-1.txt.gz"
+          },
+          {
+            "name": "sonic-gtk-theme-bridge",
+            "version": "6.7.5.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 19,
+            "log": "logs/sonic-gtk-theme-bridge-6.7.5.1-1.txt.gz"
+          },
+          {
+            "name": "sonic-workspace",
+            "version": "6.7.5.4-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 11
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-10-22T10:05:35Z",
     "duration": 838,
     "steps": [
