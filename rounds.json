@@ -1,5 +1,61 @@
 [
   {
+    "started": "2026-10-23T03:50:55Z",
+    "duration": 38,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 5
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 15,
+        "packages": [
+          {
+            "name": "python-dateutil",
+            "version": "3.0.0-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 2,
+            "reason": "failed to fetch sources: failed to fetch git revision 0: exit status 128"
+          },
+          {
+            "name": "python-dateutil",
+            "version": "3.0.0-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 14,
+        "packages": [
+          {
+            "name": "hokuto",
+            "version": "0.4.50-3",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/hokuto-0.4.50-3-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 4 leftover item(s)"
+  },
+  {
     "started": "2026-10-23T03:23:44Z",
     "duration": 18,
     "steps": [
