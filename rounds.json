@@ -1,5 +1,61 @@
 [
   {
+    "started": "2026-10-24T08:29:52Z",
+    "duration": 30,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 12,
+        "packages": [
+          {
+            "name": "aarch64-libmd",
+            "version": "1.3.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 2
+          },
+          {
+            "name": "aarch64-libbsd",
+            "version": "0.12.2-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 7,
+            "reason": "build failed: exit status 1"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 9,
+        "packages": [
+          {
+            "name": "aarch64-libbsd",
+            "version": "0.12.2-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 6,
+            "reason": "build failed: exit status 1"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 4 leftover item(s)"
+  },
+  {
     "started": "2026-10-24T06:54:22Z",
     "duration": 212,
     "steps": [
