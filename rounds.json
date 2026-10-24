@@ -1,5 +1,64 @@
 [
   {
+    "started": "2026-10-24T09:01:58Z",
+    "duration": 218,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 196,
+        "packages": [
+          {
+            "name": "obs-studio",
+            "version": "33.0.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 150,
+            "log": "logs/obs-studio-33.0.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 9,
+        "packages": [
+          {
+            "name": "aarch64-libbsd",
+            "version": "0.12.2-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 6,
+            "reason": "build failed: exit status 1"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 8,
+        "packages": [
+          {
+            "name": "aarch64-libbsd",
+            "version": "0.12.2-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 6,
+            "reason": "build failed: exit status 1"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 5 leftover item(s)"
+  },
+  {
     "started": "2026-10-24T08:45:58Z",
     "duration": 27,
     "steps": [
