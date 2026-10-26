@@ -1,5 +1,137 @@
 [
   {
+    "started": "2026-10-26T08:06:46Z",
+    "duration": 4111,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 708,
+        "packages": [
+          {
+            "name": "python",
+            "version": "3.15.2-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 333,
+            "log": "logs/python-3.15.2-1.txt.gz"
+          },
+          {
+            "name": "python-grpcio-tools",
+            "version": "1.85.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 78,
+            "log": "logs/python-grpcio-tools-1.85.0-1.txt.gz"
+          },
+          {
+            "name": "python-grpcio",
+            "version": "1.85.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 270,
+            "log": "logs/python-grpcio-1.85.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 3266,
+        "packages": [
+          {
+            "name": "proton-cachyos-native",
+            "version": "11.0-20261015-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 3,
+            "reason": "failed to fetch sources: failed to link shared checkout for proton-cachyos-native: symlink /var/cache/hokuto/sources/_cache/checkouts/proton-cachyos-deabf0e2cd90 /var/cache/hokuto/sources/proton-cachyos-native/proton-cachyos: file exists",
+            "log": "logs/proton-cachyos-native-11.0-20261015-1.txt.gz"
+          },
+          {
+            "name": "libtorrent",
+            "version": "2.1.2-3",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 133,
+            "log": "logs/libtorrent-2.1.2-3.txt.gz"
+          },
+          {
+            "name": "qt",
+            "version": "6.12.0-2",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 2504,
+            "log": "logs/qt-6.12.0-2.txt.gz"
+          },
+          {
+            "name": "konsole",
+            "version": "26.08.2-2",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 137,
+            "log": "logs/konsole-26.08.2-2.txt.gz"
+          },
+          {
+            "name": "plasma-workspace",
+            "version": "6.8.1-2",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 477,
+            "log": "logs/plasma-workspace-6.8.1-2.txt.gz"
+          },
+          {
+            "name": "kdeplasma-addons",
+            "version": "6.8.1-2",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 129,
+            "log": "logs/kdeplasma-addons-6.8.1-2.txt.gz"
+          },
+          {
+            "name": "proton-cachyos-native",
+            "version": "11.0-20261015-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 65,
+        "packages": [
+          {
+            "name": "aarch64-python",
+            "version": "3.15.2-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 59
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 70,
+        "packages": [
+          {
+            "name": "python",
+            "version": "3.15.2-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 65,
+            "log": "logs/python-3.15.2-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 3 leftover item(s)"
+  },
+  {
     "started": "2026-10-26T06:25:16Z",
     "duration": 5166,
     "steps": [
