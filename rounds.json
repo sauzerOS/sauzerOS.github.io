@@ -1,5 +1,42 @@
 [
   {
+    "started": "2026-10-26T17:44:26Z",
+    "duration": 30,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 20,
+        "packages": [
+          {
+            "name": "mimalloc",
+            "version": "3.6.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/mimalloc-3.6.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-10-26T16:11:26Z",
     "duration": 26,
     "steps": [
