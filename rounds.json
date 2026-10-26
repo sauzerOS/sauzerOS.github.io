@@ -1,5 +1,62 @@
 [
   {
+    "started": "2026-10-26T04:18:46Z",
+    "duration": 6686,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 3239,
+        "packages": [
+          {
+            "name": "libsoup",
+            "version": "3.8.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/libsoup-3.8.1-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 3435,
+        "packages": [
+          {
+            "name": "proton-cachyos-native",
+            "version": "11.0-20261015-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 3345,
+            "reason": "build script exited with code 2",
+            "log": "logs/proton-cachyos-native-11.0-20261015-1.txt.gz"
+          },
+          {
+            "name": "proton-cachyos-native",
+            "version": "11.0-20261015-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 1
+      }
+    ],
+    "cleanup": "removed 5 leftover item(s), kept 1 in use by a running build"
+  },
+  {
     "started": "2026-10-26T04:01:56Z",
     "duration": 96,
     "steps": [
