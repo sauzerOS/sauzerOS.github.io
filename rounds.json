@@ -1,5 +1,72 @@
 [
   {
+    "started": "2026-10-26T09:30:46Z",
+    "duration": 2129,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 2091
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 19,
+        "packages": [
+          {
+            "name": "nodejs",
+            "version": "26.12.1-2",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 12,
+            "reason": "build failed: exit status 1",
+            "log": "logs/nodejs-26.12.1-2.txt.gz"
+          },
+          {
+            "name": "nodejs",
+            "version": "26.12.1-2",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 11,
+        "packages": [
+          {
+            "name": "nodejs",
+            "version": "26.12.1-2",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 4,
+            "reason": "build failed: exit status 1",
+            "log": "logs/nodejs-26.12.1-2-aarch64.txt.gz"
+          },
+          {
+            "name": "nodejs",
+            "version": "26.12.1-2",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 5 leftover item(s), kept 1 in use by a running build"
+  },
+  {
     "started": "2026-10-26T08:06:46Z",
     "duration": 4111,
     "steps": [
