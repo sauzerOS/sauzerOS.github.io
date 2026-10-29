@@ -1,5 +1,52 @@
 [
   {
+    "started": "2026-10-29T17:29:37Z",
+    "duration": 217,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 111,
+        "packages": [
+          {
+            "name": "python-pydantic",
+            "version": "2.14.2-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 95,
+            "log": "logs/python-pydantic-2.14.2-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 99,
+        "packages": [
+          {
+            "name": "python-pydantic",
+            "version": "2.14.2-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 82,
+            "log": "logs/python-pydantic-2.14.2-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-10-29T15:55:43Z",
     "duration": 172,
     "steps": [
