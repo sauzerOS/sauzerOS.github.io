@@ -1,5 +1,120 @@
 [
   {
+    "started": "2026-10-29T20:17:16Z",
+    "duration": 395,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 275,
+        "packages": [
+          {
+            "name": "wayland-protocols",
+            "version": "1.50-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 4,
+            "log": "logs/wayland-protocols-1.50-1.txt.gz"
+          },
+          {
+            "name": "python-dnspython",
+            "version": "2.9.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 7,
+            "log": "logs/python-dnspython-2.9.1-1.txt.gz"
+          },
+          {
+            "name": "pipewire",
+            "version": "1.6.11-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 89,
+            "log": "logs/pipewire-1.6.11-1.txt.gz"
+          },
+          {
+            "name": "kirigami-addons",
+            "version": "1.16.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 89,
+            "log": "logs/kirigami-addons-1.16.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 53,
+        "packages": [
+          {
+            "name": "aarch64-wayland-protocols",
+            "version": "1.50-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 0,
+            "reason": "build failed: exit status 1"
+          },
+          {
+            "name": "aarch64-pipewire",
+            "version": "1.6.11-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 33
+          },
+          {
+            "name": "aarch64-wayland-protocols",
+            "version": "1.50-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 58,
+        "packages": [
+          {
+            "name": "wayland-protocols",
+            "version": "1.50-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 2,
+            "reason": "build failed: exit status 1",
+            "log": "logs/wayland-protocols-1.50-1-aarch64.txt.gz"
+          },
+          {
+            "name": "pipewire",
+            "version": "1.6.11-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 38,
+            "log": "logs/pipewire-1.6.11-1-aarch64.txt.gz"
+          },
+          {
+            "name": "wayland-protocols",
+            "version": "1.50-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 5 leftover item(s)"
+  },
+  {
     "started": "2026-10-29T17:29:37Z",
     "duration": 217,
     "steps": [
