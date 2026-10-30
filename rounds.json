@@ -1,5 +1,51 @@
 [
   {
+    "started": "2026-10-30T13:18:38Z",
+    "duration": 38,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 28,
+        "packages": [
+          {
+            "name": "droidcam",
+            "version": "2.1.7-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 3,
+            "reason": "build script exited with code 2",
+            "log": "logs/droidcam-2.1.7-1.txt.gz"
+          },
+          {
+            "name": "droidcam",
+            "version": "2.1.7-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 5
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-10-30T11:45:58Z",
     "duration": 37,
     "steps": [
