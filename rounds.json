@@ -1,5 +1,100 @@
 [
   {
+    "started": "2026-10-30T14:36:18Z",
+    "duration": 762,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 725,
+        "packages": [
+          {
+            "name": "libslirp",
+            "version": "4.9.7-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 7,
+            "log": "logs/libslirp-4.9.7-1.txt.gz"
+          },
+          {
+            "name": "linux-api-headers",
+            "version": "7.3.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 25,
+            "log": "logs/linux-api-headers-7.3.1-1.txt.gz"
+          },
+          {
+            "name": "linux-tools",
+            "version": "7.3.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 100,
+            "log": "logs/linux-tools-7.3.1-1.txt.gz"
+          },
+          {
+            "name": "linux",
+            "version": "7.3.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 661,
+            "log": "logs/linux-7.3.1-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 14,
+        "packages": [
+          {
+            "name": "aarch64-libslirp",
+            "version": "4.9.7-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 2
+          },
+          {
+            "name": "aarch64-linux-api-headers",
+            "version": "7.3.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 7
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 16,
+        "packages": [
+          {
+            "name": "libslirp",
+            "version": "4.9.7-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 4,
+            "log": "logs/libslirp-4.9.7-1-aarch64.txt.gz"
+          },
+          {
+            "name": "linux-api-headers",
+            "version": "7.3.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/linux-api-headers-7.3.1-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-10-30T13:18:38Z",
     "duration": 38,
     "steps": [
