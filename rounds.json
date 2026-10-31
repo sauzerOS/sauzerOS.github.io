@@ -1,5 +1,240 @@
 [
   {
+    "started": "2026-10-31T06:16:20Z",
+    "duration": 1448,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 1250,
+        "packages": [
+          {
+            "name": "faugus-launcher",
+            "version": "2.5.5-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 7,
+            "log": "logs/faugus-launcher-2.5.5-1.txt.gz"
+          },
+          {
+            "name": "kmod",
+            "version": "34.3-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 32,
+            "reason": "build script exited with code 1",
+            "log": "logs/kmod-34.3-1.txt.gz"
+          },
+          {
+            "name": "brave",
+            "version": "1.98.63-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 107,
+            "log": "logs/brave-1.98.63-1.txt.gz"
+          },
+          {
+            "name": "libluv",
+            "version": "1.53.0-1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/libluv-1.53.0-1-1.txt.gz"
+          },
+          {
+            "name": "obs-pipewire-audio-capture",
+            "version": "1.2.2-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 20,
+            "log": "logs/obs-pipewire-audio-capture-1.2.2-1.txt.gz"
+          },
+          {
+            "name": "libarchive",
+            "version": "3.8.11-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 122,
+            "log": "logs/libarchive-3.8.11-1.txt.gz"
+          },
+          {
+            "name": "patchelf",
+            "version": "0.19.3-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 25,
+            "log": "logs/patchelf-0.19.3-1.txt.gz"
+          },
+          {
+            "name": "python-filelock",
+            "version": "4.2.5-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 4,
+            "reason": "build script exited with code 1",
+            "log": "logs/python-filelock-4.2.5-1.txt.gz"
+          },
+          {
+            "name": "ostree",
+            "version": "2026.6-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 38,
+            "log": "logs/ostree-2026.6-1.txt.gz"
+          },
+          {
+            "name": "easyeffects",
+            "version": "8.3.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 219,
+            "log": "logs/easyeffects-8.3.1-1.txt.gz"
+          },
+          {
+            "name": "libaom",
+            "version": "3.15.3-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 654,
+            "log": "logs/libaom-3.15.3-1.txt.gz"
+          },
+          {
+            "name": "wine",
+            "version": "11.21-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 780,
+            "log": "logs/wine-11.21-1.txt.gz"
+          },
+          {
+            "name": "kmod",
+            "version": "34.3-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          },
+          {
+            "name": "python-filelock",
+            "version": "4.2.5-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          },
+          {
+            "name": "haruna",
+            "version": "1.9.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 64,
+            "log": "logs/haruna-1.9.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 5
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 90,
+        "packages": [
+          {
+            "name": "aarch64-python-filelock",
+            "version": "4.2.5-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 1,
+            "reason": "build failed: exit status 1"
+          },
+          {
+            "name": "aarch64-kmod",
+            "version": "34.3-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 4
+          },
+          {
+            "name": "aarch64-libarchive",
+            "version": "3.8.11-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 35
+          },
+          {
+            "name": "aarch64-libaom",
+            "version": "3.15.3-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 83
+          },
+          {
+            "name": "aarch64-python-filelock",
+            "version": "4.2.5-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 98,
+        "packages": [
+          {
+            "name": "python-filelock",
+            "version": "4.2.5-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 4,
+            "reason": "build failed: exit status 1",
+            "log": "logs/python-filelock-4.2.5-1-aarch64.txt.gz"
+          },
+          {
+            "name": "kmod",
+            "version": "34.3-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 6,
+            "log": "logs/kmod-34.3-1-aarch64.txt.gz"
+          },
+          {
+            "name": "libarchive",
+            "version": "3.8.11-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 37,
+            "log": "logs/libarchive-3.8.11-1-aarch64.txt.gz"
+          },
+          {
+            "name": "libaom",
+            "version": "3.15.3-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 90,
+            "log": "logs/libaom-3.15.3-1-aarch64.txt.gz"
+          },
+          {
+            "name": "python-filelock",
+            "version": "4.2.5-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 9 leftover item(s)"
+  },
+  {
     "started": "2026-10-30T17:22:28Z",
     "duration": 340,
     "steps": [
