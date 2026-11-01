@@ -1,5 +1,51 @@
 [
   {
+    "started": "2026-11-01T09:50:48Z",
+    "duration": 330,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 320,
+        "packages": [
+          {
+            "name": "shadps4",
+            "version": "0.21.0-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 290,
+            "reason": "build failed: exit status 2",
+            "log": "logs/shadps4-0.21.0-1.txt.gz"
+          },
+          {
+            "name": "shadps4",
+            "version": "0.21.0-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-11-01T09:35:00Z",
     "duration": 14,
     "steps": [
