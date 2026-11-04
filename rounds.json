@@ -1,5 +1,53 @@
 [
   {
+    "started": "2026-11-04T05:22:45Z",
+    "duration": 162,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 14,
+        "packages": [
+          {
+            "name": "libinih",
+            "version": "63-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 4,
+            "log": "logs/libinih-63-1.txt.gz"
+          },
+          {
+            "name": "kwin-x11",
+            "version": "6.7.6",
+            "arch": "-",
+            "status": "nomatch",
+            "buildtime": 0,
+            "reason": "Repology project kwin-x11 maps to kwin-x11, which is no recipe or package set in sauzeros-kde: map it to the recipe in the auto-bump name switch (internal/hokuto/pkgdev.go)"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 70
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 40
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 38
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-04T04:46:13Z",
     "duration": 1992,
     "steps": [
