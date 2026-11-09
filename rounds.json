@@ -1,5 +1,42 @@
 [
   {
+    "started": "2026-11-09T13:33:11Z",
+    "duration": 24,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 14,
+        "packages": [
+          {
+            "name": "python-jsonpatch",
+            "version": "1.45-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 3,
+            "log": "logs/python-jsonpatch-1.45-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-09T11:59:32Z",
     "duration": 108,
     "steps": [
@@ -20144,53 +20181,5 @@
       }
     ],
     "cleanup": "removed 2 leftover item(s)"
-  },
-  {
-    "started": "2026-10-09T06:55:28Z",
-    "duration": 385,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 193,
-        "packages": [
-          {
-            "name": "gstreamer",
-            "version": "1.28.8-1",
-            "arch": "x86_64",
-            "status": "failed",
-            "buildtime": 138,
-            "reason": "failed to fetch sources: failed to clone git cache: exit status 128"
-          }
-        ]
-      },
-      {
-        "name": "rebuild",
-        "status": "failed",
-        "exit": 1,
-        "duration": 190,
-        "packages": [
-          {
-            "name": "gstreamer",
-            "version": "1.28.8-1",
-            "arch": "x86_64",
-            "status": "failed",
-            "buildtime": 134,
-            "reason": "failed to fetch sources: failed to clone git cache: exit status 128"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 1
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 1
-      }
-    ],
-    "cleanup": "removed 4 leftover item(s)"
   }
 ]
