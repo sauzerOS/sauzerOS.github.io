@@ -1,5 +1,149 @@
 [
   {
+    "started": "2026-11-10T02:46:43Z",
+    "duration": 2010,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 318,
+        "packages": [
+          {
+            "name": "krb5",
+            "version": "1.22.3-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 3,
+            "reason": "build failed: exit status 1",
+            "log": "logs/krb5-1.22.3-1.txt.gz"
+          },
+          {
+            "name": "python-filelock",
+            "version": "4.2.10-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 3,
+            "reason": "failed to fetch sources: failed to link shared checkout for python-filelock: symlink /var/cache/hokuto/sources/_cache/checkouts/filelock-8efab6056b54 /var/cache/hokuto/sources/python-filelock/filelock: file exists"
+          },
+          {
+            "name": "claude-code",
+            "version": "2.1.321-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 23,
+            "log": "logs/claude-code-2.1.321-1.txt.gz"
+          },
+          {
+            "name": "wordcraft",
+            "version": "0.17.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 273,
+            "log": "logs/wordcraft-0.17.0-1.txt.gz"
+          },
+          {
+            "name": "krb5",
+            "version": "1.22.3-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          },
+          {
+            "name": "python-filelock",
+            "version": "4.2.10-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 1665,
+        "packages": [
+          {
+            "name": "firefox",
+            "version": "160.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 1615,
+            "log": "logs/firefox-160.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 7,
+        "packages": [
+          {
+            "name": "aarch64-python-filelock",
+            "version": "4.2.10-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 2,
+            "reason": "build failed: exit status 1"
+          },
+          {
+            "name": "aarch64-python-filelock",
+            "version": "4.2.10-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 13,
+        "packages": [
+          {
+            "name": "krb5",
+            "version": "1.22.3-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 2,
+            "reason": "build failed: exit status 1",
+            "log": "logs/krb5-1.22.3-1-aarch64.txt.gz"
+          },
+          {
+            "name": "python-filelock",
+            "version": "4.2.10-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 5,
+            "reason": "build failed: exit status 1",
+            "log": "logs/python-filelock-4.2.10-1-aarch64.txt.gz"
+          },
+          {
+            "name": "krb5",
+            "version": "1.22.3-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          },
+          {
+            "name": "python-filelock",
+            "version": "4.2.10-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 10 leftover item(s)"
+  },
+  {
     "started": "2026-11-09T17:43:11Z",
     "duration": 50,
     "steps": [
@@ -20154,44 +20298,6 @@
             "arch": "x86_64",
             "status": "failed",
             "buildtime": 135,
-            "reason": "failed to fetch sources: failed to clone git cache: exit status 128"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 1
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 2
-      }
-    ],
-    "cleanup": "removed 2 leftover item(s)"
-  },
-  {
-    "started": "2026-10-09T07:54:45Z",
-    "duration": 197,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "failed",
-        "exit": 1,
-        "duration": 194,
-        "packages": [
-          {
-            "name": "gstreamer",
-            "version": "1.28.8-1",
-            "arch": "x86_64",
-            "status": "failed",
-            "buildtime": 136,
             "reason": "failed to fetch sources: failed to clone git cache: exit status 128"
           }
         ]
