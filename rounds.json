@@ -1,5 +1,125 @@
 [
   {
+    "started": "2026-11-10T12:05:42Z",
+    "duration": 101,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 48,
+        "packages": [
+          {
+            "name": "python-filelock",
+            "version": "4.2.10-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 6,
+            "reason": "build failed: exit status 1",
+            "log": "logs/python-filelock-4.2.10-1.txt.gz"
+          },
+          {
+            "name": "krb5",
+            "version": "1.22.3-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 41,
+            "reason": "build failed: exit status 2",
+            "log": "logs/krb5-1.22.3-1.txt.gz"
+          },
+          {
+            "name": "krb5",
+            "version": "1.22.3-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          },
+          {
+            "name": "python-filelock",
+            "version": "4.2.10-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 7,
+        "packages": [
+          {
+            "name": "aarch64-python-filelock",
+            "version": "4.2.10-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 1,
+            "reason": "build failed: exit status 1"
+          },
+          {
+            "name": "aarch64-python-filelock",
+            "version": "4.2.10-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 38,
+        "packages": [
+          {
+            "name": "python-filelock",
+            "version": "4.2.10-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 4,
+            "reason": "build failed: exit status 1",
+            "log": "logs/python-filelock-4.2.10-1-aarch64.txt.gz"
+          },
+          {
+            "name": "krb5",
+            "version": "1.22.3-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 31,
+            "reason": "build failed: exit status 2",
+            "log": "logs/krb5-1.22.3-1-aarch64.txt.gz"
+          },
+          {
+            "name": "krb5",
+            "version": "1.22.3-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          },
+          {
+            "name": "python-filelock",
+            "version": "4.2.10-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 10 leftover item(s)"
+  },
+  {
     "started": "2026-11-10T10:31:39Z",
     "duration": 37,
     "steps": [
@@ -20294,42 +20414,5 @@
       }
     ],
     "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-09T09:11:04Z",
-    "duration": 291,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 288,
-        "packages": [
-          {
-            "name": "gstreamer",
-            "version": "1.28.8-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 227,
-            "log": "logs/gstreamer-1.28.8-1.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 2
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 1
-      }
-    ],
-    "cleanup": "removed 0 leftover item(s), skipped 2 time(s) while hokuto was running"
   }
 ]
