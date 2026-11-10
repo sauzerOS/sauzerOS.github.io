@@ -1,5 +1,42 @@
 [
   {
+    "started": "2026-11-10T10:31:39Z",
+    "duration": 37,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 27,
+        "packages": [
+          {
+            "name": "exfatprogs",
+            "version": "1.4.4-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 13,
+            "log": "logs/exfatprogs-1.4.4-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 7
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-10T09:13:42Z",
     "duration": 49,
     "steps": [
@@ -20294,42 +20331,5 @@
       }
     ],
     "cleanup": "removed 0 leftover item(s), skipped 2 time(s) while hokuto was running"
-  },
-  {
-    "started": "2026-10-09T08:50:45Z",
-    "duration": 316,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 313,
-        "packages": [
-          {
-            "name": "gstreamer",
-            "version": "1.28.8-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 254,
-            "log": "logs/gstreamer-1.28.8-1.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 1
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 2
-      }
-    ],
-    "cleanup": "removed 1 leftover item(s), skipped 3 time(s) while hokuto was running"
   }
 ]
