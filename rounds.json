@@ -1,5 +1,50 @@
 [
   {
+    "started": "2026-11-11T11:52:12Z",
+    "duration": 23,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 14,
+        "packages": [
+          {
+            "name": "fusefs:sshfs",
+            "version": "3.7.7",
+            "arch": "-",
+            "status": "nomatch",
+            "buildtime": 0,
+            "reason": "Repology project fusefs:sshfs maps to fusefs-sshfs, which is no recipe or package set in sauzeros: map it to the recipe in the auto-bump name switch (internal/hokuto/pkgdev.go)"
+          },
+          {
+            "name": "python-jsonpatch",
+            "version": "1.47-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 3,
+            "log": "logs/python-jsonpatch-1.47-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 5
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-11T10:33:02Z",
     "duration": 22,
     "steps": [
@@ -21104,44 +21149,5 @@
       }
     ],
     "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-09T12:09:08Z",
-    "duration": 422,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 46
-      },
-      {
-        "name": "rebuild",
-        "status": "failed",
-        "exit": 1,
-        "duration": 85,
-        "packages": [
-          {
-            "name": "cosmic-greeter",
-            "version": "1.10.0-2",
-            "arch": "x86_64",
-            "status": "failed",
-            "buildtime": 62,
-            "reason": "build script exited with code 101",
-            "log": "logs/cosmic-greeter-1.10.0-2.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 289
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 2
-      }
-    ],
-    "cleanup": "removed 6 leftover item(s), skipped 1 time(s) while hokuto was running"
   }
 ]
