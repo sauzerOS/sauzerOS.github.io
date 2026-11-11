@@ -1,5 +1,42 @@
 [
   {
+    "started": "2026-11-11T10:33:02Z",
+    "duration": 22,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 13,
+        "packages": [
+          {
+            "name": "python-jsonpointer",
+            "version": "3.12-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 3,
+            "log": "logs/python-jsonpointer-3.12-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-11T08:55:30Z",
     "duration": 2141,
     "steps": [
@@ -21106,42 +21143,5 @@
       }
     ],
     "cleanup": "removed 6 leftover item(s), skipped 1 time(s) while hokuto was running"
-  },
-  {
-    "started": "2026-10-09T11:51:38Z",
-    "duration": 147,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 129
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 5
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 2
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 11,
-        "packages": [
-          {
-            "name": "hokuto",
-            "version": "0.4.38-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 9,
-            "log": "logs/hokuto-0.4.38-1-aarch64.txt.gz"
-          }
-        ]
-      }
-    ],
-    "cleanup": "removed 12 leftover item(s), skipped 1 time(s) while hokuto was running"
   }
 ]
