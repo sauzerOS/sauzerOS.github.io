@@ -1,5 +1,50 @@
 [
   {
+    "started": "2026-11-11T12:25:22Z",
+    "duration": 256,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 250,
+        "packages": [
+          {
+            "name": "xwayland",
+            "version": "24.1.15-2",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 33,
+            "log": "logs/xwayland-24.1.15-2.txt.gz"
+          },
+          {
+            "name": "plasma-desktop",
+            "version": "6.8.3-2",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 172,
+            "log": "logs/plasma-desktop-6.8.3-2.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-11T12:08:08Z",
     "duration": 113,
     "steps": [
@@ -21123,32 +21168,5 @@
       }
     ],
     "cleanup": "removed 1 leftover item(s), skipped 3 time(s) while hokuto was running"
-  },
-  {
-    "started": "2026-10-09T12:50:45Z",
-    "duration": 8,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 1
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 4
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 1
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 1
-      }
-    ],
-    "cleanup": "removed 3 leftover item(s)"
   }
 ]
