@@ -1,5 +1,102 @@
 [
   {
+    "started": "2026-11-12T18:52:17Z",
+    "duration": 258,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 121,
+        "packages": [
+          {
+            "name": "efivar",
+            "version": "40-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 5,
+            "reason": "build script exited with code 2",
+            "log": "logs/efivar-40-1.txt.gz"
+          },
+          {
+            "name": "cabextract",
+            "version": "1.12-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 8,
+            "log": "logs/cabextract-1.12-1.txt.gz"
+          },
+          {
+            "name": "flex",
+            "version": "2.6.10-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/flex-2.6.10-1.txt.gz"
+          },
+          {
+            "name": "postgresql",
+            "version": "18.7-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 98,
+            "log": "logs/postgresql-18.7-1.txt.gz"
+          },
+          {
+            "name": "efivar",
+            "version": "40-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 64,
+        "packages": [
+          {
+            "name": "aarch64-postgresql",
+            "version": "18.7-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 57
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 66,
+        "packages": [
+          {
+            "name": "flex",
+            "version": "2.6.10-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 9,
+            "log": "logs/flex-2.6.10-1-aarch64.txt.gz"
+          },
+          {
+            "name": "postgresql",
+            "version": "18.7-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 59,
+            "log": "logs/postgresql-18.7-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-11-12T15:01:20Z",
     "duration": 25,
     "steps": [
@@ -21165,42 +21262,5 @@
       }
     ],
     "cleanup": "removed 7 leftover item(s)"
-  },
-  {
-    "started": "2026-10-09T16:06:32Z",
-    "duration": 17,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 5
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 2
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 10,
-        "packages": [
-          {
-            "name": "hokuto",
-            "version": "0.4.41-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 8,
-            "log": "logs/hokuto-0.4.41-1-aarch64.txt.gz"
-          }
-        ]
-      }
-    ],
-    "cleanup": "removed 0 leftover item(s)"
   }
 ]
