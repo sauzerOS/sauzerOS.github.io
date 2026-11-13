@@ -1,5 +1,62 @@
 [
   {
+    "started": "2026-11-13T09:24:58Z",
+    "duration": 2866,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 31,
+        "packages": [
+          {
+            "name": "flex",
+            "version": "2.6.11-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 13,
+            "log": "logs/flex-2.6.11-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 2819,
+        "packages": [
+          {
+            "name": "proton-cachyos-native",
+            "version": "11.0-20261015-3",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 2693,
+            "log": "logs/proton-cachyos-native-11.0-20261015-3.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 13,
+        "packages": [
+          {
+            "name": "flex",
+            "version": "2.6.11-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/flex-2.6.11-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 1 leftover item(s)"
+  },
+  {
     "started": "2026-11-13T04:01:46Z",
     "duration": 18485,
     "steps": [
@@ -21317,79 +21374,5 @@
       }
     ],
     "cleanup": "removed 4 leftover item(s)"
-  },
-  {
-    "started": "2026-10-09T16:37:18Z",
-    "duration": 104,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 48,
-        "packages": [
-          {
-            "name": "xorg-server",
-            "version": "21.1.25-4",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 31,
-            "log": "logs/xorg-server-21.1.25-4.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 26,
-        "packages": [
-          {
-            "name": "xorg-server",
-            "version": "21.1.25-4",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 15,
-            "log": "logs/xorg-server-21.1.25-4-aarch64.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync",
-        "status": "failed",
-        "exit": 1,
-        "duration": 29,
-        "packages": [
-          {
-            "name": "hokuto",
-            "version": "0.4.41-3",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 16,
-            "log": "logs/hokuto-0.4.41-3-aarch64.txt.gz"
-          },
-          {
-            "name": "xorg-server",
-            "version": "21.1.25-5",
-            "arch": "aarch64",
-            "status": "failed",
-            "buildtime": 18,
-            "reason": "build failed: exit status 1"
-          },
-          {
-            "name": "xorg-server",
-            "version": "21.1.25-4",
-            "arch": "aarch64",
-            "status": "blacklisted",
-            "buildtime": 0,
-            "reason": "its build failed; skipped until its version or revision changes"
-          }
-        ]
-      }
-    ],
-    "cleanup": "removed 2 leftover item(s)"
   }
 ]
