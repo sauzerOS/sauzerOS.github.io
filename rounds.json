@@ -1,5 +1,42 @@
 [
   {
+    "started": "2026-11-13T15:12:16Z",
+    "duration": 24,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 14,
+        "packages": [
+          {
+            "name": "llhttp",
+            "version": "9.4.4-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 6,
+            "log": "logs/llhttp-9.4.4-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-13T11:36:16Z",
     "duration": 56,
     "steps": [
@@ -21314,32 +21351,5 @@
       }
     ],
     "cleanup": "removed 9 leftover item(s), kept 4 in use by a running build"
-  },
-  {
-    "started": "2026-10-09T17:28:38Z",
-    "duration": 121,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 109
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 5
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 1
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 2
-      }
-    ],
-    "cleanup": "removed 5 leftover item(s), kept 1 in use by a running build"
   }
 ]
