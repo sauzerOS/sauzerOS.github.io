@@ -1,5 +1,32 @@
 [
   {
+    "started": "2026-11-15T07:55:10Z",
+    "duration": 10,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 0
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 1
+      }
+    ],
+    "cleanup": "removed 1 leftover item(s)"
+  },
+  {
     "started": "2026-11-15T03:19:07Z",
     "duration": 44,
     "steps": [
@@ -22828,77 +22855,5 @@
       }
     ],
     "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-11T16:55:49Z",
-    "duration": 259,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 225,
-        "packages": [
-          {
-            "name": "python-sip",
-            "version": "6.17.1-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 5,
-            "log": "logs/python-sip-6.17.1-1.txt.gz"
-          },
-          {
-            "name": "python-filelock",
-            "version": "4.1.1-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 7,
-            "log": "logs/python-filelock-4.1.1-1.txt.gz"
-          },
-          {
-            "name": "cargo-c",
-            "version": "0.10.26-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 195,
-            "log": "logs/cargo-c-0.10.26-1.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 6
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 11,
-        "packages": [
-          {
-            "name": "aarch64-python-filelock",
-            "version": "4.1.1-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 1
-          }
-        ]
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 14,
-        "packages": [
-          {
-            "name": "python-filelock",
-            "version": "4.1.1-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 5,
-            "log": "logs/python-filelock-4.1.1-1-aarch64.txt.gz"
-          }
-        ]
-      }
-    ],
-    "cleanup": "removed 5 leftover item(s)"
   }
 ]
