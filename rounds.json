@@ -1,5 +1,146 @@
 [
   {
+    "started": "2026-11-15T01:59:48Z",
+    "duration": 150,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 70,
+        "packages": [
+          {
+            "name": "flex",
+            "version": "2.6.12-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 12,
+            "log": "logs/flex-2.6.12-1.txt.gz"
+          },
+          {
+            "name": "libffi",
+            "version": "3.8.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 15,
+            "log": "logs/libffi-3.8.1-1.txt.gz"
+          },
+          {
+            "name": "imlib2",
+            "version": "1.13.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 18,
+            "log": "logs/imlib2-1.13.0-1.txt.gz"
+          },
+          {
+            "name": "pkgconf",
+            "version": "3.0.11-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 9,
+            "log": "logs/pkgconf-3.0.11-1.txt.gz"
+          },
+          {
+            "name": "libical",
+            "version": "4.0.8-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 25,
+            "log": "logs/libical-4.0.8-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 6
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 32,
+        "packages": [
+          {
+            "name": "aarch64-libffi",
+            "version": "3.8.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 5
+          },
+          {
+            "name": "aarch64-pkgconf",
+            "version": "3.0.11-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 6
+          },
+          {
+            "name": "aarch64-imlib2",
+            "version": "1.13.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 11
+          },
+          {
+            "name": "aarch64-libical",
+            "version": "4.0.8-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 15
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 42,
+        "packages": [
+          {
+            "name": "libffi",
+            "version": "3.8.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 8,
+            "log": "logs/libffi-3.8.1-1-aarch64.txt.gz"
+          },
+          {
+            "name": "pkgconf",
+            "version": "3.0.11-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/pkgconf-3.0.11-1-aarch64.txt.gz"
+          },
+          {
+            "name": "flex",
+            "version": "2.6.12-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 13,
+            "log": "logs/flex-2.6.12-1-aarch64.txt.gz"
+          },
+          {
+            "name": "imlib2",
+            "version": "1.13.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 16,
+            "log": "logs/imlib2-1.13.0-1-aarch64.txt.gz"
+          },
+          {
+            "name": "libical",
+            "version": "4.0.8-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 17,
+            "log": "logs/libical-4.0.8-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-14T16:02:12Z",
     "duration": 639,
     "steps": [
@@ -22792,32 +22933,5 @@
       }
     ],
     "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-11T15:17:19Z",
-    "duration": 12,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 7
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 2
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 2
-      }
-    ],
-    "cleanup": "removed 2 leftover item(s)"
   }
 ]
