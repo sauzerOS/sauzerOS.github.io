@@ -1,5 +1,123 @@
 [
   {
+    "started": "2026-11-17T03:28:12Z",
+    "duration": 1273,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 1175,
+        "packages": [
+          {
+            "name": "discord",
+            "version": "1.0.170-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 9,
+            "log": "logs/discord-1.0.170-1.txt.gz"
+          },
+          {
+            "name": "gawk",
+            "version": "5.4.2-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 26,
+            "log": "logs/gawk-5.4.2-1.txt.gz"
+          },
+          {
+            "name": "libversion",
+            "version": "3.0.5-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 4,
+            "log": "logs/libversion-3.0.5-1.txt.gz"
+          },
+          {
+            "name": "claude-code",
+            "version": "2.1.326-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 42,
+            "log": "logs/claude-code-2.1.326-1.txt.gz"
+          },
+          {
+            "name": "umockdev",
+            "version": "0.20.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 15,
+            "log": "logs/umockdev-0.20.0-1.txt.gz"
+          },
+          {
+            "name": "imagemagick",
+            "version": "7.1.2-36-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 76,
+            "log": "logs/imagemagick-7.1.2-36-1.txt.gz"
+          },
+          {
+            "name": "cuda",
+            "version": "13.5.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 281,
+            "log": "logs/cuda-13.5.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 15
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 62,
+        "packages": [
+          {
+            "name": "aarch64-libversion",
+            "version": "3.0.5-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 1
+          },
+          {
+            "name": "aarch64-gawk",
+            "version": "5.4.2-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 17
+          },
+          {
+            "name": "aarch64-imagemagick",
+            "version": "7.1.2-36-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 55
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 21,
+        "packages": [
+          {
+            "name": "gawk",
+            "version": "5.4.2-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 17,
+            "log": "logs/gawk-5.4.2-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-16T09:43:40Z",
     "duration": 69,
     "steps": [
@@ -22779,43 +22897,6 @@
             "log": "logs/python-installer-1.1.0-1-aarch64.txt.gz"
           }
         ]
-      }
-    ],
-    "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-12T18:39:55Z",
-    "duration": 85,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 82,
-        "packages": [
-          {
-            "name": "freerdp",
-            "version": "3.32.2-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 48,
-            "log": "logs/freerdp-3.32.2-1.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 2
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 1
       }
     ],
     "cleanup": "removed 0 leftover item(s)"
