@@ -1,5 +1,93 @@
 [
   {
+    "started": "2026-11-18T15:58:19Z",
+    "duration": 285,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 221,
+        "packages": [
+          {
+            "name": "python-python-socks",
+            "version": "3.2.2-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 4,
+            "log": "logs/python-python-socks-3.2.2-1.txt.gz"
+          },
+          {
+            "name": "flex",
+            "version": "2.7.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 25,
+            "log": "logs/flex-2.7.0-1.txt.gz"
+          },
+          {
+            "name": "fontconfig",
+            "version": "2.18.4-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 40,
+            "log": "logs/fontconfig-2.18.4-1.txt.gz"
+          },
+          {
+            "name": "vscode",
+            "version": "1.147.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 98,
+            "log": "logs/vscode-1.147.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 21
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 20,
+        "packages": [
+          {
+            "name": "aarch64-fontconfig",
+            "version": "2.18.4-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 9
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 23,
+        "packages": [
+          {
+            "name": "flex",
+            "version": "2.7.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/flex-2.7.0-1-aarch64.txt.gz"
+          },
+          {
+            "name": "fontconfig",
+            "version": "2.18.4-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 13,
+            "log": "logs/fontconfig-2.18.4-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-18T14:40:01Z",
     "duration": 40,
     "steps": [
@@ -23115,62 +23203,6 @@
             "status": "success",
             "buildtime": 16,
             "log": "logs/python-pycryptodome-4.0.0-1-aarch64.txt.gz"
-          }
-        ]
-      }
-    ],
-    "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-14T09:40:27Z",
-    "duration": 150,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 61,
-        "packages": [
-          {
-            "name": "curl",
-            "version": "8.23.0-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 52,
-            "log": "logs/curl-8.23.0-1.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 15
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 37,
-        "packages": [
-          {
-            "name": "aarch64-curl",
-            "version": "8.23.0-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 33
-          }
-        ]
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 37,
-        "packages": [
-          {
-            "name": "curl",
-            "version": "8.23.0-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 34,
-            "log": "logs/curl-8.23.0-1-aarch64.txt.gz"
           }
         ]
       }
