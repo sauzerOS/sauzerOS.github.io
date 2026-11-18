@@ -1,5 +1,84 @@
 [
   {
+    "started": "2026-11-18T09:47:51Z",
+    "duration": 705,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 498,
+        "packages": [
+          {
+            "name": "efivar",
+            "version": "39-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 11,
+            "log": "logs/efivar-39-1.txt.gz"
+          },
+          {
+            "name": "python-grpcio-tools",
+            "version": "1.85.3-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 82,
+            "log": "logs/python-grpcio-tools-1.85.3-1.txt.gz"
+          },
+          {
+            "name": "python-grpcio",
+            "version": "1.85.3-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 283,
+            "log": "logs/python-grpcio-1.85.3-1.txt.gz"
+          },
+          {
+            "name": "plasma-login-manager",
+            "version": "6.8.3-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 31,
+            "log": "logs/plasma-login-manager-6.8.3-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 203,
+        "packages": [
+          {
+            "name": "libgtop",
+            "version": "2.41.4-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 63,
+            "log": "logs/libgtop-2.41.4-1.txt.gz"
+          },
+          {
+            "name": "obs-studio",
+            "version": "33.0.1-2",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 152,
+            "log": "logs/obs-studio-33.0.1-2.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 1 leftover item(s)"
+  },
+  {
     "started": "2026-11-18T04:48:28Z",
     "duration": 17049,
     "steps": [
@@ -23107,59 +23186,5 @@
       }
     ],
     "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-13T18:29:16Z",
-    "duration": 2465,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 2442,
-        "packages": [
-          {
-            "name": "vscode",
-            "version": "1.141.1-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 105,
-            "log": "logs/vscode-1.141.1-1.txt.gz"
-          },
-          {
-            "name": "thunderbird",
-            "version": "158.0-1",
-            "arch": "x86_64",
-            "status": "failed",
-            "buildtime": 2241,
-            "reason": "build script exited with code 2",
-            "log": "logs/thunderbird-158.0-1.txt.gz"
-          },
-          {
-            "name": "thunderbird",
-            "version": "158.0-1",
-            "arch": "x86_64",
-            "status": "blacklisted",
-            "buildtime": 0,
-            "reason": "its build failed; skipped until its version or revision changes"
-          }
-        ]
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 6
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 1
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 2
-      }
-    ],
-    "cleanup": "removed 2 leftover item(s)"
   }
 ]
