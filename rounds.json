@@ -1,5 +1,42 @@
 [
   {
+    "started": "2026-11-18T14:40:01Z",
+    "duration": 40,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 22,
+        "packages": [
+          {
+            "name": "pcsclite",
+            "version": "2.5.4-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 6,
+            "log": "logs/pcsclite-2.5.4-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 15
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 2
+      }
+    ],
+    "cleanup": "removed 0 leftover item(s)"
+  },
+  {
     "started": "2026-11-18T13:09:51Z",
     "duration": 75,
     "steps": [
@@ -23136,43 +23173,6 @@
             "log": "logs/curl-8.23.0-1-aarch64.txt.gz"
           }
         ]
-      }
-    ],
-    "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-14T04:24:16Z",
-    "duration": 18570,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 18566,
-        "packages": [
-          {
-            "name": "thunderbird",
-            "version": "158.0-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 8893,
-            "log": "logs/thunderbird-158.0-1.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 1
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 2
       }
     ],
     "cleanup": "removed 0 leftover item(s)"
