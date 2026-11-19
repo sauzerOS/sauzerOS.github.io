@@ -1,5 +1,43 @@
 [
   {
+    "started": "2026-11-19T17:33:10Z",
+    "duration": 736,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 22
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 703,
+        "packages": [
+          {
+            "name": "aarch64-rust",
+            "version": "1.100.0-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 672,
+            "reason": "build failed: exit status 1"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-11-19T17:05:10Z",
     "duration": 766,
     "steps": [
@@ -22400,43 +22438,6 @@
         "status": "failed",
         "exit": 1,
         "duration": 0
-      }
-    ],
-    "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-16T10:27:39Z",
-    "duration": 38,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 20,
-        "packages": [
-          {
-            "name": "cifs-utils",
-            "version": "7.9-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 9,
-            "log": "logs/cifs-utils-7.9-1.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 15
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 2
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 1
       }
     ],
     "cleanup": "removed 0 leftover item(s)"
