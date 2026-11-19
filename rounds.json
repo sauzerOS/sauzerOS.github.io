@@ -1,5 +1,43 @@
 [
   {
+    "started": "2026-11-19T15:05:00Z",
+    "duration": 789,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 17
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 2
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 760,
+        "packages": [
+          {
+            "name": "aarch64-rust",
+            "version": "1.100.0-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 731,
+            "reason": "build failed: exit status 1"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s)"
+  },
+  {
     "started": "2026-11-19T14:35:12Z",
     "duration": 873,
     "steps": [
@@ -22548,70 +22586,6 @@
             "status": "success",
             "buildtime": 13,
             "log": "logs/linux-api-headers-7.2.11-1-aarch64.txt.gz"
-          }
-        ]
-      }
-    ],
-    "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-15T10:18:28Z",
-    "duration": 144,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 111,
-        "packages": [
-          {
-            "name": "python-pluggy",
-            "version": "1.7.0-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 3,
-            "log": "logs/python-pluggy-1.7.0-1.txt.gz"
-          },
-          {
-            "name": "just",
-            "version": "1.59.0-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 83,
-            "log": "logs/just-1.59.0-1.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 18
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 6,
-        "packages": [
-          {
-            "name": "aarch64-python-pluggy",
-            "version": "1.7.0-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 0
-          }
-        ]
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 9,
-        "packages": [
-          {
-            "name": "python-pluggy",
-            "version": "1.7.0-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 3,
-            "log": "logs/python-pluggy-1.7.0-1-aarch64.txt.gz"
           }
         ]
       }
