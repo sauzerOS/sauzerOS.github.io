@@ -1,5 +1,180 @@
 [
   {
+    "started": "2026-11-20T04:01:51Z",
+    "duration": 1211,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 419,
+        "packages": [
+          {
+            "name": "faugus-launcher",
+            "version": "2.5.9-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 9,
+            "log": "logs/faugus-launcher-2.5.9-1.txt.gz"
+          },
+          {
+            "name": "exodus",
+            "version": "26.11.20-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 62,
+            "log": "logs/exodus-26.11.20-1.txt.gz"
+          },
+          {
+            "name": "claude-code",
+            "version": "2.1.329-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 70,
+            "log": "logs/claude-code-2.1.329-1.txt.gz"
+          },
+          {
+            "name": "libksba",
+            "version": "1.9.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 23,
+            "log": "logs/libksba-1.9.1-1.txt.gz"
+          },
+          {
+            "name": "python-guessit",
+            "version": "4.5.4-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 9,
+            "log": "logs/python-guessit-4.5.4-1.txt.gz"
+          },
+          {
+            "name": "python-jsonpatch",
+            "version": "1.48-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 6,
+            "log": "logs/python-jsonpatch-1.48-1.txt.gz"
+          },
+          {
+            "name": "python-typeguard",
+            "version": "4.6.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 7,
+            "log": "logs/python-typeguard-4.6.1-1.txt.gz"
+          },
+          {
+            "name": "hwloc",
+            "version": "2.16.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 63,
+            "log": "logs/hwloc-2.16.0-1.txt.gz"
+          },
+          {
+            "name": "harfbuzz",
+            "version": "15.2.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 172,
+            "log": "logs/harfbuzz-15.2.0-1.txt.gz"
+          },
+          {
+            "name": "cmake",
+            "version": "4.5.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 305,
+            "log": "logs/cmake-4.5.1-1.txt.gz"
+          },
+          {
+            "name": "libnfs",
+            "version": "8.1.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 8,
+            "log": "logs/libnfs-8.1.0-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 16
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 220,
+        "packages": [
+          {
+            "name": "aarch64-libksba",
+            "version": "1.9.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 11
+          },
+          {
+            "name": "aarch64-harfbuzz",
+            "version": "15.2.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 98
+          },
+          {
+            "name": "aarch64-cmake",
+            "version": "4.5.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 206
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 555,
+        "packages": [
+          {
+            "name": "libksba",
+            "version": "1.9.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 14,
+            "log": "logs/libksba-1.9.1-1-aarch64.txt.gz"
+          },
+          {
+            "name": "harfbuzz",
+            "version": "15.2.0-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 123,
+            "log": "logs/harfbuzz-15.2.0-1-aarch64.txt.gz"
+          },
+          {
+            "name": "cmake",
+            "version": "4.5.1-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 242,
+            "log": "logs/cmake-4.5.1-1-aarch64.txt.gz"
+          },
+          {
+            "name": "aarch64-rust",
+            "version": "1.100.0-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 276,
+            "reason": "build failed: exit status 1"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 1 leftover item(s)"
+  },
+  {
     "started": "2026-11-19T18:29:10Z",
     "duration": 904,
     "steps": [
@@ -22231,32 +22406,5 @@
       }
     ],
     "cleanup": "removed 2 leftover item(s)"
-  },
-  {
-    "started": "2026-10-17T05:14:12Z",
-    "duration": 19,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 14
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 2
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 2
-      }
-    ],
-    "cleanup": "removed 1 leftover item(s), kept 5 in use by a running build"
   }
 ]
