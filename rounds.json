@@ -1,5 +1,69 @@
 [
   {
+    "started": "2026-11-25T13:13:02Z",
+    "duration": 538,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 414,
+        "packages": [
+          {
+            "name": "gnutls",
+            "version": "3.8.14-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 394,
+            "log": "logs/gnutls-3.8.14-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 58,
+        "packages": [
+          {
+            "name": "aarch64-gnutls",
+            "version": "3.8.14-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 53
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 63,
+        "packages": [
+          {
+            "name": "nettle",
+            "version": "4.0-3",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 29,
+            "log": "logs/nettle-4.0-3-aarch64.txt.gz"
+          },
+          {
+            "name": "gnutls",
+            "version": "3.8.14-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 57,
+            "log": "logs/gnutls-3.8.14-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 2 leftover item(s), kept 10 in use by a running build"
+  },
+  {
     "started": "2026-11-25T12:52:21Z",
     "duration": 418,
     "steps": [
@@ -23051,91 +23115,5 @@
       }
     ],
     "cleanup": "removed 4 leftover item(s)"
-  },
-  {
-    "started": "2026-10-17T16:54:30Z",
-    "duration": 158,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "failed",
-        "exit": 1,
-        "duration": 129,
-        "packages": [
-          {
-            "name": "glibc",
-            "version": "2.44-2",
-            "arch": "x86_64",
-            "status": "failed",
-            "buildtime": 104,
-            "reason": "build failed: exit status 2",
-            "log": "logs/glibc-2.44-2.txt.gz"
-          },
-          {
-            "name": "glibc",
-            "version": "2.44-2",
-            "arch": "x86_64",
-            "status": "blacklisted",
-            "buildtime": 0,
-            "reason": "its build failed; skipped until its version or revision changes"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "failed",
-        "exit": 1,
-        "duration": 7,
-        "packages": [
-          {
-            "name": "aarch64-glibc",
-            "version": "2.44-2",
-            "arch": "aarch64",
-            "status": "failed",
-            "buildtime": 5,
-            "reason": "build failed: exit status 1"
-          },
-          {
-            "name": "aarch64-glibc",
-            "version": "2.44-2",
-            "arch": "aarch64",
-            "status": "blacklisted",
-            "buildtime": 0,
-            "reason": "its build failed; skipped until its version or revision changes"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync",
-        "status": "failed",
-        "exit": 1,
-        "duration": 9,
-        "packages": [
-          {
-            "name": "glibc",
-            "version": "2.44-2",
-            "arch": "aarch64",
-            "status": "failed",
-            "buildtime": 6,
-            "reason": "build failed: exit status 1",
-            "log": "logs/glibc-2.44-2-aarch64.txt.gz"
-          },
-          {
-            "name": "glibc",
-            "version": "2.44-2",
-            "arch": "aarch64",
-            "status": "blacklisted",
-            "buildtime": 0,
-            "reason": "its build failed; skipped until its version or revision changes"
-          }
-        ]
-      }
-    ],
-    "cleanup": "removed 6 leftover item(s)"
   }
 ]
