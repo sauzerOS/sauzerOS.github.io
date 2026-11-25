@@ -1,5 +1,99 @@
 [
   {
+    "started": "2026-11-25T12:52:21Z",
+    "duration": 418,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 1
+      },
+      {
+        "name": "rebuild",
+        "status": "failed",
+        "exit": 1,
+        "duration": 326,
+        "packages": [
+          {
+            "name": "gnutls",
+            "version": "3.8.14-1",
+            "arch": "x86_64",
+            "status": "failed",
+            "buildtime": 43,
+            "reason": "build script exited with code 1",
+            "log": "logs/gnutls-3.8.14-1.txt.gz"
+          },
+          {
+            "name": "cosmic-settings",
+            "version": "1.12.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 280,
+            "log": "logs/cosmic-settings-1.12.0-1.txt.gz"
+          },
+          {
+            "name": "gnutls",
+            "version": "3.8.14-1",
+            "arch": "x86_64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "failed",
+        "exit": 1,
+        "duration": 40,
+        "packages": [
+          {
+            "name": "aarch64-gnutls",
+            "version": "3.8.14-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 35,
+            "reason": "build failed: exit status 2"
+          },
+          {
+            "name": "aarch64-gnutls",
+            "version": "3.8.14-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "failed",
+        "exit": 1,
+        "duration": 43,
+        "packages": [
+          {
+            "name": "gnutls",
+            "version": "3.8.14-1",
+            "arch": "aarch64",
+            "status": "failed",
+            "buildtime": 39,
+            "reason": "build failed: exit status 2",
+            "log": "logs/gnutls-3.8.14-1-aarch64.txt.gz"
+          },
+          {
+            "name": "gnutls",
+            "version": "3.8.14-1",
+            "arch": "aarch64",
+            "status": "blacklisted",
+            "buildtime": 0,
+            "reason": "its build failed; skipped until its version or revision changes"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 7 leftover item(s), kept 5 in use by a running build"
+  },
+  {
     "started": "2026-11-25T12:41:49Z",
     "duration": 600,
     "steps": [
@@ -23043,107 +23137,5 @@
       }
     ],
     "cleanup": "removed 6 leftover item(s)"
-  },
-  {
-    "started": "2026-10-17T13:18:44Z",
-    "duration": 1233,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 609,
-        "packages": [
-          {
-            "name": "simdutf",
-            "version": "9.3.1-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 138,
-            "log": "logs/simdutf-9.3.1-1.txt.gz"
-          },
-          {
-            "name": "systemd",
-            "version": "262.1-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 292,
-            "log": "logs/systemd-262.1-1.txt.gz"
-          },
-          {
-            "name": "librsvg",
-            "version": "2.63.3-1",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 524,
-            "log": "logs/librsvg-2.63.3-1.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 21
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "ok",
-        "duration": 310,
-        "packages": [
-          {
-            "name": "aarch64-simdutf",
-            "version": "9.3.1-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 177
-          },
-          {
-            "name": "aarch64-systemd",
-            "version": "262.1-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 183
-          },
-          {
-            "name": "aarch64-librsvg",
-            "version": "2.63.3-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 267
-          }
-        ]
-      },
-      {
-        "name": "cross-sync",
-        "status": "ok",
-        "duration": 293,
-        "packages": [
-          {
-            "name": "simdutf",
-            "version": "9.3.1-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 166,
-            "log": "logs/simdutf-9.3.1-1-aarch64.txt.gz"
-          },
-          {
-            "name": "systemd",
-            "version": "262.1-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 169,
-            "log": "logs/systemd-262.1-1-aarch64.txt.gz"
-          },
-          {
-            "name": "librsvg",
-            "version": "2.63.3-1",
-            "arch": "aarch64",
-            "status": "success",
-            "buildtime": 251,
-            "log": "logs/librsvg-2.63.3-1-aarch64.txt.gz"
-          }
-        ]
-      }
-    ],
-    "cleanup": "removed 0 leftover item(s)"
   }
 ]
