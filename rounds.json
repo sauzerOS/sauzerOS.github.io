@@ -1,5 +1,151 @@
 [
   {
+    "started": "2026-11-26T04:03:53Z",
+    "duration": 821,
+    "steps": [
+      {
+        "name": "bump",
+        "status": "ok",
+        "duration": 657,
+        "packages": [
+          {
+            "name": "flex",
+            "version": "2.7.9-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 15,
+            "log": "logs/flex-2.7.9-1.txt.gz"
+          },
+          {
+            "name": "python-markdown",
+            "version": "3.11.4-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 13,
+            "log": "logs/python-markdown-3.11.4-1.txt.gz"
+          },
+          {
+            "name": "python-sabctools",
+            "version": "10.4.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 53,
+            "log": "logs/python-sabctools-10.4.0-1.txt.gz"
+          },
+          {
+            "name": "python-fonttools",
+            "version": "4.69.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 85,
+            "log": "logs/python-fonttools-4.69.1-1.txt.gz"
+          },
+          {
+            "name": "python-sentry-sdk",
+            "version": "3.0.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 5,
+            "log": "logs/python-sentry-sdk-3.0.1-1.txt.gz"
+          },
+          {
+            "name": "github-cli",
+            "version": "2.106.0-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 91,
+            "log": "logs/github-cli-2.106.0-1.txt.gz"
+          },
+          {
+            "name": "glib",
+            "version": "2.90.2-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 162,
+            "log": "logs/glib-2.90.2-1.txt.gz"
+          },
+          {
+            "name": "file-roller",
+            "version": "44.8-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 17,
+            "log": "logs/file-roller-44.8-1.txt.gz"
+          },
+          {
+            "name": "wordcraft",
+            "version": "0.19.1-1",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 457,
+            "log": "logs/wordcraft-0.19.1-1.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "rebuild",
+        "status": "ok",
+        "duration": 30,
+        "packages": [
+          {
+            "name": "postgresql-libversion",
+            "version": "2.0.1-3",
+            "arch": "x86_64",
+            "status": "success",
+            "buildtime": 3,
+            "log": "logs/postgresql-libversion-2.0.1-3.txt.gz"
+          }
+        ]
+      },
+      {
+        "name": "cross-sync -system",
+        "status": "ok",
+        "duration": 61,
+        "packages": [
+          {
+            "name": "aarch64-glib",
+            "version": "2.90.2-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 50
+          }
+        ]
+      },
+      {
+        "name": "cross-sync",
+        "status": "ok",
+        "duration": 71,
+        "packages": [
+          {
+            "name": "python-markdown",
+            "version": "3.11.4-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 4,
+            "log": "logs/python-markdown-3.11.4-1-aarch64.txt.gz"
+          },
+          {
+            "name": "flex",
+            "version": "2.7.9-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 10,
+            "log": "logs/flex-2.7.9-1-aarch64.txt.gz"
+          },
+          {
+            "name": "glib",
+            "version": "2.90.2-1",
+            "arch": "aarch64",
+            "status": "success",
+            "buildtime": 60,
+            "log": "logs/glib-2.90.2-1-aarch64.txt.gz"
+          }
+        ]
+      }
+    ],
+    "cleanup": "removed 3 leftover item(s)"
+  },
+  {
     "started": "2026-11-25T13:13:02Z",
     "duration": 538,
     "steps": [
@@ -23039,81 +23185,5 @@
       }
     ],
     "cleanup": "removed 0 leftover item(s)"
-  },
-  {
-    "started": "2026-10-17T17:12:13Z",
-    "duration": 261,
-    "steps": [
-      {
-        "name": "bump",
-        "status": "ok",
-        "duration": 0
-      },
-      {
-        "name": "rebuild",
-        "status": "ok",
-        "duration": 242,
-        "packages": [
-          {
-            "name": "glibc",
-            "version": "2.44-2",
-            "arch": "x86_64",
-            "status": "success",
-            "buildtime": 216,
-            "log": "logs/glibc-2.44-2.txt.gz"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync -system",
-        "status": "failed",
-        "exit": 1,
-        "duration": 6,
-        "packages": [
-          {
-            "name": "aarch64-glibc",
-            "version": "2.44-2",
-            "arch": "aarch64",
-            "status": "failed",
-            "buildtime": 3,
-            "reason": "build failed: exit status 1"
-          },
-          {
-            "name": "aarch64-glibc",
-            "version": "2.44-2",
-            "arch": "aarch64",
-            "status": "blacklisted",
-            "buildtime": 0,
-            "reason": "its build failed; skipped until its version or revision changes"
-          }
-        ]
-      },
-      {
-        "name": "cross-sync",
-        "status": "failed",
-        "exit": 1,
-        "duration": 9,
-        "packages": [
-          {
-            "name": "glibc",
-            "version": "2.44-2",
-            "arch": "aarch64",
-            "status": "failed",
-            "buildtime": 6,
-            "reason": "build failed: exit status 1",
-            "log": "logs/glibc-2.44-2-aarch64.txt.gz"
-          },
-          {
-            "name": "glibc",
-            "version": "2.44-2",
-            "arch": "aarch64",
-            "status": "blacklisted",
-            "buildtime": 0,
-            "reason": "its build failed; skipped until its version or revision changes"
-          }
-        ]
-      }
-    ],
-    "cleanup": "removed 4 leftover item(s)"
   }
 ]
